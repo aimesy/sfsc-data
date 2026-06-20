@@ -1,9 +1,11 @@
 name: Build normalized case tables
 
+# Flattens canonical archive/cases/*.json captures into Parquet tables for
+# counts, joins, and research exports. JSON remains the source of truth; these
+# tables are the normalized derived layer.
 on:
   workflow_dispatch:
   push:
-    branches: [master]
     paths:
       - 'archive/cases/**'
       - 'archive/cases-index.ndjson'
@@ -15,6 +17,8 @@ on:
       - 'scripts/check_case_index_integrity.py'
       - 'scripts/check_case_directory.py'
       - 'scripts/check_case_representation.py'
+      - 'scripts/promote_scanner_batches.py'
+      - 'scripts/estate_dossier.py'
       - 'scripts/check_repo_bloat.py'
       - '.github/workflows/case-tables.yml'
 
@@ -22,12 +26,17 @@ permissions:
   contents: write
 
 concurrency:
+  # GitHub keeps at most one pending run per concurrency group. This workflow
+  # must not be displaced by unrelated data-index enrichers after archive/cases
+  # advances, or archive/case-directory can lag the case index indefinitely.
   group: case-tables-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
   build:
+    if: ${{ github.repository == 'aimesy/sfsc-data' }}
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     permissions:
       contents: write
     steps:
@@ -37,10 +46,13 @@ jobs:
           filter: blob:none
           sparse-checkout: |
             .github/workflows/python-constraints.txt
+            LIVE.md
+            README.md
             archive/case-directory/**
             archive/cases/**
             archive/cases-index.ndjson
             archive/discovered-cases.ndjson
+            archive/document-index.ndjson
             archive/new-filings-cases/**
             data/**
             judges.json
@@ -53,6 +65,7 @@ jobs:
             scripts/check_repo_bloat.py
             scripts/court_holidays.py
             scripts/estate_dossier.py
+            update-readme.py
           sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
         with:
@@ -64,12 +77,16 @@ jobs:
           SFSC_PRODUCT_DISPATCH_TOKEN: ${{ secrets.SFSC_PRODUCT_DISPATCH_TOKEN }}
         run: |
           set -euo pipefail
+          if [ ! -d archive/cases ]; then
+            echo "archive/cases is not present in this checkout; data builds now run from aimesy/sfsc-data."
+            exit 0
+          fi
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin master
           git checkout FETCH_HEAD
           if ! find archive/cases -maxdepth 1 -name '*.json' -print -quit | grep -q .; then
-            echo "::error::archive/cases/*.json is missing; refusing to rebuild the case directory without full case JSONs."
+            echo "::error::archive/cases/*.json is missing; refusing to rebuild the website case directory without full case JSONs."
             exit 1
           fi
 
@@ -80,11 +97,17 @@ jobs:
             python scripts/check_case_representation.py
             python scripts/build_case_directory.py --case-json-mode none --case-table data/cases.parquet
             python scripts/check_case_directory.py
+            python update-readme.py --live-counts-only
 
+            # The monolithic docket_entries parquet now exceeds GitHub's
+            # per-object limit. Source JSON remains canonical; remove the
+            # old tracked derived table and do not re-stage the regenerated one.
             git rm -f --ignore-unmatch data/docket_entries.parquet
             git rm -f --ignore-unmatch data/entity-profiles.json
 
             git add \
+              LIVE.md \
+              README.md \
               archive/case-directory \
               data/cases.parquet \
               data/parties.parquet \
