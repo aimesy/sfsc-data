@@ -120,8 +120,10 @@ jobs:
               "event_type": "sfsc-data-updated",
               "client_payload": {
                   "data_repository": "aimesy/sfsc-data",
-                  "data_ref": "master",
+                  "data_ref": data_sha,
                   "data_sha": data_sha,
+                  "pages_ready": True,
+                  "payload_kind": "normalized_case_tables",
                   "source": "sfsc-data case-tables workflow",
               },
           }
