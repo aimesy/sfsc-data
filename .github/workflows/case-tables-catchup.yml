@@ -74,7 +74,6 @@ jobs:
           for status in ("queued", "in_progress", "waiting"):
               params = urllib.parse.urlencode({
                   "branch": "master",
-                  "event": "push",
                   "status": status,
                   "per_page": "20",
               })
