@@ -231,6 +231,18 @@ def criminal_unavailable_text(data: dict) -> str:
     return ""
 
 
+def criminal_no_information_text(defendant: str = "", filed_date: str = "") -> str:
+    defendant = clean(defendant)
+    filed_date = clean(filed_date)
+    if defendant and filed_date:
+        return f"No information available besides {defendant} and date of filing {filed_date}."
+    if defendant:
+        return f"No information available besides {defendant}."
+    if filed_date:
+        return f"No information available besides date of filing {filed_date}."
+    return "No information available."
+
+
 def criminal_case_exists(data: dict) -> bool:
     if clean(data.get("portal_case_id") or data.get("portalCaseId")):
         return True
@@ -261,6 +273,19 @@ def normalize_case_data(data: dict, fallback_stem: str = "") -> dict:
     calendar = normalize_criminal_calendar_rows(data)
     statutes = normalize_criminal_statutes(data, docket_entries)
     unavailable_text = criminal_unavailable_text(data)
+    unavailable_reason = clean(data.get("unavailable_reason")) if unavailable_text else ""
+    parties = data.get("parties") if isinstance(data.get("parties"), list) else (
+        [{"name": defendant, "party_type": "Defendant", "source": "criminal_portal_case_header"}]
+        if defendant
+        else []
+    )
+    attorneys = data.get("attorneys") if isinstance(data.get("attorneys"), list) else []
+    documents = data.get("documents") if isinstance(data.get("documents"), list) else []
+    payments = data.get("payments") if isinstance(data.get("payments"), list) else []
+    no_public_rows = not docket_entries and not calendar and not attorneys and not documents and not payments
+    if not unavailable_text and no_public_rows and (defendant or filed_date):
+        unavailable_text = criminal_no_information_text(defendant, filed_date)
+        unavailable_reason = "criminal_portal_no_public_entries"
     criminal = data.get("criminal") if isinstance(data.get("criminal"), dict) else {}
     criminal = {
         **criminal,
@@ -307,26 +332,21 @@ def normalize_case_data(data: dict, fallback_stem: str = "") -> dict:
             "source_url": criminal_source_url(data),
             "docket_entries": docket_entries,
             "calendar": calendar,
-            "parties": data.get("parties") if isinstance(data.get("parties"), list) else (
-                [{"name": defendant, "party_type": "Defendant", "source": "criminal_portal_case_header"}]
-                if defendant
-                else []
-            ),
-            "attorneys": data.get("attorneys") if isinstance(data.get("attorneys"), list) else [],
-            "documents": data.get("documents") if isinstance(data.get("documents"), list) else [],
-            "payments": data.get("payments") if isinstance(data.get("payments"), list) else [],
+            "parties": parties,
+            "attorneys": attorneys,
+            "documents": documents,
+            "payments": payments,
             "document_bytes_captured": data.get("document_bytes_captured") is True
-            or not isinstance(data.get("documents"), list)
-            or len(data.get("documents") or []) == 0,
+            or not documents,
             "document_byte_capture_scope": "criminal-portal-no-documents"
-            if not (data.get("documents") if isinstance(data.get("documents"), list) else [])
+            if not documents
             else data.get("document_byte_capture_scope"),
             "criminal": criminal,
         }
     )
     if unavailable_text:
         out["status"] = "unavailable"
-        out["unavailable_reason"] = "criminal_portal_not_publicly_available"
+        out["unavailable_reason"] = unavailable_reason or "criminal_portal_not_publicly_available"
         out["unavailable_text"] = unavailable_text
     return out
 

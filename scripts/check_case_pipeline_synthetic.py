@@ -223,6 +223,18 @@ def test_criminal_importer_guards() -> None:
     })
     check("criminal header defendant makes People v title", headered.get("case_title") == "People v. DOE, JANE")
     check("criminal header filed_date preserved", headered.get("filed_date") == "06/20/2024")
+    check("criminal header-only record is unavailable", headered.get("status") == "unavailable", str(headered))
+    check(
+        "criminal header-only reason is no public entries",
+        headered.get("unavailable_reason") == "criminal_portal_no_public_entries",
+        headered.get("unavailable_reason"),
+    )
+    check(
+        "criminal header-only text names available facts",
+        headered.get("unavailable_text") == "No information available besides DOE, JANE and date of filing 06/20/2024.",
+        headered.get("unavailable_text"),
+    )
+    check("criminal header-only record passes schema", importer.schema_error(headered) == "", importer.schema_error(headered))
     check(
         "criminal header defendant becomes party",
         any(
