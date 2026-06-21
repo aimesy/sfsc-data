@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:45.187Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:38:13.150Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15011895",
   "criminal_case_number": "15011895",
@@ -24,11 +24,72 @@
       "name": "JOHN ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-06-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO DETERMINE PRCS TERMINATION DATE/CTORD: POST RELEASE COMMUNITY SUPERVISION WILL EXPIRE 11-29-17/X: DEFENDANT SERVING SENTENCE IMPOSED ON 05-29-15/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-05-29T11:45:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOT/3455ADV/3455ADM/3455REIN/CH1:CJ120D/CTS:4/4019HALF//CONTD:CALCULATION OF PRCS EXP DATE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-06-04 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2015-06-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-05-29 11:45 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2015-05-29",
+      "hearing_time": "11:45 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-05-29 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2015-05-29",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PHONG WANG",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +106,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3811277",
+  "docket_entries": [
+    {
+      "filedDate": "2015-06-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO DETERMINE PRCS TERMINATION DATE/CTORD: POST RELEASE COMMUNITY SUPERVISION WILL EXPIRE 11-29-17/X: DEFENDANT SERVING SENTENCE IMPOSED ON 05-29-15/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-06-04T09:00:00.000Z",
+      "description": "/CAL: TO DETERMINE PRCS TERMINATION DATE/CTORD: POST RELEASE COMMUNITY SUPERVISION WILL EXPIRE 11-29-17/X: DEFENDANT SERVING SENTENCE IMPOSED ON 05-29-15/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-05-29T11:45:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOT/3455ADV/3455ADM/3455REIN/CH1:CJ120D/CTS:4/4019HALF//CONTD:CALCULATION OF PRCS EXP DATE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-05-29T11:45:00.000Z",
+      "description": "/CAL:APD 3455PC MOT/3455ADV/3455ADM/3455REIN/CH1:CJ120D/CTS:4/4019HALF//CONTD:CALCULATION OF PRCS EXP DATE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15011895",
-    "portal_case_id": "",
+    "portal_case_id": "3811277",
     "display_case_number": "CRI-15011895",
     "defendant": "JOHN ADAMS",
     "filed_date": "2015-05-29",
@@ -63,8 +145,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN ADAMS, and date of filing 2015-05-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN ADAMS, and date of filing 2015-05-29. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:38:13.780Z",
+  "portal_case_id": "3811277",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15011895",
+      "defendant": "JOHN ADAMS",
+      "filed_date": "2015-05-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3811277"
+  }
 }

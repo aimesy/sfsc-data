@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:27:43.519Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:28:48.271Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17007467",
   "criminal_case_number": "17007467",
@@ -24,11 +24,99 @@
       "name": "LAWRENCE SAUL ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LAWRENCE SAUL ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-08-22T09:15:00.000Z",
+      "docketEntryComment": "/CAL: SENTENCING/TWS/CH4:CJ 2D  /CTS: 2/VF2:150/COA:40/ICNA/COLLECT/SA2:AREA OF TWIN PEAKS BLVD, & CHRISTMAS TREE POINT RD, SF CA/SAORD/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-08-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPO/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OFNL/DEFT ADV NL: 4/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-06-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONF/STWPX/TE:1,5-2 HRS/CONTD:TO SET OR DISPO/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-05-22T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:07-21-17/987,2/ACM/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-08-22 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2017-08-22",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-08-22 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2017-08-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-06-22 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2017-06-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-05-22 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2017-05-22",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PRITHIKA BALAKRISHNAN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "SHIRIN OLOUMI",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3857260",
+  "docket_entries": [
+    {
+      "filedDate": "2017-08-22T09:15:00.000Z",
+      "docketEntryComment": "/CAL: SENTENCING/TWS/CH4:CJ 2D  /CTS: 2/VF2:150/COA:40/ICNA/COLLECT/SA2:AREA OF TWIN PEAKS BLVD, & CHRISTMAS TREE POINT RD, SF CA/SAORD/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-08-22T09:15:00.000Z",
+      "description": "/CAL: SENTENCING/TWS/CH4:CJ 2D /CTS: 2/VF2:150/COA:40/ICNA/COLLECT/SA2:AREA OF TWIN PEAKS BLVD, & CHRISTMAS TREE POINT RD, SF CA/SAORD/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-08-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPO/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OFNL/DEFT ADV NL: 4/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-08-22T09:00:00.000Z",
+      "description": "/CAL:TO SET OR DISPO/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OFNL/DEFT ADV NL: 4/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-06-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONF/STWPX/TE:1,5-2 HRS/CONTD:TO SET OR DISPO/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-06-22T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONF/STWPX/TE:1,5-2 HRS/CONTD:TO SET OR DISPO/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-05-22T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:07-21-17/987,2/ACM/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-05-22T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:07-21-17/987,2/ACM/CONTD: PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17007467",
-    "portal_case_id": "",
+    "portal_case_id": "3857260",
     "display_case_number": "CRI-17007467",
     "defendant": "LAWRENCE SAUL ANDERSON",
     "filed_date": "2017-05-22",
@@ -63,8 +192,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LAWRENCE SAUL ANDERSON, and date of filing 2017-05-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LAWRENCE SAUL ANDERSON, and date of filing 2017-05-22. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:28:48.865Z",
+  "portal_case_id": "3857260",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17007467",
+      "defendant": "LAWRENCE SAUL ANDERSON",
+      "filed_date": "2017-05-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3857260"
+  }
 }

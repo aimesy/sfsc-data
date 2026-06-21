@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:45.186Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:18:12.699Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18004380",
   "criminal_case_number": "18004380",
@@ -24,11 +24,131 @@
       "name": "JOHN ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-04-16T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/3455REIN/CH1:CJ 90D/CTS:30/4019HALF/CTORD:SENTENCE TO RUN CONCURRENT TO SENTENCE IN #17009377/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-04-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD 3455PC HEARING/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-04-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD 3455PC MOTION/CONT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD 3455PC MOTION/CONT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-03-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TS APD 3455PC/CONT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-03-21T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOT/WIAPRCS/SHER/NB/X:PRCS ADMIN REVOKED/CONTD:TS 3455PCMOT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-04-16 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2018-04-16",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-04-16 9:00 AM",
+      "hearingType": "To Set MTR PRCS Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2018-04-16",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set MTR PRCS Hearing",
+      "hearing_type": "To Set MTR PRCS Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-04-12 9:00 AM",
+      "hearingType": "To Set MTR PRCS Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2018-04-12",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set MTR PRCS Hearing",
+      "hearing_type": "To Set MTR PRCS Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-04-05 9:00 AM",
+      "hearingType": "To Set MTR PRCS Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "2018-04-05",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set MTR PRCS Hearing",
+      "hearing_type": "To Set MTR PRCS Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-03-23 9:00 AM",
+      "hearingType": "To Set MTR PRCS Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 4,
+      "court_date": "2018-03-23",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set MTR PRCS Hearing",
+      "hearing_type": "To Set MTR PRCS Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-03-21 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 5,
+      "court_date": "2018-03-21",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JACQUE WILSON",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +165,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3873103",
+  "docket_entries": [
+    {
+      "filedDate": "2018-04-16T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/3455REIN/CH1:CJ 90D/CTS:30/4019HALF/CTORD:SENTENCE TO RUN CONCURRENT TO SENTENCE IN #17009377/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-04-16T09:15:00.000Z",
+      "description": "/CAL:SENTENCING/3455REIN/CH1:CJ 90D/CTS:30/4019HALF/CTORD:SENTENCE TO RUN CONCURRENT TO SENTENCE IN #17009377/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-04-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD 3455PC HEARING/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-04-16T09:00:00.000Z",
+      "description": "/CAL:TO SET APD 3455PC HEARING/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-04-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD 3455PC MOTION/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-04-12T09:00:00.000Z",
+      "description": "/CAL:TO SET APD 3455PC MOTION/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD 3455PC MOTION/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-04-05T09:00:00.000Z",
+      "description": "/CAL:TO SET APD 3455PC MOTION/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-03-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TS APD 3455PC/CONT/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-03-23T09:00:00.000Z",
+      "description": "/CAL:TS APD 3455PC/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-03-21T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOT/WIAPRCS/SHER/NB/X:PRCS ADMIN REVOKED/CONTD:TS 3455PCMOT/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2018-03-21T11:30:00.000Z",
+      "description": "/CAL:APD 3455PC MOT/WIAPRCS/SHER/NB/X:PRCS ADMIN REVOKED/CONTD:TS 3455PCMOT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18004380",
-    "portal_case_id": "",
+    "portal_case_id": "3873103",
     "display_case_number": "CRI-18004380",
     "defendant": "JOHN ADAMS",
     "filed_date": "2018-03-21",
@@ -59,12 +240,36 @@
       "defendant": "JOHN ADAMS",
       "filed_date": "2018-03-21"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN ADAMS, and date of filing 2018-03-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN ADAMS, and date of filing 2018-03-21. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:18:13.306Z",
+  "portal_case_id": "3873103",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18004380",
+      "defendant": "JOHN ADAMS",
+      "filed_date": "2018-03-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3873103"
+  }
 }

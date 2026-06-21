@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:28:40.852Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:42:54.187Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14012854",
   "criminal_case_number": "14012854",
@@ -24,11 +24,59 @@
       "name": "JAMAL BARNES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAMAL BARNES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-05-16T11:45:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/3455REIN/CH1:CJ 60D/CTS:4 /4019HALF/X:BALANCE OF SENTENCE MAYBE SERVED THRU RE-ENTRY POD/X:PRCS WILL TERMINATE ON 10-26-16/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-05-16T11:30:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/X:SEE SENTENCING MINUTES/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-05-16 11:45 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2014-05-16",
+      "hearing_time": "11:45 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-05-16 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2014-05-16",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DOUG WELCH",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3779566",
+  "docket_entries": [
+    {
+      "filedDate": "2014-05-16T11:45:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/3455REIN/CH1:CJ 60D/CTS:4 /4019HALF/X:BALANCE OF SENTENCE MAYBE SERVED THRU RE-ENTRY POD/X:PRCS WILL TERMINATE ON 10-26-16/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-05-16T11:45:00.000Z",
+      "description": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/3455REIN/CH1:CJ 60D/CTS:4 /4019HALF/X:BALANCE OF SENTENCE MAYBE SERVED THRU RE-ENTRY POD/X:PRCS WILL TERMINATE ON 10-26-16/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-05-16T11:30:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/X:SEE SENTENCING MINUTES/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-05-16T11:30:00.000Z",
+      "description": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/X:SEE SENTENCING MINUTES/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14012854",
-    "portal_case_id": "",
+    "portal_case_id": "3779566",
     "display_case_number": "CRI-14012854",
     "defendant": "JAMAL BARNES",
     "filed_date": "2014-05-16",
@@ -59,12 +128,36 @@
       "defendant": "JAMAL BARNES",
       "filed_date": "2014-05-16"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC3455",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAMAL BARNES, and date of filing 2014-05-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAMAL BARNES, and date of filing 2014-05-16. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:42:54.809Z",
+  "portal_case_id": "3779566",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14012854",
+      "defendant": "JAMAL BARNES",
+      "filed_date": "2014-05-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3779566"
+  }
 }

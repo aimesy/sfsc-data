@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:30:50.052Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:27:55.026Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17010203",
   "criminal_case_number": "17010203",
@@ -24,11 +24,81 @@
       "name": "GLEN BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "GLEN BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-08-08T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/TWS/CH1:CJ 4 D/CTS:4/VF2:150/COA:40/ICNA/COLLECT/4019HALF/X: AS PART OF A NEGOTIATED DISPOSITION, THE PEOPLE MOVE TO DISMISS COUNTS2,3 AND 4 PURSUANT TO PC 1385,/MO GRTD/X:THE DEFENDANT ENTERS A HARVEY WAIVER, /X:ANY RESTITUTION OR OTHER MATTERS RESULTING FROM DISMISSED CHARGESMAY BEADDED AS TERMS AND CONDITIONS OF THE SENTENCE IN COURT NO,15002098,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-08-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/X:THE COURT GRANTS THE PEOPLES' ORAL MOTION TOAMEND THE COMPLAINT AND REDUCE COUNT 1 TO A MISDEMEANOR/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:1/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-07-18T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX: 09-18-17/987,2/X:DEFENSE RESERVES THE RIGHT TO DEMUR/ACM/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-08-08 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2017-08-08",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-08-08 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2017-08-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-07-18 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2017-07-18",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PRITHIKA BALAKRISHNAN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "THOMAS CULLINAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3859939",
+  "docket_entries": [
+    {
+      "filedDate": "2017-08-08T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/TWS/CH1:CJ 4 D/CTS:4/VF2:150/COA:40/ICNA/COLLECT/4019HALF/X: AS PART OF A NEGOTIATED DISPOSITION, THE PEOPLE MOVE TO DISMISS COUNTS2,3 AND 4 PURSUANT TO PC 1385,/MO GRTD/X:THE DEFENDANT ENTERS A HARVEY WAIVER, /X:ANY RESTITUTION OR OTHER MATTERS RESULTING FROM DISMISSED CHARGESMAY BEADDED AS TERMS AND CONDITIONS OF THE SENTENCE IN COURT NO,15002098,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-08-08T09:15:00.000Z",
+      "description": "/CAL:SENTENCING/TWS/CH1:CJ 4 D/CTS:4/VF2:150/COA:40/ICNA/COLLECT/4019HALF/X: AS PART OF A NEGOTIATED DISPOSITION, THE PEOPLE MOVE TO DISMISS COUNTS2,3 AND 4 PURSUANT TO PC 1385,/MO GRTD/X:THE DEFENDANT ENTERS A HARVEY WAIVER, /X:ANY RESTITUTION OR OTHER MATTERS RESULTING FROM DISMISSED CHARGESMAY BEADDED AS TERMS AND CONDITIONS OF THE SENTENCE IN COURT NO,15002098,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-08-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/X:THE COURT GRANTS THE PEOPLES' ORAL MOTION TOAMEND THE COMPLAINT AND REDUCE COUNT 1 TO A MISDEMEANOR/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:1/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-08-08T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/X:THE COURT GRANTS THE PEOPLES' ORAL MOTION TOAMEND THE COMPLAINT AND REDUCE COUNT 1 TO A MISDEMEANOR/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:1/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-07-18T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX: 09-18-17/987,2/X:DEFENSE RESERVES THE RIGHT TO DEMUR/ACM/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-07-18T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX: 09-18-17/987,2/X:DEFENSE RESERVES THE RIGHT TO DEMUR/ACM/CONTD: PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17010203",
-    "portal_case_id": "",
+    "portal_case_id": "3859939",
     "display_case_number": "CRI-17010203",
     "defendant": "GLEN BROWN",
     "filed_date": "2017-07-17",
@@ -59,12 +160,36 @@
       "defendant": "GLEN BROWN",
       "filed_date": "2017-07-17"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, GLEN BROWN, and date of filing 2017-07-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, GLEN BROWN, and date of filing 2017-07-17. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:27:55.659Z",
+  "portal_case_id": "3859939",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17010203",
+      "defendant": "GLEN BROWN",
+      "filed_date": "2017-07-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3859939"
+  }
 }

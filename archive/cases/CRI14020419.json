@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:28:40.851Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:44:16.217Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14020419",
   "criminal_case_number": "14020419",
@@ -24,11 +24,64 @@
       "name": "JAMES D BARNES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAMES D BARNES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2019-12-27T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-08-07T13:45:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 4D/CTS:4/WS/VF2:150/OR25/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-08-07T13:30:00.000Z",
+      "docketEntryComment": "/MISD4:5/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/FAWC/DEFT ADV ANNL: 5/X:THIS IS A PLEA OPEN TO THE COURT/IBARRA/NOLO/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-08-07 1:45 PM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2014-08-07",
+      "hearing_time": "1:45 PM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-08-07 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2014-08-07",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JOHN KAMAN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +98,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3787019",
+  "docket_entries": [
+    {
+      "filedDate": "2019-12-27T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-12-27T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-08-07T13:45:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 4D/CTS:4/WS/VF2:150/OR25/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-08-07T13:45:00.000Z",
+      "description": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 4D/CTS:4/WS/VF2:150/OR25/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-08-07T13:30:00.000Z",
+      "docketEntryComment": "/MISD4:5/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/FAWC/DEFT ADV ANNL: 5/X:THIS IS A PLEA OPEN TO THE COURT/IBARRA/NOLO/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2014-08-07T13:30:00.000Z",
+      "description": "/MISD4:5/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/FAWC/DEFT ADV ANNL: 5/X:THIS IS A PLEA OPEN TO THE COURT/IBARRA/NOLO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14020419",
-    "portal_case_id": "",
+    "portal_case_id": "3787019",
     "display_case_number": "CRI-14020419",
     "defendant": "JAMES D BARNES",
     "filed_date": "2014-08-05",
@@ -59,12 +143,36 @@
       "defendant": "JAMES D BARNES",
       "filed_date": "2014-08-05"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAMES D BARNES, and date of filing 2014-08-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAMES D BARNES, and date of filing 2014-08-05. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:44:16.841Z",
+  "portal_case_id": "3787019",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14020419",
+      "defendant": "JAMES D BARNES",
+      "filed_date": "2014-08-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3787019"
+  }
 }

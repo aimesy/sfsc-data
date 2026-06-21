@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:32:03.525Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:24:50.809Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18015255",
   "criminal_case_number": "18015255",
@@ -24,11 +24,114 @@
       "name": "BO BAKER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BO BAKER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-10-16T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-12-13T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-10-03T15:31:00.000Z",
+      "docketEntryComment": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE (TBH W/TRIAL) FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-12-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN FOR 5K BENCH WARRANT ISSUED ON 10-16-18/X:PUBLICDEFENDERS' OFFICE DECLARES A CONFLICT/X:THE COURT RELIEVES THE PUBLIC DEFENDERS' OFFICE/CON:PAUL DENNISON/BWDNC/BAIL:5000/CONTD:TRAILING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-10-02T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TN:BO BAKER/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/GTWM/987,2/SAORD/SA4:FOOD CO 1800 FOLSOM STREET SF CA 94103/CONTD:PRETRIAL CONFERENCE IN DEPARTMENT 11 TO JOIN 18014267/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-01-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, TRAILING #18014267/MO138572:18014267/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-10-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PREHEARING CONFERENCEL DEFENSE MTS; TO JOIN 18014267/FTA/OREVKD/BWI/BAIL:5000/BWNUM:1ST/X: 1 OF 2 BENCH WARRANTS ISSUED THIS DATE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2019-01-07 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2019-01-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-12-13 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2018-12-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-10-16 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2018-10-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-10-02 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2018-10-02",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PAUL DENNISON",
+      "type": "Conflict Attorney"
+    },
+    {
+      "name": "SAMUEL BECKERMAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +148,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3883691",
+  "docket_entries": [
+    {
+      "filedDate": "2018-10-16T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-10-16T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-12-13T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-12-13T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-10-03T15:31:00.000Z",
+      "docketEntryComment": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE (TBH W/TRIAL) FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-10-03T15:31:00.000Z",
+      "description": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE (TBH W/TRIAL) FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-12-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN FOR 5K BENCH WARRANT ISSUED ON 10-16-18/X:PUBLICDEFENDERS' OFFICE DECLARES A CONFLICT/X:THE COURT RELIEVES THE PUBLIC DEFENDERS' OFFICE/CON:PAUL DENNISON/BWDNC/BAIL:5000/CONTD:TRAILING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-12-13T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN FOR 5K BENCH WARRANT ISSUED ON 10-16-18/X:PUBLICDEFENDERS' OFFICE DECLARES A CONFLICT/X:THE COURT RELIEVES THE PUBLIC DEFENDERS' OFFICE/CON:PAUL DENNISON/BWDNC/BAIL:5000/CONTD:TRAILING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-10-02T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TN:BO BAKER/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/GTWM/987,2/SAORD/SA4:FOOD CO 1800 FOLSOM STREET SF CA 94103/CONTD:PRETRIAL CONFERENCE IN DEPARTMENT 11 TO JOIN 18014267/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-10-02T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TN:BO BAKER/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/GTWM/987,2/SAORD/SA4:FOOD CO 1800 FOLSOM STREET SF CA 94103/CONTD:PRETRIAL CONFERENCE IN DEPARTMENT 11 TO JOIN 18014267/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-01-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, TRAILING #18014267/MO138572:18014267/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2019-01-07T09:00:00.000Z",
+      "description": "/CAL:TO SET, TRAILING #18014267/MO138572:18014267/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-10-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PREHEARING CONFERENCEL DEFENSE MTS; TO JOIN 18014267/FTA/OREVKD/BWI/BAIL:5000/BWNUM:1ST/X: 1 OF 2 BENCH WARRANTS ISSUED THIS DATE/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2018-10-16T09:00:00.000Z",
+      "description": "/CAL: PREHEARING CONFERENCEL DEFENSE MTS; TO JOIN 18014267/FTA/OREVKD/BWI/BAIL:5000/BWNUM:1ST/X: 1 OF 2 BENCH WARRANTS ISSUED THIS DATE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18015255",
-    "portal_case_id": "",
+    "portal_case_id": "3883691",
     "display_case_number": "CRI-18015255",
     "defendant": "BO BAKER",
     "filed_date": "2018-10-02",
@@ -59,12 +233,36 @@
       "defendant": "BO BAKER",
       "filed_date": "2018-10-02"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BO BAKER, and date of filing 2018-10-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BO BAKER, and date of filing 2018-10-02. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:24:51.362Z",
+  "portal_case_id": "3883691",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18015255",
+      "defendant": "BO BAKER",
+      "filed_date": "2018-10-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3883691"
+  }
 }

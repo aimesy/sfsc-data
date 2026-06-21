@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:29:12.129Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:40:22.346Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15015349",
   "criminal_case_number": "15015349",
@@ -24,11 +24,82 @@
       "name": "ERIC ANTHONY BONILLA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ERIC ANTHONY BONILLA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2020-10-30T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-07-28T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ 5 D/CTS:5/WS/VF2:150/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/BE/REMA/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-07-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:2/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-07-15T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:09-14-15/987,2/CONTD: PREHEARING CONFERENCE/DOP/SA1:BEN HWANG/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-07-28 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2015-07-28",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-07-28 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2015-07-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-07-15 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2015-07-15",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ADAM LIPSON",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3814667",
+  "docket_entries": [
+    {
+      "filedDate": "2020-10-30T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2020-10-30T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-07-28T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ 5 D/CTS:5/WS/VF2:150/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/BE/REMA/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-07-28T09:15:00.000Z",
+      "description": "/CAL:SENTENCING/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ 5 D/CTS:5/WS/VF2:150/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/BE/REMA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-07-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:2/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-07-28T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:2/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-07-15T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:09-14-15/987,2/CONTD: PREHEARING CONFERENCE/DOP/SA1:BEN HWANG/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-07-15T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:09-14-15/987,2/CONTD: PREHEARING CONFERENCE/DOP/SA1:BEN HWANG/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15015349",
-    "portal_case_id": "",
+    "portal_case_id": "3814667",
     "display_case_number": "CRI-15015349",
     "defendant": "ERIC ANTHONY BONILLA",
     "filed_date": "2015-07-13",
@@ -59,12 +171,36 @@
       "defendant": "ERIC ANTHONY BONILLA",
       "filed_date": "2015-07-13"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ERIC ANTHONY BONILLA, and date of filing 2015-07-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ERIC ANTHONY BONILLA, and date of filing 2015-07-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:40:23.051Z",
+  "portal_case_id": "3814667",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15015349",
+      "defendant": "ERIC ANTHONY BONILLA",
+      "filed_date": "2015-07-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3814667"
+  }
 }

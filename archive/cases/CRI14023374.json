@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:41:50.998Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:46:24.018Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14023374",
   "criminal_case_number": "14023374",
@@ -24,11 +24,59 @@
       "name": "ANTHONY MARKLEY ALEXANDER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANTHONY MARKLEY ALEXANDER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-09-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FUGITIVE ARRAIGNMENT/PD/X:SFPD FUGITIVE OFFICER ROBERT HART APPEARING,/X:DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS IDENTITY AND WAIVES  EXTRADITION,/NB/CONTD:STATUS OF DELIVERY TO PALM BEACH, FL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-10-03T09:00:00.000Z",
+      "docketEntryComment": "/MO138573/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-10-03 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "2014-10-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-09-05 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 1,
+      "court_date": "2014-09-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARK JACOBS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3789935",
+  "docket_entries": [
+    {
+      "filedDate": "2014-09-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FUGITIVE ARRAIGNMENT/PD/X:SFPD FUGITIVE OFFICER ROBERT HART APPEARING,/X:DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS IDENTITY AND WAIVES  EXTRADITION,/NB/CONTD:STATUS OF DELIVERY TO PALM BEACH, FL/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-09-05T09:00:00.000Z",
+      "description": "/CAL:FUGITIVE ARRAIGNMENT/PD/X:SFPD FUGITIVE OFFICER ROBERT HART APPEARING,/X:DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS IDENTITY AND WAIVES EXTRADITION,/NB/CONTD:STATUS OF DELIVERY TO PALM BEACH, FL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-10-03T09:00:00.000Z",
+      "docketEntryComment": "/MO138573/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-10-03T09:00:00.000Z",
+      "description": "/MO138573/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14023374",
-    "portal_case_id": "",
+    "portal_case_id": "3789935",
     "display_case_number": "CRI-14023374",
     "defendant": "ANTHONY MARKLEY ALEXANDER",
     "filed_date": "2014-09-05",
@@ -63,8 +132,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANTHONY MARKLEY ALEXANDER, and date of filing 2014-09-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANTHONY MARKLEY ALEXANDER, and date of filing 2014-09-05. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:46:24.659Z",
+  "portal_case_id": "3789935",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14023374",
+      "defendant": "ANTHONY MARKLEY ALEXANDER",
+      "filed_date": "2014-09-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3789935"
+  }
 }

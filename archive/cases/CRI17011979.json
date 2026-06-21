@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:30:02.802Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:28:37.208Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17011979",
   "criminal_case_number": "17011979",
@@ -24,11 +24,96 @@
       "name": "CHARLEASE RASHIDA BELL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHARLEASE RASHIDA BELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-08-16T10:36:49.000Z",
+      "docketEntryComment": "Agreement and Order Releasing Defendant on Own Recognizance",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-08-16T10:36:20.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-09-26T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-09-14T09:15:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X:NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND  STAYED TO 09-26-17/X: BAIL SET AT $10,000 - NO CITE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-08-16T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/X:THE PUBLIC DEFENDER RESERVES THE RIGHT TO DEMURRER,/GTWM/ORNAS/SA1:GABRIEL VACA/SA1:MAI LY/SA2:LATTE EXPRESS COFFEE AT 48 6TH ST,, S,F, CA/SAORD/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-09-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:$10K BW STAY/BWLIFT:09-14-17/FTA/OREVKD/BWI/BAIL:10,000/BWNUM:1ST//CTORD:DO NOT CITE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-09-26 9:00 AM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2017-09-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-09-14 9:15 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2017-09-14",
+      "hearing_time": "9:15 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-08-16 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2017-08-16",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JOHNPAUL PASSAGLIA",
+      "type": "Public Defender"
+    },
+    {
+      "name": "CHLOE MCLEAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +130,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3861658",
+  "docket_entries": [
+    {
+      "filedDate": "2017-08-16T10:36:49.000Z",
+      "docketEntryComment": "Agreement and Order Releasing Defendant on Own Recognizance",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-08-16T10:36:49.000Z",
+      "description": "Agreement and Order Releasing Defendant on Own Recognizance",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-08-16T10:36:20.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-08-16T10:36:20.000Z",
+      "description": "Complaint",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-09-26T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-09-26T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-09-14T09:15:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X:NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND  STAYED TO 09-26-17/X: BAIL SET AT $10,000 - NO CITE/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-09-14T09:15:00.000Z",
+      "description": "/CAL:PRETRIAL/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X:NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO 09-26-17/X: BAIL SET AT $10,000 - NO CITE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-08-16T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/X:THE PUBLIC DEFENDER RESERVES THE RIGHT TO DEMURRER,/GTWM/ORNAS/SA1:GABRIEL VACA/SA1:MAI LY/SA2:LATTE EXPRESS COFFEE AT 48 6TH ST,, S,F, CA/SAORD/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2017-08-16T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/X:THE PUBLIC DEFENDER RESERVES THE RIGHT TO DEMURRER,/GTWM/ORNAS/SA1:GABRIEL VACA/SA1:MAI LY/SA2:LATTE EXPRESS COFFEE AT 48 6TH ST,, S,F, CA/SAORD/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-09-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:$10K BW STAY/BWLIFT:09-14-17/FTA/OREVKD/BWI/BAIL:10,000/BWNUM:1ST//CTORD:DO NOT CITE/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2017-09-26T09:00:00.000Z",
+      "description": "/CAL:$10K BW STAY/BWLIFT:09-14-17/FTA/OREVKD/BWI/BAIL:10,000/BWNUM:1ST//CTORD:DO NOT CITE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17011979",
-    "portal_case_id": "",
+    "portal_case_id": "3861658",
     "display_case_number": "CRI-17011979",
     "defendant": "CHARLEASE RASHIDA BELL",
     "filed_date": "2017-08-16",
@@ -63,8 +209,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHARLEASE RASHIDA BELL, and date of filing 2017-08-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHARLEASE RASHIDA BELL, and date of filing 2017-08-16. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:28:38.335Z",
+  "portal_case_id": "3861658",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17011979",
+      "defendant": "CHARLEASE RASHIDA BELL",
+      "filed_date": "2017-08-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3861658"
+  }
 }

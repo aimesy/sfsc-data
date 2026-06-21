@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:27:16.344Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:54:29.949Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13034534",
   "criminal_case_number": "13034534",
@@ -24,11 +24,59 @@
       "name": "RODELL ARMSTRONG",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RODELL ARMSTRONG",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-12-31T13:30:00.000Z",
+      "docketEntryComment": "/CAL:DISTRICT ATTORNEY'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/3000ADV/3000ADM/3000REIN/PAJ:62 DAYS /X:PAROLEE SHALL RECEIVE CREDIT FOR  25  DAYS,/4019HALF/X:PAROLE REINSTATED TO: 12-08-13 /X:PAROLEE ORDERED TO REPORT TO PAROLE UPONRELEASE AND COMPLY WITH TREATMENT PER PAROLEAGENT,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-12-17T13:30:00.000Z",
+      "docketEntryComment": "CAL:DISTRICT ATTORNEY'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/X:THE PAROLEE ENTERS A NOT TRUE AS TO ALL ALLEGATIONS,//X:THE COURT FINDS PROBABLE CAUSE,/NB/X:THE MATTER IS CONTINUED FOR STATUSOF FELONY,",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-12-31 1:30 PM",
+      "hearingType": "To Set MTR Parole Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 0,
+      "court_date": "2013-12-31",
+      "hearing_time": "1:30 PM",
+      "matters": "To Set MTR Parole Hearing",
+      "hearing_type": "To Set MTR Parole Hearing",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-12-17 1:30 PM",
+      "hearingType": "PC 3056 Petition to Revoke Parole",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 1,
+      "court_date": "2013-12-17",
+      "hearing_time": "1:30 PM",
+      "matters": "PC 3056 Petition to Revoke Parole",
+      "hearing_type": "PC 3056 Petition to Revoke Parole",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ARMANDO MIRANDA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3764789",
+  "docket_entries": [
+    {
+      "filedDate": "2013-12-31T13:30:00.000Z",
+      "docketEntryComment": "/CAL:DISTRICT ATTORNEY'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/3000ADV/3000ADM/3000REIN/PAJ:62 DAYS /X:PAROLEE SHALL RECEIVE CREDIT FOR  25  DAYS,/4019HALF/X:PAROLE REINSTATED TO: 12-08-13 /X:PAROLEE ORDERED TO REPORT TO PAROLE UPONRELEASE AND COMPLY WITH TREATMENT PER PAROLEAGENT,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-12-31T13:30:00.000Z",
+      "description": "/CAL:DISTRICT ATTORNEY'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/3000ADV/3000ADM/3000REIN/PAJ:62 DAYS /X:PAROLEE SHALL RECEIVE CREDIT FOR 25 DAYS,/4019HALF/X:PAROLE REINSTATED TO: 12-08-13 /X:PAROLEE ORDERED TO REPORT TO PAROLE UPONRELEASE AND COMPLY WITH TREATMENT PER PAROLEAGENT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-12-17T13:30:00.000Z",
+      "docketEntryComment": "CAL:DISTRICT ATTORNEY'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/X:THE PAROLEE ENTERS A NOT TRUE AS TO ALL ALLEGATIONS,//X:THE COURT FINDS PROBABLE CAUSE,/NB/X:THE MATTER IS CONTINUED FOR STATUSOF FELONY,",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-12-17T13:30:00.000Z",
+      "description": "CAL:DISTRICT ATTORNEY'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/X:THE PAROLEE ENTERS A NOT TRUE AS TO ALL ALLEGATIONS,//X:THE COURT FINDS PROBABLE CAUSE,/NB/X:THE MATTER IS CONTINUED FOR STATUSOF FELONY,",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13034534",
-    "portal_case_id": "",
+    "portal_case_id": "3764789",
     "display_case_number": "CRI-13034534",
     "defendant": "RODELL ARMSTRONG",
     "filed_date": "2013-12-10",
@@ -59,12 +128,36 @@
       "defendant": "RODELL ARMSTRONG",
       "filed_date": "2013-12-10"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC3000",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RODELL ARMSTRONG, and date of filing 2013-12-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RODELL ARMSTRONG, and date of filing 2013-12-10. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:54:30.573Z",
+  "portal_case_id": "3764789",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13034534",
+      "defendant": "RODELL ARMSTRONG",
+      "filed_date": "2013-12-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3764789"
+  }
 }

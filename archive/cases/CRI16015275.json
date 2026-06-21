@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:29:39.764Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:36:03.501Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI16015275",
   "criminal_case_number": "16015275",
@@ -24,11 +24,96 @@
       "name": "ROBERT LEE ANDREWS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROBERT LEE ANDREWS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-03-01T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-10-04T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-02-08T09:06:00.000Z",
+      "docketEntryComment": "PEOPLE'S ATC TO RECALL BW ISSUED 10/14/16 AND DISMISS THE CASE, FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-08-24T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/GTWM/987,2/SAORD/SA1:JOSEPH VALENCIA MARANON/SAORD2/SA2:CVS DRUG STORE AT 2280 MARKETSTREET, SAN FRANCISCO/SAORD4:100 YARDS/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-03-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DA MOTION TO RECALL BW & DISMISS BY DA/BWR:10-04-16 /BWR1/TEXT:COURTORDERS CAUSE DISM PURS PC 1381/MO PC 1381/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-10-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/FTA/OREVKD/BWI/BAIL:2,500/BWNUM:1ST/CTORD:DO NOT CITE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-03-01 9:00 AM",
+      "hearingType": "Motion to Recall Bench Warrant and Terminate Probation (PC 1381)",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2017-03-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Recall Bench Warrant and Terminate Probation (PC 1381)",
+      "hearing_type": "Motion to Recall Bench Warrant and Terminate Probation (PC 1381)",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-10-04 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2016-10-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-08-24 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2016-08-24",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JAIME LONGORIA",
+      "type": "Public Defender"
+    },
+    {
+      "name": "SAMAGNYA DUVVURI",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +130,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3842660",
+  "docket_entries": [
+    {
+      "filedDate": "2017-03-01T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-03-01T09:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-10-04T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-10-04T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-02-08T09:06:00.000Z",
+      "docketEntryComment": "PEOPLE'S ATC TO RECALL BW ISSUED 10/14/16 AND DISMISS THE CASE, FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-02-08T09:06:00.000Z",
+      "description": "PEOPLE'S ATC TO RECALL BW ISSUED 10/14/16 AND DISMISS THE CASE, FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-08-24T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/GTWM/987,2/SAORD/SA1:JOSEPH VALENCIA MARANON/SAORD2/SA2:CVS DRUG STORE AT 2280 MARKETSTREET, SAN FRANCISCO/SAORD4:100 YARDS/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2016-08-24T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/GTWM/987,2/SAORD/SA1:JOSEPH VALENCIA MARANON/SAORD2/SA2:CVS DRUG STORE AT 2280 MARKETSTREET, SAN FRANCISCO/SAORD4:100 YARDS/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-03-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DA MOTION TO RECALL BW & DISMISS BY DA/BWR:10-04-16 /BWR1/TEXT:COURTORDERS CAUSE DISM PURS PC 1381/MO PC 1381/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2017-03-01T09:00:00.000Z",
+      "description": "/CAL:DA MOTION TO RECALL BW & DISMISS BY DA/BWR:10-04-16 /BWR1/TEXT:COURTORDERS CAUSE DISM PURS PC 1381/MO PC 1381/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-10-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/FTA/OREVKD/BWI/BAIL:2,500/BWNUM:1ST/CTORD:DO NOT CITE/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2016-10-04T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/FTA/OREVKD/BWI/BAIL:2,500/BWNUM:1ST/CTORD:DO NOT CITE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "16015275",
-    "portal_case_id": "",
+    "portal_case_id": "3842660",
     "display_case_number": "CRI-16015275",
     "defendant": "ROBERT LEE ANDREWS",
     "filed_date": "2016-08-24",
@@ -59,12 +205,36 @@
       "defendant": "ROBERT LEE ANDREWS",
       "filed_date": "2016-08-24"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1381",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROBERT LEE ANDREWS, and date of filing 2016-08-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROBERT LEE ANDREWS, and date of filing 2016-08-24. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:36:04.041Z",
+  "portal_case_id": "3842660",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-16015275",
+      "defendant": "ROBERT LEE ANDREWS",
+      "filed_date": "2016-08-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3842660"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:29:37.787Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:23:35.685Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18012678",
   "criminal_case_number": "18012678",
@@ -24,11 +24,86 @@
       "name": "CHRISTOPHER BARRAGAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHRISTOPHER BARRAGAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-08-23T15:49:00.000Z",
+      "docketEntryComment": "DEF MOT TO SUPP-FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-10-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRAILING #18014846/MO PC 1385:NEGOTIATED DISPOSITION/X: HARVEY WAIVER VICTIM RESTITUTION AND STAY AWAY ORDERS OF CASE NO, 18012678 INTO 18014846/VD: 10-15-18/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-09-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/JAVS/NP/X:THE DEFENDANT IS IN CUSTODY FOR A FELONY MATTER 18014846/SHER/SHER1:09-24-18/BAIL:5,000/NTW/LDTR:10-29-18/CONTD:TO TRAIL FELONY 18014846 IN DEPARTMENT 12/CONTD:TRIAL IN DEPARTMENT 17/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-08-20T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/ACM/SAORD/SA2:1112 JONES ST (GRACE CATHEDRAL)/SAORD4:50 YARDS/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-10-10 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2018-10-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-09-28 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2018-09-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-08-20 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2018-08-20",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PRYA MURAD",
+      "type": "Public Defender"
+    },
+    {
+      "name": "MEGAN HAMILTON",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3881184",
+  "docket_entries": [
+    {
+      "filedDate": "2018-08-23T15:49:00.000Z",
+      "docketEntryComment": "DEF MOT TO SUPP-FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-08-23T15:49:00.000Z",
+      "description": "DEF MOT TO SUPP-FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-10-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRAILING #18014846/MO PC 1385:NEGOTIATED DISPOSITION/X: HARVEY WAIVER VICTIM RESTITUTION AND STAY AWAY ORDERS OF CASE NO, 18012678 INTO 18014846/VD: 10-15-18/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-10-10T09:00:00.000Z",
+      "description": "/CAL: TRAILING #18014846/MO PC 1385:NEGOTIATED DISPOSITION/X: HARVEY WAIVER VICTIM RESTITUTION AND STAY AWAY ORDERS OF CASE NO, 18012678 INTO 18014846/VD: 10-15-18/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-09-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/JAVS/NP/X:THE DEFENDANT IS IN CUSTODY FOR A FELONY MATTER 18014846/SHER/SHER1:09-24-18/BAIL:5,000/NTW/LDTR:10-29-18/CONTD:TO TRAIL FELONY 18014846 IN DEPARTMENT 12/CONTD:TRIAL IN DEPARTMENT 17/DOPC/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-09-28T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/JAVS/NP/X:THE DEFENDANT IS IN CUSTODY FOR A FELONY MATTER 18014846/SHER/SHER1:09-24-18/BAIL:5,000/NTW/LDTR:10-29-18/CONTD:TO TRAIL FELONY 18014846 IN DEPARTMENT 12/CONTD:TRIAL IN DEPARTMENT 17/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-08-20T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/ACM/SAORD/SA2:1112 JONES ST (GRACE CATHEDRAL)/SAORD4:50 YARDS/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-08-20T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/ACM/SAORD/SA2:1112 JONES ST (GRACE CATHEDRAL)/SAORD4:50 YARDS/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18012678",
-    "portal_case_id": "",
+    "portal_case_id": "3881184",
     "display_case_number": "CRI-18012678",
     "defendant": "CHRISTOPHER BARRAGAN",
     "filed_date": "2018-08-02",
@@ -59,12 +175,36 @@
       "defendant": "CHRISTOPHER BARRAGAN",
       "filed_date": "2018-08-02"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHRISTOPHER BARRAGAN, and date of filing 2018-08-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHRISTOPHER BARRAGAN, and date of filing 2018-08-02. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:23:36.294Z",
+  "portal_case_id": "3881184",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18012678",
+      "defendant": "CHRISTOPHER BARRAGAN",
+      "filed_date": "2018-08-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3881184"
+  }
 }

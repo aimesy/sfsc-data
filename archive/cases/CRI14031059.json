@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:25:33.417Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:47:32.633Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14031059",
   "criminal_case_number": "14031059",
@@ -24,11 +24,86 @@
       "name": "RANDALL BASS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RANDALL BASS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-12-09T10:03:00.000Z",
+      "docketEntryComment": "DEFT'S MOT TO CONTINUE (PRELIM HRG) FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-01-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRELIMINARY HEARING/MO PC 1385:REPLACED BY GRAND JURY INDICTMENT/BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-12-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING & DEFENDANT'S MOTION TO CONTINUE/MO GRTD/STWPX//CONTD:TO SET PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-12-04T13:30:00.000Z",
+      "docketEntryComment": "/CAL ARRAIGNMENT/TEXT DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:12-18-14/BAIL:150,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-01-21 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2015-01-21",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-12-17 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2014-12-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-12-04 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2014-12-04",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CHRISTOPHER HITE",
+      "type": "Public Defender"
+    },
+    {
+      "name": "ROBERT HIGHTOWER",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3797479",
+  "docket_entries": [
+    {
+      "filedDate": "2014-12-09T10:03:00.000Z",
+      "docketEntryComment": "DEFT'S MOT TO CONTINUE (PRELIM HRG) FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-12-09T10:03:00.000Z",
+      "description": "DEFT'S MOT TO CONTINUE (PRELIM HRG) FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-01-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRELIMINARY HEARING/MO PC 1385:REPLACED BY GRAND JURY INDICTMENT/BE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-01-21T09:00:00.000Z",
+      "description": "/CAL:TO SET PRELIMINARY HEARING/MO PC 1385:REPLACED BY GRAND JURY INDICTMENT/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-12-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING & DEFENDANT'S MOTION TO CONTINUE/MO GRTD/STWPX//CONTD:TO SET PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2014-12-17T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING & DEFENDANT'S MOTION TO CONTINUE/MO GRTD/STWPX//CONTD:TO SET PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-12-04T13:30:00.000Z",
+      "docketEntryComment": "/CAL ARRAIGNMENT/TEXT DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:12-18-14/BAIL:150,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2014-12-04T13:30:00.000Z",
+      "description": "/CAL ARRAIGNMENT/TEXT DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:12-18-14/BAIL:150,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14031059",
-    "portal_case_id": "",
+    "portal_case_id": "3797479",
     "display_case_number": "CRI-14031059",
     "defendant": "RANDALL BASS",
     "filed_date": "2014-12-03",
@@ -59,12 +175,36 @@
       "defendant": "RANDALL BASS",
       "filed_date": "2014-12-03"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RANDALL BASS, and date of filing 2014-12-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RANDALL BASS, and date of filing 2014-12-03. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:47:33.294Z",
+  "portal_case_id": "3797479",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14031059",
+      "defendant": "RANDALL BASS",
+      "filed_date": "2014-12-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3797479"
+  }
 }

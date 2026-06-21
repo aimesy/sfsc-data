@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:44:12.286Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:37:43.214Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI16021141",
   "criminal_case_number": "16021141",
@@ -24,11 +24,77 @@
       "name": "TYRONE BUTLER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TYRONE BUTLER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-12-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DISPO/MO138583/DEF:ADMITTED IN PROBATION, CASE #15002929/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-12-06T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:BAIL REMAINS THE SAME,/GTWM/CONTD:DISPO/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-12-05T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/BAIL:5,000/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-12-09 9:00 AM",
+      "hearingType": "Entry of Plea",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2016-12-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Entry of Plea",
+      "hearing_type": "Entry of Plea",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-12-06 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2016-12-06",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-12-05 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2016-12-05",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SALEEM BELBAHRI",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3848420",
+  "docket_entries": [
+    {
+      "filedDate": "2016-12-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DISPO/MO138583/DEF:ADMITTED IN PROBATION, CASE #15002929/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-12-09T09:00:00.000Z",
+      "description": "/CAL:DISPO/MO138583/DEF:ADMITTED IN PROBATION, CASE #15002929/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-12-06T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:BAIL REMAINS THE SAME,/GTWM/CONTD:DISPO/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-12-06T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:BAIL REMAINS THE SAME,/GTWM/CONTD:DISPO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-12-05T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/BAIL:5,000/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-12-05T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/NP/BAIL:5,000/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "16021141",
-    "portal_case_id": "",
+    "portal_case_id": "3848420",
     "display_case_number": "CRI-16021141",
     "defendant": "TYRONE BUTLER",
     "filed_date": "2016-12-05",
@@ -63,8 +160,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TYRONE BUTLER, and date of filing 2016-12-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TYRONE BUTLER, and date of filing 2016-12-05. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:37:44.037Z",
+  "portal_case_id": "3848420",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-16021141",
+      "defendant": "TYRONE BUTLER",
+      "filed_date": "2016-12-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3848420"
+  }
 }

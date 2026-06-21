@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:54:47.062Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:32:33.342Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI16005168",
   "criminal_case_number": "16005168",
@@ -24,11 +24,68 @@
       "name": "DANA NIKA DAWSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DANA NIKA DAWSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2021-10-27T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-04-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/3455REIN/CH1:CJ 19D/CTS:19/4019HALF/CCC:CASES #16005168 & #16005123/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-03-23T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOTION/PD/WIAMTR/SHER/NB/CONTD:TO JOIN 16005123 & TO SETAPD PRCS MOT/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-04-04 9:00 AM",
+      "hearingType": "To Set MTR PRCS Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2016-04-04",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set MTR PRCS Hearing",
+      "hearing_type": "To Set MTR PRCS Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-03-23 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2016-03-23",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ADAM LIPSON",
+      "type": "Public Defender"
+    },
+    {
+      "name": "LAILAH MORRIS",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +102,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3832704",
+  "docket_entries": [
+    {
+      "filedDate": "2021-10-27T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2021-10-27T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-04-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/3455REIN/CH1:CJ 19D/CTS:19/4019HALF/CCC:CASES #16005168 & #16005123/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-04-04T09:00:00.000Z",
+      "description": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/3455REIN/CH1:CJ 19D/CTS:19/4019HALF/CCC:CASES #16005168 & #16005123/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-03-23T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOTION/PD/WIAMTR/SHER/NB/CONTD:TO JOIN 16005123 & TO SETAPD PRCS MOT/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-03-23T11:30:00.000Z",
+      "description": "/CAL:APD 3455PC MOTION/PD/WIAMTR/SHER/NB/CONTD:TO JOIN 16005123 & TO SETAPD PRCS MOT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "16005168",
-    "portal_case_id": "",
+    "portal_case_id": "3832704",
     "display_case_number": "CRI-16005168",
     "defendant": "DANA NIKA DAWSON",
     "filed_date": "2016-03-23",
@@ -59,12 +147,44 @@
       "defendant": "DANA NIKA DAWSON",
       "filed_date": "2016-03-23"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DANA NIKA DAWSON, and date of filing 2016-03-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DANA NIKA DAWSON, and date of filing 2016-03-23. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:32:33.920Z",
+  "portal_case_id": "3832704",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-16005168",
+      "defendant": "DANA NIKA DAWSON",
+      "filed_date": "2016-03-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3832704"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:31:26.067Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:20:21.927Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18005363",
   "criminal_case_number": "18005363",
@@ -24,11 +24,59 @@
       "name": "DOUGLAS D BLUNT",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DOUGLAS D BLUNT",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-04-12T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/X: DEFENSE RESERVES THE RIGHT TO DEMUR/SA4: NIKE STORE AT 278 POSTST,, SF/SAORD/LDPX: 04-26-18/987,2/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-04-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:UNABLE TO SUSTAIN/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-04-23 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2018-04-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-04-12 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2018-04-12",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "LANDON DAVIS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3874045",
+  "docket_entries": [
+    {
+      "filedDate": "2018-04-12T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/X: DEFENSE RESERVES THE RIGHT TO DEMUR/SA4: NIKE STORE AT 278 POSTST,, SF/SAORD/LDPX: 04-26-18/987,2/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-04-12T13:30:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/X: DEFENSE RESERVES THE RIGHT TO DEMUR/SA4: NIKE STORE AT 278 POSTST,, SF/SAORD/LDPX: 04-26-18/987,2/CONTD: PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-04-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:UNABLE TO SUSTAIN/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-04-23T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO PC 1385:UNABLE TO SUSTAIN/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18005363",
-    "portal_case_id": "",
+    "portal_case_id": "3874045",
     "display_case_number": "CRI-18005363",
     "defendant": "DOUGLAS D BLUNT",
     "filed_date": "2018-04-10",
@@ -59,12 +128,36 @@
       "defendant": "DOUGLAS D BLUNT",
       "filed_date": "2018-04-10"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DOUGLAS D BLUNT, and date of filing 2018-04-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DOUGLAS D BLUNT, and date of filing 2018-04-10. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:20:22.516Z",
+  "portal_case_id": "3874045",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18005363",
+      "defendant": "DOUGLAS D BLUNT",
+      "filed_date": "2018-04-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3874045"
+  }
 }

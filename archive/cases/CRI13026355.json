@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:44:12.287Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:53:13.957Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13026355",
   "criminal_case_number": "13026355",
@@ -24,11 +24,41 @@
       "name": "TYRONE BUTLER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TYRONE BUTLER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-10-08T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/X:PETITION DISMESSED,/X:PAROLE WAS SUSPENDED ON 12-21-12; PAROLEIS REINSTATED AS OF 09-17-13,/X:PAROLEE ORDERED TO REPORT TO PAROLE UPONRELEASE AND COMPLY WITH TREATMENT PER PAROLE AGENT,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-10-08 1:30 PM",
+      "hearingType": "PC 3056 Petition to Revoke Parole",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 0,
+      "court_date": "2013-10-08",
+      "hearing_time": "1:30 PM",
+      "matters": "PC 3056 Petition to Revoke Parole",
+      "hearing_type": "PC 3056 Petition to Revoke Parole",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ARMANDO MIRANDA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +75,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3756707",
+  "docket_entries": [
+    {
+      "filedDate": "2013-10-08T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/X:PETITION DISMESSED,/X:PAROLE WAS SUSPENDED ON 12-21-12; PAROLEIS REINSTATED AS OF 09-17-13,/X:PAROLEE ORDERED TO REPORT TO PAROLE UPONRELEASE AND COMPLY WITH TREATMENT PER PAROLE AGENT,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-10-08T13:30:00.000Z",
+      "description": "/CAL:PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/X:PETITION DISMESSED,/X:PAROLE WAS SUSPENDED ON 12-21-12; PAROLEIS REINSTATED AS OF 09-17-13,/X:PAROLEE ORDERED TO REPORT TO PAROLE UPONRELEASE AND COMPLY WITH TREATMENT PER PAROLE AGENT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13026355",
-    "portal_case_id": "",
+    "portal_case_id": "3756707",
     "display_case_number": "CRI-13026355",
     "defendant": "TYRONE BUTLER",
     "filed_date": "2013-09-30",
@@ -59,12 +100,36 @@
       "defendant": "TYRONE BUTLER",
       "filed_date": "2013-09-30"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC3000",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TYRONE BUTLER, and date of filing 2013-09-30. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TYRONE BUTLER, and date of filing 2013-09-30. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:53:15.114Z",
+  "portal_case_id": "3756707",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13026355",
+      "defendant": "TYRONE BUTLER",
+      "filed_date": "2013-09-30"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3756707"
+  }
 }

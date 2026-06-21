@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:37:01.344Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:45:06.220Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14026046",
   "criminal_case_number": "14026046",
@@ -24,11 +24,97 @@
       "name": "ELLIOT LEE ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ELLIOT LEE ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-10-17T09:01:00.000Z",
+      "docketEntryComment": "Held to Answer",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-10-30T15:00:00.000Z",
+      "docketEntryComment": "NO INFO FILED PER DA'S OFFICE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-10-20T15:00:00.000Z",
+      "docketEntryComment": "PRELIM TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-10-15T15:46:00.000Z",
+      "docketEntryComment": "DEFT'S MOT FOR RELEASE ON OR/BAIL FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-10-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING & DEFT MOTION FOR OR RELEASE/WITEXCL:DEFENSE/WITSWORN:CA HIGHWAY PATROL OFFICER NICHOLAS MALATO/HTA1:1/871D:2 & 3/X:COUNT 4 IS AMENDED TO CONFORM TO PROOF TO DELETE VICTIM BRENT ALFIERI AND TO ADD VICTIMS: OMAR MONTES, EVERLYN DOMINGUEZ, ANTONIO RUSSELL, JONATHANRIVERA& EBENEZER LUNAGBAS/X:COUNTS 4 & 5 ARE CERTIFIED TO SUPERIOR COURT/BAIL:75,000/DEF:17B MOTION IS DENIED WITHOUT PREJUDICE/DEFTCUST3/SHERCOM1/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-10-03T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DEF:RESERVES THERIGHT TO DEMURRER/NTW/LDPX: 10-20-14/987,2/BAIL:200000     /CONTD PRELIMHRG, DOP/CONTD:FOR PRELIMINARY HEARING/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-10-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/BE/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-10-31 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2014-10-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-10-17 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2014-10-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-10-03 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2014-10-03",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CINDY ELIAS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +131,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3792568",
+  "docket_entries": [
+    {
+      "filedDate": "2014-10-17T09:01:00.000Z",
+      "docketEntryComment": "Held to Answer",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-10-17T09:01:00.000Z",
+      "description": "Held to Answer",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-10-30T15:00:00.000Z",
+      "docketEntryComment": "NO INFO FILED PER DA'S OFFICE",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-10-30T15:00:00.000Z",
+      "description": "NO INFO FILED PER DA'S OFFICE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-10-20T15:00:00.000Z",
+      "docketEntryComment": "PRELIM TX FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2014-10-20T15:00:00.000Z",
+      "description": "PRELIM TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-10-15T15:46:00.000Z",
+      "docketEntryComment": "DEFT'S MOT FOR RELEASE ON OR/BAIL FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2014-10-15T15:46:00.000Z",
+      "description": "DEFT'S MOT FOR RELEASE ON OR/BAIL FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-10-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING & DEFT MOTION FOR OR RELEASE/WITEXCL:DEFENSE/WITSWORN:CA HIGHWAY PATROL OFFICER NICHOLAS MALATO/HTA1:1/871D:2 & 3/X:COUNT 4 IS AMENDED TO CONFORM TO PROOF TO DELETE VICTIM BRENT ALFIERI AND TO ADD VICTIMS: OMAR MONTES, EVERLYN DOMINGUEZ, ANTONIO RUSSELL, JONATHANRIVERA& EBENEZER LUNAGBAS/X:COUNTS 4 & 5 ARE CERTIFIED TO SUPERIOR COURT/BAIL:75,000/DEF:17B MOTION IS DENIED WITHOUT PREJUDICE/DEFTCUST3/SHERCOM1/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2014-10-17T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING & DEFT MOTION FOR OR RELEASE/WITEXCL:DEFENSE/WITSWORN:CA HIGHWAY PATROL OFFICER NICHOLAS MALATO/HTA1:1/871D:2 & 3/X:COUNT 4 IS AMENDED TO CONFORM TO PROOF TO DELETE VICTIM BRENT ALFIERI AND TO ADD VICTIMS: OMAR MONTES, EVERLYN DOMINGUEZ, ANTONIO RUSSELL, JONATHANRIVERA& EBENEZER LUNAGBAS/X:COUNTS 4 & 5 ARE CERTIFIED TO SUPERIOR COURT/BAIL:75,000/DEF:17B MOTION IS DENIED WITHOUT PREJUDICE/DEFTCUST3/SHERCOM1/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-10-03T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DEF:RESERVES THERIGHT TO DEMURRER/NTW/LDPX: 10-20-14/987,2/BAIL:200000     /CONTD PRELIMHRG, DOP/CONTD:FOR PRELIMINARY HEARING/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2014-10-03T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DEF:RESERVES THERIGHT TO DEMURRER/NTW/LDPX: 10-20-14/987,2/BAIL:200000 /CONTD PRELIMHRG, DOP/CONTD:FOR PRELIMINARY HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-10-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/BE/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2014-10-31T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/BE/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14026046",
-    "portal_case_id": "",
+    "portal_case_id": "3792568",
     "display_case_number": "CRI-14026046",
     "defendant": "ELLIOT LEE ALLEN",
     "filed_date": "2014-10-03",
@@ -63,8 +220,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ELLIOT LEE ALLEN, and date of filing 2014-10-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ELLIOT LEE ALLEN, and date of filing 2014-10-03. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:45:06.884Z",
+  "portal_case_id": "3792568",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14026046",
+      "defendant": "ELLIOT LEE ALLEN",
+      "filed_date": "2014-10-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3792568"
+  }
 }

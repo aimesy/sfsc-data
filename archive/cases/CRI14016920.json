@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:40:03.683Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:44:56.162Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14016920",
   "criminal_case_number": "14016920",
@@ -24,11 +24,59 @@
       "name": "ALI BAILEY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALI BAILEY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-11-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FUGITIVE ARRAIGNMENT/X:SFPD FUGITIVE OFFICER ROBERT HART APPEARING,/PD/X:DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS IDENTITY AND WAIVES  EXTRADITION,/CONTD:STATUS OF DELIVERY TO MONEOLA, NEW YORK/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-12-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS OF DELIVERY TO MINEOLA, NEW YORK/DAWT/X:SFPD FUGITIVE UNIT'S OFFICER ROBERT HART APPEARING/MO PC 1385:DEFENDANT HAS BEEN DELIVERED /",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-12-19 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "2014-12-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-11-21 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 1,
+      "court_date": "2014-11-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARK JACOBS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3783569",
+  "docket_entries": [
+    {
+      "filedDate": "2014-11-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FUGITIVE ARRAIGNMENT/X:SFPD FUGITIVE OFFICER ROBERT HART APPEARING,/PD/X:DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS IDENTITY AND WAIVES  EXTRADITION,/CONTD:STATUS OF DELIVERY TO MONEOLA, NEW YORK/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-11-21T09:00:00.000Z",
+      "description": "/CAL:FUGITIVE ARRAIGNMENT/X:SFPD FUGITIVE OFFICER ROBERT HART APPEARING,/PD/X:DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS IDENTITY AND WAIVES EXTRADITION,/CONTD:STATUS OF DELIVERY TO MONEOLA, NEW YORK/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-12-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS OF DELIVERY TO MINEOLA, NEW YORK/DAWT/X:SFPD FUGITIVE UNIT'S OFFICER ROBERT HART APPEARING/MO PC 1385:DEFENDANT HAS BEEN DELIVERED /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-12-19T09:00:00.000Z",
+      "description": "/CAL:STATUS OF DELIVERY TO MINEOLA, NEW YORK/DAWT/X:SFPD FUGITIVE UNIT'S OFFICER ROBERT HART APPEARING/MO PC 1385:DEFENDANT HAS BEEN DELIVERED /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14016920",
-    "portal_case_id": "",
+    "portal_case_id": "3783569",
     "display_case_number": "CRI-14016920",
     "defendant": "ALI BAILEY",
     "filed_date": "2014-11-21",
@@ -59,12 +128,36 @@
       "defendant": "ALI BAILEY",
       "filed_date": "2014-11-21"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALI BAILEY, and date of filing 2014-11-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALI BAILEY, and date of filing 2014-11-21. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:44:56.827Z",
+  "portal_case_id": "3783569",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14016920",
+      "defendant": "ALI BAILEY",
+      "filed_date": "2014-11-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3783569"
+  }
 }
