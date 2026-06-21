@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:42:27.466Z",
+  "captured_at": "2026-06-21T13:14:54.728Z",
   "criminal_case_number": "20006564",
   "status": "found",
   "portal_case_id": "3914705",
@@ -222,9 +222,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "TROY DON HAWTHORNE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-20006564",
+    "defendant": "TROY DON HAWTHORNE",
+    "filed_date": "2020-06-09"
+  },
+  "case_header_checked_at": "2026-06-21T13:14:55.354Z",
+  "display_case_number": "CRI-20006564",
+  "defendant": "TROY DON HAWTHORNE",
+  "case_title": "People v. TROY DON HAWTHORNE",
+  "filed_date": "2020-06-09",
   "case_type": "criminal",
   "case_number": "CRI20006564",
-  "case_title": "San Francisco criminal case 20006564",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3914705",
@@ -390,7 +407,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -398,6 +414,15 @@
   "criminal": {
     "raw_case_number": "20006564",
     "portal_case_id": "3914705",
+    "display_case_number": "CRI-20006564",
+    "defendant": "TROY DON HAWTHORNE",
+    "filed_date": "2020-06-09",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-20006564",
+      "defendant": "TROY DON HAWTHORNE",
+      "filed_date": "2020-06-09"
+    },
     "statutes": [
       {
         "code": "PC 459",

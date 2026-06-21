@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:28:48.811Z",
+  "captured_at": "2026-06-21T13:15:03.229Z",
   "criminal_case_number": "20008751",
   "status": "found",
   "portal_case_id": "3916820",
@@ -505,9 +505,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "JAMES JOHNSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-20008751",
+    "defendant": "JAMES JOHNSON",
+    "filed_date": "2020-08-11"
+  },
+  "case_header_checked_at": "2026-06-21T13:15:03.836Z",
+  "display_case_number": "CRI-20008751",
+  "defendant": "JAMES JOHNSON",
+  "case_title": "People v. JAMES JOHNSON",
+  "filed_date": "2020-08-11",
   "case_type": "criminal",
   "case_number": "CRI20008751",
-  "case_title": "San Francisco criminal case 20008751",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3916820",
@@ -823,7 +840,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -831,6 +847,15 @@
   "criminal": {
     "raw_case_number": "20008751",
     "portal_case_id": "3916820",
+    "display_case_number": "CRI-20008751",
+    "defendant": "JAMES JOHNSON",
+    "filed_date": "2020-08-11",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-20008751",
+      "defendant": "JAMES JOHNSON",
+      "filed_date": "2020-08-11"
+    },
     "statutes": [],
     "inferred_charges": []
   },

@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:44:07.127Z",
+  "captured_at": "2026-06-21T13:14:37.253Z",
   "criminal_case_number": "20003284",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "3911521",
   "search": {
     "code": 1,
@@ -14,14 +14,30 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "LARON LARRY NEWSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-20003284",
+    "defendant": "LARON LARRY NEWSON",
+    "filed_date": "2020-03-02"
+  },
+  "case_header_checked_at": "2026-06-21T13:14:37.917Z",
+  "display_case_number": "CRI-20003284",
+  "defendant": "LARON LARRY NEWSON",
+  "case_title": "People v. LARON LARRY NEWSON",
+  "filed_date": "2020-03-02",
   "case_type": "criminal",
   "case_number": "CRI20003284",
-  "case_title": "San Francisco criminal case 20003284",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3911521",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +45,20 @@
   "criminal": {
     "raw_case_number": "20003284",
     "portal_case_id": "3911521",
+    "display_case_number": "CRI-20003284",
+    "defendant": "LARON LARRY NEWSON",
+    "filed_date": "2020-03-02",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-20003284",
+      "defendant": "LARON LARRY NEWSON",
+      "filed_date": "2020-03-02"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LARON LARRY NEWSON, and date of filing 2020-03-02. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0
