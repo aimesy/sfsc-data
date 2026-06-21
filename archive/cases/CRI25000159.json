@@ -1,0 +1,118 @@
+{
+  "schema": "sfsc-criminal-portal-case-v1",
+  "source": "sftc-criminal-portal",
+  "captured_at": "2026-06-21T00:26:50.997Z",
+  "criminal_case_number": "25000159",
+  "status": "found",
+  "portal_case_id": "4161354",
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4161354"
+  },
+  "roa": [
+    {
+      "filedDate": "2025-09-12T12:00:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2025-09-11T10:06:52.000Z",
+      "docketEntryComment": "Complaint Re-Filed Pursuant to PC 1388",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2025-09-12 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "2025-09-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "Rachel Schneider",
+      "type": "District Attorney"
+    },
+    {
+      "name": "Ricky Herrera",
+      "type": "District Attorney"
+    },
+    {
+      "name": "Corliss Brekken",
+      "type": "District Attorney"
+    }
+  ],
+  "case_type": "criminal",
+  "case_number": "CRI25000159",
+  "case_title": "San Francisco criminal case 25000159",
+  "court": "San Francisco Superior Court - Criminal",
+  "cause_of_action": "Criminal",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4161354",
+  "docket_entries": [
+    {
+      "filedDate": "2025-09-12T12:00:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2025-09-12T12:00:00.000Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2025-09-11T10:06:52.000Z",
+      "docketEntryComment": "Complaint Re-Filed Pursuant to PC 1388",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2025-09-11T10:06:52.000Z",
+      "description": "Complaint Re-Filed Pursuant to PC 1388",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
+  "parties": [],
+  "documents": [],
+  "payments": [],
+  "document_bytes_captured": true,
+  "document_byte_capture_scope": "criminal-portal-no-documents",
+  "criminal": {
+    "raw_case_number": "25000159",
+    "portal_case_id": "4161354",
+    "statutes": [
+      {
+        "code": "PC 1388",
+        "count": 2,
+        "sources": [
+          "roa",
+          "docket_entries"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 1388",
+        "count": 2,
+        "sources": [
+          "roa",
+          "docket_entries"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ]
+  },
+  "documents_bytes_count": 0,
+  "documents_unavailable_count": 0,
+  "documents_deferred_count": 0
+}
