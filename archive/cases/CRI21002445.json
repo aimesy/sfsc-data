@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:04:56.906Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:58:28.313Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI21002445",
   "criminal_case_number": "21002445",
@@ -24,9 +24,25 @@
       "name": "JASON ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JASON ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2021-03-30T08:30:00.000Z",
+      "docketEntryComment": "/CAL: DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/X: PAROLE AGENT BRANDON LUGAR APPEARING/3000ADM/X:ADMITS VIOLATION #1, AND #2 /3000REIN/PAJ: 90 DAYS/X: WITH TIME LOST/X: PAROLEE SHALL RECEIVE CREDIT FOR 25 DAYS,/4019HALF/X: REMAINDER OF VIOLATIONS ARE DISMISSED/  /X: PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE ANDFOLLOW  INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-03-16T08:30:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANT TO PC3000,08/X:PAROLE AGENT BRANDON LUGAR APPEARING/PDP/WIAPTR/X:PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS,/NB/X:TIME IS NOT WAIVED AS TO THE PROBABLE CAUSE HEARING,//CONTD:PROBABLE CAUSE HEARING/",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -45,11 +61,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3924208",
+  "docket_entries": [
+    {
+      "filedDate": "2021-03-30T08:30:00.000Z",
+      "docketEntryComment": "/CAL: DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/X: PAROLE AGENT BRANDON LUGAR APPEARING/3000ADM/X:ADMITS VIOLATION #1, AND #2 /3000REIN/PAJ: 90 DAYS/X: WITH TIME LOST/X: PAROLEE SHALL RECEIVE CREDIT FOR 25 DAYS,/4019HALF/X: REMAINDER OF VIOLATIONS ARE DISMISSED/  /X: PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE ANDFOLLOW  INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2021-03-30T08:30:00.000Z",
+      "description": "/CAL: DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/X: PAROLE AGENT BRANDON LUGAR APPEARING/3000ADM/X:ADMITS VIOLATION #1, AND #2 /3000REIN/PAJ: 90 DAYS/X: WITH TIME LOST/X: PAROLEE SHALL RECEIVE CREDIT FOR 25 DAYS,/4019HALF/X: REMAINDER OF VIOLATIONS ARE DISMISSED/ /X: PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE ANDFOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-03-16T08:30:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANT TO PC3000,08/X:PAROLE AGENT BRANDON LUGAR APPEARING/PDP/WIAPTR/X:PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS,/NB/X:TIME IS NOT WAIVED AS TO THE PROBABLE CAUSE HEARING,//CONTD:PROBABLE CAUSE HEARING/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2021-03-16T08:30:00.000Z",
+      "description": "/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANT TO PC3000,08/X:PAROLE AGENT BRANDON LUGAR APPEARING/PDP/WIAPTR/X:PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS,/NB/X:TIME IS NOT WAIVED AS TO THE PROBABLE CAUSE HEARING,//CONTD:PROBABLE CAUSE HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "21002445",
-    "portal_case_id": "",
+    "portal_case_id": "3924208",
     "display_case_number": "CRI-21002445",
     "defendant": "JASON ADAMS",
     "filed_date": "2021-03-11",
@@ -59,12 +96,36 @@
       "defendant": "JASON ADAMS",
       "filed_date": "2021-03-11"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC3000",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JASON ADAMS, and date of filing 2021-03-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JASON ADAMS, and date of filing 2021-03-11. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:58:28.899Z",
+  "portal_case_id": "3924208",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-21002445",
+      "defendant": "JASON ADAMS",
+      "filed_date": "2021-03-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3924208"
+  }
 }

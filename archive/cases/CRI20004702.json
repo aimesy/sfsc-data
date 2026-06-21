@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:32:31.664Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:06:01.953Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI20004702",
   "criminal_case_number": "20004702",
@@ -24,11 +24,73 @@
       "name": "MANUEL ALONZO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MANUEL ALONZO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2020-05-20T16:12:06.000Z",
+      "docketEntryComment": "SHERIFF AFFIDAVIT WARRANT ISSUED 05-20-20 RECALLED 06-14-22",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2022-06-14T15:00:00.000Z",
+      "docketEntryComment": "SAW RECALLED 6/14/22",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-05-14T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURRER,/NTW60/LDPX:07-13-20/987,2/ACM/X:AS A CONDITION OF RELEASE, THE DEFENDANT SHALL BE PLACED ON PRE-TRIAL MONITORING BY THE SHERIFF'S DEPARTMENT,/DEF:SHALL BE FITTED WITH AGPS DEVICE AND IS ORDERED TO COMPLY WITH ALL TERMS OF RELEASE AS SET FORTHON THERECORD AND BY THE SFSD/CTORD:DEFENDANT IS TO REPORT TO 70 OAK GROVEBY 5:00 PM ON 05-14-20/X:SEE SIGNED ORDER IN FILE,/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-06-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/DAWT/MO PC 1385:THE DEFENDANT IS UNDER FEDERALINDICTMENT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2020-06-18 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2020-06-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2020-05-14 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2020-05-14",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "LANDON DAVIS",
+      "type": "Public Defender"
+    },
+    {
+      "name": "JENCY BRESKA",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +107,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3912890",
+  "docket_entries": [
+    {
+      "filedDate": "2020-05-20T16:12:06.000Z",
+      "docketEntryComment": "SHERIFF AFFIDAVIT WARRANT ISSUED 05-20-20 RECALLED 06-14-22",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2020-05-20T16:12:06.000Z",
+      "description": "SHERIFF AFFIDAVIT WARRANT ISSUED 05-20-20 RECALLED 06-14-22",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-06-14T15:00:00.000Z",
+      "docketEntryComment": "SAW RECALLED 6/14/22",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2022-06-14T15:00:00.000Z",
+      "description": "SAW RECALLED 6/14/22",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-05-14T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURRER,/NTW60/LDPX:07-13-20/987,2/ACM/X:AS A CONDITION OF RELEASE, THE DEFENDANT SHALL BE PLACED ON PRE-TRIAL MONITORING BY THE SHERIFF'S DEPARTMENT,/DEF:SHALL BE FITTED WITH AGPS DEVICE AND IS ORDERED TO COMPLY WITH ALL TERMS OF RELEASE AS SET FORTHON THERECORD AND BY THE SFSD/CTORD:DEFENDANT IS TO REPORT TO 70 OAK GROVEBY 5:00 PM ON 05-14-20/X:SEE SIGNED ORDER IN FILE,/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2020-05-14T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURRER,/NTW60/LDPX:07-13-20/987,2/ACM/X:AS A CONDITION OF RELEASE, THE DEFENDANT SHALL BE PLACED ON PRE-TRIAL MONITORING BY THE SHERIFF'S DEPARTMENT,/DEF:SHALL BE FITTED WITH AGPS DEVICE AND IS ORDERED TO COMPLY WITH ALL TERMS OF RELEASE AS SET FORTHON THERECORD AND BY THE SFSD/CTORD:DEFENDANT IS TO REPORT TO 70 OAK GROVEBY 5:00 PM ON 05-14-20/X:SEE SIGNED ORDER IN FILE,/CONTD:PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-06-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/DAWT/MO PC 1385:THE DEFENDANT IS UNDER FEDERALINDICTMENT/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2020-06-18T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/DAWT/MO PC 1385:THE DEFENDANT IS UNDER FEDERALINDICTMENT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "20004702",
-    "portal_case_id": "",
+    "portal_case_id": "3912890",
     "display_case_number": "CRI-20004702",
     "defendant": "MANUEL ALONZO",
     "filed_date": "2020-04-16",
@@ -59,12 +162,36 @@
       "defendant": "MANUEL ALONZO",
       "filed_date": "2020-04-16"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MANUEL ALONZO, and date of filing 2020-04-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MANUEL ALONZO, and date of filing 2020-04-16. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:06:02.649Z",
+  "portal_case_id": "3912890",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-20004702",
+      "defendant": "MANUEL ALONZO",
+      "filed_date": "2020-04-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3912890"
+  }
 }

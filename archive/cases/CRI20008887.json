@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:32:53.650Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:07:45.967Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI20008887",
   "criminal_case_number": "20008887",
@@ -24,10 +24,35 @@
       "name": "JOSE ALVARADO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSE ALVARADO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2020-08-14T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTC/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2020-08-14 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2020-08-14",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +70,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3916954",
+  "docket_entries": [
+    {
+      "filedDate": "2020-08-14T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTC/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2020-08-14T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/INTC/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "20008887",
-    "portal_case_id": "",
+    "portal_case_id": "3916954",
     "display_case_number": "CRI-20008887",
     "defendant": "JOSE ALVARADO",
     "filed_date": "2020-08-14",
@@ -63,8 +99,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSE ALVARADO, and date of filing 2020-08-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSE ALVARADO, and date of filing 2020-08-14. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:07:46.552Z",
+  "portal_case_id": "3916954",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-20008887",
+      "defendant": "JOSE ALVARADO",
+      "filed_date": "2020-08-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3916954"
+  }
 }

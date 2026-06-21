@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:25:02.438Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:08:36.827Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI20010621",
   "criminal_case_number": "20010621",
@@ -24,9 +24,20 @@
       "name": "CHARLES E ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHARLES E ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2020-10-14T08:30:00.000Z",
+      "docketEntryComment": "/CAL: DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/X: PAROLE AGENT RAMY YASSINE APPEARING/3000ADM/X: ADMITS VIOLATION #1 AND #2/3000REIN/PAJ :60 DAYS/CTORD:THERE IS NO TIME LOST ON PAROLE DUE TO THE ADMISSION OF THIS VIOLATION/X: PAROLEE SHALL RECEIVE CREDIT FOR 14 DAYS,/4019HALF/PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -45,11 +56,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3918645",
+  "docket_entries": [
+    {
+      "filedDate": "2020-10-14T08:30:00.000Z",
+      "docketEntryComment": "/CAL: DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/X: PAROLE AGENT RAMY YASSINE APPEARING/3000ADM/X: ADMITS VIOLATION #1 AND #2/3000REIN/PAJ :60 DAYS/CTORD:THERE IS NO TIME LOST ON PAROLE DUE TO THE ADMISSION OF THIS VIOLATION/X: PAROLEE SHALL RECEIVE CREDIT FOR 14 DAYS,/4019HALF/PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2020-10-14T08:30:00.000Z",
+      "description": "/CAL: DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/X: PAROLE AGENT RAMY YASSINE APPEARING/3000ADM/X: ADMITS VIOLATION #1 AND #2/3000REIN/PAJ :60 DAYS/CTORD:THERE IS NO TIME LOST ON PAROLE DUE TO THE ADMISSION OF THIS VIOLATION/X: PAROLEE SHALL RECEIVE CREDIT FOR 14 DAYS,/4019HALF/PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "20010621",
-    "portal_case_id": "",
+    "portal_case_id": "3918645",
     "display_case_number": "CRI-20010621",
     "defendant": "CHARLES E ALLEN",
     "filed_date": "2020-10-07",
@@ -59,12 +81,36 @@
       "defendant": "CHARLES E ALLEN",
       "filed_date": "2020-10-07"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC3000",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHARLES E ALLEN, and date of filing 2020-10-07. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHARLES E ALLEN, and date of filing 2020-10-07. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:08:37.447Z",
+  "portal_case_id": "3918645",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-20010621",
+      "defendant": "CHARLES E ALLEN",
+      "filed_date": "2020-10-07"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3918645"
+  }
 }

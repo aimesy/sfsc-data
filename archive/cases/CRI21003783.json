@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:30:56.218Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:59:16.393Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI21003783",
   "criminal_case_number": "21003783",
@@ -24,10 +24,48 @@
       "name": "TERRY BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TERRY BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2021-04-19T09:15:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOT/PD/3455ADV/3455ADM/3455REIN/CH1:CJ 106D/CTS: 53/4019HALF/DEF:TO COMPLETE THINKING FOR A CHANGE GROUPS AS DIRECTED BY APD/X:PRCS WILL EXPIRE ON 11-07-22/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2021-04-19 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2021-04-19",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2021-04-19 9:00 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2021-04-19",
+      "hearing_time": "9:00 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +83,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3925531",
+  "docket_entries": [
+    {
+      "filedDate": "2021-04-19T09:15:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOT/PD/3455ADV/3455ADM/3455REIN/CH1:CJ 106D/CTS: 53/4019HALF/DEF:TO COMPLETE THINKING FOR A CHANGE GROUPS AS DIRECTED BY APD/X:PRCS WILL EXPIRE ON 11-07-22/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2021-04-19T09:15:00.000Z",
+      "description": "/CAL:APD 3455PC MOT/PD/3455ADV/3455ADM/3455REIN/CH1:CJ 106D/CTS: 53/4019HALF/DEF:TO COMPLETE THINKING FOR A CHANGE GROUPS AS DIRECTED BY APD/X:PRCS WILL EXPIRE ON 11-07-22/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "21003783",
-    "portal_case_id": "",
+    "portal_case_id": "3925531",
     "display_case_number": "CRI-21003783",
     "defendant": "TERRY BROWN",
     "filed_date": "2021-04-16",
@@ -63,8 +112,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TERRY BROWN, and date of filing 2021-04-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TERRY BROWN, and date of filing 2021-04-16. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:59:16.997Z",
+  "portal_case_id": "3925531",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-21003783",
+      "defendant": "TERRY BROWN",
+      "filed_date": "2021-04-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3925531"
+  }
 }

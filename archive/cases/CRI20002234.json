@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:58:46.621Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:04:56.489Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI20002234",
   "criminal_case_number": "20002234",
@@ -24,11 +24,59 @@
       "name": "ROSMAN ESTRADA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROSMAN ESTRADA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2020-02-13T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTC/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:GARRY PRENETA/TEXT:DEFT ENT NG PLEA(S) & DENOF ALLEG/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURRER,/SA2:MARKET ST & 8TH ST, SF CA/SAORD3/SAORD/NTW/LDPX:02-28-20/BAIL:50/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-02-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/INTC/MO PC 1385:INTEREST OF JUSTICE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2020-02-27 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2020-02-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2020-02-13 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2020-02-13",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "GARRY PRENETA",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3910509",
+  "docket_entries": [
+    {
+      "filedDate": "2020-02-13T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTC/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:GARRY PRENETA/TEXT:DEFT ENT NG PLEA(S) & DENOF ALLEG/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURRER,/SA2:MARKET ST & 8TH ST, SF CA/SAORD3/SAORD/NTW/LDPX:02-28-20/BAIL:50/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2020-02-13T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/INTC/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:GARRY PRENETA/TEXT:DEFT ENT NG PLEA(S) & DENOF ALLEG/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURRER,/SA2:MARKET ST & 8TH ST, SF CA/SAORD3/SAORD/NTW/LDPX:02-28-20/BAIL:50/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-02-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/INTC/MO PC 1385:INTEREST OF JUSTICE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2020-02-27T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/INTC/MO PC 1385:INTEREST OF JUSTICE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "20002234",
-    "portal_case_id": "",
+    "portal_case_id": "3910509",
     "display_case_number": "CRI-20002234",
     "defendant": "ROSMAN ESTRADA",
     "filed_date": "2020-02-13",
@@ -59,12 +128,36 @@
       "defendant": "ROSMAN ESTRADA",
       "filed_date": "2020-02-13"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROSMAN ESTRADA, and date of filing 2020-02-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROSMAN ESTRADA, and date of filing 2020-02-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:04:57.035Z",
+  "portal_case_id": "3910509",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-20002234",
+      "defendant": "ROSMAN ESTRADA",
+      "filed_date": "2020-02-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3910509"
+  }
 }

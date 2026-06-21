@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:37:31.401Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:10:16.949Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI19006293",
   "criminal_case_number": "19006293",
@@ -24,11 +24,54 @@
       "name": "JOSEPH DEAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSEPH DEAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2019-04-24T11:45:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/WIAPRCS/3455ADV/3455ADM/3455REIN/CH1:CJ60D/CTS:3/4019HALF/CTORD:DEFENDANT TO PARTICIPATE IN ANGER MANAGEMENT COUNSELING/SA1:RICHARD HOWARD/SAORD3/SAORD/SA2:1235 BUSH STREET/SAORD3/SAORD/X:PRCS EXPIRES ON 06-09-20/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2019-04-24 11:45 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2019-04-24",
+      "hearing_time": "11:45 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-04-24 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2019-04-24",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KIMBERLY LUTESKOTHS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +88,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3894858",
+  "docket_entries": [
+    {
+      "filedDate": "2019-04-24T11:45:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/WIAPRCS/3455ADV/3455ADM/3455REIN/CH1:CJ60D/CTS:3/4019HALF/CTORD:DEFENDANT TO PARTICIPATE IN ANGER MANAGEMENT COUNSELING/SA1:RICHARD HOWARD/SAORD3/SAORD/SA2:1235 BUSH STREET/SAORD3/SAORD/X:PRCS EXPIRES ON 06-09-20/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-04-24T11:45:00.000Z",
+      "description": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/WIAPRCS/3455ADV/3455ADM/3455REIN/CH1:CJ60D/CTS:3/4019HALF/CTORD:DEFENDANT TO PARTICIPATE IN ANGER MANAGEMENT COUNSELING/SA1:RICHARD HOWARD/SAORD3/SAORD/SA2:1235 BUSH STREET/SAORD3/SAORD/X:PRCS EXPIRES ON 06-09-20/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "19006293",
-    "portal_case_id": "",
+    "portal_case_id": "3894858",
     "display_case_number": "CRI-19006293",
     "defendant": "JOSEPH DEAN",
     "filed_date": "2019-04-14",
@@ -59,12 +113,36 @@
       "defendant": "JOSEPH DEAN",
       "filed_date": "2019-04-14"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSEPH DEAN, and date of filing 2019-04-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSEPH DEAN, and date of filing 2019-04-14. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:10:17.469Z",
+  "portal_case_id": "3894858",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-19006293",
+      "defendant": "JOSEPH DEAN",
+      "filed_date": "2019-04-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3894858"
+  }
 }

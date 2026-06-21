@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:04:56.906Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:11:31.095Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI19009391",
   "criminal_case_number": "19009391",
@@ -24,11 +24,46 @@
       "name": "JASON ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JASON ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2019-06-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL: DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/X: PAROLE AGENT RAMY YASSINE APPEARING/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: BETSY WOLKIN   /3000ADM/X: ADMITS VIOLATION #1/3000REIN/PAJ: 90 DAYS/X: WITH TIME LOST/4019HALF/X: PAROLEE SHALL RECEIVE CREDIT FOR 12 DAYS,/4019HALF/X: REMAINDER OF VIOLATIONS ARE DISMISSED/  /X: PAROLEE ORDERED TO REPORT TOPAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-06-24T08:30:00.000Z",
+      "docketEntryComment": "28    PPTR HEARING-(PAROLE)/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANTTO PC3000,08/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/SHER/NB/X:PAROLE REVOKED/CONTD:3056 PTR & APPOINT CONFLICT COUNSEL/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2019-06-26 9:00 AM",
+      "hearingType": "PC 3056 Petition to Revoke Parole",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 0,
+      "court_date": "2019-06-26",
+      "hearing_time": "9:00 AM",
+      "matters": "PC 3056 Petition to Revoke Parole",
+      "hearing_type": "PC 3056 Petition to Revoke Parole",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BETSY WOLKIN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +80,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3897851",
+  "docket_entries": [
+    {
+      "filedDate": "2019-06-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL: DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/X: PAROLE AGENT RAMY YASSINE APPEARING/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: BETSY WOLKIN   /3000ADM/X: ADMITS VIOLATION #1/3000REIN/PAJ: 90 DAYS/X: WITH TIME LOST/4019HALF/X: PAROLEE SHALL RECEIVE CREDIT FOR 12 DAYS,/4019HALF/X: REMAINDER OF VIOLATIONS ARE DISMISSED/  /X: PAROLEE ORDERED TO REPORT TOPAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-06-26T09:00:00.000Z",
+      "description": "/CAL: DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/X: PAROLE AGENT RAMY YASSINE APPEARING/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: BETSY WOLKIN /3000ADM/X: ADMITS VIOLATION #1/3000REIN/PAJ: 90 DAYS/X: WITH TIME LOST/4019HALF/X: PAROLEE SHALL RECEIVE CREDIT FOR 12 DAYS,/4019HALF/X: REMAINDER OF VIOLATIONS ARE DISMISSED/ /X: PAROLEE ORDERED TO REPORT TOPAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-06-24T08:30:00.000Z",
+      "docketEntryComment": "28    PPTR HEARING-(PAROLE)/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANTTO PC3000,08/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/SHER/NB/X:PAROLE REVOKED/CONTD:3056 PTR & APPOINT CONFLICT COUNSEL/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2019-06-24T08:30:00.000Z",
+      "description": "28 PPTR HEARING-(PAROLE)/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANTTO PC3000,08/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/SHER/NB/X:PAROLE REVOKED/CONTD:3056 PTR & APPOINT CONFLICT COUNSEL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "19009391",
-    "portal_case_id": "",
+    "portal_case_id": "3897851",
     "display_case_number": "CRI-19009391",
     "defendant": "JASON ADAMS",
     "filed_date": "2019-06-21",
@@ -59,12 +115,36 @@
       "defendant": "JASON ADAMS",
       "filed_date": "2019-06-21"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC3000",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JASON ADAMS, and date of filing 2019-06-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JASON ADAMS, and date of filing 2019-06-21. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:11:31.738Z",
+  "portal_case_id": "3897851",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-19009391",
+      "defendant": "JASON ADAMS",
+      "filed_date": "2019-06-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3897851"
+  }
 }

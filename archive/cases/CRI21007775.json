@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:34:15.139Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:59:07.687Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI21007775",
   "criminal_case_number": "21007775",
@@ -24,10 +24,40 @@
       "name": "ROBERT LEROY BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROBERT LEROY BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2021-08-24T08:30:00.000Z",
+      "docketEntryComment": "/CAL: DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/X: PAROLE AGENT JUSTIN LUGAR APPEARING/3000ADM/X: ADMITS VIOLATION #2, ABSCONDING/3000REIN/PAJ: 60 DAYS/X: WITH TIME LOST/X:PAROLEE SHALL RECEIVE CREDIT FOR 17 DAYS,/4019HALF/X: REMAINDER OF VIOLATIONS ARE DISMISSED/  /X: PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/VD:09-02-21 PROBABLE CAUSE HEARING/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-08-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANT TO PC3000,08/X:AGENT ROBERT ABAKAN IS PRESENT/CTORD: PAROLE ADMINISTRATIVELY REVOKED/  /PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS,/NB/CONTD: PRC REFERRAL/DOP/   /CONTD:PROBABLE CAUSE HEARING ON 09-02-21/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2021-08-17 9:00 AM",
+      "hearingType": "PC 3056 Petition to Revoke Parole",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 0,
+      "court_date": "2021-08-17",
+      "hearing_time": "9:00 AM",
+      "matters": "PC 3056 Petition to Revoke Parole",
+      "hearing_type": "PC 3056 Petition to Revoke Parole",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +75,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3929483",
+  "docket_entries": [
+    {
+      "filedDate": "2021-08-24T08:30:00.000Z",
+      "docketEntryComment": "/CAL: DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/X: PAROLE AGENT JUSTIN LUGAR APPEARING/3000ADM/X: ADMITS VIOLATION #2, ABSCONDING/3000REIN/PAJ: 60 DAYS/X: WITH TIME LOST/X:PAROLEE SHALL RECEIVE CREDIT FOR 17 DAYS,/4019HALF/X: REMAINDER OF VIOLATIONS ARE DISMISSED/  /X: PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/VD:09-02-21 PROBABLE CAUSE HEARING/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2021-08-24T08:30:00.000Z",
+      "description": "/CAL: DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/X: PAROLE AGENT JUSTIN LUGAR APPEARING/3000ADM/X: ADMITS VIOLATION #2, ABSCONDING/3000REIN/PAJ: 60 DAYS/X: WITH TIME LOST/X:PAROLEE SHALL RECEIVE CREDIT FOR 17 DAYS,/4019HALF/X: REMAINDER OF VIOLATIONS ARE DISMISSED/ /X: PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/VD:09-02-21 PROBABLE CAUSE HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-08-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANT TO PC3000,08/X:AGENT ROBERT ABAKAN IS PRESENT/CTORD: PAROLE ADMINISTRATIVELY REVOKED/  /PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS,/NB/CONTD: PRC REFERRAL/DOP/   /CONTD:PROBABLE CAUSE HEARING ON 09-02-21/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2021-08-17T09:00:00.000Z",
+      "description": "/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANT TO PC3000,08/X:AGENT ROBERT ABAKAN IS PRESENT/CTORD: PAROLE ADMINISTRATIVELY REVOKED/ /PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS,/NB/CONTD: PRC REFERRAL/DOP/ /CONTD:PROBABLE CAUSE HEARING ON 09-02-21/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "21007775",
-    "portal_case_id": "",
+    "portal_case_id": "3929483",
     "display_case_number": "CRI-21007775",
     "defendant": "ROBERT LEROY BROWN",
     "filed_date": "2021-08-12",
@@ -59,12 +110,36 @@
       "defendant": "ROBERT LEROY BROWN",
       "filed_date": "2021-08-12"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC3000",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROBERT LEROY BROWN, and date of filing 2021-08-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROBERT LEROY BROWN, and date of filing 2021-08-12. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:59:08.307Z",
+  "portal_case_id": "3929483",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-21007775",
+      "defendant": "ROBERT LEROY BROWN",
+      "filed_date": "2021-08-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3929483"
+  }
 }

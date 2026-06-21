@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:49:28.378Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:55:59.899Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI21000969",
   "criminal_case_number": "21000969",
@@ -24,11 +24,96 @@
       "name": "RICHARD LEROY CHAUNCEY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RICHARD LEROY CHAUNCEY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2021-01-28T21:48:48.000Z",
+      "docketEntryComment": "Sufficient Probable Cause Filed",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-01-28T09:48:06.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-01-29T09:45:35.000Z",
+      "docketEntryComment": "Agreement and Order Releasing Defendant on Own Recognizance",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-01-29T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/X: HEATHER HAMILTON APPEARS FOR THE PUBLIC DEFENDER'S OFFICE WITH ERIC MCBURNEY/987,2/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURRER,/NTW60/LDPX: 04-01-21 (60TH)/ACM/CONTD: 02-26-21 PRE-HEARING CONFERENCE/DOP/CONTD: 03-12-21 PRELIMINARY HEARING/TE: 45 MINUTES/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-03-12T09:00:00.000Z",
+      "docketEntryComment": "/MO138572:18018056/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-02-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/FAVRPT/X:FUTURE DATE CONFIRMED/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2021-03-12 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2021-03-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2021-02-26 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2021-02-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2021-01-29 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2021-01-29",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PAUL DENNISON",
+      "type": "Conflict Attorney"
+    },
+    {
+      "name": "DIEGO LOPEZ",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +130,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3922760",
+  "docket_entries": [
+    {
+      "filedDate": "2021-01-28T21:48:48.000Z",
+      "docketEntryComment": "Sufficient Probable Cause Filed",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2021-01-28T21:48:48.000Z",
+      "description": "Sufficient Probable Cause Filed",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-01-28T09:48:06.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2021-01-28T09:48:06.000Z",
+      "description": "Complaint",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-01-29T09:45:35.000Z",
+      "docketEntryComment": "Agreement and Order Releasing Defendant on Own Recognizance",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2021-01-29T09:45:35.000Z",
+      "description": "Agreement and Order Releasing Defendant on Own Recognizance",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-01-29T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/X: HEATHER HAMILTON APPEARS FOR THE PUBLIC DEFENDER'S OFFICE WITH ERIC MCBURNEY/987,2/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURRER,/NTW60/LDPX: 04-01-21 (60TH)/ACM/CONTD: 02-26-21 PRE-HEARING CONFERENCE/DOP/CONTD: 03-12-21 PRELIMINARY HEARING/TE: 45 MINUTES/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2021-01-29T13:30:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/X: HEATHER HAMILTON APPEARS FOR THE PUBLIC DEFENDER'S OFFICE WITH ERIC MCBURNEY/987,2/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURRER,/NTW60/LDPX: 04-01-21 (60TH)/ACM/CONTD: 02-26-21 PRE-HEARING CONFERENCE/DOP/CONTD: 03-12-21 PRELIMINARY HEARING/TE: 45 MINUTES/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-03-12T09:00:00.000Z",
+      "docketEntryComment": "/MO138572:18018056/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2021-03-12T09:00:00.000Z",
+      "description": "/MO138572:18018056/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-02-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/FAVRPT/X:FUTURE DATE CONFIRMED/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2021-02-26T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/FAVRPT/X:FUTURE DATE CONFIRMED/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "21000969",
-    "portal_case_id": "",
+    "portal_case_id": "3922760",
     "display_case_number": "CRI-21000969",
     "defendant": "RICHARD LEROY CHAUNCEY",
     "filed_date": "2021-01-28",
@@ -63,8 +209,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RICHARD LEROY CHAUNCEY, and date of filing 2021-01-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RICHARD LEROY CHAUNCEY, and date of filing 2021-01-28. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:56:01.251Z",
+  "portal_case_id": "3922760",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-21000969",
+      "defendant": "RICHARD LEROY CHAUNCEY",
+      "filed_date": "2021-01-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3922760"
+  }
 }

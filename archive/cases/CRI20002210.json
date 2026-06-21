@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:37.661Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:04:52.036Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI20002210",
   "criminal_case_number": "20002210",
@@ -24,11 +24,135 @@
       "name": "MICHAEL ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2020-02-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT, PLEA AND COUNSEL/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:SILAS GENESON/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURRER,/NTW/LDPX:03-04-20/987,2/BAIL:20,000/X:BAIL SET WITHOUT PREJUDICE//CONTD:PREHEARING CONFERENCE ON 02-21-20/CONTD:PRELIMINARY HEARING ON 03-03-20/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:INSTRUCTION AND ARRAIGNMENT, PLEA AND COUNSEL/NP/X:DEFENDANT IS ILL,//X:THE PUBLIC DEFENDER WILL BE DECLARING A CONFLICT,/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-03-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/NP/X:DEFENDANT REFUSED TO COME TO COURT/MO PC 1385:PROCEEDING WITH PAROLE REVOCATION ON #20002209/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-02-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/NP/X:THE DEFNEDANT REFUSED/X:THE COURT COURT CONFIRMS THE FUTURE PRELIMINARY HEARING DATE/TE:45 MINUTES/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-02-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A, P&C/NP/DEF:IS 4011,5/CONT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-02-13T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/X:DEFENDANT IS PC4011,5 TODAY/BAIL:15,000/CONTD:I&A,P&C/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2020-03-03 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2020-03-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2020-02-21 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2020-02-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2020-02-19 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2020-02-19",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2020-02-18 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2020-02-18",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2020-02-14 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 4,
+      "court_date": "2020-02-14",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2020-02-13 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 5,
+      "court_date": "2020-02-13",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SILAS GENESON",
+      "type": "Conflict Attorney"
+    },
+    {
+      "name": "SAMUEL BECKERMAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +169,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3910485",
+  "docket_entries": [
+    {
+      "filedDate": "2020-02-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT, PLEA AND COUNSEL/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:SILAS GENESON/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURRER,/NTW/LDPX:03-04-20/987,2/BAIL:20,000/X:BAIL SET WITHOUT PREJUDICE//CONTD:PREHEARING CONFERENCE ON 02-21-20/CONTD:PRELIMINARY HEARING ON 03-03-20/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2020-02-19T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT, PLEA AND COUNSEL/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:SILAS GENESON/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURRER,/NTW/LDPX:03-04-20/987,2/BAIL:20,000/X:BAIL SET WITHOUT PREJUDICE//CONTD:PREHEARING CONFERENCE ON 02-21-20/CONTD:PRELIMINARY HEARING ON 03-03-20/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:INSTRUCTION AND ARRAIGNMENT, PLEA AND COUNSEL/NP/X:DEFENDANT IS ILL,//X:THE PUBLIC DEFENDER WILL BE DECLARING A CONFLICT,/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/DOPC/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2020-02-18T09:00:00.000Z",
+      "description": "/CAL:INSTRUCTION AND ARRAIGNMENT, PLEA AND COUNSEL/NP/X:DEFENDANT IS ILL,//X:THE PUBLIC DEFENDER WILL BE DECLARING A CONFLICT,/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-03-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/NP/X:DEFENDANT REFUSED TO COME TO COURT/MO PC 1385:PROCEEDING WITH PAROLE REVOCATION ON #20002209/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2020-03-03T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/NP/X:DEFENDANT REFUSED TO COME TO COURT/MO PC 1385:PROCEEDING WITH PAROLE REVOCATION ON #20002209/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-02-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/NP/X:THE DEFNEDANT REFUSED/X:THE COURT COURT CONFIRMS THE FUTURE PRELIMINARY HEARING DATE/TE:45 MINUTES/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2020-02-21T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/NP/X:THE DEFNEDANT REFUSED/X:THE COURT COURT CONFIRMS THE FUTURE PRELIMINARY HEARING DATE/TE:45 MINUTES/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-02-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A, P&C/NP/DEF:IS 4011,5/CONT/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2020-02-14T09:00:00.000Z",
+      "description": "/CAL:I&A, P&C/NP/DEF:IS 4011,5/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-02-13T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/X:DEFENDANT IS PC4011,5 TODAY/BAIL:15,000/CONTD:I&A,P&C/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2020-02-13T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/NP/X:DEFENDANT IS PC4011,5 TODAY/BAIL:15,000/CONTD:I&A,P&C/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "20002210",
-    "portal_case_id": "",
+    "portal_case_id": "3910485",
     "display_case_number": "CRI-20002210",
     "defendant": "MICHAEL ANDERSON",
     "filed_date": "2020-02-13",
@@ -59,12 +244,44 @@
       "defendant": "MICHAEL ANDERSON",
       "filed_date": "2020-02-13"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC4011",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL ANDERSON, and date of filing 2020-02-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL ANDERSON, and date of filing 2020-02-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:04:52.692Z",
+  "portal_case_id": "3910485",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-20002210",
+      "defendant": "MICHAEL ANDERSON",
+      "filed_date": "2020-02-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3910485"
+  }
 }

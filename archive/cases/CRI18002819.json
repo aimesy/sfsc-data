@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:13:38.459Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:17:33.379Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18002819",
   "criminal_case_number": "18002819",
@@ -24,10 +24,53 @@
       "name": "MARK ANTHONY ARROYO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARK ANTHONY ARROYO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2018-03-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PROBABLE CAUSE HEARING/X: PAROLE AGENT RAMY YASSINE IS PRESENT,/CAL:DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/3000ADV/3000ADM/3000REIN/PAJ: 120 DAYS/X:PAROLEE SHALL RECEIVE CREDIT FOR 19 DAYS,/4019HALF/X: PAROLEE ORDERED TO REPORTTO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-02-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS,/X: PAROLE AGENT JASON MALIBUNAS APPEARING/NB/X: PAROLE IS ADMINISTRATIVELY REVOKED/ /CONTD: PROBABLE CAUSE HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-03-09 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 0,
+      "court_date": "2018-03-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-02-28 9:00 AM",
+      "hearingType": "PC 3056 Petition to Revoke Parole",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 1,
+      "court_date": "2018-02-28",
+      "hearing_time": "9:00 AM",
+      "matters": "PC 3056 Petition to Revoke Parole",
+      "hearing_type": "PC 3056 Petition to Revoke Parole",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +88,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3871582",
+  "docket_entries": [
+    {
+      "filedDate": "2018-03-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PROBABLE CAUSE HEARING/X: PAROLE AGENT RAMY YASSINE IS PRESENT,/CAL:DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/3000ADV/3000ADM/3000REIN/PAJ: 120 DAYS/X:PAROLEE SHALL RECEIVE CREDIT FOR 19 DAYS,/4019HALF/X: PAROLEE ORDERED TO REPORTTO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-03-09T09:00:00.000Z",
+      "description": "/CAL: PROBABLE CAUSE HEARING/X: PAROLE AGENT RAMY YASSINE IS PRESENT,/CAL:DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/3000ADV/3000ADM/3000REIN/PAJ: 120 DAYS/X:PAROLEE SHALL RECEIVE CREDIT FOR 19 DAYS,/4019HALF/X: PAROLEE ORDERED TO REPORTTO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-02-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS,/X: PAROLE AGENT JASON MALIBUNAS APPEARING/NB/X: PAROLE IS ADMINISTRATIVELY REVOKED/ /CONTD: PROBABLE CAUSE HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-02-28T09:00:00.000Z",
+      "description": "/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS,/X: PAROLE AGENT JASON MALIBUNAS APPEARING/NB/X: PAROLE IS ADMINISTRATIVELY REVOKED/ /CONTD: PROBABLE CAUSE HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18002819",
-    "portal_case_id": "",
+    "portal_case_id": "3871582",
     "display_case_number": "CRI-18002819",
     "defendant": "MARK ANTHONY ARROYO",
     "filed_date": "2018-02-26",
@@ -59,12 +123,36 @@
       "defendant": "MARK ANTHONY ARROYO",
       "filed_date": "2018-02-26"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC3000",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARK ANTHONY ARROYO, and date of filing 2018-02-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARK ANTHONY ARROYO, and date of filing 2018-02-26. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:17:34.019Z",
+  "portal_case_id": "3871582",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18002819",
+      "defendant": "MARK ANTHONY ARROYO",
+      "filed_date": "2018-02-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3871582"
+  }
 }

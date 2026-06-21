@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:53:05.429Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:11:15.083Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI19002657",
   "criminal_case_number": "19002657",
@@ -24,11 +24,64 @@
       "name": "MAYCOL DANIEL CRUZTURCIOS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MAYCOL DANIEL CRUZTURCIOS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2019-02-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENDANT IS A JUVENILE TRANSFER TO JUVENILE HALL/INTC/TN:MAYCOL DANIEL CRUZTURCIOS/X:THE DEFENSE STATES THE DEFENDANT IS A JUVENILE/TEXT:COURT CERTIFIES DEFT TO JUVENILE JUSTICE CENTER/JJC1:MAYCOL DANIEL CRUZTURCIOS/JJC3:01-12-02/CO:DATE OF THE ALLEGED OFFENSE 02-17-2019/JJC IN:02-26-19/CONTD:FURTHER PROCEEDINGS AT JJC ON 02-26-19/VD:PRELIMINARY HEARING ON03-04-19/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-02-20T08:30:00.000Z",
+      "docketEntryComment": "/INTC/CAL:CJC REFERRAL/X:CJC INELIGIBLE,/X:ER 19002656 ALAMEDA,/NTW/LD:03-05-19/X:PRELIMINARY HEARING DATE OF 03-04-19 IN DEPARTMENT 9 CONFIRMED,/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-02-19T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURRER,/NTW/LDPX: 03-05-19/987,2/BAIL: 10,000/X: DEFENSE REQUEST FOR O,R, IS DENIED WITHOUT PREJUDICE//X: DEFENSE REQUEST TO BE REFERRED TO CJC IS GRANTED/CTORD: THIS CASE IS REFERRED TO CJC FOR ASSESSMENT/SAORD/SA2: INTERSECTION OF LARKIN ST, & ELLIS ST,, SF/SA2: AREA BOUNDED BY VAN NESS AVE,, MARKET ST,, AND MCALLISTER ST,, SF/ /CONTD: CJC ASSESSMENT ON 02-20-19 AT 8:30 A,M, M08/DOP/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2019-02-22 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2019-02-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-02-19 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2019-02-19",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SETH MEISELS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +98,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3891330",
+  "docket_entries": [
+    {
+      "filedDate": "2019-02-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENDANT IS A JUVENILE TRANSFER TO JUVENILE HALL/INTC/TN:MAYCOL DANIEL CRUZTURCIOS/X:THE DEFENSE STATES THE DEFENDANT IS A JUVENILE/TEXT:COURT CERTIFIES DEFT TO JUVENILE JUSTICE CENTER/JJC1:MAYCOL DANIEL CRUZTURCIOS/JJC3:01-12-02/CO:DATE OF THE ALLEGED OFFENSE 02-17-2019/JJC IN:02-26-19/CONTD:FURTHER PROCEEDINGS AT JJC ON 02-26-19/VD:PRELIMINARY HEARING ON03-04-19/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-02-22T09:00:00.000Z",
+      "description": "/CAL:DEFENDANT IS A JUVENILE TRANSFER TO JUVENILE HALL/INTC/TN:MAYCOL DANIEL CRUZTURCIOS/X:THE DEFENSE STATES THE DEFENDANT IS A JUVENILE/TEXT:COURT CERTIFIES DEFT TO JUVENILE JUSTICE CENTER/JJC1:MAYCOL DANIEL CRUZTURCIOS/JJC3:01-12-02/CO:DATE OF THE ALLEGED OFFENSE 02-17-2019/JJC IN:02-26-19/CONTD:FURTHER PROCEEDINGS AT JJC ON 02-26-19/VD:PRELIMINARY HEARING ON03-04-19/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-02-20T08:30:00.000Z",
+      "docketEntryComment": "/INTC/CAL:CJC REFERRAL/X:CJC INELIGIBLE,/X:ER 19002656 ALAMEDA,/NTW/LD:03-05-19/X:PRELIMINARY HEARING DATE OF 03-04-19 IN DEPARTMENT 9 CONFIRMED,/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2019-02-20T08:30:00.000Z",
+      "description": "/INTC/CAL:CJC REFERRAL/X:CJC INELIGIBLE,/X:ER 19002656 ALAMEDA,/NTW/LD:03-05-19/X:PRELIMINARY HEARING DATE OF 03-04-19 IN DEPARTMENT 9 CONFIRMED,/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-02-19T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURRER,/NTW/LDPX: 03-05-19/987,2/BAIL: 10,000/X: DEFENSE REQUEST FOR O,R, IS DENIED WITHOUT PREJUDICE//X: DEFENSE REQUEST TO BE REFERRED TO CJC IS GRANTED/CTORD: THIS CASE IS REFERRED TO CJC FOR ASSESSMENT/SAORD/SA2: INTERSECTION OF LARKIN ST, & ELLIS ST,, SF/SA2: AREA BOUNDED BY VAN NESS AVE,, MARKET ST,, AND MCALLISTER ST,, SF/ /CONTD: CJC ASSESSMENT ON 02-20-19 AT 8:30 A,M, M08/DOP/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2019-02-19T13:30:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURRER,/NTW/LDPX: 03-05-19/987,2/BAIL: 10,000/X: DEFENSE REQUEST FOR O,R, IS DENIED WITHOUT PREJUDICE//X: DEFENSE REQUEST TO BE REFERRED TO CJC IS GRANTED/CTORD: THIS CASE IS REFERRED TO CJC FOR ASSESSMENT/SAORD/SA2: INTERSECTION OF LARKIN ST, & ELLIS ST,, SF/SA2: AREA BOUNDED BY VAN NESS AVE,, MARKET ST,, AND MCALLISTER ST,, SF/ /CONTD: CJC ASSESSMENT ON 02-20-19 AT 8:30 A,M, M08/DOP/CONTD: PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "19002657",
-    "portal_case_id": "",
+    "portal_case_id": "3891330",
     "display_case_number": "CRI-19002657",
     "defendant": "MAYCOL DANIEL CRUZTURCIOS",
     "filed_date": "2019-02-19",
@@ -63,8 +147,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MAYCOL DANIEL CRUZTURCIOS, and date of filing 2019-02-19. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MAYCOL DANIEL CRUZTURCIOS, and date of filing 2019-02-19. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:11:15.694Z",
+  "portal_case_id": "3891330",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-19002657",
+      "defendant": "MAYCOL DANIEL CRUZTURCIOS",
+      "filed_date": "2019-02-19"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3891330"
+  }
 }

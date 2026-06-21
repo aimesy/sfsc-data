@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:36:40.790Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:12:36.342Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI19006424",
   "criminal_case_number": "19006424",
@@ -24,11 +24,59 @@
       "name": "DARREN LEE ANDREWS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DARREN LEE ANDREWS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2019-04-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT APD 3455PC MOTION/WIAPRCS/3455REIN/CH1:CJ 180D/CTS:17/4019HALF/X:PRCS EXPIRATION DATE IS 03-09-21/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-04-26T11:30:00.000Z",
+      "docketEntryComment": "27    FTO SET APD 3455/CAL:APD 3455 FILING,/NP/4011,5/PD/SHER/NB/CONTD:AN ON APD 3455PC MOTION/DOPC/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2019-04-29 9:00 AM",
+      "hearingType": "To Set MTR PRCS Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2019-04-29",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set MTR PRCS Hearing",
+      "hearing_type": "To Set MTR PRCS Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-04-26 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2019-04-26",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KIMBERLY LUTESKOTHS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3894982",
+  "docket_entries": [
+    {
+      "filedDate": "2019-04-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT APD 3455PC MOTION/WIAPRCS/3455REIN/CH1:CJ 180D/CTS:17/4019HALF/X:PRCS EXPIRATION DATE IS 03-09-21/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-04-29T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT APD 3455PC MOTION/WIAPRCS/3455REIN/CH1:CJ 180D/CTS:17/4019HALF/X:PRCS EXPIRATION DATE IS 03-09-21/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-04-26T11:30:00.000Z",
+      "docketEntryComment": "27    FTO SET APD 3455/CAL:APD 3455 FILING,/NP/4011,5/PD/SHER/NB/CONTD:AN ON APD 3455PC MOTION/DOPC/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2019-04-26T11:30:00.000Z",
+      "description": "27 FTO SET APD 3455/CAL:APD 3455 FILING,/NP/4011,5/PD/SHER/NB/CONTD:AN ON APD 3455PC MOTION/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "19006424",
-    "portal_case_id": "",
+    "portal_case_id": "3894982",
     "display_case_number": "CRI-19006424",
     "defendant": "DARREN LEE ANDREWS",
     "filed_date": "2019-04-26",
@@ -63,8 +132,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DARREN LEE ANDREWS, and date of filing 2019-04-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DARREN LEE ANDREWS, and date of filing 2019-04-26. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:12:36.922Z",
+  "portal_case_id": "3894982",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-19006424",
+      "defendant": "DARREN LEE ANDREWS",
+      "filed_date": "2019-04-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3894982"
+  }
 }

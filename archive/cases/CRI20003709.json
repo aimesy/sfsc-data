@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:45:32.510Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:03:40.167Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI20003709",
   "criminal_case_number": "20003709",
@@ -24,10 +24,40 @@
       "name": "LEMUEL BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LEMUEL BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2020-03-27T11:00:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/NP//X: DEFENDANT UNABLE TO BE TRANSPORTED DUE TO QUARENTINE-COVID/X:DEFENDANTENTERS PLEA IN ABSENTIA/X:ADVISEMENT OF RIGHTS, WAIVER AND PLEA FORM FILED/3000ADV/3000ADM/X:THE PAROLEE'S ADMISSION IS AS TO VIOLATION 1 ONLY,/3000REIN/PAJ: 30 DAYS/X:PAROLEE SHALL RECEIVE CREDIT FOR 17 DAYS,/4019HALF//CTORD:STAY OUT OF WALGREEN'S AT 2120 POLK ST,/X:THE COURT DISMISSES REMAINING VIOLATIONS /X:PAROLE REINSTATED WITH TIME LOSS /X:PAROLEE ORDERED TOREPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-03-25T08:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT ON PETITION TO REVOKE PAROLE/DAWT/CONT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2020-03-27 11:00 AM",
+      "hearingType": "To Set MTR Parole Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 0,
+      "court_date": "2020-03-27",
+      "hearing_time": "11:00 AM",
+      "matters": "To Set MTR Parole Hearing",
+      "hearing_type": "To Set MTR Parole Hearing",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +75,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3911923",
+  "docket_entries": [
+    {
+      "filedDate": "2020-03-27T11:00:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/NP//X: DEFENDANT UNABLE TO BE TRANSPORTED DUE TO QUARENTINE-COVID/X:DEFENDANTENTERS PLEA IN ABSENTIA/X:ADVISEMENT OF RIGHTS, WAIVER AND PLEA FORM FILED/3000ADV/3000ADM/X:THE PAROLEE'S ADMISSION IS AS TO VIOLATION 1 ONLY,/3000REIN/PAJ: 30 DAYS/X:PAROLEE SHALL RECEIVE CREDIT FOR 17 DAYS,/4019HALF//CTORD:STAY OUT OF WALGREEN'S AT 2120 POLK ST,/X:THE COURT DISMISSES REMAINING VIOLATIONS /X:PAROLE REINSTATED WITH TIME LOSS /X:PAROLEE ORDERED TOREPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2020-03-27T11:00:00.000Z",
+      "description": "/CAL:PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/NP//X: DEFENDANT UNABLE TO BE TRANSPORTED DUE TO QUARENTINE-COVID/X:DEFENDANTENTERS PLEA IN ABSENTIA/X:ADVISEMENT OF RIGHTS, WAIVER AND PLEA FORM FILED/3000ADV/3000ADM/X:THE PAROLEE'S ADMISSION IS AS TO VIOLATION 1 ONLY,/3000REIN/PAJ: 30 DAYS/X:PAROLEE SHALL RECEIVE CREDIT FOR 17 DAYS,/4019HALF//CTORD:STAY OUT OF WALGREEN'S AT 2120 POLK ST,/X:THE COURT DISMISSES REMAINING VIOLATIONS /X:PAROLE REINSTATED WITH TIME LOSS /X:PAROLEE ORDERED TOREPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-03-25T08:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT ON PETITION TO REVOKE PAROLE/DAWT/CONT/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2020-03-25T08:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT ON PETITION TO REVOKE PAROLE/DAWT/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "20003709",
-    "portal_case_id": "",
+    "portal_case_id": "3911923",
     "display_case_number": "CRI-20003709",
     "defendant": "LEMUEL BROWN",
     "filed_date": "2020-03-18",
@@ -59,12 +110,46 @@
       "defendant": "LEMUEL BROWN",
       "filed_date": "2020-03-18"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC3000",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC3000",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LEMUEL BROWN, and date of filing 2020-03-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LEMUEL BROWN, and date of filing 2020-03-18. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:03:40.839Z",
+  "portal_case_id": "3911923",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-20003709",
+      "defendant": "LEMUEL BROWN",
+      "filed_date": "2020-03-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3911923"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:16:36.163Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:16:23.216Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI19014965",
   "criminal_case_number": "19014965",
@@ -24,10 +24,81 @@
       "name": "CARMELITA BARELA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CARMELITA BARELA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2020-04-23T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-09-26T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-04-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:5K BW RETURN FROM 12-16-19/DAWT/BWDNC/X:THERE IS NO RESTITUTION OWED IN THIS CASE/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT1/1001,7: 1/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-12-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:09-26-19/BWI/BAIL:5,000/BWNUM:2ND//X: 3 OF 3 BENCH WARRANTS ISSUED THIS DATE/X:DO NOT CITE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-09-26T09:00:00.000Z",
+      "docketEntryComment": "/FTA/BWI/BAIL:3000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2020-04-23 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2020-04-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-12-16 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2019-12-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-09-26 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2019-09-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +116,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3903221",
+  "docket_entries": [
+    {
+      "filedDate": "2020-04-23T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2020-04-23T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-09-26T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2019-09-26T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-04-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:5K BW RETURN FROM 12-16-19/DAWT/BWDNC/X:THERE IS NO RESTITUTION OWED IN THIS CASE/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT1/1001,7: 1/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2020-04-23T09:00:00.000Z",
+      "description": "/CAL:5K BW RETURN FROM 12-16-19/DAWT/BWDNC/X:THERE IS NO RESTITUTION OWED IN THIS CASE/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT1/1001,7: 1/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-12-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:09-26-19/BWI/BAIL:5,000/BWNUM:2ND//X: 3 OF 3 BENCH WARRANTS ISSUED THIS DATE/X:DO NOT CITE/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2019-12-16T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:09-26-19/BWI/BAIL:5,000/BWNUM:2ND//X: 3 OF 3 BENCH WARRANTS ISSUED THIS DATE/X:DO NOT CITE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-09-26T09:00:00.000Z",
+      "docketEntryComment": "/FTA/BWI/BAIL:3000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2019-09-26T09:00:00.000Z",
+      "description": "/FTA/BWI/BAIL:3000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "19014965",
-    "portal_case_id": "",
+    "portal_case_id": "3903221",
     "display_case_number": "CRI-19014965",
     "defendant": "CARMELITA BARELA",
     "filed_date": "2019-09-25",
@@ -59,12 +181,36 @@
       "defendant": "CARMELITA BARELA",
       "filed_date": "2019-09-25"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CARMELITA BARELA, and date of filing 2019-09-25. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CARMELITA BARELA, and date of filing 2019-09-25. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:16:23.828Z",
+  "portal_case_id": "3903221",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-19014965",
+      "defendant": "CARMELITA BARELA",
+      "filed_date": "2019-09-25"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3903221"
+  }
 }
