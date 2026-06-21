@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:46:16.997Z",
+  "captured_at": "2026-06-21T11:56:21.676Z",
   "criminal_case_number": "22000305",
   "status": "found",
   "portal_case_id": "3935049",
@@ -204,9 +204,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "RODRIGO MIGUEL SALIDO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000305",
+    "defendant": "RODRIGO MIGUEL SALIDO",
+    "filed_date": "2022-01-12"
+  },
+  "case_header_checked_at": "2026-06-21T11:56:22.257Z",
+  "display_case_number": "CRI-22000305",
+  "defendant": "RODRIGO MIGUEL SALIDO",
+  "case_title": "People v. RODRIGO MIGUEL SALIDO",
+  "filed_date": "2022-01-12",
   "case_type": "criminal",
   "case_number": "CRI22000305",
-  "case_title": "San Francisco criminal case 22000305",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3935049",
@@ -362,7 +379,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -370,6 +386,15 @@
   "criminal": {
     "raw_case_number": "22000305",
     "portal_case_id": "3935049",
+    "display_case_number": "CRI-22000305",
+    "defendant": "RODRIGO MIGUEL SALIDO",
+    "filed_date": "2022-01-12",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000305",
+      "defendant": "RODRIGO MIGUEL SALIDO",
+      "filed_date": "2022-01-12"
+    },
     "statutes": [],
     "inferred_charges": []
   },

@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:48:36.162Z",
+  "captured_at": "2026-06-21T11:57:08.410Z",
   "criminal_case_number": "22000319",
   "status": "found",
   "portal_case_id": "3935063",
@@ -293,9 +293,26 @@
       "type": "Public Defender"
     }
   ],
+  "parties": [
+    {
+      "name": "EDWARD RAMIREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000319",
+    "defendant": "EDWARD RAMIREZ",
+    "filed_date": "2022-01-11"
+  },
+  "case_header_checked_at": "2026-06-21T11:57:08.966Z",
+  "display_case_number": "CRI-22000319",
+  "defendant": "EDWARD RAMIREZ",
+  "case_title": "People v. EDWARD RAMIREZ",
+  "filed_date": "2022-01-11",
   "case_type": "criminal",
   "case_number": "CRI22000319",
-  "case_title": "San Francisco criminal case 22000319",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3935063",
@@ -481,7 +498,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -489,6 +505,15 @@
   "criminal": {
     "raw_case_number": "22000319",
     "portal_case_id": "3935063",
+    "display_case_number": "CRI-22000319",
+    "defendant": "EDWARD RAMIREZ",
+    "filed_date": "2022-01-11",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000319",
+      "defendant": "EDWARD RAMIREZ",
+      "filed_date": "2022-01-11"
+    },
     "statutes": [
       {
         "code": "PC 1203.2",

@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:29:35.952Z",
+  "captured_at": "2026-06-21T11:54:00.657Z",
   "criminal_case_number": "22000256",
   "status": "found",
   "portal_case_id": "3935002",
@@ -70,9 +70,26 @@
     }
   ],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "MICHAEL JEFFERSON BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000256",
+    "defendant": "MICHAEL JEFFERSON BROWN",
+    "filed_date": "2022-01-18"
+  },
+  "case_header_checked_at": "2026-06-21T11:54:01.213Z",
+  "display_case_number": "CRI-22000256",
+  "defendant": "MICHAEL JEFFERSON BROWN",
+  "case_title": "People v. MICHAEL JEFFERSON BROWN",
+  "filed_date": "2022-01-18",
   "case_type": "criminal",
   "case_number": "CRI22000256",
-  "case_title": "San Francisco criminal case 22000256",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3935002",
@@ -108,7 +125,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -116,6 +132,15 @@
   "criminal": {
     "raw_case_number": "22000256",
     "portal_case_id": "3935002",
+    "display_case_number": "CRI-22000256",
+    "defendant": "MICHAEL JEFFERSON BROWN",
+    "filed_date": "2022-01-18",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000256",
+      "defendant": "MICHAEL JEFFERSON BROWN",
+      "filed_date": "2022-01-18"
+    },
     "statutes": [],
     "inferred_charges": []
   },

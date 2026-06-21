@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:47:17.939Z",
+  "captured_at": "2026-06-21T11:56:38.834Z",
   "criminal_case_number": "22000313",
   "status": "found",
   "portal_case_id": "3935057",
@@ -350,9 +350,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "JAMES JARANILLA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000313",
+    "defendant": "JAMES JARANILLA",
+    "filed_date": "2022-01-12"
+  },
+  "case_header_checked_at": "2026-06-21T11:56:39.420Z",
+  "display_case_number": "CRI-22000313",
+  "defendant": "JAMES JARANILLA",
+  "case_title": "People v. JAMES JARANILLA",
+  "filed_date": "2022-01-12",
   "case_type": "criminal",
   "case_number": "CRI22000313",
-  "case_title": "San Francisco criminal case 22000313",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3935057",
@@ -618,7 +635,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -626,6 +642,15 @@
   "criminal": {
     "raw_case_number": "22000313",
     "portal_case_id": "3935057",
+    "display_case_number": "CRI-22000313",
+    "defendant": "JAMES JARANILLA",
+    "filed_date": "2022-01-12",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000313",
+      "defendant": "JAMES JARANILLA",
+      "filed_date": "2022-01-12"
+    },
     "statutes": [
       {
         "code": "PC 851.91",

@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:45:16.714Z",
+  "captured_at": "2026-06-21T11:56:12.849Z",
   "criminal_case_number": "22000299",
   "status": "found",
   "portal_case_id": "3935045",
@@ -871,9 +871,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "JASON MALDANADO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000299",
+    "defendant": "JASON MALDANADO",
+    "filed_date": "2022-01-10"
+  },
+  "case_header_checked_at": "2026-06-21T11:56:13.496Z",
+  "display_case_number": "CRI-22000299",
+  "defendant": "JASON MALDANADO",
+  "case_title": "People v. JASON MALDANADO",
+  "filed_date": "2022-01-10",
   "case_type": "criminal",
   "case_number": "CRI22000299",
-  "case_title": "San Francisco criminal case 22000299",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3935045",
@@ -1479,7 +1496,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -1487,6 +1503,15 @@
   "criminal": {
     "raw_case_number": "22000299",
     "portal_case_id": "3935045",
+    "display_case_number": "CRI-22000299",
+    "defendant": "JASON MALDANADO",
+    "filed_date": "2022-01-10",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000299",
+      "defendant": "JASON MALDANADO",
+      "filed_date": "2022-01-10"
+    },
     "statutes": [
       {
         "code": "PC 1001.36",

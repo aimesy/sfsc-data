@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:25:38.502Z",
+  "captured_at": "2026-06-21T11:53:31.948Z",
   "criminal_case_number": "22000240",
   "status": "found",
   "portal_case_id": "3934987",
@@ -1611,9 +1611,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "DAVIEN WHEATON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000240",
+    "defendant": "DAVIEN WHEATON",
+    "filed_date": "2022-01-11"
+  },
+  "case_header_checked_at": "2026-06-21T11:53:33.035Z",
+  "display_case_number": "CRI-22000240",
+  "defendant": "DAVIEN WHEATON",
+  "case_title": "People v. DAVIEN WHEATON",
+  "filed_date": "2022-01-11",
   "case_type": "criminal",
   "case_number": "CRI22000240",
-  "case_title": "San Francisco criminal case 22000240",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3934987",
@@ -2999,7 +3016,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -3007,6 +3023,15 @@
   "criminal": {
     "raw_case_number": "22000240",
     "portal_case_id": "3934987",
+    "display_case_number": "CRI-22000240",
+    "defendant": "DAVIEN WHEATON",
+    "filed_date": "2022-01-11",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000240",
+      "defendant": "DAVIEN WHEATON",
+      "filed_date": "2022-01-11"
+    },
     "statutes": [],
     "inferred_charges": []
   },

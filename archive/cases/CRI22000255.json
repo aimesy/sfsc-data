@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:28:47.708Z",
+  "captured_at": "2026-06-21T11:53:56.589Z",
   "criminal_case_number": "22000255",
   "status": "found",
   "portal_case_id": "3935001",
@@ -1122,9 +1122,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "DEBRA BRIDGES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000255",
+    "defendant": "DEBRA BRIDGES",
+    "filed_date": "2022-01-11"
+  },
+  "case_header_checked_at": "2026-06-21T11:53:57.121Z",
+  "display_case_number": "CRI-22000255",
+  "defendant": "DEBRA BRIDGES",
+  "case_title": "People v. DEBRA BRIDGES",
+  "filed_date": "2022-01-11",
   "case_type": "criminal",
   "case_number": "CRI22000255",
-  "case_title": "San Francisco criminal case 22000255",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3935001",
@@ -2050,7 +2067,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -2058,6 +2074,15 @@
   "criminal": {
     "raw_case_number": "22000255",
     "portal_case_id": "3935001",
+    "display_case_number": "CRI-22000255",
+    "defendant": "DEBRA BRIDGES",
+    "filed_date": "2022-01-11",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000255",
+      "defendant": "DEBRA BRIDGES",
+      "filed_date": "2022-01-11"
+    },
     "statutes": [
       {
         "code": "PC 1050",

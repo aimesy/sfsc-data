@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:46:43.436Z",
+  "captured_at": "2026-06-21T11:56:30.411Z",
   "criminal_case_number": "22000308",
   "status": "found",
   "portal_case_id": "3935052",
@@ -387,9 +387,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "ROBERT MAURICE GARY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000308",
+    "defendant": "ROBERT MAURICE GARY",
+    "filed_date": "2022-01-10"
+  },
+  "case_header_checked_at": "2026-06-21T11:56:31.091Z",
+  "display_case_number": "CRI-22000308",
+  "defendant": "ROBERT MAURICE GARY",
+  "case_title": "People v. ROBERT MAURICE GARY",
+  "filed_date": "2022-01-10",
   "case_type": "criminal",
   "case_number": "CRI22000308",
-  "case_title": "San Francisco criminal case 22000308",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3935052",
@@ -625,7 +642,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -633,6 +649,15 @@
   "criminal": {
     "raw_case_number": "22000308",
     "portal_case_id": "3935052",
+    "display_case_number": "CRI-22000308",
+    "defendant": "ROBERT MAURICE GARY",
+    "filed_date": "2022-01-10",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000308",
+      "defendant": "ROBERT MAURICE GARY",
+      "filed_date": "2022-01-10"
+    },
     "statutes": [],
     "inferred_charges": []
   },

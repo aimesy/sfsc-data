@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:23:50.080Z",
+  "captured_at": "2026-06-21T11:52:56.527Z",
   "criminal_case_number": "22000232",
   "status": "found",
   "portal_case_id": "3934979",
@@ -713,9 +713,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "KENNETH OBASH BYRD",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000232",
+    "defendant": "KENNETH OBASH BYRD",
+    "filed_date": "2022-01-11"
+  },
+  "case_header_checked_at": "2026-06-21T11:52:57.192Z",
+  "display_case_number": "CRI-22000232",
+  "defendant": "KENNETH OBASH BYRD",
+  "case_title": "People v. KENNETH OBASH BYRD",
+  "filed_date": "2022-01-11",
   "case_type": "criminal",
   "case_number": "CRI22000232",
-  "case_title": "San Francisco criminal case 22000232",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3934979",
@@ -1421,7 +1438,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -1429,6 +1445,15 @@
   "criminal": {
     "raw_case_number": "22000232",
     "portal_case_id": "3934979",
+    "display_case_number": "CRI-22000232",
+    "defendant": "KENNETH OBASH BYRD",
+    "filed_date": "2022-01-11",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000232",
+      "defendant": "KENNETH OBASH BYRD",
+      "filed_date": "2022-01-11"
+    },
     "statutes": [
       {
         "code": "PC 4011",

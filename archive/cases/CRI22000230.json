@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:23:18.790Z",
+  "captured_at": "2026-06-21T11:52:48.294Z",
   "criminal_case_number": "22000230",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "3969148",
   "search": {
     "code": 1,
@@ -14,14 +14,30 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "CHRISTIAN MICHAEL GARCIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000230",
+    "defendant": "CHRISTIAN MICHAEL GARCIA",
+    "filed_date": "2022-01-07"
+  },
+  "case_header_checked_at": "2026-06-21T11:52:48.835Z",
+  "display_case_number": "CRI-22000230",
+  "defendant": "CHRISTIAN MICHAEL GARCIA",
+  "case_title": "People v. CHRISTIAN MICHAEL GARCIA",
+  "filed_date": "2022-01-07",
   "case_type": "criminal",
   "case_number": "CRI22000230",
-  "case_title": "San Francisco criminal case 22000230",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3969148",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +45,20 @@
   "criminal": {
     "raw_case_number": "22000230",
     "portal_case_id": "3969148",
+    "display_case_number": "CRI-22000230",
+    "defendant": "CHRISTIAN MICHAEL GARCIA",
+    "filed_date": "2022-01-07",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000230",
+      "defendant": "CHRISTIAN MICHAEL GARCIA",
+      "filed_date": "2022-01-07"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHRISTIAN MICHAEL GARCIA, and date of filing 2022-01-07. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0
