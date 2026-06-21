@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:52:48.940Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:26:26.088Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02083916",
   "criminal_case_number": "02083916",
@@ -24,11 +24,68 @@
       "name": "JORGE A CRUZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JORGE A CRUZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2003-03-10T13:01:00.000Z",
+      "docketEntryComment": "PLEA TRANS FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-03-24T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ6M/CTS:103/WS/VF4:200/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/DEF:INFORMED OF LEGAL CONSEQUENCES OF ILLEGAL RE-ENTRY/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-02-28T09:00:00.000Z",
+      "docketEntryComment": "/TEXT DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS 1//FNDG/CO:NEGOTIATED DISPOSITION/PRES:03-24-03/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2003-03-24 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2003-03-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-02-28 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2003-02-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "P FITZPATRICK",
+      "type": "Public Defender"
+    },
+    {
+      "name": "A BROWN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +102,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3217570",
+  "docket_entries": [
+    {
+      "filedDate": "2003-03-10T13:01:00.000Z",
+      "docketEntryComment": "PLEA TRANS FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2003-03-10T13:01:00.000Z",
+      "description": "PLEA TRANS FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-03-24T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ6M/CTS:103/WS/VF4:200/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/DEF:INFORMED OF LEGAL CONSEQUENCES OF ILLEGAL RE-ENTRY/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2003-03-24T09:00:00.000Z",
+      "description": "/AJW/CH1:ISS:PROB 3 Y:PJ6M/CTS:103/WS/VF4:200/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/DEF:INFORMED OF LEGAL CONSEQUENCES OF ILLEGAL RE-ENTRY/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-02-28T09:00:00.000Z",
+      "docketEntryComment": "/TEXT DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS 1//FNDG/CO:NEGOTIATED DISPOSITION/PRES:03-24-03/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2003-02-28T09:00:00.000Z",
+      "description": "/TEXT DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS 1//FNDG/CO:NEGOTIATED DISPOSITION/PRES:03-24-03/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02083916",
-    "portal_case_id": "",
+    "portal_case_id": "3217570",
     "display_case_number": "CRI-02083916",
     "defendant": "JORGE A CRUZ",
     "filed_date": "2002-12-17",
@@ -63,8 +151,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JORGE A CRUZ, and date of filing 2002-12-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JORGE A CRUZ, and date of filing 2002-12-17. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:26:26.733Z",
+  "portal_case_id": "3217570",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02083916",
+      "defendant": "JORGE A CRUZ",
+      "filed_date": "2002-12-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3217570"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:39:40.723Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:25:11.856Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02074252",
   "criminal_case_number": "02074252",
@@ -24,11 +24,51 @@
       "name": "LISA ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LISA ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2002-10-21T00:00:00.000Z",
+      "docketEntryComment": "SAGE P/R (52 HRS)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-12-18T00:00:00.000Z",
+      "docketEntryComment": "SUCCESSFUL COMPLETION,DA DISCHARGE, COMPLAINT WITHDRAWN",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-10-21T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2002-10-21 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "2002-10-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S KIM",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +85,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3208634",
+  "docket_entries": [
+    {
+      "filedDate": "2002-10-21T00:00:00.000Z",
+      "docketEntryComment": "SAGE P/R (52 HRS)",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2002-10-21T00:00:00.000Z",
+      "description": "SAGE P/R (52 HRS)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-12-18T00:00:00.000Z",
+      "docketEntryComment": "SUCCESSFUL COMPLETION,DA DISCHARGE, COMPLAINT WITHDRAWN",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2002-12-18T00:00:00.000Z",
+      "description": "SUCCESSFUL COMPLETION,DA DISCHARGE, COMPLAINT WITHDRAWN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-10-21T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2002-10-21T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02074252",
-    "portal_case_id": "",
+    "portal_case_id": "3208634",
     "display_case_number": "CRI-02074252",
     "defendant": "LISA ANDERSON",
     "filed_date": "2002-10-21",
@@ -63,8 +134,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LISA ANDERSON, and date of filing 2002-10-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LISA ANDERSON, and date of filing 2002-10-21. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:25:12.485Z",
+  "portal_case_id": "3208634",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02074252",
+      "defendant": "LISA ANDERSON",
+      "filed_date": "2002-10-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3208634"
+  }
 }

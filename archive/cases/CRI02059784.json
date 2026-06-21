@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:33:55.458Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:22:00.063Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02059784",
   "criminal_case_number": "02059784",
@@ -24,11 +24,74 @@
       "name": "ANDRE BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANDRE BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2004-07-14T00:00:00.000Z",
+      "docketEntryComment": "APD MOT TO TERM PROB EARLY GRANTED,PROB 36 COMPLETED,COMPLAINT DISMED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-09-06T09:00:00.000Z",
+      "docketEntryComment": "/OC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-08-19T00:00:00.000Z",
+      "docketEntryComment": "$100VIF",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-08-19T00:00:00.000Z",
+      "docketEntryComment": "DRG TSTNG/CNSLNG;NO DRGS W/O RX;CJ TIME&FINES STAYED PENDING COMPL PROP36",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-08-19T00:00:00.000Z",
+      "docketEntryComment": "PEO ORAL AMEND ADD 11550HS/M,WIA,IRREGS WVD;1385PC DISM 11350(A)HS V/O/P",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2004-07-14 9:00 AM",
+      "hearingType": "To Set Motion to Revoke Probation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2004-07-14",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set Motion to Revoke Probation Hearing",
+      "hearing_type": "To Set Motion to Revoke Probation Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2002-09-06 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 1,
+      "court_date": "2002-09-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "A MOORE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +108,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3195283",
+  "docket_entries": [
+    {
+      "filedDate": "2004-07-14T00:00:00.000Z",
+      "docketEntryComment": "APD MOT TO TERM PROB EARLY GRANTED,PROB 36 COMPLETED,COMPLAINT DISMED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2004-07-14T00:00:00.000Z",
+      "description": "APD MOT TO TERM PROB EARLY GRANTED,PROB 36 COMPLETED,COMPLAINT DISMED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-09-06T09:00:00.000Z",
+      "docketEntryComment": "/OC/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2002-09-06T09:00:00.000Z",
+      "description": "/OC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-08-19T00:00:00.000Z",
+      "docketEntryComment": "$100VIF",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2002-08-19T00:00:00.000Z",
+      "description": "$100VIF",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-08-19T00:00:00.000Z",
+      "docketEntryComment": "DRG TSTNG/CNSLNG;NO DRGS W/O RX;CJ TIME&FINES STAYED PENDING COMPL PROP36",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2002-08-19T00:00:00.000Z",
+      "description": "DRG TSTNG/CNSLNG;NO DRGS W/O RX;CJ TIME&FINES STAYED PENDING COMPL PROP36",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-08-19T00:00:00.000Z",
+      "docketEntryComment": "PEO ORAL AMEND ADD 11550HS/M,WIA,IRREGS WVD;1385PC DISM 11350(A)HS V/O/P",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2002-08-19T00:00:00.000Z",
+      "description": "PEO ORAL AMEND ADD 11550HS/M,WIA,IRREGS WVD;1385PC DISM 11350(A)HS V/O/P",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02059784",
-    "portal_case_id": "",
+    "portal_case_id": "3195283",
     "display_case_number": "CRI-02059784",
     "defendant": "ANDRE BROWN",
     "filed_date": "2002-07-26",
@@ -63,8 +177,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANDRE BROWN, and date of filing 2002-07-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANDRE BROWN, and date of filing 2002-07-26. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:22:00.694Z",
+  "portal_case_id": "3195283",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02059784",
+      "defendant": "ANDRE BROWN",
+      "filed_date": "2002-07-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3195283"
+  }
 }

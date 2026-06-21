@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:46:33.430Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:17:33.184Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02025772",
   "criminal_case_number": "02025772",
@@ -24,11 +24,64 @@
       "name": "RONALD LEROY CADY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RONALD LEROY CADY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2002-01-16T00:00:00.000Z",
+      "docketEntryComment": "APPT ATTY & TO JOIN 2017807",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-04-02T10:20:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-04-02T09:05:00.000Z",
+      "docketEntryComment": "/TEXT TRANS TO DEPT 27/TRANS 27 FORTHWITH FOR PRETRIAL CONFERENCE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2002-04-02 9:05 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2002-04-02",
+      "hearing_time": "9:05 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2002-04-02 10:20 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 27",
+      "__index": 1,
+      "court_date": "2002-04-02",
+      "hearing_time": "10:20 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 27",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "LOUIS KATZ",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +98,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3164169",
+  "docket_entries": [
+    {
+      "filedDate": "2002-01-16T00:00:00.000Z",
+      "docketEntryComment": "APPT ATTY & TO JOIN 2017807",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2002-01-16T00:00:00.000Z",
+      "description": "APPT ATTY & TO JOIN 2017807",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-04-02T10:20:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2002-04-02T10:20:00.000Z",
+      "description": "/MO PC 1385/MOTION GRANTED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-04-02T09:05:00.000Z",
+      "docketEntryComment": "/TEXT TRANS TO DEPT 27/TRANS 27 FORTHWITH FOR PRETRIAL CONFERENCE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2002-04-02T09:05:00.000Z",
+      "description": "/TEXT TRANS TO DEPT 27/TRANS 27 FORTHWITH FOR PRETRIAL CONFERENCE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02025772",
-    "portal_case_id": "",
+    "portal_case_id": "3164169",
     "display_case_number": "CRI-02025772",
     "defendant": "RONALD LEROY CADY",
     "filed_date": "2002-01-16",
@@ -59,12 +143,36 @@
       "defendant": "RONALD LEROY CADY",
       "filed_date": "2002-01-16"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RONALD LEROY CADY, and date of filing 2002-01-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RONALD LEROY CADY, and date of filing 2002-01-16. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:17:33.740Z",
+  "portal_case_id": "3164169",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02025772",
+      "defendant": "RONALD LEROY CADY",
+      "filed_date": "2002-01-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3164169"
+  }
 }

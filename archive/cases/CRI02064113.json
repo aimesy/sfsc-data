@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:26:07.543Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:22:26.711Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02064113",
   "criminal_case_number": "02064113",
@@ -24,11 +24,82 @@
       "name": "DEMIS BARAHONA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DEMIS BARAHONA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2002-08-22T00:00:00.000Z",
+      "docketEntryComment": "POSSIBLE DISPO, DOP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-09-19T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/X:DISMISSED IN VIEW OF PLEA IN #2033398/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-09-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING OR DISPO/CONT/STWPX/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-08-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, JOIN/CONTD:PRELIMINARY HEARING/CONTD PRELIM HRG/CONTD:FOR PRELIMINARY HEARING/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2002-09-19 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2002-09-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2002-09-05 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2002-09-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2002-08-23 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2002-08-23",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "A TB",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3199301",
+  "docket_entries": [
+    {
+      "filedDate": "2002-08-22T00:00:00.000Z",
+      "docketEntryComment": "POSSIBLE DISPO, DOP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2002-08-22T00:00:00.000Z",
+      "description": "POSSIBLE DISPO, DOP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-09-19T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/X:DISMISSED IN VIEW OF PLEA IN #2033398/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2002-09-19T09:00:00.000Z",
+      "description": "/MO PC 1385/MOTION GRANTED/X:DISMISSED IN VIEW OF PLEA IN #2033398/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-09-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING OR DISPO/CONT/STWPX/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2002-09-05T09:00:00.000Z",
+      "description": "/CAL:SENTENCING OR DISPO/CONT/STWPX/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-08-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, JOIN/CONTD:PRELIMINARY HEARING/CONTD PRELIM HRG/CONTD:FOR PRELIMINARY HEARING/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2002-08-23T09:00:00.000Z",
+      "description": "/CAL:TO SET, JOIN/CONTD:PRELIMINARY HEARING/CONTD PRELIM HRG/CONTD:FOR PRELIMINARY HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02064113",
-    "portal_case_id": "",
+    "portal_case_id": "3199301",
     "display_case_number": "CRI-02064113",
     "defendant": "DEMIS BARAHONA",
     "filed_date": "2002-08-22",
@@ -59,12 +171,36 @@
       "defendant": "DEMIS BARAHONA",
       "filed_date": "2002-08-22"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DEMIS BARAHONA, and date of filing 2002-08-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DEMIS BARAHONA, and date of filing 2002-08-22. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:22:27.376Z",
+  "portal_case_id": "3199301",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02064113",
+      "defendant": "DEMIS BARAHONA",
+      "filed_date": "2002-08-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3199301"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:35:38.503Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:19:04.490Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02031163",
   "criminal_case_number": "02031163",
@@ -24,11 +24,110 @@
       "name": "BRENT ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BRENT ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-04-27T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-03-19T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-02-08T09:00:00.000Z",
+      "docketEntryComment": "CONTD TO BE SET, DOP /CONT TO SET AND ARRAIGNMENT//TEXT:BENCH WARRANT STAYED BAIL $5000/NP/BWSC:02-08-02/CONTD:TO BE HEARD WITH #2026559/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-27T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 04/17/09",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-03-19T09:00:00.000Z",
+      "docketEntryComment": "/FTA/OREVKD/BWI/BW/BAIL:2000/BWNUM:2ND/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-03-12T09:00:00.000Z",
+      "docketEntryComment": "/DAW/CONTD:SET OR DISPO (DOPC)/CONTSGTW/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-02-11T09:01:00.000Z",
+      "docketEntryComment": "/CONTD:TO BE HEARD WITH #2026559/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2002-03-19 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2002-03-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2002-03-12 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 1,
+      "court_date": "2002-03-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2002-02-11 9:01 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 2,
+      "court_date": "2002-02-11",
+      "hearing_time": "9:01 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2002-02-08 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 3,
+      "court_date": "2002-02-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "J TRAUN",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +144,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3169106",
+  "docket_entries": [
+    {
+      "filedDate": "2009-04-27T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-04-27T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-03-19T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2002-03-19T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-02-08T09:00:00.000Z",
+      "docketEntryComment": "CONTD TO BE SET, DOP /CONT TO SET AND ARRAIGNMENT//TEXT:BENCH WARRANT STAYED BAIL $5000/NP/BWSC:02-08-02/CONTD:TO BE HEARD WITH #2026559/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2002-02-08T09:00:00.000Z",
+      "description": "CONTD TO BE SET, DOP /CONT TO SET AND ARRAIGNMENT//TEXT:BENCH WARRANT STAYED BAIL $5000/NP/BWSC:02-08-02/CONTD:TO BE HEARD WITH #2026559/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-27T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 04/17/09",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-04-27T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 04/17/09",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-03-19T09:00:00.000Z",
+      "docketEntryComment": "/FTA/OREVKD/BWI/BW/BAIL:2000/BWNUM:2ND/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2002-03-19T09:00:00.000Z",
+      "description": "/FTA/OREVKD/BWI/BW/BAIL:2000/BWNUM:2ND/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-03-12T09:00:00.000Z",
+      "docketEntryComment": "/DAW/CONTD:SET OR DISPO (DOPC)/CONTSGTW/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2002-03-12T09:00:00.000Z",
+      "description": "/DAW/CONTD:SET OR DISPO (DOPC)/CONTSGTW/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-02-11T09:01:00.000Z",
+      "docketEntryComment": "/CONTD:TO BE HEARD WITH #2026559/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2002-02-11T09:01:00.000Z",
+      "description": "/CONTD:TO BE HEARD WITH #2026559/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02031163",
-    "portal_case_id": "",
+    "portal_case_id": "3169106",
     "display_case_number": "CRI-02031163",
     "defendant": "BRENT ADAMS",
     "filed_date": "2002-02-08",
@@ -63,8 +233,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BRENT ADAMS, and date of filing 2002-02-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BRENT ADAMS, and date of filing 2002-02-08. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:19:05.144Z",
+  "portal_case_id": "3169106",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02031163",
+      "defendant": "BRENT ADAMS",
+      "filed_date": "2002-02-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3169106"
+  }
 }

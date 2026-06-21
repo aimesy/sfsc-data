@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:34:15.143Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:17:02.092Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02027090",
   "criminal_case_number": "02027090",
@@ -24,10 +24,78 @@
       "name": "ROSALYN WARREN BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROSALYN WARREN BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2011-12-09T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-01-25T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-01-24T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-12-09T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 12/09/11, CASE DISMISSED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-09-11T09:00:00.000Z",
+      "docketEntryComment": "/FTA/BWDIRIC1 01-25-06/BWI/BAIL 2000/BWNUM 2ND/X FTA 01-25-06 AN/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-01-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN /FTA/BW/BWI/BAIL:1000/BWNUM:2ND/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-01-24T00:00:00.000Z",
+      "docketEntryComment": "FTA AN 1ST BWI B/S $500",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2006-09-11 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2006-09-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2006-01-25 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 1,
+      "court_date": "2006-01-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +113,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3165387",
+  "docket_entries": [
+    {
+      "filedDate": "2011-12-09T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-12-09T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-01-25T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2006-01-25T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-01-24T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2002-01-24T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-12-09T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 12/09/11, CASE DISMISSED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-12-09T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 12/09/11, CASE DISMISSED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-09-11T09:00:00.000Z",
+      "docketEntryComment": "/FTA/BWDIRIC1 01-25-06/BWI/BAIL 2000/BWNUM 2ND/X FTA 01-25-06 AN/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2006-09-11T09:00:00.000Z",
+      "description": "/FTA/BWDIRIC1 01-25-06/BWI/BAIL 2000/BWNUM 2ND/X FTA 01-25-06 AN/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-01-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN /FTA/BW/BWI/BAIL:1000/BWNUM:2ND/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2006-01-25T09:00:00.000Z",
+      "description": "/CAL:BW RETURN /FTA/BW/BWI/BAIL:1000/BWNUM:2ND/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-01-24T00:00:00.000Z",
+      "docketEntryComment": "FTA AN 1ST BWI B/S $500",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2002-01-24T00:00:00.000Z",
+      "description": "FTA AN 1ST BWI B/S $500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02027090",
-    "portal_case_id": "",
+    "portal_case_id": "3165387",
     "display_case_number": "CRI-02027090",
     "defendant": "ROSALYN WARREN BROWN",
     "filed_date": "2002-01-24",
@@ -63,8 +202,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROSALYN WARREN BROWN, and date of filing 2002-01-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROSALYN WARREN BROWN, and date of filing 2002-01-24. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:17:02.808Z",
+  "portal_case_id": "3165387",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02027090",
+      "defendant": "ROSALYN WARREN BROWN",
+      "filed_date": "2002-01-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3165387"
+  }
 }

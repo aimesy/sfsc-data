@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:11:54.731Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:19:22.720Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02041758",
   "criminal_case_number": "02041758",
@@ -24,11 +24,107 @@
       "name": "GRADY ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "GRADY ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2002-06-03T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-05-16T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-05-06T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-07-09T13:01:00.000Z",
+      "docketEntryComment": "PLEA TRANS -FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-09-10T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ 90D/CTS:90/WS/290/VF4:200/PC/PSR/BKFEE/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-08-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING /CONTD:SENTENCING,DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-07-02T09:00:00.000Z",
+      "docketEntryComment": "/TEXT DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS 1//FNDG/CO:NEGOTIATED DISPOSITION/PRES:08-06-02/TWS/ARBUCKLE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-06-03T00:00:00.000Z",
+      "docketEntryComment": "BWR, N/C, SABF, BAIL EXON",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-05-16T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $20,000, BF",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2002-09-10 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2002-09-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2002-08-06 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2002-08-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2002-07-02 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2002-07-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S KIM",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +141,102 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3178732",
+  "docket_entries": [
+    {
+      "filedDate": "2002-06-03T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2002-06-03T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-05-16T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2002-05-16T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-05-06T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2002-05-06T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY HEARING",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-07-09T13:01:00.000Z",
+      "docketEntryComment": "PLEA TRANS -FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2002-07-09T13:01:00.000Z",
+      "description": "PLEA TRANS -FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-09-10T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ 90D/CTS:90/WS/290/VF4:200/PC/PSR/BKFEE/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2002-09-10T09:00:00.000Z",
+      "description": "/AJW/CH1:ISS:PROB 3 Y:PJ 90D/CTS:90/WS/290/VF4:200/PC/PSR/BKFEE/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-08-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING /CONTD:SENTENCING,DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2002-08-06T09:00:00.000Z",
+      "description": "/CAL:SENTENCING /CONTD:SENTENCING,DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-07-02T09:00:00.000Z",
+      "docketEntryComment": "/TEXT DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS 1//FNDG/CO:NEGOTIATED DISPOSITION/PRES:08-06-02/TWS/ARBUCKLE/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2002-07-02T09:00:00.000Z",
+      "description": "/TEXT DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS 1//FNDG/CO:NEGOTIATED DISPOSITION/PRES:08-06-02/TWS/ARBUCKLE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-06-03T00:00:00.000Z",
+      "docketEntryComment": "BWR, N/C, SABF, BAIL EXON",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2002-06-03T00:00:00.000Z",
+      "description": "BWR, N/C, SABF, BAIL EXON",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-05-16T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $20,000, BF",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "2002-05-16T00:00:00.000Z",
+      "description": "BWI, FTA, B/S $20,000, BF",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02041758",
-    "portal_case_id": "",
+    "portal_case_id": "3178732",
     "display_case_number": "CRI-02041758",
     "defendant": "GRADY ANDERSON",
     "filed_date": "2002-05-06",
@@ -63,8 +250,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, GRADY ANDERSON, and date of filing 2002-05-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, GRADY ANDERSON, and date of filing 2002-05-06. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:19:23.414Z",
+  "portal_case_id": "3178732",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02041758",
+      "defendant": "GRADY ANDERSON",
+      "filed_date": "2002-05-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3178732"
+  }
 }

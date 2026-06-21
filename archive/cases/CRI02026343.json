@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:29:43.127Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:18:01.533Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02026343",
   "criminal_case_number": "02026343",
@@ -24,11 +24,71 @@
       "name": "DEMELIA STEED",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DEMELIA STEED",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2002-04-30T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-01-18T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-01-16T00:00:00.000Z",
+      "docketEntryComment": "SPR REPT,DOP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-06-17T00:00:00.000Z",
+      "docketEntryComment": "DISM PURS 1385PC IV OF PLEA ON #2025164",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-04-30T09:00:00.000Z",
+      "docketEntryComment": "CONTD TO BE SET, DOP /CONTD:TO SET//CONTD:TO BE HEARD WITH #2025164, #1865024/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-01-18T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA TO SET, BAIL SET $10,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-01-16T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER FILED",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2002-04-30 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "2002-04-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "K MALOOF",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +105,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3164686",
+  "docket_entries": [
+    {
+      "filedDate": "2002-04-30T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2002-04-30T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-01-18T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2002-01-18T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-01-16T00:00:00.000Z",
+      "docketEntryComment": "SPR REPT,DOP",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2002-01-16T00:00:00.000Z",
+      "description": "SPR REPT,DOP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-06-17T00:00:00.000Z",
+      "docketEntryComment": "DISM PURS 1385PC IV OF PLEA ON #2025164",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2002-06-17T00:00:00.000Z",
+      "description": "DISM PURS 1385PC IV OF PLEA ON #2025164",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-04-30T09:00:00.000Z",
+      "docketEntryComment": "CONTD TO BE SET, DOP /CONTD:TO SET//CONTD:TO BE HEARD WITH #2025164, #1865024/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2002-04-30T09:00:00.000Z",
+      "description": "CONTD TO BE SET, DOP /CONTD:TO SET//CONTD:TO BE HEARD WITH #2025164, #1865024/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-01-18T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA TO SET, BAIL SET $10,000",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2002-01-18T00:00:00.000Z",
+      "description": "BWI, FTA TO SET, BAIL SET $10,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-01-16T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER FILED",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2002-01-16T00:00:00.000Z",
+      "description": "S/A ORDER FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02026343",
-    "portal_case_id": "",
+    "portal_case_id": "3164686",
     "display_case_number": "CRI-02026343",
     "defendant": "DEMELIA STEED",
     "filed_date": "2002-01-16",
@@ -63,8 +194,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DEMELIA STEED, and date of filing 2002-01-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DEMELIA STEED, and date of filing 2002-01-16. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:18:02.176Z",
+  "portal_case_id": "3164686",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02026343",
+      "defendant": "DEMELIA STEED",
+      "filed_date": "2002-01-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3164686"
+  }
 }

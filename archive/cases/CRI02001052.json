@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:42:39.277Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:14:06.460Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02001052",
   "criminal_case_number": "02001052",
@@ -24,11 +24,106 @@
       "name": "RAMIRO ALVAREZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RAMIRO ALVAREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2001-09-13T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-08-17T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-10-12T13:01:00.000Z",
+      "docketEntryComment": "PLEA TRANS - FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-09-13T13:01:00.000Z",
+      "docketEntryComment": "DA INFO -FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-09-10T13:01:00.000Z",
+      "docketEntryComment": "PRELIM TRANS -FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-10-29T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ 6 M/CTS:75/WS/VF4:200/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/WEAP2/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-10-05T09:01:00.000Z",
+      "docketEntryComment": "TWS/FNDG/CO:NEGOTIATED DISPOSITION/PRES:10-29-01/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-09-14T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAW/DEFTARR/NTW/LD:11-13-2001/987,2/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2001-10-29 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 27",
+      "__index": 0,
+      "court_date": "2001-10-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 27",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2001-10-05 9:01 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 27",
+      "__index": 1,
+      "court_date": "2001-10-05",
+      "hearing_time": "9:01 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 27",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2001-09-14 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2001-09-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S KIM",
+      "type": "Public Defender"
+    },
+    {
+      "name": "D MERIN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +140,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3141946",
+  "docket_entries": [
+    {
+      "filedDate": "2001-09-13T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-09-13T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY HEARING",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-08-17T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-08-17T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY HEARING",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-10-12T13:01:00.000Z",
+      "docketEntryComment": "PLEA TRANS - FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2001-10-12T13:01:00.000Z",
+      "description": "PLEA TRANS - FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-09-13T13:01:00.000Z",
+      "docketEntryComment": "DA INFO -FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2001-09-13T13:01:00.000Z",
+      "description": "DA INFO -FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-09-10T13:01:00.000Z",
+      "docketEntryComment": "PRELIM TRANS -FILED",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2001-09-10T13:01:00.000Z",
+      "description": "PRELIM TRANS -FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-10-29T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ 6 M/CTS:75/WS/VF4:200/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/WEAP2/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2001-10-29T09:00:00.000Z",
+      "description": "/AJW/CH1:ISS:PROB 3 Y:PJ 6 M/CTS:75/WS/VF4:200/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/WEAP2/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-10-05T09:01:00.000Z",
+      "docketEntryComment": "TWS/FNDG/CO:NEGOTIATED DISPOSITION/PRES:10-29-01/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2001-10-05T09:01:00.000Z",
+      "description": "TWS/FNDG/CO:NEGOTIATED DISPOSITION/PRES:10-29-01/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-09-14T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAW/DEFTARR/NTW/LD:11-13-2001/987,2/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2001-09-14T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAW/DEFTARR/NTW/LD:11-13-2001/987,2/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02001052",
-    "portal_case_id": "",
+    "portal_case_id": "3141946",
     "display_case_number": "CRI-02001052",
     "defendant": "RAMIRO ALVAREZ",
     "filed_date": "2001-08-17",
@@ -63,8 +239,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RAMIRO ALVAREZ, and date of filing 2001-08-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RAMIRO ALVAREZ, and date of filing 2001-08-17. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:14:07.003Z",
+  "portal_case_id": "3141946",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02001052",
+      "defendant": "RAMIRO ALVAREZ",
+      "filed_date": "2001-08-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3141946"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:34:15.143Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:22:10.885Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02054156",
   "criminal_case_number": "02054156",
@@ -24,11 +24,82 @@
       "name": "RODNEY BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RODNEY BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2002-06-25T00:00:00.000Z",
+      "docketEntryComment": "TO  SET PRELIM & PITCHESS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-08-23T09:00:00.000Z",
+      "docketEntryComment": "/TWS/CH1:CJ6M/CTS:64/VF1/CCPV/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-08-21T09:00:00.000Z",
+      "docketEntryComment": "AMEND:3/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL//DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-07-30T09:00:00.000Z",
+      "docketEntryComment": "CONTD TO BE SET, DOP/CAL:FOR PRELIMINARY HEARING//CONTD:TO SET PRELIMINARY HEARING AND PITCHESS MOTION/DOP/STWPX/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2002-08-23 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2002-08-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2002-08-21 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2002-08-21",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2002-07-30 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2002-07-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "K MALOOF",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3190065",
+  "docket_entries": [
+    {
+      "filedDate": "2002-06-25T00:00:00.000Z",
+      "docketEntryComment": "TO  SET PRELIM & PITCHESS",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2002-06-25T00:00:00.000Z",
+      "description": "TO SET PRELIM & PITCHESS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-08-23T09:00:00.000Z",
+      "docketEntryComment": "/TWS/CH1:CJ6M/CTS:64/VF1/CCPV/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2002-08-23T09:00:00.000Z",
+      "description": "/TWS/CH1:CJ6M/CTS:64/VF1/CCPV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-08-21T09:00:00.000Z",
+      "docketEntryComment": "AMEND:3/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL//DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2002-08-21T09:00:00.000Z",
+      "description": "AMEND:3/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL//DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-07-30T09:00:00.000Z",
+      "docketEntryComment": "CONTD TO BE SET, DOP/CAL:FOR PRELIMINARY HEARING//CONTD:TO SET PRELIMINARY HEARING AND PITCHESS MOTION/DOP/STWPX/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2002-07-30T09:00:00.000Z",
+      "description": "CONTD TO BE SET, DOP/CAL:FOR PRELIMINARY HEARING//CONTD:TO SET PRELIMINARY HEARING AND PITCHESS MOTION/DOP/STWPX/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02054156",
-    "portal_case_id": "",
+    "portal_case_id": "3190065",
     "display_case_number": "CRI-02054156",
     "defendant": "RODNEY BROWN",
     "filed_date": "2002-06-25",
@@ -63,8 +175,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RODNEY BROWN, and date of filing 2002-06-25. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RODNEY BROWN, and date of filing 2002-06-25. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:22:12.035Z",
+  "portal_case_id": "3190065",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02054156",
+      "defendant": "RODNEY BROWN",
+      "filed_date": "2002-06-25"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3190065"
+  }
 }

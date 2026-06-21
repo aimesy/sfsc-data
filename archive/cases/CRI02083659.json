@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:33:53.829Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:26:21.972Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02083659",
   "criminal_case_number": "02083659",
@@ -24,11 +24,64 @@
       "name": "DAVID C BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID C BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2002-12-13T00:00:00.000Z",
+      "docketEntryComment": "TO BE SET, DOP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-01-08T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/X:IN VIEW OF PLEA IN CASE #2063127/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-12-26T09:00:00.000Z",
+      "docketEntryComment": "CONTD TO BE SET, DOP /CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2003-01-08 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2003-01-08",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2002-12-26 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2002-12-26",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "W MAAS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +98,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3217331",
+  "docket_entries": [
+    {
+      "filedDate": "2002-12-13T00:00:00.000Z",
+      "docketEntryComment": "TO BE SET, DOP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2002-12-13T00:00:00.000Z",
+      "description": "TO BE SET, DOP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-01-08T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/X:IN VIEW OF PLEA IN CASE #2063127/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2003-01-08T09:00:00.000Z",
+      "description": "/MO PC 1385/MOTION GRANTED/X:IN VIEW OF PLEA IN CASE #2063127/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-12-26T09:00:00.000Z",
+      "docketEntryComment": "CONTD TO BE SET, DOP /CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2002-12-26T09:00:00.000Z",
+      "description": "CONTD TO BE SET, DOP /CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02083659",
-    "portal_case_id": "",
+    "portal_case_id": "3217331",
     "display_case_number": "CRI-02083659",
     "defendant": "DAVID C BROWN",
     "filed_date": "2002-12-13",
@@ -59,12 +143,36 @@
       "defendant": "DAVID C BROWN",
       "filed_date": "2002-12-13"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID C BROWN, and date of filing 2002-12-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID C BROWN, and date of filing 2002-12-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:26:22.544Z",
+  "portal_case_id": "3217331",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02083659",
+      "defendant": "DAVID C BROWN",
+      "filed_date": "2002-12-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3217331"
+  }
 }

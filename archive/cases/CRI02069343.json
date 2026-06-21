@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:39:40.723Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:23:26.625Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02069343",
   "criminal_case_number": "02069343",
@@ -24,11 +24,84 @@
       "name": "LISA ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LISA ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2002-09-25T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-09-20T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-09-20T00:00:00.000Z",
+      "docketEntryComment": "SAGE RPT (52 HRS)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-12-18T00:00:00.000Z",
+      "docketEntryComment": "SUCCESSFUL COMPLETION,DA DISCHARGED COMPLAINT WITHDRAWN",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-10-29T00:00:00.000Z",
+      "docketEntryComment": "DEFT WEEKLY CONTACT W/SAGE,DOP,(65 TOTAL HRS)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-09-25T09:00:00.000Z",
+      "docketEntryComment": "/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/OR/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-09-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:AN/FTA/BW/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2002-09-25 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "2002-09-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2002-09-20 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 1,
+      "court_date": "2002-09-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S KIM",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +118,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3204105",
+  "docket_entries": [
+    {
+      "filedDate": "2002-09-25T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2002-09-25T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-09-20T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2002-09-20T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-09-20T00:00:00.000Z",
+      "docketEntryComment": "SAGE RPT (52 HRS)",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2002-09-20T00:00:00.000Z",
+      "description": "SAGE RPT (52 HRS)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-12-18T00:00:00.000Z",
+      "docketEntryComment": "SUCCESSFUL COMPLETION,DA DISCHARGED COMPLAINT WITHDRAWN",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2002-12-18T00:00:00.000Z",
+      "description": "SUCCESSFUL COMPLETION,DA DISCHARGED COMPLAINT WITHDRAWN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-10-29T00:00:00.000Z",
+      "docketEntryComment": "DEFT WEEKLY CONTACT W/SAGE,DOP,(65 TOTAL HRS)",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2002-10-29T00:00:00.000Z",
+      "description": "DEFT WEEKLY CONTACT W/SAGE,DOP,(65 TOTAL HRS)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-09-25T09:00:00.000Z",
+      "docketEntryComment": "/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/OR/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2002-09-25T09:00:00.000Z",
+      "description": "/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/OR/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-09-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:AN/FTA/BW/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2002-09-20T09:00:00.000Z",
+      "description": "/CAL:AN/FTA/BW/BWI/BAIL:5000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02069343",
-    "portal_case_id": "",
+    "portal_case_id": "3204105",
     "display_case_number": "CRI-02069343",
     "defendant": "LISA ANDERSON",
     "filed_date": "2002-09-20",
@@ -63,8 +207,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LISA ANDERSON, and date of filing 2002-09-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LISA ANDERSON, and date of filing 2002-09-20. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:23:27.244Z",
+  "portal_case_id": "3204105",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02069343",
+      "defendant": "LISA ANDERSON",
+      "filed_date": "2002-09-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3204105"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:36:40.793Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:20:12.842Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02040603",
   "criminal_case_number": "02040603",
@@ -24,11 +24,79 @@
       "name": "DANA ANDREWS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DANA ANDREWS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2008-10-27T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-04-15T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-10-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO BE SET/MO PC 1385:UNABLE TO SUBSTAIN BURDEN OF PROOF /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-10-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL: BENCH WARRANT RETURN/ /BWDNC/SHER/BAIL:15,000/CONTD: TO BE SET/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-04-15T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $15,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-04-05T00:00:00.000Z",
+      "docketEntryComment": "SPR GRANTED 4/15/02 DATE CONFIRMED",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2008-10-30 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2008-10-30",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2008-10-27 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2008-10-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "RICHARD SHIKMAN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +113,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3177677",
+  "docket_entries": [
+    {
+      "filedDate": "2008-10-27T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2008-10-27T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-04-15T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2002-04-15T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-10-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO BE SET/MO PC 1385:UNABLE TO SUBSTAIN BURDEN OF PROOF /",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2008-10-30T09:00:00.000Z",
+      "description": "/CAL:TO BE SET/MO PC 1385:UNABLE TO SUBSTAIN BURDEN OF PROOF /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-10-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL: BENCH WARRANT RETURN/ /BWDNC/SHER/BAIL:15,000/CONTD: TO BE SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2008-10-27T09:00:00.000Z",
+      "description": "/CAL: BENCH WARRANT RETURN/ /BWDNC/SHER/BAIL:15,000/CONTD: TO BE SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-04-15T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $15,000",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2002-04-15T00:00:00.000Z",
+      "description": "BWI, FTA, B/S $15,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-04-05T00:00:00.000Z",
+      "docketEntryComment": "SPR GRANTED 4/15/02 DATE CONFIRMED",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2002-04-05T00:00:00.000Z",
+      "description": "SPR GRANTED 4/15/02 DATE CONFIRMED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02040603",
-    "portal_case_id": "",
+    "portal_case_id": "3177677",
     "display_case_number": "CRI-02040603",
     "defendant": "DANA ANDREWS",
     "filed_date": "2002-04-03",
@@ -59,12 +188,36 @@
       "defendant": "DANA ANDREWS",
       "filed_date": "2002-04-03"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DANA ANDREWS, and date of filing 2002-04-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DANA ANDREWS, and date of filing 2002-04-03. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:20:13.461Z",
+  "portal_case_id": "3177677",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02040603",
+      "defendant": "DANA ANDREWS",
+      "filed_date": "2002-04-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3177677"
+  }
 }
