@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:52:53.877Z",
+  "captured_at": "2026-06-21T09:33:59.467Z",
   "criminal_case_number": "23017524",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4082557",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "ANGEL SPROUSE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-23017524",
+    "defendant": "ANGEL SPROUSE"
+  },
+  "case_header_checked_at": "2026-06-21T09:34:00.621Z",
+  "display_case_number": "CRI-23017524",
+  "defendant": "ANGEL SPROUSE",
+  "case_title": "People v. ANGEL SPROUSE",
   "case_type": "criminal",
   "case_number": "CRI23017524",
-  "case_title": "San Francisco criminal case 23017524",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4082557",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "23017524",
     "portal_case_id": "4082557",
+    "display_case_number": "CRI-23017524",
+    "defendant": "ANGEL SPROUSE",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-23017524",
+      "defendant": "ANGEL SPROUSE"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANGEL SPROUSE. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

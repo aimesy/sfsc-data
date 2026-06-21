@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:58:13.364Z",
+  "captured_at": "2026-06-21T09:28:48.375Z",
   "criminal_case_number": "23017546",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4082584",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "AREYANA NINA HILL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-23017546",
+    "defendant": "AREYANA NINA HILL"
+  },
+  "case_header_checked_at": "2026-06-21T09:28:49.034Z",
+  "display_case_number": "CRI-23017546",
+  "defendant": "AREYANA NINA HILL",
+  "case_title": "People v. AREYANA NINA HILL",
   "case_type": "criminal",
   "case_number": "CRI23017546",
-  "case_title": "San Francisco criminal case 23017546",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4082584",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "23017546",
     "portal_case_id": "4082584",
+    "display_case_number": "CRI-23017546",
+    "defendant": "AREYANA NINA HILL",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-23017546",
+      "defendant": "AREYANA NINA HILL"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, AREYANA NINA HILL. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

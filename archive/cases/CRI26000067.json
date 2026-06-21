@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:12:50.748Z",
+  "captured_at": "2026-06-21T09:31:10.273Z",
   "criminal_case_number": "26000067",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4242864",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "DAMIEN ROSALESREYES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-26000067",
+    "defendant": "DAMIEN ROSALESREYES"
+  },
+  "case_header_checked_at": "2026-06-21T09:31:11.431Z",
+  "display_case_number": "CRI-26000067",
+  "defendant": "DAMIEN ROSALESREYES",
+  "case_title": "People v. DAMIEN ROSALESREYES",
   "case_type": "criminal",
   "case_number": "CRI26000067",
-  "case_title": "San Francisco criminal case 26000067",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4242864",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "26000067",
     "portal_case_id": "4242864",
+    "display_case_number": "CRI-26000067",
+    "defendant": "DAMIEN ROSALESREYES",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-26000067",
+      "defendant": "DAMIEN ROSALESREYES"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAMIEN ROSALESREYES. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

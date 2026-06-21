@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:54:44.018Z",
+  "captured_at": "2026-06-21T09:27:53.797Z",
   "criminal_case_number": "23017536",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4082572",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "CHARLES WILLIAM GRIFFIN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-23017536",
+    "defendant": "CHARLES WILLIAM GRIFFIN"
+  },
+  "case_header_checked_at": "2026-06-21T09:27:55.345Z",
+  "display_case_number": "CRI-23017536",
+  "defendant": "CHARLES WILLIAM GRIFFIN",
+  "case_title": "People v. CHARLES WILLIAM GRIFFIN",
   "case_type": "criminal",
   "case_number": "CRI23017536",
-  "case_title": "San Francisco criminal case 23017536",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4082572",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "23017536",
     "portal_case_id": "4082572",
+    "display_case_number": "CRI-23017536",
+    "defendant": "CHARLES WILLIAM GRIFFIN",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-23017536",
+      "defendant": "CHARLES WILLIAM GRIFFIN"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHARLES WILLIAM GRIFFIN. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

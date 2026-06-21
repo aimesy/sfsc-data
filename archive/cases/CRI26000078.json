@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:15:37.087Z",
+  "captured_at": "2026-06-21T09:31:44.323Z",
   "criminal_case_number": "26000078",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4242875",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "PHILIP MARTINEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-26000078",
+    "defendant": "PHILIP MARTINEZ"
+  },
+  "case_header_checked_at": "2026-06-21T09:31:45.728Z",
+  "display_case_number": "CRI-26000078",
+  "defendant": "PHILIP MARTINEZ",
+  "case_title": "People v. PHILIP MARTINEZ",
   "case_type": "criminal",
   "case_number": "CRI26000078",
-  "case_title": "San Francisco criminal case 26000078",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4242875",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "26000078",
     "portal_case_id": "4242875",
+    "display_case_number": "CRI-26000078",
+    "defendant": "PHILIP MARTINEZ",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-26000078",
+      "defendant": "PHILIP MARTINEZ"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, PHILIP MARTINEZ. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

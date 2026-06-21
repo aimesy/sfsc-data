@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:36:22.924Z",
+  "captured_at": "2026-06-21T09:31:02.947Z",
   "criminal_case_number": "24000095",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4092972",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "MICHAEL HINSON RUNNELS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-24000095",
+    "defendant": "MICHAEL HINSON RUNNELS"
+  },
+  "case_header_checked_at": "2026-06-21T09:31:03.770Z",
+  "display_case_number": "CRI-24000095",
+  "defendant": "MICHAEL HINSON RUNNELS",
+  "case_title": "People v. MICHAEL HINSON RUNNELS",
   "case_type": "criminal",
   "case_number": "CRI24000095",
-  "case_title": "San Francisco criminal case 24000095",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4092972",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "24000095",
     "portal_case_id": "4092972",
+    "display_case_number": "CRI-24000095",
+    "defendant": "MICHAEL HINSON RUNNELS",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-24000095",
+      "defendant": "MICHAEL HINSON RUNNELS"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL HINSON RUNNELS. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

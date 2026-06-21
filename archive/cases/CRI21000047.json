@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:31:33.740Z",
+  "captured_at": "2026-06-21T09:28:33.919Z",
   "criminal_case_number": "21000047",
   "status": "found",
   "portal_case_id": "3921854",
@@ -1193,9 +1193,26 @@
       "type": "Primary"
     }
   ],
+  "parties": [
+    {
+      "name": "RICHARD ASIF MASSEY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-21000047",
+    "defendant": "RICHARD ASIF MASSEY",
+    "filed_date": "2021-01-05"
+  },
+  "case_header_checked_at": "2026-06-21T09:28:34.641Z",
+  "display_case_number": "CRI-21000047",
+  "defendant": "RICHARD ASIF MASSEY",
+  "case_title": "People v. RICHARD ASIF MASSEY",
+  "filed_date": "2021-01-05",
   "case_type": "criminal",
   "case_number": "CRI21000047",
-  "case_title": "San Francisco criminal case 21000047",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3921854",
@@ -1951,7 +1968,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -1959,6 +1975,15 @@
   "criminal": {
     "raw_case_number": "21000047",
     "portal_case_id": "3921854",
+    "display_case_number": "CRI-21000047",
+    "defendant": "RICHARD ASIF MASSEY",
+    "filed_date": "2021-01-05",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-21000047",
+      "defendant": "RICHARD ASIF MASSEY",
+      "filed_date": "2021-01-05"
+    },
     "statutes": [
       {
         "code": "PC 1001.36",

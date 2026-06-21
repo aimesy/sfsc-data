@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:43:05.424Z",
+  "captured_at": "2026-06-21T09:32:23.171Z",
   "criminal_case_number": "23000096",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4035530",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "SEAN MICHAEL BURKE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-23000096",
+    "defendant": "SEAN MICHAEL BURKE"
+  },
+  "case_header_checked_at": "2026-06-21T09:32:23.818Z",
+  "display_case_number": "CRI-23000096",
+  "defendant": "SEAN MICHAEL BURKE",
+  "case_title": "People v. SEAN MICHAEL BURKE",
   "case_type": "criminal",
   "case_number": "CRI23000096",
-  "case_title": "San Francisco criminal case 23000096",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4035530",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "23000096",
     "portal_case_id": "4035530",
+    "display_case_number": "CRI-23000096",
+    "defendant": "SEAN MICHAEL BURKE",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-23000096",
+      "defendant": "SEAN MICHAEL BURKE"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, SEAN MICHAEL BURKE. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

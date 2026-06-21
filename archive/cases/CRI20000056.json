@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:24:59.521Z",
+  "captured_at": "2026-06-21T09:30:33.822Z",
   "criminal_case_number": "20000056",
   "status": "found",
   "portal_case_id": "3908421",
@@ -34,9 +34,26 @@
     }
   ],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "DAVID B READE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-20000056",
+    "defendant": "DAVID B READE",
+    "filed_date": "2020-01-03"
+  },
+  "case_header_checked_at": "2026-06-21T09:30:34.486Z",
+  "display_case_number": "CRI-20000056",
+  "defendant": "DAVID B READE",
+  "case_title": "People v. DAVID B READE",
+  "filed_date": "2020-01-03",
   "case_type": "criminal",
   "case_number": "CRI20000056",
-  "case_title": "San Francisco criminal case 20000056",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3908421",
@@ -52,7 +69,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -60,6 +76,15 @@
   "criminal": {
     "raw_case_number": "20000056",
     "portal_case_id": "3908421",
+    "display_case_number": "CRI-20000056",
+    "defendant": "DAVID B READE",
+    "filed_date": "2020-01-03",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-20000056",
+      "defendant": "DAVID B READE",
+      "filed_date": "2020-01-03"
+    },
     "statutes": [],
     "inferred_charges": []
   },

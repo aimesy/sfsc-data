@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:46:25.250Z",
+  "captured_at": "2026-06-21T09:33:59.954Z",
   "criminal_case_number": "24000132",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4093046",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "GLEN STEVEN SCOTT",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-24000132",
+    "defendant": "GLEN STEVEN SCOTT"
+  },
+  "case_header_checked_at": "2026-06-21T09:34:01.357Z",
+  "display_case_number": "CRI-24000132",
+  "defendant": "GLEN STEVEN SCOTT",
+  "case_title": "People v. GLEN STEVEN SCOTT",
   "case_type": "criminal",
   "case_number": "CRI24000132",
-  "case_title": "San Francisco criminal case 24000132",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4093046",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "24000132",
     "portal_case_id": "4093046",
+    "display_case_number": "CRI-24000132",
+    "defendant": "GLEN STEVEN SCOTT",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-24000132",
+      "defendant": "GLEN STEVEN SCOTT"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, GLEN STEVEN SCOTT. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:33:25.470Z",
+  "captured_at": "2026-06-21T09:34:10.075Z",
   "criminal_case_number": "20002188",
   "status": "found",
   "portal_case_id": "3910463",
@@ -439,9 +439,26 @@
       "type": "Primary"
     }
   ],
+  "parties": [
+    {
+      "name": "CARLOS MEJIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-20002188",
+    "defendant": "CARLOS MEJIA",
+    "filed_date": "2020-02-13"
+  },
+  "case_header_checked_at": "2026-06-21T09:34:12.460Z",
+  "display_case_number": "CRI-20002188",
+  "defendant": "CARLOS MEJIA",
+  "case_title": "People v. CARLOS MEJIA",
+  "filed_date": "2020-02-13",
   "case_type": "criminal",
   "case_number": "CRI20002188",
-  "case_title": "San Francisco criminal case 20002188",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3910463",
@@ -807,7 +824,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -815,6 +831,15 @@
   "criminal": {
     "raw_case_number": "20002188",
     "portal_case_id": "3910463",
+    "display_case_number": "CRI-20002188",
+    "defendant": "CARLOS MEJIA",
+    "filed_date": "2020-02-13",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-20002188",
+      "defendant": "CARLOS MEJIA",
+      "filed_date": "2020-02-13"
+    },
     "statutes": [],
     "inferred_charges": []
   },

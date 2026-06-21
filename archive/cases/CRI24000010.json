@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:19:28.321Z",
+  "captured_at": "2026-06-21T09:26:00.944Z",
   "criminal_case_number": "24000010",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4092845",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "THOMAS DUTRA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-24000010",
+    "defendant": "THOMAS DUTRA"
+  },
+  "case_header_checked_at": "2026-06-21T09:26:01.771Z",
+  "display_case_number": "CRI-24000010",
+  "defendant": "THOMAS DUTRA",
+  "case_title": "People v. THOMAS DUTRA",
   "case_type": "criminal",
   "case_number": "CRI24000010",
-  "case_title": "San Francisco criminal case 24000010",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4092845",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "24000010",
     "portal_case_id": "4092845",
+    "display_case_number": "CRI-24000010",
+    "defendant": "THOMAS DUTRA",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-24000010",
+      "defendant": "THOMAS DUTRA"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, THOMAS DUTRA. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:38:34.572Z",
+  "captured_at": "2026-06-21T09:30:30.923Z",
   "criminal_case_number": "21000080",
   "status": "found",
   "portal_case_id": "3921887",
@@ -737,9 +737,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "RON COWAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-21000080",
+    "defendant": "RON COWAN",
+    "filed_date": "2021-01-06"
+  },
+  "case_header_checked_at": "2026-06-21T09:30:31.572Z",
+  "display_case_number": "CRI-21000080",
+  "defendant": "RON COWAN",
+  "case_title": "People v. RON COWAN",
+  "filed_date": "2021-01-06",
   "case_type": "criminal",
   "case_number": "CRI21000080",
-  "case_title": "San Francisco criminal case 21000080",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3921887",
@@ -1285,7 +1302,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -1293,6 +1309,15 @@
   "criminal": {
     "raw_case_number": "21000080",
     "portal_case_id": "3921887",
+    "display_case_number": "CRI-21000080",
+    "defendant": "RON COWAN",
+    "filed_date": "2021-01-06",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-21000080",
+      "defendant": "RON COWAN",
+      "filed_date": "2021-01-06"
+    },
     "statutes": [],
     "inferred_charges": []
   },

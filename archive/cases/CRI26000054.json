@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:09:56.435Z",
+  "captured_at": "2026-06-21T09:30:02.264Z",
   "criminal_case_number": "26000054",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4242851",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "LASHONDA JOSEPH",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-26000054",
+    "defendant": "LASHONDA JOSEPH"
+  },
+  "case_header_checked_at": "2026-06-21T09:30:03.413Z",
+  "display_case_number": "CRI-26000054",
+  "defendant": "LASHONDA JOSEPH",
+  "case_title": "People v. LASHONDA JOSEPH",
   "case_type": "criminal",
   "case_number": "CRI26000054",
-  "case_title": "San Francisco criminal case 26000054",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4242851",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "26000054",
     "portal_case_id": "4242851",
+    "display_case_number": "CRI-26000054",
+    "defendant": "LASHONDA JOSEPH",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-26000054",
+      "defendant": "LASHONDA JOSEPH"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LASHONDA JOSEPH. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

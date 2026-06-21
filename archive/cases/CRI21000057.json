@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:34:18.342Z",
+  "captured_at": "2026-06-21T09:29:32.393Z",
   "criminal_case_number": "21000057",
   "status": "found",
   "portal_case_id": "3921864",
@@ -553,9 +553,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "MIGUEL MUKUL MONTALVO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-21000057",
+    "defendant": "MIGUEL MUKUL MONTALVO",
+    "filed_date": "2021-01-06"
+  },
+  "case_header_checked_at": "2026-06-21T09:29:33.608Z",
+  "display_case_number": "CRI-21000057",
+  "defendant": "MIGUEL MUKUL MONTALVO",
+  "case_title": "People v. MIGUEL MUKUL MONTALVO",
+  "filed_date": "2021-01-06",
   "case_type": "criminal",
   "case_number": "CRI21000057",
-  "case_title": "San Francisco criminal case 21000057",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3921864",
@@ -941,7 +958,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -949,6 +965,15 @@
   "criminal": {
     "raw_case_number": "21000057",
     "portal_case_id": "3921864",
+    "display_case_number": "CRI-21000057",
+    "defendant": "MIGUEL MUKUL MONTALVO",
+    "filed_date": "2021-01-06",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-21000057",
+      "defendant": "MIGUEL MUKUL MONTALVO",
+      "filed_date": "2021-01-06"
+    },
     "statutes": [
       {
         "code": "PC 1385",

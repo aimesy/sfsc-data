@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:42:41.810Z",
+  "captured_at": "2026-06-21T09:33:25.639Z",
   "criminal_case_number": "22000090",
   "status": "found",
   "portal_case_id": "3934841",
@@ -572,9 +572,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "ZHI QIANG NAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000090",
+    "defendant": "ZHI QIANG NAN",
+    "filed_date": "2022-01-05"
+  },
+  "case_header_checked_at": "2026-06-21T09:33:26.483Z",
+  "display_case_number": "CRI-22000090",
+  "defendant": "ZHI QIANG NAN",
+  "case_title": "People v. ZHI QIANG NAN",
+  "filed_date": "2022-01-05",
   "case_type": "criminal",
   "case_number": "CRI22000090",
-  "case_title": "San Francisco criminal case 22000090",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3934841",
@@ -920,7 +937,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -928,6 +944,15 @@
   "criminal": {
     "raw_case_number": "22000090",
     "portal_case_id": "3934841",
+    "display_case_number": "CRI-22000090",
+    "defendant": "ZHI QIANG NAN",
+    "filed_date": "2022-01-05",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000090",
+      "defendant": "ZHI QIANG NAN",
+      "filed_date": "2022-01-05"
+    },
     "statutes": [
       {
         "code": "PC 1001",

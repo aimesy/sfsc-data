@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:38:20.383Z",
+  "captured_at": "2026-06-21T09:29:48.486Z",
   "criminal_case_number": "25026268",
   "status": "found",
   "portal_case_id": "4235094",
@@ -234,9 +234,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "DEON JACKSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-25026268",
+    "defendant": "DEON JACKSON",
+    "filed_date": "2025-12-04"
+  },
+  "case_header_checked_at": "2026-06-21T09:29:49.582Z",
+  "display_case_number": "CRI-25026268",
+  "defendant": "DEON JACKSON",
+  "case_title": "People v. DEON JACKSON",
+  "filed_date": "2025-12-04",
   "case_type": "criminal",
   "case_number": "CRI25026268",
-  "case_title": "San Francisco criminal case 25026268",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4235094",
@@ -452,7 +469,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -460,6 +476,15 @@
   "criminal": {
     "raw_case_number": "25026268",
     "portal_case_id": "4235094",
+    "display_case_number": "CRI-25026268",
+    "defendant": "DEON JACKSON",
+    "filed_date": "2025-12-04",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-25026268",
+      "defendant": "DEON JACKSON",
+      "filed_date": "2025-12-04"
+    },
     "statutes": [],
     "inferred_charges": []
   },

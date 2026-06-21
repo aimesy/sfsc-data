@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:42:02.877Z",
+  "captured_at": "2026-06-21T09:31:36.757Z",
   "criminal_case_number": "21000093",
   "status": "found",
   "portal_case_id": "3921900",
@@ -465,9 +465,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "MICHAEL DION CONNOR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-21000093",
+    "defendant": "MICHAEL DION CONNOR",
+    "filed_date": "2021-01-04"
+  },
+  "case_header_checked_at": "2026-06-21T09:31:38.151Z",
+  "display_case_number": "CRI-21000093",
+  "defendant": "MICHAEL DION CONNOR",
+  "case_title": "People v. MICHAEL DION CONNOR",
+  "filed_date": "2021-01-04",
   "case_type": "criminal",
   "case_number": "CRI21000093",
-  "case_title": "San Francisco criminal case 21000093",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3921900",
@@ -833,7 +850,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -841,6 +857,15 @@
   "criminal": {
     "raw_case_number": "21000093",
     "portal_case_id": "3921900",
+    "display_case_number": "CRI-21000093",
+    "defendant": "MICHAEL DION CONNOR",
+    "filed_date": "2021-01-04",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-21000093",
+      "defendant": "MICHAEL DION CONNOR",
+      "filed_date": "2021-01-04"
+    },
     "statutes": [],
     "inferred_charges": []
   },

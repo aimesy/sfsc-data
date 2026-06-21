@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:14:26.487Z",
+  "captured_at": "2026-06-21T09:31:14.576Z",
   "criminal_case_number": "25000085",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4161261",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "DELOS GALLON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-25000085",
+    "defendant": "DELOS GALLON"
+  },
+  "case_header_checked_at": "2026-06-21T09:31:15.373Z",
+  "display_case_number": "CRI-25000085",
+  "defendant": "DELOS GALLON",
+  "case_title": "People v. DELOS GALLON",
   "case_type": "criminal",
   "case_number": "CRI25000085",
-  "case_title": "San Francisco criminal case 25000085",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4161261",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "25000085",
     "portal_case_id": "4161261",
+    "display_case_number": "CRI-25000085",
+    "defendant": "DELOS GALLON",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-25000085",
+      "defendant": "DELOS GALLON"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DELOS GALLON. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:25:39.113Z",
+  "captured_at": "2026-06-21T09:30:43.791Z",
   "criminal_case_number": "20000059",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "3908424",
   "search": {
     "code": 1,
@@ -14,14 +14,30 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "CHRISTOPHER SALIBA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-20000059",
+    "defendant": "CHRISTOPHER SALIBA",
+    "filed_date": "2020-01-01"
+  },
+  "case_header_checked_at": "2026-06-21T09:30:44.486Z",
+  "display_case_number": "CRI-20000059",
+  "defendant": "CHRISTOPHER SALIBA",
+  "case_title": "People v. CHRISTOPHER SALIBA",
+  "filed_date": "2020-01-01",
   "case_type": "criminal",
   "case_number": "CRI20000059",
-  "case_title": "San Francisco criminal case 20000059",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3908424",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +45,20 @@
   "criminal": {
     "raw_case_number": "20000059",
     "portal_case_id": "3908424",
+    "display_case_number": "CRI-20000059",
+    "defendant": "CHRISTOPHER SALIBA",
+    "filed_date": "2020-01-01",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-20000059",
+      "defendant": "CHRISTOPHER SALIBA",
+      "filed_date": "2020-01-01"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHRISTOPHER SALIBA, and date of filing 2020-01-01. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

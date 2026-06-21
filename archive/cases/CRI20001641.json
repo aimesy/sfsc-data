@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:46:22.791Z",
+  "captured_at": "2026-06-21T09:33:37.352Z",
   "criminal_case_number": "20001641",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "3909938",
   "search": {
     "code": 1,
@@ -14,14 +14,30 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "MADEO DEJESUS ALDANA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-20001641",
+    "defendant": "MADEO DEJESUS ALDANA",
+    "filed_date": "2020-01-30"
+  },
+  "case_header_checked_at": "2026-06-21T09:33:38.100Z",
+  "display_case_number": "CRI-20001641",
+  "defendant": "MADEO DEJESUS ALDANA",
+  "case_title": "People v. MADEO DEJESUS ALDANA",
+  "filed_date": "2020-01-30",
   "case_type": "criminal",
   "case_number": "CRI20001641",
-  "case_title": "San Francisco criminal case 20001641",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3909938",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +45,20 @@
   "criminal": {
     "raw_case_number": "20001641",
     "portal_case_id": "3909938",
+    "display_case_number": "CRI-20001641",
+    "defendant": "MADEO DEJESUS ALDANA",
+    "filed_date": "2020-01-30",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-20001641",
+      "defendant": "MADEO DEJESUS ALDANA",
+      "filed_date": "2020-01-30"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MADEO DEJESUS ALDANA, and date of filing 2020-01-30. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

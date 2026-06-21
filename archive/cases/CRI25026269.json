@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:38:45.052Z",
+  "captured_at": "2026-06-21T09:35:50.793Z",
   "criminal_case_number": "25026269",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4235095",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "JOSHUA GUADALUPE MORENO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-25026269",
+    "defendant": "JOSHUA GUADALUPE MORENO"
+  },
+  "case_header_checked_at": "2026-06-21T09:35:53.015Z",
+  "display_case_number": "CRI-25026269",
+  "defendant": "JOSHUA GUADALUPE MORENO",
+  "case_title": "People v. JOSHUA GUADALUPE MORENO",
   "case_type": "criminal",
   "case_number": "CRI25026269",
-  "case_title": "San Francisco criminal case 25026269",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4235095",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "25026269",
     "portal_case_id": "4235095",
+    "display_case_number": "CRI-25026269",
+    "defendant": "JOSHUA GUADALUPE MORENO",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-25026269",
+      "defendant": "JOSHUA GUADALUPE MORENO"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSHUA GUADALUPE MORENO. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0
