@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:59:22.011Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:58:19.085Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01415221",
   "criminal_case_number": "01415221",
@@ -24,11 +24,42 @@
       "name": "ANGIE LOVE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANGIE LOVE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1992-12-03T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-04-07T00:00:00.000Z",
+      "docketEntryComment": "APD PORB MOD TO CT PROB",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-01-19T00:00:00.000Z",
+      "docketEntryComment": "DA ORALLY AMEND MISD; WIA & IRRG;SENT AS TO 10980(G)WI-STAYED PURS 654PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-01-19T00:00:00.000Z",
+      "docketEntryComment": "PAY RESTIT TO DEPT OF SOCIAL SERVICES",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "H DOERING",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +76,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2604728",
+  "docket_entries": [
+    {
+      "filedDate": "1992-12-03T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1992-12-03T00:00:00.000Z",
+      "description": "COMP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-04-07T00:00:00.000Z",
+      "docketEntryComment": "APD PORB MOD TO CT PROB",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1993-04-07T00:00:00.000Z",
+      "description": "APD PORB MOD TO CT PROB",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-01-19T00:00:00.000Z",
+      "docketEntryComment": "DA ORALLY AMEND MISD; WIA & IRRG;SENT AS TO 10980(G)WI-STAYED PURS 654PC",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1993-01-19T00:00:00.000Z",
+      "description": "DA ORALLY AMEND MISD; WIA & IRRG;SENT AS TO 10980(G)WI-STAYED PURS 654PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-01-19T00:00:00.000Z",
+      "docketEntryComment": "PAY RESTIT TO DEPT OF SOCIAL SERVICES",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1993-01-19T00:00:00.000Z",
+      "description": "PAY RESTIT TO DEPT OF SOCIAL SERVICES",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01415221",
-    "portal_case_id": "",
+    "portal_case_id": "2604728",
     "display_case_number": "CRI-01415221",
     "defendant": "ANGIE LOVE",
     "filed_date": "1992-12-03",
@@ -63,8 +135,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANGIE LOVE, and date of filing 1992-12-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANGIE LOVE, and date of filing 1992-12-03. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:58:19.721Z",
+  "portal_case_id": "2604728",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01415221",
+      "defendant": "ANGIE LOVE",
+      "filed_date": "1992-12-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2604728"
+  }
 }

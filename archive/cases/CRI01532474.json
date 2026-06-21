@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:33:53.835Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:12:49.594Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01532474",
   "criminal_case_number": "01532474",
@@ -24,11 +24,85 @@
       "name": "DANIEL BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DANIEL BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1994-09-27T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-09-09T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-09-09T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-11-18T00:00:00.000Z",
+      "docketEntryComment": "BAIL EXON (SB112149),",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-11-17T00:00:00.000Z",
+      "docketEntryComment": "CT REJ DISPO,CT ORD G PL S/AS & NG PL REIN,DISM CTS REIN",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-11-16T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:CRT REJ DISPO; NG PLEA(S) ARE REIN; CAUSE IS REMANDED DEPT 11//BE//BAIL:$15,000/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-10-18T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-09-27T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C, B/S $5,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-09-09T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $10,000, OR RVKD",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1994-11-16 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1994-11-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "GAIL DEKREON",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "R PASQUALI",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +119,102 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2711997",
+  "docket_entries": [
+    {
+      "filedDate": "1994-09-27T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1994-09-27T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-09-09T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1994-09-09T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-09-09T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1994-09-09T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-11-18T00:00:00.000Z",
+      "docketEntryComment": "BAIL EXON (SB112149),",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1994-11-18T00:00:00.000Z",
+      "description": "BAIL EXON (SB112149),",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-11-17T00:00:00.000Z",
+      "docketEntryComment": "CT REJ DISPO,CT ORD G PL S/AS & NG PL REIN,DISM CTS REIN",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1994-11-17T00:00:00.000Z",
+      "description": "CT REJ DISPO,CT ORD G PL S/AS & NG PL REIN,DISM CTS REIN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-11-16T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:CRT REJ DISPO; NG PLEA(S) ARE REIN; CAUSE IS REMANDED DEPT 11//BE//BAIL:$15,000/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1994-11-16T09:00:00.000Z",
+      "description": "/TEXT:CRT REJ DISPO; NG PLEA(S) ARE REIN; CAUSE IS REMANDED DEPT 11//BE//BAIL:$15,000/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-10-18T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1994-10-18T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-09-27T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C, B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1994-09-27T00:00:00.000Z",
+      "description": "BWD, N/C, B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-09-09T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $10,000, OR RVKD",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "1994-09-09T00:00:00.000Z",
+      "description": "BWI, FTA, B/S $10,000, OR RVKD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01532474",
-    "portal_case_id": "",
+    "portal_case_id": "2711997",
     "display_case_number": "CRI-01532474",
     "defendant": "DANIEL BROWN",
     "filed_date": "1994-09-09",
@@ -63,8 +228,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DANIEL BROWN, and date of filing 1994-09-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DANIEL BROWN, and date of filing 1994-09-09. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:12:50.249Z",
+  "portal_case_id": "2711997",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01532474",
+      "defendant": "DANIEL BROWN",
+      "filed_date": "1994-09-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2711997"
+  }
 }

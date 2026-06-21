@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:30:28.620Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:55:04.196Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01393224",
   "criminal_case_number": "01393224",
@@ -24,11 +24,32 @@
       "name": "ALISA D ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALISA D ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1992-09-03T00:00:00.000Z",
+      "docketEntryComment": "PTD PROG RPT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-10-05T00:00:00.000Z",
+      "docketEntryComment": "DISM 1001,9PC SUCC DIVERSION",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "DAVID MANN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +66,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2584906",
+  "docket_entries": [
+    {
+      "filedDate": "1992-09-03T00:00:00.000Z",
+      "docketEntryComment": "PTD PROG RPT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1992-09-03T00:00:00.000Z",
+      "description": "PTD PROG RPT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-10-05T00:00:00.000Z",
+      "docketEntryComment": "DISM 1001,9PC SUCC DIVERSION",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1993-10-05T00:00:00.000Z",
+      "description": "DISM 1001,9PC SUCC DIVERSION",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01393224",
-    "portal_case_id": "",
+    "portal_case_id": "2584906",
     "display_case_number": "CRI-01393224",
     "defendant": "ALISA D ALLEN",
     "filed_date": "1992-09-03",
@@ -63,8 +105,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALISA D ALLEN, and date of filing 1992-09-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALISA D ALLEN, and date of filing 1992-09-03. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:55:05.315Z",
+  "portal_case_id": "2584906",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01393224",
+      "defendant": "ALISA D ALLEN",
+      "filed_date": "1992-09-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2584906"
+  }
 }

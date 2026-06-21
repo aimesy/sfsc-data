@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:38:12.927Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:09:04.488Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01504735",
   "criminal_case_number": "01504735",
@@ -24,11 +24,61 @@
       "name": "RENALDO FUENTES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RENALDO FUENTES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2002-09-23T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-04-12T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-12-03T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/X:IN VIEW OF PLEA ON 2069461/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-09-23T00:00:00.000Z",
+      "docketEntryComment": "BWD,5DCJ,1DCTS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-04-12T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $50,000, BF(C251114)",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2002-12-03 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2002-12-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "J PORTUGAL",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +95,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2686520",
+  "docket_entries": [
+    {
+      "filedDate": "2002-09-23T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2002-09-23T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-04-12T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1994-04-12T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-12-03T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/X:IN VIEW OF PLEA ON 2069461/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2002-12-03T09:00:00.000Z",
+      "description": "/MO PC 1385/MOTION GRANTED/X:IN VIEW OF PLEA ON 2069461/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-09-23T00:00:00.000Z",
+      "docketEntryComment": "BWD,5DCJ,1DCTS",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2002-09-23T00:00:00.000Z",
+      "description": "BWD,5DCJ,1DCTS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-04-12T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $50,000, BF(C251114)",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1994-04-12T00:00:00.000Z",
+      "description": "BWI, FTA, B/S $50,000, BF(C251114)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01504735",
-    "portal_case_id": "",
+    "portal_case_id": "2686520",
     "display_case_number": "CRI-01504735",
     "defendant": "RENALDO FUENTES",
     "filed_date": "1994-04-12",
@@ -59,12 +160,36 @@
       "defendant": "RENALDO FUENTES",
       "filed_date": "1994-04-12"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RENALDO FUENTES, and date of filing 1994-04-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RENALDO FUENTES, and date of filing 1994-04-12. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:09:05.102Z",
+  "portal_case_id": "2686520",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01504735",
+      "defendant": "RENALDO FUENTES",
+      "filed_date": "1994-04-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2686520"
+  }
 }

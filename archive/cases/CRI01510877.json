@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:13.059Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:09:50.191Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01510877",
   "criminal_case_number": "01510877",
@@ -24,11 +24,78 @@
       "name": "BETTY A BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BETTY A BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1994-05-11T00:00:00.000Z",
+      "docketEntryComment": "PROG RPT RE LIVE IN DTP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-07-20T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1 SP   3Y L ESS PROB 4 Y PJ 1Y /CTS 73 /STATES/NOT///PGM:WALDEN HOUSE (2YRS)/WS/PF:$500/VF1:$200/11590/DTC/RX/LF/PC/PSR//ACCEP//TEXT: REFERRED TO APD FOR PROG REPORT//REPREQ:C:08-31-94:H1/PRG/CIC//PRB//ENH:CH1:TYHS 11370,2 :TI  3Y:CS///H1:940831/0900/S22",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-08-31T09:00:00.000Z",
+      "docketEntryComment": "DEFT PRESENTLY IN WALDEN HOUSE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-06-16T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-05-11T00:00:00.000Z",
+      "docketEntryComment": "B/S $6,500",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1994-08-31 9:00 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1994-08-31",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1994-07-20 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1994-07-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BRIAN BERSON",
+      "type": "Conflict Attorney"
+    },
+    {
+      "name": "L LIPSET",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +112,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2692168",
+  "docket_entries": [
+    {
+      "filedDate": "1994-05-11T00:00:00.000Z",
+      "docketEntryComment": "PROG RPT RE LIVE IN DTP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1994-05-11T00:00:00.000Z",
+      "description": "PROG RPT RE LIVE IN DTP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-07-20T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1 SP   3Y L ESS PROB 4 Y PJ 1Y /CTS 73 /STATES/NOT///PGM:WALDEN HOUSE (2YRS)/WS/PF:$500/VF1:$200/11590/DTC/RX/LF/PC/PSR//ACCEP//TEXT: REFERRED TO APD FOR PROG REPORT//REPREQ:C:08-31-94:H1/PRG/CIC//PRB//ENH:CH1:TYHS 11370,2 :TI  3Y:CS///H1:940831/0900/S22",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1994-07-20T09:00:00.000Z",
+      "description": "/AJW/CH1 SP 3Y L ESS PROB 4 Y PJ 1Y /CTS 73 /STATES/NOT///PGM:WALDEN HOUSE (2YRS)/WS/PF:$500/VF1:$200/11590/DTC/RX/LF/PC/PSR//ACCEP//TEXT: REFERRED TO APD FOR PROG REPORT//REPREQ:C:08-31-94:H1/PRG/CIC//PRB//ENH:CH1:TYHS 11370,2 :TI 3Y:CS///H1:940831/0900/S22",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-08-31T09:00:00.000Z",
+      "docketEntryComment": "DEFT PRESENTLY IN WALDEN HOUSE",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1994-08-31T09:00:00.000Z",
+      "description": "DEFT PRESENTLY IN WALDEN HOUSE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-06-16T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1994-06-16T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-05-11T00:00:00.000Z",
+      "docketEntryComment": "B/S $6,500",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1994-05-11T00:00:00.000Z",
+      "description": "B/S $6,500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01510877",
-    "portal_case_id": "",
+    "portal_case_id": "2692168",
     "display_case_number": "CRI-01510877",
     "defendant": "BETTY A BROWN",
     "filed_date": "1994-05-11",
@@ -63,8 +181,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BETTY A BROWN, and date of filing 1994-05-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BETTY A BROWN, and date of filing 1994-05-11. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:09:50.801Z",
+  "portal_case_id": "2692168",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01510877",
+      "defendant": "BETTY A BROWN",
+      "filed_date": "1994-05-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2692168"
+  }
 }

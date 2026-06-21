@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:27:35.599Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:04:08.444Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01453160",
   "criminal_case_number": "01453160",
@@ -24,11 +24,80 @@
       "name": "ANDRE BARNES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANDRE BARNES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1993-09-22T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-09-17T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-06-18T00:00:00.000Z",
+      "docketEntryComment": "DEFT MOT TO RBW OF 091793",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-10-18T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP  3 Y:L/CTSP:31  /STATES//VF1/PAR/CDC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-10-01T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP COURT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-09-22T00:00:00.000Z",
+      "docketEntryComment": "BWR, N/C, BX (SB107708), B/S $25,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-09-17T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $25,000, BF(SB107708)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-06-18T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1993-10-18 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1993-10-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ANGELO BUTLER",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "P PECORAHANSEN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +114,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2639069",
+  "docket_entries": [
+    {
+      "filedDate": "1993-09-22T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1993-09-22T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-09-17T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1993-09-17T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-06-18T00:00:00.000Z",
+      "docketEntryComment": "DEFT MOT TO RBW OF 091793",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1993-06-18T00:00:00.000Z",
+      "description": "DEFT MOT TO RBW OF 091793",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-10-18T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP  3 Y:L/CTSP:31  /STATES//VF1/PAR/CDC/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1993-10-18T09:00:00.000Z",
+      "description": "/AJW/CH1:SP 3 Y:L/CTSP:31 /STATES//VF1/PAR/CDC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-10-01T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP COURT",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1993-10-01T00:00:00.000Z",
+      "description": "CERT TO SUP COURT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-09-22T00:00:00.000Z",
+      "docketEntryComment": "BWR, N/C, BX (SB107708), B/S $25,000",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1993-09-22T00:00:00.000Z",
+      "description": "BWR, N/C, BX (SB107708), B/S $25,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-09-17T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $25,000, BF(SB107708)",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1993-09-17T00:00:00.000Z",
+      "description": "BWI, FTA, B/S $25,000, BF(SB107708)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-06-18T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1993-06-18T00:00:00.000Z",
+      "description": "B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01453160",
-    "portal_case_id": "",
+    "portal_case_id": "2639069",
     "display_case_number": "CRI-01453160",
     "defendant": "ANDRE BARNES",
     "filed_date": "1993-06-18",
@@ -63,8 +213,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANDRE BARNES, and date of filing 1993-06-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANDRE BARNES, and date of filing 1993-06-18. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:04:09.156Z",
+  "portal_case_id": "2639069",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01453160",
+      "defendant": "ANDRE BARNES",
+      "filed_date": "1993-06-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2639069"
+  }
 }

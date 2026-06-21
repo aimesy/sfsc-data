@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:41:18.300Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:15:18.635Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01553617",
   "criminal_case_number": "01553617",
@@ -24,11 +24,37 @@
       "name": "ROBERT DALE ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROBERT DALE ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1995-01-17T00:00:00.000Z",
+      "docketEntryComment": "PTD PROG RPT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-07-19T00:00:00.000Z",
+      "docketEntryComment": "DISM-PTD COMPLETED PUR 1001,9PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-02-15T00:00:00.000Z",
+      "docketEntryComment": "PTD GRNTD",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "T MCPHERSON",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +71,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2731642",
+  "docket_entries": [
+    {
+      "filedDate": "1995-01-17T00:00:00.000Z",
+      "docketEntryComment": "PTD PROG RPT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1995-01-17T00:00:00.000Z",
+      "description": "PTD PROG RPT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-07-19T00:00:00.000Z",
+      "docketEntryComment": "DISM-PTD COMPLETED PUR 1001,9PC",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1995-07-19T00:00:00.000Z",
+      "description": "DISM-PTD COMPLETED PUR 1001,9PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-02-15T00:00:00.000Z",
+      "docketEntryComment": "PTD GRNTD",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1995-02-15T00:00:00.000Z",
+      "description": "PTD GRNTD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01553617",
-    "portal_case_id": "",
+    "portal_case_id": "2731642",
     "display_case_number": "CRI-01553617",
     "defendant": "ROBERT DALE ALLEN",
     "filed_date": "1995-01-17",
@@ -63,8 +120,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROBERT DALE ALLEN, and date of filing 1995-01-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROBERT DALE ALLEN, and date of filing 1995-01-17. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:15:19.217Z",
+  "portal_case_id": "2731642",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01553617",
+      "defendant": "ROBERT DALE ALLEN",
+      "filed_date": "1995-01-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2731642"
+  }
 }

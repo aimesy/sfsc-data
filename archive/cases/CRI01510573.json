@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:28:25.247Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:10:53.357Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01510573",
   "criminal_case_number": "01510573",
@@ -24,11 +24,60 @@
       "name": "TOM ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TOM ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1994-05-09T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-06-16T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ1Y/CTS:41/PGM4:PSYCHIATRIC PROGRAM/NOT//WS/DOMV//WEAP/VF1:$200/PC/PSR/REL:JAIL AFTERCARE//SA2:DALE TORCHEE/ACCEP/PRB///TN:THOMAS STEVEN ANDERSON/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-05-19T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, B/S $75,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-05-09T00:00:00.000Z",
+      "docketEntryComment": "B/S $75,000, S/A ORDER",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1994-06-16 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1994-06-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "W LOWINGER",
+      "type": "Public Defender"
+    },
+    {
+      "name": "S BREALL",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +94,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2691891",
+  "docket_entries": [
+    {
+      "filedDate": "1994-05-09T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1994-05-09T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-06-16T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ1Y/CTS:41/PGM4:PSYCHIATRIC PROGRAM/NOT//WS/DOMV//WEAP/VF1:$200/PC/PSR/REL:JAIL AFTERCARE//SA2:DALE TORCHEE/ACCEP/PRB///TN:THOMAS STEVEN ANDERSON/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1994-06-16T09:00:00.000Z",
+      "description": "/AJW/CH1:ISS:PROB 3 Y:PJ1Y/CTS:41/PGM4:PSYCHIATRIC PROGRAM/NOT//WS/DOMV//WEAP/VF1:$200/PC/PSR/REL:JAIL AFTERCARE//SA2:DALE TORCHEE/ACCEP/PRB///TN:THOMAS STEVEN ANDERSON/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-05-19T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, B/S $75,000",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1994-05-19T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT, B/S $75,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-05-09T00:00:00.000Z",
+      "docketEntryComment": "B/S $75,000, S/A ORDER",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1994-05-09T00:00:00.000Z",
+      "description": "B/S $75,000, S/A ORDER",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01510573",
-    "portal_case_id": "",
+    "portal_case_id": "2691891",
     "display_case_number": "CRI-01510573",
     "defendant": "TOM ANDERSON",
     "filed_date": "1994-05-09",
@@ -63,8 +153,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TOM ANDERSON, and date of filing 1994-05-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TOM ANDERSON, and date of filing 1994-05-09. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:10:54.051Z",
+  "portal_case_id": "2691891",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01510573",
+      "defendant": "TOM ANDERSON",
+      "filed_date": "1994-05-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2691891"
+  }
 }

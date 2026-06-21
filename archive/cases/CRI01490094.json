@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:59:41.487Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:07:25.236Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01490094",
   "criminal_case_number": "01490094",
@@ -24,11 +24,52 @@
       "name": "KATHERINE ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KATHERINE ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1994-06-09T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-02-08T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-01-31T00:00:00.000Z",
+      "docketEntryComment": "SET/DISP; TRLG FEL (DOP)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-06-14T00:00:00.000Z",
+      "docketEntryComment": "DISM PLD #1437830",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-06-09T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C, B/S $125",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-02-08T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $5,000",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "L KATZ",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +86,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2673012",
+  "docket_entries": [
+    {
+      "filedDate": "1994-06-09T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1994-06-09T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-02-08T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1994-02-08T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-01-31T00:00:00.000Z",
+      "docketEntryComment": "SET/DISP; TRLG FEL (DOP)",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1994-01-31T00:00:00.000Z",
+      "description": "SET/DISP; TRLG FEL (DOP)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-06-14T00:00:00.000Z",
+      "docketEntryComment": "DISM PLD #1437830",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1994-06-14T00:00:00.000Z",
+      "description": "DISM PLD #1437830",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-06-09T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C, B/S $125",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1994-06-09T00:00:00.000Z",
+      "description": "BWD, N/C, B/S $125",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-02-08T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1994-02-08T00:00:00.000Z",
+      "description": "BWI, FTA, B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01490094",
-    "portal_case_id": "",
+    "portal_case_id": "2673012",
     "display_case_number": "CRI-01490094",
     "defendant": "KATHERINE ADAMS",
     "filed_date": "1994-01-31",
@@ -63,8 +165,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KATHERINE ADAMS, and date of filing 1994-01-31. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KATHERINE ADAMS, and date of filing 1994-01-31. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:07:25.868Z",
+  "portal_case_id": "2673012",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01490094",
+      "defendant": "KATHERINE ADAMS",
+      "filed_date": "1994-01-31"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2673012"
+  }
 }

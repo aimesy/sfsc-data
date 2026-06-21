@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:26:05.056Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:07:07.561Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01480632",
   "criminal_case_number": "01480632",
@@ -24,11 +24,47 @@
       "name": "MARITZA J BARRERA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARITZA J BARRERA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1993-11-22T00:00:00.000Z",
+      "docketEntryComment": "FUR PTD (RE-REF) PROG RPT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-06-24T00:00:00.000Z",
+      "docketEntryComment": "DISM 1001,7PC DIV SUCC COMPLETED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-12-22T00:00:00.000Z",
+      "docketEntryComment": "DIV GTD, BX (C250771)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-12-01T08:30:00.000Z",
+      "docketEntryComment": "NG PLEAS W/DRAWN",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-11-22T00:00:00.000Z",
+      "docketEntryComment": "B/S $250",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "K GRIFFIN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +81,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2664284",
+  "docket_entries": [
+    {
+      "filedDate": "1993-11-22T00:00:00.000Z",
+      "docketEntryComment": "FUR PTD (RE-REF) PROG RPT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1993-11-22T00:00:00.000Z",
+      "description": "FUR PTD (RE-REF) PROG RPT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-06-24T00:00:00.000Z",
+      "docketEntryComment": "DISM 1001,7PC DIV SUCC COMPLETED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1994-06-24T00:00:00.000Z",
+      "description": "DISM 1001,7PC DIV SUCC COMPLETED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-12-22T00:00:00.000Z",
+      "docketEntryComment": "DIV GTD, BX (C250771)",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1993-12-22T00:00:00.000Z",
+      "description": "DIV GTD, BX (C250771)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-12-01T08:30:00.000Z",
+      "docketEntryComment": "NG PLEAS W/DRAWN",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1993-12-01T08:30:00.000Z",
+      "description": "NG PLEAS W/DRAWN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-11-22T00:00:00.000Z",
+      "docketEntryComment": "B/S $250",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1993-11-22T00:00:00.000Z",
+      "description": "B/S $250",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01480632",
-    "portal_case_id": "",
+    "portal_case_id": "2664284",
     "display_case_number": "CRI-01480632",
     "defendant": "MARITZA J BARRERA",
     "filed_date": "1993-11-22",
@@ -63,8 +150,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARITZA J BARRERA, and date of filing 1993-11-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARITZA J BARRERA, and date of filing 1993-11-22. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:07:08.220Z",
+  "portal_case_id": "2664284",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01480632",
+      "defendant": "MARITZA J BARRERA",
+      "filed_date": "1993-11-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2664284"
+  }
 }

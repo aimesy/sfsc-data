@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:31:53.038Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:03:27.752Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01453222",
   "criminal_case_number": "01453222",
@@ -24,11 +24,78 @@
       "name": "KENNETH BROOKS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KENNETH BROOKS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1993-06-18T00:00:00.000Z",
+      "docketEntryComment": "SET/DISPO (DOP)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-10-26T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP5Y  Y:U:ESS:PROB 3 Y:PJ1Y  /CTS:108/STATES/CC/NOT1//WS/11590//DTC/RX/LF/PF:$250/VF1/PC/PSR//ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-10-01T09:00:00.000Z",
+      "docketEntryComment": "CONT TO 10/26/93 FOR ARR CERT PLEA G/SENT IN D22 AT 9AM",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-09-02T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-06-18T00:00:00.000Z",
+      "docketEntryComment": "B/S $7,500",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1993-10-26 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1993-10-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1993-10-01 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1993-10-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARTIN LURIE",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "C ROWLAND",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +112,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2639129",
+  "docket_entries": [
+    {
+      "filedDate": "1993-06-18T00:00:00.000Z",
+      "docketEntryComment": "SET/DISPO (DOP)",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1993-06-18T00:00:00.000Z",
+      "description": "SET/DISPO (DOP)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-10-26T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP5Y  Y:U:ESS:PROB 3 Y:PJ1Y  /CTS:108/STATES/CC/NOT1//WS/11590//DTC/RX/LF/PF:$250/VF1/PC/PSR//ACCEP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1993-10-26T09:00:00.000Z",
+      "description": "/AJW/CH1:SP5Y Y:U:ESS:PROB 3 Y:PJ1Y /CTS:108/STATES/CC/NOT1//WS/11590//DTC/RX/LF/PF:$250/VF1/PC/PSR//ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-10-01T09:00:00.000Z",
+      "docketEntryComment": "CONT TO 10/26/93 FOR ARR CERT PLEA G/SENT IN D22 AT 9AM",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1993-10-01T09:00:00.000Z",
+      "description": "CONT TO 10/26/93 FOR ARR CERT PLEA G/SENT IN D22 AT 9AM",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-09-02T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1993-09-02T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-06-18T00:00:00.000Z",
+      "docketEntryComment": "B/S $7,500",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1993-06-18T00:00:00.000Z",
+      "description": "B/S $7,500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01453222",
-    "portal_case_id": "",
+    "portal_case_id": "2639129",
     "display_case_number": "CRI-01453222",
     "defendant": "KENNETH BROOKS",
     "filed_date": "1993-06-18",
@@ -63,8 +181,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KENNETH BROOKS, and date of filing 1993-06-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KENNETH BROOKS, and date of filing 1993-06-18. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:03:28.291Z",
+  "portal_case_id": "2639129",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01453222",
+      "defendant": "KENNETH BROOKS",
+      "filed_date": "1993-06-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2639129"
+  }
 }

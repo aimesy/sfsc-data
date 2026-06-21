@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:56:39.763Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:03:21.407Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01446311",
   "criminal_case_number": "01446311",
@@ -24,11 +24,83 @@
       "name": "DAVID ALBERT ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID ALBERT ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1993-05-12T00:00:00.000Z",
+      "docketEntryComment": "RE DISPO OF MOTORCYCLE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-04-07T00:00:00.000Z",
+      "docketEntryComment": "MOT/CLARIFY TRANSCR:CT REIT THAT THE MOTORCYCLE IS OWNED BY IN'S CO,SEE D",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-03-02T00:00:00.000Z",
+      "docketEntryComment": "APD PROB MOD TO CT PROB",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-09-20T00:00:00.000Z",
+      "docketEntryComment": "1035 SEARCH CONDIT,SWAP SURR 100693",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-09-20T00:00:00.000Z",
+      "docketEntryComment": "BX SB107352 $10000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-05-12T00:00:00.000Z",
+      "docketEntryComment": "B/S $10,000 ON DA WRT",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1993-08-25 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 0,
+      "court_date": "1993-08-25",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1993-08-16 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "1993-08-16",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JOHN PHILIPSBORN",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "G LEUNG",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +117,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2632888",
+  "docket_entries": [
+    {
+      "filedDate": "1993-05-12T00:00:00.000Z",
+      "docketEntryComment": "RE DISPO OF MOTORCYCLE",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1993-05-12T00:00:00.000Z",
+      "description": "RE DISPO OF MOTORCYCLE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-04-07T00:00:00.000Z",
+      "docketEntryComment": "MOT/CLARIFY TRANSCR:CT REIT THAT THE MOTORCYCLE IS OWNED BY IN'S CO,SEE D",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1995-04-07T00:00:00.000Z",
+      "description": "MOT/CLARIFY TRANSCR:CT REIT THAT THE MOTORCYCLE IS OWNED BY IN'S CO,SEE D",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-03-02T00:00:00.000Z",
+      "docketEntryComment": "APD PROB MOD TO CT PROB",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1994-03-02T00:00:00.000Z",
+      "description": "APD PROB MOD TO CT PROB",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-09-20T00:00:00.000Z",
+      "docketEntryComment": "1035 SEARCH CONDIT,SWAP SURR 100693",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1993-09-20T00:00:00.000Z",
+      "description": "1035 SEARCH CONDIT,SWAP SURR 100693",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-09-20T00:00:00.000Z",
+      "docketEntryComment": "BX SB107352 $10000",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1993-09-20T00:00:00.000Z",
+      "description": "BX SB107352 $10000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-05-12T00:00:00.000Z",
+      "docketEntryComment": "B/S $10,000 ON DA WRT",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1993-05-12T00:00:00.000Z",
+      "description": "B/S $10,000 ON DA WRT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01446311",
-    "portal_case_id": "",
+    "portal_case_id": "2632888",
     "display_case_number": "CRI-01446311",
     "defendant": "DAVID ALBERT ADAMS",
     "filed_date": "1993-05-12",
@@ -63,8 +196,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID ALBERT ADAMS, and date of filing 1993-05-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID ALBERT ADAMS, and date of filing 1993-05-12. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:03:21.955Z",
+  "portal_case_id": "2632888",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01446311",
+      "defendant": "DAVID ALBERT ADAMS",
+      "filed_date": "1993-05-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2632888"
+  }
 }

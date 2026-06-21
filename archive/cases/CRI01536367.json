@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:00:12.473Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:13:27.184Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01536367",
   "criminal_case_number": "01536367",
@@ -24,11 +24,42 @@
       "name": "LATONYA DAVIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LATONYA DAVIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1994-10-03T00:00:00.000Z",
+      "docketEntryComment": "DRUG DIV ELIG RPT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-11-22T00:00:00.000Z",
+      "docketEntryComment": "DA ORALLY AMEND TO ADD 32PC/M/ WIA & IRRG",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-11-10T00:00:00.000Z",
+      "docketEntryComment": "BW PERM STAYED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-11-01T00:00:00.000Z",
+      "docketEntryComment": "BWI, B/S $500 STAYED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "T CAFFESE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +76,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2715595",
+  "docket_entries": [
+    {
+      "filedDate": "1994-10-03T00:00:00.000Z",
+      "docketEntryComment": "DRUG DIV ELIG RPT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1994-10-03T00:00:00.000Z",
+      "description": "DRUG DIV ELIG RPT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-11-22T00:00:00.000Z",
+      "docketEntryComment": "DA ORALLY AMEND TO ADD 32PC/M/ WIA & IRRG",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1994-11-22T00:00:00.000Z",
+      "description": "DA ORALLY AMEND TO ADD 32PC/M/ WIA & IRRG",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-11-10T00:00:00.000Z",
+      "docketEntryComment": "BW PERM STAYED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1994-11-10T00:00:00.000Z",
+      "description": "BW PERM STAYED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-11-01T00:00:00.000Z",
+      "docketEntryComment": "BWI, B/S $500 STAYED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1994-11-01T00:00:00.000Z",
+      "description": "BWI, B/S $500 STAYED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01536367",
-    "portal_case_id": "",
+    "portal_case_id": "2715595",
     "display_case_number": "CRI-01536367",
     "defendant": "LATONYA DAVIS",
     "filed_date": "1994-10-03",
@@ -63,8 +135,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LATONYA DAVIS, and date of filing 1994-10-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LATONYA DAVIS, and date of filing 1994-10-03. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:13:27.910Z",
+  "portal_case_id": "2715595",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01536367",
+      "defendant": "LATONYA DAVIS",
+      "filed_date": "1994-10-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2715595"
+  }
 }

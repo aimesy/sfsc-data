@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:33:53.836Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:05:14.999Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01462520",
   "criminal_case_number": "01462520",
@@ -24,11 +24,55 @@
       "name": "DARRYL I BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DARRYL I BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1993-08-12T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-10-14T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP16M  :L/CTSP:75  /STATES//VF1/PAR/REMA/REST:$750/CDC/SR/MISD2:18//",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-09-22T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1993-10-14 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1993-10-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "D RAPPAPORT",
+      "type": "Public Defender"
+    },
+    {
+      "name": "D CASHMAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +89,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2647633",
+  "docket_entries": [
+    {
+      "filedDate": "1993-08-12T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1993-08-12T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-10-14T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP16M  :L/CTSP:75  /STATES//VF1/PAR/REMA/REST:$750/CDC/SR/MISD2:18//",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1993-10-14T09:00:00.000Z",
+      "description": "/AJW/CH1:SP16M :L/CTSP:75 /STATES//VF1/PAR/REMA/REST:$750/CDC/SR/MISD2:18//",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-09-22T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1993-09-22T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01462520",
-    "portal_case_id": "",
+    "portal_case_id": "2647633",
     "display_case_number": "CRI-01462520",
     "defendant": "DARRYL I BROWN",
     "filed_date": "1993-08-12",
@@ -63,8 +138,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DARRYL I BROWN, and date of filing 1993-08-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DARRYL I BROWN, and date of filing 1993-08-12. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:05:15.712Z",
+  "portal_case_id": "2647633",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01462520",
+      "defendant": "DARRYL I BROWN",
+      "filed_date": "1993-08-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2647633"
+  }
 }

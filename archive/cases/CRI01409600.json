@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:36.036Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:58:07.583Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01409600",
   "criminal_case_number": "01409600",
@@ -24,11 +24,75 @@
       "name": "BOBBY L JACKSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BOBBY L JACKSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1992-12-28T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-03-09T09:00:00.000Z",
+      "docketEntryComment": "A/JWV;EA CT C/C-SP16M(L);CT STATES REAS;115DCTS;$200RF;ADV PAR RTS;REMAND",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-02-16T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUPERIOR COURT, SEE DOCKT FOR PROP SENTENCE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-01-20T00:00:00.000Z",
+      "docketEntryComment": "MARSDEN MOT DENIED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-12-30T00:00:00.000Z",
+      "docketEntryComment": "AMENDED COMPLT FILED AS FELONY; B/S $5000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-12-28T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C, B/S $1,500",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-12-01T00:00:00.000Z",
+      "docketEntryComment": "FTA BWI B/S $2,000 2ND BW",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1993-03-09 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1993-03-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "C GAUGER",
+      "type": "Public Defender"
+    },
+    {
+      "name": "D PFEIFER",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +109,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2599648",
+  "docket_entries": [
+    {
+      "filedDate": "1992-12-28T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1992-12-28T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-03-09T09:00:00.000Z",
+      "docketEntryComment": "A/JWV;EA CT C/C-SP16M(L);CT STATES REAS;115DCTS;$200RF;ADV PAR RTS;REMAND",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1993-03-09T09:00:00.000Z",
+      "description": "A/JWV;EA CT C/C-SP16M(L);CT STATES REAS;115DCTS;$200RF;ADV PAR RTS;REMAND",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-02-16T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUPERIOR COURT, SEE DOCKT FOR PROP SENTENCE",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1993-02-16T00:00:00.000Z",
+      "description": "CERTIFIED TO SUPERIOR COURT, SEE DOCKT FOR PROP SENTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-01-20T00:00:00.000Z",
+      "docketEntryComment": "MARSDEN MOT DENIED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1993-01-20T00:00:00.000Z",
+      "description": "MARSDEN MOT DENIED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-12-30T00:00:00.000Z",
+      "docketEntryComment": "AMENDED COMPLT FILED AS FELONY; B/S $5000",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1992-12-30T00:00:00.000Z",
+      "description": "AMENDED COMPLT FILED AS FELONY; B/S $5000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-12-28T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C, B/S $1,500",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1992-12-28T00:00:00.000Z",
+      "description": "BWD, N/C, B/S $1,500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-12-01T00:00:00.000Z",
+      "docketEntryComment": "FTA BWI B/S $2,000 2ND BW",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1992-12-01T00:00:00.000Z",
+      "description": "FTA BWI B/S $2,000 2ND BW",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01409600",
-    "portal_case_id": "",
+    "portal_case_id": "2599648",
     "display_case_number": "CRI-01409600",
     "defendant": "BOBBY L JACKSON",
     "filed_date": "1992-11-09",
@@ -63,8 +198,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BOBBY L JACKSON, and date of filing 1992-11-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BOBBY L JACKSON, and date of filing 1992-11-09. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:58:08.222Z",
+  "portal_case_id": "2599648",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01409600",
+      "defendant": "BOBBY L JACKSON",
+      "filed_date": "1992-11-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2599648"
+  }
 }

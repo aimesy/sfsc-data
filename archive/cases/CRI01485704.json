@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:24:54.958Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:06:49.943Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01485704",
   "criminal_case_number": "01485704",
@@ -24,11 +24,57 @@
       "name": "ERIC M ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ERIC M ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1994-06-29T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-02-17T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-12-29T00:00:00.000Z",
+      "docketEntryComment": "SET/DISPO (DOP)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-08-31T00:00:00.000Z",
+      "docketEntryComment": "DISM 1385PC FEL CONVICTION",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-08-30T00:00:00.000Z",
+      "docketEntryComment": "N/A, BWI, STAYED TO 083194; B/S $5000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-06-29T00:00:00.000Z",
+      "docketEntryComment": "BWD, 5DCJ/1CTS, CI, B/S $500",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-02-17T00:00:00.000Z",
+      "docketEntryComment": "BWI FTA B/S $5000",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "M GUINGONA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +91,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2668981",
+  "docket_entries": [
+    {
+      "filedDate": "1994-06-29T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1994-06-29T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-02-17T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1994-02-17T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-12-29T00:00:00.000Z",
+      "docketEntryComment": "SET/DISPO (DOP)",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1993-12-29T00:00:00.000Z",
+      "description": "SET/DISPO (DOP)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-08-31T00:00:00.000Z",
+      "docketEntryComment": "DISM 1385PC FEL CONVICTION",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1994-08-31T00:00:00.000Z",
+      "description": "DISM 1385PC FEL CONVICTION",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-08-30T00:00:00.000Z",
+      "docketEntryComment": "N/A, BWI, STAYED TO 083194; B/S $5000",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1994-08-30T00:00:00.000Z",
+      "description": "N/A, BWI, STAYED TO 083194; B/S $5000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-06-29T00:00:00.000Z",
+      "docketEntryComment": "BWD, 5DCJ/1CTS, CI, B/S $500",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1994-06-29T00:00:00.000Z",
+      "description": "BWD, 5DCJ/1CTS, CI, B/S $500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-02-17T00:00:00.000Z",
+      "docketEntryComment": "BWI FTA B/S $5000",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1994-02-17T00:00:00.000Z",
+      "description": "BWI FTA B/S $5000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01485704",
-    "portal_case_id": "",
+    "portal_case_id": "2668981",
     "display_case_number": "CRI-01485704",
     "defendant": "ERIC M ANDERSON",
     "filed_date": "1993-12-29",
@@ -63,8 +180,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ERIC M ANDERSON, and date of filing 1993-12-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ERIC M ANDERSON, and date of filing 1993-12-29. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:06:50.583Z",
+  "portal_case_id": "2668981",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01485704",
+      "defendant": "ERIC M ANDERSON",
+      "filed_date": "1993-12-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2668981"
+  }
 }

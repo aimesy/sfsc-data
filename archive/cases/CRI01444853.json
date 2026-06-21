@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:14:34.048Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:02:33.811Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01444853",
   "criminal_case_number": "01444853",
@@ -24,11 +24,66 @@
       "name": "MARTIN VALDEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARTIN VALDEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1993-05-25T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-09-18T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-05-06T00:00:00.000Z",
+      "docketEntryComment": "MO DISM (DEFT DECEASED)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-09-18T09:00:00.000Z",
+      "docketEntryComment": "/BWR 05-25-93/BWR1/DEFT DECEASED/NP/MO PC 1385/MOTION GRANTED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-06-04T00:00:00.000Z",
+      "docketEntryComment": "BW OF 052593 RELEASED TODAY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-05-25T00:00:00.000Z",
+      "docketEntryComment": "BWI, STAYED, BW RELEASED ON 060493, FTA PRELIM HRG, OR REVOKED",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2003-09-18 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2003-09-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S KAPLAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +100,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2631528",
+  "docket_entries": [
+    {
+      "filedDate": "1993-05-25T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1993-05-25T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-09-18T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2003-09-18T09:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-05-06T00:00:00.000Z",
+      "docketEntryComment": "MO DISM (DEFT DECEASED)",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1993-05-06T00:00:00.000Z",
+      "description": "MO DISM (DEFT DECEASED)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-09-18T09:00:00.000Z",
+      "docketEntryComment": "/BWR 05-25-93/BWR1/DEFT DECEASED/NP/MO PC 1385/MOTION GRANTED/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2003-09-18T09:00:00.000Z",
+      "description": "/BWR 05-25-93/BWR1/DEFT DECEASED/NP/MO PC 1385/MOTION GRANTED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-06-04T00:00:00.000Z",
+      "docketEntryComment": "BW OF 052593 RELEASED TODAY",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1993-06-04T00:00:00.000Z",
+      "description": "BW OF 052593 RELEASED TODAY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-05-25T00:00:00.000Z",
+      "docketEntryComment": "BWI, STAYED, BW RELEASED ON 060493, FTA PRELIM HRG, OR REVOKED",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1993-05-25T00:00:00.000Z",
+      "description": "BWI, STAYED, BW RELEASED ON 060493, FTA PRELIM HRG, OR REVOKED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01444853",
-    "portal_case_id": "",
+    "portal_case_id": "2631528",
     "display_case_number": "CRI-01444853",
     "defendant": "MARTIN VALDEZ",
     "filed_date": "1993-05-06",
@@ -59,12 +175,36 @@
       "defendant": "MARTIN VALDEZ",
       "filed_date": "1993-05-06"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARTIN VALDEZ, and date of filing 1993-05-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARTIN VALDEZ, and date of filing 1993-05-06. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:02:34.453Z",
+  "portal_case_id": "2631528",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01444853",
+      "defendant": "MARTIN VALDEZ",
+      "filed_date": "1993-05-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2631528"
+  }
 }

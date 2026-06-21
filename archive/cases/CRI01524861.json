@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:38:42.893Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:13:02.394Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01524861",
   "criminal_case_number": "01524861",
@@ -24,11 +24,37 @@
       "name": "MIGUEL A ACOSTA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MIGUEL A ACOSTA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1994-07-27T00:00:00.000Z",
+      "docketEntryComment": "SET, DOP, FR \t",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-08-31T00:00:00.000Z",
+      "docketEntryComment": "SWAP SURR 10/5/94; STAY AWAY FROM DOLORES PARK",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-08-31T00:00:00.000Z",
+      "docketEntryComment": "COMPLT AMEND ORALLY TO ADD 32PC/M; WIA; HEARD IN DEPT#17 TODAY",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "M HALLINAN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +71,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2704957",
+  "docket_entries": [
+    {
+      "filedDate": "1994-07-27T00:00:00.000Z",
+      "docketEntryComment": "SET, DOP, FR \t",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1994-07-27T00:00:00.000Z",
+      "description": "SET, DOP, FR",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-08-31T00:00:00.000Z",
+      "docketEntryComment": "SWAP SURR 10/5/94; STAY AWAY FROM DOLORES PARK",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1994-08-31T00:00:00.000Z",
+      "description": "SWAP SURR 10/5/94; STAY AWAY FROM DOLORES PARK",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-08-31T00:00:00.000Z",
+      "docketEntryComment": "COMPLT AMEND ORALLY TO ADD 32PC/M; WIA; HEARD IN DEPT#17 TODAY",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1994-08-31T00:00:00.000Z",
+      "description": "COMPLT AMEND ORALLY TO ADD 32PC/M; WIA; HEARD IN DEPT#17 TODAY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01524861",
-    "portal_case_id": "",
+    "portal_case_id": "2704957",
     "display_case_number": "CRI-01524861",
     "defendant": "MIGUEL A ACOSTA",
     "filed_date": "1994-07-27",
@@ -63,8 +120,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MIGUEL A ACOSTA, and date of filing 1994-07-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MIGUEL A ACOSTA, and date of filing 1994-07-27. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:13:03.032Z",
+  "portal_case_id": "2704957",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01524861",
+      "defendant": "MIGUEL A ACOSTA",
+      "filed_date": "1994-07-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2704957"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:31:10.554Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:00:34.596Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01430186",
   "criminal_case_number": "01430186",
@@ -24,11 +24,62 @@
       "name": "LORRAINE ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LORRAINE ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1993-02-24T00:00:00.000Z",
+      "docketEntryComment": "SET/DISPO (DOP)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-05-17T00:00:00.000Z",
+      "docketEntryComment": "DISM 1385PC IN VIEW OF PLEA IN CT #1440801",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-05-05T00:00:00.000Z",
+      "docketEntryComment": "DEFT REMANDED, B/S $100",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-04-07T00:00:00.000Z",
+      "docketEntryComment": "DOM VIOL FINDS DEFT NOT ELIG",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-03-10T00:00:00.000Z",
+      "docketEntryComment": "245(A),1PC(2CTS) & 166,4PC TRLG, S/A ORDER REMAINS IN EFFECT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-03-08T00:00:00.000Z",
+      "docketEntryComment": "JT ON 031993 STANDS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-03-03T00:00:00.000Z",
+      "docketEntryComment": "DEFT MOT REDUCE BAIL DENIED, 4011,6PC ORDERED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-02-24T00:00:00.000Z",
+      "docketEntryComment": "B/S $3,000B/S $3,000, S/A ORDER",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "CHARLES HILL",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +96,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2618187",
+  "docket_entries": [
+    {
+      "filedDate": "1993-02-24T00:00:00.000Z",
+      "docketEntryComment": "SET/DISPO (DOP)",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1993-02-24T00:00:00.000Z",
+      "description": "SET/DISPO (DOP)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-05-17T00:00:00.000Z",
+      "docketEntryComment": "DISM 1385PC IN VIEW OF PLEA IN CT #1440801",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1993-05-17T00:00:00.000Z",
+      "description": "DISM 1385PC IN VIEW OF PLEA IN CT #1440801",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-05-05T00:00:00.000Z",
+      "docketEntryComment": "DEFT REMANDED, B/S $100",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1993-05-05T00:00:00.000Z",
+      "description": "DEFT REMANDED, B/S $100",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-04-07T00:00:00.000Z",
+      "docketEntryComment": "DOM VIOL FINDS DEFT NOT ELIG",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1993-04-07T00:00:00.000Z",
+      "description": "DOM VIOL FINDS DEFT NOT ELIG",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-03-10T00:00:00.000Z",
+      "docketEntryComment": "245(A),1PC(2CTS) & 166,4PC TRLG, S/A ORDER REMAINS IN EFFECT",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1993-03-10T00:00:00.000Z",
+      "description": "245(A),1PC(2CTS) & 166,4PC TRLG, S/A ORDER REMAINS IN EFFECT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-03-08T00:00:00.000Z",
+      "docketEntryComment": "JT ON 031993 STANDS",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1993-03-08T00:00:00.000Z",
+      "description": "JT ON 031993 STANDS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-03-03T00:00:00.000Z",
+      "docketEntryComment": "DEFT MOT REDUCE BAIL DENIED, 4011,6PC ORDERED",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1993-03-03T00:00:00.000Z",
+      "description": "DEFT MOT REDUCE BAIL DENIED, 4011,6PC ORDERED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-02-24T00:00:00.000Z",
+      "docketEntryComment": "B/S $3,000B/S $3,000, S/A ORDER",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1993-02-24T00:00:00.000Z",
+      "description": "B/S $3,000B/S $3,000, S/A ORDER",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01430186",
-    "portal_case_id": "",
+    "portal_case_id": "2618187",
     "display_case_number": "CRI-01430186",
     "defendant": "LORRAINE ALLEN",
     "filed_date": "1993-02-24",
@@ -63,8 +195,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LORRAINE ALLEN, and date of filing 1993-02-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LORRAINE ALLEN, and date of filing 1993-02-24. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:00:35.240Z",
+  "portal_case_id": "2618187",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01430186",
+      "defendant": "LORRAINE ALLEN",
+      "filed_date": "1993-02-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2618187"
+  }
 }

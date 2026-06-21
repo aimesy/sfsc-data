@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:31:53.078Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:02:55.288Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01448063",
   "criminal_case_number": "01448063",
@@ -24,9 +24,40 @@
       "name": "STANLEY O BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "STANLEY O BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1998-07-24T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-05-26T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-05-26T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-07-24T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 07/08/98",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-05-26T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI,BS $2500",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -45,11 +76,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2634474",
+  "docket_entries": [
+    {
+      "filedDate": "1998-07-24T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1998-07-24T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-05-26T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1993-05-26T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-05-26T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1993-05-26T00:00:00.000Z",
+      "description": "COMP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-07-24T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 07/08/98",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1998-07-24T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 07/08/98",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-05-26T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI,BS $2500",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1993-05-26T00:00:00.000Z",
+      "description": "FTA,BWI,BS $2500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01448063",
-    "portal_case_id": "",
+    "portal_case_id": "2634474",
     "display_case_number": "CRI-01448063",
     "defendant": "STANLEY O BROWN",
     "filed_date": "1993-05-26",
@@ -63,8 +145,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, STANLEY O BROWN, and date of filing 1993-05-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, STANLEY O BROWN, and date of filing 1993-05-26. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:02:55.904Z",
+  "portal_case_id": "2634474",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01448063",
+      "defendant": "STANLEY O BROWN",
+      "filed_date": "1993-05-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2634474"
+  }
 }

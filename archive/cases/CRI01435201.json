@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:51.181Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:01:28.029Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01435201",
   "criminal_case_number": "01435201",
@@ -24,11 +24,37 @@
       "name": "TOMMIE BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TOMMIE BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1993-03-24T00:00:00.000Z",
+      "docketEntryComment": "I&A, P&C",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-06-16T00:00:00.000Z",
+      "docketEntryComment": "1385PC DISM; UNABLE TO SUSTAIN BURDEN OF PROOF; BX, SB106870, $15,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-03-24T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "C GAUGER",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +71,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2622750",
+  "docket_entries": [
+    {
+      "filedDate": "1993-03-24T00:00:00.000Z",
+      "docketEntryComment": "I&A, P&C",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1993-03-24T00:00:00.000Z",
+      "description": "I&A, P&C",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-06-16T00:00:00.000Z",
+      "docketEntryComment": "1385PC DISM; UNABLE TO SUSTAIN BURDEN OF PROOF; BX, SB106870, $15,000",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1993-06-16T00:00:00.000Z",
+      "description": "1385PC DISM; UNABLE TO SUSTAIN BURDEN OF PROOF; BX, SB106870, $15,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-03-24T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1993-03-24T00:00:00.000Z",
+      "description": "S/A ORDER",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01435201",
-    "portal_case_id": "",
+    "portal_case_id": "2622750",
     "display_case_number": "CRI-01435201",
     "defendant": "TOMMIE BROWN",
     "filed_date": "1993-03-24",
@@ -63,8 +120,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TOMMIE BROWN, and date of filing 1993-03-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TOMMIE BROWN, and date of filing 1993-03-24. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:01:28.792Z",
+  "portal_case_id": "2622750",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01435201",
+      "defendant": "TOMMIE BROWN",
+      "filed_date": "1993-03-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2622750"
+  }
 }

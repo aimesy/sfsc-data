@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:23:56.011Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:57:58.223Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01408075",
   "criminal_case_number": "01408075",
@@ -24,11 +24,42 @@
       "name": "ROBERTO ENRIQUE ALVAREZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROBERTO ENRIQUE ALVAREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1992-10-29T00:00:00.000Z",
+      "docketEntryComment": "PTD PROG RPT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-09-30T00:00:00.000Z",
+      "docketEntryComment": "DISM 1001,9PC SUCCESSFUL DIVERSION",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-12-17T00:00:00.000Z",
+      "docketEntryComment": "DIV GRNTD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-12-03T00:00:00.000Z",
+      "docketEntryComment": "10980C2WI ORALLY AMD TO MISD, NG PLEA W/DRAWN",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "S RISCHMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +76,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2598266",
+  "docket_entries": [
+    {
+      "filedDate": "1992-10-29T00:00:00.000Z",
+      "docketEntryComment": "PTD PROG RPT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1992-10-29T00:00:00.000Z",
+      "description": "PTD PROG RPT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-09-30T00:00:00.000Z",
+      "docketEntryComment": "DISM 1001,9PC SUCCESSFUL DIVERSION",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1993-09-30T00:00:00.000Z",
+      "description": "DISM 1001,9PC SUCCESSFUL DIVERSION",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-12-17T00:00:00.000Z",
+      "docketEntryComment": "DIV GRNTD",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1992-12-17T00:00:00.000Z",
+      "description": "DIV GRNTD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-12-03T00:00:00.000Z",
+      "docketEntryComment": "10980C2WI ORALLY AMD TO MISD, NG PLEA W/DRAWN",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1992-12-03T00:00:00.000Z",
+      "description": "10980C2WI ORALLY AMD TO MISD, NG PLEA W/DRAWN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01408075",
-    "portal_case_id": "",
+    "portal_case_id": "2598266",
     "display_case_number": "CRI-01408075",
     "defendant": "ROBERTO ENRIQUE ALVAREZ",
     "filed_date": "1992-10-29",
@@ -63,8 +135,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROBERTO ENRIQUE ALVAREZ, and date of filing 1992-10-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROBERTO ENRIQUE ALVAREZ, and date of filing 1992-10-29. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:57:58.827Z",
+  "portal_case_id": "2598266",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01408075",
+      "defendant": "ROBERTO ENRIQUE ALVAREZ",
+      "filed_date": "1992-10-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2598266"
+  }
 }

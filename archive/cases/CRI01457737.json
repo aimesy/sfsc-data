@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:37.677Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:04:53.822Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01457737",
   "criminal_case_number": "01457737",
@@ -24,11 +24,139 @@
       "name": "MICHAEL ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1993-08-30T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-08-24T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-01-24T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-07-15T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-02-17T14:00:00.000Z",
+      "docketEntryComment": "MO W/D NG PLEA GRTD;ADV/WVD RTS;PLD G CT1-11350(A)HS/F;CRT MKES FNDGSCRT ACCEPTS PLEA;REF APD/PSR;CONT 3/10/94 AT 9AM IN S26 FOR SENTTRIAL DATE 3/7/94 VACATED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-03-10T09:00:00.000Z",
+      "docketEntryComment": "AJW/SP16M(L)/CC W/#154134/VF1/STATES/108CJ--54SAGE=CTS162D/ADV PAROLE RT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-02-17T10:30:00.000Z",
+      "docketEntryComment": "TRANSF TO D26 FOR PTC F/W",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-01-25T09:00:00.000Z",
+      "docketEntryComment": "PD APPTD;FAW;PLEAS OF NG ENTERED;ALLEGS DENIEDCONT 2/17/94 1030AM FOR PTC AND 3/7/94 FOR TRIAL AT 930AM IN D22",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-01-10T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S $5,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-09-27T00:00:00.000Z",
+      "docketEntryComment": "DIV GRNTD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-08-30T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-08-24T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $2500, OR REVKD",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1994-03-10 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 0,
+      "court_date": "1994-03-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1994-02-17 2:00 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 1,
+      "court_date": "1994-02-17",
+      "hearing_time": "2:00 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1994-02-17 10:30 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1994-02-17",
+      "hearing_time": "10:30 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1994-01-25 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1994-01-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "G GREENWOOD",
+      "type": "Public Defender"
+    },
+    {
+      "name": "J PINELLI",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +173,132 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2643253",
+  "docket_entries": [
+    {
+      "filedDate": "1993-08-30T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1993-08-30T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-08-24T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1993-08-24T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-01-24T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1994-01-24T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-07-15T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1993-07-15T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-02-17T14:00:00.000Z",
+      "docketEntryComment": "MO W/D NG PLEA GRTD;ADV/WVD RTS;PLD G CT1-11350(A)HS/F;CRT MKES FNDGSCRT ACCEPTS PLEA;REF APD/PSR;CONT 3/10/94 AT 9AM IN S26 FOR SENTTRIAL DATE 3/7/94 VACATED",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1994-02-17T14:00:00.000Z",
+      "description": "MO W/D NG PLEA GRTD;ADV/WVD RTS;PLD G CT1-11350(A)HS/F;CRT MKES FNDGSCRT ACCEPTS PLEA;REF APD/PSR;CONT 3/10/94 AT 9AM IN S26 FOR SENTTRIAL DATE 3/7/94 VACATED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-03-10T09:00:00.000Z",
+      "docketEntryComment": "AJW/SP16M(L)/CC W/#154134/VF1/STATES/108CJ--54SAGE=CTS162D/ADV PAROLE RT",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1994-03-10T09:00:00.000Z",
+      "description": "AJW/SP16M(L)/CC W/#154134/VF1/STATES/108CJ--54SAGE=CTS162D/ADV PAROLE RT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-02-17T10:30:00.000Z",
+      "docketEntryComment": "TRANSF TO D26 FOR PTC F/W",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1994-02-17T10:30:00.000Z",
+      "description": "TRANSF TO D26 FOR PTC F/W",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-01-25T09:00:00.000Z",
+      "docketEntryComment": "PD APPTD;FAW;PLEAS OF NG ENTERED;ALLEGS DENIEDCONT 2/17/94 1030AM FOR PTC AND 3/7/94 FOR TRIAL AT 930AM IN D22",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1994-01-25T09:00:00.000Z",
+      "description": "PD APPTD;FAW;PLEAS OF NG ENTERED;ALLEGS DENIEDCONT 2/17/94 1030AM FOR PTC AND 3/7/94 FOR TRIAL AT 930AM IN D22",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-01-10T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "1994-01-10T00:00:00.000Z",
+      "description": "HTA, B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-09-27T00:00:00.000Z",
+      "docketEntryComment": "DIV GRNTD",
+      "otherSubmitter": "",
+      "__index": 9,
+      "date_filed": "1993-09-27T00:00:00.000Z",
+      "description": "DIV GRNTD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-08-30T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C",
+      "otherSubmitter": "",
+      "__index": 10,
+      "date_filed": "1993-08-30T00:00:00.000Z",
+      "description": "BWD, N/C",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-08-24T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $2500, OR REVKD",
+      "otherSubmitter": "",
+      "__index": 11,
+      "date_filed": "1993-08-24T00:00:00.000Z",
+      "description": "BWI, FTA, B/S $2500, OR REVKD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01457737",
-    "portal_case_id": "",
+    "portal_case_id": "2643253",
     "display_case_number": "CRI-01457737",
     "defendant": "MICHAEL ANDERSON",
     "filed_date": "1993-07-15",
@@ -63,8 +312,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL ANDERSON, and date of filing 1993-07-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL ANDERSON, and date of filing 1993-07-15. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:04:54.455Z",
+  "portal_case_id": "2643253",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01457737",
+      "defendant": "MICHAEL ANDERSON",
+      "filed_date": "1993-07-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2643253"
+  }
 }

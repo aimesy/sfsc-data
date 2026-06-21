@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:45.194Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:16:14.170Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01560512",
   "criminal_case_number": "01560512",
@@ -24,11 +24,62 @@
       "name": "JOHN F ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN F ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1995-03-06T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-03-28T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-02-15T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-04-11T00:00:00.000Z",
+      "docketEntryComment": "LESSER INCL",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-04-11T00:00:00.000Z",
+      "docketEntryComment": "C/C CDC, CI",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-03-28T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C, B/S $5,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-03-06T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $5,000, SPR REVK'D",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-02-15T00:00:00.000Z",
+      "docketEntryComment": "B/S $3500",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "M GONZALEZ",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +96,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2738016",
+  "docket_entries": [
+    {
+      "filedDate": "1995-03-06T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1995-03-06T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-03-28T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-03-28T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-02-15T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1995-02-15T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-04-11T00:00:00.000Z",
+      "docketEntryComment": "LESSER INCL",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1996-04-11T00:00:00.000Z",
+      "description": "LESSER INCL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-04-11T00:00:00.000Z",
+      "docketEntryComment": "C/C CDC, CI",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1996-04-11T00:00:00.000Z",
+      "description": "C/C CDC, CI",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-03-28T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C, B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1996-03-28T00:00:00.000Z",
+      "description": "BWD, N/C, B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-03-06T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $5,000, SPR REVK'D",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1995-03-06T00:00:00.000Z",
+      "description": "BWI, FTA, B/S $5,000, SPR REVK'D",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-02-15T00:00:00.000Z",
+      "docketEntryComment": "B/S $3500",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1995-02-15T00:00:00.000Z",
+      "description": "B/S $3500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01560512",
-    "portal_case_id": "",
+    "portal_case_id": "2738016",
     "display_case_number": "CRI-01560512",
     "defendant": "JOHN F ADAMS",
     "filed_date": "1995-02-15",
@@ -63,8 +195,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN F ADAMS, and date of filing 1995-02-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN F ADAMS, and date of filing 1995-02-15. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:16:14.815Z",
+  "portal_case_id": "2738016",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01560512",
+      "defendant": "JOHN F ADAMS",
+      "filed_date": "1995-02-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2738016"
+  }
 }
