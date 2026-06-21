@@ -245,6 +245,18 @@ def normalize_case_data(data: dict, fallback_stem: str = "") -> dict:
         return data
     case_number = criminal_archive_case_number(data, fallback_stem)
     raw_number = criminal_raw_number(data, fallback_stem)
+    case_header = data.get("case_header") if isinstance(data.get("case_header"), dict) else {}
+    defendant = clean(data.get("defendant") or case_header.get("defendant"))
+    filed_date = clean(data.get("filed_date") or case_header.get("filed_date"))
+    display_case_number = clean(data.get("display_case_number") or case_header.get("case_number"))
+    criminal_case_type = clean(data.get("criminal_case_type") or case_header.get("case_type"))
+    criminal_title = clean(data.get("case_title") or data.get("title"))
+    if defendant and (
+        not criminal_title
+        or re.fullmatch(r"San Francisco criminal case\s+\d+", criminal_title, re.I)
+        or criminal_title.upper() == defendant.upper()
+    ):
+        criminal_title = f"People v. {defendant}"
     docket_entries = data.get("docket_entries") if isinstance(data.get("docket_entries"), list) else normalize_criminal_docket_rows(data)
     calendar = normalize_criminal_calendar_rows(data)
     statutes = normalize_criminal_statutes(data, docket_entries)
@@ -254,6 +266,11 @@ def normalize_case_data(data: dict, fallback_stem: str = "") -> dict:
         **criminal,
         "raw_case_number": raw_number,
         "portal_case_id": clean(data.get("portal_case_id") or data.get("portalCaseId")),
+        "display_case_number": display_case_number,
+        "defendant": defendant,
+        "filed_date": filed_date,
+        "case_type": criminal_case_type,
+        "case_header": case_header,
         "statutes": statutes,
         "inferred_charges": [
             {**row, "inference": "tentative_from_criminal_docket_text"}
@@ -278,14 +295,23 @@ def normalize_case_data(data: dict, fallback_stem: str = "") -> dict:
             "case_type": "criminal",
             "case_number": case_number,
             "criminal_case_number": raw_number,
-            "case_title": clean(data.get("case_title") or data.get("title"))
+            "display_case_number": display_case_number,
+            "defendant": defendant,
+            "filed_date": filed_date,
+            "criminal_case_type": criminal_case_type,
+            "case_header": case_header,
+            "case_title": criminal_title
             or (f"San Francisco criminal case {raw_number}" if raw_number else "San Francisco criminal case"),
             "court": clean(data.get("court")) or "San Francisco Superior Court - Criminal",
             "cause_of_action": clean(data.get("cause_of_action") or data.get("cause")) or "Criminal",
             "source_url": criminal_source_url(data),
             "docket_entries": docket_entries,
             "calendar": calendar,
-            "parties": data.get("parties") if isinstance(data.get("parties"), list) else [],
+            "parties": data.get("parties") if isinstance(data.get("parties"), list) else (
+                [{"name": defendant, "party_type": "Defendant", "source": "criminal_portal_case_header"}]
+                if defendant
+                else []
+            ),
             "attorneys": data.get("attorneys") if isinstance(data.get("attorneys"), list) else [],
             "documents": data.get("documents") if isinstance(data.get("documents"), list) else [],
             "payments": data.get("payments") if isinstance(data.get("payments"), list) else [],

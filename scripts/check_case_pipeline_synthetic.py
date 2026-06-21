@@ -100,6 +100,10 @@ def test_compact_criminal_directory() -> None:
         cal = [row for row in tables["calendar"] if row["case_number"] == "CRI400001"][0]
         check("criminal hearing time normalized", cal["hearing_time"] == "09:00 AM")
         check("criminal department normalized", cal["department"] == "16")
+        check(
+            "criminal filed_date feeds compact filing date",
+            bct.filing_date_for_case({"case_type": "criminal", "filed_date": "06/20/2024"}) == "2024-06-20",
+        )
 
         import pandas as pd
 
@@ -200,6 +204,32 @@ def test_criminal_importer_guards() -> None:
     })
     statute = next((row for row in deduped.get("criminal", {}).get("statutes", []) if row.get("code") == "PC 459"), {})
     check("duplicate scanner ROA/docket statute line counted once", statute.get("count") == 1, str(statute))
+
+    headered = importer.normalize_case_data({
+        "schema": "sfsc-criminal-portal-case-v1",
+        "case_type": "criminal",
+        "case_number": "CRI24000006",
+        "criminal_case_number": "24000006",
+        "portal_case_id": "def",
+        "case_title": "San Francisco criminal case 24000006",
+        "case_header": {
+            "case_number": "24000006",
+            "defendant": "DOE, JANE",
+            "case_type": "Felony",
+            "filed_date": "06/20/2024",
+        },
+        "roa": [],
+        "documents": [],
+    })
+    check("criminal header defendant makes People v title", headered.get("case_title") == "People v. DOE, JANE")
+    check("criminal header filed_date preserved", headered.get("filed_date") == "06/20/2024")
+    check(
+        "criminal header defendant becomes party",
+        any(
+            row.get("name") == "DOE, JANE" and row.get("party_type") == "Defendant"
+            for row in headered.get("parties", [])
+        ),
+    )
 
 
 def main() -> int:

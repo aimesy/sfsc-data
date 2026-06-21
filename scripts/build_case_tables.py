@@ -151,12 +151,15 @@ def first_docket_date(case: dict[str, Any]) -> str:
 
 
 def filing_date_for_case(case: dict[str, Any]) -> str:
+    case_header = case.get("case_header") if isinstance(case.get("case_header"), dict) else {}
     direct = first_date([
         case.get("filing_date"),
         case.get("filed"),
+        case.get("filed_date"),
         case.get("date_filed"),
         case.get("file_date"),
         case.get("created"),
+        case_header.get("filed_date"),
     ])
     return direct or first_docket_date(case)
 
