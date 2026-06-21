@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:25:57.379Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:27:48.211Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02094133",
   "criminal_case_number": "02094133",
@@ -24,11 +24,82 @@
       "name": "COREY BAKER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "COREY BAKER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2003-02-14T00:00:00.000Z",
+      "docketEntryComment": "BW STAY (FTA PT) AND TO",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-03-19T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/X: INTEREST OF JUSTICE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-02-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/BWSC:1000//CONTD:BENCH WARRANT STAY AND TO JOIN 2086973 IN DEPT 10/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-02-14T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2003-03-19 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2003-03-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-02-28 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2003-02-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-02-14 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 2,
+      "court_date": "2003-02-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "J JOHNSON",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3226923",
+  "docket_entries": [
+    {
+      "filedDate": "2003-02-14T00:00:00.000Z",
+      "docketEntryComment": "BW STAY (FTA PT) AND TO",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2003-02-14T00:00:00.000Z",
+      "description": "BW STAY (FTA PT) AND TO",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-03-19T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/X: INTEREST OF JUSTICE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2003-03-19T09:00:00.000Z",
+      "description": "/MO PC 1385/MOTION GRANTED/X: INTEREST OF JUSTICE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-02-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/BWSC:1000//CONTD:BENCH WARRANT STAY AND TO JOIN 2086973 IN DEPT 10/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2003-02-28T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/BWSC:1000//CONTD:BENCH WARRANT STAY AND TO JOIN 2086973 IN DEPT 10/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-02-14T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2003-02-14T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02094133",
-    "portal_case_id": "",
+    "portal_case_id": "3226923",
     "display_case_number": "CRI-02094133",
     "defendant": "COREY BAKER",
     "filed_date": "2003-02-14",
@@ -59,12 +171,36 @@
       "defendant": "COREY BAKER",
       "filed_date": "2003-02-14"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, COREY BAKER, and date of filing 2003-02-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, COREY BAKER, and date of filing 2003-02-14. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:27:48.943Z",
+  "portal_case_id": "3226923",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02094133",
+      "defendant": "COREY BAKER",
+      "filed_date": "2003-02-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3226923"
+  }
 }

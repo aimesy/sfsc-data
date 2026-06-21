@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:16:16.993Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:28:04.165Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02104057",
   "criminal_case_number": "02104057",
@@ -24,11 +24,81 @@
       "name": "VINCENT HARRIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "VINCENT HARRIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2004-01-16T09:00:00.000Z",
+      "docketEntryComment": "/X:CAUSE IS TRANSFERRED TO DEPARTMENT 22X, FORTHWITH; TO BE HEARD//X:BEFORE JUDGE DONALDSON FOR PRETRIAL,/CONTSGTW/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-12-05T09:00:00.000Z",
+      "docketEntryComment": "/GTWM/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-04-17T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER FILED ANDSERVED",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2004-03-03 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2004-03-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-01-16 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2004-01-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-12-05 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2003-12-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "A LILIEN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "G MENDEZ",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3236001",
+  "docket_entries": [
+    {
+      "filedDate": "2004-01-16T09:00:00.000Z",
+      "docketEntryComment": "/X:CAUSE IS TRANSFERRED TO DEPARTMENT 22X, FORTHWITH; TO BE HEARD//X:BEFORE JUDGE DONALDSON FOR PRETRIAL,/CONTSGTW/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2004-01-16T09:00:00.000Z",
+      "description": "/X:CAUSE IS TRANSFERRED TO DEPARTMENT 22X, FORTHWITH; TO BE HEARD//X:BEFORE JUDGE DONALDSON FOR PRETRIAL,/CONTSGTW/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-12-05T09:00:00.000Z",
+      "docketEntryComment": "/GTWM/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2003-12-05T09:00:00.000Z",
+      "description": "/GTWM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-04-17T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER FILED ANDSERVED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2003-04-17T00:00:00.000Z",
+      "description": "S/A ORDER FILED ANDSERVED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02104057",
-    "portal_case_id": "",
+    "portal_case_id": "3236001",
     "display_case_number": "CRI-02104057",
     "defendant": "VINCENT HARRIS",
     "filed_date": "2003-04-17",
@@ -63,8 +164,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, VINCENT HARRIS, and date of filing 2003-04-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, VINCENT HARRIS, and date of filing 2003-04-17. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:28:04.850Z",
+  "portal_case_id": "3236001",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02104057",
+      "defendant": "VINCENT HARRIS",
+      "filed_date": "2003-04-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3236001"
+  }
 }

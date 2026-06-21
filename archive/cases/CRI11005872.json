@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:15:46.085Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:01:04.125Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11005872",
   "criminal_case_number": "11005872",
@@ -24,11 +24,64 @@
       "name": "LEE K ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LEE K ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-04-25T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-04-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HEARING/FTA/OREVKD/BWI/BAIL:25000/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-03T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 05-02-11/987,2/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-04-25 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2011-04-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-03 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2011-03-03",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "TAL KLEMENT",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +98,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3669807",
+  "docket_entries": [
+    {
+      "filedDate": "2011-04-25T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-04-25T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-04-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HEARING/FTA/OREVKD/BWI/BAIL:25000/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-04-25T09:00:00.000Z",
+      "description": "/CAL:PRELIM HEARING/FTA/OREVKD/BWI/BAIL:25000/BWNUM:1ST/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-03T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 05-02-11/987,2/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-03-03T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 05-02-11/987,2/CONTD: PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11005872",
-    "portal_case_id": "",
+    "portal_case_id": "3669807",
     "display_case_number": "CRI-11005872",
     "defendant": "LEE K ALLEN",
     "filed_date": "2011-03-01",
@@ -63,8 +147,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LEE K ALLEN, and date of filing 2011-03-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LEE K ALLEN, and date of filing 2011-03-01. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:01:04.707Z",
+  "portal_case_id": "3669807",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11005872",
+      "defendant": "LEE K ALLEN",
+      "filed_date": "2011-03-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3669807"
+  }
 }

@@ -2,7 +2,7 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:52:12.000Z",
+  "captured_at": "2026-06-21T18:27:18.464Z",
   "status": "unavailable",
   "case_type": "criminal",
   "case_number": "CRI02097515",
@@ -24,6 +24,11 @@
       "name": "CHRISTOPHER COX",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHRISTOPHER COX",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
   "roa": [],
@@ -45,11 +50,11 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3229973",
   "docket_entries": [],
   "criminal": {
     "raw_case_number": "02097515",
-    "portal_case_id": "",
+    "portal_case_id": "3229973",
     "display_case_number": "CRI-02097515",
     "defendant": "CHRISTOPHER COX",
     "filed_date": "2003-03-07",
@@ -63,8 +68,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHRISTOPHER COX, and date of filing 2003-03-07. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHRISTOPHER COX, and date of filing 2003-03-07. criminal_portal_no_public_entries criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:27:19.089Z",
+  "portal_case_id": "3229973",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02097515",
+      "defendant": "CHRISTOPHER COX",
+      "filed_date": "2003-03-07"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3229973"
+  }
 }

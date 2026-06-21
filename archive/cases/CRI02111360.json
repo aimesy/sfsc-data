@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:37:20.358Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:29:08.933Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02111360",
   "criminal_case_number": "02111360",
@@ -24,10 +24,40 @@
       "name": "JORGE CANO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JORGE CANO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2003-06-02T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-06-02T09:00:00.000Z",
+      "docketEntryComment": "/X:COUNT(S) 1 REDUCED TO INFRACTION,  THE CAUSE IS ORDERED TRANSFERRED TO TRAFFIC DIVISION DEPT, A, 10:30AM ON JULY 8,2003/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2003-06-02 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "2003-06-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +75,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3242696",
+  "docket_entries": [
+    {
+      "filedDate": "2003-06-02T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2003-06-02T00:00:00.000Z",
+      "description": "COMP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-06-02T09:00:00.000Z",
+      "docketEntryComment": "/X:COUNT(S) 1 REDUCED TO INFRACTION,  THE CAUSE IS ORDERED TRANSFERRED TO TRAFFIC DIVISION DEPT, A, 10:30AM ON JULY 8,2003/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2003-06-02T09:00:00.000Z",
+      "description": "/X:COUNT(S) 1 REDUCED TO INFRACTION, THE CAUSE IS ORDERED TRANSFERRED TO TRAFFIC DIVISION DEPT, A, 10:30AM ON JULY 8,2003/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02111360",
-    "portal_case_id": "",
+    "portal_case_id": "3242696",
     "display_case_number": "CRI-02111360",
     "defendant": "JORGE CANO",
     "filed_date": "2003-06-02",
@@ -63,8 +114,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JORGE CANO, and date of filing 2003-06-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JORGE CANO, and date of filing 2003-06-02. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:29:09.641Z",
+  "portal_case_id": "3242696",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02111360",
+      "defendant": "JORGE CANO",
+      "filed_date": "2003-06-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3242696"
+  }
 }

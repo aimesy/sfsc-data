@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:23:22.081Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:05:31.977Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10002660",
   "criminal_case_number": "10002660",
@@ -24,11 +24,123 @@
       "name": "CHAKELIA ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHAKELIA ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-25T15:01:00.000Z",
+      "docketEntryComment": "MISDEMEANOR PLEA & FELONY SENTENCING TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-27T09:00:00.000Z",
+      "docketEntryComment": "/DAWT/PD/BAIL:50000/25    CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURSPC 4011,6/JAIL PSY/4011,6/REP:01-29-10/CONTD: RECEIPT OF 4011,6PC REPORT//CONTD:ARRAIGNMENT, PLEA /TWA/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-08T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH5:CJ 4M /CTS:16/CCC:2432386 & 10002660/VF1/SECFEE/ICNA/COLLECT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG & BAIL MOTION/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 5/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BAIL MOTION/LD:02-16-10/X:02-08-10 PRELIM CONFIRMED,/CONTD:FOR PRELIMINARY HEARING AND BAIL MOTION",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-29T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:02-16-10/CONTD:FOR BAIL MOTION/CONTD:FOR PRELIMINARY HEARING/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-02-08 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2010-02-08",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-08 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2010-02-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-03 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2010-02-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-29 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2010-01-29",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-27 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 4,
+      "court_date": "2010-01-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SETH MEISELS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +157,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3630922",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-25T15:01:00.000Z",
+      "docketEntryComment": "MISDEMEANOR PLEA & FELONY SENTENCING TX FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-02-25T15:01:00.000Z",
+      "description": "MISDEMEANOR PLEA & FELONY SENTENCING TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-27T09:00:00.000Z",
+      "docketEntryComment": "/DAWT/PD/BAIL:50000/25    CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURSPC 4011,6/JAIL PSY/4011,6/REP:01-29-10/CONTD: RECEIPT OF 4011,6PC REPORT//CONTD:ARRAIGNMENT, PLEA /TWA/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-01-27T09:00:00.000Z",
+      "description": "/DAWT/PD/BAIL:50000/25 CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURSPC 4011,6/JAIL PSY/4011,6/REP:01-29-10/CONTD: RECEIPT OF 4011,6PC REPORT//CONTD:ARRAIGNMENT, PLEA /TWA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-08T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH5:CJ 4M /CTS:16/CCC:2432386 & 10002660/VF1/SECFEE/ICNA/COLLECT/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-02-08T09:15:00.000Z",
+      "description": "/TWS/CH5:CJ 4M /CTS:16/CCC:2432386 & 10002660/VF1/SECFEE/ICNA/COLLECT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG & BAIL MOTION/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 5/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-02-08T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG & BAIL MOTION/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 5/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BAIL MOTION/LD:02-16-10/X:02-08-10 PRELIM CONFIRMED,/CONTD:FOR PRELIMINARY HEARING AND BAIL MOTION",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-02-03T09:00:00.000Z",
+      "description": "/CAL:BAIL MOTION/LD:02-16-10/X:02-08-10 PRELIM CONFIRMED,/CONTD:FOR PRELIMINARY HEARING AND BAIL MOTION",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-29T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:02-16-10/CONTD:FOR BAIL MOTION/CONTD:FOR PRELIMINARY HEARING/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2010-01-29T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:02-16-10/CONTD:FOR BAIL MOTION/CONTD:FOR PRELIMINARY HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10002660",
-    "portal_case_id": "",
+    "portal_case_id": "3630922",
     "display_case_number": "CRI-10002660",
     "defendant": "CHAKELIA ANDERSON",
     "filed_date": "2010-01-27",
@@ -59,12 +242,36 @@
       "defendant": "CHAKELIA ANDERSON",
       "filed_date": "2010-01-27"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHAKELIA ANDERSON, and date of filing 2010-01-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHAKELIA ANDERSON, and date of filing 2010-01-27. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:05:32.545Z",
+  "portal_case_id": "3630922",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10002660",
+      "defendant": "CHAKELIA ANDERSON",
+      "filed_date": "2010-01-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3630922"
+  }
 }

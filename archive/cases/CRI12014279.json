@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:57:19.581Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:56:46.621Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12014279",
   "criminal_case_number": "12014279",
@@ -24,11 +24,100 @@
       "name": "LIONEL THOMAS ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LIONEL THOMAS ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-06-28T11:12:00.000Z",
+      "docketEntryComment": "MOT TO MODIFY SENT TO INCLUDE SWAP FILED BY ATTNY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-07-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PD MOTION TO MODIFY SENTENCE/MO DENIED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-06-08T09:15:00.000Z",
+      "docketEntryComment": "/DEF IS ORDERED TO SERVE 90 DAYS/CTS 11/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-06-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455REIN/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-06-01T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD POST COMMUNITY SERVICE SUPERVISION/NP/X:DEFENDANT SICK PER BAILIFF/X:PRCS IS ADMINISTRATIVELY REVOKED,/NB/CONTD:SETTING PRCS HEARING/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-07-06 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 0,
+      "court_date": "2012-07-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-06-08 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 1,
+      "court_date": "2012-06-08",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-06-08 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 2,
+      "court_date": "2012-06-08",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-06-01 11:30 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "2012-06-01",
+      "hearing_time": "11:30 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DEMARRIS EVANS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +134,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3711723",
+  "docket_entries": [
+    {
+      "filedDate": "2012-06-28T11:12:00.000Z",
+      "docketEntryComment": "MOT TO MODIFY SENT TO INCLUDE SWAP FILED BY ATTNY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-06-28T11:12:00.000Z",
+      "description": "MOT TO MODIFY SENT TO INCLUDE SWAP FILED BY ATTNY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-07-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PD MOTION TO MODIFY SENTENCE/MO DENIED/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-07-06T09:00:00.000Z",
+      "description": "/CAL:PD MOTION TO MODIFY SENTENCE/MO DENIED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-06-08T09:15:00.000Z",
+      "docketEntryComment": "/DEF IS ORDERED TO SERVE 90 DAYS/CTS 11/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-06-08T09:15:00.000Z",
+      "description": "/DEF IS ORDERED TO SERVE 90 DAYS/CTS 11/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-06-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455REIN/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-06-08T09:00:00.000Z",
+      "description": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455REIN/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-06-01T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD POST COMMUNITY SERVICE SUPERVISION/NP/X:DEFENDANT SICK PER BAILIFF/X:PRCS IS ADMINISTRATIVELY REVOKED,/NB/CONTD:SETTING PRCS HEARING/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2012-06-01T11:30:00.000Z",
+      "description": "/CAL:APD POST COMMUNITY SERVICE SUPERVISION/NP/X:DEFENDANT SICK PER BAILIFF/X:PRCS IS ADMINISTRATIVELY REVOKED,/NB/CONTD:SETTING PRCS HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12014279",
-    "portal_case_id": "",
+    "portal_case_id": "3711723",
     "display_case_number": "CRI-12014279",
     "defendant": "LIONEL THOMAS ADAMS",
     "filed_date": "2012-06-01",
@@ -59,12 +199,36 @@
       "defendant": "LIONEL THOMAS ADAMS",
       "filed_date": "2012-06-01"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LIONEL THOMAS ADAMS, and date of filing 2012-06-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LIONEL THOMAS ADAMS, and date of filing 2012-06-01. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:56:47.774Z",
+  "portal_case_id": "3711723",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12014279",
+      "defendant": "LIONEL THOMAS ADAMS",
+      "filed_date": "2012-06-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3711723"
+  }
 }

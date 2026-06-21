@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:23:07.302Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:28:59.898Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02109634",
   "criminal_case_number": "02109634",
@@ -24,11 +24,110 @@
       "name": "DANIEL WAYNE ARCHER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DANIEL WAYNE ARCHER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2003-05-28T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-07-11T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-05-28T00:00:00.000Z",
+      "docketEntryComment": "DISPO - DOP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-08-11T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/X:PEOPLE UNABLE TO SUSTAIN BURDEN OF PROOF/BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-08-01T09:00:00.000Z",
+      "docketEntryComment": "/GTW/DOP/CONTD:FOR DISPO(08-11) AND JURY TRIAL(10-10) /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-07-11T09:00:00.000Z",
+      "docketEntryComment": "/BWDNC/TEXT DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-05-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL ARRAIGNMENT/FTA/BW/BWI/BAIL 10000/BWNUM 1/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2003-08-11 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2003-08-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-08-01 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2003-08-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-07-11 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 2,
+      "court_date": "2003-07-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-05-28 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 3,
+      "court_date": "2003-05-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "B PEARLMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +144,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3241132",
+  "docket_entries": [
+    {
+      "filedDate": "2003-05-28T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2003-05-28T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-07-11T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2003-07-11T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-05-28T00:00:00.000Z",
+      "docketEntryComment": "DISPO - DOP",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2003-05-28T00:00:00.000Z",
+      "description": "DISPO - DOP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-08-11T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/X:PEOPLE UNABLE TO SUSTAIN BURDEN OF PROOF/BE/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2003-08-11T09:00:00.000Z",
+      "description": "/MO PC 1385/MOTION GRANTED/X:PEOPLE UNABLE TO SUSTAIN BURDEN OF PROOF/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-08-01T09:00:00.000Z",
+      "docketEntryComment": "/GTW/DOP/CONTD:FOR DISPO(08-11) AND JURY TRIAL(10-10) /",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2003-08-01T09:00:00.000Z",
+      "description": "/GTW/DOP/CONTD:FOR DISPO(08-11) AND JURY TRIAL(10-10) /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-07-11T09:00:00.000Z",
+      "docketEntryComment": "/BWDNC/TEXT DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2003-07-11T09:00:00.000Z",
+      "description": "/BWDNC/TEXT DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-05-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL ARRAIGNMENT/FTA/BW/BWI/BAIL 10000/BWNUM 1/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2003-05-28T09:00:00.000Z",
+      "description": "/CAL ARRAIGNMENT/FTA/BW/BWI/BAIL 10000/BWNUM 1/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02109634",
-    "portal_case_id": "",
+    "portal_case_id": "3241132",
     "display_case_number": "CRI-02109634",
     "defendant": "DANIEL WAYNE ARCHER",
     "filed_date": "2003-05-28",
@@ -59,12 +229,36 @@
       "defendant": "DANIEL WAYNE ARCHER",
       "filed_date": "2003-05-28"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DANIEL WAYNE ARCHER, and date of filing 2003-05-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DANIEL WAYNE ARCHER, and date of filing 2003-05-28. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:29:00.558Z",
+  "portal_case_id": "3241132",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02109634",
+      "defendant": "DANIEL WAYNE ARCHER",
+      "filed_date": "2003-05-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3241132"
+  }
 }

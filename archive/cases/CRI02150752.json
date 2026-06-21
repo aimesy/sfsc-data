@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:54:47.063Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:35:53.990Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02150752",
   "criminal_case_number": "02150752",
@@ -24,11 +24,46 @@
       "name": "DAVID DAWSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID DAWSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2004-07-01T09:15:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP3Y:U/CTSP:135/STATES/VF5:200/PAR/CDC//X:DEF IS ALSO SENTENCED ON THE MISDEMEANOR 11364HS TO 180DAYS CJ//X:STIPULATION THAT 180 DAYS CAN BE SERVED IN STATE PRISON CONSECUTIVELY/ENH:CH1:TYPE12022B1PC:TI1Y:CS/X:TOTAL4YEARS- STATE PRISON/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-05-05T00:00:00.000Z",
+      "docketEntryComment": "SUBSTITUTE ATTY FOR DEFT PD RELIEVED",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2004-07-01 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2004-07-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "J OSULLIVAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +80,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3278767",
+  "docket_entries": [
+    {
+      "filedDate": "2004-07-01T09:15:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP3Y:U/CTSP:135/STATES/VF5:200/PAR/CDC//X:DEF IS ALSO SENTENCED ON THE MISDEMEANOR 11364HS TO 180DAYS CJ//X:STIPULATION THAT 180 DAYS CAN BE SERVED IN STATE PRISON CONSECUTIVELY/ENH:CH1:TYPE12022B1PC:TI1Y:CS/X:TOTAL4YEARS- STATE PRISON/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2004-07-01T09:15:00.000Z",
+      "description": "/AJW/CH1:SP3Y:U/CTSP:135/STATES/VF5:200/PAR/CDC//X:DEF IS ALSO SENTENCED ON THE MISDEMEANOR 11364HS TO 180DAYS CJ//X:STIPULATION THAT 180 DAYS CAN BE SERVED IN STATE PRISON CONSECUTIVELY/ENH:CH1:TYPE12022B1PC:TI1Y:CS/X:TOTAL4YEARS- STATE PRISON/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-05-05T00:00:00.000Z",
+      "docketEntryComment": "SUBSTITUTE ATTY FOR DEFT PD RELIEVED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2004-05-05T00:00:00.000Z",
+      "description": "SUBSTITUTE ATTY FOR DEFT PD RELIEVED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02150752",
-    "portal_case_id": "",
+    "portal_case_id": "3278767",
     "display_case_number": "CRI-02150752",
     "defendant": "DAVID DAWSON",
     "filed_date": "2004-02-20",
@@ -63,8 +119,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID DAWSON, and date of filing 2004-02-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID DAWSON, and date of filing 2004-02-20. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:35:54.578Z",
+  "portal_case_id": "3278767",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02150752",
+      "defendant": "DAVID DAWSON",
+      "filed_date": "2004-02-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3278767"
+  }
 }

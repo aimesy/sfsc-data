@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:45.188Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:48:39.985Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13012434",
   "criminal_case_number": "13012434",
@@ -24,11 +24,59 @@
       "name": "JOHN ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-05-08T11:45:00.000Z",
+      "docketEntryComment": "/CH1:CJ 90 D/CTS:8/4019HALF/3455REIN/X:WHILE IN CUSTODY THE DEFENDANT ISTO UNDERGO A DRUG TREATMENT ASSESSMENTAND WHEN OUT OF CUSTODY HE IS TO PARTICIPATE IN RESIDENTIAL DRUG TREATMENT/X:THE PRCS TERMINATION DATE IS 11-28-14/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-05-08T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD MOTION TO REVOKE PRCS/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-05-08 11:45 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2013-05-08",
+      "hearing_time": "11:45 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-05-08 11:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2013-05-08",
+      "hearing_time": "11:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "LEAH MCLEAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3743015",
+  "docket_entries": [
+    {
+      "filedDate": "2013-05-08T11:45:00.000Z",
+      "docketEntryComment": "/CH1:CJ 90 D/CTS:8/4019HALF/3455REIN/X:WHILE IN CUSTODY THE DEFENDANT ISTO UNDERGO A DRUG TREATMENT ASSESSMENTAND WHEN OUT OF CUSTODY HE IS TO PARTICIPATE IN RESIDENTIAL DRUG TREATMENT/X:THE PRCS TERMINATION DATE IS 11-28-14/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-05-08T11:45:00.000Z",
+      "description": "/CH1:CJ 90 D/CTS:8/4019HALF/3455REIN/X:WHILE IN CUSTODY THE DEFENDANT ISTO UNDERGO A DRUG TREATMENT ASSESSMENTAND WHEN OUT OF CUSTODY HE IS TO PARTICIPATE IN RESIDENTIAL DRUG TREATMENT/X:THE PRCS TERMINATION DATE IS 11-28-14/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-05-08T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD MOTION TO REVOKE PRCS/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-05-08T11:30:00.000Z",
+      "description": "/CAL:APD MOTION TO REVOKE PRCS/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13012434",
-    "portal_case_id": "",
+    "portal_case_id": "3743015",
     "display_case_number": "CRI-13012434",
     "defendant": "JOHN ADAMS",
     "filed_date": "2013-05-08",
@@ -59,12 +128,36 @@
       "defendant": "JOHN ADAMS",
       "filed_date": "2013-05-08"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN ADAMS, and date of filing 2013-05-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN ADAMS, and date of filing 2013-05-08. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:48:40.550Z",
+  "portal_case_id": "3743015",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13012434",
+      "defendant": "JOHN ADAMS",
+      "filed_date": "2013-05-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3743015"
+  }
 }

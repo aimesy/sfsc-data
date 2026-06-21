@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:49:48.947Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:37:51.508Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02158324",
   "criminal_case_number": "02158324",
@@ -24,11 +24,72 @@
       "name": "JULIO GOMEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JULIO GOMEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2004-05-04T09:00:00.000Z",
+      "docketEntryComment": "/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-04-07T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/PD/FAWC/DOP/GTWM/987,2/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2004-06-11 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2004-06-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-05-04 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2004-05-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-04-07 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2004-04-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "J HIGA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +106,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3285694",
+  "docket_entries": [
+    {
+      "filedDate": "2004-05-04T09:00:00.000Z",
+      "docketEntryComment": "/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2004-05-04T09:00:00.000Z",
+      "description": "/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-04-07T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/PD/FAWC/DOP/GTWM/987,2/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2004-04-07T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/PD/FAWC/DOP/GTWM/987,2/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02158324",
-    "portal_case_id": "",
+    "portal_case_id": "3285694",
     "display_case_number": "CRI-02158324",
     "defendant": "JULIO GOMEZ",
     "filed_date": "2004-04-07",
@@ -63,8 +145,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JULIO GOMEZ, and date of filing 2004-04-07. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JULIO GOMEZ, and date of filing 2004-04-07. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:37:52.029Z",
+  "portal_case_id": "3285694",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02158324",
+      "defendant": "JULIO GOMEZ",
+      "filed_date": "2004-04-07"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3285694"
+  }
 }

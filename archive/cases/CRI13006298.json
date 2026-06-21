@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:13:10.255Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:47:35.976Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13006298",
   "criminal_case_number": "13006298",
@@ -24,11 +24,95 @@
       "name": "TYREECE GRANT",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TYREECE GRANT",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-03-15T09:45:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455REIN/CH1:CJ 140D/CTS:11/4019HALF/CTORD:DEFT TO PARTICIPATE IN REENTRY PROGRAM/CONTD:STATUS/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-03-08T11:30:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC 3455/PD/CTORD:PRCS IS ADMINISTRATIVELY REVOKED/SHER/NB/S25/CONTD:TO SET PRCS HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-04-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS/CTORD:BALANCE OF SENTENCE STAYED/OR/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-03-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:COMMUNITY SUPERVISION REVOCATION HEARING/X:DEFENDANT IS ADVISED OF AND PERSONALLY WAIVES HIS CONSTITUTIONAL RIGHTS/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-04-26 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 0,
+      "court_date": "2013-04-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-03-15 9:45 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 1,
+      "court_date": "2013-03-15",
+      "hearing_time": "9:45 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-03-15 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 2,
+      "court_date": "2013-03-15",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-03-08 11:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "2013-03-08",
+      "hearing_time": "11:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "LATEEF GRAY",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +129,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3736991",
+  "docket_entries": [
+    {
+      "filedDate": "2013-03-15T09:45:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455REIN/CH1:CJ 140D/CTS:11/4019HALF/CTORD:DEFT TO PARTICIPATE IN REENTRY PROGRAM/CONTD:STATUS/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-03-15T09:45:00.000Z",
+      "description": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455REIN/CH1:CJ 140D/CTS:11/4019HALF/CTORD:DEFT TO PARTICIPATE IN REENTRY PROGRAM/CONTD:STATUS/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-03-08T11:30:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC 3455/PD/CTORD:PRCS IS ADMINISTRATIVELY REVOKED/SHER/NB/S25/CONTD:TO SET PRCS HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-03-08T11:30:00.000Z",
+      "description": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC 3455/PD/CTORD:PRCS IS ADMINISTRATIVELY REVOKED/SHER/NB/S25/CONTD:TO SET PRCS HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-04-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS/CTORD:BALANCE OF SENTENCE STAYED/OR/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-04-26T09:00:00.000Z",
+      "description": "/CAL:STATUS/CTORD:BALANCE OF SENTENCE STAYED/OR/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-03-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:COMMUNITY SUPERVISION REVOCATION HEARING/X:DEFENDANT IS ADVISED OF AND PERSONALLY WAIVES HIS CONSTITUTIONAL RIGHTS/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-03-15T09:00:00.000Z",
+      "description": "/CAL:COMMUNITY SUPERVISION REVOCATION HEARING/X:DEFENDANT IS ADVISED OF AND PERSONALLY WAIVES HIS CONSTITUTIONAL RIGHTS/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13006298",
-    "portal_case_id": "",
+    "portal_case_id": "3736991",
     "display_case_number": "CRI-13006298",
     "defendant": "TYREECE GRANT",
     "filed_date": "2013-03-06",
@@ -59,12 +184,44 @@
       "defendant": "TYREECE GRANT",
       "filed_date": "2013-03-06"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TYREECE GRANT, and date of filing 2013-03-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TYREECE GRANT, and date of filing 2013-03-06. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:47:36.756Z",
+  "portal_case_id": "3736991",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13006298",
+      "defendant": "TYREECE GRANT",
+      "filed_date": "2013-03-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3736991"
+  }
 }

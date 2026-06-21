@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:57:19.581Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:56:58.878Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12010677",
   "criminal_case_number": "12010677",
@@ -24,11 +24,54 @@
       "name": "LIONEL THOMAS ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LIONEL THOMAS ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-04-25T11:45:00.000Z",
+      "docketEntryComment": "/CAL:APD POST COMMUNITY SERVICE SUPERVISION VIOLATION PC 3455(A)/X:DEFENDANT ADMITS VIOLATION OF POST COMMUNITY SERVICE SUPERVISION,/X:PCRS IS MODIFIED AS FOLLOWS-DEFENDANT IS SENTENCED TO 30DAYS IN COUNTY JAIL WITH 4 DAYSCTS/4019HALF/CTORD:DEFENDANT TO PARTICIPATE IN A RESIDENTIAL TREATMENT PROGRAM TO BE DETERMINED AND MONITORED BY APD/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-04-25 11:45 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2012-04-25",
+      "hearing_time": "11:45 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-04-25 11:30 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2012-04-25",
+      "hearing_time": "11:30 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ERIC QUANDT",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +88,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3708172",
+  "docket_entries": [
+    {
+      "filedDate": "2012-04-25T11:45:00.000Z",
+      "docketEntryComment": "/CAL:APD POST COMMUNITY SERVICE SUPERVISION VIOLATION PC 3455(A)/X:DEFENDANT ADMITS VIOLATION OF POST COMMUNITY SERVICE SUPERVISION,/X:PCRS IS MODIFIED AS FOLLOWS-DEFENDANT IS SENTENCED TO 30DAYS IN COUNTY JAIL WITH 4 DAYSCTS/4019HALF/CTORD:DEFENDANT TO PARTICIPATE IN A RESIDENTIAL TREATMENT PROGRAM TO BE DETERMINED AND MONITORED BY APD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-04-25T11:45:00.000Z",
+      "description": "/CAL:APD POST COMMUNITY SERVICE SUPERVISION VIOLATION PC 3455(A)/X:DEFENDANT ADMITS VIOLATION OF POST COMMUNITY SERVICE SUPERVISION,/X:PCRS IS MODIFIED AS FOLLOWS-DEFENDANT IS SENTENCED TO 30DAYS IN COUNTY JAIL WITH 4 DAYSCTS/4019HALF/CTORD:DEFENDANT TO PARTICIPATE IN A RESIDENTIAL TREATMENT PROGRAM TO BE DETERMINED AND MONITORED BY APD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12010677",
-    "portal_case_id": "",
+    "portal_case_id": "3708172",
     "display_case_number": "CRI-12010677",
     "defendant": "LIONEL THOMAS ADAMS",
     "filed_date": "2012-04-24",
@@ -59,12 +113,36 @@
       "defendant": "LIONEL THOMAS ADAMS",
       "filed_date": "2012-04-24"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 3455(A)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LIONEL THOMAS ADAMS, and date of filing 2012-04-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LIONEL THOMAS ADAMS, and date of filing 2012-04-24. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:56:59.449Z",
+  "portal_case_id": "3708172",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12010677",
+      "defendant": "LIONEL THOMAS ADAMS",
+      "filed_date": "2012-04-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3708172"
+  }
 }

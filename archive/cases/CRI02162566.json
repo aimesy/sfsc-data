@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:09:52.600Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:37:37.139Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02162566",
   "criminal_case_number": "02162566",
@@ -24,11 +24,82 @@
       "name": "OSCAR GARCIA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "OSCAR GARCIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2004-05-05T09:15:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/STWPX//X:COUNT 1 AMENDED TO 11550HS MISDEMEANOR/IRRC/DEFT ADV RTS:1/REMA/OR/FNDG/1210,1PSR/CO:NEGOTIATED DISPOSITION/AJW/CH1:ISS:PROB 3 Y:PJ5D/CTS:5/WS/VF1/PAD/11590/RX/LF/PC/PSR/BKFEE/36DTC/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-03-01T00:00:00.000Z",
+      "docketEntryComment": "GUILTY PLEA OF 1150HS/M BE ORDERED SET ASIDENG PLEA REINSTATED CASE DISMGUILTY PL S/A;DISM PUR 1210,1",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-08-11T00:00:00.000Z",
+      "docketEntryComment": "CT ORDERS MATTER OFF CAL NO FUTURE DATE AT THIS TIME",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-05-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PROP 36 PROG RPT/X:MOTION TO REVOKE PROBATION-APD - GRANTED/FTA/BWI/PROB ADM REV/ /BAIL:25000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2005-03-01 9:00 AM",
+      "hearingType": "To Set Motion to Revoke Probation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2005-03-01",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set Motion to Revoke Probation Hearing",
+      "hearing_type": "To Set Motion to Revoke Probation Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-05-10 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 1,
+      "court_date": "2004-05-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-05-05 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2004-05-05",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S OLMO",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3289621",
+  "docket_entries": [
+    {
+      "filedDate": "2004-05-05T09:15:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/STWPX//X:COUNT 1 AMENDED TO 11550HS MISDEMEANOR/IRRC/DEFT ADV RTS:1/REMA/OR/FNDG/1210,1PSR/CO:NEGOTIATED DISPOSITION/AJW/CH1:ISS:PROB 3 Y:PJ5D/CTS:5/WS/VF1/PAD/11590/RX/LF/PC/PSR/BKFEE/36DTC/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2004-05-05T09:15:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/STWPX//X:COUNT 1 AMENDED TO 11550HS MISDEMEANOR/IRRC/DEFT ADV RTS:1/REMA/OR/FNDG/1210,1PSR/CO:NEGOTIATED DISPOSITION/AJW/CH1:ISS:PROB 3 Y:PJ5D/CTS:5/WS/VF1/PAD/11590/RX/LF/PC/PSR/BKFEE/36DTC/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-03-01T00:00:00.000Z",
+      "docketEntryComment": "GUILTY PLEA OF 1150HS/M BE ORDERED SET ASIDENG PLEA REINSTATED CASE DISMGUILTY PL S/A;DISM PUR 1210,1",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2005-03-01T00:00:00.000Z",
+      "description": "GUILTY PLEA OF 1150HS/M BE ORDERED SET ASIDENG PLEA REINSTATED CASE DISMGUILTY PL S/A;DISM PUR 1210,1",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-08-11T00:00:00.000Z",
+      "docketEntryComment": "CT ORDERS MATTER OFF CAL NO FUTURE DATE AT THIS TIME",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2004-08-11T00:00:00.000Z",
+      "description": "CT ORDERS MATTER OFF CAL NO FUTURE DATE AT THIS TIME",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-05-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PROP 36 PROG RPT/X:MOTION TO REVOKE PROBATION-APD - GRANTED/FTA/BWI/PROB ADM REV/ /BAIL:25000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2004-05-10T09:00:00.000Z",
+      "description": "/CAL:PROP 36 PROG RPT/X:MOTION TO REVOKE PROBATION-APD - GRANTED/FTA/BWI/PROB ADM REV/ /BAIL:25000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02162566",
-    "portal_case_id": "",
+    "portal_case_id": "3289621",
     "display_case_number": "CRI-02162566",
     "defendant": "OSCAR GARCIA",
     "filed_date": "2004-05-05",
@@ -63,8 +175,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, OSCAR GARCIA, and date of filing 2004-05-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, OSCAR GARCIA, and date of filing 2004-05-05. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:37:37.820Z",
+  "portal_case_id": "3289621",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02162566",
+      "defendant": "OSCAR GARCIA",
+      "filed_date": "2004-05-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3289621"
+  }
 }

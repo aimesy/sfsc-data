@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:00:12.513Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:29:04.315Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02109948",
   "criminal_case_number": "02109948",
@@ -24,11 +24,100 @@
       "name": "LYNETTE FISHER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LYNETTE FISHER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2003-09-26T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-09-29T09:00:00.000Z",
+      "docketEntryComment": "/REIN ORIG TC/PROB MOD/PJ:5 DAYS/ADDL CTS:5/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-09-26T09:00:00.000Z",
+      "docketEntryComment": "CONTD SUPP RPT ON APD MTR/APD-MTR/SUPP:10-27-03/PROB ADM REV/SHER/NB/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-09-17T09:00:00.000Z",
+      "docketEntryComment": "/X:MOTION TO REVOKE PROBATION-APD - GRANTED/FTA/BWI/PROB ADM REV/ /NB/NIGHTSERV/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-06-30T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ40D/CTS:40/WS/PAD/11590/DTC/LF/RX/VF4:200/11350/PC/PSR/BKFEE/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2003-09-29 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2003-09-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-09-26 9:00 AM",
+      "hearingType": "Motion to Revoke Probation Filing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2003-09-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Revoke Probation Filing",
+      "hearing_type": "Motion to Revoke Probation Filing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-09-17 9:00 AM",
+      "hearingType": "Motion to Revoke Probation Filing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2003-09-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Revoke Probation Filing",
+      "hearing_type": "Motion to Revoke Probation Filing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-06-30 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2003-06-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "G GOLDMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +134,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3241420",
+  "docket_entries": [
+    {
+      "filedDate": "2003-09-26T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2003-09-26T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-09-29T09:00:00.000Z",
+      "docketEntryComment": "/REIN ORIG TC/PROB MOD/PJ:5 DAYS/ADDL CTS:5/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2003-09-29T09:00:00.000Z",
+      "description": "/REIN ORIG TC/PROB MOD/PJ:5 DAYS/ADDL CTS:5/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-09-26T09:00:00.000Z",
+      "docketEntryComment": "CONTD SUPP RPT ON APD MTR/APD-MTR/SUPP:10-27-03/PROB ADM REV/SHER/NB/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2003-09-26T09:00:00.000Z",
+      "description": "CONTD SUPP RPT ON APD MTR/APD-MTR/SUPP:10-27-03/PROB ADM REV/SHER/NB/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-09-17T09:00:00.000Z",
+      "docketEntryComment": "/X:MOTION TO REVOKE PROBATION-APD - GRANTED/FTA/BWI/PROB ADM REV/ /NB/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2003-09-17T09:00:00.000Z",
+      "description": "/X:MOTION TO REVOKE PROBATION-APD - GRANTED/FTA/BWI/PROB ADM REV/ /NB/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-06-30T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ40D/CTS:40/WS/PAD/11590/DTC/LF/RX/VF4:200/11350/PC/PSR/BKFEE/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2003-06-30T09:00:00.000Z",
+      "description": "/AJW/CH1:ISS:PROB 3 Y:PJ40D/CTS:40/WS/PAD/11590/DTC/LF/RX/VF4:200/11350/PC/PSR/BKFEE/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02109948",
-    "portal_case_id": "",
+    "portal_case_id": "3241420",
     "display_case_number": "CRI-02109948",
     "defendant": "LYNETTE FISHER",
     "filed_date": "2003-05-27",
@@ -63,8 +203,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LYNETTE FISHER, and date of filing 2003-05-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LYNETTE FISHER, and date of filing 2003-05-27. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:29:05.043Z",
+  "portal_case_id": "3241420",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02109948",
+      "defendant": "LYNETTE FISHER",
+      "filed_date": "2003-05-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3241420"
+  }
 }

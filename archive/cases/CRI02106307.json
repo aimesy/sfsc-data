@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:41:43.810Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:29:13.915Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02106307",
   "criminal_case_number": "02106307",
@@ -24,11 +24,77 @@
       "name": "CARLOS AYALA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CARLOS AYALA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2003-06-10T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP 3 Y:U/CTSP:328/STATES/VF5:200/PAR/CDC/TEXT/5A/5B/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-05-12T09:00:00.000Z",
+      "docketEntryComment": "SENTENCING/PRES:06-10-03/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-05-02T09:00:00.000Z",
+      "docketEntryComment": "GUILTY PLEA ENTERED CONTD SENT",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2003-06-10 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 0,
+      "court_date": "2003-06-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-05-12 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 1,
+      "court_date": "2003-05-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-05-02 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2003-05-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "B PETERSEN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3238066",
+  "docket_entries": [
+    {
+      "filedDate": "2003-06-10T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP 3 Y:U/CTSP:328/STATES/VF5:200/PAR/CDC/TEXT/5A/5B/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2003-06-10T09:00:00.000Z",
+      "description": "/AJW/CH1:SP 3 Y:U/CTSP:328/STATES/VF5:200/PAR/CDC/TEXT/5A/5B/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-05-12T09:00:00.000Z",
+      "docketEntryComment": "SENTENCING/PRES:06-10-03/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2003-05-12T09:00:00.000Z",
+      "description": "SENTENCING/PRES:06-10-03/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-05-02T09:00:00.000Z",
+      "docketEntryComment": "GUILTY PLEA ENTERED CONTD SENT",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2003-05-02T09:00:00.000Z",
+      "description": "GUILTY PLEA ENTERED CONTD SENT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02106307",
-    "portal_case_id": "",
+    "portal_case_id": "3238066",
     "display_case_number": "CRI-02106307",
     "defendant": "CARLOS AYALA",
     "filed_date": "2003-05-02",
@@ -63,8 +160,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CARLOS AYALA, and date of filing 2003-05-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CARLOS AYALA, and date of filing 2003-05-02. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:29:14.642Z",
+  "portal_case_id": "3238066",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02106307",
+      "defendant": "CARLOS AYALA",
+      "filed_date": "2003-05-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3238066"
+  }
 }

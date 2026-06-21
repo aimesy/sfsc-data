@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:57:19.581Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:55:13.132Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12001523",
   "criminal_case_number": "12001523",
@@ -24,11 +24,41 @@
       "name": "LIONEL THOMAS ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LIONEL THOMAS ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-01-20T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD POST COMM SERV SUPERVISION VIO PC 3455(A)/X:DEFENDANT'S POST RELEASE COMMUNITY SERVICE IS MODIFIED AS FOLLOWS,/X:DEFENDANT IS ORDERED TO SERVE 60 DAYS WITH 6 DAYS CTS,/4019HALF/CTORD:DEFENDANT TO STAY AWAY 50 FEETFROM THE CORNER OF JONES AND EDDY STREET,/CTORD:DEFENDANT TO ENTER AND COMPLETE RESIDENTIAL TREATMENT PROGRAM/X:DEFENDANT TO CONTINUE ON PRCS,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-01-20 11:30 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2012-01-20",
+      "hearing_time": "11:30 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MANOHAR RAJU",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +75,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3699199",
+  "docket_entries": [
+    {
+      "filedDate": "2012-01-20T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD POST COMM SERV SUPERVISION VIO PC 3455(A)/X:DEFENDANT'S POST RELEASE COMMUNITY SERVICE IS MODIFIED AS FOLLOWS,/X:DEFENDANT IS ORDERED TO SERVE 60 DAYS WITH 6 DAYS CTS,/4019HALF/CTORD:DEFENDANT TO STAY AWAY 50 FEETFROM THE CORNER OF JONES AND EDDY STREET,/CTORD:DEFENDANT TO ENTER AND COMPLETE RESIDENTIAL TREATMENT PROGRAM/X:DEFENDANT TO CONTINUE ON PRCS,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-01-20T11:30:00.000Z",
+      "description": "/CAL:APD POST COMM SERV SUPERVISION VIO PC 3455(A)/X:DEFENDANT'S POST RELEASE COMMUNITY SERVICE IS MODIFIED AS FOLLOWS,/X:DEFENDANT IS ORDERED TO SERVE 60 DAYS WITH 6 DAYS CTS,/4019HALF/CTORD:DEFENDANT TO STAY AWAY 50 FEETFROM THE CORNER OF JONES AND EDDY STREET,/CTORD:DEFENDANT TO ENTER AND COMPLETE RESIDENTIAL TREATMENT PROGRAM/X:DEFENDANT TO CONTINUE ON PRCS,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12001523",
-    "portal_case_id": "",
+    "portal_case_id": "3699199",
     "display_case_number": "CRI-12001523",
     "defendant": "LIONEL THOMAS ADAMS",
     "filed_date": "2012-01-20",
@@ -59,12 +100,36 @@
       "defendant": "LIONEL THOMAS ADAMS",
       "filed_date": "2012-01-20"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 3455(A)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LIONEL THOMAS ADAMS, and date of filing 2012-01-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LIONEL THOMAS ADAMS, and date of filing 2012-01-20. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:55:13.769Z",
+  "portal_case_id": "3699199",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12001523",
+      "defendant": "LIONEL THOMAS ADAMS",
+      "filed_date": "2012-01-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3699199"
+  }
 }

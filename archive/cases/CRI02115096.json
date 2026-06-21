@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:58:41.766Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:29:46.797Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02115096",
   "criminal_case_number": "02115096",
@@ -24,11 +24,64 @@
       "name": "ALEX ACOSTA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALEX ACOSTA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2003-08-01T09:00:00.000Z",
+      "docketEntryComment": "/MIT/AJW/CH1:ISS:PROB 3 Y:PJ38D/CTS:38//SA2:CORNER OF MISSION AND CESAR CHAVEZ, SF/WS/VF4:200/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-07-11T09:00:00.000Z",
+      "docketEntryComment": "/TEXT DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS 1//FNDG/CO:NEGOTIATED DISPOSITION/PRES:08-01-03/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-06-27T00:00:00.000Z",
+      "docketEntryComment": "SIGNED S/A ORDER FILED/SERVED",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2003-08-01 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2003-08-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-07-11 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2003-07-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "F BRASS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +98,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3246139",
+  "docket_entries": [
+    {
+      "filedDate": "2003-08-01T09:00:00.000Z",
+      "docketEntryComment": "/MIT/AJW/CH1:ISS:PROB 3 Y:PJ38D/CTS:38//SA2:CORNER OF MISSION AND CESAR CHAVEZ, SF/WS/VF4:200/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2003-08-01T09:00:00.000Z",
+      "description": "/MIT/AJW/CH1:ISS:PROB 3 Y:PJ38D/CTS:38//SA2:CORNER OF MISSION AND CESAR CHAVEZ, SF/WS/VF4:200/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-07-11T09:00:00.000Z",
+      "docketEntryComment": "/TEXT DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS 1//FNDG/CO:NEGOTIATED DISPOSITION/PRES:08-01-03/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2003-07-11T09:00:00.000Z",
+      "description": "/TEXT DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS 1//FNDG/CO:NEGOTIATED DISPOSITION/PRES:08-01-03/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-06-27T00:00:00.000Z",
+      "docketEntryComment": "SIGNED S/A ORDER FILED/SERVED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2003-06-27T00:00:00.000Z",
+      "description": "SIGNED S/A ORDER FILED/SERVED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02115096",
-    "portal_case_id": "",
+    "portal_case_id": "3246139",
     "display_case_number": "CRI-02115096",
     "defendant": "ALEX ACOSTA",
     "filed_date": "2003-06-27",
@@ -63,8 +147,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALEX ACOSTA, and date of filing 2003-06-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALEX ACOSTA, and date of filing 2003-06-27. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:29:47.510Z",
+  "portal_case_id": "3246139",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02115096",
+      "defendant": "ALEX ACOSTA",
+      "filed_date": "2003-06-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3246139"
+  }
 }

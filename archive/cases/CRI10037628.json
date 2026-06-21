@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:33:53.824Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:13:24.195Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10037628",
   "criminal_case_number": "10037628",
@@ -24,11 +24,59 @@
       "name": "DAVID TREMELL BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID TREMELL BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-01-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/X:AMENDED COMPLAINT FILED REGARDING VERGABE/X:CIVIL COMPROMISE FILED WITH THE COURT/X:PURSUANT TO 1378 OF THE PENAL CODE AND ALL PARTIES ARE IN AGREEMENT FOR CIVIL COMPROMISE, THE COURT ORDERS ALLPROCEEDINGS TO BE STAYED UPON THE PROSECUTION, AND THE DEFENDANT IS DISCHARGED,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-28T09:00:00.000Z",
+      "docketEntryComment": "/X:PD MARIA EVANGELISTA FORMERLY KNOWN AS MARIA LOPEZ PRESENT,/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:PRETRIALCONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-01-26 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2011-01-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-12-28 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 1,
+      "court_date": "2010-12-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARIA EVANGELISTA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3663730",
+  "docket_entries": [
+    {
+      "filedDate": "2011-01-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/X:AMENDED COMPLAINT FILED REGARDING VERGABE/X:CIVIL COMPROMISE FILED WITH THE COURT/X:PURSUANT TO 1378 OF THE PENAL CODE AND ALL PARTIES ARE IN AGREEMENT FOR CIVIL COMPROMISE, THE COURT ORDERS ALLPROCEEDINGS TO BE STAYED UPON THE PROSECUTION, AND THE DEFENDANT IS DISCHARGED,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-01-26T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/X:AMENDED COMPLAINT FILED REGARDING VERGABE/X:CIVIL COMPROMISE FILED WITH THE COURT/X:PURSUANT TO 1378 OF THE PENAL CODE AND ALL PARTIES ARE IN AGREEMENT FOR CIVIL COMPROMISE, THE COURT ORDERS ALLPROCEEDINGS TO BE STAYED UPON THE PROSECUTION, AND THE DEFENDANT IS DISCHARGED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-28T09:00:00.000Z",
+      "docketEntryComment": "/X:PD MARIA EVANGELISTA FORMERLY KNOWN AS MARIA LOPEZ PRESENT,/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:PRETRIALCONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-12-28T09:00:00.000Z",
+      "description": "/X:PD MARIA EVANGELISTA FORMERLY KNOWN AS MARIA LOPEZ PRESENT,/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:PRETRIALCONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10037628",
-    "portal_case_id": "",
+    "portal_case_id": "3663730",
     "display_case_number": "CRI-10037628",
     "defendant": "DAVID TREMELL BROWN",
     "filed_date": "2010-12-28",
@@ -63,8 +132,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID TREMELL BROWN, and date of filing 2010-12-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID TREMELL BROWN, and date of filing 2010-12-28. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:13:24.803Z",
+  "portal_case_id": "3663730",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10037628",
+      "defendant": "DAVID TREMELL BROWN",
+      "filed_date": "2010-12-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3663730"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:02:00.060Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:33:00.477Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02134619",
   "criminal_case_number": "02134619",
@@ -24,11 +24,95 @@
       "name": "BRETT ALEXANDER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BRETT ALEXANDER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2004-01-09T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-01-06T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/BWSC:2000/CONTD:BW STAY DISPO AND JOIN 2140788/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-12-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE TRIAL /CONTD: SET DISPO/DOP/GTW/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-11-10T09:00:00.000Z",
+      "docketEntryComment": "/PD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2004-01-09 9:00 AM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 0,
+      "court_date": "2004-01-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-01-06 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 1,
+      "court_date": "2004-01-06",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-12-02 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 2,
+      "court_date": "2003-12-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-11-10 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 3,
+      "court_date": "2003-11-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S MEISELS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +129,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3264066",
+  "docket_entries": [
+    {
+      "filedDate": "2004-01-09T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2004-01-09T09:00:00.000Z",
+      "description": "/MO PC 1385/MOTION GRANTED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-01-06T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/BWSC:2000/CONTD:BW STAY DISPO AND JOIN 2140788/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2004-01-06T09:00:00.000Z",
+      "description": "/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/BWSC:2000/CONTD:BW STAY DISPO AND JOIN 2140788/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-12-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE TRIAL /CONTD: SET DISPO/DOP/GTW/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2003-12-02T09:00:00.000Z",
+      "description": "/CAL:PRE TRIAL /CONTD: SET DISPO/DOP/GTW/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-11-10T09:00:00.000Z",
+      "docketEntryComment": "/PD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2003-11-10T09:00:00.000Z",
+      "description": "/PD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02134619",
-    "portal_case_id": "",
+    "portal_case_id": "3264066",
     "display_case_number": "CRI-02134619",
     "defendant": "BRETT ALEXANDER",
     "filed_date": "2003-11-10",
@@ -59,12 +184,36 @@
       "defendant": "BRETT ALEXANDER",
       "filed_date": "2003-11-10"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BRETT ALEXANDER, and date of filing 2003-11-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BRETT ALEXANDER, and date of filing 2003-11-10. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:33:01.045Z",
+  "portal_case_id": "3264066",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02134619",
+      "defendant": "BRETT ALEXANDER",
+      "filed_date": "2003-11-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3264066"
+  }
 }

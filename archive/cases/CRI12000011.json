@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:12:12.474Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:53:47.447Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12000011",
   "criminal_case_number": "12000011",
@@ -24,11 +24,77 @@
       "name": "PARIS ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "PARIS ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-01-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:TODAY'S PRELIMINARY HEARING VACATED,/X:AS PARTOF A NEGOTIATED DISPOSITION, THE PEOPLE MOVE TO DISMISS THIS CASE PURSUANTTO PC 1385,/MO GRTD/X:THE DEFENDANT ENTERS A HARVEY WAIVER,/X:ANY RESTITUTION RESULTING FROM DISMISSED CHARGES MAY BE ADDED AS TERMS AND CONDITIONSOF THE SENTENCE IN COURT NO, 11022236,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-04T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/PD/987,2/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 01-19-12/BAIL:45,000/CONTD:M09FOR PHC & JOIN 11022236 AND 1101198 ON 01-05-12/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE & JOIN 11022236 & 11001198/STPLD:01-20-12/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-01-19 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2012-01-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-01-05 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2012-01-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-01-04 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2012-01-04",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ALEX LILIAN",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3697712",
+  "docket_entries": [
+    {
+      "filedDate": "2012-01-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:TODAY'S PRELIMINARY HEARING VACATED,/X:AS PARTOF A NEGOTIATED DISPOSITION, THE PEOPLE MOVE TO DISMISS THIS CASE PURSUANTTO PC 1385,/MO GRTD/X:THE DEFENDANT ENTERS A HARVEY WAIVER,/X:ANY RESTITUTION RESULTING FROM DISMISSED CHARGES MAY BE ADDED AS TERMS AND CONDITIONSOF THE SENTENCE IN COURT NO, 11022236,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-01-19T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/X:TODAY'S PRELIMINARY HEARING VACATED,/X:AS PARTOF A NEGOTIATED DISPOSITION, THE PEOPLE MOVE TO DISMISS THIS CASE PURSUANTTO PC 1385,/MO GRTD/X:THE DEFENDANT ENTERS A HARVEY WAIVER,/X:ANY RESTITUTION RESULTING FROM DISMISSED CHARGES MAY BE ADDED AS TERMS AND CONDITIONSOF THE SENTENCE IN COURT NO, 11022236,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-04T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/PD/987,2/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 01-19-12/BAIL:45,000/CONTD:M09FOR PHC & JOIN 11022236 AND 1101198 ON 01-05-12/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-01-04T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/PD/987,2/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 01-19-12/BAIL:45,000/CONTD:M09FOR PHC & JOIN 11022236 AND 1101198 ON 01-05-12/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE & JOIN 11022236 & 11001198/STPLD:01-20-12/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-01-05T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE & JOIN 11022236 & 11001198/STPLD:01-20-12/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12000011",
-    "portal_case_id": "",
+    "portal_case_id": "3697712",
     "display_case_number": "CRI-12000011",
     "defendant": "PARIS ANDERSON",
     "filed_date": "2012-01-04",
@@ -59,12 +156,36 @@
       "defendant": "PARIS ANDERSON",
       "filed_date": "2012-01-04"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, PARIS ANDERSON, and date of filing 2012-01-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, PARIS ANDERSON, and date of filing 2012-01-04. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:53:48.087Z",
+  "portal_case_id": "3697712",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12000011",
+      "defendant": "PARIS ANDERSON",
+      "filed_date": "2012-01-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3697712"
+  }
 }

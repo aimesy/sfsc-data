@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:29:47.259Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:05:40.237Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11034072",
   "criminal_case_number": "11034072",
@@ -24,11 +24,86 @@
       "name": "DIMITRI ORLONDO BRAUD",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DIMITRI ORLONDO BRAUD",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-12T09:15:00.000Z",
+      "docketEntryComment": "/CAL MISDEMEANOR SENTENCING/TWS/CH4 ISS CPROB PROB 3 Y PJ 21 D/CTS 21/WS//SA1:150 YARDS FROM VERA PETTAWAY AKA LISA BENSON/SAORD/VF2:120/MPROBFINE/COA:40/ICNA/COLLECT/OBEY/ACCEP/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/X PEOPLE MOVE TO AMEND THE COMPLAINT TO CHANGE CUNT 3 FROM 273,6(A) PC-MISDEMEANOR TO 166(C)(1) PC-MISDEMEANOR; COURT GRANTS MOTION,/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/FAWA/IRRC/DEFT ADV ANNL:3/NOLO/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-12-29T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/PD/987,2/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 01-13-12/BAIL:45,000/SA1:150 YARDS FROM VERA PETTAWAY/SA3:150 YARDS FROM 20 12TH STREET, SAN FRANCISCO, CA/SAORD/X:PEOPLE'S MOTION TO REVOKE PROBATION IN CASE 10037476 IS FILED INCOURT TODAY,/CONTD: FOR PRELIMINARY HEARING ON 01-12-12/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-01-12 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2012-01-12",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-01-12 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2012-01-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-12-29 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2011-12-29",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARK JACOBS",
+      "type": "Public Defender"
+    },
+    {
+      "name": "NATHAN QUIGLEY",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3697019",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-12T09:15:00.000Z",
+      "docketEntryComment": "/CAL MISDEMEANOR SENTENCING/TWS/CH4 ISS CPROB PROB 3 Y PJ 21 D/CTS 21/WS//SA1:150 YARDS FROM VERA PETTAWAY AKA LISA BENSON/SAORD/VF2:120/MPROBFINE/COA:40/ICNA/COLLECT/OBEY/ACCEP/DISM3/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-01-12T09:15:00.000Z",
+      "description": "/CAL MISDEMEANOR SENTENCING/TWS/CH4 ISS CPROB PROB 3 Y PJ 21 D/CTS 21/WS//SA1:150 YARDS FROM VERA PETTAWAY AKA LISA BENSON/SAORD/VF2:120/MPROBFINE/COA:40/ICNA/COLLECT/OBEY/ACCEP/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/X PEOPLE MOVE TO AMEND THE COMPLAINT TO CHANGE CUNT 3 FROM 273,6(A) PC-MISDEMEANOR TO 166(C)(1) PC-MISDEMEANOR; COURT GRANTS MOTION,/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/FAWA/IRRC/DEFT ADV ANNL:3/NOLO/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-01-12T09:00:00.000Z",
+      "description": "/CAL PRELIMINARY HEARING/X PEOPLE MOVE TO AMEND THE COMPLAINT TO CHANGE CUNT 3 FROM 273,6(A) PC-MISDEMEANOR TO 166(C)(1) PC-MISDEMEANOR; COURT GRANTS MOTION,/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/FAWA/IRRC/DEFT ADV ANNL:3/NOLO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-12-29T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/PD/987,2/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 01-13-12/BAIL:45,000/SA1:150 YARDS FROM VERA PETTAWAY/SA3:150 YARDS FROM 20 12TH STREET, SAN FRANCISCO, CA/SAORD/X:PEOPLE'S MOTION TO REVOKE PROBATION IN CASE 10037476 IS FILED INCOURT TODAY,/CONTD: FOR PRELIMINARY HEARING ON 01-12-12/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-12-29T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/PD/987,2/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 01-13-12/BAIL:45,000/SA1:150 YARDS FROM VERA PETTAWAY/SA3:150 YARDS FROM 20 12TH STREET, SAN FRANCISCO, CA/SAORD/X:PEOPLE'S MOTION TO REVOKE PROBATION IN CASE 10037476 IS FILED INCOURT TODAY,/CONTD: FOR PRELIMINARY HEARING ON 01-12-12/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11034072",
-    "portal_case_id": "",
+    "portal_case_id": "3697019",
     "display_case_number": "CRI-11034072",
     "defendant": "DIMITRI ORLONDO BRAUD",
     "filed_date": "2011-12-29",
@@ -59,12 +175,36 @@
       "defendant": "DIMITRI ORLONDO BRAUD",
       "filed_date": "2011-12-29"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DIMITRI ORLONDO BRAUD, and date of filing 2011-12-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DIMITRI ORLONDO BRAUD, and date of filing 2011-12-29. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:05:40.823Z",
+  "portal_case_id": "3697019",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11034072",
+      "defendant": "DIMITRI ORLONDO BRAUD",
+      "filed_date": "2011-12-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3697019"
+  }
 }

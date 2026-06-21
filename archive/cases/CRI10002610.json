@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:25:02.440Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:05:28.009Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10002610",
   "criminal_case_number": "10002610",
@@ -24,11 +24,77 @@
       "name": "CHARLES ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHARLES ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-01-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: EDGAR PAGE/X:DEFENSE MOTION FOR RELEASE ON OWN RECOGNIZANCE IS DENIED,/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/987,2/BAIL:15000/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN 9000611/MO PC 1385:INTEREST OF JUSTICE /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET & TO JOIN 9000611/CONT/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-02-18 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 0,
+      "court_date": "2010-02-18",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-29 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2010-01-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-26 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 2,
+      "court_date": "2010-01-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "EDGAR PAGE",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3630874",
+  "docket_entries": [
+    {
+      "filedDate": "2010-01-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: EDGAR PAGE/X:DEFENSE MOTION FOR RELEASE ON OWN RECOGNIZANCE IS DENIED,/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/987,2/BAIL:15000/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-01-26T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: EDGAR PAGE/X:DEFENSE MOTION FOR RELEASE ON OWN RECOGNIZANCE IS DENIED,/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/987,2/BAIL:15000/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN 9000611/MO PC 1385:INTEREST OF JUSTICE /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-02-18T09:00:00.000Z",
+      "description": "/CAL:TO JOIN 9000611/MO PC 1385:INTEREST OF JUSTICE /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET & TO JOIN 9000611/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-01-29T09:00:00.000Z",
+      "description": "/CAL:TO SET & TO JOIN 9000611/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10002610",
-    "portal_case_id": "",
+    "portal_case_id": "3630874",
     "display_case_number": "CRI-10002610",
     "defendant": "CHARLES ALLEN",
     "filed_date": "2010-01-26",
@@ -59,12 +156,36 @@
       "defendant": "CHARLES ALLEN",
       "filed_date": "2010-01-26"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHARLES ALLEN, and date of filing 2010-01-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHARLES ALLEN, and date of filing 2010-01-26. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:05:28.574Z",
+  "portal_case_id": "3630874",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10002610",
+      "defendant": "CHARLES ALLEN",
+      "filed_date": "2010-01-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3630874"
+  }
 }

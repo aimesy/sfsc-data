@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:52:48.940Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:32:22.333Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02132813",
   "criminal_case_number": "02132813",
@@ -24,11 +24,65 @@
       "name": "JOSE G CRUZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSE G CRUZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-04-27T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-11-17T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-27T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 04/17/09",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-11-17T00:00:00.000Z",
+      "docketEntryComment": "FTA BWI, B/S $25,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-10-23T00:00:00.000Z",
+      "docketEntryComment": "S/A MARITA ARAGON 4598 MISSION ST APT B SF DV SUBABUSE COUNSELING",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2003-11-17 9:00 AM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2003-11-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "C ALVAREZ",
+      "type": "Public Defender"
+    },
+    {
+      "name": "MAHONEY P DV",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +99,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3262417",
+  "docket_entries": [
+    {
+      "filedDate": "2009-04-27T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-04-27T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-11-17T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2003-11-17T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-27T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 04/17/09",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-04-27T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 04/17/09",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-11-17T00:00:00.000Z",
+      "docketEntryComment": "FTA BWI, B/S $25,000",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2003-11-17T00:00:00.000Z",
+      "description": "FTA BWI, B/S $25,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-10-23T00:00:00.000Z",
+      "docketEntryComment": "S/A MARITA ARAGON 4598 MISSION ST APT B SF DV SUBABUSE COUNSELING",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2003-10-23T00:00:00.000Z",
+      "description": "S/A MARITA ARAGON 4598 MISSION ST APT B SF DV SUBABUSE COUNSELING",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02132813",
-    "portal_case_id": "",
+    "portal_case_id": "3262417",
     "display_case_number": "CRI-02132813",
     "defendant": "JOSE G CRUZ",
     "filed_date": "2003-10-23",
@@ -63,8 +168,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSE G CRUZ, and date of filing 2003-10-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSE G CRUZ, and date of filing 2003-10-23. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:32:23.028Z",
+  "portal_case_id": "3262417",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02132813",
+      "defendant": "JOSE G CRUZ",
+      "filed_date": "2003-10-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3262417"
+  }
 }

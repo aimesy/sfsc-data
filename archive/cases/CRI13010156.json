@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:28:36.370Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:48:18.956Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13010156",
   "criminal_case_number": "13010156",
@@ -24,11 +24,133 @@
       "name": "MELTHON JAMES BRANCH",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MELTHON JAMES BRANCH",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-05-29T14:46:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPP TO DEFT'S MOT TO COMPEL CRI ID FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-05-22T14:14:00.000Z",
+      "docketEntryComment": "PD'S MOT TO COMPEL INFORMANT'S IDENTITY FILEDDEFT'S MOT TO CONTINUE (PRELIM HRG) FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-04-24T15:00:00.000Z",
+      "docketEntryComment": "OPPO TO MTS FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-04-19T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S MTS EVID PER PC1538,5 FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-04-15T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/ /TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 04-29-13/987,2/BAIL:100,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-06-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIMINARY HEARING AND MOTION TO COMPEL/MO PC 1385:FEDERAL CHARGESPENDING/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-05-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIMINARY HEARING/X: MOTION TO CONTINUE GRANTED,/CONTD: FOR PRELIMINARY HEARING AND MOTION TO COMPEL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-05-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/CONTD:PRELIMINARY HEARING/X:RECORDS RELEASED TO DEFENSE COUNSEL,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-04-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING; MOTION TO SUPPRESS /NTW60/LD:06-14-13/CONTD:PRETRIAL/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-06-07 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2013-06-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-05-31 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2013-05-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-05-14 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2013-05-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-04-26 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2013-04-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-04-15 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 4,
+      "court_date": "2013-04-15",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ANNE IRWIN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +167,102 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3740785",
+  "docket_entries": [
+    {
+      "filedDate": "2013-05-29T14:46:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPP TO DEFT'S MOT TO COMPEL CRI ID FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-05-29T14:46:00.000Z",
+      "description": "PEOPLE'S OPP TO DEFT'S MOT TO COMPEL CRI ID FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-05-22T14:14:00.000Z",
+      "docketEntryComment": "PD'S MOT TO COMPEL INFORMANT'S IDENTITY FILEDDEFT'S MOT TO CONTINUE (PRELIM HRG) FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-05-22T14:14:00.000Z",
+      "description": "PD'S MOT TO COMPEL INFORMANT'S IDENTITY FILEDDEFT'S MOT TO CONTINUE (PRELIM HRG) FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-04-24T15:00:00.000Z",
+      "docketEntryComment": "OPPO TO MTS FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-04-24T15:00:00.000Z",
+      "description": "OPPO TO MTS FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-04-19T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S MTS EVID PER PC1538,5 FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-04-19T15:00:00.000Z",
+      "description": "DEFT'S MTS EVID PER PC1538,5 FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-04-15T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/ /TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 04-29-13/987,2/BAIL:100,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2013-04-15T13:30:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/ /TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 04-29-13/987,2/BAIL:100,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-06-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIMINARY HEARING AND MOTION TO COMPEL/MO PC 1385:FEDERAL CHARGESPENDING/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2013-06-07T09:00:00.000Z",
+      "description": "/CAL: PRELIMINARY HEARING AND MOTION TO COMPEL/MO PC 1385:FEDERAL CHARGESPENDING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-05-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIMINARY HEARING/X: MOTION TO CONTINUE GRANTED,/CONTD: FOR PRELIMINARY HEARING AND MOTION TO COMPEL/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2013-05-31T09:00:00.000Z",
+      "description": "/CAL: PRELIMINARY HEARING/X: MOTION TO CONTINUE GRANTED,/CONTD: FOR PRELIMINARY HEARING AND MOTION TO COMPEL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-05-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/CONTD:PRELIMINARY HEARING/X:RECORDS RELEASED TO DEFENSE COUNSEL,/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2013-05-14T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/CONTD:PRELIMINARY HEARING/X:RECORDS RELEASED TO DEFENSE COUNSEL,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-04-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING; MOTION TO SUPPRESS /NTW60/LD:06-14-13/CONTD:PRETRIAL/",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "2013-04-26T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING; MOTION TO SUPPRESS /NTW60/LD:06-14-13/CONTD:PRETRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13010156",
-    "portal_case_id": "",
+    "portal_case_id": "3740785",
     "display_case_number": "CRI-13010156",
     "defendant": "MELTHON JAMES BRANCH",
     "filed_date": "2013-04-15",
@@ -59,12 +272,44 @@
       "defendant": "MELTHON JAMES BRANCH",
       "filed_date": "2013-04-15"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MELTHON JAMES BRANCH, and date of filing 2013-04-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MELTHON JAMES BRANCH, and date of filing 2013-04-15. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:48:19.605Z",
+  "portal_case_id": "3740785",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13010156",
+      "defendant": "MELTHON JAMES BRANCH",
+      "filed_date": "2013-04-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3740785"
+  }
 }

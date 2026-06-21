@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:52:48.937Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:09:19.292Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10019227",
   "criminal_case_number": "10019227",
@@ -24,11 +24,59 @@
       "name": "JORGE CRUZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JORGE CRUZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-07-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO DETERMINE IF JUVENILE/VD:07-13-10, PRELIMINARY HEARING & 07-14-10,LAST DAY/X:#10019308, ICE HOLD/TEXT:COURT CERTIFIES DEFT TO YOUTH GUIDANCE CENTER/YGC1:JORGE CRUZ/YGC3: 02-07-93/CO:DATE OF THE ALLEGED OFFENSE06-20-2010/YGC IN: 07-06-10/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTORD:SPANISH/X:#10019309, ICE HOLD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS07-14-10/987,2/BAIL:35,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-07-02 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2010-07-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-29 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2010-06-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "GREG GOLDMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3646537",
+  "docket_entries": [
+    {
+      "filedDate": "2010-07-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO DETERMINE IF JUVENILE/VD:07-13-10, PRELIMINARY HEARING & 07-14-10,LAST DAY/X:#10019308, ICE HOLD/TEXT:COURT CERTIFIES DEFT TO YOUTH GUIDANCE CENTER/YGC1:JORGE CRUZ/YGC3: 02-07-93/CO:DATE OF THE ALLEGED OFFENSE06-20-2010/YGC IN: 07-06-10/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-07-02T09:00:00.000Z",
+      "description": "/CAL:TO DETERMINE IF JUVENILE/VD:07-13-10, PRELIMINARY HEARING & 07-14-10,LAST DAY/X:#10019308, ICE HOLD/TEXT:COURT CERTIFIES DEFT TO YOUTH GUIDANCE CENTER/YGC1:JORGE CRUZ/YGC3: 02-07-93/CO:DATE OF THE ALLEGED OFFENSE06-20-2010/YGC IN: 07-06-10/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTORD:SPANISH/X:#10019309, ICE HOLD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS07-14-10/987,2/BAIL:35,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-06-29T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/INTORD:SPANISH/X:#10019309, ICE HOLD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS07-14-10/987,2/BAIL:35,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10019227",
-    "portal_case_id": "",
+    "portal_case_id": "3646537",
     "display_case_number": "CRI-10019227",
     "defendant": "JORGE CRUZ",
     "filed_date": "2010-06-29",
@@ -63,8 +132,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JORGE CRUZ, and date of filing 2010-06-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JORGE CRUZ, and date of filing 2010-06-29. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:09:19.893Z",
+  "portal_case_id": "3646537",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10019227",
+      "defendant": "JORGE CRUZ",
+      "filed_date": "2010-06-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3646537"
+  }
 }

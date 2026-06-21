@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:21:34.594Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:38:30.368Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02166998",
   "criminal_case_number": "02166998",
@@ -24,10 +24,68 @@
       "name": "DARRELL ALEXANDER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DARRELL ALEXANDER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2005-08-29T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-06-18T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-08-25T00:00:00.000Z",
+      "docketEntryComment": "DEFT FILED MOTION TO BENCH WARRANT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-08-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BWR/BWR:06-18-04/BWR1/NC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//PD/FAWC/DEFTARR1/DOP/GTWM/987,2//TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-06-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BW/BWI/BAIL:5000//BWNUM:1RST",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2005-08-29 9:00 AM",
+      "hearingType": "Motion to Recall Bench Warrant",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2005-08-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Recall Bench Warrant",
+      "hearing_type": "Motion to Recall Bench Warrant",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-06-18 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 1,
+      "court_date": "2004-06-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +103,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3293739",
+  "docket_entries": [
+    {
+      "filedDate": "2005-08-29T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2005-08-29T09:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-06-18T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2004-06-18T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-08-25T00:00:00.000Z",
+      "docketEntryComment": "DEFT FILED MOTION TO BENCH WARRANT",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2005-08-25T00:00:00.000Z",
+      "description": "DEFT FILED MOTION TO BENCH WARRANT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-08-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BWR/BWR:06-18-04/BWR1/NC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//PD/FAWC/DEFTARR1/DOP/GTWM/987,2//TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2005-08-29T09:00:00.000Z",
+      "description": "/CAL:BWR/BWR:06-18-04/BWR1/NC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//PD/FAWC/DEFTARR1/DOP/GTWM/987,2//TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-06-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BW/BWI/BAIL:5000//BWNUM:1RST",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2004-06-18T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BW/BWI/BAIL:5000//BWNUM:1RST",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02166998",
-    "portal_case_id": "",
+    "portal_case_id": "3293739",
     "display_case_number": "CRI-02166998",
     "defendant": "DARRELL ALEXANDER",
     "filed_date": "2004-06-18",
@@ -63,8 +172,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DARRELL ALEXANDER, and date of filing 2004-06-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DARRELL ALEXANDER, and date of filing 2004-06-18. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:38:31.080Z",
+  "portal_case_id": "3293739",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02166998",
+      "defendant": "DARRELL ALEXANDER",
+      "filed_date": "2004-06-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3293739"
+  }
 }

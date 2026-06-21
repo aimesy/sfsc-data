@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:31:14.771Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:55:48.881Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12010483",
   "criminal_case_number": "12010483",
@@ -24,11 +24,123 @@
       "name": "JOHN BRADY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN BRADY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-05-25T13:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-05-18T13:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT /CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO05-25-12,/X: BAIL SET AT $30,000/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-04-25T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 05-09-12/987,2/BAIL:35,000/CONTD:PRELIMINARY HEARING/DOP/SA1:COURTNEY HARRINGTON/4011,5/X:(THE REQUEST FOR A 4011,5PC REPORT ISTO ADDRESS THE DEFENDANT'S NEED FOR CANCER MEDICATION)/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-05-25T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PROC RE$30K BW STAY FROM 05-18-12/BWLIFT:05-18-12/FTA/OREVKD/BWI/BAIL:30,000/NIGHTSERV/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-05-10T08:30:00.000Z",
+      "docketEntryComment": "/CAL:OR RELEASE/OR/CTORD:THE DEFENDANT TO REPORT TO 575 POLK ST ON 05-11-12 FOR EVALUATION/CONTD:CJC ASSESSMENT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-05-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT/STWPX/CONTD:OR RELEASE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-05-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/CONTD:COMMUNITY JUSTICE COURT/NTW60/LD:06-25-12/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-05-25 1:30 PM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2012-05-25",
+      "hearing_time": "1:30 PM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-05-18 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2012-05-18",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-05-09 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2012-05-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-05-08 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2012-05-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-04-25 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 4,
+      "court_date": "2012-04-25",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ROBERTO EVANGELISTA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +157,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3707979",
+  "docket_entries": [
+    {
+      "filedDate": "2012-05-25T13:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-05-25T13:30:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-05-18T13:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT /CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO05-25-12,/X: BAIL SET AT $30,000/DOPC/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-05-18T13:30:00.000Z",
+      "description": "/CAL:CJC ASSESSMENT /CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO05-25-12,/X: BAIL SET AT $30,000/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-04-25T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 05-09-12/987,2/BAIL:35,000/CONTD:PRELIMINARY HEARING/DOP/SA1:COURTNEY HARRINGTON/4011,5/X:(THE REQUEST FOR A 4011,5PC REPORT ISTO ADDRESS THE DEFENDANT'S NEED FOR CANCER MEDICATION)/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-04-25T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 05-09-12/987,2/BAIL:35,000/CONTD:PRELIMINARY HEARING/DOP/SA1:COURTNEY HARRINGTON/4011,5/X:(THE REQUEST FOR A 4011,5PC REPORT ISTO ADDRESS THE DEFENDANT'S NEED FOR CANCER MEDICATION)/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-05-25T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PROC RE$30K BW STAY FROM 05-18-12/BWLIFT:05-18-12/FTA/OREVKD/BWI/BAIL:30,000/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-05-25T13:30:00.000Z",
+      "description": "/CAL:PROC RE$30K BW STAY FROM 05-18-12/BWLIFT:05-18-12/FTA/OREVKD/BWI/BAIL:30,000/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-05-10T08:30:00.000Z",
+      "docketEntryComment": "/CAL:OR RELEASE/OR/CTORD:THE DEFENDANT TO REPORT TO 575 POLK ST ON 05-11-12 FOR EVALUATION/CONTD:CJC ASSESSMENT/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2012-05-10T08:30:00.000Z",
+      "description": "/CAL:OR RELEASE/OR/CTORD:THE DEFENDANT TO REPORT TO 575 POLK ST ON 05-11-12 FOR EVALUATION/CONTD:CJC ASSESSMENT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-05-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT/STWPX/CONTD:OR RELEASE/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2012-05-09T09:00:00.000Z",
+      "description": "/CAL:CJC ASSESSMENT/STWPX/CONTD:OR RELEASE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-05-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/CONTD:COMMUNITY JUSTICE COURT/NTW60/LD:06-25-12/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2012-05-08T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/CONTD:COMMUNITY JUSTICE COURT/NTW60/LD:06-25-12/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12010483",
-    "portal_case_id": "",
+    "portal_case_id": "3707979",
     "display_case_number": "CRI-12010483",
     "defendant": "JOHN BRADY",
     "filed_date": "2012-04-25",
@@ -63,8 +246,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN BRADY, and date of filing 2012-04-25. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN BRADY, and date of filing 2012-04-25. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:55:49.470Z",
+  "portal_case_id": "3707979",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12010483",
+      "defendant": "JOHN BRADY",
+      "filed_date": "2012-04-25"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3707979"
+  }
 }

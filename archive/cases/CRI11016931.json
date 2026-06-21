@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:57:00.659Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:02:47.061Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11016931",
   "criminal_case_number": "11016931",
@@ -24,11 +24,77 @@
       "name": "KESHA RENEE ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KESHA RENEE ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-06-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET & JOIN 11016932/TEXT:CONFL CNSL APPTD/X:ATTORNEY BORGHESS ISREPRESENTING DEFENDANT ON ANOTHER MATTER -11016932,/CON:GEORGE BORGES/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/987,2/BAIL:20000/CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-06-28T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 07-13-11/BAIL:10,000/CONTD:D10 TO SET & JOIN #11016932/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-07-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET/MO138572:11016932/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-07-11 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2011-07-11",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-06-29 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2011-06-29",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-06-28 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2011-06-28",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "GEORGE BORGES",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3680191",
+  "docket_entries": [
+    {
+      "filedDate": "2011-06-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET & JOIN 11016932/TEXT:CONFL CNSL APPTD/X:ATTORNEY BORGHESS ISREPRESENTING DEFENDANT ON ANOTHER MATTER -11016932,/CON:GEORGE BORGES/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/987,2/BAIL:20000/CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-06-29T09:00:00.000Z",
+      "description": "/CAL:TO SET & JOIN 11016932/TEXT:CONFL CNSL APPTD/X:ATTORNEY BORGHESS ISREPRESENTING DEFENDANT ON ANOTHER MATTER -11016932,/CON:GEORGE BORGES/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/987,2/BAIL:20000/CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-06-28T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 07-13-11/BAIL:10,000/CONTD:D10 TO SET & JOIN #11016932/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-06-28T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 07-13-11/BAIL:10,000/CONTD:D10 TO SET & JOIN #11016932/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-07-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET/MO138572:11016932/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-07-11T09:00:00.000Z",
+      "description": "/CAL: TO SET/MO138572:11016932/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11016931",
-    "portal_case_id": "",
+    "portal_case_id": "3680191",
     "display_case_number": "CRI-11016931",
     "defendant": "KESHA RENEE ADAMS",
     "filed_date": "2011-06-28",
@@ -63,8 +160,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KESHA RENEE ADAMS, and date of filing 2011-06-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KESHA RENEE ADAMS, and date of filing 2011-06-28. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:02:47.622Z",
+  "portal_case_id": "3680191",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11016931",
+      "defendant": "KESHA RENEE ADAMS",
+      "filed_date": "2011-06-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3680191"
+  }
 }

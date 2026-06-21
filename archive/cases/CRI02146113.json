@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:28:06.543Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:34:51.878Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02146113",
   "criminal_case_number": "02146113",
@@ -24,11 +24,95 @@
       "name": "ALPHONSO BLACK",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALPHONSO BLACK",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2004-06-23T09:00:00.000Z",
+      "docketEntryComment": "/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT      //1001,7:  1/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-03-17T09:00:00.000Z",
+      "docketEntryComment": "CONTD PTD PROG RPT/CONTSGTW/PROGPTD:06-23-2004/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-02-11T09:00:00.000Z",
+      "docketEntryComment": "CONTD PTD ELIG RPT/GTWM/PTDIV:03-17-2004/CONT/NGWD1: 1/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-01-21T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2004-06-23 9:00 AM",
+      "hearingType": "Pretrial Diversion Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2004-06-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Progress Report",
+      "hearing_type": "Pretrial Diversion Progress Report",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-03-17 9:00 AM",
+      "hearingType": "Pretrial Diversion Eligibility Report",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 1,
+      "court_date": "2004-03-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Eligibility Report",
+      "hearing_type": "Pretrial Diversion Eligibility Report",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-02-11 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 2,
+      "court_date": "2004-02-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-01-21 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 3,
+      "court_date": "2004-01-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S LAU",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +129,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3274517",
+  "docket_entries": [
+    {
+      "filedDate": "2004-06-23T09:00:00.000Z",
+      "docketEntryComment": "/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT      //1001,7:  1/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2004-06-23T09:00:00.000Z",
+      "description": "/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT //1001,7: 1/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-03-17T09:00:00.000Z",
+      "docketEntryComment": "CONTD PTD PROG RPT/CONTSGTW/PROGPTD:06-23-2004/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2004-03-17T09:00:00.000Z",
+      "description": "CONTD PTD PROG RPT/CONTSGTW/PROGPTD:06-23-2004/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-02-11T09:00:00.000Z",
+      "docketEntryComment": "CONTD PTD ELIG RPT/GTWM/PTDIV:03-17-2004/CONT/NGWD1: 1/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2004-02-11T09:00:00.000Z",
+      "description": "CONTD PTD ELIG RPT/GTWM/PTDIV:03-17-2004/CONT/NGWD1: 1/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-01-21T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2004-01-21T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02146113",
-    "portal_case_id": "",
+    "portal_case_id": "3274517",
     "display_case_number": "CRI-02146113",
     "defendant": "ALPHONSO BLACK",
     "filed_date": "2004-01-21",
@@ -59,12 +184,36 @@
       "defendant": "ALPHONSO BLACK",
       "filed_date": "2004-01-21"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALPHONSO BLACK, and date of filing 2004-01-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALPHONSO BLACK, and date of filing 2004-01-21. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:34:52.610Z",
+  "portal_case_id": "3274517",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02146113",
+      "defendant": "ALPHONSO BLACK",
+      "filed_date": "2004-01-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3274517"
+  }
 }

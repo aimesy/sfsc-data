@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:31:53.031Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:50:09.854Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13012836",
   "criminal_case_number": "13012836",
@@ -24,11 +24,77 @@
       "name": "KELVINA DANIELLE BROOKS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KELVINA DANIELLE BROOKS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-05-10T13:30:00.000Z",
+      "docketEntryComment": "/TEXT CONFL CNSL APPTD/X THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT/CON: FLOYD ANDREWS/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/OR/X: AS A CONDITION OF RELEASE ON OWN RECOGNIZANCE, THE DEFENDANT MUST REPORT TO SPR TWICE A WEEK BY TELEPHONE,/SA1: JASMINE I, TURNER-BROOKS/SAORD3/SA2: 125 MASON ST SF/SAORD/CONTD: TO SET ON 05-13-13/DOP/CONTD:PRELIMINARY HEARING ON 05-21-13/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-05-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MO PC 1385:WITNESS UNAVAILABLE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-05-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET/X: ANDREA HARTSOUGH IS SPECIALLY APPEARING FOR FLOYD ANDREWS,THE COURT CONFIRMS THE DATE OF 05-21-13 FOR PRELIMINARY HEARING,/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-05-21 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2013-05-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-05-13 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2013-05-13",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-05-10 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2013-05-10",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "FLOYD ANDREWS",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3743413",
+  "docket_entries": [
+    {
+      "filedDate": "2013-05-10T13:30:00.000Z",
+      "docketEntryComment": "/TEXT CONFL CNSL APPTD/X THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT/CON: FLOYD ANDREWS/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/OR/X: AS A CONDITION OF RELEASE ON OWN RECOGNIZANCE, THE DEFENDANT MUST REPORT TO SPR TWICE A WEEK BY TELEPHONE,/SA1: JASMINE I, TURNER-BROOKS/SAORD3/SA2: 125 MASON ST SF/SAORD/CONTD: TO SET ON 05-13-13/DOP/CONTD:PRELIMINARY HEARING ON 05-21-13/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-05-10T13:30:00.000Z",
+      "description": "/TEXT CONFL CNSL APPTD/X THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT/CON: FLOYD ANDREWS/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/OR/X: AS A CONDITION OF RELEASE ON OWN RECOGNIZANCE, THE DEFENDANT MUST REPORT TO SPR TWICE A WEEK BY TELEPHONE,/SA1: JASMINE I, TURNER-BROOKS/SAORD3/SA2: 125 MASON ST SF/SAORD/CONTD: TO SET ON 05-13-13/DOP/CONTD:PRELIMINARY HEARING ON 05-21-13/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-05-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MO PC 1385:WITNESS UNAVAILABLE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-05-21T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG/MO PC 1385:WITNESS UNAVAILABLE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-05-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET/X: ANDREA HARTSOUGH IS SPECIALLY APPEARING FOR FLOYD ANDREWS,THE COURT CONFIRMS THE DATE OF 05-21-13 FOR PRELIMINARY HEARING,/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-05-13T09:00:00.000Z",
+      "description": "/CAL: TO SET/X: ANDREA HARTSOUGH IS SPECIALLY APPEARING FOR FLOYD ANDREWS,THE COURT CONFIRMS THE DATE OF 05-21-13 FOR PRELIMINARY HEARING,/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13012836",
-    "portal_case_id": "",
+    "portal_case_id": "3743413",
     "display_case_number": "CRI-13012836",
     "defendant": "KELVINA DANIELLE BROOKS",
     "filed_date": "2013-05-10",
@@ -59,12 +156,36 @@
       "defendant": "KELVINA DANIELLE BROOKS",
       "filed_date": "2013-05-10"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KELVINA DANIELLE BROOKS, and date of filing 2013-05-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KELVINA DANIELLE BROOKS, and date of filing 2013-05-10. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:50:10.460Z",
+  "portal_case_id": "3743413",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13012836",
+      "defendant": "KELVINA DANIELLE BROOKS",
+      "filed_date": "2013-05-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3743413"
+  }
 }

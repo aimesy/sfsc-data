@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:02:04.130Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:36:23.834Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02152312",
   "criminal_case_number": "02152312",
@@ -24,11 +24,90 @@
       "name": "JOSE AGUILAR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSE AGUILAR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2005-03-11T09:00:00.000Z",
+      "docketEntryComment": "/MTR-DA/DEFT ADV/DEFT ADM VIO/REVSA:03-04-05/REIN ORIG TC/PROB MOD/PJ:120 DAYS/ADDL CTS:11/PROB EXT:04-13-07/VD:04-04-05/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-03-04T11:30:00.000Z",
+      "docketEntryComment": "CONTD SUPP RPT ON DA MTR/DA-MTR/SUPP:04-04-05/PROB ADM REV/SHER/NB/S24//CTORD:APD TO FORWARD ORAL REPORT TO S22 ON 03-11-05 FOR DA MTR/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-04-06T09:15:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ40D/CTS:40/PF:500/WS/VF4:200/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2005-04-04 9:00 AM",
+      "hearingType": "APD Supplemental Report",
+      "location": "850 Bryant",
+      "dept": "Department 24",
+      "__index": 0,
+      "court_date": "2005-04-04",
+      "hearing_time": "9:00 AM",
+      "matters": "APD Supplemental Report",
+      "hearing_type": "APD Supplemental Report",
+      "department": "Department 24",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-03-11 9:00 AM",
+      "hearingType": "APD Supplemental Report",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2005-03-11",
+      "hearing_time": "9:00 AM",
+      "matters": "APD Supplemental Report",
+      "hearing_type": "APD Supplemental Report",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-03-04 11:30 AM",
+      "hearingType": "Motion to Revoke Probation Filing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2005-03-04",
+      "hearing_time": "11:30 AM",
+      "matters": "Motion to Revoke Probation Filing",
+      "hearing_type": "Motion to Revoke Probation Filing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-04-06 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2004-04-06",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "A MOORE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +124,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3280191",
+  "docket_entries": [
+    {
+      "filedDate": "2005-03-11T09:00:00.000Z",
+      "docketEntryComment": "/MTR-DA/DEFT ADV/DEFT ADM VIO/REVSA:03-04-05/REIN ORIG TC/PROB MOD/PJ:120 DAYS/ADDL CTS:11/PROB EXT:04-13-07/VD:04-04-05/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2005-03-11T09:00:00.000Z",
+      "description": "/MTR-DA/DEFT ADV/DEFT ADM VIO/REVSA:03-04-05/REIN ORIG TC/PROB MOD/PJ:120 DAYS/ADDL CTS:11/PROB EXT:04-13-07/VD:04-04-05/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-03-04T11:30:00.000Z",
+      "docketEntryComment": "CONTD SUPP RPT ON DA MTR/DA-MTR/SUPP:04-04-05/PROB ADM REV/SHER/NB/S24//CTORD:APD TO FORWARD ORAL REPORT TO S22 ON 03-11-05 FOR DA MTR/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2005-03-04T11:30:00.000Z",
+      "description": "CONTD SUPP RPT ON DA MTR/DA-MTR/SUPP:04-04-05/PROB ADM REV/SHER/NB/S24//CTORD:APD TO FORWARD ORAL REPORT TO S22 ON 03-11-05 FOR DA MTR/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-04-06T09:15:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ40D/CTS:40/PF:500/WS/VF4:200/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2004-04-06T09:15:00.000Z",
+      "description": "/AJW/CH1:ISS:PROB 3 Y:PJ40D/CTS:40/PF:500/WS/VF4:200/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02152312",
-    "portal_case_id": "",
+    "portal_case_id": "3280191",
     "display_case_number": "CRI-02152312",
     "defendant": "JOSE AGUILAR",
     "filed_date": "2004-03-02",
@@ -63,8 +173,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSE AGUILAR, and date of filing 2004-03-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSE AGUILAR, and date of filing 2004-03-02. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:36:24.924Z",
+  "portal_case_id": "3280191",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02152312",
+      "defendant": "JOSE AGUILAR",
+      "filed_date": "2004-03-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3280191"
+  }
 }

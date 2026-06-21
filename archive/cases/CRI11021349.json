@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:58:43.803Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:03:34.086Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11021349",
   "criminal_case_number": "11021349",
@@ -24,11 +24,128 @@
       "name": "DONALD BRUCE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DONALD BRUCE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-09-08T09:58:00.000Z",
+      "docketEntryComment": "OPPOSTION TO DEFT'S MOT TO SUPPR FILED BY DA",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-08-30T13:23:00.000Z",
+      "docketEntryComment": "DA'S OPP TO PC1538,5 MOTION FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-08-25T12:14:00.000Z",
+      "docketEntryComment": "DEFT'S MTS EVID PER PC1538,5 FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-08-12T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/X:DEFENSEORAL MOTION FOR OR IS DENIED/LD: FOR PRELIMINARY HEARING IS 08-26-11/987,2/BAIL:15000/CTORD:IF DEFENDANT BAILS OUT HE MUST ATTEND DRUG COUNSELING AS CONDITON OFBAIL OR SPR/CONTD SPR ELIG REPORT, DOP/CONTD:FOR SPR ELIGIBILITY REPORT/DOPCONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MO PC 1385:UNABLE TO SUBSTAIN BURDEN OF PROOF /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET; MOTION TO SUPPRESS /CONTD:MOTION TO SUPPRESS; PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-08-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/NTW60/LD:10-11-11/CONTD TO SET OR DISPO, DOP/CONTD:TO SETOR DISPOSE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-08-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SPR ELIG RPT/X:SPR IS DENIED/CONTD:PRELIM HRG/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-09-19 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2011-09-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-09-06 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2011-09-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-08-25 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2011-08-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-08-17 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2011-08-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-08-12 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 4,
+      "court_date": "2011-08-12",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CHRISTINE SCHENONE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +162,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3684499",
+  "docket_entries": [
+    {
+      "filedDate": "2011-09-08T09:58:00.000Z",
+      "docketEntryComment": "OPPOSTION TO DEFT'S MOT TO SUPPR FILED BY DA",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-09-08T09:58:00.000Z",
+      "description": "OPPOSTION TO DEFT'S MOT TO SUPPR FILED BY DA",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-08-30T13:23:00.000Z",
+      "docketEntryComment": "DA'S OPP TO PC1538,5 MOTION FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-08-30T13:23:00.000Z",
+      "description": "DA'S OPP TO PC1538,5 MOTION FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-08-25T12:14:00.000Z",
+      "docketEntryComment": "DEFT'S MTS EVID PER PC1538,5 FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-08-25T12:14:00.000Z",
+      "description": "DEFT'S MTS EVID PER PC1538,5 FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-08-12T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/X:DEFENSEORAL MOTION FOR OR IS DENIED/LD: FOR PRELIMINARY HEARING IS 08-26-11/987,2/BAIL:15000/CTORD:IF DEFENDANT BAILS OUT HE MUST ATTEND DRUG COUNSELING AS CONDITON OFBAIL OR SPR/CONTD SPR ELIG REPORT, DOP/CONTD:FOR SPR ELIGIBILITY REPORT/DOPCONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-08-12T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/X:DEFENSEORAL MOTION FOR OR IS DENIED/LD: FOR PRELIMINARY HEARING IS 08-26-11/987,2/BAIL:15000/CTORD:IF DEFENDANT BAILS OUT HE MUST ATTEND DRUG COUNSELING AS CONDITON OFBAIL OR SPR/CONTD SPR ELIG REPORT, DOP/CONTD:FOR SPR ELIGIBILITY REPORT/DOPCONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MO PC 1385:UNABLE TO SUBSTAIN BURDEN OF PROOF /",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-09-19T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG/MO PC 1385:UNABLE TO SUBSTAIN BURDEN OF PROOF /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET; MOTION TO SUPPRESS /CONTD:MOTION TO SUPPRESS; PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-09-06T09:00:00.000Z",
+      "description": "/CAL:TO SET; MOTION TO SUPPRESS /CONTD:MOTION TO SUPPRESS; PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-08-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/NTW60/LD:10-11-11/CONTD TO SET OR DISPO, DOP/CONTD:TO SETOR DISPOSE/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2011-08-25T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG/NTW60/LD:10-11-11/CONTD TO SET OR DISPO, DOP/CONTD:TO SETOR DISPOSE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-08-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SPR ELIG RPT/X:SPR IS DENIED/CONTD:PRELIM HRG/DOP/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2011-08-17T09:00:00.000Z",
+      "description": "/CAL:SPR ELIG RPT/X:SPR IS DENIED/CONTD:PRELIM HRG/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11021349",
-    "portal_case_id": "",
+    "portal_case_id": "3684499",
     "display_case_number": "CRI-11021349",
     "defendant": "DONALD BRUCE",
     "filed_date": "2011-08-12",
@@ -59,12 +257,44 @@
       "defendant": "DONALD BRUCE",
       "filed_date": "2011-08-12"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC1538",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DONALD BRUCE, and date of filing 2011-08-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DONALD BRUCE, and date of filing 2011-08-12. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:03:34.679Z",
+  "portal_case_id": "3684499",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11021349",
+      "defendant": "DONALD BRUCE",
+      "filed_date": "2011-08-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3684499"
+  }
 }

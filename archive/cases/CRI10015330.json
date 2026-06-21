@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:25:01.317Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:07:25.732Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10015330",
   "criminal_case_number": "10015330",
@@ -24,11 +24,100 @@
       "name": "JOHN ANTHONY ATCHAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN ANTHONY ATCHAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-06-07T14:43:00.000Z",
+      "docketEntryComment": "FELONY PLEA TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FOR DISMISSAL/MO138572:10015331/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/STWPX/CONTD:FOR DISMISSAL UPON SENTENCE IN 10015331 AND 10015332/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET & TO JOIN STATUS OF NWH #10015332/CON:KEN QUIGLEY/NTW/LD:06-08-10/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:45000/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-07-01 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2010-07-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-03 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2010-06-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-05-24 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2010-05-24",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-05-21 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2010-05-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KEN QUIGLEY",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +134,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3642830",
+  "docket_entries": [
+    {
+      "filedDate": "2010-06-07T14:43:00.000Z",
+      "docketEntryComment": "FELONY PLEA TX FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-06-07T14:43:00.000Z",
+      "description": "FELONY PLEA TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FOR DISMISSAL/MO138572:10015331/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-07-01T09:00:00.000Z",
+      "description": "/CAL:FOR DISMISSAL/MO138572:10015331/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/STWPX/CONTD:FOR DISMISSAL UPON SENTENCE IN 10015331 AND 10015332/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-06-03T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG/STWPX/CONTD:FOR DISMISSAL UPON SENTENCE IN 10015331 AND 10015332/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET & TO JOIN STATUS OF NWH #10015332/CON:KEN QUIGLEY/NTW/LD:06-08-10/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-05-24T09:00:00.000Z",
+      "description": "/CAL:TO SET & TO JOIN STATUS OF NWH #10015332/CON:KEN QUIGLEY/NTW/LD:06-08-10/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:45000/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-05-21T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:45000/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10015330",
-    "portal_case_id": "",
+    "portal_case_id": "3642830",
     "display_case_number": "CRI-10015330",
     "defendant": "JOHN ANTHONY ATCHAN",
     "filed_date": "2010-05-21",
@@ -63,8 +203,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN ANTHONY ATCHAN, and date of filing 2010-05-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN ANTHONY ATCHAN, and date of filing 2010-05-21. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:07:26.376Z",
+  "portal_case_id": "3642830",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10015330",
+      "defendant": "JOHN ANTHONY ATCHAN",
+      "filed_date": "2010-05-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3642830"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:16:50.135Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:10:50.056Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10024924",
   "criminal_case_number": "10024924",
@@ -24,9 +24,20 @@
       "name": "JESSE ALEXANDER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JESSE ALEXANDER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -45,11 +56,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3651857",
+  "docket_entries": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-11-17T18:00:00.000Z",
+      "description": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10024924",
-    "portal_case_id": "",
+    "portal_case_id": "3651857",
     "display_case_number": "CRI-10024924",
     "defendant": "JESSE ALEXANDER",
     "filed_date": "2010-08-20",
@@ -63,8 +85,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JESSE ALEXANDER, and date of filing 2010-08-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JESSE ALEXANDER, and date of filing 2010-08-20. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:10:50.693Z",
+  "portal_case_id": "3651857",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10024924",
+      "defendant": "JESSE ALEXANDER",
+      "filed_date": "2010-08-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3651857"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:11:47.647Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:07:38.505Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10016121",
   "criminal_case_number": "10016121",
@@ -24,11 +24,115 @@
       "name": "KYLE B ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KYLE B ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-08-19T09:01:00.000Z",
+      "docketEntryComment": "Held to Answer",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-01T13:01:00.000Z",
+      "docketEntryComment": "INFO NOT BEING FILED PER DA'S REQUEST",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-25T15:20:00.000Z",
+      "docketEntryComment": "PRELIM TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-11T15:41:00.000Z",
+      "docketEntryComment": "DA'S SUBPOENA DT TO ST FRANCIS HOSP CUST OF RECORDS FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-02T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/WIT SWORN:RAMON PEREZ /WIT SWORN:OFFICER JOSEPH SHELLEY/EXHMA:1 THROUGH 4 (PHOTOGRAPHS)/HTA1:1/X:EXHIBITS WITHDRAWN,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-02T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/CONTD:PRETRIAL/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-09-02 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2010-09-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-08-19 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2010-08-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-07-13 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2010-07-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-02 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 3,
+      "court_date": "2010-06-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MEL SANTOS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +149,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3643579",
+  "docket_entries": [
+    {
+      "filedDate": "2010-08-19T09:01:00.000Z",
+      "docketEntryComment": "Held to Answer",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-08-19T09:01:00.000Z",
+      "description": "Held to Answer",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-01T13:01:00.000Z",
+      "docketEntryComment": "INFO NOT BEING FILED PER DA'S REQUEST",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-09-01T13:01:00.000Z",
+      "description": "INFO NOT BEING FILED PER DA'S REQUEST",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-25T15:20:00.000Z",
+      "docketEntryComment": "PRELIM TX FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-08-25T15:20:00.000Z",
+      "description": "PRELIM TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-11T15:41:00.000Z",
+      "docketEntryComment": "DA'S SUBPOENA DT TO ST FRANCIS HOSP CUST OF RECORDS FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-08-11T15:41:00.000Z",
+      "description": "DA'S SUBPOENA DT TO ST FRANCIS HOSP CUST OF RECORDS FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-02T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/BE/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-09-02T09:00:00.000Z",
+      "description": "/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/WIT SWORN:RAMON PEREZ /WIT SWORN:OFFICER JOSEPH SHELLEY/EXHMA:1 THROUGH 4 (PHOTOGRAPHS)/HTA1:1/X:EXHIBITS WITHDRAWN,/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-08-19T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/WIT SWORN:RAMON PEREZ /WIT SWORN:OFFICER JOSEPH SHELLEY/EXHMA:1 THROUGH 4 (PHOTOGRAPHS)/HTA1:1/X:EXHIBITS WITHDRAWN,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2010-07-13T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-02T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/CONTD:PRETRIAL/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2010-06-02T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/CONTD:PRETRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10016121",
-    "portal_case_id": "",
+    "portal_case_id": "3643579",
     "display_case_number": "CRI-10016121",
     "defendant": "KYLE B ANDERSON",
     "filed_date": "2010-06-02",
@@ -63,8 +248,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KYLE B ANDERSON, and date of filing 2010-06-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KYLE B ANDERSON, and date of filing 2010-06-02. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:07:39.223Z",
+  "portal_case_id": "3643579",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10016121",
+      "defendant": "KYLE B ANDERSON",
+      "filed_date": "2010-06-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3643579"
+  }
 }

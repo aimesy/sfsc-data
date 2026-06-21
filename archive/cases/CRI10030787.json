@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:31:00.292Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:12:08.742Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10030787",
   "criminal_case_number": "10030787",
@@ -24,11 +24,59 @@
       "name": "KIMBERLY BAKER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KIMBERLY BAKER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-10-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 10-29-10/BAIL:35,000/X:DEFENSE MOTIONFOR OR RELEASE IS DENIED,/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF AS TO THIS DEFENDANT ONLY/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-10-28 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2010-10-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-10-15 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2010-10-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARK JACOBS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3657332",
+  "docket_entries": [
+    {
+      "filedDate": "2010-10-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 10-29-10/BAIL:35,000/X:DEFENSE MOTIONFOR OR RELEASE IS DENIED,/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-10-15T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 10-29-10/BAIL:35,000/X:DEFENSE MOTIONFOR OR RELEASE IS DENIED,/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF AS TO THIS DEFENDANT ONLY/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-10-28T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF AS TO THIS DEFENDANT ONLY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10030787",
-    "portal_case_id": "",
+    "portal_case_id": "3657332",
     "display_case_number": "CRI-10030787",
     "defendant": "KIMBERLY BAKER",
     "filed_date": "2010-10-15",
@@ -59,12 +128,36 @@
       "defendant": "KIMBERLY BAKER",
       "filed_date": "2010-10-15"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KIMBERLY BAKER, and date of filing 2010-10-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KIMBERLY BAKER, and date of filing 2010-10-15. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:12:09.303Z",
+  "portal_case_id": "3657332",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10030787",
+      "defendant": "KIMBERLY BAKER",
+      "filed_date": "2010-10-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3657332"
+  }
 }

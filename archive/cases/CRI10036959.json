@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:57.246Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:13:15.362Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10036959",
   "criminal_case_number": "10036959",
@@ -24,11 +24,115 @@
       "name": "DEONTE L BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DEONTE L BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-01-06T09:05:00.000Z",
+      "docketEntryComment": "Held to Answer",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-19T13:00:00.000Z",
+      "docketEntryComment": "DA NOT FILED PER ADA",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-18T15:57:00.000Z",
+      "docketEntryComment": "PRELIM TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-29T15:25:00.000Z",
+      "docketEntryComment": "PD'S MOT FOR LINEUP FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:DEFENDANT'S MOTION PURSUANT TO GREEN IS GRANTED,/X:PD MOTION FOR LINE UP IS WITHDRAWN,/WITEXCL:DEFENSE COUNSEL/ /INVOFF:SERGEANT WOON/WIT SWORN DA:JASMINE TIRADO/WIT SWORN DA:EMILY GRAHAM/WITSWORN DA:OFFICER CHRISTOPHER GELGANGIO/WIT SWORN DA:OFFICER DONALD ANDERSON/EXHM:PEOPLE'S EXHIBIT 1:COLD SHOW APPLICATION/EXHM:DEFENDANT'S EXHIBITA:SFPD COLD SHOW ADMONITION/EXHMA:DEFENDANT'A EXHIBIT B:PHOTO OF DEFENDANT/ARG&SUB/HTA1:1 AND 2/ORPJ/CTORD:DEFENDANT, AS CONDITION OF RELEASE, TOCONTACT PRE-TRIAL DIVERSION 2 TIMES PER WEEK, DO NOT LEAVE THE RESIDENCE FROM 8:00 P,M, TO 6:00 A,M,, STAY 200 YARDS AWAY FROM 507 CASTRO, AND DO NOTHAVE ANY CONTACT WITH THE WITNESSESS IN THE MATTER,/CONTD:ARRAIGNMENT/DOP/X:EXHIBITS ARE RETURNED TO RESPECTIVE PARTY,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 01-07-11/987,2/BAIL:50,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-20T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-13T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:PER DEFENSE COUNSEL REQUEST    /X:COURT CONFIRMS 01-20-11 DATE FOR ARRAIGNMENT IN S22/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-01-20 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2011-01-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-01-13 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2011-01-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-01-06 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2011-01-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-12-22 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2010-12-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARK JACOBS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +149,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3663103",
+  "docket_entries": [
+    {
+      "filedDate": "2011-01-06T09:05:00.000Z",
+      "docketEntryComment": "Held to Answer",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-01-06T09:05:00.000Z",
+      "description": "Held to Answer",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-19T13:00:00.000Z",
+      "docketEntryComment": "DA NOT FILED PER ADA",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-01-19T13:00:00.000Z",
+      "description": "DA NOT FILED PER ADA",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-18T15:57:00.000Z",
+      "docketEntryComment": "PRELIM TX FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-01-18T15:57:00.000Z",
+      "description": "PRELIM TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-29T15:25:00.000Z",
+      "docketEntryComment": "PD'S MOT FOR LINEUP FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-12-29T15:25:00.000Z",
+      "description": "PD'S MOT FOR LINEUP FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:DEFENDANT'S MOTION PURSUANT TO GREEN IS GRANTED,/X:PD MOTION FOR LINE UP IS WITHDRAWN,/WITEXCL:DEFENSE COUNSEL/ /INVOFF:SERGEANT WOON/WIT SWORN DA:JASMINE TIRADO/WIT SWORN DA:EMILY GRAHAM/WITSWORN DA:OFFICER CHRISTOPHER GELGANGIO/WIT SWORN DA:OFFICER DONALD ANDERSON/EXHM:PEOPLE'S EXHIBIT 1:COLD SHOW APPLICATION/EXHM:DEFENDANT'S EXHIBITA:SFPD COLD SHOW ADMONITION/EXHMA:DEFENDANT'A EXHIBIT B:PHOTO OF DEFENDANT/ARG&SUB/HTA1:1 AND 2/ORPJ/CTORD:DEFENDANT, AS CONDITION OF RELEASE, TOCONTACT PRE-TRIAL DIVERSION 2 TIMES PER WEEK, DO NOT LEAVE THE RESIDENCE FROM 8:00 P,M, TO 6:00 A,M,, STAY 200 YARDS AWAY FROM 507 CASTRO, AND DO NOTHAVE ANY CONTACT WITH THE WITNESSESS IN THE MATTER,/CONTD:ARRAIGNMENT/DOP/X:EXHIBITS ARE RETURNED TO RESPECTIVE PARTY,/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-01-06T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/X:DEFENDANT'S MOTION PURSUANT TO GREEN IS GRANTED,/X:PD MOTION FOR LINE UP IS WITHDRAWN,/WITEXCL:DEFENSE COUNSEL/ /INVOFF:SERGEANT WOON/WIT SWORN DA:JASMINE TIRADO/WIT SWORN DA:EMILY GRAHAM/WITSWORN DA:OFFICER CHRISTOPHER GELGANGIO/WIT SWORN DA:OFFICER DONALD ANDERSON/EXHM:PEOPLE'S EXHIBIT 1:COLD SHOW APPLICATION/EXHM:DEFENDANT'S EXHIBITA:SFPD COLD SHOW ADMONITION/EXHMA:DEFENDANT'A EXHIBIT B:PHOTO OF DEFENDANT/ARG&SUB/HTA1:1 AND 2/ORPJ/CTORD:DEFENDANT, AS CONDITION OF RELEASE, TOCONTACT PRE-TRIAL DIVERSION 2 TIMES PER WEEK, DO NOT LEAVE THE RESIDENCE FROM 8:00 P,M, TO 6:00 A,M,, STAY 200 YARDS AWAY FROM 507 CASTRO, AND DO NOTHAVE ANY CONTACT WITH THE WITNESSESS IN THE MATTER,/CONTD:ARRAIGNMENT/DOP/X:EXHIBITS ARE RETURNED TO RESPECTIVE PARTY,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 01-07-11/987,2/BAIL:50,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-12-22T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 01-07-11/987,2/BAIL:50,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-20T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2011-01-20T09:00:00.000Z",
+      "description": "/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-13T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:PER DEFENSE COUNSEL REQUEST    /X:COURT CONFIRMS 01-20-11 DATE FOR ARRAIGNMENT IN S22/DOP/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2011-01-13T09:00:00.000Z",
+      "description": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:PER DEFENSE COUNSEL REQUEST /X:COURT CONFIRMS 01-20-11 DATE FOR ARRAIGNMENT IN S22/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10036959",
-    "portal_case_id": "",
+    "portal_case_id": "3663103",
     "display_case_number": "CRI-10036959",
     "defendant": "DEONTE L BROWN",
     "filed_date": "2010-12-22",
@@ -63,8 +248,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DEONTE L BROWN, and date of filing 2010-12-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DEONTE L BROWN, and date of filing 2010-12-22. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:13:15.999Z",
+  "portal_case_id": "3663103",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10036959",
+      "defendant": "DEONTE L BROWN",
+      "filed_date": "2010-12-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3663103"
+  }
 }

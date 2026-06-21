@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:31:14.771Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:34:04.842Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02136535",
   "criminal_case_number": "02136535",
@@ -24,10 +24,99 @@
       "name": "JOHN CLIFFORD BRADY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN CLIFFORD BRADY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2003-11-18T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-11-24T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-12-02T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-11-26T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/NTW/LD:12-26-2003/BAIL:2000/CONTD:TRAILING 2137333       /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-11-24T09:00:00.000Z",
+      "docketEntryComment": "/CONTD:FOR THE STATUS OF NW HOLD #2137333/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-11-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BW/BWI/BAIL:10,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2003-12-02 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2003-12-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-11-26 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 1,
+      "court_date": "2003-11-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-11-24 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 2,
+      "court_date": "2003-11-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-11-18 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 3,
+      "court_date": "2003-11-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +134,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3265804",
+  "docket_entries": [
+    {
+      "filedDate": "2003-11-18T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2003-11-18T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-11-24T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2003-11-24T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-12-02T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2003-12-02T09:00:00.000Z",
+      "description": "/MO PC 1385/MOTION GRANTED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-11-26T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/NTW/LD:12-26-2003/BAIL:2000/CONTD:TRAILING 2137333       /",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2003-11-26T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/NTW/LD:12-26-2003/BAIL:2000/CONTD:TRAILING 2137333 /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-11-24T09:00:00.000Z",
+      "docketEntryComment": "/CONTD:FOR THE STATUS OF NW HOLD #2137333/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2003-11-24T09:00:00.000Z",
+      "description": "/CONTD:FOR THE STATUS OF NW HOLD #2137333/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-11-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BW/BWI/BAIL:10,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2003-11-18T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BW/BWI/BAIL:10,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02136535",
-    "portal_case_id": "",
+    "portal_case_id": "3265804",
     "display_case_number": "CRI-02136535",
     "defendant": "JOHN CLIFFORD BRADY",
     "filed_date": "2003-11-18",
@@ -59,12 +209,36 @@
       "defendant": "JOHN CLIFFORD BRADY",
       "filed_date": "2003-11-18"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN CLIFFORD BRADY, and date of filing 2003-11-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN CLIFFORD BRADY, and date of filing 2003-11-18. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:34:05.435Z",
+  "portal_case_id": "3265804",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02136535",
+      "defendant": "JOHN CLIFFORD BRADY",
+      "filed_date": "2003-11-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3265804"
+  }
 }

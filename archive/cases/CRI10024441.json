@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:37:31.404Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:09:37.876Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10024441",
   "criminal_case_number": "10024441",
@@ -24,11 +24,105 @@
       "name": "JOSEPH R DEAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSEPH R DEAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-09-02T13:53:00.000Z",
+      "docketEntryComment": "PEOPLE'S MOT FOR DISCOV PER BRADY/PITCHESS; P&A; DECLAR FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-01T15:23:00.000Z",
+      "docketEntryComment": "PEOPLE'S MOT TO CONSOLIDATE (W/2452427) FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CON:MARY MALLEN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//PD/FAWC/DEFTARR1/NTW/LD:FOR TRIAL IS 09-20-10/987,2/CONTD:JURY TRIAL ON09-03-10/DOP/BAIL:5000/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-21T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: MATTER WAS DISMISSED ON 09-03-10, DEPT 20/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/MO138572:2452437/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-18T09:00:00.000Z",
+      "docketEntryComment": "/BAIL:5000/4011,5/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL ANDTO JOIN 2452427/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-09-21 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 0,
+      "court_date": "2010-09-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-09-03 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 1,
+      "court_date": "2010-09-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-08-19 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 2,
+      "court_date": "2010-08-19",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-08-18 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 3,
+      "court_date": "2010-08-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARY MALLEN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +139,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3651409",
+  "docket_entries": [
+    {
+      "filedDate": "2010-09-02T13:53:00.000Z",
+      "docketEntryComment": "PEOPLE'S MOT FOR DISCOV PER BRADY/PITCHESS; P&A; DECLAR FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-09-02T13:53:00.000Z",
+      "description": "PEOPLE'S MOT FOR DISCOV PER BRADY/PITCHESS; P&A; DECLAR FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-01T15:23:00.000Z",
+      "docketEntryComment": "PEOPLE'S MOT TO CONSOLIDATE (W/2452427) FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-09-01T15:23:00.000Z",
+      "description": "PEOPLE'S MOT TO CONSOLIDATE (W/2452427) FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CON:MARY MALLEN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//PD/FAWC/DEFTARR1/NTW/LD:FOR TRIAL IS 09-20-10/987,2/CONTD:JURY TRIAL ON09-03-10/DOP/BAIL:5000/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-08-19T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/CON:MARY MALLEN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//PD/FAWC/DEFTARR1/NTW/LD:FOR TRIAL IS 09-20-10/987,2/CONTD:JURY TRIAL ON09-03-10/DOP/BAIL:5000/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-21T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: MATTER WAS DISMISSED ON 09-03-10, DEPT 20/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-09-21T09:00:00.000Z",
+      "description": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: MATTER WAS DISMISSED ON 09-03-10, DEPT 20/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/MO138572:2452437/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-09-03T09:00:00.000Z",
+      "description": "/CAL:TRIAL/MO138572:2452437/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-18T09:00:00.000Z",
+      "docketEntryComment": "/BAIL:5000/4011,5/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL ANDTO JOIN 2452427/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-08-18T09:00:00.000Z",
+      "description": "/BAIL:5000/4011,5/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL ANDTO JOIN 2452427/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10024441",
-    "portal_case_id": "",
+    "portal_case_id": "3651409",
     "display_case_number": "CRI-10024441",
     "defendant": "JOSEPH R DEAN",
     "filed_date": "2010-08-18",
@@ -63,8 +218,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSEPH R DEAN, and date of filing 2010-08-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSEPH R DEAN, and date of filing 2010-08-18. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:09:38.561Z",
+  "portal_case_id": "3651409",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10024441",
+      "defendant": "JOSEPH R DEAN",
+      "filed_date": "2010-08-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3651409"
+  }
 }

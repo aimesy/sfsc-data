@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:58:41.767Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:28:17.866Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02098357",
   "criminal_case_number": "02098357",
@@ -24,11 +24,64 @@
       "name": "ALEX ACOSTA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALEX ACOSTA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2003-03-13T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-03-27T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED//X: DISMISSED, PEOPLE UNABLE TO SUSTAIN BURDEN OF PROOF,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-03-13T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2003-03-27 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2003-03-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-03-13 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 1,
+      "court_date": "2003-03-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "A CHU",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +98,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3230752",
+  "docket_entries": [
+    {
+      "filedDate": "2003-03-13T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2003-03-13T00:00:00.000Z",
+      "description": "COMP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-03-27T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED//X: DISMISSED, PEOPLE UNABLE TO SUSTAIN BURDEN OF PROOF,/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2003-03-27T09:00:00.000Z",
+      "description": "/MO PC 1385/MOTION GRANTED//X: DISMISSED, PEOPLE UNABLE TO SUSTAIN BURDEN OF PROOF,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-03-13T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2003-03-13T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1/FAWC/DOP/GTWM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02098357",
-    "portal_case_id": "",
+    "portal_case_id": "3230752",
     "display_case_number": "CRI-02098357",
     "defendant": "ALEX ACOSTA",
     "filed_date": "2003-03-13",
@@ -59,12 +143,36 @@
       "defendant": "ALEX ACOSTA",
       "filed_date": "2003-03-13"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALEX ACOSTA, and date of filing 2003-03-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALEX ACOSTA, and date of filing 2003-03-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:28:18.444Z",
+  "portal_case_id": "3230752",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02098357",
+      "defendant": "ALEX ACOSTA",
+      "filed_date": "2003-03-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3230752"
+  }
 }

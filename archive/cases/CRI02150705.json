@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:32:53.654Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:36:44.388Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02150705",
   "criminal_case_number": "02150705",
@@ -24,11 +24,72 @@
       "name": "JOSE MARIA ALVARADO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSE MARIA ALVARADO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2004-02-25T00:00:00.000Z",
+      "docketEntryComment": "ALL CHGS MOT DA INT JUSTICE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-02-19T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/NTW/LD:3-4-04/987,2/BAIL:35000/CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2004-03-03 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2004-03-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-02-25 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2004-02-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-02-19 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2004-02-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "F PASSAGLIA",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +106,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3278728",
+  "docket_entries": [
+    {
+      "filedDate": "2004-02-25T00:00:00.000Z",
+      "docketEntryComment": "ALL CHGS MOT DA INT JUSTICE",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2004-02-25T00:00:00.000Z",
+      "description": "ALL CHGS MOT DA INT JUSTICE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-02-19T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/NTW/LD:3-4-04/987,2/BAIL:35000/CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2004-02-19T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/NTW/LD:3-4-04/987,2/BAIL:35000/CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02150705",
-    "portal_case_id": "",
+    "portal_case_id": "3278728",
     "display_case_number": "CRI-02150705",
     "defendant": "JOSE MARIA ALVARADO",
     "filed_date": "2004-02-19",
@@ -63,8 +145,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSE MARIA ALVARADO, and date of filing 2004-02-19. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSE MARIA ALVARADO, and date of filing 2004-02-19. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:36:44.930Z",
+  "portal_case_id": "3278728",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02150705",
+      "defendant": "JOSE MARIA ALVARADO",
+      "filed_date": "2004-02-19"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3278728"
+  }
 }

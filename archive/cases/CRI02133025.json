@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:04:05.189Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:32:43.858Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02133025",
   "criminal_case_number": "02133025",
@@ -24,11 +24,77 @@
       "name": "STEPHEN ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "STEPHEN ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2004-01-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/MO PC 1385/MOTION GRANTED/X:DISMISSED IN VIEW OF FEDERAL INDICTMENT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-12-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD:TO SET/STWPX/DOP/CONTD TO BE SET, DOP/CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-10-28T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/ STWPX/BAIL:50000/X:BAIL IS SET WITHOUT PREJUDICE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2004-01-20 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2004-01-20",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-12-09 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2003-12-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-10-28 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2003-10-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "A GHAFOURPOUR",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3262615",
+  "docket_entries": [
+    {
+      "filedDate": "2004-01-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/MO PC 1385/MOTION GRANTED/X:DISMISSED IN VIEW OF FEDERAL INDICTMENT/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2004-01-20T09:00:00.000Z",
+      "description": "/CAL:TO SET/MO PC 1385/MOTION GRANTED/X:DISMISSED IN VIEW OF FEDERAL INDICTMENT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-12-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD:TO SET/STWPX/DOP/CONTD TO BE SET, DOP/CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2003-12-09T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/CONTD:TO SET/STWPX/DOP/CONTD TO BE SET, DOP/CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-10-28T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/ STWPX/BAIL:50000/X:BAIL IS SET WITHOUT PREJUDICE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2003-10-28T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/ STWPX/BAIL:50000/X:BAIL IS SET WITHOUT PREJUDICE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02133025",
-    "portal_case_id": "",
+    "portal_case_id": "3262615",
     "display_case_number": "CRI-02133025",
     "defendant": "STEPHEN ALLEN",
     "filed_date": "2003-10-28",
@@ -59,12 +156,36 @@
       "defendant": "STEPHEN ALLEN",
       "filed_date": "2003-10-28"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, STEPHEN ALLEN, and date of filing 2003-10-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, STEPHEN ALLEN, and date of filing 2003-10-28. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:32:44.485Z",
+  "portal_case_id": "3262615",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02133025",
+      "defendant": "STEPHEN ALLEN",
+      "filed_date": "2003-10-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3262615"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:40:23.740Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:03:09.572Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11024442",
   "criminal_case_number": "11024442",
@@ -24,11 +24,77 @@
       "name": "BRITTNEE JANE BAILEY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BRITTNEE JANE BAILEY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-10-19T14:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2:ISS:CPROB:PROB 3Y:PJ 2D    /CTS:2/SWAPD:10-20-11   /PF390NEW/VF1/FOP1: 3   MONTH/LVAL/LCHEM/1463ALC/MPROBFINE/SECFEE40/ICNA/CITE/EMAT/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 100 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SET FORTH HEREIN/X:23593(A) VC ADMONITION GIVEN,/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-19T13:45:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/TEXT:TRANS TO DEPT 14/TRANS 14:FORTHWITH FOR PLE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-26T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DEF:RESERVES THERIGHT TO DEMURRER/GTWM/987,2/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-10-19 2:15 PM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2011-10-19",
+      "hearing_time": "2:15 PM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-10-19 1:45 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2011-10-19",
+      "hearing_time": "1:45 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-09-26 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2011-09-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "EMILY GOLDMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3687527",
+  "docket_entries": [
+    {
+      "filedDate": "2011-10-19T14:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2:ISS:CPROB:PROB 3Y:PJ 2D    /CTS:2/SWAPD:10-20-11   /PF390NEW/VF1/FOP1: 3   MONTH/LVAL/LCHEM/1463ALC/MPROBFINE/SECFEE40/ICNA/CITE/EMAT/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 100 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SET FORTH HEREIN/X:23593(A) VC ADMONITION GIVEN,/DISM3/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-10-19T14:15:00.000Z",
+      "description": "/TWS/CH2:ISS:CPROB:PROB 3Y:PJ 2D /CTS:2/SWAPD:10-20-11 /PF390NEW/VF1/FOP1: 3 MONTH/LVAL/LCHEM/1463ALC/MPROBFINE/SECFEE40/ICNA/CITE/EMAT/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 100 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SET FORTH HEREIN/X:23593(A) VC ADMONITION GIVEN,/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-19T13:45:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/TEXT:TRANS TO DEPT 14/TRANS 14:FORTHWITH FOR PLE",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-10-19T13:45:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/TEXT:TRANS TO DEPT 14/TRANS 14:FORTHWITH FOR PLE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-26T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DEF:RESERVES THERIGHT TO DEMURRER/GTWM/987,2/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-09-26T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DEF:RESERVES THERIGHT TO DEMURRER/GTWM/987,2/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11024442",
-    "portal_case_id": "",
+    "portal_case_id": "3687527",
     "display_case_number": "CRI-11024442",
     "defendant": "BRITTNEE JANE BAILEY",
     "filed_date": "2011-09-21",
@@ -63,8 +160,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BRITTNEE JANE BAILEY, and date of filing 2011-09-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BRITTNEE JANE BAILEY, and date of filing 2011-09-21. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:03:10.170Z",
+  "portal_case_id": "3687527",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11024442",
+      "defendant": "BRITTNEE JANE BAILEY",
+      "filed_date": "2011-09-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3687527"
+  }
 }

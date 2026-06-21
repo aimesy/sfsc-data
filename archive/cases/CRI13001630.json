@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:57:19.581Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:46:51.588Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13001630",
   "criminal_case_number": "13001630",
@@ -24,11 +24,95 @@
       "name": "LIONEL ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LIONEL ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-02-01T09:15:00.000Z",
+      "docketEntryComment": "/CAL:TO SET -PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION  PURSUANT TO PC3455/3455ADV/3455REIN/CH1:CJ60D/CTS:15/4019HALF/X:POST RELEASE COMMUNITY SUPERVISION EXTENDED UNTIL 07-25-13/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-02-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET -PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION  PURSUANT TO PC3455/3455ADV/3455REIN/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-01-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRCS VIOLATION HEARING/CONTD:SETTING HEARING ON PRCS VIOLATIONHEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-01-24T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD PETITION TO REVOKE PRCS (3455PC)/PD/NP/4011,5/X:PRCS IS ADMINISTRATIVELY REVOKED,/SHER/NB/CONTD:SETTING PRCS VIOLATION HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-02-01 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 28",
+      "__index": 0,
+      "court_date": "2013-02-01",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 28",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-02-01 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 28",
+      "__index": 1,
+      "court_date": "2013-02-01",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 28",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-01-25 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2013-01-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-01-24 11:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "2013-01-24",
+      "hearing_time": "11:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEPHANIE LACAMBRA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +129,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3732402",
+  "docket_entries": [
+    {
+      "filedDate": "2013-02-01T09:15:00.000Z",
+      "docketEntryComment": "/CAL:TO SET -PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION  PURSUANT TO PC3455/3455ADV/3455REIN/CH1:CJ60D/CTS:15/4019HALF/X:POST RELEASE COMMUNITY SUPERVISION EXTENDED UNTIL 07-25-13/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-02-01T09:15:00.000Z",
+      "description": "/CAL:TO SET -PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455REIN/CH1:CJ60D/CTS:15/4019HALF/X:POST RELEASE COMMUNITY SUPERVISION EXTENDED UNTIL 07-25-13/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-02-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET -PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION  PURSUANT TO PC3455/3455ADV/3455REIN/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-02-01T09:00:00.000Z",
+      "description": "/CAL:TO SET -PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455REIN/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-01-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRCS VIOLATION HEARING/CONTD:SETTING HEARING ON PRCS VIOLATIONHEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-01-25T09:00:00.000Z",
+      "description": "/CAL:TO SET PRCS VIOLATION HEARING/CONTD:SETTING HEARING ON PRCS VIOLATIONHEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-01-24T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD PETITION TO REVOKE PRCS (3455PC)/PD/NP/4011,5/X:PRCS IS ADMINISTRATIVELY REVOKED,/SHER/NB/CONTD:SETTING PRCS VIOLATION HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-01-24T11:30:00.000Z",
+      "description": "/CAL:APD PETITION TO REVOKE PRCS (3455PC)/PD/NP/4011,5/X:PRCS IS ADMINISTRATIVELY REVOKED,/SHER/NB/CONTD:SETTING PRCS VIOLATION HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13001630",
-    "portal_case_id": "",
+    "portal_case_id": "3732402",
     "display_case_number": "CRI-13001630",
     "defendant": "LIONEL ADAMS",
     "filed_date": "2013-01-24",
@@ -59,12 +184,36 @@
       "defendant": "LIONEL ADAMS",
       "filed_date": "2013-01-24"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC3455",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LIONEL ADAMS, and date of filing 2013-01-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LIONEL ADAMS, and date of filing 2013-01-24. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:46:52.357Z",
+  "portal_case_id": "3732402",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13001630",
+      "defendant": "LIONEL ADAMS",
+      "filed_date": "2013-01-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3732402"
+  }
 }

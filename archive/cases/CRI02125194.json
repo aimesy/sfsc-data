@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:39:23.130Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:31:07.089Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02125194",
   "criminal_case_number": "02125194",
@@ -24,11 +24,100 @@
       "name": "GEORGE ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "GEORGE ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2003-09-05T00:00:00.000Z",
+      "docketEntryComment": "PRELIM HRG, DOP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-09-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL: SPR/MO DENIED/WD GTW/TWWD:09-10-2003/CO:LAST DAY FOR TRIAL 09-24-2003/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/NTW/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-09-05T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/STWPX/BAIL:20000/CONTD SPR ELIG REPORT, DOP/CONTD:FOR SPR ELIGIBILITY REPORT AND TO JOIN 2091456/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-09-19T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-09-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL: SPR ELIG REPORT/CONTD SPR ELIG REPORT, DOP/CONTD:FOR SPR ELIGIBILITY REPORT AND TO SET/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2003-09-19 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2003-09-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-09-10 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2003-09-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-09-09 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2003-09-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2003-09-05 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2003-09-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S KAPLAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +134,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3255408",
+  "docket_entries": [
+    {
+      "filedDate": "2003-09-05T00:00:00.000Z",
+      "docketEntryComment": "PRELIM HRG, DOP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2003-09-05T00:00:00.000Z",
+      "description": "PRELIM HRG, DOP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-09-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL: SPR/MO DENIED/WD GTW/TWWD:09-10-2003/CO:LAST DAY FOR TRIAL 09-24-2003/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/NTW/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2003-09-10T09:00:00.000Z",
+      "description": "/CAL: SPR/MO DENIED/WD GTW/TWWD:09-10-2003/CO:LAST DAY FOR TRIAL 09-24-2003/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/NTW/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-09-05T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/STWPX/BAIL:20000/CONTD SPR ELIG REPORT, DOP/CONTD:FOR SPR ELIGIBILITY REPORT AND TO JOIN 2091456/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2003-09-05T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/STWPX/BAIL:20000/CONTD SPR ELIG REPORT, DOP/CONTD:FOR SPR ELIGIBILITY REPORT AND TO JOIN 2091456/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-09-19T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/MOTION GRANTED/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2003-09-19T09:00:00.000Z",
+      "description": "/MO PC 1385/MOTION GRANTED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-09-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL: SPR ELIG REPORT/CONTD SPR ELIG REPORT, DOP/CONTD:FOR SPR ELIGIBILITY REPORT AND TO SET/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2003-09-09T09:00:00.000Z",
+      "description": "/CAL: SPR ELIG REPORT/CONTD SPR ELIG REPORT, DOP/CONTD:FOR SPR ELIGIBILITY REPORT AND TO SET/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02125194",
-    "portal_case_id": "",
+    "portal_case_id": "3255408",
     "display_case_number": "CRI-02125194",
     "defendant": "GEORGE ANDERSON",
     "filed_date": "2003-09-05",
@@ -59,12 +199,36 @@
       "defendant": "GEORGE ANDERSON",
       "filed_date": "2003-09-05"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, GEORGE ANDERSON, and date of filing 2003-09-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, GEORGE ANDERSON, and date of filing 2003-09-05. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:31:07.712Z",
+  "portal_case_id": "3255408",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02125194",
+      "defendant": "GEORGE ANDERSON",
+      "filed_date": "2003-09-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3255408"
+  }
 }
