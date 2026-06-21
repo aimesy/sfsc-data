@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:57:17.568Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:43:43.422Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01234793",
   "criminal_case_number": "01234793",
@@ -24,11 +24,88 @@
       "name": "DENNIS J DUREE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DENNIS J DUREE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1990-07-19T00:00:00.000Z",
+      "docketEntryComment": "TO SET (DOP, FR #20)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-05-02T00:00:00.000Z",
+      "docketEntryComment": "TO SET (DOP, FR #20)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-10-09T08:30:00.000Z",
+      "docketEntryComment": "A/JWV;CT1SP3Y;CTS2,4-EA SP3Y,C/C;CT3SP3Y-STAYED 654PC;CTS276D;$400RF",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-08-30T14:00:00.000Z",
+      "docketEntryComment": "DEFT MO W/D PLEA NG CTS1,2,3,4;ADV/PERS WVS CONSTL RTS;PLD G CTS1,2,3,4CT MKES FNDGS;DEFT W/TIME",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-07-20T09:30:00.000Z",
+      "docketEntryComment": "ARR;PLD NG EA CT W/ATTENDANT ALLEG(S) CTS#2 & #3",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-07-06T00:00:00.000Z",
+      "docketEntryComment": "HTA, BAIL SET AT $40,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-05-02T00:00:00.000Z",
+      "docketEntryComment": "BS $40,000; COND OF BAIL STY AWAY FR VICTIMS",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1990-08-30 2:00 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 0,
+      "court_date": "1990-08-30",
+      "hearing_time": "2:00 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1990-07-20 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1990-07-20",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "M GOLDROSEN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "J PINELLE",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +122,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2447250",
+  "docket_entries": [
+    {
+      "filedDate": "1990-07-19T00:00:00.000Z",
+      "docketEntryComment": "TO SET (DOP, FR #20)",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1990-07-19T00:00:00.000Z",
+      "description": "TO SET (DOP, FR #20)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-05-02T00:00:00.000Z",
+      "docketEntryComment": "TO SET (DOP, FR #20)",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1990-05-02T00:00:00.000Z",
+      "description": "TO SET (DOP, FR #20)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-10-09T08:30:00.000Z",
+      "docketEntryComment": "A/JWV;CT1SP3Y;CTS2,4-EA SP3Y,C/C;CT3SP3Y-STAYED 654PC;CTS276D;$400RF",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1990-10-09T08:30:00.000Z",
+      "description": "A/JWV;CT1SP3Y;CTS2,4-EA SP3Y,C/C;CT3SP3Y-STAYED 654PC;CTS276D;$400RF",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-08-30T14:00:00.000Z",
+      "docketEntryComment": "DEFT MO W/D PLEA NG CTS1,2,3,4;ADV/PERS WVS CONSTL RTS;PLD G CTS1,2,3,4CT MKES FNDGS;DEFT W/TIME",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1990-08-30T14:00:00.000Z",
+      "description": "DEFT MO W/D PLEA NG CTS1,2,3,4;ADV/PERS WVS CONSTL RTS;PLD G CTS1,2,3,4CT MKES FNDGS;DEFT W/TIME",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-07-20T09:30:00.000Z",
+      "docketEntryComment": "ARR;PLD NG EA CT W/ATTENDANT ALLEG(S) CTS#2 & #3",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1990-07-20T09:30:00.000Z",
+      "description": "ARR;PLD NG EA CT W/ATTENDANT ALLEG(S) CTS#2 & #3",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-07-06T00:00:00.000Z",
+      "docketEntryComment": "HTA, BAIL SET AT $40,000",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1990-07-06T00:00:00.000Z",
+      "description": "HTA, BAIL SET AT $40,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-05-02T00:00:00.000Z",
+      "docketEntryComment": "BS $40,000; COND OF BAIL STY AWAY FR VICTIMS",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1990-05-02T00:00:00.000Z",
+      "description": "BS $40,000; COND OF BAIL STY AWAY FR VICTIMS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01234793",
-    "portal_case_id": "",
+    "portal_case_id": "2447250",
     "display_case_number": "CRI-01234793",
     "defendant": "DENNIS J DUREE",
     "filed_date": "1990-05-02",
@@ -63,8 +211,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DENNIS J DUREE, and date of filing 1990-05-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DENNIS J DUREE, and date of filing 1990-05-02. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:43:44.019Z",
+  "portal_case_id": "2447250",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01234793",
+      "defendant": "DENNIS J DUREE",
+      "filed_date": "1990-05-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2447250"
+  }
 }

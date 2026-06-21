@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:33:30.476Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:47:52.616Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01297768",
   "criminal_case_number": "01297768",
@@ -24,11 +24,114 @@
       "name": "SEKOU CARSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "SEKOU CARSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1991-04-15T00:00:00.000Z",
+      "docketEntryComment": "REVOKE PROBATION",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-09-10T09:00:00.000Z",
+      "docketEntryComment": "PROB MOD;DEFT PREV STIP VIO PROB;1YCJ;CTS109DUPON COMPL OF CJ SENT,PROB WILL TERM UNSUCCESSFULLY;NOCP/ER/WF/HD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-08-06T14:00:00.000Z",
+      "docketEntryComment": "DEFT STIP VIO PROB;ADV/PERS WVD RTS;CT FND DEFT IN VIO PROB;DEFT W/TIME",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-06-05T14:01:00.000Z",
+      "docketEntryComment": "REMANDED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-05-23T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;CTS42D;WS;REST MUNI CT#1292231;REG11590HS;DT&C;$100RFNO DRG W/O RX;$50LF;$40PC;ACCEPTS PROB",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-04-25T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-04-15T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1991-09-10 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 0,
+      "court_date": "1991-09-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1991-08-06 2:00 PM",
+      "hearingType": "Probation Revocation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 1,
+      "court_date": "1991-08-06",
+      "hearing_time": "2:00 PM",
+      "matters": "Probation Revocation Hearing",
+      "hearing_type": "Probation Revocation Hearing",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1991-06-05 2:01 PM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1991-06-05",
+      "hearing_time": "2:01 PM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1991-05-23 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1991-05-23",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "J AMABILE",
+      "type": "Public Defender"
+    },
+    {
+      "name": "H DONOHOE",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +148,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2500648",
+  "docket_entries": [
+    {
+      "filedDate": "1991-04-15T00:00:00.000Z",
+      "docketEntryComment": "REVOKE PROBATION",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1991-04-15T00:00:00.000Z",
+      "description": "REVOKE PROBATION",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-09-10T09:00:00.000Z",
+      "docketEntryComment": "PROB MOD;DEFT PREV STIP VIO PROB;1YCJ;CTS109DUPON COMPL OF CJ SENT,PROB WILL TERM UNSUCCESSFULLY;NOCP/ER/WF/HD",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1991-09-10T09:00:00.000Z",
+      "description": "PROB MOD;DEFT PREV STIP VIO PROB;1YCJ;CTS109DUPON COMPL OF CJ SENT,PROB WILL TERM UNSUCCESSFULLY;NOCP/ER/WF/HD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-08-06T14:00:00.000Z",
+      "docketEntryComment": "DEFT STIP VIO PROB;ADV/PERS WVD RTS;CT FND DEFT IN VIO PROB;DEFT W/TIME",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1991-08-06T14:00:00.000Z",
+      "description": "DEFT STIP VIO PROB;ADV/PERS WVD RTS;CT FND DEFT IN VIO PROB;DEFT W/TIME",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-06-05T14:01:00.000Z",
+      "docketEntryComment": "REMANDED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1991-06-05T14:01:00.000Z",
+      "description": "REMANDED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-05-23T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;CTS42D;WS;REST MUNI CT#1292231;REG11590HS;DT&C;$100RFNO DRG W/O RX;$50LF;$40PC;ACCEPTS PROB",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1991-05-23T09:30:00.000Z",
+      "description": "A/JWV;ISS3YPROB;CTS42D;WS;REST MUNI CT#1292231;REG11590HS;DT&C;$100RFNO DRG W/O RX;$50LF;$40PC;ACCEPTS PROB",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-04-25T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1991-04-25T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-04-15T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1991-04-15T00:00:00.000Z",
+      "description": "B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01297768",
-    "portal_case_id": "",
+    "portal_case_id": "2500648",
     "display_case_number": "CRI-01297768",
     "defendant": "SEKOU CARSON",
     "filed_date": "1991-04-15",
@@ -63,8 +237,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, SEKOU CARSON, and date of filing 1991-04-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, SEKOU CARSON, and date of filing 1991-04-15. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:47:53.262Z",
+  "portal_case_id": "2500648",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01297768",
+      "defendant": "SEKOU CARSON",
+      "filed_date": "1991-04-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2500648"
+  }
 }

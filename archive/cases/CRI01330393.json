@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:41:43.813Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:50:09.017Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01330393",
   "criminal_case_number": "01330393",
@@ -24,11 +24,106 @@
       "name": "CARLOS AYALA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CARLOS AYALA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1992-03-18T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-10-09T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-05-29T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;SP16M;CT STATES REAS;$100RF;CTS354D;REMANDED CDC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-04-30T14:00:00.000Z",
+      "docketEntryComment": "CT GRNT DEFTS MO W/D FORMER PLEA;ADV WVS RTS;PLD G 11350(A)HS-CT1 FELCT MKS FNDGS;CT GRANTS DA'S MO STRIKE REM ALLEGS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-03-19T09:30:00.000Z",
+      "docketEntryComment": "PD APPTD;ARR;CT ENT NG PLEA;DEN ALL ALLEGS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-03-05T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S AT $2,500",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-12-12T00:00:00.000Z",
+      "docketEntryComment": "DEF MOT TO CONT GRNTD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-10-15T00:00:00.000Z",
+      "docketEntryComment": "B/S $2,500",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1992-05-29 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1992-05-29",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1992-04-30 2:00 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1992-04-30",
+      "hearing_time": "2:00 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1992-03-19 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1992-03-19",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "J ADACHI",
+      "type": "Public Defender"
+    },
+    {
+      "name": "M MORENO",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +140,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2528981",
+  "docket_entries": [
+    {
+      "filedDate": "1992-03-18T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1992-03-18T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-10-09T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1991-10-09T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-05-29T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;SP16M;CT STATES REAS;$100RF;CTS354D;REMANDED CDC",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1992-05-29T09:30:00.000Z",
+      "description": "A/JWV;SP16M;CT STATES REAS;$100RF;CTS354D;REMANDED CDC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-04-30T14:00:00.000Z",
+      "docketEntryComment": "CT GRNT DEFTS MO W/D FORMER PLEA;ADV WVS RTS;PLD G 11350(A)HS-CT1 FELCT MKS FNDGS;CT GRANTS DA'S MO STRIKE REM ALLEGS",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1992-04-30T14:00:00.000Z",
+      "description": "CT GRNT DEFTS MO W/D FORMER PLEA;ADV WVS RTS;PLD G 11350(A)HS-CT1 FELCT MKS FNDGS;CT GRANTS DA'S MO STRIKE REM ALLEGS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-03-19T09:30:00.000Z",
+      "docketEntryComment": "PD APPTD;ARR;CT ENT NG PLEA;DEN ALL ALLEGS",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1992-03-19T09:30:00.000Z",
+      "description": "PD APPTD;ARR;CT ENT NG PLEA;DEN ALL ALLEGS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-03-05T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S AT $2,500",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1992-03-05T00:00:00.000Z",
+      "description": "HTA, B/S AT $2,500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-12-12T00:00:00.000Z",
+      "docketEntryComment": "DEF MOT TO CONT GRNTD",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1991-12-12T00:00:00.000Z",
+      "description": "DEF MOT TO CONT GRNTD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-10-15T00:00:00.000Z",
+      "docketEntryComment": "B/S $2,500",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1991-10-15T00:00:00.000Z",
+      "description": "B/S $2,500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01330393",
-    "portal_case_id": "",
+    "portal_case_id": "2528981",
     "display_case_number": "CRI-01330393",
     "defendant": "CARLOS AYALA",
     "filed_date": "1991-10-09",
@@ -63,8 +239,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CARLOS AYALA, and date of filing 1991-10-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CARLOS AYALA, and date of filing 1991-10-09. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:50:09.647Z",
+  "portal_case_id": "2528981",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01330393",
+      "defendant": "CARLOS AYALA",
+      "filed_date": "1991-10-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2528981"
+  }
 }

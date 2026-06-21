@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:58:46.624Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:43:23.976Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01225178",
   "criminal_case_number": "01225178",
@@ -24,11 +24,88 @@
       "name": "RODOLPHO ESTRADA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RODOLPHO ESTRADA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1990-04-30T00:00:00.000Z",
+      "docketEntryComment": "SET PLIM HRG",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-03-16T00:00:00.000Z",
+      "docketEntryComment": "SET PLIM HRG",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-07-05T08:30:00.000Z",
+      "docketEntryComment": "SPAN INT SW;A/JWV;ISS3YPROB;CTS114D;W/S;REG AS DRG OFFNDRDRG TEST/CNSLNG/TREAT BY APD;$100RF;$50LF;$25PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-06-06T14:00:00.000Z",
+      "docketEntryComment": "SPA INT SW;DEFT MO W/D PLEA NG CT1 GRTD;ADV/PERS WVS CONSTL RTS;PLD G CT1CT MKES FNDGS;CT GRTS DA'S MO DISM OTH CTS & STRK ALLEG",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-05-01T09:30:00.000Z",
+      "docketEntryComment": "SPAN INT SW;ARR;PLD NG CTS 1-2 &3 W/ATTENDANT ALLEG CTS 1 & 2",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-04-17T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S $25,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-03-16T00:00:00.000Z",
+      "docketEntryComment": "PD DELCARES CONFLICT, B/S $25,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1990-06-06 2:00 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 0,
+      "court_date": "1990-06-06",
+      "hearing_time": "2:00 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1990-05-01 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1990-05-01",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SUSAN SHALIT",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "M SCHALLON",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +122,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2439171",
+  "docket_entries": [
+    {
+      "filedDate": "1990-04-30T00:00:00.000Z",
+      "docketEntryComment": "SET PLIM HRG",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1990-04-30T00:00:00.000Z",
+      "description": "SET PLIM HRG",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-03-16T00:00:00.000Z",
+      "docketEntryComment": "SET PLIM HRG",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1990-03-16T00:00:00.000Z",
+      "description": "SET PLIM HRG",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-07-05T08:30:00.000Z",
+      "docketEntryComment": "SPAN INT SW;A/JWV;ISS3YPROB;CTS114D;W/S;REG AS DRG OFFNDRDRG TEST/CNSLNG/TREAT BY APD;$100RF;$50LF;$25PC",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1990-07-05T08:30:00.000Z",
+      "description": "SPAN INT SW;A/JWV;ISS3YPROB;CTS114D;W/S;REG AS DRG OFFNDRDRG TEST/CNSLNG/TREAT BY APD;$100RF;$50LF;$25PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-06-06T14:00:00.000Z",
+      "docketEntryComment": "SPA INT SW;DEFT MO W/D PLEA NG CT1 GRTD;ADV/PERS WVS CONSTL RTS;PLD G CT1CT MKES FNDGS;CT GRTS DA'S MO DISM OTH CTS & STRK ALLEG",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1990-06-06T14:00:00.000Z",
+      "description": "SPA INT SW;DEFT MO W/D PLEA NG CT1 GRTD;ADV/PERS WVS CONSTL RTS;PLD G CT1CT MKES FNDGS;CT GRTS DA'S MO DISM OTH CTS & STRK ALLEG",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-05-01T09:30:00.000Z",
+      "docketEntryComment": "SPAN INT SW;ARR;PLD NG CTS 1-2 &3 W/ATTENDANT ALLEG CTS 1 & 2",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1990-05-01T09:30:00.000Z",
+      "description": "SPAN INT SW;ARR;PLD NG CTS 1-2 &3 W/ATTENDANT ALLEG CTS 1 & 2",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-04-17T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S $25,000",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1990-04-17T00:00:00.000Z",
+      "description": "HTA, B/S $25,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-03-16T00:00:00.000Z",
+      "docketEntryComment": "PD DELCARES CONFLICT, B/S $25,000",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1990-03-16T00:00:00.000Z",
+      "description": "PD DELCARES CONFLICT, B/S $25,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01225178",
-    "portal_case_id": "",
+    "portal_case_id": "2439171",
     "display_case_number": "CRI-01225178",
     "defendant": "RODOLPHO ESTRADA",
     "filed_date": "1990-03-16",
@@ -63,8 +211,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RODOLPHO ESTRADA, and date of filing 1990-03-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RODOLPHO ESTRADA, and date of filing 1990-03-16. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:43:24.615Z",
+  "portal_case_id": "2439171",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01225178",
+      "defendant": "RODOLPHO ESTRADA",
+      "filed_date": "1990-03-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2439171"
+  }
 }

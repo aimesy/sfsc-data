@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:13:52.766Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:48:45.853Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01311660",
   "criminal_case_number": "01311660",
@@ -24,11 +24,132 @@
       "name": "MARIO DIAZ AGUILAR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARIO DIAZ AGUILAR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1991-06-28T00:00:00.000Z",
+      "docketEntryComment": "REVOKE PROBATION",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-10-28T09:00:00.000Z",
+      "docketEntryComment": "SPN INT SW;CT FND DEFT IN VIOL PROB;PROB REV'DDEFT ADV RE PAROLE RTS & APPEAL RTS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-10-28T09:00:00.000Z",
+      "docketEntryComment": "PROB REV'D;A/JWV;SP5Y;CT STATES REAS CHOICE;CTS163D",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-10-08T09:00:00.000Z",
+      "docketEntryComment": "SPN INT SW;DEFNSE MO EXCL WITN FRM CTRM GRTD;DEFNSE MO CONT HG GRTDDEFT PERS W/TIME",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-09-03T14:01:00.000Z",
+      "docketEntryComment": "SPN INT SW;PD APPTD;REF APD FOR S/R DUE 10/01/91;REMANDED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-08-14T09:30:00.000Z",
+      "docketEntryComment": "SPN INT SW;A/JWV;ISS3YPROB;CTS50D;WS;REG11590HS;DT&C;NO DRG W/O RX;$100RF$50LF;$PC;ACCEPT PROB;OBEY LAW;IF DEPORT/LEAVE US,MUST NOT REENT ILLEGALY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-07-17T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-06-28T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1991-10-28 9:00 AM",
+      "hearingType": "Probation Revocation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 0,
+      "court_date": "1991-10-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Probation Revocation Hearing",
+      "hearing_type": "Probation Revocation Hearing",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1991-10-28 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 1,
+      "court_date": "1991-10-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1991-10-08 9:00 AM",
+      "hearingType": "Probation Revocation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 2,
+      "court_date": "1991-10-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Probation Revocation Hearing",
+      "hearing_type": "Probation Revocation Hearing",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1991-09-03 2:01 PM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1991-09-03",
+      "hearing_time": "2:01 PM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1991-08-14 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 4,
+      "court_date": "1991-08-14",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "E LLORENTE",
+      "type": "Public Defender"
+    },
+    {
+      "name": "H DONOHOE",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +166,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2512766",
+  "docket_entries": [
+    {
+      "filedDate": "1991-06-28T00:00:00.000Z",
+      "docketEntryComment": "REVOKE PROBATION",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1991-06-28T00:00:00.000Z",
+      "description": "REVOKE PROBATION",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-10-28T09:00:00.000Z",
+      "docketEntryComment": "SPN INT SW;CT FND DEFT IN VIOL PROB;PROB REV'DDEFT ADV RE PAROLE RTS & APPEAL RTS",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1991-10-28T09:00:00.000Z",
+      "description": "SPN INT SW;CT FND DEFT IN VIOL PROB;PROB REV'DDEFT ADV RE PAROLE RTS & APPEAL RTS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-10-28T09:00:00.000Z",
+      "docketEntryComment": "PROB REV'D;A/JWV;SP5Y;CT STATES REAS CHOICE;CTS163D",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1991-10-28T09:00:00.000Z",
+      "description": "PROB REV'D;A/JWV;SP5Y;CT STATES REAS CHOICE;CTS163D",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-10-08T09:00:00.000Z",
+      "docketEntryComment": "SPN INT SW;DEFNSE MO EXCL WITN FRM CTRM GRTD;DEFNSE MO CONT HG GRTDDEFT PERS W/TIME",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1991-10-08T09:00:00.000Z",
+      "description": "SPN INT SW;DEFNSE MO EXCL WITN FRM CTRM GRTD;DEFNSE MO CONT HG GRTDDEFT PERS W/TIME",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-09-03T14:01:00.000Z",
+      "docketEntryComment": "SPN INT SW;PD APPTD;REF APD FOR S/R DUE 10/01/91;REMANDED",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1991-09-03T14:01:00.000Z",
+      "description": "SPN INT SW;PD APPTD;REF APD FOR S/R DUE 10/01/91;REMANDED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-08-14T09:30:00.000Z",
+      "docketEntryComment": "SPN INT SW;A/JWV;ISS3YPROB;CTS50D;WS;REG11590HS;DT&C;NO DRG W/O RX;$100RF$50LF;$PC;ACCEPT PROB;OBEY LAW;IF DEPORT/LEAVE US,MUST NOT REENT ILLEGALY",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1991-08-14T09:30:00.000Z",
+      "description": "SPN INT SW;A/JWV;ISS3YPROB;CTS50D;WS;REG11590HS;DT&C;NO DRG W/O RX;$100RF$50LF;$PC;ACCEPT PROB;OBEY LAW;IF DEPORT/LEAVE US,MUST NOT REENT ILLEGALY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-07-17T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1991-07-17T00:00:00.000Z",
+      "description": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-06-28T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1991-06-28T00:00:00.000Z",
+      "description": "B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01311660",
-    "portal_case_id": "",
+    "portal_case_id": "2512766",
     "display_case_number": "CRI-01311660",
     "defendant": "MARIO DIAZ AGUILAR",
     "filed_date": "1991-06-28",
@@ -63,8 +265,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARIO DIAZ AGUILAR, and date of filing 1991-06-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARIO DIAZ AGUILAR, and date of filing 1991-06-28. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:48:46.461Z",
+  "portal_case_id": "2512766",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01311660",
+      "defendant": "MARIO DIAZ AGUILAR",
+      "filed_date": "1991-06-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2512766"
+  }
 }

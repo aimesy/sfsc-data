@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:09:00.045Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:47:21.550Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01295487",
   "criminal_case_number": "01295487",
@@ -24,11 +24,55 @@
       "name": "CARLTON ERWIN ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CARLTON ERWIN ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1991-04-04T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-05-17T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;CTS3D;WS;REG11590HS;DT&C;NO DRG W/O RX;$100RF;$50LF;$40PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-04-19T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1991-05-17 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1991-05-17",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S OGARA",
+      "type": "Public Defender"
+    },
+    {
+      "name": "G LEUNG",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +89,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2498620",
+  "docket_entries": [
+    {
+      "filedDate": "1991-04-04T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1991-04-04T00:00:00.000Z",
+      "description": "COMP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-05-17T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;CTS3D;WS;REG11590HS;DT&C;NO DRG W/O RX;$100RF;$50LF;$40PC",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1991-05-17T09:30:00.000Z",
+      "description": "A/JWV;ISS3YPROB;CTS3D;WS;REG11590HS;DT&C;NO DRG W/O RX;$100RF;$50LF;$40PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-04-19T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1991-04-19T00:00:00.000Z",
+      "description": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01295487",
-    "portal_case_id": "",
+    "portal_case_id": "2498620",
     "display_case_number": "CRI-01295487",
     "defendant": "CARLTON ERWIN ALLEN",
     "filed_date": "1991-04-04",
@@ -63,8 +138,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CARLTON ERWIN ALLEN, and date of filing 1991-04-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CARLTON ERWIN ALLEN, and date of filing 1991-04-04. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:47:22.197Z",
+  "portal_case_id": "2498620",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01295487",
+      "defendant": "CARLTON ERWIN ALLEN",
+      "filed_date": "1991-04-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2498620"
+  }
 }

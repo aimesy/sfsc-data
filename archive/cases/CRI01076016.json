@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:25:02.444Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:33:54.144Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01076016",
   "criminal_case_number": "01076016",
@@ -24,11 +24,108 @@
       "name": "CHARLES ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHARLES ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1990-02-05T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1988-05-17T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-03-09T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1988-04-11T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-04-26T08:45:00.000Z",
+      "docketEntryComment": "A/JWV;SP2Y;CTS135D;C/C W/125678",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-03-29T09:00:00.000Z",
+      "docketEntryComment": "DEFT MO W/D PLEA NG CT2 GRTD;ADV/PERS W/CONSTL RTS;PLD G CT2;CT MKES FNDGCT GRTS DA'S MO DISM REM CTS & STRK REM ALLEGS PUR 1385PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-03-12T09:30:00.000Z",
+      "docketEntryComment": "ARR;PLD NG EA CT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-02-26T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S $10,000 TOTAL",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-02-05T00:00:00.000Z",
+      "docketEntryComment": "BWD, 5DCJ/3DCTS, CI, B/S $10,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1988-05-17T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, BF (SB91150 $2500),  B/S $5,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1988-04-13T00:00:00.000Z",
+      "docketEntryComment": "B/S $2500",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1990-03-29 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 21",
+      "__index": 0,
+      "court_date": "1990-03-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 21",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1990-03-12 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1990-03-12",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "A CRESPO",
+      "type": "Public Defender"
+    },
+    {
+      "name": "J ALLEN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +142,122 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2310970",
+  "docket_entries": [
+    {
+      "filedDate": "1990-02-05T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1990-02-05T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1988-05-17T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1988-05-17T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-03-09T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1990-03-09T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1988-04-11T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1988-04-11T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-04-26T08:45:00.000Z",
+      "docketEntryComment": "A/JWV;SP2Y;CTS135D;C/C W/125678",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1990-04-26T08:45:00.000Z",
+      "description": "A/JWV;SP2Y;CTS135D;C/C W/125678",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-03-29T09:00:00.000Z",
+      "docketEntryComment": "DEFT MO W/D PLEA NG CT2 GRTD;ADV/PERS W/CONSTL RTS;PLD G CT2;CT MKES FNDGCT GRTS DA'S MO DISM REM CTS & STRK REM ALLEGS PUR 1385PC",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1990-03-29T09:00:00.000Z",
+      "description": "DEFT MO W/D PLEA NG CT2 GRTD;ADV/PERS W/CONSTL RTS;PLD G CT2;CT MKES FNDGCT GRTS DA'S MO DISM REM CTS & STRK REM ALLEGS PUR 1385PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-03-12T09:30:00.000Z",
+      "docketEntryComment": "ARR;PLD NG EA CT",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1990-03-12T09:30:00.000Z",
+      "description": "ARR;PLD NG EA CT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-02-26T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S $10,000 TOTAL",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1990-02-26T00:00:00.000Z",
+      "description": "HTA, B/S $10,000 TOTAL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-02-05T00:00:00.000Z",
+      "docketEntryComment": "BWD, 5DCJ/3DCTS, CI, B/S $10,000",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "1990-02-05T00:00:00.000Z",
+      "description": "BWD, 5DCJ/3DCTS, CI, B/S $10,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1988-05-17T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, BF (SB91150 $2500),  B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 9,
+      "date_filed": "1988-05-17T00:00:00.000Z",
+      "description": "BWI, FTA, BF (SB91150 $2500), B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1988-04-13T00:00:00.000Z",
+      "docketEntryComment": "B/S $2500",
+      "otherSubmitter": "",
+      "__index": 10,
+      "date_filed": "1988-04-13T00:00:00.000Z",
+      "description": "B/S $2500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01076016",
-    "portal_case_id": "",
+    "portal_case_id": "2310970",
     "display_case_number": "CRI-01076016",
     "defendant": "CHARLES ALLEN",
     "filed_date": "1988-04-11",
@@ -63,8 +271,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHARLES ALLEN, and date of filing 1988-04-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHARLES ALLEN, and date of filing 1988-04-11. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:33:54.895Z",
+  "portal_case_id": "2310970",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01076016",
+      "defendant": "CHARLES ALLEN",
+      "filed_date": "1988-04-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2310970"
+  }
 }

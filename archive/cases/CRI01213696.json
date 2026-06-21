@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:04:37.137Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:42:51.830Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01213696",
   "criminal_case_number": "01213696",
@@ -24,11 +24,75 @@
       "name": "ERIC ARTHUR ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ERIC ARTHUR ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1990-02-27T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-09-06T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-01-18T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-10-21T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;6MCJ;CTS23D;WS;NOER/CP/HD;ELIG WF;REG11590HS;DT&C;$100RFNO DRG W/O RX;$150PSR;$50LF;$40PC;ACCEPTS PROB",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-09-20T00:00:00.000Z",
+      "docketEntryComment": "CERT SUP COURT, SEE DOCKET FOR SENTENCE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-09-06T00:00:00.000Z",
+      "docketEntryComment": "BWD, 5DCJ/1CTS, CI, B/S $2,500",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-02-27T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, BAIL SET AT $10,000, OR REVOKED",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1991-10-21 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1991-10-21",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S OGARA",
+      "type": "Public Defender"
+    },
+    {
+      "name": "T CULLINAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +109,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2429612",
+  "docket_entries": [
+    {
+      "filedDate": "1990-02-27T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1990-02-27T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-09-06T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1991-09-06T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-01-18T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1990-01-18T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-10-21T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;6MCJ;CTS23D;WS;NOER/CP/HD;ELIG WF;REG11590HS;DT&C;$100RFNO DRG W/O RX;$150PSR;$50LF;$40PC;ACCEPTS PROB",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1991-10-21T09:30:00.000Z",
+      "description": "A/JWV;ISS3YPROB;6MCJ;CTS23D;WS;NOER/CP/HD;ELIG WF;REG11590HS;DT&C;$100RFNO DRG W/O RX;$150PSR;$50LF;$40PC;ACCEPTS PROB",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-09-20T00:00:00.000Z",
+      "docketEntryComment": "CERT SUP COURT, SEE DOCKET FOR SENTENCE",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1991-09-20T00:00:00.000Z",
+      "description": "CERT SUP COURT, SEE DOCKET FOR SENTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-09-06T00:00:00.000Z",
+      "docketEntryComment": "BWD, 5DCJ/1CTS, CI, B/S $2,500",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1991-09-06T00:00:00.000Z",
+      "description": "BWD, 5DCJ/1CTS, CI, B/S $2,500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-02-27T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, BAIL SET AT $10,000, OR REVOKED",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1990-02-27T00:00:00.000Z",
+      "description": "BWI, FTA, BAIL SET AT $10,000, OR REVOKED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01213696",
-    "portal_case_id": "",
+    "portal_case_id": "2429612",
     "display_case_number": "CRI-01213696",
     "defendant": "ERIC ARTHUR ADAMS",
     "filed_date": "1990-01-18",
@@ -63,8 +198,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ERIC ARTHUR ADAMS, and date of filing 1990-01-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ERIC ARTHUR ADAMS, and date of filing 1990-01-18. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:42:52.494Z",
+  "portal_case_id": "2429612",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01213696",
+      "defendant": "ERIC ARTHUR ADAMS",
+      "filed_date": "1990-01-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2429612"
+  }
 }

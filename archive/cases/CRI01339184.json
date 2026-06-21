@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:09.273Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:50:11.640Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01339184",
   "criminal_case_number": "01339184",
@@ -24,11 +24,60 @@
       "name": "CLYDELLE BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CLYDELLE BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1991-11-25T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-01-10T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;SP16M;CT STATES REAS;C/C ANY OTH COMMTMNT;CTS74D;$100RF;REMAND CIW",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-12-11T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-11-25T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000, S/A ORDER",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1992-01-10 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1992-01-10",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "R MARTIN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "A KENNEDY",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +94,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2536721",
+  "docket_entries": [
+    {
+      "filedDate": "1991-11-25T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1991-11-25T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-01-10T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;SP16M;CT STATES REAS;C/C ANY OTH COMMTMNT;CTS74D;$100RF;REMAND CIW",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1992-01-10T09:30:00.000Z",
+      "description": "A/JWV;SP16M;CT STATES REAS;C/C ANY OTH COMMTMNT;CTS74D;$100RF;REMAND CIW",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-12-11T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1991-12-11T00:00:00.000Z",
+      "description": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-11-25T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000, S/A ORDER",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1991-11-25T00:00:00.000Z",
+      "description": "B/S $5,000, S/A ORDER",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01339184",
-    "portal_case_id": "",
+    "portal_case_id": "2536721",
     "display_case_number": "CRI-01339184",
     "defendant": "CLYDELLE BROWN",
     "filed_date": "1991-11-25",
@@ -63,8 +153,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CLYDELLE BROWN, and date of filing 1991-11-25. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CLYDELLE BROWN, and date of filing 1991-11-25. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:50:12.230Z",
+  "portal_case_id": "2536721",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01339184",
+      "defendant": "CLYDELLE BROWN",
+      "filed_date": "1991-11-25"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2536721"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:23:20.788Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:43:11.672Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01225375",
   "criminal_case_number": "01225375",
@@ -24,11 +24,78 @@
       "name": "ANNIE LEE ARMSTRONG",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANNIE LEE ARMSTRONG",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1990-03-16T00:00:00.000Z",
+      "docketEntryComment": "PROGRESS REPORT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-07-19T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;1YCJ;CTS2D;NOCP/ER/WF;W/S;REST OUT POCKET LOSSES 10% FEEIF DEFT IN PROG,PRESENCE WAIVEDDT&C;$100RF;CJ SENT MAYBE SERVED HARRIET TUBMAN EMPOWERMENT HOUSEFAILURE DEFT SUCC COMP PROG,NO CTS ON SUBSEQ SENT-PROGRESS RPT ORDERED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-08-09T09:30:00.000Z",
+      "docketEntryComment": "CONT'D ON PROB",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-06-21T00:00:00.000Z",
+      "docketEntryComment": "CERT'D TO SUP COURT, SEE DOCKET FOR PROPOSED SENTENC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-03-16T00:00:00.000Z",
+      "docketEntryComment": "PD DECLARED CONFLICT",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1990-08-09 9:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1990-08-09",
+      "hearing_time": "9:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1990-07-19 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1990-07-19",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JAN CONFL ZIMMERMAN",
+      "type": "Appointed Counsel"
+    },
+    {
+      "name": "R BAUTISTA",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +112,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2439309",
+  "docket_entries": [
+    {
+      "filedDate": "1990-03-16T00:00:00.000Z",
+      "docketEntryComment": "PROGRESS REPORT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1990-03-16T00:00:00.000Z",
+      "description": "PROGRESS REPORT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-07-19T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;1YCJ;CTS2D;NOCP/ER/WF;W/S;REST OUT POCKET LOSSES 10% FEEIF DEFT IN PROG,PRESENCE WAIVEDDT&C;$100RF;CJ SENT MAYBE SERVED HARRIET TUBMAN EMPOWERMENT HOUSEFAILURE DEFT SUCC COMP PROG,NO CTS ON SUBSEQ SENT-PROGRESS RPT ORDERED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1990-07-19T09:30:00.000Z",
+      "description": "A/JWV;ISS3YPROB;1YCJ;CTS2D;NOCP/ER/WF;W/S;REST OUT POCKET LOSSES 10% FEEIF DEFT IN PROG,PRESENCE WAIVEDDT&C;$100RF;CJ SENT MAYBE SERVED HARRIET TUBMAN EMPOWERMENT HOUSEFAILURE DEFT SUCC COMP PROG,NO CTS ON SUBSEQ SENT-PROGRESS RPT ORDERED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-08-09T09:30:00.000Z",
+      "docketEntryComment": "CONT'D ON PROB",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1990-08-09T09:30:00.000Z",
+      "description": "CONT'D ON PROB",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-06-21T00:00:00.000Z",
+      "docketEntryComment": "CERT'D TO SUP COURT, SEE DOCKET FOR PROPOSED SENTENC",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1990-06-21T00:00:00.000Z",
+      "description": "CERT'D TO SUP COURT, SEE DOCKET FOR PROPOSED SENTENC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-03-16T00:00:00.000Z",
+      "docketEntryComment": "PD DECLARED CONFLICT",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1990-03-16T00:00:00.000Z",
+      "description": "PD DECLARED CONFLICT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01225375",
-    "portal_case_id": "",
+    "portal_case_id": "2439309",
     "display_case_number": "CRI-01225375",
     "defendant": "ANNIE LEE ARMSTRONG",
     "filed_date": "1990-03-16",
@@ -63,8 +181,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANNIE LEE ARMSTRONG, and date of filing 1990-03-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANNIE LEE ARMSTRONG, and date of filing 1990-03-16. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:43:12.821Z",
+  "portal_case_id": "2439309",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01225375",
+      "defendant": "ANNIE LEE ARMSTRONG",
+      "filed_date": "1990-03-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2439309"
+  }
 }

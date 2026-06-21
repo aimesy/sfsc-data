@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:45:32.517Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:54:10.941Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01380678",
   "criminal_case_number": "01380678",
@@ -24,11 +24,93 @@
       "name": "LEMUEL LEANDER BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LEMUEL LEANDER BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1992-07-15T00:00:00.000Z",
+      "docketEntryComment": "FOR PLEA & JOIN NEW CASE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-06-15T00:00:00.000Z",
+      "docketEntryComment": "FOR PLEA & JOIN NEW CASE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-12-16T08:15:00.000Z",
+      "docketEntryComment": "A/JWV;SP16M,C/C W/147001;CT STRKS PRS RE 1385PC;CTS242D",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-10-21T08:45:00.000Z",
+      "docketEntryComment": "MO TO W/D G PLEA TO BE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-08-11T14:00:00.000Z",
+      "docketEntryComment": "DEFT MO W/D PLEA NG CT1 GRTD;DEFT ADV/PERS WVS CONSTL/CITIZ RTS;PLD G CT1CT MKES FNDGS/ACCEPTS PLEA;CT DISM CT2",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-07-16T09:30:00.000Z",
+      "docketEntryComment": "DEFT ARR;PLEADS NG",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-07-02T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S $2,500",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-06-15T00:00:00.000Z",
+      "docketEntryComment": "B/S $2,500",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1992-08-11 2:00 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 0,
+      "court_date": "1992-08-11",
+      "hearing_time": "2:00 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1992-07-16 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1992-07-16",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "J ADACHI",
+      "type": "Public Defender"
+    },
+    {
+      "name": "J PINELLI",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +127,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2573700",
+  "docket_entries": [
+    {
+      "filedDate": "1992-07-15T00:00:00.000Z",
+      "docketEntryComment": "FOR PLEA & JOIN NEW CASE",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1992-07-15T00:00:00.000Z",
+      "description": "FOR PLEA & JOIN NEW CASE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-06-15T00:00:00.000Z",
+      "docketEntryComment": "FOR PLEA & JOIN NEW CASE",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1992-06-15T00:00:00.000Z",
+      "description": "FOR PLEA & JOIN NEW CASE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-12-16T08:15:00.000Z",
+      "docketEntryComment": "A/JWV;SP16M,C/C W/147001;CT STRKS PRS RE 1385PC;CTS242D",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1992-12-16T08:15:00.000Z",
+      "description": "A/JWV;SP16M,C/C W/147001;CT STRKS PRS RE 1385PC;CTS242D",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-10-21T08:45:00.000Z",
+      "docketEntryComment": "MO TO W/D G PLEA TO BE FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1992-10-21T08:45:00.000Z",
+      "description": "MO TO W/D G PLEA TO BE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-08-11T14:00:00.000Z",
+      "docketEntryComment": "DEFT MO W/D PLEA NG CT1 GRTD;DEFT ADV/PERS WVS CONSTL/CITIZ RTS;PLD G CT1CT MKES FNDGS/ACCEPTS PLEA;CT DISM CT2",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1992-08-11T14:00:00.000Z",
+      "description": "DEFT MO W/D PLEA NG CT1 GRTD;DEFT ADV/PERS WVS CONSTL/CITIZ RTS;PLD G CT1CT MKES FNDGS/ACCEPTS PLEA;CT DISM CT2",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-07-16T09:30:00.000Z",
+      "docketEntryComment": "DEFT ARR;PLEADS NG",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1992-07-16T09:30:00.000Z",
+      "description": "DEFT ARR;PLEADS NG",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-07-02T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S $2,500",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1992-07-02T00:00:00.000Z",
+      "description": "HTA, B/S $2,500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-06-15T00:00:00.000Z",
+      "docketEntryComment": "B/S $2,500",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1992-06-15T00:00:00.000Z",
+      "description": "B/S $2,500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01380678",
-    "portal_case_id": "",
+    "portal_case_id": "2573700",
     "display_case_number": "CRI-01380678",
     "defendant": "LEMUEL LEANDER BROWN",
     "filed_date": "1992-06-15",
@@ -63,8 +226,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LEMUEL LEANDER BROWN, and date of filing 1992-06-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LEMUEL LEANDER BROWN, and date of filing 1992-06-15. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:54:11.597Z",
+  "portal_case_id": "2573700",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01380678",
+      "defendant": "LEMUEL LEANDER BROWN",
+      "filed_date": "1992-06-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2573700"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:33:53.838Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:44:18.762Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01245862",
   "criminal_case_number": "01245862",
@@ -24,11 +24,137 @@
       "name": "DARVIN EARL BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DARVIN EARL BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1990-07-31T00:00:00.000Z",
+      "docketEntryComment": "CT ORDER-RET",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-07-03T00:00:00.000Z",
+      "docketEntryComment": "CT ORDER-RET",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-10-25T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;SP2Y;CTS255D;SENT NUNC PRO TUNC 9/19/91;C/C PRESENT SENTENCE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-10-25T09:30:00.000Z",
+      "docketEntryComment": "DEFT SENTENCED PURS 1203,2(A)PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-09-24T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3PROB;1YCJ;CTS85D;NOCP/ER/WF;W/S;$100RF;$25PC;ACCEPTS PROB",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-08-27T14:00:00.000Z",
+      "docketEntryComment": "DEFT MO W/D NG PLEA GRTD;DEFT ADV/WVS CONSTL RTS/CITIZ RTS;PLD G CT2CT MKES FNDGS;CT GRTS DA MO DISM CT1 & STRK ALLEG PR CONVS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-07-31T09:30:00.000Z",
+      "docketEntryComment": "PD REAPPTD;ARR;PLD NG EA CT;DEN ALEG PR FEL CONV1-PC667/1192,7-3PC667,5B",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-07-17T00:00:00.000Z",
+      "docketEntryComment": "HTA, BAIL SET AT $10,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-07-03T00:00:00.000Z",
+      "docketEntryComment": "BS $10,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1991-10-25 9:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1991-10-25",
+      "hearing_time": "9:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1991-10-25 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1991-10-25",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1990-09-24 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1990-09-24",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1990-08-27 2:00 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1990-08-27",
+      "hearing_time": "2:00 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1990-07-31 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 4,
+      "court_date": "1990-07-31",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S OGARA",
+      "type": "Public Defender"
+    },
+    {
+      "name": "G NORMAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +171,102 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2456368",
+  "docket_entries": [
+    {
+      "filedDate": "1990-07-31T00:00:00.000Z",
+      "docketEntryComment": "CT ORDER-RET",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1990-07-31T00:00:00.000Z",
+      "description": "CT ORDER-RET",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-07-03T00:00:00.000Z",
+      "docketEntryComment": "CT ORDER-RET",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1990-07-03T00:00:00.000Z",
+      "description": "CT ORDER-RET",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-10-25T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;SP2Y;CTS255D;SENT NUNC PRO TUNC 9/19/91;C/C PRESENT SENTENCE",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1991-10-25T09:30:00.000Z",
+      "description": "A/JWV;SP2Y;CTS255D;SENT NUNC PRO TUNC 9/19/91;C/C PRESENT SENTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-10-25T09:30:00.000Z",
+      "docketEntryComment": "DEFT SENTENCED PURS 1203,2(A)PC",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1991-10-25T09:30:00.000Z",
+      "description": "DEFT SENTENCED PURS 1203,2(A)PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-09-24T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3PROB;1YCJ;CTS85D;NOCP/ER/WF;W/S;$100RF;$25PC;ACCEPTS PROB",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1990-09-24T09:30:00.000Z",
+      "description": "A/JWV;ISS3PROB;1YCJ;CTS85D;NOCP/ER/WF;W/S;$100RF;$25PC;ACCEPTS PROB",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-08-27T14:00:00.000Z",
+      "docketEntryComment": "DEFT MO W/D NG PLEA GRTD;DEFT ADV/WVS CONSTL RTS/CITIZ RTS;PLD G CT2CT MKES FNDGS;CT GRTS DA MO DISM CT1 & STRK ALLEG PR CONVS",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1990-08-27T14:00:00.000Z",
+      "description": "DEFT MO W/D NG PLEA GRTD;DEFT ADV/WVS CONSTL RTS/CITIZ RTS;PLD G CT2CT MKES FNDGS;CT GRTS DA MO DISM CT1 & STRK ALLEG PR CONVS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-07-31T09:30:00.000Z",
+      "docketEntryComment": "PD REAPPTD;ARR;PLD NG EA CT;DEN ALEG PR FEL CONV1-PC667/1192,7-3PC667,5B",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1990-07-31T09:30:00.000Z",
+      "description": "PD REAPPTD;ARR;PLD NG EA CT;DEN ALEG PR FEL CONV1-PC667/1192,7-3PC667,5B",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-07-17T00:00:00.000Z",
+      "docketEntryComment": "HTA, BAIL SET AT $10,000",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1990-07-17T00:00:00.000Z",
+      "description": "HTA, BAIL SET AT $10,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-07-03T00:00:00.000Z",
+      "docketEntryComment": "BS $10,000",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "1990-07-03T00:00:00.000Z",
+      "description": "BS $10,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01245862",
-    "portal_case_id": "",
+    "portal_case_id": "2456368",
     "display_case_number": "CRI-01245862",
     "defendant": "DARVIN EARL BROWN",
     "filed_date": "1990-07-03",
@@ -59,12 +276,36 @@
       "defendant": "DARVIN EARL BROWN",
       "filed_date": "1990-07-03"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC667",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DARVIN EARL BROWN, and date of filing 1990-07-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DARVIN EARL BROWN, and date of filing 1990-07-03. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:44:19.786Z",
+  "portal_case_id": "2456368",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01245862",
+      "defendant": "DARVIN EARL BROWN",
+      "filed_date": "1990-07-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2456368"
+  }
 }

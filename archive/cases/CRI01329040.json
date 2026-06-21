@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:11:03.932Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:49:25.466Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01329040",
   "criminal_case_number": "01329040",
@@ -24,9 +24,40 @@
       "name": "VICTORIANO ALVAREZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "VICTORIANO ALVAREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1991-10-04T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-02-20T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-10-01T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-02-20T00:00:00.000Z",
+      "docketEntryComment": "DA WDWS COMPLT AND DISCH CASE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-10-04T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA,B/S $1000",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -45,11 +76,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2527801",
+  "docket_entries": [
+    {
+      "filedDate": "1991-10-04T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1991-10-04T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-02-20T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-02-20T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-10-01T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1991-10-01T00:00:00.000Z",
+      "description": "COMP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-02-20T00:00:00.000Z",
+      "docketEntryComment": "DA WDWS COMPLT AND DISCH CASE",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1996-02-20T00:00:00.000Z",
+      "description": "DA WDWS COMPLT AND DISCH CASE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-10-04T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA,B/S $1000",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1991-10-04T00:00:00.000Z",
+      "description": "BWI, FTA,B/S $1000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01329040",
-    "portal_case_id": "",
+    "portal_case_id": "2527801",
     "display_case_number": "CRI-01329040",
     "defendant": "VICTORIANO ALVAREZ",
     "filed_date": "1991-10-01",
@@ -63,8 +145,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, VICTORIANO ALVAREZ, and date of filing 1991-10-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, VICTORIANO ALVAREZ, and date of filing 1991-10-01. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:49:26.070Z",
+  "portal_case_id": "2527801",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01329040",
+      "defendant": "VICTORIANO ALVAREZ",
+      "filed_date": "1991-10-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2527801"
+  }
 }

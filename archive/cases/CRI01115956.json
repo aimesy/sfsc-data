@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:14:49.136Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:36:41.131Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01115956",
   "criminal_case_number": "01115956",
@@ -24,11 +24,83 @@
       "name": "ROYLAND R BAILEY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROYLAND R BAILEY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1988-10-03T00:00:00.000Z",
+      "docketEntryComment": "TO SET BIF PRELIM",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1989-10-11T08:30:00.000Z",
+      "docketEntryComment": "CT ORD PROB TERMINATED UNSUCCESSFULLY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1989-02-06T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;1YCJ;CTS39D;NOCP/EARLY REL;W/S;REG 11590HSPOSS NODRGS W/O RX;DRG TESTNG/CNSLNG;$100RF;$50LF;$25/MO PC;ACCEPTS TERMS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1989-01-09T09:30:00.000Z",
+      "docketEntryComment": "CT MKES INQUIRY IN RE IBARRA;DEFT REMANDED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1988-12-12T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1988-10-03T00:00:00.000Z",
+      "docketEntryComment": "BAIL SET AT $5000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1989-02-06 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1989-02-06",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1989-01-09 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1989-01-09",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S KAPLAN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "H DORFMAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +117,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2345976",
+  "docket_entries": [
+    {
+      "filedDate": "1988-10-03T00:00:00.000Z",
+      "docketEntryComment": "TO SET BIF PRELIM",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1988-10-03T00:00:00.000Z",
+      "description": "TO SET BIF PRELIM",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1989-10-11T08:30:00.000Z",
+      "docketEntryComment": "CT ORD PROB TERMINATED UNSUCCESSFULLY",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1989-10-11T08:30:00.000Z",
+      "description": "CT ORD PROB TERMINATED UNSUCCESSFULLY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1989-02-06T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;1YCJ;CTS39D;NOCP/EARLY REL;W/S;REG 11590HSPOSS NODRGS W/O RX;DRG TESTNG/CNSLNG;$100RF;$50LF;$25/MO PC;ACCEPTS TERMS",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1989-02-06T09:30:00.000Z",
+      "description": "A/JWV;ISS3YPROB;1YCJ;CTS39D;NOCP/EARLY REL;W/S;REG 11590HSPOSS NODRGS W/O RX;DRG TESTNG/CNSLNG;$100RF;$50LF;$25/MO PC;ACCEPTS TERMS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1989-01-09T09:30:00.000Z",
+      "docketEntryComment": "CT MKES INQUIRY IN RE IBARRA;DEFT REMANDED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1989-01-09T09:30:00.000Z",
+      "description": "CT MKES INQUIRY IN RE IBARRA;DEFT REMANDED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1988-12-12T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1988-12-12T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1988-10-03T00:00:00.000Z",
+      "docketEntryComment": "BAIL SET AT $5000",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1988-10-03T00:00:00.000Z",
+      "description": "BAIL SET AT $5000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01115956",
-    "portal_case_id": "",
+    "portal_case_id": "2345976",
     "display_case_number": "CRI-01115956",
     "defendant": "ROYLAND R BAILEY",
     "filed_date": "1988-10-03",
@@ -63,8 +196,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROYLAND R BAILEY, and date of filing 1988-10-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROYLAND R BAILEY, and date of filing 1988-10-03. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:36:41.791Z",
+  "portal_case_id": "2345976",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01115956",
+      "defendant": "ROYLAND R BAILEY",
+      "filed_date": "1988-10-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2345976"
+  }
 }

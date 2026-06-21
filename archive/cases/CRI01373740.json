@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:58:25.071Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:53:54.259Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01373740",
   "criminal_case_number": "01373740",
@@ -24,11 +24,88 @@
       "name": "KARLOS BURNS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KARLOS BURNS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1992-05-18T00:00:00.000Z",
+      "docketEntryComment": "REVOKE PROBATION",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-10-13T09:00:00.000Z",
+      "docketEntryComment": "A/JWV;SP3Y/ESS;CT STATES REAS;3YPROB;1YCJ;CTS156D;NOCP/ER/WF/HD;W/S$100RF;OP REST;$40/PC;REST INCLUDE #1373740,1369885,1330050STAY AWAY FRM FAIRMONT HOTEL-480 SUTTER ST,HYATT,FISHERMAN,ETC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-03-15T08:45:00.000Z",
+      "docketEntryComment": "CT FND VIO PROB",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-03-15T08:45:00.000Z",
+      "docketEntryComment": "LIFT STAY OF ORD ESS 10/13/92-SP3Y(U);CTS325D;$100RF;ADV PAROLE/APPEAL RT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-02-02T14:01:00.000Z",
+      "docketEntryComment": "PD APPTD;REF APD S/R TO BE FILED 3/8/93;REMANDED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-09-15T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-05-18T00:00:00.000Z",
+      "docketEntryComment": "B/S $10,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1993-02-02 2:01 PM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1993-02-02",
+      "hearing_time": "2:01 PM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1992-10-13 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1992-10-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "B COHEN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "P PETRONI",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +122,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2567722",
+  "docket_entries": [
+    {
+      "filedDate": "1992-05-18T00:00:00.000Z",
+      "docketEntryComment": "REVOKE PROBATION",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1992-05-18T00:00:00.000Z",
+      "description": "REVOKE PROBATION",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-10-13T09:00:00.000Z",
+      "docketEntryComment": "A/JWV;SP3Y/ESS;CT STATES REAS;3YPROB;1YCJ;CTS156D;NOCP/ER/WF/HD;W/S$100RF;OP REST;$40/PC;REST INCLUDE #1373740,1369885,1330050STAY AWAY FRM FAIRMONT HOTEL-480 SUTTER ST,HYATT,FISHERMAN,ETC",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1992-10-13T09:00:00.000Z",
+      "description": "A/JWV;SP3Y/ESS;CT STATES REAS;3YPROB;1YCJ;CTS156D;NOCP/ER/WF/HD;W/S$100RF;OP REST;$40/PC;REST INCLUDE #1373740,1369885,1330050STAY AWAY FRM FAIRMONT HOTEL-480 SUTTER ST,HYATT,FISHERMAN,ETC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-03-15T08:45:00.000Z",
+      "docketEntryComment": "CT FND VIO PROB",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1993-03-15T08:45:00.000Z",
+      "description": "CT FND VIO PROB",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-03-15T08:45:00.000Z",
+      "docketEntryComment": "LIFT STAY OF ORD ESS 10/13/92-SP3Y(U);CTS325D;$100RF;ADV PAROLE/APPEAL RT",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1993-03-15T08:45:00.000Z",
+      "description": "LIFT STAY OF ORD ESS 10/13/92-SP3Y(U);CTS325D;$100RF;ADV PAROLE/APPEAL RT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-02-02T14:01:00.000Z",
+      "docketEntryComment": "PD APPTD;REF APD S/R TO BE FILED 3/8/93;REMANDED",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1993-02-02T14:01:00.000Z",
+      "description": "PD APPTD;REF APD S/R TO BE FILED 3/8/93;REMANDED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-09-15T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1992-09-15T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-05-18T00:00:00.000Z",
+      "docketEntryComment": "B/S $10,000",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1992-05-18T00:00:00.000Z",
+      "description": "B/S $10,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01373740",
-    "portal_case_id": "",
+    "portal_case_id": "2567722",
     "display_case_number": "CRI-01373740",
     "defendant": "KARLOS BURNS",
     "filed_date": "1992-05-18",
@@ -63,8 +211,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KARLOS BURNS, and date of filing 1992-05-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KARLOS BURNS, and date of filing 1992-05-18. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:53:54.885Z",
+  "portal_case_id": "2567722",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01373740",
+      "defendant": "KARLOS BURNS",
+      "filed_date": "1992-05-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2567722"
+  }
 }

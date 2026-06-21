@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:58:41.839Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:42:06.353Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01206610",
   "criminal_case_number": "01206610",
@@ -24,11 +24,60 @@
       "name": "WILLIE EUGENE ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "WILLIE EUGENE ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1989-12-11T00:00:00.000Z",
+      "docketEntryComment": "TO BE SET",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-01-18T09:30:00.000Z",
+      "docketEntryComment": "MO DA STRK PRS GRTD;A/JWV;SP16M;CT STATES REAS SENT CHOICE;$100RFC/C W/PAROLE VIOL;CTS62D",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-01-11T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKT FOR PROPOSED SENTENCE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1989-12-11T00:00:00.000Z",
+      "docketEntryComment": "B/S $7,500",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1990-01-18 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1990-01-18",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "B HECKMAN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "K VINES",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +94,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2423568",
+  "docket_entries": [
+    {
+      "filedDate": "1989-12-11T00:00:00.000Z",
+      "docketEntryComment": "TO BE SET",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1989-12-11T00:00:00.000Z",
+      "description": "TO BE SET",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-01-18T09:30:00.000Z",
+      "docketEntryComment": "MO DA STRK PRS GRTD;A/JWV;SP16M;CT STATES REAS SENT CHOICE;$100RFC/C W/PAROLE VIOL;CTS62D",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1990-01-18T09:30:00.000Z",
+      "description": "MO DA STRK PRS GRTD;A/JWV;SP16M;CT STATES REAS SENT CHOICE;$100RFC/C W/PAROLE VIOL;CTS62D",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-01-11T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKT FOR PROPOSED SENTENCE",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1990-01-11T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT, SEE DOCKT FOR PROPOSED SENTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1989-12-11T00:00:00.000Z",
+      "docketEntryComment": "B/S $7,500",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1989-12-11T00:00:00.000Z",
+      "description": "B/S $7,500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01206610",
-    "portal_case_id": "",
+    "portal_case_id": "2423568",
     "display_case_number": "CRI-01206610",
     "defendant": "WILLIE EUGENE ADAMS",
     "filed_date": "1989-12-11",
@@ -63,8 +153,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, WILLIE EUGENE ADAMS, and date of filing 1989-12-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, WILLIE EUGENE ADAMS, and date of filing 1989-12-11. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:42:07.054Z",
+  "portal_case_id": "2423568",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01206610",
+      "defendant": "WILLIE EUGENE ADAMS",
+      "filed_date": "1989-12-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2423568"
+  }
 }

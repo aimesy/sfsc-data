@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:29:25.989Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:45:54.147Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01272425",
   "criminal_case_number": "01272425",
@@ -24,11 +24,101 @@
       "name": "CORNELL BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CORNELL BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1991-05-01T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-11-26T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-06-14T09:00:00.000Z",
+      "docketEntryComment": "STIP 664/496,1PC,L&IOFF CT2;DEFT ADV/PERS WVS CONSTL/CITIZ RTS;PLD G CT2ADV RE IBARRA;WVS SENT BY JUDGE PERASSO;CT MKES FNDGS/ACCEPTS PLEACT GRTS DA MO DISM & STRK REM CTS & ALLEG AS EVIDENTIALY PROBLEMS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-07-15T09:00:00.000Z",
+      "docketEntryComment": "A/JWV;SP8M;CT STATES REAS CHOICE;CTS351D;$100RF;DEFT ADV RE PAROLE RTS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-05-02T09:30:00.000Z",
+      "docketEntryComment": "PD REAPPTD;ARR;FILING INFO-WVD;PLD NG EA CT;DEN ALLEGS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-04-18T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S $5,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-11-26T00:00:00.000Z",
+      "docketEntryComment": "BS $5000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1991-07-15 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 0,
+      "court_date": "1991-07-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1991-06-14 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 1,
+      "court_date": "1991-06-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1991-05-02 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1991-05-02",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "W MAAS",
+      "type": "Public Defender"
+    },
+    {
+      "name": "J PINELLI",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +135,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2478790",
+  "docket_entries": [
+    {
+      "filedDate": "1991-05-01T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1991-05-01T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-11-26T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1990-11-26T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-06-14T09:00:00.000Z",
+      "docketEntryComment": "STIP 664/496,1PC,L&IOFF CT2;DEFT ADV/PERS WVS CONSTL/CITIZ RTS;PLD G CT2ADV RE IBARRA;WVS SENT BY JUDGE PERASSO;CT MKES FNDGS/ACCEPTS PLEACT GRTS DA MO DISM & STRK REM CTS & ALLEG AS EVIDENTIALY PROBLEMS",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1991-06-14T09:00:00.000Z",
+      "description": "STIP 664/496,1PC,L&IOFF CT2;DEFT ADV/PERS WVS CONSTL/CITIZ RTS;PLD G CT2ADV RE IBARRA;WVS SENT BY JUDGE PERASSO;CT MKES FNDGS/ACCEPTS PLEACT GRTS DA MO DISM & STRK REM CTS & ALLEG AS EVIDENTIALY PROBLEMS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-07-15T09:00:00.000Z",
+      "docketEntryComment": "A/JWV;SP8M;CT STATES REAS CHOICE;CTS351D;$100RF;DEFT ADV RE PAROLE RTS",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1991-07-15T09:00:00.000Z",
+      "description": "A/JWV;SP8M;CT STATES REAS CHOICE;CTS351D;$100RF;DEFT ADV RE PAROLE RTS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-05-02T09:30:00.000Z",
+      "docketEntryComment": "PD REAPPTD;ARR;FILING INFO-WVD;PLD NG EA CT;DEN ALLEGS",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1991-05-02T09:30:00.000Z",
+      "description": "PD REAPPTD;ARR;FILING INFO-WVD;PLD NG EA CT;DEN ALLEGS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-04-18T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1991-04-18T00:00:00.000Z",
+      "description": "HTA, B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-11-26T00:00:00.000Z",
+      "docketEntryComment": "BS $5000",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1990-11-26T00:00:00.000Z",
+      "description": "BS $5000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01272425",
-    "portal_case_id": "",
+    "portal_case_id": "2478790",
     "display_case_number": "CRI-01272425",
     "defendant": "CORNELL BROWN",
     "filed_date": "1990-11-26",
@@ -63,8 +224,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CORNELL BROWN, and date of filing 1990-11-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CORNELL BROWN, and date of filing 1990-11-26. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:45:54.776Z",
+  "portal_case_id": "2478790",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01272425",
+      "defendant": "CORNELL BROWN",
+      "filed_date": "1990-11-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2478790"
+  }
 }

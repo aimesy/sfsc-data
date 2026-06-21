@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:37:52.080Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:44:54.130Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01255913",
   "criminal_case_number": "01255913",
@@ -24,11 +24,101 @@
       "name": "JOANN DOLORES ALEXANDER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOANN DOLORES ALEXANDER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1990-09-21T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-08-28T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-11-09T14:00:00.000Z",
+      "docketEntryComment": "A/JWV;30D-CREDIT FOR TIME SERVED;MO STRK ALLEG 1192,7(C)(23)PC GRTDADV/WVS IBARRA RTS;CT MKES FNDGS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-11-09T14:00:00.000Z",
+      "docketEntryComment": "MO W/D NG PLEA GRTD;DEFT PLD G 242PC/MISD,BY STIP;ADV/WVS CONSTL/CITIZ RT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-09-24T09:30:00.000Z",
+      "docketEntryComment": "CNSL APPTD;ARR;PLD NG W/ATTENDANT ALLEG PUR 1192,7(C)(23)PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-09-10T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S $5,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-08-28T00:00:00.000Z",
+      "docketEntryComment": "B/S $10,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1990-11-09 2:00 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 24",
+      "__index": 0,
+      "court_date": "1990-11-09",
+      "hearing_time": "2:00 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 24",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1990-11-09 2:00 PM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 24",
+      "__index": 1,
+      "court_date": "1990-11-09",
+      "hearing_time": "2:00 PM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 24",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1990-09-24 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1990-09-24",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "M LEFF",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "F ANDREWS",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +135,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2464760",
+  "docket_entries": [
+    {
+      "filedDate": "1990-09-21T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1990-09-21T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-08-28T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1990-08-28T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-11-09T14:00:00.000Z",
+      "docketEntryComment": "A/JWV;30D-CREDIT FOR TIME SERVED;MO STRK ALLEG 1192,7(C)(23)PC GRTDADV/WVS IBARRA RTS;CT MKES FNDGS",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1990-11-09T14:00:00.000Z",
+      "description": "A/JWV;30D-CREDIT FOR TIME SERVED;MO STRK ALLEG 1192,7(C)(23)PC GRTDADV/WVS IBARRA RTS;CT MKES FNDGS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-11-09T14:00:00.000Z",
+      "docketEntryComment": "MO W/D NG PLEA GRTD;DEFT PLD G 242PC/MISD,BY STIP;ADV/WVS CONSTL/CITIZ RT",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1990-11-09T14:00:00.000Z",
+      "description": "MO W/D NG PLEA GRTD;DEFT PLD G 242PC/MISD,BY STIP;ADV/WVS CONSTL/CITIZ RT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-09-24T09:30:00.000Z",
+      "docketEntryComment": "CNSL APPTD;ARR;PLD NG W/ATTENDANT ALLEG PUR 1192,7(C)(23)PC",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1990-09-24T09:30:00.000Z",
+      "description": "CNSL APPTD;ARR;PLD NG W/ATTENDANT ALLEG PUR 1192,7(C)(23)PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-09-10T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1990-09-10T00:00:00.000Z",
+      "description": "HTA, B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-08-28T00:00:00.000Z",
+      "docketEntryComment": "B/S $10,000",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1990-08-28T00:00:00.000Z",
+      "description": "B/S $10,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01255913",
-    "portal_case_id": "",
+    "portal_case_id": "2464760",
     "display_case_number": "CRI-01255913",
     "defendant": "JOANN DOLORES ALEXANDER",
     "filed_date": "1990-08-28",
@@ -63,8 +224,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOANN DOLORES ALEXANDER, and date of filing 1990-08-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOANN DOLORES ALEXANDER, and date of filing 1990-08-28. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:44:54.776Z",
+  "portal_case_id": "2464760",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01255913",
+      "defendant": "JOANN DOLORES ALEXANDER",
+      "filed_date": "1990-08-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2464760"
+  }
 }

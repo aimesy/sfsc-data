@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:37.680Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:43:58.433Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01234172",
   "criminal_case_number": "01234172",
@@ -24,11 +24,60 @@
       "name": "OMAR ZUHUETA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "OMAR ZUHUETA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1990-04-30T00:00:00.000Z",
+      "docketEntryComment": "BAIL HRG, SET & ID",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-06-12T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;SP16M;CT STATES REAS SENT CHOICE;CTS72D;$100RF;REMAND SAN QUENTIN",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-05-15T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-04-30T00:00:00.000Z",
+      "docketEntryComment": "BS $10,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1990-06-12 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1990-06-12",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "J UMALI",
+      "type": "Public Defender"
+    },
+    {
+      "name": "L MOORE",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +94,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2446723",
+  "docket_entries": [
+    {
+      "filedDate": "1990-04-30T00:00:00.000Z",
+      "docketEntryComment": "BAIL HRG, SET & ID",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1990-04-30T00:00:00.000Z",
+      "description": "BAIL HRG, SET & ID",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-06-12T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;SP16M;CT STATES REAS SENT CHOICE;CTS72D;$100RF;REMAND SAN QUENTIN",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1990-06-12T09:30:00.000Z",
+      "description": "A/JWV;SP16M;CT STATES REAS SENT CHOICE;CTS72D;$100RF;REMAND SAN QUENTIN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-05-15T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1990-05-15T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-04-30T00:00:00.000Z",
+      "docketEntryComment": "BS $10,000",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1990-04-30T00:00:00.000Z",
+      "description": "BS $10,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01234172",
-    "portal_case_id": "",
+    "portal_case_id": "2446723",
     "display_case_number": "CRI-01234172",
     "defendant": "OMAR ZUHUETA",
     "filed_date": "1990-04-30",
@@ -63,8 +153,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, OMAR ZUHUETA, and date of filing 1990-04-30. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, OMAR ZUHUETA, and date of filing 1990-04-30. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:43:59.034Z",
+  "portal_case_id": "2446723",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01234172",
+      "defendant": "OMAR ZUHUETA",
+      "filed_date": "1990-04-30"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2446723"
+  }
 }

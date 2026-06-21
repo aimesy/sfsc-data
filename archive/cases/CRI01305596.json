@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:45.194Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:48:00.379Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01305596",
   "criminal_case_number": "01305596",
@@ -24,11 +24,56 @@
       "name": "JOHN QUINCY ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN QUINCY ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1991-05-28T00:00:00.000Z",
+      "docketEntryComment": "TO SET (CDC HOLD)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-07-31T09:30:00.000Z",
+      "docketEntryComment": "INFO NOT TO BE FILED PER RING/R",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-07-17T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S $5,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-05-28T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1991-07-31 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1991-07-31",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "T CAPRIOLO",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +90,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2507452",
+  "docket_entries": [
+    {
+      "filedDate": "1991-05-28T00:00:00.000Z",
+      "docketEntryComment": "TO SET (CDC HOLD)",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1991-05-28T00:00:00.000Z",
+      "description": "TO SET (CDC HOLD)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-07-31T09:30:00.000Z",
+      "docketEntryComment": "INFO NOT TO BE FILED PER RING/R",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1991-07-31T09:30:00.000Z",
+      "description": "INFO NOT TO BE FILED PER RING/R",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-07-17T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1991-07-17T00:00:00.000Z",
+      "description": "HTA, B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-05-28T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1991-05-28T00:00:00.000Z",
+      "description": "B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01305596",
-    "portal_case_id": "",
+    "portal_case_id": "2507452",
     "display_case_number": "CRI-01305596",
     "defendant": "JOHN QUINCY ADAMS",
     "filed_date": "1991-05-28",
@@ -63,8 +149,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN QUINCY ADAMS, and date of filing 1991-05-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN QUINCY ADAMS, and date of filing 1991-05-28. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:48:00.987Z",
+  "portal_case_id": "2507452",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01305596",
+      "defendant": "JOHN QUINCY ADAMS",
+      "filed_date": "1991-05-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2507452"
+  }
 }

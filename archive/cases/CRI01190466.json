@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:37:18.830Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:41:12.727Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01190466",
   "criminal_case_number": "01190466",
@@ -24,11 +24,70 @@
       "name": "LARRY ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LARRY ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1989-09-15T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-02-16T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;90DCJ;CTS5D;SWAP RPT 3/7/90  800AM;W/S;REG11590HS;DT&CNO DRG W/S RX;$100RF;$50LF;$25PC;ACCEPTS PROB",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-01-22T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1989-11-03T00:00:00.000Z",
+      "docketEntryComment": "MOT/CONT GRANTED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1989-09-18T00:00:00.000Z",
+      "docketEntryComment": "B/S $1,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1989-09-15T00:00:00.000Z",
+      "docketEntryComment": "DFT AT SFGH",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1990-02-16 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1990-02-16",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "I CONFL BARG",
+      "type": "Appointed Counsel"
+    },
+    {
+      "name": "M MORENO",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +104,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2409950",
+  "docket_entries": [
+    {
+      "filedDate": "1989-09-15T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1989-09-15T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-02-16T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;90DCJ;CTS5D;SWAP RPT 3/7/90  800AM;W/S;REG11590HS;DT&CNO DRG W/S RX;$100RF;$50LF;$25PC;ACCEPTS PROB",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1990-02-16T09:30:00.000Z",
+      "description": "A/JWV;ISS3YPROB;90DCJ;CTS5D;SWAP RPT 3/7/90 800AM;W/S;REG11590HS;DT&CNO DRG W/S RX;$100RF;$50LF;$25PC;ACCEPTS PROB",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-01-22T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1990-01-22T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1989-11-03T00:00:00.000Z",
+      "docketEntryComment": "MOT/CONT GRANTED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1989-11-03T00:00:00.000Z",
+      "description": "MOT/CONT GRANTED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1989-09-18T00:00:00.000Z",
+      "docketEntryComment": "B/S $1,000",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1989-09-18T00:00:00.000Z",
+      "description": "B/S $1,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1989-09-15T00:00:00.000Z",
+      "docketEntryComment": "DFT AT SFGH",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1989-09-15T00:00:00.000Z",
+      "description": "DFT AT SFGH",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01190466",
-    "portal_case_id": "",
+    "portal_case_id": "2409950",
     "display_case_number": "CRI-01190466",
     "defendant": "LARRY ALLEN",
     "filed_date": "1989-09-15",
@@ -63,8 +183,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LARRY ALLEN, and date of filing 1989-09-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LARRY ALLEN, and date of filing 1989-09-15. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:41:13.898Z",
+  "portal_case_id": "2409950",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01190466",
+      "defendant": "LARRY ALLEN",
+      "filed_date": "1989-09-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2409950"
+  }
 }

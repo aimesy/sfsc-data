@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:38:03.461Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:50:07.562Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01338160",
   "criminal_case_number": "01338160",
@@ -24,11 +24,95 @@
       "name": "ROBERT A AUSTIN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROBERT A AUSTIN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1992-04-22T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-11-17T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-04-13T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-10-01T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-11-18T00:00:00.000Z",
+      "docketEntryComment": "SET/DISPO",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-02-10T09:00:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;1YCJ;CTS90D;W/S;REG11590HS;DT&C;NODRGS W/O RX;$200RF$150PSR;$50LF;$40PC;ACCEPTS;NOCP/ER/HD/WF;$500 FINE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-01-12T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUPERIOR COURT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-11-17T00:00:00.000Z",
+      "docketEntryComment": "BWD, 5DCJ/1CTS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-10-01T00:00:00.000Z",
+      "docketEntryComment": "FTA PRELIM HRG, BWI, BS $5000, OR REVOKED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-04-22T00:00:00.000Z",
+      "docketEntryComment": "BWR, N/C",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-04-13T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $3,500, OR RVKD",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1993-02-10 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1993-02-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S KAPLAN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "R HECHLER",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +129,122 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2535810",
+  "docket_entries": [
+    {
+      "filedDate": "1992-04-22T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1992-04-22T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-11-17T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1992-11-17T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-04-13T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1992-04-13T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-10-01T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1992-10-01T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-11-18T00:00:00.000Z",
+      "docketEntryComment": "SET/DISPO",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1991-11-18T00:00:00.000Z",
+      "description": "SET/DISPO",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-02-10T09:00:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;1YCJ;CTS90D;W/S;REG11590HS;DT&C;NODRGS W/O RX;$200RF$150PSR;$50LF;$40PC;ACCEPTS;NOCP/ER/HD/WF;$500 FINE",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1993-02-10T09:00:00.000Z",
+      "description": "A/JWV;ISS3YPROB;1YCJ;CTS90D;W/S;REG11590HS;DT&C;NODRGS W/O RX;$200RF$150PSR;$50LF;$40PC;ACCEPTS;NOCP/ER/HD/WF;$500 FINE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-01-12T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUPERIOR COURT",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1993-01-12T00:00:00.000Z",
+      "description": "CERTIFIED TO SUPERIOR COURT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-11-17T00:00:00.000Z",
+      "docketEntryComment": "BWD, 5DCJ/1CTS",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1992-11-17T00:00:00.000Z",
+      "description": "BWD, 5DCJ/1CTS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-10-01T00:00:00.000Z",
+      "docketEntryComment": "FTA PRELIM HRG, BWI, BS $5000, OR REVOKED",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "1992-10-01T00:00:00.000Z",
+      "description": "FTA PRELIM HRG, BWI, BS $5000, OR REVOKED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-04-22T00:00:00.000Z",
+      "docketEntryComment": "BWR, N/C",
+      "otherSubmitter": "",
+      "__index": 9,
+      "date_filed": "1992-04-22T00:00:00.000Z",
+      "description": "BWR, N/C",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-04-13T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $3,500, OR RVKD",
+      "otherSubmitter": "",
+      "__index": 10,
+      "date_filed": "1992-04-13T00:00:00.000Z",
+      "description": "BWI, FTA, B/S $3,500, OR RVKD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01338160",
-    "portal_case_id": "",
+    "portal_case_id": "2535810",
     "display_case_number": "CRI-01338160",
     "defendant": "ROBERT A AUSTIN",
     "filed_date": "1991-11-18",
@@ -63,8 +258,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROBERT A AUSTIN, and date of filing 1991-11-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROBERT A AUSTIN, and date of filing 1991-11-18. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:50:08.158Z",
+  "portal_case_id": "2535810",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01338160",
+      "defendant": "ROBERT A AUSTIN",
+      "filed_date": "1991-11-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2535810"
+  }
 }

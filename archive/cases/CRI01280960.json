@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:31:53.078Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:46:38.140Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01280960",
   "criminal_case_number": "01280960",
@@ -24,11 +24,56 @@
       "name": "STEVEN BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "STEVEN BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1991-01-17T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-03-08T09:30:00.000Z",
+      "docketEntryComment": "O/C;INFORMATION NOT FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-02-22T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S $5,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-01-17T00:00:00.000Z",
+      "docketEntryComment": "BS $5,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1991-03-08 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1991-03-08",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S CROSBY",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +90,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2486094",
+  "docket_entries": [
+    {
+      "filedDate": "1991-01-17T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1991-01-17T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-03-08T09:30:00.000Z",
+      "docketEntryComment": "O/C;INFORMATION NOT FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1991-03-08T09:30:00.000Z",
+      "description": "O/C;INFORMATION NOT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-02-22T00:00:00.000Z",
+      "docketEntryComment": "HTA, B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1991-02-22T00:00:00.000Z",
+      "description": "HTA, B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-01-17T00:00:00.000Z",
+      "docketEntryComment": "BS $5,000",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1991-01-17T00:00:00.000Z",
+      "description": "BS $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01280960",
-    "portal_case_id": "",
+    "portal_case_id": "2486094",
     "display_case_number": "CRI-01280960",
     "defendant": "STEVEN BROWN",
     "filed_date": "1991-01-17",
@@ -63,8 +149,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, STEVEN BROWN, and date of filing 1991-01-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, STEVEN BROWN, and date of filing 1991-01-17. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:46:38.805Z",
+  "portal_case_id": "2486094",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01280960",
+      "defendant": "STEVEN BROWN",
+      "filed_date": "1991-01-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2486094"
+  }
 }

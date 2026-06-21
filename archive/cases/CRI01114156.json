@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:45:57.871Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:36:32.531Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01114156",
   "criminal_case_number": "01114156",
@@ -24,11 +24,65 @@
       "name": "MARIE L CARTER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARIE L CARTER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1988-12-13T00:00:00.000Z",
+      "docketEntryComment": "REMAND SC #22",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1988-09-28T00:00:00.000Z",
+      "docketEntryComment": "REMAND SC #22",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1988-12-16T00:00:00.000Z",
+      "docketEntryComment": "CT GRTS MOT/DISM CT 1;DEFT PLEADS NG EA CT;REMANDED TO MUNI CT #12",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1988-12-14T09:30:00.000Z",
+      "docketEntryComment": "PD APPTD;ARR;PLD NG EA CT;CT GRTS MO DA DISM CT1 1385PC;REMAND MUNI CTD12",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1988-11-30T00:00:00.000Z",
+      "docketEntryComment": "HTA, BAIL SET AT ORPJ",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1988-12-14 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1988-12-14",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PETER CONF BRESCIANI",
+      "type": "Appointed Counsel"
+    },
+    {
+      "name": "G KOELLING",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +99,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2344337",
+  "docket_entries": [
+    {
+      "filedDate": "1988-12-13T00:00:00.000Z",
+      "docketEntryComment": "REMAND SC #22",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1988-12-13T00:00:00.000Z",
+      "description": "REMAND SC #22",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1988-09-28T00:00:00.000Z",
+      "docketEntryComment": "REMAND SC #22",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1988-09-28T00:00:00.000Z",
+      "description": "REMAND SC #22",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1988-12-16T00:00:00.000Z",
+      "docketEntryComment": "CT GRTS MOT/DISM CT 1;DEFT PLEADS NG EA CT;REMANDED TO MUNI CT #12",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1988-12-16T00:00:00.000Z",
+      "description": "CT GRTS MOT/DISM CT 1;DEFT PLEADS NG EA CT;REMANDED TO MUNI CT #12",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1988-12-14T09:30:00.000Z",
+      "docketEntryComment": "PD APPTD;ARR;PLD NG EA CT;CT GRTS MO DA DISM CT1 1385PC;REMAND MUNI CTD12",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1988-12-14T09:30:00.000Z",
+      "description": "PD APPTD;ARR;PLD NG EA CT;CT GRTS MO DA DISM CT1 1385PC;REMAND MUNI CTD12",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1988-11-30T00:00:00.000Z",
+      "docketEntryComment": "HTA, BAIL SET AT ORPJ",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1988-11-30T00:00:00.000Z",
+      "description": "HTA, BAIL SET AT ORPJ",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01114156",
-    "portal_case_id": "",
+    "portal_case_id": "2344337",
     "display_case_number": "CRI-01114156",
     "defendant": "MARIE L CARTER",
     "filed_date": "1988-09-28",
@@ -63,8 +168,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARIE L CARTER, and date of filing 1988-09-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARIE L CARTER, and date of filing 1988-09-28. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:36:33.145Z",
+  "portal_case_id": "2344337",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01114156",
+      "defendant": "MARIE L CARTER",
+      "filed_date": "1988-09-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2344337"
+  }
 }

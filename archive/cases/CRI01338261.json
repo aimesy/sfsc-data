@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:21:38.728Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:50:30.073Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01338261",
   "criminal_case_number": "01338261",
@@ -24,11 +24,70 @@
       "name": "ANDREE ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANDREE ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1991-11-21T00:00:00.000Z",
+      "docketEntryComment": "SET/DISPO",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-07-30T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;30DCJ-PRETRIAL DIVERS PROG;CTS2D;WS;REG11590HS;DT&CNO DRG W/O RX;$100RF;$150PSR;$40PC;$50LF;ACCEPTS PROB",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-07-01T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-02-11T00:00:00.000Z",
+      "docketEntryComment": "NG PLEA REINST",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-01-13T00:00:00.000Z",
+      "docketEntryComment": "REREF TO D/D",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-12-11T00:00:00.000Z",
+      "docketEntryComment": "NG PLEA W/DRAWN",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1992-07-30 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1992-07-30",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "J AMABILE",
+      "type": "Public Defender"
+    },
+    {
+      "name": "S SEILER",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +104,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2535897",
+  "docket_entries": [
+    {
+      "filedDate": "1991-11-21T00:00:00.000Z",
+      "docketEntryComment": "SET/DISPO",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1991-11-21T00:00:00.000Z",
+      "description": "SET/DISPO",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-07-30T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;30DCJ-PRETRIAL DIVERS PROG;CTS2D;WS;REG11590HS;DT&CNO DRG W/O RX;$100RF;$150PSR;$40PC;$50LF;ACCEPTS PROB",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1992-07-30T09:30:00.000Z",
+      "description": "A/JWV;ISS3YPROB;30DCJ-PRETRIAL DIVERS PROG;CTS2D;WS;REG11590HS;DT&CNO DRG W/O RX;$100RF;$150PSR;$40PC;$50LF;ACCEPTS PROB",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-07-01T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1992-07-01T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-02-11T00:00:00.000Z",
+      "docketEntryComment": "NG PLEA REINST",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1992-02-11T00:00:00.000Z",
+      "description": "NG PLEA REINST",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-01-13T00:00:00.000Z",
+      "docketEntryComment": "REREF TO D/D",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1992-01-13T00:00:00.000Z",
+      "description": "REREF TO D/D",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-12-11T00:00:00.000Z",
+      "docketEntryComment": "NG PLEA W/DRAWN",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1991-12-11T00:00:00.000Z",
+      "description": "NG PLEA W/DRAWN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01338261",
-    "portal_case_id": "",
+    "portal_case_id": "2535897",
     "display_case_number": "CRI-01338261",
     "defendant": "ANDREE ANDERSON",
     "filed_date": "1991-11-21",
@@ -63,8 +183,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANDREE ANDERSON, and date of filing 1991-11-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANDREE ANDERSON, and date of filing 1991-11-21. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:50:30.700Z",
+  "portal_case_id": "2535897",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01338261",
+      "defendant": "ANDREE ANDERSON",
+      "filed_date": "1991-11-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2535897"
+  }
 }

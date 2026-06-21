@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:29:00.806Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:45:28.441Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01272233",
   "criminal_case_number": "01272233",
@@ -24,11 +24,91 @@
       "name": "DAVID BARNETT",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID BARNETT",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1994-09-30T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-10-27T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-12-26T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-02-07T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-12-05T00:00:00.000Z",
+      "docketEntryComment": "JONES MOT & MOT TO CONT,DAW",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-11-03T00:00:00.000Z",
+      "docketEntryComment": "DISM DIVN DEEMED COMPLETED 1001,9PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-10-27T00:00:00.000Z",
+      "docketEntryComment": "JONES MOT O/C, 110394 DATE STANDS, MOT/CONT DENIED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-09-30T00:00:00.000Z",
+      "docketEntryComment": "BW-N/C;",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-10-27T09:00:00.000Z",
+      "docketEntryComment": "BW OF 020791 DISCHARGE, NEW BWIBWI, FTA, B/S $2500",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-02-07T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, BS $2500, OR REV, OLD BW DISCH, NEW BWI SAME DATE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-12-26T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, BS $2000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1992-10-27 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "1992-10-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S CONNOLLY",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +125,122 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2478621",
+  "docket_entries": [
+    {
+      "filedDate": "1994-09-30T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1994-09-30T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-10-27T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1992-10-27T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-12-26T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1990-12-26T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-02-07T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1991-02-07T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-12-05T00:00:00.000Z",
+      "docketEntryComment": "JONES MOT & MOT TO CONT,DAW",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1990-12-05T00:00:00.000Z",
+      "description": "JONES MOT & MOT TO CONT,DAW",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-11-03T00:00:00.000Z",
+      "docketEntryComment": "DISM DIVN DEEMED COMPLETED 1001,9PC",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1994-11-03T00:00:00.000Z",
+      "description": "DISM DIVN DEEMED COMPLETED 1001,9PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-10-27T00:00:00.000Z",
+      "docketEntryComment": "JONES MOT O/C, 110394 DATE STANDS, MOT/CONT DENIED",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1994-10-27T00:00:00.000Z",
+      "description": "JONES MOT O/C, 110394 DATE STANDS, MOT/CONT DENIED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-09-30T00:00:00.000Z",
+      "docketEntryComment": "BW-N/C;",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1994-09-30T00:00:00.000Z",
+      "description": "BW-N/C;",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-10-27T09:00:00.000Z",
+      "docketEntryComment": "BW OF 020791 DISCHARGE, NEW BWIBWI, FTA, B/S $2500",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "1992-10-27T09:00:00.000Z",
+      "description": "BW OF 020791 DISCHARGE, NEW BWIBWI, FTA, B/S $2500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-02-07T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, BS $2500, OR REV, OLD BW DISCH, NEW BWI SAME DATE",
+      "otherSubmitter": "",
+      "__index": 9,
+      "date_filed": "1991-02-07T00:00:00.000Z",
+      "description": "BWI, FTA, BS $2500, OR REV, OLD BW DISCH, NEW BWI SAME DATE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-12-26T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, BS $2000",
+      "otherSubmitter": "",
+      "__index": 10,
+      "date_filed": "1990-12-26T00:00:00.000Z",
+      "description": "BWI, FTA, BS $2000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01272233",
-    "portal_case_id": "",
+    "portal_case_id": "2478621",
     "display_case_number": "CRI-01272233",
     "defendant": "DAVID BARNETT",
     "filed_date": "1990-12-05",
@@ -63,8 +254,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID BARNETT, and date of filing 1990-12-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID BARNETT, and date of filing 1990-12-05. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:45:29.125Z",
+  "portal_case_id": "2478621",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01272233",
+      "defendant": "DAVID BARNETT",
+      "filed_date": "1990-12-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2478621"
+  }
 }

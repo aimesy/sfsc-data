@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:13:52.766Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:47:30.354Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01299081",
   "criminal_case_number": "01299081",
@@ -24,11 +24,134 @@
       "name": "MARTIN AGUILAR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARTIN AGUILAR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1991-04-25T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-04-29T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-04-25T00:00:00.000Z",
+      "docketEntryComment": "REVOKE PROBATION",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-08-16T09:00:00.000Z",
+      "docketEntryComment": "SPN INT SW;DEFT ADV/WVS CONSTL/CITIZ RTS;DEFT VIO PROB BY STIP;PROB REV'DA/JWV;SP16M;CTS147D;DEFT ADV PAROLE RTS;REMANDED TO SHERIFF F/W",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-08-08T09:00:00.000Z",
+      "docketEntryComment": "DEFT STIP TO VIO/REV PROB;DEFT ADV/WVS CONSTL RTS;CT TO MOD PROB",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-06-27T14:01:00.000Z",
+      "docketEntryComment": "CONFLICTS CNSL APPTD;REMANDED;SPN INT SW",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-06-07T09:30:00.000Z",
+      "docketEntryComment": "SPN INT SW;A/JWV;ISS3YPROB;CTS45D;WS;REG11590HS;DT&C;NO DRG W/O RX;$100RF$50LF;$40PC;ACCEPT T/C;OBEY LAW;IF DEPORT/LEAVE US,MUST NOT REENT ILLEGAL",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-05-09T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-05-03T00:00:00.000Z",
+      "docketEntryComment": "5/13/91 IS VAC'D",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-04-29T00:00:00.000Z",
+      "docketEntryComment": "BS$5000; ON BW 4DCJ-4DCTS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-04-25T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA I&A, B/S $5,000, OR RVKD",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1991-08-16 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 28",
+      "__index": 0,
+      "court_date": "1991-08-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 28",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1991-08-08 9:00 AM",
+      "hearingType": "Probation Revocation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 28",
+      "__index": 1,
+      "court_date": "1991-08-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Probation Revocation Hearing",
+      "hearing_type": "Probation Revocation Hearing",
+      "department": "Department 28",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1991-06-27 2:01 PM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1991-06-27",
+      "hearing_time": "2:01 PM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1991-06-07 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1991-06-07",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "M HANDLEY",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "G BECKWITH",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +168,122 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2501815",
+  "docket_entries": [
+    {
+      "filedDate": "1991-04-25T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1991-04-25T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-04-29T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1991-04-29T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-04-25T00:00:00.000Z",
+      "docketEntryComment": "REVOKE PROBATION",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1991-04-25T00:00:00.000Z",
+      "description": "REVOKE PROBATION",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-08-16T09:00:00.000Z",
+      "docketEntryComment": "SPN INT SW;DEFT ADV/WVS CONSTL/CITIZ RTS;DEFT VIO PROB BY STIP;PROB REV'DA/JWV;SP16M;CTS147D;DEFT ADV PAROLE RTS;REMANDED TO SHERIFF F/W",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1991-08-16T09:00:00.000Z",
+      "description": "SPN INT SW;DEFT ADV/WVS CONSTL/CITIZ RTS;DEFT VIO PROB BY STIP;PROB REV'DA/JWV;SP16M;CTS147D;DEFT ADV PAROLE RTS;REMANDED TO SHERIFF F/W",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-08-08T09:00:00.000Z",
+      "docketEntryComment": "DEFT STIP TO VIO/REV PROB;DEFT ADV/WVS CONSTL RTS;CT TO MOD PROB",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1991-08-08T09:00:00.000Z",
+      "description": "DEFT STIP TO VIO/REV PROB;DEFT ADV/WVS CONSTL RTS;CT TO MOD PROB",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-06-27T14:01:00.000Z",
+      "docketEntryComment": "CONFLICTS CNSL APPTD;REMANDED;SPN INT SW",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1991-06-27T14:01:00.000Z",
+      "description": "CONFLICTS CNSL APPTD;REMANDED;SPN INT SW",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-06-07T09:30:00.000Z",
+      "docketEntryComment": "SPN INT SW;A/JWV;ISS3YPROB;CTS45D;WS;REG11590HS;DT&C;NO DRG W/O RX;$100RF$50LF;$40PC;ACCEPT T/C;OBEY LAW;IF DEPORT/LEAVE US,MUST NOT REENT ILLEGAL",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1991-06-07T09:30:00.000Z",
+      "description": "SPN INT SW;A/JWV;ISS3YPROB;CTS45D;WS;REG11590HS;DT&C;NO DRG W/O RX;$100RF$50LF;$40PC;ACCEPT T/C;OBEY LAW;IF DEPORT/LEAVE US,MUST NOT REENT ILLEGAL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-05-09T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1991-05-09T00:00:00.000Z",
+      "description": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-05-03T00:00:00.000Z",
+      "docketEntryComment": "5/13/91 IS VAC'D",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "1991-05-03T00:00:00.000Z",
+      "description": "5/13/91 IS VAC'D",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-04-29T00:00:00.000Z",
+      "docketEntryComment": "BS$5000; ON BW 4DCJ-4DCTS",
+      "otherSubmitter": "",
+      "__index": 9,
+      "date_filed": "1991-04-29T00:00:00.000Z",
+      "description": "BS$5000; ON BW 4DCJ-4DCTS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-04-25T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA I&A, B/S $5,000, OR RVKD",
+      "otherSubmitter": "",
+      "__index": 10,
+      "date_filed": "1991-04-25T00:00:00.000Z",
+      "description": "BWI, FTA I&A, B/S $5,000, OR RVKD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01299081",
-    "portal_case_id": "",
+    "portal_case_id": "2501815",
     "display_case_number": "CRI-01299081",
     "defendant": "MARTIN AGUILAR",
     "filed_date": "1991-04-25",
@@ -63,8 +297,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARTIN AGUILAR, and date of filing 1991-04-25. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARTIN AGUILAR, and date of filing 1991-04-25. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:47:30.973Z",
+  "portal_case_id": "2501815",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01299081",
+      "defendant": "MARTIN AGUILAR",
+      "filed_date": "1991-04-25"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2501815"
+  }
 }

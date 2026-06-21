@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:45:32.518Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:43:49.905Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01230627",
   "criminal_case_number": "01230627",
@@ -24,11 +24,79 @@
       "name": "LEAMANAIA F BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LEAMANAIA F BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2006-05-24T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-04-26T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-05-26T08:30:00.000Z",
+      "docketEntryComment": "/CAL:DISPO/X:PER DA INSPECTOR HAS RETIRED AND DOES NOT REMEMBER CASE; RECORDS DESTROYED,/CTORD:DEFT TO RECEIVE 5 DAYS CTS ON BW CONTEMPT OF 05-23-06/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/VD:06-07-06 PX HRG/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-05-25T08:31:00.000Z",
+      "docketEntryComment": "RE CONTEMPT ISSUETERMINE CTS ON 05-26-06/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARINGON 06-07-06/DOP/X:ESTIMATE HALF DAY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-05-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:RETURN ON BENCH WARRANT/BWDC1:5/BWCTS:1/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW, STWPX/LD:06-08-06/987,2/BAIL:20000/CONTD:TO D-20 TO SET - TIME ESTIMATE IS A HALF DAY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1990-04-26T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA PHC, B/S $5,000, OR REVKD",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2006-06-07 8:30 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 0,
+      "court_date": "2006-06-07",
+      "hearing_time": "8:30 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2006-05-24 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2006-05-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DARO INOUYE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +113,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2443752",
+  "docket_entries": [
+    {
+      "filedDate": "2006-05-24T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2006-05-24T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-04-26T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1990-04-26T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-05-26T08:30:00.000Z",
+      "docketEntryComment": "/CAL:DISPO/X:PER DA INSPECTOR HAS RETIRED AND DOES NOT REMEMBER CASE; RECORDS DESTROYED,/CTORD:DEFT TO RECEIVE 5 DAYS CTS ON BW CONTEMPT OF 05-23-06/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/VD:06-07-06 PX HRG/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2006-05-26T08:30:00.000Z",
+      "description": "/CAL:DISPO/X:PER DA INSPECTOR HAS RETIRED AND DOES NOT REMEMBER CASE; RECORDS DESTROYED,/CTORD:DEFT TO RECEIVE 5 DAYS CTS ON BW CONTEMPT OF 05-23-06/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/VD:06-07-06 PX HRG/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-05-25T08:31:00.000Z",
+      "docketEntryComment": "RE CONTEMPT ISSUETERMINE CTS ON 05-26-06/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARINGON 06-07-06/DOP/X:ESTIMATE HALF DAY/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2006-05-25T08:31:00.000Z",
+      "description": "RE CONTEMPT ISSUETERMINE CTS ON 05-26-06/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARINGON 06-07-06/DOP/X:ESTIMATE HALF DAY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-05-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:RETURN ON BENCH WARRANT/BWDC1:5/BWCTS:1/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW, STWPX/LD:06-08-06/987,2/BAIL:20000/CONTD:TO D-20 TO SET - TIME ESTIMATE IS A HALF DAY/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2006-05-24T09:00:00.000Z",
+      "description": "/CAL:RETURN ON BENCH WARRANT/BWDC1:5/BWCTS:1/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW, STWPX/LD:06-08-06/987,2/BAIL:20000/CONTD:TO D-20 TO SET - TIME ESTIMATE IS A HALF DAY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1990-04-26T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA PHC, B/S $5,000, OR REVKD",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1990-04-26T00:00:00.000Z",
+      "description": "BWI, FTA PHC, B/S $5,000, OR REVKD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01230627",
-    "portal_case_id": "",
+    "portal_case_id": "2443752",
     "display_case_number": "CRI-01230627",
     "defendant": "LEAMANAIA F BROWN",
     "filed_date": "1990-04-10",
@@ -59,12 +188,36 @@
       "defendant": "LEAMANAIA F BROWN",
       "filed_date": "1990-04-10"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LEAMANAIA F BROWN, and date of filing 1990-04-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LEAMANAIA F BROWN, and date of filing 1990-04-10. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:43:50.511Z",
+  "portal_case_id": "2443752",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01230627",
+      "defendant": "LEAMANAIA F BROWN",
+      "filed_date": "1990-04-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2443752"
+  }
 }

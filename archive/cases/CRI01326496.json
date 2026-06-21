@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:03:57.728Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:49:16.783Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01326496",
   "criminal_case_number": "01326496",
@@ -24,11 +24,132 @@
       "name": "DARNELL EDWARDS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DARNELL EDWARDS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1991-09-19T00:00:00.000Z",
+      "docketEntryComment": "HG WHET PROB SHD REM REV",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-12-09T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;CT1-ISS3YPROB;100DCJ-THRU SWAP;CTS3D;WS;REST &10%FEE;POSS NO WPNSDONOT DRIVE W/O VALID DL;$100RF;$150PSR;$40PC;CT6-100DCJ;CTS3D,C/C TO CT1RPT SWAP 1/8/92 AT 8AM",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-01-06T09:00:00.000Z",
+      "docketEntryComment": "CT1SP2Y;CTS480D;$100RF;C/C W/ANY OTH TERMS;CT6-320DCJ;CTS320D",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1993-01-06T09:00:00.000Z",
+      "docketEntryComment": "STIP VIO PROB;ADV/WVS RTS;FNDS VIO PROB;PROB REVKD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-11-30T09:00:00.000Z",
+      "docketEntryComment": "CNSL APPTD;REF APD S/R TO BE FILED 12/29/92",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-05-13T09:30:00.000Z",
+      "docketEntryComment": "FTA;BW NB;PROB REV;MTR/APD-GRTD;O/C",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-11-06T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-09-19T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1993-01-06 9:00 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 24",
+      "__index": 0,
+      "court_date": "1993-01-06",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 24",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1993-01-06 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 24",
+      "__index": 1,
+      "court_date": "1993-01-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 24",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1992-11-30 9:00 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1992-11-30",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1992-05-13 9:30 AM",
+      "hearingType": "Probation Revocation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1992-05-13",
+      "hearing_time": "9:30 AM",
+      "matters": "Probation Revocation Hearing",
+      "hearing_type": "Probation Revocation Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1991-12-09 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 4,
+      "court_date": "1991-12-09",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "F BRADLEY",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "M BARRETT",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +166,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2525578",
+  "docket_entries": [
+    {
+      "filedDate": "1991-09-19T00:00:00.000Z",
+      "docketEntryComment": "HG WHET PROB SHD REM REV",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1991-09-19T00:00:00.000Z",
+      "description": "HG WHET PROB SHD REM REV",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-12-09T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;CT1-ISS3YPROB;100DCJ-THRU SWAP;CTS3D;WS;REST &10%FEE;POSS NO WPNSDONOT DRIVE W/O VALID DL;$100RF;$150PSR;$40PC;CT6-100DCJ;CTS3D,C/C TO CT1RPT SWAP 1/8/92 AT 8AM",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1991-12-09T09:30:00.000Z",
+      "description": "A/JWV;CT1-ISS3YPROB;100DCJ-THRU SWAP;CTS3D;WS;REST &10%FEE;POSS NO WPNSDONOT DRIVE W/O VALID DL;$100RF;$150PSR;$40PC;CT6-100DCJ;CTS3D,C/C TO CT1RPT SWAP 1/8/92 AT 8AM",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-01-06T09:00:00.000Z",
+      "docketEntryComment": "CT1SP2Y;CTS480D;$100RF;C/C W/ANY OTH TERMS;CT6-320DCJ;CTS320D",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1993-01-06T09:00:00.000Z",
+      "description": "CT1SP2Y;CTS480D;$100RF;C/C W/ANY OTH TERMS;CT6-320DCJ;CTS320D",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1993-01-06T09:00:00.000Z",
+      "docketEntryComment": "STIP VIO PROB;ADV/WVS RTS;FNDS VIO PROB;PROB REVKD",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1993-01-06T09:00:00.000Z",
+      "description": "STIP VIO PROB;ADV/WVS RTS;FNDS VIO PROB;PROB REVKD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-11-30T09:00:00.000Z",
+      "docketEntryComment": "CNSL APPTD;REF APD S/R TO BE FILED 12/29/92",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1992-11-30T09:00:00.000Z",
+      "description": "CNSL APPTD;REF APD S/R TO BE FILED 12/29/92",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-05-13T09:30:00.000Z",
+      "docketEntryComment": "FTA;BW NB;PROB REV;MTR/APD-GRTD;O/C",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1992-05-13T09:30:00.000Z",
+      "description": "FTA;BW NB;PROB REV;MTR/APD-GRTD;O/C",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-11-06T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1991-11-06T00:00:00.000Z",
+      "description": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-09-19T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1991-09-19T00:00:00.000Z",
+      "description": "B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01326496",
-    "portal_case_id": "",
+    "portal_case_id": "2525578",
     "display_case_number": "CRI-01326496",
     "defendant": "DARNELL EDWARDS",
     "filed_date": "1991-09-19",
@@ -63,8 +265,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DARNELL EDWARDS, and date of filing 1991-09-19. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DARNELL EDWARDS, and date of filing 1991-09-19. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:49:17.401Z",
+  "portal_case_id": "2525578",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01326496",
+      "defendant": "DARNELL EDWARDS",
+      "filed_date": "1991-09-19"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2525578"
+  }
 }

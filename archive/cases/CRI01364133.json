@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:11:03.932Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:52:58.472Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01364133",
   "criminal_case_number": "01364133",
@@ -24,9 +24,40 @@
       "name": "VICTOR HUGO ALVAREZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "VICTOR HUGO ALVAREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1992-04-28T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-02-22T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-04-21T00:00:00.000Z",
+      "docketEntryComment": "DA MOT DISM PUR 1381PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-02-22T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-04-28T00:00:00.000Z",
+      "docketEntryComment": "FTA I&A; BAIL SET $2000",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -45,11 +76,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2559042",
+  "docket_entries": [
+    {
+      "filedDate": "1992-04-28T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1992-04-28T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-02-22T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-02-22T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-04-21T00:00:00.000Z",
+      "docketEntryComment": "DA MOT DISM PUR 1381PC",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1992-04-21T00:00:00.000Z",
+      "description": "DA MOT DISM PUR 1381PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-02-22T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1996-02-22T00:00:00.000Z",
+      "description": "BW RECALLED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-04-28T00:00:00.000Z",
+      "docketEntryComment": "FTA I&A; BAIL SET $2000",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1992-04-28T00:00:00.000Z",
+      "description": "FTA I&A; BAIL SET $2000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01364133",
-    "portal_case_id": "",
+    "portal_case_id": "2559042",
     "display_case_number": "CRI-01364133",
     "defendant": "VICTOR HUGO ALVAREZ",
     "filed_date": "1992-04-21",
@@ -63,8 +145,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, VICTOR HUGO ALVAREZ, and date of filing 1992-04-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, VICTOR HUGO ALVAREZ, and date of filing 1992-04-21. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:52:59.093Z",
+  "portal_case_id": "2559042",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01364133",
+      "defendant": "VICTOR HUGO ALVAREZ",
+      "filed_date": "1992-04-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2559042"
+  }
 }

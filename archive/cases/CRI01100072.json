@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:31:53.042Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:35:45.926Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01100072",
   "criminal_case_number": "01100072",
@@ -24,11 +24,91 @@
       "name": "KELVIN D BROOKS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KELVIN D BROOKS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1988-07-19T00:00:00.000Z",
+      "docketEntryComment": "REVIEW OF PROB RE SWAP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1988-10-21T10:30:00.000Z",
+      "docketEntryComment": "CT ORD PROB MOD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1988-10-21T10:30:00.000Z",
+      "docketEntryComment": "CJ SN ONSWAP DELETED SUBST INLIEU-60DCJ;CTS3D;NOCP/EARLYREL;DEFT REMANDED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1988-08-31T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;60DCJ;CTS3D;SWAP/RPT 9/7/88 AT 8:30AM;W/S;REG 11590HSPOSSNODRGS W/O RX;DRGTESTNG/CNSLNG;$100RF;$50LF;$25/MOPC;DEFT ACCEPTSPROB",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1988-08-03T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1988-10-21 10:30 AM",
+      "hearingType": "PC 1368 or PC 1367.1 Court",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1988-10-21",
+      "hearing_time": "10:30 AM",
+      "matters": "PC 1368 or PC 1367.1 Court",
+      "hearing_type": "PC 1368 or PC 1367.1 Court",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1988-10-21 10:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1988-10-21",
+      "hearing_time": "10:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1988-08-31 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1988-08-31",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "R TRUJILLO",
+      "type": "Public Defender"
+    },
+    {
+      "name": "M LOVE",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +125,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2331978",
+  "docket_entries": [
+    {
+      "filedDate": "1988-07-19T00:00:00.000Z",
+      "docketEntryComment": "REVIEW OF PROB RE SWAP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1988-07-19T00:00:00.000Z",
+      "description": "REVIEW OF PROB RE SWAP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1988-10-21T10:30:00.000Z",
+      "docketEntryComment": "CT ORD PROB MOD",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1988-10-21T10:30:00.000Z",
+      "description": "CT ORD PROB MOD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1988-10-21T10:30:00.000Z",
+      "docketEntryComment": "CJ SN ONSWAP DELETED SUBST INLIEU-60DCJ;CTS3D;NOCP/EARLYREL;DEFT REMANDED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1988-10-21T10:30:00.000Z",
+      "description": "CJ SN ONSWAP DELETED SUBST INLIEU-60DCJ;CTS3D;NOCP/EARLYREL;DEFT REMANDED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1988-08-31T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;60DCJ;CTS3D;SWAP/RPT 9/7/88 AT 8:30AM;W/S;REG 11590HSPOSSNODRGS W/O RX;DRGTESTNG/CNSLNG;$100RF;$50LF;$25/MOPC;DEFT ACCEPTSPROB",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1988-08-31T09:30:00.000Z",
+      "description": "A/JWV;ISS3YPROB;60DCJ;CTS3D;SWAP/RPT 9/7/88 AT 8:30AM;W/S;REG 11590HSPOSSNODRGS W/O RX;DRGTESTNG/CNSLNG;$100RF;$50LF;$25/MOPC;DEFT ACCEPTSPROB",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1988-08-03T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1988-08-03T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01100072",
-    "portal_case_id": "",
+    "portal_case_id": "2331978",
     "display_case_number": "CRI-01100072",
     "defendant": "KELVIN D BROOKS",
     "filed_date": "1988-07-19",
@@ -63,8 +194,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KELVIN D BROOKS, and date of filing 1988-07-19. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KELVIN D BROOKS, and date of filing 1988-07-19. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:35:47.119Z",
+  "portal_case_id": "2331978",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01100072",
+      "defendant": "KELVIN D BROOKS",
+      "filed_date": "1988-07-19"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2331978"
+  }
 }

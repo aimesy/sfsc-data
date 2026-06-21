@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:58:41.838Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:55:00.329Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01386751",
   "criminal_case_number": "01386751",
@@ -24,11 +24,60 @@
       "name": "WILLIAM E ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "WILLIAM E ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1992-07-13T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-11-05T09:00:00.000Z",
+      "docketEntryComment": "A/JWV;SP2Y;CTS216D;$100RF;ADV PAR RTS;STY OF DELIVERY 11/19/92",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-10-22T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-07-13T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1992-11-05 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1992-11-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "R TRUJILLO",
+      "type": "Public Defender"
+    },
+    {
+      "name": "R FORMAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +94,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2579057",
+  "docket_entries": [
+    {
+      "filedDate": "1992-07-13T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1992-07-13T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-11-05T09:00:00.000Z",
+      "docketEntryComment": "A/JWV;SP2Y;CTS216D;$100RF;ADV PAR RTS;STY OF DELIVERY 11/19/92",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1992-11-05T09:00:00.000Z",
+      "description": "A/JWV;SP2Y;CTS216D;$100RF;ADV PAR RTS;STY OF DELIVERY 11/19/92",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-10-22T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1992-10-22T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-07-13T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1992-07-13T00:00:00.000Z",
+      "description": "B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01386751",
-    "portal_case_id": "",
+    "portal_case_id": "2579057",
     "display_case_number": "CRI-01386751",
     "defendant": "WILLIAM E ADAMS",
     "filed_date": "1992-07-13",
@@ -63,8 +153,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, WILLIAM E ADAMS, and date of filing 1992-07-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, WILLIAM E ADAMS, and date of filing 1992-07-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:55:00.916Z",
+  "portal_case_id": "2579057",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01386751",
+      "defendant": "WILLIAM E ADAMS",
+      "filed_date": "1992-07-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2579057"
+  }
 }

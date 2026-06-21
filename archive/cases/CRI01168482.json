@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:02:56.186Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:39:31.034Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01168482",
   "criminal_case_number": "01168482",
@@ -24,11 +24,65 @@
       "name": "DAVID A GARCIA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID A GARCIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1989-06-01T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1989-10-31T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;SP6Y,C/C W/SCN 133604;CTS237D;$100RF;REMAND SAN QUENTIN",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1989-10-03T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1989-09-06T00:00:00.000Z",
+      "docketEntryComment": "MOT FOR LINEUP--DENIED, PX DATE 9-12-89 STANDS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1989-06-01T00:00:00.000Z",
+      "docketEntryComment": "B/S $10,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1989-10-31 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1989-10-31",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "B DINDAY",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "J DWYER",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +99,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2391235",
+  "docket_entries": [
+    {
+      "filedDate": "1989-06-01T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1989-06-01T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1989-10-31T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;SP6Y,C/C W/SCN 133604;CTS237D;$100RF;REMAND SAN QUENTIN",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1989-10-31T09:30:00.000Z",
+      "description": "A/JWV;SP6Y,C/C W/SCN 133604;CTS237D;$100RF;REMAND SAN QUENTIN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1989-10-03T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1989-10-03T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT, SEE DOCKET FOR PROPOSED SENTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1989-09-06T00:00:00.000Z",
+      "docketEntryComment": "MOT FOR LINEUP--DENIED, PX DATE 9-12-89 STANDS",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1989-09-06T00:00:00.000Z",
+      "description": "MOT FOR LINEUP--DENIED, PX DATE 9-12-89 STANDS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1989-06-01T00:00:00.000Z",
+      "docketEntryComment": "B/S $10,000",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1989-06-01T00:00:00.000Z",
+      "description": "B/S $10,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01168482",
-    "portal_case_id": "",
+    "portal_case_id": "2391235",
     "display_case_number": "CRI-01168482",
     "defendant": "DAVID A GARCIA",
     "filed_date": "1989-06-01",
@@ -63,8 +168,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID A GARCIA, and date of filing 1989-06-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID A GARCIA, and date of filing 1989-06-01. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:39:31.671Z",
+  "portal_case_id": "2391235",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01168482",
+      "defendant": "DAVID A GARCIA",
+      "filed_date": "1989-06-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2391235"
+  }
 }

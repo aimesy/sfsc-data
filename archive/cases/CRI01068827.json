@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:33:53.839Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:33:25.173Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01068827",
   "criminal_case_number": "01068827",
@@ -24,11 +24,35 @@
       "name": "DAVID HENRY BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID HENRY BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
   "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "calendar": [
+    {
+      "startTime": "1988-04-04 9:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1988-04-04",
+      "hearing_time": "9:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "P SCHLICHTER",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +69,11 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2304697",
   "docket_entries": [],
   "criminal": {
     "raw_case_number": "01068827",
-    "portal_case_id": "",
+    "portal_case_id": "2304697",
     "display_case_number": "CRI-01068827",
     "defendant": "DAVID HENRY BROWN",
     "filed_date": "1988-03-10",
@@ -63,8 +87,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID HENRY BROWN, and date of filing 1988-03-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID HENRY BROWN, and date of filing 1988-03-10. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:33:25.794Z",
+  "portal_case_id": "2304697",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01068827",
+      "defendant": "DAVID HENRY BROWN",
+      "filed_date": "1988-03-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2304697"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:40:15.319Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:49:33.787Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01325360",
   "criminal_case_number": "01325360",
@@ -24,11 +24,111 @@
       "name": "JOHNNY R ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHNNY R ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1991-12-09T09:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-12-26T09:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-09-12T00:00:00.000Z",
+      "docketEntryComment": "CT ORDER-RET",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1992-01-27T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;SP16M;CT GIVE REAS;CTS189D;$100RF;C/C W/OTH COMMITMENT;REMAND CDC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-12-26T09:30:00.000Z",
+      "docketEntryComment": "CNSL APPTD;BW 12/9/91 RECALLED;REMANDED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-12-09T09:30:00.000Z",
+      "docketEntryComment": "NO APP;BW NB;BAIL FORF;O/C;DEFT IN SP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-11-06T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-09-25T00:00:00.000Z",
+      "docketEntryComment": "DEFT MOT CONT PX GRANTED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-09-12T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1992-01-27 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1992-01-27",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1991-12-26 9:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1991-12-26",
+      "hearing_time": "9:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1991-12-09 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1991-12-09",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ARTHUR CONFL WACHTEL",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "C JOHNS",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +145,102 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2524587",
+  "docket_entries": [
+    {
+      "filedDate": "1991-12-09T09:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1991-12-09T09:30:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-12-26T09:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1991-12-26T09:30:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-09-12T00:00:00.000Z",
+      "docketEntryComment": "CT ORDER-RET",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1991-09-12T00:00:00.000Z",
+      "description": "CT ORDER-RET",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1992-01-27T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;SP16M;CT GIVE REAS;CTS189D;$100RF;C/C W/OTH COMMITMENT;REMAND CDC",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1992-01-27T09:30:00.000Z",
+      "description": "A/JWV;SP16M;CT GIVE REAS;CTS189D;$100RF;C/C W/OTH COMMITMENT;REMAND CDC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-12-26T09:30:00.000Z",
+      "docketEntryComment": "CNSL APPTD;BW 12/9/91 RECALLED;REMANDED",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1991-12-26T09:30:00.000Z",
+      "description": "CNSL APPTD;BW 12/9/91 RECALLED;REMANDED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-12-09T09:30:00.000Z",
+      "docketEntryComment": "NO APP;BW NB;BAIL FORF;O/C;DEFT IN SP",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1991-12-09T09:30:00.000Z",
+      "description": "NO APP;BW NB;BAIL FORF;O/C;DEFT IN SP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-11-06T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1991-11-06T00:00:00.000Z",
+      "description": "CERT TO SUP CT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-09-25T00:00:00.000Z",
+      "docketEntryComment": "DEFT MOT CONT PX GRANTED",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1991-09-25T00:00:00.000Z",
+      "description": "DEFT MOT CONT PX GRANTED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-09-12T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "1991-09-12T00:00:00.000Z",
+      "description": "B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01325360",
-    "portal_case_id": "",
+    "portal_case_id": "2524587",
     "display_case_number": "CRI-01325360",
     "defendant": "JOHNNY R ALLEN",
     "filed_date": "1991-09-12",
@@ -63,8 +254,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHNNY R ALLEN, and date of filing 1991-09-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHNNY R ALLEN, and date of filing 1991-09-12. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:49:34.389Z",
+  "portal_case_id": "2524587",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01325360",
+      "defendant": "JOHNNY R ALLEN",
+      "filed_date": "1991-09-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2524587"
+  }
 }

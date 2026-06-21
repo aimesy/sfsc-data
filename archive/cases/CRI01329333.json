@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:31:41.399Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:49:41.436Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01329333",
   "criminal_case_number": "01329333",
@@ -24,11 +24,60 @@
       "name": "PATTI L BAKER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "PATTI L BAKER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1991-10-04T00:00:00.000Z",
+      "docketEntryComment": "JOIN #1286828, SET (DOP)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-11-18T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;CTS49D;W/S;REG 11590HS;DT&C;NO DRGS W/O RX;$100RF$150 PSR;$50LF;UP TO $40 PC;ACCEPTS PROB",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-10-18T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1991-10-04T00:00:00.000Z",
+      "docketEntryComment": "BAIL SET $2500",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1991-11-18 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1991-11-18",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "J UMALI",
+      "type": "Public Defender"
+    },
+    {
+      "name": "L MOORE",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +94,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2528062",
+  "docket_entries": [
+    {
+      "filedDate": "1991-10-04T00:00:00.000Z",
+      "docketEntryComment": "JOIN #1286828, SET (DOP)",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1991-10-04T00:00:00.000Z",
+      "description": "JOIN #1286828, SET (DOP)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-11-18T09:30:00.000Z",
+      "docketEntryComment": "A/JWV;ISS3YPROB;CTS49D;W/S;REG 11590HS;DT&C;NO DRGS W/O RX;$100RF$150 PSR;$50LF;UP TO $40 PC;ACCEPTS PROB",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1991-11-18T09:30:00.000Z",
+      "description": "A/JWV;ISS3YPROB;CTS49D;W/S;REG 11590HS;DT&C;NO DRGS W/O RX;$100RF$150 PSR;$50LF;UP TO $40 PC;ACCEPTS PROB",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-10-18T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1991-10-18T00:00:00.000Z",
+      "description": "CERT TO SUP CT, SEE DKT FOR PROPOSED SENT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1991-10-04T00:00:00.000Z",
+      "docketEntryComment": "BAIL SET $2500",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1991-10-04T00:00:00.000Z",
+      "description": "BAIL SET $2500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01329333",
-    "portal_case_id": "",
+    "portal_case_id": "2528062",
     "display_case_number": "CRI-01329333",
     "defendant": "PATTI L BAKER",
     "filed_date": "1991-10-04",
@@ -63,8 +153,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, PATTI L BAKER, and date of filing 1991-10-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, PATTI L BAKER, and date of filing 1991-10-04. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:49:42.162Z",
+  "portal_case_id": "2528062",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01329333",
+      "defendant": "PATTI L BAKER",
+      "filed_date": "1991-10-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2528062"
+  }
 }
