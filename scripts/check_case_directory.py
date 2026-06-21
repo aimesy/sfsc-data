@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -90,6 +91,21 @@ def index_case_numbers(path: Path) -> tuple[list[str], list[str]]:
     return cases, failures
 
 
+def case_set_fingerprint(cases: set[str]) -> str:
+    digest = hashlib.sha256()
+    for case_number in sorted(cases):
+        digest.update(case_number.encode("utf-8"))
+        digest.update(b"\n")
+    return digest.hexdigest()
+
+
+def case_sample(cases: set[str], limit: int = 10) -> str:
+    ordered = sorted(cases)
+    sample = ", ".join(ordered[:limit])
+    suffix = "" if len(ordered) <= limit else f", ... {len(ordered) - limit} more"
+    return f"{sample}{suffix}"
+
+
 def case_json_numbers(path: Path) -> set[str]:
     if not path.exists():
         return set()
@@ -135,6 +151,9 @@ def check_case_directory(
     case_json_rows = manifest_int(source_counts.get("case_json_rows"), 0)
     case_table_rows = manifest_int(source_counts.get("case_table_rows"), 0)
     case_index_rows = manifest_int(source_counts.get("case_index_rows"), 0)
+    case_json_fingerprint = str(source_counts.get("case_json_fingerprint") or "").strip()
+    case_table_fingerprint = str(source_counts.get("case_table_fingerprint") or "").strip()
+    case_index_fingerprint = str(source_counts.get("case_index_fingerprint") or "").strip()
     if case_index_rows > 0 and max(case_json_rows, case_table_rows) <= 0:
         failures.append(
             "manifest source counts show no full case JSON rows or compact case-table rows; "
@@ -145,6 +164,11 @@ def check_case_directory(
             f"manifest.source_counts.case_table_rows is {case_table_rows}, below "
             f"case_index_rows {case_index_rows}; compact case table is stale"
         )
+    if case_index_fingerprint:
+        if case_table_rows > 0 and case_table_fingerprint and case_table_fingerprint != case_index_fingerprint:
+            failures.append("manifest compact case-table fingerprint differs from case-index fingerprint")
+        if case_json_rows > 0 and case_json_fingerprint and case_json_fingerprint != case_index_fingerprint:
+            failures.append("manifest case-JSON fingerprint differs from case-index fingerprint")
     index_cases: list[str] = []
     index_case_set: set[str] = set()
     if case_index and case_index.exists():
@@ -199,6 +223,7 @@ def check_case_directory(
             )
 
     seen_cases: set[str] = set()
+    captured_case_set: set[str] = set()
     state_counts: dict[str, int] = {}
     total_rows = 0
     total_cases = 0
@@ -279,8 +304,10 @@ def check_case_directory(
                     year_discovered_count += 1
                 elif restricted:
                     year_restricted_count += 1
+                    captured_case_set.add(norm_case(case_number))
                 else:
                     year_case_count += 1
+                    captured_case_set.add(norm_case(case_number))
                 if discovered and row.get("case_json"):
                     failures.append(f"{case_number}: discovered-only row should not point at a case JSON")
                 if discovered and discovered_cases is not None and case_number.upper() not in discovered_cases:
@@ -335,6 +362,23 @@ def check_case_directory(
             "captured + restricted directory count "
             f"{total_cases + total_restricted} != case-index rows {case_index_rows}"
         )
+    if index_case_set and max(case_json_rows, case_table_rows) > 0:
+        missing_from_directory = index_case_set - captured_case_set
+        extra_in_directory = captured_case_set - index_case_set
+        if missing_from_directory:
+            failures.append(
+                f"{len(missing_from_directory)} case-index case(s) missing from captured directory rows: "
+                f"{case_sample(missing_from_directory)}"
+            )
+        if extra_in_directory:
+            failures.append(
+                f"{len(extra_in_directory)} captured directory case(s) absent from case index: "
+                f"{case_sample(extra_in_directory)}"
+            )
+        if case_index_fingerprint:
+            actual_fingerprint = case_set_fingerprint(captured_case_set)
+            if actual_fingerprint != case_index_fingerprint:
+                failures.append("captured directory fingerprint differs from manifest case-index fingerprint")
     if state_counts.get("discovered", 0) != manifest_int(manifest.get("discovered_count"), 0):
         failures.append(f"discovered count {state_counts.get('discovered', 0)} != manifest {manifest.get('discovered_count')}")
     if total_restricted != manifest_int(manifest.get("restricted_count"), 0):

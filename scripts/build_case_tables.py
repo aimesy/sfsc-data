@@ -75,6 +75,92 @@ def first_text(obj: dict[str, Any], *keys: str) -> str:
     return ""
 
 
+MONTHS = {
+    "jan": 1,
+    "january": 1,
+    "feb": 2,
+    "february": 2,
+    "mar": 3,
+    "march": 3,
+    "apr": 4,
+    "april": 4,
+    "may": 5,
+    "jun": 6,
+    "june": 6,
+    "jul": 7,
+    "july": 7,
+    "aug": 8,
+    "august": 8,
+    "sep": 9,
+    "sept": 9,
+    "september": 9,
+    "oct": 10,
+    "october": 10,
+    "nov": 11,
+    "november": 11,
+    "dec": 12,
+    "december": 12,
+}
+
+
+def parse_date(value: Any) -> str:
+    text = clean(value)
+    if not text:
+        return ""
+    m = re.search(r"\b(19|20)\d{2}-\d{1,2}-\d{1,2}\b", text)
+    if m:
+        y, mo, d = re.split(r"-", m.group(0))
+        return f"{int(y):04d}-{int(mo):02d}-{int(d):02d}"
+    m = re.search(r"\b(\d{1,2})/(\d{1,2})/(\d{2,4})\b", text)
+    if m:
+        year = int(m.group(3))
+        if year < 100:
+            year += 2000 if year <= 30 else 1900
+        return f"{year:04d}-{int(m.group(1)):02d}-{int(m.group(2)):02d}"
+    m = re.search(r"\b([A-Za-z]{3,9})\.?\s+(\d{1,2}),?\s+(\d{2,4})\b", text)
+    if m:
+        month = MONTHS.get(m.group(1).lower().rstrip("."))
+        if month:
+            year = int(m.group(3))
+            if year < 100:
+                year += 2000 if year <= 30 else 1900
+            return f"{year:04d}-{month:02d}-{int(m.group(2)):02d}"
+    return ""
+
+
+def first_date(values: Iterable[Any]) -> str:
+    dates = [parse_date(v) for v in values]
+    dates = [d for d in dates if d]
+    return min(dates) if dates else ""
+
+
+def first_docket_date(case: dict[str, Any]) -> str:
+    entries = case.get("docket_entries")
+    if not isinstance(entries, list):
+        return ""
+    values = []
+    for entry in entries:
+        if isinstance(entry, dict):
+            values.extend([
+                entry.get("date_filed"),
+                entry.get("FILEDATE"),
+                entry.get("filed"),
+                entry.get("date"),
+            ])
+    return first_date(values)
+
+
+def filing_date_for_case(case: dict[str, Any]) -> str:
+    direct = first_date([
+        case.get("filing_date"),
+        case.get("filed"),
+        case.get("date_filed"),
+        case.get("file_date"),
+        case.get("created"),
+    ])
+    return direct or first_docket_date(case)
+
+
 def as_list(value: Any) -> list[str]:
     if isinstance(value, list):
         return [clean(v) for v in value if clean(v)]
@@ -604,6 +690,7 @@ def rows_from_cases(case_dir: Path, limit: int | None = None) -> dict[str, list[
         attorneys = case.get("attorneys") if isinstance(case.get("attorneys"), list) else []
         calendar = case.get("calendar") if isinstance(case.get("calendar"), list) else []
         payments = case.get("payments") if isinstance(case.get("payments"), list) else []
+        criminal_meta = case.get("criminal") if isinstance(case.get("criminal"), dict) else {}
         # Estate roles/events are emitted only for probate matters, so civil/UD
         # dockets that merely mention a bond or a petitioner do not pollute the
         # estate dossier.
@@ -621,8 +708,13 @@ def rows_from_cases(case_dir: Path, limit: int | None = None) -> dict[str, list[
         tables["cases"].append({
             "case_number": case_number,
             "case_title": case_title,
+            "filing_date": filing_date_for_case(case),
             "court": clean(case.get("court")),
             "cause_of_action": cause_of_action,
+            "case_type": clean(case.get("case_type")),
+            "criminal_case_number": clean(case.get("criminal_case_number")),
+            "portal_case_id": clean(case.get("portal_case_id") or criminal_meta.get("portal_case_id")),
+            "source": clean(case.get("source")),
             "captured_at": captured_at,
             "source_url": source_url,
             "case_path": case_path,
@@ -806,6 +898,9 @@ def rows_from_cases(case_dir: Path, limit: int | None = None) -> dict[str, list[
                 "calendar_seq": calendar_seq,
                 "court_date": first_text(row, "court_date", "COURTDATE", "date"),
                 "matters": first_text(row, "matters", "MATTERS", "matter"),
+                "hearing_time": first_text(row, "hearing_time", "time", "TIME"),
+                "hearing_type": first_text(row, "hearing_type", "type", "TYPE"),
+                "department": first_text(row, "department", "dept", "DEPT"),
                 "location": first_text(row, "location", "LOCATION"),
                 "judge": first_text(row, "judge", "JUDGENAME", "judge_name"),
                 "captured_at": captured_at,

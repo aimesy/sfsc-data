@@ -11,6 +11,7 @@ bytes.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -223,7 +224,12 @@ def year_for_row(row: dict[str, Any]) -> str:
         m = re.match(r"^(\d{4})", date)
         if m:
             return m.group(1)
-    return year_from_case_number(clean(row.get("case_number"))) or "unknown"
+    case_number = clean(row.get("case_number"))
+    case_type = clean(row.get("case_type")).lower()
+    source = clean(row.get("source")).lower()
+    if case_type == "criminal" or source == "sfsc-criminal-portal" or case_number.upper().startswith("CRI"):
+        return "unknown"
+    return year_from_case_number(case_number) or "unknown"
 
 
 def slug_for_prefix(prefix: str) -> str:
@@ -302,7 +308,12 @@ def case_table_rows(path: Path) -> dict[str, dict[str, Any]]:
     parquet_file = pq.ParquetFile(path)
     wanted = [
         "case_number",
+        "criminal_case_number",
+        "portal_case_id",
         "case_title",
+        "filing_date",
+        "case_type",
+        "source",
         "captured_at",
         "source_url",
         "case_path",
@@ -332,7 +343,12 @@ def case_table_rows(path: Path) -> dict[str, dict[str, Any]]:
         case_json = clean(raw.get("case_path")) or f"archive/cases/{case_number}.json"
         rows[case_number] = {
             "case_number": case_number,
+            "criminal_case_number": clean(raw.get("criminal_case_number")),
+            "portal_case_id": clean(raw.get("portal_case_id")),
             "case_title": clean(raw.get("case_title")),
+            "filing_date": clean(raw.get("filing_date")),
+            "case_type": clean(raw.get("case_type")),
+            "source": clean(raw.get("source")),
             "captured_at": clean(raw.get("captured_at")),
             "n_entries": int_or_zero(raw.get("docket_entry_count")),
             "n_documents": int_or_zero(raw.get("documents_total")),
@@ -347,6 +363,21 @@ def case_table_rows(path: Path) -> dict[str, dict[str, Any]]:
             "case_json": case_json,
         }
     return rows
+
+
+def case_set_fingerprint(rows: dict[str, dict[str, Any]]) -> str:
+    digest = hashlib.sha256()
+    for case_number in sorted(rows):
+        digest.update(case_number.encode("utf-8"))
+        digest.update(b"\n")
+    return digest.hexdigest()
+
+
+def case_sample(cases: Iterable[str], limit: int = 10) -> str:
+    ordered = sorted(cases)
+    sample = ", ".join(ordered[:limit])
+    suffix = "" if len(ordered) <= limit else f", ... {len(ordered) - limit} more"
+    return f"{sample}{suffix}"
 
 
 def discovery_rows(paths: Iterable[Path]) -> dict[str, dict[str, Any]]:
@@ -407,11 +438,16 @@ def case_json_rows(case_dir: Path) -> dict[str, dict[str, Any]]:
             continue
         documents = case.get("documents") if isinstance(case.get("documents"), list) else []
         docket_entries = case.get("docket_entries") if isinstance(case.get("docket_entries"), list) else []
+        criminal_meta = case.get("criminal") if isinstance(case.get("criminal"), dict) else {}
         row = {
             "case_number": case_number,
             "case_title": clean(case.get("case_title")),
             "filing_date": filing_date_for_case(case),
             "captured_at": clean(case.get("captured_at")),
+            "case_type": clean(case.get("case_type")),
+            "criminal_case_number": clean(case.get("criminal_case_number")),
+            "portal_case_id": clean(case.get("portal_case_id") or criminal_meta.get("portal_case_id")),
+            "source": clean(case.get("source")),
             "n_entries": len(docket_entries),
             "n_documents": len(documents),
             "documents_bytes_count": int(case.get("documents_bytes_count") or sum(1 for d in documents if isinstance(d, dict) and d.get("sha256"))),
@@ -527,6 +563,25 @@ def require_case_directory_sources(
             f"{len(index_rows)} case-index rows but only {len(table_rows)} rows in {case_table}. "
             "Refusing to build the website case directory from stale compact case data."
         )
+    if table_rows and index_rows:
+        missing_from_table = set(index_rows) - set(table_rows)
+        extra_in_table = set(table_rows) - set(index_rows)
+        if missing_from_table or extra_in_table:
+            details = []
+            if missing_from_table:
+                details.append(
+                    f"{len(missing_from_table)} case-index case(s) missing from {case_table}: "
+                    f"{case_sample(missing_from_table)}"
+                )
+            if extra_in_table:
+                details.append(
+                    f"{len(extra_in_table)} stale compact-table case(s) absent from the case index: "
+                    f"{case_sample(extra_in_table)}"
+                )
+            raise SystemExit(
+                "ERROR: compact case table and case index contain different case_number sets. "
+                + "; ".join(details)
+            )
     if table_rows:
         return
     if mode == "none":
@@ -591,7 +646,12 @@ def scan_state(row: dict[str, Any]) -> str:
 def display_row(row: dict[str, Any]) -> dict[str, Any]:
     keep = [
         "case_number",
+        "criminal_case_number",
+        "portal_case_id",
         "case_title",
+        "case_type",
+        "source",
+        "source_url",
         "year",
         "prefix",
         "scan_state",
@@ -767,6 +827,9 @@ def main() -> int:
         "case_json_rows": len(json_rows),
         "case_table_rows": len(table_rows),
         "case_index_rows": len(index_rows),
+        "case_json_fingerprint": case_set_fingerprint(json_rows) if json_rows else "",
+        "case_table_fingerprint": case_set_fingerprint(table_rows) if table_rows else "",
+        "case_index_fingerprint": case_set_fingerprint(index_rows) if index_rows else "",
         "discovery_rows": len(discovered),
         "display_rows": len(rows),
     }

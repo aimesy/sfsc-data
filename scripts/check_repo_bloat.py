@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import fnmatch
+import os
 import re
 import subprocess
 import sys
@@ -26,6 +27,16 @@ ALLOWED_LARGE_GLOBS = (
     "data/*.parquet",
     "coverage/*.json",
     "coverage/**/*.json",
+)
+PRODUCT_REPO_DATA_GLOBS = (
+    "archive/cases-index.ndjson",
+    "archive/document-index.ndjson",
+    "archive/cases/**",
+    "archive/case-directory/**",
+    "archive/new-filings-cases/**",
+    "coverage/**",
+    "data/**",
+    "raw/**",
 )
 AUTHORIZED_DOCUMENT_COMMIT_SUBJECTS = (
     re.compile(r"^Archive \d+ scanner case\(s\)(?: \[skip ci\])?$"),
@@ -69,6 +80,18 @@ def revision_range(args: argparse.Namespace) -> str:
 
 def normalize_path(value: str) -> str:
     return str(value or "").strip().replace("\\", "/").lstrip("./")
+
+
+def current_repo_slug() -> str:
+    env_repo = os.environ.get("GITHUB_REPOSITORY", "").strip().lower()
+    if env_repo:
+        return env_repo
+    proc = run_git(["config", "--get", "remote.origin.url"], check=False)
+    remote = proc.stdout.strip().lower().removesuffix(".git") if proc.returncode == 0 else ""
+    for prefix in ("https://github.com/", "http://github.com/", "git@github.com:"):
+        if remote.startswith(prefix):
+            return remote[len(prefix):]
+    return ""
 
 
 def staged_size(path: str) -> int:
@@ -125,8 +148,12 @@ def violations(paths: list[str], args: argparse.Namespace) -> list[str]:
     out: list[str] = []
     max_bytes = max(0, int(args.max_bytes))
     allow_document_writes = archive_document_write_authorized(args)
+    product_repo = current_repo_slug() == "aimesy/sfsc"
     for path in paths:
         lower = path.lower()
+        if product_repo and any(fnmatch.fnmatch(path, pattern) for pattern in PRODUCT_REPO_DATA_GLOBS):
+            out.append(f"{path}: data-side artifact belongs in aimesy/sfsc-data, not the product repo")
+            continue
         if path.startswith("archive/documents/"):
             if not allow_document_writes:
                 out.append(
