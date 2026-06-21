@@ -1,55 +1,184 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:48:17.012Z",
-  "status": "unavailable",
-  "case_type": "criminal",
-  "case_number": "CRI26001100",
+  "captured_at": "2026-06-21T15:46:09.363Z",
   "criminal_case_number": "26001100",
-  "display_case_number": "CRI-26001100",
-  "defendant": "DONALD RAY CLARK",
-  "filed_date": "2026-01-20",
-  "charges": "626.6(a) PC/M",
-  "case_title": "People v. DONALD RAY CLARK",
-  "court": "San Francisco Superior Court - Criminal",
-  "cause_of_action": "Criminal",
+  "status": "found",
+  "portal_case_id": "4245266",
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4245266"
+  },
+  "roa": [
+    {
+      "filedDate": "2026-01-21T11:48:11.675Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-01-21T09:00:00.000Z",
+      "docketEntryComment": "Motion to Dismiss Pursuant to Penal Code 991",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-01-20T14:54:21.582Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-01-20T10:05:06.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-01-20T05:29:15.000Z",
+      "docketEntryComment": "DENIED - BAIL STATUTORILY SET Authorization for Pre-Arraignment Release Consideration",
+      "otherSubmitter": "PTS"
+    },
+    {
+      "filedDate": "2026-01-20T05:28:54.000Z",
+      "docketEntryComment": "OR Denied Filed",
+      "otherSubmitter": "PTS"
+    },
+    {
+      "filedDate": "2026-01-20T05:15:14.000Z",
+      "docketEntryComment": "Sufficient Probable Cause Filed",
+      "otherSubmitter": "PTS"
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2026-01-21 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2026-01-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2026-01-20 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2026-01-20",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [],
+  "parties": [
+    {
+      "name": "DONALD RAY CLARK",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
   "case_header": {
     "case_number": "CRI-26001100",
     "defendant": "DONALD RAY CLARK",
     "filed_date": "2026-01-20"
   },
-  "parties": [
+  "case_header_checked_at": "2026-06-21T15:46:09.971Z",
+  "display_case_number": "CRI-26001100",
+  "defendant": "DONALD RAY CLARK",
+  "case_title": "People v. DONALD RAY CLARK",
+  "filed_date": "2026-01-20",
+  "case_type": "criminal",
+  "case_number": "CRI26001100",
+  "criminal_case_type": "",
+  "court": "San Francisco Superior Court - Criminal",
+  "cause_of_action": "Criminal",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4245266",
+  "docket_entries": [
     {
-      "name": "DONALD RAY CLARK",
-      "party_type": "Defendant",
-      "source": "criminal_case_index"
+      "filedDate": "2026-01-21T11:48:11.675Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2026-01-21T11:48:11.675Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-01-21T09:00:00.000Z",
+      "docketEntryComment": "Motion to Dismiss Pursuant to Penal Code 991",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2026-01-21T09:00:00.000Z",
+      "description": "Motion to Dismiss Pursuant to Penal Code 991",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-01-20T14:54:21.582Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2026-01-20T14:54:21.582Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-01-20T10:05:06.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2026-01-20T10:05:06.000Z",
+      "description": "Complaint",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-01-20T05:29:15.000Z",
+      "docketEntryComment": "DENIED - BAIL STATUTORILY SET Authorization for Pre-Arraignment Release Consideration",
+      "otherSubmitter": "PTS",
+      "__index": 4,
+      "date_filed": "2026-01-20T05:29:15.000Z",
+      "description": "DENIED - BAIL STATUTORILY SET Authorization for Pre-Arraignment Release Consideration",
+      "submitter": "PTS",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-01-20T05:28:54.000Z",
+      "docketEntryComment": "OR Denied Filed",
+      "otherSubmitter": "PTS",
+      "__index": 5,
+      "date_filed": "2026-01-20T05:28:54.000Z",
+      "description": "OR Denied Filed",
+      "submitter": "PTS",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-01-20T05:15:14.000Z",
+      "docketEntryComment": "Sufficient Probable Cause Filed",
+      "otherSubmitter": "PTS",
+      "__index": 6,
+      "date_filed": "2026-01-20T05:15:14.000Z",
+      "description": "Sufficient Probable Cause Filed",
+      "submitter": "PTS",
+      "source": "criminal_portal_roa"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
-  "criminal_index": {
-    "searched_last_name": "CLARK",
-    "searched_first_prefix": "DO",
-    "charges": "626.6(a) PC/M",
-    "row": {
-      "DEFENDANTNAME": "DONALD RAY CLARK",
-      "CASENUMBER": "CRI-26001100",
-      "FILEDDATE": "2026-01-20 10:06:00",
-      "CHARGES": "626.6(a) PC/M"
-    }
-  },
-  "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
   "criminal": {
     "raw_case_number": "26001100",
-    "portal_case_id": "",
+    "portal_case_id": "4245266",
     "display_case_number": "CRI-26001100",
     "defendant": "DONALD RAY CLARK",
     "filed_date": "2026-01-20",
@@ -59,11 +188,18 @@
       "defendant": "DONALD RAY CLARK",
       "filed_date": "2026-01-20"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 991",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
-  "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DONALD RAY CLARK, and date of filing 2026-01-20. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

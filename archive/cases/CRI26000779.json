@@ -1,55 +1,111 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:48:17.012Z",
-  "status": "unavailable",
-  "case_type": "criminal",
-  "case_number": "CRI26000779",
+  "captured_at": "2026-06-21T15:46:04.392Z",
   "criminal_case_number": "26000779",
-  "display_case_number": "CRI-26000779",
-  "defendant": "DONALD RAY CLARK",
-  "filed_date": "2026-01-14",
-  "charges": "626.6(a) PC/M",
-  "case_title": "People v. DONALD RAY CLARK",
-  "court": "San Francisco Superior Court - Criminal",
-  "cause_of_action": "Criminal",
+  "status": "found",
+  "portal_case_id": "4244653",
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4244653"
+  },
+  "roa": [
+    {
+      "filedDate": "2026-02-13T12:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-02-13T12:00:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-01-14T12:52:16.000Z",
+      "docketEntryComment": "Complaint and Citation; RETURNED DATE 02/13/26 CITN",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2026-02-13 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2026-02-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [],
+  "parties": [
+    {
+      "name": "DONALD RAY CLARK",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
   "case_header": {
     "case_number": "CRI-26000779",
     "defendant": "DONALD RAY CLARK",
     "filed_date": "2026-01-14"
   },
-  "parties": [
+  "case_header_checked_at": "2026-06-21T15:46:05.510Z",
+  "display_case_number": "CRI-26000779",
+  "defendant": "DONALD RAY CLARK",
+  "case_title": "People v. DONALD RAY CLARK",
+  "filed_date": "2026-01-14",
+  "case_type": "criminal",
+  "case_number": "CRI26000779",
+  "criminal_case_type": "",
+  "court": "San Francisco Superior Court - Criminal",
+  "cause_of_action": "Criminal",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4244653",
+  "docket_entries": [
     {
-      "name": "DONALD RAY CLARK",
-      "party_type": "Defendant",
-      "source": "criminal_case_index"
+      "filedDate": "2026-02-13T12:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2026-02-13T12:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-02-13T12:00:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2026-02-13T12:00:00.000Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-01-14T12:52:16.000Z",
+      "docketEntryComment": "Complaint and Citation; RETURNED DATE 02/13/26 CITN",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2026-01-14T12:52:16.000Z",
+      "description": "Complaint and Citation; RETURNED DATE 02/13/26 CITN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
-  "criminal_index": {
-    "searched_last_name": "CLARK",
-    "searched_first_prefix": "DO",
-    "charges": "626.6(a) PC/M",
-    "row": {
-      "DEFENDANTNAME": "DONALD RAY CLARK",
-      "CASENUMBER": "CRI-26000779",
-      "FILEDDATE": "2026-01-14 12:54:27",
-      "CHARGES": "626.6(a) PC/M"
-    }
-  },
-  "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
   "criminal": {
     "raw_case_number": "26000779",
-    "portal_case_id": "",
+    "portal_case_id": "4244653",
     "display_case_number": "CRI-26000779",
     "defendant": "DONALD RAY CLARK",
     "filed_date": "2026-01-14",
@@ -62,8 +118,6 @@
     "statutes": [],
     "inferred_charges": []
   },
-  "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DONALD RAY CLARK, and date of filing 2026-01-14. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0
