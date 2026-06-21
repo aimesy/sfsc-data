@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:31:14.056Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:47:05.708Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02215798",
   "criminal_case_number": "02215798",
@@ -24,10 +24,81 @@
       "name": "MARCEL BRYANT",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARCEL BRYANT",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2005-06-09T00:00:00.000Z",
+      "docketEntryComment": "NOTICE OF MOT TO CONT PURS 1050 W/ OST--FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-05-13T00:00:00.000Z",
+      "docketEntryComment": "NOTICE OF MOTION TO SUPP EVID PURS 1538,5PC--FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-06-10T14:00:00.000Z",
+      "docketEntryComment": "/VD:TRIAL DATE OF 07-22-05/MO PC 1385/DEF:PRESENTED A VALID CDL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-06-01T00:00:00.000Z",
+      "docketEntryComment": "OPPOSITION TO DEFT'S MOT FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-05-02T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/987,2/CONTD MOT TO SUPPRESS PC 1538,5/CONTD:MOTION TO SUPPRESS PC 1538,5/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2005-07-22 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2005-07-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-06-10 2:00 PM",
+      "hearingType": "PC 1538.5 Motion to Suppress",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2005-06-10",
+      "hearing_time": "2:00 PM",
+      "matters": "PC 1538.5 Motion to Suppress",
+      "hearing_type": "PC 1538.5 Motion to Suppress",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-05-02 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2005-05-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +116,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3338748",
+  "docket_entries": [
+    {
+      "filedDate": "2005-06-09T00:00:00.000Z",
+      "docketEntryComment": "NOTICE OF MOT TO CONT PURS 1050 W/ OST--FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2005-06-09T00:00:00.000Z",
+      "description": "NOTICE OF MOT TO CONT PURS 1050 W/ OST--FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-05-13T00:00:00.000Z",
+      "docketEntryComment": "NOTICE OF MOTION TO SUPP EVID PURS 1538,5PC--FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2005-05-13T00:00:00.000Z",
+      "description": "NOTICE OF MOTION TO SUPP EVID PURS 1538,5PC--FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-06-10T14:00:00.000Z",
+      "docketEntryComment": "/VD:TRIAL DATE OF 07-22-05/MO PC 1385/DEF:PRESENTED A VALID CDL/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2005-06-10T14:00:00.000Z",
+      "description": "/VD:TRIAL DATE OF 07-22-05/MO PC 1385/DEF:PRESENTED A VALID CDL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-06-01T00:00:00.000Z",
+      "docketEntryComment": "OPPOSITION TO DEFT'S MOT FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2005-06-01T00:00:00.000Z",
+      "description": "OPPOSITION TO DEFT'S MOT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-05-02T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/987,2/CONTD MOT TO SUPPRESS PC 1538,5/CONTD:MOTION TO SUPPRESS PC 1538,5/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2005-05-02T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/987,2/CONTD MOT TO SUPPRESS PC 1538,5/CONTD:MOTION TO SUPPRESS PC 1538,5/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02215798",
-    "portal_case_id": "",
+    "portal_case_id": "3338748",
     "display_case_number": "CRI-02215798",
     "defendant": "MARCEL BRYANT",
     "filed_date": "2005-05-02",
@@ -59,12 +181,54 @@
       "defendant": "MARCEL BRYANT",
       "filed_date": "2005-05-02"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 1538",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 1538",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARCEL BRYANT, and date of filing 2005-05-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARCEL BRYANT, and date of filing 2005-05-02. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:47:06.440Z",
+  "portal_case_id": "3338748",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02215798",
+      "defendant": "MARCEL BRYANT",
+      "filed_date": "2005-05-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3338748"
+  }
 }

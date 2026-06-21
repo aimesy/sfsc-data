@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:15:27.083Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:50:54.050Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02237286",
   "criminal_case_number": "02237286",
@@ -24,11 +24,100 @@
       "name": "JUAN ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JUAN ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2005-11-14T00:00:00.000Z",
+      "docketEntryComment": "NOTICE OF MOT SUPPRESS EVID 1538,5PC FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-11-14T00:00:00.000Z",
+      "docketEntryComment": "NOTICE OF MOTION TO SUPPRESS EVID PURS 1538,5PC FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-10-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL: I&A, P&C/X: ATTORNEY V ROY LEFCOURT HAS BEEN RETAINED,//TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:25,000/CONTD TO BE SET, DOP /CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-11-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:1538,5  MOTION AND PRE LIM/MO PC 1385:MOTION TO SUPPRESS GRANTED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-10-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/DOP/CONT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2005-11-29 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2005-11-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-10-25 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2005-10-25",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-10-12 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2005-10-12",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-10-07 9:00 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2005-10-07",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KWIXUAN MALOOF",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +134,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3358503",
+  "docket_entries": [
+    {
+      "filedDate": "2005-11-14T00:00:00.000Z",
+      "docketEntryComment": "NOTICE OF MOT SUPPRESS EVID 1538,5PC FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2005-11-14T00:00:00.000Z",
+      "description": "NOTICE OF MOT SUPPRESS EVID 1538,5PC FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-11-14T00:00:00.000Z",
+      "docketEntryComment": "NOTICE OF MOTION TO SUPPRESS EVID PURS 1538,5PC FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2005-11-14T00:00:00.000Z",
+      "description": "NOTICE OF MOTION TO SUPPRESS EVID PURS 1538,5PC FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-10-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL: I&A, P&C/X: ATTORNEY V ROY LEFCOURT HAS BEEN RETAINED,//TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:25,000/CONTD TO BE SET, DOP /CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2005-10-12T09:00:00.000Z",
+      "description": "/CAL: I&A, P&C/X: ATTORNEY V ROY LEFCOURT HAS BEEN RETAINED,//TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:25,000/CONTD TO BE SET, DOP /CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-11-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:1538,5  MOTION AND PRE LIM/MO PC 1385:MOTION TO SUPPRESS GRANTED/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2005-11-29T09:00:00.000Z",
+      "description": "/CAL:1538,5 MOTION AND PRE LIM/MO PC 1385:MOTION TO SUPPRESS GRANTED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-10-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/DOP/CONT/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2005-10-25T09:00:00.000Z",
+      "description": "/CAL:TO SET/DOP/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02237286",
-    "portal_case_id": "",
+    "portal_case_id": "3358503",
     "display_case_number": "CRI-02237286",
     "defendant": "JUAN ALLEN",
     "filed_date": "2005-10-07",
@@ -59,12 +199,36 @@
       "defendant": "JUAN ALLEN",
       "filed_date": "2005-10-07"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JUAN ALLEN, and date of filing 2005-10-07. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JUAN ALLEN, and date of filing 2005-10-07. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:50:54.739Z",
+  "portal_case_id": "3358503",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02237286",
+      "defendant": "JUAN ALLEN",
+      "filed_date": "2005-10-07"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3358503"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:07.135Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:07:47.749Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02346349",
   "criminal_case_number": "02346349",
@@ -24,11 +24,100 @@
       "name": "MICHAEL BRADLEY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL BRADLEY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2008-01-23T00:00:00.000Z",
+      "docketEntryComment": "ACCOUNT SETUP IN CUBS,REFER TO CCU,DO NOT TAKE PAYMENT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-01-23T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3 ISS CPROB PROB 3 Y PJ5 D/CTS 5/SAORD/SA2 150 YARDS FROM THE 500LOCK OF ELLIS STREET IN SAN FRANCISCO/WS/SECFEE/VF1/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-01-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/X:DA ORALLY AMENDS THE COMPLAINT TO ADD COUNT 03 653F(D) PC-MISD/FAWC/IRRC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-01-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/CONT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-12-12T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/OR//SA2:519 ELLIS ST, SAN FRANCISCO/CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2008-01-23 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2008-01-23",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2008-01-23 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2008-01-23",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2008-01-09 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2008-01-09",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-12-12 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2007-12-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CHRISTOPHER HITE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +134,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3458437",
+  "docket_entries": [
+    {
+      "filedDate": "2008-01-23T00:00:00.000Z",
+      "docketEntryComment": "ACCOUNT SETUP IN CUBS,REFER TO CCU,DO NOT TAKE PAYMENT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2008-01-23T00:00:00.000Z",
+      "description": "ACCOUNT SETUP IN CUBS,REFER TO CCU,DO NOT TAKE PAYMENT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-01-23T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3 ISS CPROB PROB 3 Y PJ5 D/CTS 5/SAORD/SA2 150 YARDS FROM THE 500LOCK OF ELLIS STREET IN SAN FRANCISCO/WS/SECFEE/VF1/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2008-01-23T09:15:00.000Z",
+      "description": "/TWS/CH3 ISS CPROB PROB 3 Y PJ5 D/CTS 5/SAORD/SA2 150 YARDS FROM THE 500LOCK OF ELLIS STREET IN SAN FRANCISCO/WS/SECFEE/VF1/COLLECT/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-01-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/X:DA ORALLY AMENDS THE COMPLAINT TO ADD COUNT 03 653F(D) PC-MISD/FAWC/IRRC/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2008-01-23T09:00:00.000Z",
+      "description": "/CAL:TO SET/X:DA ORALLY AMENDS THE COMPLAINT TO ADD COUNT 03 653F(D) PC-MISD/FAWC/IRRC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-01-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2008-01-09T09:00:00.000Z",
+      "description": "/CAL:TO SET/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-12-12T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/OR//SA2:519 ELLIS ST, SAN FRANCISCO/CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2007-12-12T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/OR//SA2:519 ELLIS ST, SAN FRANCISCO/CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02346349",
-    "portal_case_id": "",
+    "portal_case_id": "3458437",
     "display_case_number": "CRI-02346349",
     "defendant": "MICHAEL BRADLEY",
     "filed_date": "2007-12-12",
@@ -63,8 +203,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL BRADLEY, and date of filing 2007-12-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL BRADLEY, and date of filing 2007-12-12. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:07:48.342Z",
+  "portal_case_id": "3458437",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02346349",
+      "defendant": "MICHAEL BRADLEY",
+      "filed_date": "2007-12-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3458437"
+  }
 }

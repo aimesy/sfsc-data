@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:39:43.404Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:08:44.015Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02349899",
   "criminal_case_number": "02349899",
@@ -24,11 +24,74 @@
       "name": "MARY BACA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARY BACA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2008-01-18T15:02:00.000Z",
+      "docketEntryComment": "PD'S RESP TO DA'S OPP TO DFT'S 1538,5PC MOTFILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-01-17T14:57:00.000Z",
+      "docketEntryComment": "DA OPP TO MOT/SUPPRESS W/SUPPL P&A FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-01-11T15:36:00.000Z",
+      "docketEntryComment": "PD'S 1538,5PC MOT FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-01-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM/WIT SWORN:LLOYD MARTIN/EXHMA:1-EVID ENV;1A-BAG AND CONTENTS;1B-NARC FORM/X:MOTION TO SUPPRESS:GRANTED AFTER HEARING/X: ALL COUNTS DISMISSED BY COURT SINCE 1538,5PC MOTION IS GRANTED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-01-08T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/CTORD:OR DENIED/NTW/LD:01-23-08/987,2/BAIL:12,000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2008-01-22 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2008-01-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2008-01-08 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2008-01-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PETER FITZPATRICK",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +108,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3461698",
+  "docket_entries": [
+    {
+      "filedDate": "2008-01-18T15:02:00.000Z",
+      "docketEntryComment": "PD'S RESP TO DA'S OPP TO DFT'S 1538,5PC MOTFILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2008-01-18T15:02:00.000Z",
+      "description": "PD'S RESP TO DA'S OPP TO DFT'S 1538,5PC MOTFILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-01-17T14:57:00.000Z",
+      "docketEntryComment": "DA OPP TO MOT/SUPPRESS W/SUPPL P&A FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2008-01-17T14:57:00.000Z",
+      "description": "DA OPP TO MOT/SUPPRESS W/SUPPL P&A FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-01-11T15:36:00.000Z",
+      "docketEntryComment": "PD'S 1538,5PC MOT FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2008-01-11T15:36:00.000Z",
+      "description": "PD'S 1538,5PC MOT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-01-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM/WIT SWORN:LLOYD MARTIN/EXHMA:1-EVID ENV;1A-BAG AND CONTENTS;1B-NARC FORM/X:MOTION TO SUPPRESS:GRANTED AFTER HEARING/X: ALL COUNTS DISMISSED BY COURT SINCE 1538,5PC MOTION IS GRANTED/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2008-01-22T09:00:00.000Z",
+      "description": "/CAL:PRELIM/WIT SWORN:LLOYD MARTIN/EXHMA:1-EVID ENV;1A-BAG AND CONTENTS;1B-NARC FORM/X:MOTION TO SUPPRESS:GRANTED AFTER HEARING/X: ALL COUNTS DISMISSED BY COURT SINCE 1538,5PC MOTION IS GRANTED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-01-08T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/CTORD:OR DENIED/NTW/LD:01-23-08/987,2/BAIL:12,000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2008-01-08T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/CTORD:OR DENIED/NTW/LD:01-23-08/987,2/BAIL:12,000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02349899",
-    "portal_case_id": "",
+    "portal_case_id": "3461698",
     "display_case_number": "CRI-02349899",
     "defendant": "MARY BACA",
     "filed_date": "2008-01-08",
@@ -63,8 +177,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARY BACA, and date of filing 2008-01-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARY BACA, and date of filing 2008-01-08. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:08:44.659Z",
+  "portal_case_id": "3461698",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02349899",
+      "defendant": "MARY BACA",
+      "filed_date": "2008-01-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3461698"
+  }
 }

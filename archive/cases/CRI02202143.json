@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:52:48.940Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:45:46.228Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02202143",
   "criminal_case_number": "02202143",
@@ -24,11 +24,77 @@
       "name": "JOAQUIN CRUZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOAQUIN CRUZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2005-03-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE TRIAL CONF/MO PC 1385/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-03-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE TRIAL CONF/CONTD:FOR FURTHER PTC/DOP/CGTW/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-02-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CON:ROBERT DUNLAP//TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/987,2/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2005-03-10 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "2005-03-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-03-03 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 1,
+      "court_date": "2005-03-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-02-01 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 2,
+      "court_date": "2005-02-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "B DUNLAP",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3326212",
+  "docket_entries": [
+    {
+      "filedDate": "2005-03-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE TRIAL CONF/MO PC 1385/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2005-03-10T09:00:00.000Z",
+      "description": "/CAL:PRE TRIAL CONF/MO PC 1385/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-03-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE TRIAL CONF/CONTD:FOR FURTHER PTC/DOP/CGTW/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2005-03-03T09:00:00.000Z",
+      "description": "/CAL:PRE TRIAL CONF/CONTD:FOR FURTHER PTC/DOP/CGTW/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-02-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CON:ROBERT DUNLAP//TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/987,2/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2005-02-01T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/CON:ROBERT DUNLAP//TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/987,2/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02202143",
-    "portal_case_id": "",
+    "portal_case_id": "3326212",
     "display_case_number": "CRI-02202143",
     "defendant": "JOAQUIN CRUZ",
     "filed_date": "2005-02-01",
@@ -59,12 +156,36 @@
       "defendant": "JOAQUIN CRUZ",
       "filed_date": "2005-02-01"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOAQUIN CRUZ, and date of filing 2005-02-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOAQUIN CRUZ, and date of filing 2005-02-01. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:45:46.921Z",
+  "portal_case_id": "3326212",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02202143",
+      "defendant": "JOAQUIN CRUZ",
+      "filed_date": "2005-02-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3326212"
+  }
 }

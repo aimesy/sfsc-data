@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:40:16.318Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:57:25.727Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02278218",
   "criminal_case_number": "02278218",
@@ -24,11 +24,87 @@
       "name": "MARIA LESLIE ANDRADE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARIA LESLIE ANDRADE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2007-02-05T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-08-23T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-05-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL & TO SET & VCDL/MO PC 1385:DEFENDANT HAS A VALID CALIFORNIADRIVER'S LICENSE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-02-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/OR/GTWM/987,2/CONTD:PRETRIAL CONF & TO SET & VALID CDL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-08-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/FTA/BW/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2007-05-29 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "2007-05-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-02-05 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 1,
+      "court_date": "2007-02-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2006-08-23 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 2,
+      "court_date": "2006-08-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DIANA ROSENSTEIN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +121,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3395863",
+  "docket_entries": [
+    {
+      "filedDate": "2007-02-05T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2007-02-05T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-08-23T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2006-08-23T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-05-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL & TO SET & VCDL/MO PC 1385:DEFENDANT HAS A VALID CALIFORNIADRIVER'S LICENSE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2007-05-29T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL & TO SET & VCDL/MO PC 1385:DEFENDANT HAS A VALID CALIFORNIADRIVER'S LICENSE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-02-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/OR/GTWM/987,2/CONTD:PRETRIAL CONF & TO SET & VALID CDL/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2007-02-05T09:00:00.000Z",
+      "description": "/CAL:BW RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/OR/GTWM/987,2/CONTD:PRETRIAL CONF & TO SET & VALID CDL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-08-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/FTA/BW/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2006-08-23T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/FTA/BW/BWI/BAIL:5000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02278218",
-    "portal_case_id": "",
+    "portal_case_id": "3395863",
     "display_case_number": "CRI-02278218",
     "defendant": "MARIA LESLIE ANDRADE",
     "filed_date": "2006-08-23",
@@ -59,12 +186,36 @@
       "defendant": "MARIA LESLIE ANDRADE",
       "filed_date": "2006-08-23"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARIA LESLIE ANDRADE, and date of filing 2006-08-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARIA LESLIE ANDRADE, and date of filing 2006-08-23. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:57:26.366Z",
+  "portal_case_id": "3395863",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02278218",
+      "defendant": "MARIA LESLIE ANDRADE",
+      "filed_date": "2006-08-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3395863"
+  }
 }

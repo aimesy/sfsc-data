@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:54:03.370Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:54:02.520Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02252534",
   "criminal_case_number": "02252534",
@@ -24,11 +24,87 @@
       "name": "JOHN DANIELS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN DANIELS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2006-02-15T09:03:00.000Z",
+      "docketEntryComment": "Held to Answer",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-02-27T13:01:00.000Z",
+      "docketEntryComment": "PRELIM TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-02-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HRG/TEXT:DEFT IS ORDERED HELD TO ANSWER/HOLDING/WIT SWORN:OFFICER JOHN TACK/EXHM:A, PHOTOGRAPH OF VICTIM, B, TWO YELLOW LOOSE SHEETS HANDWRITTEN ENGSTROM-WEHEELER/CTORD:EXHIBITS A,B ADMITTED INTO EVIDENCE/X:EXHIBITS MARKED AND ADMITTED INTO EVIDENCE, ARE ORDERED RETURNED/X:TOTHE OFFERING PARTY PENDING FURTHER ORDER OF COURT,/HTA1:1/871D:2/DEFTCUST3/SHERCOM1/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-02-01T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:02-16-06/987,2/BAIL:200,000/CTORD:BAIL SET WITHOUT PREJUDICE/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-03-01T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2006-03-01 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2006-03-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2006-02-15 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2006-02-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2006-02-01 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2006-02-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEVE OLMO",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +121,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3372482",
+  "docket_entries": [
+    {
+      "filedDate": "2006-02-15T09:03:00.000Z",
+      "docketEntryComment": "Held to Answer",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2006-02-15T09:03:00.000Z",
+      "description": "Held to Answer",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-02-27T13:01:00.000Z",
+      "docketEntryComment": "PRELIM TX FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2006-02-27T13:01:00.000Z",
+      "description": "PRELIM TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-02-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HRG/TEXT:DEFT IS ORDERED HELD TO ANSWER/HOLDING/WIT SWORN:OFFICER JOHN TACK/EXHM:A, PHOTOGRAPH OF VICTIM, B, TWO YELLOW LOOSE SHEETS HANDWRITTEN ENGSTROM-WEHEELER/CTORD:EXHIBITS A,B ADMITTED INTO EVIDENCE/X:EXHIBITS MARKED AND ADMITTED INTO EVIDENCE, ARE ORDERED RETURNED/X:TOTHE OFFERING PARTY PENDING FURTHER ORDER OF COURT,/HTA1:1/871D:2/DEFTCUST3/SHERCOM1/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2006-02-15T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HRG/TEXT:DEFT IS ORDERED HELD TO ANSWER/HOLDING/WIT SWORN:OFFICER JOHN TACK/EXHM:A, PHOTOGRAPH OF VICTIM, B, TWO YELLOW LOOSE SHEETS HANDWRITTEN ENGSTROM-WEHEELER/CTORD:EXHIBITS A,B ADMITTED INTO EVIDENCE/X:EXHIBITS MARKED AND ADMITTED INTO EVIDENCE, ARE ORDERED RETURNED/X:TOTHE OFFERING PARTY PENDING FURTHER ORDER OF COURT,/HTA1:1/871D:2/DEFTCUST3/SHERCOM1/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-02-01T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:02-16-06/987,2/BAIL:200,000/CTORD:BAIL SET WITHOUT PREJUDICE/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2006-02-01T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:02-16-06/987,2/BAIL:200,000/CTORD:BAIL SET WITHOUT PREJUDICE/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-03-01T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2006-03-01T09:00:00.000Z",
+      "description": "/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02252534",
-    "portal_case_id": "",
+    "portal_case_id": "3372482",
     "display_case_number": "CRI-02252534",
     "defendant": "JOHN DANIELS",
     "filed_date": "2006-02-01",
@@ -63,8 +190,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN DANIELS, and date of filing 2006-02-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN DANIELS, and date of filing 2006-02-01. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:54:03.150Z",
+  "portal_case_id": "3372482",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02252534",
+      "defendant": "JOHN DANIELS",
+      "filed_date": "2006-02-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3372482"
+  }
 }

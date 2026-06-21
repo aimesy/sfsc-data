@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:41:18.296Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:39:10.672Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02166521",
   "criminal_case_number": "02166521",
@@ -24,10 +24,53 @@
       "name": "RONNIE ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RONNIE ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2004-06-02T09:00:00.000Z",
+      "docketEntryComment": "/X: ON JUNE 2, 2004, THIS CASE WAS SCHEDULED FOR ARRAIGNMENT,//X: COUNSEL APPEARED FOR DEFT AND SET NEW DATE FOR ARRAIGNMENT BEFORE COMPLAINT WAS FILED,/X: NO COMPLAINT WAS FILED AND THE CASE WAS NOT DISCHARGED BY THE DISTRICT ATTORNEY,/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-06-08T09:00:00.000Z",
+      "docketEntryComment": "DISTRI ATTY WITHDRAWS COMPLAINT DEFT IS DISCHARGED                   /",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2004-06-08 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "2004-06-08",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-06-02 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 1,
+      "court_date": "2004-06-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +88,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3293308",
+  "docket_entries": [
+    {
+      "filedDate": "2004-06-02T09:00:00.000Z",
+      "docketEntryComment": "/X: ON JUNE 2, 2004, THIS CASE WAS SCHEDULED FOR ARRAIGNMENT,//X: COUNSEL APPEARED FOR DEFT AND SET NEW DATE FOR ARRAIGNMENT BEFORE COMPLAINT WAS FILED,/X: NO COMPLAINT WAS FILED AND THE CASE WAS NOT DISCHARGED BY THE DISTRICT ATTORNEY,/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2004-06-02T09:00:00.000Z",
+      "description": "/X: ON JUNE 2, 2004, THIS CASE WAS SCHEDULED FOR ARRAIGNMENT,//X: COUNSEL APPEARED FOR DEFT AND SET NEW DATE FOR ARRAIGNMENT BEFORE COMPLAINT WAS FILED,/X: NO COMPLAINT WAS FILED AND THE CASE WAS NOT DISCHARGED BY THE DISTRICT ATTORNEY,/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-06-08T09:00:00.000Z",
+      "docketEntryComment": "DISTRI ATTY WITHDRAWS COMPLAINT DEFT IS DISCHARGED                   /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2004-06-08T09:00:00.000Z",
+      "description": "DISTRI ATTY WITHDRAWS COMPLAINT DEFT IS DISCHARGED /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02166521",
-    "portal_case_id": "",
+    "portal_case_id": "3293308",
     "display_case_number": "CRI-02166521",
     "defendant": "RONNIE ALLEN",
     "filed_date": "2004-06-02",
@@ -63,8 +127,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RONNIE ALLEN, and date of filing 2004-06-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RONNIE ALLEN, and date of filing 2004-06-02. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:39:11.315Z",
+  "portal_case_id": "3293308",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02166521",
+      "defendant": "RONNIE ALLEN",
+      "filed_date": "2004-06-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3293308"
+  }
 }

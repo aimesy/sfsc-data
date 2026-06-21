@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:26:07.543Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:54:28.880Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02252075",
   "criminal_case_number": "02252075",
@@ -24,11 +24,51 @@
       "name": "DEINS E BARAHONA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DEINS E BARAHONA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2006-01-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PX HRG FROM D10/X:CO D IS THOMAS AVILA 2252074/X:DEF WAIVES SEPARATE SPANISH INTERP FOR TODAY'S PROCEEDINGS/X:ESTIMATE HALF DAY/LD:02-10-06/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-02-08T08:30:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/X:PX HRG VACATED/X:CO D AVILES 2252074/MO PC 1385:PEO UNABLE TO LOCATE VICTIM/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-01-27T09:01:00.000Z",
+      "docketEntryComment": "7,2/BAIL:500000/X:THESE ARE M10 CASES,ESTIMATED HALF DAY",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2006-01-30 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 0,
+      "court_date": "2006-01-30",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "D HARRISON",
+      "type": "Appointed Counsel"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +85,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3372064",
+  "docket_entries": [
+    {
+      "filedDate": "2006-01-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PX HRG FROM D10/X:CO D IS THOMAS AVILA 2252074/X:DEF WAIVES SEPARATE SPANISH INTERP FOR TODAY'S PROCEEDINGS/X:ESTIMATE HALF DAY/LD:02-10-06/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2006-01-30T09:00:00.000Z",
+      "description": "/CAL:TO SET PX HRG FROM D10/X:CO D IS THOMAS AVILA 2252074/X:DEF WAIVES SEPARATE SPANISH INTERP FOR TODAY'S PROCEEDINGS/X:ESTIMATE HALF DAY/LD:02-10-06/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-02-08T08:30:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/X:PX HRG VACATED/X:CO D AVILES 2252074/MO PC 1385:PEO UNABLE TO LOCATE VICTIM/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2006-02-08T08:30:00.000Z",
+      "description": "/CAL:PRELIM HRG/X:PX HRG VACATED/X:CO D AVILES 2252074/MO PC 1385:PEO UNABLE TO LOCATE VICTIM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-01-27T09:01:00.000Z",
+      "docketEntryComment": "7,2/BAIL:500000/X:THESE ARE M10 CASES,ESTIMATED HALF DAY",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2006-01-27T09:01:00.000Z",
+      "description": "7,2/BAIL:500000/X:THESE ARE M10 CASES,ESTIMATED HALF DAY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02252075",
-    "portal_case_id": "",
+    "portal_case_id": "3372064",
     "display_case_number": "CRI-02252075",
     "defendant": "DEINS E BARAHONA",
     "filed_date": "2006-01-27",
@@ -59,12 +130,36 @@
       "defendant": "DEINS E BARAHONA",
       "filed_date": "2006-01-27"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DEINS E BARAHONA, and date of filing 2006-01-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DEINS E BARAHONA, and date of filing 2006-01-27. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:54:29.551Z",
+  "portal_case_id": "3372064",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02252075",
+      "defendant": "DEINS E BARAHONA",
+      "filed_date": "2006-01-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3372064"
+  }
 }

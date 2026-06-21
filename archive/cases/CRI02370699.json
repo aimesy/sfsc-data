@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:35.567Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:12:17.945Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02370699",
   "criminal_case_number": "02370699",
@@ -24,11 +24,64 @@
       "name": "CAREY D BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CAREY D BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2008-06-05T00:00:00.000Z",
+      "docketEntryComment": "PD MOT TO SUPP EVID PURS PC 1538,5 FILED TODAY IN ROOM 101",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-06-03T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:06-17-08/987,2/BAIL:35,000/X:PD PEARLMAN RECALLED THE CASE IN THE AFTERNOON; INFORMS COURT THAT THE ARREST OCCURED BEYOND THE SPECIFIED PERIMETER ON THE STAYAWAY ORDER,/OR/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-06-12T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2008-06-12 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2008-06-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2008-06-03 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2008-06-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BRIAN PEARLMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +98,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3480832",
+  "docket_entries": [
+    {
+      "filedDate": "2008-06-05T00:00:00.000Z",
+      "docketEntryComment": "PD MOT TO SUPP EVID PURS PC 1538,5 FILED TODAY IN ROOM 101",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2008-06-05T00:00:00.000Z",
+      "description": "PD MOT TO SUPP EVID PURS PC 1538,5 FILED TODAY IN ROOM 101",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-06-03T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:06-17-08/987,2/BAIL:35,000/X:PD PEARLMAN RECALLED THE CASE IN THE AFTERNOON; INFORMS COURT THAT THE ARREST OCCURED BEYOND THE SPECIFIED PERIMETER ON THE STAYAWAY ORDER,/OR/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2008-06-03T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:06-17-08/987,2/BAIL:35,000/X:PD PEARLMAN RECALLED THE CASE IN THE AFTERNOON; INFORMS COURT THAT THE ARREST OCCURED BEYOND THE SPECIFIED PERIMETER ON THE STAYAWAY ORDER,/OR/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-06-12T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2008-06-12T09:00:00.000Z",
+      "description": "/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02370699",
-    "portal_case_id": "",
+    "portal_case_id": "3480832",
     "display_case_number": "CRI-02370699",
     "defendant": "CAREY D BROWN",
     "filed_date": "2008-06-03",
@@ -59,12 +143,44 @@
       "defendant": "CAREY D BROWN",
       "filed_date": "2008-06-03"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CAREY D BROWN, and date of filing 2008-06-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CAREY D BROWN, and date of filing 2008-06-03. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:12:18.506Z",
+  "portal_case_id": "3480832",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02370699",
+      "defendant": "CAREY D BROWN",
+      "filed_date": "2008-06-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3480832"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:42:19.221Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:50:53.203Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02231286",
   "criminal_case_number": "02231286",
@@ -24,11 +24,54 @@
       "name": "JUSTIN BELTON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JUSTIN BELTON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2005-09-07T09:15:00.000Z",
+      "docketEntryComment": "/X DA ORALLY AMENDS COMPLAINT TO ADD COUNT 002, 653F(D)PC-MISD/FAWC/IRRC//TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:002//FNDG/CO:NEGOTIATED DISPOSITION/TWS/CH2:CJ 90D/CTS:18/X:SENTENCE TO BE CONCURRENT WITH CDC HOLD/ /VF1/SECFEE/REMA/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2005-09-07 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2005-09-07",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-09-07 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2005-09-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARLA ZAMORA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +88,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3352977",
+  "docket_entries": [
+    {
+      "filedDate": "2005-09-07T09:15:00.000Z",
+      "docketEntryComment": "/X DA ORALLY AMENDS COMPLAINT TO ADD COUNT 002, 653F(D)PC-MISD/FAWC/IRRC//TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:002//FNDG/CO:NEGOTIATED DISPOSITION/TWS/CH2:CJ 90D/CTS:18/X:SENTENCE TO BE CONCURRENT WITH CDC HOLD/ /VF1/SECFEE/REMA/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2005-09-07T09:15:00.000Z",
+      "description": "/X DA ORALLY AMENDS COMPLAINT TO ADD COUNT 002, 653F(D)PC-MISD/FAWC/IRRC//TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:002//FNDG/CO:NEGOTIATED DISPOSITION/TWS/CH2:CJ 90D/CTS:18/X:SENTENCE TO BE CONCURRENT WITH CDC HOLD/ /VF1/SECFEE/REMA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02231286",
-    "portal_case_id": "",
+    "portal_case_id": "3352977",
     "display_case_number": "CRI-02231286",
     "defendant": "JUSTIN BELTON",
     "filed_date": "2005-08-24",
@@ -63,8 +117,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JUSTIN BELTON, and date of filing 2005-08-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JUSTIN BELTON, and date of filing 2005-08-24. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:50:53.897Z",
+  "portal_case_id": "3352977",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02231286",
+      "defendant": "JUSTIN BELTON",
+      "filed_date": "2005-08-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3352977"
+  }
 }

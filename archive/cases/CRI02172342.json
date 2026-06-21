@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:37:22.872Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:38:55.573Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02172342",
   "criminal_case_number": "02172342",
@@ -24,11 +24,59 @@
       "name": "JANICE ARMSTRONG",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JANICE ARMSTRONG",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2004-08-12T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/X:ON DA'S MOTION UNABLE TO SUSTAIN/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-07-12T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/OR/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2004-08-12 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2004-08-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-07-12 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 1,
+      "court_date": "2004-07-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "A RAJA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3298643",
+  "docket_entries": [
+    {
+      "filedDate": "2004-08-12T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/X:ON DA'S MOTION UNABLE TO SUSTAIN/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2004-08-12T09:00:00.000Z",
+      "description": "/MO PC 1385/X:ON DA'S MOTION UNABLE TO SUSTAIN/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-07-12T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/OR/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2004-07-12T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/OR/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02172342",
-    "portal_case_id": "",
+    "portal_case_id": "3298643",
     "display_case_number": "CRI-02172342",
     "defendant": "JANICE ARMSTRONG",
     "filed_date": "2004-07-12",
@@ -59,12 +128,36 @@
       "defendant": "JANICE ARMSTRONG",
       "filed_date": "2004-07-12"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JANICE ARMSTRONG, and date of filing 2004-07-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JANICE ARMSTRONG, and date of filing 2004-07-12. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:38:56.158Z",
+  "portal_case_id": "3298643",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02172342",
+      "defendant": "JANICE ARMSTRONG",
+      "filed_date": "2004-07-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3298643"
+  }
 }

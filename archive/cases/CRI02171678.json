@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:36:44.471Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:39:32.950Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02171678",
   "criminal_case_number": "02171678",
@@ -24,11 +24,46 @@
       "name": "ANTHONY ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANTHONY ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2004-07-12T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-07-12T00:00:00.000Z",
+      "docketEntryComment": "FTA BWI, B/S $30,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2004-09-03 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2004-09-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "K ISA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +80,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3298030",
+  "docket_entries": [
+    {
+      "filedDate": "2004-07-12T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2004-07-12T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-07-12T00:00:00.000Z",
+      "docketEntryComment": "FTA BWI, B/S $30,000",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2004-07-12T00:00:00.000Z",
+      "description": "FTA BWI, B/S $30,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02171678",
-    "portal_case_id": "",
+    "portal_case_id": "3298030",
     "display_case_number": "CRI-02171678",
     "defendant": "ANTHONY ALLEN",
     "filed_date": "2004-07-12",
@@ -63,8 +119,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANTHONY ALLEN, and date of filing 2004-07-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANTHONY ALLEN, and date of filing 2004-07-12. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:39:33.546Z",
+  "portal_case_id": "3298030",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02171678",
+      "defendant": "ANTHONY ALLEN",
+      "filed_date": "2004-07-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3298030"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:36:00.092Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:41:25.113Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02186040",
   "criminal_case_number": "02186040",
@@ -24,11 +24,54 @@
       "name": "MARK A CAMACHO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARK A CAMACHO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2004-10-27T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ  60D  /CTS:  17 /WS/SA1:JOSEPH BRADEN/VF1//OBEY/ACCEP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2004-10-27 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2004-10-27",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-10-27 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2004-10-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "P WANG",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +88,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3311223",
+  "docket_entries": [
+    {
+      "filedDate": "2004-10-27T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ  60D  /CTS:  17 /WS/SA1:JOSEPH BRADEN/VF1//OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2004-10-27T09:15:00.000Z",
+      "description": "/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ 60D /CTS: 17 /WS/SA1:JOSEPH BRADEN/VF1//OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02186040",
-    "portal_case_id": "",
+    "portal_case_id": "3311223",
     "display_case_number": "CRI-02186040",
     "defendant": "MARK A CAMACHO",
     "filed_date": "2004-10-14",
@@ -63,8 +117,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARK A CAMACHO, and date of filing 2004-10-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARK A CAMACHO, and date of filing 2004-10-14. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:41:25.820Z",
+  "portal_case_id": "3311223",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02186040",
+      "defendant": "MARK A CAMACHO",
+      "filed_date": "2004-10-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3311223"
+  }
 }

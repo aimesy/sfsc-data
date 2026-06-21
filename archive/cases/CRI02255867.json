@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:57:39.785Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:54:17.907Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02255867",
   "criminal_case_number": "02255867",
@@ -24,11 +24,41 @@
       "name": "LONNIE E ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LONNIE E ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2006-02-23T09:00:00.000Z",
+      "docketEntryComment": "/PD/X:PD AGUIRRE WITHDREW WAIVING INSTRUCTIONS AND ARRAIGNMENT IN THIS CASE/X:DEFENDANT ENTERED NOLO PLEA IN CASE NO, 2208237/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/BE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2006-02-23 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "2006-02-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CARMEN AGUIRRE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +75,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3375547",
+  "docket_entries": [
+    {
+      "filedDate": "2006-02-23T09:00:00.000Z",
+      "docketEntryComment": "/PD/X:PD AGUIRRE WITHDREW WAIVING INSTRUCTIONS AND ARRAIGNMENT IN THIS CASE/X:DEFENDANT ENTERED NOLO PLEA IN CASE NO, 2208237/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/BE/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2006-02-23T09:00:00.000Z",
+      "description": "/PD/X:PD AGUIRRE WITHDREW WAIVING INSTRUCTIONS AND ARRAIGNMENT IN THIS CASE/X:DEFENDANT ENTERED NOLO PLEA IN CASE NO, 2208237/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02255867",
-    "portal_case_id": "",
+    "portal_case_id": "3375547",
     "display_case_number": "CRI-02255867",
     "defendant": "LONNIE E ADAMS",
     "filed_date": "2006-02-23",
@@ -63,8 +104,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LONNIE E ADAMS, and date of filing 2006-02-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LONNIE E ADAMS, and date of filing 2006-02-23. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:54:18.555Z",
+  "portal_case_id": "3375547",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02255867",
+      "defendant": "LONNIE E ADAMS",
+      "filed_date": "2006-02-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3375547"
+  }
 }

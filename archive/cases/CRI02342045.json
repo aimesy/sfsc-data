@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:16:00.400Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:06:55.831Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02342045",
   "criminal_case_number": "02342045",
@@ -24,11 +24,77 @@
       "name": "ALI AHMED",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALI AHMED",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2007-11-13T09:15:00.000Z",
+      "docketEntryComment": "/CAL:FORTHWITH FROM M14/TEXT:CONFL CNSL APPTD/CON:ERIN CRANE/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DOP/GTWM/987,2/CONTD PC 4011,6REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/CTORD:PC 4011,6 REPORT IS DUE ON 11-15-07 IN M16 FOR BHC PURPOSESON CASES 2338648 & 2342045/CONT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-11-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:4011,6 REPORT/ /TN:ALI AHMED/MO138572:2338648/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-11-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:TRANS TO DEPT 16/TRANS 16:FORTHWITH FOR ARRAIGHMENT",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2007-11-15 9:00 AM",
+      "hearingType": "PC 4011.6 Report",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2007-11-15",
+      "hearing_time": "9:00 AM",
+      "matters": "PC 4011.6 Report",
+      "hearing_type": "PC 4011.6 Report",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-11-13 9:15 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 1,
+      "court_date": "2007-11-13",
+      "hearing_time": "9:15 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-11-13 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 2,
+      "court_date": "2007-11-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ERIN CRANE",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3454533",
+  "docket_entries": [
+    {
+      "filedDate": "2007-11-13T09:15:00.000Z",
+      "docketEntryComment": "/CAL:FORTHWITH FROM M14/TEXT:CONFL CNSL APPTD/CON:ERIN CRANE/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DOP/GTWM/987,2/CONTD PC 4011,6REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/CTORD:PC 4011,6 REPORT IS DUE ON 11-15-07 IN M16 FOR BHC PURPOSESON CASES 2338648 & 2342045/CONT/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2007-11-13T09:15:00.000Z",
+      "description": "/CAL:FORTHWITH FROM M14/TEXT:CONFL CNSL APPTD/CON:ERIN CRANE/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DOP/GTWM/987,2/CONTD PC 4011,6REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/CTORD:PC 4011,6 REPORT IS DUE ON 11-15-07 IN M16 FOR BHC PURPOSESON CASES 2338648 & 2342045/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-11-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:4011,6 REPORT/ /TN:ALI AHMED/MO138572:2338648/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2007-11-15T09:00:00.000Z",
+      "description": "/CAL:4011,6 REPORT/ /TN:ALI AHMED/MO138572:2338648/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-11-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:TRANS TO DEPT 16/TRANS 16:FORTHWITH FOR ARRAIGHMENT",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2007-11-13T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:TRANS TO DEPT 16/TRANS 16:FORTHWITH FOR ARRAIGHMENT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02342045",
-    "portal_case_id": "",
+    "portal_case_id": "3454533",
     "display_case_number": "CRI-02342045",
     "defendant": "ALI AHMED",
     "filed_date": "2007-11-13",
@@ -59,12 +156,36 @@
       "defendant": "ALI AHMED",
       "filed_date": "2007-11-13"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 4011",
+        "count": 3,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALI AHMED, and date of filing 2007-11-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALI AHMED, and date of filing 2007-11-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:06:56.415Z",
+  "portal_case_id": "3454533",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02342045",
+      "defendant": "ALI AHMED",
+      "filed_date": "2007-11-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3454533"
+  }
 }

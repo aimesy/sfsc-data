@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:40.604Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:50:48.700Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02231096",
   "criminal_case_number": "02231096",
@@ -24,11 +24,95 @@
       "name": "LESMAN ACOSTA VELASQUEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LESMAN ACOSTA VELASQUEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2005-09-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/TN LESMAN A ACOSTA VELASQUEZ//TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:  1//FNDG/CO:NEGOTIATED DISPOSITION/PRES:09-28-05/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-09-28T09:00:00.000Z",
+      "docketEntryComment": "/MIT/AJW/CH1:ISS:PROB 3 Y:PJ 41D/CTS:41/DNA/WS/VF4:200/11590/DTC/RX/LF/PC/PSR/BKFEE/PROBFINE/SECFEE/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-08-23T09:16:00.000Z",
+      "docketEntryComment": "LD:09-08-05/X:PARTIES STIP THE LAST DAY TO BE 09-08-05/BAIL:25000/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-08-23T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:TRANS TO DEPT 10/TRANS 10:FORTHWITH FOR ARRAIGNMENT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2005-09-28 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2005-09-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-09-07 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2005-09-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-08-23 9:16 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2005-08-23",
+      "hearing_time": "9:16 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-08-23 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2005-08-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ARTRICIA MOORE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +129,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3352805",
+  "docket_entries": [
+    {
+      "filedDate": "2005-09-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/TN LESMAN A ACOSTA VELASQUEZ//TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:  1//FNDG/CO:NEGOTIATED DISPOSITION/PRES:09-28-05/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2005-09-07T09:00:00.000Z",
+      "description": "/CAL PRELIMINARY HEARING/TN LESMAN A ACOSTA VELASQUEZ//TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS: 1//FNDG/CO:NEGOTIATED DISPOSITION/PRES:09-28-05/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-09-28T09:00:00.000Z",
+      "docketEntryComment": "/MIT/AJW/CH1:ISS:PROB 3 Y:PJ 41D/CTS:41/DNA/WS/VF4:200/11590/DTC/RX/LF/PC/PSR/BKFEE/PROBFINE/SECFEE/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2005-09-28T09:00:00.000Z",
+      "description": "/MIT/AJW/CH1:ISS:PROB 3 Y:PJ 41D/CTS:41/DNA/WS/VF4:200/11590/DTC/RX/LF/PC/PSR/BKFEE/PROBFINE/SECFEE/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-08-23T09:16:00.000Z",
+      "docketEntryComment": "LD:09-08-05/X:PARTIES STIP THE LAST DAY TO BE 09-08-05/BAIL:25000/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2005-08-23T09:16:00.000Z",
+      "description": "LD:09-08-05/X:PARTIES STIP THE LAST DAY TO BE 09-08-05/BAIL:25000/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-08-23T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:TRANS TO DEPT 10/TRANS 10:FORTHWITH FOR ARRAIGNMENT/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2005-08-23T09:00:00.000Z",
+      "description": "/TEXT:TRANS TO DEPT 10/TRANS 10:FORTHWITH FOR ARRAIGNMENT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02231096",
-    "portal_case_id": "",
+    "portal_case_id": "3352805",
     "display_case_number": "CRI-02231096",
     "defendant": "LESMAN ACOSTA VELASQUEZ",
     "filed_date": "2005-08-23",
@@ -63,8 +188,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LESMAN ACOSTA VELASQUEZ, and date of filing 2005-08-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LESMAN ACOSTA VELASQUEZ, and date of filing 2005-08-23. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:50:49.334Z",
+  "portal_case_id": "3352805",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02231096",
+      "defendant": "LESMAN ACOSTA VELASQUEZ",
+      "filed_date": "2005-08-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3352805"
+  }
 }

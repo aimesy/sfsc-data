@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:40:14.292Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:48:43.096Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02222664",
   "criminal_case_number": "02222664",
@@ -24,11 +24,69 @@
       "name": "JOSEPH J BENJAMIN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSEPH J BENJAMIN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2005-06-28T00:00:00.000Z",
+      "docketEntryComment": "OPPOSITION TO MOT TO SUPPRESS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-06-22T00:00:00.000Z",
+      "docketEntryComment": "NOTICE OF MOTION TO SUPP EVID PURS 1538,5PC - FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-06-30T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1 CJ31D/CTS 31/VF1/SECFEE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-06-30T09:00:00.000Z",
+      "docketEntryComment": "NOLO CONTENDRE PLEA ENTERED BY DEFENDANT COURT MAKES FINDING OF GUILT",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2005-06-30 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2005-06-30",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-06-30 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2005-06-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "P STREETS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +103,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3345059",
+  "docket_entries": [
+    {
+      "filedDate": "2005-06-28T00:00:00.000Z",
+      "docketEntryComment": "OPPOSITION TO MOT TO SUPPRESS",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2005-06-28T00:00:00.000Z",
+      "description": "OPPOSITION TO MOT TO SUPPRESS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-06-22T00:00:00.000Z",
+      "docketEntryComment": "NOTICE OF MOTION TO SUPP EVID PURS 1538,5PC - FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2005-06-22T00:00:00.000Z",
+      "description": "NOTICE OF MOTION TO SUPP EVID PURS 1538,5PC - FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-06-30T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1 CJ31D/CTS 31/VF1/SECFEE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2005-06-30T09:15:00.000Z",
+      "description": "/TWS/CH1 CJ31D/CTS 31/VF1/SECFEE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-06-30T09:00:00.000Z",
+      "docketEntryComment": "NOLO CONTENDRE PLEA ENTERED BY DEFENDANT COURT MAKES FINDING OF GUILT",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2005-06-30T09:00:00.000Z",
+      "description": "NOLO CONTENDRE PLEA ENTERED BY DEFENDANT COURT MAKES FINDING OF GUILT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02222664",
-    "portal_case_id": "",
+    "portal_case_id": "3345059",
     "display_case_number": "CRI-02222664",
     "defendant": "JOSEPH J BENJAMIN",
     "filed_date": "2005-06-20",
@@ -63,8 +162,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSEPH J BENJAMIN, and date of filing 2005-06-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSEPH J BENJAMIN, and date of filing 2005-06-20. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:48:43.700Z",
+  "portal_case_id": "3345059",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02222664",
+      "defendant": "JOSEPH J BENJAMIN",
+      "filed_date": "2005-06-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3345059"
+  }
 }

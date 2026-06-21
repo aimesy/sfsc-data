@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:40:22.984Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:00:52.453Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02303577",
   "criminal_case_number": "02303577",
@@ -24,11 +24,59 @@
       "name": "CHRISTOPHER CARPENTER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHRISTOPHER CARPENTER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2007-02-20T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-02-13T09:00:00.000Z",
+      "docketEntryComment": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/OR/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2007-02-20 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2007-02-20",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-02-13 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 1,
+      "court_date": "2007-02-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MAITREYA BADAMI",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3419143",
+  "docket_entries": [
+    {
+      "filedDate": "2007-02-20T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2007-02-20T09:00:00.000Z",
+      "description": "/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-02-13T09:00:00.000Z",
+      "docketEntryComment": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/OR/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2007-02-13T09:00:00.000Z",
+      "description": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/OR/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02303577",
-    "portal_case_id": "",
+    "portal_case_id": "3419143",
     "display_case_number": "CRI-02303577",
     "defendant": "CHRISTOPHER CARPENTER",
     "filed_date": "2007-02-13",
@@ -63,8 +132,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHRISTOPHER CARPENTER, and date of filing 2007-02-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHRISTOPHER CARPENTER, and date of filing 2007-02-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:00:53.054Z",
+  "portal_case_id": "3419143",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02303577",
+      "defendant": "CHRISTOPHER CARPENTER",
+      "filed_date": "2007-02-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3419143"
+  }
 }

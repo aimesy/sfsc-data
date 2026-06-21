@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:33:53.827Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:50:48.469Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02236375",
   "criminal_case_number": "02236375",
@@ -24,11 +24,79 @@
       "name": "DAWN BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAWN BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2005-10-26T00:00:00.000Z",
+      "docketEntryComment": "REPLY TO PEOPLE'S OPPOSITION TO MO TO SUPP EVID - FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-10-25T00:00:00.000Z",
+      "docketEntryComment": "PEOPLES OPPOSITION TO MOTION TO SUPPRESS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-10-20T00:00:00.000Z",
+      "docketEntryComment": "NOTICE & MOT TO SUPP EVID PUR 1538,5PC--FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-10-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING AND MTS/CAL: PC 1538,5 MOTION TO SUPPRESS//ARG&SUB/MO GRTD/X:  MOTION GRANTED AS TO COUNT(S) 1 /   /TEXT//X:DIMSISSED PUR TO 1385 PEO'S FIRST DISMISSAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-10-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:DEF ORAL MOTION TO CONT'D PRELIM-GRANTED//STWPX/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-09-30T00:00:00.000Z",
+      "docketEntryComment": "987,2",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2005-10-27 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2005-10-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-10-14 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2005-10-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ELIZABETH HILTON",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +113,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3357649",
+  "docket_entries": [
+    {
+      "filedDate": "2005-10-26T00:00:00.000Z",
+      "docketEntryComment": "REPLY TO PEOPLE'S OPPOSITION TO MO TO SUPP EVID - FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2005-10-26T00:00:00.000Z",
+      "description": "REPLY TO PEOPLE'S OPPOSITION TO MO TO SUPP EVID - FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-10-25T00:00:00.000Z",
+      "docketEntryComment": "PEOPLES OPPOSITION TO MOTION TO SUPPRESS",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2005-10-25T00:00:00.000Z",
+      "description": "PEOPLES OPPOSITION TO MOTION TO SUPPRESS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-10-20T00:00:00.000Z",
+      "docketEntryComment": "NOTICE & MOT TO SUPP EVID PUR 1538,5PC--FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2005-10-20T00:00:00.000Z",
+      "description": "NOTICE & MOT TO SUPP EVID PUR 1538,5PC--FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-10-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING AND MTS/CAL: PC 1538,5 MOTION TO SUPPRESS//ARG&SUB/MO GRTD/X:  MOTION GRANTED AS TO COUNT(S) 1 /   /TEXT//X:DIMSISSED PUR TO 1385 PEO'S FIRST DISMISSAL/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2005-10-27T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING AND MTS/CAL: PC 1538,5 MOTION TO SUPPRESS//ARG&SUB/MO GRTD/X: MOTION GRANTED AS TO COUNT(S) 1 / /TEXT//X:DIMSISSED PUR TO 1385 PEO'S FIRST DISMISSAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-10-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:DEF ORAL MOTION TO CONT'D PRELIM-GRANTED//STWPX/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2005-10-14T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/X:DEF ORAL MOTION TO CONT'D PRELIM-GRANTED//STWPX/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-09-30T00:00:00.000Z",
+      "docketEntryComment": "987,2",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2005-09-30T00:00:00.000Z",
+      "description": "987,2",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02236375",
-    "portal_case_id": "",
+    "portal_case_id": "3357649",
     "display_case_number": "CRI-02236375",
     "defendant": "DAWN BROWN",
     "filed_date": "2005-09-30",
@@ -59,12 +188,36 @@
       "defendant": "DAWN BROWN",
       "filed_date": "2005-09-30"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAWN BROWN, and date of filing 2005-09-30. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAWN BROWN, and date of filing 2005-09-30. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:50:49.623Z",
+  "portal_case_id": "3357649",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02236375",
+      "defendant": "DAWN BROWN",
+      "filed_date": "2005-09-30"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3357649"
+  }
 }

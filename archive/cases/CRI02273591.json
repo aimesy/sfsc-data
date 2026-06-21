@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:10:25.659Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:56:56.080Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02273591",
   "criminal_case_number": "02273591",
@@ -24,10 +24,68 @@
       "name": "PAUL K ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "PAUL K ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2011-12-09T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-07-12T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-12-09T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 12/09/11, CASE DISMISSED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-09-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:07-12-06/BWI/BAIL:10000/BWNUM:2ND/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-07-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/FTA/BW/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2006-09-08 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "2006-09-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2006-07-12 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 1,
+      "court_date": "2006-07-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +103,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3391644",
+  "docket_entries": [
+    {
+      "filedDate": "2011-12-09T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-12-09T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-07-12T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2006-07-12T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-12-09T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 12/09/11, CASE DISMISSED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-12-09T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 12/09/11, CASE DISMISSED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-09-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:07-12-06/BWI/BAIL:10000/BWNUM:2ND/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2006-09-08T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:07-12-06/BWI/BAIL:10000/BWNUM:2ND/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-07-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/FTA/BW/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2006-07-12T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/FTA/BW/BWI/BAIL:5000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02273591",
-    "portal_case_id": "",
+    "portal_case_id": "3391644",
     "display_case_number": "CRI-02273591",
     "defendant": "PAUL K ALLEN",
     "filed_date": "2006-07-12",
@@ -63,8 +172,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, PAUL K ALLEN, and date of filing 2006-07-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, PAUL K ALLEN, and date of filing 2006-07-12. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:56:56.633Z",
+  "portal_case_id": "3391644",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02273591",
+      "defendant": "PAUL K ALLEN",
+      "filed_date": "2006-07-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3391644"
+  }
 }

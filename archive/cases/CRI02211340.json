@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:38.635Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:46:13.386Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02211340",
   "criminal_case_number": "02211340",
@@ -24,11 +24,46 @@
       "name": "RONALD ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RONALD ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2005-04-01T09:15:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/BAIL:25000//TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:2/DISM3/FNDG/CO:NEGOTIATED DISPOSITION/PRES:04-21-05/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-04-21T08:45:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP 3Y:M/CTSP:23/STATES/DNA/SECFEE/PAR/CDC/CCC:2146154/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2005-04-01 9:15 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 0,
+      "court_date": "2005-04-01",
+      "hearing_time": "9:15 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "M MALLEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +80,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3334621",
+  "docket_entries": [
+    {
+      "filedDate": "2005-04-01T09:15:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/BAIL:25000//TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:2/DISM3/FNDG/CO:NEGOTIATED DISPOSITION/PRES:04-21-05/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2005-04-01T09:15:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/BAIL:25000//TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:2/DISM3/FNDG/CO:NEGOTIATED DISPOSITION/PRES:04-21-05/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-04-21T08:45:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP 3Y:M/CTSP:23/STATES/DNA/SECFEE/PAR/CDC/CCC:2146154/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2005-04-21T08:45:00.000Z",
+      "description": "/AJW/CH1:SP 3Y:M/CTSP:23/STATES/DNA/SECFEE/PAR/CDC/CCC:2146154/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02211340",
-    "portal_case_id": "",
+    "portal_case_id": "3334621",
     "display_case_number": "CRI-02211340",
     "defendant": "RONALD ANDERSON",
     "filed_date": "2005-03-30",
@@ -63,8 +119,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RONALD ANDERSON, and date of filing 2005-03-30. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RONALD ANDERSON, and date of filing 2005-03-30. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:46:13.972Z",
+  "portal_case_id": "3334621",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02211340",
+      "defendant": "RONALD ANDERSON",
+      "filed_date": "2005-03-30"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3334621"
+  }
 }

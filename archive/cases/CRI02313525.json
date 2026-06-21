@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:23:36.409Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:02:20.914Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02313525",
   "criminal_case_number": "02313525",
@@ -24,11 +24,82 @@
       "name": "LUIS IGNACIO ALVAREZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LUIS IGNACIO ALVAREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2007-05-02T16:01:00.000Z",
+      "docketEntryComment": "NOT OF MOT & MOT TO COMPEL DISCOVERY COMPLIANCE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-05-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DISCOVERY MOTION/DAWT/X:THE DEFENSE STATED THAT DISCOVERY HAS BEEN PROVIDED AND THE MOTION IS WITHDRAWN/X:THE 05-11-07 JURY TRIAL IS CONFIRMED/LD:05-25-07/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-05-11T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:THE PEOPLE ARE UNABLE TO SUSTAIN THEIR BURDEN OF PROOF AT TRIAL",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-04-25T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/NTW/LD:05-25-07/987,2/CONTD:TRIAL/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2007-05-11 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2007-05-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-05-08 9:00 AM",
+      "hearingType": "Motion to Compel Discovery",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2007-05-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Compel Discovery",
+      "hearing_type": "Motion to Compel Discovery",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-04-25 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2007-04-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ELIZABETH HILTON",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3428268",
+  "docket_entries": [
+    {
+      "filedDate": "2007-05-02T16:01:00.000Z",
+      "docketEntryComment": "NOT OF MOT & MOT TO COMPEL DISCOVERY COMPLIANCE FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2007-05-02T16:01:00.000Z",
+      "description": "NOT OF MOT & MOT TO COMPEL DISCOVERY COMPLIANCE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-05-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DISCOVERY MOTION/DAWT/X:THE DEFENSE STATED THAT DISCOVERY HAS BEEN PROVIDED AND THE MOTION IS WITHDRAWN/X:THE 05-11-07 JURY TRIAL IS CONFIRMED/LD:05-25-07/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2007-05-08T09:00:00.000Z",
+      "description": "/CAL:DISCOVERY MOTION/DAWT/X:THE DEFENSE STATED THAT DISCOVERY HAS BEEN PROVIDED AND THE MOTION IS WITHDRAWN/X:THE 05-11-07 JURY TRIAL IS CONFIRMED/LD:05-25-07/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-05-11T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:THE PEOPLE ARE UNABLE TO SUSTAIN THEIR BURDEN OF PROOF AT TRIAL",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2007-05-11T09:00:00.000Z",
+      "description": "/MO PC 1385:THE PEOPLE ARE UNABLE TO SUSTAIN THEIR BURDEN OF PROOF AT TRIAL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-04-25T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/NTW/LD:05-25-07/987,2/CONTD:TRIAL/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2007-04-25T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/NTW/LD:05-25-07/987,2/CONTD:TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02313525",
-    "portal_case_id": "",
+    "portal_case_id": "3428268",
     "display_case_number": "CRI-02313525",
     "defendant": "LUIS IGNACIO ALVAREZ",
     "filed_date": "2007-04-25",
@@ -59,12 +171,36 @@
       "defendant": "LUIS IGNACIO ALVAREZ",
       "filed_date": "2007-04-25"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LUIS IGNACIO ALVAREZ, and date of filing 2007-04-25. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LUIS IGNACIO ALVAREZ, and date of filing 2007-04-25. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:02:21.618Z",
+  "portal_case_id": "3428268",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02313525",
+      "defendant": "LUIS IGNACIO ALVAREZ",
+      "filed_date": "2007-04-25"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3428268"
+  }
 }

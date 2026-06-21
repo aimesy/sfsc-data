@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T13:56:02.995Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:07:21.581Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02344573",
   "criminal_case_number": "02344573",
@@ -24,11 +24,105 @@
       "name": "ROBERTO ACOSTA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROBERTO ACOSTA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2007-12-26T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-12-10T15:25:00.000Z",
+      "docketEntryComment": "MOTION TO DECLARE CONFLICT FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-12-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A P&C AND SPR ELIG REPORT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//PD/FAWC/DEFTARR1/STWPX/DEF:WAIVES 10TH DAY BUT NOT THE 60TH DAY/LD:02-01-08 (60TH DAY)/987,2/SPRGR/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-12-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APPOINT CONFLICTS CNSL/FTA/SPRVKD/BWI/BW/BAIL:55,000/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-12-13T09:00:00.000Z",
+      "docketEntryComment": "/DAWT/LD:02-01-08 (60TH DAY)/VD:PRELIMINARY HEARING DATE OF 12-26-07/DOP/CONTD:APPOINTMENT OF CONFLICTS COUNSEL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-11-29T09:00:00.000Z",
+      "docketEntryComment": "/PD/BAIL:45,000/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2007-12-26 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2007-12-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-12-13 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2007-12-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-12-03 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2007-12-03",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-11-29 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 3,
+      "court_date": "2007-11-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MEL SANTOS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +139,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3456822",
+  "docket_entries": [
+    {
+      "filedDate": "2007-12-26T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2007-12-26T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-12-10T15:25:00.000Z",
+      "docketEntryComment": "MOTION TO DECLARE CONFLICT FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2007-12-10T15:25:00.000Z",
+      "description": "MOTION TO DECLARE CONFLICT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-12-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A P&C AND SPR ELIG REPORT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//PD/FAWC/DEFTARR1/STWPX/DEF:WAIVES 10TH DAY BUT NOT THE 60TH DAY/LD:02-01-08 (60TH DAY)/987,2/SPRGR/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2007-12-03T09:00:00.000Z",
+      "description": "/CAL:I&A P&C AND SPR ELIG REPORT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//PD/FAWC/DEFTARR1/STWPX/DEF:WAIVES 10TH DAY BUT NOT THE 60TH DAY/LD:02-01-08 (60TH DAY)/987,2/SPRGR/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-12-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APPOINT CONFLICTS CNSL/FTA/SPRVKD/BWI/BW/BAIL:55,000/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2007-12-26T09:00:00.000Z",
+      "description": "/CAL:APPOINT CONFLICTS CNSL/FTA/SPRVKD/BWI/BW/BAIL:55,000/BWNUM:1ST/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-12-13T09:00:00.000Z",
+      "docketEntryComment": "/DAWT/LD:02-01-08 (60TH DAY)/VD:PRELIMINARY HEARING DATE OF 12-26-07/DOP/CONTD:APPOINTMENT OF CONFLICTS COUNSEL/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2007-12-13T09:00:00.000Z",
+      "description": "/DAWT/LD:02-01-08 (60TH DAY)/VD:PRELIMINARY HEARING DATE OF 12-26-07/DOP/CONTD:APPOINTMENT OF CONFLICTS COUNSEL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-11-29T09:00:00.000Z",
+      "docketEntryComment": "/PD/BAIL:45,000/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2007-11-29T09:00:00.000Z",
+      "description": "/PD/BAIL:45,000/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02344573",
-    "portal_case_id": "",
+    "portal_case_id": "3456822",
     "display_case_number": "CRI-02344573",
     "defendant": "ROBERTO ACOSTA",
     "filed_date": "2007-11-29",
@@ -63,8 +218,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROBERTO ACOSTA, and date of filing 2007-11-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROBERTO ACOSTA, and date of filing 2007-11-29. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:07:22.799Z",
+  "portal_case_id": "3456822",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02344573",
+      "defendant": "ROBERTO ACOSTA",
+      "filed_date": "2007-11-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3456822"
+  }
 }

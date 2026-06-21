@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:30:24.747Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:02:19.363Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02310875",
   "criminal_case_number": "02310875",
@@ -24,11 +24,94 @@
       "name": "LARRY E BELL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LARRY E BELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2007-05-14T09:15:00.000Z",
+      "docketEntryComment": "/CAL: TO TERMINATE STAY AWAY ORDER/X: THIS CASE WAS DISCHARGED BY THE DA ON 04-11-07/CTORD: THE STAY AWAY ORDER DATED 04-10-07 IS TERMINATED FORTHWITH/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-04-11T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-04-10T09:00:00.000Z",
+      "docketEntryComment": "/TEXT DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL  15,000/DOP/NTW/LD: 05-10-07/987,2/SA1: VALERIE DENISE POPE/SA2: 799 OAK STREET, SF",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2007-05-14 9:15 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2007-05-14",
+      "hearing_time": "9:15 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-04-27 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 1,
+      "court_date": "2007-04-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-04-11 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 2,
+      "court_date": "2007-04-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-04-10 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 3,
+      "court_date": "2007-04-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "VILASKA NGUYEN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "MARC GUILLORY",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +128,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3425836",
+  "docket_entries": [
+    {
+      "filedDate": "2007-05-14T09:15:00.000Z",
+      "docketEntryComment": "/CAL: TO TERMINATE STAY AWAY ORDER/X: THIS CASE WAS DISCHARGED BY THE DA ON 04-11-07/CTORD: THE STAY AWAY ORDER DATED 04-10-07 IS TERMINATED FORTHWITH/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2007-05-14T09:15:00.000Z",
+      "description": "/CAL: TO TERMINATE STAY AWAY ORDER/X: THIS CASE WAS DISCHARGED BY THE DA ON 04-11-07/CTORD: THE STAY AWAY ORDER DATED 04-10-07 IS TERMINATED FORTHWITH/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-04-11T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2007-04-11T09:00:00.000Z",
+      "description": "/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-04-10T09:00:00.000Z",
+      "docketEntryComment": "/TEXT DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL  15,000/DOP/NTW/LD: 05-10-07/987,2/SA1: VALERIE DENISE POPE/SA2: 799 OAK STREET, SF",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2007-04-10T09:00:00.000Z",
+      "description": "/TEXT DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL 15,000/DOP/NTW/LD: 05-10-07/987,2/SA1: VALERIE DENISE POPE/SA2: 799 OAK STREET, SF",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02310875",
-    "portal_case_id": "",
+    "portal_case_id": "3425836",
     "display_case_number": "CRI-02310875",
     "defendant": "LARRY E BELL",
     "filed_date": "2007-04-10",
@@ -63,8 +177,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LARRY E BELL, and date of filing 2007-04-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LARRY E BELL, and date of filing 2007-04-10. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:02:20.048Z",
+  "portal_case_id": "3425836",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02310875",
+      "defendant": "LARRY E BELL",
+      "filed_date": "2007-04-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3425836"
+  }
 }

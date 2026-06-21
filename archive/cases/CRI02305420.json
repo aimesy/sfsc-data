@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:42:54.863Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:01:22.038Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02305420",
   "criminal_case_number": "02305420",
@@ -24,11 +24,59 @@
       "name": "JAMES P BAKER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAMES P BAKER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2007-03-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRE-TRIAL CONFERENCE/X DISTRICT ATTORNEY NATHAN QUIGLEY STATED THATHE SAME OFFENSE HAS BEEN CHARGED TWICE/COWD/X:CASE NUMBER 2305423 IS STILL VALID AND SHALL GO FORWARD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-03-13T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DAWT/FAWC/DEFTARR1/GTWM/X:DEFENDANT'S APPEARANCE IS WAIVED IF 977 WAIVER FILED,/CONTD:1ST PRETRIAL/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2007-03-27 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2007-03-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-03-13 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2007-03-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ROBERT GRAHAM",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3420849",
+  "docket_entries": [
+    {
+      "filedDate": "2007-03-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRE-TRIAL CONFERENCE/X DISTRICT ATTORNEY NATHAN QUIGLEY STATED THATHE SAME OFFENSE HAS BEEN CHARGED TWICE/COWD/X:CASE NUMBER 2305423 IS STILL VALID AND SHALL GO FORWARD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2007-03-27T09:00:00.000Z",
+      "description": "/CAL PRE-TRIAL CONFERENCE/X DISTRICT ATTORNEY NATHAN QUIGLEY STATED THATHE SAME OFFENSE HAS BEEN CHARGED TWICE/COWD/X:CASE NUMBER 2305423 IS STILL VALID AND SHALL GO FORWARD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-03-13T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DAWT/FAWC/DEFTARR1/GTWM/X:DEFENDANT'S APPEARANCE IS WAIVED IF 977 WAIVER FILED,/CONTD:1ST PRETRIAL/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2007-03-13T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DAWT/FAWC/DEFTARR1/GTWM/X:DEFENDANT'S APPEARANCE IS WAIVED IF 977 WAIVER FILED,/CONTD:1ST PRETRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02305420",
-    "portal_case_id": "",
+    "portal_case_id": "3420849",
     "display_case_number": "CRI-02305420",
     "defendant": "JAMES P BAKER",
     "filed_date": "2007-03-13",
@@ -63,8 +132,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAMES P BAKER, and date of filing 2007-03-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAMES P BAKER, and date of filing 2007-03-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:01:22.707Z",
+  "portal_case_id": "3420849",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02305420",
+      "defendant": "JAMES P BAKER",
+      "filed_date": "2007-03-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3420849"
+  }
 }

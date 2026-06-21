@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:37:30.172Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:38:40.514Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02163946",
   "criminal_case_number": "02163946",
@@ -24,11 +24,59 @@
       "name": "WILLIAM HARRIS BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "WILLIAM HARRIS BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2004-07-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PC 1538,5 MOTION TO SUPPRESS/ARG&SUB/MO GRTD/X:CASE DISMISSED 1385PC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-05-17T09:00:00.000Z",
+      "docketEntryComment": "/X:SPR GRANTED/CONTD: PREHEARING CONFERENCE & TO SET/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2004-07-06 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2004-07-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2004-05-17 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2004-05-17",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "L COLFAX",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3290904",
+  "docket_entries": [
+    {
+      "filedDate": "2004-07-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PC 1538,5 MOTION TO SUPPRESS/ARG&SUB/MO GRTD/X:CASE DISMISSED 1385PC/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2004-07-06T09:00:00.000Z",
+      "description": "/CAL: PC 1538,5 MOTION TO SUPPRESS/ARG&SUB/MO GRTD/X:CASE DISMISSED 1385PC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-05-17T09:00:00.000Z",
+      "docketEntryComment": "/X:SPR GRANTED/CONTD: PREHEARING CONFERENCE & TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2004-05-17T09:00:00.000Z",
+      "description": "/X:SPR GRANTED/CONTD: PREHEARING CONFERENCE & TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02163946",
-    "portal_case_id": "",
+    "portal_case_id": "3290904",
     "display_case_number": "CRI-02163946",
     "defendant": "WILLIAM HARRIS BROWN",
     "filed_date": "2004-05-13",
@@ -59,12 +128,36 @@
       "defendant": "WILLIAM HARRIS BROWN",
       "filed_date": "2004-05-13"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, WILLIAM HARRIS BROWN, and date of filing 2004-05-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, WILLIAM HARRIS BROWN, and date of filing 2004-05-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:38:41.187Z",
+  "portal_case_id": "3290904",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02163946",
+      "defendant": "WILLIAM HARRIS BROWN",
+      "filed_date": "2004-05-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3290904"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:02:04.130Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:50:27.090Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02230017",
   "criminal_case_number": "02230017",
@@ -24,11 +24,87 @@
       "name": "JOSE AGUILAR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSE AGUILAR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2005-09-22T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-09-29T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-09-29T09:00:00.000Z",
+      "docketEntryComment": "/BWR:09-22-05/BWR1/SIGN2//TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:001//FNDG/CO:NEGOTIATED DISPOSITION/PRES:10-21-05/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-10-21T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1 ISS PROB 3 Y PJ 90D/CTS 2/DNA/WS/VF4 200/11590/DTC/RX/LF/PC/PSR/BKFEE/SWAP/PF:500/PROBFINE/SECFEE/OBEY/ACCEP/X:PROOF OF DNA PROVIDED,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-09-22T14:00:00.000Z",
+      "docketEntryComment": "/CAL:DRUG COURT ASSESSMENT REPORT/FTA/OREVKD/BWI/BW/BAIL:75000/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2005-10-21 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 0,
+      "court_date": "2005-10-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-09-29 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 1,
+      "court_date": "2005-09-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-09-22 2:00 PM",
+      "hearingType": "Drug Court Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 2,
+      "court_date": "2005-09-22",
+      "hearing_time": "2:00 PM",
+      "matters": "Drug Court Progress Report",
+      "hearing_type": "Drug Court Progress Report",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "C MARTIN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +121,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3351838",
+  "docket_entries": [
+    {
+      "filedDate": "2005-09-22T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2005-09-22T14:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-09-29T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2005-09-29T09:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-09-29T09:00:00.000Z",
+      "docketEntryComment": "/BWR:09-22-05/BWR1/SIGN2//TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:001//FNDG/CO:NEGOTIATED DISPOSITION/PRES:10-21-05/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2005-09-29T09:00:00.000Z",
+      "description": "/BWR:09-22-05/BWR1/SIGN2//TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:001//FNDG/CO:NEGOTIATED DISPOSITION/PRES:10-21-05/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-10-21T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1 ISS PROB 3 Y PJ 90D/CTS 2/DNA/WS/VF4 200/11590/DTC/RX/LF/PC/PSR/BKFEE/SWAP/PF:500/PROBFINE/SECFEE/OBEY/ACCEP/X:PROOF OF DNA PROVIDED,/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2005-10-21T09:00:00.000Z",
+      "description": "/AJW/CH1 ISS PROB 3 Y PJ 90D/CTS 2/DNA/WS/VF4 200/11590/DTC/RX/LF/PC/PSR/BKFEE/SWAP/PF:500/PROBFINE/SECFEE/OBEY/ACCEP/X:PROOF OF DNA PROVIDED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-09-22T14:00:00.000Z",
+      "docketEntryComment": "/CAL:DRUG COURT ASSESSMENT REPORT/FTA/OREVKD/BWI/BW/BAIL:75000/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2005-09-22T14:00:00.000Z",
+      "description": "/CAL:DRUG COURT ASSESSMENT REPORT/FTA/OREVKD/BWI/BW/BAIL:75000/BWNUM:1ST/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02230017",
-    "portal_case_id": "",
+    "portal_case_id": "3351838",
     "display_case_number": "CRI-02230017",
     "defendant": "JOSE AGUILAR",
     "filed_date": "2005-08-18",
@@ -63,8 +190,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSE AGUILAR, and date of filing 2005-08-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSE AGUILAR, and date of filing 2005-08-18. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:50:27.696Z",
+  "portal_case_id": "3351838",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02230017",
+      "defendant": "JOSE AGUILAR",
+      "filed_date": "2005-08-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3351838"
+  }
 }

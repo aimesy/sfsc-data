@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:30:24.747Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:55:32.914Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02264473",
   "criminal_case_number": "02264473",
@@ -24,11 +24,86 @@
       "name": "LARRY L BELL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LARRY L BELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2006-05-19T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:PEOPLE UNABLE TO SUSTAIN BURDEN/SATERM/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-05-09T09:00:00.000Z",
+      "docketEntryComment": "/CTORD: CASE PRETRIED AND TRIAL DATE CONFIRMED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-05-08T08:45:00.000Z",
+      "docketEntryComment": "/CAL:PTC/CONT/NTW/LD:05-30-06/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-04-28T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/SA1:RITA WHITAKER/SA2:20 12TH ST, SF/BAIL:25000/NTW/LD:05-30-06/987,2/CONTD:PRETRIAL/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2006-05-19 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2006-05-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2006-05-09 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 1,
+      "court_date": "2006-05-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2006-04-28 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 2,
+      "court_date": "2006-04-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CARMEN AGUIRRE",
+      "type": "Public Defender"
+    },
+    {
+      "name": "MICHELE DAWSON",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3383383",
+  "docket_entries": [
+    {
+      "filedDate": "2006-05-19T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:PEOPLE UNABLE TO SUSTAIN BURDEN/SATERM/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2006-05-19T09:00:00.000Z",
+      "description": "/MO PC 1385:PEOPLE UNABLE TO SUSTAIN BURDEN/SATERM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-05-09T09:00:00.000Z",
+      "docketEntryComment": "/CTORD: CASE PRETRIED AND TRIAL DATE CONFIRMED/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2006-05-09T09:00:00.000Z",
+      "description": "/CTORD: CASE PRETRIED AND TRIAL DATE CONFIRMED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-05-08T08:45:00.000Z",
+      "docketEntryComment": "/CAL:PTC/CONT/NTW/LD:05-30-06/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2006-05-08T08:45:00.000Z",
+      "description": "/CAL:PTC/CONT/NTW/LD:05-30-06/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-04-28T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/SA1:RITA WHITAKER/SA2:20 12TH ST, SF/BAIL:25000/NTW/LD:05-30-06/987,2/CONTD:PRETRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2006-04-28T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/SA1:RITA WHITAKER/SA2:20 12TH ST, SF/BAIL:25000/NTW/LD:05-30-06/987,2/CONTD:PRETRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02264473",
-    "portal_case_id": "",
+    "portal_case_id": "3383383",
     "display_case_number": "CRI-02264473",
     "defendant": "LARRY L BELL",
     "filed_date": "2006-04-28",
@@ -59,12 +175,36 @@
       "defendant": "LARRY L BELL",
       "filed_date": "2006-04-28"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LARRY L BELL, and date of filing 2006-04-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LARRY L BELL, and date of filing 2006-04-28. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:55:33.550Z",
+  "portal_case_id": "3383383",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02264473",
+      "defendant": "LARRY L BELL",
+      "filed_date": "2006-04-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3383383"
+  }
 }

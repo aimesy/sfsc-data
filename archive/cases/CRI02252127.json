@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:15:27.083Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:53:58.494Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02252127",
   "criminal_case_number": "02252127",
@@ -24,11 +24,95 @@
       "name": "JUAN ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JUAN ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2006-04-05T09:01:00.000Z",
+      "docketEntryComment": "T 23 TODAY,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:/X:MATTER IN DEPARTMEN",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-03-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN 2191535/GTW/BE/SHER/NUNCDAT:02-15-06/BAIL:5000/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-01-27T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/987,2//CONTD:TO JOIN 2191535/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2006-04-05 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2006-04-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2006-04-05 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 1,
+      "court_date": "2006-04-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2006-03-10 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2006-03-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2006-01-27 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 3,
+      "court_date": "2006-01-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BRIAN PETERSEN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +129,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3372113",
+  "docket_entries": [
+    {
+      "filedDate": "2006-04-05T09:01:00.000Z",
+      "docketEntryComment": "T 23 TODAY,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2006-04-05T09:01:00.000Z",
+      "description": "T 23 TODAY,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:/X:MATTER IN DEPARTMEN",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2006-04-05T09:00:00.000Z",
+      "description": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:/X:MATTER IN DEPARTMEN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-03-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN 2191535/GTW/BE/SHER/NUNCDAT:02-15-06/BAIL:5000/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2006-03-10T09:00:00.000Z",
+      "description": "/CAL:TO JOIN 2191535/GTW/BE/SHER/NUNCDAT:02-15-06/BAIL:5000/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-01-27T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/987,2//CONTD:TO JOIN 2191535/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2006-01-27T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/987,2//CONTD:TO JOIN 2191535/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02252127",
-    "portal_case_id": "",
+    "portal_case_id": "3372113",
     "display_case_number": "CRI-02252127",
     "defendant": "JUAN ALLEN",
     "filed_date": "2006-01-27",
@@ -63,8 +188,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JUAN ALLEN, and date of filing 2006-01-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JUAN ALLEN, and date of filing 2006-01-27. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:53:59.048Z",
+  "portal_case_id": "3372113",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02252127",
+      "defendant": "JUAN ALLEN",
+      "filed_date": "2006-01-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3372113"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:49:28.379Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:48:32.238Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02217479",
   "criminal_case_number": "02217479",
@@ -24,11 +24,77 @@
       "name": "RICHARD CHAUNCEY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RICHARD CHAUNCEY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2005-05-27T09:15:00.000Z",
+      "docketEntryComment": "/X DA ORALLY AMENDS COMPLAINT TO ADD COUNT 002, 148,9PC-MISD/FAWC/IRRC//TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:002//FNDG/CO:NEGOTIATED DISPOSITION/TWS/CH2:CJ 6M /CTS:19/X:IF DEFT RECEIVES EARLY RELEASE FROM SHERIFF'S DEPT, MAY SERVE SENTENCE INNEW LIFE PROGRAM/VF1/SECFEE/REMA/CONTD:VIF PAYMENT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-08-26T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: BY ORDER OF THE COURT,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-05-26T09:00:00.000Z",
+      "docketEntryComment": "/TN:RICHARD CHAUNCEY/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/LD:05-27-05/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2005-08-26 9:00 AM",
+      "hearingType": "Back On Track Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 30",
+      "__index": 0,
+      "court_date": "2005-08-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Back On Track Progress Report",
+      "hearing_type": "Back On Track Progress Report",
+      "department": "Department 30",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-05-27 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2005-05-27",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-05-26 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2005-05-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S BLUMSTEIN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3340300",
+  "docket_entries": [
+    {
+      "filedDate": "2005-05-27T09:15:00.000Z",
+      "docketEntryComment": "/X DA ORALLY AMENDS COMPLAINT TO ADD COUNT 002, 148,9PC-MISD/FAWC/IRRC//TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:002//FNDG/CO:NEGOTIATED DISPOSITION/TWS/CH2:CJ 6M /CTS:19/X:IF DEFT RECEIVES EARLY RELEASE FROM SHERIFF'S DEPT, MAY SERVE SENTENCE INNEW LIFE PROGRAM/VF1/SECFEE/REMA/CONTD:VIF PAYMENT/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2005-05-27T09:15:00.000Z",
+      "description": "/X DA ORALLY AMENDS COMPLAINT TO ADD COUNT 002, 148,9PC-MISD/FAWC/IRRC//TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:002//FNDG/CO:NEGOTIATED DISPOSITION/TWS/CH2:CJ 6M /CTS:19/X:IF DEFT RECEIVES EARLY RELEASE FROM SHERIFF'S DEPT, MAY SERVE SENTENCE INNEW LIFE PROGRAM/VF1/SECFEE/REMA/CONTD:VIF PAYMENT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-08-26T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: BY ORDER OF THE COURT,/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2005-08-26T09:00:00.000Z",
+      "description": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: BY ORDER OF THE COURT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-05-26T09:00:00.000Z",
+      "docketEntryComment": "/TN:RICHARD CHAUNCEY/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/LD:05-27-05/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2005-05-26T09:00:00.000Z",
+      "description": "/TN:RICHARD CHAUNCEY/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/LD:05-27-05/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02217479",
-    "portal_case_id": "",
+    "portal_case_id": "3340300",
     "display_case_number": "CRI-02217479",
     "defendant": "RICHARD CHAUNCEY",
     "filed_date": "2005-05-13",
@@ -63,8 +160,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RICHARD CHAUNCEY, and date of filing 2005-05-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RICHARD CHAUNCEY, and date of filing 2005-05-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:48:32.858Z",
+  "portal_case_id": "3340300",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02217479",
+      "defendant": "RICHARD CHAUNCEY",
+      "filed_date": "2005-05-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3340300"
+  }
 }

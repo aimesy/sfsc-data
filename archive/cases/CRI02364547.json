@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:33:30.475Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:11:07.963Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02364547",
   "criminal_case_number": "02364547",
@@ -24,11 +24,82 @@
       "name": "SEKOU CARSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "SEKOU CARSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2008-04-28T14:54:00.000Z",
+      "docketEntryComment": "MTS EVIDENCE PURS PC 1538,5 FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-04-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:05-06-08/987,2/BAIL:35,000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-05-05T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:INTEREST OF JUSTICE /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-04-23T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:ON CALENDAR IN ERROR",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2008-05-05 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2008-05-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2008-04-23 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2008-04-23",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2008-04-22 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2008-04-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SANGEETA SINHA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3475176",
+  "docket_entries": [
+    {
+      "filedDate": "2008-04-28T14:54:00.000Z",
+      "docketEntryComment": "MTS EVIDENCE PURS PC 1538,5 FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2008-04-28T14:54:00.000Z",
+      "description": "MTS EVIDENCE PURS PC 1538,5 FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-04-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:05-06-08/987,2/BAIL:35,000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2008-04-22T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:05-06-08/987,2/BAIL:35,000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-05-05T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:INTEREST OF JUSTICE /",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2008-05-05T09:00:00.000Z",
+      "description": "/MO PC 1385:INTEREST OF JUSTICE /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-04-23T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:ON CALENDAR IN ERROR",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2008-04-23T09:00:00.000Z",
+      "description": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:ON CALENDAR IN ERROR",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02364547",
-    "portal_case_id": "",
+    "portal_case_id": "3475176",
     "display_case_number": "CRI-02364547",
     "defendant": "SEKOU CARSON",
     "filed_date": "2008-04-22",
@@ -59,12 +171,44 @@
       "defendant": "SEKOU CARSON",
       "filed_date": "2008-04-22"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, SEKOU CARSON, and date of filing 2008-04-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, SEKOU CARSON, and date of filing 2008-04-22. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:11:08.630Z",
+  "portal_case_id": "3475176",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02364547",
+      "defendant": "SEKOU CARSON",
+      "filed_date": "2008-04-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3475176"
+  }
 }

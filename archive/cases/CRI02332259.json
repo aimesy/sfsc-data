@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:49:48.946Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:05:22.179Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02332259",
   "criminal_case_number": "02332259",
@@ -24,10 +24,50 @@
       "name": "JUAN JOSE GOMEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JUAN JOSE GOMEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2007-09-05T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-03-03T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-03-03T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 3/3/15, CASE DISMISSED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-09-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/FTA/BW/BWI/BAIL:3500/BWNUM:1ST",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2007-09-05 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2007-09-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +85,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3445510",
+  "docket_entries": [
+    {
+      "filedDate": "2007-09-05T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2007-09-05T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-03-03T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-03-03T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-03-03T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 3/3/15, CASE DISMISSED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-03-03T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 3/3/15, CASE DISMISSED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-09-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/FTA/BW/BWI/BAIL:3500/BWNUM:1ST",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2007-09-05T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/FTA/BW/BWI/BAIL:3500/BWNUM:1ST",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02332259",
-    "portal_case_id": "",
+    "portal_case_id": "3445510",
     "display_case_number": "CRI-02332259",
     "defendant": "JUAN JOSE GOMEZ",
     "filed_date": "2007-09-05",
@@ -63,8 +144,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JUAN JOSE GOMEZ, and date of filing 2007-09-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JUAN JOSE GOMEZ, and date of filing 2007-09-05. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:05:22.787Z",
+  "portal_case_id": "3445510",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02332259",
+      "defendant": "JUAN JOSE GOMEZ",
+      "filed_date": "2007-09-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3445510"
+  }
 }

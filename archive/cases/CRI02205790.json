@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:10:30.024Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:46:27.731Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02205790",
   "criminal_case_number": "02205790",
@@ -24,10 +24,50 @@
       "name": "JAMES A GARRISON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAMES A GARRISON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2010-08-24T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-02-23T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-24T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 08/24/10, CASE DISMISSEDBW RECALLED, PURGED PUR COURT ORDER 08/24/10",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-02-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BW/BWI/BAIL:10,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2005-02-23 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2005-02-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +85,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3329546",
+  "docket_entries": [
+    {
+      "filedDate": "2010-08-24T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-08-24T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-02-23T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2005-02-23T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-24T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 08/24/10, CASE DISMISSEDBW RECALLED, PURGED PUR COURT ORDER 08/24/10",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-08-24T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 08/24/10, CASE DISMISSEDBW RECALLED, PURGED PUR COURT ORDER 08/24/10",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-02-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BW/BWI/BAIL:10,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2005-02-23T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BW/BWI/BAIL:10,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02205790",
-    "portal_case_id": "",
+    "portal_case_id": "3329546",
     "display_case_number": "CRI-02205790",
     "defendant": "JAMES A GARRISON",
     "filed_date": "2005-02-23",
@@ -63,8 +144,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAMES A GARRISON, and date of filing 2005-02-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAMES A GARRISON, and date of filing 2005-02-23. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:46:28.479Z",
+  "portal_case_id": "3329546",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02205790",
+      "defendant": "JAMES A GARRISON",
+      "filed_date": "2005-02-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3329546"
+  }
 }

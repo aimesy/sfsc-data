@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:09:00.043Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:05:45.078Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02335433",
   "criminal_case_number": "02335433",
@@ -24,11 +24,59 @@
       "name": "CARLTON ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CARLTON ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2007-09-28T09:15:00.000Z",
+      "docketEntryComment": "/AMENDCOM:653F(D)PC,MISD/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 2D   /CTS: 2  /SA2:TURK AND TAYLOR ST SF/SECFEE/VF1/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-09-28T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/987,2/TEXT: DEFT WAIVES INST AND ARRAIGNMENT GUILTY PLEA/PD/FAWC/DEFT ADV ANG: 1/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2007-09-28 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2007-09-28",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-09-28 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2007-09-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ROBERTO EVANGELISTA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3448454",
+  "docket_entries": [
+    {
+      "filedDate": "2007-09-28T09:15:00.000Z",
+      "docketEntryComment": "/AMENDCOM:653F(D)PC,MISD/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 2D   /CTS: 2  /SA2:TURK AND TAYLOR ST SF/SECFEE/VF1/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2007-09-28T09:15:00.000Z",
+      "description": "/AMENDCOM:653F(D)PC,MISD/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 2D /CTS: 2 /SA2:TURK AND TAYLOR ST SF/SECFEE/VF1/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-09-28T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/987,2/TEXT: DEFT WAIVES INST AND ARRAIGNMENT GUILTY PLEA/PD/FAWC/DEFT ADV ANG: 1/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2007-09-28T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/987,2/TEXT: DEFT WAIVES INST AND ARRAIGNMENT GUILTY PLEA/PD/FAWC/DEFT ADV ANG: 1/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02335433",
-    "portal_case_id": "",
+    "portal_case_id": "3448454",
     "display_case_number": "CRI-02335433",
     "defendant": "CARLTON ALLEN",
     "filed_date": "2007-09-28",
@@ -63,8 +132,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CARLTON ALLEN, and date of filing 2007-09-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CARLTON ALLEN, and date of filing 2007-09-28. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:05:45.761Z",
+  "portal_case_id": "3448454",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02335433",
+      "defendant": "CARLTON ALLEN",
+      "filed_date": "2007-09-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3448454"
+  }
 }

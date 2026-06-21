@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:36:58.505Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:42:09.734Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02189550",
   "criminal_case_number": "02189550",
@@ -24,11 +24,41 @@
       "name": "ROBERTO CAMPOS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROBERTO CAMPOS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2004-12-15T00:00:00.000Z",
+      "docketEntryComment": "ALL CHGS MOT DA IVO PLEA OTHER CASE",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2004-12-15 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2004-12-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "C GOULD",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +75,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3314458",
+  "docket_entries": [
+    {
+      "filedDate": "2004-12-15T00:00:00.000Z",
+      "docketEntryComment": "ALL CHGS MOT DA IVO PLEA OTHER CASE",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2004-12-15T00:00:00.000Z",
+      "description": "ALL CHGS MOT DA IVO PLEA OTHER CASE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02189550",
-    "portal_case_id": "",
+    "portal_case_id": "3314458",
     "display_case_number": "CRI-02189550",
     "defendant": "ROBERTO CAMPOS",
     "filed_date": "2004-11-08",
@@ -63,8 +104,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROBERTO CAMPOS, and date of filing 2004-11-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROBERTO CAMPOS, and date of filing 2004-11-08. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:42:10.321Z",
+  "portal_case_id": "3314458",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02189550",
+      "defendant": "ROBERTO CAMPOS",
+      "filed_date": "2004-11-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3314458"
+  }
 }

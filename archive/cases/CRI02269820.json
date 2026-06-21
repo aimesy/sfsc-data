@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:02:56.174Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:56:44.732Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02269820",
   "criminal_case_number": "02269820",
@@ -24,11 +24,105 @@
       "name": "DAMIAN GARCIA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAMIAN GARCIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-10-09T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-06-12T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-10-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/TN:DAMIAN GARCIA/BWDNC/TEXT:DEFT ENT NG PLEA(S)& DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:TO JOIN NEW ARRAIGNMENT 12025879/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-11-06T13:45:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-10-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN AN 12025879/CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-06-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/FTA/BW/BWI/BAIL:2500/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-11-06 1:45 PM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2012-11-06",
+      "hearing_time": "1:45 PM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-10-22 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2012-10-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-10-09 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2012-10-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2006-06-12 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2006-06-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ALEEM RAJA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +139,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3388216",
+  "docket_entries": [
+    {
+      "filedDate": "2012-10-09T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-10-09T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-06-12T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2006-06-12T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-10-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/TN:DAMIAN GARCIA/BWDNC/TEXT:DEFT ENT NG PLEA(S)& DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:TO JOIN NEW ARRAIGNMENT 12025879/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-10-09T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/TN:DAMIAN GARCIA/BWDNC/TEXT:DEFT ENT NG PLEA(S)& DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:TO JOIN NEW ARRAIGNMENT 12025879/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-11-06T13:45:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-11-06T13:45:00.000Z",
+      "description": "/CAL:TO SET/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-10-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN AN 12025879/CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2012-10-22T09:00:00.000Z",
+      "description": "/CAL:TO JOIN AN 12025879/CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-06-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/FTA/BW/BWI/BAIL:2500/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2006-06-12T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/FTA/BW/BWI/BAIL:2500/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02269820",
-    "portal_case_id": "",
+    "portal_case_id": "3388216",
     "display_case_number": "CRI-02269820",
     "defendant": "DAMIAN GARCIA",
     "filed_date": "2006-06-12",
@@ -63,8 +218,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAMIAN GARCIA, and date of filing 2006-06-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAMIAN GARCIA, and date of filing 2006-06-12. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:56:45.309Z",
+  "portal_case_id": "3388216",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02269820",
+      "defendant": "DAMIAN GARCIA",
+      "filed_date": "2006-06-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3388216"
+  }
 }

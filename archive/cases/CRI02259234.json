@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:09:38.815Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:54:57.967Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02259234",
   "criminal_case_number": "02259234",
@@ -24,11 +24,77 @@
       "name": "WILLIE ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "WILLIE ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2006-05-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/MO PC 1385 THE DEFENDANT IS DECEASED/DEFT DECEASD/BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/STWPX/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARYHEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2006-03-22T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:04-06-06/987,2/BAIL:25,000,00/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2006-05-12 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2006-05-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2006-04-05 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2006-04-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2006-03-22 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2006-03-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEPHEN ROSEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3378639",
+  "docket_entries": [
+    {
+      "filedDate": "2006-05-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/MO PC 1385 THE DEFENDANT IS DECEASED/DEFT DECEASD/BE/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2006-05-12T09:00:00.000Z",
+      "description": "/CAL PRELIMINARY HEARING/MO PC 1385 THE DEFENDANT IS DECEASED/DEFT DECEASD/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/STWPX/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARYHEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2006-04-05T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/STWPX/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARYHEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2006-03-22T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:04-06-06/987,2/BAIL:25,000,00/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2006-03-22T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:04-06-06/987,2/BAIL:25,000,00/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02259234",
-    "portal_case_id": "",
+    "portal_case_id": "3378639",
     "display_case_number": "CRI-02259234",
     "defendant": "WILLIE ALLEN",
     "filed_date": "2006-03-22",
@@ -59,12 +156,36 @@
       "defendant": "WILLIE ALLEN",
       "filed_date": "2006-03-22"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, WILLIE ALLEN, and date of filing 2006-03-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, WILLIE ALLEN, and date of filing 2006-03-22. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:54:58.590Z",
+  "portal_case_id": "3378639",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02259234",
+      "defendant": "WILLIE ALLEN",
+      "filed_date": "2006-03-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3378639"
+  }
 }

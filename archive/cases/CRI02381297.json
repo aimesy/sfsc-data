@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:13:20.414Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:13:37.500Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02381297",
   "criminal_case_number": "02381297",
@@ -24,11 +24,59 @@
       "name": "DANTE ARMSTRONG",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DANTE ARMSTRONG",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2008-08-19T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/X:DEFENDANTIS ORDERED TO CALL ORPJ 3 TIMES A WEEK,/STWPX/987,2/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-09-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/MO PC 1385:DEFENDANT PROVIDED PROOF OF PHYSICIAN REFERRAL FOR MARIJUANA/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2008-09-02 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2008-09-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2008-08-19 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2008-08-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MEL SANTOS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3490628",
+  "docket_entries": [
+    {
+      "filedDate": "2008-08-19T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/X:DEFENDANTIS ORDERED TO CALL ORPJ 3 TIMES A WEEK,/STWPX/987,2/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2008-08-19T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/X:DEFENDANTIS ORDERED TO CALL ORPJ 3 TIMES A WEEK,/STWPX/987,2/CONTD:PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-09-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/MO PC 1385:DEFENDANT PROVIDED PROOF OF PHYSICIAN REFERRAL FOR MARIJUANA/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2008-09-02T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/MO PC 1385:DEFENDANT PROVIDED PROOF OF PHYSICIAN REFERRAL FOR MARIJUANA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02381297",
-    "portal_case_id": "",
+    "portal_case_id": "3490628",
     "display_case_number": "CRI-02381297",
     "defendant": "DANTE ARMSTRONG",
     "filed_date": "2008-08-19",
@@ -59,12 +128,36 @@
       "defendant": "DANTE ARMSTRONG",
       "filed_date": "2008-08-19"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DANTE ARMSTRONG, and date of filing 2008-08-19. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DANTE ARMSTRONG, and date of filing 2008-08-19. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:13:38.206Z",
+  "portal_case_id": "3490628",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02381297",
+      "defendant": "DANTE ARMSTRONG",
+      "filed_date": "2008-08-19"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3490628"
+  }
 }

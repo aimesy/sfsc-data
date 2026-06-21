@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:56.338Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:03:35.023Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02321639",
   "criminal_case_number": "02321639",
@@ -24,11 +24,104 @@
       "name": "RONNIE BURNS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RONNIE BURNS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2007-07-05T15:42:00.000Z",
+      "docketEntryComment": "ATTY ORDER DIRECTING PRODUCTION OF DOCS SIGNED BY JUDGE GIORGI FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-06-25T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL: 10,000/DOP/NTW/LD: 07-25-07/987,2/SA1: ROSA MARIA NAZARIO/SA2: 1081 HAMPSHIRE ST,SF/WEAP/CTORD: SURRENDER OR SELL ALL FIREARMS, IF ANY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-07-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL/MO PC 1385: PEOPLE ARE UNABLE TO SUSTAIN THEIR BURDEN /BE/CTORD: THE STAY AWAY ORDER ISSUED 06-25-07 IS TERMINATED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-07-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL/LD: 07-25-07/CONTD: TRIAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-07-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL/X: CASE PRETRIED AND TRIAL DATE CONFIRMED/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2007-07-16 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "2007-07-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-07-13 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 1,
+      "court_date": "2007-07-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-07-02 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 2,
+      "court_date": "2007-07-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-06-25 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 3,
+      "court_date": "2007-06-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "HADI RAZZAQ",
+      "type": "Public Defender"
+    },
+    {
+      "name": "JOHN ZAHAR",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +138,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3435791",
+  "docket_entries": [
+    {
+      "filedDate": "2007-07-05T15:42:00.000Z",
+      "docketEntryComment": "ATTY ORDER DIRECTING PRODUCTION OF DOCS SIGNED BY JUDGE GIORGI FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2007-07-05T15:42:00.000Z",
+      "description": "ATTY ORDER DIRECTING PRODUCTION OF DOCS SIGNED BY JUDGE GIORGI FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-06-25T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL: 10,000/DOP/NTW/LD: 07-25-07/987,2/SA1: ROSA MARIA NAZARIO/SA2: 1081 HAMPSHIRE ST,SF/WEAP/CTORD: SURRENDER OR SELL ALL FIREARMS, IF ANY/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2007-06-25T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL: 10,000/DOP/NTW/LD: 07-25-07/987,2/SA1: ROSA MARIA NAZARIO/SA2: 1081 HAMPSHIRE ST,SF/WEAP/CTORD: SURRENDER OR SELL ALL FIREARMS, IF ANY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-07-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL/MO PC 1385: PEOPLE ARE UNABLE TO SUSTAIN THEIR BURDEN /BE/CTORD: THE STAY AWAY ORDER ISSUED 06-25-07 IS TERMINATED/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2007-07-16T09:00:00.000Z",
+      "description": "/CAL: TRIAL/MO PC 1385: PEOPLE ARE UNABLE TO SUSTAIN THEIR BURDEN /BE/CTORD: THE STAY AWAY ORDER ISSUED 06-25-07 IS TERMINATED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-07-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL/LD: 07-25-07/CONTD: TRIAL/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2007-07-13T09:00:00.000Z",
+      "description": "/CAL: TRIAL/LD: 07-25-07/CONTD: TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-07-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL/X: CASE PRETRIED AND TRIAL DATE CONFIRMED/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2007-07-02T09:00:00.000Z",
+      "description": "/CAL: TRIAL/X: CASE PRETRIED AND TRIAL DATE CONFIRMED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02321639",
-    "portal_case_id": "",
+    "portal_case_id": "3435791",
     "display_case_number": "CRI-02321639",
     "defendant": "RONNIE BURNS",
     "filed_date": "2007-06-25",
@@ -59,12 +203,36 @@
       "defendant": "RONNIE BURNS",
       "filed_date": "2007-06-25"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RONNIE BURNS, and date of filing 2007-06-25. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RONNIE BURNS, and date of filing 2007-06-25. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:03:35.668Z",
+  "portal_case_id": "3435791",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02321639",
+      "defendant": "RONNIE BURNS",
+      "filed_date": "2007-06-25"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3435791"
+  }
 }

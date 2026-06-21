@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:40.604Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:02:35.839Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02316605",
   "criminal_case_number": "02316605",
@@ -24,11 +24,59 @@
       "name": "JOSE ACOSTA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSE ACOSTA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2007-05-17T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:991 MOTION DENIED/CONTD:JURY TRIAL AND MOTION TO SUPPRESS/DOP/DOP/NTW/LD:06-18-07/BAIL:1000/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-06-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/MO PC 1385:IN THE INTEREST OF JUSTICE/CTORD:TRIAL OF 06-01-07AND LAST DAY OF 06-18-07 ARE VACATED/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2007-06-01 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "2007-06-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-05-17 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 1,
+      "court_date": "2007-05-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DIANA ROSENSTEIN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3431145",
+  "docket_entries": [
+    {
+      "filedDate": "2007-05-17T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:991 MOTION DENIED/CONTD:JURY TRIAL AND MOTION TO SUPPRESS/DOP/DOP/NTW/LD:06-18-07/BAIL:1000/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2007-05-17T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:991 MOTION DENIED/CONTD:JURY TRIAL AND MOTION TO SUPPRESS/DOP/DOP/NTW/LD:06-18-07/BAIL:1000/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-06-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/MO PC 1385:IN THE INTEREST OF JUSTICE/CTORD:TRIAL OF 06-01-07AND LAST DAY OF 06-18-07 ARE VACATED/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2007-06-01T09:00:00.000Z",
+      "description": "/CAL:TRIAL/MO PC 1385:IN THE INTEREST OF JUSTICE/CTORD:TRIAL OF 06-01-07AND LAST DAY OF 06-18-07 ARE VACATED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02316605",
-    "portal_case_id": "",
+    "portal_case_id": "3431145",
     "display_case_number": "CRI-02316605",
     "defendant": "JOSE ACOSTA",
     "filed_date": "2007-05-17",
@@ -59,12 +128,36 @@
       "defendant": "JOSE ACOSTA",
       "filed_date": "2007-05-17"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSE ACOSTA, and date of filing 2007-05-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSE ACOSTA, and date of filing 2007-05-17. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:02:36.564Z",
+  "portal_case_id": "3431145",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02316605",
+      "defendant": "JOSE ACOSTA",
+      "filed_date": "2007-05-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3431145"
+  }
 }

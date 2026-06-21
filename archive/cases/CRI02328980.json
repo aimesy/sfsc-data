@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:02:56.174Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:04:39.780Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02328980",
   "criminal_case_number": "02328980",
@@ -24,11 +24,59 @@
       "name": "DAMIAN FLORES GARCIA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAMIAN FLORES GARCIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2007-08-29T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:THERE IS INSUFFICIENT EVIDENCE IN THIS MATTER/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-08-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/987,2/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2007-08-29 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2007-08-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-08-15 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2007-08-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "VILASKA NGUYEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3442498",
+  "docket_entries": [
+    {
+      "filedDate": "2007-08-29T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:THERE IS INSUFFICIENT EVIDENCE IN THIS MATTER/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2007-08-29T09:00:00.000Z",
+      "description": "/MO PC 1385:THERE IS INSUFFICIENT EVIDENCE IN THIS MATTER/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-08-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/987,2/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2007-08-15T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/987,2/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02328980",
-    "portal_case_id": "",
+    "portal_case_id": "3442498",
     "display_case_number": "CRI-02328980",
     "defendant": "DAMIAN FLORES GARCIA",
     "filed_date": "2007-08-15",
@@ -59,12 +128,36 @@
       "defendant": "DAMIAN FLORES GARCIA",
       "filed_date": "2007-08-15"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAMIAN FLORES GARCIA, and date of filing 2007-08-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAMIAN FLORES GARCIA, and date of filing 2007-08-15. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:04:40.340Z",
+  "portal_case_id": "3442498",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02328980",
+      "defendant": "DAMIAN FLORES GARCIA",
+      "filed_date": "2007-08-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3442498"
+  }
 }

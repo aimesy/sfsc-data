@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:02:56.177Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T18:51:29.369Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02241300",
   "criminal_case_number": "02241300",
@@ -24,11 +24,74 @@
       "name": "DAVID A GARCIA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID A GARCIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2005-11-16T00:00:00.000Z",
+      "docketEntryComment": "REPLY TO OPPOS TO MOT TO SUPPRESS EVIDENCE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-11-14T00:00:00.000Z",
+      "docketEntryComment": "OPPOS TO DEFT MOT TO SUPP EVID PURS TO PC 1538,5 FILED TODAY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-11-10T00:00:00.000Z",
+      "docketEntryComment": "NOTICE OF MOTION TO SUPP EVID PURS 1538,5PC - FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-11-08T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW//LD:11-23-05/BAIL:70,000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-11-18T09:00:00.000Z",
+      "docketEntryComment": "/MO138572:2097685/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2005-11-18 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2005-11-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2005-11-08 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2005-11-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KWIXUAN MALOOF",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +108,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3362195",
+  "docket_entries": [
+    {
+      "filedDate": "2005-11-16T00:00:00.000Z",
+      "docketEntryComment": "REPLY TO OPPOS TO MOT TO SUPPRESS EVIDENCE FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2005-11-16T00:00:00.000Z",
+      "description": "REPLY TO OPPOS TO MOT TO SUPPRESS EVIDENCE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-11-14T00:00:00.000Z",
+      "docketEntryComment": "OPPOS TO DEFT MOT TO SUPP EVID PURS TO PC 1538,5 FILED TODAY",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2005-11-14T00:00:00.000Z",
+      "description": "OPPOS TO DEFT MOT TO SUPP EVID PURS TO PC 1538,5 FILED TODAY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-11-10T00:00:00.000Z",
+      "docketEntryComment": "NOTICE OF MOTION TO SUPP EVID PURS 1538,5PC - FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2005-11-10T00:00:00.000Z",
+      "description": "NOTICE OF MOTION TO SUPP EVID PURS 1538,5PC - FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-11-08T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW//LD:11-23-05/BAIL:70,000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2005-11-08T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW//LD:11-23-05/BAIL:70,000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-11-18T09:00:00.000Z",
+      "docketEntryComment": "/MO138572:2097685/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2005-11-18T09:00:00.000Z",
+      "description": "/MO138572:2097685/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02241300",
-    "portal_case_id": "",
+    "portal_case_id": "3362195",
     "display_case_number": "CRI-02241300",
     "defendant": "DAVID A GARCIA",
     "filed_date": "2005-11-08",
@@ -59,12 +173,36 @@
       "defendant": "DAVID A GARCIA",
       "filed_date": "2005-11-08"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID A GARCIA, and date of filing 2005-11-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID A GARCIA, and date of filing 2005-11-08. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T18:51:30.062Z",
+  "portal_case_id": "3362195",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02241300",
+      "defendant": "DAVID A GARCIA",
+      "filed_date": "2005-11-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3362195"
+  }
 }
