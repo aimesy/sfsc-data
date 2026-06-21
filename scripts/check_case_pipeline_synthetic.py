@@ -231,7 +231,7 @@ def test_criminal_importer_guards() -> None:
     )
     check(
         "criminal header-only text names available facts",
-        headered.get("unavailable_text") == "No information available besides DOE, JANE and date of filing 06/20/2024.",
+        headered.get("unavailable_text") == "No information available besides the name of the defendant, DOE, JANE, and date of filing 06/20/2024.",
         headered.get("unavailable_text"),
     )
     check("criminal header-only record passes schema", importer.schema_error(headered) == "", importer.schema_error(headered))

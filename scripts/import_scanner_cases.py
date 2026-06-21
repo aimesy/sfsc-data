@@ -235,9 +235,9 @@ def criminal_no_information_text(defendant: str = "", filed_date: str = "") -> s
     defendant = clean(defendant)
     filed_date = clean(filed_date)
     if defendant and filed_date:
-        return f"No information available besides {defendant} and date of filing {filed_date}."
+        return f"No information available besides the name of the defendant, {defendant}, and date of filing {filed_date}."
     if defendant:
-        return f"No information available besides {defendant}."
+        return f"No information available besides the name of the defendant, {defendant}."
     if filed_date:
         return f"No information available besides date of filing {filed_date}."
     return "No information available."
