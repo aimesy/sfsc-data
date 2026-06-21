@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:39:40.512Z",
+  "captured_at": "2026-06-21T10:30:28.383Z",
   "criminal_case_number": "24017630",
   "status": "found",
   "portal_case_id": "4143301",
@@ -219,9 +219,26 @@
       "type": "Public Defender"
     }
   ],
+  "parties": [
+    {
+      "name": "MELISSA MARIE HASTY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-24017630",
+    "defendant": "MELISSA MARIE HASTY",
+    "filed_date": "2024-09-25"
+  },
+  "case_header_checked_at": "2026-06-21T10:30:29.610Z",
+  "display_case_number": "CRI-24017630",
+  "defendant": "MELISSA MARIE HASTY",
+  "case_title": "People v. MELISSA MARIE HASTY",
+  "filed_date": "2024-09-25",
   "case_type": "criminal",
   "case_number": "CRI24017630",
-  "case_title": "San Francisco criminal case 24017630",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4143301",
@@ -417,7 +434,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -425,6 +441,15 @@
   "criminal": {
     "raw_case_number": "24017630",
     "portal_case_id": "4143301",
+    "display_case_number": "CRI-24017630",
+    "defendant": "MELISSA MARIE HASTY",
+    "filed_date": "2024-09-25",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-24017630",
+      "defendant": "MELISSA MARIE HASTY",
+      "filed_date": "2024-09-25"
+    },
     "statutes": [],
     "inferred_charges": []
   },

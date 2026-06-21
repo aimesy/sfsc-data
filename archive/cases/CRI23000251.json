@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:42:28.058Z",
+  "captured_at": "2026-06-21T10:14:42.936Z",
   "criminal_case_number": "23000251",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4035854",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "MARSHAWN TERRESE GOMEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-23000251",
+    "defendant": "MARSHAWN TERRESE GOMEZ"
+  },
+  "case_header_checked_at": "2026-06-21T10:14:43.728Z",
+  "display_case_number": "CRI-23000251",
+  "defendant": "MARSHAWN TERRESE GOMEZ",
+  "case_title": "People v. MARSHAWN TERRESE GOMEZ",
   "case_type": "criminal",
   "case_number": "CRI23000251",
-  "case_title": "San Francisco criminal case 23000251",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4035854",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "23000251",
     "portal_case_id": "4035854",
+    "display_case_number": "CRI-23000251",
+    "defendant": "MARSHAWN TERRESE GOMEZ",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-23000251",
+      "defendant": "MARSHAWN TERRESE GOMEZ"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARSHAWN TERRESE GOMEZ. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

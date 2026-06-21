@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:34:12.655Z",
+  "captured_at": "2026-06-21T10:17:47.605Z",
   "criminal_case_number": "25017634",
   "status": "found",
   "portal_case_id": "4208486",
@@ -209,9 +209,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "MARION SUNGA TUBIG",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-25017634",
+    "defendant": "MARION SUNGA TUBIG",
+    "filed_date": "2025-08-15"
+  },
+  "case_header_checked_at": "2026-06-21T10:17:49.050Z",
+  "display_case_number": "CRI-25017634",
+  "defendant": "MARION SUNGA TUBIG",
+  "case_title": "People v. MARION SUNGA TUBIG",
+  "filed_date": "2025-08-15",
   "case_type": "criminal",
   "case_number": "CRI25017634",
-  "case_title": "San Francisco criminal case 25017634",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4208486",
@@ -377,7 +394,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -385,6 +401,15 @@
   "criminal": {
     "raw_case_number": "25017634",
     "portal_case_id": "4208486",
+    "display_case_number": "CRI-25017634",
+    "defendant": "MARION SUNGA TUBIG",
+    "filed_date": "2025-08-15",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-25017634",
+      "defendant": "MARION SUNGA TUBIG",
+      "filed_date": "2025-08-15"
+    },
     "statutes": [],
     "inferred_charges": []
   },

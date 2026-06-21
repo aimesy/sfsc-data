@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:12:59.032Z",
+  "captured_at": "2026-06-21T10:07:26.138Z",
   "criminal_case_number": "22000203",
   "status": "found",
   "portal_case_id": "3934951",
@@ -102,9 +102,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "JIMY ALEXIS SANCHEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000203",
+    "defendant": "JIMY ALEXIS SANCHEZ",
+    "filed_date": "2022-01-07"
+  },
+  "case_header_checked_at": "2026-06-21T10:07:27.928Z",
+  "display_case_number": "CRI-22000203",
+  "defendant": "JIMY ALEXIS SANCHEZ",
+  "case_title": "People v. JIMY ALEXIS SANCHEZ",
+  "filed_date": "2022-01-07",
   "case_type": "criminal",
   "case_number": "CRI22000203",
-  "case_title": "San Francisco criminal case 22000203",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3934951",
@@ -160,7 +177,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -168,6 +184,15 @@
   "criminal": {
     "raw_case_number": "22000203",
     "portal_case_id": "3934951",
+    "display_case_number": "CRI-22000203",
+    "defendant": "JIMY ALEXIS SANCHEZ",
+    "filed_date": "2022-01-07",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000203",
+      "defendant": "JIMY ALEXIS SANCHEZ",
+      "filed_date": "2022-01-07"
+    },
     "statutes": [
       {
         "code": "PC1385",

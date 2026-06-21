@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:44:41.723Z",
+  "captured_at": "2026-06-21T10:31:37.905Z",
   "criminal_case_number": "25026283",
   "status": "found",
   "portal_case_id": "4235109",
@@ -174,9 +174,26 @@
       "type": "Public Defender"
     }
   ],
+  "parties": [
+    {
+      "name": "ALICIA M MORROW",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-25026283",
+    "defendant": "ALICIA M MORROW",
+    "filed_date": "2025-12-04"
+  },
+  "case_header_checked_at": "2026-06-21T10:31:39.472Z",
+  "display_case_number": "CRI-25026283",
+  "defendant": "ALICIA M MORROW",
+  "case_title": "People v. ALICIA M MORROW",
+  "filed_date": "2025-12-04",
   "case_type": "criminal",
   "case_number": "CRI25026283",
-  "case_title": "San Francisco criminal case 25026283",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4235109",
@@ -342,7 +359,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -350,6 +366,15 @@
   "criminal": {
     "raw_case_number": "25026283",
     "portal_case_id": "4235109",
+    "display_case_number": "CRI-25026283",
+    "defendant": "ALICIA M MORROW",
+    "filed_date": "2025-12-04",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-25026283",
+      "defendant": "ALICIA M MORROW",
+      "filed_date": "2025-12-04"
+    },
     "statutes": [
       {
         "code": "PC 1001.95",

@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:49:55.480Z",
+  "captured_at": "2026-06-21T10:20:27.272Z",
   "criminal_case_number": "22000117",
   "status": "found",
   "portal_case_id": "3934868",
@@ -1053,9 +1053,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "PETER D DEROUEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000117",
+    "defendant": "PETER D DEROUEN",
+    "filed_date": "2022-01-05"
+  },
+  "case_header_checked_at": "2026-06-21T10:20:27.994Z",
+  "display_case_number": "CRI-22000117",
+  "defendant": "PETER D DEROUEN",
+  "case_title": "People v. PETER D DEROUEN",
+  "filed_date": "2022-01-05",
   "case_type": "criminal",
   "case_number": "CRI22000117",
-  "case_title": "San Francisco criminal case 22000117",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3934868",
@@ -2071,7 +2088,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -2079,6 +2095,15 @@
   "criminal": {
     "raw_case_number": "22000117",
     "portal_case_id": "3934868",
+    "display_case_number": "CRI-22000117",
+    "defendant": "PETER D DEROUEN",
+    "filed_date": "2022-01-05",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000117",
+      "defendant": "PETER D DEROUEN",
+      "filed_date": "2022-01-05"
+    },
     "statutes": [
       {
         "code": "PC 1538.5",

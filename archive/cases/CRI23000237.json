@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:37:03.104Z",
+  "captured_at": "2026-06-21T10:13:10.738Z",
   "criminal_case_number": "23000237",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4035840",
   "search": {
     "code": 1,
@@ -14,14 +14,30 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "BRUCE DAJUAN SMITH",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-23000237",
+    "defendant": "BRUCE DAJUAN SMITH",
+    "filed_date": "2023-01-06"
+  },
+  "case_header_checked_at": "2026-06-21T10:13:11.519Z",
+  "display_case_number": "CRI-23000237",
+  "defendant": "BRUCE DAJUAN SMITH",
+  "case_title": "People v. BRUCE DAJUAN SMITH",
+  "filed_date": "2023-01-06",
   "case_type": "criminal",
   "case_number": "CRI23000237",
-  "case_title": "San Francisco criminal case 23000237",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4035840",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +45,20 @@
   "criminal": {
     "raw_case_number": "23000237",
     "portal_case_id": "4035840",
+    "display_case_number": "CRI-23000237",
+    "defendant": "BRUCE DAJUAN SMITH",
+    "filed_date": "2023-01-06",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-23000237",
+      "defendant": "BRUCE DAJUAN SMITH",
+      "filed_date": "2023-01-06"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BRUCE DAJUAN SMITH, and date of filing 2023-01-06. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

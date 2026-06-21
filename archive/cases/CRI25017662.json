@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:48:35.516Z",
+  "captured_at": "2026-06-21T10:21:33.912Z",
   "criminal_case_number": "25017662",
   "status": "found",
   "portal_case_id": "4208514",
@@ -107,9 +107,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "JAMES COREY WARD",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-25017662",
+    "defendant": "JAMES COREY WARD",
+    "filed_date": "2026-01-12"
+  },
+  "case_header_checked_at": "2026-06-21T10:21:34.729Z",
+  "display_case_number": "CRI-25017662",
+  "defendant": "JAMES COREY WARD",
+  "case_title": "People v. JAMES COREY WARD",
+  "filed_date": "2026-01-12",
   "case_type": "criminal",
   "case_number": "CRI25017662",
-  "case_title": "San Francisco criminal case 25017662",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4208514",
@@ -175,7 +192,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -183,6 +199,15 @@
   "criminal": {
     "raw_case_number": "25017662",
     "portal_case_id": "4208514",
+    "display_case_number": "CRI-25017662",
+    "defendant": "JAMES COREY WARD",
+    "filed_date": "2026-01-12",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-25017662",
+      "defendant": "JAMES COREY WARD",
+      "filed_date": "2026-01-12"
+    },
     "statutes": [],
     "inferred_charges": []
   },

@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:27:50.485Z",
+  "captured_at": "2026-06-21T10:21:29.117Z",
   "criminal_case_number": "21000032",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "3921839",
   "search": {
     "code": 1,
@@ -14,14 +14,30 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "SHERRICK BRITTON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-21000032",
+    "defendant": "SHERRICK BRITTON",
+    "filed_date": "2021-01-01"
+  },
+  "case_header_checked_at": "2026-06-21T10:21:30.719Z",
+  "display_case_number": "CRI-21000032",
+  "defendant": "SHERRICK BRITTON",
+  "case_title": "People v. SHERRICK BRITTON",
+  "filed_date": "2021-01-01",
   "case_type": "criminal",
   "case_number": "CRI21000032",
-  "case_title": "San Francisco criminal case 21000032",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3921839",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +45,20 @@
   "criminal": {
     "raw_case_number": "21000032",
     "portal_case_id": "3921839",
+    "display_case_number": "CRI-21000032",
+    "defendant": "SHERRICK BRITTON",
+    "filed_date": "2021-01-01",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-21000032",
+      "defendant": "SHERRICK BRITTON",
+      "filed_date": "2021-01-01"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, SHERRICK BRITTON, and date of filing 2021-01-01. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

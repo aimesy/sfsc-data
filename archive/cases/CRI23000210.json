@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:25:19.704Z",
+  "captured_at": "2026-06-21T10:09:55.605Z",
   "criminal_case_number": "23000210",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4035813",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "ROGER I DOMINGUEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-23000210",
+    "defendant": "ROGER I DOMINGUEZ"
+  },
+  "case_header_checked_at": "2026-06-21T10:09:56.469Z",
+  "display_case_number": "CRI-23000210",
+  "defendant": "ROGER I DOMINGUEZ",
+  "case_title": "People v. ROGER I DOMINGUEZ",
   "case_type": "criminal",
   "case_number": "CRI23000210",
-  "case_title": "San Francisco criminal case 23000210",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4035813",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "23000210",
     "portal_case_id": "4035813",
+    "display_case_number": "CRI-23000210",
+    "defendant": "ROGER I DOMINGUEZ",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-23000210",
+      "defendant": "ROGER I DOMINGUEZ"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROGER I DOMINGUEZ. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

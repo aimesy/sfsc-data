@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:35:29.395Z",
+  "captured_at": "2026-06-21T10:12:37.108Z",
   "criminal_case_number": "23000234",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4035837",
   "search": {
     "code": 1,
@@ -14,14 +14,30 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "DERECK ARDIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-23000234",
+    "defendant": "DERECK ARDIS",
+    "filed_date": "2022-10-07"
+  },
+  "case_header_checked_at": "2026-06-21T10:12:37.875Z",
+  "display_case_number": "CRI-23000234",
+  "defendant": "DERECK ARDIS",
+  "case_title": "People v. DERECK ARDIS",
+  "filed_date": "2022-10-07",
   "case_type": "criminal",
   "case_number": "CRI23000234",
-  "case_title": "San Francisco criminal case 23000234",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4035837",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +45,20 @@
   "criminal": {
     "raw_case_number": "23000234",
     "portal_case_id": "4035837",
+    "display_case_number": "CRI-23000234",
+    "defendant": "DERECK ARDIS",
+    "filed_date": "2022-10-07",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-23000234",
+      "defendant": "DERECK ARDIS",
+      "filed_date": "2022-10-07"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DERECK ARDIS, and date of filing 2022-10-07. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:36:35.462Z",
+  "captured_at": "2026-06-21T10:34:03.146Z",
   "criminal_case_number": "23017622",
   "status": "found",
   "portal_case_id": "4082688",
@@ -438,9 +438,26 @@
       "type": "Public Defender"
     }
   ],
+  "parties": [
+    {
+      "name": "TRAVIS LEE SHOEMAKER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-23017622",
+    "defendant": "TRAVIS LEE SHOEMAKER",
+    "filed_date": "2023-10-30"
+  },
+  "case_header_checked_at": "2026-06-21T10:34:04.296Z",
+  "display_case_number": "CRI-23017622",
+  "defendant": "TRAVIS LEE SHOEMAKER",
+  "case_title": "People v. TRAVIS LEE SHOEMAKER",
+  "filed_date": "2023-10-30",
   "case_type": "criminal",
   "case_number": "CRI23017622",
-  "case_title": "San Francisco criminal case 23017622",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4082688",
@@ -806,7 +823,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -814,6 +830,15 @@
   "criminal": {
     "raw_case_number": "23017622",
     "portal_case_id": "4082688",
+    "display_case_number": "CRI-23017622",
+    "defendant": "TRAVIS LEE SHOEMAKER",
+    "filed_date": "2023-10-30",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-23017622",
+      "defendant": "TRAVIS LEE SHOEMAKER",
+      "filed_date": "2023-10-30"
+    },
     "statutes": [],
     "inferred_charges": []
   },

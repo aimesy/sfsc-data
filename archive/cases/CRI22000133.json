@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:52:19.882Z",
+  "captured_at": "2026-06-21T10:21:54.594Z",
   "criminal_case_number": "22000133",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "3934881",
   "search": {
     "code": 1,
@@ -14,14 +14,30 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "RICKY DOMINIQUE ANICAS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000133",
+    "defendant": "RICKY DOMINIQUE ANICAS",
+    "filed_date": "2022-01-04"
+  },
+  "case_header_checked_at": "2026-06-21T10:21:55.850Z",
+  "display_case_number": "CRI-22000133",
+  "defendant": "RICKY DOMINIQUE ANICAS",
+  "case_title": "People v. RICKY DOMINIQUE ANICAS",
+  "filed_date": "2022-01-04",
   "case_type": "criminal",
   "case_number": "CRI22000133",
-  "case_title": "San Francisco criminal case 22000133",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3934881",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +45,20 @@
   "criminal": {
     "raw_case_number": "22000133",
     "portal_case_id": "3934881",
+    "display_case_number": "CRI-22000133",
+    "defendant": "RICKY DOMINIQUE ANICAS",
+    "filed_date": "2022-01-04",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000133",
+      "defendant": "RICKY DOMINIQUE ANICAS",
+      "filed_date": "2022-01-04"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RICKY DOMINIQUE ANICAS, and date of filing 2022-01-04. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

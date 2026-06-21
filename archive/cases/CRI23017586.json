@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:17:57.339Z",
+  "captured_at": "2026-06-21T10:28:44.310Z",
   "criminal_case_number": "23017586",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4082642",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "CHRISTOPHER ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-23017586",
+    "defendant": "CHRISTOPHER ANDERSON"
+  },
+  "case_header_checked_at": "2026-06-21T10:28:47.160Z",
+  "display_case_number": "CRI-23017586",
+  "defendant": "CHRISTOPHER ANDERSON",
+  "case_title": "People v. CHRISTOPHER ANDERSON",
   "case_type": "criminal",
   "case_number": "CRI23017586",
-  "case_title": "San Francisco criminal case 23017586",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4082642",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "23017586",
     "portal_case_id": "4082642",
+    "display_case_number": "CRI-23017586",
+    "defendant": "CHRISTOPHER ANDERSON",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-23017586",
+      "defendant": "CHRISTOPHER ANDERSON"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHRISTOPHER ANDERSON. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:23:50.721Z",
+  "captured_at": "2026-06-21T10:30:35.243Z",
   "criminal_case_number": "23017596",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4082652",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "ERIC STAUDINGER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-23017596",
+    "defendant": "ERIC STAUDINGER"
+  },
+  "case_header_checked_at": "2026-06-21T10:30:36.291Z",
+  "display_case_number": "CRI-23017596",
+  "defendant": "ERIC STAUDINGER",
+  "case_title": "People v. ERIC STAUDINGER",
   "case_type": "criminal",
   "case_number": "CRI23017596",
-  "case_title": "San Francisco criminal case 23017596",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4082652",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "23017596",
     "portal_case_id": "4082652",
+    "display_case_number": "CRI-23017596",
+    "defendant": "ERIC STAUDINGER",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-23017596",
+      "defendant": "ERIC STAUDINGER"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ERIC STAUDINGER. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:41:31.831Z",
+  "captured_at": "2026-06-21T10:14:33.379Z",
   "criminal_case_number": "23000249",
   "status": "found",
   "portal_case_id": "4035852",
@@ -484,9 +484,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "ROGER I DOMINGUEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-23000249",
+    "defendant": "ROGER I DOMINGUEZ",
+    "filed_date": "2023-01-09"
+  },
+  "case_header_checked_at": "2026-06-21T10:14:34.128Z",
+  "display_case_number": "CRI-23000249",
+  "defendant": "ROGER I DOMINGUEZ",
+  "case_title": "People v. ROGER I DOMINGUEZ",
+  "filed_date": "2023-01-09",
   "case_type": "criminal",
   "case_number": "CRI23000249",
-  "case_title": "San Francisco criminal case 23000249",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4035852",
@@ -812,7 +829,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -820,6 +836,15 @@
   "criminal": {
     "raw_case_number": "23000249",
     "portal_case_id": "4035852",
+    "display_case_number": "CRI-23000249",
+    "defendant": "ROGER I DOMINGUEZ",
+    "filed_date": "2023-01-09",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-23000249",
+      "defendant": "ROGER I DOMINGUEZ",
+      "filed_date": "2023-01-09"
+    },
     "statutes": [
       {
         "code": "PC 1203.2",

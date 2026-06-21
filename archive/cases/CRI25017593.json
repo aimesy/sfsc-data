@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:18:58.023Z",
+  "captured_at": "2026-06-21T10:14:24.552Z",
   "criminal_case_number": "25017593",
   "status": "found",
   "portal_case_id": "4208360",
@@ -645,9 +645,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "ANTHONY PAGE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-25017593",
+    "defendant": "ANTHONY PAGE",
+    "filed_date": "2025-08-18"
+  },
+  "case_header_checked_at": "2026-06-21T10:14:25.461Z",
+  "display_case_number": "CRI-25017593",
+  "defendant": "ANTHONY PAGE",
+  "case_title": "People v. ANTHONY PAGE",
+  "filed_date": "2025-08-18",
   "case_type": "criminal",
   "case_number": "CRI25017593",
-  "case_title": "San Francisco criminal case 25017593",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4208360",
@@ -1193,7 +1210,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -1201,6 +1217,15 @@
   "criminal": {
     "raw_case_number": "25017593",
     "portal_case_id": "4208360",
+    "display_case_number": "CRI-25017593",
+    "defendant": "ANTHONY PAGE",
+    "filed_date": "2025-08-18",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-25017593",
+      "defendant": "ANTHONY PAGE",
+      "filed_date": "2025-08-18"
+    },
     "statutes": [
       {
         "code": "PC 1001.36",

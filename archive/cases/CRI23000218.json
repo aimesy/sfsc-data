@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:27:13.450Z",
+  "captured_at": "2026-06-21T10:10:47.292Z",
   "criminal_case_number": "23000218",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4035821",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "JIM RICHARD FERRIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-23000218",
+    "defendant": "JIM RICHARD FERRIS"
+  },
+  "case_header_checked_at": "2026-06-21T10:10:48.536Z",
+  "display_case_number": "CRI-23000218",
+  "defendant": "JIM RICHARD FERRIS",
+  "case_title": "People v. JIM RICHARD FERRIS",
   "case_type": "criminal",
   "case_number": "CRI23000218",
-  "case_title": "San Francisco criminal case 23000218",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4035821",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "23000218",
     "portal_case_id": "4035821",
+    "display_case_number": "CRI-23000218",
+    "defendant": "JIM RICHARD FERRIS",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-23000218",
+      "defendant": "JIM RICHARD FERRIS"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JIM RICHARD FERRIS. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

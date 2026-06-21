@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:11:41.854Z",
+  "captured_at": "2026-06-21T10:26:15.674Z",
   "criminal_case_number": "23017574",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "4082630",
   "search": {
     "code": 1,
@@ -14,14 +14,29 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "GREG CAMPBELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-23017574",
+    "defendant": "GREG CAMPBELL"
+  },
+  "case_header_checked_at": "2026-06-21T10:26:17.519Z",
+  "display_case_number": "CRI-23017574",
+  "defendant": "GREG CAMPBELL",
+  "case_title": "People v. GREG CAMPBELL",
   "case_type": "criminal",
   "case_number": "CRI23017574",
-  "case_title": "San Francisco criminal case 23017574",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4082630",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +44,19 @@
   "criminal": {
     "raw_case_number": "23017574",
     "portal_case_id": "4082630",
+    "display_case_number": "CRI-23017574",
+    "defendant": "GREG CAMPBELL",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-23017574",
+      "defendant": "GREG CAMPBELL"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, GREG CAMPBELL. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

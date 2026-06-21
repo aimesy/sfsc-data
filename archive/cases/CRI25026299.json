@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:50:08.722Z",
+  "captured_at": "2026-06-21T10:32:45.561Z",
   "criminal_case_number": "25026299",
   "status": "found",
   "portal_case_id": "4235125",
@@ -210,9 +210,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "VINCENT WILLIAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-25026299",
+    "defendant": "VINCENT WILLIAMS",
+    "filed_date": "2025-12-05"
+  },
+  "case_header_checked_at": "2026-06-21T10:32:46.215Z",
+  "display_case_number": "CRI-25026299",
+  "defendant": "VINCENT WILLIAMS",
+  "case_title": "People v. VINCENT WILLIAMS",
+  "filed_date": "2025-12-05",
   "case_type": "criminal",
   "case_number": "CRI25026299",
-  "case_title": "San Francisco criminal case 25026299",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4235125",
@@ -398,7 +415,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -406,6 +422,15 @@
   "criminal": {
     "raw_case_number": "25026299",
     "portal_case_id": "4235125",
+    "display_case_number": "CRI-25026299",
+    "defendant": "VINCENT WILLIAMS",
+    "filed_date": "2025-12-05",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-25026299",
+      "defendant": "VINCENT WILLIAMS",
+      "filed_date": "2025-12-05"
+    },
     "statutes": [],
     "inferred_charges": []
   },

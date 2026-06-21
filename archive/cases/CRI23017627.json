@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:38:46.226Z",
+  "captured_at": "2026-06-21T10:34:45.279Z",
   "criminal_case_number": "23017627",
   "status": "found",
   "portal_case_id": "4082693",
@@ -44,9 +44,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "ERNEST PICKENS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-23017627",
+    "defendant": "ERNEST PICKENS",
+    "filed_date": "2023-10-30"
+  },
+  "case_header_checked_at": "2026-06-21T10:34:47.934Z",
+  "display_case_number": "CRI-23017627",
+  "defendant": "ERNEST PICKENS",
+  "case_title": "People v. ERNEST PICKENS",
+  "filed_date": "2023-10-30",
   "case_type": "criminal",
   "case_number": "CRI23017627",
-  "case_title": "San Francisco criminal case 23017627",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4082693",
@@ -72,7 +89,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -80,6 +96,15 @@
   "criminal": {
     "raw_case_number": "23017627",
     "portal_case_id": "4082693",
+    "display_case_number": "CRI-23017627",
+    "defendant": "ERNEST PICKENS",
+    "filed_date": "2023-10-30",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-23017627",
+      "defendant": "ERNEST PICKENS",
+      "filed_date": "2023-10-30"
+    },
     "statutes": [],
     "inferred_charges": []
   },

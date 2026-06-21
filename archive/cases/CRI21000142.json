@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:57:45.149Z",
+  "captured_at": "2026-06-21T10:32:21.192Z",
   "criminal_case_number": "21000142",
   "status": "found",
   "portal_case_id": "3921948",
@@ -89,9 +89,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "LANA RENAE KITE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-21000142",
+    "defendant": "LANA RENAE KITE",
+    "filed_date": "2021-01-07"
+  },
+  "case_header_checked_at": "2026-06-21T10:32:22.206Z",
+  "display_case_number": "CRI-21000142",
+  "defendant": "LANA RENAE KITE",
+  "case_title": "People v. LANA RENAE KITE",
+  "filed_date": "2021-01-07",
   "case_type": "criminal",
   "case_number": "CRI21000142",
-  "case_title": "San Francisco criminal case 21000142",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3921948",
@@ -147,7 +164,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -155,6 +171,15 @@
   "criminal": {
     "raw_case_number": "21000142",
     "portal_case_id": "3921948",
+    "display_case_number": "CRI-21000142",
+    "defendant": "LANA RENAE KITE",
+    "filed_date": "2021-01-07",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-21000142",
+      "defendant": "LANA RENAE KITE",
+      "filed_date": "2021-01-07"
+    },
     "statutes": [],
     "inferred_charges": []
   },

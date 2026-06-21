@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:49:13.732Z",
+  "captured_at": "2026-06-21T10:20:10.238Z",
   "criminal_case_number": "22000113",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "3934864",
   "search": {
     "code": 1,
@@ -14,14 +14,30 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "TRAVIS ROBERT HOPKINS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000113",
+    "defendant": "TRAVIS ROBERT HOPKINS",
+    "filed_date": "2022-01-03"
+  },
+  "case_header_checked_at": "2026-06-21T10:20:11.160Z",
+  "display_case_number": "CRI-22000113",
+  "defendant": "TRAVIS ROBERT HOPKINS",
+  "case_title": "People v. TRAVIS ROBERT HOPKINS",
+  "filed_date": "2022-01-03",
   "case_type": "criminal",
   "case_number": "CRI22000113",
-  "case_title": "San Francisco criminal case 22000113",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3934864",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +45,20 @@
   "criminal": {
     "raw_case_number": "22000113",
     "portal_case_id": "3934864",
+    "display_case_number": "CRI-22000113",
+    "defendant": "TRAVIS ROBERT HOPKINS",
+    "filed_date": "2022-01-03",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000113",
+      "defendant": "TRAVIS ROBERT HOPKINS",
+      "filed_date": "2022-01-03"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TRAVIS ROBERT HOPKINS, and date of filing 2022-01-03. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

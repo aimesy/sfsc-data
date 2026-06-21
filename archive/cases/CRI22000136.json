@@ -1,9 +1,9 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:53:13.254Z",
+  "captured_at": "2026-06-21T10:22:09.156Z",
   "criminal_case_number": "22000136",
-  "status": "found",
+  "status": "unavailable",
   "portal_case_id": "3934884",
   "search": {
     "code": 1,
@@ -14,14 +14,30 @@
   "roa": [],
   "calendar": [],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "CAMARON STROUGHTER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000136",
+    "defendant": "CAMARON STROUGHTER",
+    "filed_date": "2022-01-04"
+  },
+  "case_header_checked_at": "2026-06-21T10:22:10.190Z",
+  "display_case_number": "CRI-22000136",
+  "defendant": "CAMARON STROUGHTER",
+  "case_title": "People v. CAMARON STROUGHTER",
+  "filed_date": "2022-01-04",
   "case_type": "criminal",
   "case_number": "CRI22000136",
-  "case_title": "San Francisco criminal case 22000136",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3934884",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -29,9 +45,20 @@
   "criminal": {
     "raw_case_number": "22000136",
     "portal_case_id": "3934884",
+    "display_case_number": "CRI-22000136",
+    "defendant": "CAMARON STROUGHTER",
+    "filed_date": "2022-01-04",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000136",
+      "defendant": "CAMARON STROUGHTER",
+      "filed_date": "2022-01-04"
+    },
     "statutes": [],
     "inferred_charges": []
   },
+  "unavailable_reason": "criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CAMARON STROUGHTER, and date of filing 2022-01-04. criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
   "documents_deferred_count": 0

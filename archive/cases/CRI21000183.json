@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:10:53.607Z",
+  "captured_at": "2026-06-21T10:36:26.875Z",
   "criminal_case_number": "21000183",
   "status": "found",
   "portal_case_id": "3921988",
@@ -147,9 +147,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "JEFFREY MCELROY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-21000183",
+    "defendant": "JEFFREY MCELROY",
+    "filed_date": "2021-01-07"
+  },
+  "case_header_checked_at": "2026-06-21T10:36:30.356Z",
+  "display_case_number": "CRI-21000183",
+  "defendant": "JEFFREY MCELROY",
+  "case_title": "People v. JEFFREY MCELROY",
+  "filed_date": "2021-01-07",
   "case_type": "criminal",
   "case_number": "CRI21000183",
-  "case_title": "San Francisco criminal case 21000183",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3921988",
@@ -225,7 +242,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -233,6 +249,15 @@
   "criminal": {
     "raw_case_number": "21000183",
     "portal_case_id": "3921988",
+    "display_case_number": "CRI-21000183",
+    "defendant": "JEFFREY MCELROY",
+    "filed_date": "2021-01-07",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-21000183",
+      "defendant": "JEFFREY MCELROY",
+      "filed_date": "2021-01-07"
+    },
     "statutes": [],
     "inferred_charges": []
   },

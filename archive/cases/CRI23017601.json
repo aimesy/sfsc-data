@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:25:19.855Z",
+  "captured_at": "2026-06-21T10:31:21.686Z",
   "criminal_case_number": "23017601",
   "status": "found",
   "portal_case_id": "4082657",
@@ -473,9 +473,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "CARLOS VALLECILLO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-23017601",
+    "defendant": "CARLOS VALLECILLO",
+    "filed_date": "2023-10-26"
+  },
+  "case_header_checked_at": "2026-06-21T10:31:22.432Z",
+  "display_case_number": "CRI-23017601",
+  "defendant": "CARLOS VALLECILLO",
+  "case_title": "People v. CARLOS VALLECILLO",
+  "filed_date": "2023-10-26",
   "case_type": "criminal",
   "case_number": "CRI23017601",
-  "case_title": "San Francisco criminal case 23017601",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4082657",
@@ -901,7 +918,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -909,6 +925,15 @@
   "criminal": {
     "raw_case_number": "23017601",
     "portal_case_id": "4082657",
+    "display_case_number": "CRI-23017601",
+    "defendant": "CARLOS VALLECILLO",
+    "filed_date": "2023-10-26",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-23017601",
+      "defendant": "CARLOS VALLECILLO",
+      "filed_date": "2023-10-26"
+    },
     "statutes": [
       {
         "code": "PC 4011.6",
