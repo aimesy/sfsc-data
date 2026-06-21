@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:29:42.558Z",
+  "captured_at": "2026-06-21T10:43:18.680Z",
   "criminal_case_number": "21000253",
   "status": "found",
   "portal_case_id": "3922054",
@@ -356,9 +356,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "ALEXANDER POSADA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-21000253",
+    "defendant": "ALEXANDER POSADA",
+    "filed_date": "2021-01-08"
+  },
+  "case_header_checked_at": "2026-06-21T10:43:21.155Z",
+  "display_case_number": "CRI-21000253",
+  "defendant": "ALEXANDER POSADA",
+  "case_title": "People v. ALEXANDER POSADA",
+  "filed_date": "2021-01-08",
   "case_type": "criminal",
   "case_number": "CRI21000253",
-  "case_title": "San Francisco criminal case 21000253",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3922054",
@@ -584,7 +601,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -592,6 +608,15 @@
   "criminal": {
     "raw_case_number": "21000253",
     "portal_case_id": "3922054",
+    "display_case_number": "CRI-21000253",
+    "defendant": "ALEXANDER POSADA",
+    "filed_date": "2021-01-08",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-21000253",
+      "defendant": "ALEXANDER POSADA",
+      "filed_date": "2021-01-08"
+    },
     "statutes": [],
     "inferred_charges": []
   },

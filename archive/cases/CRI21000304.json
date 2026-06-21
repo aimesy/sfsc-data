@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:44:08.151Z",
+  "captured_at": "2026-06-21T10:48:32.398Z",
   "criminal_case_number": "21000304",
   "status": "found",
   "portal_case_id": "3922104",
@@ -616,9 +616,26 @@
       "type": "Primary"
     }
   ],
+  "parties": [
+    {
+      "name": "EVAN UNDERWOOD",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-21000304",
+    "defendant": "EVAN UNDERWOOD",
+    "filed_date": "2021-01-12"
+  },
+  "case_header_checked_at": "2026-06-21T10:48:34.511Z",
+  "display_case_number": "CRI-21000304",
+  "defendant": "EVAN UNDERWOOD",
+  "case_title": "People v. EVAN UNDERWOOD",
+  "filed_date": "2021-01-12",
   "case_type": "criminal",
   "case_number": "CRI21000304",
-  "case_title": "San Francisco criminal case 21000304",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3922104",
@@ -1104,7 +1121,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -1112,6 +1128,15 @@
   "criminal": {
     "raw_case_number": "21000304",
     "portal_case_id": "3922104",
+    "display_case_number": "CRI-21000304",
+    "defendant": "EVAN UNDERWOOD",
+    "filed_date": "2021-01-12",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-21000304",
+      "defendant": "EVAN UNDERWOOD",
+      "filed_date": "2021-01-12"
+    },
     "statutes": [
       {
         "code": "PC 1001",

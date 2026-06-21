@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:47:37.448Z",
+  "captured_at": "2026-06-21T10:49:40.215Z",
   "criminal_case_number": "21000313",
   "status": "found",
   "portal_case_id": "3922112",
@@ -425,9 +425,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "TYNTHIA ANN BOUZA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-21000313",
+    "defendant": "TYNTHIA ANN BOUZA",
+    "filed_date": "2021-01-12"
+  },
+  "case_header_checked_at": "2026-06-21T10:49:41.885Z",
+  "display_case_number": "CRI-21000313",
+  "defendant": "TYNTHIA ANN BOUZA",
+  "case_title": "People v. TYNTHIA ANN BOUZA",
+  "filed_date": "2021-01-12",
   "case_type": "criminal",
   "case_number": "CRI21000313",
-  "case_title": "San Francisco criminal case 21000313",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3922112",
@@ -713,7 +730,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -721,6 +737,15 @@
   "criminal": {
     "raw_case_number": "21000313",
     "portal_case_id": "3922112",
+    "display_case_number": "CRI-21000313",
+    "defendant": "TYNTHIA ANN BOUZA",
+    "filed_date": "2021-01-12",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-21000313",
+      "defendant": "TYNTHIA ANN BOUZA",
+      "filed_date": "2021-01-12"
+    },
     "statutes": [
       {
         "code": "PC 1538",

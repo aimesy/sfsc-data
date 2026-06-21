@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:27:13.676Z",
+  "captured_at": "2026-06-21T10:42:44.667Z",
   "criminal_case_number": "21000246",
   "status": "found",
   "portal_case_id": "3922047",
@@ -491,9 +491,26 @@
       "type": "Public Defender"
     }
   ],
+  "parties": [
+    {
+      "name": "DAVID EDISON GILYANNA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-21000246",
+    "defendant": "DAVID EDISON GILYANNA",
+    "filed_date": "2021-01-11"
+  },
+  "case_header_checked_at": "2026-06-21T10:42:45.716Z",
+  "display_case_number": "CRI-21000246",
+  "defendant": "DAVID EDISON GILYANNA",
+  "case_title": "People v. DAVID EDISON GILYANNA",
+  "filed_date": "2021-01-11",
   "case_type": "criminal",
   "case_number": "CRI21000246",
-  "case_title": "San Francisco criminal case 21000246",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3922047",
@@ -789,7 +806,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -797,6 +813,15 @@
   "criminal": {
     "raw_case_number": "21000246",
     "portal_case_id": "3922047",
+    "display_case_number": "CRI-21000246",
+    "defendant": "DAVID EDISON GILYANNA",
+    "filed_date": "2021-01-11",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-21000246",
+      "defendant": "DAVID EDISON GILYANNA",
+      "filed_date": "2021-01-11"
+    },
     "statutes": [
       {
         "code": "PC 602(M)",

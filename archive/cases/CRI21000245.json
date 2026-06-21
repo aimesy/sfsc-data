@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:26:56.111Z",
+  "captured_at": "2026-06-21T10:42:26.076Z",
   "criminal_case_number": "21000245",
   "status": "found",
   "portal_case_id": "3922046",
@@ -89,9 +89,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "KRISHAN KISHOR GOSAI",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-21000245",
+    "defendant": "KRISHAN KISHOR GOSAI",
+    "filed_date": "2021-01-08"
+  },
+  "case_header_checked_at": "2026-06-21T10:42:27.261Z",
+  "display_case_number": "CRI-21000245",
+  "defendant": "KRISHAN KISHOR GOSAI",
+  "case_title": "People v. KRISHAN KISHOR GOSAI",
+  "filed_date": "2021-01-08",
   "case_type": "criminal",
   "case_number": "CRI21000245",
-  "case_title": "San Francisco criminal case 21000245",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3922046",
@@ -147,7 +164,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -155,6 +171,15 @@
   "criminal": {
     "raw_case_number": "21000245",
     "portal_case_id": "3922046",
+    "display_case_number": "CRI-21000245",
+    "defendant": "KRISHAN KISHOR GOSAI",
+    "filed_date": "2021-01-08",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-21000245",
+      "defendant": "KRISHAN KISHOR GOSAI",
+      "filed_date": "2021-01-08"
+    },
     "statutes": [
       {
         "code": "PC 1385",
