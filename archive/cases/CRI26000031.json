@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:05:13.413Z",
+  "captured_at": "2026-06-21T09:28:29.439Z",
   "criminal_case_number": "26000031",
   "status": "found",
   "portal_case_id": "4242828",
@@ -19,14 +19,29 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "WALTER DODGE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-26000031",
+    "defendant": "WALTER DODGE"
+  },
+  "case_header_checked_at": "2026-06-21T09:28:30.197Z",
+  "display_case_number": "CRI-26000031",
+  "defendant": "WALTER DODGE",
+  "case_title": "People v. WALTER DODGE",
   "case_type": "criminal",
   "case_number": "CRI26000031",
-  "case_title": "San Francisco criminal case 26000031",
+  "filed_date": "",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4242828",
   "docket_entries": [],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -34,6 +49,14 @@
   "criminal": {
     "raw_case_number": "26000031",
     "portal_case_id": "4242828",
+    "display_case_number": "CRI-26000031",
+    "defendant": "WALTER DODGE",
+    "filed_date": "",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-26000031",
+      "defendant": "WALTER DODGE"
+    },
     "statutes": [],
     "inferred_charges": []
   },

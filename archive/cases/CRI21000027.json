@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:27:14.532Z",
+  "captured_at": "2026-06-21T09:20:21.726Z",
   "criminal_case_number": "21000027",
   "status": "found",
   "portal_case_id": "3921834",
@@ -153,9 +153,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "ELISHA KING",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-21000027",
+    "defendant": "ELISHA KING",
+    "filed_date": "2021-01-04"
+  },
+  "case_header_checked_at": "2026-06-21T09:20:33.944Z",
+  "display_case_number": "CRI-21000027",
+  "defendant": "ELISHA KING",
+  "case_title": "People v. ELISHA KING",
+  "filed_date": "2021-01-04",
   "case_type": "criminal",
   "case_number": "CRI21000027",
-  "case_title": "San Francisco criminal case 21000027",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3921834",
@@ -261,7 +278,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -269,6 +285,15 @@
   "criminal": {
     "raw_case_number": "21000027",
     "portal_case_id": "3921834",
+    "display_case_number": "CRI-21000027",
+    "defendant": "ELISHA KING",
+    "filed_date": "2021-01-04",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-21000027",
+      "defendant": "ELISHA KING",
+      "filed_date": "2021-01-04"
+    },
     "statutes": [
       {
         "code": "PC 452(C)",

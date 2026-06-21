@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:22:29.593Z",
+  "captured_at": "2026-06-21T09:21:18.521Z",
   "criminal_case_number": "22000001",
   "status": "found",
   "portal_case_id": "3934752",
@@ -334,9 +334,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "CANDIDO RIVAS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000001",
+    "defendant": "CANDIDO RIVAS",
+    "filed_date": "2022-01-05"
+  },
+  "case_header_checked_at": "2026-06-21T09:21:19.695Z",
+  "display_case_number": "CRI-22000001",
+  "defendant": "CANDIDO RIVAS",
+  "case_title": "People v. CANDIDO RIVAS",
+  "filed_date": "2022-01-05",
   "case_type": "criminal",
   "case_number": "CRI22000001",
-  "case_title": "San Francisco criminal case 22000001",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3934752",
@@ -622,7 +639,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -630,6 +646,15 @@
   "criminal": {
     "raw_case_number": "22000001",
     "portal_case_id": "3934752",
+    "display_case_number": "CRI-22000001",
+    "defendant": "CANDIDO RIVAS",
+    "filed_date": "2022-01-05",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000001",
+      "defendant": "CANDIDO RIVAS",
+      "filed_date": "2022-01-05"
+    },
     "statutes": [
       {
         "code": "PC 1385",

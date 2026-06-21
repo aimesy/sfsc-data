@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:31:23.610Z",
+  "captured_at": "2026-06-21T09:28:28.427Z",
   "criminal_case_number": "21000046",
   "status": "found",
   "portal_case_id": "3921853",
@@ -534,9 +534,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "LELAND HARRISON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-21000046",
+    "defendant": "LELAND HARRISON",
+    "filed_date": "2021-01-06"
+  },
+  "case_header_checked_at": "2026-06-21T09:28:29.304Z",
+  "display_case_number": "CRI-21000046",
+  "defendant": "LELAND HARRISON",
+  "case_title": "People v. LELAND HARRISON",
+  "filed_date": "2021-01-06",
   "case_type": "criminal",
   "case_number": "CRI21000046",
-  "case_title": "San Francisco criminal case 21000046",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3921853",
@@ -962,7 +979,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -970,6 +986,15 @@
   "criminal": {
     "raw_case_number": "21000046",
     "portal_case_id": "3921853",
+    "display_case_number": "CRI-21000046",
+    "defendant": "LELAND HARRISON",
+    "filed_date": "2021-01-06",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-21000046",
+      "defendant": "LELAND HARRISON",
+      "filed_date": "2021-01-06"
+    },
     "statutes": [
       {
         "code": "PC 1538",

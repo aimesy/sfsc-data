@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:11:21.796Z",
+  "captured_at": "2026-06-21T09:25:16.863Z",
   "criminal_case_number": "20000008",
   "status": "found",
   "portal_case_id": "3908376",
@@ -382,9 +382,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "SCOTT COVERDALE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-20000008",
+    "defendant": "SCOTT COVERDALE",
+    "filed_date": "2020-01-02"
+  },
+  "case_header_checked_at": "2026-06-21T09:25:18.542Z",
+  "display_case_number": "CRI-20000008",
+  "defendant": "SCOTT COVERDALE",
+  "case_title": "People v. SCOTT COVERDALE",
+  "filed_date": "2020-01-02",
   "case_type": "criminal",
   "case_number": "CRI20000008",
-  "case_title": "San Francisco criminal case 20000008",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3908376",
@@ -610,7 +627,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -618,6 +634,15 @@
   "criminal": {
     "raw_case_number": "20000008",
     "portal_case_id": "3908376",
+    "display_case_number": "CRI-20000008",
+    "defendant": "SCOTT COVERDALE",
+    "filed_date": "2020-01-02",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-20000008",
+      "defendant": "SCOTT COVERDALE",
+      "filed_date": "2020-01-02"
+    },
     "statutes": [
       {
         "code": "PC 1001",

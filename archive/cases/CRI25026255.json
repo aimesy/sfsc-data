@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T01:32:03.237Z",
+  "captured_at": "2026-06-21T09:26:44.680Z",
   "criminal_case_number": "25026255",
   "status": "found",
   "portal_case_id": "4235079",
@@ -664,9 +664,26 @@
       "type": "Public Defender"
     }
   ],
+  "parties": [
+    {
+      "name": "CHRISTIAN B YELKOUNI",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-25026255",
+    "defendant": "CHRISTIAN B YELKOUNI",
+    "filed_date": "2025-12-03"
+  },
+  "case_header_checked_at": "2026-06-21T09:26:45.393Z",
+  "display_case_number": "CRI-25026255",
+  "defendant": "CHRISTIAN B YELKOUNI",
+  "case_title": "People v. CHRISTIAN B YELKOUNI",
+  "filed_date": "2025-12-03",
   "case_type": "criminal",
   "case_number": "CRI25026255",
-  "case_title": "San Francisco criminal case 25026255",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4235079",
@@ -1352,7 +1369,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -1360,6 +1376,15 @@
   "criminal": {
     "raw_case_number": "25026255",
     "portal_case_id": "4235079",
+    "display_case_number": "CRI-25026255",
+    "defendant": "CHRISTIAN B YELKOUNI",
+    "filed_date": "2025-12-03",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-25026255",
+      "defendant": "CHRISTIAN B YELKOUNI",
+      "filed_date": "2025-12-03"
+    },
     "statutes": [],
     "inferred_charges": []
   },

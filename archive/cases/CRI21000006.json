@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:25:02.271Z",
+  "captured_at": "2026-06-21T09:19:26.421Z",
   "criminal_case_number": "21000006",
   "status": "found",
   "portal_case_id": "3921814",
@@ -771,9 +771,26 @@
       "type": "District Attorney"
     }
   ],
+  "parties": [
+    {
+      "name": "JAIME LINARES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-21000006",
+    "defendant": "JAIME LINARES",
+    "filed_date": "2021-01-13"
+  },
+  "case_header_checked_at": "2026-06-21T09:19:27.564Z",
+  "display_case_number": "CRI-21000006",
+  "defendant": "JAIME LINARES",
+  "case_title": "People v. JAIME LINARES",
+  "filed_date": "2021-01-13",
   "case_type": "criminal",
   "case_number": "CRI21000006",
-  "case_title": "San Francisco criminal case 21000006",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3921814",
@@ -1309,7 +1326,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -1317,6 +1333,15 @@
   "criminal": {
     "raw_case_number": "21000006",
     "portal_case_id": "3921814",
+    "display_case_number": "CRI-21000006",
+    "defendant": "JAIME LINARES",
+    "filed_date": "2021-01-13",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-21000006",
+      "defendant": "JAIME LINARES",
+      "filed_date": "2021-01-13"
+    },
     "statutes": [
       {
         "code": "PC 1001",

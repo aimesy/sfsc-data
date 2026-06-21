@@ -1,7 +1,7 @@
 {
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
-  "captured_at": "2026-06-21T00:25:05.253Z",
+  "captured_at": "2026-06-21T09:22:06.071Z",
   "criminal_case_number": "22000017",
   "status": "found",
   "portal_case_id": "3934768",
@@ -90,9 +90,26 @@
     }
   ],
   "attorneys": [],
+  "parties": [
+    {
+      "name": "SHAWN SANDERS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-22000017",
+    "defendant": "SHAWN SANDERS",
+    "filed_date": "2022-01-05"
+  },
+  "case_header_checked_at": "2026-06-21T09:22:07.248Z",
+  "display_case_number": "CRI-22000017",
+  "defendant": "SHAWN SANDERS",
+  "case_title": "People v. SHAWN SANDERS",
+  "filed_date": "2022-01-05",
   "case_type": "criminal",
   "case_number": "CRI22000017",
-  "case_title": "San Francisco criminal case 22000017",
+  "criminal_case_type": "",
   "court": "San Francisco Superior Court - Criminal",
   "cause_of_action": "Criminal",
   "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3934768",
@@ -168,7 +185,6 @@
       "source": "criminal_portal_roa"
     }
   ],
-  "parties": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -176,6 +192,15 @@
   "criminal": {
     "raw_case_number": "22000017",
     "portal_case_id": "3934768",
+    "display_case_number": "CRI-22000017",
+    "defendant": "SHAWN SANDERS",
+    "filed_date": "2022-01-05",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-22000017",
+      "defendant": "SHAWN SANDERS",
+      "filed_date": "2022-01-05"
+    },
     "statutes": [
       {
         "code": "PC 1203.2",
