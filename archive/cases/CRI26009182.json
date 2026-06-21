@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:29:43.125Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:10:03.861Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI26009182",
   "criminal_case_number": "26009182",
@@ -24,10 +24,68 @@
       "name": "REGINALD BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "REGINALD BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2026-06-17T16:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-06-17T16:30:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-04-29T12:00:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-04-27T10:09:38.000Z",
+      "docketEntryComment": "Complaint and Citation RETURN DATE 04/29/26 (CITN)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-04-23T06:49:21.000Z",
+      "docketEntryComment": "Sufficient Probable Cause Filed",
+      "otherSubmitter": "PTS"
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2026-06-17 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2026-06-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2026-04-29 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2026-04-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +103,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4267290",
+  "docket_entries": [
+    {
+      "filedDate": "2026-06-17T16:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2026-06-17T16:30:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-06-17T16:30:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2026-06-17T16:30:00.000Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-04-29T12:00:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2026-04-29T12:00:00.000Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-04-27T10:09:38.000Z",
+      "docketEntryComment": "Complaint and Citation RETURN DATE 04/29/26 (CITN)",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2026-04-27T10:09:38.000Z",
+      "description": "Complaint and Citation RETURN DATE 04/29/26 (CITN)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-04-23T06:49:21.000Z",
+      "docketEntryComment": "Sufficient Probable Cause Filed",
+      "otherSubmitter": "PTS",
+      "__index": 4,
+      "date_filed": "2026-04-23T06:49:21.000Z",
+      "description": "Sufficient Probable Cause Filed",
+      "submitter": "PTS",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "26009182",
-    "portal_case_id": "",
+    "portal_case_id": "4267290",
     "display_case_number": "CRI-26009182",
     "defendant": "REGINALD BROWN",
     "filed_date": "2026-04-27",
@@ -63,8 +172,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, REGINALD BROWN, and date of filing 2026-04-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, REGINALD BROWN, and date of filing 2026-04-27. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:10:04.490Z",
+  "portal_case_id": "4267290",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-26009182",
+      "defendant": "REGINALD BROWN",
+      "filed_date": "2026-04-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4267290"
+  }
 }

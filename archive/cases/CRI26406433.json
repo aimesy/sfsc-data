@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:13:10.249Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:13:15.339Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI26406433",
   "criminal_case_number": "26406433",
@@ -24,10 +24,63 @@
       "name": "TYREECE MARCEL GRANT",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TYREECE MARCEL GRANT",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2026-05-06T16:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-05-06T16:30:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-04-06T12:00:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-04-03T08:15:54.000Z",
+      "docketEntryComment": "Complaint and Citation RETURN DATE 040626",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2026-05-06 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2026-05-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2026-04-06 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2026-04-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +98,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4260546",
+  "docket_entries": [
+    {
+      "filedDate": "2026-05-06T16:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2026-05-06T16:30:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-05-06T16:30:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2026-05-06T16:30:00.000Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-04-06T12:00:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2026-04-06T12:00:00.000Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-04-03T08:15:54.000Z",
+      "docketEntryComment": "Complaint and Citation RETURN DATE 040626",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2026-04-03T08:15:54.000Z",
+      "description": "Complaint and Citation RETURN DATE 040626",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "26406433",
-    "portal_case_id": "",
+    "portal_case_id": "4260546",
     "display_case_number": "CRI-26406433",
     "defendant": "TYREECE MARCEL GRANT",
     "filed_date": "2026-04-03",
@@ -63,8 +157,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TYREECE MARCEL GRANT, and date of filing 2026-04-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TYREECE MARCEL GRANT, and date of filing 2026-04-03. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:13:15.939Z",
+  "portal_case_id": "4260546",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-26406433",
+      "defendant": "TYREECE MARCEL GRANT",
+      "filed_date": "2026-04-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4260546"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:25:02.437Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T15:46:31.833Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI26003370",
   "criminal_case_number": "26003370",
@@ -24,11 +24,93 @@
       "name": "CHARLES E ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHARLES E ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2026-03-06T15:50:38.000Z",
+      "docketEntryComment": "San Francisco County Jail Commitment",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-03-06T15:50:37.434Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-03-06T09:00:00.000Z",
+      "docketEntryComment": "Order - Order Reinstating Parole",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-03-06T09:00:00.000Z",
+      "docketEntryComment": "Acknowledgement and Advisement of Parolee Admitting Parole Violation",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-02-26T16:30:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-02-26T09:00:00.000Z",
+      "docketEntryComment": "Parole Administratively Revoked",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-02-26T09:00:00.000Z",
+      "docketEntryComment": "Advisement and Waiver - Waiver of Arraignment on Petition to Revoke Parole",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-02-19T10:38:28.000Z",
+      "docketEntryComment": "Parole Agent's Petition for Revocation of Parole PC 3000.08, PC 1203.2",
+      "otherSubmitter": "Parole Agent"
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2026-03-06 9:00 AM",
+      "hearingType": "Pre-Hearing Conference",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 0,
+      "court_date": "2026-03-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Hearing Conference",
+      "hearing_type": "Pre-Hearing Conference",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2026-02-26 9:00 AM",
+      "hearingType": "Parole's Petition to Revoke Parole Pursuant to PC 3000.08",
+      "location": "850 Bryant",
+      "dept": "Department 29",
+      "__index": 1,
+      "court_date": "2026-02-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Parole's Petition to Revoke Parole Pursuant to PC 3000.08",
+      "hearing_type": "Parole's Petition to Revoke Parole Pursuant to PC 3000.08",
+      "department": "Department 29",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "Lisa Culbertson",
+      "type": "District Attorney"
+    },
+    {
+      "name": "Kleigh Hathaway",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +127,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4252405",
+  "docket_entries": [
+    {
+      "filedDate": "2026-03-06T15:50:38.000Z",
+      "docketEntryComment": "San Francisco County Jail Commitment",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2026-03-06T15:50:38.000Z",
+      "description": "San Francisco County Jail Commitment",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-03-06T15:50:37.434Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2026-03-06T15:50:37.434Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-03-06T09:00:00.000Z",
+      "docketEntryComment": "Order - Order Reinstating Parole",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2026-03-06T09:00:00.000Z",
+      "description": "Order - Order Reinstating Parole",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-03-06T09:00:00.000Z",
+      "docketEntryComment": "Acknowledgement and Advisement of Parolee Admitting Parole Violation",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2026-03-06T09:00:00.000Z",
+      "description": "Acknowledgement and Advisement of Parolee Admitting Parole Violation",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-02-26T16:30:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2026-02-26T16:30:00.000Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-02-26T09:00:00.000Z",
+      "docketEntryComment": "Parole Administratively Revoked",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2026-02-26T09:00:00.000Z",
+      "description": "Parole Administratively Revoked",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-02-26T09:00:00.000Z",
+      "docketEntryComment": "Advisement and Waiver - Waiver of Arraignment on Petition to Revoke Parole",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2026-02-26T09:00:00.000Z",
+      "description": "Advisement and Waiver - Waiver of Arraignment on Petition to Revoke Parole",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-02-19T10:38:28.000Z",
+      "docketEntryComment": "Parole Agent's Petition for Revocation of Parole PC 3000.08, PC 1203.2",
+      "otherSubmitter": "Parole Agent",
+      "__index": 7,
+      "date_filed": "2026-02-19T10:38:28.000Z",
+      "description": "Parole Agent's Petition for Revocation of Parole PC 3000.08, PC 1203.2",
+      "submitter": "Parole Agent",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "26003370",
-    "portal_case_id": "",
+    "portal_case_id": "4252405",
     "display_case_number": "CRI-26003370",
     "defendant": "CHARLES E ALLEN",
     "filed_date": "2026-02-19",
@@ -59,12 +222,44 @@
       "defendant": "CHARLES E ALLEN",
       "filed_date": "2026-02-19"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1203.2",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 3000.08",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHARLES E ALLEN, and date of filing 2026-02-19. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHARLES E ALLEN, and date of filing 2026-02-19. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T15:46:32.488Z",
+  "portal_case_id": "4252405",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-26003370",
+      "defendant": "CHARLES E ALLEN",
+      "filed_date": "2026-02-19"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4252405"
+  }
 }
