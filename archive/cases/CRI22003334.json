@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:36:40.789Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:51:34.388Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI22003334",
   "criminal_case_number": "22003334",
@@ -24,11 +24,82 @@
       "name": "DARIN LEE ANDREWS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DARIN LEE ANDREWS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2022-04-07T09:26:28.000Z",
+      "docketEntryComment": "Petition for Revocation of PRCS PC 3455, PC 1203.2",
+      "otherSubmitter": "APD"
+    },
+    {
+      "filedDate": "2022-04-15T09:15:00.000Z",
+      "docketEntryComment": "/CAL:PRCS REVOCATION & SENTENCING/CH1:CJ 90 D/CTS: 10/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2022-04-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD PC3455 HEARING/3455ADV/3455ADM/3455TERM/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2022-04-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOTION/WIAPRCS/PD/CTORD: PRCS IS ADMINISTRATIVELY REVOKED/SHER/NB/CONTD:TO SET APD 3455PC/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2022-04-15 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 21",
+      "__index": 0,
+      "court_date": "2022-04-15",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 21",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2022-04-15 9:00 AM",
+      "hearingType": "To Set MTR PRCS Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 21",
+      "__index": 1,
+      "court_date": "2022-04-15",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set MTR PRCS Hearing",
+      "hearing_type": "To Set MTR PRCS Hearing",
+      "department": "Department 21",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2022-04-08 9:00 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2022-04-08",
+      "hearing_time": "9:00 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ANTHONY MIZIKO",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3938053",
+  "docket_entries": [
+    {
+      "filedDate": "2022-04-07T09:26:28.000Z",
+      "docketEntryComment": "Petition for Revocation of PRCS PC 3455, PC 1203.2",
+      "otherSubmitter": "APD",
+      "__index": 0,
+      "date_filed": "2022-04-07T09:26:28.000Z",
+      "description": "Petition for Revocation of PRCS PC 3455, PC 1203.2",
+      "submitter": "APD",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-04-15T09:15:00.000Z",
+      "docketEntryComment": "/CAL:PRCS REVOCATION & SENTENCING/CH1:CJ 90 D/CTS: 10/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2022-04-15T09:15:00.000Z",
+      "description": "/CAL:PRCS REVOCATION & SENTENCING/CH1:CJ 90 D/CTS: 10/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-04-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD PC3455 HEARING/3455ADV/3455ADM/3455TERM/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2022-04-15T09:00:00.000Z",
+      "description": "/CAL:TO SET APD PC3455 HEARING/3455ADV/3455ADM/3455TERM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-04-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOTION/WIAPRCS/PD/CTORD: PRCS IS ADMINISTRATIVELY REVOKED/SHER/NB/CONTD:TO SET APD 3455PC/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2022-04-08T09:00:00.000Z",
+      "description": "/CAL:APD 3455PC MOTION/WIAPRCS/PD/CTORD: PRCS IS ADMINISTRATIVELY REVOKED/SHER/NB/CONTD:TO SET APD 3455PC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "22003334",
-    "portal_case_id": "",
+    "portal_case_id": "3938053",
     "display_case_number": "CRI-22003334",
     "defendant": "DARIN LEE ANDREWS",
     "filed_date": "2022-04-07",
@@ -59,12 +171,52 @@
       "defendant": "DARIN LEE ANDREWS",
       "filed_date": "2022-04-07"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1203.2",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DARIN LEE ANDREWS, and date of filing 2022-04-07. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DARIN LEE ANDREWS, and date of filing 2022-04-07. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:51:34.965Z",
+  "portal_case_id": "3938053",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-22003334",
+      "defendant": "DARIN LEE ANDREWS",
+      "filed_date": "2022-04-07"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3938053"
+  }
 }

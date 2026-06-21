@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:34:15.139Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:55:37.663Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI22415065",
   "criminal_case_number": "22415065",
@@ -24,11 +24,55 @@
       "name": "ROYAN R BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROYAN R BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2022-12-11T11:14:17.000Z",
+      "docketEntryComment": "San Francisco Sheriff's Dept - Outside Agency / Arrest Information",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2023-01-12T11:30:59.448Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2022-12-13T09:05:53.000Z",
+      "docketEntryComment": "Complaint DAW#816117 A#51725M O/S ARRESDT ID PROC REQD",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2023-01-12 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2023-01-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "San Francisco District Attorney's Office",
+      "type": "District Attorney"
+    },
+    {
+      "name": "San Francisco Public Defender's Office",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +89,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4032869",
+  "docket_entries": [
+    {
+      "filedDate": "2022-12-11T11:14:17.000Z",
+      "docketEntryComment": "San Francisco Sheriff's Dept - Outside Agency / Arrest Information",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2022-12-11T11:14:17.000Z",
+      "description": "San Francisco Sheriff's Dept - Outside Agency / Arrest Information",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2023-01-12T11:30:59.448Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2023-01-12T11:30:59.448Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-12-13T09:05:53.000Z",
+      "docketEntryComment": "Complaint DAW#816117 A#51725M O/S ARRESDT ID PROC REQD",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2022-12-13T09:05:53.000Z",
+      "description": "Complaint DAW#816117 A#51725M O/S ARRESDT ID PROC REQD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "22415065",
-    "portal_case_id": "",
+    "portal_case_id": "4032869",
     "display_case_number": "CRI-22415065",
     "defendant": "ROYAN R BROWN",
     "filed_date": "2022-12-13",
@@ -63,8 +138,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROYAN R BROWN, and date of filing 2022-12-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROYAN R BROWN, and date of filing 2022-12-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:55:38.354Z",
+  "portal_case_id": "4032869",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-22415065",
+      "defendant": "ROYAN R BROWN",
+      "filed_date": "2022-12-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4032869"
+  }
 }

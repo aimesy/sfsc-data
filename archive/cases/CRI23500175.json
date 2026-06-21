@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:36:32.910Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:50:08.571Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI23500175",
   "criminal_case_number": "23500175",
@@ -24,11 +24,70 @@
       "name": "TANGENIKA BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TANGENIKA BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2023-04-19T16:00:52.295Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2023-04-19T09:00:00.000Z",
+      "docketEntryComment": "Probation End Date 08/11/24",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2023-04-19T09:00:00.000Z",
+      "docketEntryComment": "CONFIDENTIAL Order - Incoming Transfer Order",
+      "otherSubmitter": "APD"
+    },
+    {
+      "filedDate": "2023-04-12T17:32:04.000Z",
+      "docketEntryComment": "Confidential APD Motion to Transfer In from Other County ( from Alameda County)",
+      "otherSubmitter": "APD"
+    },
+    {
+      "filedDate": "2023-04-04T15:43:06.000Z",
+      "docketEntryComment": "Incoming Jurisdictional Transfer Received From Alameda County",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2023-04-04T15:43:06.000Z",
+      "docketEntryComment": "Transfers - APD Case Information",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2023-04-19 9:00 AM",
+      "hearingType": "Motion to Transfer In",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2023-04-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Transfer In",
+      "hearing_type": "Motion to Transfer In",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "San Francisco Public Defender's Office",
+      "type": "Public Defender"
+    },
+    {
+      "name": "San Francisco District Attorney's Office",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +104,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4047325",
+  "docket_entries": [
+    {
+      "filedDate": "2023-04-19T16:00:52.295Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2023-04-19T16:00:52.295Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2023-04-19T09:00:00.000Z",
+      "docketEntryComment": "Probation End Date 08/11/24",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2023-04-19T09:00:00.000Z",
+      "description": "Probation End Date 08/11/24",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2023-04-19T09:00:00.000Z",
+      "docketEntryComment": "CONFIDENTIAL Order - Incoming Transfer Order",
+      "otherSubmitter": "APD",
+      "__index": 2,
+      "date_filed": "2023-04-19T09:00:00.000Z",
+      "description": "CONFIDENTIAL Order - Incoming Transfer Order",
+      "submitter": "APD",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2023-04-12T17:32:04.000Z",
+      "docketEntryComment": "Confidential APD Motion to Transfer In from Other County ( from Alameda County)",
+      "otherSubmitter": "APD",
+      "__index": 3,
+      "date_filed": "2023-04-12T17:32:04.000Z",
+      "description": "Confidential APD Motion to Transfer In from Other County ( from Alameda County)",
+      "submitter": "APD",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2023-04-04T15:43:06.000Z",
+      "docketEntryComment": "Incoming Jurisdictional Transfer Received From Alameda County",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2023-04-04T15:43:06.000Z",
+      "description": "Incoming Jurisdictional Transfer Received From Alameda County",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2023-04-04T15:43:06.000Z",
+      "docketEntryComment": "Transfers - APD Case Information",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2023-04-04T15:43:06.000Z",
+      "description": "Transfers - APD Case Information",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "23500175",
-    "portal_case_id": "",
+    "portal_case_id": "4047325",
     "display_case_number": "CRI-23500175",
     "defendant": "TANGENIKA BROWN",
     "filed_date": "2023-04-04",
@@ -63,8 +183,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TANGENIKA BROWN, and date of filing 2023-04-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TANGENIKA BROWN, and date of filing 2023-04-04. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:50:09.170Z",
+  "portal_case_id": "4047325",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-23500175",
+      "defendant": "TANGENIKA BROWN",
+      "filed_date": "2023-04-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4047325"
+  }
 }

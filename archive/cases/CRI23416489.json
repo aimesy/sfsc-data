@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:44:12.465Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:49:29.260Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI23416489",
   "criminal_case_number": "23416489",
@@ -24,11 +24,61 @@
       "name": "MICHAEL FITZWATER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL FITZWATER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2023-10-13T19:34:32.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2023-10-13T16:30:00.000Z",
+      "docketEntryComment": "Minute Order Amended",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2023-10-13T16:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2023-10-13T16:30:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2023-10-12T11:01:52.000Z",
+      "docketEntryComment": "Complaint and Citation CO-DEF'S: CUSHING/BRIAN/O'NEIL #23416487; WYLAN/DAVID #23416488 RETURN DATE: 10-13-23",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2023-10-13 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2023-10-13",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "San Francisco District Attorney's Office",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +95,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4079856",
+  "docket_entries": [
+    {
+      "filedDate": "2023-10-13T19:34:32.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2023-10-13T19:34:32.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2023-10-13T16:30:00.000Z",
+      "docketEntryComment": "Minute Order Amended",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2023-10-13T16:30:00.000Z",
+      "description": "Minute Order Amended",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2023-10-13T16:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2023-10-13T16:30:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2023-10-13T16:30:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2023-10-13T16:30:00.000Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2023-10-12T11:01:52.000Z",
+      "docketEntryComment": "Complaint and Citation CO-DEF'S: CUSHING/BRIAN/O'NEIL #23416487; WYLAN/DAVID #23416488 RETURN DATE: 10-13-23",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2023-10-12T11:01:52.000Z",
+      "description": "Complaint and Citation CO-DEF'S: CUSHING/BRIAN/O'NEIL #23416487; WYLAN/DAVID #23416488 RETURN DATE: 10-13-23",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "23416489",
-    "portal_case_id": "",
+    "portal_case_id": "4079856",
     "display_case_number": "CRI-23416489",
     "defendant": "MICHAEL FITZWATER",
     "filed_date": "2023-10-12",
@@ -63,8 +164,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL FITZWATER, and date of filing 2023-10-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL FITZWATER, and date of filing 2023-10-12. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:49:29.857Z",
+  "portal_case_id": "4079856",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-23416489",
+      "defendant": "MICHAEL FITZWATER",
+      "filed_date": "2023-10-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4079856"
+  }
 }

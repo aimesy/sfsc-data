@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:13:38.459Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:40:51.635Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI24500120",
   "criminal_case_number": "24500120",
@@ -24,11 +24,85 @@
       "name": "MARVIN PERLAS ARROYO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARVIN PERLAS ARROYO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2024-03-13T11:30:24.494Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-03-13T09:00:00.000Z",
+      "docketEntryComment": "Proof of ID Processing Received",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-03-13T09:00:00.000Z",
+      "docketEntryComment": "Defendant to Report to the Adult Probation Department",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-03-13T09:00:00.000Z",
+      "docketEntryComment": "Probation End Date is 11/13/2025",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-03-13T09:00:00.000Z",
+      "docketEntryComment": "CONFIDENTIAL Order - Incoming Transfer Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-02-28T16:25:11.000Z",
+      "docketEntryComment": "CONFIDENTIAL APD Motion to Transfer In from Other County - FROM SAN MATEO COUNTY",
+      "otherSubmitter": "APD"
+    },
+    {
+      "filedDate": "2024-02-27T09:01:38.000Z",
+      "docketEntryComment": "Incoming Jurisdictional Transfer Received from san mateo county (PROBATION)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-02-27T09:01:33.933Z",
+      "docketEntryComment": "Transfers - APD Case Information",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-02-27T08:48:00.000Z",
+      "docketEntryComment": "Probation Transfer In from Other County",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2024-03-13 9:00 AM",
+      "hearingType": "Motion to Transfer In",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2024-03-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Transfer In",
+      "hearing_type": "Motion to Transfer In",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "San Francisco District Attorney's Office",
+      "type": "District Attorney"
+    },
+    {
+      "name": "San Francisco Public Defender's Office",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +119,102 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4102418",
+  "docket_entries": [
+    {
+      "filedDate": "2024-03-13T11:30:24.494Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2024-03-13T11:30:24.494Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-03-13T09:00:00.000Z",
+      "docketEntryComment": "Proof of ID Processing Received",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2024-03-13T09:00:00.000Z",
+      "description": "Proof of ID Processing Received",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-03-13T09:00:00.000Z",
+      "docketEntryComment": "Defendant to Report to the Adult Probation Department",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2024-03-13T09:00:00.000Z",
+      "description": "Defendant to Report to the Adult Probation Department",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-03-13T09:00:00.000Z",
+      "docketEntryComment": "Probation End Date is 11/13/2025",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2024-03-13T09:00:00.000Z",
+      "description": "Probation End Date is 11/13/2025",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-03-13T09:00:00.000Z",
+      "docketEntryComment": "CONFIDENTIAL Order - Incoming Transfer Order",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2024-03-13T09:00:00.000Z",
+      "description": "CONFIDENTIAL Order - Incoming Transfer Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-02-28T16:25:11.000Z",
+      "docketEntryComment": "CONFIDENTIAL APD Motion to Transfer In from Other County - FROM SAN MATEO COUNTY",
+      "otherSubmitter": "APD",
+      "__index": 5,
+      "date_filed": "2024-02-28T16:25:11.000Z",
+      "description": "CONFIDENTIAL APD Motion to Transfer In from Other County - FROM SAN MATEO COUNTY",
+      "submitter": "APD",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-02-27T09:01:38.000Z",
+      "docketEntryComment": "Incoming Jurisdictional Transfer Received from san mateo county (PROBATION)",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2024-02-27T09:01:38.000Z",
+      "description": "Incoming Jurisdictional Transfer Received from san mateo county (PROBATION)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-02-27T09:01:33.933Z",
+      "docketEntryComment": "Transfers - APD Case Information",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2024-02-27T09:01:33.933Z",
+      "description": "Transfers - APD Case Information",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-02-27T08:48:00.000Z",
+      "docketEntryComment": "Probation Transfer In from Other County",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "2024-02-27T08:48:00.000Z",
+      "description": "Probation Transfer In from Other County",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "24500120",
-    "portal_case_id": "",
+    "portal_case_id": "4102418",
     "display_case_number": "CRI-24500120",
     "defendant": "MARVIN PERLAS ARROYO",
     "filed_date": "2024-02-27",
@@ -63,8 +228,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARVIN PERLAS ARROYO, and date of filing 2024-02-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARVIN PERLAS ARROYO, and date of filing 2024-02-27. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:40:52.167Z",
+  "portal_case_id": "4102418",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-24500120",
+      "defendant": "MARVIN PERLAS ARROYO",
+      "filed_date": "2024-02-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4102418"
+  }
 }

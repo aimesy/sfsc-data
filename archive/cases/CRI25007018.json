@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:47:25.885Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:16:02.952Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI25007018",
   "criminal_case_number": "25007018",
@@ -24,11 +24,94 @@
       "name": "LUIS JESUS CARDENASJACOBO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LUIS JESUS CARDENASJACOBO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2025-04-17T16:24:52.000Z",
+      "docketEntryComment": "San Francisco County Jail Commitment",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2025-04-17T16:24:51.673Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2025-04-17T16:24:51.395Z",
+      "docketEntryComment": "Time Waived for Sentencing",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2025-04-17T09:00:00.000Z",
+      "docketEntryComment": "Defendant Change of Plea to \"Guilty\" or \"No Contest\" - Acknowledgement and Advisement of Defendant Pleading Guilty or No Contest",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2025-04-04T16:30:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2025-04-04T16:59:51.122Z",
+      "docketEntryComment": "Preliminary Hearing Within 10 Court Days Not Waived",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2025-04-04T13:30:00.000Z",
+      "docketEntryComment": "Advisement and Waiver - Waiver of Arraignment on Criminal Complaint",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2025-04-04T08:33:27.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2025-04-04T06:22:34.000Z",
+      "docketEntryComment": "Sufficient Probable Cause Filed",
+      "otherSubmitter": "PTD"
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2025-04-17 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2025-04-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2025-04-04 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2025-04-04",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "Michiko Yamamoto",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +128,102 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4178867",
+  "docket_entries": [
+    {
+      "filedDate": "2025-04-17T16:24:52.000Z",
+      "docketEntryComment": "San Francisco County Jail Commitment",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2025-04-17T16:24:52.000Z",
+      "description": "San Francisco County Jail Commitment",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2025-04-17T16:24:51.673Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2025-04-17T16:24:51.673Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2025-04-17T16:24:51.395Z",
+      "docketEntryComment": "Time Waived for Sentencing",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2025-04-17T16:24:51.395Z",
+      "description": "Time Waived for Sentencing",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2025-04-17T09:00:00.000Z",
+      "docketEntryComment": "Defendant Change of Plea to \"Guilty\" or \"No Contest\" - Acknowledgement and Advisement of Defendant Pleading Guilty or No Contest",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2025-04-17T09:00:00.000Z",
+      "description": "Defendant Change of Plea to \"Guilty\" or \"No Contest\" - Acknowledgement and Advisement of Defendant Pleading Guilty or No Contest",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2025-04-04T16:30:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2025-04-04T16:30:00.000Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2025-04-04T16:59:51.122Z",
+      "docketEntryComment": "Preliminary Hearing Within 10 Court Days Not Waived",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2025-04-04T16:59:51.122Z",
+      "description": "Preliminary Hearing Within 10 Court Days Not Waived",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2025-04-04T13:30:00.000Z",
+      "docketEntryComment": "Advisement and Waiver - Waiver of Arraignment on Criminal Complaint",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2025-04-04T13:30:00.000Z",
+      "description": "Advisement and Waiver - Waiver of Arraignment on Criminal Complaint",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2025-04-04T08:33:27.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2025-04-04T08:33:27.000Z",
+      "description": "Complaint",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2025-04-04T06:22:34.000Z",
+      "docketEntryComment": "Sufficient Probable Cause Filed",
+      "otherSubmitter": "PTD",
+      "__index": 8,
+      "date_filed": "2025-04-04T06:22:34.000Z",
+      "description": "Sufficient Probable Cause Filed",
+      "submitter": "PTD",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "25007018",
-    "portal_case_id": "",
+    "portal_case_id": "4178867",
     "display_case_number": "CRI-25007018",
     "defendant": "LUIS JESUS CARDENASJACOBO",
     "filed_date": "2025-04-04",
@@ -63,8 +237,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LUIS JESUS CARDENASJACOBO, and date of filing 2025-04-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LUIS JESUS CARDENASJACOBO, and date of filing 2025-04-04. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:16:03.566Z",
+  "portal_case_id": "4178867",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-25007018",
+      "defendant": "LUIS JESUS CARDENASJACOBO",
+      "filed_date": "2025-04-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4178867"
+  }
 }

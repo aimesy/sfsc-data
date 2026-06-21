@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:56:43.310Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:40:12.012Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI24418701",
   "criminal_case_number": "24418701",
@@ -24,11 +24,41 @@
       "name": "APRIL PHANNIE DRAKE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "APRIL PHANNIE DRAKE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2024-10-14T09:03:36.000Z",
+      "docketEntryComment": "COMPLAINT & CITATION  APPEAR DATE - 10/15/2024 (D8 CJC 2PM)",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2024-10-15 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2024-10-15",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "San Francisco District Attorney's Office",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +75,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4145547",
+  "docket_entries": [
+    {
+      "filedDate": "2024-10-14T09:03:36.000Z",
+      "docketEntryComment": "COMPLAINT & CITATION  APPEAR DATE - 10/15/2024 (D8 CJC 2PM)",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2024-10-14T09:03:36.000Z",
+      "description": "COMPLAINT & CITATION APPEAR DATE - 10/15/2024 (D8 CJC 2PM)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "24418701",
-    "portal_case_id": "",
+    "portal_case_id": "4145547",
     "display_case_number": "CRI-24418701",
     "defendant": "APRIL PHANNIE DRAKE",
     "filed_date": "2024-10-14",
@@ -63,8 +104,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, APRIL PHANNIE DRAKE, and date of filing 2024-10-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, APRIL PHANNIE DRAKE, and date of filing 2024-10-14. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:40:12.575Z",
+  "portal_case_id": "4145547",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-24418701",
+      "defendant": "APRIL PHANNIE DRAKE",
+      "filed_date": "2024-10-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4145547"
+  }
 }

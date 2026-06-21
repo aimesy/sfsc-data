@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:38.629Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T17:04:09.763Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI21012923",
   "criminal_case_number": "21012923",
@@ -24,10 +24,29 @@
       "name": "ROY BILLY ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROY BILLY ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
   "roa": [],
-  "calendar": [],
+  "calendar": [
+    {
+      "startTime": "2021-12-28 9:00 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 97",
+      "__index": 0,
+      "court_date": "2021-12-28",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 97",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +64,11 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3934592",
   "docket_entries": [],
   "criminal": {
     "raw_case_number": "21012923",
-    "portal_case_id": "",
+    "portal_case_id": "3934592",
     "display_case_number": "CRI-21012923",
     "defendant": "ROY BILLY ANDERSON",
     "filed_date": "2021-12-28",
@@ -63,8 +82,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROY BILLY ANDERSON, and date of filing 2021-12-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROY BILLY ANDERSON, and date of filing 2021-12-28. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T17:04:10.384Z",
+  "portal_case_id": "3934592",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-21012923",
+      "defendant": "ROY BILLY ANDERSON",
+      "filed_date": "2021-12-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3934592"
+  }
 }

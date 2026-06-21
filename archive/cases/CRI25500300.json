@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:32:56.973Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:27:18.419Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI25500300",
   "criminal_case_number": "25500300",
@@ -24,10 +24,70 @@
       "name": "ELI STEPHEN BRATT",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ELI STEPHEN BRATT",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2025-05-22T14:04:14.904Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2025-05-22T09:00:00.000Z",
+      "docketEntryComment": "Proof of ID Processing Received",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2025-05-22T09:00:00.000Z",
+      "docketEntryComment": "Probation End Date is 01/11/2026",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2025-05-22T09:00:00.000Z",
+      "docketEntryComment": "CONFIDENTIAL Order - Incoming Transfer Order",
+      "otherSubmitter": "APD"
+    },
+    {
+      "filedDate": "2025-05-12T14:44:02.000Z",
+      "docketEntryComment": "CONFIDENTIAL APD Motion to Transfer In from Other County of Residence ( From Sonoma County)",
+      "otherSubmitter": "APD"
+    },
+    {
+      "filedDate": "2025-05-09T11:21:09.000Z",
+      "docketEntryComment": "CONFIDENTIAL  Incoming Jurisdictional Transfer Received FROM SONOMA COUNTY (PROBATION)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2025-05-09T11:21:05.078Z",
+      "docketEntryComment": "Transfers - APD Case Information",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2025-05-09T11:10:00.000Z",
+      "docketEntryComment": "Probation Transfer In from Other County",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2025-05-22 9:00 AM",
+      "hearingType": "Motion to Transfer In",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2025-05-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Transfer In",
+      "hearing_type": "Motion to Transfer In",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +105,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4189713",
+  "docket_entries": [
+    {
+      "filedDate": "2025-05-22T14:04:14.904Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2025-05-22T14:04:14.904Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2025-05-22T09:00:00.000Z",
+      "docketEntryComment": "Proof of ID Processing Received",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2025-05-22T09:00:00.000Z",
+      "description": "Proof of ID Processing Received",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2025-05-22T09:00:00.000Z",
+      "docketEntryComment": "Probation End Date is 01/11/2026",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2025-05-22T09:00:00.000Z",
+      "description": "Probation End Date is 01/11/2026",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2025-05-22T09:00:00.000Z",
+      "docketEntryComment": "CONFIDENTIAL Order - Incoming Transfer Order",
+      "otherSubmitter": "APD",
+      "__index": 3,
+      "date_filed": "2025-05-22T09:00:00.000Z",
+      "description": "CONFIDENTIAL Order - Incoming Transfer Order",
+      "submitter": "APD",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2025-05-12T14:44:02.000Z",
+      "docketEntryComment": "CONFIDENTIAL APD Motion to Transfer In from Other County of Residence ( From Sonoma County)",
+      "otherSubmitter": "APD",
+      "__index": 4,
+      "date_filed": "2025-05-12T14:44:02.000Z",
+      "description": "CONFIDENTIAL APD Motion to Transfer In from Other County of Residence ( From Sonoma County)",
+      "submitter": "APD",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2025-05-09T11:21:09.000Z",
+      "docketEntryComment": "CONFIDENTIAL  Incoming Jurisdictional Transfer Received FROM SONOMA COUNTY (PROBATION)",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2025-05-09T11:21:09.000Z",
+      "description": "CONFIDENTIAL Incoming Jurisdictional Transfer Received FROM SONOMA COUNTY (PROBATION)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2025-05-09T11:21:05.078Z",
+      "docketEntryComment": "Transfers - APD Case Information",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2025-05-09T11:21:05.078Z",
+      "description": "Transfers - APD Case Information",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2025-05-09T11:10:00.000Z",
+      "docketEntryComment": "Probation Transfer In from Other County",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2025-05-09T11:10:00.000Z",
+      "description": "Probation Transfer In from Other County",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "25500300",
-    "portal_case_id": "",
+    "portal_case_id": "4189713",
     "display_case_number": "CRI-25500300",
     "defendant": "ELI STEPHEN BRATT",
     "filed_date": "2025-05-09",
@@ -63,8 +204,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ELI STEPHEN BRATT, and date of filing 2025-05-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ELI STEPHEN BRATT, and date of filing 2025-05-09. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:27:19.092Z",
+  "portal_case_id": "4189713",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-25500300",
+      "defendant": "ELI STEPHEN BRATT",
+      "filed_date": "2025-05-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4189713"
+  }
 }

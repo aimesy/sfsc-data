@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:41:39.800Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:39:13.594Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI24412139",
   "criminal_case_number": "24412139",
@@ -24,11 +24,55 @@
       "name": "BUSHROD BOONE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BUSHROD BOONE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2024-07-05T12:00:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-07-05T12:45:03.000Z",
+      "docketEntryComment": "CONFIDENTIAL Subpoena Duces Tecum Filed",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-07-02T16:10:09.000Z",
+      "docketEntryComment": "Complaint and Citation RETURN DATE: 07/05/24",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2024-07-05 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2024-07-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "Asit Panwala",
+      "type": "District Attorney"
+    },
+    {
+      "name": "San Francisco District Attorney's Office",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +89,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4127209",
+  "docket_entries": [
+    {
+      "filedDate": "2024-07-05T12:00:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2024-07-05T12:00:00.000Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-07-05T12:45:03.000Z",
+      "docketEntryComment": "CONFIDENTIAL Subpoena Duces Tecum Filed",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2024-07-05T12:45:03.000Z",
+      "description": "CONFIDENTIAL Subpoena Duces Tecum Filed",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-07-02T16:10:09.000Z",
+      "docketEntryComment": "Complaint and Citation RETURN DATE: 07/05/24",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2024-07-02T16:10:09.000Z",
+      "description": "Complaint and Citation RETURN DATE: 07/05/24",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "24412139",
-    "portal_case_id": "",
+    "portal_case_id": "4127209",
     "display_case_number": "CRI-24412139",
     "defendant": "BUSHROD BOONE",
     "filed_date": "2024-07-02",
@@ -63,8 +138,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BUSHROD BOONE, and date of filing 2024-07-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BUSHROD BOONE, and date of filing 2024-07-02. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:39:14.207Z",
+  "portal_case_id": "4127209",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-24412139",
+      "defendant": "BUSHROD BOONE",
+      "filed_date": "2024-07-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4127209"
+  }
 }

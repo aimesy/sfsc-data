@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:47:16.774Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:47:17.909Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI23412554",
   "criminal_case_number": "23412554",
@@ -24,11 +24,41 @@
       "name": "ABIGAIL MARIE CAMPANA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ABIGAIL MARIE CAMPANA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2023-08-17T09:13:33.000Z",
+      "docketEntryComment": "Complaint and Citation APPEAR DATE - 08/18/2023 (CJC)",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2023-08-18 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2023-08-18",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "San Francisco District Attorney's Office",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +75,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4069647",
+  "docket_entries": [
+    {
+      "filedDate": "2023-08-17T09:13:33.000Z",
+      "docketEntryComment": "Complaint and Citation APPEAR DATE - 08/18/2023 (CJC)",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2023-08-17T09:13:33.000Z",
+      "description": "Complaint and Citation APPEAR DATE - 08/18/2023 (CJC)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "23412554",
-    "portal_case_id": "",
+    "portal_case_id": "4069647",
     "display_case_number": "CRI-23412554",
     "defendant": "ABIGAIL MARIE CAMPANA",
     "filed_date": "2023-08-17",
@@ -63,8 +104,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ABIGAIL MARIE CAMPANA, and date of filing 2023-08-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ABIGAIL MARIE CAMPANA, and date of filing 2023-08-17. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:47:18.517Z",
+  "portal_case_id": "4069647",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-23412554",
+      "defendant": "ABIGAIL MARIE CAMPANA",
+      "filed_date": "2023-08-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4069647"
+  }
 }

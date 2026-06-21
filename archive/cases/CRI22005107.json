@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:13:20.413Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T16:50:57.040Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI22005107",
   "criminal_case_number": "22005107",
@@ -24,10 +24,29 @@
       "name": "DAJAH S ARMSTRONG",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAJAH S ARMSTRONG",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
   "roa": [],
-  "calendar": [],
+  "calendar": [
+    {
+      "startTime": "2022-05-26 9:00 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 97",
+      "__index": 0,
+      "court_date": "2022-05-26",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 97",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +64,11 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3939810",
   "docket_entries": [],
   "criminal": {
     "raw_case_number": "22005107",
-    "portal_case_id": "",
+    "portal_case_id": "3939810",
     "display_case_number": "CRI-22005107",
     "defendant": "DAJAH S ARMSTRONG",
     "filed_date": "2022-05-25",
@@ -63,8 +82,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAJAH S ARMSTRONG, and date of filing 2022-05-25. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAJAH S ARMSTRONG, and date of filing 2022-05-25. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T16:50:57.647Z",
+  "portal_case_id": "3939810",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-22005107",
+      "defendant": "DAJAH S ARMSTRONG",
+      "filed_date": "2022-05-25"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3939810"
+  }
 }
