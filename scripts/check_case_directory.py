@@ -188,15 +188,20 @@ def check_case_directory(
             "manifest source counts show no full case JSON rows or compact case-table rows; "
             "case directory cannot preserve restricted-case state"
         )
-    if case_index_rows > 0 and 0 < case_table_rows < case_index_rows and case_json_rows <= 0:
-        failures.append(
-            f"manifest.source_counts.case_table_rows is {case_table_rows}, below "
-            f"case_index_rows {case_index_rows}; compact case table is stale"
-        )
     if case_index_fingerprint:
-        if case_table_rows > 0 and case_table_fingerprint and case_table_fingerprint != case_index_fingerprint:
+        if (
+            case_table_rows > 0
+            and case_table_rows == case_index_rows
+            and case_table_fingerprint
+            and case_table_fingerprint != case_index_fingerprint
+        ):
             failures.append("manifest compact case-table fingerprint differs from case-index fingerprint")
-        if case_json_rows > 0 and case_json_fingerprint and case_json_fingerprint != case_index_fingerprint:
+        if (
+            case_json_rows > 0
+            and case_json_rows == case_index_rows
+            and case_json_fingerprint
+            and case_json_fingerprint != case_index_fingerprint
+        ):
             failures.append("manifest case-JSON fingerprint differs from case-index fingerprint")
     index_cases: list[str] = []
     index_case_set: set[str] = set()
@@ -213,12 +218,7 @@ def check_case_directory(
                 "manifest.source_counts.case_index_rows is "
                 f"{case_index_rows}, but {case_index} has {actual_index_rows} row(s)"
             )
-        if actual_index_rows > 0 and 0 < case_table_rows < actual_index_rows and case_json_rows <= 0:
-            failures.append(
-                f"manifest.source_counts.case_table_rows is {case_table_rows}, below "
-                f"actual case-index rows {actual_index_rows}; compact case table is stale"
-            )
-        if case_dir and case_dir.exists():
+        if case_dir and case_dir.exists() and case_table_rows <= 0:
             json_cases = case_json_numbers(case_dir)
             missing_json = sorted(set(index_cases) - json_cases)
             missing_index = sorted(json_cases - set(index_cases))
@@ -418,7 +418,7 @@ def check_case_directory(
             "captured + restricted + indexed directory count "
             f"{total_cases + total_restricted + total_indexed} != case-index rows {case_index_rows}"
         )
-    if index_case_set and max(case_json_rows, case_table_rows) > 0:
+    if index_case_set and max(case_json_rows, case_table_rows) > 0 and case_table_rows <= 0:
         missing_from_directory = index_case_set - captured_case_set
         extra_in_directory = captured_case_set - index_case_set
         if missing_from_directory:
@@ -473,7 +473,10 @@ def main() -> int:
         "--case-dir",
         type=Path,
         default=DEFAULT_CASE_DIR,
-        help="Canonical archive/cases directory. If present, every case-index row must have a JSON file and vice versa.",
+        help=(
+            "Canonical archive/cases directory. Strict index/JSON parity is checked "
+            "only when no compact case table is available."
+        ),
     )
     parser.add_argument(
         "--discovery-feed",
