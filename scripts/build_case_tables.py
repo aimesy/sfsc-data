@@ -52,6 +52,7 @@ DEFAULT_OUT_DIR = ROOT / "data"
 DEFAULT_ENTITY_PROFILES = DEFAULT_OUT_DIR / "entity-profiles.json"
 DEFAULT_JUDGES_JSON = ROOT / "judges.json"
 DEFAULT_ENTITY_PROFILE_SHARD_BYTES = 40 * 1024 * 1024
+DEFAULT_CASE_TABLE_STATS = DEFAULT_OUT_DIR / "case-table-stats.json"
 DEFAULT_CASE_REPRESENTATION_DIR = DEFAULT_OUT_DIR / "case-representation"
 DEFAULT_CASE_REPRESENTATION_MANIFEST = DEFAULT_OUT_DIR / "case-representation-manifest.json"
 CASE_REPRESENTATION_PAGE_SIZE = 50
@@ -1750,6 +1751,24 @@ def write_tables(tables: dict[str, list[dict[str, Any]]], out_dir: Path) -> None
         write_parquet_atomic(out_dir / f"{name}.parquet", pd.DataFrame(rows))
 
 
+def case_table_stats(tables: dict[str, list[dict[str, Any]]]) -> dict[str, Any]:
+    cases = tables.get("cases", [])
+    return {
+        "schema_version": 1,
+        "source": "archive/cases/*.json via scripts/build_case_tables.py",
+        "built_at": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+        "cases": len(cases),
+        "case_documents": sum(int(row.get("documents_total") or 0) for row in cases),
+        "docket_entries": len(tables.get("docket_entries", [])),
+        "parties": len(tables.get("parties", [])),
+        "attorneys": len(tables.get("attorneys", [])),
+        "calendar": len(tables.get("calendar", [])),
+        "payments": len(tables.get("payments", [])),
+        "estate_roles": len(tables.get("estate_roles", [])),
+        "estate_events": len(tables.get("estate_events", [])),
+    }
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--case-dir", type=Path, default=DEFAULT_CASE_DIR)
@@ -1762,6 +1781,7 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--representation-out-dir", type=Path, default=DEFAULT_CASE_REPRESENTATION_DIR)
     parser.add_argument("--representation-manifest", type=Path, default=DEFAULT_CASE_REPRESENTATION_MANIFEST)
+    parser.add_argument("--case-table-stats", type=Path, default=DEFAULT_CASE_TABLE_STATS)
     parser.add_argument("--judges-json", type=Path, default=DEFAULT_JUDGES_JSON)
     parser.add_argument("--profiles-only", action="store_true", help="Write only the sharded entity profile JSON.")
     parser.add_argument("--limit", type=int, default=None, help="Limit case files for smoke tests.")
@@ -1786,6 +1806,8 @@ def main(argv: list[str] | None = None) -> int:
             write_tables(tables, args.out_dir.resolve())
             for name in tables:
                 print(f"wrote {(args.out_dir.resolve() / f'{name}.parquet').relative_to(ROOT)}")
+            write_json_atomic(args.case_table_stats.resolve(), case_table_stats(tables))
+            print(f"wrote {args.case_table_stats.resolve().relative_to(ROOT)}")
             representation_manifest = write_case_representation_sidecars_atomic(
                 args.representation_out_dir,
                 args.representation_manifest,
