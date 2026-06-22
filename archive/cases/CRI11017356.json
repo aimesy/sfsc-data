@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:09:07.300Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:34:54.271Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11017356",
   "criminal_case_number": "11017356",
@@ -24,11 +24,105 @@
       "name": "JOSE O MERCADO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSE O MERCADO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-09-06T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-07-07T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//PD/FAWC/DEFTARR1/DEF:RESERVES THE RIGHT TO DEMURRER/BAIL:5000/NTW/LD:FORTRIAL IS 10-06-11/SAORD/SA2:16TH & MISSION/DEF:IS ORDERED TO STAY 50 YARDSAWAY FROM THE ABOVE LOCATION/CONTD:PRETRIAL CONFERENCE/CONTD:JURY TRIAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-16T13:45:00.000Z",
+      "docketEntryComment": "/MO138583/VD:09-23-11 TRIAL DATE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/LD:10-06-11/X:09-23-11 TRIAL CONFIRMED,/CONTD:FINAL PRETRIAL CONFERENCE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-07-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:10,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-09-16 1:45 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2011-09-16",
+      "hearing_time": "1:45 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-09-12 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2011-09-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-09-06 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2011-09-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-07-07 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2011-07-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JENNIFER REDDING",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +139,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3680601",
+  "docket_entries": [
+    {
+      "filedDate": "2011-09-06T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-09-06T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-07-07T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-07-07T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//PD/FAWC/DEFTARR1/DEF:RESERVES THE RIGHT TO DEMURRER/BAIL:5000/NTW/LD:FORTRIAL IS 10-06-11/SAORD/SA2:16TH & MISSION/DEF:IS ORDERED TO STAY 50 YARDSAWAY FROM THE ABOVE LOCATION/CONTD:PRETRIAL CONFERENCE/CONTD:JURY TRIAL/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-09-06T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//PD/FAWC/DEFTARR1/DEF:RESERVES THE RIGHT TO DEMURRER/BAIL:5000/NTW/LD:FORTRIAL IS 10-06-11/SAORD/SA2:16TH & MISSION/DEF:IS ORDERED TO STAY 50 YARDSAWAY FROM THE ABOVE LOCATION/CONTD:PRETRIAL CONFERENCE/CONTD:JURY TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-16T13:45:00.000Z",
+      "docketEntryComment": "/MO138583/VD:09-23-11 TRIAL DATE/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-09-16T13:45:00.000Z",
+      "description": "/MO138583/VD:09-23-11 TRIAL DATE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/LD:10-06-11/X:09-23-11 TRIAL CONFIRMED,/CONTD:FINAL PRETRIAL CONFERENCE/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-09-12T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/LD:10-06-11/X:09-23-11 TRIAL CONFIRMED,/CONTD:FINAL PRETRIAL CONFERENCE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-07-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:10,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-07-07T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:10,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11017356",
-    "portal_case_id": "",
+    "portal_case_id": "3680601",
     "display_case_number": "CRI-11017356",
     "defendant": "JOSE O MERCADO",
     "filed_date": "2011-07-05",
@@ -60,11 +215,83 @@
       "filed_date": "2011-07-05"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "483 PC/M 485 PC/M",
+    "charge_rows": [
+      {
+        "raw": "483 PC/M",
+        "title": "Penal Code § 483",
+        "title_source": "programmatic_citation",
+        "code": "PC 483",
+        "code_system": "PC",
+        "section": "483",
+        "citation": "Penal Code § 483",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=483.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=483.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "485 PC/M",
+        "title": "Penal Code § 485",
+        "title_source": "programmatic_citation",
+        "code": "PC 485",
+        "code_system": "PC",
+        "section": "485",
+        "citation": "Penal Code § 485",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=485.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=485.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSE O MERCADO, and date of filing 2011-07-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSE O MERCADO, date of filing, 2011-07-05, and charges in the case: 483 PC/M 485 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "483 PC/M",
+      "title": "Penal Code § 483",
+      "title_source": "programmatic_citation",
+      "code": "PC 483",
+      "code_system": "PC",
+      "section": "483",
+      "citation": "Penal Code § 483",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=483.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=483.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "485 PC/M",
+      "title": "Penal Code § 485",
+      "title_source": "programmatic_citation",
+      "code": "PC 485",
+      "code_system": "PC",
+      "section": "485",
+      "citation": "Penal Code § 485",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=485.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=485.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:34:54.876Z",
+  "portal_case_id": "3680601",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11017356",
+      "defendant": "JOSE O MERCADO",
+      "filed_date": "2011-07-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3680601"
+  }
 }

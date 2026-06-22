@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:06:58.080Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:26:52.581Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12006518",
   "criminal_case_number": "12006518",
@@ -24,11 +24,59 @@
       "name": "RAYMOND RAMIREZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RAYMOND RAMIREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-04-06T09:15:00.000Z",
+      "docketEntryComment": "/CAL  ADDED ATO CAL FOR STATUS OF DELIVERY/X  SFPD FUGITIVE INSPECTOR PATICK CADIGAN APPEARING/VD: 04-11-12 STATUS OF DELIVERY/MO PC 1385: DEFENDANT WAS DELIVERED TO CARSON CITY, NEVADA ON 03-25-12 /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-03-14T13:30:00.000Z",
+      "docketEntryComment": "/CAL: FUGITIVE ARRAIGNMENT/X:THE JUDGE GIVES JUDICIAL ETHICS DISCLOSURE/X: SFPD FUGITIVE INSPECTOR PATRICK CADIGAN APPEARING/X: DEFENDANT ARRAIGNEDON FUGITIVE WARRANT, ADMITS IDENTITY & WAIVES   EXTRADITION/CONTD:STATUSOF DELIVERY/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-04-06 9:15 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "2012-04-06",
+      "hearing_time": "9:15 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-03-14 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 1,
+      "court_date": "2012-03-14",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BICKA BARLOW",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3704090",
+  "docket_entries": [
+    {
+      "filedDate": "2012-04-06T09:15:00.000Z",
+      "docketEntryComment": "/CAL  ADDED ATO CAL FOR STATUS OF DELIVERY/X  SFPD FUGITIVE INSPECTOR PATICK CADIGAN APPEARING/VD: 04-11-12 STATUS OF DELIVERY/MO PC 1385: DEFENDANT WAS DELIVERED TO CARSON CITY, NEVADA ON 03-25-12 /",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-04-06T09:15:00.000Z",
+      "description": "/CAL ADDED ATO CAL FOR STATUS OF DELIVERY/X SFPD FUGITIVE INSPECTOR PATICK CADIGAN APPEARING/VD: 04-11-12 STATUS OF DELIVERY/MO PC 1385: DEFENDANT WAS DELIVERED TO CARSON CITY, NEVADA ON 03-25-12 /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-03-14T13:30:00.000Z",
+      "docketEntryComment": "/CAL: FUGITIVE ARRAIGNMENT/X:THE JUDGE GIVES JUDICIAL ETHICS DISCLOSURE/X: SFPD FUGITIVE INSPECTOR PATRICK CADIGAN APPEARING/X: DEFENDANT ARRAIGNEDON FUGITIVE WARRANT, ADMITS IDENTITY & WAIVES   EXTRADITION/CONTD:STATUSOF DELIVERY/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-03-14T13:30:00.000Z",
+      "description": "/CAL: FUGITIVE ARRAIGNMENT/X:THE JUDGE GIVES JUDICIAL ETHICS DISCLOSURE/X: SFPD FUGITIVE INSPECTOR PATRICK CADIGAN APPEARING/X: DEFENDANT ARRAIGNEDON FUGITIVE WARRANT, ADMITS IDENTITY & WAIVES EXTRADITION/CONTD:STATUSOF DELIVERY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12006518",
-    "portal_case_id": "",
+    "portal_case_id": "3704090",
     "display_case_number": "CRI-12006518",
     "defendant": "RAYMOND RAMIREZ",
     "filed_date": "2012-03-14",
@@ -59,12 +128,51 @@
       "defendant": "RAYMOND RAMIREZ",
       "filed_date": "2012-03-14"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RAYMOND RAMIREZ, and date of filing 2012-03-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RAYMOND RAMIREZ, date of filing, 2012-03-14, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:26:53.236Z",
+  "portal_case_id": "3704090",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12006518",
+      "defendant": "RAYMOND RAMIREZ",
+      "filed_date": "2012-03-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3704090"
+  }
 }

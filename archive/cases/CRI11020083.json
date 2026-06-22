@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:14:58.303Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:35:58.670Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11020083",
   "criminal_case_number": "11020083",
@@ -24,19 +24,134 @@
       "name": "ANITA LORRAINE CLARK",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANITA LORRAINE CLARK",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-08-03T00:00:00.000Z",
+      "docketEntryComment": "DA SDT FILED TODAY IN RM 101",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-08-01T13:45:00.000Z",
+      "docketEntryComment": "CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCEBY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO08-05-11,/X: BAIL SET AT $5000,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-07-29T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/SA1:JERROLD RANSBURG/SA2:405 VALENCIA ST, #107, SAN FRANCISCO/CONTD TO BE SET, DOP/DEF:RELEASED ON ORCT ON CONDITION TO REPORT TO SPR BY 08-01-11//CONTD:TO SET/NTW/LD 09-12-11/OR/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/MO PC 1385:UNABLE TO SUSTAIN/SATERM/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-08-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/X:SUBPOENAED RECORD IS RELEASED TO THE PEOPLE,/X:COUNSEL STIPULATED A NEW LAST DAY OF 09-19-11/LD:09-19-11/CONTD:TRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-08-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PROC RE BW STAY/BWSTAY:08-01-11/NTW/LD:09-06-11/CONTD:TRIAL/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-09-02 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2011-09-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-08-26 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2011-08-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-08-05 9:00 AM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2011-08-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-08-01 1:45 PM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2011-08-01",
+      "hearing_time": "1:45 PM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-07-29 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 4,
+      "court_date": "2011-07-29",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PRITHIKA BALAKRISHNAN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "ANGELA PIERCE",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "243(e)(1) PC/M 245(a)(1) PC/M",
+    "filed_date": "2011-07-29",
+    "defendant": "ANITA LORRAINE CLARK",
+    "searched_key": "CLARK/AN",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/11020083.json",
     "searched_last_name": "CLARK",
     "searched_first_prefix": "AN",
-    "charges": "243(e)(1) PC/M 245(a)(1) PC/M",
     "row": {
       "DEFENDANTNAME": "ANITA LORRAINE CLARK",
       "CASENUMBER": "CRI-11020083",
@@ -45,11 +160,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3683245",
+  "docket_entries": [
+    {
+      "filedDate": "2011-08-03T00:00:00.000Z",
+      "docketEntryComment": "DA SDT FILED TODAY IN RM 101",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-08-03T00:00:00.000Z",
+      "description": "DA SDT FILED TODAY IN RM 101",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-08-01T13:45:00.000Z",
+      "docketEntryComment": "CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCEBY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO08-05-11,/X: BAIL SET AT $5000,/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-08-01T13:45:00.000Z",
+      "description": "CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCEBY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO08-05-11,/X: BAIL SET AT $5000,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-07-29T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/SA1:JERROLD RANSBURG/SA2:405 VALENCIA ST, #107, SAN FRANCISCO/CONTD TO BE SET, DOP/DEF:RELEASED ON ORCT ON CONDITION TO REPORT TO SPR BY 08-01-11//CONTD:TO SET/NTW/LD 09-12-11/OR/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-07-29T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/SA1:JERROLD RANSBURG/SA2:405 VALENCIA ST, #107, SAN FRANCISCO/CONTD TO BE SET, DOP/DEF:RELEASED ON ORCT ON CONDITION TO REPORT TO SPR BY 08-01-11//CONTD:TO SET/NTW/LD 09-12-11/OR/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/MO PC 1385:UNABLE TO SUSTAIN/SATERM/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-09-02T09:00:00.000Z",
+      "description": "/CAL:TRIAL/MO PC 1385:UNABLE TO SUSTAIN/SATERM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-08-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/X:SUBPOENAED RECORD IS RELEASED TO THE PEOPLE,/X:COUNSEL STIPULATED A NEW LAST DAY OF 09-19-11/LD:09-19-11/CONTD:TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-08-26T09:00:00.000Z",
+      "description": "/CAL:TRIAL/X:SUBPOENAED RECORD IS RELEASED TO THE PEOPLE,/X:COUNSEL STIPULATED A NEW LAST DAY OF 09-19-11/LD:09-19-11/CONTD:TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-08-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PROC RE BW STAY/BWSTAY:08-01-11/NTW/LD:09-06-11/CONTD:TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-08-05T09:00:00.000Z",
+      "description": "/CAL:PROC RE BW STAY/BWSTAY:08-01-11/NTW/LD:09-06-11/CONTD:TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11020083",
-    "portal_case_id": "",
+    "portal_case_id": "3683245",
     "display_case_number": "CRI-11020083",
     "defendant": "ANITA LORRAINE CLARK",
     "filed_date": "2011-07-29",
@@ -59,12 +235,94 @@
       "defendant": "ANITA LORRAINE CLARK",
       "filed_date": "2011-07-29"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "243(e)(1) PC/M 245(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "243(e)(1) PC/M",
+        "title": "Penal Code § 243(e)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 243(e)(1)",
+        "code_system": "PC",
+        "section": "243(e)(1)",
+        "citation": "Penal Code § 243(e)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "245(a)(1) PC/M",
+        "title": "Penal Code § 245(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 245(a)(1)",
+        "code_system": "PC",
+        "section": "245(a)(1)",
+        "citation": "Penal Code § 245(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANITA LORRAINE CLARK, and date of filing 2011-07-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANITA LORRAINE CLARK, date of filing, 2011-07-29, and charges in the case: 243(e)(1) PC/M 245(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "243(e)(1) PC/M",
+      "title": "Penal Code § 243(e)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 243(e)(1)",
+      "code_system": "PC",
+      "section": "243(e)(1)",
+      "citation": "Penal Code § 243(e)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "245(a)(1) PC/M",
+      "title": "Penal Code § 245(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 245(a)(1)",
+      "code_system": "PC",
+      "section": "245(a)(1)",
+      "citation": "Penal Code § 245(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:35:59.371Z",
+  "portal_case_id": "3683245",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11020083",
+      "defendant": "ANITA LORRAINE CLARK",
+      "filed_date": "2011-07-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3683245"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.754584+00:00"
 }

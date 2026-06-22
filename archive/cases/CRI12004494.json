@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:20:51.550Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:30:16.040Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12004494",
   "criminal_case_number": "12004494",
@@ -24,11 +24,82 @@
       "name": "JASON WILLIAM KING",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JASON WILLIAM KING",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-03-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/AMEND 4/X ADD COUNT 4 415(1)PC, MISDEMEANOR/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:4/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-02-17T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CON:LISA DEWBERRY/X:12004516 = FUGI $NB VOLUSIA CO, FL//TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 03-05-12/987,2/BAIL:70,000/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-03-02T09:15:00.000Z",
+      "docketEntryComment": "/CAL SENTENCE/X NO PROBATION/TWS/CH4 CJ17D/CTS 17/VF2 120/COA 40/ICNA/COLLECT/REMA/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-03-02 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2012-03-02",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-03-02 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2012-03-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-02-17 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2012-02-17",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "LISA DEWBERRY",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +113,59 @@
       "CASENUMBER": "CRI-12004494",
       "FILEDDATE": "2012-02-17 09:00:00",
       "CHARGES": "459 PC/F 496(a) PC/F 11377(a) HS/F 415(1) PC/M"
-    }
+    },
+    "filed_date": "2012-02-17",
+    "defendant": "JASON WILLIAM KING",
+    "searched_key": "KING/JA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/12004494.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3702098",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-03-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/AMEND 4/X ADD COUNT 4 415(1)PC, MISDEMEANOR/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:4/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-03-02T09:00:00.000Z",
+      "description": "/CAL PRELIMINARY HEARING/AMEND 4/X ADD COUNT 4 415(1)PC, MISDEMEANOR/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:4/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-02-17T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CON:LISA DEWBERRY/X:12004516 = FUGI $NB VOLUSIA CO, FL//TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 03-05-12/987,2/BAIL:70,000/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-02-17T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/CON:LISA DEWBERRY/X:12004516 = FUGI $NB VOLUSIA CO, FL//TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 03-05-12/987,2/BAIL:70,000/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-03-02T09:15:00.000Z",
+      "docketEntryComment": "/CAL SENTENCE/X NO PROBATION/TWS/CH4 CJ17D/CTS 17/VF2 120/COA 40/ICNA/COLLECT/REMA/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-03-02T09:15:00.000Z",
+      "description": "/CAL SENTENCE/X NO PROBATION/TWS/CH4 CJ17D/CTS 17/VF2 120/COA 40/ICNA/COLLECT/REMA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12004494",
-    "portal_case_id": "",
+    "portal_case_id": "3702098",
     "display_case_number": "CRI-12004494",
     "defendant": "JASON WILLIAM KING",
     "filed_date": "2012-02-17",
@@ -59,12 +175,146 @@
       "defendant": "JASON WILLIAM KING",
       "filed_date": "2012-02-17"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "459 PC/F 496(a) PC/F 11377(a) HS/F 415(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "496(a) PC/F",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11377(a) HS/F",
+        "title": "Health and Safety Code § 11377(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11377(a)",
+        "code_system": "HS",
+        "section": "11377(a)",
+        "citation": "Health and Safety Code § 11377(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "415(1) PC/M",
+        "title": "Penal Code § 415(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 415(1)",
+        "code_system": "PC",
+        "section": "415(1)",
+        "citation": "Penal Code § 415(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=415.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=415.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JASON WILLIAM KING, and date of filing 2012-02-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JASON WILLIAM KING, date of filing, 2012-02-17, and charges in the case: 459 PC/F 496(a) PC/F 11377(a) HS/F 415(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "496(a) PC/F",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11377(a) HS/F",
+      "title": "Health and Safety Code § 11377(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11377(a)",
+      "code_system": "HS",
+      "section": "11377(a)",
+      "citation": "Health and Safety Code § 11377(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "415(1) PC/M",
+      "title": "Penal Code § 415(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 415(1)",
+      "code_system": "PC",
+      "section": "415(1)",
+      "citation": "Penal Code § 415(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=415.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=415.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:30:16.672Z",
+  "portal_case_id": "3702098",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12004494",
+      "defendant": "JASON WILLIAM KING",
+      "filed_date": "2012-02-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3702098"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:24.298085+00:00"
 }

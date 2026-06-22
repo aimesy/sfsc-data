@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:33:59.258Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:35:17.394Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11026258",
   "criminal_case_number": "11026258",
@@ -24,19 +24,117 @@
       "name": "BERNARD DAVIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BERNARD DAVIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-10-28T09:15:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-05T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-11-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DISMISSAL/MO PC 1385:PLEA IN COURT NOS, 11029610 & 11027747/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-28T09:15:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RECALL/BWR:10-17-11/BWR1/CONTD:DISMISSAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:10-05-11/BWI/BAIL:30,000/BWNUM:2ND",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-05T09:00:00.000Z",
+      "docketEntryComment": "/FTA/BWI/BAIL:20000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-11-28 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2011-11-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-10-28 9:15 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2011-10-28",
+      "hearing_time": "9:15 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-10-17 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2011-10-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-10-05 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2011-10-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "RANDALL MARTIN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "484(a) PC/M",
+    "filed_date": "2011-10-03",
+    "defendant": "BERNARD DAVIS",
+    "searched_key": "DAVIS/BE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/11026258.json",
     "searched_last_name": "DAVIS",
     "searched_first_prefix": "BE",
-    "charges": "484(a) PC/M",
     "row": {
       "DEFENDANTNAME": "BERNARD DAVIS",
       "CASENUMBER": "CRI-11026258",
@@ -45,11 +143,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3689315",
+  "docket_entries": [
+    {
+      "filedDate": "2011-10-28T09:15:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-10-28T09:15:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-05T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-10-05T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-11-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DISMISSAL/MO PC 1385:PLEA IN COURT NOS, 11029610 & 11027747/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-11-28T09:00:00.000Z",
+      "description": "/CAL:DISMISSAL/MO PC 1385:PLEA IN COURT NOS, 11029610 & 11027747/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-28T09:15:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RECALL/BWR:10-17-11/BWR1/CONTD:DISMISSAL/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-10-28T09:15:00.000Z",
+      "description": "/CAL:BENCH WARRANT RECALL/BWR:10-17-11/BWR1/CONTD:DISMISSAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:10-05-11/BWI/BAIL:30,000/BWNUM:2ND",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-10-17T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:10-05-11/BWI/BAIL:30,000/BWNUM:2ND",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-05T09:00:00.000Z",
+      "docketEntryComment": "/FTA/BWI/BAIL:20000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-10-05T09:00:00.000Z",
+      "description": "/FTA/BWI/BAIL:20000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11026258",
-    "portal_case_id": "",
+    "portal_case_id": "3689315",
     "display_case_number": "CRI-11026258",
     "defendant": "BERNARD DAVIS",
     "filed_date": "2011-10-03",
@@ -59,12 +218,68 @@
       "defendant": "BERNARD DAVIS",
       "filed_date": "2011-10-03"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "484(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "484(a) PC/M",
+        "title": "Penal Code § 484(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 484(a)",
+        "code_system": "PC",
+        "section": "484(a)",
+        "citation": "Penal Code § 484(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BERNARD DAVIS, and date of filing 2011-10-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BERNARD DAVIS, date of filing, 2011-10-03, and charges in the case: 484(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "484(a) PC/M",
+      "title": "Penal Code § 484(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 484(a)",
+      "code_system": "PC",
+      "section": "484(a)",
+      "citation": "Penal Code § 484(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:35:18.062Z",
+  "portal_case_id": "3689315",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11026258",
+      "defendant": "BERNARD DAVIS",
+      "filed_date": "2011-10-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3689315"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.865733+00:00"
 }

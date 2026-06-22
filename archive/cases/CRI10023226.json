@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:02:04.987Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:41:18.087Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10023226",
   "criminal_case_number": "10023226",
@@ -24,9 +24,20 @@
       "name": "WILLIE DAVID COLLINS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "WILLIE DAVID COLLINS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -45,11 +56,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3650279",
+  "docket_entries": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-11-17T18:00:00.000Z",
+      "description": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10023226",
-    "portal_case_id": "",
+    "portal_case_id": "3650279",
     "display_case_number": "CRI-10023226",
     "defendant": "WILLIE DAVID COLLINS",
     "filed_date": "2010-08-04",
@@ -60,11 +82,57 @@
       "filed_date": "2010-08-04"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "14601(a) VC/M",
+    "charge_rows": [
+      {
+        "raw": "14601(a) VC/M",
+        "title": "Vehicle Code § 14601(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 14601(a)",
+        "code_system": "VC",
+        "section": "14601(a)",
+        "citation": "Vehicle Code § 14601(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, WILLIE DAVID COLLINS, and date of filing 2010-08-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, WILLIE DAVID COLLINS, date of filing, 2010-08-04, and charges in the case: 14601(a) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "14601(a) VC/M",
+      "title": "Vehicle Code § 14601(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 14601(a)",
+      "code_system": "VC",
+      "section": "14601(a)",
+      "citation": "Vehicle Code § 14601(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:41:18.850Z",
+  "portal_case_id": "3650279",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10023226",
+      "defendant": "WILLIE DAVID COLLINS",
+      "filed_date": "2010-08-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3650279"
+  }
 }

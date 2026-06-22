@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:41:56.157Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:27:51.818Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12004674",
   "criminal_case_number": "12004674",
@@ -24,19 +24,107 @@
       "name": "CARLO GOMEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CARLO GOMEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-02-21T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 04-23-12/987,2/X:DEFENSE RESERVES THE  RIGHT TO DEMUR/OR/CONTD:PREHEARING CONFERENCE AND TO SET/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-04-12T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2 CJ 10D/CTS 5/VF2 120/COA 40/ICNA/OR25/COLLECT/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-04-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/AMEND 2/IRRC/TEXT DEFT ADV & PERS WVS CONST & CIZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:2/NOLO/CO:NEGOTIATED DISPOSITION/REMA",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-03-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-04-12 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2012-04-12",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-04-12 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2012-04-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-03-16 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2012-03-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-02-21 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2012-02-21",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "QIANA WASHINGTON",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11350(a) HS/F 653f(d) PC/M",
+    "filed_date": "2012-02-21",
+    "defendant": "CARLO GOMEZ",
+    "searched_key": "GOMEZ/CA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/12004674.json",
     "searched_last_name": "GOMEZ",
     "searched_first_prefix": "CA",
-    "charges": "11350(a) HS/F 653f(d) PC/M",
     "row": {
       "DEFENDANTNAME": "CARLO GOMEZ",
       "CASENUMBER": "CRI-12004674",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3702275",
+  "docket_entries": [
+    {
+      "filedDate": "2012-02-21T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 04-23-12/987,2/X:DEFENSE RESERVES THE  RIGHT TO DEMUR/OR/CONTD:PREHEARING CONFERENCE AND TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-02-21T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 04-23-12/987,2/X:DEFENSE RESERVES THE RIGHT TO DEMUR/OR/CONTD:PREHEARING CONFERENCE AND TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-04-12T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2 CJ 10D/CTS 5/VF2 120/COA 40/ICNA/OR25/COLLECT/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-04-12T09:15:00.000Z",
+      "description": "/TWS/CH2 CJ 10D/CTS 5/VF2 120/COA 40/ICNA/OR25/COLLECT/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-04-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/AMEND 2/IRRC/TEXT DEFT ADV & PERS WVS CONST & CIZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:2/NOLO/CO:NEGOTIATED DISPOSITION/REMA",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-04-12T09:00:00.000Z",
+      "description": "/CAL PRELIMINARY HEARING/AMEND 2/IRRC/TEXT DEFT ADV & PERS WVS CONST & CIZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:2/NOLO/CO:NEGOTIATED DISPOSITION/REMA",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-03-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-03-16T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12004674",
-    "portal_case_id": "",
+    "portal_case_id": "3702275",
     "display_case_number": "CRI-12004674",
     "defendant": "CARLO GOMEZ",
     "filed_date": "2012-02-21",
@@ -60,11 +189,84 @@
       "filed_date": "2012-02-21"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F 653f(d) PC/M",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "653f(d) PC/M",
+        "title": "Penal Code § 653f(d)",
+        "title_source": "programmatic_citation",
+        "code": "PC 653f(d)",
+        "code_system": "PC",
+        "section": "653f(d)",
+        "citation": "Penal Code § 653f(d)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CARLO GOMEZ, and date of filing 2012-02-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CARLO GOMEZ, date of filing, 2012-02-21, and charges in the case: 11350(a) HS/F 653f(d) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "653f(d) PC/M",
+      "title": "Penal Code § 653f(d)",
+      "title_source": "programmatic_citation",
+      "code": "PC 653f(d)",
+      "code_system": "PC",
+      "section": "653f(d)",
+      "citation": "Penal Code § 653f(d)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:27:52.449Z",
+  "portal_case_id": "3702275",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12004674",
+      "defendant": "CARLO GOMEZ",
+      "filed_date": "2012-02-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3702275"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.686498+00:00"
 }

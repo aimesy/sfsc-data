@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:57:28.140Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:27:39.182Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12000800",
   "criminal_case_number": "12000800",
@@ -24,11 +24,64 @@
       "name": "MICHAEL A KING",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL A KING",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-11T13:30:00.000Z",
+      "docketEntryComment": "/CAL ARRAIGNMENT/X DISTRICT ATTORNEY ORALLY AMENDED COMPLAINT ADDING COUN2, 653F D PC-MISDEMEANOR/FAWC/IRRC/TEXT: DEFT WAIVES INST AND ARRAIGNMENTNL PLEA/PD/FAWC/DEFT ADV ANNL:002/NOLO/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-11T13:45:00.000Z",
+      "docketEntryComment": "/CAL SENTENCING/TWS/CH2 ISS CPROB PROB 3 Y PJ 4D/CTS 4/WS/VF2 120/MPROBFINE/COA:40/ICNA/COLLECT/OBEY/ACCEP/DISM3/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-01-11 1:45 PM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2012-01-11",
+      "hearing_time": "1:45 PM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-01-11 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2012-01-11",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SUJUNG KIM",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +95,49 @@
       "CASENUMBER": "CRI-12000800",
       "FILEDDATE": "2012-01-11 09:00:00",
       "CHARGES": "11377(a) HS/F 653f(d) PC/M"
-    }
+    },
+    "filed_date": "2012-01-11",
+    "defendant": "MICHAEL A KING",
+    "searched_key": "KING/MI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/12000800.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3698483",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-11T13:30:00.000Z",
+      "docketEntryComment": "/CAL ARRAIGNMENT/X DISTRICT ATTORNEY ORALLY AMENDED COMPLAINT ADDING COUN2, 653F D PC-MISDEMEANOR/FAWC/IRRC/TEXT: DEFT WAIVES INST AND ARRAIGNMENTNL PLEA/PD/FAWC/DEFT ADV ANNL:002/NOLO/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-01-11T13:30:00.000Z",
+      "description": "/CAL ARRAIGNMENT/X DISTRICT ATTORNEY ORALLY AMENDED COMPLAINT ADDING COUN2, 653F D PC-MISDEMEANOR/FAWC/IRRC/TEXT: DEFT WAIVES INST AND ARRAIGNMENTNL PLEA/PD/FAWC/DEFT ADV ANNL:002/NOLO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-11T13:45:00.000Z",
+      "docketEntryComment": "/CAL SENTENCING/TWS/CH2 ISS CPROB PROB 3 Y PJ 4D/CTS 4/WS/VF2 120/MPROBFINE/COA:40/ICNA/COLLECT/OBEY/ACCEP/DISM3/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-01-11T13:45:00.000Z",
+      "description": "/CAL SENTENCING/TWS/CH2 ISS CPROB PROB 3 Y PJ 4D/CTS 4/WS/VF2 120/MPROBFINE/COA:40/ICNA/COLLECT/OBEY/ACCEP/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12000800",
-    "portal_case_id": "",
+    "portal_case_id": "3698483",
     "display_case_number": "CRI-12000800",
     "defendant": "MICHAEL A KING",
     "filed_date": "2012-01-11",
@@ -59,12 +147,94 @@
       "defendant": "MICHAEL A KING",
       "filed_date": "2012-01-11"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11377(a) HS/F 653f(d) PC/M",
+    "charge_rows": [
+      {
+        "raw": "11377(a) HS/F",
+        "title": "Health and Safety Code § 11377(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11377(a)",
+        "code_system": "HS",
+        "section": "11377(a)",
+        "citation": "Health and Safety Code § 11377(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "653f(d) PC/M",
+        "title": "Penal Code § 653f(d)",
+        "title_source": "programmatic_citation",
+        "code": "PC 653f(d)",
+        "code_system": "PC",
+        "section": "653f(d)",
+        "citation": "Penal Code § 653f(d)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL A KING, and date of filing 2012-01-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL A KING, date of filing, 2012-01-11, and charges in the case: 11377(a) HS/F 653f(d) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11377(a) HS/F",
+      "title": "Health and Safety Code § 11377(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11377(a)",
+      "code_system": "HS",
+      "section": "11377(a)",
+      "citation": "Health and Safety Code § 11377(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "653f(d) PC/M",
+      "title": "Penal Code § 653f(d)",
+      "title_source": "programmatic_citation",
+      "code": "PC 653f(d)",
+      "code_system": "PC",
+      "section": "653f(d)",
+      "citation": "Penal Code § 653f(d)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:27:39.890Z",
+  "portal_case_id": "3698483",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12000800",
+      "defendant": "MICHAEL A KING",
+      "filed_date": "2012-01-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3698483"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:32.036073+00:00"
 }

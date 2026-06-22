@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:40:04.377Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:34:14.234Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11009733",
   "criminal_case_number": "11009733",
@@ -24,19 +24,66 @@
       "name": "MARK A DEAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARK A DEAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2011-04-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:IN LIGHT OF PLEA IN COURT #10019345/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-04-12T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:04-26-11/987,2/BAIL:100,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-04-25 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2011-04-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-04-12 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2011-04-12",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11378 HS/F",
+    "filed_date": "2011-04-11",
+    "defendant": "MARK A DEAN",
+    "searched_key": "DEAN/MA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/11009733.json",
     "searched_last_name": "DEAN",
     "searched_first_prefix": "MA",
-    "charges": "11378 HS/F",
     "row": {
       "DEFENDANTNAME": "MARK A DEAN",
       "CASENUMBER": "CRI-11009733",
@@ -45,11 +92,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3673452",
+  "docket_entries": [
+    {
+      "filedDate": "2011-04-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:IN LIGHT OF PLEA IN COURT #10019345/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-04-25T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO PC 1385:IN LIGHT OF PLEA IN COURT #10019345/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-04-12T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:04-26-11/987,2/BAIL:100,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-04-12T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:04-26-11/987,2/BAIL:100,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11009733",
-    "portal_case_id": "",
+    "portal_case_id": "3673452",
     "display_case_number": "CRI-11009733",
     "defendant": "MARK A DEAN",
     "filed_date": "2011-04-11",
@@ -59,12 +127,68 @@
       "defendant": "MARK A DEAN",
       "filed_date": "2011-04-11"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11378 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11378 HS/F",
+        "title": "Health and Safety Code § 11378",
+        "title_source": "programmatic_citation",
+        "code": "HS 11378",
+        "code_system": "HS",
+        "section": "11378",
+        "citation": "Health and Safety Code § 11378",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARK A DEAN, and date of filing 2011-04-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARK A DEAN, date of filing, 2011-04-11, and charges in the case: 11378 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11378 HS/F",
+      "title": "Health and Safety Code § 11378",
+      "title_source": "programmatic_citation",
+      "code": "HS 11378",
+      "code_system": "HS",
+      "section": "11378",
+      "citation": "Health and Safety Code § 11378",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:34:14.917Z",
+  "portal_case_id": "3673452",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11009733",
+      "defendant": "MARK A DEAN",
+      "filed_date": "2011-04-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3673452"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.421438+00:00"
 }

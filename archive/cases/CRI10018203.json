@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:46:28.727Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:38:23.163Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10018203",
   "criminal_case_number": "10018203",
@@ -24,19 +24,89 @@
       "name": "JOHN H BELL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN H BELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-06-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL INSTRUCTION AND ARRAIGNMENT, PLEA AND COUNSEL/TEXT DEFT ENT NG PLEA() & DEN OF ALLEG/PD/FAWC/X:DEFENSE MOTION TO REDUCE COUNT 1 TO A MISDEMEANOR PUSRUANT TO PC 17(B) IS GRANTED OVER THE PEOPLE'S OBJECTION,/TEXT:DEFTADV & PER WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS: 1/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-21T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:CJ 6M/CTS:101/CCPV/VF1/SECFEE/ICNA/COLLECT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CTORD:BAIL TO REMAIN AT $100,000 WITHOUT PREJUDICE/CONTDI&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND ASSIGN COUNSEL/TWA/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-06-21 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2010-06-21",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-21 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2010-06-21",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-17 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2010-06-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SUJUNG KIM",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11355 HS/M",
+    "filed_date": "2010-06-17",
+    "defendant": "JOHN H BELL",
+    "searched_key": "BELL/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/10018203.json",
     "searched_last_name": "BELL",
     "searched_first_prefix": "JO",
-    "charges": "11355 HS/M",
     "row": {
       "DEFENDANTNAME": "JOHN H BELL",
       "CASENUMBER": "CRI-10018203",
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3645560",
+  "docket_entries": [
+    {
+      "filedDate": "2010-06-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL INSTRUCTION AND ARRAIGNMENT, PLEA AND COUNSEL/TEXT DEFT ENT NG PLEA() & DEN OF ALLEG/PD/FAWC/X:DEFENSE MOTION TO REDUCE COUNT 1 TO A MISDEMEANOR PUSRUANT TO PC 17(B) IS GRANTED OVER THE PEOPLE'S OBJECTION,/TEXT:DEFTADV & PER WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS: 1/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-06-21T09:00:00.000Z",
+      "description": "/CAL INSTRUCTION AND ARRAIGNMENT, PLEA AND COUNSEL/TEXT DEFT ENT NG PLEA() & DEN OF ALLEG/PD/FAWC/X:DEFENSE MOTION TO REDUCE COUNT 1 TO A MISDEMEANOR PUSRUANT TO PC 17(B) IS GRANTED OVER THE PEOPLE'S OBJECTION,/TEXT:DEFTADV & PER WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS: 1/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-21T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:CJ 6M/CTS:101/CCPV/VF1/SECFEE/ICNA/COLLECT/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-06-21T09:15:00.000Z",
+      "description": "/TWS/CH1:CJ 6M/CTS:101/CCPV/VF1/SECFEE/ICNA/COLLECT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CTORD:BAIL TO REMAIN AT $100,000 WITHOUT PREJUDICE/CONTDI&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND ASSIGN COUNSEL/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-06-17T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/CTORD:BAIL TO REMAIN AT $100,000 WITHOUT PREJUDICE/CONTDI&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND ASSIGN COUNSEL/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10018203",
-    "portal_case_id": "",
+    "portal_case_id": "3645560",
     "display_case_number": "CRI-10018203",
     "defendant": "JOHN H BELL",
     "filed_date": "2010-06-17",
@@ -59,12 +160,78 @@
       "defendant": "JOHN H BELL",
       "filed_date": "2010-06-17"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 17(B)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 17(B)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "11355 HS/M",
+    "charge_rows": [
+      {
+        "raw": "11355 HS/M",
+        "title": "Health and Safety Code § 11355",
+        "title_source": "programmatic_citation",
+        "code": "HS 11355",
+        "code_system": "HS",
+        "section": "11355",
+        "citation": "Health and Safety Code § 11355",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN H BELL, and date of filing 2010-06-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN H BELL, date of filing, 2010-06-17, and charges in the case: 11355 HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11355 HS/M",
+      "title": "Health and Safety Code § 11355",
+      "title_source": "programmatic_citation",
+      "code": "HS 11355",
+      "code_system": "HS",
+      "section": "11355",
+      "citation": "Health and Safety Code § 11355",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:38:23.865Z",
+  "portal_case_id": "3645560",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10018203",
+      "defendant": "JOHN H BELL",
+      "filed_date": "2010-06-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3645560"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.624697+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:03:41.817Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:32:09.363Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11007076",
   "criminal_case_number": "11007076",
@@ -24,11 +24,59 @@
       "name": "RICHARD JONES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RICHARD JONES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-03-14T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/TN:RICHARD JONES/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 05-13-11/987,2/X:AS CONDITION OF OR RELEASE, DEFENDANT TO REPORT TO SPR 1 TIME PER WEEK IN PERSON AND 1 TIMEPER WEEK BY PHONE/OR/CONTD TO SET OR DISPO, DOP /CONTD:TO SET OR DISPOSE/DOP /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TOSET OR DISPO/MO PC 1385:UNABLE TO SUBSTAIN BURDEN OF PROOF /",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-03-25 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2011-03-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-14 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2011-03-14",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "GREG GOLDMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3670936",
+  "docket_entries": [
+    {
+      "filedDate": "2011-03-14T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/TN:RICHARD JONES/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 05-13-11/987,2/X:AS CONDITION OF OR RELEASE, DEFENDANT TO REPORT TO SPR 1 TIME PER WEEK IN PERSON AND 1 TIMEPER WEEK BY PHONE/OR/CONTD TO SET OR DISPO, DOP /CONTD:TO SET OR DISPOSE/DOP /",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-03-14T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/TN:RICHARD JONES/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 05-13-11/987,2/X:AS CONDITION OF OR RELEASE, DEFENDANT TO REPORT TO SPR 1 TIME PER WEEK IN PERSON AND 1 TIMEPER WEEK BY PHONE/OR/CONTD TO SET OR DISPO, DOP /CONTD:TO SET OR DISPOSE/DOP /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TOSET OR DISPO/MO PC 1385:UNABLE TO SUBSTAIN BURDEN OF PROOF /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-03-25T09:00:00.000Z",
+      "description": "/CAL:TOSET OR DISPO/MO PC 1385:UNABLE TO SUBSTAIN BURDEN OF PROOF /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11007076",
-    "portal_case_id": "",
+    "portal_case_id": "3670936",
     "display_case_number": "CRI-11007076",
     "defendant": "RICHARD JONES",
     "filed_date": "2011-03-14",
@@ -59,12 +128,68 @@
       "defendant": "RICHARD JONES",
       "filed_date": "2011-03-14"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RICHARD JONES, and date of filing 2011-03-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RICHARD JONES, date of filing, 2011-03-14, and charges in the case: 11350(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:32:10.021Z",
+  "portal_case_id": "3670936",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11007076",
+      "defendant": "RICHARD JONES",
+      "filed_date": "2011-03-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3670936"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T15:11:27.292Z"
 }

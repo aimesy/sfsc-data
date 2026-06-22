@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:54:09.007Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:37:11.019Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11034338",
   "criminal_case_number": "11034338",
@@ -24,19 +24,94 @@
       "name": "JOSEPH KEITH JOHNSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSEPH KEITH JOHNSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRE-HEARING CONFERENCE & RECEIPT OF PTD SPR REPORT/X COURT HAS RECEIED A NEGATIVE PTD SPR REPORT,/X:PEOPLE MOVE TO AMEND THE COMPLAINT TO ADDCOUNT 3 OF 11350(B) HS-MISDEMEANOR; COURT GRANTS MOTION,/TEXT: DEFT WAIVESINST AND ARRAIGNMENT GUILTY PLEA/FAWA/IRRC/DEFT ADV ANG:2/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-12-29T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/PD/987,2/TN:JOSEPH KEITH JOHNSON/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/CTORD:THAT THE DEFENSE MOTION FOR RELEASEON OWN RECOGNIZANCE IS GRANTED WITH THE CONDITION OF REPORTING TO SPR 5 (FIVE) TIMES A WEEK PERSONALLY/STWPX/CONTD:PHC & PTD SPR REPORT ON 01-12-12/OR/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-12T09:15:00.000Z",
+      "docketEntryComment": "/CAL MISDEMEANOR SENTENCING/TWS/CH2 ISS CPROB PROB 3 Y PJ 4 D/CTS 4/WS/VF2:120/MPROBFINE/COA:40/ICNA/COLLECT/OBEY/ACCEP/DISM3/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-01-12 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2012-01-12",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-01-12 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2012-01-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-12-29 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2011-12-29",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARK JACOBS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11377(a) HS/F 11350(b) HS/M",
+    "filed_date": "2011-12-28",
+    "defendant": "JOSEPH KEITH JOHNSON",
+    "searched_key": "JOHNSON/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/11034338.json",
     "searched_last_name": "JOHNSON",
     "searched_first_prefix": "JO",
-    "charges": "11377(a) HS/F 11350(b) HS/M",
     "row": {
       "DEFENDANTNAME": "JOSEPH KEITH JOHNSON",
       "CASENUMBER": "CRI-11034338",
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3697278",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRE-HEARING CONFERENCE & RECEIPT OF PTD SPR REPORT/X COURT HAS RECEIED A NEGATIVE PTD SPR REPORT,/X:PEOPLE MOVE TO AMEND THE COMPLAINT TO ADDCOUNT 3 OF 11350(B) HS-MISDEMEANOR; COURT GRANTS MOTION,/TEXT: DEFT WAIVESINST AND ARRAIGNMENT GUILTY PLEA/FAWA/IRRC/DEFT ADV ANG:2/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-01-12T09:00:00.000Z",
+      "description": "/CAL PRE-HEARING CONFERENCE & RECEIPT OF PTD SPR REPORT/X COURT HAS RECEIED A NEGATIVE PTD SPR REPORT,/X:PEOPLE MOVE TO AMEND THE COMPLAINT TO ADDCOUNT 3 OF 11350(B) HS-MISDEMEANOR; COURT GRANTS MOTION,/TEXT: DEFT WAIVESINST AND ARRAIGNMENT GUILTY PLEA/FAWA/IRRC/DEFT ADV ANG:2/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-12-29T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/PD/987,2/TN:JOSEPH KEITH JOHNSON/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/CTORD:THAT THE DEFENSE MOTION FOR RELEASEON OWN RECOGNIZANCE IS GRANTED WITH THE CONDITION OF REPORTING TO SPR 5 (FIVE) TIMES A WEEK PERSONALLY/STWPX/CONTD:PHC & PTD SPR REPORT ON 01-12-12/OR/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-12-29T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/PD/987,2/TN:JOSEPH KEITH JOHNSON/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/CTORD:THAT THE DEFENSE MOTION FOR RELEASEON OWN RECOGNIZANCE IS GRANTED WITH THE CONDITION OF REPORTING TO SPR 5 (FIVE) TIMES A WEEK PERSONALLY/STWPX/CONTD:PHC & PTD SPR REPORT ON 01-12-12/OR/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-12T09:15:00.000Z",
+      "docketEntryComment": "/CAL MISDEMEANOR SENTENCING/TWS/CH2 ISS CPROB PROB 3 Y PJ 4 D/CTS 4/WS/VF2:120/MPROBFINE/COA:40/ICNA/COLLECT/OBEY/ACCEP/DISM3/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-01-12T09:15:00.000Z",
+      "description": "/CAL MISDEMEANOR SENTENCING/TWS/CH2 ISS CPROB PROB 3 Y PJ 4 D/CTS 4/WS/VF2:120/MPROBFINE/COA:40/ICNA/COLLECT/OBEY/ACCEP/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11034338",
-    "portal_case_id": "",
+    "portal_case_id": "3697278",
     "display_case_number": "CRI-11034338",
     "defendant": "JOSEPH KEITH JOHNSON",
     "filed_date": "2011-12-28",
@@ -59,12 +175,94 @@
       "defendant": "JOSEPH KEITH JOHNSON",
       "filed_date": "2011-12-28"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11377(a) HS/F 11350(b) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11377(a) HS/F",
+        "title": "Health and Safety Code § 11377(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11377(a)",
+        "code_system": "HS",
+        "section": "11377(a)",
+        "citation": "Health and Safety Code § 11377(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11350(b) HS/M",
+        "title": "Health and Safety Code § 11350(b)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(b)",
+        "code_system": "HS",
+        "section": "11350(b)",
+        "citation": "Health and Safety Code § 11350(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSEPH KEITH JOHNSON, and date of filing 2011-12-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSEPH KEITH JOHNSON, date of filing, 2011-12-28, and charges in the case: 11377(a) HS/F 11350(b) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11377(a) HS/F",
+      "title": "Health and Safety Code § 11377(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11377(a)",
+      "code_system": "HS",
+      "section": "11377(a)",
+      "citation": "Health and Safety Code § 11377(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11350(b) HS/M",
+      "title": "Health and Safety Code § 11350(b)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(b)",
+      "code_system": "HS",
+      "section": "11350(b)",
+      "citation": "Health and Safety Code § 11350(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:37:11.721Z",
+  "portal_case_id": "3697278",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11034338",
+      "defendant": "JOSEPH KEITH JOHNSON",
+      "filed_date": "2011-12-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3697278"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.528895+00:00"
 }

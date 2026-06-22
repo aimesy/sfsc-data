@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:33:59.258Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:35:35.065Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11029610",
   "criminal_case_number": "11029610",
@@ -24,19 +24,94 @@
       "name": "BERNARD M DAVIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BERNARD M DAVIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-11-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRELIMINARY HEARING/X:DISTRICT ATTORNEY'S MOTION TO REDUCE COUNT 1 TO A MISDEMEANOR PURSUANT TO PC 17(B) GRANTED,/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:001/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-11-04T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 01-03-12/987,2/BAIL:15,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-11-28T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/TWS/CH1:CJ 6M/CTS:28/VF2:100/SECFEE40/ICNA/EMAT/CCC:THISMATTER AND COURT #11027747/COLLECT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-11-28 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2011-11-28",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-11-28 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2011-11-28",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-11-04 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2011-11-04",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "RANDALL MARTIN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "10851(a) VC/M 12500(a) VC/M",
+    "filed_date": "2011-11-03",
+    "defendant": "BERNARD M DAVIS",
+    "searched_key": "DAVIS/BE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/11029610.json",
     "searched_last_name": "DAVIS",
     "searched_first_prefix": "BE",
-    "charges": "10851(a) VC/M 12500(a) VC/M",
     "row": {
       "DEFENDANTNAME": "BERNARD M DAVIS",
       "CASENUMBER": "CRI-11029610",
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3692620",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-11-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRELIMINARY HEARING/X:DISTRICT ATTORNEY'S MOTION TO REDUCE COUNT 1 TO A MISDEMEANOR PURSUANT TO PC 17(B) GRANTED,/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:001/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-11-28T09:00:00.000Z",
+      "description": "/CAL:TO SET PRELIMINARY HEARING/X:DISTRICT ATTORNEY'S MOTION TO REDUCE COUNT 1 TO A MISDEMEANOR PURSUANT TO PC 17(B) GRANTED,/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:001/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-11-04T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 01-03-12/987,2/BAIL:15,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-11-04T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 01-03-12/987,2/BAIL:15,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-11-28T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/TWS/CH1:CJ 6M/CTS:28/VF2:100/SECFEE40/ICNA/EMAT/CCC:THISMATTER AND COURT #11027747/COLLECT/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-11-28T09:15:00.000Z",
+      "description": "/CAL:SENTENCING/TWS/CH1:CJ 6M/CTS:28/VF2:100/SECFEE40/ICNA/EMAT/CCC:THISMATTER AND COURT #11027747/COLLECT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11029610",
-    "portal_case_id": "",
+    "portal_case_id": "3692620",
     "display_case_number": "CRI-11029610",
     "defendant": "BERNARD M DAVIS",
     "filed_date": "2011-11-03",
@@ -59,12 +175,112 @@
       "defendant": "BERNARD M DAVIS",
       "filed_date": "2011-11-03"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC 17(B)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 17(B)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "10851(a) VC/M 12500(a) VC/M",
+    "charge_rows": [
+      {
+        "raw": "10851(a) VC/M",
+        "title": "Vehicle Code § 10851(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 10851(a)",
+        "code_system": "VC",
+        "section": "10851(a)",
+        "citation": "Vehicle Code § 10851(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "12500(a) VC/M",
+        "title": "Vehicle Code § 12500(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 12500(a)",
+        "code_system": "VC",
+        "section": "12500(a)",
+        "citation": "Vehicle Code § 12500(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BERNARD M DAVIS, and date of filing 2011-11-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BERNARD M DAVIS, date of filing, 2011-11-03, and charges in the case: 10851(a) VC/M 12500(a) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "10851(a) VC/M",
+      "title": "Vehicle Code § 10851(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 10851(a)",
+      "code_system": "VC",
+      "section": "10851(a)",
+      "citation": "Vehicle Code § 10851(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "12500(a) VC/M",
+      "title": "Vehicle Code § 12500(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 12500(a)",
+      "code_system": "VC",
+      "section": "12500(a)",
+      "citation": "Vehicle Code § 12500(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:35:35.776Z",
+  "portal_case_id": "3692620",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11029610",
+      "defendant": "BERNARD M DAVIS",
+      "filed_date": "2011-11-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3692620"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.221140+00:00"
 }

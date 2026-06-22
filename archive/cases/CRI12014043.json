@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:48:26.959Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:31:29.271Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12014043",
   "criminal_case_number": "12014043",
@@ -24,19 +24,89 @@
       "name": "HECTOR JAVIER GUTIERREZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "HECTOR JAVIER GUTIERREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-07-16T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3 ISS CPROB PROB 18 M PJ 1D/CTS 1/PF145NEW/VF2 120/FOP1 12 HOUR/LCHEM/LVAL/PROBREVFN/COA:40/ICNA/CITE/EMAT/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 100 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SET FORTH HEREIN/X:23593(A) VC ADMONITION GIVEN,/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-07-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRETRIAL CONFERENCE/X DA'S ORAL MOTION TO ADD COUNT 3 23103VC,M WITHN THE MEANING OF 23103,5VC,M IS GRANTED/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-06-11T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-07-16 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2012-07-16",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-07-16 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2012-07-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-06-11 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2012-06-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JOHN FORSYTH",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "23152(a) VC/M 23152(b) VC/M 8888888",
+    "filed_date": "2012-06-06",
+    "defendant": "HECTOR JAVIER GUTIERREZ",
+    "searched_key": "GUTIERREZ/HE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/12014043.json",
     "searched_last_name": "GUTIERREZ",
     "searched_first_prefix": "HE",
-    "charges": "23152(a) VC/M 23152(b) VC/M 8888888",
     "row": {
       "DEFENDANTNAME": "HECTOR JAVIER GUTIERREZ",
       "CASENUMBER": "CRI-12014043",
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3711490",
+  "docket_entries": [
+    {
+      "filedDate": "2012-07-16T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3 ISS CPROB PROB 18 M PJ 1D/CTS 1/PF145NEW/VF2 120/FOP1 12 HOUR/LCHEM/LVAL/PROBREVFN/COA:40/ICNA/CITE/EMAT/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 100 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SET FORTH HEREIN/X:23593(A) VC ADMONITION GIVEN,/DISM3/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-07-16T09:15:00.000Z",
+      "description": "/TWS/CH3 ISS CPROB PROB 18 M PJ 1D/CTS 1/PF145NEW/VF2 120/FOP1 12 HOUR/LCHEM/LVAL/PROBREVFN/COA:40/ICNA/CITE/EMAT/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 100 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SET FORTH HEREIN/X:23593(A) VC ADMONITION GIVEN,/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-07-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRETRIAL CONFERENCE/X DA'S ORAL MOTION TO ADD COUNT 3 23103VC,M WITHN THE MEANING OF 23103,5VC,M IS GRANTED/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-07-16T09:00:00.000Z",
+      "description": "/CAL PRETRIAL CONFERENCE/X DA'S ORAL MOTION TO ADD COUNT 3 23103VC,M WITHN THE MEANING OF 23103,5VC,M IS GRANTED/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-06-11T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-06-11T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12014043",
-    "portal_case_id": "",
+    "portal_case_id": "3711490",
     "display_case_number": "CRI-12014043",
     "defendant": "HECTOR JAVIER GUTIERREZ",
     "filed_date": "2012-06-06",
@@ -60,11 +161,94 @@
       "filed_date": "2012-06-06"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "23152(a) VC/M 23152(b) VC/M 8888888",
+    "charge_rows": [
+      {
+        "raw": "23152(a) VC/M",
+        "title": "Vehicle Code § 23152(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(a)",
+        "code_system": "VC",
+        "section": "23152(a)",
+        "citation": "Vehicle Code § 23152(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23152(b) VC/M",
+        "title": "Vehicle Code § 23152(b)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(b)",
+        "code_system": "VC",
+        "section": "23152(b)",
+        "citation": "Vehicle Code § 23152(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, HECTOR JAVIER GUTIERREZ, and date of filing 2012-06-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, HECTOR JAVIER GUTIERREZ, date of filing, 2012-06-06, and charges in the case: 23152(a) VC/M 23152(b) VC/M 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(a) VC/M",
+      "title": "Vehicle Code § 23152(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(a)",
+      "code_system": "VC",
+      "section": "23152(a)",
+      "citation": "Vehicle Code § 23152(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23152(b) VC/M",
+      "title": "Vehicle Code § 23152(b)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(b)",
+      "code_system": "VC",
+      "section": "23152(b)",
+      "citation": "Vehicle Code § 23152(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:31:30.121Z",
+  "portal_case_id": "3711490",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12014043",
+      "defendant": "HECTOR JAVIER GUTIERREZ",
+      "filed_date": "2012-06-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3711490"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.890713+00:00"
 }

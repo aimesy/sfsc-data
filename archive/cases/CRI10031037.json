@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:22:00.176Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:42:15.499Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10031037",
   "criminal_case_number": "10031037",
@@ -24,19 +24,120 @@
       "name": "MARK L CAMPBELL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARK L CAMPBELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2010-11-15T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 5D   /CTS:5   /WS/VF1/MPROBFINE/SECFEE40/ICNA/COLLECT/SAORD/SA2:7TH & MARKET/SAORD3/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MISDRED1:1/FAWC/IRRC/TEXT:DEFT ADV & PER WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS: 1/CO:NEGOTIATED DISPOSITION/IBARRA/REMA/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/STWPX/CTORD:DEFENDANT NEEDS TO SUBMIT PROOF OF HOUSING AND URBAN HEALTH REPORT/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SPR ELIGIBILITY REPORT/SPRGR/STWPX/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL ARRAIGNMENT/TEXT DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:20000/X:SPR REFERRRAL/CONTD:SPR ELIGIBILITY REPORT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-11-15 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2010-11-15",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-11-15 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2010-11-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-11-01 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2010-11-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-10-20 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2010-10-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-10-19 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 4,
+      "court_date": "2010-10-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11375(b)(1) HS/M 11375(b)(1) HS/F",
+    "filed_date": "2010-10-19",
+    "defendant": "MARK L CAMPBELL",
+    "searched_key": "CAMPBELL/MA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/10031037.json",
     "searched_last_name": "CAMPBELL",
     "searched_first_prefix": "MA",
-    "charges": "11375(b)(1) HS/M 11375(b)(1) HS/F",
     "row": {
       "DEFENDANTNAME": "MARK L CAMPBELL",
       "CASENUMBER": "CRI-10031037",
@@ -45,11 +146,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3657564",
+  "docket_entries": [
+    {
+      "filedDate": "2010-11-15T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 5D   /CTS:5   /WS/VF1/MPROBFINE/SECFEE40/ICNA/COLLECT/SAORD/SA2:7TH & MARKET/SAORD3/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-11-15T09:15:00.000Z",
+      "description": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 5D /CTS:5 /WS/VF1/MPROBFINE/SECFEE40/ICNA/COLLECT/SAORD/SA2:7TH & MARKET/SAORD3/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MISDRED1:1/FAWC/IRRC/TEXT:DEFT ADV & PER WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS: 1/CO:NEGOTIATED DISPOSITION/IBARRA/REMA/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-11-15T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG/MISDRED1:1/FAWC/IRRC/TEXT:DEFT ADV & PER WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS: 1/CO:NEGOTIATED DISPOSITION/IBARRA/REMA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/STWPX/CTORD:DEFENDANT NEEDS TO SUBMIT PROOF OF HOUSING AND URBAN HEALTH REPORT/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-11-01T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/STWPX/CTORD:DEFENDANT NEEDS TO SUBMIT PROOF OF HOUSING AND URBAN HEALTH REPORT/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SPR ELIGIBILITY REPORT/SPRGR/STWPX/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-10-20T09:00:00.000Z",
+      "description": "/CAL:SPR ELIGIBILITY REPORT/SPRGR/STWPX/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL ARRAIGNMENT/TEXT DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:20000/X:SPR REFERRRAL/CONTD:SPR ELIGIBILITY REPORT/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-10-19T09:00:00.000Z",
+      "description": "/CAL ARRAIGNMENT/TEXT DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:20000/X:SPR REFERRRAL/CONTD:SPR ELIGIBILITY REPORT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10031037",
-    "portal_case_id": "",
+    "portal_case_id": "3657564",
     "display_case_number": "CRI-10031037",
     "defendant": "MARK L CAMPBELL",
     "filed_date": "2010-10-19",
@@ -60,11 +212,84 @@
       "filed_date": "2010-10-19"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11375(b)(1) HS/M 11375(b)(1) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11375(b)(1) HS/M",
+        "title": "Health and Safety Code § 11375(b)(1)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11375(b)(1)",
+        "code_system": "HS",
+        "section": "11375(b)(1)",
+        "citation": "Health and Safety Code § 11375(b)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11375.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11375.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "11375(b)(1) HS/F",
+        "title": "Health and Safety Code § 11375(b)(1)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11375(b)(1)",
+        "code_system": "HS",
+        "section": "11375(b)(1)",
+        "citation": "Health and Safety Code § 11375(b)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11375.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11375.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARK L CAMPBELL, and date of filing 2010-10-19. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARK L CAMPBELL, date of filing, 2010-10-19, and charges in the case: 11375(b)(1) HS/M 11375(b)(1) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11375(b)(1) HS/M",
+      "title": "Health and Safety Code § 11375(b)(1)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11375(b)(1)",
+      "code_system": "HS",
+      "section": "11375(b)(1)",
+      "citation": "Health and Safety Code § 11375(b)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11375.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11375.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "11375(b)(1) HS/F",
+      "title": "Health and Safety Code § 11375(b)(1)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11375(b)(1)",
+      "code_system": "HS",
+      "section": "11375(b)(1)",
+      "citation": "Health and Safety Code § 11375(b)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11375.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11375.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:42:16.111Z",
+  "portal_case_id": "3657564",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10031037",
+      "defendant": "MARK L CAMPBELL",
+      "filed_date": "2010-10-19"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3657564"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.270334+00:00"
 }

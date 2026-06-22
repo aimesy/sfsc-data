@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:44:25.748Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:35:13.266Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11025450",
   "criminal_case_number": "11025450",
@@ -24,11 +24,82 @@
       "name": "MANUEL I MALDONADO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MANUEL I MALDONADO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-22T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 10-06-11/987,2/BAIL:10000/CONTD: PREHEARING CONFERENCE, PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-05T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3 ISS CPROB PROB 3 Y PJ 15D/CTS 15/WS/VF1/MPROBFINE/SECFEE40/ICNA/OLLECT/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-10-05 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2011-10-05",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-10-05 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2011-10-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-09-22 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2011-09-22",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "QIANA WASHINGTON",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3688516",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-22T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 10-06-11/987,2/BAIL:10000/CONTD: PREHEARING CONFERENCE, PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-09-22T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 10-06-11/987,2/BAIL:10000/CONTD: PREHEARING CONFERENCE, PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-05T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3 ISS CPROB PROB 3 Y PJ 15D/CTS 15/WS/VF1/MPROBFINE/SECFEE40/ICNA/OLLECT/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-10-05T09:15:00.000Z",
+      "description": "/TWS/CH3 ISS CPROB PROB 3 Y PJ 15D/CTS 15/WS/VF1/MPROBFINE/SECFEE40/ICNA/OLLECT/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-10-05T09:00:00.000Z",
+      "description": "/CAL PRELIMINARY HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11025450",
-    "portal_case_id": "",
+    "portal_case_id": "3688516",
     "display_case_number": "CRI-11025450",
     "defendant": "MANUEL I MALDONADO",
     "filed_date": "2011-09-22",
@@ -59,12 +171,119 @@
       "defendant": "MANUEL I MALDONADO",
       "filed_date": "2011-09-22"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F 11364(a) HS/M 11350(b) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11364(a) HS/M",
+        "title": "Health and Safety Code § 11364(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11364(a)",
+        "code_system": "HS",
+        "section": "11364(a)",
+        "citation": "Health and Safety Code § 11364(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "11350(b) HS/M",
+        "title": "Health and Safety Code § 11350(b)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(b)",
+        "code_system": "HS",
+        "section": "11350(b)",
+        "citation": "Health and Safety Code § 11350(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MANUEL I MALDONADO, and date of filing 2011-09-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MANUEL I MALDONADO, date of filing, 2011-09-22, and charges in the case: 11350(a) HS/F 11364(a) HS/M 11350(b) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11364(a) HS/M",
+      "title": "Health and Safety Code § 11364(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11364(a)",
+      "code_system": "HS",
+      "section": "11364(a)",
+      "citation": "Health and Safety Code § 11364(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "11350(b) HS/M",
+      "title": "Health and Safety Code § 11350(b)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(b)",
+      "code_system": "HS",
+      "section": "11350(b)",
+      "citation": "Health and Safety Code § 11350(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:35:13.949Z",
+  "portal_case_id": "3688516",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11025450",
+      "defendant": "MANUEL I MALDONADO",
+      "filed_date": "2011-09-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3688516"
+  }
 }

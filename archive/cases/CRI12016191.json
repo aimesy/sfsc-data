@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:07:30.321Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:30:27.120Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12016191",
   "criminal_case_number": "12016191",
@@ -24,11 +24,59 @@
       "name": "FRANCISCO RIVERA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "FRANCISCO RIVERA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-06-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET HEARING ON PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455REIN/DEF:IS ORDERED TO SERVE 8 DAYS/CTS:8/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-06-26T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD POST COMM SERV SUPERVISION/NB/SHER/CONTD TO BE SET, DOP OR DAW/CONTD:TO SET REVOKE HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-06-29 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 28",
+      "__index": 0,
+      "court_date": "2012-06-29",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 28",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-06-26 11:30 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2012-06-26",
+      "hearing_time": "11:30 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ERIC QUANDT",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3713617",
+  "docket_entries": [
+    {
+      "filedDate": "2012-06-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET HEARING ON PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455REIN/DEF:IS ORDERED TO SERVE 8 DAYS/CTS:8/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-06-29T09:00:00.000Z",
+      "description": "/CAL:TO SET HEARING ON PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455REIN/DEF:IS ORDERED TO SERVE 8 DAYS/CTS:8/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-06-26T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD POST COMM SERV SUPERVISION/NB/SHER/CONTD TO BE SET, DOP OR DAW/CONTD:TO SET REVOKE HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-06-26T11:30:00.000Z",
+      "description": "/CAL:APD POST COMM SERV SUPERVISION/NB/SHER/CONTD TO BE SET, DOP OR DAW/CONTD:TO SET REVOKE HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12016191",
-    "portal_case_id": "",
+    "portal_case_id": "3713617",
     "display_case_number": "CRI-12016191",
     "defendant": "FRANCISCO RIVERA",
     "filed_date": "2012-06-26",
@@ -59,12 +128,67 @@
       "defendant": "FRANCISCO RIVERA",
       "filed_date": "2012-06-26"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, FRANCISCO RIVERA, and date of filing 2012-06-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, FRANCISCO RIVERA, date of filing, 2012-06-26, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:30:27.774Z",
+  "portal_case_id": "3713617",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12016191",
+      "defendant": "FRANCISCO RIVERA",
+      "filed_date": "2012-06-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3713617"
+  }
 }

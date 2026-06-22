@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:20:32.377Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:39:12.039Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10019888",
   "criminal_case_number": "10019888",
@@ -24,19 +24,89 @@
       "name": "RICKARD D ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RICKARD D ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-07-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-TRIAL CONFERENCE/NTW/CTORD:THAT THE DEFENDANT'S NEW STIPULATED/LD:08-12-10/VD:JURY TRIAL OF 07-23-10/CONTD:PRE-TRIAL CONFERENCE ON 07-26-10/DOP/CONTD:JURY TRIAL ON 07-30-10/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-06T09:00:00.000Z",
+      "docketEntryComment": "/TEXT DEFT ENT NG PLEA(S) & DEN OF ALLEG/TEXT CONFL CNSL APPTD/X THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:JASON NELSON/FAWC/DEFTARR1/BAIL:5000/NTW/LD:FOR TRIAL IS 08-05-10/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-TRIAL CONFERENCE/MO138572:2437915/VD:JURY TRIAL OF 07-30-10/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-07-26 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2010-07-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-07-13 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2010-07-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-07-06 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2010-07-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JASON NELSON",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "290(b) PC/M 290.012(a) PC/M 290.015(a) PC/M",
+    "filed_date": "2010-07-06",
+    "defendant": "RICKARD D ANDERSON",
+    "searched_key": "ANDERSON/RI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/10019888.json",
     "searched_last_name": "ANDERSON",
     "searched_first_prefix": "RI",
-    "charges": "290(b) PC/M 290.012(a) PC/M 290.015(a) PC/M",
     "row": {
       "DEFENDANTNAME": "RICKARD D ANDERSON",
       "CASENUMBER": "CRI-10019888",
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3647156",
+  "docket_entries": [
+    {
+      "filedDate": "2010-07-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-TRIAL CONFERENCE/NTW/CTORD:THAT THE DEFENDANT'S NEW STIPULATED/LD:08-12-10/VD:JURY TRIAL OF 07-23-10/CONTD:PRE-TRIAL CONFERENCE ON 07-26-10/DOP/CONTD:JURY TRIAL ON 07-30-10/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-07-13T09:00:00.000Z",
+      "description": "/CAL:PRE-TRIAL CONFERENCE/NTW/CTORD:THAT THE DEFENDANT'S NEW STIPULATED/LD:08-12-10/VD:JURY TRIAL OF 07-23-10/CONTD:PRE-TRIAL CONFERENCE ON 07-26-10/DOP/CONTD:JURY TRIAL ON 07-30-10/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-06T09:00:00.000Z",
+      "docketEntryComment": "/TEXT DEFT ENT NG PLEA(S) & DEN OF ALLEG/TEXT CONFL CNSL APPTD/X THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:JASON NELSON/FAWC/DEFTARR1/BAIL:5000/NTW/LD:FOR TRIAL IS 08-05-10/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-07-06T09:00:00.000Z",
+      "description": "/TEXT DEFT ENT NG PLEA(S) & DEN OF ALLEG/TEXT CONFL CNSL APPTD/X THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:JASON NELSON/FAWC/DEFTARR1/BAIL:5000/NTW/LD:FOR TRIAL IS 08-05-10/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-TRIAL CONFERENCE/MO138572:2437915/VD:JURY TRIAL OF 07-30-10/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-07-26T09:00:00.000Z",
+      "description": "/CAL:PRE-TRIAL CONFERENCE/MO138572:2437915/VD:JURY TRIAL OF 07-30-10/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10019888",
-    "portal_case_id": "",
+    "portal_case_id": "3647156",
     "display_case_number": "CRI-10019888",
     "defendant": "RICKARD D ANDERSON",
     "filed_date": "2010-07-06",
@@ -60,11 +161,110 @@
       "filed_date": "2010-07-06"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "290(b) PC/M 290.012(a) PC/M 290.015(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "290(b) PC/M",
+        "title": "Penal Code § 290(b)",
+        "title_source": "programmatic_citation",
+        "code": "PC 290(b)",
+        "code_system": "PC",
+        "section": "290(b)",
+        "citation": "Penal Code § 290(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "290.012(a) PC/M",
+        "title": "Penal Code § 290.012(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 290.012(a)",
+        "code_system": "PC",
+        "section": "290.012(a)",
+        "citation": "Penal Code § 290.012(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.012.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.012.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "290.015(a) PC/M",
+        "title": "Penal Code § 290.015(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 290.015(a)",
+        "code_system": "PC",
+        "section": "290.015(a)",
+        "citation": "Penal Code § 290.015(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.015.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.015.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RICKARD D ANDERSON, and date of filing 2010-07-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RICKARD D ANDERSON, date of filing, 2010-07-06, and charges in the case: 290(b) PC/M 290.012(a) PC/M 290.015(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "290(b) PC/M",
+      "title": "Penal Code § 290(b)",
+      "title_source": "programmatic_citation",
+      "code": "PC 290(b)",
+      "code_system": "PC",
+      "section": "290(b)",
+      "citation": "Penal Code § 290(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "290.012(a) PC/M",
+      "title": "Penal Code § 290.012(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 290.012(a)",
+      "code_system": "PC",
+      "section": "290.012(a)",
+      "citation": "Penal Code § 290.012(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.012.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.012.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "290.015(a) PC/M",
+      "title": "Penal Code § 290.015(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 290.015(a)",
+      "code_system": "PC",
+      "section": "290.015(a)",
+      "citation": "Penal Code § 290.015(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.015.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.015.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:39:12.681Z",
+  "portal_case_id": "3647156",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10019888",
+      "defendant": "RICKARD D ANDERSON",
+      "filed_date": "2010-07-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3647156"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.377013+00:00"
 }

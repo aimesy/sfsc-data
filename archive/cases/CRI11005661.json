@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:51:09.082Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:32:25.541Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11005661",
   "criminal_case_number": "11005661",
@@ -24,11 +24,68 @@
       "name": "YI ZHANG WU",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "YI ZHANG WU",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-03-15T15:17:00.000Z",
+      "docketEntryComment": "PD'S MOT TO CONTINUE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL & PD MOTION TO CONTINUE/X:TRIAL VACATED AND LAST DAY IS SET ASIDE/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/BE/X:TERMINATION OF PROTECTIVE ORDER SIGNED AND FILED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-24T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:OR IS DENIED/NTW/BAIL:15,000/LD:03-28-11/SAORD/SA1:JIELI TAN/SA2:1010BUCHANAN STREET, E, SAN FRANCISCO/CONTD:JURY TRIAL/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-03-18 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "2011-03-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-02-24 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 1,
+      "court_date": "2011-02-24",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "COREY FARRIS",
+      "type": "Public Defender"
+    },
+    {
+      "name": "NICOLE CROSBY",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +102,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3669609",
+  "docket_entries": [
+    {
+      "filedDate": "2011-03-15T15:17:00.000Z",
+      "docketEntryComment": "PD'S MOT TO CONTINUE FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-03-15T15:17:00.000Z",
+      "description": "PD'S MOT TO CONTINUE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL & PD MOTION TO CONTINUE/X:TRIAL VACATED AND LAST DAY IS SET ASIDE/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/BE/X:TERMINATION OF PROTECTIVE ORDER SIGNED AND FILED/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-03-18T09:00:00.000Z",
+      "description": "/CAL:TRIAL & PD MOTION TO CONTINUE/X:TRIAL VACATED AND LAST DAY IS SET ASIDE/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/BE/X:TERMINATION OF PROTECTIVE ORDER SIGNED AND FILED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-24T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:OR IS DENIED/NTW/BAIL:15,000/LD:03-28-11/SAORD/SA1:JIELI TAN/SA2:1010BUCHANAN STREET, E, SAN FRANCISCO/CONTD:JURY TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-02-24T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:OR IS DENIED/NTW/BAIL:15,000/LD:03-28-11/SAORD/SA1:JIELI TAN/SA2:1010BUCHANAN STREET, E, SAN FRANCISCO/CONTD:JURY TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11005661",
-    "portal_case_id": "",
+    "portal_case_id": "3669609",
     "display_case_number": "CRI-11005661",
     "defendant": "YI ZHANG WU",
     "filed_date": "2011-02-24",
@@ -59,12 +147,68 @@
       "defendant": "YI ZHANG WU",
       "filed_date": "2011-02-24"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "243(e)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "243(e)(1) PC/M",
+        "title": "Penal Code § 243(e)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 243(e)(1)",
+        "code_system": "PC",
+        "section": "243(e)(1)",
+        "citation": "Penal Code § 243(e)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, YI ZHANG WU, and date of filing 2011-02-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, YI ZHANG WU, date of filing, 2011-02-24, and charges in the case: 243(e)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "243(e)(1) PC/M",
+      "title": "Penal Code § 243(e)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 243(e)(1)",
+      "code_system": "PC",
+      "section": "243(e)(1)",
+      "citation": "Penal Code § 243(e)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:32:26.140Z",
+  "portal_case_id": "3669609",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11005661",
+      "defendant": "YI ZHANG WU",
+      "filed_date": "2011-02-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3669609"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T15:41:57.394Z"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:55:10.828Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:30:39.874Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12013630",
   "criminal_case_number": "12013630",
@@ -24,19 +24,107 @@
       "name": "BRENDAN ALBERTO COLE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BRENDAN ALBERTO COLE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-06-05T13:45:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL AND 4011,6 REPORT/25    CPC 4011,6 REPORT/TEXT:CRT ORDS DEFTEXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:06-12-12/CONTD:RECEIPT OF 4011,6PC REPORT, SCM REPORT AND TRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-05-23T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAGINMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:06-22-12/987,2/BAIL:20,000/X:COUNSEL RESERVES THE RIGHT TO DEMURRER,/25    CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:06-05-12/CONTD:PRETRIAL CONFERENCE & RECEIPT OF 4011,6PC REPORT/CONTD:TRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-06-13T09:00:00.000Z",
+      "docketEntryComment": "/MO138583/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-06-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL/LD: 06-22-12/CONTD: TRIAL, POSSIBLE DISPOSITION/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-06-13 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2012-06-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-06-12 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2012-06-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-06-05 1:45 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2012-06-05",
+      "hearing_time": "1:45 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-05-23 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2012-05-23",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ERIN HANEY",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "166(a)(4) PC/M 602(m) PC/M",
+    "filed_date": "2012-05-23",
+    "defendant": "BRENDAN ALBERTO COLE",
+    "searched_key": "COLE/BR",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/12013630.json",
     "searched_last_name": "COLE",
     "searched_first_prefix": "BR",
-    "charges": "166(a)(4) PC/M 602(m) PC/M",
     "row": {
       "DEFENDANTNAME": "BRENDAN ALBERTO COLE",
       "CASENUMBER": "CRI-12013630",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3711079",
+  "docket_entries": [
+    {
+      "filedDate": "2012-06-05T13:45:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL AND 4011,6 REPORT/25    CPC 4011,6 REPORT/TEXT:CRT ORDS DEFTEXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:06-12-12/CONTD:RECEIPT OF 4011,6PC REPORT, SCM REPORT AND TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-06-05T13:45:00.000Z",
+      "description": "/CAL:PRETRIAL AND 4011,6 REPORT/25 CPC 4011,6 REPORT/TEXT:CRT ORDS DEFTEXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:06-12-12/CONTD:RECEIPT OF 4011,6PC REPORT, SCM REPORT AND TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-05-23T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAGINMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:06-22-12/987,2/BAIL:20,000/X:COUNSEL RESERVES THE RIGHT TO DEMURRER,/25    CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:06-05-12/CONTD:PRETRIAL CONFERENCE & RECEIPT OF 4011,6PC REPORT/CONTD:TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-05-23T13:30:00.000Z",
+      "description": "/CAL:ARRAGINMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:06-22-12/987,2/BAIL:20,000/X:COUNSEL RESERVES THE RIGHT TO DEMURRER,/25 CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:06-05-12/CONTD:PRETRIAL CONFERENCE & RECEIPT OF 4011,6PC REPORT/CONTD:TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-06-13T09:00:00.000Z",
+      "docketEntryComment": "/MO138583/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-06-13T09:00:00.000Z",
+      "description": "/MO138583/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-06-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL/LD: 06-22-12/CONTD: TRIAL, POSSIBLE DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-06-12T09:00:00.000Z",
+      "description": "/CAL: TRIAL/LD: 06-22-12/CONTD: TRIAL, POSSIBLE DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12013630",
-    "portal_case_id": "",
+    "portal_case_id": "3711079",
     "display_case_number": "CRI-12013630",
     "defendant": "BRENDAN ALBERTO COLE",
     "filed_date": "2012-05-23",
@@ -59,12 +188,94 @@
       "defendant": "BRENDAN ALBERTO COLE",
       "filed_date": "2012-05-23"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 4011",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "166(a)(4) PC/M 602(m) PC/M",
+    "charge_rows": [
+      {
+        "raw": "166(a)(4) PC/M",
+        "title": "Penal Code § 166(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 166(a)(4)",
+        "code_system": "PC",
+        "section": "166(a)(4)",
+        "citation": "Penal Code § 166(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "602(m) PC/M",
+        "title": "Penal Code § 602(m)",
+        "title_source": "programmatic_citation",
+        "code": "PC 602(m)",
+        "code_system": "PC",
+        "section": "602(m)",
+        "citation": "Penal Code § 602(m)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BRENDAN ALBERTO COLE, and date of filing 2012-05-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BRENDAN ALBERTO COLE, date of filing, 2012-05-23, and charges in the case: 166(a)(4) PC/M 602(m) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "166(a)(4) PC/M",
+      "title": "Penal Code § 166(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 166(a)(4)",
+      "code_system": "PC",
+      "section": "166(a)(4)",
+      "citation": "Penal Code § 166(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "602(m) PC/M",
+      "title": "Penal Code § 602(m)",
+      "title_source": "programmatic_citation",
+      "code": "PC 602(m)",
+      "code_system": "PC",
+      "section": "602(m)",
+      "citation": "Penal Code § 602(m)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:30:40.665Z",
+  "portal_case_id": "3711079",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12013630",
+      "defendant": "BRENDAN ALBERTO COLE",
+      "filed_date": "2012-05-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3711079"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:26.047124+00:00"
 }

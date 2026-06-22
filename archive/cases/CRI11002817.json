@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:54:43.640Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:34:07.989Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11002817",
   "criminal_case_number": "11002817",
@@ -24,11 +24,59 @@
       "name": "MICHAEL FORD",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL FORD",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-02-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/MO PC 1385:INTEREST OF JUSTICE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-31T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 04-01-11/0R/CONTD: PREHEARING CONFERENCE /DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-02-14 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2011-02-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-01-31 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2011-01-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KLEIGH HATHAWAY",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3666922",
+  "docket_entries": [
+    {
+      "filedDate": "2011-02-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/MO PC 1385:INTEREST OF JUSTICE/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-02-14T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/MO PC 1385:INTEREST OF JUSTICE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-31T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 04-01-11/0R/CONTD: PREHEARING CONFERENCE /DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-01-31T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 04-01-11/0R/CONTD: PREHEARING CONFERENCE /DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11002817",
-    "portal_case_id": "",
+    "portal_case_id": "3666922",
     "display_case_number": "CRI-11002817",
     "defendant": "MICHAEL FORD",
     "filed_date": "2011-01-31",
@@ -59,12 +128,67 @@
       "defendant": "MICHAEL FORD",
       "filed_date": "2011-01-31"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL FORD, and date of filing 2011-01-31. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL FORD, date of filing, 2011-01-31, and charges in the case: 11350(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:34:08.648Z",
+  "portal_case_id": "3666922",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11002817",
+      "defendant": "MICHAEL FORD",
+      "filed_date": "2011-01-31"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3666922"
+  }
 }

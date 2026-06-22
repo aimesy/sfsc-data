@@ -2,7 +2,7 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:49:02.820Z",
+  "captured_at": "2026-06-22T03:34:12.301Z",
   "status": "unavailable",
   "case_type": "criminal",
   "case_number": "CRI11003439",
@@ -24,6 +24,11 @@
       "name": "RICHARD BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RICHARD BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
   "roa": [],
@@ -34,9 +39,13 @@
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "166(a)(4) PC/M",
+    "filed_date": "2011-02-02",
+    "defendant": "RICHARD BROWN",
+    "searched_key": "BROWN/RI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/11003439.json",
     "searched_last_name": "BROWN",
     "searched_first_prefix": "RI",
-    "charges": "166(a)(4) PC/M",
     "row": {
       "DEFENDANTNAME": "RICHARD BROWN",
       "CASENUMBER": "CRI-11003439",
@@ -45,11 +54,11 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3667510",
   "docket_entries": [],
   "criminal": {
     "raw_case_number": "11003439",
-    "portal_case_id": "",
+    "portal_case_id": "3667510",
     "display_case_number": "CRI-11003439",
     "defendant": "RICHARD BROWN",
     "filed_date": "2011-02-02",
@@ -60,11 +69,58 @@
       "filed_date": "2011-02-02"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "166(a)(4) PC/M",
+    "charge_rows": [
+      {
+        "raw": "166(a)(4) PC/M",
+        "title": "Penal Code § 166(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 166(a)(4)",
+        "code_system": "PC",
+        "section": "166(a)(4)",
+        "citation": "Penal Code § 166(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RICHARD BROWN, and date of filing 2011-02-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RICHARD BROWN, date of filing, 2011-02-02, and charges in the case: 166(a)(4) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "166(a)(4) PC/M",
+      "title": "Penal Code § 166(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 166(a)(4)",
+      "code_system": "PC",
+      "section": "166(a)(4)",
+      "citation": "Penal Code § 166(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:34:12.956Z",
+  "portal_case_id": "3667510",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11003439",
+      "defendant": "RICHARD BROWN",
+      "filed_date": "2011-02-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3667510"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.421904+00:00"
 }

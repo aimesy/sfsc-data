@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:25:04.353Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:42:21.503Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10034916",
   "criminal_case_number": "10034916",
@@ -24,10 +24,29 @@
       "name": "ISRAEL E HERNANDEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ISRAEL E HERNANDEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
   "roa": [],
-  "calendar": [],
+  "calendar": [
+    {
+      "startTime": "2010-11-29 9:00 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2010-11-29",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -42,14 +61,18 @@
       "CASENUMBER": "CRI-10034916",
       "FILEDDATE": "2010-11-25 23:07:00",
       "CHARGES": "23152(a) VC/M"
-    }
+    },
+    "filed_date": "2010-11-25",
+    "defendant": "ISRAEL E HERNANDEZ",
+    "searched_key": "HERNANDEZ/IS",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/10034916.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3661176",
   "docket_entries": [],
   "criminal": {
     "raw_case_number": "10034916",
-    "portal_case_id": "",
+    "portal_case_id": "3661176",
     "display_case_number": "CRI-10034916",
     "defendant": "ISRAEL E HERNANDEZ",
     "filed_date": "2010-11-25",
@@ -60,11 +83,58 @@
       "filed_date": "2010-11-25"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "23152(a) VC/M",
+    "charge_rows": [
+      {
+        "raw": "23152(a) VC/M",
+        "title": "Vehicle Code § 23152(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(a)",
+        "code_system": "VC",
+        "section": "23152(a)",
+        "citation": "Vehicle Code § 23152(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ISRAEL E HERNANDEZ, and date of filing 2010-11-25. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ISRAEL E HERNANDEZ, date of filing, 2010-11-25, and charges in the case: 23152(a) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(a) VC/M",
+      "title": "Vehicle Code § 23152(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(a)",
+      "code_system": "VC",
+      "section": "23152(a)",
+      "citation": "Vehicle Code § 23152(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:42:22.109Z",
+  "portal_case_id": "3661176",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10034916",
+      "defendant": "ISRAEL E HERNANDEZ",
+      "filed_date": "2010-11-25"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3661176"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:29.795487+00:00"
 }

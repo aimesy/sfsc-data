@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:52:01.744Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:34:23.496Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11022058",
   "criminal_case_number": "11022058",
@@ -24,11 +24,118 @@
       "name": "MAURICE A MCGEE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MAURICE A MCGEE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-10-24T11:57:00.000Z",
+      "docketEntryComment": "FELONY PLEA TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-11-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING PURSUANT TO PC1170(H)/AJW/DNACOMP/CH1:CJ 2Y/X:MIDDLE TERM/CTS:76/4019HALF/STATES/X:DEFENDANT SHALL PAY RESTITUTION TO VICTIM KELLYE, MITCHELL IN THE AMOUNT OF $425 PLUS A 15% ADMINISTRATIVE FEE,/X:ORDERFOR RESTITUTION & ABSTRACT OF JUDGMENT FILED IN OPEN COURT,/SECFEE40/ICNA/VF4:200/COLLECT/X:DEFENDANT IS SENTENCED PURSUANT TO PC1170(H),/SA1:RICHARD MITCHELL/SA1:KELLY MITCHELL/SA2:519 OXFORD STREET, SAN FRANCISCO, CA/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPO/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OFG/DEFT ADV RTS:003/FNDG/CO:NEGOTIATED DISPOSITION/DISM3/PRES:11-01-11/CONTD:PSR & SENTENCING/DOP/ARBUCKLE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-08-19T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 09-02-11/987,2/BAIL:250,000/CONTD: PRELIMINARY HEARING/DOP/SA1:RICHARD MITCHELL AND KELLY MITCHELL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPO/CONT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING /STWPX/CONTD:TO SET OR DISPO/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-11-01 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2011-11-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-10-03 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2011-10-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-09-20 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2011-09-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-09-01 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2011-09-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-08-19 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 4,
+      "court_date": "2011-08-19",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CARMEN AGUIRRE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +152,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3685197",
+  "docket_entries": [
+    {
+      "filedDate": "2011-10-24T11:57:00.000Z",
+      "docketEntryComment": "FELONY PLEA TX FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-10-24T11:57:00.000Z",
+      "description": "FELONY PLEA TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-11-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING PURSUANT TO PC1170(H)/AJW/DNACOMP/CH1:CJ 2Y/X:MIDDLE TERM/CTS:76/4019HALF/STATES/X:DEFENDANT SHALL PAY RESTITUTION TO VICTIM KELLYE, MITCHELL IN THE AMOUNT OF $425 PLUS A 15% ADMINISTRATIVE FEE,/X:ORDERFOR RESTITUTION & ABSTRACT OF JUDGMENT FILED IN OPEN COURT,/SECFEE40/ICNA/VF4:200/COLLECT/X:DEFENDANT IS SENTENCED PURSUANT TO PC1170(H),/SA1:RICHARD MITCHELL/SA1:KELLY MITCHELL/SA2:519 OXFORD STREET, SAN FRANCISCO, CA/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-11-01T09:00:00.000Z",
+      "description": "/CAL:SENTENCING PURSUANT TO PC1170(H)/AJW/DNACOMP/CH1:CJ 2Y/X:MIDDLE TERM/CTS:76/4019HALF/STATES/X:DEFENDANT SHALL PAY RESTITUTION TO VICTIM KELLYE, MITCHELL IN THE AMOUNT OF $425 PLUS A 15% ADMINISTRATIVE FEE,/X:ORDERFOR RESTITUTION & ABSTRACT OF JUDGMENT FILED IN OPEN COURT,/SECFEE40/ICNA/VF4:200/COLLECT/X:DEFENDANT IS SENTENCED PURSUANT TO PC1170(H),/SA1:RICHARD MITCHELL/SA1:KELLY MITCHELL/SA2:519 OXFORD STREET, SAN FRANCISCO, CA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPO/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OFG/DEFT ADV RTS:003/FNDG/CO:NEGOTIATED DISPOSITION/DISM3/PRES:11-01-11/CONTD:PSR & SENTENCING/DOP/ARBUCKLE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-10-03T09:00:00.000Z",
+      "description": "/CAL:TO SET OR DISPO/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OFG/DEFT ADV RTS:003/FNDG/CO:NEGOTIATED DISPOSITION/DISM3/PRES:11-01-11/CONTD:PSR & SENTENCING/DOP/ARBUCKLE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-08-19T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 09-02-11/987,2/BAIL:250,000/CONTD: PRELIMINARY HEARING/DOP/SA1:RICHARD MITCHELL AND KELLY MITCHELL/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-08-19T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 09-02-11/987,2/BAIL:250,000/CONTD: PRELIMINARY HEARING/DOP/SA1:RICHARD MITCHELL AND KELLY MITCHELL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPO/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-09-20T09:00:00.000Z",
+      "description": "/CAL:TO SET OR DISPO/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING /STWPX/CONTD:TO SET OR DISPO/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-09-01T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING /STWPX/CONTD:TO SET OR DISPO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11022058",
-    "portal_case_id": "",
+    "portal_case_id": "3685197",
     "display_case_number": "CRI-11022058",
     "defendant": "MAURICE A MCGEE",
     "filed_date": "2011-08-18",
@@ -59,12 +227,119 @@
       "defendant": "MAURICE A MCGEE",
       "filed_date": "2011-08-18"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC1170(H)",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "211 PC/F 459 PC/F 496(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "211 PC/F",
+        "title": "Penal Code § 211",
+        "title_source": "programmatic_citation",
+        "code": "PC 211",
+        "code_system": "PC",
+        "section": "211",
+        "citation": "Penal Code § 211",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "496(a) PC/F",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MAURICE A MCGEE, and date of filing 2011-08-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MAURICE A MCGEE, date of filing, 2011-08-18, and charges in the case: 211 PC/F 459 PC/F 496(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "211 PC/F",
+      "title": "Penal Code § 211",
+      "title_source": "programmatic_citation",
+      "code": "PC 211",
+      "code_system": "PC",
+      "section": "211",
+      "citation": "Penal Code § 211",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "496(a) PC/F",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:34:24.619Z",
+  "portal_case_id": "3685197",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11022058",
+      "defendant": "MAURICE A MCGEE",
+      "filed_date": "2011-08-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3685197"
+  }
 }

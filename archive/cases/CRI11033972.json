@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:22:34.336Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:35:50.249Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11033972",
   "criminal_case_number": "11033972",
@@ -24,19 +24,94 @@
       "name": "CHRIS EDWARDS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHRIS EDWARDS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-26T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH4 ISS CPROB PROB 3 Y PJ 3D /CTS  3 /VF2 120/X PER STIPULATION DEFEE MAY FILE A MOTION FOR TERMINATION OF PROBATION AFTER 18 MONTHS SUCCESSFULPROBATION/WS/BE/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-26T09:00:00.000Z",
+      "docketEntryComment": "/AMEND TO ADD COUNT 4/TEXT DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEAF NL/DEFT ADV NL: 4/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-12-29T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/ STWPX/987,2/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-01-26 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2012-01-26",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-01-26 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2012-01-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-12-29 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2011-12-29",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEPHEN ROSEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11350(a) HS/F 148(a)(1) PC/M 14601.1(a) VC/M 653f(d) PC/M",
+    "filed_date": "2011-12-27",
+    "defendant": "CHRIS EDWARDS",
+    "searched_key": "EDWARDS/CH",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/11033972.json",
     "searched_last_name": "EDWARDS",
     "searched_first_prefix": "CH",
-    "charges": "11350(a) HS/F 148(a)(1) PC/M 14601.1(a) VC/M 653f(d) PC/M",
     "row": {
       "DEFENDANTNAME": "CHRIS EDWARDS",
       "CASENUMBER": "CRI-11033972",
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3696919",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-26T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH4 ISS CPROB PROB 3 Y PJ 3D /CTS  3 /VF2 120/X PER STIPULATION DEFEE MAY FILE A MOTION FOR TERMINATION OF PROBATION AFTER 18 MONTHS SUCCESSFULPROBATION/WS/BE/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-01-26T09:15:00.000Z",
+      "description": "/TWS/CH4 ISS CPROB PROB 3 Y PJ 3D /CTS 3 /VF2 120/X PER STIPULATION DEFEE MAY FILE A MOTION FOR TERMINATION OF PROBATION AFTER 18 MONTHS SUCCESSFULPROBATION/WS/BE/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-26T09:00:00.000Z",
+      "docketEntryComment": "/AMEND TO ADD COUNT 4/TEXT DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEAF NL/DEFT ADV NL: 4/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-01-26T09:00:00.000Z",
+      "description": "/AMEND TO ADD COUNT 4/TEXT DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEAF NL/DEFT ADV NL: 4/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-12-29T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/ STWPX/987,2/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-12-29T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/ STWPX/987,2/CONTD: PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11033972",
-    "portal_case_id": "",
+    "portal_case_id": "3696919",
     "display_case_number": "CRI-11033972",
     "defendant": "CHRIS EDWARDS",
     "filed_date": "2011-12-27",
@@ -59,12 +175,146 @@
       "defendant": "CHRIS EDWARDS",
       "filed_date": "2011-12-27"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F 148(a)(1) PC/M 14601.1(a) VC/M 653f(d) PC/M",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "148(a)(1) PC/M",
+        "title": "Penal Code § 148(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148(a)(1)",
+        "code_system": "PC",
+        "section": "148(a)(1)",
+        "citation": "Penal Code § 148(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "14601.1(a) VC/M",
+        "title": "Vehicle Code § 14601.1(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 14601.1(a)",
+        "code_system": "VC",
+        "section": "14601.1(a)",
+        "citation": "Vehicle Code § 14601.1(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "653f(d) PC/M",
+        "title": "Penal Code § 653f(d)",
+        "title_source": "programmatic_citation",
+        "code": "PC 653f(d)",
+        "code_system": "PC",
+        "section": "653f(d)",
+        "citation": "Penal Code § 653f(d)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHRIS EDWARDS, and date of filing 2011-12-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHRIS EDWARDS, date of filing, 2011-12-27, and charges in the case: 11350(a) HS/F 148(a)(1) PC/M 14601.1(a) VC/M 653f(d) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "148(a)(1) PC/M",
+      "title": "Penal Code § 148(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148(a)(1)",
+      "code_system": "PC",
+      "section": "148(a)(1)",
+      "citation": "Penal Code § 148(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "14601.1(a) VC/M",
+      "title": "Vehicle Code § 14601.1(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 14601.1(a)",
+      "code_system": "VC",
+      "section": "14601.1(a)",
+      "citation": "Vehicle Code § 14601.1(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "653f(d) PC/M",
+      "title": "Penal Code § 653f(d)",
+      "title_source": "programmatic_citation",
+      "code": "PC 653f(d)",
+      "code_system": "PC",
+      "section": "653f(d)",
+      "citation": "Penal Code § 653f(d)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:35:50.866Z",
+  "portal_case_id": "3696919",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11033972",
+      "defendant": "CHRIS EDWARDS",
+      "filed_date": "2011-12-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3696919"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.350820+00:00"
 }

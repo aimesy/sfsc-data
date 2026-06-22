@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:57:32.815Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:34:23.936Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11007015",
   "criminal_case_number": "11007015",
@@ -24,19 +24,89 @@
       "name": "ANDREW R COOK",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANDREW R COOK",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-03-11T13:30:00.000Z",
+      "docketEntryComment": "/4011,5/NP/PD/BAIL:10000/X:BAIL SET AT $10,000 WITHOUT PREJUDICE,/CONTD I&A P&C DOP/CONTD:INSTRUCTIONS AND ARRAIGNMENT AND PLEA AND JOIN CASES IN D-10 #11001096/TWA/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-04-01T09:15:00.000Z",
+      "docketEntryComment": "/MO PC 1385:IN LIGHT OF PLEA IN 11001096 /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-14T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:10,000/GTWM/987,2/CONTD:TRAILING MISDEMEANOR/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-04-01 9:15 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2011-04-01",
+      "hearing_time": "9:15 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-14 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2011-03-14",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-11 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2011-03-11",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "EMILY DAHM",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "242 PC/M",
+    "filed_date": "2011-03-11",
+    "defendant": "ANDREW R COOK",
+    "searched_key": "COOK/AN",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/11007015.json",
     "searched_last_name": "COOK",
     "searched_first_prefix": "AN",
-    "charges": "242 PC/M",
     "row": {
       "DEFENDANTNAME": "ANDREW R COOK",
       "CASENUMBER": "CRI-11007015",
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3670877",
+  "docket_entries": [
+    {
+      "filedDate": "2011-03-11T13:30:00.000Z",
+      "docketEntryComment": "/4011,5/NP/PD/BAIL:10000/X:BAIL SET AT $10,000 WITHOUT PREJUDICE,/CONTD I&A P&C DOP/CONTD:INSTRUCTIONS AND ARRAIGNMENT AND PLEA AND JOIN CASES IN D-10 #11001096/TWA/DOPC/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-03-11T13:30:00.000Z",
+      "description": "/4011,5/NP/PD/BAIL:10000/X:BAIL SET AT $10,000 WITHOUT PREJUDICE,/CONTD I&A P&C DOP/CONTD:INSTRUCTIONS AND ARRAIGNMENT AND PLEA AND JOIN CASES IN D-10 #11001096/TWA/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-04-01T09:15:00.000Z",
+      "docketEntryComment": "/MO PC 1385:IN LIGHT OF PLEA IN 11001096 /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-04-01T09:15:00.000Z",
+      "description": "/MO PC 1385:IN LIGHT OF PLEA IN 11001096 /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-14T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:10,000/GTWM/987,2/CONTD:TRAILING MISDEMEANOR/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-03-14T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:10,000/GTWM/987,2/CONTD:TRAILING MISDEMEANOR/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11007015",
-    "portal_case_id": "",
+    "portal_case_id": "3670877",
     "display_case_number": "CRI-11007015",
     "defendant": "ANDREW R COOK",
     "filed_date": "2011-03-11",
@@ -59,12 +160,68 @@
       "defendant": "ANDREW R COOK",
       "filed_date": "2011-03-11"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "242 PC/M",
+    "charge_rows": [
+      {
+        "raw": "242 PC/M",
+        "title": "Penal Code § 242",
+        "title_source": "programmatic_citation",
+        "code": "PC 242",
+        "code_system": "PC",
+        "section": "242",
+        "citation": "Penal Code § 242",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANDREW R COOK, and date of filing 2011-03-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANDREW R COOK, date of filing, 2011-03-11, and charges in the case: 242 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "242 PC/M",
+      "title": "Penal Code § 242",
+      "title_source": "programmatic_citation",
+      "code": "PC 242",
+      "code_system": "PC",
+      "section": "242",
+      "citation": "Penal Code § 242",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:34:24.614Z",
+  "portal_case_id": "3670877",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11007015",
+      "defendant": "ANDREW R COOK",
+      "filed_date": "2011-03-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3670877"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:20.990552+00:00"
 }

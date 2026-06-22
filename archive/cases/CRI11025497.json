@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:46:31.760Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:36:48.648Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11025497",
   "criminal_case_number": "11025497",
@@ -24,19 +24,114 @@
       "name": "ANGELA JACKSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANGELA JACKSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-10-12T15:00:00.000Z",
+      "docketEntryComment": "DA OPP DFT MTS FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-29T16:25:00.000Z",
+      "docketEntryComment": "DEFT'S MTS EVID FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-26T10:32:00.000Z",
+      "docketEntryComment": "DEFT'S MOT FOR RELEASE ON OR/BAIL REDUC FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL AND MOTION TO SUPPRESS WITH OPPOSITION/X:SUBPOENAED RECORDS ARERELEASED TO THE DEFENSE FOR INSPECTION AND COPYING,/MO PC 1385:TO PROCEEDWITH INFRACTION MATTER/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-22T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:5000/NTW//LD:FOR TRIAL IS 10-24-11/25    CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP: 09-28-11/CONTD: RECEIPT OF 4011,6PC REPORT, PTC, BAIL HEARING & TO JOIN 2452330/CONTD: JURY TRIAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-29T08:30:00.000Z",
+      "docketEntryComment": "/CAL:FURTHER CJC ASSESSMENT /CONTD:JURY TRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-28T13:45:00.000Z",
+      "docketEntryComment": "/CAL: PRETRIAL/OR/X: CASE PRETRIED AND TRIAL DATE CONFIRMED/LD: 10-24-11",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-28T08:30:00.000Z",
+      "docketEntryComment": "/CAL:TBH 2452330; ALSO IN D17 THIS DATE 1345/CONTD:FURTHER CJC ASSESSMENT/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-10-14 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2011-10-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-09-28 1:45 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2011-09-28",
+      "hearing_time": "1:45 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-09-22 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2011-09-22",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JENNIFER NORYKO",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "243(b) PC/M",
+    "filed_date": "2011-09-22",
+    "defendant": "ANGELA JACKSON",
+    "searched_key": "JACKSON/AN",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/11025497.json",
     "searched_last_name": "JACKSON",
     "searched_first_prefix": "AN",
-    "charges": "243(b) PC/M",
     "row": {
       "DEFENDANTNAME": "ANGELA JACKSON",
       "CASENUMBER": "CRI-11025497",
@@ -45,11 +140,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3688563",
+  "docket_entries": [
+    {
+      "filedDate": "2011-10-12T15:00:00.000Z",
+      "docketEntryComment": "DA OPP DFT MTS FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-10-12T15:00:00.000Z",
+      "description": "DA OPP DFT MTS FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-29T16:25:00.000Z",
+      "docketEntryComment": "DEFT'S MTS EVID FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-09-29T16:25:00.000Z",
+      "description": "DEFT'S MTS EVID FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-26T10:32:00.000Z",
+      "docketEntryComment": "DEFT'S MOT FOR RELEASE ON OR/BAIL REDUC FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-09-26T10:32:00.000Z",
+      "description": "DEFT'S MOT FOR RELEASE ON OR/BAIL REDUC FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL AND MOTION TO SUPPRESS WITH OPPOSITION/X:SUBPOENAED RECORDS ARERELEASED TO THE DEFENSE FOR INSPECTION AND COPYING,/MO PC 1385:TO PROCEEDWITH INFRACTION MATTER/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-10-14T09:00:00.000Z",
+      "description": "/CAL:TRIAL AND MOTION TO SUPPRESS WITH OPPOSITION/X:SUBPOENAED RECORDS ARERELEASED TO THE DEFENSE FOR INSPECTION AND COPYING,/MO PC 1385:TO PROCEEDWITH INFRACTION MATTER/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-22T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:5000/NTW//LD:FOR TRIAL IS 10-24-11/25    CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP: 09-28-11/CONTD: RECEIPT OF 4011,6PC REPORT, PTC, BAIL HEARING & TO JOIN 2452330/CONTD: JURY TRIAL/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-09-22T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:5000/NTW//LD:FOR TRIAL IS 10-24-11/25 CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP: 09-28-11/CONTD: RECEIPT OF 4011,6PC REPORT, PTC, BAIL HEARING & TO JOIN 2452330/CONTD: JURY TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-29T08:30:00.000Z",
+      "docketEntryComment": "/CAL:FURTHER CJC ASSESSMENT /CONTD:JURY TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-09-29T08:30:00.000Z",
+      "description": "/CAL:FURTHER CJC ASSESSMENT /CONTD:JURY TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-28T13:45:00.000Z",
+      "docketEntryComment": "/CAL: PRETRIAL/OR/X: CASE PRETRIED AND TRIAL DATE CONFIRMED/LD: 10-24-11",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2011-09-28T13:45:00.000Z",
+      "description": "/CAL: PRETRIAL/OR/X: CASE PRETRIED AND TRIAL DATE CONFIRMED/LD: 10-24-11",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-28T08:30:00.000Z",
+      "docketEntryComment": "/CAL:TBH 2452330; ALSO IN D17 THIS DATE 1345/CONTD:FURTHER CJC ASSESSMENT/DOP/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2011-09-28T08:30:00.000Z",
+      "description": "/CAL:TBH 2452330; ALSO IN D17 THIS DATE 1345/CONTD:FURTHER CJC ASSESSMENT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11025497",
-    "portal_case_id": "",
+    "portal_case_id": "3688563",
     "display_case_number": "CRI-11025497",
     "defendant": "ANGELA JACKSON",
     "filed_date": "2011-09-22",
@@ -59,12 +235,76 @@
       "defendant": "ANGELA JACKSON",
       "filed_date": "2011-09-22"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 4011",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "243(b) PC/M",
+    "charge_rows": [
+      {
+        "raw": "243(b) PC/M",
+        "title": "Penal Code § 243(b)",
+        "title_source": "programmatic_citation",
+        "code": "PC 243(b)",
+        "code_system": "PC",
+        "section": "243(b)",
+        "citation": "Penal Code § 243(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANGELA JACKSON, and date of filing 2011-09-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANGELA JACKSON, date of filing, 2011-09-22, and charges in the case: 243(b) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "243(b) PC/M",
+      "title": "Penal Code § 243(b)",
+      "title_source": "programmatic_citation",
+      "code": "PC 243(b)",
+      "code_system": "PC",
+      "section": "243(b)",
+      "citation": "Penal Code § 243(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:36:49.274Z",
+  "portal_case_id": "3688563",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11025497",
+      "defendant": "ANGELA JACKSON",
+      "filed_date": "2011-09-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3688563"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.741777+00:00"
 }

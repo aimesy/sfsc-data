@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:19:08.115Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:33:13.891Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11000817",
   "criminal_case_number": "11000817",
@@ -24,9 +24,20 @@
       "name": "MICHAEL D BENNETT",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL D BENNETT",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -34,9 +45,13 @@
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "8888888",
+    "filed_date": "2011-01-08",
+    "defendant": "MICHAEL D BENNETT",
+    "searched_key": "BENNETT/MI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/11000817.json",
     "searched_last_name": "BENNETT",
     "searched_first_prefix": "MI",
-    "charges": "8888888",
     "row": {
       "DEFENDANTNAME": "MICHAEL D BENNETT",
       "CASENUMBER": "CRI-11000817",
@@ -45,11 +60,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3665072",
+  "docket_entries": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-11-17T18:00:00.000Z",
+      "description": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11000817",
-    "portal_case_id": "",
+    "portal_case_id": "3665072",
     "display_case_number": "CRI-11000817",
     "defendant": "MICHAEL D BENNETT",
     "filed_date": "2011-01-08",
@@ -60,11 +86,42 @@
       "filed_date": "2011-01-08"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL D BENNETT, and date of filing 2011-01-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL D BENNETT, date of filing, 2011-01-08, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:33:14.550Z",
+  "portal_case_id": "3665072",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11000817",
+      "defendant": "MICHAEL D BENNETT",
+      "filed_date": "2011-01-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3665072"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.079551+00:00"
 }

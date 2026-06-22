@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:53:39.177Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:36:03.407Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11029322",
   "criminal_case_number": "11029322",
@@ -24,19 +24,125 @@
       "name": "TOMAS GONZALEZ GARCIA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TOMAS GONZALEZ GARCIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-10-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL APD MOTION TO MODIFY PROBATION/DAWT/X DEFENSE COUNSEL'S APPEARANCE IWAIVED FOR CALLING OF THIS MATTER,/MO GRTD/CTORD:FORMAL PROBATION IS MODIFIED TO INFORMAL (COURT) PROBATION/PROB EXT:01-29-15/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-30T09:30:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:PROB 3 Y:PJ15D /CTS:2/SWAPD:01-31-12 /PF460NEW/VF2:120/DDP2/LVAL/LCHEM/1463ALC/ADPRS:12-10-07/654:2/PROBREVFN/PC/COA:40/ICNA/EMAT/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 101 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SET FORTH HEREIN/X:23593(A) VC ADMONITION GIVEN,/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-30T09:15:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/TEXT:DEFT ADV & PER WVS CONST & CITZ RTS ENT PLEA OF G/DEFTADV RTS: 1 & 2/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/TEXT:TRANS TO DEPT 14/TRANS 14:FORTHWITH FOR PLE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/DOPC/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-10-25 9:00 AM",
+      "hearingType": "Motion to Modify Supervised Probation",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2013-10-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Modify Supervised Probation",
+      "hearing_type": "Motion to Modify Supervised Probation",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-01-30 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 1,
+      "court_date": "2012-01-30",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-01-30 9:15 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 2,
+      "court_date": "2012-01-30",
+      "hearing_time": "9:15 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-01-30 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2012-01-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-01-05 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2012-01-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MICHAEL STASKUS",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "23152(a) VC/M 23152(b) VC/M",
+    "filed_date": "2011-12-06",
+    "defendant": "TOMAS GONZALEZ GARCIA",
+    "searched_key": "GARCIA/TO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/11029322.json",
     "searched_last_name": "GARCIA",
     "searched_first_prefix": "TO",
-    "charges": "23152(a) VC/M 23152(b) VC/M",
     "row": {
       "DEFENDANTNAME": "TOMAS GONZALEZ GARCIA",
       "CASENUMBER": "CRI-11029322",
@@ -45,11 +151,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3692335",
+  "docket_entries": [
+    {
+      "filedDate": "2013-10-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL APD MOTION TO MODIFY PROBATION/DAWT/X DEFENSE COUNSEL'S APPEARANCE IWAIVED FOR CALLING OF THIS MATTER,/MO GRTD/CTORD:FORMAL PROBATION IS MODIFIED TO INFORMAL (COURT) PROBATION/PROB EXT:01-29-15/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-10-25T09:00:00.000Z",
+      "description": "/CAL APD MOTION TO MODIFY PROBATION/DAWT/X DEFENSE COUNSEL'S APPEARANCE IWAIVED FOR CALLING OF THIS MATTER,/MO GRTD/CTORD:FORMAL PROBATION IS MODIFIED TO INFORMAL (COURT) PROBATION/PROB EXT:01-29-15/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-30T09:30:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:PROB 3 Y:PJ15D /CTS:2/SWAPD:01-31-12 /PF460NEW/VF2:120/DDP2/LVAL/LCHEM/1463ALC/ADPRS:12-10-07/654:2/PROBREVFN/PC/COA:40/ICNA/EMAT/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 101 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SET FORTH HEREIN/X:23593(A) VC ADMONITION GIVEN,/DISM3/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-01-30T09:30:00.000Z",
+      "description": "/TWS/CH1:ISS:PROB 3 Y:PJ15D /CTS:2/SWAPD:01-31-12 /PF460NEW/VF2:120/DDP2/LVAL/LCHEM/1463ALC/ADPRS:12-10-07/654:2/PROBREVFN/PC/COA:40/ICNA/EMAT/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 101 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SET FORTH HEREIN/X:23593(A) VC ADMONITION GIVEN,/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-30T09:15:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/TEXT:DEFT ADV & PER WVS CONST & CITZ RTS ENT PLEA OF G/DEFTADV RTS: 1 & 2/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-01-30T09:15:00.000Z",
+      "description": "/CAL:PRETRIAL/TEXT:DEFT ADV & PER WVS CONST & CITZ RTS ENT PLEA OF G/DEFTADV RTS: 1 & 2/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/TEXT:TRANS TO DEPT 14/TRANS 14:FORTHWITH FOR PLE",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-01-30T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/TEXT:TRANS TO DEPT 14/TRANS 14:FORTHWITH FOR PLE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/DOPC/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2012-01-05T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/NP/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11029322",
-    "portal_case_id": "",
+    "portal_case_id": "3692335",
     "display_case_number": "CRI-11029322",
     "defendant": "TOMAS GONZALEZ GARCIA",
     "filed_date": "2011-12-06",
@@ -60,11 +217,84 @@
       "filed_date": "2011-12-06"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "23152(a) VC/M 23152(b) VC/M",
+    "charge_rows": [
+      {
+        "raw": "23152(a) VC/M",
+        "title": "Vehicle Code § 23152(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(a)",
+        "code_system": "VC",
+        "section": "23152(a)",
+        "citation": "Vehicle Code § 23152(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23152(b) VC/M",
+        "title": "Vehicle Code § 23152(b)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(b)",
+        "code_system": "VC",
+        "section": "23152(b)",
+        "citation": "Vehicle Code § 23152(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TOMAS GONZALEZ GARCIA, and date of filing 2011-12-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TOMAS GONZALEZ GARCIA, date of filing, 2011-12-06, and charges in the case: 23152(a) VC/M 23152(b) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(a) VC/M",
+      "title": "Vehicle Code § 23152(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(a)",
+      "code_system": "VC",
+      "section": "23152(a)",
+      "citation": "Vehicle Code § 23152(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23152(b) VC/M",
+      "title": "Vehicle Code § 23152(b)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(b)",
+      "code_system": "VC",
+      "section": "23152(b)",
+      "citation": "Vehicle Code § 23152(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:36:04.078Z",
+  "portal_case_id": "3692335",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11029322",
+      "defendant": "TOMAS GONZALEZ GARCIA",
+      "filed_date": "2011-12-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3692335"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.327204+00:00"
 }

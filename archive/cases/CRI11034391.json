@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:26:59.662Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:30:02.240Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11034391",
   "criminal_case_number": "11034391",
@@ -24,10 +24,68 @@
       "name": "DONALD NELSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DONALD NELSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2018-04-09T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-04T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-04-09T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 04/09/18, CASE DISMISSED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-02-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:01-04-12/BWI/BAIL:20,000/BWNUM:2ND",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-04T09:00:00.000Z",
+      "docketEntryComment": "/FTA/BWI/BAIL:10000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-02-14 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2012-02-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-01-04 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2012-01-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +103,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3697331",
+  "docket_entries": [
+    {
+      "filedDate": "2018-04-09T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-04-09T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-04T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-01-04T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-04-09T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 04/09/18, CASE DISMISSED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-04-09T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 04/09/18, CASE DISMISSED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-02-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:01-04-12/BWI/BAIL:20,000/BWNUM:2ND",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-02-14T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:01-04-12/BWI/BAIL:20,000/BWNUM:2ND",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-04T09:00:00.000Z",
+      "docketEntryComment": "/FTA/BWI/BAIL:10000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2012-01-04T09:00:00.000Z",
+      "description": "/FTA/BWI/BAIL:10000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11034391",
-    "portal_case_id": "",
+    "portal_case_id": "3697331",
     "display_case_number": "CRI-11034391",
     "defendant": "DONALD NELSON",
     "filed_date": "2012-01-04",
@@ -60,11 +169,57 @@
       "filed_date": "2012-01-04"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "484(a) PC/M 484(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "484(a) PC/M",
+        "title": "Penal Code § 484(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 484(a)",
+        "code_system": "PC",
+        "section": "484(a)",
+        "citation": "Penal Code § 484(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DONALD NELSON, and date of filing 2012-01-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DONALD NELSON, date of filing, 2012-01-04, and charges in the case: 484(a) PC/M 484(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "484(a) PC/M",
+      "title": "Penal Code § 484(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 484(a)",
+      "code_system": "PC",
+      "section": "484(a)",
+      "citation": "Penal Code § 484(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:30:02.922Z",
+  "portal_case_id": "3697331",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11034391",
+      "defendant": "DONALD NELSON",
+      "filed_date": "2012-01-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3697331"
+  }
 }

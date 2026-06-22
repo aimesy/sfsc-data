@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:03:46.020Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:39:52.405Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11031097",
   "criminal_case_number": "11031097",
@@ -24,19 +24,53 @@
       "name": "DAVID R GONZALEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID R GONZALEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-11-22T13:30:00.000Z",
+      "docketEntryComment": "/COWD/MO PC 1385:THE PEOPLE WITHDRAW THE COMPLAINT IN THIS CASE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-11-22 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2011-11-22",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARIA LOPEZ",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "12020(a)(1) PC/F 12020(a)(1) PC/F 12020(a)(1) PC/F",
+    "filed_date": "2011-11-22",
+    "defendant": "DAVID R GONZALEZ",
+    "searched_key": "GONZALEZ/DA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/11031097.json",
     "searched_last_name": "GONZALEZ",
     "searched_first_prefix": "DA",
-    "charges": "12020(a)(1) PC/F 12020(a)(1) PC/F 12020(a)(1) PC/F",
     "row": {
       "DEFENDANTNAME": "DAVID R GONZALEZ",
       "CASENUMBER": "CRI-11031097",
@@ -45,11 +79,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3694095",
+  "docket_entries": [
+    {
+      "filedDate": "2011-11-22T13:30:00.000Z",
+      "docketEntryComment": "/COWD/MO PC 1385:THE PEOPLE WITHDRAW THE COMPLAINT IN THIS CASE/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-11-22T13:30:00.000Z",
+      "description": "/COWD/MO PC 1385:THE PEOPLE WITHDRAW THE COMPLAINT IN THIS CASE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11031097",
-    "portal_case_id": "",
+    "portal_case_id": "3694095",
     "display_case_number": "CRI-11031097",
     "defendant": "DAVID R GONZALEZ",
     "filed_date": "2011-11-22",
@@ -59,12 +104,68 @@
       "defendant": "DAVID R GONZALEZ",
       "filed_date": "2011-11-22"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "12020(a)(1) PC/F 12020(a)(1) PC/F 12020(a)(1) PC/F",
+    "charge_rows": [
+      {
+        "raw": "12020(a)(1) PC/F",
+        "title": "Penal Code § 12020(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 12020(a)(1)",
+        "code_system": "PC",
+        "section": "12020(a)(1)",
+        "citation": "Penal Code § 12020(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12020.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12020.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID R GONZALEZ, and date of filing 2011-11-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID R GONZALEZ, date of filing, 2011-11-22, and charges in the case: 12020(a)(1) PC/F 12020(a)(1) PC/F 12020(a)(1) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "12020(a)(1) PC/F",
+      "title": "Penal Code § 12020(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 12020(a)(1)",
+      "code_system": "PC",
+      "section": "12020(a)(1)",
+      "citation": "Penal Code § 12020(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12020.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12020.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:39:53.122Z",
+  "portal_case_id": "3694095",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11031097",
+      "defendant": "DAVID R GONZALEZ",
+      "filed_date": "2011-11-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3694095"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.156406+00:00"
 }

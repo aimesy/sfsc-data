@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:26:08.224Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:43:26.082Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10020779",
   "criminal_case_number": "10020779",
@@ -24,19 +24,147 @@
       "name": "ALOPE DOE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALOPE DOE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-07-15T13:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-14T08:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-06-05T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-09T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-10T08:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT/BWSTAY:07-14-10/OR/NTW/LD:10-12-10/CTORD:DEFENDANTTO ABIDE BY STAY AWAY ORDER IN EFFECT/SA1:RAYMOND SMITH(STAY AWAY 10 YARDSFROM)/SA2:241 6TH STREET(STAY OFF 3RD FLOOR OF), SAN FRANCISCO/SAORD2/SAORD/CONTD TO BE SET, DOP OR DAW/CONTD:TO SET/DOP(ORDAWF)/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-14T13:30:00.000Z",
+      "docketEntryComment": "CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCEBY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO07-15-10,/X: BAIL SET AT $8,000/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-13T08:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT/OR/CTORD:AS A CONDITION OF OWN RECOGNIZANCE THAT THE DEFENDANT MUST PARTICIPATE IN THE COMMUNITY JUSTICE CENTER (CJC) PROGRAM ANDMUST ABIDE BY THE STAYAWAY ORDER FROM MR, SMITH/CONT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: MARY MALLEN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:FOR TRIAL IS 08-11-10/987,2/BAIL:10,000/CONTD:CJC ASSESSMENT & BAIL REVIEW/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-06-05T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 06/05/17, CASE DISMISSED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-14T08:30:00.000Z",
+      "docketEntryComment": "/CAL:TO SET JURY TRIAL/FTA/OREVKD/BWI/BAIL:5,000/X:1 OF 1 BENCH WARRANT ISSUED THIS DATE,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/X:DEFENDANT NOT PRESENT/X:MARY MALLEN, ATTORNEYPRESENT/BWDNC/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-15T13:30:00.000Z",
+      "docketEntryComment": "/BWLIFT:07-14-10/FTA/OREVKD/BWI/BAIL:10,000/BWNUM:1ST/BWRET:M08/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-09-09 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2010-09-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-07-15 1:30 PM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2010-07-15",
+      "hearing_time": "1:30 PM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-07-14 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2010-07-14",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-07-12 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 3,
+      "court_date": "2010-07-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARY MALLEN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "166(a)(4) PC/M",
+    "filed_date": "2010-07-12",
+    "defendant": "ALOPE DOE",
+    "searched_key": "DOE/AL",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/10020779.json",
     "searched_last_name": "DOE",
     "searched_first_prefix": "AL",
-    "charges": "166(a)(4) PC/M",
     "row": {
       "DEFENDANTNAME": "ALOPE DOE",
       "CASENUMBER": "CRI-10020779",
@@ -45,11 +173,132 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3647985",
+  "docket_entries": [
+    {
+      "filedDate": "2010-07-15T13:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-07-15T13:30:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-14T08:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-09-14T08:30:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-06-05T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-06-05T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-09T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-09-09T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-10T08:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT/BWSTAY:07-14-10/OR/NTW/LD:10-12-10/CTORD:DEFENDANTTO ABIDE BY STAY AWAY ORDER IN EFFECT/SA1:RAYMOND SMITH(STAY AWAY 10 YARDSFROM)/SA2:241 6TH STREET(STAY OFF 3RD FLOOR OF), SAN FRANCISCO/SAORD2/SAORD/CONTD TO BE SET, DOP OR DAW/CONTD:TO SET/DOP(ORDAWF)/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-09-10T08:30:00.000Z",
+      "description": "/CAL:CJC ASSESSMENT/BWSTAY:07-14-10/OR/NTW/LD:10-12-10/CTORD:DEFENDANTTO ABIDE BY STAY AWAY ORDER IN EFFECT/SA1:RAYMOND SMITH(STAY AWAY 10 YARDSFROM)/SA2:241 6TH STREET(STAY OFF 3RD FLOOR OF), SAN FRANCISCO/SAORD2/SAORD/CONTD TO BE SET, DOP OR DAW/CONTD:TO SET/DOP(ORDAWF)/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-14T13:30:00.000Z",
+      "docketEntryComment": "CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCEBY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO07-15-10,/X: BAIL SET AT $8,000/DOPC/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-07-14T13:30:00.000Z",
+      "description": "CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCEBY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO07-15-10,/X: BAIL SET AT $8,000/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-13T08:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT/OR/CTORD:AS A CONDITION OF OWN RECOGNIZANCE THAT THE DEFENDANT MUST PARTICIPATE IN THE COMMUNITY JUSTICE CENTER (CJC) PROGRAM ANDMUST ABIDE BY THE STAYAWAY ORDER FROM MR, SMITH/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2010-07-13T08:30:00.000Z",
+      "description": "/CAL:CJC ASSESSMENT/OR/CTORD:AS A CONDITION OF OWN RECOGNIZANCE THAT THE DEFENDANT MUST PARTICIPATE IN THE COMMUNITY JUSTICE CENTER (CJC) PROGRAM ANDMUST ABIDE BY THE STAYAWAY ORDER FROM MR, SMITH/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: MARY MALLEN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:FOR TRIAL IS 08-11-10/987,2/BAIL:10,000/CONTD:CJC ASSESSMENT & BAIL REVIEW/DOP/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2010-07-12T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: MARY MALLEN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:FOR TRIAL IS 08-11-10/987,2/BAIL:10,000/CONTD:CJC ASSESSMENT & BAIL REVIEW/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-06-05T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 06/05/17, CASE DISMISSED",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "2017-06-05T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 06/05/17, CASE DISMISSED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-14T08:30:00.000Z",
+      "docketEntryComment": "/CAL:TO SET JURY TRIAL/FTA/OREVKD/BWI/BAIL:5,000/X:1 OF 1 BENCH WARRANT ISSUED THIS DATE,/",
+      "otherSubmitter": "",
+      "__index": 9,
+      "date_filed": "2010-09-14T08:30:00.000Z",
+      "description": "/CAL:TO SET JURY TRIAL/FTA/OREVKD/BWI/BAIL:5,000/X:1 OF 1 BENCH WARRANT ISSUED THIS DATE,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/X:DEFENDANT NOT PRESENT/X:MARY MALLEN, ATTORNEYPRESENT/BWDNC/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 10,
+      "date_filed": "2010-09-09T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/X:DEFENDANT NOT PRESENT/X:MARY MALLEN, ATTORNEYPRESENT/BWDNC/CONTD:PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-15T13:30:00.000Z",
+      "docketEntryComment": "/BWLIFT:07-14-10/FTA/OREVKD/BWI/BAIL:10,000/BWNUM:1ST/BWRET:M08/",
+      "otherSubmitter": "",
+      "__index": 11,
+      "date_filed": "2010-07-15T13:30:00.000Z",
+      "description": "/BWLIFT:07-14-10/FTA/OREVKD/BWI/BAIL:10,000/BWNUM:1ST/BWRET:M08/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10020779",
-    "portal_case_id": "",
+    "portal_case_id": "3647985",
     "display_case_number": "CRI-10020779",
     "defendant": "ALOPE DOE",
     "filed_date": "2010-07-12",
@@ -60,11 +309,58 @@
       "filed_date": "2010-07-12"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "166(a)(4) PC/M",
+    "charge_rows": [
+      {
+        "raw": "166(a)(4) PC/M",
+        "title": "Penal Code § 166(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 166(a)(4)",
+        "code_system": "PC",
+        "section": "166(a)(4)",
+        "citation": "Penal Code § 166(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALOPE DOE, and date of filing 2010-07-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALOPE DOE, date of filing, 2010-07-12, and charges in the case: 166(a)(4) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "166(a)(4) PC/M",
+      "title": "Penal Code § 166(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 166(a)(4)",
+      "code_system": "PC",
+      "section": "166(a)(4)",
+      "citation": "Penal Code § 166(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:43:26.844Z",
+  "portal_case_id": "3647985",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10020779",
+      "defendant": "ALOPE DOE",
+      "filed_date": "2010-07-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3647985"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.195260+00:00"
 }

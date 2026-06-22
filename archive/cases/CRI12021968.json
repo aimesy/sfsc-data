@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:10:32.018Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:31:52.952Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12021968",
   "criminal_case_number": "12021968",
@@ -24,19 +24,76 @@
       "name": "HERNANDO AGUILAR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "HERNANDO AGUILAR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-09-04T13:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-08-28T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTORD:SPANISH/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:RICHARD SHIKMAN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 10-29-12/987,2/OR/CONTD:CJC ASSESSMENT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-09-04T13:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT AND PTC/FTA/OREVKD/BWI/BAIL:30,000/NIGHTSERV/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-09-04 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2012-09-04",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-08-28 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2012-08-28",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "RICHARD SHIKMAN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11352(a) HS/F 11351.5 HS/F",
+    "filed_date": "2012-08-28",
+    "defendant": "HERNANDO AGUILAR",
+    "searched_key": "AGUILAR/HE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/12021968.json",
     "searched_last_name": "AGUILAR",
     "searched_first_prefix": "HE",
-    "charges": "11352(a) HS/F 11351.5 HS/F",
     "row": {
       "DEFENDANTNAME": "HERNANDO AGUILAR",
       "CASENUMBER": "CRI-12021968",
@@ -45,11 +102,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3719303",
+  "docket_entries": [
+    {
+      "filedDate": "2012-09-04T13:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-09-04T13:30:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-08-28T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTORD:SPANISH/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:RICHARD SHIKMAN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 10-29-12/987,2/OR/CONTD:CJC ASSESSMENT/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-08-28T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/INTORD:SPANISH/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:RICHARD SHIKMAN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 10-29-12/987,2/OR/CONTD:CJC ASSESSMENT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-09-04T13:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT AND PTC/FTA/OREVKD/BWI/BAIL:30,000/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-09-04T13:30:00.000Z",
+      "description": "/CAL:CJC ASSESSMENT AND PTC/FTA/OREVKD/BWI/BAIL:30,000/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12021968",
-    "portal_case_id": "",
+    "portal_case_id": "3719303",
     "display_case_number": "CRI-12021968",
     "defendant": "HERNANDO AGUILAR",
     "filed_date": "2012-08-28",
@@ -60,11 +148,84 @@
       "filed_date": "2012-08-28"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11352(a) HS/F 11351.5 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11352(a) HS/F",
+        "title": "Health and Safety Code § 11352(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11352(a)",
+        "code_system": "HS",
+        "section": "11352(a)",
+        "citation": "Health and Safety Code § 11352(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11351.5 HS/F",
+        "title": "Health and Safety Code § 11351.5",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351.5",
+        "code_system": "HS",
+        "section": "11351.5",
+        "citation": "Health and Safety Code § 11351.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, HERNANDO AGUILAR, and date of filing 2012-08-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, HERNANDO AGUILAR, date of filing, 2012-08-28, and charges in the case: 11352(a) HS/F 11351.5 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11352(a) HS/F",
+      "title": "Health and Safety Code § 11352(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11352(a)",
+      "code_system": "HS",
+      "section": "11352(a)",
+      "citation": "Health and Safety Code § 11352(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11351.5 HS/F",
+      "title": "Health and Safety Code § 11351.5",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351.5",
+      "code_system": "HS",
+      "section": "11351.5",
+      "citation": "Health and Safety Code § 11351.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:31:53.618Z",
+  "portal_case_id": "3719303",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12021968",
+      "defendant": "HERNANDO AGUILAR",
+      "filed_date": "2012-08-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3719303"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.466303+00:00"
 }

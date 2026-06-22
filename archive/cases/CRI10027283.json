@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:47:23.368Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:39:49.653Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10027283",
   "criminal_case_number": "10027283",
@@ -24,9 +24,20 @@
       "name": "JEROME A JOSEPH",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JEROME A JOSEPH",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -45,11 +56,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3654050",
+  "docket_entries": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-11-17T18:00:00.000Z",
+      "description": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10027283",
-    "portal_case_id": "",
+    "portal_case_id": "3654050",
     "display_case_number": "CRI-10027283",
     "defendant": "JEROME A JOSEPH",
     "filed_date": "2010-09-10",
@@ -60,11 +82,58 @@
       "filed_date": "2010-09-10"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "241(c) PC/M",
+    "charge_rows": [
+      {
+        "raw": "241(c) PC/M",
+        "title": "Penal Code § 241(c)",
+        "title_source": "programmatic_citation",
+        "code": "PC 241(c)",
+        "code_system": "PC",
+        "section": "241(c)",
+        "citation": "Penal Code § 241(c)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=241.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=241.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JEROME A JOSEPH, and date of filing 2010-09-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JEROME A JOSEPH, date of filing, 2010-09-10, and charges in the case: 241(c) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "241(c) PC/M",
+      "title": "Penal Code § 241(c)",
+      "title_source": "programmatic_citation",
+      "code": "PC 241(c)",
+      "code_system": "PC",
+      "section": "241(c)",
+      "citation": "Penal Code § 241(c)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=241.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=241.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:39:50.226Z",
+  "portal_case_id": "3654050",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10027283",
+      "defendant": "JEROME A JOSEPH",
+      "filed_date": "2010-09-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3654050"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:29:27.271Z"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:00:21.088Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:34:25.818Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11017350",
   "criminal_case_number": "11017350",
@@ -24,19 +24,53 @@
       "name": "ADAM GALEN CLARK",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ADAM GALEN CLARK",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-06-30T13:30:00.000Z",
+      "docketEntryComment": "/DEF:ENTERS HARVEY WAIVER, TRANSFERRING OUTSTANDING FINES, FEES, AND OTHERTERMS TO #2389114/MO138583/X:DA WILL PROCEED WITH MTR IN #2389114,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-06-30 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2011-06-30",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEVE OLMO",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "459 PC/F 666 PC/F",
+    "filed_date": "2011-06-30",
+    "defendant": "ADAM GALEN CLARK",
+    "searched_key": "CLARK/AD",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/11017350.json",
     "searched_last_name": "CLARK",
     "searched_first_prefix": "AD",
-    "charges": "459 PC/F 666 PC/F",
     "row": {
       "DEFENDANTNAME": "ADAM GALEN CLARK",
       "CASENUMBER": "CRI-11017350",
@@ -45,11 +79,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3680595",
+  "docket_entries": [
+    {
+      "filedDate": "2011-06-30T13:30:00.000Z",
+      "docketEntryComment": "/DEF:ENTERS HARVEY WAIVER, TRANSFERRING OUTSTANDING FINES, FEES, AND OTHERTERMS TO #2389114/MO138583/X:DA WILL PROCEED WITH MTR IN #2389114,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-06-30T13:30:00.000Z",
+      "description": "/DEF:ENTERS HARVEY WAIVER, TRANSFERRING OUTSTANDING FINES, FEES, AND OTHERTERMS TO #2389114/MO138583/X:DA WILL PROCEED WITH MTR IN #2389114,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11017350",
-    "portal_case_id": "",
+    "portal_case_id": "3680595",
     "display_case_number": "CRI-11017350",
     "defendant": "ADAM GALEN CLARK",
     "filed_date": "2011-06-30",
@@ -60,11 +105,84 @@
       "filed_date": "2011-06-30"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "459 PC/F 666 PC/F",
+    "charge_rows": [
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "666 PC/F",
+        "title": "Penal Code § 666",
+        "title_source": "programmatic_citation",
+        "code": "PC 666",
+        "code_system": "PC",
+        "section": "666",
+        "citation": "Penal Code § 666",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ADAM GALEN CLARK, and date of filing 2011-06-30. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ADAM GALEN CLARK, date of filing, 2011-06-30, and charges in the case: 459 PC/F 666 PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "666 PC/F",
+      "title": "Penal Code § 666",
+      "title_source": "programmatic_citation",
+      "code": "PC 666",
+      "code_system": "PC",
+      "section": "666",
+      "citation": "Penal Code § 666",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:34:26.456Z",
+  "portal_case_id": "3680595",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11017350",
+      "defendant": "ADAM GALEN CLARK",
+      "filed_date": "2011-06-30"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3680595"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.561445+00:00"
 }

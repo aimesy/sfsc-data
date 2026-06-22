@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:13:41.183Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:33:06.895Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11001040",
   "criminal_case_number": "11001040",
@@ -24,19 +24,53 @@
       "name": "MINNIE BLACK",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MINNIE BLACK",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-01-13T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 991/MO GRTD /GRTD:AS TO COUNT(S):  1 /",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-01-13 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2011-01-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "COREY FARRIS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "12020(a)(4) PC/M",
+    "filed_date": "2011-01-13",
+    "defendant": "MINNIE BLACK",
+    "searched_key": "BLACK/MI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/11001040.json",
     "searched_last_name": "BLACK",
     "searched_first_prefix": "MI",
-    "charges": "12020(a)(4) PC/M",
     "row": {
       "DEFENDANTNAME": "MINNIE BLACK",
       "CASENUMBER": "CRI-11001040",
@@ -45,11 +79,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3665275",
+  "docket_entries": [
+    {
+      "filedDate": "2011-01-13T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 991/MO GRTD /GRTD:AS TO COUNT(S):  1 /",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-01-13T09:00:00.000Z",
+      "description": "/MO PC 991/MO GRTD /GRTD:AS TO COUNT(S): 1 /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11001040",
-    "portal_case_id": "",
+    "portal_case_id": "3665275",
     "display_case_number": "CRI-11001040",
     "defendant": "MINNIE BLACK",
     "filed_date": "2011-01-13",
@@ -59,12 +104,68 @@
       "defendant": "MINNIE BLACK",
       "filed_date": "2011-01-13"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 991",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "12020(a)(4) PC/M",
+    "charge_rows": [
+      {
+        "raw": "12020(a)(4) PC/M",
+        "title": "Penal Code § 12020(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 12020(a)(4)",
+        "code_system": "PC",
+        "section": "12020(a)(4)",
+        "citation": "Penal Code § 12020(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12020.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12020.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MINNIE BLACK, and date of filing 2011-01-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MINNIE BLACK, date of filing, 2011-01-13, and charges in the case: 12020(a)(4) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "12020(a)(4) PC/M",
+      "title": "Penal Code § 12020(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 12020(a)(4)",
+      "code_system": "PC",
+      "section": "12020(a)(4)",
+      "citation": "Penal Code § 12020(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12020.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12020.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:33:07.638Z",
+  "portal_case_id": "3665275",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11001040",
+      "defendant": "MINNIE BLACK",
+      "filed_date": "2011-01-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3665275"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.141757+00:00"
 }

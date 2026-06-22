@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:41:05.623Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:38:49.924Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10018156",
   "criminal_case_number": "10018156",
@@ -24,19 +24,99 @@
       "name": "JOSE H CAMPOS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSE H CAMPOS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-08-17T15:54:00.000Z",
+      "docketEntryComment": "JUDGMENT AND SENTENCE TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-23T14:31:00.000Z",
+      "docketEntryComment": "FELONY PLEA TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/AJW/CH1:SP 2 Y:L /X:DEFENDANT TO RECEIVE CREDIT FOR TIMESERVED  56   DAYS COUNTY JAIL, 56 SAGE FOR A TOTAL OF 112 DAYS,/4019HALF/STATES/DNACOMP/SECFEE/ICNA/VF5:200/PAR/CDC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/X:PEOPLE AMEND THE COMPLAINT TO ADD A COUNT 3,HS 11351 AS A FELONY,/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:3/ARBUCKLE/FNDG/CO:NEGOTIATED DISPOSITION/PRES:08-09-10/REMA/CONTD:SENTENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/BAIL:35,000/SAORD/SA2:MISSION STREET BETWEEN 16TH & 17TH STREETS/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-08-09 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2010-08-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-07-14 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2010-07-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-17 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2010-06-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEPHANIE WARGO",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11352(a) HS/F 11351.5 HS/F 11351 HS/F",
+    "filed_date": "2010-06-17",
+    "defendant": "JOSE H CAMPOS",
+    "searched_key": "CAMPOS/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/10018156.json",
     "searched_last_name": "CAMPOS",
     "searched_first_prefix": "JO",
-    "charges": "11352(a) HS/F 11351.5 HS/F 11351 HS/F",
     "row": {
       "DEFENDANTNAME": "JOSE H CAMPOS",
       "CASENUMBER": "CRI-10018156",
@@ -45,11 +125,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3645516",
+  "docket_entries": [
+    {
+      "filedDate": "2010-08-17T15:54:00.000Z",
+      "docketEntryComment": "JUDGMENT AND SENTENCE TX FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-08-17T15:54:00.000Z",
+      "description": "JUDGMENT AND SENTENCE TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-23T14:31:00.000Z",
+      "docketEntryComment": "FELONY PLEA TX FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-07-23T14:31:00.000Z",
+      "description": "FELONY PLEA TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/AJW/CH1:SP 2 Y:L /X:DEFENDANT TO RECEIVE CREDIT FOR TIMESERVED  56   DAYS COUNTY JAIL, 56 SAGE FOR A TOTAL OF 112 DAYS,/4019HALF/STATES/DNACOMP/SECFEE/ICNA/VF5:200/PAR/CDC/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-08-09T09:00:00.000Z",
+      "description": "/CAL:SENTENCING/AJW/CH1:SP 2 Y:L /X:DEFENDANT TO RECEIVE CREDIT FOR TIMESERVED 56 DAYS COUNTY JAIL, 56 SAGE FOR A TOTAL OF 112 DAYS,/4019HALF/STATES/DNACOMP/SECFEE/ICNA/VF5:200/PAR/CDC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/X:PEOPLE AMEND THE COMPLAINT TO ADD A COUNT 3,HS 11351 AS A FELONY,/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:3/ARBUCKLE/FNDG/CO:NEGOTIATED DISPOSITION/PRES:08-09-10/REMA/CONTD:SENTENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-07-14T09:00:00.000Z",
+      "description": "/CAL:PRE-HEARING CONFERENCE/X:PEOPLE AMEND THE COMPLAINT TO ADD A COUNT 3,HS 11351 AS A FELONY,/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:3/ARBUCKLE/FNDG/CO:NEGOTIATED DISPOSITION/PRES:08-09-10/REMA/CONTD:SENTENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/BAIL:35,000/SAORD/SA2:MISSION STREET BETWEEN 16TH & 17TH STREETS/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-06-17T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/BAIL:35,000/SAORD/SA2:MISSION STREET BETWEEN 16TH & 17TH STREETS/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10018156",
-    "portal_case_id": "",
+    "portal_case_id": "3645516",
     "display_case_number": "CRI-10018156",
     "defendant": "JOSE H CAMPOS",
     "filed_date": "2010-06-17",
@@ -59,12 +190,130 @@
       "defendant": "JOSE H CAMPOS",
       "filed_date": "2010-06-17"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "HS 11351",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "HS 11351",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "11352(a) HS/F 11351.5 HS/F 11351 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11352(a) HS/F",
+        "title": "Health and Safety Code § 11352(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11352(a)",
+        "code_system": "HS",
+        "section": "11352(a)",
+        "citation": "Health and Safety Code § 11352(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11351.5 HS/F",
+        "title": "Health and Safety Code § 11351.5",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351.5",
+        "code_system": "HS",
+        "section": "11351.5",
+        "citation": "Health and Safety Code § 11351.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11351 HS/F",
+        "title": "Health and Safety Code § 11351",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351",
+        "code_system": "HS",
+        "section": "11351",
+        "citation": "Health and Safety Code § 11351",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSE H CAMPOS, and date of filing 2010-06-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSE H CAMPOS, date of filing, 2010-06-17, and charges in the case: 11352(a) HS/F 11351.5 HS/F 11351 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11352(a) HS/F",
+      "title": "Health and Safety Code § 11352(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11352(a)",
+      "code_system": "HS",
+      "section": "11352(a)",
+      "citation": "Health and Safety Code § 11352(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11351.5 HS/F",
+      "title": "Health and Safety Code § 11351.5",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351.5",
+      "code_system": "HS",
+      "section": "11351.5",
+      "citation": "Health and Safety Code § 11351.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11351 HS/F",
+      "title": "Health and Safety Code § 11351",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351",
+      "code_system": "HS",
+      "section": "11351",
+      "citation": "Health and Safety Code § 11351",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:38:50.545Z",
+  "portal_case_id": "3645516",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10018156",
+      "defendant": "JOSE H CAMPOS",
+      "filed_date": "2010-06-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3645516"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.546087+00:00"
 }

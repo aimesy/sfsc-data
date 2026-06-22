@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:47:37.514Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:48:14.328Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10028474",
   "criminal_case_number": "10028474",
@@ -24,11 +24,74 @@
       "name": "FRANKLIN MARTINEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "FRANKLIN MARTINEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-10-05T15:30:00.000Z",
+      "docketEntryComment": "DEF RESP TO PEOPLE'S OPP TO DEFT 1538,5PC MOT FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-04T14:22:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPPOS TO DEF MTS EVID FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-29T15:47:00.000Z",
+      "docketEntryComment": "PD'S PC1538,5 MOTION FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 10-07-10/BAIL:35,000/X:THE BAIL REMAINS AS SET PER THE DA WARRANT,/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/SAORD/SA2:EDDY AND HYDE STREET SF CA/SAORD3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO138572:10028449/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-10-06 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2010-10-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-09-23 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2010-09-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "NIKI SOLIS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +108,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3655170",
+  "docket_entries": [
+    {
+      "filedDate": "2010-10-05T15:30:00.000Z",
+      "docketEntryComment": "DEF RESP TO PEOPLE'S OPP TO DEFT 1538,5PC MOT FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-10-05T15:30:00.000Z",
+      "description": "DEF RESP TO PEOPLE'S OPP TO DEFT 1538,5PC MOT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-04T14:22:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPPOS TO DEF MTS EVID FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-10-04T14:22:00.000Z",
+      "description": "PEOPLE'S OPPOS TO DEF MTS EVID FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-29T15:47:00.000Z",
+      "docketEntryComment": "PD'S PC1538,5 MOTION FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-09-29T15:47:00.000Z",
+      "description": "PD'S PC1538,5 MOTION FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 10-07-10/BAIL:35,000/X:THE BAIL REMAINS AS SET PER THE DA WARRANT,/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/SAORD/SA2:EDDY AND HYDE STREET SF CA/SAORD3/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-09-23T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 10-07-10/BAIL:35,000/X:THE BAIL REMAINS AS SET PER THE DA WARRANT,/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/SAORD/SA2:EDDY AND HYDE STREET SF CA/SAORD3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO138572:10028449/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-10-06T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO138572:10028449/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10028474",
-    "portal_case_id": "",
+    "portal_case_id": "3655170",
     "display_case_number": "CRI-10028474",
     "defendant": "FRANKLIN MARTINEZ",
     "filed_date": "2010-09-23",
@@ -59,12 +173,68 @@
       "defendant": "FRANKLIN MARTINEZ",
       "filed_date": "2010-09-23"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11351.5 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11351.5 HS/F",
+        "title": "Health and Safety Code § 11351.5",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351.5",
+        "code_system": "HS",
+        "section": "11351.5",
+        "citation": "Health and Safety Code § 11351.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, FRANKLIN MARTINEZ, and date of filing 2010-09-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, FRANKLIN MARTINEZ, date of filing, 2010-09-23, and charges in the case: 11351.5 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11351.5 HS/F",
+      "title": "Health and Safety Code § 11351.5",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351.5",
+      "code_system": "HS",
+      "section": "11351.5",
+      "citation": "Health and Safety Code § 11351.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:48:15.018Z",
+  "portal_case_id": "3655170",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10028474",
+      "defendant": "FRANKLIN MARTINEZ",
+      "filed_date": "2010-09-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3655170"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T14:15:31.224Z"
 }

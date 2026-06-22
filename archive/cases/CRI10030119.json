@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:05:49.457Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:41:51.136Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10030119",
   "criminal_case_number": "10030119",
@@ -24,11 +24,63 @@
       "name": "RAMON D SMITH",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RAMON D SMITH",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-10-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD:FOR PRELIMINARY HEARING IS 12-07-10/987,2/OR/DEF:IS RELEASED THRU PROJECT OR/DEF:MUST CHECK-IN WITH PROJECT O,R, TWICE A WEEK BY TELEPHONE AND  OBEY STAY AWAY ORDER,/SA1:KIM SMITH/SAORD/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/DAWT/X:PER DEFENSE COUNSEL, THE DEFENDANT IN CUSOTDY IN SOLANO COUNTY,/MO138573/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-11-04 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2010-11-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-10-08 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2010-10-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PETER FITZPATRICK",
+      "type": "Public Defender"
+    },
+    {
+      "name": "NANCY TUNG",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +97,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3656707",
+  "docket_entries": [
+    {
+      "filedDate": "2010-10-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD:FOR PRELIMINARY HEARING IS 12-07-10/987,2/OR/DEF:IS RELEASED THRU PROJECT OR/DEF:MUST CHECK-IN WITH PROJECT O,R, TWICE A WEEK BY TELEPHONE AND  OBEY STAY AWAY ORDER,/SA1:KIM SMITH/SAORD/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-10-08T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD:FOR PRELIMINARY HEARING IS 12-07-10/987,2/OR/DEF:IS RELEASED THRU PROJECT OR/DEF:MUST CHECK-IN WITH PROJECT O,R, TWICE A WEEK BY TELEPHONE AND OBEY STAY AWAY ORDER,/SA1:KIM SMITH/SAORD/CONTD:PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/DAWT/X:PER DEFENSE COUNSEL, THE DEFENDANT IN CUSOTDY IN SOLANO COUNTY,/MO138573/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-11-04T09:00:00.000Z",
+      "description": "/CAL:PRE-HEARING CONFERENCE/DAWT/X:PER DEFENSE COUNSEL, THE DEFENDANT IN CUSOTDY IN SOLANO COUNTY,/MO138573/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10030119",
-    "portal_case_id": "",
+    "portal_case_id": "3656707",
     "display_case_number": "CRI-10030119",
     "defendant": "RAMON D SMITH",
     "filed_date": "2010-10-08",
@@ -60,11 +133,83 @@
       "filed_date": "2010-10-08"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "422 PC/F 646.9(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "422 PC/F",
+        "title": "Penal Code § 422",
+        "title_source": "programmatic_citation",
+        "code": "PC 422",
+        "code_system": "PC",
+        "section": "422",
+        "citation": "Penal Code § 422",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "646.9(a) PC/F",
+        "title": "Penal Code § 646.9(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 646.9(a)",
+        "code_system": "PC",
+        "section": "646.9(a)",
+        "citation": "Penal Code § 646.9(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=646.9.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=646.9.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RAMON D SMITH, and date of filing 2010-10-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RAMON D SMITH, date of filing, 2010-10-08, and charges in the case: 422 PC/F 646.9(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "422 PC/F",
+      "title": "Penal Code § 422",
+      "title_source": "programmatic_citation",
+      "code": "PC 422",
+      "code_system": "PC",
+      "section": "422",
+      "citation": "Penal Code § 422",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "646.9(a) PC/F",
+      "title": "Penal Code § 646.9(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 646.9(a)",
+      "code_system": "PC",
+      "section": "646.9(a)",
+      "citation": "Penal Code § 646.9(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=646.9.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=646.9.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:41:51.859Z",
+  "portal_case_id": "3656707",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10030119",
+      "defendant": "RAMON D SMITH",
+      "filed_date": "2010-10-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3656707"
+  }
 }

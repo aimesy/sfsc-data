@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:55:44.301Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:42:23.097Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10035514",
   "criminal_case_number": "10035514",
@@ -24,19 +24,131 @@
       "name": "MICHAEL FERGUSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL FERGUSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-12-16T09:00:00.000Z",
+      "docketEntryComment": "Held to Answer",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-29T13:01:00.000Z",
+      "docketEntryComment": "DA INFO-FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-27T15:00:00.000Z",
+      "docketEntryComment": "PRELIM HRG TRANSCRIPT FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-03T09:00:00.000Z",
+      "docketEntryComment": "CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 12-17-10/987,2/BAIL: 5000 /SA2:150 YARDS FROM 155 9TH ST SF CA/CONTD: PREHEARING CONFERENCE, PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-11T08:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT/VD:04-01-11 TRIAL/MO138572:10020254/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:POSS CJC REFERRAL/CONTD:CJC ASSESSMENT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CON: CHERYL RICH/FAW/DEFTARR/GTW/987,2/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/WIT SWORN DA:OFFICER GREG BUHAGIAR/HTA1:1/BAIL:5,000/DEFTCUST3/SHERCOM1/CONTD:ARRAIGNMENT/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-01-07 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2011-01-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-12-30 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2010-12-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-12-16 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2010-12-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-12-03 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2010-12-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CHERYL RICH",
+      "type": "Conflict Attorney"
+    },
+    {
+      "name": "BRIAN BUCKELEW",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "487(c) PC/F",
+    "filed_date": "2010-12-03",
+    "defendant": "MICHAEL FERGUSON",
+    "searched_key": "FERGUSON/MI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/10035514.json",
     "searched_last_name": "FERGUSON",
     "searched_first_prefix": "MI",
-    "charges": "487(c) PC/F",
     "row": {
       "DEFENDANTNAME": "MICHAEL FERGUSON",
       "CASENUMBER": "CRI-10035514",
@@ -45,11 +157,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3661738",
+  "docket_entries": [
+    {
+      "filedDate": "2010-12-16T09:00:00.000Z",
+      "docketEntryComment": "Held to Answer",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-12-16T09:00:00.000Z",
+      "description": "Held to Answer",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-29T13:01:00.000Z",
+      "docketEntryComment": "DA INFO-FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-12-29T13:01:00.000Z",
+      "description": "DA INFO-FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-27T15:00:00.000Z",
+      "docketEntryComment": "PRELIM HRG TRANSCRIPT FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-12-27T15:00:00.000Z",
+      "description": "PRELIM HRG TRANSCRIPT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-03T09:00:00.000Z",
+      "docketEntryComment": "CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 12-17-10/987,2/BAIL: 5000 /SA2:150 YARDS FROM 155 9TH ST SF CA/CONTD: PREHEARING CONFERENCE, PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-12-03T09:00:00.000Z",
+      "description": "CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 12-17-10/987,2/BAIL: 5000 /SA2:150 YARDS FROM 155 9TH ST SF CA/CONTD: PREHEARING CONFERENCE, PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-11T08:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT/VD:04-01-11 TRIAL/MO138572:10020254/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-01-11T08:30:00.000Z",
+      "description": "/CAL:CJC ASSESSMENT/VD:04-01-11 TRIAL/MO138572:10020254/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:POSS CJC REFERRAL/CONTD:CJC ASSESSMENT/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-01-07T09:00:00.000Z",
+      "description": "/CAL:POSS CJC REFERRAL/CONTD:CJC ASSESSMENT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CON: CHERYL RICH/FAW/DEFTARR/GTW/987,2/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2010-12-30T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CON: CHERYL RICH/FAW/DEFTARR/GTW/987,2/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/WIT SWORN DA:OFFICER GREG BUHAGIAR/HTA1:1/BAIL:5,000/DEFTCUST3/SHERCOM1/CONTD:ARRAIGNMENT/DOP/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2010-12-16T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/WIT SWORN DA:OFFICER GREG BUHAGIAR/HTA1:1/BAIL:5,000/DEFTCUST3/SHERCOM1/CONTD:ARRAIGNMENT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10035514",
-    "portal_case_id": "",
+    "portal_case_id": "3661738",
     "display_case_number": "CRI-10035514",
     "defendant": "MICHAEL FERGUSON",
     "filed_date": "2010-12-03",
@@ -60,11 +253,58 @@
       "filed_date": "2010-12-03"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "487(c) PC/F",
+    "charge_rows": [
+      {
+        "raw": "487(c) PC/F",
+        "title": "Penal Code § 487(c)",
+        "title_source": "programmatic_citation",
+        "code": "PC 487(c)",
+        "code_system": "PC",
+        "section": "487(c)",
+        "citation": "Penal Code § 487(c)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL FERGUSON, and date of filing 2010-12-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL FERGUSON, date of filing, 2010-12-03, and charges in the case: 487(c) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "487(c) PC/F",
+      "title": "Penal Code § 487(c)",
+      "title_source": "programmatic_citation",
+      "code": "PC 487(c)",
+      "code_system": "PC",
+      "section": "487(c)",
+      "citation": "Penal Code § 487(c)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:42:23.843Z",
+  "portal_case_id": "3661738",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10035514",
+      "defendant": "MICHAEL FERGUSON",
+      "filed_date": "2010-12-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3661738"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.451941+00:00"
 }

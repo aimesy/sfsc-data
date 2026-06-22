@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:56:31.704Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:29:38.636Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12015216",
   "criminal_case_number": "12015216",
@@ -24,19 +24,71 @@
       "name": "JASON SCOTT COLLINS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JASON SCOTT COLLINS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-06-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL: FUGITIVE ARRAIGNMENT/X: SFPD FUGITIVE INSPECTOR PATRICK CADIGAN APPEARING/X: DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS ID AND WAIVES   EXTRADITION/CONTD: STATUS OF DELIVERY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-07-13T09:15:00.000Z",
+      "docketEntryComment": "/CAL: STATUS OF DELIVERY /X: SFPD FUGITIVE INSPECTOR PATRICK CADIGAN APPEARING/MO PC 1385:DEFENDANT WAS DELIVERED TO SANDUSKY, OHIO ON 07-06-12 /",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-07-13 9:15 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "2012-07-13",
+      "hearing_time": "9:15 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-06-15 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 1,
+      "court_date": "2012-06-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BICKA BARLOW",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "8888888",
+    "filed_date": "2012-06-15",
+    "defendant": "JASON SCOTT COLLINS",
+    "searched_key": "COLLINS/JA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/12015216.json",
     "searched_last_name": "COLLINS",
     "searched_first_prefix": "JA",
-    "charges": "8888888",
     "row": {
       "DEFENDANTNAME": "JASON SCOTT COLLINS",
       "CASENUMBER": "CRI-12015216",
@@ -45,11 +97,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3712652",
+  "docket_entries": [
+    {
+      "filedDate": "2012-06-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL: FUGITIVE ARRAIGNMENT/X: SFPD FUGITIVE INSPECTOR PATRICK CADIGAN APPEARING/X: DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS ID AND WAIVES   EXTRADITION/CONTD: STATUS OF DELIVERY/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-06-15T09:00:00.000Z",
+      "description": "/CAL: FUGITIVE ARRAIGNMENT/X: SFPD FUGITIVE INSPECTOR PATRICK CADIGAN APPEARING/X: DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS ID AND WAIVES EXTRADITION/CONTD: STATUS OF DELIVERY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-07-13T09:15:00.000Z",
+      "docketEntryComment": "/CAL: STATUS OF DELIVERY /X: SFPD FUGITIVE INSPECTOR PATRICK CADIGAN APPEARING/MO PC 1385:DEFENDANT WAS DELIVERED TO SANDUSKY, OHIO ON 07-06-12 /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-07-13T09:15:00.000Z",
+      "description": "/CAL: STATUS OF DELIVERY /X: SFPD FUGITIVE INSPECTOR PATRICK CADIGAN APPEARING/MO PC 1385:DEFENDANT WAS DELIVERED TO SANDUSKY, OHIO ON 07-06-12 /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12015216",
-    "portal_case_id": "",
+    "portal_case_id": "3712652",
     "display_case_number": "CRI-12015216",
     "defendant": "JASON SCOTT COLLINS",
     "filed_date": "2012-06-15",
@@ -59,12 +132,52 @@
       "defendant": "JASON SCOTT COLLINS",
       "filed_date": "2012-06-15"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JASON SCOTT COLLINS, and date of filing 2012-06-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JASON SCOTT COLLINS, date of filing, 2012-06-15, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:29:39.348Z",
+  "portal_case_id": "3712652",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12015216",
+      "defendant": "JASON SCOTT COLLINS",
+      "filed_date": "2012-06-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3712652"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.018621+00:00"
 }

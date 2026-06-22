@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:18:59.858Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:33:47.018Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10038077",
   "criminal_case_number": "10038077",
@@ -24,11 +24,123 @@
       "name": "JESSIE GRAHAM",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JESSIE GRAHAM",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-01-12T15:50:00.000Z",
+      "docketEntryComment": "DA'S OPP TO PC1538,5 MOTION FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-07T16:05:00.000Z",
+      "docketEntryComment": "PD'S PC1538,5 MOTION FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/WIT SWORN: SFPD OFFICERS ANTHONY RAVANO & GABRIELRIVERA   /EXHMA:PEOPLE 1- COPY OF HERTZ RENTAL AGREEMENT,PEOPLE 2- COPY OF HERTZ RENTAL AGREEMENT & PEOPLE 3- COPY OF HERTZ RECEIPT    /HTA1:1/871D:2 & 3/MO PC 17B/MO GRTD/TEXT/PB/X:ALL EXHIBITS ARE RETURN TO SUBMITTING PARTY FOR SAFEKEEPING/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:20000/GTWM/987,2/CONTD:PRETRIAL CONFERENCE AND TO JOIN 11000718/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-03T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 01-18-11/987,2/BAIL:20000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-04-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DISMISSAL UPON SENTENCE IN 11000718/MO138572:11000718/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO BE SET/CONTD:DISMISSAL UPON SENTENCE IN 11000718/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/CONTD TO BE SET, DOP/CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-04-06 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2011-04-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-02-25 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2011-02-25",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-01-25 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2011-01-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-01-14 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2011-01-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-01-03 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 4,
+      "court_date": "2011-01-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MICHELLE TONG",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +157,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3664146",
+  "docket_entries": [
+    {
+      "filedDate": "2011-01-12T15:50:00.000Z",
+      "docketEntryComment": "DA'S OPP TO PC1538,5 MOTION FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-01-12T15:50:00.000Z",
+      "description": "DA'S OPP TO PC1538,5 MOTION FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-07T16:05:00.000Z",
+      "docketEntryComment": "PD'S PC1538,5 MOTION FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-01-07T16:05:00.000Z",
+      "description": "PD'S PC1538,5 MOTION FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/WIT SWORN: SFPD OFFICERS ANTHONY RAVANO & GABRIELRIVERA   /EXHMA:PEOPLE 1- COPY OF HERTZ RENTAL AGREEMENT,PEOPLE 2- COPY OF HERTZ RENTAL AGREEMENT & PEOPLE 3- COPY OF HERTZ RECEIPT    /HTA1:1/871D:2 & 3/MO PC 17B/MO GRTD/TEXT/PB/X:ALL EXHIBITS ARE RETURN TO SUBMITTING PARTY FOR SAFEKEEPING/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:20000/GTWM/987,2/CONTD:PRETRIAL CONFERENCE AND TO JOIN 11000718/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-01-14T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/WIT SWORN: SFPD OFFICERS ANTHONY RAVANO & GABRIELRIVERA /EXHMA:PEOPLE 1- COPY OF HERTZ RENTAL AGREEMENT,PEOPLE 2- COPY OF HERTZ RENTAL AGREEMENT & PEOPLE 3- COPY OF HERTZ RECEIPT /HTA1:1/871D:2 & 3/MO PC 17B/MO GRTD/TEXT/PB/X:ALL EXHIBITS ARE RETURN TO SUBMITTING PARTY FOR SAFEKEEPING/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:20000/GTWM/987,2/CONTD:PRETRIAL CONFERENCE AND TO JOIN 11000718/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-03T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 01-18-11/987,2/BAIL:20000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-01-03T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 01-18-11/987,2/BAIL:20000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-04-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DISMISSAL UPON SENTENCE IN 11000718/MO138572:11000718/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-04-06T09:00:00.000Z",
+      "description": "/CAL:DISMISSAL UPON SENTENCE IN 11000718/MO138572:11000718/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO BE SET/CONTD:DISMISSAL UPON SENTENCE IN 11000718/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-02-25T09:00:00.000Z",
+      "description": "/CAL:TO BE SET/CONTD:DISMISSAL UPON SENTENCE IN 11000718/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/CONTD TO BE SET, DOP/CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2011-01-25T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/CONTD TO BE SET, DOP/CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10038077",
-    "portal_case_id": "",
+    "portal_case_id": "3664146",
     "display_case_number": "CRI-10038077",
     "defendant": "JESSIE GRAHAM",
     "filed_date": "2011-01-03",
@@ -59,12 +242,85 @@
       "defendant": "JESSIE GRAHAM",
       "filed_date": "2011-01-03"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 17B",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      },
+      {
+        "code": "PC1538",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 17B",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "10851(a) VC/M",
+    "charge_rows": [
+      {
+        "raw": "10851(a) VC/M",
+        "title": "Vehicle Code § 10851(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 10851(a)",
+        "code_system": "VC",
+        "section": "10851(a)",
+        "citation": "Vehicle Code § 10851(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JESSIE GRAHAM, and date of filing 2011-01-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JESSIE GRAHAM, date of filing, 2011-01-03, and charges in the case: 10851(a) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "10851(a) VC/M",
+      "title": "Vehicle Code § 10851(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 10851(a)",
+      "code_system": "VC",
+      "section": "10851(a)",
+      "citation": "Vehicle Code § 10851(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:33:47.642Z",
+  "portal_case_id": "3664146",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10038077",
+      "defendant": "JESSIE GRAHAM",
+      "filed_date": "2011-01-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3664146"
+  }
 }

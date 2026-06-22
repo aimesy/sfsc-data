@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:02:05.356Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:39:47.266Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10021955",
   "criminal_case_number": "10021955",
@@ -24,9 +24,20 @@
       "name": "EVER NORBERTO HERNANDEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "EVER NORBERTO HERNANDEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -34,9 +45,13 @@
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "12951(b) VC/M",
+    "filed_date": "2010-07-23",
+    "defendant": "EVER NORBERTO HERNANDEZ",
+    "searched_key": "HERNANDEZ/EV",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/10021955.json",
     "searched_last_name": "HERNANDEZ",
     "searched_first_prefix": "EV",
-    "charges": "12951(b) VC/M",
     "row": {
       "DEFENDANTNAME": "EVER NORBERTO HERNANDEZ",
       "CASENUMBER": "CRI-10021955",
@@ -45,11 +60,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3649087",
+  "docket_entries": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-11-17T18:00:00.000Z",
+      "description": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10021955",
-    "portal_case_id": "",
+    "portal_case_id": "3649087",
     "display_case_number": "CRI-10021955",
     "defendant": "EVER NORBERTO HERNANDEZ",
     "filed_date": "2010-07-23",
@@ -60,11 +86,58 @@
       "filed_date": "2010-07-23"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "12951(b) VC/M",
+    "charge_rows": [
+      {
+        "raw": "12951(b) VC/M",
+        "title": "Vehicle Code § 12951(b)",
+        "title_source": "programmatic_citation",
+        "code": "VC 12951(b)",
+        "code_system": "VC",
+        "section": "12951(b)",
+        "citation": "Vehicle Code § 12951(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12951.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12951.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, EVER NORBERTO HERNANDEZ, and date of filing 2010-07-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, EVER NORBERTO HERNANDEZ, date of filing, 2010-07-23, and charges in the case: 12951(b) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "12951(b) VC/M",
+      "title": "Vehicle Code § 12951(b)",
+      "title_source": "programmatic_citation",
+      "code": "VC 12951(b)",
+      "code_system": "VC",
+      "section": "12951(b)",
+      "citation": "Vehicle Code § 12951(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12951.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12951.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:39:47.981Z",
+  "portal_case_id": "3649087",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10021955",
+      "defendant": "EVER NORBERTO HERNANDEZ",
+      "filed_date": "2010-07-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3649087"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.830082+00:00"
 }

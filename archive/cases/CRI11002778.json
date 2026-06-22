@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:35:57.391Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:32:19.329Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11002778",
   "criminal_case_number": "11002778",
@@ -24,19 +24,112 @@
       "name": "ROBERT F EVANS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROBERT F EVANS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 04-01-11 (60TH)/987,2/CONTD: PRELIMINARY HEARING ON 03-24-11/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-08-29T11:30:00.000Z",
+      "docketEntryComment": "/CAL:1203,2(A)PC MOTION/X:ADA WITHDRAWS MOTION TO REVOKE, DEFENDANT'S PROBATION HAS EXPIRED,/CTORD:MATTER OFF CALENDAR/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-24T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2 ISS CPROB PROB 18M PJ  5D/CTS 5 /VF1/WS/MPROBFINE/SECFEE40/ICNA/OLLECT/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIM HEARING/X PEOPLE ORALLY AMEND COMPLAINT TO ADD CT2, 11350(B)H,MISDEMEANOR/IRR/DEFT ADV NL:2/REMA/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-08-29 11:30 AM",
+      "hearingType": "Motion to Revoke Probation Filing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2013-08-29",
+      "hearing_time": "11:30 AM",
+      "matters": "Motion to Revoke Probation Filing",
+      "hearing_type": "Motion to Revoke Probation Filing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-24 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2011-03-24",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-24 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2011-03-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-01-31 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 3,
+      "court_date": "2011-01-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ALEEM RAJA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11350(a) HS/F 11350(b) HS/M",
+    "filed_date": "2011-01-31",
+    "defendant": "ROBERT F EVANS",
+    "searched_key": "EVANS/RO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/11002778.json",
     "searched_last_name": "EVANS",
     "searched_first_prefix": "RO",
-    "charges": "11350(a) HS/F 11350(b) HS/M",
     "row": {
       "DEFENDANTNAME": "ROBERT F EVANS",
       "CASENUMBER": "CRI-11002778",
@@ -45,11 +138,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3666883",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 04-01-11 (60TH)/987,2/CONTD: PRELIMINARY HEARING ON 03-24-11/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-01-31T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 04-01-11 (60TH)/987,2/CONTD: PRELIMINARY HEARING ON 03-24-11/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-08-29T11:30:00.000Z",
+      "docketEntryComment": "/CAL:1203,2(A)PC MOTION/X:ADA WITHDRAWS MOTION TO REVOKE, DEFENDANT'S PROBATION HAS EXPIRED,/CTORD:MATTER OFF CALENDAR/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-08-29T11:30:00.000Z",
+      "description": "/CAL:1203,2(A)PC MOTION/X:ADA WITHDRAWS MOTION TO REVOKE, DEFENDANT'S PROBATION HAS EXPIRED,/CTORD:MATTER OFF CALENDAR/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-24T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2 ISS CPROB PROB 18M PJ  5D/CTS 5 /VF1/WS/MPROBFINE/SECFEE40/ICNA/OLLECT/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-03-24T09:15:00.000Z",
+      "description": "/TWS/CH2 ISS CPROB PROB 18M PJ 5D/CTS 5 /VF1/WS/MPROBFINE/SECFEE40/ICNA/OLLECT/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIM HEARING/X PEOPLE ORALLY AMEND COMPLAINT TO ADD CT2, 11350(B)H,MISDEMEANOR/IRR/DEFT ADV NL:2/REMA/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-03-24T09:00:00.000Z",
+      "description": "/CAL PRELIM HEARING/X PEOPLE ORALLY AMEND COMPLAINT TO ADD CT2, 11350(B)H,MISDEMEANOR/IRR/DEFT ADV NL:2/REMA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11002778",
-    "portal_case_id": "",
+    "portal_case_id": "3666883",
     "display_case_number": "CRI-11002778",
     "defendant": "ROBERT F EVANS",
     "filed_date": "2011-01-31",
@@ -59,12 +203,94 @@
       "defendant": "ROBERT F EVANS",
       "filed_date": "2011-01-31"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F 11350(b) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11350(b) HS/M",
+        "title": "Health and Safety Code § 11350(b)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(b)",
+        "code_system": "HS",
+        "section": "11350(b)",
+        "citation": "Health and Safety Code § 11350(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROBERT F EVANS, and date of filing 2011-01-31. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROBERT F EVANS, date of filing, 2011-01-31, and charges in the case: 11350(a) HS/F 11350(b) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11350(b) HS/M",
+      "title": "Health and Safety Code § 11350(b)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(b)",
+      "code_system": "HS",
+      "section": "11350(b)",
+      "citation": "Health and Safety Code § 11350(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:32:19.974Z",
+  "portal_case_id": "3666883",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11002778",
+      "defendant": "ROBERT F EVANS",
+      "filed_date": "2011-01-31"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3666883"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.852177+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:23:46.123Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:28:03.824Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12006234",
   "criminal_case_number": "12006234",
@@ -24,19 +24,130 @@
       "name": "ROBERT JACKSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROBERT JACKSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-03-27T15:00:00.000Z",
+      "docketEntryComment": "PDS MTS FILED AT INSISTENCE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-03-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL & STATUS OF COUNSEL/LD:04-06-12/X:GIN WAIVER ENTERED/X:DEFENSECOUNSEL UNAVAILABLE FOR TRIAL ASSIGNMENT/25    CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:04-04-12/CONTD: RECEIPTOF 4011,6PC REPORT, TRIAL, MTS, STATUS OF COUNSEL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-03-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/DEF:ENTERED GIN WAIVER/X:THE PEOPLE FILED REQUEST FOR COURT ORDER FOR VIDEOTAPED CONDITIONAL EXAMINATION IN OPEN COURT,/25    CPC 4011,6REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:03-29-12/CONTD:JURY TRIAL, STATUS OF DEFENSE COUNSEL, DA'S MOTION FOR CONDITIONALEXAM & RECEIPT OF 4011,6PC REPORT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-03-07T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:15,000/NTW/LD:FOR TRIAL IS 04-06-12/987,2/SA1:JUSTIN BOWYER/SA1:BLAKE BEVIN/SAORD3/SA2:509 MINNA ST, SAN FRANCISCO, CA/DEF:IS TO STAY OUT OF THE ABOVE STATED LOCATION/SAORD/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:03-13-12/CONTD:4011,6PC REPORT, PRETRIAL CONFERENCE, AND JURY TRIAL/DO",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-04-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/DAWT/MO PC 1385:UNABLE TO SUSTAIN- WITNESS UNAVAILABLE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-03-13T13:45:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL AND 4011,6PC REPORT/LD:04-06-12/X:3 DAY TIME ESTIMATE,/X:FUTURE TRIAL DATE IS CONFIRMED,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-04-04 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2012-04-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-03-29 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2012-03-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-03-26 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2012-03-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-03-13 1:45 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2012-03-13",
+      "hearing_time": "1:45 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-03-07 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2012-03-07",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KIMBERLY LUTESKOTHS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "417(a)(1) PC/M 422 PC/M 417(a)(1) PC/M 422 PC/M 69(a) PC/M",
+    "filed_date": "2012-03-07",
+    "defendant": "ROBERT JACKSON",
+    "searched_key": "JACKSON/RO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/12006234.json",
     "searched_last_name": "JACKSON",
     "searched_first_prefix": "RO",
-    "charges": "417(a)(1) PC/M 422 PC/M 417(a)(1) PC/M 422 PC/M 69(a) PC/M",
     "row": {
       "DEFENDANTNAME": "ROBERT JACKSON",
       "CASENUMBER": "CRI-12006234",
@@ -45,11 +156,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3703811",
+  "docket_entries": [
+    {
+      "filedDate": "2012-03-27T15:00:00.000Z",
+      "docketEntryComment": "PDS MTS FILED AT INSISTENCE",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-03-27T15:00:00.000Z",
+      "description": "PDS MTS FILED AT INSISTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-03-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL & STATUS OF COUNSEL/LD:04-06-12/X:GIN WAIVER ENTERED/X:DEFENSECOUNSEL UNAVAILABLE FOR TRIAL ASSIGNMENT/25    CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:04-04-12/CONTD: RECEIPTOF 4011,6PC REPORT, TRIAL, MTS, STATUS OF COUNSEL/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-03-29T09:00:00.000Z",
+      "description": "/CAL:TRIAL & STATUS OF COUNSEL/LD:04-06-12/X:GIN WAIVER ENTERED/X:DEFENSECOUNSEL UNAVAILABLE FOR TRIAL ASSIGNMENT/25 CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:04-04-12/CONTD: RECEIPTOF 4011,6PC REPORT, TRIAL, MTS, STATUS OF COUNSEL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-03-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/DEF:ENTERED GIN WAIVER/X:THE PEOPLE FILED REQUEST FOR COURT ORDER FOR VIDEOTAPED CONDITIONAL EXAMINATION IN OPEN COURT,/25    CPC 4011,6REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:03-29-12/CONTD:JURY TRIAL, STATUS OF DEFENSE COUNSEL, DA'S MOTION FOR CONDITIONALEXAM & RECEIPT OF 4011,6PC REPORT/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-03-26T09:00:00.000Z",
+      "description": "/CAL:TRIAL/DEF:ENTERED GIN WAIVER/X:THE PEOPLE FILED REQUEST FOR COURT ORDER FOR VIDEOTAPED CONDITIONAL EXAMINATION IN OPEN COURT,/25 CPC 4011,6REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:03-29-12/CONTD:JURY TRIAL, STATUS OF DEFENSE COUNSEL, DA'S MOTION FOR CONDITIONALEXAM & RECEIPT OF 4011,6PC REPORT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-03-07T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:15,000/NTW/LD:FOR TRIAL IS 04-06-12/987,2/SA1:JUSTIN BOWYER/SA1:BLAKE BEVIN/SAORD3/SA2:509 MINNA ST, SAN FRANCISCO, CA/DEF:IS TO STAY OUT OF THE ABOVE STATED LOCATION/SAORD/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:03-13-12/CONTD:4011,6PC REPORT, PRETRIAL CONFERENCE, AND JURY TRIAL/DO",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-03-07T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:15,000/NTW/LD:FOR TRIAL IS 04-06-12/987,2/SA1:JUSTIN BOWYER/SA1:BLAKE BEVIN/SAORD3/SA2:509 MINNA ST, SAN FRANCISCO, CA/DEF:IS TO STAY OUT OF THE ABOVE STATED LOCATION/SAORD/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:03-13-12/CONTD:4011,6PC REPORT, PRETRIAL CONFERENCE, AND JURY TRIAL/DO",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-04-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/DAWT/MO PC 1385:UNABLE TO SUSTAIN- WITNESS UNAVAILABLE/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2012-04-04T09:00:00.000Z",
+      "description": "/CAL:TRIAL/DAWT/MO PC 1385:UNABLE TO SUSTAIN- WITNESS UNAVAILABLE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-03-13T13:45:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL AND 4011,6PC REPORT/LD:04-06-12/X:3 DAY TIME ESTIMATE,/X:FUTURE TRIAL DATE IS CONFIRMED,/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2012-03-13T13:45:00.000Z",
+      "description": "/CAL:PRETRIAL AND 4011,6PC REPORT/LD:04-06-12/X:3 DAY TIME ESTIMATE,/X:FUTURE TRIAL DATE IS CONFIRMED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12006234",
-    "portal_case_id": "",
+    "portal_case_id": "3703811",
     "display_case_number": "CRI-12006234",
     "defendant": "ROBERT JACKSON",
     "filed_date": "2012-03-07",
@@ -59,12 +231,128 @@
       "defendant": "ROBERT JACKSON",
       "filed_date": "2012-03-07"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 4011",
+        "count": 3,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "417(a)(1) PC/M 422 PC/M 417(a)(1) PC/M 422 PC/M 69(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "417(a)(1) PC/M",
+        "title": "Penal Code § 417(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 417(a)(1)",
+        "code_system": "PC",
+        "section": "417(a)(1)",
+        "citation": "Penal Code § 417(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "422 PC/M",
+        "title": "Penal Code § 422",
+        "title_source": "programmatic_citation",
+        "code": "PC 422",
+        "code_system": "PC",
+        "section": "422",
+        "citation": "Penal Code § 422",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "69(a) PC/M",
+        "title": "Penal Code § 69(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 69(a)",
+        "code_system": "PC",
+        "section": "69(a)",
+        "citation": "Penal Code § 69(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=69.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=69.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROBERT JACKSON, and date of filing 2012-03-07. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROBERT JACKSON, date of filing, 2012-03-07, and charges in the case: 417(a)(1) PC/M 422 PC/M 417(a)(1) PC/M 422 PC/M 69(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "417(a)(1) PC/M",
+      "title": "Penal Code § 417(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 417(a)(1)",
+      "code_system": "PC",
+      "section": "417(a)(1)",
+      "citation": "Penal Code § 417(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "422 PC/M",
+      "title": "Penal Code § 422",
+      "title_source": "programmatic_citation",
+      "code": "PC 422",
+      "code_system": "PC",
+      "section": "422",
+      "citation": "Penal Code § 422",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "69(a) PC/M",
+      "title": "Penal Code § 69(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 69(a)",
+      "code_system": "PC",
+      "section": "69(a)",
+      "citation": "Penal Code § 69(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=69.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=69.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:28:04.474Z",
+  "portal_case_id": "3703811",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12006234",
+      "defendant": "ROBERT JACKSON",
+      "filed_date": "2012-03-07"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3703811"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.223192+00:00"
 }

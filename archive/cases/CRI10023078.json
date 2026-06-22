@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:27:21.172Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:39:29.820Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10023078",
   "criminal_case_number": "10023078",
@@ -24,19 +24,94 @@
       "name": "LATRICE A EVANS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LATRICE A EVANS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-08-25T11:06:00.000Z",
+      "docketEntryComment": "FELONY PLEA TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-10T09:00:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ  2D  /CTS:2   /VF1/MPROBFINE/SECFEE/ICNA/OR25/COLLECT/CTORD:DEFENDANT TO STAY OUT OF COURT WHILE WITNESSES TESTIFYINGAT ANTHONYTAYLOR'S TRIAL/WS/SA2:JACOB LEVU, 150 YARDS/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DISPOSITION/TEXT: DEFT WAIVES INST AND ARRAIGNMENT GUILTY PLEA/FAWC/DEFT ADV ANG:1/FNDG/CO:NEGOTIATED DISPOSITION/PRES:09-10-10/DOP/SA1:JACOBLEVU/SAORD3/SAORD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-04T09:00:00.000Z",
+      "docketEntryComment": "/X:REFILE OF #10004472/OR/TWA/DOP/CONTD:DISPOSITION/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-09-10 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2010-09-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-08-12 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2010-08-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-08-04 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2010-08-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KENNETH QUIGLEY",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "136.1(a)(2) PC/M",
+    "filed_date": "2010-08-04",
+    "defendant": "LATRICE A EVANS",
+    "searched_key": "EVANS/LA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/10023078.json",
     "searched_last_name": "EVANS",
     "searched_first_prefix": "LA",
-    "charges": "136.1(a)(2) PC/M",
     "row": {
       "DEFENDANTNAME": "LATRICE A EVANS",
       "CASENUMBER": "CRI-10023078",
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3650139",
+  "docket_entries": [
+    {
+      "filedDate": "2010-08-25T11:06:00.000Z",
+      "docketEntryComment": "FELONY PLEA TX FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-08-25T11:06:00.000Z",
+      "description": "FELONY PLEA TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-10T09:00:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ  2D  /CTS:2   /VF1/MPROBFINE/SECFEE/ICNA/OR25/COLLECT/CTORD:DEFENDANT TO STAY OUT OF COURT WHILE WITNESSES TESTIFYINGAT ANTHONYTAYLOR'S TRIAL/WS/SA2:JACOB LEVU, 150 YARDS/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-09-10T09:00:00.000Z",
+      "description": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 2D /CTS:2 /VF1/MPROBFINE/SECFEE/ICNA/OR25/COLLECT/CTORD:DEFENDANT TO STAY OUT OF COURT WHILE WITNESSES TESTIFYINGAT ANTHONYTAYLOR'S TRIAL/WS/SA2:JACOB LEVU, 150 YARDS/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DISPOSITION/TEXT: DEFT WAIVES INST AND ARRAIGNMENT GUILTY PLEA/FAWC/DEFT ADV ANG:1/FNDG/CO:NEGOTIATED DISPOSITION/PRES:09-10-10/DOP/SA1:JACOBLEVU/SAORD3/SAORD/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-08-12T09:00:00.000Z",
+      "description": "/CAL:DISPOSITION/TEXT: DEFT WAIVES INST AND ARRAIGNMENT GUILTY PLEA/FAWC/DEFT ADV ANG:1/FNDG/CO:NEGOTIATED DISPOSITION/PRES:09-10-10/DOP/SA1:JACOBLEVU/SAORD3/SAORD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-04T09:00:00.000Z",
+      "docketEntryComment": "/X:REFILE OF #10004472/OR/TWA/DOP/CONTD:DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-08-04T09:00:00.000Z",
+      "description": "/X:REFILE OF #10004472/OR/TWA/DOP/CONTD:DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10023078",
-    "portal_case_id": "",
+    "portal_case_id": "3650139",
     "display_case_number": "CRI-10023078",
     "defendant": "LATRICE A EVANS",
     "filed_date": "2010-08-04",
@@ -60,11 +176,58 @@
       "filed_date": "2010-08-04"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "136.1(a)(2) PC/M",
+    "charge_rows": [
+      {
+        "raw": "136.1(a)(2) PC/M",
+        "title": "Penal Code § 136.1(a)(2)",
+        "title_source": "programmatic_citation",
+        "code": "PC 136.1(a)(2)",
+        "code_system": "PC",
+        "section": "136.1(a)(2)",
+        "citation": "Penal Code § 136.1(a)(2)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=136.1.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=136.1.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LATRICE A EVANS, and date of filing 2010-08-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LATRICE A EVANS, date of filing, 2010-08-04, and charges in the case: 136.1(a)(2) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "136.1(a)(2) PC/M",
+      "title": "Penal Code § 136.1(a)(2)",
+      "title_source": "programmatic_citation",
+      "code": "PC 136.1(a)(2)",
+      "code_system": "PC",
+      "section": "136.1(a)(2)",
+      "citation": "Penal Code § 136.1(a)(2)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=136.1.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=136.1.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:39:30.478Z",
+  "portal_case_id": "3650139",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10023078",
+      "defendant": "LATRICE A EVANS",
+      "filed_date": "2010-08-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3650139"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.353731+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:27:30.697Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:30:21.987Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12009670",
   "criminal_case_number": "12009670",
@@ -24,19 +24,94 @@
       "name": "JUAN R DIAZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JUAN R DIAZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-04-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/AMEND 3/IRRC/TEXT DEFT ADV & PERS WVS CONST & CIZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:3/IBARRA/NOLO/CO:NEGOTIATED DISPOSITION/REMA/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-04-13T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 04-27-12/987,2/BAIL:35,000/CONTD:PRELIMINARY HEARING/DOP/SA2:THE INTERSECTION OF 16TH AND MISSION STS,, SF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-04-26T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3 ISS CPROB PROB 3 Y PJ 16D/CTS 16/WS/VF2 120/SA2 THE INTERSECTIONOF 16TH AND MISSION STS,, SF/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-04-26 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2012-04-26",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-04-26 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2012-04-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-04-13 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2012-04-13",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEVE OLMO",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11352(a) HS/F 11351.5 HS/F 11350(b) HS/M",
+    "filed_date": "2012-04-13",
+    "defendant": "JUAN R DIAZ",
+    "searched_key": "DIAZ/JU",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/12009670.json",
     "searched_last_name": "DIAZ",
     "searched_first_prefix": "JU",
-    "charges": "11352(a) HS/F 11351.5 HS/F 11350(b) HS/M",
     "row": {
       "DEFENDANTNAME": "JUAN R DIAZ",
       "CASENUMBER": "CRI-12009670",
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3707181",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-04-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/AMEND 3/IRRC/TEXT DEFT ADV & PERS WVS CONST & CIZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:3/IBARRA/NOLO/CO:NEGOTIATED DISPOSITION/REMA/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-04-26T09:00:00.000Z",
+      "description": "/CAL PRELIMINARY HEARING/AMEND 3/IRRC/TEXT DEFT ADV & PERS WVS CONST & CIZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:3/IBARRA/NOLO/CO:NEGOTIATED DISPOSITION/REMA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-04-13T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 04-27-12/987,2/BAIL:35,000/CONTD:PRELIMINARY HEARING/DOP/SA2:THE INTERSECTION OF 16TH AND MISSION STS,, SF/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-04-13T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 04-27-12/987,2/BAIL:35,000/CONTD:PRELIMINARY HEARING/DOP/SA2:THE INTERSECTION OF 16TH AND MISSION STS,, SF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-04-26T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3 ISS CPROB PROB 3 Y PJ 16D/CTS 16/WS/VF2 120/SA2 THE INTERSECTIONOF 16TH AND MISSION STS,, SF/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-04-26T09:15:00.000Z",
+      "description": "/TWS/CH3 ISS CPROB PROB 3 Y PJ 16D/CTS 16/WS/VF2 120/SA2 THE INTERSECTIONOF 16TH AND MISSION STS,, SF/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12009670",
-    "portal_case_id": "",
+    "portal_case_id": "3707181",
     "display_case_number": "CRI-12009670",
     "defendant": "JUAN R DIAZ",
     "filed_date": "2012-04-13",
@@ -59,12 +175,120 @@
       "defendant": "JUAN R DIAZ",
       "filed_date": "2012-04-13"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11352(a) HS/F 11351.5 HS/F 11350(b) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11352(a) HS/F",
+        "title": "Health and Safety Code § 11352(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11352(a)",
+        "code_system": "HS",
+        "section": "11352(a)",
+        "citation": "Health and Safety Code § 11352(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11351.5 HS/F",
+        "title": "Health and Safety Code § 11351.5",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351.5",
+        "code_system": "HS",
+        "section": "11351.5",
+        "citation": "Health and Safety Code § 11351.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11350(b) HS/M",
+        "title": "Health and Safety Code § 11350(b)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(b)",
+        "code_system": "HS",
+        "section": "11350(b)",
+        "citation": "Health and Safety Code § 11350(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JUAN R DIAZ, and date of filing 2012-04-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JUAN R DIAZ, date of filing, 2012-04-13, and charges in the case: 11352(a) HS/F 11351.5 HS/F 11350(b) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11352(a) HS/F",
+      "title": "Health and Safety Code § 11352(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11352(a)",
+      "code_system": "HS",
+      "section": "11352(a)",
+      "citation": "Health and Safety Code § 11352(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11351.5 HS/F",
+      "title": "Health and Safety Code § 11351.5",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351.5",
+      "code_system": "HS",
+      "section": "11351.5",
+      "citation": "Health and Safety Code § 11351.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11350(b) HS/M",
+      "title": "Health and Safety Code § 11350(b)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(b)",
+      "code_system": "HS",
+      "section": "11350(b)",
+      "citation": "Health and Safety Code § 11350(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:30:22.626Z",
+  "portal_case_id": "3707181",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12009670",
+      "defendant": "JUAN R DIAZ",
+      "filed_date": "2012-04-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3707181"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.243748+00:00"
 }

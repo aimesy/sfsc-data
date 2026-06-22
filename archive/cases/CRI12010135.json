@@ -2,7 +2,7 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:45:22.009Z",
+  "captured_at": "2026-06-22T03:27:07.412Z",
   "status": "unavailable",
   "case_type": "criminal",
   "case_number": "CRI12010135",
@@ -24,6 +24,11 @@
       "name": "ANGELIC R CISNEROS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANGELIC R CISNEROS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
   "roa": [],
@@ -45,11 +50,11 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3707638",
   "docket_entries": [],
   "criminal": {
     "raw_case_number": "12010135",
-    "portal_case_id": "",
+    "portal_case_id": "3707638",
     "display_case_number": "CRI-12010135",
     "defendant": "ANGELIC R CISNEROS",
     "filed_date": "2012-04-17",
@@ -60,11 +65,41 @@
       "filed_date": "2012-04-17"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANGELIC R CISNEROS, and date of filing 2012-04-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANGELIC R CISNEROS, date of filing, 2012-04-17, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:27:08.063Z",
+  "portal_case_id": "3707638",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12010135",
+      "defendant": "ANGELIC R CISNEROS",
+      "filed_date": "2012-04-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3707638"
+  }
 }

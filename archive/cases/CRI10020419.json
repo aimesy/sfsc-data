@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:10:12.027Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:39:09.240Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10020419",
   "criminal_case_number": "10020419",
@@ -24,11 +24,59 @@
       "name": "ROXANA CORTEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROXANA CORTEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-07-09T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:07-23-10FOR PRELIMINARY HEARING /987,2/BAIL:20000 /X:BAIL IS SET WITHOUT PREJUDICE/CONTD: PREHEARING CONFERENCE ON 07-14-10, PRELIMINARY HEARING ON 07-22-10/DOP/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/VD:HEARING DATE OF 07-22-10/MO PC 1385:IN THEINTERESTS OF JUSTICE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-07-14 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2010-07-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-07-09 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2010-07-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BRIAN PEARLMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3647653",
+  "docket_entries": [
+    {
+      "filedDate": "2010-07-09T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:07-23-10FOR PRELIMINARY HEARING /987,2/BAIL:20000 /X:BAIL IS SET WITHOUT PREJUDICE/CONTD: PREHEARING CONFERENCE ON 07-14-10, PRELIMINARY HEARING ON 07-22-10/DOP/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-07-09T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:07-23-10FOR PRELIMINARY HEARING /987,2/BAIL:20000 /X:BAIL IS SET WITHOUT PREJUDICE/CONTD: PREHEARING CONFERENCE ON 07-14-10, PRELIMINARY HEARING ON 07-22-10/DOP/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/VD:HEARING DATE OF 07-22-10/MO PC 1385:IN THEINTERESTS OF JUSTICE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-07-14T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/VD:HEARING DATE OF 07-22-10/MO PC 1385:IN THEINTERESTS OF JUSTICE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10020419",
-    "portal_case_id": "",
+    "portal_case_id": "3647653",
     "display_case_number": "CRI-10020419",
     "defendant": "ROXANA CORTEZ",
     "filed_date": "2010-07-09",
@@ -59,12 +128,119 @@
       "defendant": "ROXANA CORTEZ",
       "filed_date": "2010-07-09"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11351.5 HS/F 11366 HS/F 273a(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "11351.5 HS/F",
+        "title": "Health and Safety Code § 11351.5",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351.5",
+        "code_system": "HS",
+        "section": "11351.5",
+        "citation": "Health and Safety Code § 11351.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11366 HS/F",
+        "title": "Health and Safety Code § 11366",
+        "title_source": "programmatic_citation",
+        "code": "HS 11366",
+        "code_system": "HS",
+        "section": "11366",
+        "citation": "Health and Safety Code § 11366",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11366.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11366.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "273a(a) PC/F",
+        "title": "Penal Code § 273a(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 273a(a)",
+        "code_system": "PC",
+        "section": "273a(a)",
+        "citation": "Penal Code § 273a(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273a.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273a.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROXANA CORTEZ, and date of filing 2010-07-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROXANA CORTEZ, date of filing, 2010-07-09, and charges in the case: 11351.5 HS/F 11366 HS/F 273a(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11351.5 HS/F",
+      "title": "Health and Safety Code § 11351.5",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351.5",
+      "code_system": "HS",
+      "section": "11351.5",
+      "citation": "Health and Safety Code § 11351.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11366 HS/F",
+      "title": "Health and Safety Code § 11366",
+      "title_source": "programmatic_citation",
+      "code": "HS 11366",
+      "code_system": "HS",
+      "section": "11366",
+      "citation": "Health and Safety Code § 11366",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11366.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11366.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "273a(a) PC/F",
+      "title": "Penal Code § 273a(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 273a(a)",
+      "code_system": "PC",
+      "section": "273a(a)",
+      "citation": "Penal Code § 273a(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273a.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273a.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:39:09.899Z",
+  "portal_case_id": "3647653",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10020419",
+      "defendant": "ROXANA CORTEZ",
+      "filed_date": "2010-07-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3647653"
+  }
 }

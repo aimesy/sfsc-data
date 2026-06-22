@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:12:52.134Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:36:10.470Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11005648",
   "criminal_case_number": "11005648",
@@ -24,19 +24,94 @@
       "name": "KEVIN W HILL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KEVIN W HILL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-03-11T09:00:00.000Z",
+      "docketEntryComment": "DA ADD TO CAL FOR MOT TO DISM FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/ STWPX/987,2/ /CONTD: PRETRIAL IN ERP ON 03-22-11/CONTD: PRELIMINARY HEARING ON 05-16-11/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-11T09:15:00.000Z",
+      "docketEntryComment": "/CAL:FOR DISPOSITION/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/VD:05-16-11 HEARING DATE/VD:03-22-11 PRETRIAL DATE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-25T13:30:00.000Z",
+      "docketEntryComment": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/BAIL:20,000/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-03-11 9:15 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2011-03-11",
+      "hearing_time": "9:15 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-01 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2011-03-01",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-02-25 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2011-02-25",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ALEEM RAJA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "487(c) PC/F",
+    "filed_date": "2011-02-24",
+    "defendant": "KEVIN W HILL",
+    "searched_key": "HILL/KE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/11005648.json",
     "searched_last_name": "HILL",
     "searched_first_prefix": "KE",
-    "charges": "487(c) PC/F",
     "row": {
       "DEFENDANTNAME": "KEVIN W HILL",
       "CASENUMBER": "CRI-11005648",
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3669598",
+  "docket_entries": [
+    {
+      "filedDate": "2011-03-11T09:00:00.000Z",
+      "docketEntryComment": "DA ADD TO CAL FOR MOT TO DISM FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-03-11T09:00:00.000Z",
+      "description": "DA ADD TO CAL FOR MOT TO DISM FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/ STWPX/987,2/ /CONTD: PRETRIAL IN ERP ON 03-22-11/CONTD: PRELIMINARY HEARING ON 05-16-11/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-03-01T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/ STWPX/987,2/ /CONTD: PRETRIAL IN ERP ON 03-22-11/CONTD: PRELIMINARY HEARING ON 05-16-11/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-11T09:15:00.000Z",
+      "docketEntryComment": "/CAL:FOR DISPOSITION/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/VD:05-16-11 HEARING DATE/VD:03-22-11 PRETRIAL DATE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-03-11T09:15:00.000Z",
+      "description": "/CAL:FOR DISPOSITION/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/VD:05-16-11 HEARING DATE/VD:03-22-11 PRETRIAL DATE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-25T13:30:00.000Z",
+      "docketEntryComment": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/BAIL:20,000/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-02-25T13:30:00.000Z",
+      "description": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/BAIL:20,000/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11005648",
-    "portal_case_id": "",
+    "portal_case_id": "3669598",
     "display_case_number": "CRI-11005648",
     "defendant": "KEVIN W HILL",
     "filed_date": "2011-02-24",
@@ -59,12 +175,68 @@
       "defendant": "KEVIN W HILL",
       "filed_date": "2011-02-24"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "487(c) PC/F",
+    "charge_rows": [
+      {
+        "raw": "487(c) PC/F",
+        "title": "Penal Code § 487(c)",
+        "title_source": "programmatic_citation",
+        "code": "PC 487(c)",
+        "code_system": "PC",
+        "section": "487(c)",
+        "citation": "Penal Code § 487(c)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KEVIN W HILL, and date of filing 2011-02-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KEVIN W HILL, date of filing, 2011-02-24, and charges in the case: 487(c) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "487(c) PC/F",
+      "title": "Penal Code § 487(c)",
+      "title_source": "programmatic_citation",
+      "code": "PC 487(c)",
+      "code_system": "PC",
+      "section": "487(c)",
+      "citation": "Penal Code § 487(c)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:36:11.130Z",
+  "portal_case_id": "3669598",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11005648",
+      "defendant": "KEVIN W HILL",
+      "filed_date": "2011-02-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3669598"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.018537+00:00"
 }

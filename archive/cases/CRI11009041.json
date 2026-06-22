@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:05:09.711Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:40:23.165Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11009041",
   "criminal_case_number": "11009041",
@@ -24,11 +24,77 @@
       "name": "JORDAN JORDAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JORDAN JORDAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-04-04T13:30:00.000Z",
+      "docketEntryComment": "/CAL  ARRAIGNMENT/TEXT CONFL CNSL APPTD/X THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: CHRISTOPHER SHEA/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD FOR TRIAL IS 05-04-11/987,2/BAIL 2500/CONTD:PRETRIAL CONFERENCE ON 04-14-11/DOP/CONTD:JURY TRIAL ON 04-22-11/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-06-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/MO PC 1385:UNABLE TO SUSTAIN/BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-04-14T09:00:00.000Z",
+      "docketEntryComment": "/GTWM/VD:04-22-11 TRIAL DATE/CONTD:JURY TRIAL/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-06-10 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2011-06-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-04-14 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2011-04-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-04-04 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2011-04-04",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CHRISTOPHER SHEA",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3672793",
+  "docket_entries": [
+    {
+      "filedDate": "2011-04-04T13:30:00.000Z",
+      "docketEntryComment": "/CAL  ARRAIGNMENT/TEXT CONFL CNSL APPTD/X THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: CHRISTOPHER SHEA/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD FOR TRIAL IS 05-04-11/987,2/BAIL 2500/CONTD:PRETRIAL CONFERENCE ON 04-14-11/DOP/CONTD:JURY TRIAL ON 04-22-11/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-04-04T13:30:00.000Z",
+      "description": "/CAL ARRAIGNMENT/TEXT CONFL CNSL APPTD/X THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: CHRISTOPHER SHEA/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD FOR TRIAL IS 05-04-11/987,2/BAIL 2500/CONTD:PRETRIAL CONFERENCE ON 04-14-11/DOP/CONTD:JURY TRIAL ON 04-22-11/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-06-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/MO PC 1385:UNABLE TO SUSTAIN/BE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-06-10T09:00:00.000Z",
+      "description": "/CAL:TRIAL/MO PC 1385:UNABLE TO SUSTAIN/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-04-14T09:00:00.000Z",
+      "docketEntryComment": "/GTWM/VD:04-22-11 TRIAL DATE/CONTD:JURY TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-04-14T09:00:00.000Z",
+      "description": "/GTWM/VD:04-22-11 TRIAL DATE/CONTD:JURY TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11009041",
-    "portal_case_id": "",
+    "portal_case_id": "3672793",
     "display_case_number": "CRI-11009041",
     "defendant": "JORDAN JORDAN",
     "filed_date": "2011-04-04",
@@ -59,12 +156,93 @@
       "defendant": "JORDAN JORDAN",
       "filed_date": "2011-04-04"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "166(a)(4) PC/M 166(a)(9) PC/M",
+    "charge_rows": [
+      {
+        "raw": "166(a)(4) PC/M",
+        "title": "Penal Code § 166(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 166(a)(4)",
+        "code_system": "PC",
+        "section": "166(a)(4)",
+        "citation": "Penal Code § 166(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "166(a)(9) PC/M",
+        "title": "Penal Code § 166(a)(9)",
+        "title_source": "programmatic_citation",
+        "code": "PC 166(a)(9)",
+        "code_system": "PC",
+        "section": "166(a)(9)",
+        "citation": "Penal Code § 166(a)(9)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JORDAN JORDAN, and date of filing 2011-04-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JORDAN JORDAN, date of filing, 2011-04-04, and charges in the case: 166(a)(4) PC/M 166(a)(9) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "166(a)(4) PC/M",
+      "title": "Penal Code § 166(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 166(a)(4)",
+      "code_system": "PC",
+      "section": "166(a)(4)",
+      "citation": "Penal Code § 166(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "166(a)(9) PC/M",
+      "title": "Penal Code § 166(a)(9)",
+      "title_source": "programmatic_citation",
+      "code": "PC 166(a)(9)",
+      "code_system": "PC",
+      "section": "166(a)(9)",
+      "citation": "Penal Code § 166(a)(9)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:40:23.920Z",
+  "portal_case_id": "3672793",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11009041",
+      "defendant": "JORDAN JORDAN",
+      "filed_date": "2011-04-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3672793"
+  }
 }

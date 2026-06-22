@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:46:19.476Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:38:19.915Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10019155",
   "criminal_case_number": "10019155",
@@ -24,19 +24,71 @@
       "name": "CARDARIAN D HOWARD",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CARDARIAN D HOWARD",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-06-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:SPECIAL APPEARANCE BY PD STEPHANIE LACAMBRA FOR PD RANDALL MARTIN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW//LD:FOR PRELIMINARY HEARING IS 07-13-10/987,2/BAIL:25,000/CONTD:PRELIMINARYHEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FOR POSS DISM/VD:07-12-10/MO PC 1385:IN LIGHT OF SENTENCE IN CASE 2382963 /",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-07-02 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 0,
+      "court_date": "2010-07-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-28 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2010-06-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "RANDALL MARTIN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11355 HS/F 166(a)(4) PC/M",
+    "filed_date": "2010-06-28",
+    "defendant": "CARDARIAN D HOWARD",
+    "searched_key": "HOWARD/CA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/10019155.json",
     "searched_last_name": "HOWARD",
     "searched_first_prefix": "CA",
-    "charges": "11355 HS/F 166(a)(4) PC/M",
     "row": {
       "DEFENDANTNAME": "CARDARIAN D HOWARD",
       "CASENUMBER": "CRI-10019155",
@@ -45,11 +97,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3646470",
+  "docket_entries": [
+    {
+      "filedDate": "2010-06-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:SPECIAL APPEARANCE BY PD STEPHANIE LACAMBRA FOR PD RANDALL MARTIN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW//LD:FOR PRELIMINARY HEARING IS 07-13-10/987,2/BAIL:25,000/CONTD:PRELIMINARYHEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-06-28T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:SPECIAL APPEARANCE BY PD STEPHANIE LACAMBRA FOR PD RANDALL MARTIN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW//LD:FOR PRELIMINARY HEARING IS 07-13-10/987,2/BAIL:25,000/CONTD:PRELIMINARYHEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FOR POSS DISM/VD:07-12-10/MO PC 1385:IN LIGHT OF SENTENCE IN CASE 2382963 /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-07-02T09:00:00.000Z",
+      "description": "/CAL:FOR POSS DISM/VD:07-12-10/MO PC 1385:IN LIGHT OF SENTENCE IN CASE 2382963 /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10019155",
-    "portal_case_id": "",
+    "portal_case_id": "3646470",
     "display_case_number": "CRI-10019155",
     "defendant": "CARDARIAN D HOWARD",
     "filed_date": "2010-06-28",
@@ -59,12 +132,94 @@
       "defendant": "CARDARIAN D HOWARD",
       "filed_date": "2010-06-28"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11355 HS/F 166(a)(4) PC/M",
+    "charge_rows": [
+      {
+        "raw": "11355 HS/F",
+        "title": "Health and Safety Code § 11355",
+        "title_source": "programmatic_citation",
+        "code": "HS 11355",
+        "code_system": "HS",
+        "section": "11355",
+        "citation": "Health and Safety Code § 11355",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "166(a)(4) PC/M",
+        "title": "Penal Code § 166(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 166(a)(4)",
+        "code_system": "PC",
+        "section": "166(a)(4)",
+        "citation": "Penal Code § 166(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CARDARIAN D HOWARD, and date of filing 2010-06-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CARDARIAN D HOWARD, date of filing, 2010-06-28, and charges in the case: 11355 HS/F 166(a)(4) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11355 HS/F",
+      "title": "Health and Safety Code § 11355",
+      "title_source": "programmatic_citation",
+      "code": "HS 11355",
+      "code_system": "HS",
+      "section": "11355",
+      "citation": "Health and Safety Code § 11355",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "166(a)(4) PC/M",
+      "title": "Penal Code § 166(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 166(a)(4)",
+      "code_system": "PC",
+      "section": "166(a)(4)",
+      "citation": "Penal Code § 166(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:38:20.534Z",
+  "portal_case_id": "3646470",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10019155",
+      "defendant": "CARDARIAN D HOWARD",
+      "filed_date": "2010-06-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3646470"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.268060+00:00"
 }

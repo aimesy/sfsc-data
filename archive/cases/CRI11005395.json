@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:09:06.433Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:35:19.010Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11005395",
   "criminal_case_number": "11005395",
@@ -24,19 +24,71 @@
       "name": "DAVID R HERNANDEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID R HERNANDEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-02-23T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 04-25-11/987,2/ORPJ/X:DEFENDANT IS TO CHECKIN TWO TIMES PER WEEK WITH ORPJ,/X:DEFENDANT IS TO PARTICIPATE IN DRUG CONSELING IN ORPJ,/X:DEFENDANT IS TO NOT GET ANY NEW CASES, AND IS TO MAKE ALL OF HIS COURT DATES,/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE HRG CONFERENCE/MO PC 1385:UNABLE TO SUBSTAIN BURDEN OF PROOF /",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-03-08 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2011-03-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-02-23 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2011-02-23",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CHRISTINE SCHENONE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11350(a) HS/F 11364(a) HS/M",
+    "filed_date": "2011-02-23",
+    "defendant": "DAVID R HERNANDEZ",
+    "searched_key": "HERNANDEZ/DA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/11005395.json",
     "searched_last_name": "HERNANDEZ",
     "searched_first_prefix": "DA",
-    "charges": "11350(a) HS/F 11364(a) HS/M",
     "row": {
       "DEFENDANTNAME": "DAVID R HERNANDEZ",
       "CASENUMBER": "CRI-11005395",
@@ -45,11 +97,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3669357",
+  "docket_entries": [
+    {
+      "filedDate": "2011-02-23T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 04-25-11/987,2/ORPJ/X:DEFENDANT IS TO CHECKIN TWO TIMES PER WEEK WITH ORPJ,/X:DEFENDANT IS TO PARTICIPATE IN DRUG CONSELING IN ORPJ,/X:DEFENDANT IS TO NOT GET ANY NEW CASES, AND IS TO MAKE ALL OF HIS COURT DATES,/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-02-23T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 04-25-11/987,2/ORPJ/X:DEFENDANT IS TO CHECKIN TWO TIMES PER WEEK WITH ORPJ,/X:DEFENDANT IS TO PARTICIPATE IN DRUG CONSELING IN ORPJ,/X:DEFENDANT IS TO NOT GET ANY NEW CASES, AND IS TO MAKE ALL OF HIS COURT DATES,/CONTD: PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE HRG CONFERENCE/MO PC 1385:UNABLE TO SUBSTAIN BURDEN OF PROOF /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-03-08T09:00:00.000Z",
+      "description": "/CAL:PRE HRG CONFERENCE/MO PC 1385:UNABLE TO SUBSTAIN BURDEN OF PROOF /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11005395",
-    "portal_case_id": "",
+    "portal_case_id": "3669357",
     "display_case_number": "CRI-11005395",
     "defendant": "DAVID R HERNANDEZ",
     "filed_date": "2011-02-23",
@@ -59,12 +132,94 @@
       "defendant": "DAVID R HERNANDEZ",
       "filed_date": "2011-02-23"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F 11364(a) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11364(a) HS/M",
+        "title": "Health and Safety Code § 11364(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11364(a)",
+        "code_system": "HS",
+        "section": "11364(a)",
+        "citation": "Health and Safety Code § 11364(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID R HERNANDEZ, and date of filing 2011-02-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID R HERNANDEZ, date of filing, 2011-02-23, and charges in the case: 11350(a) HS/F 11364(a) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11364(a) HS/M",
+      "title": "Health and Safety Code § 11364(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11364(a)",
+      "code_system": "HS",
+      "section": "11364(a)",
+      "citation": "Health and Safety Code § 11364(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:35:20.236Z",
+  "portal_case_id": "3669357",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11005395",
+      "defendant": "DAVID R HERNANDEZ",
+      "filed_date": "2011-02-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3669357"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.203553+00:00"
 }

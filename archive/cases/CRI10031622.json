@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:32:00.832Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:42:19.525Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10031622",
   "criminal_case_number": "10031622",
@@ -24,11 +24,128 @@
       "name": "ANDREW JENKINS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANDREW JENKINS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-11-17T09:57:00.000Z",
+      "docketEntryComment": "DA'S OPP TO PC1538,5 MOTION FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-17T09:57:00.000Z",
+      "docketEntryComment": "PD'S MOT TO CONTINUE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-12T09:23:00.000Z",
+      "docketEntryComment": "PD'S PC1538,5 MOT/P&A FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD:FOR PRELIMINARY HEARING IS 12-27-10/987,2/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-25T09:00:00.000Z",
+      "docketEntryComment": "CAL:PRETRIAL/CTORD:DIVERSION GRANTED AND DEEM COMPLETED/TEXT: COURT GRTSMOTION TO DISM PURS PC 1001,7 AS TO COUNT  1    /1001,7:1/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/CONT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/DEF:IS GOING TO SALVATION ARMY THIS MORNING/STWPX/CONTD:PRE-HEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/CONTD PRELIM HRG, DOP/LD:12-27-10 60TH DAY/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-02-25 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2011-02-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-01-03 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2011-01-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-11-19 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2010-11-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-11-05 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2010-11-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-10-25 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 4,
+      "court_date": "2010-10-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MICHELLE TONG",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +159,99 @@
       "CASENUMBER": "CRI-10031622",
       "FILEDDATE": "2010-10-25 09:00:00",
       "CHARGES": "11350(a) HS/F"
-    }
+    },
+    "filed_date": "2010-10-25",
+    "defendant": "ANDREW JENKINS",
+    "searched_key": "JENKINS/AN",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/10031622.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3658115",
+  "docket_entries": [
+    {
+      "filedDate": "2010-11-17T09:57:00.000Z",
+      "docketEntryComment": "DA'S OPP TO PC1538,5 MOTION FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-11-17T09:57:00.000Z",
+      "description": "DA'S OPP TO PC1538,5 MOTION FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-17T09:57:00.000Z",
+      "docketEntryComment": "PD'S MOT TO CONTINUE FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-11-17T09:57:00.000Z",
+      "description": "PD'S MOT TO CONTINUE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-12T09:23:00.000Z",
+      "docketEntryComment": "PD'S PC1538,5 MOT/P&A FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-11-12T09:23:00.000Z",
+      "description": "PD'S PC1538,5 MOT/P&A FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD:FOR PRELIMINARY HEARING IS 12-27-10/987,2/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-10-25T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD:FOR PRELIMINARY HEARING IS 12-27-10/987,2/CONTD:PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-25T09:00:00.000Z",
+      "docketEntryComment": "CAL:PRETRIAL/CTORD:DIVERSION GRANTED AND DEEM COMPLETED/TEXT: COURT GRTSMOTION TO DISM PURS PC 1001,7 AS TO COUNT  1    /1001,7:1/DISM3/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-02-25T09:00:00.000Z",
+      "description": "CAL:PRETRIAL/CTORD:DIVERSION GRANTED AND DEEM COMPLETED/TEXT: COURT GRTSMOTION TO DISM PURS PC 1001,7 AS TO COUNT 1 /1001,7:1/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-01-03T09:00:00.000Z",
+      "description": "/CAL:PRE-HEARING CONFERENCE/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/DEF:IS GOING TO SALVATION ARMY THIS MORNING/STWPX/CONTD:PRE-HEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2010-11-19T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/DEF:IS GOING TO SALVATION ARMY THIS MORNING/STWPX/CONTD:PRE-HEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/CONTD PRELIM HRG, DOP/LD:12-27-10 60TH DAY/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2010-11-05T09:00:00.000Z",
+      "description": "/CAL:PRE-HEARING CONFERENCE/CONTD PRELIM HRG, DOP/LD:12-27-10 60TH DAY/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10031622",
-    "portal_case_id": "",
+    "portal_case_id": "3658115",
     "display_case_number": "CRI-10031622",
     "defendant": "ANDREW JENKINS",
     "filed_date": "2010-10-25",
@@ -59,12 +261,76 @@
       "defendant": "ANDREW JENKINS",
       "filed_date": "2010-10-25"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC1538",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANDREW JENKINS, and date of filing 2010-10-25. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANDREW JENKINS, date of filing, 2010-10-25, and charges in the case: 11350(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:42:20.195Z",
+  "portal_case_id": "3658115",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10031622",
+      "defendant": "ANDREW JENKINS",
+      "filed_date": "2010-10-25"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3658115"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:22.155667+00:00"
 }

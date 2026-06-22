@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:27:01.101Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:41:42.627Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10029029",
   "criminal_case_number": "10029029",
@@ -24,19 +24,112 @@
       "name": "JULIA G GUZMAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JULIA G GUZMAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-10-04T15:00:00.000Z",
+      "docketEntryComment": "PD'S MTS FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 10-14-10/987,2/BAIL:30,000/X:BAIL IS SET WITHOUT PREJUDICE,/X:COURT REFERRED DEFENDANT TO S,P,R,/CONTD:SPR ELIGIBILITY REPORT ON 10-01-10/CONTD:PRELIMINARY HEARING ON 10-13-10/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-14T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:THE PEOPLE SUFFER A FIRST DISMISSAL, LACKING AVAILABILITY OF EVIDENCE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/CONTD PRELIM HRG, DOP/CONTD:10-14-10 FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SPR ELIG RPT/LD:10-14-10/X:SPR DENIED/X:HEARING DATE OF 10-13-10 CONFIRMED/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-10-14 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2010-10-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-10-13 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2010-10-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-10-01 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2010-10-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-09-29 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2010-09-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SARAH HEFLING",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11350(a) HS/F 11350(a) HS/F",
+    "filed_date": "2010-09-29",
+    "defendant": "JULIA G GUZMAN",
+    "searched_key": "GUZMAN/JU",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/10029029.json",
     "searched_last_name": "GUZMAN",
     "searched_first_prefix": "JU",
-    "charges": "11350(a) HS/F 11350(a) HS/F",
     "row": {
       "DEFENDANTNAME": "JULIA G GUZMAN",
       "CASENUMBER": "CRI-10029029",
@@ -45,11 +138,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3655689",
+  "docket_entries": [
+    {
+      "filedDate": "2010-10-04T15:00:00.000Z",
+      "docketEntryComment": "PD'S MTS FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-10-04T15:00:00.000Z",
+      "description": "PD'S MTS FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 10-14-10/987,2/BAIL:30,000/X:BAIL IS SET WITHOUT PREJUDICE,/X:COURT REFERRED DEFENDANT TO S,P,R,/CONTD:SPR ELIGIBILITY REPORT ON 10-01-10/CONTD:PRELIMINARY HEARING ON 10-13-10/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-09-29T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 10-14-10/987,2/BAIL:30,000/X:BAIL IS SET WITHOUT PREJUDICE,/X:COURT REFERRED DEFENDANT TO S,P,R,/CONTD:SPR ELIGIBILITY REPORT ON 10-01-10/CONTD:PRELIMINARY HEARING ON 10-13-10/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-14T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:THE PEOPLE SUFFER A FIRST DISMISSAL, LACKING AVAILABILITY OF EVIDENCE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-10-14T09:00:00.000Z",
+      "description": "/MO PC 1385:THE PEOPLE SUFFER A FIRST DISMISSAL, LACKING AVAILABILITY OF EVIDENCE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/CONTD PRELIM HRG, DOP/CONTD:10-14-10 FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-10-13T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/CONTD PRELIM HRG, DOP/CONTD:10-14-10 FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SPR ELIG RPT/LD:10-14-10/X:SPR DENIED/X:HEARING DATE OF 10-13-10 CONFIRMED/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-10-01T09:00:00.000Z",
+      "description": "/CAL:SPR ELIG RPT/LD:10-14-10/X:SPR DENIED/X:HEARING DATE OF 10-13-10 CONFIRMED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10029029",
-    "portal_case_id": "",
+    "portal_case_id": "3655689",
     "display_case_number": "CRI-10029029",
     "defendant": "JULIA G GUZMAN",
     "filed_date": "2010-09-29",
@@ -59,12 +203,68 @@
       "defendant": "JULIA G GUZMAN",
       "filed_date": "2010-09-29"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F 11350(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JULIA G GUZMAN, and date of filing 2010-09-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JULIA G GUZMAN, date of filing, 2010-09-29, and charges in the case: 11350(a) HS/F 11350(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:41:43.338Z",
+  "portal_case_id": "3655689",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10029029",
+      "defendant": "JULIA G GUZMAN",
+      "filed_date": "2010-09-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3655689"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.648898+00:00"
 }

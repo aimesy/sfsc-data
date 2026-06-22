@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:52:30.014Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:29:42.142Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12012201",
   "criminal_case_number": "12012201",
@@ -24,19 +24,107 @@
       "name": "DAVID HENDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID HENDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-05-18T09:15:00.000Z",
+      "docketEntryComment": "/CAL: SENTENCING/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISIONPURSUANT TO PC3455/3455ADV/ 3455REIN/DEF:IS ORDERED TO SERVE  4 MONTHS //CTS:15   /4019HALF /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-05-09T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD POST COMM SERV SUPERVISION VIO PC 3455/X:COURT REVOKED POST COMMSERVICE SUPERVISION/SHER/NB/CONTD:SETTING APD POST COMM SERV SUPERVISION/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-05-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET PC3455 HEARING RE POST COMM SERV/X: DEFENDANT FOUND IN VIOLATION AND SENTENCED AT LINE 915/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-05-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET APD POST COMM SERV VIOL HRG, PURS TO 3455APC/CONTD: TO SET POST COMM SERV SUPV VIOL 3455APC HEARING/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-05-18 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "2012-05-18",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-05-18 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 1,
+      "court_date": "2012-05-18",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-05-11 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 2,
+      "court_date": "2012-05-11",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-05-09 11:30 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "2012-05-09",
+      "hearing_time": "11:30 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JAY RORTY",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "3455(a) PC/F",
+    "filed_date": "2012-05-09",
+    "defendant": "DAVID HENDERSON",
+    "searched_key": "HENDERSON/DA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/12012201.json",
     "searched_last_name": "HENDERSON",
     "searched_first_prefix": "DA",
-    "charges": "3455(a) PC/F",
     "row": {
       "DEFENDANTNAME": "DAVID HENDERSON",
       "CASENUMBER": "CRI-12012201",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3709671",
+  "docket_entries": [
+    {
+      "filedDate": "2012-05-18T09:15:00.000Z",
+      "docketEntryComment": "/CAL: SENTENCING/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISIONPURSUANT TO PC3455/3455ADV/ 3455REIN/DEF:IS ORDERED TO SERVE  4 MONTHS //CTS:15   /4019HALF /",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-05-18T09:15:00.000Z",
+      "description": "/CAL: SENTENCING/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISIONPURSUANT TO PC3455/3455ADV/ 3455REIN/DEF:IS ORDERED TO SERVE 4 MONTHS //CTS:15 /4019HALF /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-05-09T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD POST COMM SERV SUPERVISION VIO PC 3455/X:COURT REVOKED POST COMMSERVICE SUPERVISION/SHER/NB/CONTD:SETTING APD POST COMM SERV SUPERVISION/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-05-09T11:30:00.000Z",
+      "description": "/CAL:APD POST COMM SERV SUPERVISION VIO PC 3455/X:COURT REVOKED POST COMMSERVICE SUPERVISION/SHER/NB/CONTD:SETTING APD POST COMM SERV SUPERVISION/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-05-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET PC3455 HEARING RE POST COMM SERV/X: DEFENDANT FOUND IN VIOLATION AND SENTENCED AT LINE 915/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-05-18T09:00:00.000Z",
+      "description": "/CAL: TO SET PC3455 HEARING RE POST COMM SERV/X: DEFENDANT FOUND IN VIOLATION AND SENTENCED AT LINE 915/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-05-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET APD POST COMM SERV VIOL HRG, PURS TO 3455APC/CONTD: TO SET POST COMM SERV SUPV VIOL 3455APC HEARING/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-05-11T09:00:00.000Z",
+      "description": "/CAL: TO SET APD POST COMM SERV VIOL HRG, PURS TO 3455APC/CONTD: TO SET POST COMM SERV SUPV VIOL 3455APC HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12012201",
-    "portal_case_id": "",
+    "portal_case_id": "3709671",
     "display_case_number": "CRI-12012201",
     "defendant": "DAVID HENDERSON",
     "filed_date": "2012-05-09",
@@ -59,12 +188,76 @@
       "defendant": "DAVID HENDERSON",
       "filed_date": "2012-05-09"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC3455",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID HENDERSON, and date of filing 2012-05-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID HENDERSON, date of filing, 2012-05-09, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:29:42.836Z",
+  "portal_case_id": "3709671",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12012201",
+      "defendant": "DAVID HENDERSON",
+      "filed_date": "2012-05-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3709671"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.753861+00:00"
 }

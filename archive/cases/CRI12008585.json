@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:33:11.546Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:33:44.356Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12008585",
   "criminal_case_number": "12008585",
@@ -24,11 +24,41 @@
       "name": "DAMIEN MURRAY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAMIEN MURRAY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-04-04T11:30:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/X:THE DEFENDANT ADMITS A VIOLATION OF APD POST COMM SERV SUPERVISION  VIOLPC 3455(A),/CTORD:THE DEFENDANT TO PARTICIPATE IN A OUT PATIENT DRUG TREATMENT PROGRAM/3455ADV/3455REV/DEF:IS ORDERED TO SERVE 30 DAYS  /CTS: 6/4019HALF/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-04-04 11:30 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2012-04-04",
+      "hearing_time": "11:30 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ERIC QUANDT",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +75,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3706116",
+  "docket_entries": [
+    {
+      "filedDate": "2012-04-04T11:30:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/X:THE DEFENDANT ADMITS A VIOLATION OF APD POST COMM SERV SUPERVISION  VIOLPC 3455(A),/CTORD:THE DEFENDANT TO PARTICIPATE IN A OUT PATIENT DRUG TREATMENT PROGRAM/3455ADV/3455REV/DEF:IS ORDERED TO SERVE 30 DAYS  /CTS: 6/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-04-04T11:30:00.000Z",
+      "description": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/X:THE DEFENDANT ADMITS A VIOLATION OF APD POST COMM SERV SUPERVISION VIOLPC 3455(A),/CTORD:THE DEFENDANT TO PARTICIPATE IN A OUT PATIENT DRUG TREATMENT PROGRAM/3455ADV/3455REV/DEF:IS ORDERED TO SERVE 30 DAYS /CTS: 6/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12008585",
-    "portal_case_id": "",
+    "portal_case_id": "3706116",
     "display_case_number": "CRI-12008585",
     "defendant": "DAMIEN MURRAY",
     "filed_date": "2012-04-04",
@@ -59,12 +100,68 @@
       "defendant": "DAMIEN MURRAY",
       "filed_date": "2012-04-04"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAMIEN MURRAY, and date of filing 2012-04-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAMIEN MURRAY, date of filing, 2012-04-04, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:33:45.054Z",
+  "portal_case_id": "3706116",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12008585",
+      "defendant": "DAMIEN MURRAY",
+      "filed_date": "2012-04-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3706116"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T13:55:04.307Z"
 }

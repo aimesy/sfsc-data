@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:47:04.458Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:32:43.572Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11004781",
   "criminal_case_number": "11004781",
@@ -24,11 +24,113 @@
       "name": "KENNETH TAYLOR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KENNETH TAYLOR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-05-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD PROG REPORT/DAWT/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7AS TO COUNT 1/1001,7:  1/X:DEFENDANT HAS SUCCESSFULLY COMPLETED PRETRIALDIVERSION, THE COURT GRANTS THE MOTION TO DISMISS COUNT 1 PURSUANT TO PENALCODE 1001,9/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD ELIG REPORT/X:MALISHA JONES IS SPECIALLY APPEARING ON BEHALF OF THE PEOPLE/DAWT/CONTD PTD PROG RPT/PTD:  1/PROGPTD:4-27-11/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/DOPU:PTD/X:COUNT(S) 2 & 3 TRAILING SUCCESSFUL DIVERSION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-07T13:30:00.000Z",
+      "docketEntryComment": "/CAL: PRETRIAL CONFERENCE/X: THE COURT FINDS GOOD CAUSE TO REFER DEFT TO PTD AS TO COUNT #1 ONLY, THIS IS A ONE TIME ONLY REFERRAL,/CONTD PTD ELIG RPT/GTWM/X:COUNT 1 CHARGING 487(A) PC-M IS REFERRED TO PRETRIAL DIVERSION FORAN ELIGIBILITY REPORT,/PTDIV 03-29-11/CONT/DOPU PTD/X COUNT(S) 2 & 3 TRAILING SUCCESSFUL DIVERSION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-04-27T13:30:00.000Z",
+      "docketEntryComment": "/CAL PTD PROG RPT/DAWT/16    CPTD PROG RPT/CGTW/PROGPTD 05-25-11/CONTD PRRIAL DIVERSION PROGRESS REPORT/DOPU:PTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:1ST PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-05-25 9:00 AM",
+      "hearingType": "Pretrial Diversion Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2011-05-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Progress Report",
+      "hearing_type": "Pretrial Diversion Progress Report",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-04-27 1:30 PM",
+      "hearingType": "Pretrial Diversion Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2011-04-27",
+      "hearing_time": "1:30 PM",
+      "matters": "Pretrial Diversion Progress Report",
+      "hearing_type": "Pretrial Diversion Progress Report",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-29 9:00 AM",
+      "hearingType": "Pretrial Diversion Eligibility Report",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2011-03-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Eligibility Report",
+      "hearing_type": "Pretrial Diversion Eligibility Report",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-07 1:30 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2011-03-07",
+      "hearing_time": "1:30 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-02-23 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2011-02-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PRITHIKA BALAKRISHNAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +147,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3668784",
+  "docket_entries": [
+    {
+      "filedDate": "2011-05-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD PROG REPORT/DAWT/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7AS TO COUNT 1/1001,7:  1/X:DEFENDANT HAS SUCCESSFULLY COMPLETED PRETRIALDIVERSION, THE COURT GRANTS THE MOTION TO DISMISS COUNT 1 PURSUANT TO PENALCODE 1001,9/DISM3/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-05-25T09:00:00.000Z",
+      "description": "/CAL:PTD PROG REPORT/DAWT/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7AS TO COUNT 1/1001,7: 1/X:DEFENDANT HAS SUCCESSFULLY COMPLETED PRETRIALDIVERSION, THE COURT GRANTS THE MOTION TO DISMISS COUNT 1 PURSUANT TO PENALCODE 1001,9/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD ELIG REPORT/X:MALISHA JONES IS SPECIALLY APPEARING ON BEHALF OF THE PEOPLE/DAWT/CONTD PTD PROG RPT/PTD:  1/PROGPTD:4-27-11/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/DOPU:PTD/X:COUNT(S) 2 & 3 TRAILING SUCCESSFUL DIVERSION/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-03-29T09:00:00.000Z",
+      "description": "/CAL:PTD ELIG REPORT/X:MALISHA JONES IS SPECIALLY APPEARING ON BEHALF OF THE PEOPLE/DAWT/CONTD PTD PROG RPT/PTD: 1/PROGPTD:4-27-11/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/DOPU:PTD/X:COUNT(S) 2 & 3 TRAILING SUCCESSFUL DIVERSION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-07T13:30:00.000Z",
+      "docketEntryComment": "/CAL: PRETRIAL CONFERENCE/X: THE COURT FINDS GOOD CAUSE TO REFER DEFT TO PTD AS TO COUNT #1 ONLY, THIS IS A ONE TIME ONLY REFERRAL,/CONTD PTD ELIG RPT/GTWM/X:COUNT 1 CHARGING 487(A) PC-M IS REFERRED TO PRETRIAL DIVERSION FORAN ELIGIBILITY REPORT,/PTDIV 03-29-11/CONT/DOPU PTD/X COUNT(S) 2 & 3 TRAILING SUCCESSFUL DIVERSION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-03-07T13:30:00.000Z",
+      "description": "/CAL: PRETRIAL CONFERENCE/X: THE COURT FINDS GOOD CAUSE TO REFER DEFT TO PTD AS TO COUNT #1 ONLY, THIS IS A ONE TIME ONLY REFERRAL,/CONTD PTD ELIG RPT/GTWM/X:COUNT 1 CHARGING 487(A) PC-M IS REFERRED TO PRETRIAL DIVERSION FORAN ELIGIBILITY REPORT,/PTDIV 03-29-11/CONT/DOPU PTD/X COUNT(S) 2 & 3 TRAILING SUCCESSFUL DIVERSION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-04-27T13:30:00.000Z",
+      "docketEntryComment": "/CAL PTD PROG RPT/DAWT/16    CPTD PROG RPT/CGTW/PROGPTD 05-25-11/CONTD PRRIAL DIVERSION PROGRESS REPORT/DOPU:PTD/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-04-27T13:30:00.000Z",
+      "description": "/CAL PTD PROG RPT/DAWT/16 CPTD PROG RPT/CGTW/PROGPTD 05-25-11/CONTD PRRIAL DIVERSION PROGRESS REPORT/DOPU:PTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:1ST PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-02-23T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:1ST PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11004781",
-    "portal_case_id": "",
+    "portal_case_id": "3668784",
     "display_case_number": "CRI-11004781",
     "defendant": "KENNETH TAYLOR",
     "filed_date": "2011-02-17",
@@ -59,12 +212,119 @@
       "defendant": "KENNETH TAYLOR",
       "filed_date": "2011-02-17"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "487(a) PC/M 487(c) PC/M 148(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "487(a) PC/M",
+        "title": "Penal Code § 487(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 487(a)",
+        "code_system": "PC",
+        "section": "487(a)",
+        "citation": "Penal Code § 487(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "487(c) PC/M",
+        "title": "Penal Code § 487(c)",
+        "title_source": "programmatic_citation",
+        "code": "PC 487(c)",
+        "code_system": "PC",
+        "section": "487(c)",
+        "citation": "Penal Code § 487(c)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "148(a)(1) PC/M",
+        "title": "Penal Code § 148(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148(a)(1)",
+        "code_system": "PC",
+        "section": "148(a)(1)",
+        "citation": "Penal Code § 148(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KENNETH TAYLOR, and date of filing 2011-02-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KENNETH TAYLOR, date of filing, 2011-02-17, and charges in the case: 487(a) PC/M 487(c) PC/M 148(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "487(a) PC/M",
+      "title": "Penal Code § 487(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 487(a)",
+      "code_system": "PC",
+      "section": "487(a)",
+      "citation": "Penal Code § 487(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "487(c) PC/M",
+      "title": "Penal Code § 487(c)",
+      "title_source": "programmatic_citation",
+      "code": "PC 487(c)",
+      "code_system": "PC",
+      "section": "487(c)",
+      "citation": "Penal Code § 487(c)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "148(a)(1) PC/M",
+      "title": "Penal Code § 148(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148(a)(1)",
+      "code_system": "PC",
+      "section": "148(a)(1)",
+      "citation": "Penal Code § 148(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:32:44.259Z",
+  "portal_case_id": "3668784",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11004781",
+      "defendant": "KENNETH TAYLOR",
+      "filed_date": "2011-02-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3668784"
+  }
 }

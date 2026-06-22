@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:25:32.245Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:37:09.659Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11030403",
   "criminal_case_number": "11030403",
@@ -24,11 +24,82 @@
       "name": "DEAN O WILLIAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DEAN O WILLIAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-11-29T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:CJ 1Y/CTS:20/X:( THE REMAINING COUNTY JAIL TERM MAY BE SERVED INA RESIDENTIAL TREATMENT PROGRAM)/  /VF2:100/SECFEE40/ICNA/COLLECT/CCC:COUNTS 1 & 2/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-11-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING AND DEFENSE MOTION TO REDUCE FELONY CHARGES TO MISDEMEANORS/MO GRTD/TEXT:DEFT ADV & PER WVS CONST & CITZ RTS ENT PLEA OF G//DEFT ADV RTS:1 & 2/X:THIS IS A PLEA OPEN TO THE COURT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-11-14T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:DEFENSE MOTION FOR RELEASE ON OWN RECOGNIZANCE IS DENIED,/X:11000617 = PROB EXP 10-18-14, 11350(A)HS,FEL, PD MICHELLE TONG/X:11030397 = NWH 869MP,MISD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 11-30-11/987,2/BAIL:275,000/CTORD:BAIL SET WITHOUT PREJUDICE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-11-29 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2011-11-29",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-11-29 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2011-11-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-11-14 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2011-11-14",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PETER SANTINA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3693408",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-11-29T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:CJ 1Y/CTS:20/X:( THE REMAINING COUNTY JAIL TERM MAY BE SERVED INA RESIDENTIAL TREATMENT PROGRAM)/  /VF2:100/SECFEE40/ICNA/COLLECT/CCC:COUNTS 1 & 2/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-11-29T09:15:00.000Z",
+      "description": "/TWS/CH1:CJ 1Y/CTS:20/X:( THE REMAINING COUNTY JAIL TERM MAY BE SERVED INA RESIDENTIAL TREATMENT PROGRAM)/ /VF2:100/SECFEE40/ICNA/COLLECT/CCC:COUNTS 1 & 2/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-11-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING AND DEFENSE MOTION TO REDUCE FELONY CHARGES TO MISDEMEANORS/MO GRTD/TEXT:DEFT ADV & PER WVS CONST & CITZ RTS ENT PLEA OF G//DEFT ADV RTS:1 & 2/X:THIS IS A PLEA OPEN TO THE COURT/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-11-29T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING AND DEFENSE MOTION TO REDUCE FELONY CHARGES TO MISDEMEANORS/MO GRTD/TEXT:DEFT ADV & PER WVS CONST & CITZ RTS ENT PLEA OF G//DEFT ADV RTS:1 & 2/X:THIS IS A PLEA OPEN TO THE COURT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-11-14T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:DEFENSE MOTION FOR RELEASE ON OWN RECOGNIZANCE IS DENIED,/X:11000617 = PROB EXP 10-18-14, 11350(A)HS,FEL, PD MICHELLE TONG/X:11030397 = NWH 869MP,MISD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 11-30-11/987,2/BAIL:275,000/CTORD:BAIL SET WITHOUT PREJUDICE/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-11-14T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:DEFENSE MOTION FOR RELEASE ON OWN RECOGNIZANCE IS DENIED,/X:11000617 = PROB EXP 10-18-14, 11350(A)HS,FEL, PD MICHELLE TONG/X:11030397 = NWH 869MP,MISD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 11-30-11/987,2/BAIL:275,000/CTORD:BAIL SET WITHOUT PREJUDICE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11030403",
-    "portal_case_id": "",
+    "portal_case_id": "3693408",
     "display_case_number": "CRI-11030403",
     "defendant": "DEAN O WILLIAMS",
     "filed_date": "2011-11-14",
@@ -59,12 +171,94 @@
       "defendant": "DEAN O WILLIAMS",
       "filed_date": "2011-11-14"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "459 PC/M 487(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "459 PC/M",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "487(a) PC/M",
+        "title": "Penal Code § 487(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 487(a)",
+        "code_system": "PC",
+        "section": "487(a)",
+        "citation": "Penal Code § 487(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DEAN O WILLIAMS, and date of filing 2011-11-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DEAN O WILLIAMS, date of filing, 2011-11-14, and charges in the case: 459 PC/M 487(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/M",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "487(a) PC/M",
+      "title": "Penal Code § 487(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 487(a)",
+      "code_system": "PC",
+      "section": "487(a)",
+      "citation": "Penal Code § 487(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:37:10.313Z",
+  "portal_case_id": "3693408",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11030403",
+      "defendant": "DEAN O WILLIAMS",
+      "filed_date": "2011-11-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3693408"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:52:26.431Z"
 }

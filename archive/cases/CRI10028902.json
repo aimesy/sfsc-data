@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:29:00.823Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:40:17.039Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10028902",
   "criminal_case_number": "10028902",
@@ -24,19 +24,107 @@
       "name": "HENRY G BRYANT",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "HENRY G BRYANT",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-01-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRETRIAL CONFERENCE/X: DISTRICT ATTORNEY ANGELA PIERCE SPECIALLY APPEARING FOR THE PEOPLE,/MO138583/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:2ND PTC/CONTD:3RD PTC/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:1ST PTC/CONTD:2ND PTC/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-29T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:RESERVE THE RIGHT TO A DEMURRER,/GTWM/987,2/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-01-10 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2011-01-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-11-10 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 1,
+      "court_date": "2010-11-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-10-26 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 2,
+      "court_date": "2010-10-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-09-29 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 3,
+      "court_date": "2010-09-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "COREY FARRIS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "484(a)/490.5 PC/M",
+    "filed_date": "2010-09-29",
+    "defendant": "HENRY G BRYANT",
+    "searched_key": "BRYANT/HE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/10028902.json",
     "searched_last_name": "BRYANT",
     "searched_first_prefix": "HE",
-    "charges": "484(a)/490.5 PC/M",
     "row": {
       "DEFENDANTNAME": "HENRY G BRYANT",
       "CASENUMBER": "CRI-10028902",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3655577",
+  "docket_entries": [
+    {
+      "filedDate": "2011-01-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRETRIAL CONFERENCE/X: DISTRICT ATTORNEY ANGELA PIERCE SPECIALLY APPEARING FOR THE PEOPLE,/MO138583/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-01-10T09:00:00.000Z",
+      "description": "/CAL: PRETRIAL CONFERENCE/X: DISTRICT ATTORNEY ANGELA PIERCE SPECIALLY APPEARING FOR THE PEOPLE,/MO138583/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:2ND PTC/CONTD:3RD PTC/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-11-10T09:00:00.000Z",
+      "description": "/CAL:2ND PTC/CONTD:3RD PTC/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:1ST PTC/CONTD:2ND PTC/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-10-26T09:00:00.000Z",
+      "description": "/CAL:1ST PTC/CONTD:2ND PTC/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-29T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:RESERVE THE RIGHT TO A DEMURRER,/GTWM/987,2/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-09-29T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:RESERVE THE RIGHT TO A DEMURRER,/GTWM/987,2/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10028902",
-    "portal_case_id": "",
+    "portal_case_id": "3655577",
     "display_case_number": "CRI-10028902",
     "defendant": "HENRY G BRYANT",
     "filed_date": "2010-09-29",
@@ -60,11 +189,58 @@
       "filed_date": "2010-09-29"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "484(a)/490.5 PC/M",
+    "charge_rows": [
+      {
+        "raw": "484(a)/490.5 PC/M",
+        "title": "484(a)",
+        "title_source": "criminal_index_text",
+        "code": "PC 490.5",
+        "code_system": "PC",
+        "section": "490.5",
+        "citation": "Penal Code § 490.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, HENRY G BRYANT, and date of filing 2010-09-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, HENRY G BRYANT, date of filing, 2010-09-29, and charges in the case: 484(a)/490.5 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "484(a)/490.5 PC/M",
+      "title": "484(a)",
+      "title_source": "criminal_index_text",
+      "code": "PC 490.5",
+      "code_system": "PC",
+      "section": "490.5",
+      "citation": "Penal Code § 490.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:40:17.671Z",
+  "portal_case_id": "3655577",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10028902",
+      "defendant": "HENRY G BRYANT",
+      "filed_date": "2010-09-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3655577"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.240107+00:00"
 }

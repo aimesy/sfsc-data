@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:09:39.537Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:41:12.955Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10019116",
   "criminal_case_number": "10019116",
@@ -24,11 +24,59 @@
       "name": "TRUONG NGUYEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TRUONG NGUYEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-06-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:#10019115, CDC HOLD/TEXT:DEFT ENT NG PLEA(S) & DEN OFALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:45,000/SA2:INTERSECTION OF GOLDEN GATE & LEAVENWORTH, SAN FRANCISCO/SAORD3/SAORD/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/MO138583/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-07-26 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2010-07-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-29 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2010-06-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "GREG GOLDMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3646431",
+  "docket_entries": [
+    {
+      "filedDate": "2010-06-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:#10019115, CDC HOLD/TEXT:DEFT ENT NG PLEA(S) & DEN OFALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:45,000/SA2:INTERSECTION OF GOLDEN GATE & LEAVENWORTH, SAN FRANCISCO/SAORD3/SAORD/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-06-29T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:#10019115, CDC HOLD/TEXT:DEFT ENT NG PLEA(S) & DEN OFALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:45,000/SA2:INTERSECTION OF GOLDEN GATE & LEAVENWORTH, SAN FRANCISCO/SAORD3/SAORD/CONTD: PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/MO138583/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-07-26T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/MO138583/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10019116",
-    "portal_case_id": "",
+    "portal_case_id": "3646431",
     "display_case_number": "CRI-10019116",
     "defendant": "TRUONG NGUYEN",
     "filed_date": "2010-06-29",
@@ -60,11 +129,57 @@
       "filed_date": "2010-06-29"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11360(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11360(a) HS/F",
+        "title": "Health and Safety Code § 11360(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11360(a)",
+        "code_system": "HS",
+        "section": "11360(a)",
+        "citation": "Health and Safety Code § 11360(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TRUONG NGUYEN, and date of filing 2010-06-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TRUONG NGUYEN, date of filing, 2010-06-29, and charges in the case: 11360(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11360(a) HS/F",
+      "title": "Health and Safety Code § 11360(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11360(a)",
+      "code_system": "HS",
+      "section": "11360(a)",
+      "citation": "Health and Safety Code § 11360(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:41:13.633Z",
+  "portal_case_id": "3646431",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10019116",
+      "defendant": "TRUONG NGUYEN",
+      "filed_date": "2010-06-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3646431"
+  }
 }

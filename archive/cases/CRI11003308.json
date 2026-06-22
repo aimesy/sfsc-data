@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:22:21.774Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:32:23.597Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11003308",
   "criminal_case_number": "11003308",
@@ -24,19 +24,94 @@
       "name": "JOHN ALLEN HUBBARD",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN ALLEN HUBBARD",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-04-22T15:08:00.000Z",
+      "docketEntryComment": "FELONY GUILTY PLEA TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-04-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/AJW/CH1:SP 2Y:L /X:DEFENDANT TO RECEIVE CREDIT FOR TIME SERVED   85 DAYS COUNTY JAIL,    42SAGE FOR A TOTAL OF  127    DAYS,/X:THISSENTENCE IS CONCURRENT TO CDC HOLD/STATES/DNACOMP/SECFEE40/ICNA/VF5:200/PAR/CDC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OFG/DEFT ADV RTS:   2/REMA/ARBUCKLE/TWS/FNDG/CO:NEGOTIATED DISPOSITION/PRES: 4-26-11/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-04T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/ STWPX/987,2/BAIL:50000  /CONTD: PREHEARING CONFERENCE//DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-04-26 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2011-04-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-30 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2011-03-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-02-04 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2011-02-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ROBERTO EVANGELISTA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11352(a) HS/F 11351 HS/F",
+    "filed_date": "2011-02-04",
+    "defendant": "JOHN ALLEN HUBBARD",
+    "searched_key": "HUBBARD/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/11003308.json",
     "searched_last_name": "HUBBARD",
     "searched_first_prefix": "JO",
-    "charges": "11352(a) HS/F 11351 HS/F",
     "row": {
       "DEFENDANTNAME": "JOHN ALLEN HUBBARD",
       "CASENUMBER": "CRI-11003308",
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3667386",
+  "docket_entries": [
+    {
+      "filedDate": "2011-04-22T15:08:00.000Z",
+      "docketEntryComment": "FELONY GUILTY PLEA TX FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-04-22T15:08:00.000Z",
+      "description": "FELONY GUILTY PLEA TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-04-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/AJW/CH1:SP 2Y:L /X:DEFENDANT TO RECEIVE CREDIT FOR TIME SERVED   85 DAYS COUNTY JAIL,    42SAGE FOR A TOTAL OF  127    DAYS,/X:THISSENTENCE IS CONCURRENT TO CDC HOLD/STATES/DNACOMP/SECFEE40/ICNA/VF5:200/PAR/CDC/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-04-26T09:00:00.000Z",
+      "description": "/CAL:SENTENCING/AJW/CH1:SP 2Y:L /X:DEFENDANT TO RECEIVE CREDIT FOR TIME SERVED 85 DAYS COUNTY JAIL, 42SAGE FOR A TOTAL OF 127 DAYS,/X:THISSENTENCE IS CONCURRENT TO CDC HOLD/STATES/DNACOMP/SECFEE40/ICNA/VF5:200/PAR/CDC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OFG/DEFT ADV RTS:   2/REMA/ARBUCKLE/TWS/FNDG/CO:NEGOTIATED DISPOSITION/PRES: 4-26-11/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-03-30T09:00:00.000Z",
+      "description": "/CAL:PRELIM HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OFG/DEFT ADV RTS: 2/REMA/ARBUCKLE/TWS/FNDG/CO:NEGOTIATED DISPOSITION/PRES: 4-26-11/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-04T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/ STWPX/987,2/BAIL:50000  /CONTD: PREHEARING CONFERENCE//DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-02-04T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/ STWPX/987,2/BAIL:50000 /CONTD: PREHEARING CONFERENCE//DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11003308",
-    "portal_case_id": "",
+    "portal_case_id": "3667386",
     "display_case_number": "CRI-11003308",
     "defendant": "JOHN ALLEN HUBBARD",
     "filed_date": "2011-02-04",
@@ -60,11 +176,84 @@
       "filed_date": "2011-02-04"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11352(a) HS/F 11351 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11352(a) HS/F",
+        "title": "Health and Safety Code § 11352(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11352(a)",
+        "code_system": "HS",
+        "section": "11352(a)",
+        "citation": "Health and Safety Code § 11352(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11351 HS/F",
+        "title": "Health and Safety Code § 11351",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351",
+        "code_system": "HS",
+        "section": "11351",
+        "citation": "Health and Safety Code § 11351",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN ALLEN HUBBARD, and date of filing 2011-02-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN ALLEN HUBBARD, date of filing, 2011-02-04, and charges in the case: 11352(a) HS/F 11351 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11352(a) HS/F",
+      "title": "Health and Safety Code § 11352(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11352(a)",
+      "code_system": "HS",
+      "section": "11352(a)",
+      "citation": "Health and Safety Code § 11352(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11351 HS/F",
+      "title": "Health and Safety Code § 11351",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351",
+      "code_system": "HS",
+      "section": "11351",
+      "citation": "Health and Safety Code § 11351",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:32:24.337Z",
+  "portal_case_id": "3667386",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11003308",
+      "defendant": "JOHN ALLEN HUBBARD",
+      "filed_date": "2011-02-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3667386"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.843127+00:00"
 }

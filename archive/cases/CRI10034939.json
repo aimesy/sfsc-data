@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:12:19.968Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:42:17.693Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10034939",
   "criminal_case_number": "10034939",
@@ -24,10 +24,99 @@
       "name": "SHAPRI JACKSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "SHAPRI JACKSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2011-09-13T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-29T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/BE/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-08-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:04-11-11/BWI/BAIL:15,000/BWNUM:3RD/CTORD:DO NOT CITE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-04-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:11-29-10/BWI/BAIL:10,000/BWNUM:2ND",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-09-13 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2011-09-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-08-09 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2011-08-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-04-11 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2011-04-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-11-29 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 3,
+      "court_date": "2010-11-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -42,14 +131,79 @@
       "CASENUMBER": "CRI-10034939",
       "FILEDDATE": "2010-11-29 09:00:00",
       "CHARGES": "647(b) PC/M 653.22(a) PC/M"
-    }
+    },
+    "filed_date": "2010-11-29",
+    "defendant": "SHAPRI JACKSON",
+    "searched_key": "JACKSON/SH",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/10034939.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3661198",
+  "docket_entries": [
+    {
+      "filedDate": "2011-09-13T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-09-13T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-29T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-11-29T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/BE/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-09-13T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/BWDNC/BE/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-08-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:04-11-11/BWI/BAIL:15,000/BWNUM:3RD/CTORD:DO NOT CITE/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-08-09T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:04-11-11/BWI/BAIL:15,000/BWNUM:3RD/CTORD:DO NOT CITE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-04-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:11-29-10/BWI/BAIL:10,000/BWNUM:2ND",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-04-11T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:11-29-10/BWI/BAIL:10,000/BWNUM:2ND",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-11-29T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10034939",
-    "portal_case_id": "",
+    "portal_case_id": "3661198",
     "display_case_number": "CRI-10034939",
     "defendant": "SHAPRI JACKSON",
     "filed_date": "2010-11-29",
@@ -60,11 +214,84 @@
       "filed_date": "2010-11-29"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "647(b) PC/M 653.22(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "647(b) PC/M",
+        "title": "Penal Code § 647(b)",
+        "title_source": "programmatic_citation",
+        "code": "PC 647(b)",
+        "code_system": "PC",
+        "section": "647(b)",
+        "citation": "Penal Code § 647(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "653.22(a) PC/M",
+        "title": "Penal Code § 653.22(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 653.22(a)",
+        "code_system": "PC",
+        "section": "653.22(a)",
+        "citation": "Penal Code § 653.22(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.22.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.22.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, SHAPRI JACKSON, and date of filing 2010-11-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, SHAPRI JACKSON, date of filing, 2010-11-29, and charges in the case: 647(b) PC/M 653.22(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "647(b) PC/M",
+      "title": "Penal Code § 647(b)",
+      "title_source": "programmatic_citation",
+      "code": "PC 647(b)",
+      "code_system": "PC",
+      "section": "647(b)",
+      "citation": "Penal Code § 647(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "653.22(a) PC/M",
+      "title": "Penal Code § 653.22(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 653.22(a)",
+      "code_system": "PC",
+      "section": "653.22(a)",
+      "citation": "Penal Code § 653.22(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.22.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.22.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:42:18.350Z",
+  "portal_case_id": "3661198",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10034939",
+      "defendant": "SHAPRI JACKSON",
+      "filed_date": "2010-11-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3661198"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:22.240367+00:00"
 }

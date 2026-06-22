@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:02:42.685Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:42:33.983Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10037320",
   "criminal_case_number": "10037320",
@@ -24,19 +24,107 @@
       "name": "JUAN HERNANDEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JUAN HERNANDEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HEARING/X:THE DA ORALLY AMENDS THE COMPLAINT TO CHARGE FELONYCOUNT 1 AS MISD/ /TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL//DEFT ADV NL: 1/CCC:1 AND 2/NOLO/CO:NEGOTIATED DISPOSITION/REMA/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-27T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 02-25-11/987,2/ORPJ  /CTORD:AS A CONDITION OF RELEASE DEFENDANT NOT TO DRIVE WITHOUT CDL/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-18T09:15:00.000Z",
+      "docketEntryComment": "/CAL SENTENCING/TWS/CH1 ISS CPROB PROB 3 Y PJ 6D/CTS 6 /VF1/CCC 1 AND 2//LVAL/WS/MPROBFINE/SECFEE40/ICNA/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/X:DEFENSE COUNSEL ORAL 17B MOTION IS DENIED WITHOUT PREJUDICE/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-02-18 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2011-02-18",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-02-18 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2011-02-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-01-24 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2011-01-24",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-12-27 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2010-12-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PHOENIX STREETS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "2800.2(a) VC/M 14601.1(a) VC/M",
+    "filed_date": "2010-12-27",
+    "defendant": "JUAN HERNANDEZ",
+    "searched_key": "HERNANDEZ/JU",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/10037320.json",
     "searched_last_name": "HERNANDEZ",
     "searched_first_prefix": "JU",
-    "charges": "2800.2(a) VC/M 14601.1(a) VC/M",
     "row": {
       "DEFENDANTNAME": "JUAN HERNANDEZ",
       "CASENUMBER": "CRI-10037320",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3663440",
+  "docket_entries": [
+    {
+      "filedDate": "2011-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HEARING/X:THE DA ORALLY AMENDS THE COMPLAINT TO CHARGE FELONYCOUNT 1 AS MISD/ /TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL//DEFT ADV NL: 1/CCC:1 AND 2/NOLO/CO:NEGOTIATED DISPOSITION/REMA/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-02-18T09:00:00.000Z",
+      "description": "/CAL:PRELIM HEARING/X:THE DA ORALLY AMENDS THE COMPLAINT TO CHARGE FELONYCOUNT 1 AS MISD/ /TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL//DEFT ADV NL: 1/CCC:1 AND 2/NOLO/CO:NEGOTIATED DISPOSITION/REMA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-27T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 02-25-11/987,2/ORPJ  /CTORD:AS A CONDITION OF RELEASE DEFENDANT NOT TO DRIVE WITHOUT CDL/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-12-27T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 02-25-11/987,2/ORPJ /CTORD:AS A CONDITION OF RELEASE DEFENDANT NOT TO DRIVE WITHOUT CDL/CONTD: PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-18T09:15:00.000Z",
+      "docketEntryComment": "/CAL SENTENCING/TWS/CH1 ISS CPROB PROB 3 Y PJ 6D/CTS 6 /VF1/CCC 1 AND 2//LVAL/WS/MPROBFINE/SECFEE40/ICNA/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-02-18T09:15:00.000Z",
+      "description": "/CAL SENTENCING/TWS/CH1 ISS CPROB PROB 3 Y PJ 6D/CTS 6 /VF1/CCC 1 AND 2//LVAL/WS/MPROBFINE/SECFEE40/ICNA/COLLECT/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/X:DEFENSE COUNSEL ORAL 17B MOTION IS DENIED WITHOUT PREJUDICE/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-01-24T09:00:00.000Z",
+      "description": "/CAL:TO SET/X:DEFENSE COUNSEL ORAL 17B MOTION IS DENIED WITHOUT PREJUDICE/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10037320",
-    "portal_case_id": "",
+    "portal_case_id": "3663440",
     "display_case_number": "CRI-10037320",
     "defendant": "JUAN HERNANDEZ",
     "filed_date": "2010-12-27",
@@ -60,11 +189,84 @@
       "filed_date": "2010-12-27"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "2800.2(a) VC/M 14601.1(a) VC/M",
+    "charge_rows": [
+      {
+        "raw": "2800.2(a) VC/M",
+        "title": "Vehicle Code § 2800.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 2800.2(a)",
+        "code_system": "VC",
+        "section": "2800.2(a)",
+        "citation": "Vehicle Code § 2800.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2800.2.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2800.2.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "14601.1(a) VC/M",
+        "title": "Vehicle Code § 14601.1(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 14601.1(a)",
+        "code_system": "VC",
+        "section": "14601.1(a)",
+        "citation": "Vehicle Code § 14601.1(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JUAN HERNANDEZ, and date of filing 2010-12-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JUAN HERNANDEZ, date of filing, 2010-12-27, and charges in the case: 2800.2(a) VC/M 14601.1(a) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "2800.2(a) VC/M",
+      "title": "Vehicle Code § 2800.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 2800.2(a)",
+      "code_system": "VC",
+      "section": "2800.2(a)",
+      "citation": "Vehicle Code § 2800.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2800.2.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2800.2.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "14601.1(a) VC/M",
+      "title": "Vehicle Code § 14601.1(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 14601.1(a)",
+      "code_system": "VC",
+      "section": "14601.1(a)",
+      "citation": "Vehicle Code § 14601.1(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:42:34.552Z",
+  "portal_case_id": "3663440",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10037320",
+      "defendant": "JUAN HERNANDEZ",
+      "filed_date": "2010-12-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3663440"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.835252+00:00"
 }

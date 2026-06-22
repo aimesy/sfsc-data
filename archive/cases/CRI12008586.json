@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:12:48.829Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:26:58.898Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12008586",
   "criminal_case_number": "12008586",
@@ -24,19 +24,107 @@
       "name": "TANISHA KING",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TANISHA KING",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/SAORD/SA1:MARIA QUILALA & KATRINA BUCHMANN/SA2:74 TURK STREET, SAN FRANCISCO/SAORD3/LD: 04-18-12/TE:3 HOURS/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-04-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PD'S MOTION TO RELEASE DEFENDANT TO PROGRAM/X:PUBLIC DEFENDER WITHDRAWS THE MOTION AT THIS TIME,/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 04-18-12/TE:3 HOURS FOR PRELIMINARY HEARING/CONTD:D20 TO SET/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-04-03T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/PD/987,2/FAWC/X:DEFENDANT IS ARRAIGNED, NO PLEA ENTERED TODAY,/X:PUBLIC DEFENDER'S ORAL MOTION TO RELEASE DEFENDANT ON OWN RECOGNIZANCE IS DENIED,/BAIL:150,000/CONTD:PD'S MOTION TO RELEASE DEFENDANT TO PROGRAM/DOP/CONTD:PRELIMINARY HEARING ON 04-16-12/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-04-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:PEOPLE ARE UNABLE TO SUSTAIN BURDEN OFPROOF/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-04-17 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 0,
+      "court_date": "2012-04-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-04-05 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 1,
+      "court_date": "2012-04-05",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-04-04 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2012-04-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-04-03 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2012-04-03",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DANIELLE HARRIS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "211 PC/F 211 PC/F 245(a)(4) PC/F 597(b) PC/M",
+    "filed_date": "2012-04-03",
+    "defendant": "TANISHA KING",
+    "searched_key": "KING/TA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/12008586.json",
     "searched_last_name": "KING",
     "searched_first_prefix": "TA",
-    "charges": "211 PC/F 211 PC/F 245(a)(4) PC/F 597(b) PC/M",
     "row": {
       "DEFENDANTNAME": "TANISHA KING",
       "CASENUMBER": "CRI-12008586",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3706117",
+  "docket_entries": [
+    {
+      "filedDate": "2012-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/SAORD/SA1:MARIA QUILALA & KATRINA BUCHMANN/SA2:74 TURK STREET, SAN FRANCISCO/SAORD3/LD: 04-18-12/TE:3 HOURS/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-04-05T09:00:00.000Z",
+      "description": "/CAL:TO SET/SAORD/SA1:MARIA QUILALA & KATRINA BUCHMANN/SA2:74 TURK STREET, SAN FRANCISCO/SAORD3/LD: 04-18-12/TE:3 HOURS/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-04-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PD'S MOTION TO RELEASE DEFENDANT TO PROGRAM/X:PUBLIC DEFENDER WITHDRAWS THE MOTION AT THIS TIME,/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 04-18-12/TE:3 HOURS FOR PRELIMINARY HEARING/CONTD:D20 TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-04-04T09:00:00.000Z",
+      "description": "/CAL:PD'S MOTION TO RELEASE DEFENDANT TO PROGRAM/X:PUBLIC DEFENDER WITHDRAWS THE MOTION AT THIS TIME,/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 04-18-12/TE:3 HOURS FOR PRELIMINARY HEARING/CONTD:D20 TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-04-03T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/PD/987,2/FAWC/X:DEFENDANT IS ARRAIGNED, NO PLEA ENTERED TODAY,/X:PUBLIC DEFENDER'S ORAL MOTION TO RELEASE DEFENDANT ON OWN RECOGNIZANCE IS DENIED,/BAIL:150,000/CONTD:PD'S MOTION TO RELEASE DEFENDANT TO PROGRAM/DOP/CONTD:PRELIMINARY HEARING ON 04-16-12/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-04-03T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/PD/987,2/FAWC/X:DEFENDANT IS ARRAIGNED, NO PLEA ENTERED TODAY,/X:PUBLIC DEFENDER'S ORAL MOTION TO RELEASE DEFENDANT ON OWN RECOGNIZANCE IS DENIED,/BAIL:150,000/CONTD:PD'S MOTION TO RELEASE DEFENDANT TO PROGRAM/DOP/CONTD:PRELIMINARY HEARING ON 04-16-12/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-04-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:PEOPLE ARE UNABLE TO SUSTAIN BURDEN OFPROOF/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-04-17T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO PC 1385:PEOPLE ARE UNABLE TO SUSTAIN BURDEN OFPROOF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12008586",
-    "portal_case_id": "",
+    "portal_case_id": "3706117",
     "display_case_number": "CRI-12008586",
     "defendant": "TANISHA KING",
     "filed_date": "2012-04-03",
@@ -59,12 +188,120 @@
       "defendant": "TANISHA KING",
       "filed_date": "2012-04-03"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "211 PC/F 211 PC/F 245(a)(4) PC/F 597(b) PC/M",
+    "charge_rows": [
+      {
+        "raw": "211 PC/F",
+        "title": "Penal Code § 211",
+        "title_source": "programmatic_citation",
+        "code": "PC 211",
+        "code_system": "PC",
+        "section": "211",
+        "citation": "Penal Code § 211",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "245(a)(4) PC/F",
+        "title": "Penal Code § 245(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 245(a)(4)",
+        "code_system": "PC",
+        "section": "245(a)(4)",
+        "citation": "Penal Code § 245(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "597(b) PC/M",
+        "title": "Penal Code § 597(b)",
+        "title_source": "programmatic_citation",
+        "code": "PC 597(b)",
+        "code_system": "PC",
+        "section": "597(b)",
+        "citation": "Penal Code § 597(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=597.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=597.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TANISHA KING, and date of filing 2012-04-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TANISHA KING, date of filing, 2012-04-03, and charges in the case: 211 PC/F 211 PC/F 245(a)(4) PC/F 597(b) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "211 PC/F",
+      "title": "Penal Code § 211",
+      "title_source": "programmatic_citation",
+      "code": "PC 211",
+      "code_system": "PC",
+      "section": "211",
+      "citation": "Penal Code § 211",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "245(a)(4) PC/F",
+      "title": "Penal Code § 245(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 245(a)(4)",
+      "code_system": "PC",
+      "section": "245(a)(4)",
+      "citation": "Penal Code § 245(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "597(b) PC/M",
+      "title": "Penal Code § 597(b)",
+      "title_source": "programmatic_citation",
+      "code": "PC 597(b)",
+      "code_system": "PC",
+      "section": "597(b)",
+      "citation": "Penal Code § 597(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=597.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=597.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:26:59.577Z",
+  "portal_case_id": "3706117",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12008586",
+      "defendant": "TANISHA KING",
+      "filed_date": "2012-04-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3706117"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.826892+00:00"
 }

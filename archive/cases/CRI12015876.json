@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:31:39.208Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:29:45.746Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12015876",
   "criminal_case_number": "12015876",
@@ -24,19 +24,125 @@
       "name": "MARVIN LINDSEY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARVIN LINDSEY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-08-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRELIMINARY HEARING/X:AS PART OF A NEGOTIATED DISPOSITION, THEPEOPLE MOVE TO DISMISS THIS CASE PURSUANT TO PC 1385,/MO GRTD/X:THE DEFENDANT ENTERS A HARVEY WAIVER,/X:ANY RESTITUTION OR STAY AWAY ORDERS RESULTING FROM DISMISSED  CHARGES MAY BE ADDED AS TERMS AND CONDITIONS OF THE SENTENCE IN COURT NO, 11032384,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-06-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:INSTRUCTIONS & ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CTAPPTS:SAMANTHA SCHWARTZ/X:ATTY SCHWARTZ'S OFFICE HAD BEEN PREVIOUSLY APPOINTED AS COUNSEL IN THE OTHER CASES OF THE DEFENDANT IN CJC COURT/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 08-20-12/X:BAIL REMAINS AT $135,000/CONTD: TO SET DISPO ON 06-25-12/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-06-20T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:PAUL MYSLLIN, DPD, APPEARED SPECIALLY FOR MALIKA BROWNON BEHALF OF THE DEFENDANT/BAIL:135000/CTORD:BAIL IS SET WITHOUT PREJUDICE/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-07-25T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/VD:08-01-12 PRELIMINARY HEARING/CONTD:TO SET PRELIMINARY HEARING/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-06-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPO/CONTD:ERP IN D23 ON 07-25-12, 1:30PM/DOP/CONTD:PRELIMINARY HEARING IN D9 ON 08-01-12, 9AM/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-08-01 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2012-08-01",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-07-25 1:30 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 1,
+      "court_date": "2012-07-25",
+      "hearing_time": "1:30 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-06-25 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2012-06-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-06-21 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2012-06-21",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-06-20 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 4,
+      "court_date": "2012-06-20",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SAMANTHA SCHWARTZ",
+      "type": "Appointed Counsel"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "459 PC/F 487(a) PC/F",
+    "filed_date": "2012-06-20",
+    "defendant": "MARVIN LINDSEY",
+    "searched_key": "LINDSEY/MA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/12015876.json",
     "searched_last_name": "LINDSEY",
     "searched_first_prefix": "MA",
-    "charges": "459 PC/F 487(a) PC/F",
     "row": {
       "DEFENDANTNAME": "MARVIN LINDSEY",
       "CASENUMBER": "CRI-12015876",
@@ -45,11 +151,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3713304",
+  "docket_entries": [
+    {
+      "filedDate": "2012-08-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRELIMINARY HEARING/X:AS PART OF A NEGOTIATED DISPOSITION, THEPEOPLE MOVE TO DISMISS THIS CASE PURSUANT TO PC 1385,/MO GRTD/X:THE DEFENDANT ENTERS A HARVEY WAIVER,/X:ANY RESTITUTION OR STAY AWAY ORDERS RESULTING FROM DISMISSED  CHARGES MAY BE ADDED AS TERMS AND CONDITIONS OF THE SENTENCE IN COURT NO, 11032384,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-08-01T09:00:00.000Z",
+      "description": "/CAL:TO SET PRELIMINARY HEARING/X:AS PART OF A NEGOTIATED DISPOSITION, THEPEOPLE MOVE TO DISMISS THIS CASE PURSUANT TO PC 1385,/MO GRTD/X:THE DEFENDANT ENTERS A HARVEY WAIVER,/X:ANY RESTITUTION OR STAY AWAY ORDERS RESULTING FROM DISMISSED CHARGES MAY BE ADDED AS TERMS AND CONDITIONS OF THE SENTENCE IN COURT NO, 11032384,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-06-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:INSTRUCTIONS & ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CTAPPTS:SAMANTHA SCHWARTZ/X:ATTY SCHWARTZ'S OFFICE HAD BEEN PREVIOUSLY APPOINTED AS COUNSEL IN THE OTHER CASES OF THE DEFENDANT IN CJC COURT/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 08-20-12/X:BAIL REMAINS AT $135,000/CONTD: TO SET DISPO ON 06-25-12/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-06-21T09:00:00.000Z",
+      "description": "/CAL:INSTRUCTIONS & ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CTAPPTS:SAMANTHA SCHWARTZ/X:ATTY SCHWARTZ'S OFFICE HAD BEEN PREVIOUSLY APPOINTED AS COUNSEL IN THE OTHER CASES OF THE DEFENDANT IN CJC COURT/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 08-20-12/X:BAIL REMAINS AT $135,000/CONTD: TO SET DISPO ON 06-25-12/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-06-20T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:PAUL MYSLLIN, DPD, APPEARED SPECIALLY FOR MALIKA BROWNON BEHALF OF THE DEFENDANT/BAIL:135000/CTORD:BAIL IS SET WITHOUT PREJUDICE/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-06-20T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:PAUL MYSLLIN, DPD, APPEARED SPECIALLY FOR MALIKA BROWNON BEHALF OF THE DEFENDANT/BAIL:135000/CTORD:BAIL IS SET WITHOUT PREJUDICE/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-07-25T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/VD:08-01-12 PRELIMINARY HEARING/CONTD:TO SET PRELIMINARY HEARING/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-07-25T13:30:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/VD:08-01-12 PRELIMINARY HEARING/CONTD:TO SET PRELIMINARY HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-06-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPO/CONTD:ERP IN D23 ON 07-25-12, 1:30PM/DOP/CONTD:PRELIMINARY HEARING IN D9 ON 08-01-12, 9AM/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2012-06-25T09:00:00.000Z",
+      "description": "/CAL:TO SET OR DISPO/CONTD:ERP IN D23 ON 07-25-12, 1:30PM/DOP/CONTD:PRELIMINARY HEARING IN D9 ON 08-01-12, 9AM/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12015876",
-    "portal_case_id": "",
+    "portal_case_id": "3713304",
     "display_case_number": "CRI-12015876",
     "defendant": "MARVIN LINDSEY",
     "filed_date": "2012-06-20",
@@ -59,12 +216,94 @@
       "defendant": "MARVIN LINDSEY",
       "filed_date": "2012-06-20"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "459 PC/F 487(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "487(a) PC/F",
+        "title": "Penal Code § 487(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 487(a)",
+        "code_system": "PC",
+        "section": "487(a)",
+        "citation": "Penal Code § 487(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARVIN LINDSEY, and date of filing 2012-06-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARVIN LINDSEY, date of filing, 2012-06-20, and charges in the case: 459 PC/F 487(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "487(a) PC/F",
+      "title": "Penal Code § 487(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 487(a)",
+      "code_system": "PC",
+      "section": "487(a)",
+      "citation": "Penal Code § 487(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:29:46.321Z",
+  "portal_case_id": "3713304",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12015876",
+      "defendant": "MARVIN LINDSEY",
+      "filed_date": "2012-06-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3713304"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.144461+00:00"
 }

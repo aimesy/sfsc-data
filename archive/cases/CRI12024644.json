@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:52:51.785Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:33:15.483Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12024644",
   "criminal_case_number": "12024644",
@@ -24,19 +24,53 @@
       "name": "JEDEDIAH L LEWIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JEDEDIAH L LEWIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-10-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/X:CASE TO BE PROCEEDED BY MTR #2442123/COWD/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-10-01 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2012-10-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KASIE LEE",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11377(a) HS/M",
+    "filed_date": "2012-09-26",
+    "defendant": "JEDEDIAH L LEWIS",
+    "searched_key": "LEWIS/JE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/12024644.json",
     "searched_last_name": "LEWIS",
     "searched_first_prefix": "JE",
-    "charges": "11377(a) HS/M",
     "row": {
       "DEFENDANTNAME": "JEDEDIAH L LEWIS",
       "CASENUMBER": "CRI-12024644",
@@ -45,11 +79,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3721881",
+  "docket_entries": [
+    {
+      "filedDate": "2012-10-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/X:CASE TO BE PROCEEDED BY MTR #2442123/COWD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-10-01T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/X:CASE TO BE PROCEEDED BY MTR #2442123/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12024644",
-    "portal_case_id": "",
+    "portal_case_id": "3721881",
     "display_case_number": "CRI-12024644",
     "defendant": "JEDEDIAH L LEWIS",
     "filed_date": "2012-09-26",
@@ -60,11 +105,58 @@
       "filed_date": "2012-09-26"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11377(a) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11377(a) HS/M",
+        "title": "Health and Safety Code § 11377(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11377(a)",
+        "code_system": "HS",
+        "section": "11377(a)",
+        "citation": "Health and Safety Code § 11377(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JEDEDIAH L LEWIS, and date of filing 2012-09-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JEDEDIAH L LEWIS, date of filing, 2012-09-26, and charges in the case: 11377(a) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11377(a) HS/M",
+      "title": "Health and Safety Code § 11377(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11377(a)",
+      "code_system": "HS",
+      "section": "11377(a)",
+      "citation": "Health and Safety Code § 11377(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:33:16.192Z",
+  "portal_case_id": "3721881",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12024644",
+      "defendant": "JEDEDIAH L LEWIS",
+      "filed_date": "2012-09-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3721881"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.117280+00:00"
 }

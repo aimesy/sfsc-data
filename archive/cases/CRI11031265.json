@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:22:59.645Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:35:32.286Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11031265",
   "criminal_case_number": "11031265",
@@ -24,19 +24,104 @@
       "name": "VINCENT GARCIA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "VINCENT GARCIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-11-30T09:15:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-02-10T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-02-01T15:00:00.000Z",
+      "docketEntryComment": "MOT TO RBW ISSUED ON 112311 & MOT TO DISM PER 1381 FILED BY DA",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-11-23T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 12-09-11/OR/CTORD:DEFENDANT TO OR PROJECT THREE TIMES A WEEK IN PERSON/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-02-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DA MOTION TO RECALL BENCH WARRANT AND DISMISS PURS TO PC 1381/BWR:11-30-11/BWR1/TEXT:COURT ORDERS CAUSE DISM PURS PC 1381/MO PC 1381/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-11-30T09:15:00.000Z",
+      "docketEntryComment": "/CAL:STATUS OF SPR COMPLIANCE/FTA/SPRVKD/BWI/BAIL:25000/NIGHTSERV/VD:12-08-11 PRELIMINARY HEARING,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-02-10 9:00 AM",
+      "hearingType": "Motion to Recall Bench Warrant",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2012-02-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Recall Bench Warrant",
+      "hearing_type": "Motion to Recall Bench Warrant",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-11-30 9:15 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2011-11-30",
+      "hearing_time": "9:15 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-11-23 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2011-11-23",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ALEX LILIEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11377(a) HS/F 11364(a) HS/M",
+    "filed_date": "2011-11-22",
+    "defendant": "VINCENT GARCIA",
+    "searched_key": "GARCIA/VI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/11031265.json",
     "searched_last_name": "GARCIA",
     "searched_first_prefix": "VI",
-    "charges": "11377(a) HS/F 11364(a) HS/M",
     "row": {
       "DEFENDANTNAME": "VINCENT GARCIA",
       "CASENUMBER": "CRI-11031265",
@@ -45,11 +130,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3694261",
+  "docket_entries": [
+    {
+      "filedDate": "2011-11-30T09:15:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-11-30T09:15:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-02-10T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-02-10T09:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-02-01T15:00:00.000Z",
+      "docketEntryComment": "MOT TO RBW ISSUED ON 112311 & MOT TO DISM PER 1381 FILED BY DA",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-02-01T15:00:00.000Z",
+      "description": "MOT TO RBW ISSUED ON 112311 & MOT TO DISM PER 1381 FILED BY DA",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-11-23T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 12-09-11/OR/CTORD:DEFENDANT TO OR PROJECT THREE TIMES A WEEK IN PERSON/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-11-23T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 12-09-11/OR/CTORD:DEFENDANT TO OR PROJECT THREE TIMES A WEEK IN PERSON/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-02-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DA MOTION TO RECALL BENCH WARRANT AND DISMISS PURS TO PC 1381/BWR:11-30-11/BWR1/TEXT:COURT ORDERS CAUSE DISM PURS PC 1381/MO PC 1381/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2012-02-10T09:00:00.000Z",
+      "description": "/CAL:DA MOTION TO RECALL BENCH WARRANT AND DISMISS PURS TO PC 1381/BWR:11-30-11/BWR1/TEXT:COURT ORDERS CAUSE DISM PURS PC 1381/MO PC 1381/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-11-30T09:15:00.000Z",
+      "docketEntryComment": "/CAL:STATUS OF SPR COMPLIANCE/FTA/SPRVKD/BWI/BAIL:25000/NIGHTSERV/VD:12-08-11 PRELIMINARY HEARING,/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-11-30T09:15:00.000Z",
+      "description": "/CAL:STATUS OF SPR COMPLIANCE/FTA/SPRVKD/BWI/BAIL:25000/NIGHTSERV/VD:12-08-11 PRELIMINARY HEARING,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11031265",
-    "portal_case_id": "",
+    "portal_case_id": "3694261",
     "display_case_number": "CRI-11031265",
     "defendant": "VINCENT GARCIA",
     "filed_date": "2011-11-22",
@@ -59,12 +205,94 @@
       "defendant": "VINCENT GARCIA",
       "filed_date": "2011-11-22"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1381",
+        "count": 3,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11377(a) HS/F 11364(a) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11377(a) HS/F",
+        "title": "Health and Safety Code § 11377(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11377(a)",
+        "code_system": "HS",
+        "section": "11377(a)",
+        "citation": "Health and Safety Code § 11377(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11364(a) HS/M",
+        "title": "Health and Safety Code § 11364(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11364(a)",
+        "code_system": "HS",
+        "section": "11364(a)",
+        "citation": "Health and Safety Code § 11364(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, VINCENT GARCIA, and date of filing 2011-11-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, VINCENT GARCIA, date of filing, 2011-11-22, and charges in the case: 11377(a) HS/F 11364(a) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11377(a) HS/F",
+      "title": "Health and Safety Code § 11377(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11377(a)",
+      "code_system": "HS",
+      "section": "11377(a)",
+      "citation": "Health and Safety Code § 11377(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11364(a) HS/M",
+      "title": "Health and Safety Code § 11364(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11364(a)",
+      "code_system": "HS",
+      "section": "11364(a)",
+      "citation": "Health and Safety Code § 11364(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:35:33.037Z",
+  "portal_case_id": "3694261",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11031265",
+      "defendant": "VINCENT GARCIA",
+      "filed_date": "2011-11-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3694261"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.559380+00:00"
 }

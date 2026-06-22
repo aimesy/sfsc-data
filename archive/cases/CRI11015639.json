@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:23:35.431Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:33:44.406Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11015639",
   "criminal_case_number": "11015639",
@@ -24,11 +24,59 @@
       "name": "ADAM CONWAY LEE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ADAM CONWAY LEE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-06-13T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:REQUEST FOR O,R, IS DENIED/BAIL:5000/NTW/LD:FOR TRIAL IS 07-13-11/CONTD:PRETRIAL CONFERENCE & JURY TRIAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-06-17T13:45:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/MO138572:10036435/VD:07-01-11 TRIAL/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-06-17 1:45 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2011-06-17",
+      "hearing_time": "1:45 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-06-13 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2011-06-13",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ARIEL BOYCESMITH",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3678999",
+  "docket_entries": [
+    {
+      "filedDate": "2011-06-13T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:REQUEST FOR O,R, IS DENIED/BAIL:5000/NTW/LD:FOR TRIAL IS 07-13-11/CONTD:PRETRIAL CONFERENCE & JURY TRIAL/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-06-13T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:REQUEST FOR O,R, IS DENIED/BAIL:5000/NTW/LD:FOR TRIAL IS 07-13-11/CONTD:PRETRIAL CONFERENCE & JURY TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-06-17T13:45:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/MO138572:10036435/VD:07-01-11 TRIAL/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-06-17T13:45:00.000Z",
+      "description": "/CAL:PRETRIAL/MO138572:10036435/VD:07-01-11 TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11015639",
-    "portal_case_id": "",
+    "portal_case_id": "3678999",
     "display_case_number": "CRI-11015639",
     "defendant": "ADAM CONWAY LEE",
     "filed_date": "2011-06-13",
@@ -60,11 +129,109 @@
       "filed_date": "2011-06-13"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "594(b)(2)(A) PC/M 594(b)(2)(A) PC/M 594(b)(2)(A) PC/M 594.2(a) PC/M 148(a)(1) PC/M 148(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "594(b)(2)(A) PC/M",
+        "title": "Penal Code § 594(b)(2)(A)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(2)(A)",
+        "code_system": "PC",
+        "section": "594(b)(2)(A)",
+        "citation": "Penal Code § 594(b)(2)(A)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "594.2(a) PC/M",
+        "title": "Penal Code § 594.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594.2(a)",
+        "code_system": "PC",
+        "section": "594.2(a)",
+        "citation": "Penal Code § 594.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "148(a)(1) PC/M",
+        "title": "Penal Code § 148(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148(a)(1)",
+        "code_system": "PC",
+        "section": "148(a)(1)",
+        "citation": "Penal Code § 148(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ADAM CONWAY LEE, and date of filing 2011-06-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ADAM CONWAY LEE, date of filing, 2011-06-13, and charges in the case: 594(b)(2)(A) PC/M 594(b)(2)(A) PC/M 594(b)(2)(A) PC/M 594.2(a) PC/M 148(a)(1) PC/M 148(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "594(b)(2)(A) PC/M",
+      "title": "Penal Code § 594(b)(2)(A)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(2)(A)",
+      "code_system": "PC",
+      "section": "594(b)(2)(A)",
+      "citation": "Penal Code § 594(b)(2)(A)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "594.2(a) PC/M",
+      "title": "Penal Code § 594.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594.2(a)",
+      "code_system": "PC",
+      "section": "594.2(a)",
+      "citation": "Penal Code § 594.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "148(a)(1) PC/M",
+      "title": "Penal Code § 148(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148(a)(1)",
+      "code_system": "PC",
+      "section": "148(a)(1)",
+      "citation": "Penal Code § 148(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:33:45.053Z",
+  "portal_case_id": "3678999",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11015639",
+      "defendant": "ADAM CONWAY LEE",
+      "filed_date": "2011-06-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3678999"
+  }
 }

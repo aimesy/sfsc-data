@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:29:15.893Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:33:13.906Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11016719",
   "criminal_case_number": "11016719",
@@ -24,19 +24,81 @@
       "name": "RAVEN SYMONE CARTER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RAVEN SYMONE CARTER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-07-05T13:28:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPPOS TO DEF MTS EVID FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-06-30T14:54:00.000Z",
+      "docketEntryComment": "DEFT'S MTS EVID PER PC1538,5 FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-07-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING & MOTION TO SUPPRESS/WIT SWORN:LEONARD CALDERA, PEACE OFFICER, SFPD/EXHM:PEOPLES 1:EVIDENCE ENVELOPE/EXHMA:PEOPLES 1A:PLASTIC BAGGIE CONTAINING 2 OFF WHITE ROCKS/X:COUNSEL STIPULATE TO RETURN NARCOTICS TO OFFICER CALDERA/CAL: PC 1538,5 MOTION TO SUPPRESS/ARG&SUB/MO GRTD/X:  MOTION GRANTED AS TO COUNT(S) 1, 2/X:DA DISMISSES THE CASE PURSUANTTO PC 1385PC AS MOTION TO SUPPRESS WAS GRANTED ON ALL COUNTS/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-06-24T13:45:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 07-11-11/987,2/OR/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-07-08 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2011-07-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-06-24 1:45 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2011-06-24",
+      "hearing_time": "1:45 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SANDY FEINLAND",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11350(a) HS/F 148(a)(1) PC/M",
+    "filed_date": "2011-06-23",
+    "defendant": "RAVEN SYMONE CARTER",
+    "searched_key": "CARTER/RA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/11016719.json",
     "searched_last_name": "CARTER",
     "searched_first_prefix": "RA",
-    "charges": "11350(a) HS/F 148(a)(1) PC/M",
     "row": {
       "DEFENDANTNAME": "RAVEN SYMONE CARTER",
       "CASENUMBER": "CRI-11016719",
@@ -45,11 +107,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3679994",
+  "docket_entries": [
+    {
+      "filedDate": "2011-07-05T13:28:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPPOS TO DEF MTS EVID FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-07-05T13:28:00.000Z",
+      "description": "PEOPLE'S OPPOS TO DEF MTS EVID FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-06-30T14:54:00.000Z",
+      "docketEntryComment": "DEFT'S MTS EVID PER PC1538,5 FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-06-30T14:54:00.000Z",
+      "description": "DEFT'S MTS EVID PER PC1538,5 FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-07-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING & MOTION TO SUPPRESS/WIT SWORN:LEONARD CALDERA, PEACE OFFICER, SFPD/EXHM:PEOPLES 1:EVIDENCE ENVELOPE/EXHMA:PEOPLES 1A:PLASTIC BAGGIE CONTAINING 2 OFF WHITE ROCKS/X:COUNSEL STIPULATE TO RETURN NARCOTICS TO OFFICER CALDERA/CAL: PC 1538,5 MOTION TO SUPPRESS/ARG&SUB/MO GRTD/X:  MOTION GRANTED AS TO COUNT(S) 1, 2/X:DA DISMISSES THE CASE PURSUANTTO PC 1385PC AS MOTION TO SUPPRESS WAS GRANTED ON ALL COUNTS/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-07-08T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING & MOTION TO SUPPRESS/WIT SWORN:LEONARD CALDERA, PEACE OFFICER, SFPD/EXHM:PEOPLES 1:EVIDENCE ENVELOPE/EXHMA:PEOPLES 1A:PLASTIC BAGGIE CONTAINING 2 OFF WHITE ROCKS/X:COUNSEL STIPULATE TO RETURN NARCOTICS TO OFFICER CALDERA/CAL: PC 1538,5 MOTION TO SUPPRESS/ARG&SUB/MO GRTD/X: MOTION GRANTED AS TO COUNT(S) 1, 2/X:DA DISMISSES THE CASE PURSUANTTO PC 1385PC AS MOTION TO SUPPRESS WAS GRANTED ON ALL COUNTS/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-06-24T13:45:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 07-11-11/987,2/OR/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-06-24T13:45:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 07-11-11/987,2/OR/CONTD: PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11016719",
-    "portal_case_id": "",
+    "portal_case_id": "3679994",
     "display_case_number": "CRI-11016719",
     "defendant": "RAVEN SYMONE CARTER",
     "filed_date": "2011-06-23",
@@ -59,12 +162,110 @@
       "defendant": "RAVEN SYMONE CARTER",
       "filed_date": "2011-06-23"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385P",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC 1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F 148(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "148(a)(1) PC/M",
+        "title": "Penal Code § 148(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148(a)(1)",
+        "code_system": "PC",
+        "section": "148(a)(1)",
+        "citation": "Penal Code § 148(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RAVEN SYMONE CARTER, and date of filing 2011-06-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RAVEN SYMONE CARTER, date of filing, 2011-06-23, and charges in the case: 11350(a) HS/F 148(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "148(a)(1) PC/M",
+      "title": "Penal Code § 148(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148(a)(1)",
+      "code_system": "PC",
+      "section": "148(a)(1)",
+      "citation": "Penal Code § 148(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:33:15.041Z",
+  "portal_case_id": "3679994",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11016719",
+      "defendant": "RAVEN SYMONE CARTER",
+      "filed_date": "2011-06-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3679994"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:26.165450+00:00"
 }

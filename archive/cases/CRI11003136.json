@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:39:09.058Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:31:36.312Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11003136",
   "criminal_case_number": "11003136",
@@ -24,19 +24,71 @@
       "name": "STANLEY L HARRIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "STANLEY L HARRIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-02-02T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 02-17-11/987,2/BAIL:85,000/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO138572:10038075/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-02-16 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2011-02-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-02-02 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2011-02-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PETER SANTINA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11352(a) HS/F 11355 HS/F",
+    "filed_date": "2011-02-02",
+    "defendant": "STANLEY L HARRIS",
+    "searched_key": "HARRIS/ST",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/11003136.json",
     "searched_last_name": "HARRIS",
     "searched_first_prefix": "ST",
-    "charges": "11352(a) HS/F 11355 HS/F",
     "row": {
       "DEFENDANTNAME": "STANLEY L HARRIS",
       "CASENUMBER": "CRI-11003136",
@@ -45,11 +97,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3667221",
+  "docket_entries": [
+    {
+      "filedDate": "2011-02-02T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 02-17-11/987,2/BAIL:85,000/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-02-02T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 02-17-11/987,2/BAIL:85,000/CONTD: PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO138572:10038075/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-02-16T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO138572:10038075/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11003136",
-    "portal_case_id": "",
+    "portal_case_id": "3667221",
     "display_case_number": "CRI-11003136",
     "defendant": "STANLEY L HARRIS",
     "filed_date": "2011-02-02",
@@ -60,11 +133,84 @@
       "filed_date": "2011-02-02"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11352(a) HS/F 11355 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11352(a) HS/F",
+        "title": "Health and Safety Code § 11352(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11352(a)",
+        "code_system": "HS",
+        "section": "11352(a)",
+        "citation": "Health and Safety Code § 11352(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11355 HS/F",
+        "title": "Health and Safety Code § 11355",
+        "title_source": "programmatic_citation",
+        "code": "HS 11355",
+        "code_system": "HS",
+        "section": "11355",
+        "citation": "Health and Safety Code § 11355",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, STANLEY L HARRIS, and date of filing 2011-02-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, STANLEY L HARRIS, date of filing, 2011-02-02, and charges in the case: 11352(a) HS/F 11355 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11352(a) HS/F",
+      "title": "Health and Safety Code § 11352(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11352(a)",
+      "code_system": "HS",
+      "section": "11352(a)",
+      "citation": "Health and Safety Code § 11352(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11355 HS/F",
+      "title": "Health and Safety Code § 11355",
+      "title_source": "programmatic_citation",
+      "code": "HS 11355",
+      "code_system": "HS",
+      "section": "11355",
+      "citation": "Health and Safety Code § 11355",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:31:37.136Z",
+  "portal_case_id": "3667221",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11003136",
+      "defendant": "STANLEY L HARRIS",
+      "filed_date": "2011-02-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3667221"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.631946+00:00"
 }

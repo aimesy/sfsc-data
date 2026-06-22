@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:13:18.906Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:28:06.686Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12007881",
   "criminal_case_number": "12007881",
@@ -24,11 +24,87 @@
       "name": "MICHAEL A ROGERS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL A ROGERS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-08-05T13:24:00.000Z",
+      "docketEntryComment": "SIGNED ORDER FOR RELEAS OF SEIZED FIREARMS FILED TODAY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-04-06T13:08:00.000Z",
+      "docketEntryComment": "PEOPLE'S MOT TO CONTINUE PRELIM HRG FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-03-26T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 5-25-12/987,2/BAIL:95000 /CONTD:  PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-05-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET PX/MO138573/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-04-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HEARING/X:PEOPLE'S MOTION TO CONTINUE GRANTED/STWPX/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-05-15 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2012-05-15",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-04-20 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2012-04-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-03-26 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2012-03-26",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DAVID SIMERLY",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +121,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3705421",
+  "docket_entries": [
+    {
+      "filedDate": "2016-08-05T13:24:00.000Z",
+      "docketEntryComment": "SIGNED ORDER FOR RELEAS OF SEIZED FIREARMS FILED TODAY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-08-05T13:24:00.000Z",
+      "description": "SIGNED ORDER FOR RELEAS OF SEIZED FIREARMS FILED TODAY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-04-06T13:08:00.000Z",
+      "docketEntryComment": "PEOPLE'S MOT TO CONTINUE PRELIM HRG FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-04-06T13:08:00.000Z",
+      "description": "PEOPLE'S MOT TO CONTINUE PRELIM HRG FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-03-26T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 5-25-12/987,2/BAIL:95000 /CONTD:  PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-03-26T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 5-25-12/987,2/BAIL:95000 /CONTD: PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-05-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET PX/MO138573/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-05-15T09:00:00.000Z",
+      "description": "/CAL: TO SET PX/MO138573/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-04-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HEARING/X:PEOPLE'S MOTION TO CONTINUE GRANTED/STWPX/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2012-04-20T09:00:00.000Z",
+      "description": "/CAL:PRELIM HEARING/X:PEOPLE'S MOTION TO CONTINUE GRANTED/STWPX/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12007881",
-    "portal_case_id": "",
+    "portal_case_id": "3705421",
     "display_case_number": "CRI-12007881",
     "defendant": "MICHAEL A ROGERS",
     "filed_date": "2012-03-23",
@@ -60,11 +187,58 @@
       "filed_date": "2012-03-23"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "8888888 29815(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "8888888 29815(a) PC/F",
+        "title": "8888888",
+        "title_source": "criminal_index_text",
+        "code": "PC 29815(a)",
+        "code_system": "PC",
+        "section": "29815(a)",
+        "citation": "Penal Code § 29815(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=29815.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=29815.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL A ROGERS, and date of filing 2012-03-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL A ROGERS, date of filing, 2012-03-23, and charges in the case: 8888888 29815(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888 29815(a) PC/F",
+      "title": "8888888",
+      "title_source": "criminal_index_text",
+      "code": "PC 29815(a)",
+      "code_system": "PC",
+      "section": "29815(a)",
+      "citation": "Penal Code § 29815(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=29815.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=29815.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:28:07.347Z",
+  "portal_case_id": "3705421",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12007881",
+      "defendant": "MICHAEL A ROGERS",
+      "filed_date": "2012-03-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3705421"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T16:41:53.092Z"
 }

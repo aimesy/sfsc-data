@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:30:39.074Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:35:34.322Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11021155",
   "criminal_case_number": "11021155",
@@ -24,19 +24,132 @@
       "name": "JOANNA QUAN HUYNH",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOANNA QUAN HUYNH",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-08-16T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-08-18T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-08-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:STEVE LAU/BWDNC/OR/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:TO JOIN 11021724 & 11012123/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, TRAILING #11021724/MO138572:11021724/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-04T08:30:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/BAIL:5000/CONTD: TRAILING 11021724/DOP      /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-29T08:30:00.000Z",
+      "docketEntryComment": "/CAL:TO SET; TRAILING #11021724/CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-15T08:30:00.000Z",
+      "docketEntryComment": "/CAL:TO SET; TRAILING #11021724 /CON:CHRISTOPHER HALL, ESQ/CONTD:TO SET/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, TRAILING #11021724/CONT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-08-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A/FTA/BW/BWI/BAIL:1000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-10-12 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2011-10-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-09-13 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2011-09-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-08-18 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2011-08-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-08-16 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2011-08-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CHRISTOPHER HALL",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "10852 VC/M",
+    "filed_date": "2011-08-10",
+    "defendant": "JOANNA QUAN HUYNH",
+    "searched_key": "HUYNH/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/11021155.json",
     "searched_last_name": "HUYNH",
     "searched_first_prefix": "JO",
-    "charges": "10852 VC/M",
     "row": {
       "DEFENDANTNAME": "JOANNA QUAN HUYNH",
       "CASENUMBER": "CRI-11021155",
@@ -45,11 +158,102 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3684309",
+  "docket_entries": [
+    {
+      "filedDate": "2011-08-16T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-08-16T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-08-18T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-08-18T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-08-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:STEVE LAU/BWDNC/OR/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:TO JOIN 11021724 & 11012123/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-08-18T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:STEVE LAU/BWDNC/OR/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:TO JOIN 11021724 & 11012123/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, TRAILING #11021724/MO138572:11021724/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-10-12T09:00:00.000Z",
+      "description": "/CAL:TO SET, TRAILING #11021724/MO138572:11021724/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-04T08:30:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/BAIL:5000/CONTD: TRAILING 11021724/DOP      /",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-10-04T08:30:00.000Z",
+      "description": "/CAL:TO SET/BAIL:5000/CONTD: TRAILING 11021724/DOP /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-29T08:30:00.000Z",
+      "docketEntryComment": "/CAL:TO SET; TRAILING #11021724/CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-09-29T08:30:00.000Z",
+      "description": "/CAL:TO SET; TRAILING #11021724/CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-15T08:30:00.000Z",
+      "docketEntryComment": "/CAL:TO SET; TRAILING #11021724 /CON:CHRISTOPHER HALL, ESQ/CONTD:TO SET/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2011-09-15T08:30:00.000Z",
+      "description": "/CAL:TO SET; TRAILING #11021724 /CON:CHRISTOPHER HALL, ESQ/CONTD:TO SET/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, TRAILING #11021724/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2011-09-13T09:00:00.000Z",
+      "description": "/CAL:TO SET, TRAILING #11021724/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-08-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A/FTA/BW/BWI/BAIL:1000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "2011-08-16T09:00:00.000Z",
+      "description": "/CAL:I&A/FTA/BW/BWI/BAIL:1000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11021155",
-    "portal_case_id": "",
+    "portal_case_id": "3684309",
     "display_case_number": "CRI-11021155",
     "defendant": "JOANNA QUAN HUYNH",
     "filed_date": "2011-08-10",
@@ -60,11 +264,58 @@
       "filed_date": "2011-08-10"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "10852 VC/M",
+    "charge_rows": [
+      {
+        "raw": "10852 VC/M",
+        "title": "Vehicle Code § 10852",
+        "title_source": "programmatic_citation",
+        "code": "VC 10852",
+        "code_system": "VC",
+        "section": "10852",
+        "citation": "Vehicle Code § 10852",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10852.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10852.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOANNA QUAN HUYNH, and date of filing 2011-08-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOANNA QUAN HUYNH, date of filing, 2011-08-10, and charges in the case: 10852 VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "10852 VC/M",
+      "title": "Vehicle Code § 10852",
+      "title_source": "programmatic_citation",
+      "code": "VC 10852",
+      "code_system": "VC",
+      "section": "10852",
+      "citation": "Vehicle Code § 10852",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10852.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10852.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:35:34.994Z",
+  "portal_case_id": "3684309",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11021155",
+      "defendant": "JOANNA QUAN HUYNH",
+      "filed_date": "2011-08-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3684309"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.144788+00:00"
 }

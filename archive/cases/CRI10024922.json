@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:07:48.311Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:40:29.325Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10024922",
   "criminal_case_number": "10024922",
@@ -24,9 +24,20 @@
       "name": "ANESHA MARSHALL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANESHA MARSHALL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -42,14 +53,29 @@
       "CASENUMBER": "CRI-10024922",
       "FILEDDATE": "2010-08-20 04:05:00",
       "CHARGES": "647(b) PC/M"
-    }
+    },
+    "filed_date": "2010-08-20",
+    "defendant": "ANESHA MARSHALL",
+    "searched_key": "MARSHALL/AN",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/10024922.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3651855",
+  "docket_entries": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-11-17T18:00:00.000Z",
+      "description": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10024922",
-    "portal_case_id": "",
+    "portal_case_id": "3651855",
     "display_case_number": "CRI-10024922",
     "defendant": "ANESHA MARSHALL",
     "filed_date": "2010-08-20",
@@ -60,11 +86,58 @@
       "filed_date": "2010-08-20"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "647(b) PC/M",
+    "charge_rows": [
+      {
+        "raw": "647(b) PC/M",
+        "title": "Penal Code § 647(b)",
+        "title_source": "programmatic_citation",
+        "code": "PC 647(b)",
+        "code_system": "PC",
+        "section": "647(b)",
+        "citation": "Penal Code § 647(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANESHA MARSHALL, and date of filing 2010-08-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANESHA MARSHALL, date of filing, 2010-08-20, and charges in the case: 647(b) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "647(b) PC/M",
+      "title": "Penal Code § 647(b)",
+      "title_source": "programmatic_citation",
+      "code": "PC 647(b)",
+      "code_system": "PC",
+      "section": "647(b)",
+      "citation": "Penal Code § 647(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:40:29.912Z",
+  "portal_case_id": "3651855",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10024922",
+      "defendant": "ANESHA MARSHALL",
+      "filed_date": "2010-08-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3651855"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:37.781517+00:00"
 }

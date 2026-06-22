@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:28:29.168Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:35:55.347Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11004726",
   "criminal_case_number": "11004726",
@@ -24,19 +24,111 @@
       "name": "ANTONIO GONZALEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANTONIO GONZALEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-02-18T13:30:00.000Z",
+      "docketEntryComment": "/CAL: I&A, P&C/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: STEVE LAU/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/987,2/CONTD:PRETRIAL CONFERENCE ON 03-03-11/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-17T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:JULIANA DROUS, SPECIALLY APPEARED FOR THE ATTORNEY OF RECORD,/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:CHERYL WALLACE/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA & COUNSEL, TO JOIN #10037981 & 10004666; DA MTR FILING/TWA/DOP/BAIL:15,000/X:BAIL IS SET WITHOUT PREJUDICE,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/MO138583/CO:DISPO IN CT#10037981/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-03T09:00:00.000Z",
+      "docketEntryComment": "/LD:03-21-11/X:REMAIN ON NTW/CONTD:PRETRIAL IN D-15 ON 03-04-11/CONTD:JURY TRIAL IN D-17 ON 03-11-11/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-03-04 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "2011-03-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-03 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2011-03-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-02-18 1:30 PM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2011-02-18",
+      "hearing_time": "1:30 PM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-02-17 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2011-02-17",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEVE LAU",
+      "type": "Conflict Attorney"
+    },
+    {
+      "name": "DAMALI TAYLOR",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "594(b)(1) PC/M",
+    "filed_date": "2011-02-17",
+    "defendant": "ANTONIO GONZALEZ",
+    "searched_key": "GONZALEZ/AN",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/11004726.json",
     "searched_last_name": "GONZALEZ",
     "searched_first_prefix": "AN",
-    "charges": "594(b)(1) PC/M",
     "row": {
       "DEFENDANTNAME": "ANTONIO GONZALEZ",
       "CASENUMBER": "CRI-11004726",
@@ -45,11 +137,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3668729",
+  "docket_entries": [
+    {
+      "filedDate": "2011-02-18T13:30:00.000Z",
+      "docketEntryComment": "/CAL: I&A, P&C/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: STEVE LAU/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/987,2/CONTD:PRETRIAL CONFERENCE ON 03-03-11/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-02-18T13:30:00.000Z",
+      "description": "/CAL: I&A, P&C/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: STEVE LAU/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/987,2/CONTD:PRETRIAL CONFERENCE ON 03-03-11/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-17T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:JULIANA DROUS, SPECIALLY APPEARED FOR THE ATTORNEY OF RECORD,/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:CHERYL WALLACE/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA & COUNSEL, TO JOIN #10037981 & 10004666; DA MTR FILING/TWA/DOP/BAIL:15,000/X:BAIL IS SET WITHOUT PREJUDICE,/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-02-17T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:JULIANA DROUS, SPECIALLY APPEARED FOR THE ATTORNEY OF RECORD,/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:CHERYL WALLACE/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA & COUNSEL, TO JOIN #10037981 & 10004666; DA MTR FILING/TWA/DOP/BAIL:15,000/X:BAIL IS SET WITHOUT PREJUDICE,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/MO138583/CO:DISPO IN CT#10037981/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-03-04T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/MO138583/CO:DISPO IN CT#10037981/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-03T09:00:00.000Z",
+      "docketEntryComment": "/LD:03-21-11/X:REMAIN ON NTW/CONTD:PRETRIAL IN D-15 ON 03-04-11/CONTD:JURY TRIAL IN D-17 ON 03-11-11/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-03-03T09:00:00.000Z",
+      "description": "/LD:03-21-11/X:REMAIN ON NTW/CONTD:PRETRIAL IN D-15 ON 03-04-11/CONTD:JURY TRIAL IN D-17 ON 03-11-11/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11004726",
-    "portal_case_id": "",
+    "portal_case_id": "3668729",
     "display_case_number": "CRI-11004726",
     "defendant": "ANTONIO GONZALEZ",
     "filed_date": "2011-02-17",
@@ -60,11 +193,58 @@
       "filed_date": "2011-02-17"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "594(b)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "594(b)(1) PC/M",
+        "title": "Penal Code § 594(b)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(1)",
+        "code_system": "PC",
+        "section": "594(b)(1)",
+        "citation": "Penal Code § 594(b)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANTONIO GONZALEZ, and date of filing 2011-02-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANTONIO GONZALEZ, date of filing, 2011-02-17, and charges in the case: 594(b)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "594(b)(1) PC/M",
+      "title": "Penal Code § 594(b)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(1)",
+      "code_system": "PC",
+      "section": "594(b)(1)",
+      "citation": "Penal Code § 594(b)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:35:56.031Z",
+  "portal_case_id": "3668729",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11004726",
+      "defendant": "ANTONIO GONZALEZ",
+      "filed_date": "2011-02-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3668729"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.142790+00:00"
 }

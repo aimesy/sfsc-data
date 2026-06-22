@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:25:37.623Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:25:18.000Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12000972",
   "criminal_case_number": "12000972",
@@ -24,11 +24,64 @@
       "name": "DANIEL MILLER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DANIEL MILLER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-01-31T15:07:00.000Z",
+      "docketEntryComment": "DEFT'S MOT TO AMEND AOJ TO ORDER 4019 CONDUCT CREDITS FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-02-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENSE MOTION TO ORDER 4019 CONDUCT CREDITS NUC PRO TUNC TO 01-18-12/MO GRTD/CTORD:DEFENDANT IS ELIGIBLE FOR HALF-TIME CREDITS PER PENAL CODESECTION 4019 FOR THE SENTENCE IMPOSED ON 01-18-12 FOR 60 DAYS IN   COUNTYJAIL WITH 9 DAYS CREDITS,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-18T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD POST COMMUNITY SERVICE SUPERVISION/X:DEFENDANT'S POST RELEASE COMMUNITY SERVICE IS MODIFIED AS FOLLOWS,/CTORD DEFENDANT TO SERVE 60 DAYS ICOUNTY JAIL WITH 9 DAYS CREDITS,/CTORD:DEFENDANT TO ENTER AND COMPLETE RESIDENTIAL TREATMENT PROGRAM/X:DEFENDANT TO CONTINUE ON POST RELEASE COMMUNITY SUPERVISION/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-02-02 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2012-02-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-01-18 11:30 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2012-01-18",
+      "hearing_time": "11:30 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ERIC QUANDT",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +98,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3698655",
+  "docket_entries": [
+    {
+      "filedDate": "2012-01-31T15:07:00.000Z",
+      "docketEntryComment": "DEFT'S MOT TO AMEND AOJ TO ORDER 4019 CONDUCT CREDITS FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-01-31T15:07:00.000Z",
+      "description": "DEFT'S MOT TO AMEND AOJ TO ORDER 4019 CONDUCT CREDITS FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-02-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENSE MOTION TO ORDER 4019 CONDUCT CREDITS NUC PRO TUNC TO 01-18-12/MO GRTD/CTORD:DEFENDANT IS ELIGIBLE FOR HALF-TIME CREDITS PER PENAL CODESECTION 4019 FOR THE SENTENCE IMPOSED ON 01-18-12 FOR 60 DAYS IN   COUNTYJAIL WITH 9 DAYS CREDITS,/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-02-02T09:00:00.000Z",
+      "description": "/CAL:DEFENSE MOTION TO ORDER 4019 CONDUCT CREDITS NUC PRO TUNC TO 01-18-12/MO GRTD/CTORD:DEFENDANT IS ELIGIBLE FOR HALF-TIME CREDITS PER PENAL CODESECTION 4019 FOR THE SENTENCE IMPOSED ON 01-18-12 FOR 60 DAYS IN COUNTYJAIL WITH 9 DAYS CREDITS,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-18T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD POST COMMUNITY SERVICE SUPERVISION/X:DEFENDANT'S POST RELEASE COMMUNITY SERVICE IS MODIFIED AS FOLLOWS,/CTORD DEFENDANT TO SERVE 60 DAYS ICOUNTY JAIL WITH 9 DAYS CREDITS,/CTORD:DEFENDANT TO ENTER AND COMPLETE RESIDENTIAL TREATMENT PROGRAM/X:DEFENDANT TO CONTINUE ON POST RELEASE COMMUNITY SUPERVISION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-01-18T11:30:00.000Z",
+      "description": "/CAL:APD POST COMMUNITY SERVICE SUPERVISION/X:DEFENDANT'S POST RELEASE COMMUNITY SERVICE IS MODIFIED AS FOLLOWS,/CTORD DEFENDANT TO SERVE 60 DAYS ICOUNTY JAIL WITH 9 DAYS CREDITS,/CTORD:DEFENDANT TO ENTER AND COMPLETE RESIDENTIAL TREATMENT PROGRAM/X:DEFENDANT TO CONTINUE ON POST RELEASE COMMUNITY SUPERVISION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12000972",
-    "portal_case_id": "",
+    "portal_case_id": "3698655",
     "display_case_number": "CRI-12000972",
     "defendant": "DANIEL MILLER",
     "filed_date": "2012-01-18",
@@ -59,12 +143,67 @@
       "defendant": "DANIEL MILLER",
       "filed_date": "2012-01-18"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PENAL CODESECTION 4019",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F 3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DANIEL MILLER, and date of filing 2012-01-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DANIEL MILLER, date of filing, 2012-01-18, and charges in the case: 3455(a) PC/F 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:25:18.649Z",
+  "portal_case_id": "3698655",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12000972",
+      "defendant": "DANIEL MILLER",
+      "filed_date": "2012-01-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3698655"
+  }
 }

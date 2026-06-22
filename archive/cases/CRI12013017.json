@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:59:48.171Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:27:47.073Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12013017",
   "criminal_case_number": "12013017",
@@ -24,11 +24,95 @@
       "name": "BENNETT TAYLOR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BENNETT TAYLOR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-06-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/NP/MO PC 17B/MO GRTD/TEXT:DEFT ENT NG PLEA(S)& DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDEREDAND  STAYED TO 06-04-12 IN M17,/X: BAIL SET AT $5000/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-05-18T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 06-04-12/987,2/OR/DEF:IS TO CONTACT SPR 3/ TIMES PER WEEK/ /CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-06-08T13:45:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/MO PC 1385:IN LIGHT OF CO-DEFT'S ADMISSION IN CASE #12013012",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-06-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BWSTAY OF 06-01-12/BWSTAY:06-01-12/X:REDUCTION FROM DEPARTMENT 12/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-06-08 1:45 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2012-06-08",
+      "hearing_time": "1:45 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-06-04 9:00 AM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2012-06-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-06-01 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2012-06-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-05-18 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2012-05-18",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ARIEL BOYCESMITH",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +129,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3710479",
+  "docket_entries": [
+    {
+      "filedDate": "2012-06-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/NP/MO PC 17B/MO GRTD/TEXT:DEFT ENT NG PLEA(S)& DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDEREDAND  STAYED TO 06-04-12 IN M17,/X: BAIL SET AT $5000/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-06-01T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/NP/MO PC 17B/MO GRTD/TEXT:DEFT ENT NG PLEA(S)& DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDEREDAND STAYED TO 06-04-12 IN M17,/X: BAIL SET AT $5000/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-05-18T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 06-04-12/987,2/OR/DEF:IS TO CONTACT SPR 3/ TIMES PER WEEK/ /CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-05-18T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 06-04-12/987,2/OR/DEF:IS TO CONTACT SPR 3/ TIMES PER WEEK/ /CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-06-08T13:45:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/MO PC 1385:IN LIGHT OF CO-DEFT'S ADMISSION IN CASE #12013012",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-06-08T13:45:00.000Z",
+      "description": "/CAL:PRETRIAL/MO PC 1385:IN LIGHT OF CO-DEFT'S ADMISSION IN CASE #12013012",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-06-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BWSTAY OF 06-01-12/BWSTAY:06-01-12/X:REDUCTION FROM DEPARTMENT 12/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-06-04T09:00:00.000Z",
+      "description": "/CAL:BWSTAY OF 06-01-12/BWSTAY:06-01-12/X:REDUCTION FROM DEPARTMENT 12/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12013017",
-    "portal_case_id": "",
+    "portal_case_id": "3710479",
     "display_case_number": "CRI-12013017",
     "defendant": "BENNETT TAYLOR",
     "filed_date": "2012-05-17",
@@ -59,12 +184,85 @@
       "defendant": "BENNETT TAYLOR",
       "filed_date": "2012-05-17"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 17B",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 17B",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "11355 HS/M",
+    "charge_rows": [
+      {
+        "raw": "11355 HS/M",
+        "title": "Health and Safety Code § 11355",
+        "title_source": "programmatic_citation",
+        "code": "HS 11355",
+        "code_system": "HS",
+        "section": "11355",
+        "citation": "Health and Safety Code § 11355",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BENNETT TAYLOR, and date of filing 2012-05-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BENNETT TAYLOR, date of filing, 2012-05-17, and charges in the case: 11355 HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11355 HS/M",
+      "title": "Health and Safety Code § 11355",
+      "title_source": "programmatic_citation",
+      "code": "HS 11355",
+      "code_system": "HS",
+      "section": "11355",
+      "citation": "Health and Safety Code § 11355",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:27:47.702Z",
+  "portal_case_id": "3710479",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12013017",
+      "defendant": "BENNETT TAYLOR",
+      "filed_date": "2012-05-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3710479"
+  }
 }

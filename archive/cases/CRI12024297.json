@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:20:47.302Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:31:05.160Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12024297",
   "criminal_case_number": "12024297",
@@ -24,11 +24,87 @@
       "name": "FREDDIE TAYLOR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "FREDDIE TAYLOR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-10-18T10:32:00.000Z",
+      "docketEntryComment": "DEFT'S MOTION REQUESTING FOR PREHEARING LINE-UP FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-10-02T15:00:00.000Z",
+      "docketEntryComment": "DEFT MOT FOR CONTINUANCE OF PRELIM HR FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-09-21T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 10-05-12/987,2/BAIL:75,000/CONTD:PRELIMINARY HEARING/DOP/SA1:JOSEPH CILEO/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-10-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/MO PC 1385:INSUFFICIENT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-10-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/CONTD:PREHEARING CONFERENCE/NTW60/LD:11-20-12/4011,5/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-10-31 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2012-10-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-10-04 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2012-10-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-09-21 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2012-09-21",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PHOENIX STREETS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +121,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3721538",
+  "docket_entries": [
+    {
+      "filedDate": "2012-10-18T10:32:00.000Z",
+      "docketEntryComment": "DEFT'S MOTION REQUESTING FOR PREHEARING LINE-UP FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-10-18T10:32:00.000Z",
+      "description": "DEFT'S MOTION REQUESTING FOR PREHEARING LINE-UP FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-10-02T15:00:00.000Z",
+      "docketEntryComment": "DEFT MOT FOR CONTINUANCE OF PRELIM HR FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-10-02T15:00:00.000Z",
+      "description": "DEFT MOT FOR CONTINUANCE OF PRELIM HR FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-09-21T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 10-05-12/987,2/BAIL:75,000/CONTD:PRELIMINARY HEARING/DOP/SA1:JOSEPH CILEO/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-09-21T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 10-05-12/987,2/BAIL:75,000/CONTD:PRELIMINARY HEARING/DOP/SA1:JOSEPH CILEO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-10-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/MO PC 1385:INSUFFICIENT/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-10-31T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/MO PC 1385:INSUFFICIENT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-10-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/CONTD:PREHEARING CONFERENCE/NTW60/LD:11-20-12/4011,5/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2012-10-04T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/CONTD:PREHEARING CONFERENCE/NTW60/LD:11-20-12/4011,5/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12024297",
-    "portal_case_id": "",
+    "portal_case_id": "3721538",
     "display_case_number": "CRI-12024297",
     "defendant": "FREDDIE TAYLOR",
     "filed_date": "2012-09-21",
@@ -59,12 +186,94 @@
       "defendant": "FREDDIE TAYLOR",
       "filed_date": "2012-09-21"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "211 PC/F 496(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "211 PC/F",
+        "title": "Penal Code § 211",
+        "title_source": "programmatic_citation",
+        "code": "PC 211",
+        "code_system": "PC",
+        "section": "211",
+        "citation": "Penal Code § 211",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "496(a) PC/F",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, FREDDIE TAYLOR, and date of filing 2012-09-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, FREDDIE TAYLOR, date of filing, 2012-09-21, and charges in the case: 211 PC/F 496(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "211 PC/F",
+      "title": "Penal Code § 211",
+      "title_source": "programmatic_citation",
+      "code": "PC 211",
+      "code_system": "PC",
+      "section": "211",
+      "citation": "Penal Code § 211",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "496(a) PC/F",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:31:05.806Z",
+  "portal_case_id": "3721538",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12024297",
+      "defendant": "FREDDIE TAYLOR",
+      "filed_date": "2012-09-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3721538"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T16:33:02.729Z"
 }

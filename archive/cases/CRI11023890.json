@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:09:07.300Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:36:40.255Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11023890",
   "criminal_case_number": "11023890",
@@ -24,11 +24,77 @@
       "name": "JOSE O MERCADO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSE O MERCADO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-09-06T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DEF:RESERVES THERIGHT TO DEMURRER/BAIL:5000/NTW/LD:FOR TRIAL IS 10-06-11/CONTD:PRETRIALCONFERENCE & JURY TRIAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-16T13:45:00.000Z",
+      "docketEntryComment": "/MO138583/VD:09-23-11 TRIAL DATE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/LD:10-06-11/X:09-23-11 TRIAL CONFIRMED,/CONTD:FINAL PRETRIAL CONFERENCE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-09-16 1:45 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2011-09-16",
+      "hearing_time": "1:45 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-09-12 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2011-09-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-09-06 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2011-09-06",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JENNIFER REDDING",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3686984",
+  "docket_entries": [
+    {
+      "filedDate": "2011-09-06T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DEF:RESERVES THERIGHT TO DEMURRER/BAIL:5000/NTW/LD:FOR TRIAL IS 10-06-11/CONTD:PRETRIALCONFERENCE & JURY TRIAL/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-09-06T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DEF:RESERVES THERIGHT TO DEMURRER/BAIL:5000/NTW/LD:FOR TRIAL IS 10-06-11/CONTD:PRETRIALCONFERENCE & JURY TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-16T13:45:00.000Z",
+      "docketEntryComment": "/MO138583/VD:09-23-11 TRIAL DATE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-09-16T13:45:00.000Z",
+      "description": "/MO138583/VD:09-23-11 TRIAL DATE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/LD:10-06-11/X:09-23-11 TRIAL CONFIRMED,/CONTD:FINAL PRETRIAL CONFERENCE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-09-12T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/LD:10-06-11/X:09-23-11 TRIAL CONFIRMED,/CONTD:FINAL PRETRIAL CONFERENCE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11023890",
-    "portal_case_id": "",
+    "portal_case_id": "3686984",
     "display_case_number": "CRI-11023890",
     "defendant": "JOSE O MERCADO",
     "filed_date": "2011-09-06",
@@ -60,11 +157,83 @@
       "filed_date": "2011-09-06"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "485 PC/M 11364(a) HS/M",
+    "charge_rows": [
+      {
+        "raw": "485 PC/M",
+        "title": "Penal Code § 485",
+        "title_source": "programmatic_citation",
+        "code": "PC 485",
+        "code_system": "PC",
+        "section": "485",
+        "citation": "Penal Code § 485",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=485.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=485.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "11364(a) HS/M",
+        "title": "Health and Safety Code § 11364(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11364(a)",
+        "code_system": "HS",
+        "section": "11364(a)",
+        "citation": "Health and Safety Code § 11364(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSE O MERCADO, and date of filing 2011-09-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSE O MERCADO, date of filing, 2011-09-06, and charges in the case: 485 PC/M 11364(a) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "485 PC/M",
+      "title": "Penal Code § 485",
+      "title_source": "programmatic_citation",
+      "code": "PC 485",
+      "code_system": "PC",
+      "section": "485",
+      "citation": "Penal Code § 485",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=485.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=485.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "11364(a) HS/M",
+      "title": "Health and Safety Code § 11364(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11364(a)",
+      "code_system": "HS",
+      "section": "11364(a)",
+      "citation": "Health and Safety Code § 11364(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:36:40.935Z",
+  "portal_case_id": "3686984",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11023890",
+      "defendant": "JOSE O MERCADO",
+      "filed_date": "2011-09-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3686984"
+  }
 }

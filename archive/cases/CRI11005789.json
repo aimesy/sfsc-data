@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:05:09.219Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:33:05.877Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11005789",
   "criminal_case_number": "11005789",
@@ -24,11 +24,82 @@
       "name": "JESUS REYES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JESUS REYES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-04-14T15:27:00.000Z",
+      "docketEntryComment": "DEFT'S MTS EVID FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-05-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG & MTS/MO PC 1385:PEOPLE'S FIRST DISMISSAL, NOT READY FOR HEARING/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-04-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HEARING & MTS/CONT/STWPX/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-01T13:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 05-02-11/987,2/OR/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-05-04 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2011-05-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-04-21 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2011-04-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-01 1:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2011-03-01",
+      "hearing_time": "1:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SANDY FEINLAND",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3669730",
+  "docket_entries": [
+    {
+      "filedDate": "2011-04-14T15:27:00.000Z",
+      "docketEntryComment": "DEFT'S MTS EVID FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-04-14T15:27:00.000Z",
+      "description": "DEFT'S MTS EVID FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-05-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG & MTS/MO PC 1385:PEOPLE'S FIRST DISMISSAL, NOT READY FOR HEARING/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-05-04T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG & MTS/MO PC 1385:PEOPLE'S FIRST DISMISSAL, NOT READY FOR HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-04-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HEARING & MTS/CONT/STWPX/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-04-21T09:00:00.000Z",
+      "description": "/CAL:PRELIM HEARING & MTS/CONT/STWPX/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-01T13:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 05-02-11/987,2/OR/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-03-01T13:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 05-02-11/987,2/OR/CONTD: PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11005789",
-    "portal_case_id": "",
+    "portal_case_id": "3669730",
     "display_case_number": "CRI-11005789",
     "defendant": "JESUS REYES",
     "filed_date": "2011-03-01",
@@ -59,12 +171,68 @@
       "defendant": "JESUS REYES",
       "filed_date": "2011-03-01"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11378 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11378 HS/F",
+        "title": "Health and Safety Code § 11378",
+        "title_source": "programmatic_citation",
+        "code": "HS 11378",
+        "code_system": "HS",
+        "section": "11378",
+        "citation": "Health and Safety Code § 11378",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JESUS REYES, and date of filing 2011-03-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JESUS REYES, date of filing, 2011-03-01, and charges in the case: 11378 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11378 HS/F",
+      "title": "Health and Safety Code § 11378",
+      "title_source": "programmatic_citation",
+      "code": "HS 11378",
+      "code_system": "HS",
+      "section": "11378",
+      "citation": "Health and Safety Code § 11378",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:33:06.520Z",
+  "portal_case_id": "3669730",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11005789",
+      "defendant": "JESUS REYES",
+      "filed_date": "2011-03-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3669730"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T13:24:07.254Z"
 }

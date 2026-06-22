@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:31:22.977Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:31:36.870Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10037839",
   "criminal_case_number": "10037839",
@@ -24,11 +24,92 @@
       "name": "JULIAN C JUAREZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JULIAN C JUAREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-01-26T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-08T15:00:00.000Z",
+      "docketEntryComment": "CITY ATTY'S NON OPPOSITION TO MOT TO EXONERATE BAIL BOND FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-28T10:29:00.000Z",
+      "docketEntryComment": "BB'S PC1305(F) MOTION/P&A TO EXONERATE BOND FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-04T09:00:00.000Z",
+      "docketEntryComment": "/INTORD:SPANISH/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:IRWIN FREDRICH/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 03-07-11/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BB 1305(F)PC MOTION TO EXONERATE BOND/X:NO OPPOSITION/BFSA:01-26-11/BE/X:ORDER SIGNED & FILED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-26T09:00:00.000Z",
+      "docketEntryComment": "/FTA/BF/BWI/SURETY/BFORF PRELIM HEARING/BFORF2 15000/BAIL 20000/BWNUM 1S",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-03-23 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2011-03-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-01-26 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2011-01-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-01-04 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2011-01-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "IRWIN FREDRICH",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +123,79 @@
       "CASENUMBER": "CRI-10037839",
       "FILEDDATE": "2011-01-04 09:00:00",
       "CHARGES": "11377(a) HS/F"
-    }
+    },
+    "filed_date": "2011-01-04",
+    "defendant": "JULIAN C JUAREZ",
+    "searched_key": "JUAREZ/JU",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/10037839.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3663923",
+  "docket_entries": [
+    {
+      "filedDate": "2011-01-26T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-01-26T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-08T15:00:00.000Z",
+      "docketEntryComment": "CITY ATTY'S NON OPPOSITION TO MOT TO EXONERATE BAIL BOND FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-03-08T15:00:00.000Z",
+      "description": "CITY ATTY'S NON OPPOSITION TO MOT TO EXONERATE BAIL BOND FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-28T10:29:00.000Z",
+      "docketEntryComment": "BB'S PC1305(F) MOTION/P&A TO EXONERATE BOND FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-02-28T10:29:00.000Z",
+      "description": "BB'S PC1305(F) MOTION/P&A TO EXONERATE BOND FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-04T09:00:00.000Z",
+      "docketEntryComment": "/INTORD:SPANISH/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:IRWIN FREDRICH/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 03-07-11/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-01-04T09:00:00.000Z",
+      "description": "/INTORD:SPANISH/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:IRWIN FREDRICH/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 03-07-11/CONTD: PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BB 1305(F)PC MOTION TO EXONERATE BOND/X:NO OPPOSITION/BFSA:01-26-11/BE/X:ORDER SIGNED & FILED/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-03-23T09:00:00.000Z",
+      "description": "/CAL:BB 1305(F)PC MOTION TO EXONERATE BOND/X:NO OPPOSITION/BFSA:01-26-11/BE/X:ORDER SIGNED & FILED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-26T09:00:00.000Z",
+      "docketEntryComment": "/FTA/BF/BWI/SURETY/BFORF PRELIM HEARING/BFORF2 15000/BAIL 20000/BWNUM 1S",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-01-26T09:00:00.000Z",
+      "description": "/FTA/BF/BWI/SURETY/BFORF PRELIM HEARING/BFORF2 15000/BAIL 20000/BWNUM 1S",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10037839",
-    "portal_case_id": "",
+    "portal_case_id": "3663923",
     "display_case_number": "CRI-10037839",
     "defendant": "JULIAN C JUAREZ",
     "filed_date": "2011-01-04",
@@ -59,12 +205,68 @@
       "defendant": "JULIAN C JUAREZ",
       "filed_date": "2011-01-04"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC1305(F)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11377(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11377(a) HS/F",
+        "title": "Health and Safety Code § 11377(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11377(a)",
+        "code_system": "HS",
+        "section": "11377(a)",
+        "citation": "Health and Safety Code § 11377(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JULIAN C JUAREZ, and date of filing 2011-01-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JULIAN C JUAREZ, date of filing, 2011-01-04, and charges in the case: 11377(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11377(a) HS/F",
+      "title": "Health and Safety Code § 11377(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11377(a)",
+      "code_system": "HS",
+      "section": "11377(a)",
+      "citation": "Health and Safety Code § 11377(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:31:37.480Z",
+  "portal_case_id": "3663923",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10037839",
+      "defendant": "JULIAN C JUAREZ",
+      "filed_date": "2011-01-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3663923"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:22.229532+00:00"
 }

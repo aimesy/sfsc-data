@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:46:31.296Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:34:47.932Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11004356",
   "criminal_case_number": "11004356",
@@ -24,19 +24,104 @@
       "name": "JOSEPH COOK",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSEPH COOK",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-03-18T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-11T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-16T15:49:00.000Z",
+      "docketEntryComment": "PD'S MOT TO RECALL BENCH WARRANT FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-14T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/ NTW60/LD:04-15-11/987,2/X:AS CONDITION OF OR RELEASE, REPORT TO SPR PROGRAM 2 TIMES PERWEEK FOR OR PROJECT/SA2:GOLDEN GATE AVE & LEAVENWORTH ST, SF/CONTD: PREHEARING CONFERENCE/DOP/OR/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENSE MOTION TO RECALL BENCH WARRANT/BWR: /BWR1/SIGN2/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-11T09:00:00.000Z",
+      "docketEntryComment": "/FTA/OREVKD/BWI/BAIL:25000/BWNUM:1ST/X:   1    OF    2   BENCH WARRANTS ISSUED THIS DATE /NIGHTSERV/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-03-18 9:00 AM",
+      "hearingType": "Motion to Recall Bench Warrant",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2011-03-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Recall Bench Warrant",
+      "hearing_type": "Motion to Recall Bench Warrant",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-11 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2011-03-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-02-14 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2011-02-14",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MEGAN BURNS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11350(a) HS/F",
+    "filed_date": "2011-02-14",
+    "defendant": "JOSEPH COOK",
+    "searched_key": "COOK/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/11004356.json",
     "searched_last_name": "COOK",
     "searched_first_prefix": "JO",
-    "charges": "11350(a) HS/F",
     "row": {
       "DEFENDANTNAME": "JOSEPH COOK",
       "CASENUMBER": "CRI-11004356",
@@ -45,11 +130,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3668378",
+  "docket_entries": [
+    {
+      "filedDate": "2011-03-18T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-03-18T09:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-11T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-03-11T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-16T15:49:00.000Z",
+      "docketEntryComment": "PD'S MOT TO RECALL BENCH WARRANT FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-03-16T15:49:00.000Z",
+      "description": "PD'S MOT TO RECALL BENCH WARRANT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-14T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/ NTW60/LD:04-15-11/987,2/X:AS CONDITION OF OR RELEASE, REPORT TO SPR PROGRAM 2 TIMES PERWEEK FOR OR PROJECT/SA2:GOLDEN GATE AVE & LEAVENWORTH ST, SF/CONTD: PREHEARING CONFERENCE/DOP/OR/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-02-14T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/ NTW60/LD:04-15-11/987,2/X:AS CONDITION OF OR RELEASE, REPORT TO SPR PROGRAM 2 TIMES PERWEEK FOR OR PROJECT/SA2:GOLDEN GATE AVE & LEAVENWORTH ST, SF/CONTD: PREHEARING CONFERENCE/DOP/OR/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENSE MOTION TO RECALL BENCH WARRANT/BWR: /BWR1/SIGN2/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-03-18T09:00:00.000Z",
+      "description": "/CAL:DEFENSE MOTION TO RECALL BENCH WARRANT/BWR: /BWR1/SIGN2/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-11T09:00:00.000Z",
+      "docketEntryComment": "/FTA/OREVKD/BWI/BAIL:25000/BWNUM:1ST/X:   1    OF    2   BENCH WARRANTS ISSUED THIS DATE /NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-03-11T09:00:00.000Z",
+      "description": "/FTA/OREVKD/BWI/BAIL:25000/BWNUM:1ST/X: 1 OF 2 BENCH WARRANTS ISSUED THIS DATE /NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11004356",
-    "portal_case_id": "",
+    "portal_case_id": "3668378",
     "display_case_number": "CRI-11004356",
     "defendant": "JOSEPH COOK",
     "filed_date": "2011-02-14",
@@ -60,11 +206,58 @@
       "filed_date": "2011-02-14"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSEPH COOK, and date of filing 2011-02-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSEPH COOK, date of filing, 2011-02-14, and charges in the case: 11350(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:34:48.692Z",
+  "portal_case_id": "3668378",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11004356",
+      "defendant": "JOSEPH COOK",
+      "filed_date": "2011-02-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3668378"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.164280+00:00"
 }

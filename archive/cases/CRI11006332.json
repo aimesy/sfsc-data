@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:38:25.157Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:32:05.253Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11006332",
   "criminal_case_number": "11006332",
@@ -24,11 +24,131 @@
       "name": "DANNY GARZA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DANNY GARZA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-06-22T09:15:00.000Z",
+      "docketEntryComment": "/CAL:FOR DISPOSITION/MO138572:10024539/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-06-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPO/TEXT:TRANS TO DEPT 13/TRANS 13:FORTHWITH FOR DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-05-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPOSITION/X:REPRSENTATIVE OF CAHS ROBIN CANLDER PRESENT IN COURT/CONTD:TO SET DISP (CAHS CASE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-04-21T09:00:00.000Z",
+      "docketEntryComment": "/X:SPECIAL APPEARANCE BY MALISHA JONES, DA FOR THE ASSISTANT DA OF RECORD,//CAL:PRETRIAL CONFERENCE/CONTD:TO SET OR DISPO/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-11T13:30:00.000Z",
+      "docketEntryComment": "/CAL:TO SET & CAHS/SPRGR/DEF:WILL BE RELEASED TO CAHS/CGTW/SAORD/DEF:IS ORDERED TO STAY OUT OF 555 9TH STREET/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-08T13:30:00.000Z",
+      "docketEntryComment": "/MO PC 17B/MO GRTD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GAIL:10,000/GTWM/987,2/CONTD:TO SET AND FOR CAHS/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-06-22 9:15 AM",
+      "hearingType": "Entry of Plea",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2011-06-22",
+      "hearing_time": "9:15 AM",
+      "matters": "Entry of Plea",
+      "hearing_type": "Entry of Plea",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-06-22 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2011-06-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-05-24 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2011-05-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-04-21 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2011-04-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-11 1:30 PM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2011-03-11",
+      "hearing_time": "1:30 PM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-08 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 5,
+      "court_date": "2011-03-08",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JENNIFER REDDING",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +165,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3670243",
+  "docket_entries": [
+    {
+      "filedDate": "2011-06-22T09:15:00.000Z",
+      "docketEntryComment": "/CAL:FOR DISPOSITION/MO138572:10024539/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-06-22T09:15:00.000Z",
+      "description": "/CAL:FOR DISPOSITION/MO138572:10024539/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-06-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPO/TEXT:TRANS TO DEPT 13/TRANS 13:FORTHWITH FOR DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-06-22T09:00:00.000Z",
+      "description": "/CAL:TO SET OR DISPO/TEXT:TRANS TO DEPT 13/TRANS 13:FORTHWITH FOR DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-05-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPOSITION/X:REPRSENTATIVE OF CAHS ROBIN CANLDER PRESENT IN COURT/CONTD:TO SET DISP (CAHS CASE/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-05-24T09:00:00.000Z",
+      "description": "/CAL:TO SET OR DISPOSITION/X:REPRSENTATIVE OF CAHS ROBIN CANLDER PRESENT IN COURT/CONTD:TO SET DISP (CAHS CASE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-04-21T09:00:00.000Z",
+      "docketEntryComment": "/X:SPECIAL APPEARANCE BY MALISHA JONES, DA FOR THE ASSISTANT DA OF RECORD,//CAL:PRETRIAL CONFERENCE/CONTD:TO SET OR DISPO/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-04-21T09:00:00.000Z",
+      "description": "/X:SPECIAL APPEARANCE BY MALISHA JONES, DA FOR THE ASSISTANT DA OF RECORD,//CAL:PRETRIAL CONFERENCE/CONTD:TO SET OR DISPO/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-11T13:30:00.000Z",
+      "docketEntryComment": "/CAL:TO SET & CAHS/SPRGR/DEF:WILL BE RELEASED TO CAHS/CGTW/SAORD/DEF:IS ORDERED TO STAY OUT OF 555 9TH STREET/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-03-11T13:30:00.000Z",
+      "description": "/CAL:TO SET & CAHS/SPRGR/DEF:WILL BE RELEASED TO CAHS/CGTW/SAORD/DEF:IS ORDERED TO STAY OUT OF 555 9TH STREET/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-08T13:30:00.000Z",
+      "docketEntryComment": "/MO PC 17B/MO GRTD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GAIL:10,000/GTWM/987,2/CONTD:TO SET AND FOR CAHS/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-03-08T13:30:00.000Z",
+      "description": "/MO PC 17B/MO GRTD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GAIL:10,000/GTWM/987,2/CONTD:TO SET AND FOR CAHS/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11006332",
-    "portal_case_id": "",
+    "portal_case_id": "3670243",
     "display_case_number": "CRI-11006332",
     "defendant": "DANNY GARZA",
     "filed_date": "2011-03-07",
@@ -59,12 +240,129 @@
       "defendant": "DANNY GARZA",
       "filed_date": "2011-03-07"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 17B",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 17B",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "459 PC/M 496(a) PC/M 466 PC/M",
+    "charge_rows": [
+      {
+        "raw": "459 PC/M",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "496(a) PC/M",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "466 PC/M",
+        "title": "Penal Code § 466",
+        "title_source": "programmatic_citation",
+        "code": "PC 466",
+        "code_system": "PC",
+        "section": "466",
+        "citation": "Penal Code § 466",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DANNY GARZA, and date of filing 2011-03-07. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DANNY GARZA, date of filing, 2011-03-07, and charges in the case: 459 PC/M 496(a) PC/M 466 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/M",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "496(a) PC/M",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "466 PC/M",
+      "title": "Penal Code § 466",
+      "title_source": "programmatic_citation",
+      "code": "PC 466",
+      "code_system": "PC",
+      "section": "466",
+      "citation": "Penal Code § 466",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:32:05.929Z",
+  "portal_case_id": "3670243",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11006332",
+      "defendant": "DANNY GARZA",
+      "filed_date": "2011-03-07"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3670243"
+  }
 }

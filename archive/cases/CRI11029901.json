@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:52:35.731Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:39:01.251Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11029901",
   "criminal_case_number": "11029901",
@@ -24,19 +24,112 @@
       "name": "MANUEL CALDERON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MANUEL CALDERON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-12-21T16:49:00.000Z",
+      "docketEntryComment": "FELONY GUILTY PLEA TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-12-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/AJW/DNACOMP/CH1:ISS:PROB 3 Y:PJ 56D/CTS:56/ /WS/RX/11590/DTC/X:DEFENDANT SHALL COMPLY WITH INDIVIDUAL TREATMENT AND REHABILITATIONPLAN AS DIRECTED BY ADULT PROBATION,/LFNEW/X:DEFENDANT SHALL PAY A DRUG PROGRAM FEE BASE FINE OF $150 PLUS $450 IN PENALTIES AND ASSESSMENTS FOR A TOTAL OF $600 PURSUANT TO HS 11372,7,/X:DEFENDANT SHALL PAY A BASE FINE OF$500 PLUS $1,500 IN  ASSESSMENTS FOR A FINE AMOUNT OF $2,000,/VF4:200/PC/PSR/BKFEE/PROBFINE/SECFEE40/ICNA/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-12-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:TODAY'S PRELIMINARY HEARING VACATED,/TEXT:DEFTADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:001/IBARRA/FNDG/CO:NEGOTIATED DISPOSITION/PRES:12-29-11/CONTD:PSR & SENTENCE/DOP/ARBUCKLE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-11-08T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CON:ALEXANDRIA CARL/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 01-09-12/987,2/BAIL:35000/CONTD:ERP ON 11-16-11/CONTD:PRELIMINARY HEARING ON 12-07-11/X:DAMTR FILED IN CASE # 11005486/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-11-16T13:30:00.000Z",
+      "docketEntryComment": "/X: CASE PRETRIED AND PRELIMINARY HEARING DATE CONFIRMED/LD:01-09-12/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-12-29 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2011-12-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-12-07 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2011-12-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-11-16 1:30 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 2,
+      "court_date": "2011-11-16",
+      "hearing_time": "1:30 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-11-08 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2011-11-08",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JOE OSULLIVAN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11352(a) HS/F",
+    "filed_date": "2011-11-08",
+    "defendant": "MANUEL CALDERON",
+    "searched_key": "CALDERON/MA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/11029901.json",
     "searched_last_name": "CALDERON",
     "searched_first_prefix": "MA",
-    "charges": "11352(a) HS/F",
     "row": {
       "DEFENDANTNAME": "MANUEL CALDERON",
       "CASENUMBER": "CRI-11029901",
@@ -45,11 +138,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3692909",
+  "docket_entries": [
+    {
+      "filedDate": "2011-12-21T16:49:00.000Z",
+      "docketEntryComment": "FELONY GUILTY PLEA TX FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-12-21T16:49:00.000Z",
+      "description": "FELONY GUILTY PLEA TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-12-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/AJW/DNACOMP/CH1:ISS:PROB 3 Y:PJ 56D/CTS:56/ /WS/RX/11590/DTC/X:DEFENDANT SHALL COMPLY WITH INDIVIDUAL TREATMENT AND REHABILITATIONPLAN AS DIRECTED BY ADULT PROBATION,/LFNEW/X:DEFENDANT SHALL PAY A DRUG PROGRAM FEE BASE FINE OF $150 PLUS $450 IN PENALTIES AND ASSESSMENTS FOR A TOTAL OF $600 PURSUANT TO HS 11372,7,/X:DEFENDANT SHALL PAY A BASE FINE OF$500 PLUS $1,500 IN  ASSESSMENTS FOR A FINE AMOUNT OF $2,000,/VF4:200/PC/PSR/BKFEE/PROBFINE/SECFEE40/ICNA/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-12-29T09:00:00.000Z",
+      "description": "/CAL:SENTENCING/AJW/DNACOMP/CH1:ISS:PROB 3 Y:PJ 56D/CTS:56/ /WS/RX/11590/DTC/X:DEFENDANT SHALL COMPLY WITH INDIVIDUAL TREATMENT AND REHABILITATIONPLAN AS DIRECTED BY ADULT PROBATION,/LFNEW/X:DEFENDANT SHALL PAY A DRUG PROGRAM FEE BASE FINE OF $150 PLUS $450 IN PENALTIES AND ASSESSMENTS FOR A TOTAL OF $600 PURSUANT TO HS 11372,7,/X:DEFENDANT SHALL PAY A BASE FINE OF$500 PLUS $1,500 IN ASSESSMENTS FOR A FINE AMOUNT OF $2,000,/VF4:200/PC/PSR/BKFEE/PROBFINE/SECFEE40/ICNA/COLLECT/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-12-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:TODAY'S PRELIMINARY HEARING VACATED,/TEXT:DEFTADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:001/IBARRA/FNDG/CO:NEGOTIATED DISPOSITION/PRES:12-29-11/CONTD:PSR & SENTENCE/DOP/ARBUCKLE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-12-07T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/X:TODAY'S PRELIMINARY HEARING VACATED,/TEXT:DEFTADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:001/IBARRA/FNDG/CO:NEGOTIATED DISPOSITION/PRES:12-29-11/CONTD:PSR & SENTENCE/DOP/ARBUCKLE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-11-08T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CON:ALEXANDRIA CARL/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 01-09-12/987,2/BAIL:35000/CONTD:ERP ON 11-16-11/CONTD:PRELIMINARY HEARING ON 12-07-11/X:DAMTR FILED IN CASE # 11005486/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-11-08T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/CON:ALEXANDRIA CARL/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 01-09-12/987,2/BAIL:35000/CONTD:ERP ON 11-16-11/CONTD:PRELIMINARY HEARING ON 12-07-11/X:DAMTR FILED IN CASE # 11005486/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-11-16T13:30:00.000Z",
+      "docketEntryComment": "/X: CASE PRETRIED AND PRELIMINARY HEARING DATE CONFIRMED/LD:01-09-12/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-11-16T13:30:00.000Z",
+      "description": "/X: CASE PRETRIED AND PRELIMINARY HEARING DATE CONFIRMED/LD:01-09-12/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11029901",
-    "portal_case_id": "",
+    "portal_case_id": "3692909",
     "display_case_number": "CRI-11029901",
     "defendant": "MANUEL CALDERON",
     "filed_date": "2011-11-08",
@@ -59,12 +203,68 @@
       "defendant": "MANUEL CALDERON",
       "filed_date": "2011-11-08"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "HS 11372",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11352(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11352(a) HS/F",
+        "title": "Health and Safety Code § 11352(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11352(a)",
+        "code_system": "HS",
+        "section": "11352(a)",
+        "citation": "Health and Safety Code § 11352(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MANUEL CALDERON, and date of filing 2011-11-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MANUEL CALDERON, date of filing, 2011-11-08, and charges in the case: 11352(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11352(a) HS/F",
+      "title": "Health and Safety Code § 11352(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11352(a)",
+      "code_system": "HS",
+      "section": "11352(a)",
+      "citation": "Health and Safety Code § 11352(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:39:01.890Z",
+  "portal_case_id": "3692909",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11029901",
+      "defendant": "MANUEL CALDERON",
+      "filed_date": "2011-11-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3692909"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.907625+00:00"
 }

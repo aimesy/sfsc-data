@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:17:22.554Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:42:26.763Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10034627",
   "criminal_case_number": "10034627",
@@ -24,11 +24,64 @@
       "name": "LISA A REED",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LISA A REED",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-11-23T13:30:00.000Z",
+      "docketEntryComment": "ORDER GRANTING RETURN OF PROPERTY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:1ST PTC/DAWT/MO PC 1385:COURT'S OWN MOTION, IN LIGHT OF TIME SPENT INCUSTODY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-23T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-12-23 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2010-12-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-11-23 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 1,
+      "court_date": "2010-11-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PAUL MYSLIN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +98,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3660903",
+  "docket_entries": [
+    {
+      "filedDate": "2010-11-23T13:30:00.000Z",
+      "docketEntryComment": "ORDER GRANTING RETURN OF PROPERTY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-11-23T13:30:00.000Z",
+      "description": "ORDER GRANTING RETURN OF PROPERTY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:1ST PTC/DAWT/MO PC 1385:COURT'S OWN MOTION, IN LIGHT OF TIME SPENT INCUSTODY/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-12-23T09:00:00.000Z",
+      "description": "/CAL:1ST PTC/DAWT/MO PC 1385:COURT'S OWN MOTION, IN LIGHT OF TIME SPENT INCUSTODY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-23T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-11-23T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10034627",
-    "portal_case_id": "",
+    "portal_case_id": "3660903",
     "display_case_number": "CRI-10034627",
     "defendant": "LISA A REED",
     "filed_date": "2010-11-23",
@@ -59,12 +143,51 @@
       "defendant": "LISA A REED",
       "filed_date": "2010-11-23"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "869 MP/M",
+    "charge_rows": [
+      {
+        "raw": "869 MP/M",
+        "title": "869 MP/M",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LISA A REED, and date of filing 2010-11-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LISA A REED, date of filing, 2010-11-23, and charges in the case: 869 MP/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "869 MP/M",
+      "title": "869 MP/M",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:42:27.415Z",
+  "portal_case_id": "3660903",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10034627",
+      "defendant": "LISA A REED",
+      "filed_date": "2010-11-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3660903"
+  }
 }

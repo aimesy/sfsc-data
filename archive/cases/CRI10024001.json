@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:09:50.251Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:43:15.199Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10024001",
   "criminal_case_number": "10024001",
@@ -24,11 +24,74 @@
       "name": "ANTHONY BERNARD ROBINSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANTHONY BERNARD ROBINSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-09-13T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-06-05T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-06-05T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 06/05/17, CASE DISMISSED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-13T09:00:00.000Z",
+      "docketEntryComment": "/FTA/OREVKD/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-13T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:PRETRIAL CONFERENCE,/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-09-13 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2010-09-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-08-13 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 1,
+      "court_date": "2010-08-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "EMILY DAHM",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +108,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3650997",
+  "docket_entries": [
+    {
+      "filedDate": "2010-09-13T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-09-13T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-06-05T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-06-05T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-06-05T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 06/05/17, CASE DISMISSED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-06-05T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 06/05/17, CASE DISMISSED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-13T09:00:00.000Z",
+      "docketEntryComment": "/FTA/OREVKD/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-09-13T09:00:00.000Z",
+      "description": "/FTA/OREVKD/BWI/BAIL:5000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-13T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:PRETRIAL CONFERENCE,/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-08-13T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:PRETRIAL CONFERENCE,/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10024001",
-    "portal_case_id": "",
+    "portal_case_id": "3650997",
     "display_case_number": "CRI-10024001",
     "defendant": "ANTHONY BERNARD ROBINSON",
     "filed_date": "2010-08-13",
@@ -60,11 +174,57 @@
       "filed_date": "2010-08-13"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "487(c) PC/M",
+    "charge_rows": [
+      {
+        "raw": "487(c) PC/M",
+        "title": "Penal Code § 487(c)",
+        "title_source": "programmatic_citation",
+        "code": "PC 487(c)",
+        "code_system": "PC",
+        "section": "487(c)",
+        "citation": "Penal Code § 487(c)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANTHONY BERNARD ROBINSON, and date of filing 2010-08-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANTHONY BERNARD ROBINSON, date of filing, 2010-08-13, and charges in the case: 487(c) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "487(c) PC/M",
+      "title": "Penal Code § 487(c)",
+      "title_source": "programmatic_citation",
+      "code": "PC 487(c)",
+      "code_system": "PC",
+      "section": "487(c)",
+      "citation": "Penal Code § 487(c)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:43:15.876Z",
+  "portal_case_id": "3650997",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10024001",
+      "defendant": "ANTHONY BERNARD ROBINSON",
+      "filed_date": "2010-08-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3650997"
+  }
 }

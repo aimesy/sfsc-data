@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:31:46.514Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:38:27.374Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10019129",
   "criminal_case_number": "10019129",
@@ -24,11 +24,82 @@
       "name": "JAMES A SPINGOLA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAMES A SPINGOLA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-07-14T13:00:00.000Z",
+      "docketEntryComment": "07-15-10 DATE IN D14 VACATED TO JOIN #100008649 IN D306 ON 7-28-10",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:INSTRUCTION AND ARRAIGNMENT/CON:MICHAEL GUINGONA/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:STATUS OF FELONY CASE, 10008649/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FOR TO JOIN #10008649 IN DEPT 306 - JUDGE DEKREON/MO138572:#10008649/BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:ATTORNEY OF RECORD IS NOT PRESENT,/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-07-28 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 3",
+      "__index": 0,
+      "court_date": "2010-07-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 3",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-07-07 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 1,
+      "court_date": "2010-07-07",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-28 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 2,
+      "court_date": "2010-06-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MICHAEL GUINGONA",
+      "type": "Appointed Counsel"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3646444",
+  "docket_entries": [
+    {
+      "filedDate": "2010-07-14T13:00:00.000Z",
+      "docketEntryComment": "07-15-10 DATE IN D14 VACATED TO JOIN #100008649 IN D306 ON 7-28-10",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-07-14T13:00:00.000Z",
+      "description": "07-15-10 DATE IN D14 VACATED TO JOIN #100008649 IN D306 ON 7-28-10",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:INSTRUCTION AND ARRAIGNMENT/CON:MICHAEL GUINGONA/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:STATUS OF FELONY CASE, 10008649/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-07-07T09:00:00.000Z",
+      "description": "/CAL:INSTRUCTION AND ARRAIGNMENT/CON:MICHAEL GUINGONA/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:STATUS OF FELONY CASE, 10008649/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FOR TO JOIN #10008649 IN DEPT 306 - JUDGE DEKREON/MO138572:#10008649/BE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-07-28T09:00:00.000Z",
+      "description": "/CAL:FOR TO JOIN #10008649 IN DEPT 306 - JUDGE DEKREON/MO138572:#10008649/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:ATTORNEY OF RECORD IS NOT PRESENT,/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-06-28T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:ATTORNEY OF RECORD IS NOT PRESENT,/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10019129",
-    "portal_case_id": "",
+    "portal_case_id": "3646444",
     "display_case_number": "CRI-10019129",
     "defendant": "JAMES A SPINGOLA",
     "filed_date": "2010-06-28",
@@ -60,11 +172,57 @@
       "filed_date": "2010-06-28"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "166(a)(4) PC/M",
+    "charge_rows": [
+      {
+        "raw": "166(a)(4) PC/M",
+        "title": "Penal Code § 166(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 166(a)(4)",
+        "code_system": "PC",
+        "section": "166(a)(4)",
+        "citation": "Penal Code § 166(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAMES A SPINGOLA, and date of filing 2010-06-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAMES A SPINGOLA, date of filing, 2010-06-28, and charges in the case: 166(a)(4) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "166(a)(4) PC/M",
+      "title": "Penal Code § 166(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 166(a)(4)",
+      "code_system": "PC",
+      "section": "166(a)(4)",
+      "citation": "Penal Code § 166(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:38:28.053Z",
+  "portal_case_id": "3646444",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10019129",
+      "defendant": "JAMES A SPINGOLA",
+      "filed_date": "2010-06-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3646444"
+  }
 }

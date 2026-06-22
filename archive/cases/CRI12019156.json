@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:16:22.951Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:30:39.418Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12019156",
   "criminal_case_number": "12019156",
@@ -24,11 +24,105 @@
       "name": "JORGE ORTIZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JORGE ORTIZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-08-08T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-03-04T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-03-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/MO PC 1385:IN THE INTEREST OF JUSTICE/SATERM/INTC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-03-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/BWDNC/INTC/OR/X:STAY AWAY ORDER REMAINS/SA3:GOLDEN GATE AVENUE AND HYDE STREET/SAORD3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-08-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/FTA/OREVKD/BWI/BAIL:30,000/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-07-26T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 08-09-12/987,2/OR/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2019-03-13 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2019-03-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-03-04 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2019-03-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-08-08 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2012-08-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-07-26 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2012-07-26",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "TAL KLEMENT",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +139,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3716531",
+  "docket_entries": [
+    {
+      "filedDate": "2012-08-08T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-08-08T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-03-04T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2019-03-04T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-03-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/MO PC 1385:IN THE INTEREST OF JUSTICE/SATERM/INTC/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2019-03-13T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/MO PC 1385:IN THE INTEREST OF JUSTICE/SATERM/INTC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-03-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/BWDNC/INTC/OR/X:STAY AWAY ORDER REMAINS/SA3:GOLDEN GATE AVENUE AND HYDE STREET/SAORD3/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2019-03-04T09:00:00.000Z",
+      "description": "/CAL:BW RETURN/BWDNC/INTC/OR/X:STAY AWAY ORDER REMAINS/SA3:GOLDEN GATE AVENUE AND HYDE STREET/SAORD3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-08-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/FTA/OREVKD/BWI/BAIL:30,000/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2012-08-08T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/FTA/OREVKD/BWI/BAIL:30,000/BWNUM:1ST/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-07-26T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 08-09-12/987,2/OR/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2012-07-26T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 08-09-12/987,2/OR/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12019156",
-    "portal_case_id": "",
+    "portal_case_id": "3716531",
     "display_case_number": "CRI-12019156",
     "defendant": "JORGE ORTIZ",
     "filed_date": "2012-07-26",
@@ -59,12 +214,67 @@
       "defendant": "JORGE ORTIZ",
       "filed_date": "2012-07-26"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11352(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11352(a) HS/F",
+        "title": "Health and Safety Code § 11352(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11352(a)",
+        "code_system": "HS",
+        "section": "11352(a)",
+        "citation": "Health and Safety Code § 11352(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JORGE ORTIZ, and date of filing 2012-07-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JORGE ORTIZ, date of filing, 2012-07-26, and charges in the case: 11352(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11352(a) HS/F",
+      "title": "Health and Safety Code § 11352(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11352(a)",
+      "code_system": "HS",
+      "section": "11352(a)",
+      "citation": "Health and Safety Code § 11352(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:30:40.072Z",
+  "portal_case_id": "3716531",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12019156",
+      "defendant": "JORGE ORTIZ",
+      "filed_date": "2012-07-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3716531"
+  }
 }

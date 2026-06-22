@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:45:24.760Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:27:16.565Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12011807",
   "criminal_case_number": "12011807",
@@ -24,11 +24,64 @@
       "name": "MICHAEL C CASTILLO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL C CASTILLO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-05-08T15:00:00.000Z",
+      "docketEntryComment": "DA MOT TO DISMISS FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-05-07T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 05-21-12/987,2/BAIL:100000/CTORD:BAILIS SET WITHOUT PREJUDICE/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-05-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:MOTION TO DISMISS/VD:PRELIM HEARING DATE OF 05-18-12/MO PC 1385:ON DA'S MOTION UNABLE TO SUSTAIN/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-05-09 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2012-05-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-05-07 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2012-05-07",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEPHEN ROSEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +98,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3709279",
+  "docket_entries": [
+    {
+      "filedDate": "2012-05-08T15:00:00.000Z",
+      "docketEntryComment": "DA MOT TO DISMISS FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-05-08T15:00:00.000Z",
+      "description": "DA MOT TO DISMISS FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-05-07T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 05-21-12/987,2/BAIL:100000/CTORD:BAILIS SET WITHOUT PREJUDICE/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-05-07T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 05-21-12/987,2/BAIL:100000/CTORD:BAILIS SET WITHOUT PREJUDICE/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-05-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:MOTION TO DISMISS/VD:PRELIM HEARING DATE OF 05-18-12/MO PC 1385:ON DA'S MOTION UNABLE TO SUSTAIN/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-05-09T09:00:00.000Z",
+      "description": "/CAL:MOTION TO DISMISS/VD:PRELIM HEARING DATE OF 05-18-12/MO PC 1385:ON DA'S MOTION UNABLE TO SUSTAIN/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12011807",
-    "portal_case_id": "",
+    "portal_case_id": "3709279",
     "display_case_number": "CRI-12011807",
     "defendant": "MICHAEL C CASTILLO",
     "filed_date": "2012-05-07",
@@ -59,12 +143,145 @@
       "defendant": "MICHAEL C CASTILLO",
       "filed_date": "2012-05-07"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "118(a) PC/F 115(a) PC/F 10980(c)(2) WI/F 10980(g) WI/F",
+    "charge_rows": [
+      {
+        "raw": "118(a) PC/F",
+        "title": "Penal Code § 118(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 118(a)",
+        "code_system": "PC",
+        "section": "118(a)",
+        "citation": "Penal Code § 118(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=118.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=118.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "115(a) PC/F",
+        "title": "Penal Code § 115(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 115(a)",
+        "code_system": "PC",
+        "section": "115(a)",
+        "citation": "Penal Code § 115(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=115.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=115.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "10980(c)(2) WI/F",
+        "title": "Welfare and Institutions Code § 10980(c)(2)",
+        "title_source": "programmatic_citation",
+        "code": "WI 10980(c)(2)",
+        "code_system": "WI",
+        "section": "10980(c)(2)",
+        "citation": "Welfare and Institutions Code § 10980(c)(2)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10980.&lawCode=WIC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10980.&lawCode=WIC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "10980(g) WI/F",
+        "title": "Welfare and Institutions Code § 10980(g)",
+        "title_source": "programmatic_citation",
+        "code": "WI 10980(g)",
+        "code_system": "WI",
+        "section": "10980(g)",
+        "citation": "Welfare and Institutions Code § 10980(g)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10980.&lawCode=WIC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10980.&lawCode=WIC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL C CASTILLO, and date of filing 2012-05-07. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL C CASTILLO, date of filing, 2012-05-07, and charges in the case: 118(a) PC/F 115(a) PC/F 10980(c)(2) WI/F 10980(g) WI/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "118(a) PC/F",
+      "title": "Penal Code § 118(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 118(a)",
+      "code_system": "PC",
+      "section": "118(a)",
+      "citation": "Penal Code § 118(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=118.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=118.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "115(a) PC/F",
+      "title": "Penal Code § 115(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 115(a)",
+      "code_system": "PC",
+      "section": "115(a)",
+      "citation": "Penal Code § 115(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=115.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=115.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "10980(c)(2) WI/F",
+      "title": "Welfare and Institutions Code § 10980(c)(2)",
+      "title_source": "programmatic_citation",
+      "code": "WI 10980(c)(2)",
+      "code_system": "WI",
+      "section": "10980(c)(2)",
+      "citation": "Welfare and Institutions Code § 10980(c)(2)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10980.&lawCode=WIC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10980.&lawCode=WIC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "10980(g) WI/F",
+      "title": "Welfare and Institutions Code § 10980(g)",
+      "title_source": "programmatic_citation",
+      "code": "WI 10980(g)",
+      "code_system": "WI",
+      "section": "10980(g)",
+      "citation": "Welfare and Institutions Code § 10980(g)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10980.&lawCode=WIC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10980.&lawCode=WIC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:27:17.245Z",
+  "portal_case_id": "3709279",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12011807",
+      "defendant": "MICHAEL C CASTILLO",
+      "filed_date": "2012-05-07"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3709279"
+  }
 }

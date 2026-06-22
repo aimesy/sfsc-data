@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:05:37.414Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:42:51.692Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10023972",
   "criminal_case_number": "10023972",
@@ -24,9 +24,20 @@
       "name": "CHARMAINE GREEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHARMAINE GREEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -34,9 +45,13 @@
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "14601.1(a) VC/M",
+    "filed_date": "2010-08-11",
+    "defendant": "CHARMAINE GREEN",
+    "searched_key": "GREEN/CH",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/10023972.json",
     "searched_last_name": "GREEN",
     "searched_first_prefix": "CH",
-    "charges": "14601.1(a) VC/M",
     "row": {
       "DEFENDANTNAME": "CHARMAINE GREEN",
       "CASENUMBER": "CRI-10023972",
@@ -45,11 +60,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3650969",
+  "docket_entries": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-11-17T18:00:00.000Z",
+      "description": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10023972",
-    "portal_case_id": "",
+    "portal_case_id": "3650969",
     "display_case_number": "CRI-10023972",
     "defendant": "CHARMAINE GREEN",
     "filed_date": "2010-08-11",
@@ -60,11 +86,58 @@
       "filed_date": "2010-08-11"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "14601.1(a) VC/M",
+    "charge_rows": [
+      {
+        "raw": "14601.1(a) VC/M",
+        "title": "Vehicle Code § 14601.1(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 14601.1(a)",
+        "code_system": "VC",
+        "section": "14601.1(a)",
+        "citation": "Vehicle Code § 14601.1(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHARMAINE GREEN, and date of filing 2010-08-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHARMAINE GREEN, date of filing, 2010-08-11, and charges in the case: 14601.1(a) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "14601.1(a) VC/M",
+      "title": "Vehicle Code § 14601.1(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 14601.1(a)",
+      "code_system": "VC",
+      "section": "14601.1(a)",
+      "citation": "Vehicle Code § 14601.1(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:42:52.332Z",
+  "portal_case_id": "3650969",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10023972",
+      "defendant": "CHARMAINE GREEN",
+      "filed_date": "2010-08-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3650969"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.940697+00:00"
 }

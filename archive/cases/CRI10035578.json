@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:00:31.445Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:41:48.638Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10035578",
   "criminal_case_number": "10035578",
@@ -24,10 +24,35 @@
       "name": "ROLAND D SMITH",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROLAND D SMITH",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-12-03 9:00 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2010-12-03",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +70,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3661799",
+  "docket_entries": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-11-17T18:00:00.000Z",
+      "description": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10035578",
-    "portal_case_id": "",
+    "portal_case_id": "3661799",
     "display_case_number": "CRI-10035578",
     "defendant": "ROLAND D SMITH",
     "filed_date": "2010-12-02",
@@ -60,11 +96,57 @@
       "filed_date": "2010-12-02"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11364(a) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11364(a) HS/M",
+        "title": "Health and Safety Code § 11364(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11364(a)",
+        "code_system": "HS",
+        "section": "11364(a)",
+        "citation": "Health and Safety Code § 11364(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROLAND D SMITH, and date of filing 2010-12-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROLAND D SMITH, date of filing, 2010-12-02, and charges in the case: 11364(a) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11364(a) HS/M",
+      "title": "Health and Safety Code § 11364(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11364(a)",
+      "code_system": "HS",
+      "section": "11364(a)",
+      "citation": "Health and Safety Code § 11364(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:41:49.273Z",
+  "portal_case_id": "3661799",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10035578",
+      "defendant": "ROLAND D SMITH",
+      "filed_date": "2010-12-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3661799"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:05:17.205Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:36:26.724Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11029371",
   "criminal_case_number": "11029371",
@@ -24,11 +24,59 @@
       "name": "KARIE ANN KING",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KARIE ANN KING",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-11-09T13:30:00.000Z",
+      "docketEntryComment": "/CAL: FUGITIVE IDENTITY HEARING/X: SFPD FUGITIVE INSPECTOR PATRICK CADIGANAPPEARING TODAY/MO PC 1385:DEFENDANT RELEASED ON 11-03-11, PURS TO 849(B)PC- STATE OF  COLORADO WILL NOT EXTRADITE /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-11-02T13:30:00.000Z",
+      "docketEntryComment": "/CAL: FUGITIVE ARRAIGNMENT/TN: KARIE ANN KING/X: SFPD FUGITIVE OFFICER ROBERT HART APPEARING TODAY/X: DEFENSE MAKES AN ORAL MOTION FOR OR RELEASE//MO DENIED/X: IT IS NOTED THAT THE DEFENDANT HAS MULTIPLE AKA'S/X: DEFENDANT NOT YET ARRAIGNED ON FUGITIVE WARRANT/ /X: BAIL IS REDUCED/BAIL: 15000//CONTD: IDENTITY HEARING - POSITIVE ID ON DEFENDANT/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-11-09 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "2011-11-09",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-11-02 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 1,
+      "court_date": "2011-11-02",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BICKA BARLOW",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3692383",
+  "docket_entries": [
+    {
+      "filedDate": "2011-11-09T13:30:00.000Z",
+      "docketEntryComment": "/CAL: FUGITIVE IDENTITY HEARING/X: SFPD FUGITIVE INSPECTOR PATRICK CADIGANAPPEARING TODAY/MO PC 1385:DEFENDANT RELEASED ON 11-03-11, PURS TO 849(B)PC- STATE OF  COLORADO WILL NOT EXTRADITE /",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-11-09T13:30:00.000Z",
+      "description": "/CAL: FUGITIVE IDENTITY HEARING/X: SFPD FUGITIVE INSPECTOR PATRICK CADIGANAPPEARING TODAY/MO PC 1385:DEFENDANT RELEASED ON 11-03-11, PURS TO 849(B)PC- STATE OF COLORADO WILL NOT EXTRADITE /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-11-02T13:30:00.000Z",
+      "docketEntryComment": "/CAL: FUGITIVE ARRAIGNMENT/TN: KARIE ANN KING/X: SFPD FUGITIVE OFFICER ROBERT HART APPEARING TODAY/X: DEFENSE MAKES AN ORAL MOTION FOR OR RELEASE//MO DENIED/X: IT IS NOTED THAT THE DEFENDANT HAS MULTIPLE AKA'S/X: DEFENDANT NOT YET ARRAIGNED ON FUGITIVE WARRANT/ /X: BAIL IS REDUCED/BAIL: 15000//CONTD: IDENTITY HEARING - POSITIVE ID ON DEFENDANT/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-11-02T13:30:00.000Z",
+      "description": "/CAL: FUGITIVE ARRAIGNMENT/TN: KARIE ANN KING/X: SFPD FUGITIVE OFFICER ROBERT HART APPEARING TODAY/X: DEFENSE MAKES AN ORAL MOTION FOR OR RELEASE//MO DENIED/X: IT IS NOTED THAT THE DEFENDANT HAS MULTIPLE AKA'S/X: DEFENDANT NOT YET ARRAIGNED ON FUGITIVE WARRANT/ /X: BAIL IS REDUCED/BAIL: 15000//CONTD: IDENTITY HEARING - POSITIVE ID ON DEFENDANT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11029371",
-    "portal_case_id": "",
+    "portal_case_id": "3692383",
     "display_case_number": "CRI-11029371",
     "defendant": "KARIE ANN KING",
     "filed_date": "2011-11-01",
@@ -59,12 +128,52 @@
       "defendant": "KARIE ANN KING",
       "filed_date": "2011-11-01"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KARIE ANN KING, and date of filing 2011-11-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KARIE ANN KING, date of filing, 2011-11-01, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:36:27.395Z",
+  "portal_case_id": "3692383",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11029371",
+      "defendant": "KARIE ANN KING",
+      "filed_date": "2011-11-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3692383"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:41:02.024Z"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:55:49.377Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:41:43.085Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10024059",
   "criminal_case_number": "10024059",
@@ -24,11 +24,82 @@
       "name": "RAMON RODRIGUEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RAMON RODRIGUEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-27T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 6M   /CTS:16/   /4019HALF/PGM10:RESIDENTIALTREATMENT PROGRAM/WS/VF1/MPROBFINE/SECFEE/ICNA/COLLECT/SA2:VAN NESS & MISSION; 3750 18TH STREET, 150 YARDS FROM EACH LOCATION/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MISDRED1:1/FAWC/IRRC/TEXT:DEFT ADV & PER WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS: 1/CO:NEGOTIATED DISPOSITION/DISM3/X:HARVEY WAIVER AS TO 10016721/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-16T09:00:00.000Z",
+      "docketEntryComment": "/X:17(B) REQUEST IS DENIED/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 08-30-10/BAIL:15000     /CONTD: PRELIMINARY HEARING/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-08-27 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2010-08-27",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-08-27 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2010-08-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-08-16 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2010-08-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEVE GAYLE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3651051",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-27T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 6M   /CTS:16/   /4019HALF/PGM10:RESIDENTIALTREATMENT PROGRAM/WS/VF1/MPROBFINE/SECFEE/ICNA/COLLECT/SA2:VAN NESS & MISSION; 3750 18TH STREET, 150 YARDS FROM EACH LOCATION/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-08-27T09:15:00.000Z",
+      "description": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 6M /CTS:16/ /4019HALF/PGM10:RESIDENTIALTREATMENT PROGRAM/WS/VF1/MPROBFINE/SECFEE/ICNA/COLLECT/SA2:VAN NESS & MISSION; 3750 18TH STREET, 150 YARDS FROM EACH LOCATION/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MISDRED1:1/FAWC/IRRC/TEXT:DEFT ADV & PER WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS: 1/CO:NEGOTIATED DISPOSITION/DISM3/X:HARVEY WAIVER AS TO 10016721/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-08-27T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG/MISDRED1:1/FAWC/IRRC/TEXT:DEFT ADV & PER WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS: 1/CO:NEGOTIATED DISPOSITION/DISM3/X:HARVEY WAIVER AS TO 10016721/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-16T09:00:00.000Z",
+      "docketEntryComment": "/X:17(B) REQUEST IS DENIED/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 08-30-10/BAIL:15000     /CONTD: PRELIMINARY HEARING/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-08-16T09:00:00.000Z",
+      "description": "/X:17(B) REQUEST IS DENIED/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 08-30-10/BAIL:15000 /CONTD: PRELIMINARY HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10024059",
-    "portal_case_id": "",
+    "portal_case_id": "3651051",
     "display_case_number": "CRI-10024059",
     "defendant": "RAMON RODRIGUEZ",
     "filed_date": "2010-08-16",
@@ -59,12 +171,94 @@
       "defendant": "RAMON RODRIGUEZ",
       "filed_date": "2010-08-16"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11377(a) HS/M 148(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "11377(a) HS/M",
+        "title": "Health and Safety Code § 11377(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11377(a)",
+        "code_system": "HS",
+        "section": "11377(a)",
+        "citation": "Health and Safety Code § 11377(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "148(a)(1) PC/M",
+        "title": "Penal Code § 148(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148(a)(1)",
+        "code_system": "PC",
+        "section": "148(a)(1)",
+        "citation": "Penal Code § 148(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RAMON RODRIGUEZ, and date of filing 2010-08-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RAMON RODRIGUEZ, date of filing, 2010-08-16, and charges in the case: 11377(a) HS/M 148(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11377(a) HS/M",
+      "title": "Health and Safety Code § 11377(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11377(a)",
+      "code_system": "HS",
+      "section": "11377(a)",
+      "citation": "Health and Safety Code § 11377(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "148(a)(1) PC/M",
+      "title": "Penal Code § 148(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148(a)(1)",
+      "code_system": "PC",
+      "section": "148(a)(1)",
+      "citation": "Penal Code § 148(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:41:43.702Z",
+  "portal_case_id": "3651051",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10024059",
+      "defendant": "RAMON RODRIGUEZ",
+      "filed_date": "2010-08-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3651051"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T14:39:14.518Z"
 }

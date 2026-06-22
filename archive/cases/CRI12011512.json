@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:44:16.424Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:29:24.023Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12011512",
   "criminal_case_number": "12011512",
@@ -24,19 +24,76 @@
       "name": "DIANTE A JOHNSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DIANTE A JOHNSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-05-08T15:25:00.000Z",
+      "docketEntryComment": "PEOPLE'S ADD TO CAL FOR MOT FOR DISMISSAL (PC1385) FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-05-03T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD:FOR PRELIMINARY HEARING IS 07-02-12/X:BAIL REMAINS AS SET WITHOUT PREJUDICE/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-05-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DISTRICT ATTORNEY MOTION TO DISMISS/MO PC 1385:RELEASE TO OTHER AGENCY/VD:06-20-12 PREHEARING CONFERENCE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-05-09 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2012-05-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-05-03 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2012-05-03",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ALEX LILIEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "12021(a)(1) PC/F",
+    "filed_date": "2012-05-03",
+    "defendant": "DIANTE A JOHNSON",
+    "searched_key": "JOHNSON/DI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/12011512.json",
     "searched_last_name": "JOHNSON",
     "searched_first_prefix": "DI",
-    "charges": "12021(a)(1) PC/F",
     "row": {
       "DEFENDANTNAME": "DIANTE A JOHNSON",
       "CASENUMBER": "CRI-12011512",
@@ -45,11 +102,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3708991",
+  "docket_entries": [
+    {
+      "filedDate": "2012-05-08T15:25:00.000Z",
+      "docketEntryComment": "PEOPLE'S ADD TO CAL FOR MOT FOR DISMISSAL (PC1385) FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-05-08T15:25:00.000Z",
+      "description": "PEOPLE'S ADD TO CAL FOR MOT FOR DISMISSAL (PC1385) FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-05-03T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD:FOR PRELIMINARY HEARING IS 07-02-12/X:BAIL REMAINS AS SET WITHOUT PREJUDICE/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-05-03T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD:FOR PRELIMINARY HEARING IS 07-02-12/X:BAIL REMAINS AS SET WITHOUT PREJUDICE/CONTD:PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-05-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DISTRICT ATTORNEY MOTION TO DISMISS/MO PC 1385:RELEASE TO OTHER AGENCY/VD:06-20-12 PREHEARING CONFERENCE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-05-09T09:00:00.000Z",
+      "description": "/CAL:DISTRICT ATTORNEY MOTION TO DISMISS/MO PC 1385:RELEASE TO OTHER AGENCY/VD:06-20-12 PREHEARING CONFERENCE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12011512",
-    "portal_case_id": "",
+    "portal_case_id": "3708991",
     "display_case_number": "CRI-12011512",
     "defendant": "DIANTE A JOHNSON",
     "filed_date": "2012-05-03",
@@ -59,12 +147,76 @@
       "defendant": "DIANTE A JOHNSON",
       "filed_date": "2012-05-03"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "12021(a)(1) PC/F",
+    "charge_rows": [
+      {
+        "raw": "12021(a)(1) PC/F",
+        "title": "Penal Code § 12021(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 12021(a)(1)",
+        "code_system": "PC",
+        "section": "12021(a)(1)",
+        "citation": "Penal Code § 12021(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12021.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12021.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DIANTE A JOHNSON, and date of filing 2012-05-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DIANTE A JOHNSON, date of filing, 2012-05-03, and charges in the case: 12021(a)(1) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "12021(a)(1) PC/F",
+      "title": "Penal Code § 12021(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 12021(a)(1)",
+      "code_system": "PC",
+      "section": "12021(a)(1)",
+      "citation": "Penal Code § 12021(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12021.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12021.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:29:24.684Z",
+  "portal_case_id": "3708991",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12011512",
+      "defendant": "DIANTE A JOHNSON",
+      "filed_date": "2012-05-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3708991"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.634405+00:00"
 }

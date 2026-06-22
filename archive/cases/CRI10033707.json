@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:56:08.162Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:41:04.833Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10033707",
   "criminal_case_number": "10033707",
@@ -24,19 +24,117 @@
       "name": "ALAN FERNANDEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALAN FERNANDEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-11-29T15:49:00.000Z",
+      "docketEntryComment": "DA'S OPP TO PC1538,5 MOTION FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-22T15:03:00.000Z",
+      "docketEntryComment": "PD'S PC1538,5 MOT/P&A FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HEARING & MOTION TO SUPPRESS/X:DEFENSE COUNSEL REQUEST REDUCTION TO MISD IN COUNT 1/MO PC 17B/MO GRTD/TEXT:DEFT ADV & PERS WVS CONST &CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 1/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-16T09:00:00.000Z",
+      "docketEntryComment": "CONTD SPR ELIG REPORT, DOP/CONTD:FOR SPR ELIGIBILITY REPORT /CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 12-02-10/987,2/BAIL:30,000/CONTD: PREHEARING CONFERENCE, PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-01T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 20D/CTS:20/WS/RX/11590/VF1/MPROBFINE/SECFEE40/ICNA/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SPR ELIG REPORT/X:SPR IS DENIED/X:PRELIM HEARING DATE OF 12-01-10 CONFIRMED/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-12-01 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2010-12-01",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-12-01 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2010-12-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-11-18 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2010-11-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-11-16 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 3,
+      "court_date": "2010-11-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "LEAH MCLEAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11377(a) HS/M",
+    "filed_date": "2010-11-16",
+    "defendant": "ALAN FERNANDEZ",
+    "searched_key": "FERNANDEZ/AL",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/10033707.json",
     "searched_last_name": "FERNANDEZ",
     "searched_first_prefix": "AL",
-    "charges": "11377(a) HS/M",
     "row": {
       "DEFENDANTNAME": "ALAN FERNANDEZ",
       "CASENUMBER": "CRI-10033707",
@@ -45,11 +143,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3660040",
+  "docket_entries": [
+    {
+      "filedDate": "2010-11-29T15:49:00.000Z",
+      "docketEntryComment": "DA'S OPP TO PC1538,5 MOTION FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-11-29T15:49:00.000Z",
+      "description": "DA'S OPP TO PC1538,5 MOTION FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-22T15:03:00.000Z",
+      "docketEntryComment": "PD'S PC1538,5 MOT/P&A FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-11-22T15:03:00.000Z",
+      "description": "PD'S PC1538,5 MOT/P&A FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HEARING & MOTION TO SUPPRESS/X:DEFENSE COUNSEL REQUEST REDUCTION TO MISD IN COUNT 1/MO PC 17B/MO GRTD/TEXT:DEFT ADV & PERS WVS CONST &CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 1/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-12-01T09:00:00.000Z",
+      "description": "/CAL:PRELIM HEARING & MOTION TO SUPPRESS/X:DEFENSE COUNSEL REQUEST REDUCTION TO MISD IN COUNT 1/MO PC 17B/MO GRTD/TEXT:DEFT ADV & PERS WVS CONST &CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 1/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-16T09:00:00.000Z",
+      "docketEntryComment": "CONTD SPR ELIG REPORT, DOP/CONTD:FOR SPR ELIGIBILITY REPORT /CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 12-02-10/987,2/BAIL:30,000/CONTD: PREHEARING CONFERENCE, PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-11-16T09:00:00.000Z",
+      "description": "CONTD SPR ELIG REPORT, DOP/CONTD:FOR SPR ELIGIBILITY REPORT /CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 12-02-10/987,2/BAIL:30,000/CONTD: PREHEARING CONFERENCE, PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-01T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 20D/CTS:20/WS/RX/11590/VF1/MPROBFINE/SECFEE40/ICNA/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-12-01T09:15:00.000Z",
+      "description": "/CAL:SENTENCING/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 20D/CTS:20/WS/RX/11590/VF1/MPROBFINE/SECFEE40/ICNA/COLLECT/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SPR ELIG REPORT/X:SPR IS DENIED/X:PRELIM HEARING DATE OF 12-01-10 CONFIRMED/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-11-18T09:00:00.000Z",
+      "description": "/CAL:SPR ELIG REPORT/X:SPR IS DENIED/X:PRELIM HEARING DATE OF 12-01-10 CONFIRMED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10033707",
-    "portal_case_id": "",
+    "portal_case_id": "3660040",
     "display_case_number": "CRI-10033707",
     "defendant": "ALAN FERNANDEZ",
     "filed_date": "2010-11-16",
@@ -59,12 +218,86 @@
       "defendant": "ALAN FERNANDEZ",
       "filed_date": "2010-11-16"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 17B",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      },
+      {
+        "code": "PC1538",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 17B",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "11377(a) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11377(a) HS/M",
+        "title": "Health and Safety Code § 11377(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11377(a)",
+        "code_system": "HS",
+        "section": "11377(a)",
+        "citation": "Health and Safety Code § 11377(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALAN FERNANDEZ, and date of filing 2010-11-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALAN FERNANDEZ, date of filing, 2010-11-16, and charges in the case: 11377(a) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11377(a) HS/M",
+      "title": "Health and Safety Code § 11377(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11377(a)",
+      "code_system": "HS",
+      "section": "11377(a)",
+      "citation": "Health and Safety Code § 11377(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:41:05.520Z",
+  "portal_case_id": "3660040",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10033707",
+      "defendant": "ALAN FERNANDEZ",
+      "filed_date": "2010-11-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3660040"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.749162+00:00"
 }

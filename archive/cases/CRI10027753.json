@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:16:57.675Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:40:49.687Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10027753",
   "criminal_case_number": "10027753",
@@ -24,19 +24,126 @@
       "name": "LIONEL JACKSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LIONEL JACKSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-10-14T09:00:00.000Z",
+      "docketEntryComment": "Held to Answer",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-27T13:01:00.000Z",
+      "docketEntryComment": "DA INFO NOT FILED PER DA'S REQUEST",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-25T10:35:00.000Z",
+      "docketEntryComment": "PRELIM TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-28T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/WIT SWORN:CREIG TIFFE    /HTA1:1/BAIL:15000/DEFTCUST3/SHERCOM1/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/NTW/LD:10-15-10/CONTD PRELIM HRG, DOP/CONTD:FORPRELIMINARY HEARING/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:15000/CONTD:09-30-10 FOR  PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-10-28 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2010-10-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-10-14 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2010-10-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-09-30 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2010-09-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-09-17 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2010-09-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DOUG WELCH",
+      "type": "Public Defender"
+    },
+    {
+      "name": "BRIAN BUCKELEW",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11350(a) HS/F",
+    "filed_date": "2010-09-17",
+    "defendant": "LIONEL JACKSON",
+    "searched_key": "JACKSON/LI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/10027753.json",
     "searched_last_name": "JACKSON",
     "searched_first_prefix": "LI",
-    "charges": "11350(a) HS/F",
     "row": {
       "DEFENDANTNAME": "LIONEL JACKSON",
       "CASENUMBER": "CRI-10027753",
@@ -45,11 +152,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3654492",
+  "docket_entries": [
+    {
+      "filedDate": "2010-10-14T09:00:00.000Z",
+      "docketEntryComment": "Held to Answer",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-10-14T09:00:00.000Z",
+      "description": "Held to Answer",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-27T13:01:00.000Z",
+      "docketEntryComment": "DA INFO NOT FILED PER DA'S REQUEST",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-10-27T13:01:00.000Z",
+      "description": "DA INFO NOT FILED PER DA'S REQUEST",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-25T10:35:00.000Z",
+      "docketEntryComment": "PRELIM TX FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-10-25T10:35:00.000Z",
+      "description": "PRELIM TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-28T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-10-28T09:00:00.000Z",
+      "description": "/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/WIT SWORN:CREIG TIFFE    /HTA1:1/BAIL:15000/DEFTCUST3/SHERCOM1/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-10-14T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/WIT SWORN:CREIG TIFFE /HTA1:1/BAIL:15000/DEFTCUST3/SHERCOM1/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/NTW/LD:10-15-10/CONTD PRELIM HRG, DOP/CONTD:FORPRELIMINARY HEARING/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-09-30T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/NTW/LD:10-15-10/CONTD PRELIM HRG, DOP/CONTD:FORPRELIMINARY HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:15000/CONTD:09-30-10 FOR  PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2010-09-17T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:15000/CONTD:09-30-10 FOR PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10027753",
-    "portal_case_id": "",
+    "portal_case_id": "3654492",
     "display_case_number": "CRI-10027753",
     "defendant": "LIONEL JACKSON",
     "filed_date": "2010-09-17",
@@ -60,11 +238,58 @@
       "filed_date": "2010-09-17"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LIONEL JACKSON, and date of filing 2010-09-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LIONEL JACKSON, date of filing, 2010-09-17, and charges in the case: 11350(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:40:50.389Z",
+  "portal_case_id": "3654492",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10027753",
+      "defendant": "LIONEL JACKSON",
+      "filed_date": "2010-09-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3654492"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.194389+00:00"
 }

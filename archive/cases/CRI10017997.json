@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:46:03.161Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:41:15.084Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10017997",
   "criminal_case_number": "10017997",
@@ -24,11 +24,110 @@
       "name": "SILVANA M PEREZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "SILVANA M PEREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-06-30T09:00:00.000Z",
+      "docketEntryComment": "Held to Answer",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-14T13:01:00.000Z",
+      "docketEntryComment": "INFO NOT FILED PER DA'S REQUEST",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-09T11:43:00.000Z",
+      "docketEntryComment": "PRELIM TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:07-01-10/987,2/BAIL:40,000/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARYHEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-30T09:15:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/WIT SWORN:HEATHER RUDLOFF    /HTA1:1 AND 2/BAIL:40,000/CONTD:ARRAIGNMENT/DEFTCUST3/SHERCOM1/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HEARING/DEF 170,6JUD:DONNA ALYSON LITTLE/MO GRTD/TEXT:TRANSTO DEPT 19/TRANS 19:FORTHWITH FOR PRELIM HEARING/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-07-15 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2010-07-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-30 9:15 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 1,
+      "court_date": "2010-06-30",
+      "hearing_time": "9:15 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-30 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2010-06-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-17 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2010-06-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SETH MEISELS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +144,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3645360",
+  "docket_entries": [
+    {
+      "filedDate": "2010-06-30T09:00:00.000Z",
+      "docketEntryComment": "Held to Answer",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-06-30T09:00:00.000Z",
+      "description": "Held to Answer",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-14T13:01:00.000Z",
+      "docketEntryComment": "INFO NOT FILED PER DA'S REQUEST",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-07-14T13:01:00.000Z",
+      "description": "INFO NOT FILED PER DA'S REQUEST",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-09T11:43:00.000Z",
+      "docketEntryComment": "PRELIM TX FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-07-09T11:43:00.000Z",
+      "description": "PRELIM TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:07-01-10/987,2/BAIL:40,000/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARYHEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-06-17T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:07-01-10/987,2/BAIL:40,000/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARYHEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-07-15T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-30T09:15:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/WIT SWORN:HEATHER RUDLOFF    /HTA1:1 AND 2/BAIL:40,000/CONTD:ARRAIGNMENT/DEFTCUST3/SHERCOM1/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-06-30T09:15:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/WIT SWORN:HEATHER RUDLOFF /HTA1:1 AND 2/BAIL:40,000/CONTD:ARRAIGNMENT/DEFTCUST3/SHERCOM1/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HEARING/DEF 170,6JUD:DONNA ALYSON LITTLE/MO GRTD/TEXT:TRANSTO DEPT 19/TRANS 19:FORTHWITH FOR PRELIM HEARING/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2010-06-30T09:00:00.000Z",
+      "description": "/CAL:PRELIM HEARING/DEF 170,6JUD:DONNA ALYSON LITTLE/MO GRTD/TEXT:TRANSTO DEPT 19/TRANS 19:FORTHWITH FOR PRELIM HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10017997",
-    "portal_case_id": "",
+    "portal_case_id": "3645360",
     "display_case_number": "CRI-10017997",
     "defendant": "SILVANA M PEREZ",
     "filed_date": "2010-06-17",
@@ -60,11 +230,83 @@
       "filed_date": "2010-06-17"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "666 PC/F 459 PC/F",
+    "charge_rows": [
+      {
+        "raw": "666 PC/F",
+        "title": "Penal Code § 666",
+        "title_source": "programmatic_citation",
+        "code": "PC 666",
+        "code_system": "PC",
+        "section": "666",
+        "citation": "Penal Code § 666",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, SILVANA M PEREZ, and date of filing 2010-06-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, SILVANA M PEREZ, date of filing, 2010-06-17, and charges in the case: 666 PC/F 459 PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "666 PC/F",
+      "title": "Penal Code § 666",
+      "title_source": "programmatic_citation",
+      "code": "PC 666",
+      "code_system": "PC",
+      "section": "666",
+      "citation": "Penal Code § 666",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:41:15.798Z",
+  "portal_case_id": "3645360",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10017997",
+      "defendant": "SILVANA M PEREZ",
+      "filed_date": "2010-06-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3645360"
+  }
 }

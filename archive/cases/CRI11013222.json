@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:25:37.855Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:36:48.378Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11013222",
   "criminal_case_number": "11013222",
@@ -24,19 +24,93 @@
       "name": "JOHN L HUDSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN L HUDSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-08-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TOSET OR DISPO/DAWT/MO PC 1385:DEFENDANT HAVE BEEN INDICTED/BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-06-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TOSET OR DISPO /X:DEFENSE COUNSEL MICHAEL STEPANIAN WILL REMAIN AS CO-COUNSEL FOR MR HUDSON/CONT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-05-20T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/STWPX/CONTD:TO SET OR DISPO/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-08-29 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2011-08-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-06-29 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2011-06-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-05-20 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2011-05-20",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "RANDYSUE POLLUCK",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "VAN LY",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11352(a) HS/F 11352(a) HS/F 11351 HS/F 11366 HS/F 11377(a) HS/F 11377(a) HS/F 11352(a) HS/F 496(a) PC/F",
+    "filed_date": "2011-05-19",
+    "defendant": "JOHN L HUDSON",
+    "searched_key": "HUDSON/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/11013222.json",
     "searched_last_name": "HUDSON",
     "searched_first_prefix": "JO",
-    "charges": "11352(a) HS/F 11352(a) HS/F 11351 HS/F 11366 HS/F 11377(a) HS/F 11377(a) HS/F 11352(a) HS/F 496(a) PC/F",
     "row": {
       "DEFENDANTNAME": "JOHN L HUDSON",
       "CASENUMBER": "CRI-11013222",
@@ -45,11 +119,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3676722",
+  "docket_entries": [
+    {
+      "filedDate": "2011-08-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TOSET OR DISPO/DAWT/MO PC 1385:DEFENDANT HAVE BEEN INDICTED/BE/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-08-29T09:00:00.000Z",
+      "description": "/CAL:TOSET OR DISPO/DAWT/MO PC 1385:DEFENDANT HAVE BEEN INDICTED/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-06-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TOSET OR DISPO /X:DEFENSE COUNSEL MICHAEL STEPANIAN WILL REMAIN AS CO-COUNSEL FOR MR HUDSON/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-06-29T09:00:00.000Z",
+      "description": "/CAL:TOSET OR DISPO /X:DEFENSE COUNSEL MICHAEL STEPANIAN WILL REMAIN AS CO-COUNSEL FOR MR HUDSON/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-05-20T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/STWPX/CONTD:TO SET OR DISPO/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-05-20T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/STWPX/CONTD:TO SET OR DISPO/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11013222",
-    "portal_case_id": "",
+    "portal_case_id": "3676722",
     "display_case_number": "CRI-11013222",
     "defendant": "JOHN L HUDSON",
     "filed_date": "2011-05-19",
@@ -59,12 +164,172 @@
       "defendant": "JOHN L HUDSON",
       "filed_date": "2011-05-19"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11352(a) HS/F 11352(a) HS/F 11351 HS/F 11366 HS/F 11377(a) HS/F 11377(a) HS/F 11352(a) HS/F 496(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "11352(a) HS/F",
+        "title": "Health and Safety Code § 11352(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11352(a)",
+        "code_system": "HS",
+        "section": "11352(a)",
+        "citation": "Health and Safety Code § 11352(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11351 HS/F",
+        "title": "Health and Safety Code § 11351",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351",
+        "code_system": "HS",
+        "section": "11351",
+        "citation": "Health and Safety Code § 11351",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11366 HS/F",
+        "title": "Health and Safety Code § 11366",
+        "title_source": "programmatic_citation",
+        "code": "HS 11366",
+        "code_system": "HS",
+        "section": "11366",
+        "citation": "Health and Safety Code § 11366",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11366.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11366.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11377(a) HS/F",
+        "title": "Health and Safety Code § 11377(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11377(a)",
+        "code_system": "HS",
+        "section": "11377(a)",
+        "citation": "Health and Safety Code § 11377(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "496(a) PC/F",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN L HUDSON, and date of filing 2011-05-19. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN L HUDSON, date of filing, 2011-05-19, and charges in the case: 11352(a) HS/F 11352(a) HS/F 11351 HS/F 11366 HS/F 11377(a) HS/F 11377(a) HS/F 11352(a) HS/F 496(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11352(a) HS/F",
+      "title": "Health and Safety Code § 11352(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11352(a)",
+      "code_system": "HS",
+      "section": "11352(a)",
+      "citation": "Health and Safety Code § 11352(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11351 HS/F",
+      "title": "Health and Safety Code § 11351",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351",
+      "code_system": "HS",
+      "section": "11351",
+      "citation": "Health and Safety Code § 11351",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11366 HS/F",
+      "title": "Health and Safety Code § 11366",
+      "title_source": "programmatic_citation",
+      "code": "HS 11366",
+      "code_system": "HS",
+      "section": "11366",
+      "citation": "Health and Safety Code § 11366",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11366.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11366.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11377(a) HS/F",
+      "title": "Health and Safety Code § 11377(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11377(a)",
+      "code_system": "HS",
+      "section": "11377(a)",
+      "citation": "Health and Safety Code § 11377(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "496(a) PC/F",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:36:49.047Z",
+  "portal_case_id": "3676722",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11013222",
+      "defendant": "JOHN L HUDSON",
+      "filed_date": "2011-05-19"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3676722"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:07:14.153985+00:00"
 }

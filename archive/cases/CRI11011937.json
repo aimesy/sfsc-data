@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:52:32.971Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:32:34.715Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI11011937",
   "criminal_case_number": "11011937",
@@ -24,11 +24,59 @@
       "name": "AMBRE CAMILE WALKER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "AMBRE CAMILE WALKER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-05-10T09:00:00.000Z",
+      "docketEntryComment": "/PD/X:DEFENDANT HAS CASES IN D-17 TOMORROW 05-11-11 #2458669 & 2414317 & 10024780 & 2457747 & 11009736/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED ANDSTAYED TO 05-11-11,/X: BAIL SET AT $10000/CONTD:BW STAY AND TO JOIN CASES",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-05-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW STAY/BWSTAY:05-10-11/TN:AMBRE CAMILE WALKER/MO PC 1385:DEFENDANTENTERED NO CONTEST AND SENTENCED IN COURT #2414317/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-05-11 9:00 AM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2011-05-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-05-10 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2011-05-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BRIAN PEARLMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3675539",
+  "docket_entries": [
+    {
+      "filedDate": "2011-05-10T09:00:00.000Z",
+      "docketEntryComment": "/PD/X:DEFENDANT HAS CASES IN D-17 TOMORROW 05-11-11 #2458669 & 2414317 & 10024780 & 2457747 & 11009736/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED ANDSTAYED TO 05-11-11,/X: BAIL SET AT $10000/CONTD:BW STAY AND TO JOIN CASES",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-05-10T09:00:00.000Z",
+      "description": "/PD/X:DEFENDANT HAS CASES IN D-17 TOMORROW 05-11-11 #2458669 & 2414317 & 10024780 & 2457747 & 11009736/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED ANDSTAYED TO 05-11-11,/X: BAIL SET AT $10000/CONTD:BW STAY AND TO JOIN CASES",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-05-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW STAY/BWSTAY:05-10-11/TN:AMBRE CAMILE WALKER/MO PC 1385:DEFENDANTENTERED NO CONTEST AND SENTENCED IN COURT #2414317/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-05-11T09:00:00.000Z",
+      "description": "/CAL:BW STAY/BWSTAY:05-10-11/TN:AMBRE CAMILE WALKER/MO PC 1385:DEFENDANTENTERED NO CONTEST AND SENTENCED IN COURT #2414317/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "11011937",
-    "portal_case_id": "",
+    "portal_case_id": "3675539",
     "display_case_number": "CRI-11011937",
     "defendant": "AMBRE CAMILE WALKER",
     "filed_date": "2011-05-05",
@@ -59,12 +128,67 @@
       "defendant": "AMBRE CAMILE WALKER",
       "filed_date": "2011-05-05"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "653.22(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "653.22(a) PC/M",
+        "title": "Penal Code § 653.22(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 653.22(a)",
+        "code_system": "PC",
+        "section": "653.22(a)",
+        "citation": "Penal Code § 653.22(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.22.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.22.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, AMBRE CAMILE WALKER, and date of filing 2011-05-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, AMBRE CAMILE WALKER, date of filing, 2011-05-05, and charges in the case: 653.22(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "653.22(a) PC/M",
+      "title": "Penal Code § 653.22(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 653.22(a)",
+      "code_system": "PC",
+      "section": "653.22(a)",
+      "citation": "Penal Code § 653.22(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.22.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.22.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:32:35.324Z",
+  "portal_case_id": "3675539",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-11011937",
+      "defendant": "AMBRE CAMILE WALKER",
+      "filed_date": "2011-05-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3675539"
+  }
 }
