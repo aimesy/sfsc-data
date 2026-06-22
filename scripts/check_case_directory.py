@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from datetime import datetime, timezone
 import hashlib
 import json
 import re
@@ -48,6 +49,34 @@ def manifest_int(value: object, default: int = -1) -> int:
 
 def norm_case(value: object) -> str:
     return re.sub(r"[^A-Za-z0-9]", "", str(value or "")).upper()
+
+
+def year_from_civil_case_number(case_number: object) -> str:
+    text = norm_case(case_number)
+    if text.startswith("CRI"):
+        return ""
+    m = re.match(r"^[A-Z]+(\d{2})", text)
+    if not m:
+        m = re.match(r"^(\d{2})[A-Z]+", text)
+    if not m:
+        return ""
+    yy = int(m.group(1))
+    pivot = (datetime.now(timezone.utc).year + 1) % 100
+    return str(2000 + yy if yy <= pivot else 1900 + yy)
+
+
+def implausible_civil_year(case_number: object, year: object) -> bool:
+    expected = year_from_civil_case_number(case_number)
+    actual = str(year or "").strip()
+    if not expected or not actual.isdigit():
+        return False
+    return abs(int(actual) - int(expected)) > 5
+
+
+def filing_date_year(value: object) -> str:
+    text = str(value or "").strip()
+    m = re.match(r"^(\d{4})", text)
+    return m.group(1) if m else ""
 
 
 def parse_ndjson(path: Path) -> list[dict[str, Any]]:
@@ -290,6 +319,18 @@ def check_case_directory(
                 if not case_number:
                     failures.append(f"{shard_rel}: row missing case_number")
                     continue
+                row_year = str(row.get("year") or year.get("year") or "").strip()
+                filed_year = filing_date_year(row.get("filing_date"))
+                if filed_year and row_year != filed_year:
+                    failures.append(
+                        f"{case_number}: case-directory year {row_year!r} "
+                        f"does not match filing_date year {filed_year!r}"
+                    )
+                elif not filed_year and implausible_civil_year(case_number, row_year):
+                    failures.append(
+                        f"{case_number}: implausible case-directory year {row_year!r}; "
+                        f"case number implies {year_from_civil_case_number(case_number)}"
+                    )
                 if case_number in seen_cases:
                     failures.append(f"duplicate case row: {case_number}")
                 seen_cases.add(case_number)

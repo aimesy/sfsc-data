@@ -291,12 +291,12 @@ def year_from_case_number(case_number: str) -> str:
 
 
 def year_for_row(row: dict[str, Any]) -> str:
+    case_number = clean(row.get("case_number"))
     date = clean(row.get("filing_date"))
     if date:
         m = re.match(r"^(\d{4})", date)
         if m:
             return m.group(1)
-    case_number = clean(row.get("case_number"))
     case_type = clean(row.get("case_type")).lower()
     source = clean(row.get("source")).lower()
     if case_type == "criminal" or source == "sfsc-criminal-portal" or case_number.upper().startswith("CRI"):

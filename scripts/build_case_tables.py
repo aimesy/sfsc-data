@@ -31,6 +31,7 @@ scripts/estate_dossier.py), emitted only for probate matters.
 from __future__ import annotations
 
 import argparse
+from datetime import datetime, timezone
 import hashlib
 import json
 import os
@@ -128,6 +129,32 @@ def parse_date(value: Any) -> str:
     return ""
 
 
+def year_from_case_number(case_number: Any) -> str:
+    text = clean(case_number).upper()
+    if text.startswith("CRI"):
+        return ""
+    m = re.match(r"^[A-Z]+[-_\s]*(\d{2})", text)
+    if not m:
+        m = re.match(r"^(\d{2})[A-Z]+", text)
+    if not m:
+        return ""
+    yy = int(m.group(1))
+    pivot = (datetime.now(timezone.utc).year + 1) % 100
+    return str(2000 + yy if yy <= pivot else 1900 + yy)
+
+
+def plausible_case_date(case_number: Any, value: str) -> bool:
+    case_year = year_from_case_number(case_number)
+    if not case_year or not value:
+        return True
+    try:
+        year = int(value[:4])
+        expected = int(case_year)
+    except Exception:
+        return True
+    return expected - 2 <= year <= expected + 5
+
+
 def first_date(values: Iterable[Any]) -> str:
     dates = [parse_date(v) for v in values]
     dates = [d for d in dates if d]
@@ -151,6 +178,7 @@ def first_docket_date(case: dict[str, Any]) -> str:
 
 
 def filing_date_for_case(case: dict[str, Any]) -> str:
+    case_number = clean(case.get("case_number"))
     case_header = case.get("case_header") if isinstance(case.get("case_header"), dict) else {}
     direct = first_date([
         case.get("filing_date"),
@@ -161,7 +189,12 @@ def filing_date_for_case(case: dict[str, Any]) -> str:
         case.get("created"),
         case_header.get("filed_date"),
     ])
-    return direct or first_docket_date(case)
+    if direct:
+        return direct
+    docket_date = first_docket_date(case)
+    if docket_date and plausible_case_date(case_number, docket_date):
+        return docket_date
+    return ""
 
 
 def as_list(value: Any) -> list[str]:
