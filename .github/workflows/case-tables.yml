@@ -16,9 +16,11 @@ on:
       - 'judges.json'
       - 'scripts/build_case_directory.py'
       - 'scripts/build_case_tables.py'
+      - 'scripts/build_criminal_statute_versions.py'
       - 'scripts/check_case_index_integrity.py'
       - 'scripts/check_case_directory.py'
       - 'scripts/check_case_pipeline_synthetic.py'
+      - 'scripts/check_criminal_statute_versions.py'
       - 'scripts/check_case_representation.py'
       - 'scripts/document_storage.py'
       - 'scripts/import_scanner_cases.py'
@@ -61,13 +63,16 @@ jobs:
             archive/document-index.ndjson
             archive/new-filings-cases/**
             assets/data/criminal-statute-current-versions.json
+            assets/sources/criminal-statutes/manifest.json
             data/**
             judges.json
             scripts/build_case_directory.py
             scripts/build_case_tables.py
+            scripts/build_criminal_statute_versions.py
             scripts/check_case_index_integrity.py
             scripts/check_case_directory.py
             scripts/check_case_pipeline_synthetic.py
+            scripts/check_criminal_statute_versions.py
             scripts/check_case_representation.py
             scripts/document_storage.py
             scripts/import_scanner_cases.py
@@ -103,6 +108,7 @@ jobs:
           build_outputs() {
             python scripts/check_case_index_integrity.py
             python scripts/check_estate_dossier.py
+            python scripts/check_criminal_statute_versions.py --allow-missing-js
             python scripts/check_case_pipeline_synthetic.py
             python scripts/build_case_tables.py
             python scripts/check_case_representation.py
