@@ -200,20 +200,40 @@ def case_directory_docket_count() -> int:
     return max(source_rows, directory_rows)
 
 
-def document_index_bytes() -> int:
+def document_index_stats() -> tuple[int, int]:
+    """Return (total captured bytes, distinct archived documents).
+
+    "Documents archived" counts documents actually captured into the archive
+    (one byte-object per row in document-index.ndjson), not every document
+    referenced in a docket. Dedupe by court DocID (falling back to content hash
+    / asset name) so release re-shards never inflate the count, and keep it
+    consistent with the archive byte total.
+    """
     if DOCUMENT_INDEX.exists():
         raw = DOCUMENT_INDEX.read_text(encoding='utf-8')
     else:
         raw = read_git_blob('archive/document-index.ndjson') or read_url_text(LIVE_DOCUMENT_INDEX_URL)
 
     total = 0
+    documents = 0
+    seen: set[str] = set()
     for line in raw.splitlines():
         line = line.strip()
         if not line:
             continue
         row = json.loads(line)
         total += int(row.get('bytes_len') or row.get('bytes') or 0)
-    return total
+        key = (
+            str(row.get('doc_id') or '').strip()
+            or str(row.get('sha256') or '').strip()
+            or str(row.get('asset_name') or '').strip()
+        )
+        if key and key in seen:
+            continue
+        if key:
+            seen.add(key)
+        documents += 1
+    return total, documents
 
 
 def archive_counts(dept_stats: list[dict] | None = None) -> dict:
@@ -224,12 +244,15 @@ def archive_counts(dept_stats: list[dict] | None = None) -> dict:
     filings = max(filings, table_filings)
     docket_entries = max(docket_entries, table_docket_entries)
     dockets = max(dockets, case_directory_docket_count())
-    document_bytes = document_index_bytes()
+    document_bytes, documents_archived = document_index_stats()
     return {
         'rulings': rulings,
         'latest_ruling_date': latest_ruling_date,
         'dockets': dockets,
-        'documents': filings,
+        # 'documents' is the headline LIVE metric: documents actually captured
+        # into the archive, not docket-referenced filing counts ('filings').
+        'documents': documents_archived,
+        'documents_archived': documents_archived,
         'filings': filings,
         'docket_entries': docket_entries,
         'document_bytes': document_bytes,
@@ -245,7 +268,7 @@ def render_live_table(stats: dict) -> str:
 |---|---:|
 | Tentative rulings | {stats['rulings']:,} |
 | Dockets | {stats['dockets']:,} |
-| Case documents | {stats['documents']:,} |
+| Documents archived | {stats['documents']:,} |
 | Docket entries | {stats['docket_entries']:,} |
 | Archive size | {stats['archive_mb']:,} MB |
 | Latest tentative ruling | {stats['latest_ruling_date']} |
