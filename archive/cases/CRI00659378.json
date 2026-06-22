@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:38:42.894Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:45:05.165Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00659378",
   "criminal_case_number": "00659378",
@@ -24,11 +24,128 @@
       "name": "MIGUEL A ACOSTA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MIGUEL A ACOSTA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1985-05-06T00:00:00.000Z",
+      "docketEntryComment": "MO 17(B)(3)PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1983-11-23T00:00:00.000Z",
+      "docketEntryComment": "MO 17(B)(3)PC",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1988-04-27 9:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1988-04-27",
+      "hearing_time": "9:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1985-08-05 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 24",
+      "__index": 1,
+      "court_date": "1985-08-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 24",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1985-06-07 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 24",
+      "__index": 2,
+      "court_date": "1985-06-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 24",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1985-05-07 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1985-05-07",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1984-01-31 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 4,
+      "court_date": "1984-01-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1984-01-25 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 5,
+      "court_date": "1984-01-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1983-12-07 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 6,
+      "court_date": "1983-12-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "M NICCO",
+      "type": "Public Defender"
+    },
+    {
+      "name": "P ECTOR",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +162,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1954133",
+  "docket_entries": [
+    {
+      "filedDate": "1985-05-06T00:00:00.000Z",
+      "docketEntryComment": "MO 17(B)(3)PC",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1985-05-06T00:00:00.000Z",
+      "description": "MO 17(B)(3)PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1983-11-23T00:00:00.000Z",
+      "docketEntryComment": "MO 17(B)(3)PC",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1983-11-23T00:00:00.000Z",
+      "description": "MO 17(B)(3)PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00659378",
-    "portal_case_id": "",
+    "portal_case_id": "1954133",
     "display_case_number": "CRI-00659378",
     "defendant": "MIGUEL A ACOSTA",
     "filed_date": "1983-11-23",
@@ -63,8 +201,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MIGUEL A ACOSTA, and date of filing 1983-11-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MIGUEL A ACOSTA, and date of filing 1983-11-23. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:45:05.785Z",
+  "portal_case_id": "1954133",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00659378",
+      "defendant": "MIGUEL A ACOSTA",
+      "filed_date": "1983-11-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1954133"
+  }
 }

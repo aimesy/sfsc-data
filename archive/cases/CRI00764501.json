@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:02:03.030Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:47:54.983Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00764501",
   "criminal_case_number": "00764501",
@@ -24,10 +24,35 @@
       "name": "KARIM ALI",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KARIM ALI",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "1981-02-05T00:00:00.000Z",
+      "docketEntryComment": "CERT 1772WI",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1984-11-30 9:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1984-11-30",
+      "hearing_time": "9:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +70,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2043468",
+  "docket_entries": [
+    {
+      "filedDate": "1981-02-05T00:00:00.000Z",
+      "docketEntryComment": "CERT 1772WI",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1981-02-05T00:00:00.000Z",
+      "description": "CERT 1772WI",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00764501",
-    "portal_case_id": "",
+    "portal_case_id": "2043468",
     "display_case_number": "CRI-00764501",
     "defendant": "KARIM ALI",
     "filed_date": "1981-02-05",
@@ -63,8 +99,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KARIM ALI, and date of filing 1981-02-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KARIM ALI, and date of filing 1981-02-05. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:47:55.634Z",
+  "portal_case_id": "2043468",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00764501",
+      "defendant": "KARIM ALI",
+      "filed_date": "1981-02-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2043468"
+  }
 }

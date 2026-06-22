@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:36:00.094Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:53:42.658Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00869083",
   "criminal_case_number": "00869083",
@@ -24,11 +24,102 @@
       "name": "MARK ANTHONY CAMACHO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARK ANTHONY CAMACHO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1986-02-04T00:00:00.000Z",
+      "docketEntryComment": "SET ASIDE 995PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1985-12-30T00:00:00.000Z",
+      "docketEntryComment": "SET ASIDE 995PC",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1986-04-21 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 0,
+      "court_date": "1986-04-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1986-03-31 9:30 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 1,
+      "court_date": "1986-03-31",
+      "hearing_time": "9:30 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1986-03-18 9:00 AM",
+      "hearingType": "APD Supplemental Report",
+      "location": "850 Bryant",
+      "dept": "Department 27",
+      "__index": 2,
+      "court_date": "1986-03-18",
+      "hearing_time": "9:00 AM",
+      "matters": "APD Supplemental Report",
+      "hearing_type": "APD Supplemental Report",
+      "department": "Department 27",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1986-03-18 2:00 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1986-03-18",
+      "hearing_time": "2:00 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1986-02-05 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 4,
+      "court_date": "1986-02-05",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "F BRADLEY",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "P ECTOR",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +136,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2131951",
+  "docket_entries": [
+    {
+      "filedDate": "1986-02-04T00:00:00.000Z",
+      "docketEntryComment": "SET ASIDE 995PC",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1986-02-04T00:00:00.000Z",
+      "description": "SET ASIDE 995PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1985-12-30T00:00:00.000Z",
+      "docketEntryComment": "SET ASIDE 995PC",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1985-12-30T00:00:00.000Z",
+      "description": "SET ASIDE 995PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00869083",
-    "portal_case_id": "",
+    "portal_case_id": "2131951",
     "display_case_number": "CRI-00869083",
     "defendant": "MARK ANTHONY CAMACHO",
     "filed_date": "1985-12-30",
@@ -63,8 +175,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARK ANTHONY CAMACHO, and date of filing 1985-12-30. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARK ANTHONY CAMACHO, and date of filing 1985-12-30. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:53:43.270Z",
+  "portal_case_id": "2131951",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00869083",
+      "defendant": "MARK ANTHONY CAMACHO",
+      "filed_date": "1985-12-30"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2131951"
+  }
 }

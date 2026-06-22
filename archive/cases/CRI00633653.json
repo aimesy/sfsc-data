@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:04:57.368Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:46:57.955Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00633653",
   "criminal_case_number": "00633653",
@@ -24,11 +24,58 @@
       "name": "JOSE ALVAREZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSE ALVAREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1983-08-17T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIM (SP INTRP)",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1983-11-14 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1983-11-14",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1983-10-17 9:30 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 1,
+      "court_date": "1983-10-17",
+      "hearing_time": "9:30 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "T SKLAR",
+      "type": "Public Defender"
+    },
+    {
+      "name": "G NORMAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +92,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1931987",
+  "docket_entries": [
+    {
+      "filedDate": "1983-08-17T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIM (SP INTRP)",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1983-08-17T00:00:00.000Z",
+      "description": "FELONY PRELIM (SP INTRP)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00633653",
-    "portal_case_id": "",
+    "portal_case_id": "1931987",
     "display_case_number": "CRI-00633653",
     "defendant": "JOSE ALVAREZ",
     "filed_date": "1983-08-17",
@@ -63,8 +121,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSE ALVAREZ, and date of filing 1983-08-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSE ALVAREZ, and date of filing 1983-08-17. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:46:58.552Z",
+  "portal_case_id": "1931987",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00633653",
+      "defendant": "JOSE ALVAREZ",
+      "filed_date": "1983-08-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1931987"
+  }
 }

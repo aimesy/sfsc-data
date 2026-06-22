@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:55:29.916Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:47:51.964Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00659078",
   "criminal_case_number": "00659078",
@@ -24,11 +24,58 @@
       "name": "MARY M ARMSTRONG",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARY M ARMSTRONG",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1983-11-25T00:00:00.000Z",
+      "docketEntryComment": "PLEA AND COUNSEL",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1984-01-25 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 0,
+      "court_date": "1984-01-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1983-12-07 9:00 AM",
+      "hearingType": "INACTIVE Entry of Plea and ID of Counsel Description - Entry of Plea and Appointment of Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "1983-12-07",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Entry of Plea and ID of Counsel Description - Entry of Plea and Appointment of Counsel",
+      "hearing_type": "INACTIVE Entry of Plea and ID of Counsel Description - Entry of Plea and Appointment of Counsel",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "L GRIM",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "T MOORE",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +92,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1953880",
+  "docket_entries": [
+    {
+      "filedDate": "1983-11-25T00:00:00.000Z",
+      "docketEntryComment": "PLEA AND COUNSEL",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1983-11-25T00:00:00.000Z",
+      "description": "PLEA AND COUNSEL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00659078",
-    "portal_case_id": "",
+    "portal_case_id": "1953880",
     "display_case_number": "CRI-00659078",
     "defendant": "MARY M ARMSTRONG",
     "filed_date": "1983-11-25",
@@ -63,8 +121,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARY M ARMSTRONG, and date of filing 1983-11-25. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARY M ARMSTRONG, and date of filing 1983-11-25. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:47:52.631Z",
+  "portal_case_id": "1953880",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00659078",
+      "defendant": "MARY M ARMSTRONG",
+      "filed_date": "1983-11-25"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1953880"
+  }
 }
