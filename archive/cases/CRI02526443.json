@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:43:35.750Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:47:09.965Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02526443",
   "criminal_case_number": "02526443",
@@ -24,19 +24,58 @@
       "name": "VINCENT E JOHNSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "VINCENT E JOHNSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2022-03-25T16:00:00.000Z",
+      "docketEntryComment": "CERTIFICATE OF REHAB(CERTIFICATE OF SERVICE BY MAIL) FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-05-20T12:14:00.000Z",
+      "docketEntryComment": "DEFT'S PETITION FOR CERTIFICATE OF REHABILITATION AND PARDON FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-06-07T09:30:00.000Z",
+      "docketEntryComment": "/CAL: PETITION FOR CERTIFICATE OF REHABILITATION/X: THE COURT MAKES A FINDING OF REHABILITATION,/ /MO GRTD/X: ORDER SIGNED AND FILED IN OPEN COURT,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2021-06-07 9:30 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2021-06-07",
+      "hearing_time": "9:30 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "8888888",
+    "filed_date": "2021-06-07",
+    "defendant": "VINCENT E JOHNSON",
+    "searched_key": "JOHNSON/VI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/02526443.json",
     "searched_last_name": "JOHNSON",
     "searched_first_prefix": "VI",
-    "charges": "8888888",
     "row": {
       "DEFENDANTNAME": "VINCENT E JOHNSON",
       "CASENUMBER": "CRI-02526443",
@@ -45,11 +84,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3622574",
+  "docket_entries": [
+    {
+      "filedDate": "2022-03-25T16:00:00.000Z",
+      "docketEntryComment": "CERTIFICATE OF REHAB(CERTIFICATE OF SERVICE BY MAIL) FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2022-03-25T16:00:00.000Z",
+      "description": "CERTIFICATE OF REHAB(CERTIFICATE OF SERVICE BY MAIL) FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-05-20T12:14:00.000Z",
+      "docketEntryComment": "DEFT'S PETITION FOR CERTIFICATE OF REHABILITATION AND PARDON FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2021-05-20T12:14:00.000Z",
+      "description": "DEFT'S PETITION FOR CERTIFICATE OF REHABILITATION AND PARDON FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-06-07T09:30:00.000Z",
+      "docketEntryComment": "/CAL: PETITION FOR CERTIFICATE OF REHABILITATION/X: THE COURT MAKES A FINDING OF REHABILITATION,/ /MO GRTD/X: ORDER SIGNED AND FILED IN OPEN COURT,/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2021-06-07T09:30:00.000Z",
+      "description": "/CAL: PETITION FOR CERTIFICATE OF REHABILITATION/X: THE COURT MAKES A FINDING OF REHABILITATION,/ /MO GRTD/X: ORDER SIGNED AND FILED IN OPEN COURT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02526443",
-    "portal_case_id": "",
+    "portal_case_id": "3622574",
     "display_case_number": "CRI-02526443",
     "defendant": "VINCENT E JOHNSON",
     "filed_date": "2021-06-07",
@@ -60,11 +130,42 @@
       "filed_date": "2021-06-07"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, VINCENT E JOHNSON, and date of filing 2021-06-07. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, VINCENT E JOHNSON, date of filing, 2021-06-07, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:47:10.763Z",
+  "portal_case_id": "3622574",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02526443",
+      "defendant": "VINCENT E JOHNSON",
+      "filed_date": "2021-06-07"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3622574"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.873340+00:00"
 }

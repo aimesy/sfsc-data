@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:12:50.175Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:10:51.158Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02485257",
   "criminal_case_number": "02485257",
@@ -24,10 +24,35 @@
       "name": "GIOVANNI LOPEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "GIOVANNI LOPEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2015-06-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD PC1203,9 TRANSFER FROM CONTRA COSTA COUNTY/MO GRTD/CO:PROBATION TRANSFERRED FROM CONTRA COSTA COUNTY TO SAN FRANCISCO COUNTY ORDER SIGNED &FILED/PROB EXT:10-09-18/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-06-11 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2015-06-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -42,14 +67,29 @@
       "CASENUMBER": "CRI-02485257",
       "FILEDDATE": "2015-04-15 15:54:00",
       "CHARGES": "8888888"
-    }
+    },
+    "filed_date": "2015-04-15",
+    "defendant": "GIOVANNI LOPEZ",
+    "searched_key": "LOPEZ/GI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/02485257.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3584624",
+  "docket_entries": [
+    {
+      "filedDate": "2015-06-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD PC1203,9 TRANSFER FROM CONTRA COSTA COUNTY/MO GRTD/CO:PROBATION TRANSFERRED FROM CONTRA COSTA COUNTY TO SAN FRANCISCO COUNTY ORDER SIGNED &FILED/PROB EXT:10-09-18/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-06-11T09:00:00.000Z",
+      "description": "/CAL:APD PC1203,9 TRANSFER FROM CONTRA COSTA COUNTY/MO GRTD/CO:PROBATION TRANSFERRED FROM CONTRA COSTA COUNTY TO SAN FRANCISCO COUNTY ORDER SIGNED &FILED/PROB EXT:10-09-18/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02485257",
-    "portal_case_id": "",
+    "portal_case_id": "3584624",
     "display_case_number": "CRI-02485257",
     "defendant": "GIOVANNI LOPEZ",
     "filed_date": "2015-04-15",
@@ -59,12 +99,52 @@
       "defendant": "GIOVANNI LOPEZ",
       "filed_date": "2015-04-15"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC1203",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, GIOVANNI LOPEZ, and date of filing 2015-04-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, GIOVANNI LOPEZ, date of filing, 2015-04-15, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:10:51.747Z",
+  "portal_case_id": "3584624",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02485257",
+      "defendant": "GIOVANNI LOPEZ",
+      "filed_date": "2015-04-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3584624"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:23.059721+00:00"
 }

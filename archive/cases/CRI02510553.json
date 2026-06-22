@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:03:49.107Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:55:11.787Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02510553",
   "criminal_case_number": "02510553",
@@ -24,10 +24,35 @@
       "name": "JOSEPH C TAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSEPH C TAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2018-07-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT//COWD/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-07-26 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2018-07-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +70,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3608203",
+  "docket_entries": [
+    {
+      "filedDate": "2018-07-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT//COWD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-07-26T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/NP/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT//COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02510553",
-    "portal_case_id": "",
+    "portal_case_id": "3608203",
     "display_case_number": "CRI-02510553",
     "defendant": "JOSEPH C TAN",
     "filed_date": "2018-07-23",
@@ -60,11 +96,58 @@
       "filed_date": "2018-07-23"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "23152(f) VC/M",
+    "charge_rows": [
+      {
+        "raw": "23152(f) VC/M",
+        "title": "Vehicle Code § 23152(f)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(f)",
+        "code_system": "VC",
+        "section": "23152(f)",
+        "citation": "Vehicle Code § 23152(f)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSEPH C TAN, and date of filing 2018-07-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSEPH C TAN, date of filing, 2018-07-23, and charges in the case: 23152(f) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(f) VC/M",
+      "title": "Vehicle Code § 23152(f)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(f)",
+      "code_system": "VC",
+      "section": "23152(f)",
+      "citation": "Vehicle Code § 23152(f)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:55:12.429Z",
+  "portal_case_id": "3608203",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02510553",
+      "defendant": "JOSEPH C TAN",
+      "filed_date": "2018-07-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3608203"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T16:51:46.878Z"
 }

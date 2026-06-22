@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:28:31.518Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:46:00.454Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02425649",
   "criminal_case_number": "02425649",
@@ -24,19 +24,48 @@
       "name": "PHONG D LE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "PHONG D LE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2009-07-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COW",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-07-10 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2009-07-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "23152(a) VC/M 8888888 14601.1(a) VC/M",
+    "filed_date": "2009-07-10",
+    "defendant": "PHONG D LE",
+    "searched_key": "LE/PH",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/02425649.json",
     "searched_last_name": "LE",
     "searched_first_prefix": "PH",
-    "charges": "23152(a) VC/M 8888888 14601.1(a) VC/M",
     "row": {
       "DEFENDANTNAME": "PHONG D LE",
       "CASENUMBER": "CRI-02425649",
@@ -45,11 +74,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3531676",
+  "docket_entries": [
+    {
+      "filedDate": "2009-07-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COW",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-07-10T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COW",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02425649",
-    "portal_case_id": "",
+    "portal_case_id": "3531676",
     "display_case_number": "CRI-02425649",
     "defendant": "PHONG D LE",
     "filed_date": "2009-07-10",
@@ -60,11 +100,94 @@
       "filed_date": "2009-07-10"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "23152(a) VC/M 8888888 14601.1(a) VC/M",
+    "charge_rows": [
+      {
+        "raw": "23152(a) VC/M",
+        "title": "Vehicle Code § 23152(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(a)",
+        "code_system": "VC",
+        "section": "23152(a)",
+        "citation": "Vehicle Code § 23152(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "14601.1(a) VC/M",
+        "title": "Vehicle Code § 14601.1(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 14601.1(a)",
+        "code_system": "VC",
+        "section": "14601.1(a)",
+        "citation": "Vehicle Code § 14601.1(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, PHONG D LE, and date of filing 2009-07-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, PHONG D LE, date of filing, 2009-07-10, and charges in the case: 23152(a) VC/M 8888888 14601.1(a) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(a) VC/M",
+      "title": "Vehicle Code § 23152(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(a)",
+      "code_system": "VC",
+      "section": "23152(a)",
+      "citation": "Vehicle Code § 23152(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "14601.1(a) VC/M",
+      "title": "Vehicle Code § 14601.1(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 14601.1(a)",
+      "code_system": "VC",
+      "section": "14601.1(a)",
+      "citation": "Vehicle Code § 14601.1(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:46:01.056Z",
+  "portal_case_id": "3531676",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02425649",
+      "defendant": "PHONG D LE",
+      "filed_date": "2009-07-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3531676"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.218130+00:00"
 }

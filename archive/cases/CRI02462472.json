@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:59:11.011Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:33:05.632Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02462472",
   "criminal_case_number": "02462472",
@@ -24,11 +24,102 @@
       "name": "JOHN C STEWART",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN C STEWART",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-09-30T13:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-07T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CTAPPTS:DANIEL BYRNE/FAWC/DEFTARR1/GTWM /BAIL:5,000/CONTD:CJC ASSESSMENT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-11-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO BE SET/MO PC 1385:DEFENDANT ADMITTED PROBATION VIOLATION IN FELONYCASE #2395356/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-18T08:30:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/CONTD TO BE SET, DOP OR DAW/CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-13T08:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT /DEF:NOT SUITABLE FOR CJC/CONTD:TO SET/TBH:2395356/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-12T08:30:00.000Z",
+      "docketEntryComment": "/CAL  CJC ASSESSMENT/X  DEFENDANT ONLY PARTIALLY ASSESSED/CONT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-30T13:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:20,000/CTORD:DO NOT CITE/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-11-04 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 28",
+      "__index": 0,
+      "court_date": "2011-11-04",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 28",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-10-07 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2011-10-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-09-30 1:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2011-09-30",
+      "hearing_time": "1:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DANIEL BYRNE",
+      "type": "Appointed Counsel"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +136,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3564821",
+  "docket_entries": [
+    {
+      "filedDate": "2011-09-30T13:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-09-30T13:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-07T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-10-07T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CTAPPTS:DANIEL BYRNE/FAWC/DEFTARR1/GTWM /BAIL:5,000/CONTD:CJC ASSESSMENT/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-10-07T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CTAPPTS:DANIEL BYRNE/FAWC/DEFTARR1/GTWM /BAIL:5,000/CONTD:CJC ASSESSMENT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-11-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO BE SET/MO PC 1385:DEFENDANT ADMITTED PROBATION VIOLATION IN FELONYCASE #2395356/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-11-04T09:00:00.000Z",
+      "description": "/CAL:TO BE SET/MO PC 1385:DEFENDANT ADMITTED PROBATION VIOLATION IN FELONYCASE #2395356/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-18T08:30:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/CONTD TO BE SET, DOP OR DAW/CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-10-18T08:30:00.000Z",
+      "description": "/CAL:TO SET/CONTD TO BE SET, DOP OR DAW/CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-13T08:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT /DEF:NOT SUITABLE FOR CJC/CONTD:TO SET/TBH:2395356/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-10-13T08:30:00.000Z",
+      "description": "/CAL:CJC ASSESSMENT /DEF:NOT SUITABLE FOR CJC/CONTD:TO SET/TBH:2395356/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-12T08:30:00.000Z",
+      "docketEntryComment": "/CAL  CJC ASSESSMENT/X  DEFENDANT ONLY PARTIALLY ASSESSED/CONT/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2011-10-12T08:30:00.000Z",
+      "description": "/CAL CJC ASSESSMENT/X DEFENDANT ONLY PARTIALLY ASSESSED/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-30T13:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:20,000/CTORD:DO NOT CITE/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2011-09-30T13:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:20,000/CTORD:DO NOT CITE/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02462472",
-    "portal_case_id": "",
+    "portal_case_id": "3564821",
     "display_case_number": "CRI-02462472",
     "defendant": "JOHN C STEWART",
     "filed_date": "2011-09-30",
@@ -59,12 +231,120 @@
       "defendant": "JOHN C STEWART",
       "filed_date": "2011-09-30"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "484(a) PC/M 496(a) PC/M 485 PC/M",
+    "charge_rows": [
+      {
+        "raw": "484(a) PC/M",
+        "title": "Penal Code § 484(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 484(a)",
+        "code_system": "PC",
+        "section": "484(a)",
+        "citation": "Penal Code § 484(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "496(a) PC/M",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "485 PC/M",
+        "title": "Penal Code § 485",
+        "title_source": "programmatic_citation",
+        "code": "PC 485",
+        "code_system": "PC",
+        "section": "485",
+        "citation": "Penal Code § 485",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=485.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=485.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN C STEWART, and date of filing 2011-09-30. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN C STEWART, date of filing, 2011-09-30, and charges in the case: 484(a) PC/M 496(a) PC/M 485 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "484(a) PC/M",
+      "title": "Penal Code § 484(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 484(a)",
+      "code_system": "PC",
+      "section": "484(a)",
+      "citation": "Penal Code § 484(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "496(a) PC/M",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "485 PC/M",
+      "title": "Penal Code § 485",
+      "title_source": "programmatic_citation",
+      "code": "PC 485",
+      "code_system": "PC",
+      "section": "485",
+      "citation": "Penal Code § 485",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=485.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=485.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:33:06.338Z",
+  "portal_case_id": "3564821",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02462472",
+      "defendant": "JOHN C STEWART",
+      "filed_date": "2011-09-30"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3564821"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T14:58:39.037Z"
 }

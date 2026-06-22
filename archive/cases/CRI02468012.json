@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:05:30.319Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:25:28.842Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02468012",
   "criminal_case_number": "02468012",
@@ -24,11 +24,64 @@
       "name": "JOHN OBRIEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN OBRIEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-07-16T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 22D/CTS:22/VF2:120/SA2:(STAY OUT OF WHOLE FOODSVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-07-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/PD/FAWC/DEFT ADV ANNL:1/NOLO/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-07-16 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2012-07-16",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-07-16 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2012-07-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KEVIN MITCHELL",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +98,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3569710",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-07-16T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 22D/CTS:22/VF2:120/SA2:(STAY OUT OF WHOLE FOODSVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-07-16T09:15:00.000Z",
+      "description": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 22D/CTS:22/VF2:120/SA2:(STAY OUT OF WHOLE FOODSVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-07-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/PD/FAWC/DEFT ADV ANNL:1/NOLO/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-07-16T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/PD/FAWC/DEFT ADV ANNL:1/NOLO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02468012",
-    "portal_case_id": "",
+    "portal_case_id": "3569710",
     "display_case_number": "CRI-02468012",
     "defendant": "JOHN OBRIEN",
     "filed_date": "2012-06-29",
@@ -59,12 +143,51 @@
       "defendant": "JOHN OBRIEN",
       "filed_date": "2012-06-29"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN OBRIEN, and date of filing 2012-06-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN OBRIEN, date of filing, 2012-06-29, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:25:29.483Z",
+  "portal_case_id": "3569710",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02468012",
+      "defendant": "JOHN OBRIEN",
+      "filed_date": "2012-06-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3569710"
+  }
 }

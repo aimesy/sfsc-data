@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:14:46.858Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:44:18.067Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02402527",
   "criminal_case_number": "02402527",
@@ -24,11 +24,105 @@
       "name": "JAMES JUNIOR MITCHELL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAMES JUNIOR MITCHELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-10-13T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-01-30T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PC 4011,6 & BW RETURN/BWDC1:   2/BWCTS: 2/TEXT:DEFT ENT NG PLEA(S) &DEN OF ALLEG/PD/FAWC/DEFTARR1/ NTW/LD:FOR TRIAL IS 11-14-11/CONTD:PRETRIAL CONFERENCE &  JURY TRIAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/NP/DEF:IS 4011,6 TODAY/X:BENCH WARRANT REMAINS OUTSTANDING,/CONTD PC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6//JAIL PSY/4011,6/REP:10-13-11/CONTD:RECEIPT OF 4011,6PC REPORT AND BENCH WARRANT RETURN/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-10-17T13:45:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/MO138572:2351022/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-01-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BW/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-10-17 1:45 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2011-10-17",
+      "hearing_time": "1:45 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-10-13 9:00 AM",
+      "hearingType": "PC 4011.6 Report",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2011-10-13",
+      "hearing_time": "9:00 AM",
+      "matters": "PC 4011.6 Report",
+      "hearing_type": "PC 4011.6 Report",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-10-11 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2011-10-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-01-30 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 3,
+      "court_date": "2009-01-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JENNIFER NORYKO",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +139,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3510228",
+  "docket_entries": [
+    {
+      "filedDate": "2011-10-13T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-10-13T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-01-30T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-01-30T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PC 4011,6 & BW RETURN/BWDC1:   2/BWCTS: 2/TEXT:DEFT ENT NG PLEA(S) &DEN OF ALLEG/PD/FAWC/DEFTARR1/ NTW/LD:FOR TRIAL IS 11-14-11/CONTD:PRETRIAL CONFERENCE &  JURY TRIAL/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-10-13T09:00:00.000Z",
+      "description": "/CAL:PC 4011,6 & BW RETURN/BWDC1: 2/BWCTS: 2/TEXT:DEFT ENT NG PLEA(S) &DEN OF ALLEG/PD/FAWC/DEFTARR1/ NTW/LD:FOR TRIAL IS 11-14-11/CONTD:PRETRIAL CONFERENCE & JURY TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/NP/DEF:IS 4011,6 TODAY/X:BENCH WARRANT REMAINS OUTSTANDING,/CONTD PC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6//JAIL PSY/4011,6/REP:10-13-11/CONTD:RECEIPT OF 4011,6PC REPORT AND BENCH WARRANT RETURN/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-10-11T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/NP/DEF:IS 4011,6 TODAY/X:BENCH WARRANT REMAINS OUTSTANDING,/CONTD PC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6//JAIL PSY/4011,6/REP:10-13-11/CONTD:RECEIPT OF 4011,6PC REPORT AND BENCH WARRANT RETURN/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-10-17T13:45:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/MO138572:2351022/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-10-17T13:45:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/MO138572:2351022/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-01-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BW/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2009-01-30T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BW/BWI/BAIL:5000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02402527",
-    "portal_case_id": "",
+    "portal_case_id": "3510228",
     "display_case_number": "CRI-02402527",
     "defendant": "JAMES JUNIOR MITCHELL",
     "filed_date": "2009-01-30",
@@ -59,12 +214,67 @@
       "defendant": "JAMES JUNIOR MITCHELL",
       "filed_date": "2009-01-30"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 4011",
+        "count": 3,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "484(a)/490.5 PC/M",
+    "charge_rows": [
+      {
+        "raw": "484(a)/490.5 PC/M",
+        "title": "484(a)",
+        "title_source": "criminal_index_text",
+        "code": "PC 490.5",
+        "code_system": "PC",
+        "section": "490.5",
+        "citation": "Penal Code § 490.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAMES JUNIOR MITCHELL, and date of filing 2009-01-30. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAMES JUNIOR MITCHELL, date of filing, 2009-01-30, and charges in the case: 484(a)/490.5 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "484(a)/490.5 PC/M",
+      "title": "484(a)",
+      "title_source": "criminal_index_text",
+      "code": "PC 490.5",
+      "code_system": "PC",
+      "section": "490.5",
+      "citation": "Penal Code § 490.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:44:19.260Z",
+  "portal_case_id": "3510228",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02402527",
+      "defendant": "JAMES JUNIOR MITCHELL",
+      "filed_date": "2009-01-30"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3510228"
+  }
 }

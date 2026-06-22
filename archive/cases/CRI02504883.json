@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:15:50.157Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:02:21.677Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02504883",
   "criminal_case_number": "02504883",
@@ -24,10 +24,58 @@
       "name": "AMANDA JOHNSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "AMANDA JOHNSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2017-09-05T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-09-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:09-05-17/BWI/BAIL:10,000/BWNUM:2ND",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-09-05T09:00:00.000Z",
+      "docketEntryComment": "/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-09-11 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2017-09-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-09-05 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2017-09-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +93,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3603103",
+  "docket_entries": [
+    {
+      "filedDate": "2017-09-05T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-09-05T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-09-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:09-05-17/BWI/BAIL:10,000/BWNUM:2ND",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-09-11T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:09-05-17/BWI/BAIL:10,000/BWNUM:2ND",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-09-05T09:00:00.000Z",
+      "docketEntryComment": "/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-09-05T09:00:00.000Z",
+      "description": "/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02504883",
-    "portal_case_id": "",
+    "portal_case_id": "3603103",
     "display_case_number": "CRI-02504883",
     "defendant": "AMANDA JOHNSON",
     "filed_date": "2017-08-28",
@@ -60,11 +139,57 @@
       "filed_date": "2017-08-28"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "242 PC/M",
+    "charge_rows": [
+      {
+        "raw": "242 PC/M",
+        "title": "Penal Code § 242",
+        "title_source": "programmatic_citation",
+        "code": "PC 242",
+        "code_system": "PC",
+        "section": "242",
+        "citation": "Penal Code § 242",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, AMANDA JOHNSON, and date of filing 2017-08-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, AMANDA JOHNSON, date of filing, 2017-08-28, and charges in the case: 242 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "242 PC/M",
+      "title": "Penal Code § 242",
+      "title_source": "programmatic_citation",
+      "code": "PC 242",
+      "code_system": "PC",
+      "section": "242",
+      "citation": "Penal Code § 242",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:02:22.365Z",
+  "portal_case_id": "3603103",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02504883",
+      "defendant": "AMANDA JOHNSON",
+      "filed_date": "2017-08-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3603103"
+  }
 }

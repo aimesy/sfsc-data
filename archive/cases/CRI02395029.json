@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:35:10.139Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:46:14.530Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02395029",
   "criminal_case_number": "02395029",
@@ -24,10 +24,76 @@
       "name": "JAIME OLADE MARTINEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAIME OLADE MARTINEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2008-11-21T16:00:00.000Z",
+      "docketEntryComment": "PD PETITION FOR CERTIFICATE OF REHAB & PARDON FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-02-25T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:REQUESTED BY MOVING PARTY    /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-01-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PD PETITION FOR CERTIFICATE OF REHAB & PARDON/CONTD:FURTHER PROCEEDINGS PD PETITION FOR CERTIFICATE OF REHAB & PARDON/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-01-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PD PETITION FOR CERTIFICATE OF REHAB & PARDON (OLD CASE #532122)/CONT",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-02-25 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2009-02-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-01-28 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 1,
+      "court_date": "2009-01-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-01-14 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 2,
+      "court_date": "2009-01-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +111,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3503292",
+  "docket_entries": [
+    {
+      "filedDate": "2008-11-21T16:00:00.000Z",
+      "docketEntryComment": "PD PETITION FOR CERTIFICATE OF REHAB & PARDON FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2008-11-21T16:00:00.000Z",
+      "description": "PD PETITION FOR CERTIFICATE OF REHAB & PARDON FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-02-25T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:REQUESTED BY MOVING PARTY    /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-02-25T09:00:00.000Z",
+      "description": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:REQUESTED BY MOVING PARTY /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-01-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PD PETITION FOR CERTIFICATE OF REHAB & PARDON/CONTD:FURTHER PROCEEDINGS PD PETITION FOR CERTIFICATE OF REHAB & PARDON/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-01-28T09:00:00.000Z",
+      "description": "/CAL:PD PETITION FOR CERTIFICATE OF REHAB & PARDON/CONTD:FURTHER PROCEEDINGS PD PETITION FOR CERTIFICATE OF REHAB & PARDON/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-01-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PD PETITION FOR CERTIFICATE OF REHAB & PARDON (OLD CASE #532122)/CONT",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-01-14T09:00:00.000Z",
+      "description": "/CAL:PD PETITION FOR CERTIFICATE OF REHAB & PARDON (OLD CASE #532122)/CONT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02395029",
-    "portal_case_id": "",
+    "portal_case_id": "3503292",
     "display_case_number": "CRI-02395029",
     "defendant": "JAIME OLADE MARTINEZ",
     "filed_date": "2009-01-14",
@@ -60,11 +167,57 @@
       "filed_date": "2009-01-14"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "211 PC/F",
+    "charge_rows": [
+      {
+        "raw": "211 PC/F",
+        "title": "Penal Code § 211",
+        "title_source": "programmatic_citation",
+        "code": "PC 211",
+        "code_system": "PC",
+        "section": "211",
+        "citation": "Penal Code § 211",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAIME OLADE MARTINEZ, and date of filing 2009-01-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAIME OLADE MARTINEZ, date of filing, 2009-01-14, and charges in the case: 211 PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "211 PC/F",
+      "title": "Penal Code § 211",
+      "title_source": "programmatic_citation",
+      "code": "PC 211",
+      "code_system": "PC",
+      "section": "211",
+      "citation": "Penal Code § 211",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:46:15.226Z",
+  "portal_case_id": "3503292",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02395029",
+      "defendant": "JAIME OLADE MARTINEZ",
+      "filed_date": "2009-01-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3503292"
+  }
 }

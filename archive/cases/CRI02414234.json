@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:58:09.529Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:44:16.478Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02414234",
   "criminal_case_number": "02414234",
@@ -24,19 +24,104 @@
       "name": "JUAN C ESPINOZA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JUAN C ESPINOZA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-20T00:00:00.000Z",
+      "docketEntryComment": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-05-06T16:22:00.000Z",
+      "docketEntryComment": "ENTRY OF PLEA TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-05-18T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ 40D/CTS:40/DNA/SA2:THE INTERSECTION OF POLK AND EDDY STS,, SF/PF500/WS/11590/DTC/LF/RX/VF4:200/PC/PSR/BKFEE/PROBFINE/SECFEE/ICNA/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:1/FNDG/CO:NEGOTIATED DISPOSITION/PRES:05-18-09/IBARRA/ARBUCKLE/REMA/DOP/SA2:THE INTERSECTION OF POLK AND EDDY STS,, SF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-14T09:00:00.000Z",
+      "docketEntryComment": "CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/SA2:POLK & EDDY STS SF CA/LD:04-28-09/987,2/BAIL:35,000/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-05-18 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2009-05-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-04-27 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2009-04-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-04-14 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2009-04-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BETSY WOLKIN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11352(a) HS/F 11351 HS/F",
+    "filed_date": "2009-04-14",
+    "defendant": "JUAN C ESPINOZA",
+    "searched_key": "ESPINOZA/JU",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/02414234.json",
     "searched_last_name": "ESPINOZA",
     "searched_first_prefix": "JU",
-    "charges": "11352(a) HS/F 11351 HS/F",
     "row": {
       "DEFENDANTNAME": "JUAN C ESPINOZA",
       "CASENUMBER": "CRI-02414234",
@@ -45,11 +130,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3521086",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-20T00:00:00.000Z",
+      "docketEntryComment": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-07-20T00:00:00.000Z",
+      "description": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-05-06T16:22:00.000Z",
+      "docketEntryComment": "ENTRY OF PLEA TX FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-05-06T16:22:00.000Z",
+      "description": "ENTRY OF PLEA TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-05-18T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ 40D/CTS:40/DNA/SA2:THE INTERSECTION OF POLK AND EDDY STS,, SF/PF500/WS/11590/DTC/LF/RX/VF4:200/PC/PSR/BKFEE/PROBFINE/SECFEE/ICNA/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-05-18T09:00:00.000Z",
+      "description": "/AJW/CH1:ISS:PROB 3 Y:PJ 40D/CTS:40/DNA/SA2:THE INTERSECTION OF POLK AND EDDY STS,, SF/PF500/WS/11590/DTC/LF/RX/VF4:200/PC/PSR/BKFEE/PROBFINE/SECFEE/ICNA/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:1/FNDG/CO:NEGOTIATED DISPOSITION/PRES:05-18-09/IBARRA/ARBUCKLE/REMA/DOP/SA2:THE INTERSECTION OF POLK AND EDDY STS,, SF/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2009-04-27T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:1/FNDG/CO:NEGOTIATED DISPOSITION/PRES:05-18-09/IBARRA/ARBUCKLE/REMA/DOP/SA2:THE INTERSECTION OF POLK AND EDDY STS,, SF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-14T09:00:00.000Z",
+      "docketEntryComment": "CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/SA2:POLK & EDDY STS SF CA/LD:04-28-09/987,2/BAIL:35,000/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2009-04-14T09:00:00.000Z",
+      "description": "CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/SA2:POLK & EDDY STS SF CA/LD:04-28-09/987,2/BAIL:35,000/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02414234",
-    "portal_case_id": "",
+    "portal_case_id": "3521086",
     "display_case_number": "CRI-02414234",
     "defendant": "JUAN C ESPINOZA",
     "filed_date": "2009-04-14",
@@ -59,12 +205,94 @@
       "defendant": "JUAN C ESPINOZA",
       "filed_date": "2009-04-14"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11352(a) HS/F 11351 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11352(a) HS/F",
+        "title": "Health and Safety Code § 11352(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11352(a)",
+        "code_system": "HS",
+        "section": "11352(a)",
+        "citation": "Health and Safety Code § 11352(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11351 HS/F",
+        "title": "Health and Safety Code § 11351",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351",
+        "code_system": "HS",
+        "section": "11351",
+        "citation": "Health and Safety Code § 11351",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JUAN C ESPINOZA, and date of filing 2009-04-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JUAN C ESPINOZA, date of filing, 2009-04-14, and charges in the case: 11352(a) HS/F 11351 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11352(a) HS/F",
+      "title": "Health and Safety Code § 11352(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11352(a)",
+      "code_system": "HS",
+      "section": "11352(a)",
+      "citation": "Health and Safety Code § 11352(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11351 HS/F",
+      "title": "Health and Safety Code § 11351",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351",
+      "code_system": "HS",
+      "section": "11351",
+      "citation": "Health and Safety Code § 11351",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:44:17.211Z",
+  "portal_case_id": "3521086",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02414234",
+      "defendant": "JUAN C ESPINOZA",
+      "filed_date": "2009-04-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3521086"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.409124+00:00"
 }

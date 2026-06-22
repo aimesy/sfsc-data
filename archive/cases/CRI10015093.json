@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:33:58.210Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:39:19.080Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10015093",
   "criminal_case_number": "10015093",
@@ -24,11 +24,59 @@
       "name": "LUIS ALBERTO ROMERO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LUIS ALBERTO ROMERO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-06-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY INPROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-20T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:06-04-10/987,2/BAIL:5000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-06-03 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2010-06-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-05-20 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2010-05-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "TIFFANY TISEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3642607",
+  "docket_entries": [
+    {
+      "filedDate": "2010-06-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY INPROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-06-03T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY INPROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-20T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:06-04-10/987,2/BAIL:5000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-05-20T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:06-04-10/987,2/BAIL:5000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10015093",
-    "portal_case_id": "",
+    "portal_case_id": "3642607",
     "display_case_number": "CRI-10015093",
     "defendant": "LUIS ALBERTO ROMERO",
     "filed_date": "2010-05-20",
@@ -60,11 +129,58 @@
       "filed_date": "2010-05-20"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "118(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "118(a) PC/F",
+        "title": "Penal Code § 118(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 118(a)",
+        "code_system": "PC",
+        "section": "118(a)",
+        "citation": "Penal Code § 118(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=118.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=118.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LUIS ALBERTO ROMERO, and date of filing 2010-05-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LUIS ALBERTO ROMERO, date of filing, 2010-05-20, and charges in the case: 118(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "118(a) PC/F",
+      "title": "Penal Code § 118(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 118(a)",
+      "code_system": "PC",
+      "section": "118(a)",
+      "citation": "Penal Code § 118(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=118.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=118.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:39:19.742Z",
+  "portal_case_id": "3642607",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10015093",
+      "defendant": "LUIS ALBERTO ROMERO",
+      "filed_date": "2010-05-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3642607"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T14:28:01.750Z"
 }

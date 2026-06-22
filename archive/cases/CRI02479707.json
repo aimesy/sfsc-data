@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:31:45.355Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:17:48.985Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02479707",
   "criminal_case_number": "02479707",
@@ -24,10 +24,50 @@
       "name": "LENA MARIE PEREZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LENA MARIE PEREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2020-10-30T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-20T00:00:00.000Z",
+      "docketEntryComment": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-02-05T15:00:00.000Z",
+      "docketEntryComment": "PROP 47 PET GRANTED, PROB TERM SUCCESSFUL, REST FINE REDUCED TO $150",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-06-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD PC1203,9 TRANSFER FROM SAN MATEO CO/MO GRTD/CTORD: PROBATION IS TRANSFERRED FROM SAN MATEO COUNTY TO SAN FRANCISCO COUNTY/X:COURT ORDER ISSIGNED AND FILED,/PROB EXP:02-06-16/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-06-23 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2014-06-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +85,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3579844",
+  "docket_entries": [
+    {
+      "filedDate": "2020-10-30T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2020-10-30T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-20T00:00:00.000Z",
+      "docketEntryComment": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-07-20T00:00:00.000Z",
+      "description": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-02-05T15:00:00.000Z",
+      "docketEntryComment": "PROP 47 PET GRANTED, PROB TERM SUCCESSFUL, REST FINE REDUCED TO $150",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-02-05T15:00:00.000Z",
+      "description": "PROP 47 PET GRANTED, PROB TERM SUCCESSFUL, REST FINE REDUCED TO $150",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-06-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD PC1203,9 TRANSFER FROM SAN MATEO CO/MO GRTD/CTORD: PROBATION IS TRANSFERRED FROM SAN MATEO COUNTY TO SAN FRANCISCO COUNTY/X:COURT ORDER ISSIGNED AND FILED,/PROB EXP:02-06-16/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2014-06-23T09:00:00.000Z",
+      "description": "/CAL:APD PC1203,9 TRANSFER FROM SAN MATEO CO/MO GRTD/CTORD: PROBATION IS TRANSFERRED FROM SAN MATEO COUNTY TO SAN FRANCISCO COUNTY/X:COURT ORDER ISSIGNED AND FILED,/PROB EXP:02-06-16/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02479707",
-    "portal_case_id": "",
+    "portal_case_id": "3579844",
     "display_case_number": "CRI-02479707",
     "defendant": "LENA MARIE PEREZ",
     "filed_date": "2014-05-30",
@@ -59,12 +140,76 @@
       "defendant": "LENA MARIE PEREZ",
       "filed_date": "2014-05-30"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC1203",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11377(a) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11377(a) HS/M",
+        "title": "Health and Safety Code § 11377(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11377(a)",
+        "code_system": "HS",
+        "section": "11377(a)",
+        "citation": "Health and Safety Code § 11377(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LENA MARIE PEREZ, and date of filing 2014-05-30. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LENA MARIE PEREZ, date of filing, 2014-05-30, and charges in the case: 11377(a) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11377(a) HS/M",
+      "title": "Health and Safety Code § 11377(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11377(a)",
+      "code_system": "HS",
+      "section": "11377(a)",
+      "citation": "Health and Safety Code § 11377(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:17:49.687Z",
+  "portal_case_id": "3579844",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02479707",
+      "defendant": "LENA MARIE PEREZ",
+      "filed_date": "2014-05-30"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3579844"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T15:10:32.040Z"
 }

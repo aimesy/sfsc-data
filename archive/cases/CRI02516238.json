@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:59:52.554Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:50:08.858Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02516238",
   "criminal_case_number": "02516238",
@@ -24,19 +24,48 @@
       "name": "JUAN ANTONIO JIMENEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JUAN ANTONIO JIMENEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2019-06-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/NP/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2019-06-07 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2019-06-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "8888888",
+    "filed_date": "2019-06-04",
+    "defendant": "JUAN ANTONIO JIMENEZ",
+    "searched_key": "JIMENEZ/JU",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/02516238.json",
     "searched_last_name": "JIMENEZ",
     "searched_first_prefix": "JU",
-    "charges": "8888888",
     "row": {
       "DEFENDANTNAME": "JUAN ANTONIO JIMENEZ",
       "CASENUMBER": "CRI-02516238",
@@ -45,11 +74,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3613370",
+  "docket_entries": [
+    {
+      "filedDate": "2019-06-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/NP/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-06-07T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/NP/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02516238",
-    "portal_case_id": "",
+    "portal_case_id": "3613370",
     "display_case_number": "CRI-02516238",
     "defendant": "JUAN ANTONIO JIMENEZ",
     "filed_date": "2019-06-04",
@@ -60,11 +100,42 @@
       "filed_date": "2019-06-04"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JUAN ANTONIO JIMENEZ, and date of filing 2019-06-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JUAN ANTONIO JIMENEZ, date of filing, 2019-06-04, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:50:09.491Z",
+  "portal_case_id": "3613370",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02516238",
+      "defendant": "JUAN ANTONIO JIMENEZ",
+      "filed_date": "2019-06-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3613370"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.785283+00:00"
 }

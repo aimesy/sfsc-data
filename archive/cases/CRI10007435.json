@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:29:00.670Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:41:37.946Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10007435",
   "criminal_case_number": "10007435",
@@ -24,11 +24,131 @@
       "name": "ANDREW KING",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANDREW KING",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-03-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A, P&C/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:SUSAN KAPLAN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//FAWC/DEFTARR1/NTW60/LD:05-10-10/987,2/BAIL:15,000/X:COUNSEL RESERVES THERIGHT TO DEMUR/CONTD:TO SET/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONF/MO PC 1385:DEFENDANT RELEASED TO STATE PAROLE, /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRELIM HEARING/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'SOFFICE DECLARES A CONFLICT,/CON:BETSY WOLKIN /STWPX/CONTD:PREHEARING CON",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRELIM HRNG/CON:BETSY WOLKIN/CONTD:TO SET PRELIM HRNG/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRELIM HEARING DATE/CONT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/DEF:IS ILL TODAY/BAIL:15,000/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-05-13 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2010-05-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-04-28 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2010-04-28",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-04-13 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2010-04-13",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-25 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 3,
+      "court_date": "2010-03-25",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-11 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 4,
+      "court_date": "2010-03-11",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-10 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 5,
+      "court_date": "2010-03-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BETSY WOLKIN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +165,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3635375",
+  "docket_entries": [
+    {
+      "filedDate": "2010-03-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A, P&C/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:SUSAN KAPLAN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//FAWC/DEFTARR1/NTW60/LD:05-10-10/987,2/BAIL:15,000/X:COUNSEL RESERVES THERIGHT TO DEMUR/CONTD:TO SET/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-03-11T09:00:00.000Z",
+      "description": "/CAL:I&A, P&C/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:SUSAN KAPLAN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//FAWC/DEFTARR1/NTW60/LD:05-10-10/987,2/BAIL:15,000/X:COUNSEL RESERVES THERIGHT TO DEMUR/CONTD:TO SET/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONF/MO PC 1385:DEFENDANT RELEASED TO STATE PAROLE, /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-05-13T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONF/MO PC 1385:DEFENDANT RELEASED TO STATE PAROLE, /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRELIM HEARING/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'SOFFICE DECLARES A CONFLICT,/CON:BETSY WOLKIN /STWPX/CONTD:PREHEARING CON",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-04-28T09:00:00.000Z",
+      "description": "/CAL:TO SET PRELIM HEARING/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'SOFFICE DECLARES A CONFLICT,/CON:BETSY WOLKIN /STWPX/CONTD:PREHEARING CON",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRELIM HRNG/CON:BETSY WOLKIN/CONTD:TO SET PRELIM HRNG/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-04-13T09:00:00.000Z",
+      "description": "/CAL:TO SET PRELIM HRNG/CON:BETSY WOLKIN/CONTD:TO SET PRELIM HRNG/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRELIM HEARING DATE/CONT/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-03-25T09:00:00.000Z",
+      "description": "/CAL:TO SET PRELIM HEARING DATE/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/DEF:IS ILL TODAY/BAIL:15,000/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-03-10T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/NP/DEF:IS ILL TODAY/BAIL:15,000/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10007435",
-    "portal_case_id": "",
+    "portal_case_id": "3635375",
     "display_case_number": "CRI-10007435",
     "defendant": "ANDREW KING",
     "filed_date": "2010-03-10",
@@ -59,12 +240,67 @@
       "defendant": "ANDREW KING",
       "filed_date": "2010-03-10"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "290.015(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "290.015(a) PC/F",
+        "title": "Penal Code § 290.015(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 290.015(a)",
+        "code_system": "PC",
+        "section": "290.015(a)",
+        "citation": "Penal Code § 290.015(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.015.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.015.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANDREW KING, and date of filing 2010-03-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANDREW KING, date of filing, 2010-03-10, and charges in the case: 290.015(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "290.015(a) PC/F",
+      "title": "Penal Code § 290.015(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 290.015(a)",
+      "code_system": "PC",
+      "section": "290.015(a)",
+      "citation": "Penal Code § 290.015(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.015.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.015.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:41:38.996Z",
+  "portal_case_id": "3635375",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10007435",
+      "defendant": "ANDREW KING",
+      "filed_date": "2010-03-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3635375"
+  }
 }

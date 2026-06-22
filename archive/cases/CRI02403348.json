@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:32:20.083Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:42:52.190Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02403348",
   "criminal_case_number": "02403348",
@@ -24,11 +24,82 @@
       "name": "ROBERT III MARQUEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROBERT III MARQUEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-04-01T15:00:00.000Z",
+      "docketEntryComment": "NOTICE OF MOT FOR CIVIL COMPROMISE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-16T09:00:00.000Z",
+      "docketEntryComment": "/X:CERTIFIED LAW STUDENT GISELLE SOTELO FOR THE DEFENSE/DAWT/X:PURSUANT TO1378 OF THE PENAL CODE AND A COMPLETED CIVIL COMPROMISE, THECOURT ORDERS ALL PROCEEDINGS TO BE STAYED UPON THE PROSECUTION, AND THE DEFENDANT IS DISCHARGED,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-03-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/CONTD:FOR CIVIL COMPROMISE ON 04-16-09,/DAWF/       /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-01-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DOP/GTWM/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-04-16 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2009-04-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-03-19 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 1,
+      "court_date": "2009-03-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-01-28 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 2,
+      "court_date": "2009-01-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SHARON MEADOWS",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3510997",
+  "docket_entries": [
+    {
+      "filedDate": "2009-04-01T15:00:00.000Z",
+      "docketEntryComment": "NOTICE OF MOT FOR CIVIL COMPROMISE FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-04-01T15:00:00.000Z",
+      "description": "NOTICE OF MOT FOR CIVIL COMPROMISE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-16T09:00:00.000Z",
+      "docketEntryComment": "/X:CERTIFIED LAW STUDENT GISELLE SOTELO FOR THE DEFENSE/DAWT/X:PURSUANT TO1378 OF THE PENAL CODE AND A COMPLETED CIVIL COMPROMISE, THECOURT ORDERS ALL PROCEEDINGS TO BE STAYED UPON THE PROSECUTION, AND THE DEFENDANT IS DISCHARGED,/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-04-16T09:00:00.000Z",
+      "description": "/X:CERTIFIED LAW STUDENT GISELLE SOTELO FOR THE DEFENSE/DAWT/X:PURSUANT TO1378 OF THE PENAL CODE AND A COMPLETED CIVIL COMPROMISE, THECOURT ORDERS ALL PROCEEDINGS TO BE STAYED UPON THE PROSECUTION, AND THE DEFENDANT IS DISCHARGED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-03-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/CONTD:FOR CIVIL COMPROMISE ON 04-16-09,/DAWF/       /",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-03-19T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/CONTD:FOR CIVIL COMPROMISE ON 04-16-09,/DAWF/ /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-01-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DOP/GTWM/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-01-28T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DOP/GTWM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02403348",
-    "portal_case_id": "",
+    "portal_case_id": "3510997",
     "display_case_number": "CRI-02403348",
     "defendant": "ROBERT III MARQUEZ",
     "filed_date": "2009-01-28",
@@ -60,11 +172,84 @@
       "filed_date": "2009-01-28"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "594(b)(2)(A) PC/M 594(b)(2)(A) PC/M 594.2(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "594(b)(2)(A) PC/M",
+        "title": "Penal Code § 594(b)(2)(A)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(2)(A)",
+        "code_system": "PC",
+        "section": "594(b)(2)(A)",
+        "citation": "Penal Code § 594(b)(2)(A)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "594.2(a) PC/M",
+        "title": "Penal Code § 594.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594.2(a)",
+        "code_system": "PC",
+        "section": "594.2(a)",
+        "citation": "Penal Code § 594.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROBERT III MARQUEZ, and date of filing 2009-01-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROBERT III MARQUEZ, date of filing, 2009-01-28, and charges in the case: 594(b)(2)(A) PC/M 594(b)(2)(A) PC/M 594.2(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "594(b)(2)(A) PC/M",
+      "title": "Penal Code § 594(b)(2)(A)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(2)(A)",
+      "code_system": "PC",
+      "section": "594(b)(2)(A)",
+      "citation": "Penal Code § 594(b)(2)(A)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "594.2(a) PC/M",
+      "title": "Penal Code § 594.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594.2(a)",
+      "code_system": "PC",
+      "section": "594.2(a)",
+      "citation": "Penal Code § 594.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:42:52.793Z",
+  "portal_case_id": "3510997",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02403348",
+      "defendant": "ROBERT III MARQUEZ",
+      "filed_date": "2009-01-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3510997"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:36:00.983Z"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:37:35.366Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:46:41.799Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02423117",
   "criminal_case_number": "02423117",
@@ -24,19 +24,71 @@
       "name": "WILLIAM D CARTER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "WILLIAM D CARTER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-07-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DRUG DIVERSION ELIGIBILITY REPORT/X:DRUG DIVERSION IS GRANTED,/X:DIVERSION GRANTED BY STIPULATION AS TO COUNT 1 DEEMED COMPLETED AND DISMISSEDPURSUANT TO 1001,7PC/1001,7:  1/X:COURT ALSO DISMISSED PURSUANT TO 1001,3PC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-06-18T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/CONTD DRUG DIV ELIG REPORT/ELIG:07-28-09/CONT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-07-28 9:00 AM",
+      "hearingType": "Drug Diversion Eligibility Report",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2009-07-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Drug Diversion Eligibility Report",
+      "hearing_type": "Drug Diversion Eligibility Report",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-06-18 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2009-06-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BRIAN PEARLMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11350(a) HS/F",
+    "filed_date": "2009-06-18",
+    "defendant": "WILLIAM D CARTER",
+    "searched_key": "CARTER/WI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/02423117.json",
     "searched_last_name": "CARTER",
     "searched_first_prefix": "WI",
-    "charges": "11350(a) HS/F",
     "row": {
       "DEFENDANTNAME": "WILLIAM D CARTER",
       "CASENUMBER": "CRI-02423117",
@@ -45,11 +97,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3529340",
+  "docket_entries": [
+    {
+      "filedDate": "2009-07-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DRUG DIVERSION ELIGIBILITY REPORT/X:DRUG DIVERSION IS GRANTED,/X:DIVERSION GRANTED BY STIPULATION AS TO COUNT 1 DEEMED COMPLETED AND DISMISSEDPURSUANT TO 1001,7PC/1001,7:  1/X:COURT ALSO DISMISSED PURSUANT TO 1001,3PC/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-07-28T09:00:00.000Z",
+      "description": "/CAL:DRUG DIVERSION ELIGIBILITY REPORT/X:DRUG DIVERSION IS GRANTED,/X:DIVERSION GRANTED BY STIPULATION AS TO COUNT 1 DEEMED COMPLETED AND DISMISSEDPURSUANT TO 1001,7PC/1001,7: 1/X:COURT ALSO DISMISSED PURSUANT TO 1001,3PC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-06-18T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/CONTD DRUG DIV ELIG REPORT/ELIG:07-28-09/CONT/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-06-18T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/CONTD DRUG DIV ELIG REPORT/ELIG:07-28-09/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02423117",
-    "portal_case_id": "",
+    "portal_case_id": "3529340",
     "display_case_number": "CRI-02423117",
     "defendant": "WILLIAM D CARTER",
     "filed_date": "2009-06-18",
@@ -60,11 +133,58 @@
       "filed_date": "2009-06-18"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, WILLIAM D CARTER, and date of filing 2009-06-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, WILLIAM D CARTER, date of filing, 2009-06-18, and charges in the case: 11350(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:46:42.457Z",
+  "portal_case_id": "3529340",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02423117",
+      "defendant": "WILLIAM D CARTER",
+      "filed_date": "2009-06-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3529340"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:20.947518+00:00"
 }

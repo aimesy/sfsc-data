@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:07:00.112Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:31:27.796Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02457609",
   "criminal_case_number": "02457609",
@@ -24,9 +24,20 @@
       "name": "MAJOR GABRIEL GRAY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MAJOR GABRIEL GRAY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -45,11 +56,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3560609",
+  "docket_entries": [
+    {
+      "filedDate": "2011-11-17T18:00:00.000Z",
+      "docketEntryComment": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-11-17T18:00:00.000Z",
+      "description": "DA AUTHORIZED DISCHARGE OF MISD CASES SCHD BUT NOT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02457609",
-    "portal_case_id": "",
+    "portal_case_id": "3560609",
     "display_case_number": "CRI-02457609",
     "defendant": "MAJOR GABRIEL GRAY",
     "filed_date": "2011-02-01",
@@ -60,11 +82,41 @@
       "filed_date": "2011-02-01"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MAJOR GABRIEL GRAY, and date of filing 2011-02-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MAJOR GABRIEL GRAY, date of filing, 2011-02-01, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:31:28.539Z",
+  "portal_case_id": "3560609",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02457609",
+      "defendant": "MAJOR GABRIEL GRAY",
+      "filed_date": "2011-02-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3560609"
+  }
 }

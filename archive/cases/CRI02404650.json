@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:30:55.365Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:43:21.157Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02404650",
   "criminal_case_number": "02404650",
@@ -24,11 +24,109 @@
       "name": "JOSEPH STEVENS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSEPH STEVENS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-02-20T00:00:00.000Z",
+      "docketEntryComment": "CASE DISM,STAY AWAY ISSUED 020409 TERMINATED FORTHWITH",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-02-06T15:00:00.000Z",
+      "docketEntryComment": "MOT FOR RELEASE ON OR FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-02-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:15000/DOP/NTW/LD:03-06-09/987,2/WEAP/SAORD/SA1:KIMBERLY RENEE WILLIAMS/SA2:56 BAYVIEW STREET, SAN FRANCISCO, CA94124/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-02-20T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:DISTRICT ATTORNEY IS UNABLE TO SUSTAIN THE BURDEN OF PROOF /BE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-02-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/X:TRIAL DATE OF 02-22-09 IS CONFIRMED/X:SUBPOENAED RECORDS ARE RELEASED TO THE DEFENSE COUNSEL TO BE COPIED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-02-10T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:DEFENDANT HAS BAILED OUT/X:PRETRIAL CONFERENCE DATE IS CONFIRMED/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-02-20 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "2009-02-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-02-17 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 1,
+      "court_date": "2009-02-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-02-10 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 2,
+      "court_date": "2009-02-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-02-04 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 3,
+      "court_date": "2009-02-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ANNE IRWIN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "BRIAN BRINGARDNER",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +143,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3512180",
+  "docket_entries": [
+    {
+      "filedDate": "2009-02-20T00:00:00.000Z",
+      "docketEntryComment": "CASE DISM,STAY AWAY ISSUED 020409 TERMINATED FORTHWITH",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-02-20T00:00:00.000Z",
+      "description": "CASE DISM,STAY AWAY ISSUED 020409 TERMINATED FORTHWITH",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-02-06T15:00:00.000Z",
+      "docketEntryComment": "MOT FOR RELEASE ON OR FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-02-06T15:00:00.000Z",
+      "description": "MOT FOR RELEASE ON OR FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-02-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:15000/DOP/NTW/LD:03-06-09/987,2/WEAP/SAORD/SA1:KIMBERLY RENEE WILLIAMS/SA2:56 BAYVIEW STREET, SAN FRANCISCO, CA94124/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-02-04T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:15000/DOP/NTW/LD:03-06-09/987,2/WEAP/SAORD/SA1:KIMBERLY RENEE WILLIAMS/SA2:56 BAYVIEW STREET, SAN FRANCISCO, CA94124/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-02-20T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:DISTRICT ATTORNEY IS UNABLE TO SUSTAIN THE BURDEN OF PROOF /BE",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-02-20T09:00:00.000Z",
+      "description": "/MO PC 1385:DISTRICT ATTORNEY IS UNABLE TO SUSTAIN THE BURDEN OF PROOF /BE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-02-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/X:TRIAL DATE OF 02-22-09 IS CONFIRMED/X:SUBPOENAED RECORDS ARE RELEASED TO THE DEFENSE COUNSEL TO BE COPIED/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2009-02-17T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/X:TRIAL DATE OF 02-22-09 IS CONFIRMED/X:SUBPOENAED RECORDS ARE RELEASED TO THE DEFENSE COUNSEL TO BE COPIED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-02-10T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:DEFENDANT HAS BAILED OUT/X:PRETRIAL CONFERENCE DATE IS CONFIRMED/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2009-02-10T09:00:00.000Z",
+      "description": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:DEFENDANT HAS BAILED OUT/X:PRETRIAL CONFERENCE DATE IS CONFIRMED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02404650",
-    "portal_case_id": "",
+    "portal_case_id": "3512180",
     "display_case_number": "CRI-02404650",
     "defendant": "JOSEPH STEVENS",
     "filed_date": "2009-02-04",
@@ -59,12 +218,103 @@
       "defendant": "JOSEPH STEVENS",
       "filed_date": "2009-02-04"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888 243(e)(1) PC/M 240 PC/M",
+    "charge_rows": [
+      {
+        "raw": "243(e)(1) PC/M",
+        "title": "Penal Code § 243(e)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 243(e)(1)",
+        "code_system": "PC",
+        "section": "243(e)(1)",
+        "citation": "Penal Code § 243(e)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "240 PC/M",
+        "title": "Penal Code § 240",
+        "title_source": "programmatic_citation",
+        "code": "PC 240",
+        "code_system": "PC",
+        "section": "240",
+        "citation": "Penal Code § 240",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSEPH STEVENS, and date of filing 2009-02-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSEPH STEVENS, date of filing, 2009-02-04, and charges in the case: 8888888 243(e)(1) PC/M 240 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "243(e)(1) PC/M",
+      "title": "Penal Code § 243(e)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 243(e)(1)",
+      "code_system": "PC",
+      "section": "243(e)(1)",
+      "citation": "Penal Code § 243(e)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "240 PC/M",
+      "title": "Penal Code § 240",
+      "title_source": "programmatic_citation",
+      "code": "PC 240",
+      "code_system": "PC",
+      "section": "240",
+      "citation": "Penal Code § 240",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:43:21.746Z",
+  "portal_case_id": "3512180",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02404650",
+      "defendant": "JOSEPH STEVENS",
+      "filed_date": "2009-02-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3512180"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:53:12.642Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:53:53.932Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02506496",
   "criminal_case_number": "02506496",
@@ -24,10 +24,40 @@
       "name": "JACQUELINE G GARDNER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JACQUELINE G GARDNER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2017-11-29T15:37:00.000Z",
+      "docketEntryComment": "DEFT'S PC17(B) PETITION REDUCE FELONY TO MISDEMEANOR FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-01-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL DEFENSE PC17(B) MOTION/DAWT/X COURT FINDS GOOD CAUSE TO GRANT PC17(B) MOTION,/X:ORDER REDUCING CHARGE TO MISDEMEANOR PURSUANT TO PC17(B) SIGNED & FILED,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-01-08 9:00 AM",
+      "hearingType": "Motion to Set Aside Guilty/Nolo Pleas or Verdict and Dismiss Pursuant to PC 1203.4(a)(1)",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2018-01-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Set Aside Guilty/Nolo Pleas or Verdict and Dismiss Pursuant to PC 1203.4(a)(1)",
+      "hearing_type": "Motion to Set Aside Guilty/Nolo Pleas or Verdict and Dismiss Pursuant to PC 1203.4(a)(1)",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +75,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3604584",
+  "docket_entries": [
+    {
+      "filedDate": "2017-11-29T15:37:00.000Z",
+      "docketEntryComment": "DEFT'S PC17(B) PETITION REDUCE FELONY TO MISDEMEANOR FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-11-29T15:37:00.000Z",
+      "description": "DEFT'S PC17(B) PETITION REDUCE FELONY TO MISDEMEANOR FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-01-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL DEFENSE PC17(B) MOTION/DAWT/X COURT FINDS GOOD CAUSE TO GRANT PC17(B) MOTION,/X:ORDER REDUCING CHARGE TO MISDEMEANOR PURSUANT TO PC17(B) SIGNED & FILED,/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-01-08T09:00:00.000Z",
+      "description": "/CAL DEFENSE PC17(B) MOTION/DAWT/X COURT FINDS GOOD CAUSE TO GRANT PC17(B) MOTION,/X:ORDER REDUCING CHARGE TO MISDEMEANOR PURSUANT TO PC17(B) SIGNED & FILED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02506496",
-    "portal_case_id": "",
+    "portal_case_id": "3604584",
     "display_case_number": "CRI-02506496",
     "defendant": "JACQUELINE G GARDNER",
     "filed_date": "2018-01-08",
@@ -59,12 +110,77 @@
       "defendant": "JACQUELINE G GARDNER",
       "filed_date": "2018-01-08"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC17(B)",
+        "count": 4,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC17(B)",
+        "count": 4,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "475(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "475(a) PC/M",
+        "title": "Penal Code § 475(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 475(a)",
+        "code_system": "PC",
+        "section": "475(a)",
+        "citation": "Penal Code § 475(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=475.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=475.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JACQUELINE G GARDNER, and date of filing 2018-01-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JACQUELINE G GARDNER, date of filing, 2018-01-08, and charges in the case: 475(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "475(a) PC/M",
+      "title": "Penal Code § 475(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 475(a)",
+      "code_system": "PC",
+      "section": "475(a)",
+      "citation": "Penal Code § 475(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=475.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=475.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:53:54.594Z",
+  "portal_case_id": "3604584",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02506496",
+      "defendant": "JACQUELINE G GARDNER",
+      "filed_date": "2018-01-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3604584"
+  }
 }

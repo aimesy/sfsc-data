@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:00:43.898Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:43:08.740Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02401868",
   "criminal_case_number": "02401868",
@@ -24,10 +24,50 @@
       "name": "MOISES CURIEL RODRIGUEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MOISES CURIEL RODRIGUEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2016-08-03T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-01-15T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-08-03T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 08/03/16, CASE DISMISSED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-01-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:  ARRAIGNMENT/FTA/BW/BWI/BAIL:20,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-01-15 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2009-01-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +85,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3509656",
+  "docket_entries": [
+    {
+      "filedDate": "2016-08-03T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-08-03T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-01-15T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-01-15T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-08-03T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 08/03/16, CASE DISMISSED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-08-03T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 08/03/16, CASE DISMISSED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-01-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:  ARRAIGNMENT/FTA/BW/BWI/BAIL:20,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-01-15T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/FTA/BW/BWI/BAIL:20,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02401868",
-    "portal_case_id": "",
+    "portal_case_id": "3509656",
     "display_case_number": "CRI-02401868",
     "defendant": "MOISES CURIEL RODRIGUEZ",
     "filed_date": "2009-01-15",
@@ -60,11 +141,57 @@
       "filed_date": "2009-01-15"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "12500(a) VC/M",
+    "charge_rows": [
+      {
+        "raw": "12500(a) VC/M",
+        "title": "Vehicle Code § 12500(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 12500(a)",
+        "code_system": "VC",
+        "section": "12500(a)",
+        "citation": "Vehicle Code § 12500(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MOISES CURIEL RODRIGUEZ, and date of filing 2009-01-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MOISES CURIEL RODRIGUEZ, date of filing, 2009-01-15, and charges in the case: 12500(a) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "12500(a) VC/M",
+      "title": "Vehicle Code § 12500(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 12500(a)",
+      "code_system": "VC",
+      "section": "12500(a)",
+      "citation": "Vehicle Code § 12500(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:43:09.359Z",
+  "portal_case_id": "3509656",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02401868",
+      "defendant": "MOISES CURIEL RODRIGUEZ",
+      "filed_date": "2009-01-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3509656"
+  }
 }

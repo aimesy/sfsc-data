@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T22:03:43.412Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:40:50.412Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10005069",
   "criminal_case_number": "10005069",
@@ -24,11 +24,59 @@
       "name": "JOSEPH RAY THOMAS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSEPH RAY THOMAS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CON:KENYETTE JONES/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/STWPX/X:DEFENSE MOTION FOR AN OR RELEASE IS GRANTED,/OR//CONTD:PRE-HEARING CONFERENCE/DOP/SAORD/SA2:82 MONTANA STREET SF CA/SAORD3",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-03-30 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2010-03-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-18 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2010-02-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KENYETTE JONES",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3633168",
+  "docket_entries": [
+    {
+      "filedDate": "2010-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CON:KENYETTE JONES/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/STWPX/X:DEFENSE MOTION FOR AN OR RELEASE IS GRANTED,/OR//CONTD:PRE-HEARING CONFERENCE/DOP/SAORD/SA2:82 MONTANA STREET SF CA/SAORD3",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-02-18T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/CON:KENYETTE JONES/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/STWPX/X:DEFENSE MOTION FOR AN OR RELEASE IS GRANTED,/OR//CONTD:PRE-HEARING CONFERENCE/DOP/SAORD/SA2:82 MONTANA STREET SF CA/SAORD3",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-03-30T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10005069",
-    "portal_case_id": "",
+    "portal_case_id": "3633168",
     "display_case_number": "CRI-10005069",
     "defendant": "JOSEPH RAY THOMAS",
     "filed_date": "2010-02-18",
@@ -59,12 +128,94 @@
       "defendant": "JOSEPH RAY THOMAS",
       "filed_date": "2010-02-18"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F 11364(a) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11364(a) HS/M",
+        "title": "Health and Safety Code § 11364(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11364(a)",
+        "code_system": "HS",
+        "section": "11364(a)",
+        "citation": "Health and Safety Code § 11364(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSEPH RAY THOMAS, and date of filing 2010-02-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSEPH RAY THOMAS, date of filing, 2010-02-18, and charges in the case: 11350(a) HS/F 11364(a) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11364(a) HS/M",
+      "title": "Health and Safety Code § 11364(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11364(a)",
+      "code_system": "HS",
+      "section": "11364(a)",
+      "citation": "Health and Safety Code § 11364(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:40:51.067Z",
+  "portal_case_id": "3633168",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10005069",
+      "defendant": "JOSEPH RAY THOMAS",
+      "filed_date": "2010-02-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3633168"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T15:36:12.229Z"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:15:06.114Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:24:26.672Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02475814",
   "criminal_case_number": "02475814",
@@ -24,11 +24,105 @@
       "name": "ANTOINE WAGNER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANTOINE WAGNER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-11-04T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-10-21T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-11-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/BAIL:20,000/X:DEFENDANT IS REFERRED FOR SPR OR IN ALTERNATIVE CAHS ELIGIBILITY,/CONTD SPR OR CAHS ELIGIBILITY RPT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-10-10T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CONTD: PROC RE$20,000 BW STAY FROM 10-10-13/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANTIS ORDERED AND STAYED TO10-21-13,/X: BAIL SET AT $20,000/TBH:13028744/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-11-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SPR OR CAHS ELIG RPT/MO138572:13022730/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-10-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PROC RE BW STAY/BWLIFT:10-10-13/FTA/BWI/BAIL:20000/BWNUM:1ST/X: 3OF 4 BENCH WARRANTS ISSUED THIS DATE /",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-11-06 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2013-11-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-11-04 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2013-11-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-10-21 9:00 AM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2013-10-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-10-10 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 3,
+      "court_date": "2013-10-10",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DANIELLE HARRIS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +139,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3576585",
+  "docket_entries": [
+    {
+      "filedDate": "2013-11-04T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-11-04T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-10-21T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-10-21T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-11-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/BAIL:20,000/X:DEFENDANT IS REFERRED FOR SPR OR IN ALTERNATIVE CAHS ELIGIBILITY,/CONTD SPR OR CAHS ELIGIBILITY RPT/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-11-04T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/BWDNC/BAIL:20,000/X:DEFENDANT IS REFERRED FOR SPR OR IN ALTERNATIVE CAHS ELIGIBILITY,/CONTD SPR OR CAHS ELIGIBILITY RPT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-10-10T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CONTD: PROC RE$20,000 BW STAY FROM 10-10-13/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANTIS ORDERED AND STAYED TO10-21-13,/X: BAIL SET AT $20,000/TBH:13028744/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-10-10T14:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/CONTD: PROC RE$20,000 BW STAY FROM 10-10-13/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANTIS ORDERED AND STAYED TO10-21-13,/X: BAIL SET AT $20,000/TBH:13028744/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-11-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SPR OR CAHS ELIG RPT/MO138572:13022730/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2013-11-06T09:00:00.000Z",
+      "description": "/CAL:SPR OR CAHS ELIG RPT/MO138572:13022730/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-10-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PROC RE BW STAY/BWLIFT:10-10-13/FTA/BWI/BAIL:20000/BWNUM:1ST/X: 3OF 4 BENCH WARRANTS ISSUED THIS DATE /",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2013-10-21T09:00:00.000Z",
+      "description": "/CAL:PROC RE BW STAY/BWLIFT:10-10-13/FTA/BWI/BAIL:20000/BWNUM:1ST/X: 3OF 4 BENCH WARRANTS ISSUED THIS DATE /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02475814",
-    "portal_case_id": "",
+    "portal_case_id": "3576585",
     "display_case_number": "CRI-02475814",
     "defendant": "ANTOINE WAGNER",
     "filed_date": "2013-10-10",
@@ -60,11 +215,57 @@
       "filed_date": "2013-10-10"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "484(a)/490.5 PC/M",
+    "charge_rows": [
+      {
+        "raw": "484(a)/490.5 PC/M",
+        "title": "484(a)",
+        "title_source": "criminal_index_text",
+        "code": "PC 490.5",
+        "code_system": "PC",
+        "section": "490.5",
+        "citation": "Penal Code § 490.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANTOINE WAGNER, and date of filing 2013-10-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANTOINE WAGNER, date of filing, 2013-10-10, and charges in the case: 484(a)/490.5 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "484(a)/490.5 PC/M",
+      "title": "484(a)",
+      "title_source": "criminal_index_text",
+      "code": "PC 490.5",
+      "code_system": "PC",
+      "section": "490.5",
+      "citation": "Penal Code § 490.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:24:27.395Z",
+  "portal_case_id": "3576585",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02475814",
+      "defendant": "ANTOINE WAGNER",
+      "filed_date": "2013-10-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3576585"
+  }
 }

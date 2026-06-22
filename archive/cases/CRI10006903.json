@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:59:32.205Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:38:07.924Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10006903",
   "criminal_case_number": "10006903",
@@ -24,11 +24,100 @@
       "name": "MICHAEL KONG",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL KONG",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-03-16T14:50:00.000Z",
+      "docketEntryComment": "DA'S SUBPOENA DT TO US PARK POLICE COMMUNICATIONS CUST OF REC FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL, DOP/BE/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL, DOP/CONT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:JOIN CO-DEFS RAYMOND CHING & JOEY MA/CONTD:PRETRIAL, DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:PD DECLARES CONFLICT,/CON:MALCOLM SMITH/TEXT:DEFT ENTNG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/STWPX/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-04-05 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2010-04-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-22 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2010-03-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-10 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2010-03-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-09 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2010-03-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MALCOLM SMITH",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +134,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3634873",
+  "docket_entries": [
+    {
+      "filedDate": "2010-03-16T14:50:00.000Z",
+      "docketEntryComment": "DA'S SUBPOENA DT TO US PARK POLICE COMMUNICATIONS CUST OF REC FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-03-16T14:50:00.000Z",
+      "description": "DA'S SUBPOENA DT TO US PARK POLICE COMMUNICATIONS CUST OF REC FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL, DOP/BE/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-04-05T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL, DOP/BE/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL, DOP/CONT/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-03-22T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL, DOP/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:JOIN CO-DEFS RAYMOND CHING & JOEY MA/CONTD:PRETRIAL, DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-03-10T09:00:00.000Z",
+      "description": "/CAL:JOIN CO-DEFS RAYMOND CHING & JOEY MA/CONTD:PRETRIAL, DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:PD DECLARES CONFLICT,/CON:MALCOLM SMITH/TEXT:DEFT ENTNG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/STWPX/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-03-09T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:PD DECLARES CONFLICT,/CON:MALCOLM SMITH/TEXT:DEFT ENTNG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/STWPX/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10006903",
-    "portal_case_id": "",
+    "portal_case_id": "3634873",
     "display_case_number": "CRI-10006903",
     "defendant": "MICHAEL KONG",
     "filed_date": "2010-03-09",
@@ -59,12 +199,67 @@
       "defendant": "MICHAEL KONG",
       "filed_date": "2010-03-09"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11359 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11359 HS/F",
+        "title": "Health and Safety Code § 11359",
+        "title_source": "programmatic_citation",
+        "code": "HS 11359",
+        "code_system": "HS",
+        "section": "11359",
+        "citation": "Health and Safety Code § 11359",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL KONG, and date of filing 2010-03-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL KONG, date of filing, 2010-03-09, and charges in the case: 11359 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11359 HS/F",
+      "title": "Health and Safety Code § 11359",
+      "title_source": "programmatic_citation",
+      "code": "HS 11359",
+      "code_system": "HS",
+      "section": "11359",
+      "citation": "Health and Safety Code § 11359",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:38:08.569Z",
+  "portal_case_id": "3634873",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10006903",
+      "defendant": "MICHAEL KONG",
+      "filed_date": "2010-03-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3634873"
+  }
 }

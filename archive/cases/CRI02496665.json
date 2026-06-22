@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:39:05.917Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:04:54.514Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02496665",
   "criminal_case_number": "02496665",
@@ -24,11 +24,81 @@
       "name": "MARIO NAVARRO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARIO NAVARRO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-09-07T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 2D/CTS:2/PF390 12/VF2:150/FOP1:3 MONTH/LVAL/LCHEM/PROBREVFN/COA:40/ICNA/CITE/BKFEE/EMAT/1463ALC/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 100 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SETFORTH HEREIN/X:23593(A) VC ADMONITION GIVEN,/DISM3/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-08-09T09:00:00.000Z",
+      "docketEntryComment": "/X:COURT FINDS THAT THE DEFENDANT DOES NOT QUALIFY FOR COURT APPOINTED COUNSEL,/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOPU:RETAINED ATTORNEY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-09-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A P&C/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/FAWC/DEFT ADVANNL:1/NOLO/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-09-07 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2016-09-07",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-09-07 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2016-09-07",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-08-09 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2016-08-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CLAIRE LEARY",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "TANISHA GOOCH",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3595404",
+  "docket_entries": [
+    {
+      "filedDate": "2016-09-07T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 2D/CTS:2/PF390 12/VF2:150/FOP1:3 MONTH/LVAL/LCHEM/PROBREVFN/COA:40/ICNA/CITE/BKFEE/EMAT/1463ALC/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 100 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SETFORTH HEREIN/X:23593(A) VC ADMONITION GIVEN,/DISM3/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-09-07T09:15:00.000Z",
+      "description": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 2D/CTS:2/PF390 12/VF2:150/FOP1:3 MONTH/LVAL/LCHEM/PROBREVFN/COA:40/ICNA/CITE/BKFEE/EMAT/1463ALC/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 100 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SETFORTH HEREIN/X:23593(A) VC ADMONITION GIVEN,/DISM3/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-08-09T09:00:00.000Z",
+      "docketEntryComment": "/X:COURT FINDS THAT THE DEFENDANT DOES NOT QUALIFY FOR COURT APPOINTED COUNSEL,/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOPU:RETAINED ATTORNEY/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-08-09T09:00:00.000Z",
+      "description": "/X:COURT FINDS THAT THE DEFENDANT DOES NOT QUALIFY FOR COURT APPOINTED COUNSEL,/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOPU:RETAINED ATTORNEY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-09-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A P&C/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/FAWC/DEFT ADVANNL:1/NOLO/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-09-07T09:00:00.000Z",
+      "description": "/CAL:I&A P&C/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/FAWC/DEFT ADVANNL:1/NOLO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02496665",
-    "portal_case_id": "",
+    "portal_case_id": "3595404",
     "display_case_number": "CRI-02496665",
     "defendant": "MARIO NAVARRO",
     "filed_date": "2016-08-05",
@@ -60,11 +161,135 @@
       "filed_date": "2016-08-05"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "23152(a) VC/M 23152(b) VC/M 21658(a) VC/I 12951(a) VC/I",
+    "charge_rows": [
+      {
+        "raw": "23152(a) VC/M",
+        "title": "Vehicle Code § 23152(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(a)",
+        "code_system": "VC",
+        "section": "23152(a)",
+        "citation": "Vehicle Code § 23152(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23152(b) VC/M",
+        "title": "Vehicle Code § 23152(b)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(b)",
+        "code_system": "VC",
+        "section": "23152(b)",
+        "citation": "Vehicle Code § 23152(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "21658(a) VC/I",
+        "title": "Vehicle Code § 21658(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 21658(a)",
+        "code_system": "VC",
+        "section": "21658(a)",
+        "citation": "Vehicle Code § 21658(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21658.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21658.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      },
+      {
+        "raw": "12951(a) VC/I",
+        "title": "Vehicle Code § 12951(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 12951(a)",
+        "code_system": "VC",
+        "section": "12951(a)",
+        "citation": "Vehicle Code § 12951(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12951.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12951.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARIO NAVARRO, and date of filing 2016-08-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARIO NAVARRO, date of filing, 2016-08-05, and charges in the case: 23152(a) VC/M 23152(b) VC/M 21658(a) VC/I 12951(a) VC/I.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(a) VC/M",
+      "title": "Vehicle Code § 23152(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(a)",
+      "code_system": "VC",
+      "section": "23152(a)",
+      "citation": "Vehicle Code § 23152(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23152(b) VC/M",
+      "title": "Vehicle Code § 23152(b)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(b)",
+      "code_system": "VC",
+      "section": "23152(b)",
+      "citation": "Vehicle Code § 23152(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "21658(a) VC/I",
+      "title": "Vehicle Code § 21658(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 21658(a)",
+      "code_system": "VC",
+      "section": "21658(a)",
+      "citation": "Vehicle Code § 21658(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21658.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21658.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    },
+    {
+      "raw": "12951(a) VC/I",
+      "title": "Vehicle Code § 12951(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 12951(a)",
+      "code_system": "VC",
+      "section": "12951(a)",
+      "citation": "Vehicle Code § 12951(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12951.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12951.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:04:55.657Z",
+  "portal_case_id": "3595404",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02496665",
+      "defendant": "MARIO NAVARRO",
+      "filed_date": "2016-08-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3595404"
+  }
 }

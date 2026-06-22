@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:24:46.173Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:46:55.291Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02521424",
   "criminal_case_number": "02521424",
@@ -24,11 +24,64 @@
       "name": "MOHAMMAD KHAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MOHAMMAD KHAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2020-03-11T14:00:00.000Z",
+      "docketEntryComment": "PETITION FOR CERT OF REHAB & PARDON, DEC, POS-FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-07-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PETITION FOR CERTIFICATE OF REHABILITATION/NP/X: OLD NUMBER 11006373, SF COUNTY/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: PETITIONIS NOT RIPE, MOVING PARTY FAILED TO MAKE A SHOWING THAT SATISIFIES THE CRITERIA FOR GRANTING THE PETITION    /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-04-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PETITION FOR CERTIFICATE OF REHAB & PARDON/CONT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2020-07-13 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2020-07-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2020-04-27 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 1,
+      "court_date": "2020-04-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PER PRO",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +98,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3617986",
+  "docket_entries": [
+    {
+      "filedDate": "2020-03-11T14:00:00.000Z",
+      "docketEntryComment": "PETITION FOR CERT OF REHAB & PARDON, DEC, POS-FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2020-03-11T14:00:00.000Z",
+      "description": "PETITION FOR CERT OF REHAB & PARDON, DEC, POS-FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-07-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PETITION FOR CERTIFICATE OF REHABILITATION/NP/X: OLD NUMBER 11006373, SF COUNTY/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: PETITIONIS NOT RIPE, MOVING PARTY FAILED TO MAKE A SHOWING THAT SATISIFIES THE CRITERIA FOR GRANTING THE PETITION    /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2020-07-13T09:00:00.000Z",
+      "description": "/CAL: PETITION FOR CERTIFICATE OF REHABILITATION/NP/X: OLD NUMBER 11006373, SF COUNTY/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: PETITIONIS NOT RIPE, MOVING PARTY FAILED TO MAKE A SHOWING THAT SATISIFIES THE CRITERIA FOR GRANTING THE PETITION /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-04-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PETITION FOR CERTIFICATE OF REHAB & PARDON/CONT/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2020-04-27T09:00:00.000Z",
+      "description": "/CAL:PETITION FOR CERTIFICATE OF REHAB & PARDON/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02521424",
-    "portal_case_id": "",
+    "portal_case_id": "3617986",
     "display_case_number": "CRI-02521424",
     "defendant": "MOHAMMAD KHAN",
     "filed_date": "2020-04-27",
@@ -60,11 +144,57 @@
       "filed_date": "2020-04-27"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "220(a)(1) PC/F",
+    "charge_rows": [
+      {
+        "raw": "220(a)(1) PC/F",
+        "title": "Penal Code § 220(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 220(a)(1)",
+        "code_system": "PC",
+        "section": "220(a)(1)",
+        "citation": "Penal Code § 220(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=220.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=220.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MOHAMMAD KHAN, and date of filing 2020-04-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MOHAMMAD KHAN, date of filing, 2020-04-27, and charges in the case: 220(a)(1) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "220(a)(1) PC/F",
+      "title": "Penal Code § 220(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 220(a)(1)",
+      "code_system": "PC",
+      "section": "220(a)(1)",
+      "citation": "Penal Code § 220(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=220.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=220.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:46:55.943Z",
+  "portal_case_id": "3617986",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02521424",
+      "defendant": "MOHAMMAD KHAN",
+      "filed_date": "2020-04-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3617986"
+  }
 }

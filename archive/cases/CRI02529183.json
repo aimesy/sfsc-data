@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:36:13.927Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:42:43.883Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02529183",
   "criminal_case_number": "02529183",
@@ -24,19 +24,53 @@
       "name": "ARMANDO HERNANDEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ARMANDO HERNANDEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2022-02-02T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2022-02-02T09:00:00.000Z",
+      "docketEntryComment": "/FTRRECORDED/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2022-02-02 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2022-02-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "23152(a) VC/M 23152(b) VC/M 23222(a) VC/I",
+    "filed_date": "2022-01-27",
+    "defendant": "ARMANDO HERNANDEZ",
+    "searched_key": "HERNANDEZ/AR",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/02529183.json",
     "searched_last_name": "HERNANDEZ",
     "searched_first_prefix": "AR",
-    "charges": "23152(a) VC/M 23152(b) VC/M 23222(a) VC/I",
     "row": {
       "DEFENDANTNAME": "ARMANDO HERNANDEZ",
       "CASENUMBER": "CRI-02529183",
@@ -45,11 +79,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3624971",
+  "docket_entries": [
+    {
+      "filedDate": "2022-02-02T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2022-02-02T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-02-02T09:00:00.000Z",
+      "docketEntryComment": "/FTRRECORDED/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2022-02-02T09:00:00.000Z",
+      "description": "/FTRRECORDED/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02529183",
-    "portal_case_id": "",
+    "portal_case_id": "3624971",
     "display_case_number": "CRI-02529183",
     "defendant": "ARMANDO HERNANDEZ",
     "filed_date": "2022-01-27",
@@ -60,11 +115,110 @@
       "filed_date": "2022-01-27"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "23152(a) VC/M 23152(b) VC/M 23222(a) VC/I",
+    "charge_rows": [
+      {
+        "raw": "23152(a) VC/M",
+        "title": "Vehicle Code § 23152(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(a)",
+        "code_system": "VC",
+        "section": "23152(a)",
+        "citation": "Vehicle Code § 23152(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23152(b) VC/M",
+        "title": "Vehicle Code § 23152(b)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(b)",
+        "code_system": "VC",
+        "section": "23152(b)",
+        "citation": "Vehicle Code § 23152(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23222(a) VC/I",
+        "title": "Vehicle Code § 23222(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23222(a)",
+        "code_system": "VC",
+        "section": "23222(a)",
+        "citation": "Vehicle Code § 23222(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23222.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23222.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ARMANDO HERNANDEZ, and date of filing 2022-01-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ARMANDO HERNANDEZ, date of filing, 2022-01-27, and charges in the case: 23152(a) VC/M 23152(b) VC/M 23222(a) VC/I.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(a) VC/M",
+      "title": "Vehicle Code § 23152(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(a)",
+      "code_system": "VC",
+      "section": "23152(a)",
+      "citation": "Vehicle Code § 23152(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23152(b) VC/M",
+      "title": "Vehicle Code § 23152(b)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(b)",
+      "code_system": "VC",
+      "section": "23152(b)",
+      "citation": "Vehicle Code § 23152(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23222(a) VC/I",
+      "title": "Vehicle Code § 23222(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23222(a)",
+      "code_system": "VC",
+      "section": "23222(a)",
+      "citation": "Vehicle Code § 23222(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23222.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23222.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:42:44.589Z",
+  "portal_case_id": "3624971",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02529183",
+      "defendant": "ARMANDO HERNANDEZ",
+      "filed_date": "2022-01-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3624971"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.089329+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:26:07.601Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:38:25.200Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10003391",
   "criminal_case_number": "10003391",
@@ -24,19 +24,125 @@
       "name": "MARQUIS LANE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARQUIS LANE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-02-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/DAWT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1//FAWC/DOP/NTW/LD:03-03-10 (30TH DAY)/987,2/BAIL:20,000/CONTD: JURY TRIAL ON 02-19-10/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-23T09:15:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL-MARSDEN MOTION/MO PC 1385:INTEREST OF JUSTICE - IN VIEW OF ANEXISTING FELONY CASE #2369747/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL & MARSDEN MOTION/LD:03-03-10/TEXT:TRANS TO DEPT 25/TRANS 25:FORTHWITH FOR MARSDEN MOTION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/LD:03-03-10/CONTD:TRIAL & MARSDEN MOTION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL: JURY TRIAL/DAWT/CONT/DOPC/LD:03-03-10/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-02-23 9:15 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 0,
+      "court_date": "2010-02-23",
+      "hearing_time": "9:15 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-23 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2010-02-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-22 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2010-02-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-19 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 3,
+      "court_date": "2010-02-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-01 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 4,
+      "court_date": "2010-02-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "GREG GOLDMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "242 PC/M",
+    "filed_date": "2010-02-01",
+    "defendant": "MARQUIS LANE",
+    "searched_key": "LANE/MA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/10003391.json",
     "searched_last_name": "LANE",
     "searched_first_prefix": "MA",
-    "charges": "242 PC/M",
     "row": {
       "DEFENDANTNAME": "MARQUIS LANE",
       "CASENUMBER": "CRI-10003391",
@@ -45,11 +151,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3631594",
+  "docket_entries": [
+    {
+      "filedDate": "2010-02-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/DAWT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1//FAWC/DOP/NTW/LD:03-03-10 (30TH DAY)/987,2/BAIL:20,000/CONTD: JURY TRIAL ON 02-19-10/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-02-01T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/DAWT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DEFTARR1//FAWC/DOP/NTW/LD:03-03-10 (30TH DAY)/987,2/BAIL:20,000/CONTD: JURY TRIAL ON 02-19-10/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-23T09:15:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL-MARSDEN MOTION/MO PC 1385:INTEREST OF JUSTICE - IN VIEW OF ANEXISTING FELONY CASE #2369747/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-02-23T09:15:00.000Z",
+      "description": "/CAL: TRIAL-MARSDEN MOTION/MO PC 1385:INTEREST OF JUSTICE - IN VIEW OF ANEXISTING FELONY CASE #2369747/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL & MARSDEN MOTION/LD:03-03-10/TEXT:TRANS TO DEPT 25/TRANS 25:FORTHWITH FOR MARSDEN MOTION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-02-23T09:00:00.000Z",
+      "description": "/CAL:TRIAL & MARSDEN MOTION/LD:03-03-10/TEXT:TRANS TO DEPT 25/TRANS 25:FORTHWITH FOR MARSDEN MOTION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/LD:03-03-10/CONTD:TRIAL & MARSDEN MOTION/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-02-22T09:00:00.000Z",
+      "description": "/CAL:TRIAL/LD:03-03-10/CONTD:TRIAL & MARSDEN MOTION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL: JURY TRIAL/DAWT/CONT/DOPC/LD:03-03-10/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-02-19T09:00:00.000Z",
+      "description": "/CAL: JURY TRIAL/DAWT/CONT/DOPC/LD:03-03-10/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10003391",
-    "portal_case_id": "",
+    "portal_case_id": "3631594",
     "display_case_number": "CRI-10003391",
     "defendant": "MARQUIS LANE",
     "filed_date": "2010-02-01",
@@ -59,12 +216,68 @@
       "defendant": "MARQUIS LANE",
       "filed_date": "2010-02-01"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "242 PC/M",
+    "charge_rows": [
+      {
+        "raw": "242 PC/M",
+        "title": "Penal Code § 242",
+        "title_source": "programmatic_citation",
+        "code": "PC 242",
+        "code_system": "PC",
+        "section": "242",
+        "citation": "Penal Code § 242",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARQUIS LANE, and date of filing 2010-02-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARQUIS LANE, date of filing, 2010-02-01, and charges in the case: 242 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "242 PC/M",
+      "title": "Penal Code § 242",
+      "title_source": "programmatic_citation",
+      "code": "PC 242",
+      "code_system": "PC",
+      "section": "242",
+      "citation": "Penal Code § 242",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:38:25.863Z",
+  "portal_case_id": "3631594",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10003391",
+      "defendant": "MARQUIS LANE",
+      "filed_date": "2010-02-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3631594"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.020024+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:04:17.511Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:45:46.390Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02418121",
   "criminal_case_number": "02418121",
@@ -24,11 +24,113 @@
       "name": "STEVEN JONES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "STEVEN JONES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-08-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRE-TRIAL DIVERSION ELIGIBILITY REPORT/DAWT/CONTD PTD PROG RPT/CPSS/GWD1:1/PTD:1/PROGPTD:11-12-09/CONTD:PRETRIAL DIVERSION PROGRESS REPORT RESUBSTANCE ABUSE TREATMENT ON 11-12-09/DOPU:PTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO BE SET & STATUS OF DISCOVERY/X:PEOPLE MOVE TO AMEND COMPLAINT BY DISMISSING COUNT 1 AND AMENDING COUNT 2 TO 647(F) PC-MISDMEMEANOR; COURT GRANTS MOTION,/DISM:1/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWA/IRRC/DEFTARR1/CONTD PTD ELIG RPT/X:COUNT 2 IS REFERRED TO PRETRIAL DIVERSION FOR ANELIGIBILITY REPORT RE 40 HOURS OF DRUG COUNSELLING,/PTDIV:08-03-09/CONT/DOPU:PTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-05-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/GTWM/X:DEFENSE RESERVES THE RIGHT TO FILE A DEMURRER IN THIS CASE,//CONTD:PRE-TRIAL CONFERENCE ON 06-02-09/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-11-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-TRIAL DIVERSION PROGRESS REPORT/DAWT/TEXT: COURT GRTS MOTION TODISM PURS PC 1001,7 AS TO COUNT 1/1001,7:1/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-06-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-TRIAL CONFERENCE/CONTD:TO SET & DISCOVERY STATUS ON 07-01-09/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-11-12 9:00 AM",
+      "hearingType": "Pretrial Diversion Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2009-11-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Progress Report",
+      "hearing_type": "Pretrial Diversion Progress Report",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-08-03 9:00 AM",
+      "hearingType": "Pretrial Diversion Eligibility Report",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2009-08-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Eligibility Report",
+      "hearing_type": "Pretrial Diversion Eligibility Report",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-07-01 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2009-07-01",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-06-02 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2009-06-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-05-12 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2009-05-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEPHANIE LACAMBRA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +144,69 @@
       "CASENUMBER": "CRI-02418121",
       "FILEDDATE": "2009-05-12 09:00:00",
       "CHARGES": "23152(a) VC/M 647(f) PC/M"
-    }
+    },
+    "filed_date": "2009-05-12",
+    "defendant": "STEVEN JONES",
+    "searched_key": "JONES/ST",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/02418121.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3524693",
+  "docket_entries": [
+    {
+      "filedDate": "2009-08-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRE-TRIAL DIVERSION ELIGIBILITY REPORT/DAWT/CONTD PTD PROG RPT/CPSS/GWD1:1/PTD:1/PROGPTD:11-12-09/CONTD:PRETRIAL DIVERSION PROGRESS REPORT RESUBSTANCE ABUSE TREATMENT ON 11-12-09/DOPU:PTD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-08-03T09:00:00.000Z",
+      "description": "/CAL PRE-TRIAL DIVERSION ELIGIBILITY REPORT/DAWT/CONTD PTD PROG RPT/CPSS/GWD1:1/PTD:1/PROGPTD:11-12-09/CONTD:PRETRIAL DIVERSION PROGRESS REPORT RESUBSTANCE ABUSE TREATMENT ON 11-12-09/DOPU:PTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO BE SET & STATUS OF DISCOVERY/X:PEOPLE MOVE TO AMEND COMPLAINT BY DISMISSING COUNT 1 AND AMENDING COUNT 2 TO 647(F) PC-MISDMEMEANOR; COURT GRANTS MOTION,/DISM:1/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWA/IRRC/DEFTARR1/CONTD PTD ELIG RPT/X:COUNT 2 IS REFERRED TO PRETRIAL DIVERSION FOR ANELIGIBILITY REPORT RE 40 HOURS OF DRUG COUNSELLING,/PTDIV:08-03-09/CONT/DOPU:PTD/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-07-01T09:00:00.000Z",
+      "description": "/CAL:TO BE SET & STATUS OF DISCOVERY/X:PEOPLE MOVE TO AMEND COMPLAINT BY DISMISSING COUNT 1 AND AMENDING COUNT 2 TO 647(F) PC-MISDMEMEANOR; COURT GRANTS MOTION,/DISM:1/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWA/IRRC/DEFTARR1/CONTD PTD ELIG RPT/X:COUNT 2 IS REFERRED TO PRETRIAL DIVERSION FOR ANELIGIBILITY REPORT RE 40 HOURS OF DRUG COUNSELLING,/PTDIV:08-03-09/CONT/DOPU:PTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-05-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/GTWM/X:DEFENSE RESERVES THE RIGHT TO FILE A DEMURRER IN THIS CASE,//CONTD:PRE-TRIAL CONFERENCE ON 06-02-09/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-05-12T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/GTWM/X:DEFENSE RESERVES THE RIGHT TO FILE A DEMURRER IN THIS CASE,//CONTD:PRE-TRIAL CONFERENCE ON 06-02-09/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-11-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-TRIAL DIVERSION PROGRESS REPORT/DAWT/TEXT: COURT GRTS MOTION TODISM PURS PC 1001,7 AS TO COUNT 1/1001,7:1/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-11-12T09:00:00.000Z",
+      "description": "/CAL:PRE-TRIAL DIVERSION PROGRESS REPORT/DAWT/TEXT: COURT GRTS MOTION TODISM PURS PC 1001,7 AS TO COUNT 1/1001,7:1/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-06-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-TRIAL CONFERENCE/CONTD:TO SET & DISCOVERY STATUS ON 07-01-09/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2009-06-02T09:00:00.000Z",
+      "description": "/CAL:PRE-TRIAL CONFERENCE/CONTD:TO SET & DISCOVERY STATUS ON 07-01-09/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02418121",
-    "portal_case_id": "",
+    "portal_case_id": "3524693",
     "display_case_number": "CRI-02418121",
     "defendant": "STEVEN JONES",
     "filed_date": "2009-05-12",
@@ -59,12 +216,94 @@
       "defendant": "STEVEN JONES",
       "filed_date": "2009-05-12"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "23152(a) VC/M 647(f) PC/M",
+    "charge_rows": [
+      {
+        "raw": "23152(a) VC/M",
+        "title": "Vehicle Code § 23152(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(a)",
+        "code_system": "VC",
+        "section": "23152(a)",
+        "citation": "Vehicle Code § 23152(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "647(f) PC/M",
+        "title": "Penal Code § 647(f)",
+        "title_source": "programmatic_citation",
+        "code": "PC 647(f)",
+        "code_system": "PC",
+        "section": "647(f)",
+        "citation": "Penal Code § 647(f)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, STEVEN JONES, and date of filing 2009-05-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, STEVEN JONES, date of filing, 2009-05-12, and charges in the case: 23152(a) VC/M 647(f) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(a) VC/M",
+      "title": "Vehicle Code § 23152(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(a)",
+      "code_system": "VC",
+      "section": "23152(a)",
+      "citation": "Vehicle Code § 23152(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "647(f) PC/M",
+      "title": "Penal Code § 647(f)",
+      "title_source": "programmatic_citation",
+      "code": "PC 647(f)",
+      "code_system": "PC",
+      "section": "647(f)",
+      "citation": "Penal Code § 647(f)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:45:46.998Z",
+  "portal_case_id": "3524693",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02418121",
+      "defendant": "STEVEN JONES",
+      "filed_date": "2009-05-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3524693"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:25.379051+00:00"
 }

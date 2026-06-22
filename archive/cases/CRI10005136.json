@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:08:53.706Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:37:33.198Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10005136",
   "criminal_case_number": "10005136",
@@ -24,11 +24,95 @@
       "name": "DEBORAH M TAYLOR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DEBORAH M TAYLOR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-03-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPO/CTORD:SUBPOENAED CAD RECORDS RELEASED TO DEFENSE COUNSEL PER STIPULATION/NTW/LD:04-01-10/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MO PC 1385:PEOPLE UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/STWPX/CONTD:TO SET OR DISPO/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/OR/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-03-30 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2010-03-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-16 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2010-03-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-03 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2010-03-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-18 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2010-02-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "LINDA COLFAX",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +129,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3633233",
+  "docket_entries": [
+    {
+      "filedDate": "2010-03-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPO/CTORD:SUBPOENAED CAD RECORDS RELEASED TO DEFENSE COUNSEL PER STIPULATION/NTW/LD:04-01-10/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-03-16T09:00:00.000Z",
+      "description": "/CAL:TO SET OR DISPO/CTORD:SUBPOENAED CAD RECORDS RELEASED TO DEFENSE COUNSEL PER STIPULATION/NTW/LD:04-01-10/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MO PC 1385:PEOPLE UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-03-30T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG/MO PC 1385:PEOPLE UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/STWPX/CONTD:TO SET OR DISPO/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-03-03T09:00:00.000Z",
+      "description": "/CAL:PRE-HEARING CONFERENCE/STWPX/CONTD:TO SET OR DISPO/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/OR/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-02-18T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/OR/CONTD:PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10005136",
-    "portal_case_id": "",
+    "portal_case_id": "3633233",
     "display_case_number": "CRI-10005136",
     "defendant": "DEBORAH M TAYLOR",
     "filed_date": "2010-02-18",
@@ -59,12 +184,67 @@
       "defendant": "DEBORAH M TAYLOR",
       "filed_date": "2010-02-18"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DEBORAH M TAYLOR, and date of filing 2010-02-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DEBORAH M TAYLOR, date of filing, 2010-02-18, and charges in the case: 11350(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:37:33.977Z",
+  "portal_case_id": "3633233",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10005136",
+      "defendant": "DEBORAH M TAYLOR",
+      "filed_date": "2010-02-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3633233"
+  }
 }

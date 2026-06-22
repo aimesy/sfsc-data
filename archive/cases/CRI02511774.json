@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:41:03.210Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:56:03.280Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02511774",
   "criminal_case_number": "02511774",
@@ -24,19 +24,109 @@
       "name": "ANTHONY FERGUSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANTHONY FERGUSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-13T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-09-26T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-12-05T09:14:00.000Z",
+      "docketEntryComment": "DA ATC MOT TO RBW FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-12-04T08:55:00.000Z",
+      "docketEntryComment": "DA'S ADD TO CAL MOTION RECALL BW OF 112018 & PC1385 DISM FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-11-13T08:58:00.000Z",
+      "docketEntryComment": "DEFT'S ADD TO CAL MOTION RECALL BENCH WARRANT OF 092618 FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-12-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL: DA'S ADD TO CALENDAR TO RECALL BENCH WARRANT/DAWT/BWR: 09-26-18/BWR1/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/VD: 12-18-18COURT DATE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-11-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL: DEFENSE'S MOTION TO RECALL BENCH WARRANT/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: DEFENDANT IS NOT PRESENT/X: BENCH WARRANT REMAINSOUTSTANDING/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-09-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/JAVS/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-12-13 9:00 AM",
+      "hearingType": "Motion to Recall Bench Warrant and Terminate Probation (PC 1381)",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2018-12-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Recall Bench Warrant and Terminate Probation (PC 1381)",
+      "hearing_type": "Motion to Recall Bench Warrant and Terminate Probation (PC 1381)",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-11-20 9:00 AM",
+      "hearingType": "Motion to Recall Bench Warrant",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2018-11-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Recall Bench Warrant",
+      "hearing_type": "Motion to Recall Bench Warrant",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-09-26 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2018-09-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "8888888",
+    "filed_date": "2018-09-24",
+    "defendant": "ANTHONY FERGUSON",
+    "searched_key": "FERGUSON/AN",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/02511774.json",
     "searched_last_name": "FERGUSON",
     "searched_first_prefix": "AN",
-    "charges": "8888888",
     "row": {
       "DEFENDANTNAME": "ANTHONY FERGUSON",
       "CASENUMBER": "CRI-02511774",
@@ -45,11 +135,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3609342",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-13T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-13T09:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-09-26T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-09-26T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-12-05T09:14:00.000Z",
+      "docketEntryComment": "DA ATC MOT TO RBW FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-12-05T09:14:00.000Z",
+      "description": "DA ATC MOT TO RBW FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-12-04T08:55:00.000Z",
+      "docketEntryComment": "DA'S ADD TO CAL MOTION RECALL BW OF 112018 & PC1385 DISM FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-12-04T08:55:00.000Z",
+      "description": "DA'S ADD TO CAL MOTION RECALL BW OF 112018 & PC1385 DISM FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-11-13T08:58:00.000Z",
+      "docketEntryComment": "DEFT'S ADD TO CAL MOTION RECALL BENCH WARRANT OF 092618 FILED",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-11-13T08:58:00.000Z",
+      "description": "DEFT'S ADD TO CAL MOTION RECALL BENCH WARRANT OF 092618 FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-12-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL: DA'S ADD TO CALENDAR TO RECALL BENCH WARRANT/DAWT/BWR: 09-26-18/BWR1/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/VD: 12-18-18COURT DATE/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2018-12-13T09:00:00.000Z",
+      "description": "/CAL: DA'S ADD TO CALENDAR TO RECALL BENCH WARRANT/DAWT/BWR: 09-26-18/BWR1/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/VD: 12-18-18COURT DATE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-11-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL: DEFENSE'S MOTION TO RECALL BENCH WARRANT/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: DEFENDANT IS NOT PRESENT/X: BENCH WARRANT REMAINSOUTSTANDING/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2018-11-20T09:00:00.000Z",
+      "description": "/CAL: DEFENSE'S MOTION TO RECALL BENCH WARRANT/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: DEFENDANT IS NOT PRESENT/X: BENCH WARRANT REMAINSOUTSTANDING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-09-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/JAVS/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2018-09-26T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/JAVS/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02511774",
-    "portal_case_id": "",
+    "portal_case_id": "3609342",
     "display_case_number": "CRI-02511774",
     "defendant": "ANTHONY FERGUSON",
     "filed_date": "2018-09-24",
@@ -59,12 +230,52 @@
       "defendant": "ANTHONY FERGUSON",
       "filed_date": "2018-09-24"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANTHONY FERGUSON, and date of filing 2018-09-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANTHONY FERGUSON, date of filing, 2018-09-24, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:56:04.008Z",
+  "portal_case_id": "3609342",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02511774",
+      "defendant": "ANTHONY FERGUSON",
+      "filed_date": "2018-09-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3609342"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.966244+00:00"
 }

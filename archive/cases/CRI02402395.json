@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:13:39.668Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:45:20.524Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02402395",
   "criminal_case_number": "02402395",
@@ -24,19 +24,125 @@
       "name": "MATTHEW ROBERT BRADLEY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MATTHEW ROBERT BRADLEY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-04-20T09:00:00.000Z",
+      "docketEntryComment": "2/CAL PTD ELIG RPT/X CERTIFIED LAW STUDENT TIFFANY DANAO REPRESENTING THEDEFENDANT BEING SUPERVISED BY SHARON MEADOWS,/DAWT/CGTW/16    CPTD PROG RPT/NGWD1:1 & 2/PTD:1 & 2/PROGPTD:07-21-09/CONTD:PRETRIAL DIVERSION PROGRESSREPORT/DOPU:PTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-03-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONF/X:CERTIFIED LAW STUDENT WITH SF LAW CLINIC REPRESENTINGTHE DEFENDANT UNDER THE SUPERVISION OF ATTORNEY SHARON MEADOWS/CONTD PTD ELIG RPT/GTWM/X:COUNT(S) 1 & 2 CHARGING  2 COUNTS OF 242 PC-M ARE REFERRED TO PRETRIAL DIVERSION FOR AN ELIGIBILITY REPORT,/PTDIV:04-20-09/CONT/DOPU:PTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-02-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONF/X:CERTIFIED LAW STUDENTTIFFANY DANAO OF THE USF LAW CLINIC REPRESENTING THE DEFENDANT UNDER THE SUPERVISION OF SHARON MEADOWS/CGTW/CONT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-01-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DOP/GTWM/CONTD:PRETRIAL/DOP/X:TIFFANY DANAO OF USF LAW CLINIC APPEARED WITH SHARON MEADOWS TO REPRESENT MATTHEW BRADLEY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD PROGRESS REPORT/NP/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT 1&2/1001,7:1&2/X:CASE DISMISSED PURS TO PC 1001,9/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-07-21 9:00 AM",
+      "hearingType": "Pretrial Diversion Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2009-07-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Progress Report",
+      "hearing_type": "Pretrial Diversion Progress Report",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-04-20 9:00 AM",
+      "hearingType": "Pretrial Diversion Eligibility Report",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 1,
+      "court_date": "2009-04-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Eligibility Report",
+      "hearing_type": "Pretrial Diversion Eligibility Report",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-03-19 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 2,
+      "court_date": "2009-03-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-02-19 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 3,
+      "court_date": "2009-02-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-01-27 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 4,
+      "court_date": "2009-01-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SHARON MEADOWS",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "242 PC/M 242 PC/M",
+    "filed_date": "2009-01-27",
+    "defendant": "MATTHEW ROBERT BRADLEY",
+    "searched_key": "BRADLEY/MA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/02402395.json",
     "searched_last_name": "BRADLEY",
     "searched_first_prefix": "MA",
-    "charges": "242 PC/M 242 PC/M",
     "row": {
       "DEFENDANTNAME": "MATTHEW ROBERT BRADLEY",
       "CASENUMBER": "CRI-02402395",
@@ -45,11 +151,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3510135",
+  "docket_entries": [
+    {
+      "filedDate": "2009-04-20T09:00:00.000Z",
+      "docketEntryComment": "2/CAL PTD ELIG RPT/X CERTIFIED LAW STUDENT TIFFANY DANAO REPRESENTING THEDEFENDANT BEING SUPERVISED BY SHARON MEADOWS,/DAWT/CGTW/16    CPTD PROG RPT/NGWD1:1 & 2/PTD:1 & 2/PROGPTD:07-21-09/CONTD:PRETRIAL DIVERSION PROGRESSREPORT/DOPU:PTD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-04-20T09:00:00.000Z",
+      "description": "2/CAL PTD ELIG RPT/X CERTIFIED LAW STUDENT TIFFANY DANAO REPRESENTING THEDEFENDANT BEING SUPERVISED BY SHARON MEADOWS,/DAWT/CGTW/16 CPTD PROG RPT/NGWD1:1 & 2/PTD:1 & 2/PROGPTD:07-21-09/CONTD:PRETRIAL DIVERSION PROGRESSREPORT/DOPU:PTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-03-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONF/X:CERTIFIED LAW STUDENT WITH SF LAW CLINIC REPRESENTINGTHE DEFENDANT UNDER THE SUPERVISION OF ATTORNEY SHARON MEADOWS/CONTD PTD ELIG RPT/GTWM/X:COUNT(S) 1 & 2 CHARGING  2 COUNTS OF 242 PC-M ARE REFERRED TO PRETRIAL DIVERSION FOR AN ELIGIBILITY REPORT,/PTDIV:04-20-09/CONT/DOPU:PTD/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-03-19T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONF/X:CERTIFIED LAW STUDENT WITH SF LAW CLINIC REPRESENTINGTHE DEFENDANT UNDER THE SUPERVISION OF ATTORNEY SHARON MEADOWS/CONTD PTD ELIG RPT/GTWM/X:COUNT(S) 1 & 2 CHARGING 2 COUNTS OF 242 PC-M ARE REFERRED TO PRETRIAL DIVERSION FOR AN ELIGIBILITY REPORT,/PTDIV:04-20-09/CONT/DOPU:PTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-02-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONF/X:CERTIFIED LAW STUDENTTIFFANY DANAO OF THE USF LAW CLINIC REPRESENTING THE DEFENDANT UNDER THE SUPERVISION OF SHARON MEADOWS/CGTW/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-02-19T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONF/X:CERTIFIED LAW STUDENTTIFFANY DANAO OF THE USF LAW CLINIC REPRESENTING THE DEFENDANT UNDER THE SUPERVISION OF SHARON MEADOWS/CGTW/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-01-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DOP/GTWM/CONTD:PRETRIAL/DOP/X:TIFFANY DANAO OF USF LAW CLINIC APPEARED WITH SHARON MEADOWS TO REPRESENT MATTHEW BRADLEY/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-01-27T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DOP/GTWM/CONTD:PRETRIAL/DOP/X:TIFFANY DANAO OF USF LAW CLINIC APPEARED WITH SHARON MEADOWS TO REPRESENT MATTHEW BRADLEY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD PROGRESS REPORT/NP/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT 1&2/1001,7:1&2/X:CASE DISMISSED PURS TO PC 1001,9/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2009-07-21T09:00:00.000Z",
+      "description": "/CAL:PTD PROGRESS REPORT/NP/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT 1&2/1001,7:1&2/X:CASE DISMISSED PURS TO PC 1001,9/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02402395",
-    "portal_case_id": "",
+    "portal_case_id": "3510135",
     "display_case_number": "CRI-02402395",
     "defendant": "MATTHEW ROBERT BRADLEY",
     "filed_date": "2009-01-27",
@@ -59,12 +216,68 @@
       "defendant": "MATTHEW ROBERT BRADLEY",
       "filed_date": "2009-01-27"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "242 PC/M 242 PC/M",
+    "charge_rows": [
+      {
+        "raw": "242 PC/M",
+        "title": "Penal Code § 242",
+        "title_source": "programmatic_citation",
+        "code": "PC 242",
+        "code_system": "PC",
+        "section": "242",
+        "citation": "Penal Code § 242",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MATTHEW ROBERT BRADLEY, and date of filing 2009-01-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MATTHEW ROBERT BRADLEY, date of filing, 2009-01-27, and charges in the case: 242 PC/M 242 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "242 PC/M",
+      "title": "Penal Code § 242",
+      "title_source": "programmatic_citation",
+      "code": "PC 242",
+      "code_system": "PC",
+      "section": "242",
+      "citation": "Penal Code § 242",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:45:21.187Z",
+  "portal_case_id": "3510135",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02402395",
+      "defendant": "MATTHEW ROBERT BRADLEY",
+      "filed_date": "2009-01-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3510135"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.137372+00:00"
 }

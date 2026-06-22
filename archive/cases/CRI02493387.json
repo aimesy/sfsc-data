@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:56:29.475Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:08:48.773Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02493387",
   "criminal_case_number": "02493387",
@@ -24,10 +24,58 @@
       "name": "JAMES FRANCISCO SALINAS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAMES FRANCISCO SALINAS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2016-05-02T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-05-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:1K BW RETURN FROM 05-02-16/FTA/BWDIRIC1: 05-02-16/BWI/BAIL:5000/BWNUM:2ND/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-05-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:1000/CTORD:NO CITE/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2019-05-06 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2019-05-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-05-02 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2016-05-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +93,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3592228",
+  "docket_entries": [
+    {
+      "filedDate": "2016-05-02T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-05-02T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-05-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:1K BW RETURN FROM 05-02-16/FTA/BWDIRIC1: 05-02-16/BWI/BAIL:5000/BWNUM:2ND/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2019-05-06T09:00:00.000Z",
+      "description": "/CAL:1K BW RETURN FROM 05-02-16/FTA/BWDIRIC1: 05-02-16/BWI/BAIL:5000/BWNUM:2ND/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-05-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:1000/CTORD:NO CITE/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-05-02T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:1000/CTORD:NO CITE/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02493387",
-    "portal_case_id": "",
+    "portal_case_id": "3592228",
     "display_case_number": "CRI-02493387",
     "defendant": "JAMES FRANCISCO SALINAS",
     "filed_date": "2016-04-06",
@@ -60,11 +139,110 @@
       "filed_date": "2016-04-06"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "14601.2(a) VC/M 16028(a) VC/I 21950(a) VC/I",
+    "charge_rows": [
+      {
+        "raw": "14601.2(a) VC/M",
+        "title": "Vehicle Code § 14601.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 14601.2(a)",
+        "code_system": "VC",
+        "section": "14601.2(a)",
+        "citation": "Vehicle Code § 14601.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "16028(a) VC/I",
+        "title": "Vehicle Code § 16028(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 16028(a)",
+        "code_system": "VC",
+        "section": "16028(a)",
+        "citation": "Vehicle Code § 16028(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=16028.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=16028.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      },
+      {
+        "raw": "21950(a) VC/I",
+        "title": "Vehicle Code § 21950(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 21950(a)",
+        "code_system": "VC",
+        "section": "21950(a)",
+        "citation": "Vehicle Code § 21950(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21950.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21950.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAMES FRANCISCO SALINAS, and date of filing 2016-04-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAMES FRANCISCO SALINAS, date of filing, 2016-04-06, and charges in the case: 14601.2(a) VC/M 16028(a) VC/I 21950(a) VC/I.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "14601.2(a) VC/M",
+      "title": "Vehicle Code § 14601.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 14601.2(a)",
+      "code_system": "VC",
+      "section": "14601.2(a)",
+      "citation": "Vehicle Code § 14601.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "16028(a) VC/I",
+      "title": "Vehicle Code § 16028(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 16028(a)",
+      "code_system": "VC",
+      "section": "16028(a)",
+      "citation": "Vehicle Code § 16028(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=16028.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=16028.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    },
+    {
+      "raw": "21950(a) VC/I",
+      "title": "Vehicle Code § 21950(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 21950(a)",
+      "code_system": "VC",
+      "section": "21950(a)",
+      "citation": "Vehicle Code § 21950(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21950.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21950.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:08:49.480Z",
+  "portal_case_id": "3592228",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02493387",
+      "defendant": "JAMES FRANCISCO SALINAS",
+      "filed_date": "2016-04-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3592228"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T16:24:30.556Z"
 }

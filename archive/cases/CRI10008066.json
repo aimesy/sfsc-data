@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:22:56.885Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:37:25.550Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10008066",
   "criminal_case_number": "10008066",
@@ -24,11 +24,120 @@
       "name": "LARRY LEE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LARRY LEE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-20T00:00:00.000Z",
+      "docketEntryComment": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-03T15:05:00.000Z",
+      "docketEntryComment": "JUDGMENT AND SENTENCE TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-19T12:13:00.000Z",
+      "docketEntryComment": "FELONY PLEA TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-18T15:50:00.000Z",
+      "docketEntryComment": "DEFT'S MOT TO RELEASE ON OR/SET REASNBL BAIL FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCE/AJW/CH1:ISS:PROB 3 Y:PJ  1Y/CTS:48/ DNACOMP/PGM10:RESIDENTIAL TREATMENT PROGRAM(MANDELLA)/REST:AS DETERMINED/CTORD:NO ALCOHOL/SA2:555 BRANNAN STREET,SF, CA/WS/VF4:200/PC/PSR/BKFEE/PROBFINE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/X:THE DEFENDANT ADMITS PRIORS,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:ORAL ROMERO MOTION BY PD MARK JACOBS,/MO GRTD//CTORD:667DPC & 667EPC ALLEGATIONS ARE STRICKEN/X:THE DEFENDANT ADMITS PRIOR CONVICTIONS OF 02-26-01 & 06-22-05,/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:1/SAORD/SA2:559 BRANNAN STREET/FNDG/CO:PLEA OPEN/PRES:04-30-10/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:04-01-10/BAIL:115,000/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEF MOTION TO RELEASE ON OR/MO DENIED/LD:04-01-10/BAIL:40,000/CTORD:03-30-10 PRELIMINARY  HEARING DATE STANDS/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-04-30 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2010-04-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-30 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2010-03-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-22 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2010-03-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-16 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2010-03-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARK JACOBS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +154,102 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3635968",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-20T00:00:00.000Z",
+      "docketEntryComment": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-07-20T00:00:00.000Z",
+      "description": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-03T15:05:00.000Z",
+      "docketEntryComment": "JUDGMENT AND SENTENCE TX FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-06-03T15:05:00.000Z",
+      "description": "JUDGMENT AND SENTENCE TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-19T12:13:00.000Z",
+      "docketEntryComment": "FELONY PLEA TX FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-04-19T12:13:00.000Z",
+      "description": "FELONY PLEA TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-18T15:50:00.000Z",
+      "docketEntryComment": "DEFT'S MOT TO RELEASE ON OR/SET REASNBL BAIL FILED",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-03-18T15:50:00.000Z",
+      "description": "DEFT'S MOT TO RELEASE ON OR/SET REASNBL BAIL FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCE/AJW/CH1:ISS:PROB 3 Y:PJ  1Y/CTS:48/ DNACOMP/PGM10:RESIDENTIAL TREATMENT PROGRAM(MANDELLA)/REST:AS DETERMINED/CTORD:NO ALCOHOL/SA2:555 BRANNAN STREET,SF, CA/WS/VF4:200/PC/PSR/BKFEE/PROBFINE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/X:THE DEFENDANT ADMITS PRIORS,/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-04-30T09:00:00.000Z",
+      "description": "/CAL:SENTENCE/AJW/CH1:ISS:PROB 3 Y:PJ 1Y/CTS:48/ DNACOMP/PGM10:RESIDENTIAL TREATMENT PROGRAM(MANDELLA)/REST:AS DETERMINED/CTORD:NO ALCOHOL/SA2:555 BRANNAN STREET,SF, CA/WS/VF4:200/PC/PSR/BKFEE/PROBFINE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/X:THE DEFENDANT ADMITS PRIORS,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:ORAL ROMERO MOTION BY PD MARK JACOBS,/MO GRTD//CTORD:667DPC & 667EPC ALLEGATIONS ARE STRICKEN/X:THE DEFENDANT ADMITS PRIOR CONVICTIONS OF 02-26-01 & 06-22-05,/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:1/SAORD/SA2:559 BRANNAN STREET/FNDG/CO:PLEA OPEN/PRES:04-30-10/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2010-03-30T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/X:ORAL ROMERO MOTION BY PD MARK JACOBS,/MO GRTD//CTORD:667DPC & 667EPC ALLEGATIONS ARE STRICKEN/X:THE DEFENDANT ADMITS PRIOR CONVICTIONS OF 02-26-01 & 06-22-05,/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:1/SAORD/SA2:559 BRANNAN STREET/FNDG/CO:PLEA OPEN/PRES:04-30-10/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:04-01-10/BAIL:115,000/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2010-03-16T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:04-01-10/BAIL:115,000/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEF MOTION TO RELEASE ON OR/MO DENIED/LD:04-01-10/BAIL:40,000/CTORD:03-30-10 PRELIMINARY  HEARING DATE STANDS/",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "2010-03-22T09:00:00.000Z",
+      "description": "/CAL:DEF MOTION TO RELEASE ON OR/MO DENIED/LD:04-01-10/BAIL:40,000/CTORD:03-30-10 PRELIMINARY HEARING DATE STANDS/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10008066",
-    "portal_case_id": "",
+    "portal_case_id": "3635968",
     "display_case_number": "CRI-10008066",
     "defendant": "LARRY LEE",
     "filed_date": "2010-03-16",
@@ -59,12 +259,67 @@
       "defendant": "LARRY LEE",
       "filed_date": "2010-03-16"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "459 PC/F",
+    "charge_rows": [
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LARRY LEE, and date of filing 2010-03-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LARRY LEE, date of filing, 2010-03-16, and charges in the case: 459 PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:37:26.204Z",
+  "portal_case_id": "3635968",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10008066",
+      "defendant": "LARRY LEE",
+      "filed_date": "2010-03-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3635968"
+  }
 }

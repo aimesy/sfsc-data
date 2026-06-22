@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:32:56.458Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:45:30.240Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02425851",
   "criminal_case_number": "02425851",
@@ -24,11 +24,92 @@
       "name": "JERROLD HARRISON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JERROLD HARRISON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-08-12T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-19T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-18T15:00:00.000Z",
+      "docketEntryComment": "MOT TO RBW FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENSE MOTION TO RECALL BENCH WARRANT/BWR: 08-12-09/BWR1/MO PC 1385:PEOPLE UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-08-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/VD:LAST DAY/FTA/OREVKD/BWI/BW/BAIL:50,000/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-06T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD:09-04-09/987,2/OR/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-08-19 9:00 AM",
+      "hearingType": "Motion to Recall Bench Warrant",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2010-08-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Recall Bench Warrant",
+      "hearing_type": "Motion to Recall Bench Warrant",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-08-12 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2009-08-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-07-06 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2009-07-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MEL SANTOS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +126,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3531860",
+  "docket_entries": [
+    {
+      "filedDate": "2009-08-12T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-08-12T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-19T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-08-19T09:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-18T15:00:00.000Z",
+      "docketEntryComment": "MOT TO RBW FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-08-18T15:00:00.000Z",
+      "description": "MOT TO RBW FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENSE MOTION TO RECALL BENCH WARRANT/BWR: 08-12-09/BWR1/MO PC 1385:PEOPLE UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-08-19T09:00:00.000Z",
+      "description": "/CAL:DEFENSE MOTION TO RECALL BENCH WARRANT/BWR: 08-12-09/BWR1/MO PC 1385:PEOPLE UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-08-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/VD:LAST DAY/FTA/OREVKD/BWI/BW/BAIL:50,000/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2009-08-12T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG/VD:LAST DAY/FTA/OREVKD/BWI/BW/BAIL:50,000/BWNUM:1ST/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-06T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD:09-04-09/987,2/OR/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2009-07-06T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD:09-04-09/987,2/OR/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02425851",
-    "portal_case_id": "",
+    "portal_case_id": "3531860",
     "display_case_number": "CRI-02425851",
     "defendant": "JERROLD HARRISON",
     "filed_date": "2009-07-06",
@@ -59,12 +201,67 @@
       "defendant": "JERROLD HARRISON",
       "filed_date": "2009-07-06"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11359 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11359 HS/F",
+        "title": "Health and Safety Code § 11359",
+        "title_source": "programmatic_citation",
+        "code": "HS 11359",
+        "code_system": "HS",
+        "section": "11359",
+        "citation": "Health and Safety Code § 11359",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JERROLD HARRISON, and date of filing 2009-07-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JERROLD HARRISON, date of filing, 2009-07-06, and charges in the case: 11359 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11359 HS/F",
+      "title": "Health and Safety Code § 11359",
+      "title_source": "programmatic_citation",
+      "code": "HS 11359",
+      "code_system": "HS",
+      "section": "11359",
+      "citation": "Health and Safety Code § 11359",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:45:30.857Z",
+  "portal_case_id": "3531860",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02425851",
+      "defendant": "JERROLD HARRISON",
+      "filed_date": "2009-07-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3531860"
+  }
 }

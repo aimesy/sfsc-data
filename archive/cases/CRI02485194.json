@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:19:32.127Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:12:09.807Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02485194",
   "criminal_case_number": "02485194",
@@ -24,19 +24,58 @@
       "name": "ROGUE JYME KELLY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROGUE JYME KELLY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2018-07-20T00:00:00.000Z",
+      "docketEntryComment": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-06-19T15:00:00.000Z",
+      "docketEntryComment": "PROP 47 PET GRANTED, RESTITUTION FINE REDUCED TO $150",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-04-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD PC 1203,9 TRANSFER TO SAN FRANCISCO/MO GRTD/TRANS: SAN FRANCISCOCOUNTY FROM SAN MATEO COUNTY/PROB TERM:08-21-15/X: COURT ORDER IS SIGNEDAND FILED,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-04-28 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2015-04-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "460(b) PC/M 460(b) PC/M",
+    "filed_date": "2015-04-10",
+    "defendant": "ROGUE JYME KELLY",
+    "searched_key": "KELLY/RO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/02485194.json",
     "searched_last_name": "KELLY",
     "searched_first_prefix": "RO",
-    "charges": "460(b) PC/M 460(b) PC/M",
     "row": {
       "DEFENDANTNAME": "ROGUE JYME KELLY",
       "CASENUMBER": "CRI-02485194",
@@ -45,11 +84,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3584562",
+  "docket_entries": [
+    {
+      "filedDate": "2018-07-20T00:00:00.000Z",
+      "docketEntryComment": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-07-20T00:00:00.000Z",
+      "description": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-06-19T15:00:00.000Z",
+      "docketEntryComment": "PROP 47 PET GRANTED, RESTITUTION FINE REDUCED TO $150",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-06-19T15:00:00.000Z",
+      "description": "PROP 47 PET GRANTED, RESTITUTION FINE REDUCED TO $150",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-04-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD PC 1203,9 TRANSFER TO SAN FRANCISCO/MO GRTD/TRANS: SAN FRANCISCOCOUNTY FROM SAN MATEO COUNTY/PROB TERM:08-21-15/X: COURT ORDER IS SIGNEDAND FILED,/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-04-28T09:00:00.000Z",
+      "description": "/CAL:APD PC 1203,9 TRANSFER TO SAN FRANCISCO/MO GRTD/TRANS: SAN FRANCISCOCOUNTY FROM SAN MATEO COUNTY/PROB TERM:08-21-15/X: COURT ORDER IS SIGNEDAND FILED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02485194",
-    "portal_case_id": "",
+    "portal_case_id": "3584562",
     "display_case_number": "CRI-02485194",
     "defendant": "ROGUE JYME KELLY",
     "filed_date": "2015-04-10",
@@ -59,12 +129,68 @@
       "defendant": "ROGUE JYME KELLY",
       "filed_date": "2015-04-10"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1203",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "460(b) PC/M 460(b) PC/M",
+    "charge_rows": [
+      {
+        "raw": "460(b) PC/M",
+        "title": "Penal Code § 460(b)",
+        "title_source": "programmatic_citation",
+        "code": "PC 460(b)",
+        "code_system": "PC",
+        "section": "460(b)",
+        "citation": "Penal Code § 460(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=460.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=460.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROGUE JYME KELLY, and date of filing 2015-04-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROGUE JYME KELLY, date of filing, 2015-04-10, and charges in the case: 460(b) PC/M 460(b) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "460(b) PC/M",
+      "title": "Penal Code § 460(b)",
+      "title_source": "programmatic_citation",
+      "code": "PC 460(b)",
+      "code_system": "PC",
+      "section": "460(b)",
+      "citation": "Penal Code § 460(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=460.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=460.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:12:10.466Z",
+  "portal_case_id": "3584562",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02485194",
+      "defendant": "ROGUE JYME KELLY",
+      "filed_date": "2015-04-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3584562"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.258768+00:00"
 }

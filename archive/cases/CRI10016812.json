@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:43:59.147Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:42:11.132Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10016812",
   "criminal_case_number": "10016812",
@@ -24,19 +24,94 @@
       "name": "SEAN FLORES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "SEAN FLORES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2025-10-21T20:21:09.000Z",
+      "docketEntryComment": "Order Suspending Active Collections, GC 25259.7-25259.95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/TEXT:DEFT ADV & PER WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS: 3/CO:NEGOTIATED DISPOSITION/IBARRA/X:HARVEY WAIVERENTERED AS TO 2447495/DISM3/VD:PRELIM HRG/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/OR/X:AS A CONDITION OF OR, DEFENDANT IS ORDERED TO REPORT TO SPR AND COMPLY WITH SPR REQUIREMENTS,/987,2/CONTD:PREHEARING CONFERENCE ON 06-14-10/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING ON 06-18-10/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-14T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 2D   /CTS:2   /WS/VF1/MPROBFINE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-06-14 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2010-06-14",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-14 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2010-06-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-04 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2010-06-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DOUG WELCH",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11377(a) HS/M",
+    "filed_date": "2010-06-04",
+    "defendant": "SEAN FLORES",
+    "searched_key": "FLORES/SE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/10016812.json",
     "searched_last_name": "FLORES",
     "searched_first_prefix": "SE",
-    "charges": "11377(a) HS/M",
     "row": {
       "DEFENDANTNAME": "SEAN FLORES",
       "CASENUMBER": "CRI-10016812",
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3644237",
+  "docket_entries": [
+    {
+      "filedDate": "2025-10-21T20:21:09.000Z",
+      "docketEntryComment": "Order Suspending Active Collections, GC 25259.7-25259.95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2025-10-21T20:21:09.000Z",
+      "description": "Order Suspending Active Collections, GC 25259.7-25259.95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/TEXT:DEFT ADV & PER WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS: 3/CO:NEGOTIATED DISPOSITION/IBARRA/X:HARVEY WAIVERENTERED AS TO 2447495/DISM3/VD:PRELIM HRG/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-06-14T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/TEXT:DEFT ADV & PER WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS: 3/CO:NEGOTIATED DISPOSITION/IBARRA/X:HARVEY WAIVERENTERED AS TO 2447495/DISM3/VD:PRELIM HRG/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/OR/X:AS A CONDITION OF OR, DEFENDANT IS ORDERED TO REPORT TO SPR AND COMPLY WITH SPR REQUIREMENTS,/987,2/CONTD:PREHEARING CONFERENCE ON 06-14-10/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING ON 06-18-10/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-06-04T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/OR/X:AS A CONDITION OF OR, DEFENDANT IS ORDERED TO REPORT TO SPR AND COMPLY WITH SPR REQUIREMENTS,/987,2/CONTD:PREHEARING CONFERENCE ON 06-14-10/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING ON 06-18-10/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-14T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 2D   /CTS:2   /WS/VF1/MPROBFINE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-06-14T09:15:00.000Z",
+      "description": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 2D /CTS:2 /WS/VF1/MPROBFINE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10016812",
-    "portal_case_id": "",
+    "portal_case_id": "3644237",
     "display_case_number": "CRI-10016812",
     "defendant": "SEAN FLORES",
     "filed_date": "2010-06-04",
@@ -59,12 +175,68 @@
       "defendant": "SEAN FLORES",
       "filed_date": "2010-06-04"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259.7",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11377(a) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11377(a) HS/M",
+        "title": "Health and Safety Code § 11377(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11377(a)",
+        "code_system": "HS",
+        "section": "11377(a)",
+        "citation": "Health and Safety Code § 11377(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, SEAN FLORES, and date of filing 2010-06-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, SEAN FLORES, date of filing, 2010-06-04, and charges in the case: 11377(a) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11377(a) HS/M",
+      "title": "Health and Safety Code § 11377(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11377(a)",
+      "code_system": "HS",
+      "section": "11377(a)",
+      "citation": "Health and Safety Code § 11377(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:42:11.859Z",
+  "portal_case_id": "3644237",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10016812",
+      "defendant": "SEAN FLORES",
+      "filed_date": "2010-06-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3644237"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.484576+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:09:03.262Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:00:26.248Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02506791",
   "criminal_case_number": "02506791",
@@ -24,11 +24,63 @@
       "name": "AILEEN FEN CHEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "AILEEN FEN CHEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-02-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS OF NEIGHBORHOOD COURT/DAWT/X:THE DEFENDANT SUCCESSFULLY COMPLETED NEIGHBORHOOD COURT/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-12-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/PD/TWA/DEF:IS REFERRED TO NEIGHBORHOOD COURT/CONTD:STATUS OF NEIGHBORHOOD COURT/DOPU:POSITIVE REPORT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-02-22 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2018-02-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-12-28 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2017-12-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SALEEM BELBAHRI",
+      "type": "Public Defender"
+    },
+    {
+      "name": "GABRIELLA JARVIS",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +97,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3604858",
+  "docket_entries": [
+    {
+      "filedDate": "2018-02-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS OF NEIGHBORHOOD COURT/DAWT/X:THE DEFENDANT SUCCESSFULLY COMPLETED NEIGHBORHOOD COURT/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-02-22T09:00:00.000Z",
+      "description": "/CAL:STATUS OF NEIGHBORHOOD COURT/DAWT/X:THE DEFENDANT SUCCESSFULLY COMPLETED NEIGHBORHOOD COURT/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-12-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/PD/TWA/DEF:IS REFERRED TO NEIGHBORHOOD COURT/CONTD:STATUS OF NEIGHBORHOOD COURT/DOPU:POSITIVE REPORT/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-12-28T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/PD/TWA/DEF:IS REFERRED TO NEIGHBORHOOD COURT/CONTD:STATUS OF NEIGHBORHOOD COURT/DOPU:POSITIVE REPORT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02506791",
-    "portal_case_id": "",
+    "portal_case_id": "3604858",
     "display_case_number": "CRI-02506791",
     "defendant": "AILEEN FEN CHEN",
     "filed_date": "2017-12-21",
@@ -60,11 +133,57 @@
       "filed_date": "2017-12-21"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "490.2(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "490.2(a) PC/M",
+        "title": "Penal Code § 490.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.2(a)",
+        "code_system": "PC",
+        "section": "490.2(a)",
+        "citation": "Penal Code § 490.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, AILEEN FEN CHEN, and date of filing 2017-12-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, AILEEN FEN CHEN, date of filing, 2017-12-21, and charges in the case: 490.2(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.2(a) PC/M",
+      "title": "Penal Code § 490.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.2(a)",
+      "code_system": "PC",
+      "section": "490.2(a)",
+      "citation": "Penal Code § 490.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:00:26.872Z",
+  "portal_case_id": "3604858",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02506791",
+      "defendant": "AILEEN FEN CHEN",
+      "filed_date": "2017-12-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3604858"
+  }
 }

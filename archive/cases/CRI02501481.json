@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:31:30.579Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:00:33.921Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02501481",
   "criminal_case_number": "02501481",
@@ -24,11 +24,104 @@
       "name": "LAURA CHAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LAURA CHAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-03-22T10:13:00.000Z",
+      "docketEntryComment": "DA PITCH MOT, NOTICE AND ORDER FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-04-19T14:00:00.000Z",
+      "docketEntryComment": "/CAL:EC 1043 PITCHESS MOTION/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:MOTION WITHDRAWN, CASE SETTLED,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-04-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/DAWT/TEXT:COURT ORDERS CAUSE DISM PURS PC 1385//MO PC 1385C/X:CONFIRMED 1043EC (PITCHESS) MOTION ON 04-19-17/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-03-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/DAWT/CONT/X:THE DEFENDANT'S APPEARANCE IS WAIVED UNLESS DISPO/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-03-14T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/X:DAW UNLESS DEFENDANT CALLS THE POLICE STATION AGAIN/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-04-19 2:00 PM",
+      "hearingType": "EC 1043 Pitchess Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2017-04-19",
+      "hearing_time": "2:00 PM",
+      "matters": "EC 1043 Pitchess Hearing",
+      "hearing_type": "EC 1043 Pitchess Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-04-18 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2017-04-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-03-20 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2017-03-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-03-14 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2017-03-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SEIYA JOHNSON",
+      "type": "Public Defender"
+    },
+    {
+      "name": "CHLOE MCLEAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +138,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3599958",
+  "docket_entries": [
+    {
+      "filedDate": "2017-03-22T10:13:00.000Z",
+      "docketEntryComment": "DA PITCH MOT, NOTICE AND ORDER FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-03-22T10:13:00.000Z",
+      "description": "DA PITCH MOT, NOTICE AND ORDER FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-04-19T14:00:00.000Z",
+      "docketEntryComment": "/CAL:EC 1043 PITCHESS MOTION/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:MOTION WITHDRAWN, CASE SETTLED,/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-04-19T14:00:00.000Z",
+      "description": "/CAL:EC 1043 PITCHESS MOTION/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:MOTION WITHDRAWN, CASE SETTLED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-04-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/DAWT/TEXT:COURT ORDERS CAUSE DISM PURS PC 1385//MO PC 1385C/X:CONFIRMED 1043EC (PITCHESS) MOTION ON 04-19-17/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-04-18T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/DAWT/TEXT:COURT ORDERS CAUSE DISM PURS PC 1385//MO PC 1385C/X:CONFIRMED 1043EC (PITCHESS) MOTION ON 04-19-17/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-03-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/DAWT/CONT/X:THE DEFENDANT'S APPEARANCE IS WAIVED UNLESS DISPO/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-03-20T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/DAWT/CONT/X:THE DEFENDANT'S APPEARANCE IS WAIVED UNLESS DISPO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-03-14T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/X:DAW UNLESS DEFENDANT CALLS THE POLICE STATION AGAIN/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2017-03-14T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/X:DAW UNLESS DEFENDANT CALLS THE POLICE STATION AGAIN/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02501481",
-    "portal_case_id": "",
+    "portal_case_id": "3599958",
     "display_case_number": "CRI-02501481",
     "defendant": "LAURA CHAN",
     "filed_date": "2017-03-08",
@@ -59,12 +203,83 @@
       "defendant": "LAURA CHAN",
       "filed_date": "2017-03-08"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "EC 1043",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 1385C",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "653m(b) PC/M",
+    "charge_rows": [
+      {
+        "raw": "653m(b) PC/M",
+        "title": "Penal Code § 653m(b)",
+        "title_source": "programmatic_citation",
+        "code": "PC 653m(b)",
+        "code_system": "PC",
+        "section": "653m(b)",
+        "citation": "Penal Code § 653m(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653m.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653m.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LAURA CHAN, and date of filing 2017-03-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LAURA CHAN, date of filing, 2017-03-08, and charges in the case: 653m(b) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "653m(b) PC/M",
+      "title": "Penal Code § 653m(b)",
+      "title_source": "programmatic_citation",
+      "code": "PC 653m(b)",
+      "code_system": "PC",
+      "section": "653m(b)",
+      "citation": "Penal Code § 653m(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653m.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653m.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:00:34.609Z",
+  "portal_case_id": "3599958",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02501481",
+      "defendant": "LAURA CHAN",
+      "filed_date": "2017-03-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3599958"
+  }
 }

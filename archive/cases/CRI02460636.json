@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:41:39.505Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:31:20.662Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02460636",
   "criminal_case_number": "02460636",
@@ -24,11 +24,46 @@
       "name": "ERIC MARTIN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ERIC MARTIN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-06-09T10:20:00.000Z",
+      "docketEntryComment": "PD'S PC1203,4A MOTION FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-07-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PC 1203,4(A) MOTION/MO GRTD/X:ORDER SIGNED AND FILED,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-07-20 9:00 AM",
+      "hearingType": "Motion to Set Aside Guilty/Nolo Pleas or Verdict and Dismiss Pursuant to PC 1203.4(a)(1)",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2011-07-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Set Aside Guilty/Nolo Pleas or Verdict and Dismiss Pursuant to PC 1203.4(a)(1)",
+      "hearing_type": "Motion to Set Aside Guilty/Nolo Pleas or Verdict and Dismiss Pursuant to PC 1203.4(a)(1)",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "AZITA GHAFOURPOUR",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +77,39 @@
       "CASENUMBER": "CRI-02460636",
       "FILEDDATE": "2011-07-20 09:00:00",
       "CHARGES": "8888888"
-    }
+    },
+    "filed_date": "2011-07-20",
+    "defendant": "ERIC MARTIN",
+    "searched_key": "MARTIN/ER",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/02460636.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3563123",
+  "docket_entries": [
+    {
+      "filedDate": "2011-06-09T10:20:00.000Z",
+      "docketEntryComment": "PD'S PC1203,4A MOTION FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-06-09T10:20:00.000Z",
+      "description": "PD'S PC1203,4A MOTION FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-07-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PC 1203,4(A) MOTION/MO GRTD/X:ORDER SIGNED AND FILED,/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-07-20T09:00:00.000Z",
+      "description": "/CAL:PC 1203,4(A) MOTION/MO GRTD/X:ORDER SIGNED AND FILED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02460636",
-    "portal_case_id": "",
+    "portal_case_id": "3563123",
     "display_case_number": "CRI-02460636",
     "defendant": "ERIC MARTIN",
     "filed_date": "2011-07-20",
@@ -59,12 +119,60 @@
       "defendant": "ERIC MARTIN",
       "filed_date": "2011-07-20"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1203",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC1203",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ERIC MARTIN, and date of filing 2011-07-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ERIC MARTIN, date of filing, 2011-07-20, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:31:21.328Z",
+  "portal_case_id": "3563123",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02460636",
+      "defendant": "ERIC MARTIN",
+      "filed_date": "2011-07-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3563123"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:26.846141+00:00"
 }

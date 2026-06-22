@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:12:18.481Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:43:43.282Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02418563",
   "criminal_case_number": "02418563",
@@ -24,19 +24,93 @@
       "name": "MARIO DIAZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARIO DIAZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-05-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:40000/DOP/NTW/LD:06-12-09/987,2/SAORD/SA1:SALVA FARJAT DIAZ, ZITHERJ(A MINOR), AND MARIO D(A MINOR), 100 YARDS/SA2:1180 HOWARD STREET, #408,SAN FRANCISCO/DEF:MAY HAVE PEACEFUL CONTACT WITH VICTIM FOR SAFE EXCHANGEOF CHILD  AFTER ORDER IS SIGNED BY THE FAMILY COURT/WEAP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-05-29T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385 UNABLE TO SUSTAIN THE BURDEN OF PROOF /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-05-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRE-TRIAL/LD: 06-12-09/X: CASE PRETRIED AND TRIAL DATE CONFIRMED/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-05-29 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "2009-05-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-05-22 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 1,
+      "court_date": "2009-05-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-05-13 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 2,
+      "court_date": "2009-05-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MEGAN BURNS",
+      "type": "Public Defender"
+    },
+    {
+      "name": "VAN LY",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "243(e)(1) PC/M 422 PC/M 236 PC/M 243(e)(1) PC/M 273a(b) PC/M 273a(b) PC/M 240 PC/M 243(e)(1) PC/M 422 PC/M",
+    "filed_date": "2009-05-13",
+    "defendant": "MARIO DIAZ",
+    "searched_key": "DIAZ/MA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/02418563.json",
     "searched_last_name": "DIAZ",
     "searched_first_prefix": "MA",
-    "charges": "243(e)(1) PC/M 422 PC/M 236 PC/M 243(e)(1) PC/M 273a(b) PC/M 273a(b) PC/M 240 PC/M 243(e)(1) PC/M 422 PC/M",
     "row": {
       "DEFENDANTNAME": "MARIO DIAZ",
       "CASENUMBER": "CRI-02418563",
@@ -45,11 +119,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3525107",
+  "docket_entries": [
+    {
+      "filedDate": "2009-05-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:40000/DOP/NTW/LD:06-12-09/987,2/SAORD/SA1:SALVA FARJAT DIAZ, ZITHERJ(A MINOR), AND MARIO D(A MINOR), 100 YARDS/SA2:1180 HOWARD STREET, #408,SAN FRANCISCO/DEF:MAY HAVE PEACEFUL CONTACT WITH VICTIM FOR SAFE EXCHANGEOF CHILD  AFTER ORDER IS SIGNED BY THE FAMILY COURT/WEAP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-05-13T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:40000/DOP/NTW/LD:06-12-09/987,2/SAORD/SA1:SALVA FARJAT DIAZ, ZITHERJ(A MINOR), AND MARIO D(A MINOR), 100 YARDS/SA2:1180 HOWARD STREET, #408,SAN FRANCISCO/DEF:MAY HAVE PEACEFUL CONTACT WITH VICTIM FOR SAFE EXCHANGEOF CHILD AFTER ORDER IS SIGNED BY THE FAMILY COURT/WEAP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-05-29T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385 UNABLE TO SUSTAIN THE BURDEN OF PROOF /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-05-29T09:00:00.000Z",
+      "description": "/MO PC 1385 UNABLE TO SUSTAIN THE BURDEN OF PROOF /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-05-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRE-TRIAL/LD: 06-12-09/X: CASE PRETRIED AND TRIAL DATE CONFIRMED/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-05-22T09:00:00.000Z",
+      "description": "/CAL: PRE-TRIAL/LD: 06-12-09/X: CASE PRETRIED AND TRIAL DATE CONFIRMED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02418563",
-    "portal_case_id": "",
+    "portal_case_id": "3525107",
     "display_case_number": "CRI-02418563",
     "defendant": "MARIO DIAZ",
     "filed_date": "2009-05-13",
@@ -59,12 +164,172 @@
       "defendant": "MARIO DIAZ",
       "filed_date": "2009-05-13"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "243(e)(1) PC/M 422 PC/M 236 PC/M 243(e)(1) PC/M 273a(b) PC/M 273a(b) PC/M 240 PC/M 243(e)(1) PC/M 422 PC/M",
+    "charge_rows": [
+      {
+        "raw": "243(e)(1) PC/M",
+        "title": "Penal Code § 243(e)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 243(e)(1)",
+        "code_system": "PC",
+        "section": "243(e)(1)",
+        "citation": "Penal Code § 243(e)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "422 PC/M",
+        "title": "Penal Code § 422",
+        "title_source": "programmatic_citation",
+        "code": "PC 422",
+        "code_system": "PC",
+        "section": "422",
+        "citation": "Penal Code § 422",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "236 PC/M",
+        "title": "Penal Code § 236",
+        "title_source": "programmatic_citation",
+        "code": "PC 236",
+        "code_system": "PC",
+        "section": "236",
+        "citation": "Penal Code § 236",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "273a(b) PC/M",
+        "title": "Penal Code § 273a(b)",
+        "title_source": "programmatic_citation",
+        "code": "PC 273a(b)",
+        "code_system": "PC",
+        "section": "273a(b)",
+        "citation": "Penal Code § 273a(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273a.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273a.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "240 PC/M",
+        "title": "Penal Code § 240",
+        "title_source": "programmatic_citation",
+        "code": "PC 240",
+        "code_system": "PC",
+        "section": "240",
+        "citation": "Penal Code § 240",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARIO DIAZ, and date of filing 2009-05-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARIO DIAZ, date of filing, 2009-05-13, and charges in the case: 243(e)(1) PC/M 422 PC/M 236 PC/M 243(e)(1) PC/M 273a(b) PC/M 273a(b) PC/M 240 PC/M 243(e)(1) PC/M 422 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "243(e)(1) PC/M",
+      "title": "Penal Code § 243(e)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 243(e)(1)",
+      "code_system": "PC",
+      "section": "243(e)(1)",
+      "citation": "Penal Code § 243(e)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "422 PC/M",
+      "title": "Penal Code § 422",
+      "title_source": "programmatic_citation",
+      "code": "PC 422",
+      "code_system": "PC",
+      "section": "422",
+      "citation": "Penal Code § 422",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "236 PC/M",
+      "title": "Penal Code § 236",
+      "title_source": "programmatic_citation",
+      "code": "PC 236",
+      "code_system": "PC",
+      "section": "236",
+      "citation": "Penal Code § 236",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "273a(b) PC/M",
+      "title": "Penal Code § 273a(b)",
+      "title_source": "programmatic_citation",
+      "code": "PC 273a(b)",
+      "code_system": "PC",
+      "section": "273a(b)",
+      "citation": "Penal Code § 273a(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273a.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273a.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "240 PC/M",
+      "title": "Penal Code § 240",
+      "title_source": "programmatic_citation",
+      "code": "PC 240",
+      "code_system": "PC",
+      "section": "240",
+      "citation": "Penal Code § 240",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:43:43.924Z",
+  "portal_case_id": "3525107",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02418563",
+      "defendant": "MARIO DIAZ",
+      "filed_date": "2009-05-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3525107"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.167002+00:00"
 }

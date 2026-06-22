@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:50:46.316Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:16:52.239Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02479821",
   "criminal_case_number": "02479821",
@@ -24,19 +24,71 @@
       "name": "THIEN NHAN DANG",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "THIEN NHAN DANG",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-06-18T13:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC PRG RPT, PTC, PRF OF ID PROC/MO PC 1385:DIMISSED BY ORDER OF THECOURT ON ITS OWN MOTION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-06-11T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:CJC PRG RPT AND PTC/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-06-18 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2014-06-18",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-06-11 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2014-06-11",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ROBERTO EVANGELISTA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "484(a)/490.5 PC/M 496(a) PC/M",
+    "filed_date": "2014-06-11",
+    "defendant": "THIEN NHAN DANG",
+    "searched_key": "DANG/TH",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/02479821.json",
     "searched_last_name": "DANG",
     "searched_first_prefix": "TH",
-    "charges": "484(a)/490.5 PC/M 496(a) PC/M",
     "row": {
       "DEFENDANTNAME": "THIEN NHAN DANG",
       "CASENUMBER": "CRI-02479821",
@@ -45,11 +97,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3579944",
+  "docket_entries": [
+    {
+      "filedDate": "2014-06-18T13:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC PRG RPT, PTC, PRF OF ID PROC/MO PC 1385:DIMISSED BY ORDER OF THECOURT ON ITS OWN MOTION/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-06-18T13:30:00.000Z",
+      "description": "/CAL:CJC PRG RPT, PTC, PRF OF ID PROC/MO PC 1385:DIMISSED BY ORDER OF THECOURT ON ITS OWN MOTION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-06-11T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:CJC PRG RPT AND PTC/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-06-11T14:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:CJC PRG RPT AND PTC/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02479821",
-    "portal_case_id": "",
+    "portal_case_id": "3579944",
     "display_case_number": "CRI-02479821",
     "defendant": "THIEN NHAN DANG",
     "filed_date": "2014-06-11",
@@ -59,12 +132,94 @@
       "defendant": "THIEN NHAN DANG",
       "filed_date": "2014-06-11"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "484(a)/490.5 PC/M 496(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "490.5 PC/M",
+        "title": "Penal Code § 490.5",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.5",
+        "code_system": "PC",
+        "section": "490.5",
+        "citation": "Penal Code § 490.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "496(a) PC/M",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, THIEN NHAN DANG, and date of filing 2014-06-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, THIEN NHAN DANG, date of filing, 2014-06-11, and charges in the case: 484(a)/490.5 PC/M 496(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.5 PC/M",
+      "title": "Penal Code § 490.5",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.5",
+      "code_system": "PC",
+      "section": "490.5",
+      "citation": "Penal Code § 490.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "496(a) PC/M",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:16:52.854Z",
+  "portal_case_id": "3579944",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02479821",
+      "defendant": "THIEN NHAN DANG",
+      "filed_date": "2014-06-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3579944"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.645821+00:00"
 }

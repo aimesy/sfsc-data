@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:23:56.880Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:07:53.635Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02499322",
   "criminal_case_number": "02499322",
@@ -24,10 +24,40 @@
       "name": "LIAM MURPHY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LIAM MURPHY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2016-12-01T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-12-01T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/  /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-12-01 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2016-12-01",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +75,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3597927",
+  "docket_entries": [
+    {
+      "filedDate": "2016-12-01T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-12-01T14:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-12-01T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/  /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-12-01T14:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02499322",
-    "portal_case_id": "",
+    "portal_case_id": "3597927",
     "display_case_number": "CRI-02499322",
     "defendant": "LIAM MURPHY",
     "filed_date": "2016-12-01",
@@ -60,11 +111,109 @@
       "filed_date": "2016-12-01"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "602.1(a) PC/M 243(b) PC/M 647(f) PC/M",
+    "charge_rows": [
+      {
+        "raw": "602.1(a) PC/M",
+        "title": "Penal Code § 602.1(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 602.1(a)",
+        "code_system": "PC",
+        "section": "602.1(a)",
+        "citation": "Penal Code § 602.1(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.1.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.1.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "243(b) PC/M",
+        "title": "Penal Code § 243(b)",
+        "title_source": "programmatic_citation",
+        "code": "PC 243(b)",
+        "code_system": "PC",
+        "section": "243(b)",
+        "citation": "Penal Code § 243(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "647(f) PC/M",
+        "title": "Penal Code § 647(f)",
+        "title_source": "programmatic_citation",
+        "code": "PC 647(f)",
+        "code_system": "PC",
+        "section": "647(f)",
+        "citation": "Penal Code § 647(f)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LIAM MURPHY, and date of filing 2016-12-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LIAM MURPHY, date of filing, 2016-12-01, and charges in the case: 602.1(a) PC/M 243(b) PC/M 647(f) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "602.1(a) PC/M",
+      "title": "Penal Code § 602.1(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 602.1(a)",
+      "code_system": "PC",
+      "section": "602.1(a)",
+      "citation": "Penal Code § 602.1(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.1.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.1.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "243(b) PC/M",
+      "title": "Penal Code § 243(b)",
+      "title_source": "programmatic_citation",
+      "code": "PC 243(b)",
+      "code_system": "PC",
+      "section": "243(b)",
+      "citation": "Penal Code § 243(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "647(f) PC/M",
+      "title": "Penal Code § 647(f)",
+      "title_source": "programmatic_citation",
+      "code": "PC 647(f)",
+      "code_system": "PC",
+      "section": "647(f)",
+      "citation": "Penal Code § 647(f)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:07:54.290Z",
+  "portal_case_id": "3597927",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02499322",
+      "defendant": "LIAM MURPHY",
+      "filed_date": "2016-12-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3597927"
+  }
 }

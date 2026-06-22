@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:33:46.462Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:47:44.453Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02523901",
   "criminal_case_number": "02523901",
@@ -24,10 +24,81 @@
       "name": "RODERICK HENRY PERKINS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RODERICK HENRY PERKINS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2020-10-28T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2022-02-22T15:00:00.000Z",
+      "docketEntryComment": "PROBATION UPDATED PER AB1950, PROBATION EXPIRED FEBRUARY 13, 2022",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-10-26T08:41:00.000Z",
+      "docketEntryComment": "DEFT MOT TO RECALL BW FILED TODAY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-10-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL: DEFENSE'S MOTION TO RECALL BENCH WARRANT (FTA 10-22-20 APD MOT TO TRANSFER IN FROM SONOMA COUNTY)/MO GRTD/BWR: 10-22-20/BWR1/REIN ORIG TC/PROB EXP: 02-06-24/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-10-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL: APD 1203,9PC  MOTION TO TRANSFER IN PROBATION FROM SONOMA  COUNTY TOSAN FRANCISCO COUNTY/MO GRTD/CTORD: PROBATION IS TRANSFERRED FROM SONOMACOUNTY TO SAN FRANCISCO COUNTY/X:COURT ORDER IS SIGNED AND FILED,/FTA/PROB ADM REV/BWI/NB/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2022-02-22 3:00 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 2",
+      "__index": 0,
+      "court_date": "2022-02-22",
+      "hearing_time": "3:00 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 2",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2020-10-28 9:00 AM",
+      "hearingType": "Motion to Recall Bench Warrant",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2020-10-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Recall Bench Warrant",
+      "hearing_type": "Motion to Recall Bench Warrant",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2020-10-22 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2020-10-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +116,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3620252",
+  "docket_entries": [
+    {
+      "filedDate": "2020-10-28T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2020-10-28T09:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-02-22T15:00:00.000Z",
+      "docketEntryComment": "PROBATION UPDATED PER AB1950, PROBATION EXPIRED FEBRUARY 13, 2022",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2022-02-22T15:00:00.000Z",
+      "description": "PROBATION UPDATED PER AB1950, PROBATION EXPIRED FEBRUARY 13, 2022",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-10-26T08:41:00.000Z",
+      "docketEntryComment": "DEFT MOT TO RECALL BW FILED TODAY",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2020-10-26T08:41:00.000Z",
+      "description": "DEFT MOT TO RECALL BW FILED TODAY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-10-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL: DEFENSE'S MOTION TO RECALL BENCH WARRANT (FTA 10-22-20 APD MOT TO TRANSFER IN FROM SONOMA COUNTY)/MO GRTD/BWR: 10-22-20/BWR1/REIN ORIG TC/PROB EXP: 02-06-24/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2020-10-28T09:00:00.000Z",
+      "description": "/CAL: DEFENSE'S MOTION TO RECALL BENCH WARRANT (FTA 10-22-20 APD MOT TO TRANSFER IN FROM SONOMA COUNTY)/MO GRTD/BWR: 10-22-20/BWR1/REIN ORIG TC/PROB EXP: 02-06-24/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-10-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL: APD 1203,9PC  MOTION TO TRANSFER IN PROBATION FROM SONOMA  COUNTY TOSAN FRANCISCO COUNTY/MO GRTD/CTORD: PROBATION IS TRANSFERRED FROM SONOMACOUNTY TO SAN FRANCISCO COUNTY/X:COURT ORDER IS SIGNED AND FILED,/FTA/PROB ADM REV/BWI/NB/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2020-10-22T09:00:00.000Z",
+      "description": "/CAL: APD 1203,9PC MOTION TO TRANSFER IN PROBATION FROM SONOMA COUNTY TOSAN FRANCISCO COUNTY/MO GRTD/CTORD: PROBATION IS TRANSFERRED FROM SONOMACOUNTY TO SAN FRANCISCO COUNTY/X:COURT ORDER IS SIGNED AND FILED,/FTA/PROB ADM REV/BWI/NB/BWNUM:1ST/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02523901",
-    "portal_case_id": "",
+    "portal_case_id": "3620252",
     "display_case_number": "CRI-02523901",
     "defendant": "RODERICK HENRY PERKINS",
     "filed_date": "2020-10-22",
@@ -60,11 +182,93 @@
       "filed_date": "2020-10-22"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "8888888 417.4 PC/M 236 PC/F",
+    "charge_rows": [
+      {
+        "raw": "417.4 PC/M",
+        "title": "Penal Code § 417.4",
+        "title_source": "programmatic_citation",
+        "code": "PC 417.4",
+        "code_system": "PC",
+        "section": "417.4",
+        "citation": "Penal Code § 417.4",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.4.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.4.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "236 PC/F",
+        "title": "Penal Code § 236",
+        "title_source": "programmatic_citation",
+        "code": "PC 236",
+        "code_system": "PC",
+        "section": "236",
+        "citation": "Penal Code § 236",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RODERICK HENRY PERKINS, and date of filing 2020-10-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RODERICK HENRY PERKINS, date of filing, 2020-10-22, and charges in the case: 8888888 417.4 PC/M 236 PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "417.4 PC/M",
+      "title": "Penal Code § 417.4",
+      "title_source": "programmatic_citation",
+      "code": "PC 417.4",
+      "code_system": "PC",
+      "section": "417.4",
+      "citation": "Penal Code § 417.4",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.4.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.4.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "236 PC/F",
+      "title": "Penal Code § 236",
+      "title_source": "programmatic_citation",
+      "code": "PC 236",
+      "code_system": "PC",
+      "section": "236",
+      "citation": "Penal Code § 236",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:47:45.182Z",
+  "portal_case_id": "3620252",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02523901",
+      "defendant": "RODERICK HENRY PERKINS",
+      "filed_date": "2020-10-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3620252"
+  }
 }

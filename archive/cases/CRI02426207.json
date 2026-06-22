@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:03:31.175Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:52:24.406Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02426207",
   "criminal_case_number": "02426207",
@@ -24,10 +24,35 @@
       "name": "JOHN O MASON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN O MASON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2009-07-07T09:00:00.000Z",
+      "docketEntryComment": "/X:SFPD INSPECTOR KEVIN CLEARY IS PRESENT AND MOVES TO DISMISS THE CASE ASTHE STATE OF GEORGIA IS NOT EXTRADITING THE DEFENDANT-GRANTED,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-07-07 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "2009-07-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +70,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3532184",
+  "docket_entries": [
+    {
+      "filedDate": "2009-07-07T09:00:00.000Z",
+      "docketEntryComment": "/X:SFPD INSPECTOR KEVIN CLEARY IS PRESENT AND MOVES TO DISMISS THE CASE ASTHE STATE OF GEORGIA IS NOT EXTRADITING THE DEFENDANT-GRANTED,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-07-07T09:00:00.000Z",
+      "description": "/X:SFPD INSPECTOR KEVIN CLEARY IS PRESENT AND MOVES TO DISMISS THE CASE ASTHE STATE OF GEORGIA IS NOT EXTRADITING THE DEFENDANT-GRANTED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02426207",
-    "portal_case_id": "",
+    "portal_case_id": "3532184",
     "display_case_number": "CRI-02426207",
     "defendant": "JOHN O MASON",
     "filed_date": "2009-07-07",
@@ -60,11 +96,41 @@
       "filed_date": "2009-07-07"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN O MASON, and date of filing 2009-07-07. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN O MASON, date of filing, 2009-07-07, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:52:25.039Z",
+  "portal_case_id": "3532184",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02426207",
+      "defendant": "JOHN O MASON",
+      "filed_date": "2009-07-07"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3532184"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:47:56.873Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:50:19.668Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02513899",
   "criminal_case_number": "02513899",
@@ -24,11 +24,92 @@
       "name": "ANTHONY MITCH STEVENS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANTHONY MITCH STEVENS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2019-01-30T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-09-06T15:36:00.000Z",
+      "docketEntryComment": "CTY ATNY NON OPP TO MOT TO EXTND TIME ON BAIL FORF PURS PC1305,4 FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-08-26T13:50:00.000Z",
+      "docketEntryComment": "RPII MOT EXT TIME TO APPEARPC1305,4; MEMO P&A; PROPOSED ORDER FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-09-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:MOTION TO EXT TIME TO APPEAR/NP/X:ANTOINETTE MCGILL FROM BAIL BOND,APPEARED,/MO GRTD/X:BAIL FORFEITURE IS EXTENDED TO 03-10-20,/CTORD:BENCHWARRANT REMAINS OUTSTANDING,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-01-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL I&A, P&C/FTA/BF/BWI/SURETY/BFORF I&A P&C/BFORF2 75,000/BAIL 100,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-01-17T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/SAORD/SA1:LYDIA A,/SA2:172 PARKER AVE,, SF/SAORD4:50 YARDS/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2019-09-12 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2019-09-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-01-30 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2019-01-30",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-01-17 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2019-01-17",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "COLIN JONES",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +126,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3611284",
+  "docket_entries": [
+    {
+      "filedDate": "2019-01-30T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-01-30T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-09-06T15:36:00.000Z",
+      "docketEntryComment": "CTY ATNY NON OPP TO MOT TO EXTND TIME ON BAIL FORF PURS PC1305,4 FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2019-09-06T15:36:00.000Z",
+      "description": "CTY ATNY NON OPP TO MOT TO EXTND TIME ON BAIL FORF PURS PC1305,4 FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-08-26T13:50:00.000Z",
+      "docketEntryComment": "RPII MOT EXT TIME TO APPEARPC1305,4; MEMO P&A; PROPOSED ORDER FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2019-08-26T13:50:00.000Z",
+      "description": "RPII MOT EXT TIME TO APPEARPC1305,4; MEMO P&A; PROPOSED ORDER FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-09-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:MOTION TO EXT TIME TO APPEAR/NP/X:ANTOINETTE MCGILL FROM BAIL BOND,APPEARED,/MO GRTD/X:BAIL FORFEITURE IS EXTENDED TO 03-10-20,/CTORD:BENCHWARRANT REMAINS OUTSTANDING,/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2019-09-12T09:00:00.000Z",
+      "description": "/CAL:MOTION TO EXT TIME TO APPEAR/NP/X:ANTOINETTE MCGILL FROM BAIL BOND,APPEARED,/MO GRTD/X:BAIL FORFEITURE IS EXTENDED TO 03-10-20,/CTORD:BENCHWARRANT REMAINS OUTSTANDING,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-01-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL I&A, P&C/FTA/BF/BWI/SURETY/BFORF I&A P&C/BFORF2 75,000/BAIL 100,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2019-01-30T09:00:00.000Z",
+      "description": "/CAL I&A, P&C/FTA/BF/BWI/SURETY/BFORF I&A P&C/BFORF2 75,000/BAIL 100,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-01-17T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/SAORD/SA1:LYDIA A,/SA2:172 PARKER AVE,, SF/SAORD4:50 YARDS/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2019-01-17T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/SAORD/SA1:LYDIA A,/SA2:172 PARKER AVE,, SF/SAORD4:50 YARDS/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02513899",
-    "portal_case_id": "",
+    "portal_case_id": "3611284",
     "display_case_number": "CRI-02513899",
     "defendant": "ANTHONY MITCH STEVENS",
     "filed_date": "2019-01-15",
@@ -59,12 +201,146 @@
       "defendant": "ANTHONY MITCH STEVENS",
       "filed_date": "2019-01-15"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC1305",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "459 PC/F 368(d) PC/F 496(a) PC/F 459.5(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "368(d) PC/F",
+        "title": "Penal Code § 368(d)",
+        "title_source": "programmatic_citation",
+        "code": "PC 368(d)",
+        "code_system": "PC",
+        "section": "368(d)",
+        "citation": "Penal Code § 368(d)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=368.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=368.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "496(a) PC/F",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "459.5(a) PC/M",
+        "title": "Penal Code § 459.5(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 459.5(a)",
+        "code_system": "PC",
+        "section": "459.5(a)",
+        "citation": "Penal Code § 459.5(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANTHONY MITCH STEVENS, and date of filing 2019-01-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANTHONY MITCH STEVENS, date of filing, 2019-01-15, and charges in the case: 459 PC/F 368(d) PC/F 496(a) PC/F 459.5(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "368(d) PC/F",
+      "title": "Penal Code § 368(d)",
+      "title_source": "programmatic_citation",
+      "code": "PC 368(d)",
+      "code_system": "PC",
+      "section": "368(d)",
+      "citation": "Penal Code § 368(d)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=368.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=368.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "496(a) PC/F",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "459.5(a) PC/M",
+      "title": "Penal Code § 459.5(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 459.5(a)",
+      "code_system": "PC",
+      "section": "459.5(a)",
+      "citation": "Penal Code § 459.5(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:50:20.385Z",
+  "portal_case_id": "3611284",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02513899",
+      "defendant": "ANTHONY MITCH STEVENS",
+      "filed_date": "2019-01-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3611284"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T15:40:06.849Z"
 }

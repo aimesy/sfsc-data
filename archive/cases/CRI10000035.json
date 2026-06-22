@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:24:01.502Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:35:33.440Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10000035",
   "criminal_case_number": "10000035",
@@ -24,11 +24,87 @@
       "name": "SHUNSIE ELLIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "SHUNSIE ELLIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-03-02T15:03:00.000Z",
+      "docketEntryComment": "DA'S OPP TO PC1538,5 MOTION FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-24T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S MOT TO SUPP EVID PER PC1538,5 FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-05T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/OR/X:DEFT TO REPORT TO SPR 2X A WEEK AND NEEDS TO ATTEND SUBSTANCE ABUSE TREATMENT SERVICES AS CONDITION OF RELEASE/ /SAORD/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:INTEREST OF JUSTICE, THE PEOPLE ARE UNABLE TO SUSTAIN   THEIR BURDEN OF PROOF /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING & MOTION TO SUPPRESS/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING & MOTION TO SUPPRESS/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-05-10 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2010-05-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-03 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2010-03-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-05 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2010-01-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEPHEN ROSEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +118,69 @@
       "CASENUMBER": "CRI-10000035",
       "FILEDDATE": "2010-01-05 09:00:00",
       "CHARGES": "11350(a) HS/F 11364(a) HS/M"
-    }
+    },
+    "filed_date": "2010-01-05",
+    "defendant": "SHUNSIE ELLIS",
+    "searched_key": "ELLIS/SH",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/10000035.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3628473",
+  "docket_entries": [
+    {
+      "filedDate": "2010-03-02T15:03:00.000Z",
+      "docketEntryComment": "DA'S OPP TO PC1538,5 MOTION FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-03-02T15:03:00.000Z",
+      "description": "DA'S OPP TO PC1538,5 MOTION FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-24T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S MOT TO SUPP EVID PER PC1538,5 FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-02-24T15:00:00.000Z",
+      "description": "DEFT'S MOT TO SUPP EVID PER PC1538,5 FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-05T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/OR/X:DEFT TO REPORT TO SPR 2X A WEEK AND NEEDS TO ATTEND SUBSTANCE ABUSE TREATMENT SERVICES AS CONDITION OF RELEASE/ /SAORD/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-01-05T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/OR/X:DEFT TO REPORT TO SPR 2X A WEEK AND NEEDS TO ATTEND SUBSTANCE ABUSE TREATMENT SERVICES AS CONDITION OF RELEASE/ /SAORD/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:INTEREST OF JUSTICE, THE PEOPLE ARE UNABLE TO SUSTAIN   THEIR BURDEN OF PROOF /",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-05-10T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO PC 1385:INTEREST OF JUSTICE, THE PEOPLE ARE UNABLE TO SUSTAIN THEIR BURDEN OF PROOF /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING & MOTION TO SUPPRESS/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING & MOTION TO SUPPRESS/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-03-03T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING & MOTION TO SUPPRESS/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING & MOTION TO SUPPRESS/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10000035",
-    "portal_case_id": "",
+    "portal_case_id": "3628473",
     "display_case_number": "CRI-10000035",
     "defendant": "SHUNSIE ELLIS",
     "filed_date": "2010-01-05",
@@ -59,12 +190,102 @@
       "defendant": "SHUNSIE ELLIS",
       "filed_date": "2010-01-05"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC1538",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F 11364(a) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11364(a) HS/M",
+        "title": "Health and Safety Code § 11364(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11364(a)",
+        "code_system": "HS",
+        "section": "11364(a)",
+        "citation": "Health and Safety Code § 11364(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, SHUNSIE ELLIS, and date of filing 2010-01-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, SHUNSIE ELLIS, date of filing, 2010-01-05, and charges in the case: 11350(a) HS/F 11364(a) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11364(a) HS/M",
+      "title": "Health and Safety Code § 11364(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11364(a)",
+      "code_system": "HS",
+      "section": "11364(a)",
+      "citation": "Health and Safety Code § 11364(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:35:34.113Z",
+  "portal_case_id": "3628473",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10000035",
+      "defendant": "SHUNSIE ELLIS",
+      "filed_date": "2010-01-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3628473"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:27.883047+00:00"
 }

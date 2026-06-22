@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:19:39.792Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:55:57.443Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02512967",
   "criminal_case_number": "02512967",
@@ -24,10 +24,86 @@
       "name": "TYRONE MOLETTE JONES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TYRONE MOLETTE JONES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-03T08:30:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-11-26T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-12-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:AN AND TO JOIN 18005261/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:CASE DISCHARGED ON 12-03-18 AND COMPLAINT WITHDRAWN IN M08/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-12-03T08:30:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGESDEFENDANT/COWD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-11-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/NP/CONT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-11-26T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-12-05 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2018-12-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-11-30 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2018-11-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-11-26 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2018-11-26",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +121,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3610440",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-03T08:30:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-03T08:30:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-11-26T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-11-26T14:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-12-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:AN AND TO JOIN 18005261/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:CASE DISCHARGED ON 12-03-18 AND COMPLAINT WITHDRAWN IN M08/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-12-05T09:00:00.000Z",
+      "description": "/CAL:AN AND TO JOIN 18005261/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:CASE DISCHARGED ON 12-03-18 AND COMPLAINT WITHDRAWN IN M08/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-12-03T08:30:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGESDEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-12-03T08:30:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGESDEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-11-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/NP/CONT/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-11-30T09:00:00.000Z",
+      "description": "/CAL:BW RETURN/NP/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-11-26T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2018-11-26T14:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02512967",
-    "portal_case_id": "",
+    "portal_case_id": "3610440",
     "display_case_number": "CRI-02512967",
     "defendant": "TYRONE MOLETTE JONES",
     "filed_date": "2018-11-26",
@@ -60,11 +197,136 @@
       "filed_date": "2018-11-26"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "466 PC/M 11364(a) HS/M 459 PC/M 10852 VC/M",
+    "charge_rows": [
+      {
+        "raw": "466 PC/M",
+        "title": "Penal Code § 466",
+        "title_source": "programmatic_citation",
+        "code": "PC 466",
+        "code_system": "PC",
+        "section": "466",
+        "citation": "Penal Code § 466",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "11364(a) HS/M",
+        "title": "Health and Safety Code § 11364(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11364(a)",
+        "code_system": "HS",
+        "section": "11364(a)",
+        "citation": "Health and Safety Code § 11364(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "459 PC/M",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "10852 VC/M",
+        "title": "Vehicle Code § 10852",
+        "title_source": "programmatic_citation",
+        "code": "VC 10852",
+        "code_system": "VC",
+        "section": "10852",
+        "citation": "Vehicle Code § 10852",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10852.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10852.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TYRONE MOLETTE JONES, and date of filing 2018-11-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TYRONE MOLETTE JONES, date of filing, 2018-11-26, and charges in the case: 466 PC/M 11364(a) HS/M 459 PC/M 10852 VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "466 PC/M",
+      "title": "Penal Code § 466",
+      "title_source": "programmatic_citation",
+      "code": "PC 466",
+      "code_system": "PC",
+      "section": "466",
+      "citation": "Penal Code § 466",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "11364(a) HS/M",
+      "title": "Health and Safety Code § 11364(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11364(a)",
+      "code_system": "HS",
+      "section": "11364(a)",
+      "citation": "Health and Safety Code § 11364(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "459 PC/M",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "10852 VC/M",
+      "title": "Vehicle Code § 10852",
+      "title_source": "programmatic_citation",
+      "code": "VC 10852",
+      "code_system": "VC",
+      "section": "10852",
+      "citation": "Vehicle Code § 10852",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10852.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10852.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:55:58.077Z",
+  "portal_case_id": "3610440",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02512967",
+      "defendant": "TYRONE MOLETTE JONES",
+      "filed_date": "2018-11-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3610440"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T16:48:08.438Z"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:36:49.473Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:36:34.518Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02448617",
   "criminal_case_number": "02448617",
@@ -24,19 +24,99 @@
       "name": "ELDER ISAEL HERNANDEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ELDER ISAEL HERNANDEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-03-02T09:15:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-29T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-07T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/X:THIS FILINGWAS A DUPLICATIVE OF THE FILING IN COURT NUMBER 2447874/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-02T09:15:00.000Z",
+      "docketEntryComment": "/BWR:01-29-10/BWR1/***CONTD I&A P&C DOP/CONTD:ARRAIGNMENT AND PLEA/TWA/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/FTA/BWI/BAIL:10,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-04-07 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2010-04-07",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-02 9:15 AM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 1,
+      "court_date": "2010-03-02",
+      "hearing_time": "9:15 AM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-29 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 2,
+      "court_date": "2010-01-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JAMES CONGER",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "23152(a) VC/M 23152(b) VC/M",
+    "filed_date": "2010-01-29",
+    "defendant": "ELDER ISAEL HERNANDEZ",
+    "searched_key": "HERNANDEZ/EL",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/02448617.json",
     "searched_last_name": "HERNANDEZ",
     "searched_first_prefix": "EL",
-    "charges": "23152(a) VC/M 23152(b) VC/M",
     "row": {
       "DEFENDANTNAME": "ELDER ISAEL HERNANDEZ",
       "CASENUMBER": "CRI-02448617",
@@ -45,11 +125,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3552873",
+  "docket_entries": [
+    {
+      "filedDate": "2010-03-02T09:15:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-03-02T09:15:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-29T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-01-29T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-07T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/X:THIS FILINGWAS A DUPLICATIVE OF THE FILING IN COURT NUMBER 2447874/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-04-07T09:00:00.000Z",
+      "description": "/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/X:THIS FILINGWAS A DUPLICATIVE OF THE FILING IN COURT NUMBER 2447874/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-02T09:15:00.000Z",
+      "docketEntryComment": "/BWR:01-29-10/BWR1/***CONTD I&A P&C DOP/CONTD:ARRAIGNMENT AND PLEA/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-03-02T09:15:00.000Z",
+      "description": "/BWR:01-29-10/BWR1/***CONTD I&A P&C DOP/CONTD:ARRAIGNMENT AND PLEA/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/FTA/BWI/BAIL:10,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-01-29T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/FTA/BWI/BAIL:10,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02448617",
-    "portal_case_id": "",
+    "portal_case_id": "3552873",
     "display_case_number": "CRI-02448617",
     "defendant": "ELDER ISAEL HERNANDEZ",
     "filed_date": "2010-01-29",
@@ -60,11 +191,84 @@
       "filed_date": "2010-01-29"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "23152(a) VC/M 23152(b) VC/M",
+    "charge_rows": [
+      {
+        "raw": "23152(a) VC/M",
+        "title": "Vehicle Code § 23152(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(a)",
+        "code_system": "VC",
+        "section": "23152(a)",
+        "citation": "Vehicle Code § 23152(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23152(b) VC/M",
+        "title": "Vehicle Code § 23152(b)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(b)",
+        "code_system": "VC",
+        "section": "23152(b)",
+        "citation": "Vehicle Code § 23152(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ELDER ISAEL HERNANDEZ, and date of filing 2010-01-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ELDER ISAEL HERNANDEZ, date of filing, 2010-01-29, and charges in the case: 23152(a) VC/M 23152(b) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(a) VC/M",
+      "title": "Vehicle Code § 23152(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(a)",
+      "code_system": "VC",
+      "section": "23152(a)",
+      "citation": "Vehicle Code § 23152(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23152(b) VC/M",
+      "title": "Vehicle Code § 23152(b)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(b)",
+      "code_system": "VC",
+      "section": "23152(b)",
+      "citation": "Vehicle Code § 23152(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:36:35.161Z",
+  "portal_case_id": "3552873",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02448617",
+      "defendant": "ELDER ISAEL HERNANDEZ",
+      "filed_date": "2010-01-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3552873"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.133992+00:00"
 }

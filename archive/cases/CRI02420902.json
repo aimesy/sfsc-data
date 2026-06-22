@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:55:25.885Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:51:44.715Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02420902",
   "criminal_case_number": "02420902",
@@ -24,11 +24,81 @@
       "name": "MELVIN LIN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MELVIN LIN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-06-10T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/SATERM:06-02-09/BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-06-02T09:15:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/SAORD/SA1:LINA LIN, 100 YARDS/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-06-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:TRANS TO DEPT 15/TRANS 15:FORTHWITH FOR ARRAIGNMEN",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-06-10 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "2009-06-10",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-06-02 9:15 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 1,
+      "court_date": "2009-06-02",
+      "hearing_time": "9:15 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-06-02 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 2,
+      "court_date": "2009-06-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PAM HERTZIG",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "ANTONIO HERNANDEZ",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3527266",
+  "docket_entries": [
+    {
+      "filedDate": "2009-06-10T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/SATERM:06-02-09/BE/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-06-10T09:00:00.000Z",
+      "description": "/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/SATERM:06-02-09/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-06-02T09:15:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/SAORD/SA1:LINA LIN, 100 YARDS/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-06-02T09:15:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/SAORD/SA1:LINA LIN, 100 YARDS/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-06-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:TRANS TO DEPT 15/TRANS 15:FORTHWITH FOR ARRAIGNMEN",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-06-02T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/TEXT:TRANS TO DEPT 15/TRANS 15:FORTHWITH FOR ARRAIGNMEN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02420902",
-    "portal_case_id": "",
+    "portal_case_id": "3527266",
     "display_case_number": "CRI-02420902",
     "defendant": "MELVIN LIN",
     "filed_date": "2009-06-02",
@@ -60,11 +161,161 @@
       "filed_date": "2009-06-02"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "273.5(a) PC/M 245(a)(1) PC/M 243(e)(1) PC/M 236 PC/M 240 PC/M",
+    "charge_rows": [
+      {
+        "raw": "273.5(a) PC/M",
+        "title": "Penal Code § 273.5(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 273.5(a)",
+        "code_system": "PC",
+        "section": "273.5(a)",
+        "citation": "Penal Code § 273.5(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "245(a)(1) PC/M",
+        "title": "Penal Code § 245(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 245(a)(1)",
+        "code_system": "PC",
+        "section": "245(a)(1)",
+        "citation": "Penal Code § 245(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "243(e)(1) PC/M",
+        "title": "Penal Code § 243(e)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 243(e)(1)",
+        "code_system": "PC",
+        "section": "243(e)(1)",
+        "citation": "Penal Code § 243(e)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "236 PC/M",
+        "title": "Penal Code § 236",
+        "title_source": "programmatic_citation",
+        "code": "PC 236",
+        "code_system": "PC",
+        "section": "236",
+        "citation": "Penal Code § 236",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "240 PC/M",
+        "title": "Penal Code § 240",
+        "title_source": "programmatic_citation",
+        "code": "PC 240",
+        "code_system": "PC",
+        "section": "240",
+        "citation": "Penal Code § 240",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MELVIN LIN, and date of filing 2009-06-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MELVIN LIN, date of filing, 2009-06-02, and charges in the case: 273.5(a) PC/M 245(a)(1) PC/M 243(e)(1) PC/M 236 PC/M 240 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "273.5(a) PC/M",
+      "title": "Penal Code § 273.5(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 273.5(a)",
+      "code_system": "PC",
+      "section": "273.5(a)",
+      "citation": "Penal Code § 273.5(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "245(a)(1) PC/M",
+      "title": "Penal Code § 245(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 245(a)(1)",
+      "code_system": "PC",
+      "section": "245(a)(1)",
+      "citation": "Penal Code § 245(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "243(e)(1) PC/M",
+      "title": "Penal Code § 243(e)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 243(e)(1)",
+      "code_system": "PC",
+      "section": "243(e)(1)",
+      "citation": "Penal Code § 243(e)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "236 PC/M",
+      "title": "Penal Code § 236",
+      "title_source": "programmatic_citation",
+      "code": "PC 236",
+      "code_system": "PC",
+      "section": "236",
+      "citation": "Penal Code § 236",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "240 PC/M",
+      "title": "Penal Code § 240",
+      "title_source": "programmatic_citation",
+      "code": "PC 240",
+      "code_system": "PC",
+      "section": "240",
+      "citation": "Penal Code § 240",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:51:45.390Z",
+  "portal_case_id": "3527266",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02420902",
+      "defendant": "MELVIN LIN",
+      "filed_date": "2009-06-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3527266"
+  }
 }

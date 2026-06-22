@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:45:01.990Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:50:25.676Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02518627",
   "criminal_case_number": "02518627",
@@ -24,11 +24,100 @@
       "name": "RAQUEL ORTEGA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RAQUEL ORTEGA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2019-10-08T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-06-01T13:30:00.000Z",
+      "docketEntryComment": "/CAL BW RETURN/X CASE HEARD BEFORE JUDGE FLEMING APPEARING VIA ZOOM/NP/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-03-06T09:00:00.000Z",
+      "docketEntryComment": "/FTA/BWDIRIC1:01-23-20/BWI/BAIL:5000/BWNUM:3RD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-01-23T13:30:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/FTA/BWDIRIC1: 10-08-19/BWI/BAIL:100/BWNUM:2ND/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-10-08T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2021-06-01 1:30 PM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2021-06-01",
+      "hearing_time": "1:30 PM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2020-03-06 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2020-03-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2020-01-23 1:30 PM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2020-01-23",
+      "hearing_time": "1:30 PM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-10-08 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 3,
+      "court_date": "2019-10-08",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JUDITH GARVEY",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +134,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3615555",
+  "docket_entries": [
+    {
+      "filedDate": "2019-10-08T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-10-08T14:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-06-01T13:30:00.000Z",
+      "docketEntryComment": "/CAL BW RETURN/X CASE HEARD BEFORE JUDGE FLEMING APPEARING VIA ZOOM/NP/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2021-06-01T13:30:00.000Z",
+      "description": "/CAL BW RETURN/X CASE HEARD BEFORE JUDGE FLEMING APPEARING VIA ZOOM/NP/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-03-06T09:00:00.000Z",
+      "docketEntryComment": "/FTA/BWDIRIC1:01-23-20/BWI/BAIL:5000/BWNUM:3RD/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2020-03-06T09:00:00.000Z",
+      "description": "/FTA/BWDIRIC1:01-23-20/BWI/BAIL:5000/BWNUM:3RD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-01-23T13:30:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/FTA/BWDIRIC1: 10-08-19/BWI/BAIL:100/BWNUM:2ND/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2020-01-23T13:30:00.000Z",
+      "description": "/CAL:BW RETURN/FTA/BWDIRIC1: 10-08-19/BWI/BAIL:100/BWNUM:2ND/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-10-08T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2019-10-08T14:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02518627",
-    "portal_case_id": "",
+    "portal_case_id": "3615555",
     "display_case_number": "CRI-02518627",
     "defendant": "RAQUEL ORTEGA",
     "filed_date": "2019-10-08",
@@ -60,11 +200,57 @@
       "filed_date": "2019-10-08"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "490.2(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "490.2(a) PC/M",
+        "title": "Penal Code § 490.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.2(a)",
+        "code_system": "PC",
+        "section": "490.2(a)",
+        "citation": "Penal Code § 490.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RAQUEL ORTEGA, and date of filing 2019-10-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RAQUEL ORTEGA, date of filing, 2019-10-08, and charges in the case: 490.2(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.2(a) PC/M",
+      "title": "Penal Code § 490.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.2(a)",
+      "code_system": "PC",
+      "section": "490.2(a)",
+      "citation": "Penal Code § 490.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:50:26.323Z",
+  "portal_case_id": "3615555",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02518627",
+      "defendant": "RAQUEL ORTEGA",
+      "filed_date": "2019-10-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3615555"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:56:43.377Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:34:11.037Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02464033",
   "criminal_case_number": "02464033",
@@ -24,10 +24,63 @@
       "name": "SHAMBALLA LAKETHA ROGERS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "SHAMBALLA LAKETHA ROGERS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2012-04-02T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-06T00:00:00.000Z",
+      "docketEntryComment": "APD MOT TO TRANSFER TO COUNTY OF RESIDENCE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-04-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN, 01-24-12, FTA HEARING, 1ST BW/BWDNC/X:PROBATION TRANSFER FROM NAPA COUNTY TO SF ON 01-24-12,/X:SPECIAL APP BY FLOYD ANDREWS TODAY,/TN:SHAMBALLA LAKETHA ROGERS/REIN ORIG TC/PROB EXT:05-08-14/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD PC 1203,9 TRANSFER FROM NAPA COUNTY/MO GRTD/X:PROBATION TRANSFERRED FROM NAPA COUNTY TO SF COUNTY,/X:MOTION TO REVOKE PROBATION-APD - GRANTED/FTA/BWI/PROB ADM REV/ /NB/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-04-02 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2012-04-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-01-24 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2012-01-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +98,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3566198",
+  "docket_entries": [
+    {
+      "filedDate": "2012-04-02T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-04-02T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-06T00:00:00.000Z",
+      "docketEntryComment": "APD MOT TO TRANSFER TO COUNTY OF RESIDENCE FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-01-06T00:00:00.000Z",
+      "description": "APD MOT TO TRANSFER TO COUNTY OF RESIDENCE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-04-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN, 01-24-12, FTA HEARING, 1ST BW/BWDNC/X:PROBATION TRANSFER FROM NAPA COUNTY TO SF ON 01-24-12,/X:SPECIAL APP BY FLOYD ANDREWS TODAY,/TN:SHAMBALLA LAKETHA ROGERS/REIN ORIG TC/PROB EXT:05-08-14/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-04-02T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN, 01-24-12, FTA HEARING, 1ST BW/BWDNC/X:PROBATION TRANSFER FROM NAPA COUNTY TO SF ON 01-24-12,/X:SPECIAL APP BY FLOYD ANDREWS TODAY,/TN:SHAMBALLA LAKETHA ROGERS/REIN ORIG TC/PROB EXT:05-08-14/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD PC 1203,9 TRANSFER FROM NAPA COUNTY/MO GRTD/X:PROBATION TRANSFERRED FROM NAPA COUNTY TO SF COUNTY,/X:MOTION TO REVOKE PROBATION-APD - GRANTED/FTA/BWI/PROB ADM REV/ /NB/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-01-24T09:00:00.000Z",
+      "description": "/CAL:APD PC 1203,9 TRANSFER FROM NAPA COUNTY/MO GRTD/X:PROBATION TRANSFERRED FROM NAPA COUNTY TO SF COUNTY,/X:MOTION TO REVOKE PROBATION-APD - GRANTED/FTA/BWI/PROB ADM REV/ /NB/BWNUM:1ST/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02464033",
-    "portal_case_id": "",
+    "portal_case_id": "3566198",
     "display_case_number": "CRI-02464033",
     "defendant": "SHAMBALLA LAKETHA ROGERS",
     "filed_date": "2011-12-09",
@@ -59,12 +153,67 @@
       "defendant": "SHAMBALLA LAKETHA ROGERS",
       "filed_date": "2011-12-09"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1203",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "666 PC/F",
+    "charge_rows": [
+      {
+        "raw": "666 PC/F",
+        "title": "Penal Code § 666",
+        "title_source": "programmatic_citation",
+        "code": "PC 666",
+        "code_system": "PC",
+        "section": "666",
+        "citation": "Penal Code § 666",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, SHAMBALLA LAKETHA ROGERS, and date of filing 2011-12-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, SHAMBALLA LAKETHA ROGERS, date of filing, 2011-12-09, and charges in the case: 666 PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "666 PC/F",
+      "title": "Penal Code § 666",
+      "title_source": "programmatic_citation",
+      "code": "PC 666",
+      "code_system": "PC",
+      "section": "666",
+      "citation": "Penal Code § 666",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:34:11.767Z",
+  "portal_case_id": "3566198",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02464033",
+      "defendant": "SHAMBALLA LAKETHA ROGERS",
+      "filed_date": "2011-12-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3566198"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:20:23.195Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:03:45.617Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02504420",
   "criminal_case_number": "02504420",
@@ -24,10 +24,89 @@
       "name": "JAIME ANGEL SANCHEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAIME ANGEL SANCHEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2017-11-06T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CONTD: PROC RE $5,000 BW STAYED OF 11-06-17/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANTIS ORDERED AND STAYED TO11-09-17/X: BAIL SET AT $5,000/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-12-07T13:30:00.000Z",
+      "docketEntryComment": "/CAL NEIGHBORHOOD COURT/CTORD CASE DISMISSED/851,87PC GRANTED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-11-09T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PROC RE $5,000 BW STAY OF 11-06-17/BWSTAY:11-06-17/CONTD:PRE PLEA PRG RPT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-08-08T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/DEF:REFERRED TO NEIGHBORHOOD COURT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-12-07 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2017-12-07",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-11-09 1:30 PM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2017-11-09",
+      "hearing_time": "1:30 PM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-11-06 1:30 PM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2017-11-06",
+      "hearing_time": "1:30 PM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-08-08 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 3,
+      "court_date": "2017-08-08",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +124,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3602675",
+  "docket_entries": [
+    {
+      "filedDate": "2017-11-06T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CONTD: PROC RE $5,000 BW STAYED OF 11-06-17/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANTIS ORDERED AND STAYED TO11-09-17/X: BAIL SET AT $5,000/DOPC/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-11-06T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/CONTD: PROC RE $5,000 BW STAYED OF 11-06-17/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANTIS ORDERED AND STAYED TO11-09-17/X: BAIL SET AT $5,000/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-12-07T13:30:00.000Z",
+      "docketEntryComment": "/CAL NEIGHBORHOOD COURT/CTORD CASE DISMISSED/851,87PC GRANTED/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-12-07T13:30:00.000Z",
+      "description": "/CAL NEIGHBORHOOD COURT/CTORD CASE DISMISSED/851,87PC GRANTED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-11-09T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PROC RE $5,000 BW STAY OF 11-06-17/BWSTAY:11-06-17/CONTD:PRE PLEA PRG RPT/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-11-09T13:30:00.000Z",
+      "description": "/CAL:PROC RE $5,000 BW STAY OF 11-06-17/BWSTAY:11-06-17/CONTD:PRE PLEA PRG RPT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-08-08T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/DEF:REFERRED TO NEIGHBORHOOD COURT/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-08-08T14:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/DEF:REFERRED TO NEIGHBORHOOD COURT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02504420",
-    "portal_case_id": "",
+    "portal_case_id": "3602675",
     "display_case_number": "CRI-02504420",
     "defendant": "JAIME ANGEL SANCHEZ",
     "filed_date": "2017-08-08",
@@ -60,11 +180,83 @@
       "filed_date": "2017-08-08"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "594(b)(2)(A) PC/M 594(b)(2)(A) PC/M 594.2(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "594(b)(2)(A) PC/M",
+        "title": "Penal Code § 594(b)(2)(A)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(2)(A)",
+        "code_system": "PC",
+        "section": "594(b)(2)(A)",
+        "citation": "Penal Code § 594(b)(2)(A)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "594.2(a) PC/M",
+        "title": "Penal Code § 594.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594.2(a)",
+        "code_system": "PC",
+        "section": "594.2(a)",
+        "citation": "Penal Code § 594.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAIME ANGEL SANCHEZ, and date of filing 2017-08-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAIME ANGEL SANCHEZ, date of filing, 2017-08-08, and charges in the case: 594(b)(2)(A) PC/M 594(b)(2)(A) PC/M 594.2(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "594(b)(2)(A) PC/M",
+      "title": "Penal Code § 594(b)(2)(A)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(2)(A)",
+      "code_system": "PC",
+      "section": "594(b)(2)(A)",
+      "citation": "Penal Code § 594(b)(2)(A)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "594.2(a) PC/M",
+      "title": "Penal Code § 594.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594.2(a)",
+      "code_system": "PC",
+      "section": "594.2(a)",
+      "citation": "Penal Code § 594.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:03:46.229Z",
+  "portal_case_id": "3602675",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02504420",
+      "defendant": "JAIME ANGEL SANCHEZ",
+      "filed_date": "2017-08-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3602675"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:21:51.847Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:36:42.255Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10000142",
   "criminal_case_number": "10000142",
@@ -24,11 +24,123 @@
       "name": "MARK A SIMON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARK A SIMON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-01-07T15:00:00.000Z",
+      "docketEntryComment": "DEF DECLR & EXHIB IN SUPP OF MOT FOR RELEAASE ON OR FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-05T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S MOT FOR RELEASE ON OR /BAIL REDUC FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ORAL 991 RULING & MOTION FOR RELEASE ON OR BAIL REDUCTION/TEXT:CONFLCNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:STEVEWHITWORTH/MO PC 991/MO GRTD/GRTD:AS TO COUNT(S):003/MO GRTD/BAIL:10,000/X:O,R, REQUEST IS DENIED,/NTW/LD:02-04-10/CONTD:PRETRIAL/DOP/X:TRIALDATE OF 01-15-10 IS CONFIRMED,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/987,2/BAIL:50,000/NTW/LD:02-04-10/X:COUNSEL MADE AN ORAL 991 MOTION ASTO COUNT 003,/ARG&SUB/ /CONTD:991 RULING ON 01-07-10/CONTD:TRIAL ON 01-15-10/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-11T09:00:00.000Z",
+      "docketEntryComment": "/BE/MO PC 1385:UNABLE TO SUSTAIN/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:2ND PRETRIAL/CGTW/CONTD: 03-11-10 3RD PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-11T09:00:00.000Z",
+      "docketEntryComment": "/GTWM/CAL:PTC/CONT/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-03-11 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2010-03-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-03 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 1,
+      "court_date": "2010-02-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-11 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 2,
+      "court_date": "2010-01-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-07 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 3,
+      "court_date": "2010-01-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-05 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 4,
+      "court_date": "2010-01-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MICHAEL GAINES",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +157,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3628574",
+  "docket_entries": [
+    {
+      "filedDate": "2010-01-07T15:00:00.000Z",
+      "docketEntryComment": "DEF DECLR & EXHIB IN SUPP OF MOT FOR RELEAASE ON OR FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-01-07T15:00:00.000Z",
+      "description": "DEF DECLR & EXHIB IN SUPP OF MOT FOR RELEAASE ON OR FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-05T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S MOT FOR RELEASE ON OR /BAIL REDUC FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-01-05T15:00:00.000Z",
+      "description": "DEFT'S MOT FOR RELEASE ON OR /BAIL REDUC FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ORAL 991 RULING & MOTION FOR RELEASE ON OR BAIL REDUCTION/TEXT:CONFLCNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:STEVEWHITWORTH/MO PC 991/MO GRTD/GRTD:AS TO COUNT(S):003/MO GRTD/BAIL:10,000/X:O,R, REQUEST IS DENIED,/NTW/LD:02-04-10/CONTD:PRETRIAL/DOP/X:TRIALDATE OF 01-15-10 IS CONFIRMED,/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-01-07T09:00:00.000Z",
+      "description": "/CAL:ORAL 991 RULING & MOTION FOR RELEASE ON OR BAIL REDUCTION/TEXT:CONFLCNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:STEVEWHITWORTH/MO PC 991/MO GRTD/GRTD:AS TO COUNT(S):003/MO GRTD/BAIL:10,000/X:O,R, REQUEST IS DENIED,/NTW/LD:02-04-10/CONTD:PRETRIAL/DOP/X:TRIALDATE OF 01-15-10 IS CONFIRMED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/987,2/BAIL:50,000/NTW/LD:02-04-10/X:COUNSEL MADE AN ORAL 991 MOTION ASTO COUNT 003,/ARG&SUB/ /CONTD:991 RULING ON 01-07-10/CONTD:TRIAL ON 01-15-10/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-01-05T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/987,2/BAIL:50,000/NTW/LD:02-04-10/X:COUNSEL MADE AN ORAL 991 MOTION ASTO COUNT 003,/ARG&SUB/ /CONTD:991 RULING ON 01-07-10/CONTD:TRIAL ON 01-15-10/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-11T09:00:00.000Z",
+      "docketEntryComment": "/BE/MO PC 1385:UNABLE TO SUSTAIN/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-03-11T09:00:00.000Z",
+      "description": "/BE/MO PC 1385:UNABLE TO SUSTAIN/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:2ND PRETRIAL/CGTW/CONTD: 03-11-10 3RD PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-02-03T09:00:00.000Z",
+      "description": "/CAL:2ND PRETRIAL/CGTW/CONTD: 03-11-10 3RD PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-11T09:00:00.000Z",
+      "docketEntryComment": "/GTWM/CAL:PTC/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2010-01-11T09:00:00.000Z",
+      "description": "/GTWM/CAL:PTC/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10000142",
-    "portal_case_id": "",
+    "portal_case_id": "3628574",
     "display_case_number": "CRI-10000142",
     "defendant": "MARK A SIMON",
     "filed_date": "2010-01-05",
@@ -59,12 +242,128 @@
       "defendant": "MARK A SIMON",
       "filed_date": "2010-01-05"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 991",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "146a(a)(2) PC/M 417(a)(2) PC/M 12020(a)(2) PC/M",
+    "charge_rows": [
+      {
+        "raw": "146a(a)(2) PC/M",
+        "title": "Penal Code § 146a(a)(2)",
+        "title_source": "programmatic_citation",
+        "code": "PC 146a(a)(2)",
+        "code_system": "PC",
+        "section": "146a(a)(2)",
+        "citation": "Penal Code § 146a(a)(2)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=146a.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=146a.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "417(a)(2) PC/M",
+        "title": "Penal Code § 417(a)(2)",
+        "title_source": "programmatic_citation",
+        "code": "PC 417(a)(2)",
+        "code_system": "PC",
+        "section": "417(a)(2)",
+        "citation": "Penal Code § 417(a)(2)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "12020(a)(2) PC/M",
+        "title": "Penal Code § 12020(a)(2)",
+        "title_source": "programmatic_citation",
+        "code": "PC 12020(a)(2)",
+        "code_system": "PC",
+        "section": "12020(a)(2)",
+        "citation": "Penal Code § 12020(a)(2)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12020.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12020.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARK A SIMON, and date of filing 2010-01-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARK A SIMON, date of filing, 2010-01-05, and charges in the case: 146a(a)(2) PC/M 417(a)(2) PC/M 12020(a)(2) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "146a(a)(2) PC/M",
+      "title": "Penal Code § 146a(a)(2)",
+      "title_source": "programmatic_citation",
+      "code": "PC 146a(a)(2)",
+      "code_system": "PC",
+      "section": "146a(a)(2)",
+      "citation": "Penal Code § 146a(a)(2)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=146a.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=146a.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "417(a)(2) PC/M",
+      "title": "Penal Code § 417(a)(2)",
+      "title_source": "programmatic_citation",
+      "code": "PC 417(a)(2)",
+      "code_system": "PC",
+      "section": "417(a)(2)",
+      "citation": "Penal Code § 417(a)(2)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "12020(a)(2) PC/M",
+      "title": "Penal Code § 12020(a)(2)",
+      "title_source": "programmatic_citation",
+      "code": "PC 12020(a)(2)",
+      "code_system": "PC",
+      "section": "12020(a)(2)",
+      "citation": "Penal Code § 12020(a)(2)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12020.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12020.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:36:42.875Z",
+  "portal_case_id": "3628574",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10000142",
+      "defendant": "MARK A SIMON",
+      "filed_date": "2010-01-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3628574"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T15:01:36.536Z"
 }

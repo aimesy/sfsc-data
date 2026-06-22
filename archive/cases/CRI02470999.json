@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:11:43.653Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:32:11.405Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02470999",
   "criminal_case_number": "02470999",
@@ -24,19 +24,104 @@
       "name": "KEITH JACKSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KEITH JACKSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-01-11T08:30:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-12-20T13:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-01-11T08:30:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN & ARRAIGNMENT/BWDNC/TEXT:DA WITHDRAWS COMPLAINTAND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-01-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/X:4011,6 PER BAILIFF,/CONT/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-03-04T13:30:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:12-20-12/BWI/BAIL:20,000/BWNUM:2ND",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-12-20T13:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-01-10 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2017-01-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-03-04 1:30 PM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2014-03-04",
+      "hearing_time": "1:30 PM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-12-20 1:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2012-12-20",
+      "hearing_time": "1:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SETH MEISELS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "484(a)/490.5 PC/M",
+    "filed_date": "2012-12-20",
+    "defendant": "KEITH JACKSON",
+    "searched_key": "JACKSON/KE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/02470999.json",
     "searched_last_name": "JACKSON",
     "searched_first_prefix": "KE",
-    "charges": "484(a)/490.5 PC/M",
     "row": {
       "DEFENDANTNAME": "KEITH JACKSON",
       "CASENUMBER": "CRI-02470999",
@@ -45,11 +130,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3572336",
+  "docket_entries": [
+    {
+      "filedDate": "2017-01-11T08:30:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-01-11T08:30:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-12-20T13:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-12-20T13:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-01-11T08:30:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN & ARRAIGNMENT/BWDNC/TEXT:DA WITHDRAWS COMPLAINTAND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-01-11T08:30:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN & ARRAIGNMENT/BWDNC/TEXT:DA WITHDRAWS COMPLAINTAND DISCHARGES DEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-01-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/X:4011,6 PER BAILIFF,/CONT/DOPC/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-01-10T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/X:4011,6 PER BAILIFF,/CONT/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-03-04T13:30:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:12-20-12/BWI/BAIL:20,000/BWNUM:2ND",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2014-03-04T13:30:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:12-20-12/BWI/BAIL:20,000/BWNUM:2ND",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-12-20T13:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2012-12-20T13:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02470999",
-    "portal_case_id": "",
+    "portal_case_id": "3572336",
     "display_case_number": "CRI-02470999",
     "defendant": "KEITH JACKSON",
     "filed_date": "2012-12-20",
@@ -60,11 +206,58 @@
       "filed_date": "2012-12-20"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "484(a)/490.5 PC/M",
+    "charge_rows": [
+      {
+        "raw": "484(a)/490.5 PC/M",
+        "title": "484(a)",
+        "title_source": "criminal_index_text",
+        "code": "PC 490.5",
+        "code_system": "PC",
+        "section": "490.5",
+        "citation": "Penal Code § 490.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KEITH JACKSON, and date of filing 2012-12-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KEITH JACKSON, date of filing, 2012-12-20, and charges in the case: 484(a)/490.5 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "484(a)/490.5 PC/M",
+      "title": "484(a)",
+      "title_source": "criminal_index_text",
+      "code": "PC 490.5",
+      "code_system": "PC",
+      "section": "490.5",
+      "citation": "Penal Code § 490.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:32:12.169Z",
+  "portal_case_id": "3572336",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02470999",
+      "defendant": "KEITH JACKSON",
+      "filed_date": "2012-12-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3572336"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.821622+00:00"
 }

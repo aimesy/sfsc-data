@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:40:46.770Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:35:43.783Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02454531",
   "criminal_case_number": "02454531",
@@ -24,10 +24,63 @@
       "name": "WILLIAM IV JACKSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "WILLIAM IV JACKSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2011-11-21T15:00:00.000Z",
+      "docketEntryComment": "TRANSFER SENT TO MARIN CO VIA CERTIFIED MAIL",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-29T16:00:00.000Z",
+      "docketEntryComment": "APD MOT TO TRANSFER TO COUNTY OF RESIDENCE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL: APD MTN TO TRANSFER TO COUNTY OF RESIDENCE/X: MOTION IS GRANTED,/X:PROBATION IS TRANSFERRED FROM MENDOCINO COUNTY TO SAN FRANCISCO COUNTY,ORDER SIGNED AND FILED INCOURT,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-11-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD 1203,9PC TRANSFER/MO GRTD/CTORD:PROBATION TRANSFER TO MARIN COUNTY",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-11-01 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2011-11-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-10-04 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2010-10-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -42,14 +95,59 @@
       "CASENUMBER": "CRI-02454531",
       "FILEDDATE": "2010-09-08 16:00:00",
       "CHARGES": "496(a) PC/F"
-    }
+    },
+    "filed_date": "2010-09-08",
+    "defendant": "WILLIAM IV JACKSON",
+    "searched_key": "JACKSON/WI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/02454531.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3557990",
+  "docket_entries": [
+    {
+      "filedDate": "2011-11-21T15:00:00.000Z",
+      "docketEntryComment": "TRANSFER SENT TO MARIN CO VIA CERTIFIED MAIL",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-11-21T15:00:00.000Z",
+      "description": "TRANSFER SENT TO MARIN CO VIA CERTIFIED MAIL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-29T16:00:00.000Z",
+      "docketEntryComment": "APD MOT TO TRANSFER TO COUNTY OF RESIDENCE FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-09-29T16:00:00.000Z",
+      "description": "APD MOT TO TRANSFER TO COUNTY OF RESIDENCE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL: APD MTN TO TRANSFER TO COUNTY OF RESIDENCE/X: MOTION IS GRANTED,/X:PROBATION IS TRANSFERRED FROM MENDOCINO COUNTY TO SAN FRANCISCO COUNTY,ORDER SIGNED AND FILED INCOURT,/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-10-04T09:00:00.000Z",
+      "description": "/CAL: APD MTN TO TRANSFER TO COUNTY OF RESIDENCE/X: MOTION IS GRANTED,/X:PROBATION IS TRANSFERRED FROM MENDOCINO COUNTY TO SAN FRANCISCO COUNTY,ORDER SIGNED AND FILED INCOURT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-11-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD 1203,9PC TRANSFER/MO GRTD/CTORD:PROBATION TRANSFER TO MARIN COUNTY",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-11-01T09:00:00.000Z",
+      "description": "/CAL:APD 1203,9PC TRANSFER/MO GRTD/CTORD:PROBATION TRANSFER TO MARIN COUNTY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02454531",
-    "portal_case_id": "",
+    "portal_case_id": "3557990",
     "display_case_number": "CRI-02454531",
     "defendant": "WILLIAM IV JACKSON",
     "filed_date": "2010-09-08",
@@ -60,11 +158,58 @@
       "filed_date": "2010-09-08"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "496(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "496(a) PC/F",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, WILLIAM IV JACKSON, and date of filing 2010-09-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, WILLIAM IV JACKSON, date of filing, 2010-09-08, and charges in the case: 496(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "496(a) PC/F",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:35:44.412Z",
+  "portal_case_id": "3557990",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02454531",
+      "defendant": "WILLIAM IV JACKSON",
+      "filed_date": "2010-09-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3557990"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:23.275783+00:00"
 }

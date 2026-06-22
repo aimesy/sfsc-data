@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:39:09.857Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:39:20.832Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10003365",
   "criminal_case_number": "10003365",
@@ -24,11 +24,59 @@
       "name": "FELIX LOPEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "FELIX LOPEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/WITEXCL/INVOFF:OFFICER ELMORE/WIT SWORN:OFFICERMICHAEL BROWNE, OFFICER CHRISTOPHER OLSON    /EXHMA:PEOPLES #1, MANILA EVIDENCE ENVELOPE, PEOPLES #1A, SINGLE SHEET OF CRIME LAB ANAYLSIS FORM,PEOPLES #1B, PLASTIC BAGGIE CONTAINING BROWN OR BLACK SUBSTANCE    /X:ALL EXHIBITS ARE RETURNED TO THE SFPD,/MO PC 1385:FIRST DISMISSAL /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:02-19-10/BAIL:70,000/SA2:17TH & MISSION, 16TH & MISSION IN SF, CA",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-02-18 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2010-02-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-02 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2010-02-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARK JACOBS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3631572",
+  "docket_entries": [
+    {
+      "filedDate": "2010-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/WITEXCL/INVOFF:OFFICER ELMORE/WIT SWORN:OFFICERMICHAEL BROWNE, OFFICER CHRISTOPHER OLSON    /EXHMA:PEOPLES #1, MANILA EVIDENCE ENVELOPE, PEOPLES #1A, SINGLE SHEET OF CRIME LAB ANAYLSIS FORM,PEOPLES #1B, PLASTIC BAGGIE CONTAINING BROWN OR BLACK SUBSTANCE    /X:ALL EXHIBITS ARE RETURNED TO THE SFPD,/MO PC 1385:FIRST DISMISSAL /",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-02-18T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/WITEXCL/INVOFF:OFFICER ELMORE/WIT SWORN:OFFICERMICHAEL BROWNE, OFFICER CHRISTOPHER OLSON /EXHMA:PEOPLES #1, MANILA EVIDENCE ENVELOPE, PEOPLES #1A, SINGLE SHEET OF CRIME LAB ANAYLSIS FORM,PEOPLES #1B, PLASTIC BAGGIE CONTAINING BROWN OR BLACK SUBSTANCE /X:ALL EXHIBITS ARE RETURNED TO THE SFPD,/MO PC 1385:FIRST DISMISSAL /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:02-19-10/BAIL:70,000/SA2:17TH & MISSION, 16TH & MISSION IN SF, CA",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-02-02T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:02-19-10/BAIL:70,000/SA2:17TH & MISSION, 16TH & MISSION IN SF, CA",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10003365",
-    "portal_case_id": "",
+    "portal_case_id": "3631572",
     "display_case_number": "CRI-10003365",
     "defendant": "FELIX LOPEZ",
     "filed_date": "2010-02-02",
@@ -59,12 +128,78 @@
       "defendant": "FELIX LOPEZ",
       "filed_date": "2010-02-02"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11352(a) HS/F 11352(a) HS/F 8888888",
+    "charge_rows": [
+      {
+        "raw": "11352(a) HS/F",
+        "title": "Health and Safety Code § 11352(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11352(a)",
+        "code_system": "HS",
+        "section": "11352(a)",
+        "citation": "Health and Safety Code § 11352(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, FELIX LOPEZ, and date of filing 2010-02-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, FELIX LOPEZ, date of filing, 2010-02-02, and charges in the case: 11352(a) HS/F 11352(a) HS/F 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11352(a) HS/F",
+      "title": "Health and Safety Code § 11352(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11352(a)",
+      "code_system": "HS",
+      "section": "11352(a)",
+      "citation": "Health and Safety Code § 11352(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:39:21.537Z",
+  "portal_case_id": "3631572",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10003365",
+      "defendant": "FELIX LOPEZ",
+      "filed_date": "2010-02-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3631572"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T15:05:42.268Z"
 }

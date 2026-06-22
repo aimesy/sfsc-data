@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:00:09.822Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:12:15.384Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02483442",
   "criminal_case_number": "02483442",
@@ -24,19 +24,94 @@
       "name": "STEVEN AARON EDWARDS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "STEVEN AARON EDWARDS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-01-14T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-08-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/FTA/BWDIRIC1:05-23-16/BWI/BAIL:30,000/BWNUM:3RD/CTORD:NOCITE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-05-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/FTA/BWDIRIC1:01-14-15/BWI/BAIL:30,000/BWNUM:2ND/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-01-14T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/  /FTA/BWI/BAIL:20,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-08-22 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2016-08-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-05-23 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2016-05-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-01-14 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2015-01-14",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SETH MEISELS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "490.2(a) PC/M",
+    "filed_date": "2015-01-14",
+    "defendant": "STEVEN AARON EDWARDS",
+    "searched_key": "EDWARDS/ST",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/02483442.json",
     "searched_last_name": "EDWARDS",
     "searched_first_prefix": "ST",
-    "charges": "490.2(a) PC/M",
     "row": {
       "DEFENDANTNAME": "STEVEN AARON EDWARDS",
       "CASENUMBER": "CRI-02483442",
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3582966",
+  "docket_entries": [
+    {
+      "filedDate": "2015-01-14T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-01-14T14:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-08-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/FTA/BWDIRIC1:05-23-16/BWI/BAIL:30,000/BWNUM:3RD/CTORD:NOCITE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-08-22T09:00:00.000Z",
+      "description": "/CAL:BW RETURN/FTA/BWDIRIC1:05-23-16/BWI/BAIL:30,000/BWNUM:3RD/CTORD:NOCITE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-05-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/FTA/BWDIRIC1:01-14-15/BWI/BAIL:30,000/BWNUM:2ND/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-05-23T09:00:00.000Z",
+      "description": "/CAL:BW RETURN/FTA/BWDIRIC1:01-14-15/BWI/BAIL:30,000/BWNUM:2ND/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-01-14T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/  /FTA/BWI/BAIL:20,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-01-14T14:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:20,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02483442",
-    "portal_case_id": "",
+    "portal_case_id": "3582966",
     "display_case_number": "CRI-02483442",
     "defendant": "STEVEN AARON EDWARDS",
     "filed_date": "2015-01-14",
@@ -60,11 +176,58 @@
       "filed_date": "2015-01-14"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "490.2(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "490.2(a) PC/M",
+        "title": "Penal Code § 490.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.2(a)",
+        "code_system": "PC",
+        "section": "490.2(a)",
+        "citation": "Penal Code § 490.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, STEVEN AARON EDWARDS, and date of filing 2015-01-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, STEVEN AARON EDWARDS, date of filing, 2015-01-14, and charges in the case: 490.2(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.2(a) PC/M",
+      "title": "Penal Code § 490.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.2(a)",
+      "code_system": "PC",
+      "section": "490.2(a)",
+      "citation": "Penal Code § 490.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:12:16.074Z",
+  "portal_case_id": "3582966",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02483442",
+      "defendant": "STEVEN AARON EDWARDS",
+      "filed_date": "2015-01-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3582966"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.624260+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:26:54.047Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:40:11.016Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10012949",
   "criminal_case_number": "10012949",
@@ -24,11 +24,95 @@
       "name": "AMANDA LIU",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "AMANDA LIU",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-06-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRETRIAL DIVERSION ELIGIBILITY REPORT/DAWT/CONTD PTD PROG RPT/CGTW/ND1: 1/PTD: 1/CPSS/PROGPTD:07-21-10/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/DOPU:PRETRIAL DIVERSION/BE/OR/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/CONTD PTD ELIG RPT/GTWM/X:COUNT 1 CHARGING PC 487(A) IS REFERRED TO PRETRIAL DIVERSION FOR ANELIGIBILITY REPORT,/PTDIV:06-23-10/CONT/DOPU:PRETRIAL DIVERSION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-21T09:00:00.000Z",
+      "docketEntryComment": "/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT  1    /1001,7:1/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/DAWT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/987,2/CONTD:PRETRIAL CONFERENCE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-07-21 9:00 AM",
+      "hearingType": "Pretrial Diversion Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2010-07-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Progress Report",
+      "hearing_type": "Pretrial Diversion Progress Report",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-23 9:00 AM",
+      "hearingType": "Pretrial Diversion Eligibility Report",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 1,
+      "court_date": "2010-06-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Eligibility Report",
+      "hearing_type": "Pretrial Diversion Eligibility Report",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-05-20 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 2,
+      "court_date": "2010-05-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-05-05 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 3,
+      "court_date": "2010-05-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SHAWN SALEHIEH",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +126,59 @@
       "CASENUMBER": "CRI-10012949",
       "FILEDDATE": "2010-05-05 09:00:00",
       "CHARGES": "487(a) PC/M"
-    }
+    },
+    "filed_date": "2010-05-05",
+    "defendant": "AMANDA LIU",
+    "searched_key": "LIU/AM",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/10012949.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3640567",
+  "docket_entries": [
+    {
+      "filedDate": "2010-06-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRETRIAL DIVERSION ELIGIBILITY REPORT/DAWT/CONTD PTD PROG RPT/CGTW/ND1: 1/PTD: 1/CPSS/PROGPTD:07-21-10/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/DOPU:PRETRIAL DIVERSION/BE/OR/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-06-23T09:00:00.000Z",
+      "description": "/CAL PRETRIAL DIVERSION ELIGIBILITY REPORT/DAWT/CONTD PTD PROG RPT/CGTW/ND1: 1/PTD: 1/CPSS/PROGPTD:07-21-10/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/DOPU:PRETRIAL DIVERSION/BE/OR/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/CONTD PTD ELIG RPT/GTWM/X:COUNT 1 CHARGING PC 487(A) IS REFERRED TO PRETRIAL DIVERSION FOR ANELIGIBILITY REPORT,/PTDIV:06-23-10/CONT/DOPU:PRETRIAL DIVERSION/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-05-20T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/CONTD PTD ELIG RPT/GTWM/X:COUNT 1 CHARGING PC 487(A) IS REFERRED TO PRETRIAL DIVERSION FOR ANELIGIBILITY REPORT,/PTDIV:06-23-10/CONT/DOPU:PRETRIAL DIVERSION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-21T09:00:00.000Z",
+      "docketEntryComment": "/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT  1    /1001,7:1/DISM3/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-07-21T09:00:00.000Z",
+      "description": "/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT 1 /1001,7:1/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/DAWT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/987,2/CONTD:PRETRIAL CONFERENCE/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-05-05T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/DAWT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/987,2/CONTD:PRETRIAL CONFERENCE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10012949",
-    "portal_case_id": "",
+    "portal_case_id": "3640567",
     "display_case_number": "CRI-10012949",
     "defendant": "AMANDA LIU",
     "filed_date": "2010-05-05",
@@ -59,12 +188,76 @@
       "defendant": "AMANDA LIU",
       "filed_date": "2010-05-05"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC 487(A)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "487(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "487(a) PC/M",
+        "title": "Penal Code § 487(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 487(a)",
+        "code_system": "PC",
+        "section": "487(a)",
+        "citation": "Penal Code § 487(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, AMANDA LIU, and date of filing 2010-05-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, AMANDA LIU, date of filing, 2010-05-05, and charges in the case: 487(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "487(a) PC/M",
+      "title": "Penal Code § 487(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 487(a)",
+      "code_system": "PC",
+      "section": "487(a)",
+      "citation": "Penal Code § 487(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:40:11.694Z",
+  "portal_case_id": "3640567",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10012949",
+      "defendant": "AMANDA LIU",
+      "filed_date": "2010-05-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3640567"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:22.006917+00:00"
 }

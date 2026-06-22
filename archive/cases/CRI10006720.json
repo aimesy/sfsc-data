@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:40:26.175Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:39:16.447Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10006720",
   "criminal_case_number": "10006720",
@@ -24,19 +24,89 @@
       "name": "ROBERT L BELL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROBERT L BELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-03-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL: SPR  (CAHS) ELIGIBILITY REPORT/X:THE DEFENDANT IS INELIGIBLE FOR RELEASE ON  SPR  (CAHS)/X:PRELIMINARY HEARING DATE OF 03-18-10 IS CONFIRMED/DOP/NTW/LD:03-19-10/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-04T09:00:00.000Z",
+      "docketEntryComment": "/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS:ZADIK SHARIPO/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:03-19-10/987,2/BAIL:150000/X:BAIL SET WITHOUT PREJUDICE/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385: IN THE INTEREST OF JUSTICE /",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-03-18 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2010-03-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-08 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2010-03-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-04 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2010-03-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ZADIK SHARIPO",
+      "type": "Appointed Counsel"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11352(a) HS/F 11350(a) HS/F",
+    "filed_date": "2010-03-04",
+    "defendant": "ROBERT L BELL",
+    "searched_key": "BELL/RO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/10006720.json",
     "searched_last_name": "BELL",
     "searched_first_prefix": "RO",
-    "charges": "11352(a) HS/F 11350(a) HS/F",
     "row": {
       "DEFENDANTNAME": "ROBERT L BELL",
       "CASENUMBER": "CRI-10006720",
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3634703",
+  "docket_entries": [
+    {
+      "filedDate": "2010-03-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL: SPR  (CAHS) ELIGIBILITY REPORT/X:THE DEFENDANT IS INELIGIBLE FOR RELEASE ON  SPR  (CAHS)/X:PRELIMINARY HEARING DATE OF 03-18-10 IS CONFIRMED/DOP/NTW/LD:03-19-10/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-03-08T09:00:00.000Z",
+      "description": "/CAL: SPR (CAHS) ELIGIBILITY REPORT/X:THE DEFENDANT IS INELIGIBLE FOR RELEASE ON SPR (CAHS)/X:PRELIMINARY HEARING DATE OF 03-18-10 IS CONFIRMED/DOP/NTW/LD:03-19-10/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-04T09:00:00.000Z",
+      "docketEntryComment": "/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS:ZADIK SHARIPO/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:03-19-10/987,2/BAIL:150000/X:BAIL SET WITHOUT PREJUDICE/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-03-04T09:00:00.000Z",
+      "description": "/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS:ZADIK SHARIPO/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:03-19-10/987,2/BAIL:150000/X:BAIL SET WITHOUT PREJUDICE/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385: IN THE INTEREST OF JUSTICE /",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-03-18T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO PC 1385: IN THE INTEREST OF JUSTICE /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10006720",
-    "portal_case_id": "",
+    "portal_case_id": "3634703",
     "display_case_number": "CRI-10006720",
     "defendant": "ROBERT L BELL",
     "filed_date": "2010-03-04",
@@ -59,12 +160,94 @@
       "defendant": "ROBERT L BELL",
       "filed_date": "2010-03-04"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11352(a) HS/F 11350(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11352(a) HS/F",
+        "title": "Health and Safety Code § 11352(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11352(a)",
+        "code_system": "HS",
+        "section": "11352(a)",
+        "citation": "Health and Safety Code § 11352(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROBERT L BELL, and date of filing 2010-03-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROBERT L BELL, date of filing, 2010-03-04, and charges in the case: 11352(a) HS/F 11350(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11352(a) HS/F",
+      "title": "Health and Safety Code § 11352(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11352(a)",
+      "code_system": "HS",
+      "section": "11352(a)",
+      "citation": "Health and Safety Code § 11352(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:39:17.144Z",
+  "portal_case_id": "3634703",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10006720",
+      "defendant": "ROBERT L BELL",
+      "filed_date": "2010-03-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3634703"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.718313+00:00"
 }

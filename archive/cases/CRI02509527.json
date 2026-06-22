@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:41:07.255Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:53:26.183Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02509527",
   "criminal_case_number": "02509527",
@@ -24,10 +24,55 @@
       "name": "CHEMISTA RODRIGUEZ JACOBS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHEMISTA RODRIGUEZ JACOBS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2018-09-13T16:00:00.000Z",
+      "docketEntryComment": "CERTIFICATE OF REHAB(CERTIFICAGE OF SERVICE BY MAIL)FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-09-10T15:00:00.000Z",
+      "docketEntryComment": "CERTIFICATE OF REHABILITATION SIGNED AND FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-06-06T14:51:00.000Z",
+      "docketEntryComment": "DA NON OPP TP PETITION FOR CERTIFICATION OF REHAB AND PARDON FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-05-29T14:00:00.000Z",
+      "docketEntryComment": "PETITION FOR CERT OF REHAB & PARDON, NOTICE, DEC, POS-FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-08-13T09:30:00.000Z",
+      "docketEntryComment": "/CAL: PETITION FOR CERTIFICATE OF REHABILITATION/X: THE COURT MAKES A FINDING OF REHABILITATION,/ /MO GRTD/X: NO ORDER WAS SUBMITTED TO THE COURT FOR SIGNATURE AND FILING,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-08-13 9:30 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2018-08-13",
+      "hearing_time": "9:30 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +90,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3607369",
+  "docket_entries": [
+    {
+      "filedDate": "2018-09-13T16:00:00.000Z",
+      "docketEntryComment": "CERTIFICATE OF REHAB(CERTIFICAGE OF SERVICE BY MAIL)FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-09-13T16:00:00.000Z",
+      "description": "CERTIFICATE OF REHAB(CERTIFICAGE OF SERVICE BY MAIL)FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-09-10T15:00:00.000Z",
+      "docketEntryComment": "CERTIFICATE OF REHABILITATION SIGNED AND FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-09-10T15:00:00.000Z",
+      "description": "CERTIFICATE OF REHABILITATION SIGNED AND FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-06-06T14:51:00.000Z",
+      "docketEntryComment": "DA NON OPP TP PETITION FOR CERTIFICATION OF REHAB AND PARDON FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-06-06T14:51:00.000Z",
+      "description": "DA NON OPP TP PETITION FOR CERTIFICATION OF REHAB AND PARDON FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-05-29T14:00:00.000Z",
+      "docketEntryComment": "PETITION FOR CERT OF REHAB & PARDON, NOTICE, DEC, POS-FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-05-29T14:00:00.000Z",
+      "description": "PETITION FOR CERT OF REHAB & PARDON, NOTICE, DEC, POS-FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-08-13T09:30:00.000Z",
+      "docketEntryComment": "/CAL: PETITION FOR CERTIFICATE OF REHABILITATION/X: THE COURT MAKES A FINDING OF REHABILITATION,/ /MO GRTD/X: NO ORDER WAS SUBMITTED TO THE COURT FOR SIGNATURE AND FILING,/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-08-13T09:30:00.000Z",
+      "description": "/CAL: PETITION FOR CERTIFICATE OF REHABILITATION/X: THE COURT MAKES A FINDING OF REHABILITATION,/ /MO GRTD/X: NO ORDER WAS SUBMITTED TO THE COURT FOR SIGNATURE AND FILING,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02509527",
-    "portal_case_id": "",
+    "portal_case_id": "3607369",
     "display_case_number": "CRI-02509527",
     "defendant": "CHEMISTA RODRIGUEZ JACOBS",
     "filed_date": "2018-08-13",
@@ -60,11 +156,57 @@
       "filed_date": "2018-08-13"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "211 PC/F 211 PC/F 211 PC/F 211 PC/F 211 PC/F 211 PC/F",
+    "charge_rows": [
+      {
+        "raw": "211 PC/F",
+        "title": "Penal Code § 211",
+        "title_source": "programmatic_citation",
+        "code": "PC 211",
+        "code_system": "PC",
+        "section": "211",
+        "citation": "Penal Code § 211",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHEMISTA RODRIGUEZ JACOBS, and date of filing 2018-08-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHEMISTA RODRIGUEZ JACOBS, date of filing, 2018-08-13, and charges in the case: 211 PC/F 211 PC/F 211 PC/F 211 PC/F 211 PC/F 211 PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "211 PC/F",
+      "title": "Penal Code § 211",
+      "title_source": "programmatic_citation",
+      "code": "PC 211",
+      "code_system": "PC",
+      "section": "211",
+      "citation": "Penal Code § 211",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:53:26.831Z",
+  "portal_case_id": "3607369",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02509527",
+      "defendant": "CHEMISTA RODRIGUEZ JACOBS",
+      "filed_date": "2018-08-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3607369"
+  }
 }

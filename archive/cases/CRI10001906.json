@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:50:52.832Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:40:11.396Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10001906",
   "criminal_case_number": "10001906",
@@ -24,11 +24,123 @@
       "name": "JEWEL KING",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JEWEL KING",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-04-02T09:00:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPPOS TO DEF MOT TO SUPP EVID FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-12T15:30:00.000Z",
+      "docketEntryComment": "MOT TO SUPRESS EVIDFILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD PROGRESS REPORT/X:COURT HAS RECEIVED A FAVORABLE PTD REPORT TODAYTHAT INDICATES SUCCESSFUL COMPLETION OF ALL DIVERSION REQUIREMENTS,/DAWT//TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT 1/1001,7: 1/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL PTD ELIGIBILITY REPORT/DAWT/CONTD PTD PROG RPT/NGWD1 1/PTD 1/CONTD PTD PROGRESS REPORT RE WOMEN'S RE-ENTRY CENTER & RESTITUTION ON 08-10-10/DOPU:PTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FINAL PRE-TRIAL CONFERENCE/CONTD PTD ELIG RPT/CGTW/X:COUNT 1 IS REFERRED TO PRETRIAL DIVERSION FOR AN ELIGIBILITY REPORT, WITH GOOD CAUSE FOUND,//PTDIV:05-13-10/CONT/DOPU:PTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-TRIAL CONFERENCE/CONTD:FINAL PRE-TRIAL CONFERENCE ON 04-07-10/DOP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/987,2/CONTD:PRETRIAL CONFERENCE AND PROOF OF ID PROCESSING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-08-10 9:00 AM",
+      "hearingType": "Pretrial Diversion Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2010-08-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Progress Report",
+      "hearing_type": "Pretrial Diversion Progress Report",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-05-13 9:00 AM",
+      "hearingType": "Pretrial Diversion Eligibility Report",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2010-05-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Eligibility Report",
+      "hearing_type": "Pretrial Diversion Eligibility Report",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-04-07 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2010-04-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-23 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2010-02-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-21 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2010-01-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "FATIMA ORTIZ",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +157,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3630226",
+  "docket_entries": [
+    {
+      "filedDate": "2010-04-02T09:00:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPPOS TO DEF MOT TO SUPP EVID FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-04-02T09:00:00.000Z",
+      "description": "PEOPLE'S OPPOS TO DEF MOT TO SUPP EVID FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-12T15:30:00.000Z",
+      "docketEntryComment": "MOT TO SUPRESS EVIDFILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-03-12T15:30:00.000Z",
+      "description": "MOT TO SUPRESS EVIDFILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD PROGRESS REPORT/X:COURT HAS RECEIVED A FAVORABLE PTD REPORT TODAYTHAT INDICATES SUCCESSFUL COMPLETION OF ALL DIVERSION REQUIREMENTS,/DAWT//TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT 1/1001,7: 1/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-08-10T09:00:00.000Z",
+      "description": "/CAL:PTD PROGRESS REPORT/X:COURT HAS RECEIVED A FAVORABLE PTD REPORT TODAYTHAT INDICATES SUCCESSFUL COMPLETION OF ALL DIVERSION REQUIREMENTS,/DAWT//TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT 1/1001,7: 1/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL PTD ELIGIBILITY REPORT/DAWT/CONTD PTD PROG RPT/NGWD1 1/PTD 1/CONTD PTD PROGRESS REPORT RE WOMEN'S RE-ENTRY CENTER & RESTITUTION ON 08-10-10/DOPU:PTD/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-05-13T09:00:00.000Z",
+      "description": "/CAL PTD ELIGIBILITY REPORT/DAWT/CONTD PTD PROG RPT/NGWD1 1/PTD 1/CONTD PTD PROGRESS REPORT RE WOMEN'S RE-ENTRY CENTER & RESTITUTION ON 08-10-10/DOPU:PTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FINAL PRE-TRIAL CONFERENCE/CONTD PTD ELIG RPT/CGTW/X:COUNT 1 IS REFERRED TO PRETRIAL DIVERSION FOR AN ELIGIBILITY REPORT, WITH GOOD CAUSE FOUND,//PTDIV:05-13-10/CONT/DOPU:PTD/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-04-07T09:00:00.000Z",
+      "description": "/CAL:FINAL PRE-TRIAL CONFERENCE/CONTD PTD ELIG RPT/CGTW/X:COUNT 1 IS REFERRED TO PRETRIAL DIVERSION FOR AN ELIGIBILITY REPORT, WITH GOOD CAUSE FOUND,//PTDIV:05-13-10/CONT/DOPU:PTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-TRIAL CONFERENCE/CONTD:FINAL PRE-TRIAL CONFERENCE ON 04-07-10/DOP",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-02-23T09:00:00.000Z",
+      "description": "/CAL:PRE-TRIAL CONFERENCE/CONTD:FINAL PRE-TRIAL CONFERENCE ON 04-07-10/DOP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/987,2/CONTD:PRETRIAL CONFERENCE AND PROOF OF ID PROCESSING/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2010-01-21T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/GTWM/987,2/CONTD:PRETRIAL CONFERENCE AND PROOF OF ID PROCESSING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10001906",
-    "portal_case_id": "",
+    "portal_case_id": "3630226",
     "display_case_number": "CRI-10001906",
     "defendant": "JEWEL KING",
     "filed_date": "2010-01-21",
@@ -59,12 +242,67 @@
       "defendant": "JEWEL KING",
       "filed_date": "2010-01-21"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "594(b)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "594(b)(1) PC/M",
+        "title": "Penal Code § 594(b)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(1)",
+        "code_system": "PC",
+        "section": "594(b)(1)",
+        "citation": "Penal Code § 594(b)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JEWEL KING, and date of filing 2010-01-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JEWEL KING, date of filing, 2010-01-21, and charges in the case: 594(b)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "594(b)(1) PC/M",
+      "title": "Penal Code § 594(b)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(1)",
+      "code_system": "PC",
+      "section": "594(b)(1)",
+      "citation": "Penal Code § 594(b)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:40:12.045Z",
+  "portal_case_id": "3630226",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10001906",
+      "defendant": "JEWEL KING",
+      "filed_date": "2010-01-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3630226"
+  }
 }

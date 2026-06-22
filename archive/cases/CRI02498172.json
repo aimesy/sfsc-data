@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:22:47.780Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:08:30.266Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02498172",
   "criminal_case_number": "02498172",
@@ -24,10 +24,35 @@
       "name": "MICHAEL MAJOR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL MAJOR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2016-10-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT//COWD/X:PEOPLE TO PROCEED BY FELONY MTR,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-10-03 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2016-10-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -42,14 +67,29 @@
       "CASENUMBER": "CRI-02498172",
       "FILEDDATE": "2016-09-28 09:00:00",
       "CHARGES": "490.2(a) PC/M"
-    }
+    },
+    "filed_date": "2016-09-28",
+    "defendant": "MICHAEL MAJOR",
+    "searched_key": "MAJOR/MI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/02498172.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3596831",
+  "docket_entries": [
+    {
+      "filedDate": "2016-10-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT//COWD/X:PEOPLE TO PROCEED BY FELONY MTR,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-10-03T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/NP/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT//COWD/X:PEOPLE TO PROCEED BY FELONY MTR,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02498172",
-    "portal_case_id": "",
+    "portal_case_id": "3596831",
     "display_case_number": "CRI-02498172",
     "defendant": "MICHAEL MAJOR",
     "filed_date": "2016-09-28",
@@ -60,11 +100,58 @@
       "filed_date": "2016-09-28"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "490.2(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "490.2(a) PC/M",
+        "title": "Penal Code § 490.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.2(a)",
+        "code_system": "PC",
+        "section": "490.2(a)",
+        "citation": "Penal Code § 490.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL MAJOR, and date of filing 2016-09-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL MAJOR, date of filing, 2016-09-28, and charges in the case: 490.2(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.2(a) PC/M",
+      "title": "Penal Code § 490.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.2(a)",
+      "code_system": "PC",
+      "section": "490.2(a)",
+      "citation": "Penal Code § 490.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:08:31.005Z",
+  "portal_case_id": "3596831",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02498172",
+      "defendant": "MICHAEL MAJOR",
+      "filed_date": "2016-09-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3596831"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:32.436008+00:00"
 }

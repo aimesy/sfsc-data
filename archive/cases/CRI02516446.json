@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:28:38.806Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:50:49.284Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02516446",
   "criminal_case_number": "02516446",
@@ -24,11 +24,92 @@
       "name": "DEMEDRIO MACARIO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DEMEDRIO MACARIO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2019-06-17T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-06-03T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-06-17T09:00:00.000Z",
+      "docketEntryComment": "/INTC/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURR,/NTW/LDTR:07-17-19/987,2/SA2:THE SAKS FIFTH AVENUE STORE AT 901 MARKET ST, SAN FRANCISCO/CONTD:STATUS BWG 19009365/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-07-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, TRAILING #19009365/MO138572:19009365/INTC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-06-20T08:30:00.000Z",
+      "docketEntryComment": "/INTC/CAL:STATUS NWH 19009365/GTWM/CONTD:T0 SET & TO JOIN 19009365/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-06-03T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/  /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2019-07-02 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2019-07-02",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-06-17 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2019-06-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-06-03 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2019-06-03",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ANITA NABHA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +126,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3613558",
+  "docket_entries": [
+    {
+      "filedDate": "2019-06-17T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-06-17T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-06-03T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2019-06-03T14:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-06-17T09:00:00.000Z",
+      "docketEntryComment": "/INTC/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURR,/NTW/LDTR:07-17-19/987,2/SA2:THE SAKS FIFTH AVENUE STORE AT 901 MARKET ST, SAN FRANCISCO/CONTD:STATUS BWG 19009365/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2019-06-17T09:00:00.000Z",
+      "description": "/INTC/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURR,/NTW/LDTR:07-17-19/987,2/SA2:THE SAKS FIFTH AVENUE STORE AT 901 MARKET ST, SAN FRANCISCO/CONTD:STATUS BWG 19009365/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-07-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, TRAILING #19009365/MO138572:19009365/INTC/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2019-07-02T09:00:00.000Z",
+      "description": "/CAL:TO SET, TRAILING #19009365/MO138572:19009365/INTC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-06-20T08:30:00.000Z",
+      "docketEntryComment": "/INTC/CAL:STATUS NWH 19009365/GTWM/CONTD:T0 SET & TO JOIN 19009365/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2019-06-20T08:30:00.000Z",
+      "description": "/INTC/CAL:STATUS NWH 19009365/GTWM/CONTD:T0 SET & TO JOIN 19009365/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-06-03T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/  /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2019-06-03T14:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02516446",
-    "portal_case_id": "",
+    "portal_case_id": "3613558",
     "display_case_number": "CRI-02516446",
     "defendant": "DEMEDRIO MACARIO",
     "filed_date": "2019-06-03",
@@ -60,11 +202,58 @@
       "filed_date": "2019-06-03"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "490.2(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "490.2(a) PC/M",
+        "title": "Penal Code § 490.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.2(a)",
+        "code_system": "PC",
+        "section": "490.2(a)",
+        "citation": "Penal Code § 490.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DEMEDRIO MACARIO, and date of filing 2019-06-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DEMEDRIO MACARIO, date of filing, 2019-06-03, and charges in the case: 490.2(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.2(a) PC/M",
+      "title": "Penal Code § 490.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.2(a)",
+      "code_system": "PC",
+      "section": "490.2(a)",
+      "citation": "Penal Code § 490.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:50:49.959Z",
+  "portal_case_id": "3613558",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02516446",
+      "defendant": "DEMEDRIO MACARIO",
+      "filed_date": "2019-06-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3613558"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:30:54.336Z"
 }

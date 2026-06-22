@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:43:05.491Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:44:38.136Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02407678",
   "criminal_case_number": "02407678",
@@ -24,19 +24,122 @@
       "name": "ANTHONY FARDELLA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANTHONY FARDELLA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-02-26T11:25:22.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-05-27T12:00:00.000Z",
+      "docketEntryComment": "SENTENCING TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-28T13:00:00.000Z",
+      "docketEntryComment": "PLEA TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-05-14T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP 16M    :L /CTSP:80    /STATES/DNA/DEF:IS DNA COMPLIANT/SECFEE/ICNA/VF5:200/PAR/CDC/CTORD:DEFENDANT TO PAY RESTITUTION TO LAUREN KOBLITZIN THE AMOUNT OF $9413,82/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/TN:ANTHONY FARDELLA/TEXT:DEFT ADV & PERS WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS: 2/DISM3/FNDG/CO:NEGOTIATED DISPOSITION/PRES: 05-14-09/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-03-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/STWPX/CONTD:FOR PRELIMINARY HEARING/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-02-26T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:35,000/CONTD:PRE HEARING CONF/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-05-14 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2009-05-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-04-20 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2009-04-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-03-24 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2009-03-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-02-26 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2009-02-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEPHANIE WARGO",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "10851(a) VC/F 2800.2(a) VC/F 466.5(a) PC/M 496d(a) PC/F",
+    "filed_date": "2009-02-26",
+    "defendant": "ANTHONY FARDELLA",
+    "searched_key": "FARDELLA/AN",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/02407678.json",
     "searched_last_name": "FARDELLA",
     "searched_first_prefix": "AN",
-    "charges": "10851(a) VC/F 2800.2(a) VC/F 466.5(a) PC/M 496d(a) PC/F",
     "row": {
       "DEFENDANTNAME": "ANTHONY FARDELLA",
       "CASENUMBER": "CRI-02407678",
@@ -45,11 +148,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3515001",
+  "docket_entries": [
+    {
+      "filedDate": "2009-02-26T11:25:22.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-02-26T11:25:22.000Z",
+      "description": "Complaint",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-05-27T12:00:00.000Z",
+      "docketEntryComment": "SENTENCING TX FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-05-27T12:00:00.000Z",
+      "description": "SENTENCING TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-28T13:00:00.000Z",
+      "docketEntryComment": "PLEA TX FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-04-28T13:00:00.000Z",
+      "description": "PLEA TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-05-14T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP 16M    :L /CTSP:80    /STATES/DNA/DEF:IS DNA COMPLIANT/SECFEE/ICNA/VF5:200/PAR/CDC/CTORD:DEFENDANT TO PAY RESTITUTION TO LAUREN KOBLITZIN THE AMOUNT OF $9413,82/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-05-14T09:00:00.000Z",
+      "description": "/AJW/CH1:SP 16M :L /CTSP:80 /STATES/DNA/DEF:IS DNA COMPLIANT/SECFEE/ICNA/VF5:200/PAR/CDC/CTORD:DEFENDANT TO PAY RESTITUTION TO LAUREN KOBLITZIN THE AMOUNT OF $9413,82/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/TN:ANTHONY FARDELLA/TEXT:DEFT ADV & PERS WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS: 2/DISM3/FNDG/CO:NEGOTIATED DISPOSITION/PRES: 05-14-09/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2009-04-20T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG/TN:ANTHONY FARDELLA/TEXT:DEFT ADV & PERS WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS: 2/DISM3/FNDG/CO:NEGOTIATED DISPOSITION/PRES: 05-14-09/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-03-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/STWPX/CONTD:FOR PRELIMINARY HEARING/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2009-03-24T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/STWPX/CONTD:FOR PRELIMINARY HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-02-26T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:35,000/CONTD:PRE HEARING CONF/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2009-02-26T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/BAIL:35,000/CONTD:PRE HEARING CONF/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02407678",
-    "portal_case_id": "",
+    "portal_case_id": "3515001",
     "display_case_number": "CRI-02407678",
     "defendant": "ANTHONY FARDELLA",
     "filed_date": "2009-02-26",
@@ -60,11 +234,136 @@
       "filed_date": "2009-02-26"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "10851(a) VC/F 2800.2(a) VC/F 466.5(a) PC/M 496d(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "10851(a) VC/F",
+        "title": "Vehicle Code § 10851(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 10851(a)",
+        "code_system": "VC",
+        "section": "10851(a)",
+        "citation": "Vehicle Code § 10851(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "2800.2(a) VC/F",
+        "title": "Vehicle Code § 2800.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 2800.2(a)",
+        "code_system": "VC",
+        "section": "2800.2(a)",
+        "citation": "Vehicle Code § 2800.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2800.2.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2800.2.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "466.5(a) PC/M",
+        "title": "Penal Code § 466.5(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 466.5(a)",
+        "code_system": "PC",
+        "section": "466.5(a)",
+        "citation": "Penal Code § 466.5(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "496d(a) PC/F",
+        "title": "Penal Code § 496d(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496d(a)",
+        "code_system": "PC",
+        "section": "496d(a)",
+        "citation": "Penal Code § 496d(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANTHONY FARDELLA, and date of filing 2009-02-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANTHONY FARDELLA, date of filing, 2009-02-26, and charges in the case: 10851(a) VC/F 2800.2(a) VC/F 466.5(a) PC/M 496d(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "10851(a) VC/F",
+      "title": "Vehicle Code § 10851(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 10851(a)",
+      "code_system": "VC",
+      "section": "10851(a)",
+      "citation": "Vehicle Code § 10851(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "2800.2(a) VC/F",
+      "title": "Vehicle Code § 2800.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 2800.2(a)",
+      "code_system": "VC",
+      "section": "2800.2(a)",
+      "citation": "Vehicle Code § 2800.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2800.2.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2800.2.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "466.5(a) PC/M",
+      "title": "Penal Code § 466.5(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 466.5(a)",
+      "code_system": "PC",
+      "section": "466.5(a)",
+      "citation": "Penal Code § 466.5(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "496d(a) PC/F",
+      "title": "Penal Code § 496d(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496d(a)",
+      "code_system": "PC",
+      "section": "496d(a)",
+      "citation": "Penal Code § 496d(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:44:38.837Z",
+  "portal_case_id": "3515001",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02407678",
+      "defendant": "ANTHONY FARDELLA",
+      "filed_date": "2009-02-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3515001"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.435192+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:22:32.736Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:42:48.389Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02530288",
   "criminal_case_number": "02530288",
@@ -24,10 +24,50 @@
       "name": "MARVIN PAZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARVIN PAZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2022-05-17T15:34:44.000Z",
+      "docketEntryComment": "CONFIDENTIAL Order - Incoming Transfer Order",
+      "otherSubmitter": "APD"
+    },
+    {
+      "filedDate": "2022-04-27T14:40:39.000Z",
+      "docketEntryComment": "Incoming Jurisdictional Transfer Received FROM SANTA CLARA COUNTY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2022-05-17T14:00:56.000Z",
+      "docketEntryComment": "Proof of ID Processing Received",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2022-05-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL: APD 1203,9PC  MOTION TO TRANSFER IN PROBATION (MANDATORY SUPERVISION)FROM SANTA CLARA  COUNTY TO SAN FRANCISCO COUNTY/INTC/MO GRTD/CTORD: MANDATORY SUPERVISION IS TRANSFERRED FROM SANTA CLARA COUNTY  TO SAN FRANCISCOCOUNTY/X:COURT ORDER IS SIGNED AND FILED,/MSUP TERM: 03-18-24/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2022-05-17 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2022-05-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +85,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3625942",
+  "docket_entries": [
+    {
+      "filedDate": "2022-05-17T15:34:44.000Z",
+      "docketEntryComment": "CONFIDENTIAL Order - Incoming Transfer Order",
+      "otherSubmitter": "APD",
+      "__index": 0,
+      "date_filed": "2022-05-17T15:34:44.000Z",
+      "description": "CONFIDENTIAL Order - Incoming Transfer Order",
+      "submitter": "APD",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-04-27T14:40:39.000Z",
+      "docketEntryComment": "Incoming Jurisdictional Transfer Received FROM SANTA CLARA COUNTY",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2022-04-27T14:40:39.000Z",
+      "description": "Incoming Jurisdictional Transfer Received FROM SANTA CLARA COUNTY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-05-17T14:00:56.000Z",
+      "docketEntryComment": "Proof of ID Processing Received",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2022-05-17T14:00:56.000Z",
+      "description": "Proof of ID Processing Received",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-05-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL: APD 1203,9PC  MOTION TO TRANSFER IN PROBATION (MANDATORY SUPERVISION)FROM SANTA CLARA  COUNTY TO SAN FRANCISCO COUNTY/INTC/MO GRTD/CTORD: MANDATORY SUPERVISION IS TRANSFERRED FROM SANTA CLARA COUNTY  TO SAN FRANCISCOCOUNTY/X:COURT ORDER IS SIGNED AND FILED,/MSUP TERM: 03-18-24/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2022-05-17T09:00:00.000Z",
+      "description": "/CAL: APD 1203,9PC MOTION TO TRANSFER IN PROBATION (MANDATORY SUPERVISION)FROM SANTA CLARA COUNTY TO SAN FRANCISCO COUNTY/INTC/MO GRTD/CTORD: MANDATORY SUPERVISION IS TRANSFERRED FROM SANTA CLARA COUNTY TO SAN FRANCISCOCOUNTY/X:COURT ORDER IS SIGNED AND FILED,/MSUP TERM: 03-18-24/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02530288",
-    "portal_case_id": "",
+    "portal_case_id": "3625942",
     "display_case_number": "CRI-02530288",
     "defendant": "MARVIN PAZ",
     "filed_date": "2022-04-27",
@@ -60,11 +141,83 @@
       "filed_date": "2022-04-27"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "496(a) PC/F 182(a)(1) PC/F",
+    "charge_rows": [
+      {
+        "raw": "496(a) PC/F",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "182(a)(1) PC/F",
+        "title": "Penal Code § 182(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 182(a)(1)",
+        "code_system": "PC",
+        "section": "182(a)(1)",
+        "citation": "Penal Code § 182(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=182.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=182.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARVIN PAZ, and date of filing 2022-04-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARVIN PAZ, date of filing, 2022-04-27, and charges in the case: 496(a) PC/F 182(a)(1) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "496(a) PC/F",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "182(a)(1) PC/F",
+      "title": "Penal Code § 182(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 182(a)(1)",
+      "code_system": "PC",
+      "section": "182(a)(1)",
+      "citation": "Penal Code § 182(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=182.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=182.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:42:49.075Z",
+  "portal_case_id": "3625942",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02530288",
+      "defendant": "MARVIN PAZ",
+      "filed_date": "2022-04-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3625942"
+  }
 }

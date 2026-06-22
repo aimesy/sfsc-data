@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:36:13.222Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:11:15.529Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02487557",
   "criminal_case_number": "02487557",
@@ -24,19 +24,107 @@
       "name": "ERICA MICHELLE JOHNSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ERICA MICHELLE JOHNSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-08-20T09:30:00.000Z",
+      "docketEntryComment": "/CAL FOR DISPOSITION/MO138572:15015116/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-08-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/LD:09-16-15/X:CAUSE IS TRANSFERRED TO DEPARTMENT 29, FORTHWITH; TO BE HEARD BEFORE JUDGE REARDON, FOR PLEA,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-08-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/DAWT/LDTR:09-16-15/X:TRIAL CONFIRMED,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-08-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/CO:PD RESERVED RIGHT TO DEMURRER/CONTD:PRETRIAL/NTW/LD 09-16-15/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-08-20 9:30 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 29",
+      "__index": 0,
+      "court_date": "2015-08-20",
+      "hearing_time": "9:30 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 29",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-08-20 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2015-08-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-08-18 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2015-08-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-08-17 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2015-08-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SLIMAN NAWABI",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "594(b)(2)(A) PC/M",
+    "filed_date": "2015-08-12",
+    "defendant": "ERICA MICHELLE JOHNSON",
+    "searched_key": "JOHNSON/ER",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/02487557.json",
     "searched_last_name": "JOHNSON",
     "searched_first_prefix": "ER",
-    "charges": "594(b)(2)(A) PC/M",
     "row": {
       "DEFENDANTNAME": "ERICA MICHELLE JOHNSON",
       "CASENUMBER": "CRI-02487557",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3586766",
+  "docket_entries": [
+    {
+      "filedDate": "2015-08-20T09:30:00.000Z",
+      "docketEntryComment": "/CAL FOR DISPOSITION/MO138572:15015116/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-08-20T09:30:00.000Z",
+      "description": "/CAL FOR DISPOSITION/MO138572:15015116/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-08-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/LD:09-16-15/X:CAUSE IS TRANSFERRED TO DEPARTMENT 29, FORTHWITH; TO BE HEARD BEFORE JUDGE REARDON, FOR PLEA,/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-08-20T09:00:00.000Z",
+      "description": "/CAL:TRIAL/LD:09-16-15/X:CAUSE IS TRANSFERRED TO DEPARTMENT 29, FORTHWITH; TO BE HEARD BEFORE JUDGE REARDON, FOR PLEA,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-08-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/DAWT/LDTR:09-16-15/X:TRIAL CONFIRMED,/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-08-18T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/DAWT/LDTR:09-16-15/X:TRIAL CONFIRMED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-08-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/CO:PD RESERVED RIGHT TO DEMURRER/CONTD:PRETRIAL/NTW/LD 09-16-15/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-08-17T09:00:00.000Z",
+      "description": "/CAL:I&A/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/CO:PD RESERVED RIGHT TO DEMURRER/CONTD:PRETRIAL/NTW/LD 09-16-15/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02487557",
-    "portal_case_id": "",
+    "portal_case_id": "3586766",
     "display_case_number": "CRI-02487557",
     "defendant": "ERICA MICHELLE JOHNSON",
     "filed_date": "2015-08-12",
@@ -60,11 +189,58 @@
       "filed_date": "2015-08-12"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "594(b)(2)(A) PC/M",
+    "charge_rows": [
+      {
+        "raw": "594(b)(2)(A) PC/M",
+        "title": "Penal Code § 594(b)(2)(A)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(2)(A)",
+        "code_system": "PC",
+        "section": "594(b)(2)(A)",
+        "citation": "Penal Code § 594(b)(2)(A)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ERICA MICHELLE JOHNSON, and date of filing 2015-08-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ERICA MICHELLE JOHNSON, date of filing, 2015-08-12, and charges in the case: 594(b)(2)(A) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "594(b)(2)(A) PC/M",
+      "title": "Penal Code § 594(b)(2)(A)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(2)(A)",
+      "code_system": "PC",
+      "section": "594(b)(2)(A)",
+      "citation": "Penal Code § 594(b)(2)(A)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:11:16.198Z",
+  "portal_case_id": "3586766",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02487557",
+      "defendant": "ERICA MICHELLE JOHNSON",
+      "filed_date": "2015-08-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3586766"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.978536+00:00"
 }

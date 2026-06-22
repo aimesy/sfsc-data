@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:31:48.817Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:40:48.515Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10016461",
   "criminal_case_number": "10016461",
@@ -24,19 +24,107 @@
       "name": "CAMERON GORDON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CAMERON GORDON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-07-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:RELEASE OF SUBPOENAED RECORDS/X:ATTTORNEY, SAMUEL LASSER SPECIALLY APPEARING FOR THE ATTORNEY OF RECORD,/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:THE SUBPOEANED RECORDS HAVE NOT COME IN, BUT THE PEOPLE PROVIDED THE DISCOVERY/X:THE PRELIMINARY HEARING IS CONFIRMED,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/LD:08-02-10 60TH DAY/CONTD PRELIM HRG, DOP/CONTD:RELEASE OF SUBPOENAED RECORDS ON 07-01-10 IN DEPT, 12/DEF:APPEARANCE ISWAIVED FOR 07-01-10 COURT DATE,/CONTD:PRELIMINARY HEARING ON 07-12-10 INDEP, 12/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:PD DECLARES CONFLICT,/CON:V ROY LEFCOURT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LD:08-02-10/DOP/SAORD/SA1:RATHY KE/CTORD:BAIL TO REMAIN AT 1,000,000/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:LACK OF COOPERATION/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-07-12 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2010-07-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-07-01 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2010-07-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-23 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2010-06-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-01 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2010-06-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "V ROY LEFCOURT",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "211 PC/F 209(b)(1) PC/F",
+    "filed_date": "2010-06-01",
+    "defendant": "CAMERON GORDON",
+    "searched_key": "GORDON/CA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/10016461.json",
     "searched_last_name": "GORDON",
     "searched_first_prefix": "CA",
-    "charges": "211 PC/F 209(b)(1) PC/F",
     "row": {
       "DEFENDANTNAME": "CAMERON GORDON",
       "CASENUMBER": "CRI-10016461",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3643900",
+  "docket_entries": [
+    {
+      "filedDate": "2010-07-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:RELEASE OF SUBPOENAED RECORDS/X:ATTTORNEY, SAMUEL LASSER SPECIALLY APPEARING FOR THE ATTORNEY OF RECORD,/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:THE SUBPOEANED RECORDS HAVE NOT COME IN, BUT THE PEOPLE PROVIDED THE DISCOVERY/X:THE PRELIMINARY HEARING IS CONFIRMED,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-07-01T09:00:00.000Z",
+      "description": "/CAL:RELEASE OF SUBPOENAED RECORDS/X:ATTTORNEY, SAMUEL LASSER SPECIALLY APPEARING FOR THE ATTORNEY OF RECORD,/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:THE SUBPOEANED RECORDS HAVE NOT COME IN, BUT THE PEOPLE PROVIDED THE DISCOVERY/X:THE PRELIMINARY HEARING IS CONFIRMED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/LD:08-02-10 60TH DAY/CONTD PRELIM HRG, DOP/CONTD:RELEASE OF SUBPOENAED RECORDS ON 07-01-10 IN DEPT, 12/DEF:APPEARANCE ISWAIVED FOR 07-01-10 COURT DATE,/CONTD:PRELIMINARY HEARING ON 07-12-10 INDEP, 12/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-06-23T09:00:00.000Z",
+      "description": "/CAL:PRE-HEARING CONFERENCE/LD:08-02-10 60TH DAY/CONTD PRELIM HRG, DOP/CONTD:RELEASE OF SUBPOENAED RECORDS ON 07-01-10 IN DEPT, 12/DEF:APPEARANCE ISWAIVED FOR 07-01-10 COURT DATE,/CONTD:PRELIMINARY HEARING ON 07-12-10 INDEP, 12/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:PD DECLARES CONFLICT,/CON:V ROY LEFCOURT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LD:08-02-10/DOP/SAORD/SA1:RATHY KE/CTORD:BAIL TO REMAIN AT 1,000,000/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-06-01T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:PD DECLARES CONFLICT,/CON:V ROY LEFCOURT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LD:08-02-10/DOP/SAORD/SA1:RATHY KE/CTORD:BAIL TO REMAIN AT 1,000,000/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:LACK OF COOPERATION/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-07-12T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO PC 1385:LACK OF COOPERATION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10016461",
-    "portal_case_id": "",
+    "portal_case_id": "3643900",
     "display_case_number": "CRI-10016461",
     "defendant": "CAMERON GORDON",
     "filed_date": "2010-06-01",
@@ -59,12 +188,94 @@
       "defendant": "CAMERON GORDON",
       "filed_date": "2010-06-01"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "211 PC/F 209(b)(1) PC/F",
+    "charge_rows": [
+      {
+        "raw": "211 PC/F",
+        "title": "Penal Code § 211",
+        "title_source": "programmatic_citation",
+        "code": "PC 211",
+        "code_system": "PC",
+        "section": "211",
+        "citation": "Penal Code § 211",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "209(b)(1) PC/F",
+        "title": "Penal Code § 209(b)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 209(b)(1)",
+        "code_system": "PC",
+        "section": "209(b)(1)",
+        "citation": "Penal Code § 209(b)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=209.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=209.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CAMERON GORDON, and date of filing 2010-06-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CAMERON GORDON, date of filing, 2010-06-01, and charges in the case: 211 PC/F 209(b)(1) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "211 PC/F",
+      "title": "Penal Code § 211",
+      "title_source": "programmatic_citation",
+      "code": "PC 211",
+      "code_system": "PC",
+      "section": "211",
+      "citation": "Penal Code § 211",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "209(b)(1) PC/F",
+      "title": "Penal Code § 209(b)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 209(b)(1)",
+      "code_system": "PC",
+      "section": "209(b)(1)",
+      "citation": "Penal Code § 209(b)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=209.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=209.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:40:49.211Z",
+  "portal_case_id": "3643900",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10016461",
+      "defendant": "CAMERON GORDON",
+      "filed_date": "2010-06-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3643900"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.969785+00:00"
 }

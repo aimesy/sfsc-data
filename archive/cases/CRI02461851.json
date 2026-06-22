@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T22:00:07.094Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:32:44.752Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02461851",
   "criminal_case_number": "02461851",
@@ -24,19 +24,104 @@
       "name": "CESAR ZAMORA GONZALEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CESAR ZAMORA GONZALEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-04-27T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-22T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-04-27T09:15:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-04-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL BW RETURN/BWDNC/AMEND TO ADD COUNT 3 - 12500(A)VC AS A MISDEMEANOR/FWC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-04-27T09:15:00.000Z",
+      "docketEntryComment": "/TWS/DEF TO PAY $50 BASE FINE PLUS ASSESSMENT FOR TOTAL OF $200 FINE/VF220/COA:40/ICNA/COLLECT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-04-27 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2012-04-27",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-04-27 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2012-04-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-09-22 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2011-09-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KIMBERLY LUTESKOTHS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "14601.2(a) VC/M 23123(a) VC/I 12500(a) VC/M",
+    "filed_date": "2011-09-07",
+    "defendant": "CESAR ZAMORA GONZALEZ",
+    "searched_key": "GONZALEZ/CE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/02461851.json",
     "searched_last_name": "GONZALEZ",
     "searched_first_prefix": "CE",
-    "charges": "14601.2(a) VC/M 23123(a) VC/I 12500(a) VC/M",
     "row": {
       "DEFENDANTNAME": "CESAR ZAMORA GONZALEZ",
       "CASENUMBER": "CRI-02461851",
@@ -45,11 +130,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3564235",
+  "docket_entries": [
+    {
+      "filedDate": "2012-04-27T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-04-27T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-22T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-09-22T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-04-27T09:15:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-04-27T09:15:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-04-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL BW RETURN/BWDNC/AMEND TO ADD COUNT 3 - 12500(A)VC AS A MISDEMEANOR/FWC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-04-27T09:00:00.000Z",
+      "description": "/CAL BW RETURN/BWDNC/AMEND TO ADD COUNT 3 - 12500(A)VC AS A MISDEMEANOR/FWC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-04-27T09:15:00.000Z",
+      "docketEntryComment": "/TWS/DEF TO PAY $50 BASE FINE PLUS ASSESSMENT FOR TOTAL OF $200 FINE/VF220/COA:40/ICNA/COLLECT/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2012-04-27T09:15:00.000Z",
+      "description": "/TWS/DEF TO PAY $50 BASE FINE PLUS ASSESSMENT FOR TOTAL OF $200 FINE/VF220/COA:40/ICNA/COLLECT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-09-22T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02461851",
-    "portal_case_id": "",
+    "portal_case_id": "3564235",
     "display_case_number": "CRI-02461851",
     "defendant": "CESAR ZAMORA GONZALEZ",
     "filed_date": "2011-09-07",
@@ -60,11 +206,110 @@
       "filed_date": "2011-09-07"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "14601.2(a) VC/M 23123(a) VC/I 12500(a) VC/M",
+    "charge_rows": [
+      {
+        "raw": "14601.2(a) VC/M",
+        "title": "Vehicle Code § 14601.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 14601.2(a)",
+        "code_system": "VC",
+        "section": "14601.2(a)",
+        "citation": "Vehicle Code § 14601.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23123(a) VC/I",
+        "title": "Vehicle Code § 23123(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23123(a)",
+        "code_system": "VC",
+        "section": "23123(a)",
+        "citation": "Vehicle Code § 23123(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23123.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23123.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      },
+      {
+        "raw": "12500(a) VC/M",
+        "title": "Vehicle Code § 12500(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 12500(a)",
+        "code_system": "VC",
+        "section": "12500(a)",
+        "citation": "Vehicle Code § 12500(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CESAR ZAMORA GONZALEZ, and date of filing 2011-09-07. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CESAR ZAMORA GONZALEZ, date of filing, 2011-09-07, and charges in the case: 14601.2(a) VC/M 23123(a) VC/I 12500(a) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "14601.2(a) VC/M",
+      "title": "Vehicle Code § 14601.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 14601.2(a)",
+      "code_system": "VC",
+      "section": "14601.2(a)",
+      "citation": "Vehicle Code § 14601.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23123(a) VC/I",
+      "title": "Vehicle Code § 23123(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23123(a)",
+      "code_system": "VC",
+      "section": "23123(a)",
+      "citation": "Vehicle Code § 23123(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23123.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23123.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    },
+    {
+      "raw": "12500(a) VC/M",
+      "title": "Vehicle Code § 12500(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 12500(a)",
+      "code_system": "VC",
+      "section": "12500(a)",
+      "citation": "Vehicle Code § 12500(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:32:45.483Z",
+  "portal_case_id": "3564235",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02461851",
+      "defendant": "CESAR ZAMORA GONZALEZ",
+      "filed_date": "2011-09-07"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3564235"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.711364+00:00"
 }

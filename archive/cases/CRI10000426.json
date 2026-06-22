@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:42:21.917Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:37:25.434Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10000426",
   "criminal_case_number": "10000426",
@@ -24,19 +24,112 @@
       "name": "MATTHEW D BUTLER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MATTHEW D BUTLER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-03-01T15:49:00.000Z",
+      "docketEntryComment": "SENTENCING TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/AJW/CH1:SP 8M :L /X:DEFENDANT TO RECEIVE CREDIT FOR TIMESERVED  52 DAYS COUNTY JAIL,     SAGE FOR A TOTAL OF 52  DAYS,/STATES/ DNACOMP/SECFEE/ICNA/VF5:200/PAR/CDC/CCPV/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/X  DA ORALLY AMENDS COMPLAINT TO ADD COUNT 003,64-487(A)PC-FEL/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:003/FNDG/CO:NEGOTIATED DISPOSITION/PRES:02-23-10/ARBUCKLE/DISM3/CONTD:SENTENCING & PSR/DOP/TWS/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-12T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:PAMELA HERZIG/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:01-28-10/BAIL:135,000/SA1:K BALE/SA1:S MOLLOY/SA1:L COOTE/SA2:PIER 39 SF, CA/SAORD/CONTD:FOR PRELIMINARY HEARING/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/DAWT/X:NO APPEARANCE BY COUNSEL/CONT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-02-24 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2010-02-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-23 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2010-02-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-27 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2010-01-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-12 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 3,
+      "court_date": "2010-01-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PAMELA HERZIG",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "487(a) PC/F 496(a) PC/F",
+    "filed_date": "2010-01-12",
+    "defendant": "MATTHEW D BUTLER",
+    "searched_key": "BUTLER/MA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/10000426.json",
     "searched_last_name": "BUTLER",
     "searched_first_prefix": "MA",
-    "charges": "487(a) PC/F 496(a) PC/F",
     "row": {
       "DEFENDANTNAME": "MATTHEW D BUTLER",
       "CASENUMBER": "CRI-10000426",
@@ -45,11 +138,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3628830",
+  "docket_entries": [
+    {
+      "filedDate": "2010-03-01T15:49:00.000Z",
+      "docketEntryComment": "SENTENCING TX FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-03-01T15:49:00.000Z",
+      "description": "SENTENCING TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/AJW/CH1:SP 8M :L /X:DEFENDANT TO RECEIVE CREDIT FOR TIMESERVED  52 DAYS COUNTY JAIL,     SAGE FOR A TOTAL OF 52  DAYS,/STATES/ DNACOMP/SECFEE/ICNA/VF5:200/PAR/CDC/CCPV/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-02-24T09:00:00.000Z",
+      "description": "/CAL:SENTENCING/AJW/CH1:SP 8M :L /X:DEFENDANT TO RECEIVE CREDIT FOR TIMESERVED 52 DAYS COUNTY JAIL, SAGE FOR A TOTAL OF 52 DAYS,/STATES/ DNACOMP/SECFEE/ICNA/VF5:200/PAR/CDC/CCPV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/X  DA ORALLY AMENDS COMPLAINT TO ADD COUNT 003,64-487(A)PC-FEL/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:003/FNDG/CO:NEGOTIATED DISPOSITION/PRES:02-23-10/ARBUCKLE/DISM3/CONTD:SENTENCING & PSR/DOP/TWS/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-01-27T09:00:00.000Z",
+      "description": "/CAL PRELIMINARY HEARING/X DA ORALLY AMENDS COMPLAINT TO ADD COUNT 003,64-487(A)PC-FEL/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:003/FNDG/CO:NEGOTIATED DISPOSITION/PRES:02-23-10/ARBUCKLE/DISM3/CONTD:SENTENCING & PSR/DOP/TWS/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-12T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:PAMELA HERZIG/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:01-28-10/BAIL:135,000/SA1:K BALE/SA1:S MOLLOY/SA1:L COOTE/SA2:PIER 39 SF, CA/SAORD/CONTD:FOR PRELIMINARY HEARING/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-01-12T09:00:00.000Z",
+      "description": "/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:PAMELA HERZIG/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:01-28-10/BAIL:135,000/SA1:K BALE/SA1:S MOLLOY/SA1:L COOTE/SA2:PIER 39 SF, CA/SAORD/CONTD:FOR PRELIMINARY HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/DAWT/X:NO APPEARANCE BY COUNSEL/CONT/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-02-23T09:00:00.000Z",
+      "description": "/CAL:SENTENCING/DAWT/X:NO APPEARANCE BY COUNSEL/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10000426",
-    "portal_case_id": "",
+    "portal_case_id": "3628830",
     "display_case_number": "CRI-10000426",
     "defendant": "MATTHEW D BUTLER",
     "filed_date": "2010-01-12",
@@ -60,11 +204,84 @@
       "filed_date": "2010-01-12"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "487(a) PC/F 496(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "487(a) PC/F",
+        "title": "Penal Code § 487(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 487(a)",
+        "code_system": "PC",
+        "section": "487(a)",
+        "citation": "Penal Code § 487(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "496(a) PC/F",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MATTHEW D BUTLER, and date of filing 2010-01-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MATTHEW D BUTLER, date of filing, 2010-01-12, and charges in the case: 487(a) PC/F 496(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "487(a) PC/F",
+      "title": "Penal Code § 487(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 487(a)",
+      "code_system": "PC",
+      "section": "487(a)",
+      "citation": "Penal Code § 487(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "496(a) PC/F",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:37:26.067Z",
+  "portal_case_id": "3628830",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10000426",
+      "defendant": "MATTHEW D BUTLER",
+      "filed_date": "2010-01-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3628830"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.881077+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:41:06.860Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:12:11.637Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02484589",
   "criminal_case_number": "02484589",
@@ -24,19 +24,73 @@
       "name": "JAMES R HILL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAMES R HILL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-03-09T15:26:00.000Z",
+      "docketEntryComment": "DEFT'S PC851,8 MOTION TO SEAL AND DESTROY FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-02-02T15:00:00.000Z",
+      "docketEntryComment": "CRT #2483505 HAS BEEN INCORPORATED INTO THIS CASE (DUPLICATE CASE)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-01-08T00:00:00.000Z",
+      "docketEntryComment": "DEFT'S PC851,8 PETITION TO SEAL & DESTROY ARREST RECORDS - FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-03-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL  PC 851,8 PETITION FOR FINDING OF FACTUAL INNOCENCE/MO DENIED/X  COURT'S OWN MOTION TO DECLARE THE ARREST A DETENTION ONLY PURSUANT  TO PC 849,5 IS GRANTED/X: ORDER DECLARING PETITIONER'S ARREST A DETENTION ONLY SIGNED AND FILED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-02-02T08:59:00.000Z",
+      "docketEntryComment": "DEFENSE'S PC851,8 PETN - MOT DENIED W/O PREJUDICE",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-03-23 9:00 AM",
+      "hearingType": "PC 851.8 Petition for Factual Innocence",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2015-03-23",
+      "hearing_time": "9:00 AM",
+      "matters": "PC 851.8 Petition for Factual Innocence",
+      "hearing_type": "PC 851.8 Petition for Factual Innocence",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "GREG GOLDMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "245(a)(1) PC/F 212.5(b) PC/F 242 PC/M",
+    "filed_date": "2015-03-23",
+    "defendant": "JAMES R HILL",
+    "searched_key": "HILL/JA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/02484589.json",
     "searched_last_name": "HILL",
     "searched_first_prefix": "JA",
-    "charges": "245(a)(1) PC/F 212.5(b) PC/F 242 PC/M",
     "row": {
       "DEFENDANTNAME": "JAMES R HILL",
       "CASENUMBER": "CRI-02484589",
@@ -45,11 +99,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3583993",
+  "docket_entries": [
+    {
+      "filedDate": "2015-03-09T15:26:00.000Z",
+      "docketEntryComment": "DEFT'S PC851,8 MOTION TO SEAL AND DESTROY FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-03-09T15:26:00.000Z",
+      "description": "DEFT'S PC851,8 MOTION TO SEAL AND DESTROY FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-02-02T15:00:00.000Z",
+      "docketEntryComment": "CRT #2483505 HAS BEEN INCORPORATED INTO THIS CASE (DUPLICATE CASE)",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-02-02T15:00:00.000Z",
+      "description": "CRT #2483505 HAS BEEN INCORPORATED INTO THIS CASE (DUPLICATE CASE)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-01-08T00:00:00.000Z",
+      "docketEntryComment": "DEFT'S PC851,8 PETITION TO SEAL & DESTROY ARREST RECORDS - FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-01-08T00:00:00.000Z",
+      "description": "DEFT'S PC851,8 PETITION TO SEAL & DESTROY ARREST RECORDS - FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-03-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL  PC 851,8 PETITION FOR FINDING OF FACTUAL INNOCENCE/MO DENIED/X  COURT'S OWN MOTION TO DECLARE THE ARREST A DETENTION ONLY PURSUANT  TO PC 849,5 IS GRANTED/X: ORDER DECLARING PETITIONER'S ARREST A DETENTION ONLY SIGNED AND FILED/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-03-23T09:00:00.000Z",
+      "description": "/CAL PC 851,8 PETITION FOR FINDING OF FACTUAL INNOCENCE/MO DENIED/X COURT'S OWN MOTION TO DECLARE THE ARREST A DETENTION ONLY PURSUANT TO PC 849,5 IS GRANTED/X: ORDER DECLARING PETITIONER'S ARREST A DETENTION ONLY SIGNED AND FILED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-02-02T08:59:00.000Z",
+      "docketEntryComment": "DEFENSE'S PC851,8 PETN - MOT DENIED W/O PREJUDICE",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2015-02-02T08:59:00.000Z",
+      "description": "DEFENSE'S PC851,8 PETN - MOT DENIED W/O PREJUDICE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02484589",
-    "portal_case_id": "",
+    "portal_case_id": "3583993",
     "display_case_number": "CRI-02484589",
     "defendant": "JAMES R HILL",
     "filed_date": "2015-03-23",
@@ -59,12 +164,136 @@
       "defendant": "JAMES R HILL",
       "filed_date": "2015-03-23"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 849",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC 851",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC851",
+        "count": 3,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "245(a)(1) PC/F 212.5(b) PC/F 242 PC/M",
+    "charge_rows": [
+      {
+        "raw": "245(a)(1) PC/F",
+        "title": "Penal Code § 245(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 245(a)(1)",
+        "code_system": "PC",
+        "section": "245(a)(1)",
+        "citation": "Penal Code § 245(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "212.5(b) PC/F",
+        "title": "Penal Code § 212.5(b)",
+        "title_source": "programmatic_citation",
+        "code": "PC 212.5(b)",
+        "code_system": "PC",
+        "section": "212.5(b)",
+        "citation": "Penal Code § 212.5(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=212.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=212.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "242 PC/M",
+        "title": "Penal Code § 242",
+        "title_source": "programmatic_citation",
+        "code": "PC 242",
+        "code_system": "PC",
+        "section": "242",
+        "citation": "Penal Code § 242",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAMES R HILL, and date of filing 2015-03-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAMES R HILL, date of filing, 2015-03-23, and charges in the case: 245(a)(1) PC/F 212.5(b) PC/F 242 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "245(a)(1) PC/F",
+      "title": "Penal Code § 245(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 245(a)(1)",
+      "code_system": "PC",
+      "section": "245(a)(1)",
+      "citation": "Penal Code § 245(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "212.5(b) PC/F",
+      "title": "Penal Code § 212.5(b)",
+      "title_source": "programmatic_citation",
+      "code": "PC 212.5(b)",
+      "code_system": "PC",
+      "section": "212.5(b)",
+      "citation": "Penal Code § 212.5(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=212.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=212.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "242 PC/M",
+      "title": "Penal Code § 242",
+      "title_source": "programmatic_citation",
+      "code": "PC 242",
+      "code_system": "PC",
+      "section": "242",
+      "citation": "Penal Code § 242",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:12:12.316Z",
+  "portal_case_id": "3583993",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02484589",
+      "defendant": "JAMES R HILL",
+      "filed_date": "2015-03-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3583993"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.653221+00:00"
 }

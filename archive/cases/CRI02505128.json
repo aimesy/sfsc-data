@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:22:03.785Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:01:13.633Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02505128",
   "criminal_case_number": "02505128",
@@ -24,19 +24,53 @@
       "name": "BRUCE ALLEN CAMPBELL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BRUCE ALLEN CAMPBELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2017-09-11T10:51:00.000Z",
+      "docketEntryComment": "DEF PROP 64 PETITION FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-09-28T09:30:00.000Z",
+      "docketEntryComment": "/CAL  DEFENSE PROPOSITION 64 PETITION FOR REDESIGNATION PER HEALTH AND SATY CODE SECTION 11361,8(F)/NP/MO GRTD/X: THE COURT REDESIGNATES THE CONVICTION OF 11360(A)HS TO A MISDEMEANOR FOR ALL PURPOSES,/X: WRITTEN ORDER SIGNED AND FILED IN OPEN COURT,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-09-28 9:30 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2017-09-28",
+      "hearing_time": "9:30 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "8888888",
+    "filed_date": "2017-09-28",
+    "defendant": "BRUCE ALLEN CAMPBELL",
+    "searched_key": "CAMPBELL/BR",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/02505128.json",
     "searched_last_name": "CAMPBELL",
     "searched_first_prefix": "BR",
-    "charges": "8888888",
     "row": {
       "DEFENDANTNAME": "BRUCE ALLEN CAMPBELL",
       "CASENUMBER": "CRI-02505128",
@@ -45,11 +79,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3603326",
+  "docket_entries": [
+    {
+      "filedDate": "2017-09-11T10:51:00.000Z",
+      "docketEntryComment": "DEF PROP 64 PETITION FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-09-11T10:51:00.000Z",
+      "description": "DEF PROP 64 PETITION FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-09-28T09:30:00.000Z",
+      "docketEntryComment": "/CAL  DEFENSE PROPOSITION 64 PETITION FOR REDESIGNATION PER HEALTH AND SATY CODE SECTION 11361,8(F)/NP/MO GRTD/X: THE COURT REDESIGNATES THE CONVICTION OF 11360(A)HS TO A MISDEMEANOR FOR ALL PURPOSES,/X: WRITTEN ORDER SIGNED AND FILED IN OPEN COURT,/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-09-28T09:30:00.000Z",
+      "description": "/CAL DEFENSE PROPOSITION 64 PETITION FOR REDESIGNATION PER HEALTH AND SATY CODE SECTION 11361,8(F)/NP/MO GRTD/X: THE COURT REDESIGNATES THE CONVICTION OF 11360(A)HS TO A MISDEMEANOR FOR ALL PURPOSES,/X: WRITTEN ORDER SIGNED AND FILED IN OPEN COURT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02505128",
-    "portal_case_id": "",
+    "portal_case_id": "3603326",
     "display_case_number": "CRI-02505128",
     "defendant": "BRUCE ALLEN CAMPBELL",
     "filed_date": "2017-09-28",
@@ -60,11 +115,42 @@
       "filed_date": "2017-09-28"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BRUCE ALLEN CAMPBELL, and date of filing 2017-09-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BRUCE ALLEN CAMPBELL, date of filing, 2017-09-28, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:01:14.227Z",
+  "portal_case_id": "3603326",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02505128",
+      "defendant": "BRUCE ALLEN CAMPBELL",
+      "filed_date": "2017-09-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3603326"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:20.998995+00:00"
 }

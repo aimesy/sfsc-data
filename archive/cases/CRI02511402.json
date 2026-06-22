@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:12:42.859Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:55:33.084Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02511402",
   "criminal_case_number": "02511402",
@@ -24,10 +24,40 @@
       "name": "EDGARDO MARTINEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "EDGARDO MARTINEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2018-09-13T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-09-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/JAVS/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-09-13 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2018-09-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -42,14 +72,39 @@
       "CASENUMBER": "CRI-02511402",
       "FILEDDATE": "2018-09-12 09:00:00",
       "CHARGES": "490.2(a) PC/M"
-    }
+    },
+    "filed_date": "2018-09-12",
+    "defendant": "EDGARDO MARTINEZ",
+    "searched_key": "MARTINEZ/ED",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/02511402.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3609006",
+  "docket_entries": [
+    {
+      "filedDate": "2018-09-13T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-09-13T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-09-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/JAVS/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-09-13T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/JAVS/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02511402",
-    "portal_case_id": "",
+    "portal_case_id": "3609006",
     "display_case_number": "CRI-02511402",
     "defendant": "EDGARDO MARTINEZ",
     "filed_date": "2018-09-12",
@@ -60,11 +115,58 @@
       "filed_date": "2018-09-12"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "490.2(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "490.2(a) PC/M",
+        "title": "Penal Code § 490.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.2(a)",
+        "code_system": "PC",
+        "section": "490.2(a)",
+        "citation": "Penal Code § 490.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, EDGARDO MARTINEZ, and date of filing 2018-09-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, EDGARDO MARTINEZ, date of filing, 2018-09-12, and charges in the case: 490.2(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.2(a) PC/M",
+      "title": "Penal Code § 490.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.2(a)",
+      "code_system": "PC",
+      "section": "490.2(a)",
+      "citation": "Penal Code § 490.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:55:33.757Z",
+  "portal_case_id": "3609006",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02511402",
+      "defendant": "EDGARDO MARTINEZ",
+      "filed_date": "2018-09-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3609006"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:27.473346+00:00"
 }

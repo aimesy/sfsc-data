@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:36:27.628Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:37:36.444Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10006496",
   "criminal_case_number": "10006496",
@@ -24,11 +24,59 @@
       "name": "JASON THOMPSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JASON THOMPSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-03-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:03-16-10/987,2/BAIL:60,000/X:BAIL IS SET WITHOUT PREJUDICE,/SAORD/SA2:HAIGHT & SHRADER STREETS, SAN FRANCISCO/X:STAY AT LEAST 150 YARDS AWAY FROM THE ABOVE-NAMED PLACE,/CONTD:TO SET & BAIL MOTION/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/MO138572:2446881/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-03-03 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2010-03-03",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-02 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2010-03-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ELIZABETH HILTON",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3634484",
+  "docket_entries": [
+    {
+      "filedDate": "2010-03-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:03-16-10/987,2/BAIL:60,000/X:BAIL IS SET WITHOUT PREJUDICE,/SAORD/SA2:HAIGHT & SHRADER STREETS, SAN FRANCISCO/X:STAY AT LEAST 150 YARDS AWAY FROM THE ABOVE-NAMED PLACE,/CONTD:TO SET & BAIL MOTION/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-03-02T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:03-16-10/987,2/BAIL:60,000/X:BAIL IS SET WITHOUT PREJUDICE,/SAORD/SA2:HAIGHT & SHRADER STREETS, SAN FRANCISCO/X:STAY AT LEAST 150 YARDS AWAY FROM THE ABOVE-NAMED PLACE,/CONTD:TO SET & BAIL MOTION/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/MO138572:2446881/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-03-03T09:00:00.000Z",
+      "description": "/CAL:TO SET/MO138572:2446881/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10006496",
-    "portal_case_id": "",
+    "portal_case_id": "3634484",
     "display_case_number": "CRI-10006496",
     "defendant": "JASON THOMPSON",
     "filed_date": "2010-03-02",
@@ -60,11 +129,83 @@
       "filed_date": "2010-03-02"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11360(a) HS/F 148(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "11360(a) HS/F",
+        "title": "Health and Safety Code § 11360(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11360(a)",
+        "code_system": "HS",
+        "section": "11360(a)",
+        "citation": "Health and Safety Code § 11360(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "148(a)(1) PC/M",
+        "title": "Penal Code § 148(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148(a)(1)",
+        "code_system": "PC",
+        "section": "148(a)(1)",
+        "citation": "Penal Code § 148(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JASON THOMPSON, and date of filing 2010-03-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JASON THOMPSON, date of filing, 2010-03-02, and charges in the case: 11360(a) HS/F 148(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11360(a) HS/F",
+      "title": "Health and Safety Code § 11360(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11360(a)",
+      "code_system": "HS",
+      "section": "11360(a)",
+      "citation": "Health and Safety Code § 11360(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "148(a)(1) PC/M",
+      "title": "Penal Code § 148(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148(a)(1)",
+      "code_system": "PC",
+      "section": "148(a)(1)",
+      "citation": "Penal Code § 148(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:37:37.112Z",
+  "portal_case_id": "3634484",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10006496",
+      "defendant": "JASON THOMPSON",
+      "filed_date": "2010-03-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3634484"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:52:41.910Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:02:58.048Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02505822",
   "criminal_case_number": "02505822",
@@ -24,10 +24,40 @@
       "name": "JASON AUGUST ROBERTS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JASON AUGUST ROBERTS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2017-12-19T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-12-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-12-19 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2017-12-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +75,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3603962",
+  "docket_entries": [
+    {
+      "filedDate": "2017-12-19T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-12-19T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-12-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-12-19T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02505822",
-    "portal_case_id": "",
+    "portal_case_id": "3603962",
     "display_case_number": "CRI-02505822",
     "defendant": "JASON AUGUST ROBERTS",
     "filed_date": "2017-10-19",
@@ -60,11 +111,110 @@
       "filed_date": "2017-10-19"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "14601.2(a) VC/M 4000(a)(1) VC/I 21453(a) VC/I",
+    "charge_rows": [
+      {
+        "raw": "14601.2(a) VC/M",
+        "title": "Vehicle Code § 14601.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 14601.2(a)",
+        "code_system": "VC",
+        "section": "14601.2(a)",
+        "citation": "Vehicle Code § 14601.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "4000(a)(1) VC/I",
+        "title": "Vehicle Code § 4000(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "VC 4000(a)(1)",
+        "code_system": "VC",
+        "section": "4000(a)(1)",
+        "citation": "Vehicle Code § 4000(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=4000.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=4000.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      },
+      {
+        "raw": "21453(a) VC/I",
+        "title": "Vehicle Code § 21453(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 21453(a)",
+        "code_system": "VC",
+        "section": "21453(a)",
+        "citation": "Vehicle Code § 21453(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21453.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21453.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JASON AUGUST ROBERTS, and date of filing 2017-10-19. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JASON AUGUST ROBERTS, date of filing, 2017-10-19, and charges in the case: 14601.2(a) VC/M 4000(a)(1) VC/I 21453(a) VC/I.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "14601.2(a) VC/M",
+      "title": "Vehicle Code § 14601.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 14601.2(a)",
+      "code_system": "VC",
+      "section": "14601.2(a)",
+      "citation": "Vehicle Code § 14601.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "4000(a)(1) VC/I",
+      "title": "Vehicle Code § 4000(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "VC 4000(a)(1)",
+      "code_system": "VC",
+      "section": "4000(a)(1)",
+      "citation": "Vehicle Code § 4000(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=4000.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=4000.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    },
+    {
+      "raw": "21453(a) VC/I",
+      "title": "Vehicle Code § 21453(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 21453(a)",
+      "code_system": "VC",
+      "section": "21453(a)",
+      "citation": "Vehicle Code § 21453(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21453.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21453.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:02:58.745Z",
+  "portal_case_id": "3603962",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02505822",
+      "defendant": "JASON AUGUST ROBERTS",
+      "filed_date": "2017-10-19"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3603962"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:48:41.377Z"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:22:19.226Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:09:10.440Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02493178",
   "criminal_case_number": "02493178",
@@ -24,10 +24,53 @@
       "name": "DUQUAN LIU",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DUQUAN LIU",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2016-04-12T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTC/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-04-04T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTORD:CANTONESE/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-04-12 1:30 PM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2016-04-12",
+      "hearing_time": "1:30 PM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-04-04 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2016-04-04",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +88,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3592033",
+  "docket_entries": [
+    {
+      "filedDate": "2016-04-12T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTC/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-04-12T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/INTC/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-04-04T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTORD:CANTONESE/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-04-04T14:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/INTORD:CANTONESE/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02493178",
-    "portal_case_id": "",
+    "portal_case_id": "3592033",
     "display_case_number": "CRI-02493178",
     "defendant": "DUQUAN LIU",
     "filed_date": "2016-04-04",
@@ -60,11 +124,57 @@
       "filed_date": "2016-04-04"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "647(j)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "647(j)(1) PC/M",
+        "title": "Penal Code § 647(j)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 647(j)(1)",
+        "code_system": "PC",
+        "section": "647(j)(1)",
+        "citation": "Penal Code § 647(j)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DUQUAN LIU, and date of filing 2016-04-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DUQUAN LIU, date of filing, 2016-04-04, and charges in the case: 647(j)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "647(j)(1) PC/M",
+      "title": "Penal Code § 647(j)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 647(j)(1)",
+      "code_system": "PC",
+      "section": "647(j)(1)",
+      "citation": "Penal Code § 647(j)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:09:11.088Z",
+  "portal_case_id": "3592033",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02493178",
+      "defendant": "DUQUAN LIU",
+      "filed_date": "2016-04-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3592033"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:26:51.653Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:39:50.145Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10005109",
   "criminal_case_number": "10005109",
@@ -24,19 +24,130 @@
       "name": "CRYSTAL DAVIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CRYSTAL DAVIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-04-03T11:50:00.000Z",
+      "docketEntryComment": "DEFT'S MOT FOR RETURN OF PROPERTY FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-04-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:MOTION FOR RETURN OF PROPERTY/X:APPEARANCE BY ATTORNEY RONNIE WAGNERON BEHALF OF SFPD LEGAL DEPARTMENT,/X:SFPD LEGAL ADVISES THE MONEY SOUGHTBY DEFENDANT WAS PREVIOUSLY CONFISCATED THROUGH CIVIL ASSET FORFEITURE PROCEEDINGS,/X:AS SUCH, THE COURT DENIES THE MOTION FOR LACK OF JURISDICTION,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/BAIL:25,000/X:DEFENSE MOTION FOR AN OR RELEASE IS DENIED,/CONTD:PRE-HEARING CONFERENCE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO138573/X:PEOPLE'S 1ST DISMISSAL/BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL, DOP/CONT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-04-19 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2013-04-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-04-27 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2010-04-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-04-13 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2010-04-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-03 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2010-03-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-18 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 4,
+      "court_date": "2010-02-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARK JACOBS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11352(a) HS/F",
+    "filed_date": "2010-02-18",
+    "defendant": "CRYSTAL DAVIS",
+    "searched_key": "DAVIS/CR",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/10005109.json",
     "searched_last_name": "DAVIS",
     "searched_first_prefix": "CR",
-    "charges": "11352(a) HS/F",
     "row": {
       "DEFENDANTNAME": "CRYSTAL DAVIS",
       "CASENUMBER": "CRI-10005109",
@@ -45,11 +156,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3633206",
+  "docket_entries": [
+    {
+      "filedDate": "2013-04-03T11:50:00.000Z",
+      "docketEntryComment": "DEFT'S MOT FOR RETURN OF PROPERTY FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-04-03T11:50:00.000Z",
+      "description": "DEFT'S MOT FOR RETURN OF PROPERTY FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-04-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:MOTION FOR RETURN OF PROPERTY/X:APPEARANCE BY ATTORNEY RONNIE WAGNERON BEHALF OF SFPD LEGAL DEPARTMENT,/X:SFPD LEGAL ADVISES THE MONEY SOUGHTBY DEFENDANT WAS PREVIOUSLY CONFISCATED THROUGH CIVIL ASSET FORFEITURE PROCEEDINGS,/X:AS SUCH, THE COURT DENIES THE MOTION FOR LACK OF JURISDICTION,/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-04-19T09:00:00.000Z",
+      "description": "/CAL:MOTION FOR RETURN OF PROPERTY/X:APPEARANCE BY ATTORNEY RONNIE WAGNERON BEHALF OF SFPD LEGAL DEPARTMENT,/X:SFPD LEGAL ADVISES THE MONEY SOUGHTBY DEFENDANT WAS PREVIOUSLY CONFISCATED THROUGH CIVIL ASSET FORFEITURE PROCEEDINGS,/X:AS SUCH, THE COURT DENIES THE MOTION FOR LACK OF JURISDICTION,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/BAIL:25,000/X:DEFENSE MOTION FOR AN OR RELEASE IS DENIED,/CONTD:PRE-HEARING CONFERENCE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-02-18T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/BAIL:25,000/X:DEFENSE MOTION FOR AN OR RELEASE IS DENIED,/CONTD:PRE-HEARING CONFERENCE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO138573/X:PEOPLE'S 1ST DISMISSAL/BE/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-04-27T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO138573/X:PEOPLE'S 1ST DISMISSAL/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-04-13T09:00:00.000Z",
+      "description": "/CAL:PRE-HEARING CONFERENCE/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL, DOP/CONT/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-03-03T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL, DOP/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10005109",
-    "portal_case_id": "",
+    "portal_case_id": "3633206",
     "display_case_number": "CRI-10005109",
     "defendant": "CRYSTAL DAVIS",
     "filed_date": "2010-02-18",
@@ -60,11 +232,58 @@
       "filed_date": "2010-02-18"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11352(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11352(a) HS/F",
+        "title": "Health and Safety Code § 11352(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11352(a)",
+        "code_system": "HS",
+        "section": "11352(a)",
+        "citation": "Health and Safety Code § 11352(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CRYSTAL DAVIS, and date of filing 2010-02-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CRYSTAL DAVIS, date of filing, 2010-02-18, and charges in the case: 11352(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11352(a) HS/F",
+      "title": "Health and Safety Code § 11352(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11352(a)",
+      "code_system": "HS",
+      "section": "11352(a)",
+      "citation": "Health and Safety Code § 11352(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:39:50.728Z",
+  "portal_case_id": "3633206",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10005109",
+      "defendant": "CRYSTAL DAVIS",
+      "filed_date": "2010-02-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3633206"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.982778+00:00"
 }

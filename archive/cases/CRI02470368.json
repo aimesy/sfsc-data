@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:30:24.225Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:27:24.785Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02470368",
   "criminal_case_number": "02470368",
@@ -24,19 +24,127 @@
       "name": "ISMAEL GONZALEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ISMAEL GONZALEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-02-24T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-11-20T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-04-17T14:05:00.000Z",
+      "docketEntryComment": "DEFT'S MOT FOR CIVIL COMPROMISE (PC1377/78) FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-02-21T15:00:00.000Z",
+      "docketEntryComment": "MOT TO RBW FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-04-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE, DEF MOT FOR CIVIL COMPROMISE/MO GRTD/X:PURSUANTTO 1378 OF THE PENAL CODE AND THE DEFENDANT HAS NO OTHER CASES,THE COURT ORDERS ALL PROCEEDINGS TO BE STAYED UPON THE PROSECUTION, AND THEDEFENDANT IS DISCHARGED,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-02-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:MOTION TO RECALL BW/BWR:02-05-14/BWR1/TEXT:DEFT ENT NG PLEA(S) & DENOF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-02-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:11-20-12/BWI/BAIL:15,000/BWNUM:2ND",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-11-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-04-22 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2014-04-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-02-24 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2014-02-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-02-05 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2014-02-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-11-20 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2012-11-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ANDREA LINDSAY",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "484(a) PC/M",
+    "filed_date": "2012-11-14",
+    "defendant": "ISMAEL GONZALEZ",
+    "searched_key": "GONZALEZ/IS",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/02470368.json",
     "searched_last_name": "GONZALEZ",
     "searched_first_prefix": "IS",
-    "charges": "484(a) PC/M",
     "row": {
       "DEFENDANTNAME": "ISMAEL GONZALEZ",
       "CASENUMBER": "CRI-02470368",
@@ -45,11 +153,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3571762",
+  "docket_entries": [
+    {
+      "filedDate": "2014-02-24T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-02-24T09:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-11-20T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-11-20T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-04-17T14:05:00.000Z",
+      "docketEntryComment": "DEFT'S MOT FOR CIVIL COMPROMISE (PC1377/78) FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2014-04-17T14:05:00.000Z",
+      "description": "DEFT'S MOT FOR CIVIL COMPROMISE (PC1377/78) FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-02-21T15:00:00.000Z",
+      "docketEntryComment": "MOT TO RBW FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2014-02-21T15:00:00.000Z",
+      "description": "MOT TO RBW FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-04-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE, DEF MOT FOR CIVIL COMPROMISE/MO GRTD/X:PURSUANTTO 1378 OF THE PENAL CODE AND THE DEFENDANT HAS NO OTHER CASES,THE COURT ORDERS ALL PROCEEDINGS TO BE STAYED UPON THE PROSECUTION, AND THEDEFENDANT IS DISCHARGED,/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2014-04-22T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE, DEF MOT FOR CIVIL COMPROMISE/MO GRTD/X:PURSUANTTO 1378 OF THE PENAL CODE AND THE DEFENDANT HAS NO OTHER CASES,THE COURT ORDERS ALL PROCEEDINGS TO BE STAYED UPON THE PROSECUTION, AND THEDEFENDANT IS DISCHARGED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-02-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:MOTION TO RECALL BW/BWR:02-05-14/BWR1/TEXT:DEFT ENT NG PLEA(S) & DENOF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2014-02-24T09:00:00.000Z",
+      "description": "/CAL:MOTION TO RECALL BW/BWR:02-05-14/BWR1/TEXT:DEFT ENT NG PLEA(S) & DENOF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-02-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:11-20-12/BWI/BAIL:15,000/BWNUM:2ND",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2014-02-05T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:11-20-12/BWI/BAIL:15,000/BWNUM:2ND",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-11-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2012-11-20T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02470368",
-    "portal_case_id": "",
+    "portal_case_id": "3571762",
     "display_case_number": "CRI-02470368",
     "defendant": "ISMAEL GONZALEZ",
     "filed_date": "2012-11-14",
@@ -59,12 +248,68 @@
       "defendant": "ISMAEL GONZALEZ",
       "filed_date": "2012-11-14"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC1377",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "484(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "484(a) PC/M",
+        "title": "Penal Code § 484(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 484(a)",
+        "code_system": "PC",
+        "section": "484(a)",
+        "citation": "Penal Code § 484(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ISMAEL GONZALEZ, and date of filing 2012-11-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ISMAEL GONZALEZ, date of filing, 2012-11-14, and charges in the case: 484(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "484(a) PC/M",
+      "title": "Penal Code § 484(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 484(a)",
+      "code_system": "PC",
+      "section": "484(a)",
+      "citation": "Penal Code § 484(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:27:25.503Z",
+  "portal_case_id": "3571762",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02470368",
+      "defendant": "ISMAEL GONZALEZ",
+      "filed_date": "2012-11-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3571762"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.468822+00:00"
 }

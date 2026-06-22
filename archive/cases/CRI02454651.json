@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:42:08.041Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:35:43.918Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02454651",
   "criminal_case_number": "02454651",
@@ -24,19 +24,107 @@
       "name": "LANA BERNSTEIN CARTER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LANA BERNSTEIN CARTER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-02-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD PROG REPORT/DAWT/X:DEFENDANT HAS SUCCESSFULLY COMPLETED PRETRIALDIVERSION, THE COURT GRANTS THE MOTION TO DISMISS COUNT 1 PURSUANT TO PENAL CODE 1001,9/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL PTD ELIGIBILITY REPORT/X COURT HAS RECEIVED A POSITIVE PTD REPORT TOAY,/DAWT/CONTD PTD PROG RPT/CGTW/NGWD1:1/PTD:1/CPSS/CONTD:PTD PROGRESS REPORT RE COUNSELLING & RESTITUTION ON 02-01-11/DOPU:PTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/DAWT/CONTD PTD ELIG RPT/GTWM/X:COUNT 1 CHARGING PC484 IS REFERRED TO PRETRIAL DIVERSION FOR AN ELIGIBILITY REPORT,/PTDIV:11-01-10/CONT/DOPU:PRETRIAL DIVERSION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-15T09:00:00.000Z",
+      "docketEntryComment": "/NP/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/DAWF/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-02-01 9:00 AM",
+      "hearingType": "Pretrial Diversion Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2011-02-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Progress Report",
+      "hearing_type": "Pretrial Diversion Progress Report",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-11-01 9:00 AM",
+      "hearingType": "Pretrial Diversion Eligibility Report",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 1,
+      "court_date": "2010-11-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Eligibility Report",
+      "hearing_type": "Pretrial Diversion Eligibility Report",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-10-04 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 2,
+      "court_date": "2010-10-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-09-15 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 3,
+      "court_date": "2010-09-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DENNIS FITZPATRICK",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "484(a)/490.5 PC/M",
+    "filed_date": "2010-09-15",
+    "defendant": "LANA BERNSTEIN CARTER",
+    "searched_key": "CARTER/LA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/02454651.json",
     "searched_last_name": "CARTER",
     "searched_first_prefix": "LA",
-    "charges": "484(a)/490.5 PC/M",
     "row": {
       "DEFENDANTNAME": "LANA BERNSTEIN CARTER",
       "CASENUMBER": "CRI-02454651",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3558097",
+  "docket_entries": [
+    {
+      "filedDate": "2011-02-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD PROG REPORT/DAWT/X:DEFENDANT HAS SUCCESSFULLY COMPLETED PRETRIALDIVERSION, THE COURT GRANTS THE MOTION TO DISMISS COUNT 1 PURSUANT TO PENAL CODE 1001,9/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-02-01T09:00:00.000Z",
+      "description": "/CAL:PTD PROG REPORT/DAWT/X:DEFENDANT HAS SUCCESSFULLY COMPLETED PRETRIALDIVERSION, THE COURT GRANTS THE MOTION TO DISMISS COUNT 1 PURSUANT TO PENAL CODE 1001,9/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL PTD ELIGIBILITY REPORT/X COURT HAS RECEIVED A POSITIVE PTD REPORT TOAY,/DAWT/CONTD PTD PROG RPT/CGTW/NGWD1:1/PTD:1/CPSS/CONTD:PTD PROGRESS REPORT RE COUNSELLING & RESTITUTION ON 02-01-11/DOPU:PTD/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-11-01T09:00:00.000Z",
+      "description": "/CAL PTD ELIGIBILITY REPORT/X COURT HAS RECEIVED A POSITIVE PTD REPORT TOAY,/DAWT/CONTD PTD PROG RPT/CGTW/NGWD1:1/PTD:1/CPSS/CONTD:PTD PROGRESS REPORT RE COUNSELLING & RESTITUTION ON 02-01-11/DOPU:PTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/DAWT/CONTD PTD ELIG RPT/GTWM/X:COUNT 1 CHARGING PC484 IS REFERRED TO PRETRIAL DIVERSION FOR AN ELIGIBILITY REPORT,/PTDIV:11-01-10/CONT/DOPU:PRETRIAL DIVERSION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-10-04T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/DAWT/CONTD PTD ELIG RPT/GTWM/X:COUNT 1 CHARGING PC484 IS REFERRED TO PRETRIAL DIVERSION FOR AN ELIGIBILITY REPORT,/PTDIV:11-01-10/CONT/DOPU:PRETRIAL DIVERSION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-15T09:00:00.000Z",
+      "docketEntryComment": "/NP/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/DAWF/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-09-15T09:00:00.000Z",
+      "description": "/NP/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/DAWF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02454651",
-    "portal_case_id": "",
+    "portal_case_id": "3558097",
     "display_case_number": "CRI-02454651",
     "defendant": "LANA BERNSTEIN CARTER",
     "filed_date": "2010-09-15",
@@ -59,12 +188,76 @@
       "defendant": "LANA BERNSTEIN CARTER",
       "filed_date": "2010-09-15"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC484",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "484(a)/490.5 PC/M",
+    "charge_rows": [
+      {
+        "raw": "484(a)/490.5 PC/M",
+        "title": "484(a)",
+        "title_source": "criminal_index_text",
+        "code": "PC 490.5",
+        "code_system": "PC",
+        "section": "490.5",
+        "citation": "Penal Code § 490.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LANA BERNSTEIN CARTER, and date of filing 2010-09-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LANA BERNSTEIN CARTER, date of filing, 2010-09-15, and charges in the case: 484(a)/490.5 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "484(a)/490.5 PC/M",
+      "title": "484(a)",
+      "title_source": "criminal_index_text",
+      "code": "PC 490.5",
+      "code_system": "PC",
+      "section": "490.5",
+      "citation": "Penal Code § 490.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:35:44.554Z",
+  "portal_case_id": "3558097",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02454651",
+      "defendant": "LANA BERNSTEIN CARTER",
+      "filed_date": "2010-09-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3558097"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:26.162157+00:00"
 }

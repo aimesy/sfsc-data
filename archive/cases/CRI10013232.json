@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:17:58.892Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:40:27.085Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10013232",
   "criminal_case_number": "10013232",
@@ -24,19 +24,130 @@
       "name": "BRUCE ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BRUCE ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-05-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A P&C; 4011,6; CJC ASSESSMENT/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS: FRANK REDEZNO/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNEMENT/25    CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:05-10-10/CONTD:INSTRUCTION AND ARRAIGNMENT, PLEA AND COUNSEL;  RECEIPT OF 4011,6PC REPORT; AND CJC ASSSSMENT/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRAILING #2376226/MO138583/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-11T09:00:00.000Z",
+      "docketEntryComment": "/CONTD:TRAILING #2376226/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET/CONTD:06-11-10 TO TRAILING CRT # 2376226/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-13T08:30:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-06-25 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 28",
+      "__index": 0,
+      "court_date": "2010-06-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 28",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-11 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 28",
+      "__index": 1,
+      "court_date": "2010-06-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 28",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-05-14 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2010-05-14",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-05-10 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 3,
+      "court_date": "2010-05-10",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-05-05 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 4,
+      "court_date": "2010-05-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "FRANK REDEZNO",
+      "type": "Appointed Counsel"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "666 PC/M",
+    "filed_date": "2010-05-05",
+    "defendant": "BRUCE ANDERSON",
+    "searched_key": "ANDERSON/BR",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/10013232.json",
     "searched_last_name": "ANDERSON",
     "searched_first_prefix": "BR",
-    "charges": "666 PC/M",
     "row": {
       "DEFENDANTNAME": "BRUCE ANDERSON",
       "CASENUMBER": "CRI-10013232",
@@ -45,11 +156,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3640835",
+  "docket_entries": [
+    {
+      "filedDate": "2010-05-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A P&C; 4011,6; CJC ASSESSMENT/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS: FRANK REDEZNO/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-05-10T09:00:00.000Z",
+      "description": "/CAL:I&A P&C; 4011,6; CJC ASSESSMENT/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS: FRANK REDEZNO/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNEMENT/25    CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:05-10-10/CONTD:INSTRUCTION AND ARRAIGNMENT, PLEA AND COUNSEL;  RECEIPT OF 4011,6PC REPORT; AND CJC ASSSSMENT/DOPC/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-05-05T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNEMENT/25 CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:05-10-10/CONTD:INSTRUCTION AND ARRAIGNMENT, PLEA AND COUNSEL; RECEIPT OF 4011,6PC REPORT; AND CJC ASSSSMENT/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRAILING #2376226/MO138583/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-06-25T09:00:00.000Z",
+      "description": "/CAL:TRAILING #2376226/MO138583/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-11T09:00:00.000Z",
+      "docketEntryComment": "/CONTD:TRAILING #2376226/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-06-11T09:00:00.000Z",
+      "description": "/CONTD:TRAILING #2376226/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET/CONTD:06-11-10 TO TRAILING CRT # 2376226/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-05-14T09:00:00.000Z",
+      "description": "/CAL: TO SET/CONTD:06-11-10 TO TRAILING CRT # 2376226/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-13T08:30:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-05-13T08:30:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10013232",
-    "portal_case_id": "",
+    "portal_case_id": "3640835",
     "display_case_number": "CRI-10013232",
     "defendant": "BRUCE ANDERSON",
     "filed_date": "2010-05-05",
@@ -59,12 +231,68 @@
       "defendant": "BRUCE ANDERSON",
       "filed_date": "2010-05-05"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 4011",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "666 PC/M",
+    "charge_rows": [
+      {
+        "raw": "666 PC/M",
+        "title": "Penal Code § 666",
+        "title_source": "programmatic_citation",
+        "code": "PC 666",
+        "code_system": "PC",
+        "section": "666",
+        "citation": "Penal Code § 666",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BRUCE ANDERSON, and date of filing 2010-05-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BRUCE ANDERSON, date of filing, 2010-05-05, and charges in the case: 666 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "666 PC/M",
+      "title": "Penal Code § 666",
+      "title_source": "programmatic_citation",
+      "code": "PC 666",
+      "code_system": "PC",
+      "section": "666",
+      "citation": "Penal Code § 666",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:40:27.790Z",
+  "portal_case_id": "3640835",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10013232",
+      "defendant": "BRUCE ANDERSON",
+      "filed_date": "2010-05-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3640835"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.668369+00:00"
 }

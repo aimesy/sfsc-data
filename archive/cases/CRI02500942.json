@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:41:51.098Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:02:45.979Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02500942",
   "criminal_case_number": "02500942",
@@ -24,19 +24,91 @@
       "name": "MICHAEL DENNIS BRYANT",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL DENNIS BRYANT",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2017-02-16T16:33:40.000Z",
+      "docketEntryComment": "Complaint and Citation",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-03-21T16:31:21.000Z",
+      "docketEntryComment": "First Amended Misdemeanor Complaint",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-06-03T16:24:03.000Z",
+      "docketEntryComment": "Notice to Appear Pursuant to 853.6 PC",
+      "otherSubmitter": "Department of Correction, County of Santa Clara CA"
+    },
+    {
+      "filedDate": "2017-06-03T16:18:52.000Z",
+      "docketEntryComment": "Outside Agency/ Arrest Information",
+      "otherSubmitter": "Contra Costa SO"
+    },
+    {
+      "filedDate": "2017-03-21T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued 03/21/2017",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-07-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:03-21-17/BWI/BAIL:7500/CTORD:NO CITE/BWNUM:2ND/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-03-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:THE PEOPLE FILED FIRST AMENDED MISDEMEANOR COMPLAINT/FTA/BWI/BAIL:3,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-07-10 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2017-07-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-03-21 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2017-03-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "14601.2(a) VC/M",
+    "filed_date": "2017-02-17",
+    "defendant": "MICHAEL DENNIS BRYANT",
+    "searched_key": "BRYANT/MI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/02500942.json",
     "searched_last_name": "BRYANT",
     "searched_first_prefix": "MI",
-    "charges": "14601.2(a) VC/M",
     "row": {
       "DEFENDANTNAME": "MICHAEL DENNIS BRYANT",
       "CASENUMBER": "CRI-02500942",
@@ -45,11 +117,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3599456",
+  "docket_entries": [
+    {
+      "filedDate": "2017-02-16T16:33:40.000Z",
+      "docketEntryComment": "Complaint and Citation",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-02-16T16:33:40.000Z",
+      "description": "Complaint and Citation",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-03-21T16:31:21.000Z",
+      "docketEntryComment": "First Amended Misdemeanor Complaint",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-03-21T16:31:21.000Z",
+      "description": "First Amended Misdemeanor Complaint",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-06-03T16:24:03.000Z",
+      "docketEntryComment": "Notice to Appear Pursuant to 853.6 PC",
+      "otherSubmitter": "Department of Correction, County of Santa Clara CA",
+      "__index": 2,
+      "date_filed": "2017-06-03T16:24:03.000Z",
+      "description": "Notice to Appear Pursuant to 853.6 PC",
+      "submitter": "Department of Correction, County of Santa Clara CA",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-06-03T16:18:52.000Z",
+      "docketEntryComment": "Outside Agency/ Arrest Information",
+      "otherSubmitter": "Contra Costa SO",
+      "__index": 3,
+      "date_filed": "2017-06-03T16:18:52.000Z",
+      "description": "Outside Agency/ Arrest Information",
+      "submitter": "Contra Costa SO",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-03-21T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued 03/21/2017",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2017-03-21T09:00:00.000Z",
+      "description": "Bench Warrant Issued 03/21/2017",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-07-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:03-21-17/BWI/BAIL:7500/CTORD:NO CITE/BWNUM:2ND/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2017-07-10T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/FTA/BWDIRIC1:03-21-17/BWI/BAIL:7500/CTORD:NO CITE/BWNUM:2ND/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-03-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:THE PEOPLE FILED FIRST AMENDED MISDEMEANOR COMPLAINT/FTA/BWI/BAIL:3,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2017-03-21T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:THE PEOPLE FILED FIRST AMENDED MISDEMEANOR COMPLAINT/FTA/BWI/BAIL:3,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02500942",
-    "portal_case_id": "",
+    "portal_case_id": "3599456",
     "display_case_number": "CRI-02500942",
     "defendant": "MICHAEL DENNIS BRYANT",
     "filed_date": "2017-02-17",
@@ -60,11 +203,58 @@
       "filed_date": "2017-02-17"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "14601.2(a) VC/M",
+    "charge_rows": [
+      {
+        "raw": "14601.2(a) VC/M",
+        "title": "Vehicle Code § 14601.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 14601.2(a)",
+        "code_system": "VC",
+        "section": "14601.2(a)",
+        "citation": "Vehicle Code § 14601.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL DENNIS BRYANT, and date of filing 2017-02-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL DENNIS BRYANT, date of filing, 2017-02-17, and charges in the case: 14601.2(a) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "14601.2(a) VC/M",
+      "title": "Vehicle Code § 14601.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 14601.2(a)",
+      "code_system": "VC",
+      "section": "14601.2(a)",
+      "citation": "Vehicle Code § 14601.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:02:46.670Z",
+  "portal_case_id": "3599456",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02500942",
+      "defendant": "MICHAEL DENNIS BRYANT",
+      "filed_date": "2017-02-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3599456"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.509698+00:00"
 }

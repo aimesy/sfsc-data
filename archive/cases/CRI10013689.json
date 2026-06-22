@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:58:46.284Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:40:15.515Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10013689",
   "criminal_case_number": "10013689",
@@ -24,19 +24,107 @@
       "name": "ADAM N GARCIA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ADAM N GARCIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-09-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS OF VICTORY OUTREACH PROGRAM IN CASE 10001745/X:DEFENDANT RECEIVES A POSITIVE VERBAL REPORT FROM VICTORY OUTREACH PROGRAM,/MO PC 1385:INTEREST OF JUSTICE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS OF DEFENDANT'S VICTORY OUTREACH PROGRAM IN PTD CASE 10001745/X:COURT HAS RECEIVED A FAVORABLE PTD REPORT TODAY IN CASE 10001745,  ROSALINDA HONTIVEROS IS PRESENT TODAY OBO VICTORY OUTREACH PROGRAM,/DAWT/CTORD:THAT THE DEFENDANT IS TO REMAIN ON THE PTD PROGRAM IN CASE 10001745/CGTW/CONTD:STATUS OF DEFENDANT'S VICTORY OUTREACH PROGRAM ON 09-08-10/DOPU:VICTORYOUTREACH PROGRAM/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET AND JOIN #10013265 & 10001745/X:ROSALINDA ONTIVEROS FROM VICTORY OUTREACH, SPECIALLY APPEARED,/OR/CTORD:AS CONDITION OF O,R,, DEFENDANTTO BE RELEASED AND REMAINS IN VICTORY OUTREACH, A RESIDENTIAL TREATMENT PROGRAM, IN ADDITION, COURT TO BE NOTIFIED UPON DEFENDANT'S RELEASE FROM THEPROGRAM,/X:REPORT TO BE PROVIDED BY VICTORY OUTREACH PROGRAM,/CGTW/CONTD:STATUS OF THE VICTORY OUTREACH PROGRAM/X:DEFENDANT'S APPEARANCE IS WAIVEDAS LONG AS DEFENDANT IS IN THE PROGRAM,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/X:VICTORY OUTREACH REPRESENTATIVE ONTIVEROS TO PICK UPDEFENDANT WHEN RELEASED/ /GTW/987,2/X:DEFENSE RESERVES THE RIGHT FOR 991 AND DEMURRER MOTIONS/SA1:VALENTINA N/SA2:1081 HAMPSHIRE ST SF/SA0RD3/SAORD/CONTD:TO SET INDEPT 17/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-09-08 9:00 AM",
+      "hearingType": "Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2010-09-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Progress Report",
+      "hearing_type": "Progress Report",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-08-10 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2010-08-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-05-10 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2010-05-10",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-05-07 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 3,
+      "court_date": "2010-05-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ARIEL BOYCESMITH",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "242 PC/M",
+    "filed_date": "2010-05-07",
+    "defendant": "ADAM N GARCIA",
+    "searched_key": "GARCIA/AD",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/10013689.json",
     "searched_last_name": "GARCIA",
     "searched_first_prefix": "AD",
-    "charges": "242 PC/M",
     "row": {
       "DEFENDANTNAME": "ADAM N GARCIA",
       "CASENUMBER": "CRI-10013689",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3641275",
+  "docket_entries": [
+    {
+      "filedDate": "2010-09-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS OF VICTORY OUTREACH PROGRAM IN CASE 10001745/X:DEFENDANT RECEIVES A POSITIVE VERBAL REPORT FROM VICTORY OUTREACH PROGRAM,/MO PC 1385:INTEREST OF JUSTICE/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-09-08T09:00:00.000Z",
+      "description": "/CAL:STATUS OF VICTORY OUTREACH PROGRAM IN CASE 10001745/X:DEFENDANT RECEIVES A POSITIVE VERBAL REPORT FROM VICTORY OUTREACH PROGRAM,/MO PC 1385:INTEREST OF JUSTICE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS OF DEFENDANT'S VICTORY OUTREACH PROGRAM IN PTD CASE 10001745/X:COURT HAS RECEIVED A FAVORABLE PTD REPORT TODAY IN CASE 10001745,  ROSALINDA HONTIVEROS IS PRESENT TODAY OBO VICTORY OUTREACH PROGRAM,/DAWT/CTORD:THAT THE DEFENDANT IS TO REMAIN ON THE PTD PROGRAM IN CASE 10001745/CGTW/CONTD:STATUS OF DEFENDANT'S VICTORY OUTREACH PROGRAM ON 09-08-10/DOPU:VICTORYOUTREACH PROGRAM/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-08-10T09:00:00.000Z",
+      "description": "/CAL:STATUS OF DEFENDANT'S VICTORY OUTREACH PROGRAM IN PTD CASE 10001745/X:COURT HAS RECEIVED A FAVORABLE PTD REPORT TODAY IN CASE 10001745, ROSALINDA HONTIVEROS IS PRESENT TODAY OBO VICTORY OUTREACH PROGRAM,/DAWT/CTORD:THAT THE DEFENDANT IS TO REMAIN ON THE PTD PROGRAM IN CASE 10001745/CGTW/CONTD:STATUS OF DEFENDANT'S VICTORY OUTREACH PROGRAM ON 09-08-10/DOPU:VICTORYOUTREACH PROGRAM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET AND JOIN #10013265 & 10001745/X:ROSALINDA ONTIVEROS FROM VICTORY OUTREACH, SPECIALLY APPEARED,/OR/CTORD:AS CONDITION OF O,R,, DEFENDANTTO BE RELEASED AND REMAINS IN VICTORY OUTREACH, A RESIDENTIAL TREATMENT PROGRAM, IN ADDITION, COURT TO BE NOTIFIED UPON DEFENDANT'S RELEASE FROM THEPROGRAM,/X:REPORT TO BE PROVIDED BY VICTORY OUTREACH PROGRAM,/CGTW/CONTD:STATUS OF THE VICTORY OUTREACH PROGRAM/X:DEFENDANT'S APPEARANCE IS WAIVEDAS LONG AS DEFENDANT IS IN THE PROGRAM,/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-05-10T09:00:00.000Z",
+      "description": "/CAL:TO SET AND JOIN #10013265 & 10001745/X:ROSALINDA ONTIVEROS FROM VICTORY OUTREACH, SPECIALLY APPEARED,/OR/CTORD:AS CONDITION OF O,R,, DEFENDANTTO BE RELEASED AND REMAINS IN VICTORY OUTREACH, A RESIDENTIAL TREATMENT PROGRAM, IN ADDITION, COURT TO BE NOTIFIED UPON DEFENDANT'S RELEASE FROM THEPROGRAM,/X:REPORT TO BE PROVIDED BY VICTORY OUTREACH PROGRAM,/CGTW/CONTD:STATUS OF THE VICTORY OUTREACH PROGRAM/X:DEFENDANT'S APPEARANCE IS WAIVEDAS LONG AS DEFENDANT IS IN THE PROGRAM,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/X:VICTORY OUTREACH REPRESENTATIVE ONTIVEROS TO PICK UPDEFENDANT WHEN RELEASED/ /GTW/987,2/X:DEFENSE RESERVES THE RIGHT FOR 991 AND DEMURRER MOTIONS/SA1:VALENTINA N/SA2:1081 HAMPSHIRE ST SF/SA0RD3/SAORD/CONTD:TO SET INDEPT 17/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-05-07T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/X:VICTORY OUTREACH REPRESENTATIVE ONTIVEROS TO PICK UPDEFENDANT WHEN RELEASED/ /GTW/987,2/X:DEFENSE RESERVES THE RIGHT FOR 991 AND DEMURRER MOTIONS/SA1:VALENTINA N/SA2:1081 HAMPSHIRE ST SF/SA0RD3/SAORD/CONTD:TO SET INDEPT 17/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10013689",
-    "portal_case_id": "",
+    "portal_case_id": "3641275",
     "display_case_number": "CRI-10013689",
     "defendant": "ADAM N GARCIA",
     "filed_date": "2010-05-07",
@@ -59,12 +188,68 @@
       "defendant": "ADAM N GARCIA",
       "filed_date": "2010-05-07"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "242 PC/M",
+    "charge_rows": [
+      {
+        "raw": "242 PC/M",
+        "title": "Penal Code § 242",
+        "title_source": "programmatic_citation",
+        "code": "PC 242",
+        "code_system": "PC",
+        "section": "242",
+        "citation": "Penal Code § 242",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ADAM N GARCIA, and date of filing 2010-05-07. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ADAM N GARCIA, date of filing, 2010-05-07, and charges in the case: 242 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "242 PC/M",
+      "title": "Penal Code § 242",
+      "title_source": "programmatic_citation",
+      "code": "PC 242",
+      "code_system": "PC",
+      "section": "242",
+      "citation": "Penal Code § 242",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:40:16.202Z",
+  "portal_case_id": "3641275",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10013689",
+      "defendant": "ADAM N GARCIA",
+      "filed_date": "2010-05-07"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3641275"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:20.945037+00:00"
 }

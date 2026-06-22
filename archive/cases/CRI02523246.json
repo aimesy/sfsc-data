@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T22:06:44.546Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:47:15.983Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02523246",
   "criminal_case_number": "02523246",
@@ -24,10 +24,63 @@
       "name": "LAWRENCE H TAYLOR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LAWRENCE H TAYLOR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2020-08-14T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-09-23T09:00:00.000Z",
+      "docketEntryComment": "DEFENDANTS MOTION TO RECALL BW FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-10-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:MOTION TO RECALL BW/X:BENCH WARRANT REMAINS OUTSTANDING,  NO APPEARANCES BY DEFENDANT OR COUNSEL,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-08-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/FTA/OREVKD/BWI/BAIL: 5,000/BWNUM: 1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2020-10-05 9:00 AM",
+      "hearingType": "Motion to Recall Bench Warrant",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2020-10-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Recall Bench Warrant",
+      "hearing_type": "Motion to Recall Bench Warrant",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2020-08-14 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2020-08-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +98,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3619652",
+  "docket_entries": [
+    {
+      "filedDate": "2020-08-14T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2020-08-14T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-09-23T09:00:00.000Z",
+      "docketEntryComment": "DEFENDANTS MOTION TO RECALL BW FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2020-09-23T09:00:00.000Z",
+      "description": "DEFENDANTS MOTION TO RECALL BW FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-10-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:MOTION TO RECALL BW/X:BENCH WARRANT REMAINS OUTSTANDING,  NO APPEARANCES BY DEFENDANT OR COUNSEL,/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2020-10-05T09:00:00.000Z",
+      "description": "/CAL:MOTION TO RECALL BW/X:BENCH WARRANT REMAINS OUTSTANDING, NO APPEARANCES BY DEFENDANT OR COUNSEL,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-08-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/FTA/OREVKD/BWI/BAIL: 5,000/BWNUM: 1ST/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2020-08-14T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/FTA/OREVKD/BWI/BAIL: 5,000/BWNUM: 1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02523246",
-    "portal_case_id": "",
+    "portal_case_id": "3619652",
     "display_case_number": "CRI-02523246",
     "defendant": "LAWRENCE H TAYLOR",
     "filed_date": "2020-08-05",
@@ -60,11 +154,198 @@
       "filed_date": "2020-08-05"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "23152(e) VC/M 14601.1(a) VC/M 23222(b) VC/I 23223(a) VC/I 5200(a) VC/I 8888888 24601 VC/I",
+    "charge_rows": [
+      {
+        "raw": "23152(e) VC/M",
+        "title": "Vehicle Code § 23152(e)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(e)",
+        "code_system": "VC",
+        "section": "23152(e)",
+        "citation": "Vehicle Code § 23152(e)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "14601.1(a) VC/M",
+        "title": "Vehicle Code § 14601.1(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 14601.1(a)",
+        "code_system": "VC",
+        "section": "14601.1(a)",
+        "citation": "Vehicle Code § 14601.1(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23222(b) VC/I",
+        "title": "Vehicle Code § 23222(b)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23222(b)",
+        "code_system": "VC",
+        "section": "23222(b)",
+        "citation": "Vehicle Code § 23222(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23222.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23222.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      },
+      {
+        "raw": "23223(a) VC/I",
+        "title": "Vehicle Code § 23223(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23223(a)",
+        "code_system": "VC",
+        "section": "23223(a)",
+        "citation": "Vehicle Code § 23223(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23223.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23223.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      },
+      {
+        "raw": "5200(a) VC/I",
+        "title": "Vehicle Code § 5200(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 5200(a)",
+        "code_system": "VC",
+        "section": "5200(a)",
+        "citation": "Vehicle Code § 5200(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=5200.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=5200.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      },
+      {
+        "raw": "24601 VC/I",
+        "title": "Vehicle Code § 24601",
+        "title_source": "programmatic_citation",
+        "code": "VC 24601",
+        "code_system": "VC",
+        "section": "24601",
+        "citation": "Vehicle Code § 24601",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24601.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24601.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      },
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LAWRENCE H TAYLOR, and date of filing 2020-08-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LAWRENCE H TAYLOR, date of filing, 2020-08-05, and charges in the case: 23152(e) VC/M 14601.1(a) VC/M 23222(b) VC/I 23223(a) VC/I 5200(a) VC/I 8888888 24601 VC/I.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(e) VC/M",
+      "title": "Vehicle Code § 23152(e)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(e)",
+      "code_system": "VC",
+      "section": "23152(e)",
+      "citation": "Vehicle Code § 23152(e)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "14601.1(a) VC/M",
+      "title": "Vehicle Code § 14601.1(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 14601.1(a)",
+      "code_system": "VC",
+      "section": "14601.1(a)",
+      "citation": "Vehicle Code § 14601.1(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23222(b) VC/I",
+      "title": "Vehicle Code § 23222(b)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23222(b)",
+      "code_system": "VC",
+      "section": "23222(b)",
+      "citation": "Vehicle Code § 23222(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23222.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23222.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    },
+    {
+      "raw": "23223(a) VC/I",
+      "title": "Vehicle Code § 23223(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23223(a)",
+      "code_system": "VC",
+      "section": "23223(a)",
+      "citation": "Vehicle Code § 23223(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23223.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23223.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    },
+    {
+      "raw": "5200(a) VC/I",
+      "title": "Vehicle Code § 5200(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 5200(a)",
+      "code_system": "VC",
+      "section": "5200(a)",
+      "citation": "Vehicle Code § 5200(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=5200.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=5200.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    },
+    {
+      "raw": "24601 VC/I",
+      "title": "Vehicle Code § 24601",
+      "title_source": "programmatic_citation",
+      "code": "VC 24601",
+      "code_system": "VC",
+      "section": "24601",
+      "citation": "Vehicle Code § 24601",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24601.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=24601.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    },
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:47:16.640Z",
+  "portal_case_id": "3619652",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02523246",
+      "defendant": "LAWRENCE H TAYLOR",
+      "filed_date": "2020-08-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3619652"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T15:05:56.094Z"
 }

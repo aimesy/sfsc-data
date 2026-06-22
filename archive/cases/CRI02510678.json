@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:52:41.910Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:55:02.746Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02510678",
   "criminal_case_number": "02510678",
@@ -24,11 +24,87 @@
       "name": "JAMIL ROBERTS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAMIL ROBERTS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-11-16T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-08-06T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-11-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL: BENCH WARRANT RETURN/X: TRANSPORTATION ISSUE/CAUSE/12    GBW CONTEMPT DISPO/NP/CTORD:BENCH WARRANT DISCHARGED/BAIL:5000/CONTD:BENCH WARRANTCONTEMPT DISPOSITION,/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-11-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW CONTEMPT DISPO/X:HARVEY WAIVER ENTERED FOR STAY AWAY ORDER IN CASE18010263 TO BE FILED IN DEPT 7,/MO138572:18010263/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-08-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/JAVS/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-11-19 9:00 AM",
+      "hearingType": "Bench Warrant Contempt",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2018-11-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Contempt",
+      "hearing_type": "Bench Warrant Contempt",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-11-16 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2018-11-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-08-06 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2018-08-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "OLIVER KROLL",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +121,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3608320",
+  "docket_entries": [
+    {
+      "filedDate": "2018-11-16T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-11-16T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-08-06T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-08-06T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-11-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL: BENCH WARRANT RETURN/X: TRANSPORTATION ISSUE/CAUSE/12    GBW CONTEMPT DISPO/NP/CTORD:BENCH WARRANT DISCHARGED/BAIL:5000/CONTD:BENCH WARRANTCONTEMPT DISPOSITION,/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-11-16T09:00:00.000Z",
+      "description": "/CAL: BENCH WARRANT RETURN/X: TRANSPORTATION ISSUE/CAUSE/12 GBW CONTEMPT DISPO/NP/CTORD:BENCH WARRANT DISCHARGED/BAIL:5000/CONTD:BENCH WARRANTCONTEMPT DISPOSITION,/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-11-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW CONTEMPT DISPO/X:HARVEY WAIVER ENTERED FOR STAY AWAY ORDER IN CASE18010263 TO BE FILED IN DEPT 7,/MO138572:18010263/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-11-19T09:00:00.000Z",
+      "description": "/CAL:BW CONTEMPT DISPO/X:HARVEY WAIVER ENTERED FOR STAY AWAY ORDER IN CASE18010263 TO BE FILED IN DEPT 7,/MO138572:18010263/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-08-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/JAVS/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-08-06T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/JAVS/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02510678",
-    "portal_case_id": "",
+    "portal_case_id": "3608320",
     "display_case_number": "CRI-02510678",
     "defendant": "JAMIL ROBERTS",
     "filed_date": "2018-08-02",
@@ -60,11 +187,58 @@
       "filed_date": "2018-08-02"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "243.35(a) PC/M 243.35(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "243.35(a) PC/M",
+        "title": "Penal Code § 243.35(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 243.35(a)",
+        "code_system": "PC",
+        "section": "243.35(a)",
+        "citation": "Penal Code § 243.35(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.35.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.35.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAMIL ROBERTS, and date of filing 2018-08-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAMIL ROBERTS, date of filing, 2018-08-02, and charges in the case: 243.35(a) PC/M 243.35(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "243.35(a) PC/M",
+      "title": "Penal Code § 243.35(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 243.35(a)",
+      "code_system": "PC",
+      "section": "243.35(a)",
+      "citation": "Penal Code § 243.35(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.35.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.35.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:55:03.412Z",
+  "portal_case_id": "3608320",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02510678",
+      "defendant": "JAMIL ROBERTS",
+      "filed_date": "2018-08-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3608320"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:48:41.372Z"
 }

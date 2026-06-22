@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:43:23.535Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:37:14.795Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10002764",
   "criminal_case_number": "10002764",
@@ -24,11 +24,100 @@
       "name": "CHAUNCEY D DUNCAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHAUNCEY D DUNCAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-02-18T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S EC1043 PITCHESS MOT FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-01T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:IN THE INTEREST OF JUSTICE /BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-15T09:00:00.000Z",
+      "docketEntryComment": "/X:APPEARANCE BY JOHN ALDEN ON BEHALF OF POLICE LEGAL/CAL:1043EC PITCHESSMOTION/CTORD:MATTER OFF CALENDAR, STIP & ORDER SIGNED AND FILED,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A, P&C/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/ STWPX/987,2/977/CONTD:PRE-HEARING CONF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-04-01 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2010-04-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-15 9:00 AM",
+      "hearingType": "EC 1043 Pitchess Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 1,
+      "court_date": "2010-03-15",
+      "hearing_time": "9:00 AM",
+      "matters": "EC 1043 Pitchess Hearing",
+      "hearing_type": "EC 1043 Pitchess Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-11 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2010-02-11",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-29 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 3,
+      "court_date": "2010-01-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ROBERT AMPARAN",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +134,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3631018",
+  "docket_entries": [
+    {
+      "filedDate": "2010-02-18T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S EC1043 PITCHESS MOT FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-02-18T15:00:00.000Z",
+      "description": "DEFT'S EC1043 PITCHESS MOT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-01T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:IN THE INTEREST OF JUSTICE /BE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-04-01T09:00:00.000Z",
+      "description": "/MO PC 1385:IN THE INTEREST OF JUSTICE /BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-15T09:00:00.000Z",
+      "docketEntryComment": "/X:APPEARANCE BY JOHN ALDEN ON BEHALF OF POLICE LEGAL/CAL:1043EC PITCHESSMOTION/CTORD:MATTER OFF CALENDAR, STIP & ORDER SIGNED AND FILED,/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-03-15T09:00:00.000Z",
+      "description": "/X:APPEARANCE BY JOHN ALDEN ON BEHALF OF POLICE LEGAL/CAL:1043EC PITCHESSMOTION/CTORD:MATTER OFF CALENDAR, STIP & ORDER SIGNED AND FILED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A, P&C/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/ STWPX/987,2/977/CONTD:PRE-HEARING CONF/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-02-11T09:00:00.000Z",
+      "description": "/CAL:I&A, P&C/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/ STWPX/987,2/977/CONTD:PRE-HEARING CONF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-01-29T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10002764",
-    "portal_case_id": "",
+    "portal_case_id": "3631018",
     "display_case_number": "CRI-10002764",
     "defendant": "CHAUNCEY D DUNCAN",
     "filed_date": "2010-01-29",
@@ -59,12 +199,75 @@
       "defendant": "CHAUNCEY D DUNCAN",
       "filed_date": "2010-01-29"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "EC1043",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHAUNCEY D DUNCAN, and date of filing 2010-01-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHAUNCEY D DUNCAN, date of filing, 2010-01-29, and charges in the case: 11350(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:37:15.437Z",
+  "portal_case_id": "3631018",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10002764",
+      "defendant": "CHAUNCEY D DUNCAN",
+      "filed_date": "2010-01-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3631018"
+  }
 }

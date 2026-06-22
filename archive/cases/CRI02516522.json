@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:34:05.740Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:50:28.317Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02516522",
   "criminal_case_number": "02516522",
@@ -24,10 +24,53 @@
       "name": "KAI TANG",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KAI TANG",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2021-03-02T15:00:00.000Z",
+      "docketEntryComment": "PROBATION UPDATED PER AB1950, PROBATION EXPIRED MARCH 2, 2021",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-07-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL: APD 1203,9PC  MOTION TO TRANSFER PROBATION FROM CONTRA COSTA COUNTY TO SAN FRANCISCO COUNTY/MO GRTD/CTORD: PROBATION IS TRANSFERRED FROM CONTRACOSTA COUNTY TO SAN FRANCISCO COUNTY/X:COURT ORDER IS SIGNED AND FILED,/PROB EXP:07-27-22/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2021-03-02 3:01 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 2",
+      "__index": 0,
+      "court_date": "2021-03-02",
+      "hearing_time": "3:01 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 2",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-07-02 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2019-07-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +88,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3613631",
+  "docket_entries": [
+    {
+      "filedDate": "2021-03-02T15:00:00.000Z",
+      "docketEntryComment": "PROBATION UPDATED PER AB1950, PROBATION EXPIRED MARCH 2, 2021",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2021-03-02T15:00:00.000Z",
+      "description": "PROBATION UPDATED PER AB1950, PROBATION EXPIRED MARCH 2, 2021",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-07-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL: APD 1203,9PC  MOTION TO TRANSFER PROBATION FROM CONTRA COSTA COUNTY TO SAN FRANCISCO COUNTY/MO GRTD/CTORD: PROBATION IS TRANSFERRED FROM CONTRACOSTA COUNTY TO SAN FRANCISCO COUNTY/X:COURT ORDER IS SIGNED AND FILED,/PROB EXP:07-27-22/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2019-07-02T09:00:00.000Z",
+      "description": "/CAL: APD 1203,9PC MOTION TO TRANSFER PROBATION FROM CONTRA COSTA COUNTY TO SAN FRANCISCO COUNTY/MO GRTD/CTORD: PROBATION IS TRANSFERRED FROM CONTRACOSTA COUNTY TO SAN FRANCISCO COUNTY/X:COURT ORDER IS SIGNED AND FILED,/PROB EXP:07-27-22/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02516522",
-    "portal_case_id": "",
+    "portal_case_id": "3613631",
     "display_case_number": "CRI-02516522",
     "defendant": "KAI TANG",
     "filed_date": "2019-07-02",
@@ -60,11 +124,42 @@
       "filed_date": "2019-07-02"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KAI TANG, and date of filing 2019-07-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KAI TANG, date of filing, 2019-07-02, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:50:28.931Z",
+  "portal_case_id": "3613631",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02516522",
+      "defendant": "KAI TANG",
+      "filed_date": "2019-07-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3613631"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T16:17:50.759Z"
 }

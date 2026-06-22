@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:30:45.577Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:49:37.480Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02522148",
   "criminal_case_number": "02522148",
@@ -24,19 +24,101 @@
       "name": "JUAN GALICIA GONZALEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JUAN GALICIA GONZALEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2024-03-21T12:00:00.000Z",
+      "docketEntryComment": "2nd Minute Order Amended",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-03-21T09:17:47.000Z",
+      "docketEntryComment": "Warrant - Bench Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-03-21T12:00:00.000Z",
+      "docketEntryComment": "Minute Order Amended",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-03-21T12:00:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-05-22T09:35:47.000Z",
+      "docketEntryComment": "Citation",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-05-22T09:34:38.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-03-21T06:41:40.000Z",
+      "docketEntryComment": "Warrant - Bench Warrant Return 05/27/20 FTA ARRAIGNMENT; 1ST BW; PER LOCATOR IN CUST",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-05-27T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-05-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:20000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2024-03-21 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2024-03-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2020-05-27 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2020-05-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "23152(a) VC/M 23152(b) VC/M 20002(a) VC/M 20002(a) VC/M 20002(a) VC/M 20002(a) VC/M 12500(a) VC/M 16028(c) VC/I",
+    "filed_date": "2020-05-22",
+    "defendant": "JUAN GALICIA GONZALEZ",
+    "searched_key": "GONZALEZ/JU",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/02522148.json",
     "searched_last_name": "GONZALEZ",
     "searched_first_prefix": "JU",
-    "charges": "23152(a) VC/M 23152(b) VC/M 20002(a) VC/M 20002(a) VC/M 20002(a) VC/M 20002(a) VC/M 12500(a) VC/M 16028(c) VC/I",
     "row": {
       "DEFENDANTNAME": "JUAN GALICIA GONZALEZ",
       "CASENUMBER": "CRI-02522148",
@@ -45,11 +127,102 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3618665",
+  "docket_entries": [
+    {
+      "filedDate": "2024-03-21T12:00:00.000Z",
+      "docketEntryComment": "2nd Minute Order Amended",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2024-03-21T12:00:00.000Z",
+      "description": "2nd Minute Order Amended",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-03-21T09:17:47.000Z",
+      "docketEntryComment": "Warrant - Bench Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2024-03-21T09:17:47.000Z",
+      "description": "Warrant - Bench Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-03-21T12:00:00.000Z",
+      "docketEntryComment": "Minute Order Amended",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2024-03-21T12:00:00.000Z",
+      "description": "Minute Order Amended",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-03-21T12:00:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2024-03-21T12:00:00.000Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-05-22T09:35:47.000Z",
+      "docketEntryComment": "Citation",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2020-05-22T09:35:47.000Z",
+      "description": "Citation",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-05-22T09:34:38.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2020-05-22T09:34:38.000Z",
+      "description": "Complaint",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-03-21T06:41:40.000Z",
+      "docketEntryComment": "Warrant - Bench Warrant Return 05/27/20 FTA ARRAIGNMENT; 1ST BW; PER LOCATOR IN CUST",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2024-03-21T06:41:40.000Z",
+      "description": "Warrant - Bench Warrant Return 05/27/20 FTA ARRAIGNMENT; 1ST BW; PER LOCATOR IN CUST",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-05-27T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2020-05-27T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-05-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:20000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "2020-05-27T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:20000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02522148",
-    "portal_case_id": "",
+    "portal_case_id": "3618665",
     "display_case_number": "CRI-02522148",
     "defendant": "JUAN GALICIA GONZALEZ",
     "filed_date": "2020-05-22",
@@ -60,11 +233,162 @@
       "filed_date": "2020-05-22"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "23152(a) VC/M 23152(b) VC/M 20002(a) VC/M 20002(a) VC/M 20002(a) VC/M 20002(a) VC/M 12500(a) VC/M 16028(c) VC/I",
+    "charge_rows": [
+      {
+        "raw": "23152(a) VC/M",
+        "title": "Vehicle Code § 23152(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(a)",
+        "code_system": "VC",
+        "section": "23152(a)",
+        "citation": "Vehicle Code § 23152(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23152(b) VC/M",
+        "title": "Vehicle Code § 23152(b)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(b)",
+        "code_system": "VC",
+        "section": "23152(b)",
+        "citation": "Vehicle Code § 23152(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "20002(a) VC/M",
+        "title": "Vehicle Code § 20002(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 20002(a)",
+        "code_system": "VC",
+        "section": "20002(a)",
+        "citation": "Vehicle Code § 20002(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=20002.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=20002.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "12500(a) VC/M",
+        "title": "Vehicle Code § 12500(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 12500(a)",
+        "code_system": "VC",
+        "section": "12500(a)",
+        "citation": "Vehicle Code § 12500(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "16028(c) VC/I",
+        "title": "Vehicle Code § 16028(c)",
+        "title_source": "programmatic_citation",
+        "code": "VC 16028(c)",
+        "code_system": "VC",
+        "section": "16028(c)",
+        "citation": "Vehicle Code § 16028(c)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=16028.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=16028.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JUAN GALICIA GONZALEZ, and date of filing 2020-05-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JUAN GALICIA GONZALEZ, date of filing, 2020-05-22, and charges in the case: 23152(a) VC/M 23152(b) VC/M 20002(a) VC/M 20002(a) VC/M 20002(a) VC/M 20002(a) VC/M 12500(a) VC/M 16028(c) VC/I.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(a) VC/M",
+      "title": "Vehicle Code § 23152(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(a)",
+      "code_system": "VC",
+      "section": "23152(a)",
+      "citation": "Vehicle Code § 23152(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23152(b) VC/M",
+      "title": "Vehicle Code § 23152(b)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(b)",
+      "code_system": "VC",
+      "section": "23152(b)",
+      "citation": "Vehicle Code § 23152(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "20002(a) VC/M",
+      "title": "Vehicle Code § 20002(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 20002(a)",
+      "code_system": "VC",
+      "section": "20002(a)",
+      "citation": "Vehicle Code § 20002(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=20002.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=20002.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "12500(a) VC/M",
+      "title": "Vehicle Code § 12500(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 12500(a)",
+      "code_system": "VC",
+      "section": "12500(a)",
+      "citation": "Vehicle Code § 12500(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "16028(c) VC/I",
+      "title": "Vehicle Code § 16028(c)",
+      "title_source": "programmatic_citation",
+      "code": "VC 16028(c)",
+      "code_system": "VC",
+      "section": "16028(c)",
+      "citation": "Vehicle Code § 16028(c)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=16028.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=16028.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:49:38.242Z",
+  "portal_case_id": "3618665",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02522148",
+      "defendant": "JUAN GALICIA GONZALEZ",
+      "filed_date": "2020-05-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3618665"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.826607+00:00"
 }

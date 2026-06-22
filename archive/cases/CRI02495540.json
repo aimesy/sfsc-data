@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:20:48.291Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:07:57.761Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02495540",
   "criminal_case_number": "02495540",
@@ -24,19 +24,129 @@
       "name": "GRAHAM JONES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "GRAHAM JONES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-11-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:POSSIBLE CIVIL COMPROMISE/DAWT/X:MOTION FOR CIVIL COMPROMISE FILED,//X:PURSUANT TO 1378 OF THE PENAL CODE, THE COURT ORDERS ALL PROCEEDINGS TOBE STAYED UPON THE PROSECUTION, AND THE DEFENDANT IS DISCHARGED,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-10-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:POSSIBLE CIVIL COMPROMISE/DAWT/CONT/DAWF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-09-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:POSSIBLE CIVIL COMPROMISE/DAWT/CONT/DAWF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-08-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/DAWT/CONTD:POSSIBLE CIVIL COMPROMISE DISPO/DAWF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-07-19T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/DAWF/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-11-17 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2016-11-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-10-31 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2016-10-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-09-26 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2016-09-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-08-22 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2016-08-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-07-19 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2016-07-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SIERRA VILLARAN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "NIMA RAHIMI",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "20002(a) VC/M",
+    "filed_date": "2016-07-14",
+    "defendant": "GRAHAM JONES",
+    "searched_key": "JONES/GR",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/02495540.json",
     "searched_last_name": "JONES",
     "searched_first_prefix": "GR",
-    "charges": "20002(a) VC/M",
     "row": {
       "DEFENDANTNAME": "GRAHAM JONES",
       "CASENUMBER": "CRI-02495540",
@@ -45,11 +155,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3594304",
+  "docket_entries": [
+    {
+      "filedDate": "2016-11-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:POSSIBLE CIVIL COMPROMISE/DAWT/X:MOTION FOR CIVIL COMPROMISE FILED,//X:PURSUANT TO 1378 OF THE PENAL CODE, THE COURT ORDERS ALL PROCEEDINGS TOBE STAYED UPON THE PROSECUTION, AND THE DEFENDANT IS DISCHARGED,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-11-17T09:00:00.000Z",
+      "description": "/CAL:POSSIBLE CIVIL COMPROMISE/DAWT/X:MOTION FOR CIVIL COMPROMISE FILED,//X:PURSUANT TO 1378 OF THE PENAL CODE, THE COURT ORDERS ALL PROCEEDINGS TOBE STAYED UPON THE PROSECUTION, AND THE DEFENDANT IS DISCHARGED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-10-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:POSSIBLE CIVIL COMPROMISE/DAWT/CONT/DAWF/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-10-31T09:00:00.000Z",
+      "description": "/CAL:POSSIBLE CIVIL COMPROMISE/DAWT/CONT/DAWF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-09-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:POSSIBLE CIVIL COMPROMISE/DAWT/CONT/DAWF/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-09-26T09:00:00.000Z",
+      "description": "/CAL:POSSIBLE CIVIL COMPROMISE/DAWT/CONT/DAWF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-08-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/DAWT/CONTD:POSSIBLE CIVIL COMPROMISE DISPO/DAWF/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2016-08-22T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/DAWT/CONTD:POSSIBLE CIVIL COMPROMISE DISPO/DAWF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-07-19T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/DAWF/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2016-07-19T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:PRETRIAL CONFERENCE/DAWF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02495540",
-    "portal_case_id": "",
+    "portal_case_id": "3594304",
     "display_case_number": "CRI-02495540",
     "defendant": "GRAHAM JONES",
     "filed_date": "2016-07-14",
@@ -60,11 +221,58 @@
       "filed_date": "2016-07-14"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "20002(a) VC/M",
+    "charge_rows": [
+      {
+        "raw": "20002(a) VC/M",
+        "title": "Vehicle Code § 20002(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 20002(a)",
+        "code_system": "VC",
+        "section": "20002(a)",
+        "citation": "Vehicle Code § 20002(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=20002.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=20002.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, GRAHAM JONES, and date of filing 2016-07-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, GRAHAM JONES, date of filing, 2016-07-14, and charges in the case: 20002(a) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "20002(a) VC/M",
+      "title": "Vehicle Code § 20002(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 20002(a)",
+      "code_system": "VC",
+      "section": "20002(a)",
+      "citation": "Vehicle Code § 20002(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=20002.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=20002.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:07:58.552Z",
+  "portal_case_id": "3594304",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02495540",
+      "defendant": "GRAHAM JONES",
+      "filed_date": "2016-07-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3594304"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.797664+00:00"
 }

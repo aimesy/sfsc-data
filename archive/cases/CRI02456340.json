@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:29:22.113Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:36:40.242Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02456340",
   "criminal_case_number": "02456340",
@@ -24,19 +24,140 @@
       "name": "DARNELL KING",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DARNELL KING",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-12-15T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-06T13:01:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-06T10:12:00.000Z",
+      "docketEntryComment": "CITED TO APPEAR",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-15T09:00:00.000Z",
+      "docketEntryComment": "/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS:SEVERA KEITH//BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAW/DEFTARR/GTW/CONTD:PRETRIAL AND REVIEW CJC PLAN/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-03T13:30:00.000Z",
+      "docketEntryComment": "/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT 1 /1001,7:1/CTORD:CASE IS DISMISSED PURSUANT TO PC1001,7 AND PC1001,9/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-27T13:30:00.000Z",
+      "docketEntryComment": "/CONTD:CJC-PTD PROG RPT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-23T13:30:00.000Z",
+      "docketEntryComment": "/CONTD:CJC-PTD PROGRESS REPORT/DOP/DEF:TO PERFORM 24 HRS OF COMMUNITY SERVICE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-06T13:01:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:8,000/BWNUM:1ST/BWRET:M08/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-02-03 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2011-02-03",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-01-27 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2011-01-27",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-12-23 1:30 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2010-12-23",
+      "hearing_time": "1:30 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-12-15 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 3,
+      "court_date": "2010-12-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-12-06 1:01 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 4,
+      "court_date": "2010-12-06",
+      "hearing_time": "1:01 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SEVERA KEITH",
+      "type": "Appointed Counsel"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "484(a)/490.5 PC/M",
+    "filed_date": "2010-12-06",
+    "defendant": "DARNELL KING",
+    "searched_key": "KING/DA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/02456340.json",
     "searched_last_name": "KING",
     "searched_first_prefix": "DA",
-    "charges": "484(a)/490.5 PC/M",
     "row": {
       "DEFENDANTNAME": "DARNELL KING",
       "CASENUMBER": "CRI-02456340",
@@ -45,11 +166,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3559549",
+  "docket_entries": [
+    {
+      "filedDate": "2010-12-15T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-12-15T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-06T13:01:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-12-06T13:01:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-06T10:12:00.000Z",
+      "docketEntryComment": "CITED TO APPEAR",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-12-06T10:12:00.000Z",
+      "description": "CITED TO APPEAR",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-15T09:00:00.000Z",
+      "docketEntryComment": "/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS:SEVERA KEITH//BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAW/DEFTARR/GTW/CONTD:PRETRIAL AND REVIEW CJC PLAN/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-12-15T09:00:00.000Z",
+      "description": "/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS:SEVERA KEITH//BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAW/DEFTARR/GTW/CONTD:PRETRIAL AND REVIEW CJC PLAN/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-03T13:30:00.000Z",
+      "docketEntryComment": "/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT 1 /1001,7:1/CTORD:CASE IS DISMISSED PURSUANT TO PC1001,7 AND PC1001,9/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-02-03T13:30:00.000Z",
+      "description": "/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT 1 /1001,7:1/CTORD:CASE IS DISMISSED PURSUANT TO PC1001,7 AND PC1001,9/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-27T13:30:00.000Z",
+      "docketEntryComment": "/CONTD:CJC-PTD PROG RPT/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-01-27T13:30:00.000Z",
+      "description": "/CONTD:CJC-PTD PROG RPT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-23T13:30:00.000Z",
+      "docketEntryComment": "/CONTD:CJC-PTD PROGRESS REPORT/DOP/DEF:TO PERFORM 24 HRS OF COMMUNITY SERVICE/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2010-12-23T13:30:00.000Z",
+      "description": "/CONTD:CJC-PTD PROGRESS REPORT/DOP/DEF:TO PERFORM 24 HRS OF COMMUNITY SERVICE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-06T13:01:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:8,000/BWNUM:1ST/BWRET:M08/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2010-12-06T13:01:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:8,000/BWNUM:1ST/BWRET:M08/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02456340",
-    "portal_case_id": "",
+    "portal_case_id": "3559549",
     "display_case_number": "CRI-02456340",
     "defendant": "DARNELL KING",
     "filed_date": "2010-12-06",
@@ -59,12 +261,76 @@
       "defendant": "DARNELL KING",
       "filed_date": "2010-12-06"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC1001",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "484(a)/490.5 PC/M",
+    "charge_rows": [
+      {
+        "raw": "484(a)/490.5 PC/M",
+        "title": "484(a)",
+        "title_source": "criminal_index_text",
+        "code": "PC 490.5",
+        "code_system": "PC",
+        "section": "490.5",
+        "citation": "Penal Code § 490.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DARNELL KING, and date of filing 2010-12-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DARNELL KING, date of filing, 2010-12-06, and charges in the case: 484(a)/490.5 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "484(a)/490.5 PC/M",
+      "title": "484(a)",
+      "title_source": "criminal_index_text",
+      "code": "PC 490.5",
+      "code_system": "PC",
+      "section": "490.5",
+      "citation": "Penal Code § 490.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:36:40.923Z",
+  "portal_case_id": "3559549",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02456340",
+      "defendant": "DARNELL KING",
+      "filed_date": "2010-12-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3559549"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.801438+00:00"
 }

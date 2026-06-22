@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:40:24.004Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:37:04.626Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10003796",
   "criminal_case_number": "10003796",
@@ -24,19 +24,130 @@
       "name": "MICHAEL HICKS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL HICKS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIM HRG/X DA ORALLY AMENDS THE COMPLAINT BY ADDING COUNT 003  653(D)PC-MISD/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OFNL/DEFT ADV NL:003/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-05T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:MICHAEL GAINES/FAWC/DEFTARR1/NTW/LD:02-24-10/987,2/BAIL:35000 /CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET DA MTR HEARING/CTORD:PROBATION IN # 10003796 IS HEREBY TERMINATED AS UNSUCCESSFUL, DEFENDANT PLEAD IN 10033793/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-16T09:15:00.000Z",
+      "docketEntryComment": "/CAL:TO FILE DA MTR/X:WIA DENY ALLEGATIONS/PROB ADM REV/OR/CONTD:TO SETMTR/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-23T09:15:00.000Z",
+      "docketEntryComment": "/CAL SENTENCING/TWS/CH3 ISS CPROB PROB 3 Y PJ 21D/CTS 21/WS/VF1/MPROBFINE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/DISM3/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-12-01 9:00 AM",
+      "hearingType": "To Set Motion to Revoke Probation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2010-12-01",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set Motion to Revoke Probation Hearing",
+      "hearing_type": "To Set Motion to Revoke Probation Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-11-16 9:15 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2010-11-16",
+      "hearing_time": "9:15 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-23 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2010-02-23",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-23 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 3,
+      "court_date": "2010-02-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-05 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 4,
+      "court_date": "2010-02-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MICHAEL GAINES",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11352(a) HS/F 11351.5 HS/F 653f(d) PC/M",
+    "filed_date": "2010-02-05",
+    "defendant": "MICHAEL HICKS",
+    "searched_key": "HICKS/MI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/10003796.json",
     "searched_last_name": "HICKS",
     "searched_first_prefix": "MI",
-    "charges": "11352(a) HS/F 11351.5 HS/F 653f(d) PC/M",
     "row": {
       "DEFENDANTNAME": "MICHAEL HICKS",
       "CASENUMBER": "CRI-10003796",
@@ -45,11 +156,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3631983",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIM HRG/X DA ORALLY AMENDS THE COMPLAINT BY ADDING COUNT 003  653(D)PC-MISD/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OFNL/DEFT ADV NL:003/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-02-23T09:00:00.000Z",
+      "description": "/CAL PRELIM HRG/X DA ORALLY AMENDS THE COMPLAINT BY ADDING COUNT 003 653(D)PC-MISD/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OFNL/DEFT ADV NL:003/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-05T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:MICHAEL GAINES/FAWC/DEFTARR1/NTW/LD:02-24-10/987,2/BAIL:35000 /CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-02-05T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:MICHAEL GAINES/FAWC/DEFTARR1/NTW/LD:02-24-10/987,2/BAIL:35000 /CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET DA MTR HEARING/CTORD:PROBATION IN # 10003796 IS HEREBY TERMINATED AS UNSUCCESSFUL, DEFENDANT PLEAD IN 10033793/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-12-01T09:00:00.000Z",
+      "description": "/CAL:TO SET DA MTR HEARING/CTORD:PROBATION IN # 10003796 IS HEREBY TERMINATED AS UNSUCCESSFUL, DEFENDANT PLEAD IN 10033793/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-16T09:15:00.000Z",
+      "docketEntryComment": "/CAL:TO FILE DA MTR/X:WIA DENY ALLEGATIONS/PROB ADM REV/OR/CONTD:TO SETMTR/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-11-16T09:15:00.000Z",
+      "description": "/CAL:TO FILE DA MTR/X:WIA DENY ALLEGATIONS/PROB ADM REV/OR/CONTD:TO SETMTR/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-23T09:15:00.000Z",
+      "docketEntryComment": "/CAL SENTENCING/TWS/CH3 ISS CPROB PROB 3 Y PJ 21D/CTS 21/WS/VF1/MPROBFINE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/DISM3/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-02-23T09:15:00.000Z",
+      "description": "/CAL SENTENCING/TWS/CH3 ISS CPROB PROB 3 Y PJ 21D/CTS 21/WS/VF1/MPROBFINE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10003796",
-    "portal_case_id": "",
+    "portal_case_id": "3631983",
     "display_case_number": "CRI-10003796",
     "defendant": "MICHAEL HICKS",
     "filed_date": "2010-02-05",
@@ -59,12 +231,120 @@
       "defendant": "MICHAEL HICKS",
       "filed_date": "2010-02-05"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11352(a) HS/F 11351.5 HS/F 653f(d) PC/M",
+    "charge_rows": [
+      {
+        "raw": "11352(a) HS/F",
+        "title": "Health and Safety Code § 11352(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11352(a)",
+        "code_system": "HS",
+        "section": "11352(a)",
+        "citation": "Health and Safety Code § 11352(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11351.5 HS/F",
+        "title": "Health and Safety Code § 11351.5",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351.5",
+        "code_system": "HS",
+        "section": "11351.5",
+        "citation": "Health and Safety Code § 11351.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "653f(d) PC/M",
+        "title": "Penal Code § 653f(d)",
+        "title_source": "programmatic_citation",
+        "code": "PC 653f(d)",
+        "code_system": "PC",
+        "section": "653f(d)",
+        "citation": "Penal Code § 653f(d)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL HICKS, and date of filing 2010-02-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL HICKS, date of filing, 2010-02-05, and charges in the case: 11352(a) HS/F 11351.5 HS/F 653f(d) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11352(a) HS/F",
+      "title": "Health and Safety Code § 11352(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11352(a)",
+      "code_system": "HS",
+      "section": "11352(a)",
+      "citation": "Health and Safety Code § 11352(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11351.5 HS/F",
+      "title": "Health and Safety Code § 11351.5",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351.5",
+      "code_system": "HS",
+      "section": "11351.5",
+      "citation": "Health and Safety Code § 11351.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "653f(d) PC/M",
+      "title": "Penal Code § 653f(d)",
+      "title_source": "programmatic_citation",
+      "code": "PC 653f(d)",
+      "code_system": "PC",
+      "section": "653f(d)",
+      "citation": "Penal Code § 653f(d)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:37:05.262Z",
+  "portal_case_id": "3631983",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10003796",
+      "defendant": "MICHAEL HICKS",
+      "filed_date": "2010-02-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3631983"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.345550+00:00"
 }

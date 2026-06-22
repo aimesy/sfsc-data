@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:18:59.829Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:36:23.203Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02451070",
   "criminal_case_number": "02451070",
@@ -24,19 +24,130 @@
       "name": "JONATHAN JUN CHAN, GOK",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JONATHAN JUN CHAN, GOK",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-06-07T09:01:00.000Z",
+      "docketEntryComment": "RELEASED TO GOODROW",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:E MICHAEL LINSCHEID, ATTORNEY; SPECIALY APPEARING FOR RUSS GOODROW, ATTORNEY OF RECORD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET OR DISPO/MO138583/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET OR DISPO/X:SPELLING OF DEFENSE COUNSEL'S NAME CORRECTED TO REFLECT RUSSELL GOODROW AS DEFENSE COUNSEL,/CONT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRETRIAL CONFERENCE/DAWT/CONTD TO SET OR DISPO, DOPC /CONTD:TO SET OR DISPOSE/DOPC/CGTW/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRETRIAL CONFERENCE/DAWT/CONT/DOPC/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-06-14 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2010-06-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-05-24 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 1,
+      "court_date": "2010-05-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-05-11 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 2,
+      "court_date": "2010-05-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-05-03 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 3,
+      "court_date": "2010-05-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-04-01 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 4,
+      "court_date": "2010-04-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "RUSSELL GOODROW",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "647(h) PC/M 602(m) PC/M 466 PC/M",
+    "filed_date": "2010-04-01",
+    "defendant": "JONATHAN JUN CHAN, GOK",
+    "searched_key": "CHAN/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/02451070.json",
     "searched_last_name": "CHAN",
     "searched_first_prefix": "JO",
-    "charges": "647(h) PC/M 602(m) PC/M 466 PC/M",
     "row": {
       "DEFENDANTNAME": "JONATHAN JUN CHAN, GOK",
       "CASENUMBER": "CRI-02451070",
@@ -45,11 +156,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3554969",
+  "docket_entries": [
+    {
+      "filedDate": "2010-06-07T09:01:00.000Z",
+      "docketEntryComment": "RELEASED TO GOODROW",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-06-07T09:01:00.000Z",
+      "description": "RELEASED TO GOODROW",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:E MICHAEL LINSCHEID, ATTORNEY; SPECIALY APPEARING FOR RUSS GOODROW, ATTORNEY OF RECORD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-04-01T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:E MICHAEL LINSCHEID, ATTORNEY; SPECIALY APPEARING FOR RUSS GOODROW, ATTORNEY OF RECORD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET OR DISPO/MO138583/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-06-14T09:00:00.000Z",
+      "description": "/CAL: TO SET OR DISPO/MO138583/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET OR DISPO/X:SPELLING OF DEFENSE COUNSEL'S NAME CORRECTED TO REFLECT RUSSELL GOODROW AS DEFENSE COUNSEL,/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-05-24T09:00:00.000Z",
+      "description": "/CAL: TO SET OR DISPO/X:SPELLING OF DEFENSE COUNSEL'S NAME CORRECTED TO REFLECT RUSSELL GOODROW AS DEFENSE COUNSEL,/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRETRIAL CONFERENCE/DAWT/CONTD TO SET OR DISPO, DOPC /CONTD:TO SET OR DISPOSE/DOPC/CGTW/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-05-11T09:00:00.000Z",
+      "description": "/CAL: PRETRIAL CONFERENCE/DAWT/CONTD TO SET OR DISPO, DOPC /CONTD:TO SET OR DISPOSE/DOPC/CGTW/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRETRIAL CONFERENCE/DAWT/CONT/DOPC/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-05-03T09:00:00.000Z",
+      "description": "/CAL: PRETRIAL CONFERENCE/DAWT/CONT/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02451070",
-    "portal_case_id": "",
+    "portal_case_id": "3554969",
     "display_case_number": "CRI-02451070",
     "defendant": "JONATHAN JUN CHAN, GOK",
     "filed_date": "2010-04-01",
@@ -60,11 +232,110 @@
       "filed_date": "2010-04-01"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "647(h) PC/M 602(m) PC/M 466 PC/M",
+    "charge_rows": [
+      {
+        "raw": "647(h) PC/M",
+        "title": "Penal Code § 647(h)",
+        "title_source": "programmatic_citation",
+        "code": "PC 647(h)",
+        "code_system": "PC",
+        "section": "647(h)",
+        "citation": "Penal Code § 647(h)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "602(m) PC/M",
+        "title": "Penal Code § 602(m)",
+        "title_source": "programmatic_citation",
+        "code": "PC 602(m)",
+        "code_system": "PC",
+        "section": "602(m)",
+        "citation": "Penal Code § 602(m)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "466 PC/M",
+        "title": "Penal Code § 466",
+        "title_source": "programmatic_citation",
+        "code": "PC 466",
+        "code_system": "PC",
+        "section": "466",
+        "citation": "Penal Code § 466",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JONATHAN JUN CHAN, GOK, and date of filing 2010-04-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JONATHAN JUN CHAN, GOK, date of filing, 2010-04-01, and charges in the case: 647(h) PC/M 602(m) PC/M 466 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "647(h) PC/M",
+      "title": "Penal Code § 647(h)",
+      "title_source": "programmatic_citation",
+      "code": "PC 647(h)",
+      "code_system": "PC",
+      "section": "647(h)",
+      "citation": "Penal Code § 647(h)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "602(m) PC/M",
+      "title": "Penal Code § 602(m)",
+      "title_source": "programmatic_citation",
+      "code": "PC 602(m)",
+      "code_system": "PC",
+      "section": "602(m)",
+      "citation": "Penal Code § 602(m)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "466 PC/M",
+      "title": "Penal Code § 466",
+      "title_source": "programmatic_citation",
+      "code": "PC 466",
+      "code_system": "PC",
+      "section": "466",
+      "citation": "Penal Code § 466",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:36:23.778Z",
+  "portal_case_id": "3554969",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02451070",
+      "defendant": "JONATHAN JUN CHAN, GOK",
+      "filed_date": "2010-04-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3554969"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.940799+00:00"
 }

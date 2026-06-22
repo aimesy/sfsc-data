@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:44:12.467Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:28:04.986Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02468681",
   "criminal_case_number": "02468681",
@@ -24,10 +24,35 @@
       "name": "CALVIN NGUYEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CALVIN NGUYEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2012-09-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD 1203,9PC TRANSFER FROM SAN MATEO COUNTY/MO GRTD/CTORD:PROBATIONBE TRANSFERRED FROM SAN MATEO COUNTY TO SAN FRANCISCO COUNTY/X:ORDER SIGNED AND FILED,/PROB EXT:10-05-14/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-09-06 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2012-09-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +70,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3570320",
+  "docket_entries": [
+    {
+      "filedDate": "2012-09-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD 1203,9PC TRANSFER FROM SAN MATEO COUNTY/MO GRTD/CTORD:PROBATIONBE TRANSFERRED FROM SAN MATEO COUNTY TO SAN FRANCISCO COUNTY/X:ORDER SIGNED AND FILED,/PROB EXT:10-05-14/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-09-06T09:00:00.000Z",
+      "description": "/CAL:APD 1203,9PC TRANSFER FROM SAN MATEO COUNTY/MO GRTD/CTORD:PROBATIONBE TRANSFERRED FROM SAN MATEO COUNTY TO SAN FRANCISCO COUNTY/X:ORDER SIGNED AND FILED,/PROB EXT:10-05-14/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02468681",
-    "portal_case_id": "",
+    "portal_case_id": "3570320",
     "display_case_number": "CRI-02468681",
     "defendant": "CALVIN NGUYEN",
     "filed_date": "2012-08-06",
@@ -60,11 +96,57 @@
       "filed_date": "2012-08-06"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11359 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11359 HS/F",
+        "title": "Health and Safety Code § 11359",
+        "title_source": "programmatic_citation",
+        "code": "HS 11359",
+        "code_system": "HS",
+        "section": "11359",
+        "citation": "Health and Safety Code § 11359",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CALVIN NGUYEN, and date of filing 2012-08-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CALVIN NGUYEN, date of filing, 2012-08-06, and charges in the case: 11359 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11359 HS/F",
+      "title": "Health and Safety Code § 11359",
+      "title_source": "programmatic_citation",
+      "code": "HS 11359",
+      "code_system": "HS",
+      "section": "11359",
+      "citation": "Health and Safety Code § 11359",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:28:05.662Z",
+  "portal_case_id": "3570320",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02468681",
+      "defendant": "CALVIN NGUYEN",
+      "filed_date": "2012-08-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3570320"
+  }
 }

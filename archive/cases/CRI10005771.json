@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:40:10.849Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:39:30.473Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10005771",
   "criminal_case_number": "10005771",
@@ -24,11 +24,133 @@
       "name": "JOHN PARKER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN PARKER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-03-19T15:30:00.000Z",
+      "docketEntryComment": "MOT TO CONT FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS:ERWIN FREDRICH/FAWC/DEFTARR1/STWPX/987,2/BAIL:60,000/CTORD:AS A CONDITION OF BAIL DEFENDANT NOT TO POSSESS WEAPONS/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MO PC 1385:PEOPLE UNABLE TO PROCEED/BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-07T08:30:00.000Z",
+      "docketEntryComment": "/CAL:PTC (ERP)/CONTD: PRELIM HEARING      /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/STWPX/CONTD:FOR ERP/DOP/CONTD:FOR PRELIMINARY HEARING/DO",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-16T08:30:00.000Z",
+      "docketEntryComment": "/CAL:PTC/CONTD: PRELIM HEARING      /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG & MOTION TO CONTINUE/MO GRTD/CONTD:ERP/DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-19T08:30:00.000Z",
+      "docketEntryComment": "/CAL:PTC (ERP)/CONTD: PRELIM HEARING      /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/STWPX/CONTD:FOR ERP/CONTD PRELIM HRG,/CONTD:FOR PRELIMINARY HEARING/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-05-20 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2010-05-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-04-19 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2010-04-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-23 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2010-03-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-04 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2010-03-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-24 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 4,
+      "court_date": "2010-02-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ERWIN FREDRICH",
+      "type": "Appointed Counsel"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +167,102 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3633822",
+  "docket_entries": [
+    {
+      "filedDate": "2010-03-19T15:30:00.000Z",
+      "docketEntryComment": "MOT TO CONT FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-03-19T15:30:00.000Z",
+      "description": "MOT TO CONT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS:ERWIN FREDRICH/FAWC/DEFTARR1/STWPX/987,2/BAIL:60,000/CTORD:AS A CONDITION OF BAIL DEFENDANT NOT TO POSSESS WEAPONS/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-02-24T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS:ERWIN FREDRICH/FAWC/DEFTARR1/STWPX/987,2/BAIL:60,000/CTORD:AS A CONDITION OF BAIL DEFENDANT NOT TO POSSESS WEAPONS/CONTD:PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MO PC 1385:PEOPLE UNABLE TO PROCEED/BE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-05-20T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG/MO PC 1385:PEOPLE UNABLE TO PROCEED/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-07T08:30:00.000Z",
+      "docketEntryComment": "/CAL:PTC (ERP)/CONTD: PRELIM HEARING      /",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-05-07T08:30:00.000Z",
+      "description": "/CAL:PTC (ERP)/CONTD: PRELIM HEARING /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/STWPX/CONTD:FOR ERP/DOP/CONTD:FOR PRELIMINARY HEARING/DO",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-04-19T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG/STWPX/CONTD:FOR ERP/DOP/CONTD:FOR PRELIMINARY HEARING/DO",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-16T08:30:00.000Z",
+      "docketEntryComment": "/CAL:PTC/CONTD: PRELIM HEARING      /",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-04-16T08:30:00.000Z",
+      "description": "/CAL:PTC/CONTD: PRELIM HEARING /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG & MOTION TO CONTINUE/MO GRTD/CONTD:ERP/DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2010-03-23T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG & MOTION TO CONTINUE/MO GRTD/CONTD:ERP/DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-19T08:30:00.000Z",
+      "docketEntryComment": "/CAL:PTC (ERP)/CONTD: PRELIM HEARING      /",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2010-03-19T08:30:00.000Z",
+      "description": "/CAL:PTC (ERP)/CONTD: PRELIM HEARING /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/STWPX/CONTD:FOR ERP/CONTD PRELIM HRG,/CONTD:FOR PRELIMINARY HEARING/",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "2010-03-04T09:00:00.000Z",
+      "description": "/CAL:PRE-HEARING CONFERENCE/STWPX/CONTD:FOR ERP/CONTD PRELIM HRG,/CONTD:FOR PRELIMINARY HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10005771",
-    "portal_case_id": "",
+    "portal_case_id": "3633822",
     "display_case_number": "CRI-10005771",
     "defendant": "JOHN PARKER",
     "filed_date": "2010-02-24",
@@ -59,12 +272,249 @@
       "defendant": "JOHN PARKER",
       "filed_date": "2010-02-24"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11352(a) HS/F 11351.5 HS/F 11370.1(a) HS/F 11360(a) HS/F 11359 HS/F 12025(a)(1) PC/M 12031(a)(1) PC/M 148(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "11352(a) HS/F",
+        "title": "Health and Safety Code § 11352(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11352(a)",
+        "code_system": "HS",
+        "section": "11352(a)",
+        "citation": "Health and Safety Code § 11352(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11351.5 HS/F",
+        "title": "Health and Safety Code § 11351.5",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351.5",
+        "code_system": "HS",
+        "section": "11351.5",
+        "citation": "Health and Safety Code § 11351.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11370.1(a) HS/F",
+        "title": "Health and Safety Code § 11370.1(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11370.1(a)",
+        "code_system": "HS",
+        "section": "11370.1(a)",
+        "citation": "Health and Safety Code § 11370.1(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11370.1.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11370.1.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11360(a) HS/F",
+        "title": "Health and Safety Code § 11360(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11360(a)",
+        "code_system": "HS",
+        "section": "11360(a)",
+        "citation": "Health and Safety Code § 11360(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11359 HS/F",
+        "title": "Health and Safety Code § 11359",
+        "title_source": "programmatic_citation",
+        "code": "HS 11359",
+        "code_system": "HS",
+        "section": "11359",
+        "citation": "Health and Safety Code § 11359",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "12025(a)(1) PC/M",
+        "title": "Penal Code § 12025(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 12025(a)(1)",
+        "code_system": "PC",
+        "section": "12025(a)(1)",
+        "citation": "Penal Code § 12025(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12025.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12025.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "12031(a)(1) PC/M",
+        "title": "Penal Code § 12031(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 12031(a)(1)",
+        "code_system": "PC",
+        "section": "12031(a)(1)",
+        "citation": "Penal Code § 12031(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12031.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12031.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "148(a)(1) PC/M",
+        "title": "Penal Code § 148(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148(a)(1)",
+        "code_system": "PC",
+        "section": "148(a)(1)",
+        "citation": "Penal Code § 148(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN PARKER, and date of filing 2010-02-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN PARKER, date of filing, 2010-02-24, and charges in the case: 11352(a) HS/F 11351.5 HS/F 11370.1(a) HS/F 11360(a) HS/F 11359 HS/F 12025(a)(1) PC/M 12031(a)(1) PC/M 148(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11352(a) HS/F",
+      "title": "Health and Safety Code § 11352(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11352(a)",
+      "code_system": "HS",
+      "section": "11352(a)",
+      "citation": "Health and Safety Code § 11352(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11351.5 HS/F",
+      "title": "Health and Safety Code § 11351.5",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351.5",
+      "code_system": "HS",
+      "section": "11351.5",
+      "citation": "Health and Safety Code § 11351.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11370.1(a) HS/F",
+      "title": "Health and Safety Code § 11370.1(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11370.1(a)",
+      "code_system": "HS",
+      "section": "11370.1(a)",
+      "citation": "Health and Safety Code § 11370.1(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11370.1.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11370.1.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11360(a) HS/F",
+      "title": "Health and Safety Code § 11360(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11360(a)",
+      "code_system": "HS",
+      "section": "11360(a)",
+      "citation": "Health and Safety Code § 11360(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11359 HS/F",
+      "title": "Health and Safety Code § 11359",
+      "title_source": "programmatic_citation",
+      "code": "HS 11359",
+      "code_system": "HS",
+      "section": "11359",
+      "citation": "Health and Safety Code § 11359",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "12025(a)(1) PC/M",
+      "title": "Penal Code § 12025(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 12025(a)(1)",
+      "code_system": "PC",
+      "section": "12025(a)(1)",
+      "citation": "Penal Code § 12025(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12025.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12025.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "12031(a)(1) PC/M",
+      "title": "Penal Code § 12031(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 12031(a)(1)",
+      "code_system": "PC",
+      "section": "12031(a)(1)",
+      "citation": "Penal Code § 12031(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12031.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12031.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "148(a)(1) PC/M",
+      "title": "Penal Code § 148(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148(a)(1)",
+      "code_system": "PC",
+      "section": "148(a)(1)",
+      "citation": "Penal Code § 148(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:39:31.200Z",
+  "portal_case_id": "3633822",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10005771",
+      "defendant": "JOHN PARKER",
+      "filed_date": "2010-02-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3633822"
+  }
 }

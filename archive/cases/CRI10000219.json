@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:00:22.740Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:36:44.439Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10000219",
   "criminal_case_number": "10000219",
@@ -24,11 +24,77 @@
       "name": "STEPHEN SANDERS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "STEPHEN SANDERS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-01-05T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/ STWPX/987,2/OR /X:DEFT TO CALL IN ONCE A WEEK TO SPR AS CONDITION OF RELEASE/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:INTEREST OF JUSTICE, THE PEOPLE ARE UNABLE TO SUSTAIN  THEIR BURDEN OF PROOF /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-05-24 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2010-05-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-03 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2010-03-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-05 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2010-01-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DAVID HARRISON",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3628643",
+  "docket_entries": [
+    {
+      "filedDate": "2010-01-05T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/ STWPX/987,2/OR /X:DEFT TO CALL IN ONCE A WEEK TO SPR AS CONDITION OF RELEASE/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-01-05T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/ STWPX/987,2/OR /X:DEFT TO CALL IN ONCE A WEEK TO SPR AS CONDITION OF RELEASE/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:INTEREST OF JUSTICE, THE PEOPLE ARE UNABLE TO SUSTAIN  THEIR BURDEN OF PROOF /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-05-24T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO PC 1385:INTEREST OF JUSTICE, THE PEOPLE ARE UNABLE TO SUSTAIN THEIR BURDEN OF PROOF /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-03-03T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10000219",
-    "portal_case_id": "",
+    "portal_case_id": "3628643",
     "display_case_number": "CRI-10000219",
     "defendant": "STEPHEN SANDERS",
     "filed_date": "2010-01-05",
@@ -59,12 +156,93 @@
       "defendant": "STEPHEN SANDERS",
       "filed_date": "2010-01-05"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11360(a) HS/F 11359 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11360(a) HS/F",
+        "title": "Health and Safety Code § 11360(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11360(a)",
+        "code_system": "HS",
+        "section": "11360(a)",
+        "citation": "Health and Safety Code § 11360(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11359 HS/F",
+        "title": "Health and Safety Code § 11359",
+        "title_source": "programmatic_citation",
+        "code": "HS 11359",
+        "code_system": "HS",
+        "section": "11359",
+        "citation": "Health and Safety Code § 11359",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, STEPHEN SANDERS, and date of filing 2010-01-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, STEPHEN SANDERS, date of filing, 2010-01-05, and charges in the case: 11360(a) HS/F 11359 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11360(a) HS/F",
+      "title": "Health and Safety Code § 11360(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11360(a)",
+      "code_system": "HS",
+      "section": "11360(a)",
+      "citation": "Health and Safety Code § 11360(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11359 HS/F",
+      "title": "Health and Safety Code § 11359",
+      "title_source": "programmatic_citation",
+      "code": "HS 11359",
+      "code_system": "HS",
+      "section": "11359",
+      "citation": "Health and Safety Code § 11359",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:36:45.685Z",
+  "portal_case_id": "3628643",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10000219",
+      "defendant": "STEPHEN SANDERS",
+      "filed_date": "2010-01-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3628643"
+  }
 }

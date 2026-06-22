@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:03:46.518Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:45:53.141Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02425431",
   "criminal_case_number": "02425431",
@@ -24,19 +24,129 @@
       "name": "ANGELA GRIFFIN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANGELA GRIFFIN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-07-14T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ 15D/CTS:15/VF1/SA1:RICKY LANE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/WITH FOR PRELIM/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-14T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:TRANS TO DEPT 23/TRANS 23:FORTHWITH FOR PRETRIAL CONFERENCE/17B/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:2/DISM3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-02T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:DEFENSE MOTION FOR RELEASE ON OWN RECOGNIZANCE OR SPR, DENIED,/NTW/LD:07-17-09/987,2/BAIL:75,000/SA1:RICKEY LANE, DANIEL MARTINEZ/SA2:411 O'FARRELL STREET, SANFRANCISCO/SAORD3/SAORD/X:TIME ESTIMATE IS 3 HOURS,/CONTD:TO BE SET/M20/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-14T09:15:00.000Z",
+      "docketEntryComment": "/CAL:TANSFERRED FROM DEPT 20 FOR PTC/TEXT:TRANS TO DEPT 20/TRANS 20:FORTH",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-06T09:00:00.000Z",
+      "docketEntryComment": "CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-07-14 9:15 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 0,
+      "court_date": "2009-07-14",
+      "hearing_time": "9:15 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-07-14 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 1,
+      "court_date": "2009-07-14",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-07-14 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 2,
+      "court_date": "2009-07-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-07-06 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 3,
+      "court_date": "2009-07-06",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-07-02 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 4,
+      "court_date": "2009-07-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "HADI RAZZAQ",
+      "type": "Public Defender"
+    },
+    {
+      "name": "SANDIP PATEL",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "211 PC/F 496(a) PC/M",
+    "filed_date": "2009-07-02",
+    "defendant": "ANGELA GRIFFIN",
+    "searched_key": "GRIFFIN/AN",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/02425431.json",
     "searched_last_name": "GRIFFIN",
     "searched_first_prefix": "AN",
-    "charges": "211 PC/F 496(a) PC/M",
     "row": {
       "DEFENDANTNAME": "ANGELA GRIFFIN",
       "CASENUMBER": "CRI-02425431",
@@ -45,11 +155,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3531476",
+  "docket_entries": [
+    {
+      "filedDate": "2009-07-14T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ 15D/CTS:15/VF1/SA1:RICKY LANE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/WITH FOR PRELIM/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-07-14T09:15:00.000Z",
+      "description": "/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ 15D/CTS:15/VF1/SA1:RICKY LANE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/WITH FOR PRELIM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-14T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:TRANS TO DEPT 23/TRANS 23:FORTHWITH FOR PRETRIAL CONFERENCE/17B/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:2/DISM3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-07-14T09:00:00.000Z",
+      "description": "/TEXT:TRANS TO DEPT 23/TRANS 23:FORTHWITH FOR PRETRIAL CONFERENCE/17B/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:2/DISM3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-02T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:DEFENSE MOTION FOR RELEASE ON OWN RECOGNIZANCE OR SPR, DENIED,/NTW/LD:07-17-09/987,2/BAIL:75,000/SA1:RICKEY LANE, DANIEL MARTINEZ/SA2:411 O'FARRELL STREET, SANFRANCISCO/SAORD3/SAORD/X:TIME ESTIMATE IS 3 HOURS,/CONTD:TO BE SET/M20/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-07-02T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:DEFENSE MOTION FOR RELEASE ON OWN RECOGNIZANCE OR SPR, DENIED,/NTW/LD:07-17-09/987,2/BAIL:75,000/SA1:RICKEY LANE, DANIEL MARTINEZ/SA2:411 O'FARRELL STREET, SANFRANCISCO/SAORD3/SAORD/X:TIME ESTIMATE IS 3 HOURS,/CONTD:TO BE SET/M20/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-14T09:15:00.000Z",
+      "docketEntryComment": "/CAL:TANSFERRED FROM DEPT 20 FOR PTC/TEXT:TRANS TO DEPT 20/TRANS 20:FORTH",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-07-14T09:15:00.000Z",
+      "description": "/CAL:TANSFERRED FROM DEPT 20 FOR PTC/TEXT:TRANS TO DEPT 20/TRANS 20:FORTH",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-06T09:00:00.000Z",
+      "docketEntryComment": "CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2009-07-06T09:00:00.000Z",
+      "description": "CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02425431",
-    "portal_case_id": "",
+    "portal_case_id": "3531476",
     "display_case_number": "CRI-02425431",
     "defendant": "ANGELA GRIFFIN",
     "filed_date": "2009-07-02",
@@ -60,11 +221,84 @@
       "filed_date": "2009-07-02"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "211 PC/F 496(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "211 PC/F",
+        "title": "Penal Code § 211",
+        "title_source": "programmatic_citation",
+        "code": "PC 211",
+        "code_system": "PC",
+        "section": "211",
+        "citation": "Penal Code § 211",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "496(a) PC/M",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANGELA GRIFFIN, and date of filing 2009-07-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANGELA GRIFFIN, date of filing, 2009-07-02, and charges in the case: 211 PC/F 496(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "211 PC/F",
+      "title": "Penal Code § 211",
+      "title_source": "programmatic_citation",
+      "code": "PC 211",
+      "code_system": "PC",
+      "section": "211",
+      "citation": "Penal Code § 211",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "496(a) PC/M",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:45:53.732Z",
+  "portal_case_id": "3531476",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02425431",
+      "defendant": "ANGELA GRIFFIN",
+      "filed_date": "2009-07-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3531476"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.589867+00:00"
 }

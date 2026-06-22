@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:25:10.738Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:16:45.613Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02482081",
   "criminal_case_number": "02482081",
@@ -24,19 +24,94 @@
       "name": "ANTERIS HICKS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANTERIS HICKS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2019-04-08T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-11-18T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-04-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL: BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//PD/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURR,/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-10-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND  STAYED TO 11-18-14,/X: BAIL SET AT $10,000,/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-11-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT STAY/BWLIFT:10-31-14/FTA/OREVKD/BWI/BAIL:10,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2019-04-08 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2019-04-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-11-18 9:00 AM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2014-11-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-10-31 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2014-10-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "484(a)/490.5 PC/M 459 PC/M",
+    "filed_date": "2014-10-22",
+    "defendant": "ANTERIS HICKS",
+    "searched_key": "HICKS/AN",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/02482081.json",
     "searched_last_name": "HICKS",
     "searched_first_prefix": "AN",
-    "charges": "484(a)/490.5 PC/M 459 PC/M",
     "row": {
       "DEFENDANTNAME": "ANTERIS HICKS",
       "CASENUMBER": "CRI-02482081",
@@ -45,11 +120,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3581761",
+  "docket_entries": [
+    {
+      "filedDate": "2019-04-08T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-04-08T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-11-18T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-11-18T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-04-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL: BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//PD/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURR,/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2019-04-08T09:00:00.000Z",
+      "description": "/CAL: BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG//PD/FAWC/DEFTARR1/X:THE DEFENSE RESERVES THE RIGHT TO DEMURR,/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-10-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND  STAYED TO 11-18-14,/X: BAIL SET AT $10,000,/DOPC/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2014-10-31T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO 11-18-14,/X: BAIL SET AT $10,000,/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-11-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT STAY/BWLIFT:10-31-14/FTA/OREVKD/BWI/BAIL:10,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2014-11-18T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT STAY/BWLIFT:10-31-14/FTA/OREVKD/BWI/BAIL:10,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02482081",
-    "portal_case_id": "",
+    "portal_case_id": "3581761",
     "display_case_number": "CRI-02482081",
     "defendant": "ANTERIS HICKS",
     "filed_date": "2014-10-22",
@@ -60,11 +186,84 @@
       "filed_date": "2014-10-22"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "484(a)/490.5 PC/M 459 PC/M",
+    "charge_rows": [
+      {
+        "raw": "490.5 PC/M",
+        "title": "Penal Code § 490.5",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.5",
+        "code_system": "PC",
+        "section": "490.5",
+        "citation": "Penal Code § 490.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "459 PC/M",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANTERIS HICKS, and date of filing 2014-10-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANTERIS HICKS, date of filing, 2014-10-22, and charges in the case: 484(a)/490.5 PC/M 459 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.5 PC/M",
+      "title": "Penal Code § 490.5",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.5",
+      "code_system": "PC",
+      "section": "490.5",
+      "citation": "Penal Code § 490.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "459 PC/M",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:16:46.301Z",
+  "portal_case_id": "3581761",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02482081",
+      "defendant": "ANTERIS HICKS",
+      "filed_date": "2014-10-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3581761"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.856916+00:00"
 }

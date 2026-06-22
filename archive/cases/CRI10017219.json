@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:14:58.304Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:40:38.320Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10017219",
   "criminal_case_number": "10017219",
@@ -24,19 +24,120 @@
       "name": "ANDRE MARCELLJR CLARK",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANDRE MARCELLJR CLARK",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-06-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET AND JOIN #10016205/DEF:IS IN CUSTODY IN CASE #10017983/CTORD:THE DEFENDANT'S OTHER CASES, #10017983 AND #1007288, BE ADDED ON CALENDAR ON 06-21-10 TO JOIN,/CONTD:PRE-HEARING CONFERENCE AND JOIN/DOP/LD:07-08-10/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-08T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DAWT/PD/FAWC/DEFTARR1/X:RESERVE DEMURRER,/NTW/LD:07-08-10/BAIL:5000/CONTD:BAIL REVIEW/CONTD:TO JOIN 10016205/CONTD:TRIAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/MO PC 1385:UNABLE TO SUSTAIN/VD:06-21-10 PTC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BAIL REVIEW/OR/X:6-15-10 IN DEPT 12 & 6-18-10 TRIAL CONFIRMED/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-06-21 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2010-06-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-18 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 1,
+      "court_date": "2010-06-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-15 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2010-06-15",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-10 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 3,
+      "court_date": "2010-06-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-08 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 4,
+      "court_date": "2010-06-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MICHELLE TONG",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "166(a)(4) PC/M",
+    "filed_date": "2010-06-08",
+    "defendant": "ANDRE MARCELLJR CLARK",
+    "searched_key": "CLARK/AN",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/10017219.json",
     "searched_last_name": "CLARK",
     "searched_first_prefix": "AN",
-    "charges": "166(a)(4) PC/M",
     "row": {
       "DEFENDANTNAME": "ANDRE MARCELLJR CLARK",
       "CASENUMBER": "CRI-10017219",
@@ -45,11 +146,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3644616",
+  "docket_entries": [
+    {
+      "filedDate": "2010-06-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET AND JOIN #10016205/DEF:IS IN CUSTODY IN CASE #10017983/CTORD:THE DEFENDANT'S OTHER CASES, #10017983 AND #1007288, BE ADDED ON CALENDAR ON 06-21-10 TO JOIN,/CONTD:PRE-HEARING CONFERENCE AND JOIN/DOP/LD:07-08-10/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-06-15T09:00:00.000Z",
+      "description": "/CAL:TO SET AND JOIN #10016205/DEF:IS IN CUSTODY IN CASE #10017983/CTORD:THE DEFENDANT'S OTHER CASES, #10017983 AND #1007288, BE ADDED ON CALENDAR ON 06-21-10 TO JOIN,/CONTD:PRE-HEARING CONFERENCE AND JOIN/DOP/LD:07-08-10/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-08T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DAWT/PD/FAWC/DEFTARR1/X:RESERVE DEMURRER,/NTW/LD:07-08-10/BAIL:5000/CONTD:BAIL REVIEW/CONTD:TO JOIN 10016205/CONTD:TRIAL/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-06-08T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DAWT/PD/FAWC/DEFTARR1/X:RESERVE DEMURRER,/NTW/LD:07-08-10/BAIL:5000/CONTD:BAIL REVIEW/CONTD:TO JOIN 10016205/CONTD:TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/MO PC 1385:UNABLE TO SUSTAIN/VD:06-21-10 PTC/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-06-18T09:00:00.000Z",
+      "description": "/CAL:TRIAL/MO PC 1385:UNABLE TO SUSTAIN/VD:06-21-10 PTC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BAIL REVIEW/OR/X:6-15-10 IN DEPT 12 & 6-18-10 TRIAL CONFIRMED/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-06-10T09:00:00.000Z",
+      "description": "/CAL:BAIL REVIEW/OR/X:6-15-10 IN DEPT 12 & 6-18-10 TRIAL CONFIRMED/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10017219",
-    "portal_case_id": "",
+    "portal_case_id": "3644616",
     "display_case_number": "CRI-10017219",
     "defendant": "ANDRE MARCELLJR CLARK",
     "filed_date": "2010-06-08",
@@ -59,12 +201,68 @@
       "defendant": "ANDRE MARCELLJR CLARK",
       "filed_date": "2010-06-08"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "166(a)(4) PC/M",
+    "charge_rows": [
+      {
+        "raw": "166(a)(4) PC/M",
+        "title": "Penal Code § 166(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 166(a)(4)",
+        "code_system": "PC",
+        "section": "166(a)(4)",
+        "citation": "Penal Code § 166(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANDRE MARCELLJR CLARK, and date of filing 2010-06-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANDRE MARCELLJR CLARK, date of filing, 2010-06-08, and charges in the case: 166(a)(4) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "166(a)(4) PC/M",
+      "title": "Penal Code § 166(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 166(a)(4)",
+      "code_system": "PC",
+      "section": "166(a)(4)",
+      "citation": "Penal Code § 166(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:40:39.027Z",
+  "portal_case_id": "3644616",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10017219",
+      "defendant": "ANDRE MARCELLJR CLARK",
+      "filed_date": "2010-06-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3644616"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.745605+00:00"
 }

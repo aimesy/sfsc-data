@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:26:33.000Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:47:06.333Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02523364",
   "criminal_case_number": "02523364",
@@ -24,10 +24,35 @@
       "name": "COLTON ROBERT SHEPPARD",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "COLTON ROBERT SHEPPARD",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2020-08-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: HEARD IN D50 THIS AFTERNOON /",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2020-08-31 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2020-08-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +70,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3619758",
+  "docket_entries": [
+    {
+      "filedDate": "2020-08-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: HEARD IN D50 THIS AFTERNOON /",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2020-08-31T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: HEARD IN D50 THIS AFTERNOON /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02523364",
-    "portal_case_id": "",
+    "portal_case_id": "3619758",
     "display_case_number": "CRI-02523364",
     "defendant": "COLTON ROBERT SHEPPARD",
     "filed_date": "2020-08-25",
@@ -60,11 +96,58 @@
       "filed_date": "2020-08-25"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "490.2(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "490.2(a) PC/M",
+        "title": "Penal Code § 490.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.2(a)",
+        "code_system": "PC",
+        "section": "490.2(a)",
+        "citation": "Penal Code § 490.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, COLTON ROBERT SHEPPARD, and date of filing 2020-08-25. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, COLTON ROBERT SHEPPARD, date of filing, 2020-08-25, and charges in the case: 490.2(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.2(a) PC/M",
+      "title": "Penal Code § 490.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.2(a)",
+      "code_system": "PC",
+      "section": "490.2(a)",
+      "citation": "Penal Code § 490.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:47:07.007Z",
+  "portal_case_id": "3619758",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02523364",
+      "defendant": "COLTON ROBERT SHEPPARD",
+      "filed_date": "2020-08-25"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3619758"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T15:17:53.100Z"
 }

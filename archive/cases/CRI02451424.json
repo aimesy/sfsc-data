@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:23:54.745Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:37:55.655Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02451424",
   "criminal_case_number": "02451424",
@@ -24,19 +24,94 @@
       "name": "TORNADO JACKSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TORNADO JACKSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-04-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES/CONTD:ARRAIGNMENT, PLEA,COUNSEL AND CJC REFERRAL/TWA/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRETRIAL CONFERENCE/MO138572:10011101/VD:04-30-10 TRIAL DATE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-19T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DAW/FAWC/DEFTARR1/BAIL:10,000/CONTD:PRE TRIAL/DOP/DOP/NTW/LD:05-20-10/987,2/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-16T08:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT/X:DEFENDANT FOUND NOT SUITABLE FOR CJC,/CONT/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-04-26 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2010-04-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-04-19 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 1,
+      "court_date": "2010-04-19",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-04-15 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 2,
+      "court_date": "2010-04-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PATRICK SWILLINGER",
+      "type": "Appointed Counsel"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "484g(a) PC/M",
+    "filed_date": "2010-04-15",
+    "defendant": "TORNADO JACKSON",
+    "searched_key": "JACKSON/TO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/02451424.json",
     "searched_last_name": "JACKSON",
     "searched_first_prefix": "TO",
-    "charges": "484g(a) PC/M",
     "row": {
       "DEFENDANTNAME": "TORNADO JACKSON",
       "CASENUMBER": "CRI-02451424",
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3555301",
+  "docket_entries": [
+    {
+      "filedDate": "2010-04-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES/CONTD:ARRAIGNMENT, PLEA,COUNSEL AND CJC REFERRAL/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-04-15T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/NP/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES/CONTD:ARRAIGNMENT, PLEA,COUNSEL AND CJC REFERRAL/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRETRIAL CONFERENCE/MO138572:10011101/VD:04-30-10 TRIAL DATE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-04-26T09:00:00.000Z",
+      "description": "/CAL: PRETRIAL CONFERENCE/MO138572:10011101/VD:04-30-10 TRIAL DATE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-19T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DAW/FAWC/DEFTARR1/BAIL:10,000/CONTD:PRE TRIAL/DOP/DOP/NTW/LD:05-20-10/987,2/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-04-19T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/DAW/FAWC/DEFTARR1/BAIL:10,000/CONTD:PRE TRIAL/DOP/DOP/NTW/LD:05-20-10/987,2/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-16T08:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT/X:DEFENDANT FOUND NOT SUITABLE FOR CJC,/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-04-16T08:30:00.000Z",
+      "description": "/CAL:CJC ASSESSMENT/X:DEFENDANT FOUND NOT SUITABLE FOR CJC,/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02451424",
-    "portal_case_id": "",
+    "portal_case_id": "3555301",
     "display_case_number": "CRI-02451424",
     "defendant": "TORNADO JACKSON",
     "filed_date": "2010-04-15",
@@ -60,11 +176,58 @@
       "filed_date": "2010-04-15"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "484g(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "484g(a) PC/M",
+        "title": "Penal Code § 484g(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 484g(a)",
+        "code_system": "PC",
+        "section": "484g(a)",
+        "citation": "Penal Code § 484g(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484g.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484g.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TORNADO JACKSON, and date of filing 2010-04-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TORNADO JACKSON, date of filing, 2010-04-15, and charges in the case: 484g(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "484g(a) PC/M",
+      "title": "Penal Code § 484g(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 484g(a)",
+      "code_system": "PC",
+      "section": "484g(a)",
+      "citation": "Penal Code § 484g(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484g.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484g.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:37:56.383Z",
+  "portal_case_id": "3555301",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02451424",
+      "defendant": "TORNADO JACKSON",
+      "filed_date": "2010-04-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3555301"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:20.934267+00:00"
 }

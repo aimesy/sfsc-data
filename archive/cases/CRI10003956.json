@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:33:51.974Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:39:05.951Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10003956",
   "criminal_case_number": "10003956",
@@ -24,11 +24,95 @@
       "name": "MONTANA LE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MONTANA LE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-04-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:2ND PTC/MO PC 1385:UNABLE TO SUSTAIN/BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:1ST PRETRIAL/CONTD: 04-2-7-10 2ND PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A P&C/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/MO PC 17B/MO GRTD/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-04-27 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2010-04-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-24 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 1,
+      "court_date": "2010-03-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-19 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 2,
+      "court_date": "2010-02-19",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-11 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2010-02-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SERENA ORLOFF",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +129,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3632132",
+  "docket_entries": [
+    {
+      "filedDate": "2010-04-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:2ND PTC/MO PC 1385:UNABLE TO SUSTAIN/BE/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-04-27T09:00:00.000Z",
+      "description": "/CAL:2ND PTC/MO PC 1385:UNABLE TO SUSTAIN/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:1ST PRETRIAL/CONTD: 04-2-7-10 2ND PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-03-24T09:00:00.000Z",
+      "description": "/CAL:1ST PRETRIAL/CONTD: 04-2-7-10 2ND PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A P&C/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-02-19T09:00:00.000Z",
+      "description": "/CAL:I&A P&C/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/MO PC 17B/MO GRTD/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-02-11T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/MO PC 17B/MO GRTD/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10003956",
-    "portal_case_id": "",
+    "portal_case_id": "3632132",
     "display_case_number": "CRI-10003956",
     "defendant": "MONTANA LE",
     "filed_date": "2010-02-11",
@@ -59,12 +184,86 @@
       "defendant": "MONTANA LE",
       "filed_date": "2010-02-11"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 17B",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 17B",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "11377(a) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11377(a) HS/M",
+        "title": "Health and Safety Code § 11377(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11377(a)",
+        "code_system": "HS",
+        "section": "11377(a)",
+        "citation": "Health and Safety Code § 11377(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MONTANA LE, and date of filing 2010-02-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MONTANA LE, date of filing, 2010-02-11, and charges in the case: 11377(a) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11377(a) HS/M",
+      "title": "Health and Safety Code § 11377(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11377(a)",
+      "code_system": "HS",
+      "section": "11377(a)",
+      "citation": "Health and Safety Code § 11377(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:39:06.638Z",
+  "portal_case_id": "3632132",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10003956",
+      "defendant": "MONTANA LE",
+      "filed_date": "2010-02-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3632132"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:51:23.640Z"
 }

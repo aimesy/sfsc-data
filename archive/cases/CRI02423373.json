@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:34:38.960Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:48:44.651Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02423373",
   "criminal_case_number": "02423373",
@@ -24,19 +24,101 @@
       "name": "BRENT KING",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BRENT KING",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-06-17T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/NTW/LD:07-17-09/987,2/BAIL:15000/WEAP/CONTD:PRETRIAL ON 6-26-09 AND JURY TRIAL ON 7-1-09/SAORD/SA1:VALERY ANN LAXAMANA/SA2:135 BROOKDALE AVE, SF, 94134/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-06-19T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:THE PEOPLE ARE UNABLE TO SUSTAIN THEIR BURDEN OF PROOF/SATERM//VD:6-26-09 PRETRIAL CONF/VD:7-1-09 TRIAL/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-07-01 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "2009-07-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-06-26 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 1,
+      "court_date": "2009-06-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-06-19 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 2,
+      "court_date": "2009-06-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-06-17 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 3,
+      "court_date": "2009-06-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MEGAN BURNS",
+      "type": "Public Defender"
+    },
+    {
+      "name": "JOHN ZAHAR",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "273.5(a) PC/M 243(e)(1) PC/M 240 PC/M",
+    "filed_date": "2009-06-17",
+    "defendant": "BRENT KING",
+    "searched_key": "KING/BR",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/02423373.json",
     "searched_last_name": "KING",
     "searched_first_prefix": "BR",
-    "charges": "273.5(a) PC/M 243(e)(1) PC/M 240 PC/M",
     "row": {
       "DEFENDANTNAME": "BRENT KING",
       "CASENUMBER": "CRI-02423373",
@@ -45,11 +127,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3529580",
+  "docket_entries": [
+    {
+      "filedDate": "2009-06-17T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/NTW/LD:07-17-09/987,2/BAIL:15000/WEAP/CONTD:PRETRIAL ON 6-26-09 AND JURY TRIAL ON 7-1-09/SAORD/SA1:VALERY ANN LAXAMANA/SA2:135 BROOKDALE AVE, SF, 94134/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-06-17T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/DOP/NTW/LD:07-17-09/987,2/BAIL:15000/WEAP/CONTD:PRETRIAL ON 6-26-09 AND JURY TRIAL ON 7-1-09/SAORD/SA1:VALERY ANN LAXAMANA/SA2:135 BROOKDALE AVE, SF, 94134/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-06-19T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:THE PEOPLE ARE UNABLE TO SUSTAIN THEIR BURDEN OF PROOF/SATERM//VD:6-26-09 PRETRIAL CONF/VD:7-1-09 TRIAL/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-06-19T09:00:00.000Z",
+      "description": "/MO PC 1385:THE PEOPLE ARE UNABLE TO SUSTAIN THEIR BURDEN OF PROOF/SATERM//VD:6-26-09 PRETRIAL CONF/VD:7-1-09 TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02423373",
-    "portal_case_id": "",
+    "portal_case_id": "3529580",
     "display_case_number": "CRI-02423373",
     "defendant": "BRENT KING",
     "filed_date": "2009-06-17",
@@ -59,12 +162,120 @@
       "defendant": "BRENT KING",
       "filed_date": "2009-06-17"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "273.5(a) PC/M 243(e)(1) PC/M 240 PC/M",
+    "charge_rows": [
+      {
+        "raw": "273.5(a) PC/M",
+        "title": "Penal Code § 273.5(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 273.5(a)",
+        "code_system": "PC",
+        "section": "273.5(a)",
+        "citation": "Penal Code § 273.5(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "243(e)(1) PC/M",
+        "title": "Penal Code § 243(e)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 243(e)(1)",
+        "code_system": "PC",
+        "section": "243(e)(1)",
+        "citation": "Penal Code § 243(e)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "240 PC/M",
+        "title": "Penal Code § 240",
+        "title_source": "programmatic_citation",
+        "code": "PC 240",
+        "code_system": "PC",
+        "section": "240",
+        "citation": "Penal Code § 240",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BRENT KING, and date of filing 2009-06-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BRENT KING, date of filing, 2009-06-17, and charges in the case: 273.5(a) PC/M 243(e)(1) PC/M 240 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "273.5(a) PC/M",
+      "title": "Penal Code § 273.5(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 273.5(a)",
+      "code_system": "PC",
+      "section": "273.5(a)",
+      "citation": "Penal Code § 273.5(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "243(e)(1) PC/M",
+      "title": "Penal Code § 243(e)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 243(e)(1)",
+      "code_system": "PC",
+      "section": "243(e)(1)",
+      "citation": "Penal Code § 243(e)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "240 PC/M",
+      "title": "Penal Code § 240",
+      "title_source": "programmatic_citation",
+      "code": "PC 240",
+      "code_system": "PC",
+      "section": "240",
+      "citation": "Penal Code § 240",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:48:45.289Z",
+  "portal_case_id": "3529580",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02423373",
+      "defendant": "BRENT KING",
+      "filed_date": "2009-06-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3529580"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.915082+00:00"
 }

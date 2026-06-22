@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:57:32.389Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:31:13.288Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02463127",
   "criminal_case_number": "02463127",
@@ -24,19 +24,58 @@
       "name": "JOSEPH A FRANCIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSEPH A FRANCIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-10-17T10:51:00.000Z",
+      "docketEntryComment": "PD'S PC1203,4A MOTION FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-11-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:1203,4APC MOTION/CO:MOTION IS WITHDRAWN/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-11-16 9:00 AM",
+      "hearingType": "Motion to Set Aside Guilty/Nolo Pleas or Verdict and Dismiss Pursuant to PC 1203.4(a)(1)",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2011-11-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Set Aside Guilty/Nolo Pleas or Verdict and Dismiss Pursuant to PC 1203.4(a)(1)",
+      "hearing_type": "Motion to Set Aside Guilty/Nolo Pleas or Verdict and Dismiss Pursuant to PC 1203.4(a)(1)",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ALEEM RAJA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "10852 VC/M",
+    "filed_date": "2011-11-16",
+    "defendant": "JOSEPH A FRANCIS",
+    "searched_key": "FRANCIS/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/02463127.json",
     "searched_last_name": "FRANCIS",
     "searched_first_prefix": "JO",
-    "charges": "10852 VC/M",
     "row": {
       "DEFENDANTNAME": "JOSEPH A FRANCIS",
       "CASENUMBER": "CRI-02463127",
@@ -45,11 +84,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3565437",
+  "docket_entries": [
+    {
+      "filedDate": "2011-10-17T10:51:00.000Z",
+      "docketEntryComment": "PD'S PC1203,4A MOTION FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-10-17T10:51:00.000Z",
+      "description": "PD'S PC1203,4A MOTION FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-11-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:1203,4APC MOTION/CO:MOTION IS WITHDRAWN/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-11-16T09:00:00.000Z",
+      "description": "/CAL:1203,4APC MOTION/CO:MOTION IS WITHDRAWN/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02463127",
-    "portal_case_id": "",
+    "portal_case_id": "3565437",
     "display_case_number": "CRI-02463127",
     "defendant": "JOSEPH A FRANCIS",
     "filed_date": "2011-11-16",
@@ -59,12 +119,68 @@
       "defendant": "JOSEPH A FRANCIS",
       "filed_date": "2011-11-16"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC1203",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "10852 VC/M",
+    "charge_rows": [
+      {
+        "raw": "10852 VC/M",
+        "title": "Vehicle Code § 10852",
+        "title_source": "programmatic_citation",
+        "code": "VC 10852",
+        "code_system": "VC",
+        "section": "10852",
+        "citation": "Vehicle Code § 10852",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10852.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10852.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSEPH A FRANCIS, and date of filing 2011-11-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSEPH A FRANCIS, date of filing, 2011-11-16, and charges in the case: 10852 VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "10852 VC/M",
+      "title": "Vehicle Code § 10852",
+      "title_source": "programmatic_citation",
+      "code": "VC 10852",
+      "code_system": "VC",
+      "section": "10852",
+      "citation": "Vehicle Code § 10852",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10852.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10852.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:31:13.883Z",
+  "portal_case_id": "3565437",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02463127",
+      "defendant": "JOSEPH A FRANCIS",
+      "filed_date": "2011-11-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3565437"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.345552+00:00"
 }

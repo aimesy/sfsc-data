@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:36:05.265Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:32:31.678Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02457076",
   "criminal_case_number": "02457076",
@@ -24,10 +24,50 @@
       "name": "JOHN PAUL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN PAUL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2017-06-05T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-12T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-06-05T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 06/05/17, CASE DISMISSED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:  ARRAIGNMENT/FTA/BWI/BAIL:2000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-01-12 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2011-01-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +85,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3560144",
+  "docket_entries": [
+    {
+      "filedDate": "2017-06-05T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-06-05T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-12T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-01-12T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-06-05T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 06/05/17, CASE DISMISSED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-06-05T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 06/05/17, CASE DISMISSED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:  ARRAIGNMENT/FTA/BWI/BAIL:2000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-01-12T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/FTA/BWI/BAIL:2000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02457076",
-    "portal_case_id": "",
+    "portal_case_id": "3560144",
     "display_case_number": "CRI-02457076",
     "defendant": "JOHN PAUL",
     "filed_date": "2011-01-12",
@@ -60,11 +141,57 @@
       "filed_date": "2011-01-12"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "417(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "417(a)(1) PC/M",
+        "title": "Penal Code § 417(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 417(a)(1)",
+        "code_system": "PC",
+        "section": "417(a)(1)",
+        "citation": "Penal Code § 417(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN PAUL, and date of filing 2011-01-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN PAUL, date of filing, 2011-01-12, and charges in the case: 417(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "417(a)(1) PC/M",
+      "title": "Penal Code § 417(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 417(a)(1)",
+      "code_system": "PC",
+      "section": "417(a)(1)",
+      "citation": "Penal Code § 417(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:32:32.368Z",
+  "portal_case_id": "3560144",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02457076",
+      "defendant": "JOHN PAUL",
+      "filed_date": "2011-01-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3560144"
+  }
 }

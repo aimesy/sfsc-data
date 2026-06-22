@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:42:35.717Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:51:05.125Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02515251",
   "criminal_case_number": "02515251",
@@ -24,10 +24,135 @@
       "name": "JUAN MENDOZA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JUAN MENDOZA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2019-04-03T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2022-02-14T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2022-02-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL: BENCH WARRANT RETURN/BWDNC/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-10-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/FTA/BWDIRIC1:07-30-19/BWI/BAIL:10,000/BWNUM:4TH/CTORD:NOCITE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-07-30T13:30:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/FTA/BWDIRIC1:05-02-19/BWI/BAIL:10,000/BWNUM:3RD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-06-04T13:30:00.000Z",
+      "docketEntryComment": "/CAL:MT TO RECALL BW/X:BENCH WARRANT REMAINS OUTSTANDING,  NO APPEARANCESBY DEFENDANT OR COUNSEL,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-05-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/TN:JUAN MENDOZA/FTA/BWDIRIC1:04-03-19/BWI/BAIL:5,000/BWNUM:2ND/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-04-03T14:00:00.000Z",
+      "docketEntryComment": "6/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2022-02-14 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2022-02-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-10-21 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2019-10-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-07-30 1:30 PM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2019-07-30",
+      "hearing_time": "1:30 PM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-06-04 1:30 PM",
+      "hearingType": "Motion to Recall Bench Warrant",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 3,
+      "court_date": "2019-06-04",
+      "hearing_time": "1:30 PM",
+      "matters": "Motion to Recall Bench Warrant",
+      "hearing_type": "Motion to Recall Bench Warrant",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-05-02 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 4,
+      "court_date": "2019-05-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-04-03 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 5,
+      "court_date": "2019-04-03",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +170,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3612462",
+  "docket_entries": [
+    {
+      "filedDate": "2019-04-03T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-04-03T14:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-02-14T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2022-02-14T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-02-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL: BENCH WARRANT RETURN/BWDNC/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2022-02-14T09:00:00.000Z",
+      "description": "/CAL: BENCH WARRANT RETURN/BWDNC/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-10-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/FTA/BWDIRIC1:07-30-19/BWI/BAIL:10,000/BWNUM:4TH/CTORD:NOCITE/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2019-10-21T09:00:00.000Z",
+      "description": "/CAL:BW RETURN/FTA/BWDIRIC1:07-30-19/BWI/BAIL:10,000/BWNUM:4TH/CTORD:NOCITE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-07-30T13:30:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/FTA/BWDIRIC1:05-02-19/BWI/BAIL:10,000/BWNUM:3RD/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2019-07-30T13:30:00.000Z",
+      "description": "/CAL:BW RETURN/FTA/BWDIRIC1:05-02-19/BWI/BAIL:10,000/BWNUM:3RD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-06-04T13:30:00.000Z",
+      "docketEntryComment": "/CAL:MT TO RECALL BW/X:BENCH WARRANT REMAINS OUTSTANDING,  NO APPEARANCESBY DEFENDANT OR COUNSEL,/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2019-06-04T13:30:00.000Z",
+      "description": "/CAL:MT TO RECALL BW/X:BENCH WARRANT REMAINS OUTSTANDING, NO APPEARANCESBY DEFENDANT OR COUNSEL,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-05-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/TN:JUAN MENDOZA/FTA/BWDIRIC1:04-03-19/BWI/BAIL:5,000/BWNUM:2ND/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2019-05-02T09:00:00.000Z",
+      "description": "/CAL:BW RETURN/TN:JUAN MENDOZA/FTA/BWDIRIC1:04-03-19/BWI/BAIL:5,000/BWNUM:2ND/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-04-03T14:00:00.000Z",
+      "docketEntryComment": "6/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2019-04-03T14:00:00.000Z",
+      "description": "6/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02515251",
-    "portal_case_id": "",
+    "portal_case_id": "3612462",
     "display_case_number": "CRI-02515251",
     "defendant": "JUAN MENDOZA",
     "filed_date": "2019-04-03",
@@ -60,11 +266,57 @@
       "filed_date": "2019-04-03"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "490.2(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "490.2(a) PC/M",
+        "title": "Penal Code § 490.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.2(a)",
+        "code_system": "PC",
+        "section": "490.2(a)",
+        "citation": "Penal Code § 490.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JUAN MENDOZA, and date of filing 2019-04-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JUAN MENDOZA, date of filing, 2019-04-03, and charges in the case: 490.2(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.2(a) PC/M",
+      "title": "Penal Code § 490.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.2(a)",
+      "code_system": "PC",
+      "section": "490.2(a)",
+      "citation": "Penal Code § 490.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:51:05.792Z",
+  "portal_case_id": "3612462",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02515251",
+      "defendant": "JUAN MENDOZA",
+      "filed_date": "2019-04-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3612462"
+  }
 }

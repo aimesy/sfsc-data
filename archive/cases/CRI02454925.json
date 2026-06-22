@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:24:33.960Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:35:56.612Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02454925",
   "criminal_case_number": "02454925",
@@ -24,19 +24,99 @@
       "name": "KIMBERLY CLARK",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KIMBERLY CLARK",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-10-04T13:15:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-27T13:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-04T13:15:00.000Z",
+      "docketEntryComment": "/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS:MICHAEL LINSCHEID/BWR:09-27-10/BWR1/NC/OR/CONTD: I&A P/DOP/CONTD:ARRAIGNMENT, PLEA AND REVIEW CJC PLAN/TWA/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-12T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-27T13:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/ /BWRET:M08/FTA/BWI/BAIL:20,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-10-12 1:30 PM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2010-10-12",
+      "hearing_time": "1:30 PM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-10-04 1:15 PM",
+      "hearingType": "Motion to Recall Bench Warrant",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2010-10-04",
+      "hearing_time": "1:15 PM",
+      "matters": "Motion to Recall Bench Warrant",
+      "hearing_type": "Motion to Recall Bench Warrant",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-09-27 1:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2010-09-27",
+      "hearing_time": "1:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MICHAEL LINSCHEID",
+      "type": "Appointed Counsel"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "372 PC/M 647(e) PC/M",
+    "filed_date": "2010-09-27",
+    "defendant": "KIMBERLY CLARK",
+    "searched_key": "CLARK/KI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/02454925.json",
     "searched_last_name": "CLARK",
     "searched_first_prefix": "KI",
-    "charges": "372 PC/M 647(e) PC/M",
     "row": {
       "DEFENDANTNAME": "KIMBERLY CLARK",
       "CASENUMBER": "CRI-02454925",
@@ -45,11 +125,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3558328",
+  "docket_entries": [
+    {
+      "filedDate": "2010-10-04T13:15:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-10-04T13:15:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-27T13:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-09-27T13:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-04T13:15:00.000Z",
+      "docketEntryComment": "/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS:MICHAEL LINSCHEID/BWR:09-27-10/BWR1/NC/OR/CONTD: I&A P/DOP/CONTD:ARRAIGNMENT, PLEA AND REVIEW CJC PLAN/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-10-04T13:15:00.000Z",
+      "description": "/X:THE PUBLIC DEFENDER'S OFFICE IS UNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS:MICHAEL LINSCHEID/BWR:09-27-10/BWR1/NC/OR/CONTD: I&A P/DOP/CONTD:ARRAIGNMENT, PLEA AND REVIEW CJC PLAN/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-12T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-10-12T13:30:00.000Z",
+      "description": "/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-27T13:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/ /BWRET:M08/FTA/BWI/BAIL:20,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-09-27T13:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/ /BWRET:M08/FTA/BWI/BAIL:20,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02454925",
-    "portal_case_id": "",
+    "portal_case_id": "3558328",
     "display_case_number": "CRI-02454925",
     "defendant": "KIMBERLY CLARK",
     "filed_date": "2010-09-27",
@@ -60,11 +191,84 @@
       "filed_date": "2010-09-27"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "372 PC/M 647(e) PC/M",
+    "charge_rows": [
+      {
+        "raw": "372 PC/M",
+        "title": "Penal Code § 372",
+        "title_source": "programmatic_citation",
+        "code": "PC 372",
+        "code_system": "PC",
+        "section": "372",
+        "citation": "Penal Code § 372",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=372.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=372.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "647(e) PC/M",
+        "title": "Penal Code § 647(e)",
+        "title_source": "programmatic_citation",
+        "code": "PC 647(e)",
+        "code_system": "PC",
+        "section": "647(e)",
+        "citation": "Penal Code § 647(e)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KIMBERLY CLARK, and date of filing 2010-09-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KIMBERLY CLARK, date of filing, 2010-09-27, and charges in the case: 372 PC/M 647(e) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "372 PC/M",
+      "title": "Penal Code § 372",
+      "title_source": "programmatic_citation",
+      "code": "PC 372",
+      "code_system": "PC",
+      "section": "372",
+      "citation": "Penal Code § 372",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=372.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=372.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "647(e) PC/M",
+      "title": "Penal Code § 647(e)",
+      "title_source": "programmatic_citation",
+      "code": "PC 647(e)",
+      "code_system": "PC",
+      "section": "647(e)",
+      "citation": "Penal Code § 647(e)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:35:57.243Z",
+  "portal_case_id": "3558328",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02454925",
+      "defendant": "KIMBERLY CLARK",
+      "filed_date": "2010-09-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3558328"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.768732+00:00"
 }

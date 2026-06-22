@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T22:01:11.732Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:50:25.758Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02514253",
   "criminal_case_number": "02514253",
@@ -24,11 +24,32 @@
       "name": "MICHAEL CURTIS PERKINS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL CURTIS PERKINS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2019-02-25T09:42:00.000Z",
+      "docketEntryComment": "DA'S INITIAL RESPONSE TO PETITION FOR RESENTENCING (PC1170,95) FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-02-08T15:00:00.000Z",
+      "docketEntryComment": "PETITION FOR RESENTENCING 1170,95PC FILED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "ROBERT DERHAM",
+      "type": "Appointed Counsel"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +66,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3611591",
+  "docket_entries": [
+    {
+      "filedDate": "2019-02-25T09:42:00.000Z",
+      "docketEntryComment": "DA'S INITIAL RESPONSE TO PETITION FOR RESENTENCING (PC1170,95) FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-02-25T09:42:00.000Z",
+      "description": "DA'S INITIAL RESPONSE TO PETITION FOR RESENTENCING (PC1170,95) FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-02-08T15:00:00.000Z",
+      "docketEntryComment": "PETITION FOR RESENTENCING 1170,95PC FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2019-02-08T15:00:00.000Z",
+      "description": "PETITION FOR RESENTENCING 1170,95PC FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02514253",
-    "portal_case_id": "",
+    "portal_case_id": "3611591",
     "display_case_number": "CRI-02514253",
     "defendant": "MICHAEL CURTIS PERKINS",
     "filed_date": "2019-02-04",
@@ -59,12 +101,51 @@
       "defendant": "MICHAEL CURTIS PERKINS",
       "filed_date": "2019-02-04"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC1170",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL CURTIS PERKINS, and date of filing 2019-02-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL CURTIS PERKINS, date of filing, 2019-02-04, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:50:26.521Z",
+  "portal_case_id": "3611591",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02514253",
+      "defendant": "MICHAEL CURTIS PERKINS",
+      "filed_date": "2019-02-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3611591"
+  }
 }

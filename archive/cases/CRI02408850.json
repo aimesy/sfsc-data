@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:18:57.552Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:45:07.005Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02408850",
   "criminal_case_number": "02408850",
@@ -24,11 +24,90 @@
       "name": "CARL JONES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CARL JONES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-03-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL: SPR  ELIGIBILITY REPORT/X:RELEASE ON  SPR  IS DENIED/AMEND:1/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:1//NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-03-10T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 7D/CTS:7/WS/VF1/SECFEE/ICNA/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-03-06T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:10000/NTW/LD 03-20-09/987,2/CONTD:SPR REPORT/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-03-19 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2009-03-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-03-10 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2009-03-10",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-03-10 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2009-03-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-03-06 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2009-03-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SANGEETA SINHA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +124,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3516119",
+  "docket_entries": [
+    {
+      "filedDate": "2009-03-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL: SPR  ELIGIBILITY REPORT/X:RELEASE ON  SPR  IS DENIED/AMEND:1/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:1//NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-03-10T09:00:00.000Z",
+      "description": "/CAL: SPR ELIGIBILITY REPORT/X:RELEASE ON SPR IS DENIED/AMEND:1/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:1//NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-03-10T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 7D/CTS:7/WS/VF1/SECFEE/ICNA/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-03-10T09:15:00.000Z",
+      "description": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 7D/CTS:7/WS/VF1/SECFEE/ICNA/COLLECT/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-03-06T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:10000/NTW/LD 03-20-09/987,2/CONTD:SPR REPORT/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-03-06T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:10000/NTW/LD 03-20-09/987,2/CONTD:SPR REPORT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02408850",
-    "portal_case_id": "",
+    "portal_case_id": "3516119",
     "display_case_number": "CRI-02408850",
     "defendant": "CARL JONES",
     "filed_date": "2009-03-06",
@@ -60,11 +170,57 @@
       "filed_date": "2009-03-06"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11355 HS/M",
+    "charge_rows": [
+      {
+        "raw": "11355 HS/M",
+        "title": "Health and Safety Code § 11355",
+        "title_source": "programmatic_citation",
+        "code": "HS 11355",
+        "code_system": "HS",
+        "section": "11355",
+        "citation": "Health and Safety Code § 11355",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CARL JONES, and date of filing 2009-03-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CARL JONES, date of filing, 2009-03-06, and charges in the case: 11355 HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11355 HS/M",
+      "title": "Health and Safety Code § 11355",
+      "title_source": "programmatic_citation",
+      "code": "HS 11355",
+      "code_system": "HS",
+      "section": "11355",
+      "citation": "Health and Safety Code § 11355",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:45:07.601Z",
+  "portal_case_id": "3516119",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02408850",
+      "defendant": "CARL JONES",
+      "filed_date": "2009-03-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3516119"
+  }
 }

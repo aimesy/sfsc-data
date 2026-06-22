@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:21:02.190Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:50:02.362Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02516647",
   "criminal_case_number": "02516647",
@@ -24,19 +24,71 @@
       "name": "CARLOS CRUZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CARLOS CRUZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2019-08-20T13:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-08-20T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-06-18T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTC/INTORD:SPANISH/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT,PLEA AND COUNSEL/TWA/DOP/DEF:REFERRED TO NEIGHBORHOOD COURT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2019-08-20 1:30 PM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2019-08-20",
+      "hearing_time": "1:30 PM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-06-18 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2019-06-18",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "148(a)(1) PC/M 148.9(a) PC/M",
+    "filed_date": "2019-06-18",
+    "defendant": "CARLOS CRUZ",
+    "searched_key": "CRUZ/CA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/02516647.json",
     "searched_last_name": "CRUZ",
     "searched_first_prefix": "CA",
-    "charges": "148(a)(1) PC/M 148.9(a) PC/M",
     "row": {
       "DEFENDANTNAME": "CARLOS CRUZ",
       "CASENUMBER": "CRI-02516647",
@@ -45,11 +97,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3613738",
+  "docket_entries": [
+    {
+      "filedDate": "2019-08-20T13:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-08-20T13:30:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-08-20T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2019-08-20T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-06-18T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTC/INTORD:SPANISH/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT,PLEA AND COUNSEL/TWA/DOP/DEF:REFERRED TO NEIGHBORHOOD COURT/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2019-06-18T14:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/INTC/INTORD:SPANISH/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT,PLEA AND COUNSEL/TWA/DOP/DEF:REFERRED TO NEIGHBORHOOD COURT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02516647",
-    "portal_case_id": "",
+    "portal_case_id": "3613738",
     "display_case_number": "CRI-02516647",
     "defendant": "CARLOS CRUZ",
     "filed_date": "2019-06-18",
@@ -60,11 +143,84 @@
       "filed_date": "2019-06-18"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "148(a)(1) PC/M 148.9(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "148(a)(1) PC/M",
+        "title": "Penal Code § 148(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148(a)(1)",
+        "code_system": "PC",
+        "section": "148(a)(1)",
+        "citation": "Penal Code § 148(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "148.9(a) PC/M",
+        "title": "Penal Code § 148.9(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148.9(a)",
+        "code_system": "PC",
+        "section": "148.9(a)",
+        "citation": "Penal Code § 148.9(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CARLOS CRUZ, and date of filing 2019-06-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CARLOS CRUZ, date of filing, 2019-06-18, and charges in the case: 148(a)(1) PC/M 148.9(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "148(a)(1) PC/M",
+      "title": "Penal Code § 148(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148(a)(1)",
+      "code_system": "PC",
+      "section": "148(a)(1)",
+      "citation": "Penal Code § 148(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "148.9(a) PC/M",
+      "title": "Penal Code § 148.9(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148.9(a)",
+      "code_system": "PC",
+      "section": "148.9(a)",
+      "citation": "Penal Code § 148.9(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:50:03.032Z",
+  "portal_case_id": "3613738",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02516647",
+      "defendant": "CARLOS CRUZ",
+      "filed_date": "2019-06-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3613738"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.202961+00:00"
 }

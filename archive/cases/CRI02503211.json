@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:28:57.721Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:03:38.401Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02503211",
   "criminal_case_number": "02503211",
@@ -24,19 +24,116 @@
       "name": "ZHI H LI",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ZHI H LI",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-08-22T15:03:00.000Z",
+      "docketEntryComment": "DA MOT TO AMEND COMPLAINT FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-11-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL AND MOTION TO AMEND COMPLAINT/INTC/MO GRTD/X:FIRST AMENDEDCOMPLAINT IS FILED,/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:001/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-08-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/INTC/X:PD IS RELIEVED AS COUNSEL/X:SHAWN SALEHIEH IS NOW THE SUBSTITUTED ATTORNEY FOR THIS CASE/CONTD:PRETRIAL CONFERENCE/DAWF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-11-09T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCE/TWS/CH1:ISS:CPROB:PROB 2 Y:PJ 10D/CTS:2/SWAPD:11-17-17/IID:1/VF2:150/PROBREVFN/COA:40/ICNA/EMAT/CITE/COLLECT/OBEY/ACCEP/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-07-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/X:COUNSEL RESERVES THE RIGHT TO DEMUR,/CONTD:PRETRIAL/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-11-09 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2017-11-09",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-11-09 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2017-11-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-08-03 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2017-08-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-07-18 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2017-07-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SHAWN SALEHIEH",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "SAMUEL BECKERMAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "14601.5(a) VC/M 23123(a) VC/I 26710 VC/I",
+    "filed_date": "2017-06-26",
+    "defendant": "ZHI H LI",
+    "searched_key": "LI/ZH",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/02503211.json",
     "searched_last_name": "LI",
     "searched_first_prefix": "ZH",
-    "charges": "14601.5(a) VC/M 23123(a) VC/I 26710 VC/I",
     "row": {
       "DEFENDANTNAME": "ZHI H LI",
       "CASENUMBER": "CRI-02503211",
@@ -45,11 +142,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3601570",
+  "docket_entries": [
+    {
+      "filedDate": "2017-08-22T15:03:00.000Z",
+      "docketEntryComment": "DA MOT TO AMEND COMPLAINT FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-08-22T15:03:00.000Z",
+      "description": "DA MOT TO AMEND COMPLAINT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-11-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL AND MOTION TO AMEND COMPLAINT/INTC/MO GRTD/X:FIRST AMENDEDCOMPLAINT IS FILED,/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:001/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-11-09T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL AND MOTION TO AMEND COMPLAINT/INTC/MO GRTD/X:FIRST AMENDEDCOMPLAINT IS FILED,/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:001/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-08-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/INTC/X:PD IS RELIEVED AS COUNSEL/X:SHAWN SALEHIEH IS NOW THE SUBSTITUTED ATTORNEY FOR THIS CASE/CONTD:PRETRIAL CONFERENCE/DAWF/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-08-03T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/INTC/X:PD IS RELIEVED AS COUNSEL/X:SHAWN SALEHIEH IS NOW THE SUBSTITUTED ATTORNEY FOR THIS CASE/CONTD:PRETRIAL CONFERENCE/DAWF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-11-09T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCE/TWS/CH1:ISS:CPROB:PROB 2 Y:PJ 10D/CTS:2/SWAPD:11-17-17/IID:1/VF2:150/PROBREVFN/COA:40/ICNA/EMAT/CITE/COLLECT/OBEY/ACCEP/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-11-09T09:15:00.000Z",
+      "description": "/CAL:SENTENCE/TWS/CH1:ISS:CPROB:PROB 2 Y:PJ 10D/CTS:2/SWAPD:11-17-17/IID:1/VF2:150/PROBREVFN/COA:40/ICNA/EMAT/CITE/COLLECT/OBEY/ACCEP/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-07-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/X:COUNSEL RESERVES THE RIGHT TO DEMUR,/CONTD:PRETRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2017-07-18T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/X:COUNSEL RESERVES THE RIGHT TO DEMUR,/CONTD:PRETRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02503211",
-    "portal_case_id": "",
+    "portal_case_id": "3601570",
     "display_case_number": "CRI-02503211",
     "defendant": "ZHI H LI",
     "filed_date": "2017-06-26",
@@ -60,11 +208,110 @@
       "filed_date": "2017-06-26"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "14601.5(a) VC/M 23123(a) VC/I 26710 VC/I",
+    "charge_rows": [
+      {
+        "raw": "14601.5(a) VC/M",
+        "title": "Vehicle Code § 14601.5(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 14601.5(a)",
+        "code_system": "VC",
+        "section": "14601.5(a)",
+        "citation": "Vehicle Code § 14601.5(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.5.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.5.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23123(a) VC/I",
+        "title": "Vehicle Code § 23123(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23123(a)",
+        "code_system": "VC",
+        "section": "23123(a)",
+        "citation": "Vehicle Code § 23123(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23123.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23123.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      },
+      {
+        "raw": "26710 VC/I",
+        "title": "Vehicle Code § 26710",
+        "title_source": "programmatic_citation",
+        "code": "VC 26710",
+        "code_system": "VC",
+        "section": "26710",
+        "citation": "Vehicle Code § 26710",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=26710.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=26710.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ZHI H LI, and date of filing 2017-06-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ZHI H LI, date of filing, 2017-06-26, and charges in the case: 14601.5(a) VC/M 23123(a) VC/I 26710 VC/I.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "14601.5(a) VC/M",
+      "title": "Vehicle Code § 14601.5(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 14601.5(a)",
+      "code_system": "VC",
+      "section": "14601.5(a)",
+      "citation": "Vehicle Code § 14601.5(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.5.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.5.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23123(a) VC/I",
+      "title": "Vehicle Code § 23123(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23123(a)",
+      "code_system": "VC",
+      "section": "23123(a)",
+      "citation": "Vehicle Code § 23123(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23123.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23123.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    },
+    {
+      "raw": "26710 VC/I",
+      "title": "Vehicle Code § 26710",
+      "title_source": "programmatic_citation",
+      "code": "VC 26710",
+      "code_system": "VC",
+      "section": "26710",
+      "citation": "Vehicle Code § 26710",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=26710.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=26710.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:03:39.078Z",
+  "portal_case_id": "3601570",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02503211",
+      "defendant": "ZHI H LI",
+      "filed_date": "2017-06-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3601570"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:07:14.137884+00:00"
 }

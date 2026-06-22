@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:22:52.716Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:44:28.343Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02418355",
   "criminal_case_number": "02418355",
@@ -24,19 +24,89 @@
       "name": "WILFREDO GARCIA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "WILFREDO GARCIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-05-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TN:WILFREDO GARCIA/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/GTWM/X:DEFENSE RESERVES THE RIGHT TO FILE A DEMURRER IN THIS CASE,/CONTD:PRE-TRIAL CONFERENCE ON 06-04-09/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SAGE REPORT/X:SAGE PROGRAM COMPLETED,/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-06-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-TRIAL CONFERENCE/X:COURT REFERS DEFENDANT TO THE SAGE PROGRAM,/CONTD SAGE REPORT/CONTD:IN DEPT, 18 FOR SAGE REPORT ON 07-17-09/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-07-17 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 30",
+      "__index": 0,
+      "court_date": "2009-07-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 30",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-06-04 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2009-06-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-05-12 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2009-05-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEPHANIE LACAMBRA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "647(a) PC/M 653.22(a) PC/M",
+    "filed_date": "2009-05-12",
+    "defendant": "WILFREDO GARCIA",
+    "searched_key": "GARCIA/WI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/02418355.json",
     "searched_last_name": "GARCIA",
     "searched_first_prefix": "WI",
-    "charges": "647(a) PC/M 653.22(a) PC/M",
     "row": {
       "DEFENDANTNAME": "WILFREDO GARCIA",
       "CASENUMBER": "CRI-02418355",
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3524913",
+  "docket_entries": [
+    {
+      "filedDate": "2009-05-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TN:WILFREDO GARCIA/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/GTWM/X:DEFENSE RESERVES THE RIGHT TO FILE A DEMURRER IN THIS CASE,/CONTD:PRE-TRIAL CONFERENCE ON 06-04-09/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-05-12T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TN:WILFREDO GARCIA/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/GTWM/X:DEFENSE RESERVES THE RIGHT TO FILE A DEMURRER IN THIS CASE,/CONTD:PRE-TRIAL CONFERENCE ON 06-04-09/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SAGE REPORT/X:SAGE PROGRAM COMPLETED,/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-07-17T09:00:00.000Z",
+      "description": "/CAL:SAGE REPORT/X:SAGE PROGRAM COMPLETED,/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-06-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-TRIAL CONFERENCE/X:COURT REFERS DEFENDANT TO THE SAGE PROGRAM,/CONTD SAGE REPORT/CONTD:IN DEPT, 18 FOR SAGE REPORT ON 07-17-09/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-06-04T09:00:00.000Z",
+      "description": "/CAL:PRE-TRIAL CONFERENCE/X:COURT REFERS DEFENDANT TO THE SAGE PROGRAM,/CONTD SAGE REPORT/CONTD:IN DEPT, 18 FOR SAGE REPORT ON 07-17-09/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02418355",
-    "portal_case_id": "",
+    "portal_case_id": "3524913",
     "display_case_number": "CRI-02418355",
     "defendant": "WILFREDO GARCIA",
     "filed_date": "2009-05-12",
@@ -60,11 +161,84 @@
       "filed_date": "2009-05-12"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "647(a) PC/M 653.22(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "647(a) PC/M",
+        "title": "Penal Code § 647(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 647(a)",
+        "code_system": "PC",
+        "section": "647(a)",
+        "citation": "Penal Code § 647(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "653.22(a) PC/M",
+        "title": "Penal Code § 653.22(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 653.22(a)",
+        "code_system": "PC",
+        "section": "653.22(a)",
+        "citation": "Penal Code § 653.22(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.22.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.22.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, WILFREDO GARCIA, and date of filing 2009-05-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, WILFREDO GARCIA, date of filing, 2009-05-12, and charges in the case: 647(a) PC/M 653.22(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "647(a) PC/M",
+      "title": "Penal Code § 647(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 647(a)",
+      "code_system": "PC",
+      "section": "647(a)",
+      "citation": "Penal Code § 647(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "653.22(a) PC/M",
+      "title": "Penal Code § 653.22(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 653.22(a)",
+      "code_system": "PC",
+      "section": "653.22(a)",
+      "citation": "Penal Code § 653.22(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.22.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.22.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:44:28.978Z",
+  "portal_case_id": "3524913",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02418355",
+      "defendant": "WILFREDO GARCIA",
+      "filed_date": "2009-05-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3524913"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.154142+00:00"
 }

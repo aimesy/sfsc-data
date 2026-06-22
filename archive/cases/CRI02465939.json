@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:25:37.406Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:28:37.363Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02465939",
   "criminal_case_number": "02465939",
@@ -24,11 +24,59 @@
       "name": "JAKE CARL CURRY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAKE CARL CURRY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-04-13T13:30:00.000Z",
+      "docketEntryComment": "/CAL:TO SET & POSSIBLE CIVIL COMPROMISE/DAWT/X:PURSUANT TO 1378 OF THE PENAL CODE AND CIVIL COMPROMISE COMPLETED, THE COURT ORDERS ALL PROCEEDINGS TOBE STAYED UPON THE PROSECUTION, AND THE DEFENDANT IS DISCHARGED,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-03-23T13:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-04-13 1:30 PM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2012-04-13",
+      "hearing_time": "1:30 PM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-03-23 1:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2012-03-23",
+      "hearing_time": "1:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BRIAN PEARLMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +90,39 @@
       "CASENUMBER": "CRI-02465939",
       "FILEDDATE": "2012-03-23 09:00:00",
       "CHARGES": "594(b)(2)(A) PC/M"
-    }
+    },
+    "filed_date": "2012-03-23",
+    "defendant": "JAKE CARL CURRY",
+    "searched_key": "CURRY/JA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/02465939.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3567931",
+  "docket_entries": [
+    {
+      "filedDate": "2012-04-13T13:30:00.000Z",
+      "docketEntryComment": "/CAL:TO SET & POSSIBLE CIVIL COMPROMISE/DAWT/X:PURSUANT TO 1378 OF THE PENAL CODE AND CIVIL COMPROMISE COMPLETED, THE COURT ORDERS ALL PROCEEDINGS TOBE STAYED UPON THE PROSECUTION, AND THE DEFENDANT IS DISCHARGED,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-04-13T13:30:00.000Z",
+      "description": "/CAL:TO SET & POSSIBLE CIVIL COMPROMISE/DAWT/X:PURSUANT TO 1378 OF THE PENAL CODE AND CIVIL COMPROMISE COMPLETED, THE COURT ORDERS ALL PROCEEDINGS TOBE STAYED UPON THE PROSECUTION, AND THE DEFENDANT IS DISCHARGED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-03-23T13:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-03-23T13:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02465939",
-    "portal_case_id": "",
+    "portal_case_id": "3567931",
     "display_case_number": "CRI-02465939",
     "defendant": "JAKE CARL CURRY",
     "filed_date": "2012-03-23",
@@ -60,11 +133,58 @@
       "filed_date": "2012-03-23"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "594(b)(2)(A) PC/M",
+    "charge_rows": [
+      {
+        "raw": "594(b)(2)(A) PC/M",
+        "title": "Penal Code § 594(b)(2)(A)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(2)(A)",
+        "code_system": "PC",
+        "section": "594(b)(2)(A)",
+        "citation": "Penal Code § 594(b)(2)(A)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAKE CARL CURRY, and date of filing 2012-03-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAKE CARL CURRY, date of filing, 2012-03-23, and charges in the case: 594(b)(2)(A) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "594(b)(2)(A) PC/M",
+      "title": "Penal Code § 594(b)(2)(A)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(2)(A)",
+      "code_system": "PC",
+      "section": "594(b)(2)(A)",
+      "citation": "Penal Code § 594(b)(2)(A)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:28:38.022Z",
+  "portal_case_id": "3567931",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02465939",
+      "defendant": "JAKE CARL CURRY",
+      "filed_date": "2012-03-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3567931"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:22.479540+00:00"
 }

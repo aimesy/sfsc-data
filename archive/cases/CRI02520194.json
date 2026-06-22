@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:48:32.198Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:46:51.560Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02520194",
   "criminal_case_number": "02520194",
@@ -24,10 +24,63 @@
       "name": "LARRY PIERSON JR MITCHELL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LARRY PIERSON JR MITCHELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2020-01-13T16:13:07.000Z",
+      "docketEntryComment": "CONFIDENTIAL Order - Incoming Transfer Order",
+      "otherSubmitter": "APD"
+    },
+    {
+      "filedDate": "2019-12-20T16:11:13.000Z",
+      "docketEntryComment": "Incoming Jurisdictional Transfer Received from TULARE COUNTY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-11-10T15:00:00.000Z",
+      "docketEntryComment": "PROBATION UPDATED PER AB1950, PROBATION EXPIRED AUGUAT 26, 2021",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2020-01-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL: APD 1203,9PC  MOTION TO TRANSFER PROBATION FROM TULARE COUNTY TO SANFRANCISCO COUNTY/MO GRTD/CTORD: PROBATION IS TRANSFERRED FROM TULARE COUNTY TO SAN FRANCISCO COUNTY/X:COURT ORDER IS SIGNED AND FILED,/PROB EXP:08-26-22/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2021-11-10 3:00 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 2",
+      "__index": 0,
+      "court_date": "2021-11-10",
+      "hearing_time": "3:00 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 2",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2020-01-13 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2020-01-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +98,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3616863",
+  "docket_entries": [
+    {
+      "filedDate": "2020-01-13T16:13:07.000Z",
+      "docketEntryComment": "CONFIDENTIAL Order - Incoming Transfer Order",
+      "otherSubmitter": "APD",
+      "__index": 0,
+      "date_filed": "2020-01-13T16:13:07.000Z",
+      "description": "CONFIDENTIAL Order - Incoming Transfer Order",
+      "submitter": "APD",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-12-20T16:11:13.000Z",
+      "docketEntryComment": "Incoming Jurisdictional Transfer Received from TULARE COUNTY",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2019-12-20T16:11:13.000Z",
+      "description": "Incoming Jurisdictional Transfer Received from TULARE COUNTY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-11-10T15:00:00.000Z",
+      "docketEntryComment": "PROBATION UPDATED PER AB1950, PROBATION EXPIRED AUGUAT 26, 2021",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2021-11-10T15:00:00.000Z",
+      "description": "PROBATION UPDATED PER AB1950, PROBATION EXPIRED AUGUAT 26, 2021",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2020-01-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL: APD 1203,9PC  MOTION TO TRANSFER PROBATION FROM TULARE COUNTY TO SANFRANCISCO COUNTY/MO GRTD/CTORD: PROBATION IS TRANSFERRED FROM TULARE COUNTY TO SAN FRANCISCO COUNTY/X:COURT ORDER IS SIGNED AND FILED,/PROB EXP:08-26-22/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2020-01-13T09:00:00.000Z",
+      "description": "/CAL: APD 1203,9PC MOTION TO TRANSFER PROBATION FROM TULARE COUNTY TO SANFRANCISCO COUNTY/MO GRTD/CTORD: PROBATION IS TRANSFERRED FROM TULARE COUNTY TO SAN FRANCISCO COUNTY/X:COURT ORDER IS SIGNED AND FILED,/PROB EXP:08-26-22/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02520194",
-    "portal_case_id": "",
+    "portal_case_id": "3616863",
     "display_case_number": "CRI-02520194",
     "defendant": "LARRY PIERSON JR MITCHELL",
     "filed_date": "2020-01-13",
@@ -60,11 +154,83 @@
       "filed_date": "2020-01-13"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "29800(a)(1) PC/F 30305(a)(1) PC/F",
+    "charge_rows": [
+      {
+        "raw": "29800(a)(1) PC/F",
+        "title": "Penal Code § 29800(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 29800(a)(1)",
+        "code_system": "PC",
+        "section": "29800(a)(1)",
+        "citation": "Penal Code § 29800(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=29800.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=29800.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "30305(a)(1) PC/F",
+        "title": "Penal Code § 30305(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 30305(a)(1)",
+        "code_system": "PC",
+        "section": "30305(a)(1)",
+        "citation": "Penal Code § 30305(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=30305.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=30305.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LARRY PIERSON JR MITCHELL, and date of filing 2020-01-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LARRY PIERSON JR MITCHELL, date of filing, 2020-01-13, and charges in the case: 29800(a)(1) PC/F 30305(a)(1) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "29800(a)(1) PC/F",
+      "title": "Penal Code § 29800(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 29800(a)(1)",
+      "code_system": "PC",
+      "section": "29800(a)(1)",
+      "citation": "Penal Code § 29800(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=29800.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=29800.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "30305(a)(1) PC/F",
+      "title": "Penal Code § 30305(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 30305(a)(1)",
+      "code_system": "PC",
+      "section": "30305(a)(1)",
+      "citation": "Penal Code § 30305(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=30305.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=30305.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:46:52.228Z",
+  "portal_case_id": "3616863",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02520194",
+      "defendant": "LARRY PIERSON JR MITCHELL",
+      "filed_date": "2020-01-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3616863"
+  }
 }

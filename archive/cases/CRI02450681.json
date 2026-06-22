@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:54:09.008Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:38:19.420Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02450681",
   "criminal_case_number": "02450681",
@@ -24,19 +24,53 @@
       "name": "JOSEPH LEMUEL JOHNSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSEPH LEMUEL JOHNSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2010-04-09T15:00:00.000Z",
+      "docketEntryComment": "PROB TRANS DENIED 040510; DOCKET RETURNED TO SOLANO CO",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD PC1203,9 MOTION/MO DENIED/X:MOTION DENIED FOR REASON STATED ON THE RECORD/X:COURT ORDERS DOCKET RETURN TO SOLANO COUNTY/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-04-05 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2010-04-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11350(a) HS/F",
+    "filed_date": "2010-03-12",
+    "defendant": "JOSEPH LEMUEL JOHNSON",
+    "searched_key": "JOHNSON/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/02450681.json",
     "searched_last_name": "JOHNSON",
     "searched_first_prefix": "JO",
-    "charges": "11350(a) HS/F",
     "row": {
       "DEFENDANTNAME": "JOSEPH LEMUEL JOHNSON",
       "CASENUMBER": "CRI-02450681",
@@ -45,11 +79,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3554632",
+  "docket_entries": [
+    {
+      "filedDate": "2010-04-09T15:00:00.000Z",
+      "docketEntryComment": "PROB TRANS DENIED 040510; DOCKET RETURNED TO SOLANO CO",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-04-09T15:00:00.000Z",
+      "description": "PROB TRANS DENIED 040510; DOCKET RETURNED TO SOLANO CO",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD PC1203,9 MOTION/MO DENIED/X:MOTION DENIED FOR REASON STATED ON THE RECORD/X:COURT ORDERS DOCKET RETURN TO SOLANO COUNTY/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-04-05T09:00:00.000Z",
+      "description": "/CAL:APD PC1203,9 MOTION/MO DENIED/X:MOTION DENIED FOR REASON STATED ON THE RECORD/X:COURT ORDERS DOCKET RETURN TO SOLANO COUNTY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02450681",
-    "portal_case_id": "",
+    "portal_case_id": "3554632",
     "display_case_number": "CRI-02450681",
     "defendant": "JOSEPH LEMUEL JOHNSON",
     "filed_date": "2010-03-12",
@@ -59,12 +114,68 @@
       "defendant": "JOSEPH LEMUEL JOHNSON",
       "filed_date": "2010-03-12"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC1203",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSEPH LEMUEL JOHNSON, and date of filing 2010-03-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSEPH LEMUEL JOHNSON, date of filing, 2010-03-12, and charges in the case: 11350(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:38:20.134Z",
+  "portal_case_id": "3554632",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02450681",
+      "defendant": "JOSEPH LEMUEL JOHNSON",
+      "filed_date": "2010-03-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3554632"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.996323+00:00"
 }

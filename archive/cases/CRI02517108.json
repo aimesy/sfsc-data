@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:36:36.815Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:50:08.776Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02517108",
   "criminal_case_number": "02517108",
@@ -24,10 +24,50 @@
       "name": "STEVEN AARON DAVIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "STEVEN AARON DAVIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2019-07-17T08:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/SHER/BAIL:5,000/SAORD/SA2:HILTON HOTEL AT 333 O'FARRELL ST/CONTD:VJC STATUS AND TREATMENT PLAN/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-07-31T08:30:00.000Z",
+      "docketEntryComment": "/MO138572:18015636/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-07-24T08:30:00.000Z",
+      "docketEntryComment": "/CAL:VETERANS' COURT/CONT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-07-16T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2019-07-16 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2019-07-16",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +85,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3614154",
+  "docket_entries": [
+    {
+      "filedDate": "2019-07-17T08:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/SHER/BAIL:5,000/SAORD/SA2:HILTON HOTEL AT 333 O'FARRELL ST/CONTD:VJC STATUS AND TREATMENT PLAN/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-07-17T08:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/SHER/BAIL:5,000/SAORD/SA2:HILTON HOTEL AT 333 O'FARRELL ST/CONTD:VJC STATUS AND TREATMENT PLAN/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-07-31T08:30:00.000Z",
+      "docketEntryComment": "/MO138572:18015636/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2019-07-31T08:30:00.000Z",
+      "description": "/MO138572:18015636/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-07-24T08:30:00.000Z",
+      "docketEntryComment": "/CAL:VETERANS' COURT/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2019-07-24T08:30:00.000Z",
+      "description": "/CAL:VETERANS' COURT/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-07-16T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2019-07-16T14:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02517108",
-    "portal_case_id": "",
+    "portal_case_id": "3614154",
     "display_case_number": "CRI-02517108",
     "defendant": "STEVEN AARON DAVIS",
     "filed_date": "2019-07-16",
@@ -60,11 +141,57 @@
       "filed_date": "2019-07-16"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11377(a) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11377(a) HS/M",
+        "title": "Health and Safety Code § 11377(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11377(a)",
+        "code_system": "HS",
+        "section": "11377(a)",
+        "citation": "Health and Safety Code § 11377(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, STEVEN AARON DAVIS, and date of filing 2019-07-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, STEVEN AARON DAVIS, date of filing, 2019-07-16, and charges in the case: 11377(a) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11377(a) HS/M",
+      "title": "Health and Safety Code § 11377(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11377(a)",
+      "code_system": "HS",
+      "section": "11377(a)",
+      "citation": "Health and Safety Code § 11377(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:50:09.463Z",
+  "portal_case_id": "3614154",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02517108",
+      "defendant": "STEVEN AARON DAVIS",
+      "filed_date": "2019-07-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3614154"
+  }
 }

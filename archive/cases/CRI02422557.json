@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:54:57.145Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:48:40.869Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02422557",
   "criminal_case_number": "02422557",
@@ -24,10 +24,58 @@
       "name": "LARRY EDWARD MOORE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LARRY EDWARD MOORE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2009-06-05T15:00:00.000Z",
+      "docketEntryComment": "DEF PETITION FOR CERITIFICATE OF REHABILITATION AND PARDON FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-08-05T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:THE COURT HAS NO JURISDICTION AS DEFENDANT DOES NOT RESIDE IN SAN FRANCISCO, DEFENDANT TO SEEK ASSISTANCE FOR RELIEF IN HIS COUNTY OF RESIDENCE,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PETITION FOR CERTIFICATE OF REHAB AND PARDON (OLD #L-71232)/CONT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-08-05 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2009-08-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-07-29 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 1,
+      "court_date": "2009-07-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +93,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3528809",
+  "docket_entries": [
+    {
+      "filedDate": "2009-06-05T15:00:00.000Z",
+      "docketEntryComment": "DEF PETITION FOR CERITIFICATE OF REHABILITATION AND PARDON FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-06-05T15:00:00.000Z",
+      "description": "DEF PETITION FOR CERITIFICATE OF REHABILITATION AND PARDON FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-08-05T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:THE COURT HAS NO JURISDICTION AS DEFENDANT DOES NOT RESIDE IN SAN FRANCISCO, DEFENDANT TO SEEK ASSISTANCE FOR RELIEF IN HIS COUNTY OF RESIDENCE,/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-08-05T09:00:00.000Z",
+      "description": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:THE COURT HAS NO JURISDICTION AS DEFENDANT DOES NOT RESIDE IN SAN FRANCISCO, DEFENDANT TO SEEK ASSISTANCE FOR RELIEF IN HIS COUNTY OF RESIDENCE,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PETITION FOR CERTIFICATE OF REHAB AND PARDON (OLD #L-71232)/CONT/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-07-29T09:00:00.000Z",
+      "description": "/CAL:PETITION FOR CERTIFICATE OF REHAB AND PARDON (OLD #L-71232)/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02422557",
-    "portal_case_id": "",
+    "portal_case_id": "3528809",
     "display_case_number": "CRI-02422557",
     "defendant": "LARRY EDWARD MOORE",
     "filed_date": "2009-07-29",
@@ -60,11 +139,41 @@
       "filed_date": "2009-07-29"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LARRY EDWARD MOORE, and date of filing 2009-07-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LARRY EDWARD MOORE, date of filing, 2009-07-29, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:48:41.414Z",
+  "portal_case_id": "3528809",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02422557",
+      "defendant": "LARRY EDWARD MOORE",
+      "filed_date": "2009-07-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3528809"
+  }
 }

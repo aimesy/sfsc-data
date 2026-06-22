@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:56:32.984Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:33:15.384Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02460808",
   "criminal_case_number": "02460808",
@@ -24,11 +24,87 @@
       "name": "CHARISSE KING",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHARISSE KING",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-08-11T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-07-11T13:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-08-19T09:00:00.000Z",
+      "docketEntryComment": "/MO138572:11008852/X:HARVEY WAIVER ENTERED AS TO STAY AWAY ORDER/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-08-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/DAWT/BWR: 07-11-11  /BWR1/CONTD:TO JOIN 10030350 & 11008852, D17 AND I&A, P&C/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-07-11T13:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:20,000/BWNUM:1ST/BWRET:M08/CTORD:NO CITE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-08-19 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2011-08-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-08-11 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2011-08-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-07-11 1:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2011-07-11",
+      "hearing_time": "1:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ROCKIT PETTIJOHN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +118,69 @@
       "CASENUMBER": "CRI-02460808",
       "FILEDDATE": "2011-07-11 09:00:00",
       "CHARGES": "484(a)/490.5 PC/M"
-    }
+    },
+    "filed_date": "2011-07-11",
+    "defendant": "CHARISSE KING",
+    "searched_key": "KING/CH",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/02460808.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3563282",
+  "docket_entries": [
+    {
+      "filedDate": "2011-08-11T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-08-11T09:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-07-11T13:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-07-11T13:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-08-19T09:00:00.000Z",
+      "docketEntryComment": "/MO138572:11008852/X:HARVEY WAIVER ENTERED AS TO STAY AWAY ORDER/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-08-19T09:00:00.000Z",
+      "description": "/MO138572:11008852/X:HARVEY WAIVER ENTERED AS TO STAY AWAY ORDER/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-08-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/DAWT/BWR: 07-11-11  /BWR1/CONTD:TO JOIN 10030350 & 11008852, D17 AND I&A, P&C/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-08-11T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/DAWT/BWR: 07-11-11 /BWR1/CONTD:TO JOIN 10030350 & 11008852, D17 AND I&A, P&C/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-07-11T13:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:20,000/BWNUM:1ST/BWRET:M08/CTORD:NO CITE/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-07-11T13:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:20,000/BWNUM:1ST/BWRET:M08/CTORD:NO CITE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02460808",
-    "portal_case_id": "",
+    "portal_case_id": "3563282",
     "display_case_number": "CRI-02460808",
     "defendant": "CHARISSE KING",
     "filed_date": "2011-07-11",
@@ -60,11 +191,58 @@
       "filed_date": "2011-07-11"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "484(a)/490.5 PC/M",
+    "charge_rows": [
+      {
+        "raw": "484(a)/490.5 PC/M",
+        "title": "484(a)",
+        "title_source": "criminal_index_text",
+        "code": "PC 490.5",
+        "code_system": "PC",
+        "section": "490.5",
+        "citation": "Penal Code § 490.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHARISSE KING, and date of filing 2011-07-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHARISSE KING, date of filing, 2011-07-11, and charges in the case: 484(a)/490.5 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "484(a)/490.5 PC/M",
+      "title": "484(a)",
+      "title_source": "criminal_index_text",
+      "code": "PC 490.5",
+      "code_system": "PC",
+      "section": "490.5",
+      "citation": "Penal Code § 490.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:33:16.001Z",
+  "portal_case_id": "3563282",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02460808",
+      "defendant": "CHARISSE KING",
+      "filed_date": "2011-07-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3563282"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:29.283487+00:00"
 }

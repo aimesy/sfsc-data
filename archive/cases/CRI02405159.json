@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:56:15.836Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:47:40.775Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02405159",
   "criminal_case_number": "02405159",
@@ -24,19 +24,71 @@
       "name": "ANTONIO DIAZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANTONIO DIAZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-02-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A P&C & DEF 991 MTN/MO PC 991/MO GRTD/GRTD:AS TO COUNT(S): 1,2,3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-02-20T09:00:00.000Z",
+      "docketEntryComment": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-02-24 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2009-02-24",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-02-20 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 1,
+      "court_date": "2009-02-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "COREY ALLEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "23152(a) VC/M 23152(b) VC/M 14601.2(a) VC/M",
+    "filed_date": "2009-02-20",
+    "defendant": "ANTONIO DIAZ",
+    "searched_key": "DIAZ/AN",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/02405159.json",
     "searched_last_name": "DIAZ",
     "searched_first_prefix": "AN",
-    "charges": "23152(a) VC/M 23152(b) VC/M 14601.2(a) VC/M",
     "row": {
       "DEFENDANTNAME": "ANTONIO DIAZ",
       "CASENUMBER": "CRI-02405159",
@@ -45,11 +97,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3512664",
+  "docket_entries": [
+    {
+      "filedDate": "2009-02-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A P&C & DEF 991 MTN/MO PC 991/MO GRTD/GRTD:AS TO COUNT(S): 1,2,3/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-02-24T09:00:00.000Z",
+      "description": "/CAL:I&A P&C & DEF 991 MTN/MO PC 991/MO GRTD/GRTD:AS TO COUNT(S): 1,2,3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-02-20T09:00:00.000Z",
+      "docketEntryComment": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-02-20T09:00:00.000Z",
+      "description": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02405159",
-    "portal_case_id": "",
+    "portal_case_id": "3512664",
     "display_case_number": "CRI-02405159",
     "defendant": "ANTONIO DIAZ",
     "filed_date": "2009-02-20",
@@ -59,12 +132,120 @@
       "defendant": "ANTONIO DIAZ",
       "filed_date": "2009-02-20"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 991",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "23152(a) VC/M 23152(b) VC/M 14601.2(a) VC/M",
+    "charge_rows": [
+      {
+        "raw": "23152(a) VC/M",
+        "title": "Vehicle Code § 23152(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(a)",
+        "code_system": "VC",
+        "section": "23152(a)",
+        "citation": "Vehicle Code § 23152(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23152(b) VC/M",
+        "title": "Vehicle Code § 23152(b)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(b)",
+        "code_system": "VC",
+        "section": "23152(b)",
+        "citation": "Vehicle Code § 23152(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "14601.2(a) VC/M",
+        "title": "Vehicle Code § 14601.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 14601.2(a)",
+        "code_system": "VC",
+        "section": "14601.2(a)",
+        "citation": "Vehicle Code § 14601.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANTONIO DIAZ, and date of filing 2009-02-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANTONIO DIAZ, date of filing, 2009-02-20, and charges in the case: 23152(a) VC/M 23152(b) VC/M 14601.2(a) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(a) VC/M",
+      "title": "Vehicle Code § 23152(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(a)",
+      "code_system": "VC",
+      "section": "23152(a)",
+      "citation": "Vehicle Code § 23152(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23152(b) VC/M",
+      "title": "Vehicle Code § 23152(b)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(b)",
+      "code_system": "VC",
+      "section": "23152(b)",
+      "citation": "Vehicle Code § 23152(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "14601.2(a) VC/M",
+      "title": "Vehicle Code § 14601.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 14601.2(a)",
+      "code_system": "VC",
+      "section": "14601.2(a)",
+      "citation": "Vehicle Code § 14601.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.2.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:47:41.394Z",
+  "portal_case_id": "3512664",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02405159",
+      "defendant": "ANTONIO DIAZ",
+      "filed_date": "2009-02-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3512664"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.185192+00:00"
 }

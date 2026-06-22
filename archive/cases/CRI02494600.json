@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:22:01.396Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:08:57.888Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02494600",
   "criminal_case_number": "02494600",
@@ -24,19 +24,53 @@
       "name": "LUIS E GARCIA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LUIS E GARCIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2016-05-31T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-05-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:1,500/BWNUM:1ST/CTORD:DO NOT CITE ON BENCH WARRANT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-05-31 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2016-05-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "14601.5(a) VC/M 4000(a)(1) VC/I",
+    "filed_date": "2016-05-19",
+    "defendant": "LUIS E GARCIA",
+    "searched_key": "GARCIA/LU",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/02494600.json",
     "searched_last_name": "GARCIA",
     "searched_first_prefix": "LU",
-    "charges": "14601.5(a) VC/M 4000(a)(1) VC/I",
     "row": {
       "DEFENDANTNAME": "LUIS E GARCIA",
       "CASENUMBER": "CRI-02494600",
@@ -45,11 +79,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3593405",
+  "docket_entries": [
+    {
+      "filedDate": "2016-05-31T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-05-31T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-05-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:1,500/BWNUM:1ST/CTORD:DO NOT CITE ON BENCH WARRANT/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-05-31T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:1,500/BWNUM:1ST/CTORD:DO NOT CITE ON BENCH WARRANT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02494600",
-    "portal_case_id": "",
+    "portal_case_id": "3593405",
     "display_case_number": "CRI-02494600",
     "defendant": "LUIS E GARCIA",
     "filed_date": "2016-05-19",
@@ -60,11 +115,84 @@
       "filed_date": "2016-05-19"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "14601.5(a) VC/M 4000(a)(1) VC/I",
+    "charge_rows": [
+      {
+        "raw": "14601.5(a) VC/M",
+        "title": "Vehicle Code § 14601.5(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 14601.5(a)",
+        "code_system": "VC",
+        "section": "14601.5(a)",
+        "citation": "Vehicle Code § 14601.5(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.5.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.5.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "4000(a)(1) VC/I",
+        "title": "Vehicle Code § 4000(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "VC 4000(a)(1)",
+        "code_system": "VC",
+        "section": "4000(a)(1)",
+        "citation": "Vehicle Code § 4000(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=4000.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=4000.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LUIS E GARCIA, and date of filing 2016-05-19. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LUIS E GARCIA, date of filing, 2016-05-19, and charges in the case: 14601.5(a) VC/M 4000(a)(1) VC/I.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "14601.5(a) VC/M",
+      "title": "Vehicle Code § 14601.5(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 14601.5(a)",
+      "code_system": "VC",
+      "section": "14601.5(a)",
+      "citation": "Vehicle Code § 14601.5(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.5.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.5.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "4000(a)(1) VC/I",
+      "title": "Vehicle Code § 4000(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "VC 4000(a)(1)",
+      "code_system": "VC",
+      "section": "4000(a)(1)",
+      "citation": "Vehicle Code § 4000(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=4000.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=4000.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:08:58.592Z",
+  "portal_case_id": "3593405",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02494600",
+      "defendant": "LUIS E GARCIA",
+      "filed_date": "2016-05-19"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3593405"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.916333+00:00"
 }

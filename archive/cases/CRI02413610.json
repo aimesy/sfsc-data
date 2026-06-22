@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:00:54.709Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:45:07.091Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02413610",
   "criminal_case_number": "02413610",
@@ -24,19 +24,122 @@
       "name": "CHRISTINE LAM",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHRISTINE LAM",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2010-04-14T09:00:00.000Z",
+      "docketEntryComment": "ORDER TERMINATING STAY AWAY ORDER SIGNED AND FILED IN DEPT 14",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-06T15:00:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPPOS TO DEF MOT TO DISM DENI 6TH AMEND RGHT SPEED TR FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-02T00:00:00.000Z",
+      "docketEntryComment": "PD SUPP FILING AND REPLY TO NON OPPOS FOR MOT FOR DISM FILED TODAY RM101",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-06-19T15:00:00.000Z",
+      "docketEntryComment": "PD'S MOT TO DISM ON GRNDS OF DENIAL OF DUE PROCESS & LACK OF JURIS FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-05-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/SATERM/SAORD/SA1:CHRISTINE E,/X:THE NEW STAY AWAYORDER IS TO STAY 25 YARDS AWAY FROM CHRISTINE E, UNLESS CONTACT IS AUTHORIZED BY A FAMILYLAW COURT ORDER, IN WHICH CASE, THE FAMILY LAW ORDER WILL SUPERCEDE THIS ORDER/CONTD:DEFENSE MOTION TO DISMISS/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-07T09:15:00.000Z",
+      "docketEntryComment": "/CAL:ARRAINMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1//DOP/GTWM/987,2/OR/SA2:CHRISTINE E,(MINOR)/CTORD:DEFENDANT TO STAY 150 YARDS AWAY/SAORD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-07T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1382/MO GRTD/X:DISMISSED FOR LACK OF SPEEDY TRIAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-07T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:TRANS TO DEPT 14/TRANS 14:FORTHWITH FOR ARRAIGNMENT, NOT A DOMESTICVIOLENCE CASE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-07-07 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2009-07-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-05-05 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 1,
+      "court_date": "2009-05-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-04-07 9:15 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 2,
+      "court_date": "2009-04-07",
+      "hearing_time": "9:15 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-04-07 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 3,
+      "court_date": "2009-04-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "8888888 273a(b) PC/M",
+    "filed_date": "2009-04-07",
+    "defendant": "CHRISTINE LAM",
+    "searched_key": "LAM/CH",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/02413610.json",
     "searched_last_name": "LAM",
     "searched_first_prefix": "CH",
-    "charges": "8888888 273a(b) PC/M",
     "row": {
       "DEFENDANTNAME": "CHRISTINE LAM",
       "CASENUMBER": "CRI-02413610",
@@ -45,11 +148,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3520538",
+  "docket_entries": [
+    {
+      "filedDate": "2010-04-14T09:00:00.000Z",
+      "docketEntryComment": "ORDER TERMINATING STAY AWAY ORDER SIGNED AND FILED IN DEPT 14",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-04-14T09:00:00.000Z",
+      "description": "ORDER TERMINATING STAY AWAY ORDER SIGNED AND FILED IN DEPT 14",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-06T15:00:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPPOS TO DEF MOT TO DISM DENI 6TH AMEND RGHT SPEED TR FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-07-06T15:00:00.000Z",
+      "description": "PEOPLE'S OPPOS TO DEF MOT TO DISM DENI 6TH AMEND RGHT SPEED TR FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-02T00:00:00.000Z",
+      "docketEntryComment": "PD SUPP FILING AND REPLY TO NON OPPOS FOR MOT FOR DISM FILED TODAY RM101",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-07-02T00:00:00.000Z",
+      "description": "PD SUPP FILING AND REPLY TO NON OPPOS FOR MOT FOR DISM FILED TODAY RM101",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-06-19T15:00:00.000Z",
+      "docketEntryComment": "PD'S MOT TO DISM ON GRNDS OF DENIAL OF DUE PROCESS & LACK OF JURIS FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-06-19T15:00:00.000Z",
+      "description": "PD'S MOT TO DISM ON GRNDS OF DENIAL OF DUE PROCESS & LACK OF JURIS FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-05-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/SATERM/SAORD/SA1:CHRISTINE E,/X:THE NEW STAY AWAYORDER IS TO STAY 25 YARDS AWAY FROM CHRISTINE E, UNLESS CONTACT IS AUTHORIZED BY A FAMILYLAW COURT ORDER, IN WHICH CASE, THE FAMILY LAW ORDER WILL SUPERCEDE THIS ORDER/CONTD:DEFENSE MOTION TO DISMISS/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2009-05-05T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/SATERM/SAORD/SA1:CHRISTINE E,/X:THE NEW STAY AWAYORDER IS TO STAY 25 YARDS AWAY FROM CHRISTINE E, UNLESS CONTACT IS AUTHORIZED BY A FAMILYLAW COURT ORDER, IN WHICH CASE, THE FAMILY LAW ORDER WILL SUPERCEDE THIS ORDER/CONTD:DEFENSE MOTION TO DISMISS/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-07T09:15:00.000Z",
+      "docketEntryComment": "/CAL:ARRAINMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1//DOP/GTWM/987,2/OR/SA2:CHRISTINE E,(MINOR)/CTORD:DEFENDANT TO STAY 150 YARDS AWAY/SAORD/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2009-04-07T09:15:00.000Z",
+      "description": "/CAL:ARRAINMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1//DOP/GTWM/987,2/OR/SA2:CHRISTINE E,(MINOR)/CTORD:DEFENDANT TO STAY 150 YARDS AWAY/SAORD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-07T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1382/MO GRTD/X:DISMISSED FOR LACK OF SPEEDY TRIAL/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2009-07-07T09:00:00.000Z",
+      "description": "/MO PC 1382/MO GRTD/X:DISMISSED FOR LACK OF SPEEDY TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-07T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:TRANS TO DEPT 14/TRANS 14:FORTHWITH FOR ARRAIGNMENT, NOT A DOMESTICVIOLENCE CASE/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2009-04-07T09:00:00.000Z",
+      "description": "/TEXT:TRANS TO DEPT 14/TRANS 14:FORTHWITH FOR ARRAIGNMENT, NOT A DOMESTICVIOLENCE CASE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02413610",
-    "portal_case_id": "",
+    "portal_case_id": "3520538",
     "display_case_number": "CRI-02413610",
     "defendant": "CHRISTINE LAM",
     "filed_date": "2009-04-07",
@@ -59,12 +243,68 @@
       "defendant": "CHRISTINE LAM",
       "filed_date": "2009-04-07"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1382",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888 273a(b) PC/M",
+    "charge_rows": [
+      {
+        "raw": "8888888 273a(b) PC/M",
+        "title": "8888888",
+        "title_source": "criminal_index_text",
+        "code": "PC 273a(b)",
+        "code_system": "PC",
+        "section": "273a(b)",
+        "citation": "Penal Code § 273a(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273a.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273a.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHRISTINE LAM, and date of filing 2009-04-07. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHRISTINE LAM, date of filing, 2009-04-07, and charges in the case: 8888888 273a(b) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888 273a(b) PC/M",
+      "title": "8888888",
+      "title_source": "criminal_index_text",
+      "code": "PC 273a(b)",
+      "code_system": "PC",
+      "section": "273a(b)",
+      "citation": "Penal Code § 273a(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273a.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273a.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:45:07.855Z",
+  "portal_case_id": "3520538",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02413610",
+      "defendant": "CHRISTINE LAM",
+      "filed_date": "2009-04-07"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3520538"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.437485+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:45:16.684Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:34:36.413Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02463835",
   "criminal_case_number": "02463835",
@@ -24,11 +24,95 @@
       "name": "CLEVELAND JONES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CLEVELAND JONES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-01-25T13:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC-PTD PRG RPT/X:24 HRS COMM SERVICE COMPLETED/X:COURT FINDS GOOD CAUSE FOR ELIGIBILITY FOR PRETRIAL DIVERSION, AND FURTHER FINDS DIVERSION HAS BEEN SUCCESSFULLY COMPLETED, THEREFORE THE CHARGES ARE DISMISSED PURSUANTTO 1001,7 AND 1001,9 PC,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-12-15T13:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/X:THE PUBLIC DEFENDER'S OFFICE ISUNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS:SAMANTHA SCHWARTZ/FAWC/DEFTARR1/GTW/CONTD:REVIEW CJC PLAN AND PRETRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-01-11T13:30:00.000Z",
+      "docketEntryComment": "/CONTD:CJC-PTD PRG RPT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-12-21T13:30:00.000Z",
+      "docketEntryComment": "/CONTD:CJC-PTD PRG RPT/DOP/DEF:TO PERFORM 24 HRS COMM SERVICE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-01-25 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2012-01-25",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-01-11 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2012-01-11",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-12-21 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2011-12-21",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-12-15 1:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 3,
+      "court_date": "2011-12-15",
+      "hearing_time": "1:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SAMANTHA SCHWARTZ",
+      "type": "Appointed Counsel"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +129,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3566048",
+  "docket_entries": [
+    {
+      "filedDate": "2012-01-25T13:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC-PTD PRG RPT/X:24 HRS COMM SERVICE COMPLETED/X:COURT FINDS GOOD CAUSE FOR ELIGIBILITY FOR PRETRIAL DIVERSION, AND FURTHER FINDS DIVERSION HAS BEEN SUCCESSFULLY COMPLETED, THEREFORE THE CHARGES ARE DISMISSED PURSUANTTO 1001,7 AND 1001,9 PC,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-01-25T13:30:00.000Z",
+      "description": "/CAL:CJC-PTD PRG RPT/X:24 HRS COMM SERVICE COMPLETED/X:COURT FINDS GOOD CAUSE FOR ELIGIBILITY FOR PRETRIAL DIVERSION, AND FURTHER FINDS DIVERSION HAS BEEN SUCCESSFULLY COMPLETED, THEREFORE THE CHARGES ARE DISMISSED PURSUANTTO 1001,7 AND 1001,9 PC,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-12-15T13:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/X:THE PUBLIC DEFENDER'S OFFICE ISUNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS:SAMANTHA SCHWARTZ/FAWC/DEFTARR1/GTW/CONTD:REVIEW CJC PLAN AND PRETRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-12-15T13:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/X:THE PUBLIC DEFENDER'S OFFICE ISUNAVAILABLE TO ACCEPT APPOINTMENT FOR THE FOLLOWING REASON(S): LACK OF RESOURCES OR FUNDING,/CTAPPTS:SAMANTHA SCHWARTZ/FAWC/DEFTARR1/GTW/CONTD:REVIEW CJC PLAN AND PRETRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-01-11T13:30:00.000Z",
+      "docketEntryComment": "/CONTD:CJC-PTD PRG RPT/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-01-11T13:30:00.000Z",
+      "description": "/CONTD:CJC-PTD PRG RPT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-12-21T13:30:00.000Z",
+      "docketEntryComment": "/CONTD:CJC-PTD PRG RPT/DOP/DEF:TO PERFORM 24 HRS COMM SERVICE/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-12-21T13:30:00.000Z",
+      "description": "/CONTD:CJC-PTD PRG RPT/DOP/DEF:TO PERFORM 24 HRS COMM SERVICE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02463835",
-    "portal_case_id": "",
+    "portal_case_id": "3566048",
     "display_case_number": "CRI-02463835",
     "defendant": "CLEVELAND JONES",
     "filed_date": "2011-12-15",
@@ -60,11 +185,83 @@
       "filed_date": "2011-12-15"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "496(a) PC/M 485 PC/M",
+    "charge_rows": [
+      {
+        "raw": "496(a) PC/M",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "485 PC/M",
+        "title": "Penal Code § 485",
+        "title_source": "programmatic_citation",
+        "code": "PC 485",
+        "code_system": "PC",
+        "section": "485",
+        "citation": "Penal Code § 485",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=485.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=485.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CLEVELAND JONES, and date of filing 2011-12-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CLEVELAND JONES, date of filing, 2011-12-15, and charges in the case: 496(a) PC/M 485 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "496(a) PC/M",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "485 PC/M",
+      "title": "Penal Code § 485",
+      "title_source": "programmatic_citation",
+      "code": "PC 485",
+      "code_system": "PC",
+      "section": "485",
+      "citation": "Penal Code § 485",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=485.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=485.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:34:37.084Z",
+  "portal_case_id": "3566048",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02463835",
+      "defendant": "CLEVELAND JONES",
+      "filed_date": "2011-12-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3566048"
+  }
 }

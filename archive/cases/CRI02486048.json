@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:18:51.152Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:12:24.582Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02486048",
   "criminal_case_number": "02486048",
@@ -24,19 +24,99 @@
       "name": "MICHAEL DALE BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL DALE BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2015-10-06T13:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-03-29T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-08-24T13:30:00.000Z",
+      "docketEntryComment": "/CAL:I&A P&C/:CONTD PROC RE $20,000 BW STAYED OF 08-24-15/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT ISORDERED AND STAYED  TO 10-06-15 /X: BAIL SET AT $20,000/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-03-29T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 03/29/21, CASE DISMISSED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-10-06T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PROC RE $20,000 BW STAYED OF 08-24-15/BWLIFT:08-24-15/FTA/BWI/BAIL:20,000/BWNUM:1ST/BWRET:M17/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-05-26T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT AND PLEA/TWA/DOP/DEF:IS REFERRED TO NEIGHBORHOOD COURT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-10-06 1:30 PM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2015-10-06",
+      "hearing_time": "1:30 PM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-08-24 1:30 PM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2015-08-24",
+      "hearing_time": "1:30 PM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-05-26 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2015-05-26",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "490.2(a) PC/M",
+    "filed_date": "2015-05-26",
+    "defendant": "MICHAEL DALE BROWN",
+    "searched_key": "BROWN/MI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/02486048.json",
     "searched_last_name": "BROWN",
     "searched_first_prefix": "MI",
-    "charges": "490.2(a) PC/M",
     "row": {
       "DEFENDANTNAME": "MICHAEL DALE BROWN",
       "CASENUMBER": "CRI-02486048",
@@ -45,11 +125,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3585365",
+  "docket_entries": [
+    {
+      "filedDate": "2015-10-06T13:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-10-06T13:30:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-03-29T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2021-03-29T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-08-24T13:30:00.000Z",
+      "docketEntryComment": "/CAL:I&A P&C/:CONTD PROC RE $20,000 BW STAYED OF 08-24-15/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT ISORDERED AND STAYED  TO 10-06-15 /X: BAIL SET AT $20,000/DOPC/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-08-24T13:30:00.000Z",
+      "description": "/CAL:I&A P&C/:CONTD PROC RE $20,000 BW STAYED OF 08-24-15/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT ISORDERED AND STAYED TO 10-06-15 /X: BAIL SET AT $20,000/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-03-29T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 03/29/21, CASE DISMISSED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2021-03-29T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 03/29/21, CASE DISMISSED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-10-06T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PROC RE $20,000 BW STAYED OF 08-24-15/BWLIFT:08-24-15/FTA/BWI/BAIL:20,000/BWNUM:1ST/BWRET:M17/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2015-10-06T13:30:00.000Z",
+      "description": "/CAL:PROC RE $20,000 BW STAYED OF 08-24-15/BWLIFT:08-24-15/FTA/BWI/BAIL:20,000/BWNUM:1ST/BWRET:M17/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-05-26T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT AND PLEA/TWA/DOP/DEF:IS REFERRED TO NEIGHBORHOOD COURT/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2015-05-26T14:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT AND PLEA/TWA/DOP/DEF:IS REFERRED TO NEIGHBORHOOD COURT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02486048",
-    "portal_case_id": "",
+    "portal_case_id": "3585365",
     "display_case_number": "CRI-02486048",
     "defendant": "MICHAEL DALE BROWN",
     "filed_date": "2015-05-26",
@@ -60,11 +201,58 @@
       "filed_date": "2015-05-26"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "490.2(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "490.2(a) PC/M",
+        "title": "Penal Code § 490.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.2(a)",
+        "code_system": "PC",
+        "section": "490.2(a)",
+        "citation": "Penal Code § 490.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL DALE BROWN, and date of filing 2015-05-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL DALE BROWN, date of filing, 2015-05-26, and charges in the case: 490.2(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.2(a) PC/M",
+      "title": "Penal Code § 490.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.2(a)",
+      "code_system": "PC",
+      "section": "490.2(a)",
+      "citation": "Penal Code § 490.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:12:25.353Z",
+  "portal_case_id": "3585365",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02486048",
+      "defendant": "MICHAEL DALE BROWN",
+      "filed_date": "2015-05-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3585365"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.598775+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:05:29.935Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:44:48.522Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10004747",
   "criminal_case_number": "10004747",
@@ -24,19 +24,94 @@
       "name": "RICARDO H GONZALEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RICARDO H GONZALEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:03-04-10/987,2/BAIL:15000 /CONTD PRELIM HRG, DOP/INOTRD:SPANISH/CONTD:FOR PRELIMINARY HEARING ON 03-03-10/DOP/SA2: LEAVENWORTH AND TURK ST/SAORD3/SAORD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-03T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:CJ12D/CTS:12/VF1/SECFEE/ICNA/COLLECT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/AMEND:1/IRRC/TEXT:DEFT ADV & PER WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS:1/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-03-03 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2010-03-03",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-03 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2010-03-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-18 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2010-02-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ADAM LIPSON",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11350(b) HS/M",
+    "filed_date": "2010-02-18",
+    "defendant": "RICARDO H GONZALEZ",
+    "searched_key": "GONZALEZ/RI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/10004747.json",
     "searched_last_name": "GONZALEZ",
     "searched_first_prefix": "RI",
-    "charges": "11350(b) HS/M",
     "row": {
       "DEFENDANTNAME": "RICARDO H GONZALEZ",
       "CASENUMBER": "CRI-10004747",
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3632874",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:03-04-10/987,2/BAIL:15000 /CONTD PRELIM HRG, DOP/INOTRD:SPANISH/CONTD:FOR PRELIMINARY HEARING ON 03-03-10/DOP/SA2: LEAVENWORTH AND TURK ST/SAORD3/SAORD/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-02-18T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:03-04-10/987,2/BAIL:15000 /CONTD PRELIM HRG, DOP/INOTRD:SPANISH/CONTD:FOR PRELIMINARY HEARING ON 03-03-10/DOP/SA2: LEAVENWORTH AND TURK ST/SAORD3/SAORD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-03T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:CJ12D/CTS:12/VF1/SECFEE/ICNA/COLLECT/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-03-03T09:15:00.000Z",
+      "description": "/TWS/CH1:CJ12D/CTS:12/VF1/SECFEE/ICNA/COLLECT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/AMEND:1/IRRC/TEXT:DEFT ADV & PER WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS:1/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-03-03T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/AMEND:1/IRRC/TEXT:DEFT ADV & PER WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS:1/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10004747",
-    "portal_case_id": "",
+    "portal_case_id": "3632874",
     "display_case_number": "CRI-10004747",
     "defendant": "RICARDO H GONZALEZ",
     "filed_date": "2010-02-18",
@@ -59,12 +175,68 @@
       "defendant": "RICARDO H GONZALEZ",
       "filed_date": "2010-02-18"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(b) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11350(b) HS/M",
+        "title": "Health and Safety Code § 11350(b)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(b)",
+        "code_system": "HS",
+        "section": "11350(b)",
+        "citation": "Health and Safety Code § 11350(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RICARDO H GONZALEZ, and date of filing 2010-02-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RICARDO H GONZALEZ, date of filing, 2010-02-18, and charges in the case: 11350(b) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(b) HS/M",
+      "title": "Health and Safety Code § 11350(b)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(b)",
+      "code_system": "HS",
+      "section": "11350(b)",
+      "citation": "Health and Safety Code § 11350(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:44:49.244Z",
+  "portal_case_id": "3632874",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10004747",
+      "defendant": "RICARDO H GONZALEZ",
+      "filed_date": "2010-02-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3632874"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.914705+00:00"
 }

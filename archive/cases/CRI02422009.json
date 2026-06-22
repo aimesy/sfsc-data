@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:25:45.044Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:44:53.560Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02422009",
   "criminal_case_number": "02422009",
@@ -24,19 +24,81 @@
       "name": "PERLANDUS BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "PERLANDUS BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-06-16T00:00:00.000Z",
+      "docketEntryComment": "DA OPPOS TO DEFTS MOT TO SUPP EVID PC1538,5 FILED TODAY RM 101",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-06-12T15:00:00.000Z",
+      "docketEntryComment": "PD MOTION TO SUPPRESS EVIDENCE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-06-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG & PC 1538,5 MOTION/WIT SWORN:CARLOS CASTRO, BRENT DITTMER/EXHM:PEOPLE'S 1, EVIDENCE ENVELOPE; PEOPLE'S 1A, BAGGIE WITH 8 ROCKS;PEOPLE'S 1B, BAGGIE WITH 65 PILLS; PEOPLE'S 1C, BAGGIE WITH SUSPECTED MARIJUANA; PEOPLE'S 1D, LAB REPORT    /EXHM:DEFENDANT'S A, LINED PAPER WITH WRITING; DEFENDANT'S B, REGISTRATION CARD/MO PC 1385:UNABLE TO SUSTAIN BURDEN",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-06-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:06-22-09/BAIL:32000/CONTD:PRELIMINARY HEARING/DOP/X:PEOPLE FILEDNOTICE OF MOTION AND MOTION TO REVOKE ON 2393966,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-06-19 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2009-06-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-06-08 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2009-06-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PETER FITZPATRICK",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11351.5 HS/F 11351 HS/F 11359 HS/F 11366 HS/F",
+    "filed_date": "2009-06-08",
+    "defendant": "PERLANDUS BROWN",
+    "searched_key": "BROWN/PE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/02422009.json",
     "searched_last_name": "BROWN",
     "searched_first_prefix": "PE",
-    "charges": "11351.5 HS/F 11351 HS/F 11359 HS/F 11366 HS/F",
     "row": {
       "DEFENDANTNAME": "PERLANDUS BROWN",
       "CASENUMBER": "CRI-02422009",
@@ -45,11 +107,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3528301",
+  "docket_entries": [
+    {
+      "filedDate": "2009-06-16T00:00:00.000Z",
+      "docketEntryComment": "DA OPPOS TO DEFTS MOT TO SUPP EVID PC1538,5 FILED TODAY RM 101",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-06-16T00:00:00.000Z",
+      "description": "DA OPPOS TO DEFTS MOT TO SUPP EVID PC1538,5 FILED TODAY RM 101",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-06-12T15:00:00.000Z",
+      "docketEntryComment": "PD MOTION TO SUPPRESS EVIDENCE FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-06-12T15:00:00.000Z",
+      "description": "PD MOTION TO SUPPRESS EVIDENCE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-06-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG & PC 1538,5 MOTION/WIT SWORN:CARLOS CASTRO, BRENT DITTMER/EXHM:PEOPLE'S 1, EVIDENCE ENVELOPE; PEOPLE'S 1A, BAGGIE WITH 8 ROCKS;PEOPLE'S 1B, BAGGIE WITH 65 PILLS; PEOPLE'S 1C, BAGGIE WITH SUSPECTED MARIJUANA; PEOPLE'S 1D, LAB REPORT    /EXHM:DEFENDANT'S A, LINED PAPER WITH WRITING; DEFENDANT'S B, REGISTRATION CARD/MO PC 1385:UNABLE TO SUSTAIN BURDEN",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-06-19T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG & PC 1538,5 MOTION/WIT SWORN:CARLOS CASTRO, BRENT DITTMER/EXHM:PEOPLE'S 1, EVIDENCE ENVELOPE; PEOPLE'S 1A, BAGGIE WITH 8 ROCKS;PEOPLE'S 1B, BAGGIE WITH 65 PILLS; PEOPLE'S 1C, BAGGIE WITH SUSPECTED MARIJUANA; PEOPLE'S 1D, LAB REPORT /EXHM:DEFENDANT'S A, LINED PAPER WITH WRITING; DEFENDANT'S B, REGISTRATION CARD/MO PC 1385:UNABLE TO SUSTAIN BURDEN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-06-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:06-22-09/BAIL:32000/CONTD:PRELIMINARY HEARING/DOP/X:PEOPLE FILEDNOTICE OF MOTION AND MOTION TO REVOKE ON 2393966,/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-06-08T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:06-22-09/BAIL:32000/CONTD:PRELIMINARY HEARING/DOP/X:PEOPLE FILEDNOTICE OF MOTION AND MOTION TO REVOKE ON 2393966,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02422009",
-    "portal_case_id": "",
+    "portal_case_id": "3528301",
     "display_case_number": "CRI-02422009",
     "defendant": "PERLANDUS BROWN",
     "filed_date": "2009-06-08",
@@ -59,12 +162,162 @@
       "defendant": "PERLANDUS BROWN",
       "filed_date": "2009-06-08"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11351.5 HS/F 11351 HS/F 11359 HS/F 11366 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11351.5 HS/F",
+        "title": "Health and Safety Code § 11351.5",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351.5",
+        "code_system": "HS",
+        "section": "11351.5",
+        "citation": "Health and Safety Code § 11351.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11351 HS/F",
+        "title": "Health and Safety Code § 11351",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351",
+        "code_system": "HS",
+        "section": "11351",
+        "citation": "Health and Safety Code § 11351",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11359 HS/F",
+        "title": "Health and Safety Code § 11359",
+        "title_source": "programmatic_citation",
+        "code": "HS 11359",
+        "code_system": "HS",
+        "section": "11359",
+        "citation": "Health and Safety Code § 11359",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11366 HS/F",
+        "title": "Health and Safety Code § 11366",
+        "title_source": "programmatic_citation",
+        "code": "HS 11366",
+        "code_system": "HS",
+        "section": "11366",
+        "citation": "Health and Safety Code § 11366",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11366.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11366.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, PERLANDUS BROWN, and date of filing 2009-06-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, PERLANDUS BROWN, date of filing, 2009-06-08, and charges in the case: 11351.5 HS/F 11351 HS/F 11359 HS/F 11366 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11351.5 HS/F",
+      "title": "Health and Safety Code § 11351.5",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351.5",
+      "code_system": "HS",
+      "section": "11351.5",
+      "citation": "Health and Safety Code § 11351.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11351 HS/F",
+      "title": "Health and Safety Code § 11351",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351",
+      "code_system": "HS",
+      "section": "11351",
+      "citation": "Health and Safety Code § 11351",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11359 HS/F",
+      "title": "Health and Safety Code § 11359",
+      "title_source": "programmatic_citation",
+      "code": "HS 11359",
+      "code_system": "HS",
+      "section": "11359",
+      "citation": "Health and Safety Code § 11359",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11366 HS/F",
+      "title": "Health and Safety Code § 11366",
+      "title_source": "programmatic_citation",
+      "code": "HS 11366",
+      "code_system": "HS",
+      "section": "11366",
+      "citation": "Health and Safety Code § 11366",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11366.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11366.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:44:54.194Z",
+  "portal_case_id": "3528301",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02422009",
+      "defendant": "PERLANDUS BROWN",
+      "filed_date": "2009-06-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3528301"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.447202+00:00"
 }

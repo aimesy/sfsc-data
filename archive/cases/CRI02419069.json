@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:16:22.953Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:49:18.986Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02419069",
   "criminal_case_number": "02419069",
@@ -24,11 +24,77 @@
       "name": "JOSE DAGOBERTO ORTIZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSE DAGOBERTO ORTIZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-07-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-TRIAL CONFERENCE/DAWT/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-06-17T09:00:00.000Z",
+      "docketEntryComment": "/X:PEOPLE REQUEST FOR CONTINUANCE IS GRANTED/X:DEFENSE RESERVES RIGHTS TOFILE MOTION TO DISMISS/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-05-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:PRE-TRIAL CONFERENCE ON 06-17-09/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-07-16 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2009-07-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-06-17 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2009-06-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-05-26 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2009-05-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KAREN HULL",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3525574",
+  "docket_entries": [
+    {
+      "filedDate": "2009-07-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-TRIAL CONFERENCE/DAWT/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-07-16T09:00:00.000Z",
+      "description": "/CAL:PRE-TRIAL CONFERENCE/DAWT/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-06-17T09:00:00.000Z",
+      "docketEntryComment": "/X:PEOPLE REQUEST FOR CONTINUANCE IS GRANTED/X:DEFENSE RESERVES RIGHTS TOFILE MOTION TO DISMISS/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-06-17T09:00:00.000Z",
+      "description": "/X:PEOPLE REQUEST FOR CONTINUANCE IS GRANTED/X:DEFENSE RESERVES RIGHTS TOFILE MOTION TO DISMISS/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-05-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:PRE-TRIAL CONFERENCE ON 06-17-09/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-05-26T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/CONTD:PRE-TRIAL CONFERENCE ON 06-17-09/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02419069",
-    "portal_case_id": "",
+    "portal_case_id": "3525574",
     "display_case_number": "CRI-02419069",
     "defendant": "JOSE DAGOBERTO ORTIZ",
     "filed_date": "2009-05-26",
@@ -59,12 +156,67 @@
       "defendant": "JOSE DAGOBERTO ORTIZ",
       "filed_date": "2009-05-26"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "594(b)(2)(A) PC/M",
+    "charge_rows": [
+      {
+        "raw": "594(b)(2)(A) PC/M",
+        "title": "Penal Code § 594(b)(2)(A)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(2)(A)",
+        "code_system": "PC",
+        "section": "594(b)(2)(A)",
+        "citation": "Penal Code § 594(b)(2)(A)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSE DAGOBERTO ORTIZ, and date of filing 2009-05-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSE DAGOBERTO ORTIZ, date of filing, 2009-05-26, and charges in the case: 594(b)(2)(A) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "594(b)(2)(A) PC/M",
+      "title": "Penal Code § 594(b)(2)(A)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(2)(A)",
+      "code_system": "PC",
+      "section": "594(b)(2)(A)",
+      "citation": "Penal Code § 594(b)(2)(A)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:49:19.604Z",
+  "portal_case_id": "3525574",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02419069",
+      "defendant": "JOSE DAGOBERTO ORTIZ",
+      "filed_date": "2009-05-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3525574"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:28:10.717Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:44:37.474Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02418244",
   "criminal_case_number": "02418244",
@@ -24,19 +24,140 @@
       "name": "THANH HUYNH",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "THANH HUYNH",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-06-09T00:00:00.000Z",
+      "docketEntryComment": "PD DEFT MOT TO COMPEL DISCOV FILED TODAY IN RM 101",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-06-02T15:00:00.000Z",
+      "docketEntryComment": "PD MOT FOR CONT FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-05-21T00:00:00.000Z",
+      "docketEntryComment": "PD MOT FOR RETURN OF PROPERTY FILED TODAY IN ROOM 101",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-06-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/MO PC 1385:UNABLE TO SUSTAIN/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-06-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:MOTION FOR RETURN OF PROPERTY/NP/MO DENIED/CO:PD'S MOTION FOR CONTINUE IS DENIED; NO APPEAR BY DEFT'S ATTY, & 06-12-09 DATE STANDS/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-05-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/CONTD:TRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-05-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRETRIAL/CONT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-05-14T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAW/DEFTARR/NTW/LD:06-29-09/987,2/INTORD:VIETNAMESE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-06-12 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2009-06-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-06-05 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 1,
+      "court_date": "2009-06-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-05-27 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 2,
+      "court_date": "2009-05-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-05-18 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 3,
+      "court_date": "2009-05-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-05-14 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 4,
+      "court_date": "2009-05-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "EMILY DAHM",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "496(a) PC/M",
+    "filed_date": "2009-05-14",
+    "defendant": "THANH HUYNH",
+    "searched_key": "HUYNH/TH",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/02418244.json",
     "searched_last_name": "HUYNH",
     "searched_first_prefix": "TH",
-    "charges": "496(a) PC/M",
     "row": {
       "DEFENDANTNAME": "THANH HUYNH",
       "CASENUMBER": "CRI-02418244",
@@ -45,11 +166,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3524808",
+  "docket_entries": [
+    {
+      "filedDate": "2009-06-09T00:00:00.000Z",
+      "docketEntryComment": "PD DEFT MOT TO COMPEL DISCOV FILED TODAY IN RM 101",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-06-09T00:00:00.000Z",
+      "description": "PD DEFT MOT TO COMPEL DISCOV FILED TODAY IN RM 101",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-06-02T15:00:00.000Z",
+      "docketEntryComment": "PD MOT FOR CONT FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-06-02T15:00:00.000Z",
+      "description": "PD MOT FOR CONT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-05-21T00:00:00.000Z",
+      "docketEntryComment": "PD MOT FOR RETURN OF PROPERTY FILED TODAY IN ROOM 101",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-05-21T00:00:00.000Z",
+      "description": "PD MOT FOR RETURN OF PROPERTY FILED TODAY IN ROOM 101",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-06-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/MO PC 1385:UNABLE TO SUSTAIN/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-06-12T09:00:00.000Z",
+      "description": "/CAL:TRIAL/MO PC 1385:UNABLE TO SUSTAIN/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-06-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:MOTION FOR RETURN OF PROPERTY/NP/MO DENIED/CO:PD'S MOTION FOR CONTINUE IS DENIED; NO APPEAR BY DEFT'S ATTY, & 06-12-09 DATE STANDS/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2009-06-05T09:00:00.000Z",
+      "description": "/CAL:MOTION FOR RETURN OF PROPERTY/NP/MO DENIED/CO:PD'S MOTION FOR CONTINUE IS DENIED; NO APPEAR BY DEFT'S ATTY, & 06-12-09 DATE STANDS/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-05-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/CONTD:TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2009-05-27T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/CONTD:TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-05-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRETRIAL/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2009-05-18T09:00:00.000Z",
+      "description": "/CAL: PRETRIAL/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-05-14T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAW/DEFTARR/NTW/LD:06-29-09/987,2/INTORD:VIETNAMESE/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2009-05-14T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAW/DEFTARR/NTW/LD:06-29-09/987,2/INTORD:VIETNAMESE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02418244",
-    "portal_case_id": "",
+    "portal_case_id": "3524808",
     "display_case_number": "CRI-02418244",
     "defendant": "THANH HUYNH",
     "filed_date": "2009-05-14",
@@ -59,12 +261,68 @@
       "defendant": "THANH HUYNH",
       "filed_date": "2009-05-14"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "496(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "496(a) PC/M",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, THANH HUYNH, and date of filing 2009-05-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, THANH HUYNH, date of filing, 2009-05-14, and charges in the case: 496(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "496(a) PC/M",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:44:38.098Z",
+  "portal_case_id": "3524808",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02418244",
+      "defendant": "THANH HUYNH",
+      "filed_date": "2009-05-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3524808"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.986952+00:00"
 }

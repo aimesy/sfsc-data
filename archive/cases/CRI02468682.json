@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:27:38.337Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:22:15.240Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02468682",
   "criminal_case_number": "02468682",
@@ -24,19 +24,94 @@
       "name": "ANTONIA DUNCAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANTONIA DUNCAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-02-13T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-03-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL: SUPP REPT ON APD MTR/MTR-APD/DEFT ADV/DEFT ADM VIO/REVSA:02-13-13/REIN ORIG TC/PROB MOD/PJ:3 DAYS /ADDL CTS:3/X:REPORT TO APD, UPON RELEASE//PROB EXT: 03-19-14 /4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-02-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN, 09-06-12 FTA PROB TRANSFER FROM SAN MATEO/BWDNC/OR/CONTD SUPP RPT ON APD MTR/APD-MTR/WIAMTR/SUPP:03-08-13/S19/CTORD:APDTO FORWARD REPORT TO RESPECTIVE DEPARTMENT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-09-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD 1203,9PC TRANSFER FROM SAN MATEO COUNTY/MO GRTD/CTORD:PROBATIONBE TRANSFERRED FROM SAN MATEO COUNTY TO SAN FRANCISCO COUNTY/X:ORDER SIGNED AND FILED,/X:MOTION TO REVOKE PROBATION-APD - GRANTED/FTA/BWI/PROB ADM REV/ /NB/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-03-08 9:00 AM",
+      "hearingType": "APD Supplemental Report",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "2013-03-08",
+      "hearing_time": "9:00 AM",
+      "matters": "APD Supplemental Report",
+      "hearing_type": "APD Supplemental Report",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-02-13 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2013-02-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-09-06 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2012-09-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "COREY FARRIS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "470(d) PC/F",
+    "filed_date": "2013-03-08",
+    "defendant": "ANTONIA DUNCAN",
+    "searched_key": "DUNCAN/AN",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/02468682.json",
     "searched_last_name": "DUNCAN",
     "searched_first_prefix": "AN",
-    "charges": "470(d) PC/F",
     "row": {
       "DEFENDANTNAME": "ANTONIA DUNCAN",
       "CASENUMBER": "CRI-02468682",
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3570321",
+  "docket_entries": [
+    {
+      "filedDate": "2013-02-13T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-02-13T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-03-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL: SUPP REPT ON APD MTR/MTR-APD/DEFT ADV/DEFT ADM VIO/REVSA:02-13-13/REIN ORIG TC/PROB MOD/PJ:3 DAYS /ADDL CTS:3/X:REPORT TO APD, UPON RELEASE//PROB EXT: 03-19-14 /4019HALF/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-03-08T09:00:00.000Z",
+      "description": "/CAL: SUPP REPT ON APD MTR/MTR-APD/DEFT ADV/DEFT ADM VIO/REVSA:02-13-13/REIN ORIG TC/PROB MOD/PJ:3 DAYS /ADDL CTS:3/X:REPORT TO APD, UPON RELEASE//PROB EXT: 03-19-14 /4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-02-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN, 09-06-12 FTA PROB TRANSFER FROM SAN MATEO/BWDNC/OR/CONTD SUPP RPT ON APD MTR/APD-MTR/WIAMTR/SUPP:03-08-13/S19/CTORD:APDTO FORWARD REPORT TO RESPECTIVE DEPARTMENT/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-02-13T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN, 09-06-12 FTA PROB TRANSFER FROM SAN MATEO/BWDNC/OR/CONTD SUPP RPT ON APD MTR/APD-MTR/WIAMTR/SUPP:03-08-13/S19/CTORD:APDTO FORWARD REPORT TO RESPECTIVE DEPARTMENT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-09-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD 1203,9PC TRANSFER FROM SAN MATEO COUNTY/MO GRTD/CTORD:PROBATIONBE TRANSFERRED FROM SAN MATEO COUNTY TO SAN FRANCISCO COUNTY/X:ORDER SIGNED AND FILED,/X:MOTION TO REVOKE PROBATION-APD - GRANTED/FTA/BWI/PROB ADM REV/ /NB/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-09-06T09:00:00.000Z",
+      "description": "/CAL:APD 1203,9PC TRANSFER FROM SAN MATEO COUNTY/MO GRTD/CTORD:PROBATIONBE TRANSFERRED FROM SAN MATEO COUNTY TO SAN FRANCISCO COUNTY/X:ORDER SIGNED AND FILED,/X:MOTION TO REVOKE PROBATION-APD - GRANTED/FTA/BWI/PROB ADM REV/ /NB/BWNUM:1ST/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02468682",
-    "portal_case_id": "",
+    "portal_case_id": "3570321",
     "display_case_number": "CRI-02468682",
     "defendant": "ANTONIA DUNCAN",
     "filed_date": "2013-03-08",
@@ -60,11 +176,58 @@
       "filed_date": "2013-03-08"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "470(d) PC/F",
+    "charge_rows": [
+      {
+        "raw": "470(d) PC/F",
+        "title": "Penal Code § 470(d)",
+        "title_source": "programmatic_citation",
+        "code": "PC 470(d)",
+        "code_system": "PC",
+        "section": "470(d)",
+        "citation": "Penal Code § 470(d)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=470.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=470.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANTONIA DUNCAN, and date of filing 2013-03-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANTONIA DUNCAN, date of filing, 2013-03-08, and charges in the case: 470(d) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "470(d) PC/F",
+      "title": "Penal Code § 470(d)",
+      "title_source": "programmatic_citation",
+      "code": "PC 470(d)",
+      "code_system": "PC",
+      "section": "470(d)",
+      "citation": "Penal Code § 470(d)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=470.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=470.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:22:15.869Z",
+  "portal_case_id": "3570321",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02468682",
+      "defendant": "ANTONIA DUNCAN",
+      "filed_date": "2013-03-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3570321"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.090095+00:00"
 }

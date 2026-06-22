@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:17:19.427Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:43:55.532Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02414267",
   "criminal_case_number": "02414267",
@@ -24,19 +24,130 @@
       "name": "ALFONSO GONZALEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALFONSO GONZALEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-07-07T16:00:00.000Z",
+      "docketEntryComment": "ACCT SETUP IN CUBS,REFER ALL FINES AND FEES TO COLLECTIONS UNIT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-07T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 2 Y:PJ 7D/CTS:7/VF1/CTORD:DEFENDANT NOT TO POSSESSANY GRAFFITI TOOLS/X:$3115 RESTITUTION PAID/SECFEE/ICNA/COLLECT/OBEY/ACCEP/BE/X:MAY TERM AFTER 18 MONTHS SUCCESSFUL PROBATION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-14T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:04-28-09/987,2/X:DEFENSE MOTION FOR RELEASE ON OWN RECOGNIZANCE OR S P R, DENIED,/BAIL:25000/CONTD:TO SET IN DEPT 20/DOP/X:TIME ESTIMATE IS 3,5 HOURS/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-07T09:00:00.000Z",
+      "docketEntryComment": "/17B/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADVNL:1/DISM3/BE/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:TIME ESTIMATE 4 HRS,/STWPX/CONTD:SET OR DISPO,DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL TO SET/X TIME ESTIMATE 3,5 HRS,/LD 04-28-09/CONTD PRELIM HRG, DOP/COTD FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-07-07 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 0,
+      "court_date": "2009-07-07",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-07-07 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 1,
+      "court_date": "2009-07-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-04-24 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 2,
+      "court_date": "2009-04-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-04-15 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 3,
+      "court_date": "2009-04-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-04-14 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 4,
+      "court_date": "2009-04-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JASPER MONTI",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "594(b)(1) PC/M 594.2(a) PC/M 135 PC/M 148(a)(1) PC/M",
+    "filed_date": "2009-04-14",
+    "defendant": "ALFONSO GONZALEZ",
+    "searched_key": "GONZALEZ/AL",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/02414267.json",
     "searched_last_name": "GONZALEZ",
     "searched_first_prefix": "AL",
-    "charges": "594(b)(1) PC/M 594.2(a) PC/M 135 PC/M 148(a)(1) PC/M",
     "row": {
       "DEFENDANTNAME": "ALFONSO GONZALEZ",
       "CASENUMBER": "CRI-02414267",
@@ -45,11 +156,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3521115",
+  "docket_entries": [
+    {
+      "filedDate": "2009-07-07T16:00:00.000Z",
+      "docketEntryComment": "ACCT SETUP IN CUBS,REFER ALL FINES AND FEES TO COLLECTIONS UNIT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-07-07T16:00:00.000Z",
+      "description": "ACCT SETUP IN CUBS,REFER ALL FINES AND FEES TO COLLECTIONS UNIT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-07T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 2 Y:PJ 7D/CTS:7/VF1/CTORD:DEFENDANT NOT TO POSSESSANY GRAFFITI TOOLS/X:$3115 RESTITUTION PAID/SECFEE/ICNA/COLLECT/OBEY/ACCEP/BE/X:MAY TERM AFTER 18 MONTHS SUCCESSFUL PROBATION/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-07-07T09:15:00.000Z",
+      "description": "/TWS/CH1:ISS:CPROB:PROB 2 Y:PJ 7D/CTS:7/VF1/CTORD:DEFENDANT NOT TO POSSESSANY GRAFFITI TOOLS/X:$3115 RESTITUTION PAID/SECFEE/ICNA/COLLECT/OBEY/ACCEP/BE/X:MAY TERM AFTER 18 MONTHS SUCCESSFUL PROBATION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-14T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:04-28-09/987,2/X:DEFENSE MOTION FOR RELEASE ON OWN RECOGNIZANCE OR S P R, DENIED,/BAIL:25000/CONTD:TO SET IN DEPT 20/DOP/X:TIME ESTIMATE IS 3,5 HOURS/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-04-14T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:04-28-09/987,2/X:DEFENSE MOTION FOR RELEASE ON OWN RECOGNIZANCE OR S P R, DENIED,/BAIL:25000/CONTD:TO SET IN DEPT 20/DOP/X:TIME ESTIMATE IS 3,5 HOURS/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-07T09:00:00.000Z",
+      "docketEntryComment": "/17B/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADVNL:1/DISM3/BE/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-07-07T09:00:00.000Z",
+      "description": "/17B/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADVNL:1/DISM3/BE/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:TIME ESTIMATE 4 HRS,/STWPX/CONTD:SET OR DISPO,DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2009-04-24T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/X:TIME ESTIMATE 4 HRS,/STWPX/CONTD:SET OR DISPO,DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL TO SET/X TIME ESTIMATE 3,5 HRS,/LD 04-28-09/CONTD PRELIM HRG, DOP/COTD FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2009-04-15T09:00:00.000Z",
+      "description": "/CAL TO SET/X TIME ESTIMATE 3,5 HRS,/LD 04-28-09/CONTD PRELIM HRG, DOP/COTD FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02414267",
-    "portal_case_id": "",
+    "portal_case_id": "3521115",
     "display_case_number": "CRI-02414267",
     "defendant": "ALFONSO GONZALEZ",
     "filed_date": "2009-04-14",
@@ -60,11 +232,136 @@
       "filed_date": "2009-04-14"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "594(b)(1) PC/M 594.2(a) PC/M 135 PC/M 148(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "594(b)(1) PC/M",
+        "title": "Penal Code § 594(b)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(1)",
+        "code_system": "PC",
+        "section": "594(b)(1)",
+        "citation": "Penal Code § 594(b)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "594.2(a) PC/M",
+        "title": "Penal Code § 594.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594.2(a)",
+        "code_system": "PC",
+        "section": "594.2(a)",
+        "citation": "Penal Code § 594.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "135 PC/M",
+        "title": "Penal Code § 135",
+        "title_source": "programmatic_citation",
+        "code": "PC 135",
+        "code_system": "PC",
+        "section": "135",
+        "citation": "Penal Code § 135",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=135.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=135.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "148(a)(1) PC/M",
+        "title": "Penal Code § 148(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148(a)(1)",
+        "code_system": "PC",
+        "section": "148(a)(1)",
+        "citation": "Penal Code § 148(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALFONSO GONZALEZ, and date of filing 2009-04-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALFONSO GONZALEZ, date of filing, 2009-04-14, and charges in the case: 594(b)(1) PC/M 594.2(a) PC/M 135 PC/M 148(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "594(b)(1) PC/M",
+      "title": "Penal Code § 594(b)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(1)",
+      "code_system": "PC",
+      "section": "594(b)(1)",
+      "citation": "Penal Code § 594(b)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "594.2(a) PC/M",
+      "title": "Penal Code § 594.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594.2(a)",
+      "code_system": "PC",
+      "section": "594.2(a)",
+      "citation": "Penal Code § 594.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "135 PC/M",
+      "title": "Penal Code § 135",
+      "title_source": "programmatic_citation",
+      "code": "PC 135",
+      "code_system": "PC",
+      "section": "135",
+      "citation": "Penal Code § 135",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=135.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=135.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "148(a)(1) PC/M",
+      "title": "Penal Code § 148(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148(a)(1)",
+      "code_system": "PC",
+      "section": "148(a)(1)",
+      "citation": "Penal Code § 148(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:43:56.205Z",
+  "portal_case_id": "3521115",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02414267",
+      "defendant": "ALFONSO GONZALEZ",
+      "filed_date": "2009-04-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3521115"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.789386+00:00"
 }

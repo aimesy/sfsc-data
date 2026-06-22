@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:33:26.997Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:37:40.629Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02455130",
   "criminal_case_number": "02455130",
@@ -24,10 +24,40 @@
       "name": "ROY KIM",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROY KIM",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2010-10-15T16:00:00.000Z",
+      "docketEntryComment": "APD MOT TO TRANSFER TO COUNTY OF RESIDENCE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL: APD MTN TO TRANSFER TO COUNTY OF RESIDENCE/X: MOTION IS GRANTED,/X:PROBATION IS TRANSFERRED FROM SAN MATEO COUNTY TO SAN FRANCISCO COUNTY,ORDER SIGNED AND FILED IN COURT,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-10-20 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2010-10-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +75,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3558505",
+  "docket_entries": [
+    {
+      "filedDate": "2010-10-15T16:00:00.000Z",
+      "docketEntryComment": "APD MOT TO TRANSFER TO COUNTY OF RESIDENCE FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-10-15T16:00:00.000Z",
+      "description": "APD MOT TO TRANSFER TO COUNTY OF RESIDENCE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL: APD MTN TO TRANSFER TO COUNTY OF RESIDENCE/X: MOTION IS GRANTED,/X:PROBATION IS TRANSFERRED FROM SAN MATEO COUNTY TO SAN FRANCISCO COUNTY,ORDER SIGNED AND FILED IN COURT,/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-10-20T09:00:00.000Z",
+      "description": "/CAL: APD MTN TO TRANSFER TO COUNTY OF RESIDENCE/X: MOTION IS GRANTED,/X:PROBATION IS TRANSFERRED FROM SAN MATEO COUNTY TO SAN FRANCISCO COUNTY,ORDER SIGNED AND FILED IN COURT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02455130",
-    "portal_case_id": "",
+    "portal_case_id": "3558505",
     "display_case_number": "CRI-02455130",
     "defendant": "ROY KIM",
     "filed_date": "2010-10-06",
@@ -60,11 +111,84 @@
       "filed_date": "2010-10-06"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "530.5(a) PC/F 484g(b) PC/F",
+    "charge_rows": [
+      {
+        "raw": "530.5(a) PC/F",
+        "title": "Penal Code § 530.5(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 530.5(a)",
+        "code_system": "PC",
+        "section": "530.5(a)",
+        "citation": "Penal Code § 530.5(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=530.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=530.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "484g(b) PC/F",
+        "title": "Penal Code § 484g(b)",
+        "title_source": "programmatic_citation",
+        "code": "PC 484g(b)",
+        "code_system": "PC",
+        "section": "484g(b)",
+        "citation": "Penal Code § 484g(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484g.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484g.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROY KIM, and date of filing 2010-10-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROY KIM, date of filing, 2010-10-06, and charges in the case: 530.5(a) PC/F 484g(b) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "530.5(a) PC/F",
+      "title": "Penal Code § 530.5(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 530.5(a)",
+      "code_system": "PC",
+      "section": "530.5(a)",
+      "citation": "Penal Code § 530.5(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=530.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=530.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "484g(b) PC/F",
+      "title": "Penal Code § 484g(b)",
+      "title_source": "programmatic_citation",
+      "code": "PC 484g(b)",
+      "code_system": "PC",
+      "section": "484g(b)",
+      "citation": "Penal Code § 484g(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484g.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484g.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:37:41.283Z",
+  "portal_case_id": "3558505",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02455130",
+      "defendant": "ROY KIM",
+      "filed_date": "2010-10-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3558505"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:37:11.043Z"
 }

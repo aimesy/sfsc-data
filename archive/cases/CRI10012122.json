@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:23:38.027Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:38:20.157Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10012122",
   "criminal_case_number": "10012122",
@@ -24,19 +24,125 @@
       "name": "JOSE M CARRENO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSE M CARRENO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-07-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTC/CGTW/VD:07-30-10 JURY TRIAL/X:MONICA PADILLA, CERTIFIED SPANISHINTERPRETER/CONTD PTD ELIG RPT/GTWM/X:COUNT(S) 1 CHARGING 664,496APC,MISDIS REFERRED TO PRETRIAL DIVERSION FOR AN ELIGIBILITY REPORT, PARTIES STIPULATE WITH GOOD CAUSE FINDING BASED ON LACK OF CRIMINAL HISTORY /PTDIV:08-17-10/CONT/DOPU:PRETRIAL DIVERSION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-11-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL DIVERSION PROGRESS REPORT/DAWT/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT 1/1001,7: 1/BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-08-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD ELIGIBILITY REPORT/DAWT/16    CPTD PROG RPT/CGTW/NGWD1:1/PTD:1/CPSS/PROGPTD:11-16-10/CONTD:PRETRIAL DIVERSION PROGRESSREPORT/DOPU:PTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET JURY TRIAL/CON:LARUE GRIM/GTWM/CONTD:PRE-TRIAL CONFERENCE ON07-15-10/DOP/CONTD:JURY TRIAL ON 07-30-10/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:PD DECLARES CONFLICT,/CON:JAMES SENAL/MO PC 17B/MO GRTD/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-11-16 9:00 AM",
+      "hearingType": "Pretrial Diversion Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2010-11-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Progress Report",
+      "hearing_type": "Pretrial Diversion Progress Report",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-08-17 9:00 AM",
+      "hearingType": "Pretrial Diversion Eligibility Report",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2010-08-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Eligibility Report",
+      "hearing_type": "Pretrial Diversion Eligibility Report",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-07-15 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2010-07-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-04-29 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2010-04-29",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-04-27 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 4,
+      "court_date": "2010-04-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "LARUE GRIM",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "496(a) PC/M",
+    "filed_date": "2010-04-27",
+    "defendant": "JOSE M CARRENO",
+    "searched_key": "CARRENO/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/10012122.json",
     "searched_last_name": "CARRENO",
     "searched_first_prefix": "JO",
-    "charges": "496(a) PC/M",
     "row": {
       "DEFENDANTNAME": "JOSE M CARRENO",
       "CASENUMBER": "CRI-10012122",
@@ -45,11 +151,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3639789",
+  "docket_entries": [
+    {
+      "filedDate": "2010-07-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTC/CGTW/VD:07-30-10 JURY TRIAL/X:MONICA PADILLA, CERTIFIED SPANISHINTERPRETER/CONTD PTD ELIG RPT/GTWM/X:COUNT(S) 1 CHARGING 664,496APC,MISDIS REFERRED TO PRETRIAL DIVERSION FOR AN ELIGIBILITY REPORT, PARTIES STIPULATE WITH GOOD CAUSE FINDING BASED ON LACK OF CRIMINAL HISTORY /PTDIV:08-17-10/CONT/DOPU:PRETRIAL DIVERSION/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-07-15T09:00:00.000Z",
+      "description": "/CAL:PTC/CGTW/VD:07-30-10 JURY TRIAL/X:MONICA PADILLA, CERTIFIED SPANISHINTERPRETER/CONTD PTD ELIG RPT/GTWM/X:COUNT(S) 1 CHARGING 664,496APC,MISDIS REFERRED TO PRETRIAL DIVERSION FOR AN ELIGIBILITY REPORT, PARTIES STIPULATE WITH GOOD CAUSE FINDING BASED ON LACK OF CRIMINAL HISTORY /PTDIV:08-17-10/CONT/DOPU:PRETRIAL DIVERSION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-11-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL DIVERSION PROGRESS REPORT/DAWT/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT 1/1001,7: 1/BE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-11-16T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL DIVERSION PROGRESS REPORT/DAWT/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT 1/1001,7: 1/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-08-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD ELIGIBILITY REPORT/DAWT/16    CPTD PROG RPT/CGTW/NGWD1:1/PTD:1/CPSS/PROGPTD:11-16-10/CONTD:PRETRIAL DIVERSION PROGRESSREPORT/DOPU:PTD/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-08-17T09:00:00.000Z",
+      "description": "/CAL:PTD ELIGIBILITY REPORT/DAWT/16 CPTD PROG RPT/CGTW/NGWD1:1/PTD:1/CPSS/PROGPTD:11-16-10/CONTD:PRETRIAL DIVERSION PROGRESSREPORT/DOPU:PTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET JURY TRIAL/CON:LARUE GRIM/GTWM/CONTD:PRE-TRIAL CONFERENCE ON07-15-10/DOP/CONTD:JURY TRIAL ON 07-30-10/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-04-29T09:00:00.000Z",
+      "description": "/CAL:TO SET JURY TRIAL/CON:LARUE GRIM/GTWM/CONTD:PRE-TRIAL CONFERENCE ON07-15-10/DOP/CONTD:JURY TRIAL ON 07-30-10/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:PD DECLARES CONFLICT,/CON:JAMES SENAL/MO PC 17B/MO GRTD/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-04-27T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:PD DECLARES CONFLICT,/CON:JAMES SENAL/MO PC 17B/MO GRTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10012122",
-    "portal_case_id": "",
+    "portal_case_id": "3639789",
     "display_case_number": "CRI-10012122",
     "defendant": "JOSE M CARRENO",
     "filed_date": "2010-04-27",
@@ -59,12 +216,76 @@
       "defendant": "JOSE M CARRENO",
       "filed_date": "2010-04-27"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC 17B",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "496(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "496(a) PC/M",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSE M CARRENO, and date of filing 2010-04-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSE M CARRENO, date of filing, 2010-04-27, and charges in the case: 496(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "496(a) PC/M",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:38:20.836Z",
+  "portal_case_id": "3639789",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10012122",
+      "defendant": "JOSE M CARRENO",
+      "filed_date": "2010-04-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3639789"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.989694+00:00"
 }

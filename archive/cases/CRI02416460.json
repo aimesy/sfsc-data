@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:31:55.512Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:49:05.902Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02416460",
   "criminal_case_number": "02416460",
@@ -24,19 +24,125 @@
       "name": "MALCOLM BLACK",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MALCOLM BLACK",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-04-28T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/OR//SA2:STAY OUT OF AREA BOUNDED BY PAGE, ASHBURY, WALLER, BELVEDERE AND COLESTREETS IN SAN FRANCISCO, CA/SAORD/DOP/CONTD:PREHEARING CONFERENCE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:  IN THE INTEREST OF JUSTICE /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTC/NP/CONTD: PRELIM HEARING/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-05-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ERP/DAWT/CONTD:ERP/       /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-05-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/DAWT/977/CONTD:PRETRIAL CONFERENCE (ERP) IN DEPT, 23 AND PRELIMINARY HEARING IN DEPT, 11, IF NO RESOLUTION/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-07-28 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2009-07-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-07-10 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 1,
+      "court_date": "2009-07-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-05-29 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 2,
+      "court_date": "2009-05-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-05-22 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2009-05-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-04-28 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 4,
+      "court_date": "2009-04-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SANGEETA SINHA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11360(a) HS/F",
+    "filed_date": "2009-04-28",
+    "defendant": "MALCOLM BLACK",
+    "searched_key": "BLACK/MA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/02416460.json",
     "searched_last_name": "BLACK",
     "searched_first_prefix": "MA",
-    "charges": "11360(a) HS/F",
     "row": {
       "DEFENDANTNAME": "MALCOLM BLACK",
       "CASENUMBER": "CRI-02416460",
@@ -45,11 +151,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3523138",
+  "docket_entries": [
+    {
+      "filedDate": "2009-04-28T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/OR//SA2:STAY OUT OF AREA BOUNDED BY PAGE, ASHBURY, WALLER, BELVEDERE AND COLESTREETS IN SAN FRANCISCO, CA/SAORD/DOP/CONTD:PREHEARING CONFERENCE/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-04-28T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/OR//SA2:STAY OUT OF AREA BOUNDED BY PAGE, ASHBURY, WALLER, BELVEDERE AND COLESTREETS IN SAN FRANCISCO, CA/SAORD/DOP/CONTD:PREHEARING CONFERENCE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:  IN THE INTEREST OF JUSTICE /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-07-28T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO PC 1385: IN THE INTEREST OF JUSTICE /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTC/NP/CONTD: PRELIM HEARING/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-07-10T09:00:00.000Z",
+      "description": "/CAL:PTC/NP/CONTD: PRELIM HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-05-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ERP/DAWT/CONTD:ERP/       /",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-05-29T09:00:00.000Z",
+      "description": "/CAL:ERP/DAWT/CONTD:ERP/ /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-05-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/DAWT/977/CONTD:PRETRIAL CONFERENCE (ERP) IN DEPT, 23 AND PRELIMINARY HEARING IN DEPT, 11, IF NO RESOLUTION/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2009-05-22T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/DAWT/977/CONTD:PRETRIAL CONFERENCE (ERP) IN DEPT, 23 AND PRELIMINARY HEARING IN DEPT, 11, IF NO RESOLUTION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02416460",
-    "portal_case_id": "",
+    "portal_case_id": "3523138",
     "display_case_number": "CRI-02416460",
     "defendant": "MALCOLM BLACK",
     "filed_date": "2009-04-28",
@@ -59,12 +216,68 @@
       "defendant": "MALCOLM BLACK",
       "filed_date": "2009-04-28"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11360(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11360(a) HS/F",
+        "title": "Health and Safety Code § 11360(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11360(a)",
+        "code_system": "HS",
+        "section": "11360(a)",
+        "citation": "Health and Safety Code § 11360(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MALCOLM BLACK, and date of filing 2009-04-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MALCOLM BLACK, date of filing, 2009-04-28, and charges in the case: 11360(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11360(a) HS/F",
+      "title": "Health and Safety Code § 11360(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11360(a)",
+      "code_system": "HS",
+      "section": "11360(a)",
+      "citation": "Health and Safety Code § 11360(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:49:06.515Z",
+  "portal_case_id": "3523138",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02416460",
+      "defendant": "MALCOLM BLACK",
+      "filed_date": "2009-04-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3523138"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.193333+00:00"
 }

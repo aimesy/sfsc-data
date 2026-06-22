@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:33:45.414Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:46:01.262Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02427034",
   "criminal_case_number": "02427034",
@@ -24,11 +24,97 @@
       "name": "JESUS JIMENEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JESUS JIMENEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-11-05T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-08-11T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-10-23T15:30:00.000Z",
+      "docketEntryComment": "MOTION FOR 1381 DISMISALL",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-08-07T15:00:00.000Z",
+      "docketEntryComment": "PEOPLE'S MOTION TO AMEND COMPLAINT FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-08-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-TRIAL & PEOPLE'S MOTION TO AMEND COMPLAINT/X:NOTICE OF MOTION ANDMOTION TO SUPPRESS EVIDENCE PURSUANT TO PENAL CODE SECTION 1538,5 FILED INOPEN COURT,/X:APD S, LACAMBRA INDICATED DEFENDANT IS IN ICE CUSTODY,/FTA/OREVKD/BWI/BW/BAIL:10000/BWNUM:1ST/X: 1 OF 1 BENCH WARRANTS ISSUED THISDATE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-11-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PEOPLE'S MOTION TO DISMISS CASE PURSUANT TO PC 1381/DAWT/BWR:08-11-09/BWR1/NC/TEXT:COURT ORDERS CAUSE DISM PURS PC 1381/MO PC 1381/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:KEANNA WASHINGTON TRANSLATES FOR DEFENDANT/ /TEXT:DEFTENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/INTORD:SPANISH/DOP/GTWM/OR",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-11-05 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2009-11-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-08-11 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2009-08-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-07-14 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2009-07-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEPHANIE LACAMBRA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +131,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3532960",
+  "docket_entries": [
+    {
+      "filedDate": "2009-11-05T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-11-05T09:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-08-11T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-08-11T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-10-23T15:30:00.000Z",
+      "docketEntryComment": "MOTION FOR 1381 DISMISALL",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-10-23T15:30:00.000Z",
+      "description": "MOTION FOR 1381 DISMISALL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-08-07T15:00:00.000Z",
+      "docketEntryComment": "PEOPLE'S MOTION TO AMEND COMPLAINT FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-08-07T15:00:00.000Z",
+      "description": "PEOPLE'S MOTION TO AMEND COMPLAINT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-08-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-TRIAL & PEOPLE'S MOTION TO AMEND COMPLAINT/X:NOTICE OF MOTION ANDMOTION TO SUPPRESS EVIDENCE PURSUANT TO PENAL CODE SECTION 1538,5 FILED INOPEN COURT,/X:APD S, LACAMBRA INDICATED DEFENDANT IS IN ICE CUSTODY,/FTA/OREVKD/BWI/BW/BAIL:10000/BWNUM:1ST/X: 1 OF 1 BENCH WARRANTS ISSUED THISDATE/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2009-08-11T09:00:00.000Z",
+      "description": "/CAL:PRE-TRIAL & PEOPLE'S MOTION TO AMEND COMPLAINT/X:NOTICE OF MOTION ANDMOTION TO SUPPRESS EVIDENCE PURSUANT TO PENAL CODE SECTION 1538,5 FILED INOPEN COURT,/X:APD S, LACAMBRA INDICATED DEFENDANT IS IN ICE CUSTODY,/FTA/OREVKD/BWI/BW/BAIL:10000/BWNUM:1ST/X: 1 OF 1 BENCH WARRANTS ISSUED THISDATE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-11-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PEOPLE'S MOTION TO DISMISS CASE PURSUANT TO PC 1381/DAWT/BWR:08-11-09/BWR1/NC/TEXT:COURT ORDERS CAUSE DISM PURS PC 1381/MO PC 1381/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2009-11-05T09:00:00.000Z",
+      "description": "/CAL:PEOPLE'S MOTION TO DISMISS CASE PURSUANT TO PC 1381/DAWT/BWR:08-11-09/BWR1/NC/TEXT:COURT ORDERS CAUSE DISM PURS PC 1381/MO PC 1381/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:KEANNA WASHINGTON TRANSLATES FOR DEFENDANT/ /TEXT:DEFTENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/INTORD:SPANISH/DOP/GTWM/OR",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2009-07-14T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:KEANNA WASHINGTON TRANSLATES FOR DEFENDANT/ /TEXT:DEFTENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/INTORD:SPANISH/DOP/GTWM/OR",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02427034",
-    "portal_case_id": "",
+    "portal_case_id": "3532960",
     "display_case_number": "CRI-02427034",
     "defendant": "JESUS JIMENEZ",
     "filed_date": "2009-07-14",
@@ -59,12 +216,111 @@
       "defendant": "JESUS JIMENEZ",
       "filed_date": "2009-07-14"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1381",
+        "count": 3,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC 1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "666 PC/M 459 PC/M 666 PC/M",
+    "charge_rows": [
+      {
+        "raw": "666 PC/M",
+        "title": "Penal Code § 666",
+        "title_source": "programmatic_citation",
+        "code": "PC 666",
+        "code_system": "PC",
+        "section": "666",
+        "citation": "Penal Code § 666",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "459 PC/M",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JESUS JIMENEZ, and date of filing 2009-07-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JESUS JIMENEZ, date of filing, 2009-07-14, and charges in the case: 666 PC/M 459 PC/M 666 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "666 PC/M",
+      "title": "Penal Code § 666",
+      "title_source": "programmatic_citation",
+      "code": "PC 666",
+      "code_system": "PC",
+      "section": "666",
+      "citation": "Penal Code § 666",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=666.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "459 PC/M",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:46:01.897Z",
+  "portal_case_id": "3532960",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02427034",
+      "defendant": "JESUS JIMENEZ",
+      "filed_date": "2009-07-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3532960"
+  }
 }

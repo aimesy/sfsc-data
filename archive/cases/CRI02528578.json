@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:55:44.336Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:45:26.637Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02528578",
   "criminal_case_number": "02528578",
@@ -24,19 +24,123 @@
       "name": "VACEDIA DAVIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "VACEDIA DAVIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2023-01-27T11:51:27.917Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2023-01-27T09:30:00.000Z",
+      "docketEntryComment": "Successfully Completed a Diversion Program",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2022-10-25T11:13:25.231Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2022-10-25T11:13:25.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2022-10-25T09:00:00.000Z",
+      "docketEntryComment": "Advisement and Waiver - Waiver of Arraignment on Criminal Complaint",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2022-10-25T09:00:00.000Z",
+      "docketEntryComment": "Public Defender's Office Declares Conflict",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2022-10-20T14:50:40.000Z",
+      "docketEntryComment": "DEFT MOTION ADD TO CALENDAR TO RBW ISSUED 11/24/21",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-11-24T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-11-24T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:500/BWNUM:1ST/BWRET:M17/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2023-01-27 9:30 AM",
+      "hearingType": "Disposition Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2023-01-27",
+      "hearing_time": "9:30 AM",
+      "matters": "Disposition Hearing",
+      "hearing_type": "Disposition Hearing",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2022-10-25 9:00 AM",
+      "hearingType": "Motion to Recall Bench Warrant",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2022-10-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Recall Bench Warrant",
+      "hearing_type": "Motion to Recall Bench Warrant",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2021-11-24 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2021-11-24",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "GEORGE BORGES",
+      "type": "Conflict Attorney"
+    },
+    {
+      "name": "San Francisco District Attorney's Office",
+      "type": "Primary"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "490.2(a) PC/M",
+    "filed_date": "2021-11-22",
+    "defendant": "VACEDIA DAVIS",
+    "searched_key": "DAVIS/VA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/02528578.json",
     "searched_last_name": "DAVIS",
     "searched_first_prefix": "VA",
-    "charges": "490.2(a) PC/M",
     "row": {
       "DEFENDANTNAME": "VACEDIA DAVIS",
       "CASENUMBER": "CRI-02528578",
@@ -45,11 +149,102 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3624453",
+  "docket_entries": [
+    {
+      "filedDate": "2023-01-27T11:51:27.917Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2023-01-27T11:51:27.917Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2023-01-27T09:30:00.000Z",
+      "docketEntryComment": "Successfully Completed a Diversion Program",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2023-01-27T09:30:00.000Z",
+      "description": "Successfully Completed a Diversion Program",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-10-25T11:13:25.231Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2022-10-25T11:13:25.231Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-10-25T11:13:25.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2022-10-25T11:13:25.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-10-25T09:00:00.000Z",
+      "docketEntryComment": "Advisement and Waiver - Waiver of Arraignment on Criminal Complaint",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2022-10-25T09:00:00.000Z",
+      "description": "Advisement and Waiver - Waiver of Arraignment on Criminal Complaint",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-10-25T09:00:00.000Z",
+      "docketEntryComment": "Public Defender's Office Declares Conflict",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2022-10-25T09:00:00.000Z",
+      "description": "Public Defender's Office Declares Conflict",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2022-10-20T14:50:40.000Z",
+      "docketEntryComment": "DEFT MOTION ADD TO CALENDAR TO RBW ISSUED 11/24/21",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2022-10-20T14:50:40.000Z",
+      "description": "DEFT MOTION ADD TO CALENDAR TO RBW ISSUED 11/24/21",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-11-24T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2021-11-24T14:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-11-24T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:500/BWNUM:1ST/BWRET:M17/",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "2021-11-24T14:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:500/BWNUM:1ST/BWRET:M17/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02528578",
-    "portal_case_id": "",
+    "portal_case_id": "3624453",
     "display_case_number": "CRI-02528578",
     "defendant": "VACEDIA DAVIS",
     "filed_date": "2021-11-22",
@@ -60,11 +255,58 @@
       "filed_date": "2021-11-22"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "490.2(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "490.2(a) PC/M",
+        "title": "Penal Code § 490.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.2(a)",
+        "code_system": "PC",
+        "section": "490.2(a)",
+        "citation": "Penal Code § 490.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, VACEDIA DAVIS, and date of filing 2021-11-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, VACEDIA DAVIS, date of filing, 2021-11-22, and charges in the case: 490.2(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.2(a) PC/M",
+      "title": "Penal Code § 490.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.2(a)",
+      "code_system": "PC",
+      "section": "490.2(a)",
+      "citation": "Penal Code § 490.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:45:27.759Z",
+  "portal_case_id": "3624453",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02528578",
+      "defendant": "VACEDIA DAVIS",
+      "filed_date": "2021-11-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3624453"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.796400+00:00"
 }

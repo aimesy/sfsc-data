@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:53:37.949Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:34:58.041Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02451631",
   "criminal_case_number": "02451631",
@@ -24,10 +24,50 @@
       "name": "MAINOR RODRIGUEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MAINOR RODRIGUEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2017-06-05T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-22T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-06-05T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 06/05/17, CASE DISMISSED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-04-22 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2010-04-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +85,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3555490",
+  "docket_entries": [
+    {
+      "filedDate": "2017-06-05T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-06-05T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-22T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-04-22T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-06-05T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 06/05/17, CASE DISMISSED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-06-05T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 06/05/17, CASE DISMISSED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-04-22T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02451631",
-    "portal_case_id": "",
+    "portal_case_id": "3555490",
     "display_case_number": "CRI-02451631",
     "defendant": "MAINOR RODRIGUEZ",
     "filed_date": "2010-04-22",
@@ -60,11 +141,110 @@
       "filed_date": "2010-04-22"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "647b PC/M 653.22(a) PC/M 372 PC/M",
+    "charge_rows": [
+      {
+        "raw": "647b PC/M",
+        "title": "Penal Code § 647b",
+        "title_source": "programmatic_citation",
+        "code": "PC 647b",
+        "code_system": "PC",
+        "section": "647b",
+        "citation": "Penal Code § 647b",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647b.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647b.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "653.22(a) PC/M",
+        "title": "Penal Code § 653.22(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 653.22(a)",
+        "code_system": "PC",
+        "section": "653.22(a)",
+        "citation": "Penal Code § 653.22(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.22.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.22.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "372 PC/M",
+        "title": "Penal Code § 372",
+        "title_source": "programmatic_citation",
+        "code": "PC 372",
+        "code_system": "PC",
+        "section": "372",
+        "citation": "Penal Code § 372",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=372.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=372.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MAINOR RODRIGUEZ, and date of filing 2010-04-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MAINOR RODRIGUEZ, date of filing, 2010-04-22, and charges in the case: 647b PC/M 653.22(a) PC/M 372 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "647b PC/M",
+      "title": "Penal Code § 647b",
+      "title_source": "programmatic_citation",
+      "code": "PC 647b",
+      "code_system": "PC",
+      "section": "647b",
+      "citation": "Penal Code § 647b",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647b.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=647b.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "653.22(a) PC/M",
+      "title": "Penal Code § 653.22(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 653.22(a)",
+      "code_system": "PC",
+      "section": "653.22(a)",
+      "citation": "Penal Code § 653.22(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.22.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.22.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "372 PC/M",
+      "title": "Penal Code § 372",
+      "title_source": "programmatic_citation",
+      "code": "PC 372",
+      "code_system": "PC",
+      "section": "372",
+      "citation": "Penal Code § 372",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=372.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=372.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:34:58.690Z",
+  "portal_case_id": "3555490",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02451631",
+      "defendant": "MAINOR RODRIGUEZ",
+      "filed_date": "2010-04-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3555490"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T14:16:48.389Z"
 }

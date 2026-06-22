@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:02:20.412Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:35:52.040Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI09001986",
   "criminal_case_number": "09001986",
@@ -24,19 +24,125 @@
       "name": "ADRIAN GONZALEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ADRIAN GONZALEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-02-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL  PRETRIAL, ERP/X  PEOPLE ORALLY AMEND TO ADD COUNT 4, 12025(A)(1)PC,A MISD,/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 4/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-26T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH4 ISS CPROB PROB 3 Y PJ   4D/CTS  4/VF1/WS/WEAP/WEAP2/MPROBFINE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/VD: 03-02-10, PRELIM HRG/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A, P&C/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/STWPX/CONTD:ERP/DOP/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A, P&C/CONT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-04T09:00:00.000Z",
+      "docketEntryComment": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL AND TO JOIN CASE NUMBER 2448103/TWA/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-02-26 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 0,
+      "court_date": "2010-02-26",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-26 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 1,
+      "court_date": "2010-02-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-01 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2010-02-01",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-12 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2010-01-12",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-04 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 4,
+      "court_date": "2010-01-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "LAURETTA KOMLOS",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11370.1(a) HS/F 11350(a) HS/F 11350(a) HS/F 12025(a)(1) PC/M",
+    "filed_date": "2010-01-04",
+    "defendant": "ADRIAN GONZALEZ",
+    "searched_key": "GONZALEZ/AD",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/09001986.json",
     "searched_last_name": "GONZALEZ",
     "searched_first_prefix": "AD",
-    "charges": "11370.1(a) HS/F 11350(a) HS/F 11350(a) HS/F 12025(a)(1) PC/M",
     "row": {
       "DEFENDANTNAME": "ADRIAN GONZALEZ",
       "CASENUMBER": "CRI-09001986",
@@ -45,11 +151,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3628371",
+  "docket_entries": [
+    {
+      "filedDate": "2010-02-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL  PRETRIAL, ERP/X  PEOPLE ORALLY AMEND TO ADD COUNT 4, 12025(A)(1)PC,A MISD,/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 4/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-02-26T09:00:00.000Z",
+      "description": "/CAL PRETRIAL, ERP/X PEOPLE ORALLY AMEND TO ADD COUNT 4, 12025(A)(1)PC,A MISD,/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 4/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-26T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH4 ISS CPROB PROB 3 Y PJ   4D/CTS  4/VF1/WS/WEAP/WEAP2/MPROBFINE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/VD: 03-02-10, PRELIM HRG/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-02-26T09:15:00.000Z",
+      "description": "/TWS/CH4 ISS CPROB PROB 3 Y PJ 4D/CTS 4/VF1/WS/WEAP/WEAP2/MPROBFINE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/VD: 03-02-10, PRELIM HRG/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A, P&C/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/STWPX/CONTD:ERP/DOP/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-02-01T09:00:00.000Z",
+      "description": "/CAL:I&A, P&C/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/STWPX/CONTD:ERP/DOP/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A, P&C/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-01-12T09:00:00.000Z",
+      "description": "/CAL:I&A, P&C/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-04T09:00:00.000Z",
+      "docketEntryComment": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL AND TO JOIN CASE NUMBER 2448103/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-01-04T09:00:00.000Z",
+      "description": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL AND TO JOIN CASE NUMBER 2448103/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "09001986",
-    "portal_case_id": "",
+    "portal_case_id": "3628371",
     "display_case_number": "CRI-09001986",
     "defendant": "ADRIAN GONZALEZ",
     "filed_date": "2010-01-04",
@@ -60,11 +217,110 @@
       "filed_date": "2010-01-04"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11370.1(a) HS/F 11350(a) HS/F 11350(a) HS/F 12025(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "11370.1(a) HS/F",
+        "title": "Health and Safety Code § 11370.1(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11370.1(a)",
+        "code_system": "HS",
+        "section": "11370.1(a)",
+        "citation": "Health and Safety Code § 11370.1(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11370.1.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11370.1.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "12025(a)(1) PC/M",
+        "title": "Penal Code § 12025(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 12025(a)(1)",
+        "code_system": "PC",
+        "section": "12025(a)(1)",
+        "citation": "Penal Code § 12025(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12025.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12025.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ADRIAN GONZALEZ, and date of filing 2010-01-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ADRIAN GONZALEZ, date of filing, 2010-01-04, and charges in the case: 11370.1(a) HS/F 11350(a) HS/F 11350(a) HS/F 12025(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11370.1(a) HS/F",
+      "title": "Health and Safety Code § 11370.1(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11370.1(a)",
+      "code_system": "HS",
+      "section": "11370.1(a)",
+      "citation": "Health and Safety Code § 11370.1(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11370.1.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11370.1.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "12025(a)(1) PC/M",
+      "title": "Penal Code § 12025(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 12025(a)(1)",
+      "code_system": "PC",
+      "section": "12025(a)(1)",
+      "citation": "Penal Code § 12025(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12025.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12025.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:35:52.653Z",
+  "portal_case_id": "3628371",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-09001986",
+      "defendant": "ADRIAN GONZALEZ",
+      "filed_date": "2010-01-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3628371"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.635983+00:00"
 }

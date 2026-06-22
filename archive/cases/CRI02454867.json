@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:14:03.979Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:40:22.224Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02454867",
   "criminal_case_number": "02454867",
@@ -24,19 +24,63 @@
       "name": "DEMETRIUS B HENRY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DEMETRIUS B HENRY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2010-10-06T15:01:00.000Z",
+      "docketEntryComment": "17B MOTION WAS GRANTED 11/21/85 AND NOT RECORDED CORRECTLY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-09-01T15:15:00.000Z",
+      "docketEntryComment": "PD'S PC17(B) & PC1203,4 MOTIONS FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1985-11-21T15:00:00.000Z",
+      "docketEntryComment": "17B MOTION GRANTED AT HEARING ON 11/21/85 OCT-538976",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-10-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PD'S PC 17(B) & 1203,4 MOTIONS/CTORD:MATTER OFF CALENDAR, MOTIONS WITHDRAWN BY PUBLIC DEFENDER/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-10-06 9:00 AM",
+      "hearingType": "Motion to Set Aside Guilty/Nolo Pleas or Verdict and Dismiss Pursuant to PC 1203.4(a)(1)",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2010-10-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Set Aside Guilty/Nolo Pleas or Verdict and Dismiss Pursuant to PC 1203.4(a)(1)",
+      "hearing_type": "Motion to Set Aside Guilty/Nolo Pleas or Verdict and Dismiss Pursuant to PC 1203.4(a)(1)",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "8888888",
+    "filed_date": "2010-10-06",
+    "defendant": "DEMETRIUS B HENRY",
+    "searched_key": "HENRY/DE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/02454867.json",
     "searched_last_name": "HENRY",
     "searched_first_prefix": "DE",
-    "charges": "8888888",
     "row": {
       "DEFENDANTNAME": "DEMETRIUS B HENRY",
       "CASENUMBER": "CRI-02454867",
@@ -45,11 +89,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3558285",
+  "docket_entries": [
+    {
+      "filedDate": "2010-10-06T15:01:00.000Z",
+      "docketEntryComment": "17B MOTION WAS GRANTED 11/21/85 AND NOT RECORDED CORRECTLY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-10-06T15:01:00.000Z",
+      "description": "17B MOTION WAS GRANTED 11/21/85 AND NOT RECORDED CORRECTLY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-09-01T15:15:00.000Z",
+      "docketEntryComment": "PD'S PC17(B) & PC1203,4 MOTIONS FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-09-01T15:15:00.000Z",
+      "description": "PD'S PC17(B) & PC1203,4 MOTIONS FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1985-11-21T15:00:00.000Z",
+      "docketEntryComment": "17B MOTION GRANTED AT HEARING ON 11/21/85 OCT-538976",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1985-11-21T15:00:00.000Z",
+      "description": "17B MOTION GRANTED AT HEARING ON 11/21/85 OCT-538976",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-10-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PD'S PC 17(B) & 1203,4 MOTIONS/CTORD:MATTER OFF CALENDAR, MOTIONS WITHDRAWN BY PUBLIC DEFENDER/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-10-06T09:00:00.000Z",
+      "description": "/CAL:PD'S PC 17(B) & 1203,4 MOTIONS/CTORD:MATTER OFF CALENDAR, MOTIONS WITHDRAWN BY PUBLIC DEFENDER/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02454867",
-    "portal_case_id": "",
+    "portal_case_id": "3558285",
     "display_case_number": "CRI-02454867",
     "defendant": "DEMETRIUS B HENRY",
     "filed_date": "2010-10-06",
@@ -59,12 +144,68 @@
       "defendant": "DEMETRIUS B HENRY",
       "filed_date": "2010-10-06"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 17(B)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC1203",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC17(B)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DEMETRIUS B HENRY, and date of filing 2010-10-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DEMETRIUS B HENRY, date of filing, 2010-10-06, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:40:22.888Z",
+  "portal_case_id": "3558285",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02454867",
+      "defendant": "DEMETRIUS B HENRY",
+      "filed_date": "2010-10-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3558285"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.982851+00:00"
 }

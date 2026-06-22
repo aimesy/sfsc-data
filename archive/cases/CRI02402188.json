@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:09:46.750Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:43:58.934Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02402188",
   "criminal_case_number": "02402188",
@@ -24,11 +24,82 @@
       "name": "CARLOS SANCHEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CARLOS SANCHEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-01-29T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ17D/CTS:17/WS/SA1:CONCEPCION ORTIZ/SA2:(STAY OUT OF) ARGUELLO MARKET LOCATED AT 782 ARGUELLO BOULEVARD, SAN FRANCISCO/SAORD/SAORD3/VF1/ICNA/SECFEE/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-01-29T09:00:00.000Z",
+      "docketEntryComment": "/X:COUNT 2 AMENDED BY DA JOHN ULLOM TO REFLECT AS A MISDEMEANOR,/WIA/IRR//TEXT:DEFT ADV & PER WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS: 2/IBARRA/DISM3/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-01-15T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:DEFENSE MOTIONFOR RELEASE ON OWN RECOGNIZANCE OR S P R, DENIED,/NTW/LD:01-30-09/987,2/BAIL:40,000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-01-29 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2009-01-29",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-01-29 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2009-01-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-01-15 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2009-01-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ALEEM RAJA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3509942",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-01-29T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ17D/CTS:17/WS/SA1:CONCEPCION ORTIZ/SA2:(STAY OUT OF) ARGUELLO MARKET LOCATED AT 782 ARGUELLO BOULEVARD, SAN FRANCISCO/SAORD/SAORD3/VF1/ICNA/SECFEE/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-01-29T09:15:00.000Z",
+      "description": "/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ17D/CTS:17/WS/SA1:CONCEPCION ORTIZ/SA2:(STAY OUT OF) ARGUELLO MARKET LOCATED AT 782 ARGUELLO BOULEVARD, SAN FRANCISCO/SAORD/SAORD3/VF1/ICNA/SECFEE/COLLECT/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-01-29T09:00:00.000Z",
+      "docketEntryComment": "/X:COUNT 2 AMENDED BY DA JOHN ULLOM TO REFLECT AS A MISDEMEANOR,/WIA/IRR//TEXT:DEFT ADV & PER WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS: 2/IBARRA/DISM3/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-01-29T09:00:00.000Z",
+      "description": "/X:COUNT 2 AMENDED BY DA JOHN ULLOM TO REFLECT AS A MISDEMEANOR,/WIA/IRR//TEXT:DEFT ADV & PER WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS: 2/IBARRA/DISM3/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-01-15T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:DEFENSE MOTIONFOR RELEASE ON OWN RECOGNIZANCE OR S P R, DENIED,/NTW/LD:01-30-09/987,2/BAIL:40,000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-01-15T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:DEFENSE MOTIONFOR RELEASE ON OWN RECOGNIZANCE OR S P R, DENIED,/NTW/LD:01-30-09/987,2/BAIL:40,000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02402188",
-    "portal_case_id": "",
+    "portal_case_id": "3509942",
     "display_case_number": "CRI-02402188",
     "defendant": "CARLOS SANCHEZ",
     "filed_date": "2009-01-15",
@@ -59,12 +171,94 @@
       "defendant": "CARLOS SANCHEZ",
       "filed_date": "2009-01-15"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "211 PC/F 459 PC/M",
+    "charge_rows": [
+      {
+        "raw": "211 PC/F",
+        "title": "Penal Code § 211",
+        "title_source": "programmatic_citation",
+        "code": "PC 211",
+        "code_system": "PC",
+        "section": "211",
+        "citation": "Penal Code § 211",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "459 PC/M",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CARLOS SANCHEZ, and date of filing 2009-01-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CARLOS SANCHEZ, date of filing, 2009-01-15, and charges in the case: 211 PC/F 459 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "211 PC/F",
+      "title": "Penal Code § 211",
+      "title_source": "programmatic_citation",
+      "code": "PC 211",
+      "code_system": "PC",
+      "section": "211",
+      "citation": "Penal Code § 211",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "459 PC/M",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:43:59.615Z",
+  "portal_case_id": "3509942",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02402188",
+      "defendant": "CARLOS SANCHEZ",
+      "filed_date": "2009-01-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3509942"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T13:46:47.371Z"
 }

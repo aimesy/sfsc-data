@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:39:10.274Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:22:44.519Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02472147",
   "criminal_case_number": "02472147",
@@ -24,19 +24,89 @@
       "name": "CARL BRYANT",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CARL BRYANT",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-03-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET & TRAILING FELONY MTR# 11030968/MO PC 1385:DEFENDANT ENTERED NO CONTEST PLEA & SENTENCED IN CASE# 2471583/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-03-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET & TRAIL FEL MTR #11030968/TN:CARL BRYANT/CTORD:TO GET FINGERPRINTED/CONTD:TO SET & TRAIL FEL MTR 11030968 & PROOF OF ID PROCESS/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-03-11T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/CO:PD RESERVED RIGHT TO DEMURRER/CONTD:TO JOIN 11030968/GTWM/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-03-29 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 28",
+      "__index": 0,
+      "court_date": "2013-03-29",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 28",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-03-15 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 28",
+      "__index": 1,
+      "court_date": "2013-03-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 28",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-03-11 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2013-03-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KLEIGH HATHAWAY",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "484(a)/490.5 PC/M",
+    "filed_date": "2013-03-01",
+    "defendant": "CARL BRYANT",
+    "searched_key": "BRYANT/CA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/02472147.json",
     "searched_last_name": "BRYANT",
     "searched_first_prefix": "CA",
-    "charges": "484(a)/490.5 PC/M",
     "row": {
       "DEFENDANTNAME": "CARL BRYANT",
       "CASENUMBER": "CRI-02472147",
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3573300",
+  "docket_entries": [
+    {
+      "filedDate": "2013-03-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET & TRAILING FELONY MTR# 11030968/MO PC 1385:DEFENDANT ENTERED NO CONTEST PLEA & SENTENCED IN CASE# 2471583/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-03-29T09:00:00.000Z",
+      "description": "/CAL:TO SET & TRAILING FELONY MTR# 11030968/MO PC 1385:DEFENDANT ENTERED NO CONTEST PLEA & SENTENCED IN CASE# 2471583/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-03-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET & TRAIL FEL MTR #11030968/TN:CARL BRYANT/CTORD:TO GET FINGERPRINTED/CONTD:TO SET & TRAIL FEL MTR 11030968 & PROOF OF ID PROCESS/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-03-15T09:00:00.000Z",
+      "description": "/CAL:TO SET & TRAIL FEL MTR #11030968/TN:CARL BRYANT/CTORD:TO GET FINGERPRINTED/CONTD:TO SET & TRAIL FEL MTR 11030968 & PROOF OF ID PROCESS/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-03-11T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/CO:PD RESERVED RIGHT TO DEMURRER/CONTD:TO JOIN 11030968/GTWM/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-03-11T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/CO:PD RESERVED RIGHT TO DEMURRER/CONTD:TO JOIN 11030968/GTWM/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02472147",
-    "portal_case_id": "",
+    "portal_case_id": "3573300",
     "display_case_number": "CRI-02472147",
     "defendant": "CARL BRYANT",
     "filed_date": "2013-03-01",
@@ -59,12 +160,68 @@
       "defendant": "CARL BRYANT",
       "filed_date": "2013-03-01"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "484(a)/490.5 PC/M",
+    "charge_rows": [
+      {
+        "raw": "484(a)/490.5 PC/M",
+        "title": "484(a)",
+        "title_source": "criminal_index_text",
+        "code": "PC 490.5",
+        "code_system": "PC",
+        "section": "490.5",
+        "citation": "Penal Code § 490.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CARL BRYANT, and date of filing 2013-03-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CARL BRYANT, date of filing, 2013-03-01, and charges in the case: 484(a)/490.5 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "484(a)/490.5 PC/M",
+      "title": "484(a)",
+      "title_source": "criminal_index_text",
+      "code": "PC 490.5",
+      "code_system": "PC",
+      "section": "490.5",
+      "citation": "Penal Code § 490.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:22:45.207Z",
+  "portal_case_id": "3573300",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02472147",
+      "defendant": "CARL BRYANT",
+      "filed_date": "2013-03-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3573300"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.855412+00:00"
 }

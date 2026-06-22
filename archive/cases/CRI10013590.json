@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:01:59.664Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:41:06.958Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10013590",
   "criminal_case_number": "10013590",
@@ -24,19 +24,107 @@
       "name": "GLENN P JOHNSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "GLENN P JOHNSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-07-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MO PC 1385:UNABLE TO PROCEED/BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-07-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPO/NTW/LD:07-28-10/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD:TO SET OR DISPO/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:SUBJECT TO FEE HEARING AT END OF CASE/TEXT:DEFT ENT NGPLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-07-27 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2010-07-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-07-14 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2010-07-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-17 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2010-06-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-05-20 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2010-05-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KLEIGH HATHAWAY",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "12021(g)(1) PC/F 12090 PC/F",
+    "filed_date": "2010-05-20",
+    "defendant": "GLENN P JOHNSON",
+    "searched_key": "JOHNSON/GL",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/10013590.json",
     "searched_last_name": "JOHNSON",
     "searched_first_prefix": "GL",
-    "charges": "12021(g)(1) PC/F 12090 PC/F",
     "row": {
       "DEFENDANTNAME": "GLENN P JOHNSON",
       "CASENUMBER": "CRI-10013590",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3641179",
+  "docket_entries": [
+    {
+      "filedDate": "2010-07-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MO PC 1385:UNABLE TO PROCEED/BE/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-07-27T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG/MO PC 1385:UNABLE TO PROCEED/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-07-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPO/NTW/LD:07-28-10/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-07-14T09:00:00.000Z",
+      "description": "/CAL:TO SET OR DISPO/NTW/LD:07-28-10/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD:TO SET OR DISPO/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-06-17T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/CONTD:TO SET OR DISPO/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:SUBJECT TO FEE HEARING AT END OF CASE/TEXT:DEFT ENT NGPLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-05-20T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:SUBJECT TO FEE HEARING AT END OF CASE/TEXT:DEFT ENT NGPLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10013590",
-    "portal_case_id": "",
+    "portal_case_id": "3641179",
     "display_case_number": "CRI-10013590",
     "defendant": "GLENN P JOHNSON",
     "filed_date": "2010-05-20",
@@ -59,12 +188,94 @@
       "defendant": "GLENN P JOHNSON",
       "filed_date": "2010-05-20"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "12021(g)(1) PC/F 12090 PC/F",
+    "charge_rows": [
+      {
+        "raw": "12021(g)(1) PC/F",
+        "title": "Penal Code § 12021(g)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 12021(g)(1)",
+        "code_system": "PC",
+        "section": "12021(g)(1)",
+        "citation": "Penal Code § 12021(g)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12021.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12021.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "12090 PC/F",
+        "title": "Penal Code § 12090",
+        "title_source": "programmatic_citation",
+        "code": "PC 12090",
+        "code_system": "PC",
+        "section": "12090",
+        "citation": "Penal Code § 12090",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12090.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12090.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, GLENN P JOHNSON, and date of filing 2010-05-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, GLENN P JOHNSON, date of filing, 2010-05-20, and charges in the case: 12021(g)(1) PC/F 12090 PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "12021(g)(1) PC/F",
+      "title": "Penal Code § 12021(g)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 12021(g)(1)",
+      "code_system": "PC",
+      "section": "12021(g)(1)",
+      "citation": "Penal Code § 12021(g)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12021.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12021.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "12090 PC/F",
+      "title": "Penal Code § 12090",
+      "title_source": "programmatic_citation",
+      "code": "PC 12090",
+      "code_system": "PC",
+      "section": "12090",
+      "citation": "Penal Code § 12090",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12090.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12090.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:41:07.755Z",
+  "portal_case_id": "3641179",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10013590",
+      "defendant": "GLENN P JOHNSON",
+      "filed_date": "2010-05-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3641179"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.130800+00:00"
 }

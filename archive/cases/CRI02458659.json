@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:00:51.326Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:32:36.029Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02458659",
   "criminal_case_number": "02458659",
@@ -24,19 +24,99 @@
       "name": "RONELL ELLIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RONELL ELLIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-08-16T16:00:00.000Z",
+      "docketEntryComment": "CERTIFICATE OF REHAB(CERTIFICATE OF SERVICE BY MAIL)FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-22T11:28:00.000Z",
+      "docketEntryComment": "DEFT'S PETITION FOR CERTIFICATE OF REHAB & PARDON FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-08-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:HEARING ON PETITION FOR CERTIFICATE OF REHABILITATION/X:COURT MAKES AFINDING OF REHABILITATION,/MO GRTD/X:CERTIFICATE OF REHABILITATION SIGNED AND FILED,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-07-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:HEARING ON PETITION FOR CERTIFICATE OF REHABILITATION/CONT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-05-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PETITION FOR CERTIFICATE OF REHABILITATION/CONTD:HEARING ON PETITIONFOR CERTIFICATE OF REHABILITATION/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-08-10 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2011-08-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-07-20 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 1,
+      "court_date": "2011-07-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-05-11 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 2,
+      "court_date": "2011-05-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "AZITA GHAFOURPOUR",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "459 PC/F/1 11350(a) HS/F 459 PC/F",
+    "filed_date": "2011-05-11",
+    "defendant": "RONELL ELLIS",
+    "searched_key": "ELLIS/RO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/02458659.json",
     "searched_last_name": "ELLIS",
     "searched_first_prefix": "RO",
-    "charges": "459 PC/F/1 11350(a) HS/F 459 PC/F",
     "row": {
       "DEFENDANTNAME": "RONELL ELLIS",
       "CASENUMBER": "CRI-02458659",
@@ -45,11 +125,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3561408",
+  "docket_entries": [
+    {
+      "filedDate": "2011-08-16T16:00:00.000Z",
+      "docketEntryComment": "CERTIFICATE OF REHAB(CERTIFICATE OF SERVICE BY MAIL)FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-08-16T16:00:00.000Z",
+      "description": "CERTIFICATE OF REHAB(CERTIFICATE OF SERVICE BY MAIL)FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-22T11:28:00.000Z",
+      "docketEntryComment": "DEFT'S PETITION FOR CERTIFICATE OF REHAB & PARDON FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-03-22T11:28:00.000Z",
+      "description": "DEFT'S PETITION FOR CERTIFICATE OF REHAB & PARDON FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-08-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:HEARING ON PETITION FOR CERTIFICATE OF REHABILITATION/X:COURT MAKES AFINDING OF REHABILITATION,/MO GRTD/X:CERTIFICATE OF REHABILITATION SIGNED AND FILED,/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-08-10T09:00:00.000Z",
+      "description": "/CAL:HEARING ON PETITION FOR CERTIFICATE OF REHABILITATION/X:COURT MAKES AFINDING OF REHABILITATION,/MO GRTD/X:CERTIFICATE OF REHABILITATION SIGNED AND FILED,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-07-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:HEARING ON PETITION FOR CERTIFICATE OF REHABILITATION/CONT/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-07-20T09:00:00.000Z",
+      "description": "/CAL:HEARING ON PETITION FOR CERTIFICATE OF REHABILITATION/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-05-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PETITION FOR CERTIFICATE OF REHABILITATION/CONTD:HEARING ON PETITIONFOR CERTIFICATE OF REHABILITATION/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-05-11T09:00:00.000Z",
+      "description": "/CAL:PETITION FOR CERTIFICATE OF REHABILITATION/CONTD:HEARING ON PETITIONFOR CERTIFICATE OF REHABILITATION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02458659",
-    "portal_case_id": "",
+    "portal_case_id": "3561408",
     "display_case_number": "CRI-02458659",
     "defendant": "RONELL ELLIS",
     "filed_date": "2011-05-11",
@@ -60,11 +191,84 @@
       "filed_date": "2011-05-11"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "459 PC/F/1 11350(a) HS/F 459 PC/F",
+    "charge_rows": [
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RONELL ELLIS, and date of filing 2011-05-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RONELL ELLIS, date of filing, 2011-05-11, and charges in the case: 459 PC/F/1 11350(a) HS/F 459 PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:32:36.752Z",
+  "portal_case_id": "3561408",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02458659",
+      "defendant": "RONELL ELLIS",
+      "filed_date": "2011-05-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3561408"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.699744+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:12:42.860Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:43:14.477Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02409152",
   "criminal_case_number": "02409152",
@@ -24,11 +24,87 @@
       "name": "EDINSSON MARTINEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "EDINSSON MARTINEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-04-22T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S MOTION TO COMPEL DISCOVERY COMPLIANCE & REQ FOR SANCTIONS FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-21T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S REPLY TO NON-OPPOSITION TO 1538,5PC MOT TO SUPPRESS FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL JURY TRIAL & MOTION TO SUPPRESS/NGWD1 1, 2 & 3/TEXT DA WITHDRAWS COMLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONF/NTW/LD:05-06-09/X:NOTICE OF MOTION TO SUPPRESS EVIDENCE FILED/CONTD:& MOTION TO SUPPRESS/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-03-23T09:00:00.000Z",
+      "docketEntryComment": "/INTORD:SPANISH/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1//DOP/GTWM/987,2/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-04-24 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2009-04-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-04-06 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 1,
+      "court_date": "2009-04-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-03-23 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 2,
+      "court_date": "2009-03-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JOHN HAMASAKI",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +118,69 @@
       "CASENUMBER": "CRI-02409152",
       "FILEDDATE": "2009-03-23 09:00:00",
       "CHARGES": "23152(a) VC/M 23152(b) VC/M 12500(a) VC/M"
-    }
+    },
+    "filed_date": "2009-03-23",
+    "defendant": "EDINSSON MARTINEZ",
+    "searched_key": "MARTINEZ/ED",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/02409152.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3516400",
+  "docket_entries": [
+    {
+      "filedDate": "2009-04-22T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S MOTION TO COMPEL DISCOVERY COMPLIANCE & REQ FOR SANCTIONS FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-04-22T15:00:00.000Z",
+      "description": "DEFT'S MOTION TO COMPEL DISCOVERY COMPLIANCE & REQ FOR SANCTIONS FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-21T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S REPLY TO NON-OPPOSITION TO 1538,5PC MOT TO SUPPRESS FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-04-21T15:00:00.000Z",
+      "description": "DEFT'S REPLY TO NON-OPPOSITION TO 1538,5PC MOT TO SUPPRESS FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL JURY TRIAL & MOTION TO SUPPRESS/NGWD1 1, 2 & 3/TEXT DA WITHDRAWS COMLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-04-24T09:00:00.000Z",
+      "description": "/CAL JURY TRIAL & MOTION TO SUPPRESS/NGWD1 1, 2 & 3/TEXT DA WITHDRAWS COMLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONF/NTW/LD:05-06-09/X:NOTICE OF MOTION TO SUPPRESS EVIDENCE FILED/CONTD:& MOTION TO SUPPRESS/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-04-06T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONF/NTW/LD:05-06-09/X:NOTICE OF MOTION TO SUPPRESS EVIDENCE FILED/CONTD:& MOTION TO SUPPRESS/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-03-23T09:00:00.000Z",
+      "docketEntryComment": "/INTORD:SPANISH/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1//DOP/GTWM/987,2/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2009-03-23T09:00:00.000Z",
+      "description": "/INTORD:SPANISH/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1//DOP/GTWM/987,2/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02409152",
-    "portal_case_id": "",
+    "portal_case_id": "3516400",
     "display_case_number": "CRI-02409152",
     "defendant": "EDINSSON MARTINEZ",
     "filed_date": "2009-03-23",
@@ -60,11 +191,110 @@
       "filed_date": "2009-03-23"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "23152(a) VC/M 23152(b) VC/M 12500(a) VC/M",
+    "charge_rows": [
+      {
+        "raw": "23152(a) VC/M",
+        "title": "Vehicle Code § 23152(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(a)",
+        "code_system": "VC",
+        "section": "23152(a)",
+        "citation": "Vehicle Code § 23152(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23152(b) VC/M",
+        "title": "Vehicle Code § 23152(b)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(b)",
+        "code_system": "VC",
+        "section": "23152(b)",
+        "citation": "Vehicle Code § 23152(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "12500(a) VC/M",
+        "title": "Vehicle Code § 12500(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 12500(a)",
+        "code_system": "VC",
+        "section": "12500(a)",
+        "citation": "Vehicle Code § 12500(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, EDINSSON MARTINEZ, and date of filing 2009-03-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, EDINSSON MARTINEZ, date of filing, 2009-03-23, and charges in the case: 23152(a) VC/M 23152(b) VC/M 12500(a) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(a) VC/M",
+      "title": "Vehicle Code § 23152(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(a)",
+      "code_system": "VC",
+      "section": "23152(a)",
+      "citation": "Vehicle Code § 23152(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23152(b) VC/M",
+      "title": "Vehicle Code § 23152(b)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(b)",
+      "code_system": "VC",
+      "section": "23152(b)",
+      "citation": "Vehicle Code § 23152(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "12500(a) VC/M",
+      "title": "Vehicle Code § 12500(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 12500(a)",
+      "code_system": "VC",
+      "section": "12500(a)",
+      "citation": "Vehicle Code § 12500(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:43:15.137Z",
+  "portal_case_id": "3516400",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02409152",
+      "defendant": "EDINSSON MARTINEZ",
+      "filed_date": "2009-03-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3516400"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:37.244011+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:19:36.211Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:38:20.857Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10016795",
   "criminal_case_number": "10016795",
@@ -24,19 +24,89 @@
       "name": "JOHN ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-06-04T09:15:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CON:KENYATTA JONES/FAWC/DEFTARR1/NTW /LD:06-21-10/OR/DEF:ORDERED TO DRUG COUNSELING 2 TIMES WEEKLY THROUGHPRETRIAL DIVERSION/SA2:525 LEAVENWORTH, 3 BLOCKS IN ALL DIRECTIONS/SAORD/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:THE PEOPLE DISMISSED CASE DUE TO INSUFFICIENCY OF EVIDENCE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-06-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:TRANS TO DEPT 10/TRANS 10:FORTHWITH FOR ARRAIGNMENT",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-06-18 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2010-06-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-04 9:15 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2010-06-04",
+      "hearing_time": "9:15 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-06-04 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2010-06-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KENYATTA JONES",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11378 HS/F",
+    "filed_date": "2010-06-04",
+    "defendant": "JOHN ANDERSON",
+    "searched_key": "ANDERSON/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/10016795.json",
     "searched_last_name": "ANDERSON",
     "searched_first_prefix": "JO",
-    "charges": "11378 HS/F",
     "row": {
       "DEFENDANTNAME": "JOHN ANDERSON",
       "CASENUMBER": "CRI-10016795",
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3644221",
+  "docket_entries": [
+    {
+      "filedDate": "2010-06-04T09:15:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CON:KENYATTA JONES/FAWC/DEFTARR1/NTW /LD:06-21-10/OR/DEF:ORDERED TO DRUG COUNSELING 2 TIMES WEEKLY THROUGHPRETRIAL DIVERSION/SA2:525 LEAVENWORTH, 3 BLOCKS IN ALL DIRECTIONS/SAORD/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-06-04T09:15:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CON:KENYATTA JONES/FAWC/DEFTARR1/NTW /LD:06-21-10/OR/DEF:ORDERED TO DRUG COUNSELING 2 TIMES WEEKLY THROUGHPRETRIAL DIVERSION/SA2:525 LEAVENWORTH, 3 BLOCKS IN ALL DIRECTIONS/SAORD/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:THE PEOPLE DISMISSED CASE DUE TO INSUFFICIENCY OF EVIDENCE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-06-18T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO PC 1385:THE PEOPLE DISMISSED CASE DUE TO INSUFFICIENCY OF EVIDENCE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-06-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:TRANS TO DEPT 10/TRANS 10:FORTHWITH FOR ARRAIGNMENT",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-06-04T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:TRANS TO DEPT 10/TRANS 10:FORTHWITH FOR ARRAIGNMENT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10016795",
-    "portal_case_id": "",
+    "portal_case_id": "3644221",
     "display_case_number": "CRI-10016795",
     "defendant": "JOHN ANDERSON",
     "filed_date": "2010-06-04",
@@ -59,12 +160,68 @@
       "defendant": "JOHN ANDERSON",
       "filed_date": "2010-06-04"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11378 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11378 HS/F",
+        "title": "Health and Safety Code § 11378",
+        "title_source": "programmatic_citation",
+        "code": "HS 11378",
+        "code_system": "HS",
+        "section": "11378",
+        "citation": "Health and Safety Code § 11378",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN ANDERSON, and date of filing 2010-06-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN ANDERSON, date of filing, 2010-06-04, and charges in the case: 11378 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11378 HS/F",
+      "title": "Health and Safety Code § 11378",
+      "title_source": "programmatic_citation",
+      "code": "HS 11378",
+      "code_system": "HS",
+      "section": "11378",
+      "citation": "Health and Safety Code § 11378",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:38:21.504Z",
+  "portal_case_id": "3644221",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10016795",
+      "defendant": "JOHN ANDERSON",
+      "filed_date": "2010-06-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3644221"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:26.090974+00:00"
 }

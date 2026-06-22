@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:07:52.446Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:30:35.514Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02457267",
   "criminal_case_number": "02457267",
@@ -24,19 +24,81 @@
       "name": "BRANDON ROBERT GRAY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BRANDON ROBERT GRAY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2011-09-27T15:00:00.000Z",
+      "docketEntryComment": "PROB TRANSFER TO MARIN COUNTY SENT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-08T16:00:00.000Z",
+      "docketEntryComment": "APD MOT TO TRANSFER TO COUNTY OF RESIDENCE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-09T15:00:00.000Z",
+      "docketEntryComment": "APD'S PC1203,9 TRANSFER FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-09-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL: APD MOTION TO TRANSFER TO COUNTY OF RESIDENCE/DAWT/MO GRTD/CTORD:PROBATION TRANSFER FROM SAN FRANCISCO COUNTY TO MARIN COUNTY /X: ORDER SIGNED IN OPEN COURT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL: APD PC1203,9 TRANSFER MOTION/DAWT/MO GRTD/CTORD: PROBATION TRANSFERED FROM ORANGE COUNTY TO SAN FRANCISCO COUNTY,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-09-12 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2011-09-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-02-18 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2011-02-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "8888888 11350(a) HS/F",
+    "filed_date": "2011-01-20",
+    "defendant": "BRANDON ROBERT GRAY",
+    "searched_key": "GRAY/BR",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/02457267.json",
     "searched_last_name": "GRAY",
     "searched_first_prefix": "BR",
-    "charges": "8888888 11350(a) HS/F",
     "row": {
       "DEFENDANTNAME": "BRANDON ROBERT GRAY",
       "CASENUMBER": "CRI-02457267",
@@ -45,11 +107,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3560317",
+  "docket_entries": [
+    {
+      "filedDate": "2011-09-27T15:00:00.000Z",
+      "docketEntryComment": "PROB TRANSFER TO MARIN COUNTY SENT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-09-27T15:00:00.000Z",
+      "description": "PROB TRANSFER TO MARIN COUNTY SENT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-08T16:00:00.000Z",
+      "docketEntryComment": "APD MOT TO TRANSFER TO COUNTY OF RESIDENCE FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-09-08T16:00:00.000Z",
+      "description": "APD MOT TO TRANSFER TO COUNTY OF RESIDENCE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-09T15:00:00.000Z",
+      "docketEntryComment": "APD'S PC1203,9 TRANSFER FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-02-09T15:00:00.000Z",
+      "description": "APD'S PC1203,9 TRANSFER FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-09-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL: APD MOTION TO TRANSFER TO COUNTY OF RESIDENCE/DAWT/MO GRTD/CTORD:PROBATION TRANSFER FROM SAN FRANCISCO COUNTY TO MARIN COUNTY /X: ORDER SIGNED IN OPEN COURT/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-09-12T09:00:00.000Z",
+      "description": "/CAL: APD MOTION TO TRANSFER TO COUNTY OF RESIDENCE/DAWT/MO GRTD/CTORD:PROBATION TRANSFER FROM SAN FRANCISCO COUNTY TO MARIN COUNTY /X: ORDER SIGNED IN OPEN COURT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL: APD PC1203,9 TRANSFER MOTION/DAWT/MO GRTD/CTORD: PROBATION TRANSFERED FROM ORANGE COUNTY TO SAN FRANCISCO COUNTY,/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-02-18T09:00:00.000Z",
+      "description": "/CAL: APD PC1203,9 TRANSFER MOTION/DAWT/MO GRTD/CTORD: PROBATION TRANSFERED FROM ORANGE COUNTY TO SAN FRANCISCO COUNTY,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02457267",
-    "portal_case_id": "",
+    "portal_case_id": "3560317",
     "display_case_number": "CRI-02457267",
     "defendant": "BRANDON ROBERT GRAY",
     "filed_date": "2011-01-20",
@@ -59,12 +172,68 @@
       "defendant": "BRANDON ROBERT GRAY",
       "filed_date": "2011-01-20"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC1203",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888 11350(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "8888888 11350(a) HS/F",
+        "title": "8888888",
+        "title_source": "criminal_index_text",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BRANDON ROBERT GRAY, and date of filing 2011-01-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BRANDON ROBERT GRAY, date of filing, 2011-01-20, and charges in the case: 8888888 11350(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888 11350(a) HS/F",
+      "title": "8888888",
+      "title_source": "criminal_index_text",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:30:36.152Z",
+  "portal_case_id": "3560317",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02457267",
+      "defendant": "BRANDON ROBERT GRAY",
+      "filed_date": "2011-01-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3560317"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.693830+00:00"
 }

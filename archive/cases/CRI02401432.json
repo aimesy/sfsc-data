@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:20:56.380Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:44:00.166Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02401432",
   "criminal_case_number": "02401432",
@@ -24,19 +24,140 @@
       "name": "MARTIN CRUZ CHAVEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARTIN CRUZ CHAVEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-02-23T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-04-14T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-22T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-04-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DRUG DIV ELIG REPORT/DIV DEN/FTA/OREVKD/BWI/BAIL:15000/BWNUM:2ND/NIGHTSERV/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/NGWD1:1/OR/CONTD DRUG DIV ELIG REPORT/ELIG:04-14-11/CONTD:DRUG DIV ELIG RPT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-22T09:00:00.000Z",
+      "docketEntryComment": "/BWDC1 5 D CJ/CTS 5/CONTD PRE HEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-02-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/FTA/OREVKD/BWI/BW/BAIL:30,000/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-01-12T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/OR//TN:MARTIN CRUZ CHAVEZ/CONTD:PRETRIAL AND PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-04-14 9:00 AM",
+      "hearingType": "Drug Diversion Eligibility Report",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2011-04-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Drug Diversion Eligibility Report",
+      "hearing_type": "Drug Diversion Eligibility Report",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-07 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2011-03-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-02-22 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2011-02-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-02-23 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2009-02-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-01-12 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 4,
+      "court_date": "2009-01-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SETH MEISELS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11350(a) HS/F",
+    "filed_date": "2009-01-12",
+    "defendant": "MARTIN CRUZ CHAVEZ",
+    "searched_key": "CHAVEZ/MA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/02401432.json",
     "searched_last_name": "CHAVEZ",
     "searched_first_prefix": "MA",
-    "charges": "11350(a) HS/F",
     "row": {
       "DEFENDANTNAME": "MARTIN CRUZ CHAVEZ",
       "CASENUMBER": "CRI-02401432",
@@ -45,11 +166,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3509253",
+  "docket_entries": [
+    {
+      "filedDate": "2009-02-23T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-02-23T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-04-14T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-04-14T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-22T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-02-22T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-04-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DRUG DIV ELIG REPORT/DIV DEN/FTA/OREVKD/BWI/BAIL:15000/BWNUM:2ND/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-04-14T09:00:00.000Z",
+      "description": "/CAL:DRUG DIV ELIG REPORT/DIV DEN/FTA/OREVKD/BWI/BAIL:15000/BWNUM:2ND/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/NGWD1:1/OR/CONTD DRUG DIV ELIG REPORT/ELIG:04-14-11/CONTD:DRUG DIV ELIG RPT/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-03-07T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/NGWD1:1/OR/CONTD DRUG DIV ELIG REPORT/ELIG:04-14-11/CONTD:DRUG DIV ELIG RPT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-22T09:00:00.000Z",
+      "docketEntryComment": "/BWDC1 5 D CJ/CTS 5/CONTD PRE HEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2011-02-22T09:00:00.000Z",
+      "description": "/BWDC1 5 D CJ/CTS 5/CONTD PRE HEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-02-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRE-HEARING CONFERENCE/FTA/OREVKD/BWI/BW/BAIL:30,000/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2009-02-23T09:00:00.000Z",
+      "description": "/CAL:PRE-HEARING CONFERENCE/FTA/OREVKD/BWI/BW/BAIL:30,000/BWNUM:1ST/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-01-12T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/OR//TN:MARTIN CRUZ CHAVEZ/CONTD:PRETRIAL AND PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2009-01-12T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/OR//TN:MARTIN CRUZ CHAVEZ/CONTD:PRETRIAL AND PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02401432",
-    "portal_case_id": "",
+    "portal_case_id": "3509253",
     "display_case_number": "CRI-02401432",
     "defendant": "MARTIN CRUZ CHAVEZ",
     "filed_date": "2009-01-12",
@@ -60,11 +262,58 @@
       "filed_date": "2009-01-12"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARTIN CRUZ CHAVEZ, and date of filing 2009-01-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARTIN CRUZ CHAVEZ, date of filing, 2009-01-12, and charges in the case: 11350(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:44:00.764Z",
+  "portal_case_id": "3509253",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02401432",
+      "defendant": "MARTIN CRUZ CHAVEZ",
+      "filed_date": "2009-01-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3509253"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.078833+00:00"
 }

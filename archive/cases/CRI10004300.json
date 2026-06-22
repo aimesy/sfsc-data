@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:25:44.086Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:39:04.839Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10004300",
   "criminal_case_number": "10004300",
@@ -24,11 +24,92 @@
       "name": "BERNADETTE SANTOS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BERNADETTE SANTOS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-04-01T15:00:00.000Z",
+      "docketEntryComment": "PD'S MOT TO SUPPRESS EVIDENCE PURSUANT TO PC 1538,5 W/PTS & AUTH FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-19T14:50:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPPOS TO DEFT'S CRI MOTION FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-26T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S MOT FOR ORD COMPEL DISCL INFORM ID/DISM ACCUS PLDG FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING, MOTION TO SUPPRESS, AND DEFENSE MOTION TO DISCLOSE CRI/X:ATTORNEY, SCOTT SUGARMAN, SPECIALLY APPEARING FOR THE ATTORNEY OFRECORD,/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL: DEFENSE MOTION FOR ORDER TO COMPEL DISCLOSE CONFIDENTIAL INFORMANT/X: THE COURT RECEIVED FURTHER DOCUMENTS TODAY AND NEED TO REVIEW THEM/CONTDPRELIM HRG, DOP/CONTD: PRELIMINARY HEARING AND DEFENSE MOTION TO DISCLOSE CRI/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/ORPJ/CTORD:AS A CONDITION OF ORPJ, REPORT 2X A WEEK & POSSESS NO DRUGS WITHOUT A VALID PRESCRIPTION/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-04-09 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2010-04-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-26 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2010-03-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-11 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2010-02-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEPHANIE WARGO",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +126,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3632454",
+  "docket_entries": [
+    {
+      "filedDate": "2010-04-01T15:00:00.000Z",
+      "docketEntryComment": "PD'S MOT TO SUPPRESS EVIDENCE PURSUANT TO PC 1538,5 W/PTS & AUTH FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-04-01T15:00:00.000Z",
+      "description": "PD'S MOT TO SUPPRESS EVIDENCE PURSUANT TO PC 1538,5 W/PTS & AUTH FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-19T14:50:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPPOS TO DEFT'S CRI MOTION FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-03-19T14:50:00.000Z",
+      "description": "PEOPLE'S OPPOS TO DEFT'S CRI MOTION FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-26T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S MOT FOR ORD COMPEL DISCL INFORM ID/DISM ACCUS PLDG FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-02-26T15:00:00.000Z",
+      "description": "DEFT'S MOT FOR ORD COMPEL DISCL INFORM ID/DISM ACCUS PLDG FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING, MOTION TO SUPPRESS, AND DEFENSE MOTION TO DISCLOSE CRI/X:ATTORNEY, SCOTT SUGARMAN, SPECIALLY APPEARING FOR THE ATTORNEY OFRECORD,/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-04-09T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING, MOTION TO SUPPRESS, AND DEFENSE MOTION TO DISCLOSE CRI/X:ATTORNEY, SCOTT SUGARMAN, SPECIALLY APPEARING FOR THE ATTORNEY OFRECORD,/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL: DEFENSE MOTION FOR ORDER TO COMPEL DISCLOSE CONFIDENTIAL INFORMANT/X: THE COURT RECEIVED FURTHER DOCUMENTS TODAY AND NEED TO REVIEW THEM/CONTDPRELIM HRG, DOP/CONTD: PRELIMINARY HEARING AND DEFENSE MOTION TO DISCLOSE CRI/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-03-26T09:00:00.000Z",
+      "description": "/CAL: DEFENSE MOTION FOR ORDER TO COMPEL DISCLOSE CONFIDENTIAL INFORMANT/X: THE COURT RECEIVED FURTHER DOCUMENTS TODAY AND NEED TO REVIEW THEM/CONTDPRELIM HRG, DOP/CONTD: PRELIMINARY HEARING AND DEFENSE MOTION TO DISCLOSE CRI/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/ORPJ/CTORD:AS A CONDITION OF ORPJ, REPORT 2X A WEEK & POSSESS NO DRUGS WITHOUT A VALID PRESCRIPTION/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-02-11T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/ORPJ/CTORD:AS A CONDITION OF ORPJ, REPORT 2X A WEEK & POSSESS NO DRUGS WITHOUT A VALID PRESCRIPTION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10004300",
-    "portal_case_id": "",
+    "portal_case_id": "3632454",
     "display_case_number": "CRI-10004300",
     "defendant": "BERNADETTE SANTOS",
     "filed_date": "2010-02-11",
@@ -59,12 +201,127 @@
       "defendant": "BERNADETTE SANTOS",
       "filed_date": "2010-02-11"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11379(a) HS/F 11378 HS/F 11359 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11379(a) HS/F",
+        "title": "Health and Safety Code § 11379(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11379(a)",
+        "code_system": "HS",
+        "section": "11379(a)",
+        "citation": "Health and Safety Code § 11379(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11378 HS/F",
+        "title": "Health and Safety Code § 11378",
+        "title_source": "programmatic_citation",
+        "code": "HS 11378",
+        "code_system": "HS",
+        "section": "11378",
+        "citation": "Health and Safety Code § 11378",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11359 HS/F",
+        "title": "Health and Safety Code § 11359",
+        "title_source": "programmatic_citation",
+        "code": "HS 11359",
+        "code_system": "HS",
+        "section": "11359",
+        "citation": "Health and Safety Code § 11359",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BERNADETTE SANTOS, and date of filing 2010-02-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BERNADETTE SANTOS, date of filing, 2010-02-11, and charges in the case: 11379(a) HS/F 11378 HS/F 11359 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11379(a) HS/F",
+      "title": "Health and Safety Code § 11379(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11379(a)",
+      "code_system": "HS",
+      "section": "11379(a)",
+      "citation": "Health and Safety Code § 11379(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11378 HS/F",
+      "title": "Health and Safety Code § 11378",
+      "title_source": "programmatic_citation",
+      "code": "HS 11378",
+      "code_system": "HS",
+      "section": "11378",
+      "citation": "Health and Safety Code § 11378",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11359 HS/F",
+      "title": "Health and Safety Code § 11359",
+      "title_source": "programmatic_citation",
+      "code": "HS 11359",
+      "code_system": "HS",
+      "section": "11359",
+      "citation": "Health and Safety Code § 11359",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:39:05.541Z",
+  "portal_case_id": "3632454",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10004300",
+      "defendant": "BERNADETTE SANTOS",
+      "filed_date": "2010-02-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3632454"
+  }
 }

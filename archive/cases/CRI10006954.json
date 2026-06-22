@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:53:14.843Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:37:21.272Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10006954",
   "criminal_case_number": "10006954",
@@ -24,11 +24,59 @@
       "name": "MALVIN JEROME HUDSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MALVIN JEROME HUDSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-03-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING ON 03-22-10/DOP/LD:03-23-10/987,2/OR/X: CONDITION OF OR-MUST CHECK IN WITH SPR/SA2:ELLIS STAND JONES IN SF/SAORD3/SAORD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385: IN THE INTEREST OF JUSTICE /",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-03-22 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2010-03-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-08 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2010-03-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEVE OLMO",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3634924",
+  "docket_entries": [
+    {
+      "filedDate": "2010-03-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING ON 03-22-10/DOP/LD:03-23-10/987,2/OR/X: CONDITION OF OR-MUST CHECK IN WITH SPR/SA2:ELLIS STAND JONES IN SF/SAORD3/SAORD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-03-08T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING ON 03-22-10/DOP/LD:03-23-10/987,2/OR/X: CONDITION OF OR-MUST CHECK IN WITH SPR/SA2:ELLIS STAND JONES IN SF/SAORD3/SAORD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385: IN THE INTEREST OF JUSTICE /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-03-22T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO PC 1385: IN THE INTEREST OF JUSTICE /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10006954",
-    "portal_case_id": "",
+    "portal_case_id": "3634924",
     "display_case_number": "CRI-10006954",
     "defendant": "MALVIN JEROME HUDSON",
     "filed_date": "2010-03-08",
@@ -59,12 +128,67 @@
       "defendant": "MALVIN JEROME HUDSON",
       "filed_date": "2010-03-08"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MALVIN JEROME HUDSON, and date of filing 2010-03-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MALVIN JEROME HUDSON, date of filing, 2010-03-08, and charges in the case: 11350(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:37:21.944Z",
+  "portal_case_id": "3634924",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10006954",
+      "defendant": "MALVIN JEROME HUDSON",
+      "filed_date": "2010-03-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3634924"
+  }
 }

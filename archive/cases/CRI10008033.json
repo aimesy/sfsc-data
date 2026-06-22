@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:54:17.787Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:39:38.674Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10008033",
   "criminal_case_number": "10008033",
@@ -24,19 +24,107 @@
       "name": "MARCELL ANDRE CLARK",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARCELL ANDRE CLARK",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2010-04-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:JURY TRIAL/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO05-11-10,/X: BAIL SET AT $500,00/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-05-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENSE MOTION TO STAY BENCH WARRANT FROM 04-30-10/MO PC 1385:INTEREST OF JUSTICE/DAWT/BWSTAY:04-30-10/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-04-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/NTW/LD:05-20-10/CONTD:TRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-16T09:00:00.000Z",
+      "docketEntryComment": "/X:SPECIAL APPEARENCE BY ASSISTANT DA MARISA RODRIGUEZ/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DOP/GTWM/987,2/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-05-11 9:00 AM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2010-05-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-04-30 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2010-04-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-04-20 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2010-04-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-03-16 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2010-03-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DAVID WILTON",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "487(c) PC/M",
+    "filed_date": "2010-03-16",
+    "defendant": "MARCELL ANDRE CLARK",
+    "searched_key": "CLARK/MA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/10008033.json",
     "searched_last_name": "CLARK",
     "searched_first_prefix": "MA",
-    "charges": "487(c) PC/M",
     "row": {
       "DEFENDANTNAME": "MARCELL ANDRE CLARK",
       "CASENUMBER": "CRI-10008033",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3635936",
+  "docket_entries": [
+    {
+      "filedDate": "2010-04-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:JURY TRIAL/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO05-11-10,/X: BAIL SET AT $500,00/DOPC/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2010-04-30T09:00:00.000Z",
+      "description": "/CAL:JURY TRIAL/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO05-11-10,/X: BAIL SET AT $500,00/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-05-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENSE MOTION TO STAY BENCH WARRANT FROM 04-30-10/MO PC 1385:INTEREST OF JUSTICE/DAWT/BWSTAY:04-30-10/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-05-11T09:00:00.000Z",
+      "description": "/CAL:DEFENSE MOTION TO STAY BENCH WARRANT FROM 04-30-10/MO PC 1385:INTEREST OF JUSTICE/DAWT/BWSTAY:04-30-10/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-04-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/NTW/LD:05-20-10/CONTD:TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-04-20T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/NTW/LD:05-20-10/CONTD:TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-16T09:00:00.000Z",
+      "docketEntryComment": "/X:SPECIAL APPEARENCE BY ASSISTANT DA MARISA RODRIGUEZ/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DOP/GTWM/987,2/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-03-16T09:00:00.000Z",
+      "description": "/X:SPECIAL APPEARENCE BY ASSISTANT DA MARISA RODRIGUEZ/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DOP/GTWM/987,2/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10008033",
-    "portal_case_id": "",
+    "portal_case_id": "3635936",
     "display_case_number": "CRI-10008033",
     "defendant": "MARCELL ANDRE CLARK",
     "filed_date": "2010-03-16",
@@ -59,12 +188,68 @@
       "defendant": "MARCELL ANDRE CLARK",
       "filed_date": "2010-03-16"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "487(c) PC/M",
+    "charge_rows": [
+      {
+        "raw": "487(c) PC/M",
+        "title": "Penal Code § 487(c)",
+        "title_source": "programmatic_citation",
+        "code": "PC 487(c)",
+        "code_system": "PC",
+        "section": "487(c)",
+        "citation": "Penal Code § 487(c)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARCELL ANDRE CLARK, and date of filing 2010-03-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARCELL ANDRE CLARK, date of filing, 2010-03-16, and charges in the case: 487(c) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "487(c) PC/M",
+      "title": "Penal Code § 487(c)",
+      "title_source": "programmatic_citation",
+      "code": "PC 487(c)",
+      "code_system": "PC",
+      "section": "487(c)",
+      "citation": "Penal Code § 487(c)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:39:39.367Z",
+  "portal_case_id": "3635936",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10008033",
+      "defendant": "MARCELL ANDRE CLARK",
+      "filed_date": "2010-03-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3635936"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.783922+00:00"
 }

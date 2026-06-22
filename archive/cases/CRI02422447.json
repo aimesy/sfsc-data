@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:27:09.677Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:45:12.123Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02422447",
   "criminal_case_number": "02422447",
@@ -24,19 +24,71 @@
       "name": "FREDERICK DAVIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "FREDERICK DAVIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-06-16T09:00:00.000Z",
+      "docketEntryComment": "/X:SFPD INSPECTOR KEVIN CLEARY IS PRESENT,/TEXT:DEFT ENT NG PLEA(S) & DENOF ALLEG/PD/FAWC/DEFTARR1/X:DEFENDANT STIPULATES THAT HE'S THE PERSON WANTED IN ARIZONA AND WAIVES EXTRADITION,/CONTD:FOR STATUS OF DELIVERY,/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-07-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS OF DELIVERY/X:INSPECTOR THOMAS JOHNSON APPEARING FOR THE SF FUGITIVE DIVISION/MO PC 1385:DEFENDANT HAS BEEN DELIVERED TO YUMA ARIZONA /",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-07-14 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "2009-07-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-06-16 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 1,
+      "court_date": "2009-06-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "HENRY DOERING",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "8888888",
+    "filed_date": "2009-06-16",
+    "defendant": "FREDERICK DAVIS",
+    "searched_key": "DAVIS/FR",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/02422447.json",
     "searched_last_name": "DAVIS",
     "searched_first_prefix": "FR",
-    "charges": "8888888",
     "row": {
       "DEFENDANTNAME": "FREDERICK DAVIS",
       "CASENUMBER": "CRI-02422447",
@@ -45,11 +97,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3528704",
+  "docket_entries": [
+    {
+      "filedDate": "2009-06-16T09:00:00.000Z",
+      "docketEntryComment": "/X:SFPD INSPECTOR KEVIN CLEARY IS PRESENT,/TEXT:DEFT ENT NG PLEA(S) & DENOF ALLEG/PD/FAWC/DEFTARR1/X:DEFENDANT STIPULATES THAT HE'S THE PERSON WANTED IN ARIZONA AND WAIVES EXTRADITION,/CONTD:FOR STATUS OF DELIVERY,/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-06-16T09:00:00.000Z",
+      "description": "/X:SFPD INSPECTOR KEVIN CLEARY IS PRESENT,/TEXT:DEFT ENT NG PLEA(S) & DENOF ALLEG/PD/FAWC/DEFTARR1/X:DEFENDANT STIPULATES THAT HE'S THE PERSON WANTED IN ARIZONA AND WAIVES EXTRADITION,/CONTD:FOR STATUS OF DELIVERY,/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-07-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS OF DELIVERY/X:INSPECTOR THOMAS JOHNSON APPEARING FOR THE SF FUGITIVE DIVISION/MO PC 1385:DEFENDANT HAS BEEN DELIVERED TO YUMA ARIZONA /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-07-14T09:00:00.000Z",
+      "description": "/CAL:STATUS OF DELIVERY/X:INSPECTOR THOMAS JOHNSON APPEARING FOR THE SF FUGITIVE DIVISION/MO PC 1385:DEFENDANT HAS BEEN DELIVERED TO YUMA ARIZONA /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02422447",
-    "portal_case_id": "",
+    "portal_case_id": "3528704",
     "display_case_number": "CRI-02422447",
     "defendant": "FREDERICK DAVIS",
     "filed_date": "2009-06-16",
@@ -59,12 +132,52 @@
       "defendant": "FREDERICK DAVIS",
       "filed_date": "2009-06-16"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, FREDERICK DAVIS, and date of filing 2009-06-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, FREDERICK DAVIS, date of filing, 2009-06-16, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:45:12.740Z",
+  "portal_case_id": "3528704",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02422447",
+      "defendant": "FREDERICK DAVIS",
+      "filed_date": "2009-06-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3528704"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.320960+00:00"
 }

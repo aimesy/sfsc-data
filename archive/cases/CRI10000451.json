@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:08:54.853Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:38:23.798Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI10000451",
   "criminal_case_number": "10000451",
@@ -24,19 +24,127 @@
       "name": "DEMICHAEL GREEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DEMICHAEL GREEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-20T00:00:00.000Z",
+      "docketEntryComment": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-30T10:51:00.000Z",
+      "docketEntryComment": "JUDGMENT AND SENTENCE TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-18T11:16:00.000Z",
+      "docketEntryComment": "CHANGE OF PLEA TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-03-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/AJW/CH1:ISS:PROB 3 Y:PJ 19D/CTS:19   /DNACOMP/WS/11590/DTC/LF/RX/VF4:200/PC/PSR/BKFEE/PROBFINE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/SA2:500 EDDY STREET, SF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-02-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCE/DEF:DID NOT REPORT TO THE ADULT PROBATION DEPARTMENT/X:THECOURT WILL NOT REMAND THE DEFENDANT BECAUSE HE IS IN A 6 MONTHS PROGRAM/CTORD:THE DEFENDAT TO REPORT TO THE ADULT PROBATION DEPARTMENT TODAY AND BRING A LETTER FROM THE 6 MONTHS PROGRAM HE IS CURRENTLY IN/PRES:03-18-10/CONT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:1/ARBUCKLE/FNDG/CO:NEGOTIATED DISPOSITION/PRES:02-23-10/OR/X:6 MONTH HAMMER IF DEFENDANT FAILS TO COMPLY WITH COURT ORDERS/CONTD:SENTENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-01-06T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:01-22-10/BAIL:35,000/SAORD/SA2:500 EDDY ST, SF/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2010-03-18 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2010-03-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-02-23 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2010-02-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-21 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2010-01-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-01-06 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2010-01-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PHONG WANG",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11355 HS/F",
+    "filed_date": "2010-01-06",
+    "defendant": "DEMICHAEL GREEN",
+    "searched_key": "GREEN/DE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/10000451.json",
     "searched_last_name": "GREEN",
     "searched_first_prefix": "DE",
-    "charges": "11355 HS/F",
     "row": {
       "DEFENDANTNAME": "DEMICHAEL GREEN",
       "CASENUMBER": "CRI-10000451",
@@ -45,11 +153,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3628854",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-20T00:00:00.000Z",
+      "docketEntryComment": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-07-20T00:00:00.000Z",
+      "description": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-30T10:51:00.000Z",
+      "docketEntryComment": "JUDGMENT AND SENTENCE TX FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2010-03-30T10:51:00.000Z",
+      "description": "JUDGMENT AND SENTENCE TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-18T11:16:00.000Z",
+      "docketEntryComment": "CHANGE OF PLEA TX FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2010-02-18T11:16:00.000Z",
+      "description": "CHANGE OF PLEA TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-03-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/AJW/CH1:ISS:PROB 3 Y:PJ 19D/CTS:19   /DNACOMP/WS/11590/DTC/LF/RX/VF4:200/PC/PSR/BKFEE/PROBFINE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/SA2:500 EDDY STREET, SF/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2010-03-18T09:00:00.000Z",
+      "description": "/CAL:SENTENCING/AJW/CH1:ISS:PROB 3 Y:PJ 19D/CTS:19 /DNACOMP/WS/11590/DTC/LF/RX/VF4:200/PC/PSR/BKFEE/PROBFINE/SECFEE/ICNA/COLLECT/OBEY/ACCEP/SA2:500 EDDY STREET, SF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-02-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCE/DEF:DID NOT REPORT TO THE ADULT PROBATION DEPARTMENT/X:THECOURT WILL NOT REMAND THE DEFENDANT BECAUSE HE IS IN A 6 MONTHS PROGRAM/CTORD:THE DEFENDAT TO REPORT TO THE ADULT PROBATION DEPARTMENT TODAY AND BRING A LETTER FROM THE 6 MONTHS PROGRAM HE IS CURRENTLY IN/PRES:03-18-10/CONT",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2010-02-23T09:00:00.000Z",
+      "description": "/CAL:SENTENCE/DEF:DID NOT REPORT TO THE ADULT PROBATION DEPARTMENT/X:THECOURT WILL NOT REMAND THE DEFENDANT BECAUSE HE IS IN A 6 MONTHS PROGRAM/CTORD:THE DEFENDAT TO REPORT TO THE ADULT PROBATION DEPARTMENT TODAY AND BRING A LETTER FROM THE 6 MONTHS PROGRAM HE IS CURRENTLY IN/PRES:03-18-10/CONT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:1/ARBUCKLE/FNDG/CO:NEGOTIATED DISPOSITION/PRES:02-23-10/OR/X:6 MONTH HAMMER IF DEFENDANT FAILS TO COMPLY WITH COURT ORDERS/CONTD:SENTENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2010-01-21T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:1/ARBUCKLE/FNDG/CO:NEGOTIATED DISPOSITION/PRES:02-23-10/OR/X:6 MONTH HAMMER IF DEFENDANT FAILS TO COMPLY WITH COURT ORDERS/CONTD:SENTENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-01-06T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:01-22-10/BAIL:35,000/SAORD/SA2:500 EDDY ST, SF/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2010-01-06T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:01-22-10/BAIL:35,000/SAORD/SA2:500 EDDY ST, SF/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "10000451",
-    "portal_case_id": "",
+    "portal_case_id": "3628854",
     "display_case_number": "CRI-10000451",
     "defendant": "DEMICHAEL GREEN",
     "filed_date": "2010-01-06",
@@ -59,12 +248,68 @@
       "defendant": "DEMICHAEL GREEN",
       "filed_date": "2010-01-06"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11355 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11355 HS/F",
+        "title": "Health and Safety Code § 11355",
+        "title_source": "programmatic_citation",
+        "code": "HS 11355",
+        "code_system": "HS",
+        "section": "11355",
+        "citation": "Health and Safety Code § 11355",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DEMICHAEL GREEN, and date of filing 2010-01-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DEMICHAEL GREEN, date of filing, 2010-01-06, and charges in the case: 11355 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11355 HS/F",
+      "title": "Health and Safety Code § 11355",
+      "title_source": "programmatic_citation",
+      "code": "HS 11355",
+      "code_system": "HS",
+      "section": "11355",
+      "citation": "Health and Safety Code § 11355",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11355.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:38:24.424Z",
+  "portal_case_id": "3628854",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-10000451",
+      "defendant": "DEMICHAEL GREEN",
+      "filed_date": "2010-01-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3628854"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.384705+00:00"
 }

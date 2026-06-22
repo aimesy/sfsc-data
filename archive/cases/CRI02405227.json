@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:42:59.486Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:45:07.051Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02405227",
   "criminal_case_number": "02405227",
@@ -24,19 +24,89 @@
       "name": "ROLAND HOWARD",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROLAND HOWARD",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-03-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/MO PC 1385:UNABLE TO LOCATE WITNESS/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-02-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/NTW/X:COUNSEL STIPULATE THE NEW LAST DAY TO BE 04-07-09/LD:04-07-09/OR/DOP/CONTD:PREHEARING CONFERENCE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-02-06T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:02-24-09/987,2/BAIL:100,000/CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-03-06 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2009-03-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-02-09 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2009-02-09",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-02-06 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2009-02-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "LISA DEWBERRY",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "245(a)(2) PC/F 236 PC/F 12021(a)(1) PC/F 594(b)(2)(A) PC/M",
+    "filed_date": "2009-02-06",
+    "defendant": "ROLAND HOWARD",
+    "searched_key": "HOWARD/RO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/02405227.json",
     "searched_last_name": "HOWARD",
     "searched_first_prefix": "RO",
-    "charges": "245(a)(2) PC/F 236 PC/F 12021(a)(1) PC/F 594(b)(2)(A) PC/M",
     "row": {
       "DEFENDANTNAME": "ROLAND HOWARD",
       "CASENUMBER": "CRI-02405227",
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3512721",
+  "docket_entries": [
+    {
+      "filedDate": "2009-03-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/MO PC 1385:UNABLE TO LOCATE WITNESS/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-03-06T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/MO PC 1385:UNABLE TO LOCATE WITNESS/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-02-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/NTW/X:COUNSEL STIPULATE THE NEW LAST DAY TO BE 04-07-09/LD:04-07-09/OR/DOP/CONTD:PREHEARING CONFERENCE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-02-09T09:00:00.000Z",
+      "description": "/CAL:TO SET/NTW/X:COUNSEL STIPULATE THE NEW LAST DAY TO BE 04-07-09/LD:04-07-09/OR/DOP/CONTD:PREHEARING CONFERENCE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-02-06T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:02-24-09/987,2/BAIL:100,000/CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-02-06T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD:02-24-09/987,2/BAIL:100,000/CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02405227",
-    "portal_case_id": "",
+    "portal_case_id": "3512721",
     "display_case_number": "CRI-02405227",
     "defendant": "ROLAND HOWARD",
     "filed_date": "2009-02-06",
@@ -59,12 +160,146 @@
       "defendant": "ROLAND HOWARD",
       "filed_date": "2009-02-06"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "245(a)(2) PC/F 236 PC/F 12021(a)(1) PC/F 594(b)(2)(A) PC/M",
+    "charge_rows": [
+      {
+        "raw": "245(a)(2) PC/F",
+        "title": "Penal Code § 245(a)(2)",
+        "title_source": "programmatic_citation",
+        "code": "PC 245(a)(2)",
+        "code_system": "PC",
+        "section": "245(a)(2)",
+        "citation": "Penal Code § 245(a)(2)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "236 PC/F",
+        "title": "Penal Code § 236",
+        "title_source": "programmatic_citation",
+        "code": "PC 236",
+        "code_system": "PC",
+        "section": "236",
+        "citation": "Penal Code § 236",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "12021(a)(1) PC/F",
+        "title": "Penal Code § 12021(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 12021(a)(1)",
+        "code_system": "PC",
+        "section": "12021(a)(1)",
+        "citation": "Penal Code § 12021(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12021.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12021.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "594(b)(2)(A) PC/M",
+        "title": "Penal Code § 594(b)(2)(A)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(2)(A)",
+        "code_system": "PC",
+        "section": "594(b)(2)(A)",
+        "citation": "Penal Code § 594(b)(2)(A)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROLAND HOWARD, and date of filing 2009-02-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROLAND HOWARD, date of filing, 2009-02-06, and charges in the case: 245(a)(2) PC/F 236 PC/F 12021(a)(1) PC/F 594(b)(2)(A) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "245(a)(2) PC/F",
+      "title": "Penal Code § 245(a)(2)",
+      "title_source": "programmatic_citation",
+      "code": "PC 245(a)(2)",
+      "code_system": "PC",
+      "section": "245(a)(2)",
+      "citation": "Penal Code § 245(a)(2)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "236 PC/F",
+      "title": "Penal Code § 236",
+      "title_source": "programmatic_citation",
+      "code": "PC 236",
+      "code_system": "PC",
+      "section": "236",
+      "citation": "Penal Code § 236",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "12021(a)(1) PC/F",
+      "title": "Penal Code § 12021(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 12021(a)(1)",
+      "code_system": "PC",
+      "section": "12021(a)(1)",
+      "citation": "Penal Code § 12021(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12021.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12021.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "594(b)(2)(A) PC/M",
+      "title": "Penal Code § 594(b)(2)(A)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(2)(A)",
+      "code_system": "PC",
+      "section": "594(b)(2)(A)",
+      "citation": "Penal Code § 594(b)(2)(A)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:45:07.680Z",
+  "portal_case_id": "3512721",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02405227",
+      "defendant": "ROLAND HOWARD",
+      "filed_date": "2009-02-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3512721"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.977711+00:00"
 }
