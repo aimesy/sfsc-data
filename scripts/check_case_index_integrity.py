@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Validate that the case index and tracked case JSON files agree."""
+"""Validate that the case index is backed by tracked case JSON files.
+
+``archive/cases/*.json`` is now the canonical capture layer. The monolithic
+``archive/cases-index.ndjson`` is retained for compatibility, but it has crossed
+GitHub's practical blob-size ceiling, so new full JSON captures may legitimately
+exist before, or instead of, a monolithic index rewrite.
+"""
 
 from __future__ import annotations
 
@@ -23,7 +29,7 @@ def load_index_cases(path: Path) -> tuple[set[str], list[str], list[str]]:
     cases: set[str] = set()
     duplicates: list[str] = []
     bad_rows: list[str] = []
-    with path.open("r", encoding="utf-8") as fh:
+    with path.open("r", encoding="utf-8-sig") as fh:
         for lineno, line in enumerate(fh, 1):
             text = line.strip()
             if not text:
@@ -66,6 +72,15 @@ def main() -> int:
     parser.add_argument("--cases-dir", type=Path, default=DEFAULT_CASE_DIR)
     parser.add_argument("--index", type=Path, default=DEFAULT_INDEX)
     parser.add_argument("--sample", type=int, default=25)
+    parser.add_argument(
+        "--strict-bijection",
+        action="store_true",
+        help=(
+            "Fail when archive/cases JSON files are absent from the monolithic "
+            "index. By default, this direction is warning-only because full JSON "
+            "is canonical and the index is too large for routine GitHub rewrites."
+        ),
+    )
     args = parser.parse_args()
 
     if not args.index.exists():
@@ -85,7 +100,7 @@ def main() -> int:
         failures.append(summarize("duplicate index cases", duplicates, args.sample))
     if missing_json:
         failures.append(summarize("index rows without archive/cases JSON", missing_json, args.sample))
-    if missing_index:
+    if args.strict_bijection and missing_index:
         failures.append(summarize("archive/cases JSON missing from index", missing_index, args.sample))
 
     if failures:
@@ -96,6 +111,14 @@ def main() -> int:
         for failure in failures:
             print(f"FAIL: {failure}")
         return 1
+
+    if missing_index:
+        print(
+            "case-index integrity warning: "
+            f"{len(missing_index)} archive/cases JSON file(s) are absent from "
+            "archive/cases-index.ndjson; full JSON is canonical for derived builds."
+        )
+        print(f"WARN: {summarize('archive/cases JSON missing from index', missing_index, args.sample)}")
 
     print(f"case-index integrity ok: {len(index_cases)} index rows, {len(json_cases)} case JSON files")
     return 0
