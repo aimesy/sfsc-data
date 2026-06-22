@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:13:05.890Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:29:48.999Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02340284",
   "criminal_case_number": "02340284",
@@ -24,10 +24,63 @@
       "name": "JOSUE MENDOZA DELACRUZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSUE MENDOZA DELACRUZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2011-05-05T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-10-30T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-05-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2007-10-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BW/BWI/BAIL:3000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-05-05 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2011-05-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2007-10-30 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 1,
+      "court_date": "2007-10-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +98,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3452903",
+  "docket_entries": [
+    {
+      "filedDate": "2011-05-05T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-05-05T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-10-30T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2007-10-30T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-05-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-05-05T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2007-10-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BW/BWI/BAIL:3000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2007-10-30T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BW/BWI/BAIL:3000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02340284",
-    "portal_case_id": "",
+    "portal_case_id": "3452903",
     "display_case_number": "CRI-02340284",
     "defendant": "JOSUE MENDOZA DELACRUZ",
     "filed_date": "2011-04-29",
@@ -60,11 +154,57 @@
       "filed_date": "2011-04-29"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "12500(a) VC/M",
+    "charge_rows": [
+      {
+        "raw": "12500(a) VC/M",
+        "title": "Vehicle Code § 12500(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 12500(a)",
+        "code_system": "VC",
+        "section": "12500(a)",
+        "citation": "Vehicle Code § 12500(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSUE MENDOZA DELACRUZ, and date of filing 2011-04-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSUE MENDOZA DELACRUZ, date of filing, 2011-04-29, and charges in the case: 12500(a) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "12500(a) VC/M",
+      "title": "Vehicle Code § 12500(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 12500(a)",
+      "code_system": "VC",
+      "section": "12500(a)",
+      "citation": "Vehicle Code § 12500(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:29:49.609Z",
+  "portal_case_id": "3452903",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02340284",
+      "defendant": "JOSUE MENDOZA DELACRUZ",
+      "filed_date": "2011-04-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3452903"
+  }
 }
