@@ -197,6 +197,56 @@ def filing_date_for_case(case: dict[str, Any]) -> str:
     return direct or first_docket_date(case)
 
 
+def charge_text_from_case(case: dict[str, Any]) -> str:
+    candidates: list[Any] = [case.get("charges")]
+    criminal_index = case.get("criminal_index") if isinstance(case.get("criminal_index"), dict) else {}
+    candidates.append(criminal_index.get("charges"))
+    rows = criminal_index.get("rows") if isinstance(criminal_index.get("rows"), list) else []
+    for row in rows:
+        if isinstance(row, dict):
+            candidates.append(row.get("charges") or row.get("CHARGES"))
+    for value in candidates:
+        text = clean(value)
+        if text:
+            return text
+    return ""
+
+
+def charge_rows_from_case(case: dict[str, Any]) -> list[dict[str, Any]]:
+    rows = case.get("charges_parsed")
+    if isinstance(rows, list):
+        return [row for row in rows if isinstance(row, dict)]
+    criminal = case.get("criminal") if isinstance(case.get("criminal"), dict) else {}
+    rows = criminal.get("charge_rows")
+    if isinstance(rows, list):
+        return [row for row in rows if isinstance(row, dict)]
+    return []
+
+
+def charge_text_from_row(row: dict[str, Any]) -> str:
+    for key in ("charges", "criminal_charges", "charge", "CHARGES"):
+        text = clean(row.get(key))
+        if text:
+            return text
+    return ""
+
+
+def charge_rows_from_row(row: dict[str, Any]) -> list[dict[str, Any]]:
+    direct = row.get("charges_parsed")
+    if isinstance(direct, list):
+        return [item for item in direct if isinstance(item, dict)]
+    raw = row.get("charges_json")
+    if raw is None:
+        return []
+    try:
+        parsed = json.loads(clean(raw))
+    except Exception:
+        return []
+    if not isinstance(parsed, list):
+        return []
+    return [item for item in parsed if isinstance(item, dict)]
+
+
 def prefix_for_case(case_number: str) -> str:
     m = re.match(r"^([A-Za-z]+)", case_number)
     if m:
@@ -294,6 +344,47 @@ def bool_value(value: Any) -> bool:
     return clean(value).lower() in {"1", "true", "yes"}
 
 
+NON_RESTRICTED_UNAVAILABLE_TOKENS = (
+    "no_public_entries",
+    "no public entries",
+    "no-public-entries",
+    "no_entries",
+    "no entries",
+    "no-entries",
+    "no_public_records",
+    "no public records",
+    "no-public-records",
+)
+
+
+def is_restricted_unavailable(status: Any, reason: Any) -> bool:
+    status_text = clean(status).lower()
+    if status_text not in {"unavailable", "restricted", "not_public", "not_publicly_available"}:
+        return False
+    reason_text = clean(reason).lower()
+    if no_public_entries_reason(reason_text):
+        return False
+    return True
+
+
+def no_public_entries_reason(reason: Any) -> bool:
+    reason_text = clean(reason).lower()
+    return any(token in reason_text for token in NON_RESTRICTED_UNAVAILABLE_TOKENS)
+
+
+def criminal_row(row: dict[str, Any]) -> bool:
+    return clean(row.get("case_type")).lower() == "criminal" or norm_case(row.get("case_number")).startswith("CRI")
+
+
+def scanned_empty_criminal_roa(row: dict[str, Any], entries_n: int) -> bool:
+    return (
+        criminal_row(row)
+        and entries_n == 0
+        and no_public_entries_reason(row.get("unavailable_reason"))
+        and bool(clean(row.get("portal_case_id")))
+    )
+
+
 def case_table_rows(path: Path) -> dict[str, dict[str, Any]]:
     if not path.exists():
         return {}
@@ -311,9 +402,12 @@ def case_table_rows(path: Path) -> dict[str, dict[str, Any]]:
         "criminal_case_number",
         "portal_case_id",
         "case_title",
+        "charges",
+        "charges_json",
         "filing_date",
         "case_type",
         "source",
+        "source_detail",
         "captured_at",
         "source_url",
         "case_path",
@@ -346,10 +440,15 @@ def case_table_rows(path: Path) -> dict[str, dict[str, Any]]:
             "criminal_case_number": clean(raw.get("criminal_case_number")),
             "portal_case_id": clean(raw.get("portal_case_id")),
             "case_title": clean(raw.get("case_title")),
+            "charges": charge_text_from_row(raw),
+            "charges_parsed": charge_rows_from_row(raw),
             "filing_date": clean(raw.get("filing_date")),
             "case_type": clean(raw.get("case_type")),
             "source": clean(raw.get("source")),
+            "source_detail": clean(raw.get("source_detail")),
             "captured_at": clean(raw.get("captured_at")),
+            "status": status,
+            "unavailable_reason": unavailable_reason,
             "n_entries": int_or_zero(raw.get("docket_entry_count")),
             "n_documents": int_or_zero(raw.get("documents_total")),
             "documents_bytes_count": int_or_zero(raw.get("documents_bytes_count")),
@@ -358,7 +457,8 @@ def case_table_rows(path: Path) -> dict[str, dict[str, Any]]:
             "document_bytes_captured": bool_value(raw.get("document_bytes_captured")),
             "document_byte_capture_scope": clean(raw.get("document_byte_capture_scope")),
             "source_url": clean(raw.get("source_url")),
-            "restricted": status == "unavailable" and unavailable_reason != "sealed_or_unavailable_tentative_stub",
+            "restricted": is_restricted_unavailable(status, unavailable_reason)
+            and unavailable_reason != "sealed_or_unavailable_tentative_stub",
             "tentative_stub": unavailable_reason == "sealed_or_unavailable_tentative_stub",
             "case_json": case_json,
         }
@@ -413,6 +513,7 @@ def discovery_rows(paths: Iterable[Path]) -> dict[str, dict[str, Any]]:
                 or raw.get("title")
                 or raw.get("name")
             )
+            row["charges"] = charge_text_from_row(raw)
             row["archive_status"] = clean(raw.get("archive_status") or raw.get("status")) or "discovered"
             row["filing_date"] = parse_date(
                 raw.get("filing_date")
@@ -439,6 +540,8 @@ def case_json_rows(case_dir: Path) -> dict[str, dict[str, Any]]:
         documents = case.get("documents") if isinstance(case.get("documents"), list) else []
         docket_entries = case.get("docket_entries") if isinstance(case.get("docket_entries"), list) else []
         criminal_meta = case.get("criminal") if isinstance(case.get("criminal"), dict) else {}
+        source_detail = clean(case.get("source_detail"))
+        unavailable_reason = clean(case.get("unavailable_reason"))
         row = {
             "case_number": case_number,
             "case_title": clean(case.get("case_title")),
@@ -447,7 +550,12 @@ def case_json_rows(case_dir: Path) -> dict[str, dict[str, Any]]:
             "case_type": clean(case.get("case_type")),
             "criminal_case_number": clean(case.get("criminal_case_number")),
             "portal_case_id": clean(case.get("portal_case_id") or criminal_meta.get("portal_case_id")),
+            "charges": charge_text_from_case(case),
+            "charges_parsed": charge_rows_from_case(case),
             "source": clean(case.get("source")),
+            "source_detail": source_detail,
+            "status": clean(case.get("status")),
+            "unavailable_reason": unavailable_reason,
             "n_entries": len(docket_entries),
             "n_documents": len(documents),
             "documents_bytes_count": int(case.get("documents_bytes_count") or sum(1 for d in documents if isinstance(d, dict) and d.get("sha256"))),
@@ -455,11 +563,9 @@ def case_json_rows(case_dir: Path) -> dict[str, dict[str, Any]]:
             "documents_deferred_count": int(case.get("documents_deferred_count") or sum(1 for d in documents if isinstance(d, dict) and d.get("byte_capture_deferred") is True)),
             "document_bytes_captured": case.get("document_bytes_captured") is True,
             "source_url": clean(case.get("source_url")),
-            "restricted": (
-                str(case.get("status") or "").strip().lower() == "unavailable"
-                and case.get("unavailable_reason") != "sealed_or_unavailable_tentative_stub"
-            ),
-            "tentative_stub": case.get("unavailable_reason") == "sealed_or_unavailable_tentative_stub",
+            "restricted": is_restricted_unavailable(case.get("status"), unavailable_reason)
+            and unavailable_reason != "sealed_or_unavailable_tentative_stub",
+            "tentative_stub": unavailable_reason == "sealed_or_unavailable_tentative_stub",
             "case_json": path.relative_to(ROOT).as_posix(),
         }
         rows[case_number] = row
@@ -477,6 +583,8 @@ def merge_rows(
         merged[case_number] = {
             "case_number": case_number,
             "case_title": clean(row.get("case_title")),
+            "charges": charge_text_from_row(row),
+            "charges_parsed": charge_rows_from_row(row),
             "filing_date": clean(row.get("filing_date")),
             "archive_status": "discovered",
             "discovered_at": clean(row.get("discovered_at")),
@@ -499,9 +607,19 @@ def merge_rows(
             filing_date = base.get("filing_date")
         else:
             filing_date = row.get("filing_date")
+        if base.get("charges") and not row.get("charges"):
+            charges = base.get("charges")
+        else:
+            charges = row.get("charges")
+        if base.get("charges_parsed") and not row.get("charges_parsed"):
+            charge_rows = base.get("charges_parsed")
+        else:
+            charge_rows = row.get("charges_parsed")
         base.update(row)
         base["case_title"] = clean(title)
         base["filing_date"] = clean(filing_date)
+        base["charges"] = clean(charges)
+        base["charges_parsed"] = charge_rows if isinstance(charge_rows, list) else []
         base.pop("archive_status", None)
         merged[case_number] = base
     for case_number, row in json_rows.items():
@@ -514,9 +632,19 @@ def merge_rows(
             filing_date = base.get("filing_date")
         else:
             filing_date = row.get("filing_date")
+        if base.get("charges") and not row.get("charges"):
+            charges = base.get("charges")
+        else:
+            charges = row.get("charges")
+        if base.get("charges_parsed") and not row.get("charges_parsed"):
+            charge_rows = base.get("charges_parsed")
+        else:
+            charge_rows = row.get("charges_parsed")
         base.update(row)
         base["case_title"] = clean(title)
         base["filing_date"] = clean(filing_date)
+        base["charges"] = clean(charges)
+        base["charges_parsed"] = charge_rows if isinstance(charge_rows, list) else []
         base.pop("archive_status", None)
         merged[case_number] = base
 
@@ -602,18 +730,49 @@ def require_case_directory_sources(
         )
 
 
+def indexed_fact_row(row: dict[str, Any], docs_n: int, entries_n: int) -> bool:
+    if not criminal_row(row):
+        return False
+    if docs_n != 0 or entries_n != 0:
+        return False
+    source_text = " ".join(
+        clean(row.get(key)).lower()
+        for key in (
+            "source",
+            "source_detail",
+            "document_byte_capture_scope",
+            "discovery_source",
+            "unavailable_reason",
+        )
+    )
+    if clean(row.get("portal_case_id")):
+        return False
+    index_like_source = "index" in source_text or (
+        "criminal-portal-no-documents" in source_text
+        and any(token in source_text for token in NON_RESTRICTED_UNAVAILABLE_TOKENS)
+    )
+    if not index_like_source:
+        return False
+    return any(
+        row.get(key)
+        for key in ("case_title", "filing_date", "charges", "charges_parsed", "case_type")
+    )
+
+
 def scan_state(row: dict[str, Any]) -> str:
     if clean(row.get("archive_status")).lower() == "discovered" and not clean(row.get("captured_at")):
         return "discovered"
     if row.get("tentative_stub") and not clean(row.get("captured_at")):
         return "discovered"
-    if row.get("restricted"):
-        return "restricted"
     docs = row.get("n_documents")
     try:
         docs_n = int(docs)
     except Exception:
         docs_n = -1
+    try:
+        entries_n = int(row.get("n_entries") or 0)
+    except Exception:
+        entries_n = 0
     try:
         bytes_n = int(row.get("documents_bytes_count") or 0)
     except Exception:
@@ -622,6 +781,15 @@ def scan_state(row: dict[str, Any]) -> str:
         deferred_n = int(row.get("documents_deferred_count") or 0)
     except Exception:
         deferred_n = 0
+    restricted = bool(row.get("restricted"))
+    if clean(row.get("status")) or clean(row.get("unavailable_reason")):
+        restricted = is_restricted_unavailable(row.get("status"), row.get("unavailable_reason"))
+    if scanned_empty_criminal_roa(row, entries_n):
+        return "restricted"
+    if indexed_fact_row(row, docs_n, entries_n):
+        return "indexed"
+    if restricted:
+        return "restricted"
     if docs_n == 0:
         if row.get("document_bytes_captured") is True:
             return "no_docs"
@@ -640,7 +808,9 @@ def scan_state(row: dict[str, Any]) -> str:
         return "core_docs"
     if docs_n > 0 and bytes_n > 0:
         return "partial_docs"
-    return "indexed"
+    if clean(row.get("captured_at")):
+        return "summary_only"
+    return "discovered"
 
 
 def display_row(row: dict[str, Any]) -> dict[str, Any]:
@@ -649,6 +819,8 @@ def display_row(row: dict[str, Any]) -> dict[str, Any]:
         "criminal_case_number",
         "portal_case_id",
         "case_title",
+        "charges",
+        "charges_parsed",
         "case_type",
         "source",
         "source_url",
@@ -684,12 +856,15 @@ def build_directory(
         by_year: dict[str, list[dict[str, Any]]] = {}
         prefix_case_count = 0
         prefix_discovered_count = 0
+        prefix_indexed_count = 0
         prefix_restricted_count = 0
         for row in prefix_rows:
             state = clean(row.get("scan_state")) or "indexed"
             state_counts[state] = state_counts.get(state, 0) + 1
-            if state == "discovered":
+            if state in {"discovered", "indexed"}:
                 prefix_discovered_count += 1
+                if state == "indexed":
+                    prefix_indexed_count += 1
             elif state == "restricted":
                 prefix_restricted_count += 1
             else:
@@ -700,7 +875,8 @@ def build_directory(
         years = []
         for year, year_rows in sorted(by_year.items(), key=lambda item: (item[0] == "unknown", -int(item[0]) if item[0].isdigit() else 0)):
             year_rows.sort(key=lambda r: (numeric_tail(clean(r.get("case_number"))), clean(r.get("case_number"))))
-            year_discovered_count = sum(1 for row in year_rows if clean(row.get("scan_state")) == "discovered")
+            year_indexed_count = sum(1 for row in year_rows if clean(row.get("scan_state")) == "indexed")
+            year_discovered_count = sum(1 for row in year_rows if clean(row.get("scan_state")) in {"discovered", "indexed"})
             year_restricted_count = sum(1 for row in year_rows if clean(row.get("scan_state")) == "restricted")
             year_case_count = len(year_rows) - year_discovered_count - year_restricted_count
             shard_path = f"{slug}/{year}.ndjson"
@@ -713,6 +889,7 @@ def build_directory(
                 "count": len(year_rows),
                 "case_count": year_case_count,
                 "discovered_count": year_discovered_count,
+                "indexed_count": year_indexed_count,
                 "restricted_count": year_restricted_count,
                 "path": shard_path,
             })
@@ -725,6 +902,7 @@ def build_directory(
             "count": len(prefix_rows),
             "case_count": prefix_case_count,
             "discovered_count": prefix_discovered_count,
+            "indexed_count": prefix_indexed_count,
             "restricted_count": prefix_restricted_count,
             "years": years,
         }
@@ -735,6 +913,7 @@ def build_directory(
             "count": len(prefix_rows),
             "case_count": prefix_case_count,
             "discovered_count": prefix_discovered_count,
+            "indexed_count": prefix_indexed_count,
             "restricted_count": prefix_restricted_count,
             "manifest": f"{slug}/manifest.json",
             "year_count": len(years),
@@ -748,7 +927,8 @@ def build_directory(
         "source_counts": source_counts,
         "display_row_count": len(rows),
         "case_count": case_total,
-        "discovered_count": state_counts.get("discovered", 0),
+        "discovered_count": state_counts.get("discovered", 0) + state_counts.get("indexed", 0),
+        "indexed_count": state_counts.get("indexed", 0),
         "restricted_count": state_counts.get("restricted", 0),
         "prefix_count": len(prefixes),
         "year_shard_count": year_total,
@@ -840,8 +1020,9 @@ def main() -> int:
         manifest = build_directory(rows, args.out_dir, source_paths, source_counts)
     print(
         f"built {manifest['display_row_count']} case-directory rows "
-        f"({manifest['case_count']} captured cases, "
+        f"({manifest['case_count']} captured dockets, "
         f"{manifest['restricted_count']} restricted, "
+        f"{manifest['indexed_count']} indexed, "
         f"{manifest['discovered_count']} discovered) across "
         f"{manifest['prefix_count']} prefixes and {manifest['year_shard_count']} year shards"
     )

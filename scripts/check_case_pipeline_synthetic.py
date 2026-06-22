@@ -57,6 +57,28 @@ def test_compact_criminal_directory() -> None:
         "case_type": "criminal",
         "criminal_case_number": "24000001",
         "portal_case_id": "CR-PORTAL-1",
+        "charges": "Robbery PC 211; 245(a)(1) PC/F Assault with a deadly weapon",
+        "charges_parsed": [
+            {
+                "raw": "Robbery PC 211",
+                "title": "Robbery",
+                "code": "PC 211",
+                "code_system": "PC",
+                "section": "211",
+                "citation": "Penal Code § 211",
+                "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+            },
+            {
+                "raw": "245(a)(1) PC/F Assault with a deadly weapon",
+                "title": "Assault with a deadly weapon",
+                "code": "PC 245(a)(1)",
+                "code_system": "PC",
+                "section": "245(a)(1)",
+                "citation": "Penal Code § 245(a)(1)",
+                "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+                "classification": "felony",
+            },
+        ],
         "source": "sfsc-criminal-portal",
         "captured_at": "2026-06-20T00:00:00Z",
         "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?name=CR-PORTAL-1",
@@ -85,10 +107,37 @@ def test_compact_criminal_directory() -> None:
         "documents": [{"sha256": "abc"}],
         "document_bytes_captured": True,
     }
+    criminal_index_stub = {
+        "case_number": "CRI400002",
+        "case_title": "People v. INDEXED PERSON",
+        "case_type": "criminal",
+        "criminal_case_number": "24000002",
+        "portal_case_id": "",
+        "charges": "PC 459/F Burglary",
+        "filing_date": "2024-02-03",
+        "source": "sftc-criminal-portal",
+        "captured_at": "2026-06-20T00:00:00Z",
+        "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
+        "docket_entries": [],
+        "documents": [],
+    }
+    criminal_empty_roa = {
+        "case_number": "CRI400003",
+        "case_title": "People v. EMPTY ROA",
+        "case_type": "criminal",
+        "criminal_case_number": "24000003",
+        "portal_case_id": "CR-EMPTY-ROA",
+        "filing_date": "2024-02-04",
+        "source": "sftc-criminal-portal",
+        "captured_at": "2026-06-20T00:00:00Z",
+        "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=CR-EMPTY-ROA",
+        "docket_entries": [],
+        "documents": [],
+    }
     with tempfile.TemporaryDirectory(prefix="sfsc-case-pipeline-") as tmp:
         root = Path(tmp)
         case_dir = root / "archive" / "cases"
-        for case in (criminal, civil):
+        for case in (criminal, civil, criminal_index_stub, criminal_empty_roa):
             write_json(case_dir / f"{bcd.norm_case(case['case_number'])}.json", case)
 
         tables = bct.rows_from_cases(case_dir)
@@ -107,10 +156,53 @@ def test_compact_criminal_directory() -> None:
 
         import pandas as pd
 
+        tables["cases"].extend([
+            {
+                "case_number": bcd.norm_case(criminal_index_stub["case_number"]),
+                "case_title": criminal_index_stub["case_title"],
+                "filing_date": criminal_index_stub["filing_date"],
+                "case_type": "criminal",
+                "criminal_case_number": criminal_index_stub["criminal_case_number"],
+                "portal_case_id": "",
+                "charges": criminal_index_stub["charges"],
+                "source": "sftc-criminal-portal",
+                "captured_at": criminal_index_stub["captured_at"],
+                "source_url": criminal_index_stub["source_url"],
+                "status": "unavailable",
+                "unavailable_reason": "criminal_portal_no_public_entries",
+                "document_bytes_captured": True,
+                "document_byte_capture_scope": "criminal-portal-no-documents",
+                "documents_total": 0,
+                "documents_bytes_count": 0,
+                "documents_unavailable_count": 0,
+                "documents_deferred_count": 0,
+                "docket_entry_count": 0,
+            },
+            {
+                "case_number": bcd.norm_case(criminal_empty_roa["case_number"]),
+                "case_title": criminal_empty_roa["case_title"],
+                "filing_date": criminal_empty_roa["filing_date"],
+                "case_type": "criminal",
+                "criminal_case_number": criminal_empty_roa["criminal_case_number"],
+                "portal_case_id": criminal_empty_roa["portal_case_id"],
+                "source": "sftc-criminal-portal",
+                "captured_at": criminal_empty_roa["captured_at"],
+                "source_url": criminal_empty_roa["source_url"],
+                "status": "unavailable",
+                "unavailable_reason": "criminal_portal_no_public_entries",
+                "document_bytes_captured": True,
+                "document_byte_capture_scope": "criminal-portal-no-documents",
+                "documents_total": 0,
+                "documents_bytes_count": 0,
+                "documents_unavailable_count": 0,
+                "documents_deferred_count": 0,
+                "docket_entry_count": 0,
+            },
+        ])
         table_path = root / "data" / "cases.parquet"
         bct.write_parquet_atomic(table_path, pd.DataFrame(tables["cases"]))
         index_path = root / "archive" / "cases-index.ndjson"
-        write_index(index_path, [criminal, civil])
+        write_index(index_path, [criminal, civil, criminal_index_stub, criminal_empty_roa])
 
         index_rows = bcd.latest_index_rows(index_path)
         table_rows = bcd.case_table_rows(table_path)
@@ -142,9 +234,15 @@ def test_compact_criminal_directory() -> None:
         criminal_row = generated["CRI400001"]
         check("criminal id survives compact directory", criminal_row.get("criminal_case_number") == "24000001")
         check("portal id survives compact directory", criminal_row.get("portal_case_id") == "CR-PORTAL-1")
+        check("charges survive compact directory", criminal_row.get("charges") == criminal["charges"], str(criminal_row))
+        check("parsed charges survive compact directory", len(criminal_row.get("charges_parsed") or []) == 2, str(criminal_row))
         check("case_type survives compact directory", criminal_row.get("case_type") == "criminal")
         check("source survives compact directory", criminal_row.get("source") == "sfsc-criminal-portal")
         check("CRI case without filing date uses unknown shard", criminal_row.get("year") == "unknown", str(criminal_row))
+        check("criminal index stub is indexed", generated["CRI400002"].get("scan_state") == "indexed", str(generated["CRI400002"]))
+        check("scanned empty criminal ROA is restricted", generated["CRI400003"].get("scan_state") == "restricted", str(generated["CRI400003"]))
+        check("indexed count is reported", manifest.get("indexed_count") == 1, str(manifest))
+        check("discovered count includes indexed", manifest.get("discovered_count") == 1, str(manifest))
 
         result = __import__("check_case_directory").check_case_directory(
             out_dir,
@@ -218,6 +316,7 @@ def test_criminal_importer_guards() -> None:
             "case_type": "Felony",
             "filed_date": "06/20/2024",
         },
+        "charges": "Robbery PC 211; 245(a)(1) PC/F Assault with a deadly weapon",
         "roa": [],
         "documents": [],
     })
@@ -231,9 +330,29 @@ def test_criminal_importer_guards() -> None:
     )
     check(
         "criminal header-only text names available facts",
-        headered.get("unavailable_text") == "No information available besides the name of the defendant, DOE, JANE, and date of filing 06/20/2024.",
+        headered.get("unavailable_text") == "No information available besides the name of the defendant, DOE, JANE, date of filing, 06/20/2024, and charges in the case: Robbery PC 211; 245(a)(1) PC/F Assault with a deadly weapon.",
         headered.get("unavailable_text"),
     )
+    parsed_charges = headered.get("charges_parsed") or []
+    check("criminal index charges split into rows", len(parsed_charges) == 2, str(parsed_charges))
+    check("criminal charge row has citation", parsed_charges[0].get("citation") == "Penal Code § 211", str(parsed_charges))
+    check("reverse charge citation parsed", parsed_charges[1].get("citation") == "Penal Code § 245(a)(1)", str(parsed_charges))
+    check("reverse charge title parsed", parsed_charges[1].get("title") == "Assault with a deadly weapon", str(parsed_charges))
+    real_shape = importer.parse_charge_rows("459 PC/F 459 PC/F 8888888 466 PC/M")
+    check("space-separated real charge string dedupes statutes", [row.get("code") for row in real_shape if row.get("code")] == ["PC 459", "PC 466"], str(real_shape))
+    check("space-separated real charge string preserves sentinel", any(row.get("raw") == "8888888" and row.get("unparsed") for row in real_shape), str(real_shape))
+    mixed_codes = importer.parse_charge_rows("11377 HS/M; VC 23152(a)/M; BP 25658(a)/M; GC 1090/F")
+    check("non-penal charge code families parse", [row.get("code") for row in mixed_codes] == ["HS 11377", "VC 23152(a)", "BP 25658(a)", "GC 1090"], str(mixed_codes))
+    check("health and safety links use HSC", "lawCode=HSC" in mixed_codes[0].get("url", ""), str(mixed_codes))
+    check("vehicle links use VEH", "lawCode=VEH" in mixed_codes[1].get("url", ""), str(mixed_codes))
+    check("business and professions links use BPC", "lawCode=BPC" in mixed_codes[2].get("url", ""), str(mixed_codes))
+    check("government links use GOV", "lawCode=GOV" in mixed_codes[3].get("url", ""), str(mixed_codes))
+    stale = importer.normalize_case_data({
+        **headered,
+        "unavailable_text": "No information available besides the name of the defendant, DOE, JANE, and date of filing 06/20/2024. criminal_portal_no_public_entries",
+        "unavailable_reason": "criminal_portal_no_public_entries",
+    })
+    check("stale criminal no-public text is regenerated", stale.get("unavailable_text") == headered.get("unavailable_text"), stale.get("unavailable_text"))
     check("criminal header-only record passes schema", importer.schema_error(headered) == "", importer.schema_error(headered))
     check(
         "criminal header defendant becomes party",

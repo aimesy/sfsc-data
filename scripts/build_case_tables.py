@@ -717,6 +717,8 @@ def rows_from_cases(case_dir: Path, limit: int | None = None) -> dict[str, list[
             "case_type": clean(case.get("case_type")),
             "criminal_case_number": clean(case.get("criminal_case_number")),
             "portal_case_id": clean(case.get("portal_case_id") or criminal_meta.get("portal_case_id")),
+            "charges": clean(case.get("charges")),
+            "charges_json": json.dumps(case.get("charges_parsed") or criminal_meta.get("charge_rows") or [], ensure_ascii=False, sort_keys=True),
             "source": clean(case.get("source")),
             "captured_at": captured_at,
             "source_url": source_url,

@@ -227,6 +227,7 @@ def check_case_directory(
     state_counts: dict[str, int] = {}
     total_rows = 0
     total_cases = 0
+    total_indexed = 0
     total_restricted = 0
     total_shards = 0
     indexed_discovered_count = 0
@@ -260,6 +261,7 @@ def check_case_directory(
         prefix_count = 0
         prefix_case_count = 0
         prefix_discovered_count = 0
+        prefix_indexed_count = 0
         prefix_restricted_count = 0
         for year in years:
             if not isinstance(year, dict):
@@ -281,6 +283,7 @@ def check_case_directory(
             total_rows += len(shard_rows)
             year_case_count = 0
             year_discovered_count = 0
+            year_indexed_count = 0
             year_restricted_count = 0
             for row in shard_rows:
                 case_number = str(row.get("case_number") or "").strip()
@@ -295,13 +298,17 @@ def check_case_directory(
                     failures.append(f"{case_number}: invalid scan_state {state!r}")
                 state_counts[state] = state_counts.get(state, 0) + 1
                 discovered = state == "discovered"
+                indexed = state == "indexed"
                 restricted = state == "restricted"
                 if discovered and norm_case(case_number) in index_case_set:
                     indexed_discovered_count += 1
                     if len(indexed_discovered_samples) < 10:
                         indexed_discovered_samples.append(case_number)
-                if discovered:
+                if discovered or indexed:
                     year_discovered_count += 1
+                    if indexed:
+                        year_indexed_count += 1
+                        captured_case_set.add(norm_case(case_number))
                 elif restricted:
                     year_restricted_count += 1
                     captured_case_set.add(norm_case(case_number))
@@ -316,13 +323,17 @@ def check_case_directory(
                     failures.append(f"{case_number}: discovered archive_status on captured row")
             prefix_case_count += year_case_count
             prefix_discovered_count += year_discovered_count
+            prefix_indexed_count += year_indexed_count
             prefix_restricted_count += year_restricted_count
             total_cases += year_case_count
+            total_indexed += year_indexed_count
             total_restricted += year_restricted_count
             if year_case_count != manifest_int(year.get("case_count")):
                 failures.append(f"{shard_rel}: case count {year_case_count} != manifest {year.get('case_count')}")
             if year_discovered_count != manifest_int(year.get("discovered_count"), 0):
                 failures.append(f"{shard_rel}: discovered count {year_discovered_count} != manifest {year.get('discovered_count')}")
+            if year_indexed_count != manifest_int(year.get("indexed_count"), 0):
+                failures.append(f"{shard_rel}: indexed count {year_indexed_count} != manifest {year.get('indexed_count')}")
             if year_restricted_count != manifest_int(year.get("restricted_count"), 0):
                 failures.append(f"{shard_rel}: restricted count {year_restricted_count} != manifest {year.get('restricted_count')}")
 
@@ -333,6 +344,8 @@ def check_case_directory(
             failures.append(f"{prefix_manifest_rel}: case count {prefix_case_count} != prefix manifest {prefix_manifest.get('case_count')}")
         if prefix_discovered_count != manifest_int(prefix_manifest.get("discovered_count"), 0):
             failures.append(f"{prefix_manifest_rel}: discovered count {prefix_discovered_count} != prefix manifest {prefix_manifest.get('discovered_count')}")
+        if prefix_indexed_count != manifest_int(prefix_manifest.get("indexed_count"), 0):
+            failures.append(f"{prefix_manifest_rel}: indexed count {prefix_indexed_count} != prefix manifest {prefix_manifest.get('indexed_count')}")
         if prefix_restricted_count != manifest_int(prefix_manifest.get("restricted_count"), 0):
             failures.append(f"{prefix_manifest_rel}: restricted count {prefix_restricted_count} != prefix manifest {prefix_manifest.get('restricted_count')}")
         expected_top_count = manifest_int(prefix.get("count"))
@@ -342,6 +355,8 @@ def check_case_directory(
             failures.append(f"{prefix_manifest_rel}: case count {prefix_case_count} != top manifest {prefix.get('case_count')}")
         if prefix_discovered_count != manifest_int(prefix.get("discovered_count"), 0):
             failures.append(f"{prefix_manifest_rel}: discovered count {prefix_discovered_count} != top manifest {prefix.get('discovered_count')}")
+        if prefix_indexed_count != manifest_int(prefix.get("indexed_count"), 0):
+            failures.append(f"{prefix_manifest_rel}: indexed count {prefix_indexed_count} != top manifest {prefix.get('indexed_count')}")
         if prefix_restricted_count != manifest_int(prefix.get("restricted_count"), 0):
             failures.append(f"{prefix_manifest_rel}: restricted count {prefix_restricted_count} != top manifest {prefix.get('restricted_count')}")
 
@@ -349,7 +364,7 @@ def check_case_directory(
     if total_rows != expected_display_rows:
         failures.append(f"total row count {total_rows} != manifest display_row_count {manifest.get('display_row_count')}")
     if total_cases != manifest_int(manifest.get("case_count")):
-        failures.append(f"captured case count {total_cases} != manifest case_count {manifest.get('case_count')}")
+        failures.append(f"captured docket count {total_cases} != manifest case_count {manifest.get('case_count')}")
     if indexed_discovered_count:
         sample = ", ".join(indexed_discovered_samples)
         suffix = "" if indexed_discovered_count <= len(indexed_discovered_samples) else f", ... {indexed_discovered_count - len(indexed_discovered_samples)} more"
@@ -357,10 +372,10 @@ def check_case_directory(
             f"{indexed_discovered_count} case-index row(s) are classified as discovered-only "
             f"in the generated directory ({sample}{suffix})"
         )
-    if case_index_rows > 0 and case_json_rows == case_index_rows and total_cases + total_restricted != case_index_rows:
+    if case_index_rows > 0 and case_json_rows == case_index_rows and total_cases + total_restricted + total_indexed != case_index_rows:
         failures.append(
-            "captured + restricted directory count "
-            f"{total_cases + total_restricted} != case-index rows {case_index_rows}"
+            "captured + restricted + indexed directory count "
+            f"{total_cases + total_restricted + total_indexed} != case-index rows {case_index_rows}"
         )
     if index_case_set and max(case_json_rows, case_table_rows) > 0:
         missing_from_directory = index_case_set - captured_case_set
@@ -379,8 +394,11 @@ def check_case_directory(
             actual_fingerprint = case_set_fingerprint(captured_case_set)
             if actual_fingerprint != case_index_fingerprint:
                 failures.append("captured directory fingerprint differs from manifest case-index fingerprint")
-    if state_counts.get("discovered", 0) != manifest_int(manifest.get("discovered_count"), 0):
-        failures.append(f"discovered count {state_counts.get('discovered', 0)} != manifest {manifest.get('discovered_count')}")
+    discovered_like_count = state_counts.get("discovered", 0) + state_counts.get("indexed", 0)
+    if discovered_like_count != manifest_int(manifest.get("discovered_count"), 0):
+        failures.append(f"discovered/indexed count {discovered_like_count} != manifest {manifest.get('discovered_count')}")
+    if total_indexed != manifest_int(manifest.get("indexed_count"), 0):
+        failures.append(f"indexed count {total_indexed} != manifest {manifest.get('indexed_count')}")
     if total_restricted != manifest_int(manifest.get("restricted_count"), 0):
         failures.append(f"restricted count {total_restricted} != manifest {manifest.get('restricted_count')}")
     if total_shards != manifest_int(manifest.get("year_shard_count")):
@@ -391,7 +409,8 @@ def check_case_directory(
     return {
         "display_row_count": total_rows,
         "case_count": total_cases,
-        "discovered_count": state_counts.get("discovered", 0),
+        "discovered_count": state_counts.get("discovered", 0) + state_counts.get("indexed", 0),
+        "indexed_count": total_indexed,
         "restricted_count": total_restricted,
         "prefix_count": len(prefixes),
         "year_shard_count": total_shards,
@@ -435,9 +454,10 @@ def main() -> int:
         return 1
     print(
         "case-directory ok: "
-        f"{result['case_count']} cases, "
+        f"{result['case_count']} dockets, "
         f"{result['restricted_count']} restricted, "
         f"{result['discovered_count']} discovered, "
+        f"{result['indexed_count']} indexed, "
         f"{result['display_row_count']} display rows, "
         f"{result['prefix_count']} prefixes, "
         f"{result['year_shard_count']} year shards, "
