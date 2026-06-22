@@ -257,7 +257,7 @@ def norm_entity_name(value: Any) -> str:
 _PARTY_ROLE_WORDS = (
     r"PLAINTIFF|DEFENDANT|PETITIONER|RESPONDENT|CLAIMANT|CREDITOR|DEBTOR|"
     r"INTERVENOR|CONSERVATOR|CONSERVATEE|TRUSTEE|TRUSTOR|BENEFICIARY|GUARDIAN|"
-    r"MINOR|DECEDENT|HEIR|WARD|"
+    r"MINOR|DECEDENT|HEIR|WARD|OTHER|"
     r"APPELLANT|APPELLEE|OBJECTOR|REQUESTOR|REQUESTER|ASSIGNEE|ASSIGNOR|"
     r"RECEIVER|DEPONENT|GARNISHEE|LIEN\s*CLAIMANT|MOVANT|PETITONER|"
     r"CROSS[\s-]?(?:DEFENDANT|COMPLAINANT|PLAINTIFF|RESPONDENT|APPELLANT|PETITIONER)|"
@@ -301,6 +301,12 @@ def strip_party_roles(value: Any) -> str:
     return clean(text).strip(" ,;")
 
 
+def represented_party_name(value: Any) -> str:
+    """Canonical party name for attorney-representation edges/profiles."""
+
+    return strip_party_roles(norm_entity_name(value))
+
+
 def split_represented_parties(raw_list: Any) -> list[str]:
     """Split & role-strip ``attorneys[].parties_represented`` into party names.
 
@@ -322,7 +328,7 @@ def split_represented_parties(raw_list: Any) -> list[str]:
         if not matches:
             # No role marker: keep as one party, strip only a trailing role
             # suffix that norm_entity_name would have caught, and any role paren.
-            name = strip_party_roles(raw)
+            name = represented_party_name(raw)
             if name:
                 out.append(name.upper())
             continue
@@ -332,12 +338,12 @@ def split_represented_parties(raw_list: Any) -> list[str]:
         for m in matches:
             segment = raw[prev_end:m.start()]
             prev_end = m.end()
-            name = strip_party_roles(segment).strip(" ,;")
+            name = represented_party_name(segment).strip(" ,;")
             if name:
                 out.append(name.upper())
         # Trailing text after the last role paren (e.g. a final party that had no
         # role tag) -- keep it if it carries name-like content.
-        tail = strip_party_roles(raw[prev_end:]).strip(" ,;")
+        tail = represented_party_name(raw[prev_end:]).strip(" ,;")
         if tail:
             out.append(tail.upper())
     return unique(out)
@@ -783,6 +789,7 @@ def rows_from_cases(case_dir: Path, limit: int | None = None) -> dict[str, list[
             if not isinstance(party, dict):
                 continue
             party_name = first_text(party, "name", "party", "NAME", "PARTY")
+            edge_party_name = represented_party_name(party_name)
             party_type = first_text(party, "party_type", "partyType", "type", "PARTYTYPE", "PARTYDESC")
             party_id = f"{case_number}:party:{party_seq}"
             party_attorneys = split_party_attorneys(party.get("attorneys") or party.get("ATTORNEY(S)"))
@@ -826,7 +833,7 @@ def rows_from_cases(case_dir: Path, limit: int | None = None) -> dict[str, list[
                         confidence=0.6,
                         captured_at=captured_at,
                         case_number=case_number,
-                        parties_represented=[party_name],
+                        parties_represented=[edge_party_name],
                     )
                 key = (case_number, party_id, edge_aid or edge_name, "party_attorneys")
                 if key in seen_representation:
@@ -835,7 +842,7 @@ def rows_from_cases(case_dir: Path, limit: int | None = None) -> dict[str, list[
                 tables["representation"].append({
                     "case_number": case_number,
                     "party_id": party_id,
-                    "party_name": party_name,
+                    "party_name": edge_party_name,
                     "party_type": party_type,
                     "attorney_id": edge_aid,
                     "attorney_name": edge_name,

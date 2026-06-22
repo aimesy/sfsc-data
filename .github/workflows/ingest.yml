@@ -1,0 +1,202 @@
+name: Ingest new rulings
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'raw/**/*.json'
+  # Manual catch-up: re-ingests every raw/dept*/*.json from scratch.
+  # Use when something has gone sideways and the parquet has fallen
+  # noticeably behind the raw files.
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Ingest mode'
+        required: true
+        default: 'all-raw'
+        type: choice
+        options:
+          - all-raw
+
+# Throttle, don't debounce. Every push queues a run; runs execute
+# sequentially via the concurrency group. Each run either does the full
+# batch ingest or no-ops fast. A continuous scan no longer starves the
+# workflow the way `cancel-in-progress: true` did — each burst converges
+# within one or two queued runs.
+#
+# THROTTLE_SECONDS gates back-to-back runs: if the last bot commit
+# landed inside the window we exit immediately, so a 50-file burst that
+# spawned 50 queued runs collapses to ~1 ingest + ~49 fast no-ops.
+concurrency:
+  group: data-index-writes
+  cancel-in-progress: false
+
+env:
+  THROTTLE_SECONDS: 60
+
+jobs:
+  ingest:
+    if: ${{ github.repository == 'aimesy/sfsc-data' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Need history back to the previous bot commit to compute the
+          # cumulative file list. 200 covers a couple of days of bulk
+          # scrapes; --all-raw handles deeper backlogs.
+          fetch-depth: 0
+          filter: blob:none
+          sparse-checkout: |
+            .github/workflows/python-constraints.txt
+            LIVE.md
+            README.md
+            archive/cases-index.ndjson
+            archive/document-index.ndjson
+            coverage/**
+            data/**
+            ingest.py
+            judges.json
+            raw/**
+            scripts/check_repo_bloat.py
+            scripts/court_holidays.py
+            tentatives.parquet
+            update-readme.py
+          sparse-checkout-cone-mode: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -c .github/workflows/python-constraints.txt pandas pyarrow openpyxl holidays
+
+      - name: Ingest and commit updated parquet
+        run: |
+          set -e
+          MODE="${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'incremental' }}"
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Always work against the freshest origin/master so a parallel
+          # human commit doesn't disappear when we push.
+          git fetch origin master
+          git checkout FETCH_HEAD
+
+          # Throttle gate now scopes to the EXPENSIVE parquet ingest only.
+          # The cheap coverage / README regeneration always runs so empty-
+          # marker files (and any other ruling-less raw scrape) propagate
+          # into coverage.json without waiting for the throttle window.
+          # Without this, a continuous bulk scrape leaves coverage.json
+          # perpetually behind by however long the scrape lasts — the
+          # data browser then shows phantom "gaps" for dates that already
+          # have raw files. The throttle still keeps a 50-file burst from
+          # spawning 50 full ingest passes; it just doesn't lock the
+          # cheap step out.
+          RUN_INGEST=true
+          if [ "$MODE" != "all-raw" ]; then
+            LAST_BOT_TS=$(git log --author='github-actions\[bot\]' --pretty=format:%ct -1 -- tentatives.parquet)
+            if [ -n "$LAST_BOT_TS" ]; then
+              NOW=$(date +%s)
+              ELAPSED=$((NOW - LAST_BOT_TS))
+              if [ "$ELAPSED" -lt "$THROTTLE_SECONDS" ]; then
+                echo "Throttled — last parquet ingest was ${ELAPSED}s ago (window: ${THROTTLE_SECONDS}s). Skipping the parquet pass; coverage will still refresh."
+                RUN_INGEST=false
+              fi
+            fi
+          fi
+
+          if [ "$RUN_INGEST" = "true" ]; then
+            if [ "$MODE" = "all-raw" ]; then
+              echo "Catch-up mode: re-ingesting every raw/dept*/*.json"
+              python3 ingest.py --all-raw
+            else
+              # Find every raw JSON added or modified since the last bot
+              # commit. This catches up "stranded" files left behind by a
+              # cancelled or failed previous run — the next push always
+              # re-discovers them via the same diff.
+              LAST_BOT=$(git log --author='github-actions\[bot\]' --pretty=format:%H -1 -- tentatives.parquet)
+
+              if [ -z "$LAST_BOT" ]; then
+                # No prior bot commit (first run after this workflow lands).
+                # Falling all the way back to --all-raw guarantees we don't
+                # miss anything historic.
+                echo "No prior bot commit found — running --all-raw."
+                python3 ingest.py --all-raw
+              else
+                echo "Diffing against last bot commit $LAST_BOT"
+                # --diff-filter=AM: only files that exist in HEAD (added or
+                # modified). Excludes deletions so we don't try to ingest
+                # a path that no longer exists.
+                NEW_FILES=$(git diff --name-only --diff-filter=AM "$LAST_BOT" HEAD -- 'raw/**/*.json' 'raw/*.json')
+                mapfile -t EXISTING_FILES < <(
+                  printf '%s\n' "$NEW_FILES" |
+                    python3 -c 'import pathlib, sys; [print(p) for p in (line.rstrip("\n") for line in sys.stdin) if p and pathlib.Path(p).is_file()]'
+                )
+
+                if [ "${#EXISTING_FILES[@]}" -eq 0 ]; then
+                  echo "No new raw JSON files since last bot commit."
+                else
+                  FILE_COUNT="${#EXISTING_FILES[@]}"
+                  echo "Batch-ingesting $FILE_COUNT file(s) in one merge:"
+                  printf '%s\n' "${EXISTING_FILES[@]}" | head -50
+                  [ "$FILE_COUNT" -gt 50 ] && echo "  … and $((FILE_COUNT - 50)) more"
+                  # Each file's JSON wrapper carries its own department so
+                  # --dept is just a fallback for malformed scrapes. One
+                  # invocation does one batched merge instead of N
+                  # quadratic-merge calls.
+                  python3 ingest.py "${EXISTING_FILES[@]}"
+                fi
+              fi
+            fi
+          fi
+
+          # Always run — even on the throttled path. update-readme.py
+          # rebuilds coverage/dept<N>.json + the per-dept parquet slices
+          # + the dept summary table from the union of (parquet rows ∪
+          # raw filenames). New raw files reach the data browser and the
+          # extension's "already scanned" set in seconds rather than
+          # waiting for the throttle gate to clear.
+          python3 update-readme.py
+
+          git add tentatives.parquet LIVE.md README.md coverage \
+                  data/manifest.json \
+                  data/tentatives-*.parquet \
+                  data/tentatives-*-extras.parquet 2>/dev/null || true
+          python scripts/check_repo_bloat.py --staged
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          # Commit message reflects the actual scope: a coverage-only
+          # refresh shouldn't be filed as a parquet update (the throttle
+          # gate keys on parquet-touching commits, so mislabelling a
+          # coverage refresh as a parquet ingest would push the throttle
+          # window forward and starve subsequent real ingests).
+          if git diff --staged --name-only | grep -qx tentatives.parquet; then
+            COMMIT_MSG="Update tentatives.parquet [skip ci]"
+          else
+            COMMIT_MSG="Refresh coverage [skip ci]"
+          fi
+          git commit -m "$COMMIT_MSG"
+
+          # Push, retrying on transient race conditions (e.g. a human
+          # commit landed while we were ingesting). Rebase between
+          # attempts so we stay a clean fast-forward.
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:master; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt/5); rebasing on origin/master …"
+            git fetch origin master
+            git rebase origin/master || { git rebase --abort; exit 1; }
+            sleep $((attempt * 3))
+          done
+
+          echo "ERROR: failed to push after 5 attempts"
+          exit 1

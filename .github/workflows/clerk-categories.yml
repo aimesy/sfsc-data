@@ -1,0 +1,83 @@
+name: Index facets (Case Search filter pickers)
+
+# Rebuilds the Case Search facet indexes that power the Advanced filter pickers.
+# Each dimension is a {label,count} facet + a norm→case-numbers index (for
+# instant render):
+#   clerk category / judge / department-courtroom  (from archive/cases/*.json)
+#   case status / outcome / vexatious litigant      (from data/*.parquet)
+# Weekly rather than per-push: the facet mix changes slowly and the case indexes
+# total ~11 MB, so frequent commits would bloat history. Trigger manually after
+# a large capture batch for fresher counts.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 9 * * 1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-index-writes
+  cancel-in-progress: false
+
+jobs:
+  index:
+    if: ${{ github.repository == 'aimesy/sfsc-data' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
+          sparse-checkout: |
+            archive/cases/**
+            data/**
+            scripts/index_clerk_categories.mjs
+            scripts/index_judges_cases.mjs
+            scripts/index_locations_cases.mjs
+            scripts/index_status_facets.py
+            scripts/check_repo_bloat.py
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Index facets + commit
+        run: |
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin master
+          git checkout FETCH_HEAD
+
+          pip install -c .github/workflows/python-constraints.txt pyarrow
+          node scripts/index_clerk_categories.mjs
+          node scripts/index_judges_cases.mjs
+          node scripts/index_locations_cases.mjs
+          python scripts/index_status_facets.py
+
+          git add data/clerk-categories.json data/clerk-category-cases.json \
+                  data/judge-facet.json data/judge-cases.json \
+                  data/location-facet.json data/location-cases.json \
+                  data/status-facet.json data/status-cases.json \
+                  data/outcome-facet.json data/outcome-cases.json \
+                  data/vexatious-facet.json data/vexatious-cases.json
+          python scripts/check_repo_bloat.py --staged
+          if git diff --staged --quiet; then
+            echo "No facet changes."
+            exit 0
+          fi
+          git commit -m "Index Case Search facets (category, judge, courtroom, status, outcome, vexatious) [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:master; then exit 0; fi
+            echo "Push rejected ($attempt/5); rebasing on origin/master ..."
+            git fetch origin master
+            git rebase origin/master || { git rebase --abort; exit 1; }
+            sleep $((attempt * 3))
+          done
+          echo "ERROR: failed to push after 5 attempts"
+          exit 1

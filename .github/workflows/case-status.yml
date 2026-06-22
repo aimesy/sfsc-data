@@ -1,0 +1,72 @@
+name: Classify case status (satisfied-skip list)
+
+# Mirrored in the product repo for sync; executes only in aimesy/sfsc-data.
+# archive/ and data/ paths below refer to the data repository.
+# Classifies each captured case's terminal status from its ROA and publishes the
+# satisfied-judgment skip list the bulk capture consults. Runs when new captures
+# land (push to archive/cases/**) + manual dispatch. Commits back like the other
+# enrichment workflows.
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'archive/cases/**'
+      - 'scripts/classify_case_status.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-index-writes
+  cancel-in-progress: false
+
+jobs:
+  classify:
+    if: ${{ github.repository == 'aimesy/sfsc-data' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
+          sparse-checkout: |
+            .github/workflows/python-constraints.txt
+            archive/cases/**
+            data/**
+            scripts/check_repo_bloat.py
+            scripts/classify_case_status.py
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -c .github/workflows/python-constraints.txt pandas pyarrow
+      - name: Classify + commit
+        run: |
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin master
+          git checkout FETCH_HEAD
+
+          python scripts/classify_case_status.py
+
+          git add data/case_status.parquet data/satisfied_cases.txt
+          python scripts/check_repo_bloat.py --staged
+          if git diff --staged --quiet; then
+            echo "No case-status changes."
+            exit 0
+          fi
+          git commit -m "Classify case status + satisfied-skip list [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:master; then exit 0; fi
+            echo "Push rejected ($attempt/5); rebasing …"
+            git fetch origin master
+            git rebase origin/master || { git rebase --abort; exit 1; }
+            sleep $((attempt * 3))
+          done
+          echo "ERROR: failed to push after 5 attempts"
+          exit 1

@@ -1,0 +1,76 @@
+name: Harvest causes of action (docket + tentatives)
+
+# Reliably harvests causes of action named in the docket, filed-document titles,
+# and tentative rulings ("[Nth] cause of action for <NAME>") — recovering the
+# litigated causes for cases where we have no complaint to OCR. Commits back like
+# the other enrichment workflows.
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'archive/cases/**'
+      - 'data/tentatives-*.parquet'
+      - 'scripts/cause_extract.py'
+      - '.github/workflows/causes.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-index-writes
+  cancel-in-progress: false
+
+jobs:
+  harvest:
+    if: ${{ github.repository == 'aimesy/sfsc-data' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
+          sparse-checkout: |
+            .github/workflows/python-constraints.txt
+            archive/cases/**
+            data/**
+            scripts/build_case_tables.py
+            scripts/cause_extract.py
+            scripts/check_cause_extract.py
+            scripts/check_repo_bloat.py
+            scripts/estate_dossier.py
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -c .github/workflows/python-constraints.txt pandas pyarrow
+      - name: Harvest causes + commit
+        run: |
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin master
+          git checkout FETCH_HEAD
+
+          python scripts/check_cause_extract.py
+          python scripts/cause_extract.py
+
+          git add data/causes.parquet
+          python scripts/check_repo_bloat.py --staged
+          if git diff --staged --quiet; then
+            echo "No cause-of-action changes."
+            exit 0
+          fi
+          git commit -m "Harvest causes of action (docket + tentatives) [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:master; then exit 0; fi
+            echo "Push rejected ($attempt/5); rebasing on origin/master ..."
+            git fetch origin master
+            git rebase origin/master || { git rebase --abort; exit 1; }
+            sleep $((attempt * 3))
+          done
+          echo "ERROR: failed to push after 5 attempts"
+          exit 1

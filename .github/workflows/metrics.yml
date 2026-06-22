@@ -1,0 +1,85 @@
+name: Derive profile metrics (inferred)
+
+# Derives fuzzy second/third-order metrics — case outcomes, tentative motion
+# dispositions, and attorney/judge/litigant performance roll-ups — from the
+# captured cases and tentative rulings we already have. INFERENCE layer, not
+# court findings. Commits back like the other enrichment workflows.
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'archive/cases/**'
+      - 'data/tentatives-*.parquet'
+      - 'data/litigants.json'
+      - 'judges.json'
+      - 'scripts/derive_metrics.py'
+      - 'scripts/index_appeals.py'      # reused outcome / motion classifiers
+      - 'scripts/build_case_tables.py'  # reused representation / docket extraction
+      - '.github/workflows/metrics.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-index-writes
+  cancel-in-progress: false
+
+jobs:
+  derive:
+    if: ${{ github.repository == 'aimesy/sfsc-data' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
+          sparse-checkout: |
+            .github/workflows/python-constraints.txt
+            judges.json
+            archive/cases/**
+            data/**
+            scripts/build_case_tables.py
+            scripts/check_derive_metrics.py
+            scripts/check_repo_bloat.py
+            scripts/derive_metrics.py
+            scripts/estate_dossier.py
+            scripts/index_appeals.py
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -c .github/workflows/python-constraints.txt pandas pyarrow
+      - name: Derive metrics + commit
+        run: |
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin master
+          git checkout FETCH_HEAD
+
+          python scripts/check_derive_metrics.py
+          python scripts/derive_metrics.py
+
+          git add \
+            data/case_outcomes.parquet \
+            data/tentative_dispositions.parquet \
+            data/profile-metrics.json
+          python scripts/check_repo_bloat.py --staged
+          if git diff --staged --quiet; then
+            echo "No metrics changes."
+            exit 0
+          fi
+          git commit -m "Derive profile metrics (inferred) [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:master; then exit 0; fi
+            echo "Push rejected ($attempt/5); rebasing on origin/master ..."
+            git fetch origin master
+            git rebase origin/master || { git rebase --abort; exit 1; }
+            sleep $((attempt * 3))
+          done
+          echo "ERROR: failed to push after 5 attempts"
+          exit 1

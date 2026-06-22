@@ -1,0 +1,127 @@
+name: Scrape new tentatives (headless)
+
+# First-cut headless scraper — companion to the browser extension. Daily
+# cron + manual dispatch. Per-run window is small (default: 5 dates / 3
+# court days back) so we stay well under the SFSC site's ~50-search
+# CAPTCHA threshold. The push of any new raw/dept*/*.json file triggers
+# the existing ingest workflow, which rebuilds the parquet.
+#
+# Currently scoped to Dept 302 only. Once the daily run is proven stable,
+# the matrix below can be expanded to the other departments.
+
+on:
+  schedule:
+    # 13:00 UTC ≈ 06:00 PT — court has posted the day's tentatives by now,
+    # well before the typical 09:00 hearing.
+    - cron: '0 13 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      dept:
+        description: 'Department number to scrape'
+        required: true
+        default: '302'
+        type: choice
+        options: ['204', '301', '302', '304', '501']
+      days_back:
+        description: 'Look back this many court days for unscanned dates'
+        required: false
+        default: '3'
+      max_per_run:
+        description: 'Hard cap on dates fetched per run'
+        required: false
+        default: '5'
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    if: ${{ github.repository == 'aimesy/sfsc-data' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        dept:
+          - '302'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
+          sparse-checkout: |
+            .github/workflows/python-constraints.txt
+            extension/content.js
+            raw/**
+            scripts/court_holidays.py
+            scripts/scrape_dept.py
+          sparse-checkout-cone-mode: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('.github/workflows/python-constraints.txt') }}
+
+      - name: Install Python deps
+        run: pip install -c .github/workflows/python-constraints.txt playwright holidays
+
+      - name: Install Chromium for Playwright
+        run: |
+          set -e
+          python -m playwright install --with-deps chromium
+
+      - name: Resolve effective inputs
+        id: inputs
+        run: |
+          set -e
+          DEPT="${{ github.event.inputs.dept || matrix.dept }}"
+          DAYS="${{ github.event.inputs.days_back || '3' }}"
+          MAX="${{ github.event.inputs.max_per_run || '5' }}"
+          echo "dept=$DEPT"   >> "$GITHUB_OUTPUT"
+          echo "days=$DAYS"   >> "$GITHUB_OUTPUT"
+          echo "max=$MAX"     >> "$GITHUB_OUTPUT"
+
+      - name: Run scraper
+        run: |
+          set -e
+          python scripts/scrape_dept.py \
+            --dept "${{ steps.inputs.outputs.dept }}" \
+            --days-back "${{ steps.inputs.outputs.days }}" \
+            --max-per-run "${{ steps.inputs.outputs.max }}"
+
+      - name: Commit any new raw files
+        run: |
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          DEPT="${{ steps.inputs.outputs.dept }}"
+          git add "raw/dept${DEPT}" 2>/dev/null || true
+
+          if git diff --staged --quiet; then
+            echo "No new raw files to commit."
+            exit 0
+          fi
+
+          NEW_COUNT=$(git diff --staged --name-only --diff-filter=A | wc -l)
+          git commit -m "Scrape ${NEW_COUNT} new raw file(s) for Dept ${DEPT} [skip ci]"
+
+          # Retry/rebase on transient races with the ingest workflow.
+          for attempt in 1 2 3 4; do
+            if git push origin HEAD:${{ github.ref_name }}; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt/4); rebasing …"
+            git fetch origin "${{ github.ref_name }}"
+            git rebase "origin/${{ github.ref_name }}" || { git rebase --abort; exit 1; }
+            sleep $((attempt * 3))
+          done
+          echo "ERROR: failed to push after 4 attempts"
+          exit 1

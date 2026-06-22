@@ -1,0 +1,122 @@
+name: Migrate tracked document bytes to Releases
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: upload-only, finalize-only, or all
+        required: true
+        default: all
+        type: choice
+        options:
+          - all
+          - upload
+          - finalize
+      workers:
+        description: Upload workers
+        required: false
+        default: '2'
+      base_tag:
+        description: Release shard base tag
+        required: false
+        default: docs-git-archive-2026-06-08
+      max_assets_per_release:
+        description: Assets per release shard
+        required: false
+        default: '900'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: migrate-docs-to-releases
+  cancel-in-progress: false
+
+jobs:
+  migrate:
+    if: ${{ github.repository == 'aimesy/sfsc-data' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Check out sparse blobless tree
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            .github/workflows/python-constraints.txt
+            archive/cases/**
+            archive/document-index.ndjson
+            scripts/check_repo_bloat.py
+            scripts/document_storage.py
+            scripts/migrate_git_documents_to_releases.py
+            scripts/upload_scanner_doc_assets.py
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Plan tracked document bytes
+        run: |
+          python scripts/migrate_git_documents_to_releases.py \
+            --base-tag "${{ inputs.base_tag }}" \
+            --max-assets-per-release "${{ inputs.max_assets_per_release }}"
+
+      - name: Upload tracked document bytes to Releases
+        if: ${{ inputs.mode == 'all' || inputs.mode == 'upload' }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/migrate_git_documents_to_releases.py \
+            --upload \
+            --workers "${{ inputs.workers }}" \
+            --progress-every 100 \
+            --base-tag "${{ inputs.base_tag }}" \
+            --max-assets-per-release "${{ inputs.max_assets_per_release }}" \
+            --token-env GITHUB_TOKEN
+
+      - name: Patch metadata and remove tracked bytes
+        if: ${{ inputs.mode == 'all' || inputs.mode == 'finalize' }}
+        run: |
+          python scripts/migrate_git_documents_to_releases.py \
+            --assume-uploaded \
+            --patch-metadata \
+            --remove-git-documents \
+            --workers "${{ inputs.workers }}" \
+            --progress-every 100 \
+            --base-tag "${{ inputs.base_tag }}" \
+            --max-assets-per-release "${{ inputs.max_assets_per_release }}"
+
+      - name: Commit and push cleanup
+        if: ${{ inputs.mode == 'all' || inputs.mode == 'finalize' }}
+        run: |
+          set -euo pipefail
+          git add archive/cases archive/document-index.ndjson 2>/dev/null || true
+          git add --sparse -u -- archive/documents 2>/dev/null || true
+          python scripts/check_repo_bloat.py --staged
+          if git diff --staged --quiet; then
+            echo "No migration changes to commit."
+            exit 0
+          fi
+          git commit -m "Move tracked document bytes to Releases"
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:master; then
+              exit 0
+            fi
+            echo "Push rejected ($attempt/5); rebasing on origin/master..."
+            git fetch origin master
+            if ! git diff --quiet HEAD..origin/master -- archive/cases archive/document-index.ndjson archive/documents; then
+              echo "::error::Remote archive document/case inputs changed after migration metadata was patched; refusing to push stale migration output. Re-run the workflow against current origin/master."
+              exit 1
+            fi
+            git rebase origin/master || { git rebase --abort; exit 1; }
+            sleep $((attempt * 5))
+          done
+          exit 1

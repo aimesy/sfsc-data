@@ -1,0 +1,82 @@
+name: Index litigants (cross-case aggregate + identity confidence)
+
+# Aggregates party/litigant names across captured cases (archive/cases/**) and
+# the enriched tentative captions, clusters them with the shared normalizer, and
+# scores each cluster's same-entity confidence (DESIGN §5.10) with an explicit
+# per-factor breakdown. Writes data/litigants.parquet (canonical) + a curated
+# data/litigants.json manifest with data/litigants/*.json shards for the viewer.
+# Runs on new captures + when the indexer or
+# its inputs change, including data/financials.parquet updates from enrich.yml.
+# Commits back like the other enrichment workflows.
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'archive/cases/**'
+      - 'scripts/index_litigants.py'
+      - 'scripts/enrich_cases.py'        # shared normalizer / classifier
+      - 'data/financials.parquet'        # fee aggregates
+      - 'data/vexatious.parquet'         # authoritative volume-lift input
+
+permissions:
+  contents: write
+
+concurrency:
+  group: litigants
+  cancel-in-progress: false
+
+jobs:
+  index:
+    if: ${{ github.repository == 'aimesy/sfsc-data' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
+          sparse-checkout: |
+            .github/workflows/python-constraints.txt
+            archive/cases/**
+            data/**
+            scripts/check_repo_bloat.py
+            scripts/enrich_cases.py
+            scripts/index_litigants.py
+            tag_registry.json
+          sparse-checkout-cone-mode: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -c .github/workflows/python-constraints.txt pandas pyarrow
+
+      - name: Index litigants + commit
+        run: |
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin master
+          git checkout FETCH_HEAD
+
+          python scripts/index_litigants.py
+
+          git add -A data/litigants.parquet data/litigants.json data/litigants
+          python scripts/check_repo_bloat.py --staged
+          if git diff --staged --quiet; then
+            echo "No litigant-index changes."
+            exit 0
+          fi
+          git commit -m "Index litigants (cross-case aggregate + confidence) [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:master; then exit 0; fi
+            echo "Push rejected ($attempt/5); rebasing on origin/master …"
+            git fetch origin master
+            git rebase origin/master || { git rebase --abort; exit 1; }
+            sleep $((attempt * 3))
+          done
+          echo "ERROR: failed to push after 5 attempts"
+          exit 1

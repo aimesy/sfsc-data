@@ -1,0 +1,75 @@
+name: Refresh judges roster
+
+# The SF Superior Court judicial-assignments page changes as judges are
+# reassigned / appointed. This refreshes judges.json (names + dept) from the
+# live page monthly and archives the raw roster. It does NOT invent judge codes
+# (those come from the tentatives feed) — new/departed judges are recorded under
+# judges.json "pending_review" for a human to action. Monthly + manual dispatch.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 10 3 * *'   # 10:00 UTC on the 3rd of each month
+
+permissions:
+  contents: write
+
+concurrency:
+  group: judges
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: ${{ github.repository == 'aimesy/sfsc-data' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
+          sparse-checkout: |
+            .github/workflows/python-constraints.txt
+            archive/cases/**
+            data/**
+            judges.json
+            scripts/build_case_tables.py
+            scripts/check_repo_bloat.py
+            scripts/estate_dossier.py
+            scripts/fetch_judges.py
+            sources/**
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Refresh judges.json + commit
+        run: |
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin master
+          git checkout FETCH_HEAD
+
+          python scripts/fetch_judges.py   # fetches the live roster, no deps
+          python scripts/build_case_tables.py --profiles-only
+
+          git rm -f --ignore-unmatch data/entity-profiles.json
+          git add judges.json sources/ \
+                  data/entity-profiles-manifest.json \
+                  data/entity-profiles-attorneys-*.json \
+                  data/entity-profiles-judges-*.json
+          python scripts/check_repo_bloat.py --staged
+          if git diff --staged --quiet; then
+            echo "No judges-roster changes this month."
+            exit 0
+          fi
+          git commit -m "Refresh judges roster [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:master; then exit 0; fi
+            echo "Push rejected ($attempt/5); rebasing …"
+            git fetch origin master
+            git rebase origin/master || { git rebase --abort; exit 1; }
+            sleep $((attempt * 3))
+          done
+          echo "ERROR: failed to push after 5 attempts"
+          exit 1

@@ -1,0 +1,290 @@
+name: OCR document bytes
+
+# When document bytes (PDFs or scanned images) land in the repo, extract text
+# and publish it as a workflow artifact so downstream consumers
+# (extract_financials.py, enrich_cases.py, future fee-schedule rate-table
+# extraction) can read the Tier-2 OCR source per DESIGN.md §5.9 / §6.
+#
+# Push runs are scoped to changed case records. Manual dispatch is the backfill
+# path for OCR engine/workflow edits so code changes do not re-OCR the corpus.
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Re-OCR every document even if already cached'
+        required: false
+        default: 'false'
+      materialize_only:
+        description: 'Only refresh data/ocr/document-byte-manifest.jsonl; do not OCR'
+        required: false
+        default: 'false'
+      limit:
+        description: 'Maximum missing assets to download/OCR in this run'
+        required: false
+        default: '25'
+      sha_list:
+        description: 'Optional sha256 list to OCR, separated by whitespace or commas'
+        required: false
+        default: ''
+      allow_full_corpus:
+        description: 'Allow limit=0 full-corpus OCR in Actions'
+        required: false
+        default: 'false'
+  push:
+    branches: [master]
+    paths:
+      - 'archive/cases/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ocr
+  cancel-in-progress: false
+
+jobs:
+  ocr:
+    if: ${{ github.repository == 'aimesy/sfsc-data' }}
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install system OCR deps
+        # tesseract-ocr is the OCR engine; ghostscript is what ocrmypdf shells
+        # out to for PDF pre-processing; qpdf is required by ocrmypdf's PDF
+        # repair/finalization path. All come from Ubuntu apt — no extra repos.
+        run: |
+          set -e
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            tesseract-ocr ghostscript qpdf poppler-utils unpaper
+          tesseract --version
+          gs --version
+          qpdf --version
+
+      - name: Install Python deps
+        # pypdf/pdfplumber/Poppler cover layout-preserving text-layer extraction;
+        # ocrmypdf wraps Tesseract for scanned fallback; pytesseract + Pillow
+        # handle the single-image branch.
+        run: pip install -c .github/workflows/python-constraints.txt pypdf pdfplumber ocrmypdf pytesseract Pillow
+
+      - name: Select OCR scope
+        id: scope
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE_SHA: ${{ github.event.before || '' }}
+          AFTER_SHA: ${{ github.sha }}
+          REQUESTED_LIMIT: ${{ github.event.inputs.limit || '25' }}
+          REQUESTED_SHAS: ${{ github.event.inputs.sha_list || '' }}
+          ALLOW_FULL_CORPUS: ${{ github.event.inputs.allow_full_corpus || 'false' }}
+        run: |
+          set -euo pipefail
+          mkdir -p .scanner
+          SHA_FILE=".scanner/ocr-target-shas.txt"
+          CHANGED_FILE=".scanner/ocr-changed-paths.txt"
+          : > "$SHA_FILE"
+          : > "$CHANGED_FILE"
+
+          limit="${REQUESTED_LIMIT:-25}"
+          if ! [[ "$limit" =~ ^[0-9]+$ ]]; then
+            echo "Invalid OCR limit '$limit'; using 25."
+            limit=25
+          fi
+          if [ "$EVENT_NAME" = "push" ]; then
+            limit=25
+          elif [ "$limit" -eq 0 ] && [ "$ALLOW_FULL_CORPUS" != "true" ]; then
+            echo "limit=0 requires allow_full_corpus=true; using 25."
+            limit=25
+          fi
+
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] && [ -n "${REQUESTED_SHAS:-}" ]; then
+            REQUESTED_FILE=".scanner/requested-ocr-shas.txt"
+            printf '%s\n' "$REQUESTED_SHAS" > "$REQUESTED_FILE"
+            python - "$REQUESTED_FILE" "$SHA_FILE" <<'PY'
+          import pathlib
+          import re
+          import sys
+
+          src = pathlib.Path(sys.argv[1])
+          dst = pathlib.Path(sys.argv[2])
+          shas = sorted({m.group(0).lower() for m in re.finditer(r"\b[0-9a-fA-F]{64}\b", src.read_text(encoding="utf-8"))})
+          dst.write_text("".join(f"{sha}\n" for sha in shas), encoding="utf-8")
+          PY
+          elif [ "$EVENT_NAME" = "push" ]; then
+            before="${BEFORE_SHA:-}"
+            after="${AFTER_SHA}"
+            if [[ "$before" =~ ^[0-9a-f]{40}$ ]] && ! [[ "$before" =~ ^0+$ ]] && ! git cat-file -e "$before^{commit}" 2>/dev/null; then
+              git fetch --no-tags --depth=1 origin "$before" || true
+            fi
+            if [[ "$before" =~ ^[0-9a-f]{40}$ ]] && ! [[ "$before" =~ ^0+$ ]] && git cat-file -e "$before^{commit}" 2>/dev/null; then
+              git diff --name-only "$before" "$after" -- archive/cases > "$CHANGED_FILE"
+            else
+              git show --name-only --format= "$after" -- archive/cases > "$CHANGED_FILE"
+            fi
+            python - "$CHANGED_FILE" "$SHA_FILE" <<'PY'
+          import json
+          import pathlib
+          import re
+          import sys
+
+          changed_path = pathlib.Path(sys.argv[1])
+          sha_path = pathlib.Path(sys.argv[2])
+          sha_re = re.compile(r"^[0-9a-f]{64}$", re.I)
+          changed = [
+              raw.strip().replace("\\", "/").lstrip("./")
+              for raw in changed_path.read_text(encoding="utf-8").splitlines()
+              if raw.strip()
+          ]
+          changed_set = set(changed)
+          json_paths = []
+          scan_for_changed_bytes = False
+          for rel in changed:
+              if not rel.startswith("archive/cases/"):
+                  continue
+              if rel.endswith(".json"):
+                  json_paths.append(rel)
+              else:
+                  scan_for_changed_bytes = True
+          if scan_for_changed_bytes:
+              json_paths.extend(str(path).replace("\\", "/") for path in pathlib.Path("archive/cases").glob("*.json"))
+
+          seen = set()
+          shas = []
+          for rel in dict.fromkeys(json_paths):
+              path = pathlib.Path(rel)
+              if not path.exists():
+                  continue
+              try:
+                  case = json.loads(path.read_text(encoding="utf-8"))
+              except Exception as exc:
+                  print(f"! skip changed case file {rel}: {exc}", file=sys.stderr)
+                  continue
+              for doc in case.get("documents") or []:
+                  object_path = str(doc.get("object_path") or "").strip().replace("\\", "/").lstrip("./")
+                  if rel not in changed_set and object_path not in changed_set:
+                      continue
+                  sha = str(doc.get("sha256") or "").strip().lower()
+                  if sha_re.match(sha) and sha not in seen:
+                      seen.add(sha)
+                      shas.append(sha)
+          sha_path.write_text("".join(f"{sha}\n" for sha in shas), encoding="utf-8")
+          PY
+          fi
+
+          sha_count=$(python - "$SHA_FILE" <<'PY'
+          import pathlib
+          import sys
+          print(sum(1 for line in pathlib.Path(sys.argv[1]).read_text(encoding="utf-8").splitlines() if line.strip()))
+          PY
+          )
+          run_ocr=true
+          if [ "$EVENT_NAME" = "push" ] && [ "$sha_count" -eq 0 ]; then
+            run_ocr=false
+          fi
+
+          echo "sha_file=$SHA_FILE" >> "$GITHUB_OUTPUT"
+          echo "sha_count=$sha_count" >> "$GITHUB_OUTPUT"
+          echo "limit=$limit" >> "$GITHUB_OUTPUT"
+          echo "run_ocr=$run_ocr" >> "$GITHUB_OUTPUT"
+          echo "Selected OCR SHA count: $sha_count"
+          echo "OCR limit: $limit"
+
+      - name: OCR + publish artifact
+        if: steps.scope.outputs.run_ocr == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          INCLUDE_OCRD_FLAG: ${{ github.event.inputs.force == 'true' && '--include-ocrd' || '' }}
+          FORCE_OCR_FLAG: ${{ github.event.inputs.force == 'true' && '--force-ocr' || '' }}
+          MATERIALIZE_ONLY: ${{ github.event.inputs.materialize_only == 'true' && 'true' || 'false' }}
+          ALLOW_FULL_CORPUS: ${{ github.event.inputs.allow_full_corpus == 'true' && 'true' || 'false' }}
+          OCR_LIMIT: ${{ steps.scope.outputs.limit }}
+          OCR_SHA_FILE: ${{ steps.scope.outputs.sha_file }}
+        run: |
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          BRANCH="master"
+          LIMIT_ARGS=(--limit "$OCR_LIMIT")
+          SHA_ARGS=()
+          if [ -s "$OCR_SHA_FILE" ]; then
+            SHA_ARGS=(--sha-file "$OCR_SHA_FILE")
+          fi
+          if [ "$ALLOW_FULL_CORPUS" = "true" ] && [ "$OCR_LIMIT" = "0" ]; then
+            export SFSC_ALLOW_FULL_CORPUS_OCR=1
+          fi
+
+          OCR_STATUS=0
+          set +e
+          if [ "$MATERIALIZE_ONLY" = "true" ]; then
+            python scripts/materialize_ocr_inputs.py --allow-failures "${LIMIT_ARGS[@]}" "${SHA_ARGS[@]}" $INCLUDE_OCRD_FLAG
+            OCR_STATUS=$?
+          else
+            python scripts/materialize_ocr_inputs.py --run-ocr --allow-failures "${LIMIT_ARGS[@]}" "${SHA_ARGS[@]}" $INCLUDE_OCRD_FLAG $FORCE_OCR_FLAG
+            OCR_STATUS=$?
+          fi
+          set -e
+          echo "OCR command exit status: $OCR_STATUS"
+
+          write_summary() {
+            {
+              echo "### OCR document bytes"
+              echo "- Target branch: $BRANCH"
+              echo "- OCR exit status: $OCR_STATUS"
+              echo "- Commit result: $1"
+            } >> "$GITHUB_STEP_SUMMARY"
+          }
+
+          git add data/heuristic_bug_reports.ndjson 2>/dev/null || true
+          python scripts/check_repo_bloat.py --staged
+
+          if git diff --staged --quiet; then
+            echo "No Git-tracked OCR side effects."
+            write_summary "no changes"
+            exit "$OCR_STATUS"
+          fi
+
+          git commit -m "Log OCR bug reports [skip ci]"
+
+          for attempt in 1 2 3 4 5; do
+            if git push origin "HEAD:$BRANCH"; then
+              write_summary "pushed"
+              exit "$OCR_STATUS"
+            fi
+            echo "Push rejected (attempt $attempt/5); rebasing on origin/$BRANCH …"
+            git fetch origin "$BRANCH"
+            git rebase "origin/$BRANCH" || { git rebase --abort; exit 1; }
+            sleep $((attempt * 3))
+          done
+          echo "ERROR: failed to push after 5 attempts"
+          write_summary "push failed"
+          exit 1
+
+      - name: OCR skipped
+        if: steps.scope.outputs.run_ocr != 'true'
+        run: |
+          echo "No changed case document SHAs selected; skipping OCR."
+          {
+            echo "### OCR document bytes"
+            echo "- Result: skipped"
+            echo "- Reason: no changed case document SHAs selected"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload OCR artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sfsc-ocr-output
+          path: |
+            data/ocr/**
+          if-no-files-found: ignore
+          retention-days: 30

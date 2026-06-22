@@ -271,6 +271,55 @@ def test_stale_compact_table_rejected() -> None:
         check("same-count set mismatch rejected", False)
 
 
+def test_attorney_representation_role_splitting() -> None:
+    print("\nattorney representation role splitting")
+    with tempfile.TemporaryDirectory(prefix="sfsc-rep-pipeline-") as tmp:
+        case_dir = Path(tmp) / "archive" / "cases"
+        write_json(case_dir / "CGC24009999.json", {
+            "case_number": "CGC24009999",
+            "case_title": "Insurance Example v. Respondents",
+            "captured_at": "2026-06-20T00:00:00Z",
+            "parties": [
+                {
+                    "name": "MENZIES, DANIEL, (DEFENDANT FROM CONSOLIDATED CASE#CGC-19-574096)",
+                    "party_type": "Defendant",
+                    "attorneys": ["MEYER, JR."],
+                }
+            ],
+            "attorneys": [
+                {
+                    "name": "PRINDLE, KENNETH B",
+                    "bar_number": "82691",
+                    "parties_represented": [
+                        "FIREMAN'S FUND INSURANCE COMPANY (OTHER), INDUSTRIAL INDEMNITY COMPANY (OTHER), TRANSCONTINENTAL INSURANCE COMPANY (OTHER)"
+                    ],
+                }
+            ],
+            "docket_entries": [],
+            "documents": [],
+        })
+        tables = bct.rows_from_cases(case_dir)
+        rows = [
+            row for row in tables["attorneys"]
+            if row.get("attorney_name") == "PRINDLE, KENNETH B" or row.get("name") == "PRINDLE, KENNETH B"
+        ]
+        represented = []
+        for row in rows:
+            represented.extend(json.loads(row.get("parties_represented_json") or "[]"))
+        check(
+            "(OTHER) party role splits into separate represented parties",
+            represented == [
+                "FIREMAN'S FUND INSURANCE COMPANY",
+                "INDUSTRIAL INDEMNITY COMPANY",
+                "TRANSCONTINENTAL INSURANCE COMPANY",
+            ],
+            str(represented),
+        )
+        edge_names = [row.get("party_name") for row in tables["representation"]]
+        check("party-attorney edge strips embedded role", "MENZIES, DANIEL" in edge_names, str(edge_names))
+        check("representation edges do not retain role parentheticals", not any("(OTHER)" in n or "DEFENDANT FROM" in n for n in edge_names), str(edge_names))
+
+
 def test_criminal_importer_guards() -> None:
     print("\ncriminal importer guards")
     ambiguous = {
@@ -341,12 +390,38 @@ def test_criminal_importer_guards() -> None:
     real_shape = importer.parse_charge_rows("459 PC/F 459 PC/F 8888888 466 PC/M")
     check("space-separated real charge string dedupes statutes", [row.get("code") for row in real_shape if row.get("code")] == ["PC 459", "PC 466"], str(real_shape))
     check("space-separated real charge string preserves sentinel", any(row.get("raw") == "8888888" and row.get("unparsed") for row in real_shape), str(real_shape))
-    mixed_codes = importer.parse_charge_rows("11377 HS/M; VC 23152(a)/M; BP 25658(a)/M; GC 1090/F")
+    mixed_codes = importer.parse_charge_rows("11377 HS/M; VC 23152(a)/M; BP 25658(a)/M; GC 1090/F", "06/20/2024")
     check("non-penal charge code families parse", [row.get("code") for row in mixed_codes] == ["HS 11377", "VC 23152(a)", "BP 25658(a)", "GC 1090"], str(mixed_codes))
     check("health and safety links use HSC", "lawCode=HSC" in mixed_codes[0].get("url", ""), str(mixed_codes))
     check("vehicle links use VEH", "lawCode=VEH" in mixed_codes[1].get("url", ""), str(mixed_codes))
     check("business and professions links use BPC", "lawCode=BPC" in mixed_codes[2].get("url", ""), str(mixed_codes))
     check("government links use GOV", "lawCode=GOV" in mixed_codes[3].get("url", ""), str(mixed_codes))
+    titled_vehicle = importer.parse_charge_rows("14601.1(a) VC/M; VC 14601.2(a,b)/M; VC 23152(a)/M", "06/20/2024")
+    lookup_available = any(path.exists() for path in importer.charge_title_lookup_paths())
+    if lookup_available:
+        check(
+            "vehicle suspended-license title parsed",
+            titled_vehicle[0].get("title") == "Driving When Privilege Suspended or Revoked for Offenses Not Relating to Driving Ability",
+            str(titled_vehicle),
+        )
+        check("vehicle suspended-license title is source-derived", titled_vehicle[0].get("title_source") == "court_bail_schedule", str(titled_vehicle))
+        check(
+            "vehicle suspended-license title marks non-contemporaneous source",
+            titled_vehicle[0].get("title_version_status") == "earliest_available_after_filing_supplemental_source",
+            str(titled_vehicle),
+        )
+        check("comma subdivision title uses filing-date schedule", titled_vehicle[1].get("title_version_status") == "effective_at_filing", str(titled_vehicle))
+        check("dui title parsed", titled_vehicle[2].get("title") == "DUI ALCOHOL", str(titled_vehicle))
+        check("dui title uses DOJ source", titled_vehicle[2].get("title_source") == "ca_doj_code_table", str(titled_vehicle))
+        check("dui title is effective at filing", titled_vehicle[2].get("title_version_status") == "effective_at_filing_supplemental_source", str(titled_vehicle))
+    else:
+        check("vehicle suspended-license title falls back to citation", titled_vehicle[0].get("title") == f"Vehicle Code {chr(167)} 14601.1(a)", str(titled_vehicle))
+        check("vehicle suspended-license fallback source is explicit", titled_vehicle[0].get("title_source") == "programmatic_citation", str(titled_vehicle))
+        check("dui title falls back to citation", titled_vehicle[2].get("title") == f"Vehicle Code {chr(167)} 23152(a)", str(titled_vehicle))
+    check("vehicle suspended-license class parsed", titled_vehicle[0].get("classification") == "misdemeanor", str(titled_vehicle))
+    check("vehicle suspended-license citation parsed", titled_vehicle[0].get("citation") == f"Vehicle Code {chr(167)} 14601.1(a)", str(titled_vehicle))
+    check("vehicle suspended-license link targets base section", "sectionNum=14601.1." in titled_vehicle[0].get("url", ""), str(titled_vehicle))
+    check("comma subdivision charge parses", titled_vehicle[1].get("code") == "VC 14601.2(a,b)", str(titled_vehicle))
     stale = importer.normalize_case_data({
         **headered,
         "unavailable_text": "No information available besides the name of the defendant, DOE, JANE, and date of filing 06/20/2024. criminal_portal_no_public_entries",
@@ -366,6 +441,7 @@ def test_criminal_importer_guards() -> None:
 def main() -> int:
     test_compact_criminal_directory()
     test_stale_compact_table_rejected()
+    test_attorney_representation_role_splitting()
     test_criminal_importer_guards()
     if FAILURES:
         print(f"\nRESULT: FAIL ({len(FAILURES)} failure(s))")

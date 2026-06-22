@@ -1,0 +1,129 @@
+name: Enrich (financial extraction)
+
+# CAN THIS RUN VIA GITHUB ACTIONS? Yes — this workflow is the answer.
+#
+# Trigger: workflow_dispatch ONLY. There is deliberately no `push`/`schedule`
+# trigger: the enrichment commits back to the repo, and an auto trigger would
+# create surprise self-pushing commits on every change. A human (or another
+# workflow) starts this from the Actions tab when they want a fresh pass.
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["OCR document bytes"]
+    types: [completed]
+
+# The job re-commits regenerated data/*.parquet. Bug-report logs are copied to
+# workflow artifacts so append-only diagnostics do not create rebase conflicts.
+permissions:
+  contents: write
+
+# Serialize runs so two dispatches don't race on the same files / push.
+concurrency:
+  group: enrich
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    if: ${{ github.repository == 'aimesy/sfsc-data' && (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success') }}
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Fetch enough history that the rebase-on-conflict retry (below) has
+          # something to rebase onto if a human commit lands mid-run.
+          fetch-depth: 0
+          filter: blob:none
+          sparse-checkout: |
+            .github/workflows/python-constraints.txt
+            data/**
+            scripts/check_repo_bloat.py
+            scripts/enrich_cases.py
+            scripts/extract_financials.py
+            tag_registry.json
+            tentatives.parquet
+          sparse-checkout-cone-mode: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        # pandas + pyarrow only — extract_financials.py is stdlib + pandas, no
+        # heavy ML deps, so CI installs in seconds.
+        run: pip install -c .github/workflows/python-constraints.txt pandas pyarrow
+
+      - name: Run financial extraction + commit results
+        run: |
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Always work against the freshest origin/master so a parallel human
+          # commit doesn't disappear when we push.
+          git fetch origin master
+          git checkout FETCH_HEAD
+
+          if [ ! -s tentatives.parquet ]; then
+            echo "ERROR: required input is missing or empty: tentatives.parquet"
+            exit 1
+          fi
+
+          # --- Financial extraction (PART A) ---------------------------------
+          # Full pass (no --limit) over tentatives.parquet. Writes
+          # data/financials.parquet and appends any disagreements to
+          # data/financials_bug_reports.ndjson.
+          python scripts/extract_financials.py \
+            --out data/financials.parquet \
+            --bug-report data/financials_bug_reports.ndjson
+
+          # --- Tag enrichment ------------------------------------------------
+          python scripts/enrich_cases.py \
+            --tags-parquet data/tags.parquet \
+            --bug-report data/heuristic_bug_reports.ndjson
+
+          mkdir -p .workflow-artifacts
+          cp data/financials_bug_reports.ndjson .workflow-artifacts/financials_bug_reports.ndjson 2>/dev/null || true
+          cp data/heuristic_bug_reports.ndjson .workflow-artifacts/heuristic_bug_reports.ndjson 2>/dev/null || true
+          git checkout -- data/financials_bug_reports.ndjson data/heuristic_bug_reports.ndjson 2>/dev/null || true
+
+          # Stage only the durable artifacts this workflow produces.
+          git add data/financials.parquet \
+                  data/tags.parquet 2>/dev/null || true
+          python scripts/check_repo_bloat.py --staged
+
+          if git diff --staged --quiet; then
+            echo "No enrichment changes to commit."
+            exit 0
+          fi
+
+          # [skip ci] keeps this commit from re-triggering any push-based
+          # workflow (and matches the repo's existing bot-commit convention).
+          git commit -m "Enrich financial data [skip ci]"
+
+          # Push, retrying on transient race conditions (e.g. a human commit
+          # landed while we were extracting). Rebase between attempts so we stay
+          # a clean fast-forward. (Same pattern as .github/workflows/ingest.yml.)
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:master; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt/5); rebasing on origin/master …"
+            git fetch origin master
+            git rebase origin/master || { git rebase --abort; exit 1; }
+            sleep $((attempt * 3))
+          done
+
+          echo "ERROR: failed to push after 5 attempts"
+          exit 1
+
+      - name: Upload enrichment diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: enrichment-bug-reports
+          path: .workflow-artifacts/*.ndjson
+          if-no-files-found: ignore
+          retention-days: 14

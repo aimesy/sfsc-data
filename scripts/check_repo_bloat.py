@@ -57,6 +57,14 @@ def run_git(args: list[str], *, check: bool = True) -> subprocess.CompletedProce
 
 
 def changed_paths(args: argparse.Namespace) -> list[str]:
+    if args.tracked_product_data:
+        if current_repo_slug() != "aimesy/sfsc":
+            return []
+        return [
+            path
+            for path in tracked_paths()
+            if any(fnmatch.fnmatch(path, pattern) for pattern in PRODUCT_REPO_DATA_GLOBS)
+        ]
     if args.path:
         return sorted({normalize_path(p) for p in args.path if normalize_path(p)})
     if args.staged:
@@ -68,6 +76,11 @@ def changed_paths(args: argparse.Namespace) -> list[str]:
     else:
         proc = run_git(["diff", "--cached", "--name-only", "--diff-filter=AM"])
     return sorted({normalize_path(line) for line in proc.stdout.splitlines() if normalize_path(line)})
+
+
+def tracked_paths() -> list[str]:
+    proc = run_git(["ls-files", "-z"])
+    return sorted({normalize_path(path) for path in proc.stdout.split("\0") if normalize_path(path)})
 
 
 def revision_range(args: argparse.Namespace) -> str:
@@ -182,6 +195,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--range", default="", help="Git revision range to check, e.g. origin/master..HEAD.")
     parser.add_argument("--changed-from", default="", help="Check files changed from this ref to HEAD.")
     parser.add_argument("--path", action="append", default=[], help="Specific path to check. May be repeated.")
+    parser.add_argument(
+        "--tracked-product-data",
+        action="store_true",
+        help="In aimesy/sfsc, check all tracked data-side paths that belong in aimesy/sfsc-data.",
+    )
     parser.add_argument("--max-bytes", type=int, default=DEFAULT_MAX_BYTES)
     parser.add_argument(
         "--allow-git-document-writes",

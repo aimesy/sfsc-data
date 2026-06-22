@@ -1,0 +1,89 @@
+name: Refresh CA civil fee schedules
+
+# Judicial Council statewide civil fee schedules are published at
+# https://courts.ca.gov/news-reference/reports-publications/civil-fees and
+# change occasionally (typically when the Legislature amends a Gov. Code fee
+# section). Fees waived under Gov. Code §68637 must be repaid at the RATE IN
+# EFFECT on the waiver's date, so we keep the full historical archive — not
+# just "current" — under sources/fee-schedules/, indexed by data/fee_schedules/
+# index.json. This workflow re-checks the index page yearly + on demand and
+# commits any newly-archived PDFs plus the refreshed index.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 09:00 UTC on Jan 15. Most civil-fee statute changes take effect on
+    # Jan 1; mid-January gives the JCC time to post the updated schedule.
+    - cron: '0 9 15 1 *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fee-schedules
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: ${{ github.repository == 'aimesy/sfsc-data' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
+          sparse-checkout: |
+            data/fee_schedules/**
+            scripts/check_repo_bloat.py
+            scripts/fetch_fee_schedules.py
+            sources/fee-schedules/**
+          sparse-checkout-cone-mode: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Refresh fee-schedule index + commit
+        run: |
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin master
+          git checkout FETCH_HEAD
+
+          # Pure stdlib — no pip install needed.
+          python scripts/fetch_fee_schedules.py
+          python - <<'PY'
+          from pathlib import Path
+          bad = []
+          for path in Path("sources/fee-schedules").glob("*.pdf"):
+              with path.open("rb") as handle:
+                  if handle.read(5) != b"%PDF-":
+                      bad.append(str(path))
+          if bad:
+              raise SystemExit("Non-PDF fee schedule artifact(s): " + ", ".join(bad))
+          PY
+
+          git add data/fee_schedules/index.json sources/fee-schedules/
+          python scripts/check_repo_bloat.py --staged
+
+          if git diff --staged --quiet; then
+            echo "No fee-schedule changes this year."
+            exit 0
+          fi
+
+          git commit -m "Refresh CA civil fee-schedule index [skip ci]"
+
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:master; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt/5); rebasing on origin/master …"
+            git fetch origin master
+            git rebase origin/master || { git rebase --abort; exit 1; }
+            sleep $((attempt * 3))
+          done
+          echo "ERROR: failed to push after 5 attempts"
+          exit 1

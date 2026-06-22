@@ -9,6 +9,7 @@ cache into archive/cases plus the append-only cases index.
 from __future__ import annotations
 
 import argparse
+from datetime import date
 import json
 import os
 import re
@@ -21,12 +22,13 @@ import document_storage as storage
 
 
 ROOT = Path(__file__).resolve().parents[1]
+CHARGE_TITLE_LOOKUP_PATH = ROOT / "assets" / "data" / "criminal-charge-titles.json"
 CRIMINAL_PORTAL_SCHEMA = "sfsc-criminal-portal-case-v1"
 CRIMINAL_PORTAL_SOURCE = "sftc-criminal-portal"
 CRIMINAL_PORTAL_URL = "https://webapps.sftc.org/crimportal/crimportal.dll"
 CRIMINAL_SESSION_RE = re.compile(r"([?&]SessionID=)[^&#]+", re.I)
 STATUTE_RE = re.compile(
-    r"\b(?:PC|PEN(?:AL)?\s+CODE|HS|VC|BP|CC|GC)\s*(?:§|SECTION|SEC\.)?\s*"
+    r"\b(?:PC|PEN(?:AL)?\s+CODE|HS|HSC|VC|VEH|BP|BPC|CC|CIV|CI|GC|GOV|FG|FGC|HN|HNC|PR|PRC|WI|WIC|FA|FAC|ED|EC|EDC|EL|IC|LC|RT|UI|FC|PU|WC|SH|CCP|CP)\s*(?:\u00a7|SECTION|SEC\.)?\s*"
     r"\d+[A-Za-z]?(?:\.\d+)?(?:\([^)]+\))*",
     re.I,
 )
@@ -34,11 +36,36 @@ PROCEDURAL_STATUTE_RE = re.compile(
     r"\bPC\s*(?:1001\.3[56]|1001\.95|1538\.5|1050|1203\.2|1369|1370|1382|1385|1417|3000\.08|3455|4011(?:\.6)?)\b",
     re.I,
 )
+CHARGE_CODE_PATTERN = (
+    r"PC|PEN(?:AL)?\s+CODE|PEN|"
+    r"HS|HSC|H\s*&\s*S|HEALTH\s+AND\s+SAFETY\s+CODE|"
+    r"VC|VEH|VEH(?:ICLE)?\s+CODE|"
+    r"BP|BPC|B\s*&\s*P|BUS(?:INESS)?\s+AND\s+PROF(?:ESSIONS)?\s+CODE|"
+    r"CC|CIV|CIV(?:IL)?\s+CODE|"
+    r"GC|GOV|GOV(?:ERNMENT)?\s+CODE|"
+    r"FG|FGC|F\s*&\s*G|FISH\s+AND\s+GAME\s+CODE|"
+    r"HN|HNC|H\s*&\s*N|HARBORS?\s+AND\s+NAV(?:IGATION)?\s+CODE|"
+    r"PR|PRC|PUBLIC\s+RES(?:OURCES)?\s+CODE|"
+    r"WI|WIC|W\s*&\s*I|WELFARE\s+AND\s+INSTITUTIONS\s+CODE|"
+    r"FA|FAC|FOOD\s+AND\s+AG(?:RICULTURAL)?\s+CODE|"
+    r"ED|EC|EDC|EDUCATION\s+CODE|"
+    r"EL|ELECTIONS?\s+CODE|"
+    r"IC|INS(?:URANCE)?\s+CODE|"
+    r"LC|LAB(?:OR)?\s+CODE|"
+    r"RT|RTC|REV(?:ENUE)?\s+AND\s+TAX(?:ATION)?\s+CODE|"
+    r"UI|UIC|UNEMPLOYMENT\s+INS(?:URANCE)?\s+CODE|"
+    r"FC|FIN(?:ANCIAL)?\s+CODE|"
+    r"PU|PUC|PUBLIC\s+UTIL(?:ITIES)?\s+CODE|"
+    r"WC|WAT(?:ER)?\s+CODE|"
+    r"SH|SHC|STREETS?\s+AND\s+HIGHWAYS?\s+CODE|"
+    r"CCP|CP|CODE\s+OF\s+CIVIL\s+PROCEDURE"
+)
 CHARGE_STATUTE_RE = re.compile(
-    r"\b(?:(?P<code1>PC|PEN(?:AL)?\s+CODE|HS|H\s*&\s*S|HEALTH\s+AND\s+SAFETY\s+CODE|VC|VEH(?:ICLE)?\s+CODE|BP|B\s*&\s*P|BUS(?:INESS)?\s+AND\s+PROF(?:ESSIONS)?\s+CODE|CC|CIV(?:IL)?\s+CODE|GC|GOV(?:ERNMENT)?\s+CODE)\s*(?:§|SECTION|SEC\.)?\s*(?P<section1>\d+[A-Za-z]?(?:\.\d+)?(?:\([A-Za-z0-9]+\))*)|(?P<section2>\d+[A-Za-z]?(?:\.\d+)?(?:\([A-Za-z0-9]+\))*)\s*(?P<code2>PC|HS|H\s*&\s*S|VC|BP|B\s*&\s*P|CC|GC))(?=$|[^A-Za-z0-9])",
+    rf"\b(?:(?P<code1>{CHARGE_CODE_PATTERN})\s*(?:\u00a7|SECTION|SEC\.)?\s*(?P<section1>\d+[A-Za-z]?(?:\.\d+)?(?:\([A-Za-z0-9,]+\))*)|(?P<section2>\d+[A-Za-z]?(?:\.\d+)?(?:\([A-Za-z0-9,]+\))*)\s*(?P<code2>{CHARGE_CODE_PATTERN}))(?=$|[^A-Za-z0-9])",
     re.I,
 )
 CHARGE_SENTINEL_RE = re.compile(r"\b(?:8{5,}|9{5,}|0{5,})\b")
+DATE_TOKEN_RE = re.compile(r"\b(\d{4}-\d{2}-\d{2}|\d{1,2}/\d{1,2}/\d{4})\b")
 
 CODE_NAMES = {
     "PC": ("Penal Code", "PEN"),
@@ -47,17 +74,24 @@ CODE_NAMES = {
     "BP": ("Business and Professions Code", "BPC"),
     "CC": ("Civil Code", "CIV"),
     "GC": ("Government Code", "GOV"),
+    "FG": ("Fish and Game Code", "FGC"),
+    "HN": ("Harbors and Navigation Code", "HNC"),
+    "PR": ("Public Resources Code", "PRC"),
+    "WI": ("Welfare and Institutions Code", "WIC"),
+    "FA": ("Food and Agricultural Code", "FAC"),
+    "ED": ("Education Code", "EDC"),
+    "EL": ("Elections Code", "ELEC"),
+    "IC": ("Insurance Code", "INS"),
+    "LC": ("Labor Code", "LAB"),
+    "RT": ("Revenue and Taxation Code", "RTC"),
+    "UI": ("Unemployment Insurance Code", "UIC"),
+    "FC": ("Financial Code", "FIN"),
+    "PU": ("Public Utilities Code", "PUC"),
+    "WC": ("Water Code", "WAT"),
+    "SH": ("Streets and Highways Code", "SHC"),
+    "CCP": ("Code of Civil Procedure", "CCP"),
 }
-CHARGE_TITLE_OVERRIDES = {
-    ("PC", "211"): "Robbery",
-    ("PC", "236"): "False imprisonment",
-    ("PC", "242"): "Battery",
-    ("PC", "137(b)"): "Influencing testimony or information",
-    ("PC", "245(a)(1)"): "Assault with a deadly weapon",
-    ("PC", "459"): "Burglary",
-    ("PC", "466"): "Possession of burglary tools",
-    ("HS", "11368"): "Forging or altering prescriptions",
-}
+_CHARGE_TITLE_LOOKUP: dict | None = None
 
 
 def norm_case(value: object) -> str:
@@ -71,18 +105,50 @@ def clean(value: object) -> str:
 def normalize_charge_code(value: object) -> str:
     text = clean(value).upper().replace(".", "")
     text = re.sub(r"\s+", " ", text)
-    if text in {"PC", "PEN CODE", "PENAL CODE"}:
+    if text in {"PC", "PEN", "PEN CODE", "PENAL CODE"}:
         return "PC"
-    if text in {"HS", "H&S", "H & S", "HEALTH AND SAFETY CODE"}:
+    if text in {"HS", "HSC", "H&S", "H & S", "HEALTH AND SAFETY CODE"}:
         return "HS"
-    if text in {"VC", "VEH CODE", "VEHICLE CODE"}:
+    if text in {"VC", "VEH", "VEH CODE", "VEHICLE CODE"}:
         return "VC"
-    if text in {"BP", "B&P", "B & P", "BUS AND PROF CODE", "BUSINESS AND PROF CODE", "BUSINESS AND PROFESSIONS CODE"}:
+    if text in {"BP", "BPC", "B&P", "B & P", "BUS AND PROF CODE", "BUSINESS AND PROF CODE", "BUSINESS AND PROFESSIONS CODE"}:
         return "BP"
-    if text in {"CC", "CIV CODE", "CIVIL CODE"}:
+    if text in {"CC", "CI", "CIV", "CIV CODE", "CIVIL CODE"}:
         return "CC"
-    if text in {"GC", "GOV CODE", "GOVERNMENT CODE"}:
+    if text in {"GC", "GOV", "GOV CODE", "GOVERNMENT CODE"}:
         return "GC"
+    if text in {"FG", "FGC", "F&G", "F & G", "FISH AND GAME CODE"}:
+        return "FG"
+    if text in {"HN", "HNC", "H&N", "H & N", "HARBOR AND NAV CODE", "HARBORS AND NAV CODE", "HARBORS AND NAVIGATION CODE"}:
+        return "HN"
+    if text in {"PR", "PRC", "PUBLIC RES CODE", "PUBLIC RESOURCES CODE"}:
+        return "PR"
+    if text in {"WI", "WIC", "W&I", "W & I", "WELFARE AND INSTITUTIONS CODE"}:
+        return "WI"
+    if text in {"FA", "FAC", "FOOD AND AG CODE", "FOOD AND AGRICULTURAL CODE"}:
+        return "FA"
+    if text in {"ED", "EC", "EDC", "EDUCATION CODE"}:
+        return "ED"
+    if text in {"EL", "ELECTION CODE", "ELECTIONS CODE"}:
+        return "EL"
+    if text in {"IC", "INS CODE", "INSURANCE CODE"}:
+        return "IC"
+    if text in {"LC", "LAB CODE", "LABOR CODE"}:
+        return "LC"
+    if text in {"RT", "RTC", "REV AND TAX CODE", "REVENUE AND TAX CODE", "REVENUE AND TAXATION CODE"}:
+        return "RT"
+    if text in {"UI", "UIC", "UNEMPLOYMENT INS CODE", "UNEMPLOYMENT INSURANCE CODE"}:
+        return "UI"
+    if text in {"FC", "FIN CODE", "FINANCIAL CODE"}:
+        return "FC"
+    if text in {"PU", "PUC", "PUBLIC UTIL CODE", "PUBLIC UTILITIES CODE"}:
+        return "PU"
+    if text in {"WC", "WAT CODE", "WATER CODE"}:
+        return "WC"
+    if text in {"SH", "SHC", "STREETS AND HIGHWAYS CODE", "STREET AND HIGHWAY CODE"}:
+        return "SH"
+    if text in {"CCP", "CP", "CODE OF CIVIL PROCEDURE"}:
+        return "CCP"
     return text
 
 
@@ -99,10 +165,164 @@ def leginfo_url(code: str, section: str) -> str:
     )
 
 
-def charge_title_for(code: str, section: str) -> str:
+def charge_title_lookup_paths() -> list[Path]:
+    paths: list[Path] = []
+    env_path = os.environ.get("SFSC_CHARGE_TITLE_LOOKUP")
+    if env_path:
+        paths.append(Path(env_path).expanduser())
+    paths.append(CHARGE_TITLE_LOOKUP_PATH)
+    nested_product_path = ROOT.parent.parent / "assets" / "data" / "criminal-charge-titles.json"
+    if nested_product_path not in paths:
+        paths.append(nested_product_path)
+    return paths
+
+
+def charge_title_lookup() -> dict:
+    global _CHARGE_TITLE_LOOKUP
+    if _CHARGE_TITLE_LOOKUP is not None:
+        return _CHARGE_TITLE_LOOKUP
+    payload = {}
+    for path in charge_title_lookup_paths():
+        try:
+            with path.open("r", encoding="utf-8") as fh:
+                payload = json.load(fh)
+            break
+        except FileNotFoundError:
+            continue
+    titles = payload.get("titles") if isinstance(payload, dict) else {}
+    _CHARGE_TITLE_LOOKUP = titles if isinstance(titles, dict) else {}
+    return _CHARGE_TITLE_LOOKUP
+
+
+def iso_date(value: object) -> str:
+    text = clean(value)
+    if not text:
+        return ""
+    match = DATE_TOKEN_RE.search(text)
+    if match:
+        text = match.group(1)
+    try:
+        return date.fromisoformat(text).isoformat()
+    except ValueError:
+        pass
+    try:
+        month, day, year = text.split("/", 2)
+        return date(int(year), int(month), int(day)).isoformat()
+    except (ValueError, IndexError):
+        return ""
+
+
+def sf_source(record: dict) -> bool:
+    return "san francisco" in clean(record.get("jurisdiction") or record.get("source_label")).lower()
+
+
+def statewide_source(record: dict) -> bool:
+    return "california department of justice" in clean(record.get("jurisdiction") or record.get("source_label")).lower()
+
+
+def source_priority(record: dict) -> int:
+    if sf_source(record):
+        return 3
+    if statewide_source(record):
+        return 2
+    return 1
+
+
+def generic_title_score(record: dict) -> int:
+    title = clean(record.get("title")).upper()
+    if not title:
+        return 0
+    score = 0
+    if ":" not in title and " - " not in title:
+        score += 2
+    if not re.search(r"\b(?:FIRST|SECOND|THIRD|1ST|2ND|3RD)\s+DEGREE\b", title):
+        score += 1
+    return score
+
+
+def effective_date_rank(record: dict) -> int:
+    text = clean(record.get("effective_from"))
+    if not re.match(r"^\d{4}-\d{2}-\d{2}$", text):
+        return 0
+    return int(text.replace("-", ""))
+
+
+def choose_schedule_record(records: list[dict], filing_date: object = "") -> tuple[dict, str]:
+    clean_records = [record for record in records if isinstance(record, dict) and clean(record.get("title"))]
+    if not clean_records:
+        return {}, ""
+    filed = iso_date(filing_date)
+    clean_records.sort(key=lambda row: (clean(row.get("effective_from")), clean(row.get("source")), clean(row.get("title"))))
+
+    def best(candidates: list[dict], prefer_latest: bool = True) -> dict:
+        if not candidates:
+            return {}
+        return sorted(
+            candidates,
+            key=lambda row: (
+                -source_priority(row),
+                -generic_title_score(row),
+                -effective_date_rank(row) if prefer_latest else effective_date_rank(row),
+                len(clean(row.get("title"))),
+                clean(row.get("source")),
+            ),
+        )[0]
+
+    if not filed:
+        return best(clean_records), "latest_available_no_filing_date"
+
+    exact_sf = [
+        row for row in clean_records
+        if sf_source(row)
+        and clean(row.get("effective_from")) <= filed
+        and (not clean(row.get("effective_to")) or filed <= clean(row.get("effective_to")))
+    ]
+    if exact_sf:
+        return best(exact_sf), "effective_at_filing"
+    exact_any = [
+        row for row in clean_records
+        if clean(row.get("effective_from")) <= filed
+        and (not clean(row.get("effective_to")) or filed <= clean(row.get("effective_to")))
+    ]
+    if exact_any:
+        return best(exact_any), "effective_at_filing_supplemental_source"
+    before_sf = [row for row in clean_records if sf_source(row) and clean(row.get("effective_from")) <= filed]
+    if before_sf:
+        return best(before_sf), "latest_available_before_filing"
+    before_any = [row for row in clean_records if clean(row.get("effective_from")) <= filed]
+    if before_any:
+        return best(before_any), "latest_available_before_filing_supplemental_source"
+    after_sf = [row for row in clean_records if sf_source(row) and clean(row.get("effective_from")) > filed]
+    if after_sf:
+        return best(after_sf, prefer_latest=False), "earliest_available_after_filing"
+    after_any = [row for row in clean_records if clean(row.get("effective_from")) > filed]
+    if after_any:
+        return best(after_any, prefer_latest=False), "earliest_available_after_filing_supplemental_source"
+    return best(clean_records), "latest_available_no_filing_date"
+
+
+def schedule_charge_title_for(code: str, section: str, filing_date: object = "") -> tuple[str, dict, str]:
     exact = clean(section)
     base = re.sub(r"\(.*$", "", exact)
-    return CHARGE_TITLE_OVERRIDES.get((code, exact)) or CHARGE_TITLE_OVERRIDES.get((code, base)) or ""
+    lookup = charge_title_lookup()
+    for key in (f"{code} {exact}", f"{code} {base}"):
+        records = lookup.get(key)
+        if isinstance(records, dict):
+            records = [records]
+        if isinstance(records, list) and records:
+            record, status = choose_schedule_record(records, filing_date)
+            title = clean(record.get("title")) if record else ""
+            if title:
+                return title, record, status
+    return "", {}, ""
+
+
+def generated_charge_title(code: str, section: str) -> str:
+    code_name = CODE_NAMES.get(code)
+    section = clean(section)
+    if not code_name or not section:
+        return ""
+    return f"{code_name[0]} {chr(167)} {section}"
 
 
 def charge_parts(value: object) -> list[str]:
@@ -124,29 +344,61 @@ def add_charge_row(rows: list[dict], seen: set[str], row: dict) -> None:
     rows.append(row)
 
 
-def charge_row_from_match(raw: str, match: re.Match, title: str = "") -> dict:
+def charge_row_from_match(raw: str, match: re.Match, title: str = "", filing_date: object = "") -> dict:
     code = normalize_charge_code(match.group("code1") or match.group("code2"))
     section = clean(match.group("section1") or match.group("section2"))
     suffix = re.search(r"(?:^|[/\s-])([FMI])(?:$|[/\s-])", raw, re.I)
     classification = ""
     if suffix:
         classification = {"F": "felony", "M": "misdemeanor", "I": "infraction"}.get(suffix.group(1).upper(), "")
+    provided_title = clean(title)
+    schedule_title, schedule_record, title_version_status = schedule_charge_title_for(code, section, filing_date)
+    generated_title = generated_charge_title(code, section)
     row = {
         "raw": clean(raw).strip(" ,"),
-        "title": clean(title) or charge_title_for(code, section) or clean(raw).strip(" ,"),
+        "title": provided_title or schedule_title or generated_title or clean(raw).strip(" ,"),
     }
+    record_title_source = clean(schedule_record.get("title_source")) if schedule_record else ""
+    if provided_title:
+        row["title_source"] = "criminal_index_text"
+        if schedule_title and schedule_title.casefold() != provided_title.casefold():
+            row["schedule_title"] = schedule_title
+    elif schedule_title:
+        row["title_source"] = record_title_source or "court_bail_schedule"
+    elif generated_title:
+        row["title_source"] = "programmatic_citation"
+    else:
+        row["title_source"] = "raw_index_text"
+    if schedule_record:
+        row["title_version_status"] = title_version_status
+        for source_key in (
+            "source",
+            "source_label",
+            "source_url",
+            "source_page",
+            "jurisdiction",
+            "effective_from",
+            "effective_to",
+            "schedule_classification",
+            "doj_cjis_code",
+            "doj_offense_level",
+            "doj_possible_sentence",
+        ):
+            value = schedule_record.get(source_key)
+            if value:
+                row[f"title_schedule_{source_key}"] = value
     if code and section and code in CODE_NAMES:
         row["code"] = f"{code} {section}"
         row["code_system"] = code
         row["section"] = section
-        row["citation"] = f"{CODE_NAMES[code][0]} § {section}"
+        row["citation"] = f"{CODE_NAMES[code][0]} {chr(167)} {section}"
         row["url"] = leginfo_url(code, section)
     if classification:
         row["classification"] = classification
     return row
 
 
-def parse_charge_rows(value: object) -> list[dict]:
+def parse_charge_rows(value: object, filing_date: object = "") -> list[dict]:
     rows: list[dict] = []
     seen: set[str] = set()
     for raw in charge_parts(value):
@@ -159,7 +411,7 @@ def parse_charge_rows(value: object) -> list[dict]:
                 if class_match:
                     end += class_match.end()
                 consumed.append((match.start(), end))
-                add_charge_row(rows, seen, charge_row_from_match(raw[match.start():end], match))
+                add_charge_row(rows, seen, charge_row_from_match(raw[match.start():end], match, filing_date=filing_date))
             residual = raw
             for start, end in reversed(consumed):
                 residual = residual[:start] + " " + residual[end:]
@@ -175,7 +427,7 @@ def parse_charge_rows(value: object) -> list[dict]:
             title = clean((raw[: match.start()] + " " + raw[match.end() :]).strip(" -:;,"))
             title = re.sub(r"^[/\s-]*[FMI]\b[/\s-]*", "", title, flags=re.I)
             title = re.sub(r"\b(?:felony|misdemeanor|infraction|F|M|I)\b\s*$", "", title, flags=re.I).strip(" -:;,/")
-            add_charge_row(rows, seen, charge_row_from_match(raw, match, title))
+            add_charge_row(rows, seen, charge_row_from_match(raw, match, title, filing_date=filing_date))
             continue
         for sentinel in CHARGE_SENTINEL_RE.findall(raw):
             add_charge_row(rows, seen, {
@@ -667,7 +919,7 @@ def normalize_case_data(data: dict, fallback_stem: str = "") -> dict:
     criminal_case_type = clean(data.get("criminal_case_type") or case_header.get("case_type"))
     criminal_title = clean(data.get("case_title") or data.get("title"))
     charges = criminal_charge_text(data)
-    charge_rows = parse_charge_rows(charges)
+    charge_rows = parse_charge_rows(charges, filed_date)
     if defendant and (
         not criminal_title
         or re.fullmatch(r"San Francisco criminal case\s+\d+", criminal_title, re.I)

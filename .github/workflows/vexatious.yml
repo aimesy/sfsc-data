@@ -1,0 +1,79 @@
+name: Refresh vexatious-litigant list
+
+# The Judicial Council Vexatious Litigant List is updated MONTHLY, and it is the
+# authoritative "currently in effect" source for vexatious-litigant status. This
+# workflow re-downloads it, re-derives the SF matches, and commits the refreshed
+# data/vexatious.parquet + data/scan_targets.txt. Monthly schedule + manual
+# dispatch (no push trigger — it commits back, like enrich.yml).
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 2 * *'   # 09:00 UTC on the 2nd of each month (after the monthly update)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vexatious
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: ${{ github.repository == 'aimesy/sfsc-data' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          filter: blob:none
+          sparse-checkout: |
+            .github/workflows/python-constraints.txt
+            data/**
+            scripts/check_repo_bloat.py
+            scripts/index_vexatious.py
+            sources/**
+            tag_registry.json
+          sparse-checkout-cone-mode: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -c .github/workflows/python-constraints.txt pandas pyarrow pypdf
+
+      - name: Refresh vexatious list + commit
+        run: |
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin master
+          git checkout FETCH_HEAD
+
+          # Downloads courts.ca.gov/system/files/file/vexlit.pdf, parses SF rows,
+          # matches our tentatives, writes data/vexatious.parquet + scan_targets.
+          python scripts/index_vexatious.py
+
+          git add data/vexatious.parquet data/scan_targets.txt
+          python scripts/check_repo_bloat.py --staged
+
+          if git diff --staged --quiet; then
+            echo "No vexatious-list changes this month."
+            exit 0
+          fi
+
+          git commit -m "Refresh vexatious-litigant list [skip ci]"
+
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:master; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt/5); rebasing on origin/master …"
+            git fetch origin master
+            git rebase origin/master || { git rebase --abort; exit 1; }
+            sleep $((attempt * 3))
+          done
+          echo "ERROR: failed to push after 5 attempts"
+          exit 1
