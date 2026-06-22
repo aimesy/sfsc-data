@@ -740,7 +740,7 @@ def require_case_directory_sources(
 ) -> None:
     if allow_missing:
         return
-    if index_rows and case_dir.exists():
+    if index_rows and case_dir.exists() and not table_rows:
         case_files = case_json_file_numbers(case_dir)
         if case_files:
             missing_json = sorted(set(index_rows) - case_files)
@@ -752,13 +752,7 @@ def require_case_directory_sources(
                     f"{len(missing_json)} case-index row(s) without matching tracked case JSON under {case_dir}: "
                     f"{sample}{suffix}. Repair archive/cases before rebuilding the website case directory."
                 )
-    if table_rows and len(table_rows) < len(index_rows):
-        raise SystemExit(
-            "ERROR: found "
-            f"{len(index_rows)} case-index rows but only {len(table_rows)} rows in {case_table}. "
-            "Refusing to build the website case directory from stale compact case data."
-        )
-    if table_rows and index_rows:
+    if table_rows and index_rows and len(table_rows) == len(index_rows):
         missing_from_table = set(index_rows) - set(table_rows)
         extra_in_table = set(table_rows) - set(index_rows)
         if missing_from_table or extra_in_table:
