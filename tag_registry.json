@@ -1,0 +1,42 @@
+{
+  "_comment": "CENTRAL, PROGRAMMATIC SOURCE OF TRUTH for every tag namespace. Consumed by the Python tagging pipeline (scripts/enrich_cases.py stamps each emitted tag with its source + authority from here) and by the viewer (renders 'tentative' tiers as dotted pills). When more than one source tags the same case in the same namespace, the HIGHEST-authority source wins; a tag is shown 'tentative' (dotted) when its only available source is tentative-tier. Keep this file as the one place tag provenance/weighing is defined.",
+
+  "sources": {
+    "tentative": { "tier": 1, "authority": 1, "tentative": true,  "render": "dotted", "from": "Tentative ruling text — the only data available until docket/OCR capture runs. Inferred, low-recall, lowest authority." },
+    "docket":    { "tier": 2, "authority": 3, "tentative": false, "render": "solid",  "from": "Case-info docket: Payments / Register of Actions / Parties / Attorneys. Court-confirmed facts; authoritative for categories, parties, financials, fee waivers." },
+    "ocr":       { "tier": 3, "authority": 2, "tentative": false, "render": "solid",  "from": "OCR'd complaint caption — the full set of pleaded causes of action. Most complete for 'cause'." },
+    "judicial_council": { "tier": 4, "authority": 4, "tentative": false, "render": "solid", "from": "Statewide Judicial Council of California Vexatious Litigant List (CCP 391.7 prefiling orders; https://courts.ca.gov/system/files/file/vexlit.pdf), updated MONTHLY. The authoritative 'currently in effect' roster for vexatious-litigant status; carries the issuing court + case number + order date, so SF rows match our cases by case_number (strong)." }
+  },
+
+  "_authority_note": "Authority (weighing) is NOT the same as the tier number. docket(3) > ocr(2) > tentative(1). For factual namespaces (category/litigant/financial) the docket is the source of truth; for the full cause-of-action list the OCR caption is the source of truth; tentative is always the fallback of last resort.",
+  "authority_order": ["judicial_council", "docket", "ocr", "tentative"],
+
+  "namespaces": {
+    "matter":         { "source_of_truth": "docket", "sources": ["docket", "tentative"], "render": "ns-matter",
+                        "values": ["civil-forfeiture", "contract", "damages", "employment", "family", "injunction", "pi", "probate", "real-property", "unlawful-detainer", "writ"],
+                        "notes": "Matter type (real-property, probate, unlawful-detainer, ...). Docket Parties/category authoritative; tentative inferred from caption/ruling." },
+    "category":       { "source_of_truth": "docket", "sources": ["docket"],              "render": "ns-category", "notes": "The docket's official 'Cause of Action' field (usually ONE per case). Parent of the 'cause' namespace." },
+    "cause":          { "source_of_truth": "ocr",    "sources": ["ocr", "docket", "tentative"], "parent": "category", "render": "tag-pill-child",
+                        "values": ["accounting", "administrative-mandate", "assault", "battery", "breach-of-contract", "breach-of-fiduciary-duty", "breach-of-implied-covenant", "breach-of-lease", "breach-of-trust", "breach-of-warranty", "common-counts", "conspiracy", "constructive-trust", "conversion", "declaratory-relief", "defamation", "discrimination", "elder-abuse", "fraud", "indemnity", "injunctive-relief", "intentional-infliction", "intentional-misrepresentation", "interference", "invasion-of-privacy", "loss-of-consortium", "negligence", "negligent-hiring", "negligent-infliction", "negligent-misrepresentation", "nuisance", "partition", "premises-liability", "professional-negligence", "promissory-estoppel", "quantum-meruit", "quiet-title", "rescission", "resulting-trust", "retaliation", "specific-performance", "strict-liability", "trespass", "unfair-competition", "unjust-enrichment", "wage-and-hour", "writ-of-certiorari", "writ-of-mandate", "writ-of-prohibition", "wrongful-eviction", "wrongful-termination"],
+                        "notes": "Specific causes of action. OCR'd complaint caption is the complete pleaded list (source of truth); rendered as child sub-tags under the docket 'category'. Tentative inference is the fallback." },
+    "litigant":       { "source_of_truth": "docket", "sources": ["docket", "tentative"], "render": "ns-litigant",
+                        "values": ["entity", "individual", "unknown"],
+                        "notes": "individual vs entity. Docket Parties tab authoritative; tentative parses the caption." },
+    "entity_subtype": { "source_of_truth": "docket", "sources": ["docket", "tentative"], "render": "ns-entity",
+                        "values": ["bank", "corporation", "estate", "government", "hoa", "hospital-medical", "insurer", "llc", "lp-llp", "partnership", "trust", "university"],
+                        "notes": "corporation/llc/lp-llp/bank/insurer/government/trust/estate/hospital-medical/university/hoa/partnership. Docket Parties authoritative." },
+    "fee_waiver":     { "source_of_truth": "docket", "sources": ["docket", "tentative"], "render": "ns-financial", "financial": true,
+                        "values": ["fee-waiver"],
+                        "lifecycle": ["requested", "granted", "denied", "withdrawn", "repaid"],
+                        "notes": "Indigent / in-forma-pauperis court-fee waiver. Source of truth is the docket ROA/Payments (request -> grant/deny -> withdraw-on-improved-situation/settlement -> itemized repayment of waived fees; fixture CGC16556148). Tentative-text detection (~50 cases) is a low-recall, dotted fallback until docket capture runs." },
+    "outcome":        { "source_of_truth": "docket", "sources": ["docket", "tentative"], "render": "ns-outcome",
+                        "values": ["hearing-required"],
+                        "notes": "Disposition/outcome tags derived from tentative-ruling text. hearing-required marks rulings where the court requires live argument or appearance instead of deciding on the papers; dotted/tentative until docket/calendar confirmation lands." },
+    "instrument":     { "source_of_truth": "docket", "sources": ["docket", "tentative"], "render": "ns-instrument",
+                        "values": ["fee-award", "judgment", "stipulation"],
+                        "notes": "Disposition / filed-instrument type derived from the motion/petition CAPTION (case_title + calendar_matter; ruling text is a backup). fee-award = attorney/expert fees & costs award or motion; judgment = a JUDGMENT instrument (notice of entry of judgment, default judgment, judgment of dismissal, consent/entry of judgment) but NOT motion-types that merely contain the word (judgment on the pleadings, summary judgment, substituted judgment); stipulation = a stipulation / stipulation-and-order. TITLES are the tentative-tier signal; the docket ROA/disposition is the eventual source of truth." },
+    "status":         { "source_of_truth": "docket", "sources": ["judicial_council", "docket", "tentative"], "render": "ns-status",
+                        "values": ["propria-persona", "vexatious-litigant"],
+                        "notes": "Party status tags; propria-persona and vexatious-litigant are INDEPENDENT (only a self-represented person can be DECLARED vexatious, but once declared they stay vexatious even when later represented by counsel). propria-persona = self-represented appearance (in propria persona / in pro per / pro se); source of truth is the docket Parties/Attorneys tab (a party with NO attorney / 'PRO PER'), tentative-text the dotted fallback. vexatious-litigant has a STRICT, special provenance — NEVER inferred from tentative-ruling text: (1) on the current Judicial Council Vexatious Litigant List -> source=judicial_council, SOLID/authoritative (the live 'in effect' roster; SF rows match by case_number); (2) a docket court order declaring them vexatious but NOT on the current list -> rendered TENTATIVE/DOTTED even though it is docket-sourced, because the order may have been vacated/expired/unreported and may no longer be in effect; (3) a tentative-ruling mention is NOT a valid source at all." }
+  }
+}

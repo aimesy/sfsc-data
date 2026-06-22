@@ -1053,6 +1053,7 @@ def main() -> int:
     index_enrichments = args.index_enrichment if args.index_enrichment is not None else DEFAULT_INDEX_ENRICHMENTS
     json_rows = {} if args.case_json_mode == "none" else case_json_rows(args.case_dir)
     index_rows = latest_index_rows(args.index)
+    case_index_row_count = len(index_rows)
     index_rows, index_enrichment_counts = apply_index_enrichments(index_rows, index_enrichments)
     table_rows = case_table_rows(args.case_table) if args.case_json_mode == "none" or (index_rows and not json_rows) else {}
     require_case_directory_sources(
@@ -1083,7 +1084,7 @@ def main() -> int:
         "case_json_mode": args.case_json_mode,
         "case_json_rows": len(json_rows),
         "case_table_rows": len(table_rows),
-        "case_index_rows": len(index_rows),
+        "case_index_rows": case_index_row_count,
         "case_index_enrichment_rows": index_enrichment_counts,
         "case_json_fingerprint": case_set_fingerprint(json_rows) if json_rows else "",
         "case_table_fingerprint": case_set_fingerprint(table_rows) if table_rows else "",
