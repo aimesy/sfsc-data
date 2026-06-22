@@ -28,6 +28,7 @@ from import_scanner_cases import parse_charge_rows
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CASE_DIR = ROOT / "archive" / "cases"
 DEFAULT_INDEX = ROOT / "archive" / "cases-index.ndjson"
+DEFAULT_INDEX_ENRICHMENTS = [ROOT / "archive" / "criminal-index-enrichment.ndjson"]
 DEFAULT_CASE_TABLE = ROOT / "data" / "cases.parquet"
 DEFAULT_OUT_DIR = ROOT / "archive" / "case-directory"
 DEFAULT_DISCOVERY_PATHS = [
@@ -342,6 +343,50 @@ def latest_index_rows(path: Path) -> dict[str, dict[str, Any]]:
         ):
             rows[case_number] = row
     return rows
+
+
+def apply_index_enrichments(
+    rows: dict[str, dict[str, Any]],
+    paths: Iterable[Path],
+) -> tuple[dict[str, dict[str, Any]], dict[str, int]]:
+    counts: dict[str, int] = {}
+    enrichable = {
+        "case_title",
+        "charges",
+        "charges_json",
+        "filing_date",
+        "filed_date",
+        "case_type",
+        "source",
+        "source_detail",
+        "criminal_case_number",
+        "portal_case_id",
+    }
+    for path in paths:
+        count = 0
+        for raw in parse_ndjson(path):
+            case_number = norm_case(raw.get("case_number"))
+            if not case_number:
+                continue
+            count += 1
+            base = rows.setdefault(case_number, {"case_number": case_number})
+            for key in enrichable:
+                value = raw.get(key)
+                if value not in (None, "", []):
+                    if key in {"filing_date", "filed_date"}:
+                        if not clean(base.get("filing_date")) and not clean(base.get("filed_date")):
+                            base["filing_date"] = clean(value)
+                            base["filed_date"] = clean(value)
+                        continue
+                    if key == "case_type" and norm_case(base.get("case_number")).startswith("CRI"):
+                        base.setdefault("case_type", "criminal")
+                    if base.get(key) in (None, "", []):
+                        base[key] = value
+            if norm_case(base.get("case_number")).startswith("CRI") and not clean(base.get("case_type")):
+                base["case_type"] = "criminal"
+        if path.exists():
+            counts[rel(path)] = count
+    return rows, counts
 
 
 def case_json_file_numbers(path: Path) -> set[str]:
@@ -843,6 +888,7 @@ def display_row(row: dict[str, Any]) -> dict[str, Any]:
         "case_title",
         "charges",
         "charges_parsed",
+        "filing_date",
         "case_type",
         "source",
         "source_url",
@@ -976,6 +1022,16 @@ def main() -> int:
     parser.add_argument("--case-dir", type=Path, default=DEFAULT_CASE_DIR)
     parser.add_argument("--case-table", type=Path, default=DEFAULT_CASE_TABLE)
     parser.add_argument("--index", type=Path, default=DEFAULT_INDEX)
+    parser.add_argument(
+        "--index-enrichment",
+        type=Path,
+        action="append",
+        default=None,
+        help=(
+            "Additional compact NDJSON case-index facts to merge after "
+            "archive/cases-index.ndjson. Defaults to archive/criminal-index-enrichment.ndjson when present."
+        ),
+    )
     parser.add_argument("--out-dir", type=Path, default=DEFAULT_OUT_DIR)
     parser.add_argument("--discovery", type=Path, action="append", default=[])
     parser.add_argument(
@@ -1000,8 +1056,10 @@ def main() -> int:
     args = parser.parse_args()
 
     discovery_paths = args.discovery or DEFAULT_DISCOVERY_PATHS
+    index_enrichments = args.index_enrichment if args.index_enrichment is not None else DEFAULT_INDEX_ENRICHMENTS
     json_rows = {} if args.case_json_mode == "none" else case_json_rows(args.case_dir)
     index_rows = latest_index_rows(args.index)
+    index_rows, index_enrichment_counts = apply_index_enrichments(index_rows, index_enrichments)
     table_rows = case_table_rows(args.case_table) if args.case_json_mode == "none" or (index_rows and not json_rows) else {}
     require_case_directory_sources(
         mode=args.case_json_mode,
@@ -1021,6 +1079,9 @@ def main() -> int:
         source_paths.append(rel(args.case_table))
     if args.index.exists():
         source_paths.append(rel(args.index))
+    for path in index_enrichments:
+        if path.exists():
+            source_paths.append(rel(path))
     for path in discovery_paths:
         if path.exists():
             source_paths.append(rel(path))
@@ -1029,6 +1090,7 @@ def main() -> int:
         "case_json_rows": len(json_rows),
         "case_table_rows": len(table_rows),
         "case_index_rows": len(index_rows),
+        "case_index_enrichment_rows": index_enrichment_counts,
         "case_json_fingerprint": case_set_fingerprint(json_rows) if json_rows else "",
         "case_table_fingerprint": case_set_fingerprint(table_rows) if table_rows else "",
         "case_index_fingerprint": case_set_fingerprint(index_rows) if index_rows else "",
