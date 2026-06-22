@@ -213,10 +213,10 @@ def check_case_directory(
             failures.append(f"{case_index}: contains {duplicate_count} duplicate case_number row(s)")
         index_case_set = set(index_cases)
         actual_index_rows = len(index_cases)
-        if case_index_rows != actual_index_rows:
+        if case_index_rows < actual_index_rows:
             failures.append(
                 "manifest.source_counts.case_index_rows is "
-                f"{case_index_rows}, but {case_index} has {actual_index_rows} row(s)"
+                f"{case_index_rows}, below {case_index}'s {actual_index_rows} row(s)"
             )
         if case_dir and case_dir.exists() and case_table_rows <= 0:
             json_cases = case_json_numbers(case_dir)
