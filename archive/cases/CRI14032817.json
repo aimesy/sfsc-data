@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:23:22.040Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:21:02.799Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14032817",
   "criminal_case_number": "14032817",
@@ -24,19 +24,125 @@
       "name": "JOEL ARMSTRONG",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOEL ARMSTRONG",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-01-30T09:30:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/3455REIN/CH1:CJ90D/CTS: 35/4019HALF/RESTV/SA1:KIMBERLY ISABEL CLEGG; SUZANNE JANES; JAY PECK; TONY HALLDIN; MARIA MATTOS/SA2:1390 12TH AVENUE APT,#8; 1390 12TH AVENUE APT,#5 IN SAN FRANCISCO 94122; 1568 HARIGHT STREET SAN FRANCISCO, CA 94177/SAORD3/SAORD/X:PRCS TO TERMINATEON 07-26-15/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-01-30T09:15:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD 3455PC MOTION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-01-09T09:15:00.000Z",
+      "docketEntryComment": "/CAL: TO SET APD 3455PC MOTION/NP/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:MATTER ALSO SET IN DEPT26   /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-01-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SETR APD 3455PC MOTION/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWINGREASON:ON DEPT 22 CALENDAR/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-12-31T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOTION/PD/X:PD WIAMTR PRCS,/X:PRCS ADMINISTRATIVELY REVOKED,/SHER/NB/CONTD:SETTING APD PRCS MOTION/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-01-30 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 0,
+      "court_date": "2015-01-30",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-01-30 9:15 AM",
+      "hearingType": "To Set MTR PRCS Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 1,
+      "court_date": "2015-01-30",
+      "hearing_time": "9:15 AM",
+      "matters": "To Set MTR PRCS Hearing",
+      "hearing_type": "To Set MTR PRCS Hearing",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-01-09 9:15 AM",
+      "hearingType": "To Set MTR PRCS Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2015-01-09",
+      "hearing_time": "9:15 AM",
+      "matters": "To Set MTR PRCS Hearing",
+      "hearing_type": "To Set MTR PRCS Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-01-09 9:00 AM",
+      "hearingType": "To Set MTR PRCS Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 3,
+      "court_date": "2015-01-09",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set MTR PRCS Hearing",
+      "hearing_type": "To Set MTR PRCS Hearing",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-12-31 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 4,
+      "court_date": "2014-12-31",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DIANA ROSENSTEIN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "3455(a) PC/F",
+    "filed_date": "2014-12-31",
+    "defendant": "JOEL ARMSTRONG",
+    "searched_key": "ARMSTRONG/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/14032817.json",
     "searched_last_name": "ARMSTRONG",
     "searched_first_prefix": "JO",
-    "charges": "3455(a) PC/F",
     "row": {
       "DEFENDANTNAME": "JOEL ARMSTRONG",
       "CASENUMBER": "CRI-14032817",
@@ -45,11 +151,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3799206",
+  "docket_entries": [
+    {
+      "filedDate": "2015-01-30T09:30:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/3455REIN/CH1:CJ90D/CTS: 35/4019HALF/RESTV/SA1:KIMBERLY ISABEL CLEGG; SUZANNE JANES; JAY PECK; TONY HALLDIN; MARIA MATTOS/SA2:1390 12TH AVENUE APT,#8; 1390 12TH AVENUE APT,#5 IN SAN FRANCISCO 94122; 1568 HARIGHT STREET SAN FRANCISCO, CA 94177/SAORD3/SAORD/X:PRCS TO TERMINATEON 07-26-15/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-01-30T09:30:00.000Z",
+      "description": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/3455REIN/CH1:CJ90D/CTS: 35/4019HALF/RESTV/SA1:KIMBERLY ISABEL CLEGG; SUZANNE JANES; JAY PECK; TONY HALLDIN; MARIA MATTOS/SA2:1390 12TH AVENUE APT,#8; 1390 12TH AVENUE APT,#5 IN SAN FRANCISCO 94122; 1568 HARIGHT STREET SAN FRANCISCO, CA 94177/SAORD3/SAORD/X:PRCS TO TERMINATEON 07-26-15/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-01-30T09:15:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD 3455PC MOTION/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-01-30T09:15:00.000Z",
+      "description": "/CAL:TO SET APD 3455PC MOTION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-01-09T09:15:00.000Z",
+      "docketEntryComment": "/CAL: TO SET APD 3455PC MOTION/NP/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:MATTER ALSO SET IN DEPT26   /",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-01-09T09:15:00.000Z",
+      "description": "/CAL: TO SET APD 3455PC MOTION/NP/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:MATTER ALSO SET IN DEPT26 /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-01-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SETR APD 3455PC MOTION/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWINGREASON:ON DEPT 22 CALENDAR/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-01-09T09:00:00.000Z",
+      "description": "/CAL:TO SETR APD 3455PC MOTION/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWINGREASON:ON DEPT 22 CALENDAR/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-12-31T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOTION/PD/X:PD WIAMTR PRCS,/X:PRCS ADMINISTRATIVELY REVOKED,/SHER/NB/CONTD:SETTING APD PRCS MOTION/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2014-12-31T11:30:00.000Z",
+      "description": "/CAL:APD 3455PC MOTION/PD/X:PD WIAMTR PRCS,/X:PRCS ADMINISTRATIVELY REVOKED,/SHER/NB/CONTD:SETTING APD PRCS MOTION/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14032817",
-    "portal_case_id": "",
+    "portal_case_id": "3799206",
     "display_case_number": "CRI-14032817",
     "defendant": "JOEL ARMSTRONG",
     "filed_date": "2014-12-31",
@@ -59,12 +216,68 @@
       "defendant": "JOEL ARMSTRONG",
       "filed_date": "2014-12-31"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOEL ARMSTRONG, and date of filing 2014-12-31. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOEL ARMSTRONG, date of filing, 2014-12-31, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:21:03.474Z",
+  "portal_case_id": "3799206",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14032817",
+      "defendant": "JOEL ARMSTRONG",
+      "filed_date": "2014-12-31"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3799206"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.367277+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:57:32.389Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:25:29.083Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13020487",
   "criminal_case_number": "13020487",
@@ -24,19 +24,53 @@
       "name": "JOSEPH ANTHONY FRANCIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSEPH ANTHONY FRANCIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-07-31T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/X:DIVERSION GRANTED BY STIPULATION AS TO COUNTS 1 AND 2 DEEMED COMPLETED AND DISMISSED PURSUANT TO 1001,7PC,/1001,7:1 AND 2/X:CASE ALSO DISM PURS PC 1001,9/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-07-31 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2013-07-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "AZITA GHAFOURPOUR",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "459 PC/M 466 PC/M",
+    "filed_date": "2013-07-29",
+    "defendant": "JOSEPH ANTHONY FRANCIS",
+    "searched_key": "FRANCIS/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/13020487.json",
     "searched_last_name": "FRANCIS",
     "searched_first_prefix": "JO",
-    "charges": "459 PC/M 466 PC/M",
     "row": {
       "DEFENDANTNAME": "JOSEPH ANTHONY FRANCIS",
       "CASENUMBER": "CRI-13020487",
@@ -45,11 +79,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3750963",
+  "docket_entries": [
+    {
+      "filedDate": "2013-07-31T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/X:DIVERSION GRANTED BY STIPULATION AS TO COUNTS 1 AND 2 DEEMED COMPLETED AND DISMISSED PURSUANT TO 1001,7PC,/1001,7:1 AND 2/X:CASE ALSO DISM PURS PC 1001,9/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-07-31T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/X:DIVERSION GRANTED BY STIPULATION AS TO COUNTS 1 AND 2 DEEMED COMPLETED AND DISMISSED PURSUANT TO 1001,7PC,/1001,7:1 AND 2/X:CASE ALSO DISM PURS PC 1001,9/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13020487",
-    "portal_case_id": "",
+    "portal_case_id": "3750963",
     "display_case_number": "CRI-13020487",
     "defendant": "JOSEPH ANTHONY FRANCIS",
     "filed_date": "2013-07-29",
@@ -59,12 +104,104 @@
       "defendant": "JOSEPH ANTHONY FRANCIS",
       "filed_date": "2013-07-29"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "459 PC/M 466 PC/M",
+    "charge_rows": [
+      {
+        "raw": "459 PC/M",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "466 PC/M",
+        "title": "Penal Code § 466",
+        "title_source": "programmatic_citation",
+        "code": "PC 466",
+        "code_system": "PC",
+        "section": "466",
+        "citation": "Penal Code § 466",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSEPH ANTHONY FRANCIS, and date of filing 2013-07-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSEPH ANTHONY FRANCIS, date of filing, 2013-07-29, and charges in the case: 459 PC/M 466 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/M",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "466 PC/M",
+      "title": "Penal Code § 466",
+      "title_source": "programmatic_citation",
+      "code": "PC 466",
+      "code_system": "PC",
+      "section": "466",
+      "citation": "Penal Code § 466",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:25:29.765Z",
+  "portal_case_id": "3750963",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13020487",
+      "defendant": "JOSEPH ANTHONY FRANCIS",
+      "filed_date": "2013-07-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3750963"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.766095+00:00"
 }

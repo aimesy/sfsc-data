@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:36:17.376Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:24:53.084Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13011339",
   "criminal_case_number": "13011339",
@@ -24,19 +24,117 @@
       "name": "OMAR ARTURO GARCIA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "OMAR ARTURO GARCIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-04-26T09:09:39.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-05-08T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/TWS/CH3:ISS:CPROB:PROB 3 Y:PJ 15 D/CTS:15/WS/VF2:140/PROBREVFN/COA:40/ICNA/COLLECT/CTORD:THAT THE DEFENDANT MUST REPORT TO SAN MATEO COUNTY ADULT PROBATION DEPARTMENT/SA1:150 YARDS FROM ADAL SALEH/SA2:150YARDS FROM RUBEN'S MARKET AT 2997 FOLSOM STREET, SF, CA 94110/SAORD/OBEY/ACCEP/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-05-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:PEOPLE MOVE TO AMEND THE COMPLAINT TO REDUCE COUNT 3 TO A MISDEMEANOR; COURT GRANTS MOTION,/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/FAWA/IRRC/DEFT ADV ANNL:3/NOLO/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-04-26T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: SUSAN KAPLAN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/NTW/LD: FOR PRELIMINARY HEARING IS 05-10-13/987,2/BAIL: 75000/SA1: ADAL SALEH/SA2: RUBEN'S MARKET 2997 FOLSOM/SAORD/TE: HALF DAY/CONTD: TOSET/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-04-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/CON:CHRISTOPHER DOVE/CONTD:PRELIMINARY HEARING/DOP/TE:HALF DAY/4011,5/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-05-08 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 0,
+      "court_date": "2013-05-08",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-05-08 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 1,
+      "court_date": "2013-05-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-04-29 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 2,
+      "court_date": "2013-04-29",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-04-26 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2013-04-26",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CHRISTOPHER DOVE",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "211 PC/F 245(a)(4) PC/F 594(b)(1) PC/M",
+    "filed_date": "2013-04-26",
+    "defendant": "OMAR ARTURO GARCIA",
+    "searched_key": "GARCIA/OM",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/13011339.json",
     "searched_last_name": "GARCIA",
     "searched_first_prefix": "OM",
-    "charges": "211 PC/F 245(a)(4) PC/F 594(b)(1) PC/M",
     "row": {
       "DEFENDANTNAME": "OMAR ARTURO GARCIA",
       "CASENUMBER": "CRI-13011339",
@@ -45,11 +143,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3741938",
+  "docket_entries": [
+    {
+      "filedDate": "2013-04-26T09:09:39.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-04-26T09:09:39.000Z",
+      "description": "Complaint",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-05-08T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/TWS/CH3:ISS:CPROB:PROB 3 Y:PJ 15 D/CTS:15/WS/VF2:140/PROBREVFN/COA:40/ICNA/COLLECT/CTORD:THAT THE DEFENDANT MUST REPORT TO SAN MATEO COUNTY ADULT PROBATION DEPARTMENT/SA1:150 YARDS FROM ADAL SALEH/SA2:150YARDS FROM RUBEN'S MARKET AT 2997 FOLSOM STREET, SF, CA 94110/SAORD/OBEY/ACCEP/DISM3/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-05-08T09:15:00.000Z",
+      "description": "/CAL:SENTENCING/TWS/CH3:ISS:CPROB:PROB 3 Y:PJ 15 D/CTS:15/WS/VF2:140/PROBREVFN/COA:40/ICNA/COLLECT/CTORD:THAT THE DEFENDANT MUST REPORT TO SAN MATEO COUNTY ADULT PROBATION DEPARTMENT/SA1:150 YARDS FROM ADAL SALEH/SA2:150YARDS FROM RUBEN'S MARKET AT 2997 FOLSOM STREET, SF, CA 94110/SAORD/OBEY/ACCEP/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-05-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:PEOPLE MOVE TO AMEND THE COMPLAINT TO REDUCE COUNT 3 TO A MISDEMEANOR; COURT GRANTS MOTION,/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/FAWA/IRRC/DEFT ADV ANNL:3/NOLO/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-05-08T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/X:PEOPLE MOVE TO AMEND THE COMPLAINT TO REDUCE COUNT 3 TO A MISDEMEANOR; COURT GRANTS MOTION,/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/FAWA/IRRC/DEFT ADV ANNL:3/NOLO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-04-26T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: SUSAN KAPLAN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/NTW/LD: FOR PRELIMINARY HEARING IS 05-10-13/987,2/BAIL: 75000/SA1: ADAL SALEH/SA2: RUBEN'S MARKET 2997 FOLSOM/SAORD/TE: HALF DAY/CONTD: TOSET/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2013-04-26T13:30:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON: SUSAN KAPLAN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/NTW/LD: FOR PRELIMINARY HEARING IS 05-10-13/987,2/BAIL: 75000/SA1: ADAL SALEH/SA2: RUBEN'S MARKET 2997 FOLSOM/SAORD/TE: HALF DAY/CONTD: TOSET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-04-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/CON:CHRISTOPHER DOVE/CONTD:PRELIMINARY HEARING/DOP/TE:HALF DAY/4011,5/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2013-04-29T09:00:00.000Z",
+      "description": "/CAL:TO SET/CON:CHRISTOPHER DOVE/CONTD:PRELIMINARY HEARING/DOP/TE:HALF DAY/4011,5/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13011339",
-    "portal_case_id": "",
+    "portal_case_id": "3741938",
     "display_case_number": "CRI-13011339",
     "defendant": "OMAR ARTURO GARCIA",
     "filed_date": "2013-04-26",
@@ -59,12 +218,120 @@
       "defendant": "OMAR ARTURO GARCIA",
       "filed_date": "2013-04-26"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "211 PC/F 245(a)(4) PC/F 594(b)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "211 PC/F",
+        "title": "Penal Code § 211",
+        "title_source": "programmatic_citation",
+        "code": "PC 211",
+        "code_system": "PC",
+        "section": "211",
+        "citation": "Penal Code § 211",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "245(a)(4) PC/F",
+        "title": "Penal Code § 245(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 245(a)(4)",
+        "code_system": "PC",
+        "section": "245(a)(4)",
+        "citation": "Penal Code § 245(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "594(b)(1) PC/M",
+        "title": "Penal Code § 594(b)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(1)",
+        "code_system": "PC",
+        "section": "594(b)(1)",
+        "citation": "Penal Code § 594(b)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, OMAR ARTURO GARCIA, and date of filing 2013-04-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, OMAR ARTURO GARCIA, date of filing, 2013-04-26, and charges in the case: 211 PC/F 245(a)(4) PC/F 594(b)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "211 PC/F",
+      "title": "Penal Code § 211",
+      "title_source": "programmatic_citation",
+      "code": "PC 211",
+      "code_system": "PC",
+      "section": "211",
+      "citation": "Penal Code § 211",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "245(a)(4) PC/F",
+      "title": "Penal Code § 245(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 245(a)(4)",
+      "code_system": "PC",
+      "section": "245(a)(4)",
+      "citation": "Penal Code § 245(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "594(b)(1) PC/M",
+      "title": "Penal Code § 594(b)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(1)",
+      "code_system": "PC",
+      "section": "594(b)(1)",
+      "citation": "Penal Code § 594(b)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:24:53.894Z",
+  "portal_case_id": "3741938",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13011339",
+      "defendant": "OMAR ARTURO GARCIA",
+      "filed_date": "2013-04-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3741938"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.499122+00:00"
 }

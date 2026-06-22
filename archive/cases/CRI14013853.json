@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:12:41.535Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:19:15.711Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14013853",
   "criminal_case_number": "14013853",
@@ -24,11 +24,90 @@
       "name": "ROBERTO MARTINEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROBERTO MARTINEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-06-23T09:15:00.000Z",
+      "docketEntryComment": "/CAL:TS APD PRCS REV HRG/3455ADV/3455ADM/3455REIN/CH1:CJ32D/CTS:32/4019HALF/X:PRCS WILL TERMINATE ON 01-22-17/SAORD/SA2:INTERSECTION OF 16TH & MISSION ST/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-06-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD 3455PC PRCS REVOCATION HEARING, TRAILING #14013831/CONT/DO",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-05-29T11:30:00.000Z",
+      "docketEntryComment": "/CAL: APD 3455PC/SHER/NB/CONTD: TO SET APD 3455 & JOIN #14013831 06-09-14IN DEPT 11/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-06-23 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2014-06-23",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-06-23 9:00 AM",
+      "hearingType": "To Set MTR PRCS Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2014-06-23",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set MTR PRCS Hearing",
+      "hearing_type": "To Set MTR PRCS Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-06-09 9:00 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2014-06-09",
+      "hearing_time": "9:00 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-05-29 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "2014-05-29",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PHOENIX STREETS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +124,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3780548",
+  "docket_entries": [
+    {
+      "filedDate": "2014-06-23T09:15:00.000Z",
+      "docketEntryComment": "/CAL:TS APD PRCS REV HRG/3455ADV/3455ADM/3455REIN/CH1:CJ32D/CTS:32/4019HALF/X:PRCS WILL TERMINATE ON 01-22-17/SAORD/SA2:INTERSECTION OF 16TH & MISSION ST/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-06-23T09:15:00.000Z",
+      "description": "/CAL:TS APD PRCS REV HRG/3455ADV/3455ADM/3455REIN/CH1:CJ32D/CTS:32/4019HALF/X:PRCS WILL TERMINATE ON 01-22-17/SAORD/SA2:INTERSECTION OF 16TH & MISSION ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-06-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD 3455PC PRCS REVOCATION HEARING, TRAILING #14013831/CONT/DO",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-06-09T09:00:00.000Z",
+      "description": "/CAL:TO SET APD 3455PC PRCS REVOCATION HEARING, TRAILING #14013831/CONT/DO",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-05-29T11:30:00.000Z",
+      "docketEntryComment": "/CAL: APD 3455PC/SHER/NB/CONTD: TO SET APD 3455 & JOIN #14013831 06-09-14IN DEPT 11/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2014-05-29T11:30:00.000Z",
+      "description": "/CAL: APD 3455PC/SHER/NB/CONTD: TO SET APD 3455 & JOIN #14013831 06-09-14IN DEPT 11/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14013853",
-    "portal_case_id": "",
+    "portal_case_id": "3780548",
     "display_case_number": "CRI-14013853",
     "defendant": "ROBERTO MARTINEZ",
     "filed_date": "2014-05-29",
@@ -60,11 +170,57 @@
       "filed_date": "2014-05-29"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROBERTO MARTINEZ, and date of filing 2014-05-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROBERTO MARTINEZ, date of filing, 2014-05-29, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:19:16.376Z",
+  "portal_case_id": "3780548",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14013853",
+      "defendant": "ROBERTO MARTINEZ",
+      "filed_date": "2014-05-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3780548"
+  }
 }

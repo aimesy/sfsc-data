@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:14:33.079Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:24:08.970Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13025647",
   "criminal_case_number": "13025647",
@@ -24,11 +24,122 @@
       "name": "ANTHONY JIMENEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANTHONY JIMENEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-11-07T09:15:00.000Z",
+      "docketEntryComment": "/CAL TO SET OR DISPO/X PEOPLE'S MOTION TO AMEND THE COMPLAINT TO ADD A CONT 3, PENAL CODE SECTION 240, MISDEMEANOR, GRANTED,/FAWC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 3/NOLO/CO:NEGOTIATEDDISPOSITION/REMA/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-11-07T09:30:00.000Z",
+      "docketEntryComment": "/TWS/CH3 CJ 8D/CTS 2/VF2 140/COA 40/ICNA/COLLECT/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-11-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL TO SET OR DISPO/TEXT TRANS TO DEPT 24/TRANS 24 FORTHWITH FOR DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-10-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS/CONTD:TO SET OR DISPO/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-09-17T09:00:00.000Z",
+      "docketEntryComment": "/INTORD:SPANISH/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1//GTWM/CONTD:STATUS/DOP",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-11-07 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 24",
+      "__index": 0,
+      "court_date": "2013-11-07",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 24",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-11-07 9:15 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 24",
+      "__index": 1,
+      "court_date": "2013-11-07",
+      "hearing_time": "9:15 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 24",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-11-07 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2013-11-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-10-16 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2013-10-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-09-17 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2013-09-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SCOTT GRANT",
+      "type": "Public Defender"
+    },
+    {
+      "name": "MARGARET BUITRAGO",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +153,79 @@
       "CASENUMBER": "CRI-13025647",
       "FILEDDATE": "2013-09-13 09:00:00",
       "CHARGES": "242 PC/M 415(1) PC/M 240 PC/M"
-    }
+    },
+    "filed_date": "2013-09-13",
+    "defendant": "ANTHONY JIMENEZ",
+    "searched_key": "JIMENEZ/AN",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/13025647.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3756028",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-11-07T09:15:00.000Z",
+      "docketEntryComment": "/CAL TO SET OR DISPO/X PEOPLE'S MOTION TO AMEND THE COMPLAINT TO ADD A CONT 3, PENAL CODE SECTION 240, MISDEMEANOR, GRANTED,/FAWC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 3/NOLO/CO:NEGOTIATEDDISPOSITION/REMA/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-11-07T09:15:00.000Z",
+      "description": "/CAL TO SET OR DISPO/X PEOPLE'S MOTION TO AMEND THE COMPLAINT TO ADD A CONT 3, PENAL CODE SECTION 240, MISDEMEANOR, GRANTED,/FAWC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 3/NOLO/CO:NEGOTIATEDDISPOSITION/REMA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-11-07T09:30:00.000Z",
+      "docketEntryComment": "/TWS/CH3 CJ 8D/CTS 2/VF2 140/COA 40/ICNA/COLLECT/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-11-07T09:30:00.000Z",
+      "description": "/TWS/CH3 CJ 8D/CTS 2/VF2 140/COA 40/ICNA/COLLECT/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-11-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL TO SET OR DISPO/TEXT TRANS TO DEPT 24/TRANS 24 FORTHWITH FOR DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-11-07T09:00:00.000Z",
+      "description": "/CAL TO SET OR DISPO/TEXT TRANS TO DEPT 24/TRANS 24 FORTHWITH FOR DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-10-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS/CONTD:TO SET OR DISPO/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2013-10-16T09:00:00.000Z",
+      "description": "/CAL:STATUS/CONTD:TO SET OR DISPO/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-09-17T09:00:00.000Z",
+      "docketEntryComment": "/INTORD:SPANISH/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1//GTWM/CONTD:STATUS/DOP",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2013-09-17T09:00:00.000Z",
+      "description": "/INTORD:SPANISH/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1//GTWM/CONTD:STATUS/DOP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13025647",
-    "portal_case_id": "",
+    "portal_case_id": "3756028",
     "display_case_number": "CRI-13025647",
     "defendant": "ANTHONY JIMENEZ",
     "filed_date": "2013-09-13",
@@ -59,12 +235,138 @@
       "defendant": "ANTHONY JIMENEZ",
       "filed_date": "2013-09-13"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC 240",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 240",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "242 PC/M 415(1) PC/M 240 PC/M",
+    "charge_rows": [
+      {
+        "raw": "242 PC/M",
+        "title": "Penal Code § 242",
+        "title_source": "programmatic_citation",
+        "code": "PC 242",
+        "code_system": "PC",
+        "section": "242",
+        "citation": "Penal Code § 242",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "415(1) PC/M",
+        "title": "Penal Code § 415(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 415(1)",
+        "code_system": "PC",
+        "section": "415(1)",
+        "citation": "Penal Code § 415(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=415.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=415.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "240 PC/M",
+        "title": "Penal Code § 240",
+        "title_source": "programmatic_citation",
+        "code": "PC 240",
+        "code_system": "PC",
+        "section": "240",
+        "citation": "Penal Code § 240",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANTHONY JIMENEZ, and date of filing 2013-09-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANTHONY JIMENEZ, date of filing, 2013-09-13, and charges in the case: 242 PC/M 415(1) PC/M 240 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "242 PC/M",
+      "title": "Penal Code § 242",
+      "title_source": "programmatic_citation",
+      "code": "PC 242",
+      "code_system": "PC",
+      "section": "242",
+      "citation": "Penal Code § 242",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "415(1) PC/M",
+      "title": "Penal Code § 415(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 415(1)",
+      "code_system": "PC",
+      "section": "415(1)",
+      "citation": "Penal Code § 415(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=415.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=415.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "240 PC/M",
+      "title": "Penal Code § 240",
+      "title_source": "programmatic_citation",
+      "code": "PC 240",
+      "code_system": "PC",
+      "section": "240",
+      "citation": "Penal Code § 240",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=240.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:24:09.650Z",
+  "portal_case_id": "3756028",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13025647",
+      "defendant": "ANTHONY JIMENEZ",
+      "filed_date": "2013-09-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3756028"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:23.056907+00:00"
 }

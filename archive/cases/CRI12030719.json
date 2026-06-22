@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:53:26.056Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:31:01.823Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12030719",
   "criminal_case_number": "12030719",
@@ -24,19 +24,107 @@
       "name": "ALFREDO CONTRERAS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALFREDO CONTRERAS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-12-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIM HEARING/DEF: ADVISED/VD: LAST DAY OF 12-12-12 (10TH DAY)/NTW60/LD:01-28-13 (60TH DAY)/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING ON 01-22-13 IN DEPT 12/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-11-28T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 12-12-12/987,2/BAIL:75000/X:DEFENSE RESERVES THE RIGHT TO DEMUR AND FOR OR ARGUMENT/CONTD:TO JOIN #12030715 ANDTO SET ON 11-29-12/DOP/CONTD:PRELIMINARY HEARING ON 12-11-12/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-01-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIM HEARING/MO138573/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-11-29T13:30:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN CO DEFT #12030715/CONTD:PRELIM HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-01-22 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2013-01-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-12-11 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2012-12-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-11-29 1:30 PM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2012-11-29",
+      "hearing_time": "1:30 PM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-11-28 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2012-11-28",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JAMES CONGER",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11379(a) HS/F 11378 HS/F 11379(a) HS/F 182(a)(1) PC/F",
+    "filed_date": "2012-11-28",
+    "defendant": "ALFREDO CONTRERAS",
+    "searched_key": "CONTRERAS/AL",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/12030719.json",
     "searched_last_name": "CONTRERAS",
     "searched_first_prefix": "AL",
-    "charges": "11379(a) HS/F 11378 HS/F 11379(a) HS/F 182(a)(1) PC/F",
     "row": {
       "DEFENDANTNAME": "ALFREDO CONTRERAS",
       "CASENUMBER": "CRI-12030719",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3727873",
+  "docket_entries": [
+    {
+      "filedDate": "2012-12-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIM HEARING/DEF: ADVISED/VD: LAST DAY OF 12-12-12 (10TH DAY)/NTW60/LD:01-28-13 (60TH DAY)/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING ON 01-22-13 IN DEPT 12/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-12-11T09:00:00.000Z",
+      "description": "/CAL: PRELIM HEARING/DEF: ADVISED/VD: LAST DAY OF 12-12-12 (10TH DAY)/NTW60/LD:01-28-13 (60TH DAY)/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING ON 01-22-13 IN DEPT 12/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-11-28T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 12-12-12/987,2/BAIL:75000/X:DEFENSE RESERVES THE RIGHT TO DEMUR AND FOR OR ARGUMENT/CONTD:TO JOIN #12030715 ANDTO SET ON 11-29-12/DOP/CONTD:PRELIMINARY HEARING ON 12-11-12/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-11-28T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 12-12-12/987,2/BAIL:75000/X:DEFENSE RESERVES THE RIGHT TO DEMUR AND FOR OR ARGUMENT/CONTD:TO JOIN #12030715 ANDTO SET ON 11-29-12/DOP/CONTD:PRELIMINARY HEARING ON 12-11-12/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-01-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIM HEARING/MO138573/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-01-22T09:00:00.000Z",
+      "description": "/CAL: PRELIM HEARING/MO138573/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-11-29T13:30:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN CO DEFT #12030715/CONTD:PRELIM HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-11-29T13:30:00.000Z",
+      "description": "/CAL:TO JOIN CO DEFT #12030715/CONTD:PRELIM HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12030719",
-    "portal_case_id": "",
+    "portal_case_id": "3727873",
     "display_case_number": "CRI-12030719",
     "defendant": "ALFREDO CONTRERAS",
     "filed_date": "2012-11-28",
@@ -60,11 +189,110 @@
       "filed_date": "2012-11-28"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11379(a) HS/F 11378 HS/F 11379(a) HS/F 182(a)(1) PC/F",
+    "charge_rows": [
+      {
+        "raw": "11379(a) HS/F",
+        "title": "Health and Safety Code § 11379(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11379(a)",
+        "code_system": "HS",
+        "section": "11379(a)",
+        "citation": "Health and Safety Code § 11379(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11378 HS/F",
+        "title": "Health and Safety Code § 11378",
+        "title_source": "programmatic_citation",
+        "code": "HS 11378",
+        "code_system": "HS",
+        "section": "11378",
+        "citation": "Health and Safety Code § 11378",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "182(a)(1) PC/F",
+        "title": "Penal Code § 182(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 182(a)(1)",
+        "code_system": "PC",
+        "section": "182(a)(1)",
+        "citation": "Penal Code § 182(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=182.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=182.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALFREDO CONTRERAS, and date of filing 2012-11-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALFREDO CONTRERAS, date of filing, 2012-11-28, and charges in the case: 11379(a) HS/F 11378 HS/F 11379(a) HS/F 182(a)(1) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11379(a) HS/F",
+      "title": "Health and Safety Code § 11379(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11379(a)",
+      "code_system": "HS",
+      "section": "11379(a)",
+      "citation": "Health and Safety Code § 11379(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11378 HS/F",
+      "title": "Health and Safety Code § 11378",
+      "title_source": "programmatic_citation",
+      "code": "HS 11378",
+      "code_system": "HS",
+      "section": "11378",
+      "citation": "Health and Safety Code § 11378",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "182(a)(1) PC/F",
+      "title": "Penal Code § 182(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 182(a)(1)",
+      "code_system": "PC",
+      "section": "182(a)(1)",
+      "citation": "Penal Code § 182(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=182.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=182.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:31:02.481Z",
+  "portal_case_id": "3727873",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12030719",
+      "defendant": "ALFREDO CONTRERAS",
+      "filed_date": "2012-11-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3727873"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.201266+00:00"
 }

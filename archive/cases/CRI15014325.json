@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:26:52.132Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:13:49.317Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15014325",
   "criminal_case_number": "15014325",
@@ -24,19 +24,107 @@
       "name": "TIPHANE HILL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TIPHANE HILL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-06-29T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CON:SAM LASSER/FAWC/DEFTARR1/NTW/LDTR:07-29-15/987,2/BAIL:10,000/ /SA4:SAKS AT 901 MARKETSTREET IN SF/SAORD/DEF:IS REFERRED TO SPR/CONTD:SPR ELIG REPORT, TRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-07-06T09:15:00.000Z",
+      "docketEntryComment": "/CAL: DISPO/X: DISMISSAL IN LIGHT OF PLEA IN CASE 15005332/VD: 07-17-15//MO PC 1385:72 /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-07-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/TEXT:TRANS TO DEPT 27/TRANS 27:FORTHWITH FOR DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-07-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SPR ELIGIBILITY REPORT/TN:TIPHANE HILL/X:SPR DENIED/X:TRIAL DATE OF 07-17-15 CONFIRMED/CONTD: PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-07-06 9:15 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 27",
+      "__index": 0,
+      "court_date": "2015-07-06",
+      "hearing_time": "9:15 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 27",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-07-06 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2015-07-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-07-02 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2015-07-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-06-29 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2015-06-29",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SAM LASSER",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "490.2(a) PC/M",
+    "filed_date": "2015-06-29",
+    "defendant": "TIPHANE HILL",
+    "searched_key": "HILL/TI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/15014325.json",
     "searched_last_name": "HILL",
     "searched_first_prefix": "TI",
-    "charges": "490.2(a) PC/M",
     "row": {
       "DEFENDANTNAME": "TIPHANE HILL",
       "CASENUMBER": "CRI-15014325",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3813661",
+  "docket_entries": [
+    {
+      "filedDate": "2015-06-29T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CON:SAM LASSER/FAWC/DEFTARR1/NTW/LDTR:07-29-15/987,2/BAIL:10,000/ /SA4:SAKS AT 901 MARKETSTREET IN SF/SAORD/DEF:IS REFERRED TO SPR/CONTD:SPR ELIG REPORT, TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-06-29T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CON:SAM LASSER/FAWC/DEFTARR1/NTW/LDTR:07-29-15/987,2/BAIL:10,000/ /SA4:SAKS AT 901 MARKETSTREET IN SF/SAORD/DEF:IS REFERRED TO SPR/CONTD:SPR ELIG REPORT, TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-07-06T09:15:00.000Z",
+      "docketEntryComment": "/CAL: DISPO/X: DISMISSAL IN LIGHT OF PLEA IN CASE 15005332/VD: 07-17-15//MO PC 1385:72 /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-07-06T09:15:00.000Z",
+      "description": "/CAL: DISPO/X: DISMISSAL IN LIGHT OF PLEA IN CASE 15005332/VD: 07-17-15//MO PC 1385:72 /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-07-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/TEXT:TRANS TO DEPT 27/TRANS 27:FORTHWITH FOR DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-07-06T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/TEXT:TRANS TO DEPT 27/TRANS 27:FORTHWITH FOR DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-07-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SPR ELIGIBILITY REPORT/TN:TIPHANE HILL/X:SPR DENIED/X:TRIAL DATE OF 07-17-15 CONFIRMED/CONTD: PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-07-02T09:00:00.000Z",
+      "description": "/CAL:SPR ELIGIBILITY REPORT/TN:TIPHANE HILL/X:SPR DENIED/X:TRIAL DATE OF 07-17-15 CONFIRMED/CONTD: PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15014325",
-    "portal_case_id": "",
+    "portal_case_id": "3813661",
     "display_case_number": "CRI-15014325",
     "defendant": "TIPHANE HILL",
     "filed_date": "2015-06-29",
@@ -59,12 +188,68 @@
       "defendant": "TIPHANE HILL",
       "filed_date": "2015-06-29"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "490.2(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "490.2(a) PC/M",
+        "title": "Penal Code § 490.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.2(a)",
+        "code_system": "PC",
+        "section": "490.2(a)",
+        "citation": "Penal Code § 490.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TIPHANE HILL, and date of filing 2015-06-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TIPHANE HILL, date of filing, 2015-06-29, and charges in the case: 490.2(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.2(a) PC/M",
+      "title": "Penal Code § 490.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.2(a)",
+      "code_system": "PC",
+      "section": "490.2(a)",
+      "citation": "Penal Code § 490.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:13:50.059Z",
+  "portal_case_id": "3813661",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15014325",
+      "defendant": "TIPHANE HILL",
+      "filed_date": "2015-06-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3813661"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.288807+00:00"
 }

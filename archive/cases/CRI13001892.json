@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:50:49.668Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:24:55.983Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13001892",
   "criminal_case_number": "13001892",
@@ -24,19 +24,94 @@
       "name": "EDIBERTO GARCIA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "EDIBERTO GARCIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-02-05T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 6M/CTS:17/WS/VF2:120/SA2:3950 19TH AVE,, SF/CTORD:THE DEFENDANT TO UNDERGO THE  ROADS TO RECOVERY  PROGRAM/ /PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/CCC:COUNTS 1 & 3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-01-24T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 02-07-13/987,2/BAIL:85000/X:DEFENSE RESERVES THE RIGHT TO DEMUR/SAORD/SA2:STAY AWAY 50 YARDS AWAY FROM 3950 19TH AVENUE, SAN FRANCISCO, CA/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-02-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/AMEND:1/IRRC/TEXT:DEFT ADV & PER WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS:1 & 3/CO:NEGOTIATED DISPOSITION/REMA/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-02-05 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2013-02-05",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-02-05 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2013-02-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-01-24 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2013-01-24",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MICHELLE TONG",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "459 PC/M 487(a) PC/F 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M",
+    "filed_date": "2013-01-24",
+    "defendant": "EDIBERTO GARCIA",
+    "searched_key": "GARCIA/ED",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/13001892.json",
     "searched_last_name": "GARCIA",
     "searched_first_prefix": "ED",
-    "charges": "459 PC/M 487(a) PC/F 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M",
     "row": {
       "DEFENDANTNAME": "EDIBERTO GARCIA",
       "CASENUMBER": "CRI-13001892",
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3732642",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-02-05T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 6M/CTS:17/WS/VF2:120/SA2:3950 19TH AVE,, SF/CTORD:THE DEFENDANT TO UNDERGO THE  ROADS TO RECOVERY  PROGRAM/ /PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/CCC:COUNTS 1 & 3/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-02-05T09:15:00.000Z",
+      "description": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 6M/CTS:17/WS/VF2:120/SA2:3950 19TH AVE,, SF/CTORD:THE DEFENDANT TO UNDERGO THE ROADS TO RECOVERY PROGRAM/ /PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/CCC:COUNTS 1 & 3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-01-24T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 02-07-13/987,2/BAIL:85000/X:DEFENSE RESERVES THE RIGHT TO DEMUR/SAORD/SA2:STAY AWAY 50 YARDS AWAY FROM 3950 19TH AVENUE, SAN FRANCISCO, CA/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-01-24T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 02-07-13/987,2/BAIL:85000/X:DEFENSE RESERVES THE RIGHT TO DEMUR/SAORD/SA2:STAY AWAY 50 YARDS AWAY FROM 3950 19TH AVENUE, SAN FRANCISCO, CA/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-02-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/AMEND:1/IRRC/TEXT:DEFT ADV & PER WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS:1 & 3/CO:NEGOTIATED DISPOSITION/REMA/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-02-05T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/AMEND:1/IRRC/TEXT:DEFT ADV & PER WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS:1 & 3/CO:NEGOTIATED DISPOSITION/REMA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13001892",
-    "portal_case_id": "",
+    "portal_case_id": "3732642",
     "display_case_number": "CRI-13001892",
     "defendant": "EDIBERTO GARCIA",
     "filed_date": "2013-01-24",
@@ -59,12 +175,120 @@
       "defendant": "EDIBERTO GARCIA",
       "filed_date": "2013-01-24"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "459 PC/M 487(a) PC/F 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "459 PC/M",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "487(a) PC/F",
+        "title": "Penal Code § 487(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 487(a)",
+        "code_system": "PC",
+        "section": "487(a)",
+        "citation": "Penal Code § 487(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "148(a)(1) PC/M",
+        "title": "Penal Code § 148(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148(a)(1)",
+        "code_system": "PC",
+        "section": "148(a)(1)",
+        "citation": "Penal Code § 148(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, EDIBERTO GARCIA, and date of filing 2013-01-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, EDIBERTO GARCIA, date of filing, 2013-01-24, and charges in the case: 459 PC/M 487(a) PC/F 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M 148(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/M",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "487(a) PC/F",
+      "title": "Penal Code § 487(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 487(a)",
+      "code_system": "PC",
+      "section": "487(a)",
+      "citation": "Penal Code § 487(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "148(a)(1) PC/M",
+      "title": "Penal Code § 148(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148(a)(1)",
+      "code_system": "PC",
+      "section": "148(a)(1)",
+      "citation": "Penal Code § 148(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:24:56.653Z",
+  "portal_case_id": "3732642",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13001892",
+      "defendant": "EDIBERTO GARCIA",
+      "filed_date": "2013-01-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3732642"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.552468+00:00"
 }

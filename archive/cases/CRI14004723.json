@@ -2,7 +2,7 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:17:23.535Z",
+  "captured_at": "2026-06-22T03:17:22.746Z",
   "status": "unavailable",
   "case_type": "criminal",
   "case_number": "CRI14004723",
@@ -24,6 +24,11 @@
       "name": "DAVID MALDONADO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID MALDONADO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
   "roa": [],
@@ -45,11 +50,11 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3771554",
   "docket_entries": [],
   "criminal": {
     "raw_case_number": "14004723",
-    "portal_case_id": "",
+    "portal_case_id": "3771554",
     "display_case_number": "CRI-14004723",
     "defendant": "DAVID MALDONADO",
     "filed_date": "2014-02-27",
@@ -60,11 +65,58 @@
       "filed_date": "2014-02-27"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "3000.08 PC/F XX/X",
+    "charge_rows": [
+      {
+        "raw": "3000.08 PC/F XX/X",
+        "title": "XX/X",
+        "title_source": "criminal_index_text",
+        "code": "PC 3000.08",
+        "code_system": "PC",
+        "section": "3000.08",
+        "citation": "Penal Code § 3000.08",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID MALDONADO, and date of filing 2014-02-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID MALDONADO, date of filing, 2014-02-27, and charges in the case: 3000.08 PC/F XX/X.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3000.08 PC/F XX/X",
+      "title": "XX/X",
+      "title_source": "criminal_index_text",
+      "code": "PC 3000.08",
+      "code_system": "PC",
+      "section": "3000.08",
+      "citation": "Penal Code § 3000.08",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:17:23.356Z",
+  "portal_case_id": "3771554",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14004723",
+      "defendant": "DAVID MALDONADO",
+      "filed_date": "2014-02-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3771554"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:53:54.436Z"
 }

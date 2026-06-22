@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:51:52.915Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:23:58.027Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13021112",
   "criminal_case_number": "13021112",
@@ -24,11 +24,95 @@
       "name": "ALBERTO TORRES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALBERTO TORRES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-09-06T13:30:00.000Z",
+      "docketEntryComment": "/CAL:3455 PC REV HEARING/MO PC 1385:PROSECUTOR IS NOT READY TO PROCEED, VICTIM HAS NOT APPEARED/CTORD:PC 3455 REVOCATION HEARING IS VACATED/3455REIN/X:PRCS SUPERVISION TO EXPIRE ON 05-31-15/X:DEFENDANT IS ORDERED TO REPORTTO ADULT PROBATION DEPARTMENT WHEN RELEASED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-08-02T11:30:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC 3455/DAWT/PD/CTORD: PRCS IS ADMINISTRATIVELY REVOKED/SHER/NB/CONTD:  APD3455PC PRCS /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-08-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET 3455PC HEARING DATE/CONTD: 3455PC REVOCATION HEARING/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-08-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOTION/PD/CTORD: PRCS IS ADMINISTRATIVELY REVOKED/SHER/NB//CONTD:TO SET 3455 PC (PRCS)/DOP   /",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-09-06 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "2013-09-06",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-08-09 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 1,
+      "court_date": "2013-08-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-08-05 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2013-08-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-08-02 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "2013-08-02",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "EMILY DAHM",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +129,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3751582",
+  "docket_entries": [
+    {
+      "filedDate": "2013-09-06T13:30:00.000Z",
+      "docketEntryComment": "/CAL:3455 PC REV HEARING/MO PC 1385:PROSECUTOR IS NOT READY TO PROCEED, VICTIM HAS NOT APPEARED/CTORD:PC 3455 REVOCATION HEARING IS VACATED/3455REIN/X:PRCS SUPERVISION TO EXPIRE ON 05-31-15/X:DEFENDANT IS ORDERED TO REPORTTO ADULT PROBATION DEPARTMENT WHEN RELEASED/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-09-06T13:30:00.000Z",
+      "description": "/CAL:3455 PC REV HEARING/MO PC 1385:PROSECUTOR IS NOT READY TO PROCEED, VICTIM HAS NOT APPEARED/CTORD:PC 3455 REVOCATION HEARING IS VACATED/3455REIN/X:PRCS SUPERVISION TO EXPIRE ON 05-31-15/X:DEFENDANT IS ORDERED TO REPORTTO ADULT PROBATION DEPARTMENT WHEN RELEASED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-08-02T11:30:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC 3455/DAWT/PD/CTORD: PRCS IS ADMINISTRATIVELY REVOKED/SHER/NB/CONTD:  APD3455PC PRCS /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-08-02T11:30:00.000Z",
+      "description": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC 3455/DAWT/PD/CTORD: PRCS IS ADMINISTRATIVELY REVOKED/SHER/NB/CONTD: APD3455PC PRCS /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-08-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET 3455PC HEARING DATE/CONTD: 3455PC REVOCATION HEARING/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-08-09T09:00:00.000Z",
+      "description": "/CAL: TO SET 3455PC HEARING DATE/CONTD: 3455PC REVOCATION HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-08-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOTION/PD/CTORD: PRCS IS ADMINISTRATIVELY REVOKED/SHER/NB//CONTD:TO SET 3455 PC (PRCS)/DOP   /",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-08-05T09:00:00.000Z",
+      "description": "/CAL:APD 3455PC MOTION/PD/CTORD: PRCS IS ADMINISTRATIVELY REVOKED/SHER/NB//CONTD:TO SET 3455 PC (PRCS)/DOP /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13021112",
-    "portal_case_id": "",
+    "portal_case_id": "3751582",
     "display_case_number": "CRI-13021112",
     "defendant": "ALBERTO TORRES",
     "filed_date": "2013-08-02",
@@ -59,12 +184,76 @@
       "defendant": "ALBERTO TORRES",
       "filed_date": "2013-08-02"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 3455",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALBERTO TORRES, and date of filing 2013-08-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALBERTO TORRES, date of filing, 2013-08-02, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:23:58.684Z",
+  "portal_case_id": "3751582",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13021112",
+      "defendant": "ALBERTO TORRES",
+      "filed_date": "2013-08-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3751582"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T15:48:03.259Z"
 }

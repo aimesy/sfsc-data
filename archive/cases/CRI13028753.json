@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:03:29.754Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:24:58.734Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13028753",
   "criminal_case_number": "13028753",
@@ -24,11 +24,59 @@
       "name": "KEITH JONES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KEITH JONES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-10-11T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/SA2:1430LARKIN ST, SF/CTORD:ON CONDITION OF OR, DEFT TO REPORT TO SPR 1 TIME PER WEEK IN PERSON,& THEN 2 TIMES BY PHONE PER WEEK THEREAFTER/CONTD PRELIM HRG,DOP/CONTD:FOR PRELIMINARY HEARING/NTW60/LD 12-10-13/OR/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-11-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MO138583/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-11-13 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2013-11-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-10-11 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2013-10-11",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ALEX LILIEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +90,39 @@
       "CASENUMBER": "CRI-13028753",
       "FILEDDATE": "2013-10-11 09:00:00",
       "CHARGES": "11360(a) HS/F"
-    }
+    },
+    "filed_date": "2013-10-11",
+    "defendant": "KEITH JONES",
+    "searched_key": "JONES/KE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/13028753.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3759087",
+  "docket_entries": [
+    {
+      "filedDate": "2013-10-11T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/SA2:1430LARKIN ST, SF/CTORD:ON CONDITION OF OR, DEFT TO REPORT TO SPR 1 TIME PER WEEK IN PERSON,& THEN 2 TIMES BY PHONE PER WEEK THEREAFTER/CONTD PRELIM HRG,DOP/CONTD:FOR PRELIMINARY HEARING/NTW60/LD 12-10-13/OR/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-10-11T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/SA2:1430LARKIN ST, SF/CTORD:ON CONDITION OF OR, DEFT TO REPORT TO SPR 1 TIME PER WEEK IN PERSON,& THEN 2 TIMES BY PHONE PER WEEK THEREAFTER/CONTD PRELIM HRG,DOP/CONTD:FOR PRELIMINARY HEARING/NTW60/LD 12-10-13/OR/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-11-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MO138583/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-11-13T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG/MO138583/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13028753",
-    "portal_case_id": "",
+    "portal_case_id": "3759087",
     "display_case_number": "CRI-13028753",
     "defendant": "KEITH JONES",
     "filed_date": "2013-10-11",
@@ -60,11 +133,58 @@
       "filed_date": "2013-10-11"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11360(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11360(a) HS/F",
+        "title": "Health and Safety Code § 11360(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11360(a)",
+        "code_system": "HS",
+        "section": "11360(a)",
+        "citation": "Health and Safety Code § 11360(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KEITH JONES, and date of filing 2013-10-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KEITH JONES, date of filing, 2013-10-11, and charges in the case: 11360(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11360(a) HS/F",
+      "title": "Health and Safety Code § 11360(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11360(a)",
+      "code_system": "HS",
+      "section": "11360(a)",
+      "citation": "Health and Safety Code § 11360(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11360.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:24:59.407Z",
+  "portal_case_id": "3759087",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13028753",
+      "defendant": "KEITH JONES",
+      "filed_date": "2013-10-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3759087"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:37.149266+00:00"
 }

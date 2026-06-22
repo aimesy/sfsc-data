@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:49:44.752Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:24:20.736Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13006884",
   "criminal_case_number": "13006884",
@@ -24,11 +24,95 @@
       "name": "JAMES EDWARD DAVIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAMES EDWARD DAVIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-03-14T11:30:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC 3455/PD/CTORD: PRCS IS ADMINISTRATIVELY REVOKED/SHER/NB/M11 /TBH:13006747/CONTD:JOIN #13006747 & TS PRCS HRG/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-04-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455REV/CH1:CJ 180D/CTS:35/4019HALF/CCC:CASE #13006747 & #13006884/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-04-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING ON 3455PRCS REVOCATION, TRAILING #13006747/CONT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-03-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRCS 3455PC REVOCATION HEARING, TRAILING #13006747/CONTD:SENTENCE ON PRCS 3455PC REVOCATION/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-04-29 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2013-04-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-04-12 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2013-04-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-03-22 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2013-03-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-03-14 11:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "2013-03-14",
+      "hearing_time": "11:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PHOENIX STREETS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +126,59 @@
       "CASENUMBER": "CRI-13006884",
       "FILEDDATE": "2013-03-14 09:00:00",
       "CHARGES": "3455(a) PC/F"
-    }
+    },
+    "filed_date": "2013-03-14",
+    "defendant": "JAMES EDWARD DAVIS",
+    "searched_key": "DAVIS/JA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/13006884.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3737556",
+  "docket_entries": [
+    {
+      "filedDate": "2013-03-14T11:30:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC 3455/PD/CTORD: PRCS IS ADMINISTRATIVELY REVOKED/SHER/NB/M11 /TBH:13006747/CONTD:JOIN #13006747 & TS PRCS HRG/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-03-14T11:30:00.000Z",
+      "description": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC 3455/PD/CTORD: PRCS IS ADMINISTRATIVELY REVOKED/SHER/NB/M11 /TBH:13006747/CONTD:JOIN #13006747 & TS PRCS HRG/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-04-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455REV/CH1:CJ 180D/CTS:35/4019HALF/CCC:CASE #13006747 & #13006884/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-04-29T09:00:00.000Z",
+      "description": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455REV/CH1:CJ 180D/CTS:35/4019HALF/CCC:CASE #13006747 & #13006884/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-04-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING ON 3455PRCS REVOCATION, TRAILING #13006747/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-04-12T09:00:00.000Z",
+      "description": "/CAL:SENTENCING ON 3455PRCS REVOCATION, TRAILING #13006747/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-03-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRCS 3455PC REVOCATION HEARING, TRAILING #13006747/CONTD:SENTENCE ON PRCS 3455PC REVOCATION/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-03-22T09:00:00.000Z",
+      "description": "/CAL:TO SET PRCS 3455PC REVOCATION HEARING, TRAILING #13006747/CONTD:SENTENCE ON PRCS 3455PC REVOCATION/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13006884",
-    "portal_case_id": "",
+    "portal_case_id": "3737556",
     "display_case_number": "CRI-13006884",
     "defendant": "JAMES EDWARD DAVIS",
     "filed_date": "2013-03-14",
@@ -59,12 +188,76 @@
       "defendant": "JAMES EDWARD DAVIS",
       "filed_date": "2013-03-14"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAMES EDWARD DAVIS, and date of filing 2013-03-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAMES EDWARD DAVIS, date of filing, 2013-03-14, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:24:21.446Z",
+  "portal_case_id": "3737556",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13006884",
+      "defendant": "JAMES EDWARD DAVIS",
+      "filed_date": "2013-03-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3737556"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:32.177422+00:00"
 }

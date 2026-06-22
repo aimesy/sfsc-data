@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:29:08.479Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:24:57.450Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13023578",
   "criminal_case_number": "13023578",
@@ -24,11 +24,82 @@
       "name": "STEPHEN D MORGAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "STEPHEN D MORGAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-08-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE AND SPR ELIGIBILITY REPORT/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL (TO MISDEMEANOR) AND GUILTY (TO INFRACTION)/DEFT ADV NL:1/NOLO/DEF:PLEADS GUILTY TO COUNT 2/CO:OPEN PLEA TO COUR",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-08-22T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:5,000/X:O,R, IS DENIED,/NTW/LD:FOR TRIAL IS 09-23-13/SA1:DOWDAN LOW/CTORD:STAY OUT OF POWELL STREET BART STATION IN SF/SAORD/CONTD:PRETRIALCONFERENCE & SPR ELIBILITY REPORT/DOP/CONTD:TRIAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-08-27T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1 CJ 7D/CTS 7/VF2 140/COA 40/ICNA/COLLECT/4019HALF/X THE SENTENCESIN COUNTS 1 AND 2 ARE IDENTICAL,/CCC:COUNTS 1 AND 2/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-08-27 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2013-08-27",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-08-27 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2013-08-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-08-22 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2013-08-22",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ADAM LIPSON",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3753992",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-08-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE AND SPR ELIGIBILITY REPORT/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL (TO MISDEMEANOR) AND GUILTY (TO INFRACTION)/DEFT ADV NL:1/NOLO/DEF:PLEADS GUILTY TO COUNT 2/CO:OPEN PLEA TO COUR",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-08-27T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE AND SPR ELIGIBILITY REPORT/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL (TO MISDEMEANOR) AND GUILTY (TO INFRACTION)/DEFT ADV NL:1/NOLO/DEF:PLEADS GUILTY TO COUNT 2/CO:OPEN PLEA TO COUR",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-08-22T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:5,000/X:O,R, IS DENIED,/NTW/LD:FOR TRIAL IS 09-23-13/SA1:DOWDAN LOW/CTORD:STAY OUT OF POWELL STREET BART STATION IN SF/SAORD/CONTD:PRETRIALCONFERENCE & SPR ELIBILITY REPORT/DOP/CONTD:TRIAL/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-08-22T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:5,000/X:O,R, IS DENIED,/NTW/LD:FOR TRIAL IS 09-23-13/SA1:DOWDAN LOW/CTORD:STAY OUT OF POWELL STREET BART STATION IN SF/SAORD/CONTD:PRETRIALCONFERENCE & SPR ELIBILITY REPORT/DOP/CONTD:TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-08-27T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1 CJ 7D/CTS 7/VF2 140/COA 40/ICNA/COLLECT/4019HALF/X THE SENTENCESIN COUNTS 1 AND 2 ARE IDENTICAL,/CCC:COUNTS 1 AND 2/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-08-27T09:15:00.000Z",
+      "description": "/TWS/CH1 CJ 7D/CTS 7/VF2 140/COA 40/ICNA/COLLECT/4019HALF/X THE SENTENCESIN COUNTS 1 AND 2 ARE IDENTICAL,/CCC:COUNTS 1 AND 2/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13023578",
-    "portal_case_id": "",
+    "portal_case_id": "3753992",
     "display_case_number": "CRI-13023578",
     "defendant": "STEPHEN D MORGAN",
     "filed_date": "2013-08-22",
@@ -59,12 +171,94 @@
       "defendant": "STEPHEN D MORGAN",
       "filed_date": "2013-08-22"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "243.3 PC/M 640(c)(1) PC/I",
+    "charge_rows": [
+      {
+        "raw": "243.3 PC/M",
+        "title": "Penal Code § 243.3",
+        "title_source": "programmatic_citation",
+        "code": "PC 243.3",
+        "code_system": "PC",
+        "section": "243.3",
+        "citation": "Penal Code § 243.3",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.3.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.3.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "640(c)(1) PC/I",
+        "title": "Penal Code § 640(c)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 640(c)(1)",
+        "code_system": "PC",
+        "section": "640(c)(1)",
+        "citation": "Penal Code § 640(c)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=640.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=640.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, STEPHEN D MORGAN, and date of filing 2013-08-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, STEPHEN D MORGAN, date of filing, 2013-08-22, and charges in the case: 243.3 PC/M 640(c)(1) PC/I.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "243.3 PC/M",
+      "title": "Penal Code § 243.3",
+      "title_source": "programmatic_citation",
+      "code": "PC 243.3",
+      "code_system": "PC",
+      "section": "243.3",
+      "citation": "Penal Code § 243.3",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.3.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.3.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "640(c)(1) PC/I",
+      "title": "Penal Code § 640(c)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 640(c)(1)",
+      "code_system": "PC",
+      "section": "640(c)(1)",
+      "citation": "Penal Code § 640(c)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=640.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=640.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:24:58.112Z",
+  "portal_case_id": "3753992",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13023578",
+      "defendant": "STEPHEN D MORGAN",
+      "filed_date": "2013-08-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3753992"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:54:13.673Z"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:54:38.543Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:25:42.951Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13027001",
   "criminal_case_number": "13027001",
@@ -24,19 +24,53 @@
       "name": "MOISES E CHAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MOISES E CHAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-09-27T13:30:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:DEFENDANT CITED AND ISOUT OF CUSTODY    /",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-09-27 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2013-09-27",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEPHEN ROSEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "211 PC/F",
+    "filed_date": "2013-09-27",
+    "defendant": "MOISES E CHAN",
+    "searched_key": "CHAN/MO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/13027001.json",
     "searched_last_name": "CHAN",
     "searched_first_prefix": "MO",
-    "charges": "211 PC/F",
     "row": {
       "DEFENDANTNAME": "MOISES E CHAN",
       "CASENUMBER": "CRI-13027001",
@@ -45,11 +79,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3757351",
+  "docket_entries": [
+    {
+      "filedDate": "2013-09-27T13:30:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:DEFENDANT CITED AND ISOUT OF CUSTODY    /",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-09-27T13:30:00.000Z",
+      "description": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:DEFENDANT CITED AND ISOUT OF CUSTODY /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13027001",
-    "portal_case_id": "",
+    "portal_case_id": "3757351",
     "display_case_number": "CRI-13027001",
     "defendant": "MOISES E CHAN",
     "filed_date": "2013-09-27",
@@ -60,11 +105,58 @@
       "filed_date": "2013-09-27"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "211 PC/F",
+    "charge_rows": [
+      {
+        "raw": "211 PC/F",
+        "title": "Penal Code § 211",
+        "title_source": "programmatic_citation",
+        "code": "PC 211",
+        "code_system": "PC",
+        "section": "211",
+        "citation": "Penal Code § 211",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MOISES E CHAN, and date of filing 2013-09-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MOISES E CHAN, date of filing, 2013-09-27, and charges in the case: 211 PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "211 PC/F",
+      "title": "Penal Code § 211",
+      "title_source": "programmatic_citation",
+      "code": "PC 211",
+      "code_system": "PC",
+      "section": "211",
+      "citation": "Penal Code § 211",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:25:43.622Z",
+  "portal_case_id": "3757351",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13027001",
+      "defendant": "MOISES E CHAN",
+      "filed_date": "2013-09-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3757351"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.164556+00:00"
 }

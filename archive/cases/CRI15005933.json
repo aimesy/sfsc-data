@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:47:09.744Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:13:24.404Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15005933",
   "criminal_case_number": "15005933",
@@ -24,11 +24,86 @@
       "name": "DAVANTE A ROBINSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVANTE A ROBINSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-09-23T10:00:00.000Z",
+      "docketEntryComment": "STIPULATION AND ORDER RELEASING EVIDENCE, FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-03-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:INTEREST OF JUSTICE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-03-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:PRELIMINARY HEARING DATE IS CONTINUED BY THE COURT/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-03-13T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:03-27-15/987,2/BAIL:50,000/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-03-27 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2015-03-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-03-26 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2015-03-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-03-13 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2015-03-13",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PHOENIX STREETS",
+      "type": "Public Defender"
+    },
+    {
+      "name": "NATHAN QUIGLEY",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3805429",
+  "docket_entries": [
+    {
+      "filedDate": "2016-09-23T10:00:00.000Z",
+      "docketEntryComment": "STIPULATION AND ORDER RELEASING EVIDENCE, FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-09-23T10:00:00.000Z",
+      "description": "STIPULATION AND ORDER RELEASING EVIDENCE, FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-03-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:INTEREST OF JUSTICE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-03-27T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO PC 1385:INTEREST OF JUSTICE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-03-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:PRELIMINARY HEARING DATE IS CONTINUED BY THE COURT/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-03-26T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/X:PRELIMINARY HEARING DATE IS CONTINUED BY THE COURT/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-03-13T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:03-27-15/987,2/BAIL:50,000/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-03-13T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:03-27-15/987,2/BAIL:50,000/CONTD: PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15005933",
-    "portal_case_id": "",
+    "portal_case_id": "3805429",
     "display_case_number": "CRI-15005933",
     "defendant": "DAVANTE A ROBINSON",
     "filed_date": "2015-03-13",
@@ -59,12 +175,93 @@
       "defendant": "DAVANTE A ROBINSON",
       "filed_date": "2015-03-13"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "10851(a) VC/F 496d(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "10851(a) VC/F",
+        "title": "Vehicle Code § 10851(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 10851(a)",
+        "code_system": "VC",
+        "section": "10851(a)",
+        "citation": "Vehicle Code § 10851(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "496d(a) PC/F",
+        "title": "Penal Code § 496d(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496d(a)",
+        "code_system": "PC",
+        "section": "496d(a)",
+        "citation": "Penal Code § 496d(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVANTE A ROBINSON, and date of filing 2015-03-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVANTE A ROBINSON, date of filing, 2015-03-13, and charges in the case: 10851(a) VC/F 496d(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "10851(a) VC/F",
+      "title": "Vehicle Code § 10851(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 10851(a)",
+      "code_system": "VC",
+      "section": "10851(a)",
+      "citation": "Vehicle Code § 10851(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "496d(a) PC/F",
+      "title": "Penal Code § 496d(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496d(a)",
+      "code_system": "PC",
+      "section": "496d(a)",
+      "citation": "Penal Code § 496d(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:13:25.055Z",
+  "portal_case_id": "3805429",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15005933",
+      "defendant": "DAVANTE A ROBINSON",
+      "filed_date": "2015-03-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3805429"
+  }
 }

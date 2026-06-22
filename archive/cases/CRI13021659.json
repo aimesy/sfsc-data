@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:51:27.900Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:24:27.751Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13021659",
   "criminal_case_number": "13021659",
@@ -24,19 +24,130 @@
       "name": "HECTOR VELAZQUEZ GARCIA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "HECTOR VELAZQUEZ GARCIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-09-23T10:57:00.000Z",
+      "docketEntryComment": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-12-04T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3 ISS CPROB PROB 18 M PJ 2D/CTS 2/PF145 12/VF2 140/FOP1 12 HOUR/LCEM/LVAL/PROBREVFN/COA:40/ICNA/CITE/EMAT/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 100 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SET FORTH HEREIN//X:23593(A) VC ADMONITION GIVEN,/DISM3/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-12-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL TO SET/AMEND TO ADD A COUNT 3- 23103 VC A MISDEMEANOR WITHIN THE MEAING OF 23103,5 VC/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENTPLEA OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-10-16T13:45:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/X:RECORDS RELEASED TO DEFENSE WITH STIPULATION,//CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-09-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS/DAWT/CONTD:PRETRIAL CONFERENCE/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-08-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:STATUS/DAWF/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-12-04 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2013-12-04",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-12-04 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2013-12-04",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-10-16 1:45 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2013-10-16",
+      "hearing_time": "1:45 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-09-11 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2013-09-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-08-19 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2013-08-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BENJAMIN HALL",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "23152(a) VC/M 23152(b) VC/M 8888888",
+    "filed_date": "2013-08-12",
+    "defendant": "HECTOR VELAZQUEZ GARCIA",
+    "searched_key": "GARCIA/HE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/13021659.json",
     "searched_last_name": "GARCIA",
     "searched_first_prefix": "HE",
-    "charges": "23152(a) VC/M 23152(b) VC/M 8888888",
     "row": {
       "DEFENDANTNAME": "HECTOR VELAZQUEZ GARCIA",
       "CASENUMBER": "CRI-13021659",
@@ -45,11 +156,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3752118",
+  "docket_entries": [
+    {
+      "filedDate": "2013-09-23T10:57:00.000Z",
+      "docketEntryComment": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-09-23T10:57:00.000Z",
+      "description": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-12-04T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3 ISS CPROB PROB 18 M PJ 2D/CTS 2/PF145 12/VF2 140/FOP1 12 HOUR/LCEM/LVAL/PROBREVFN/COA:40/ICNA/CITE/EMAT/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 100 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SET FORTH HEREIN//X:23593(A) VC ADMONITION GIVEN,/DISM3/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-12-04T09:15:00.000Z",
+      "description": "/TWS/CH3 ISS CPROB PROB 18 M PJ 2D/CTS 2/PF145 12/VF2 140/FOP1 12 HOUR/LCEM/LVAL/PROBREVFN/COA:40/ICNA/CITE/EMAT/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 100 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SET FORTH HEREIN//X:23593(A) VC ADMONITION GIVEN,/DISM3/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-12-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL TO SET/AMEND TO ADD A COUNT 3- 23103 VC A MISDEMEANOR WITHIN THE MEAING OF 23103,5 VC/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENTPLEA OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-12-04T09:00:00.000Z",
+      "description": "/CAL TO SET/AMEND TO ADD A COUNT 3- 23103 VC A MISDEMEANOR WITHIN THE MEAING OF 23103,5 VC/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENTPLEA OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-10-16T13:45:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/X:RECORDS RELEASED TO DEFENSE WITH STIPULATION,//CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-10-16T13:45:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/X:RECORDS RELEASED TO DEFENSE WITH STIPULATION,//CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-09-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS/DAWT/CONTD:PRETRIAL CONFERENCE/DOPC/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2013-09-11T09:00:00.000Z",
+      "description": "/CAL:STATUS/DAWT/CONTD:PRETRIAL CONFERENCE/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-08-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:STATUS/DAWF/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2013-08-19T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/CONTD:STATUS/DAWF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13021659",
-    "portal_case_id": "",
+    "portal_case_id": "3752118",
     "display_case_number": "CRI-13021659",
     "defendant": "HECTOR VELAZQUEZ GARCIA",
     "filed_date": "2013-08-12",
@@ -59,12 +231,104 @@
       "defendant": "HECTOR VELAZQUEZ GARCIA",
       "filed_date": "2013-08-12"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "23152(a) VC/M 23152(b) VC/M 8888888",
+    "charge_rows": [
+      {
+        "raw": "23152(a) VC/M",
+        "title": "Vehicle Code § 23152(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(a)",
+        "code_system": "VC",
+        "section": "23152(a)",
+        "citation": "Vehicle Code § 23152(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23152(b) VC/M",
+        "title": "Vehicle Code § 23152(b)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(b)",
+        "code_system": "VC",
+        "section": "23152(b)",
+        "citation": "Vehicle Code § 23152(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, HECTOR VELAZQUEZ GARCIA, and date of filing 2013-08-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, HECTOR VELAZQUEZ GARCIA, date of filing, 2013-08-12, and charges in the case: 23152(a) VC/M 23152(b) VC/M 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(a) VC/M",
+      "title": "Vehicle Code § 23152(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(a)",
+      "code_system": "VC",
+      "section": "23152(a)",
+      "citation": "Vehicle Code § 23152(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23152(b) VC/M",
+      "title": "Vehicle Code § 23152(b)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(b)",
+      "code_system": "VC",
+      "section": "23152(b)",
+      "citation": "Vehicle Code § 23152(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:24:28.372Z",
+  "portal_case_id": "3752118",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13021659",
+      "defendant": "HECTOR VELAZQUEZ GARCIA",
+      "filed_date": "2013-08-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3752118"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.823910+00:00"
 }

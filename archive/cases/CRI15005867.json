@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:28:15.414Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:13:44.142Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15005867",
   "criminal_case_number": "15005867",
@@ -24,19 +24,71 @@
       "name": "JOE JACKSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOE JACKSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-03-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/X:PETITION  DISMISSED FOR THE FOLLOWING REASONS PURSUANT TO PAROLEE'S REQUESTTO COURT FOR DISMISSAL,/X:1)  INSUFFICIENT EVIDENCE OF THE CONSIDERATION OR UTILIZATION OF REMEDIAL SANCTIONS, AS REQUIRED PURSUANT TO PENAL CODE SECTION 3000,08(F); 2) THE INACCURACIES IN AGENT PINEDO'S WARRANT REQUEST (FORM CR-301); AND3) THE SUBSTANTIAL MITIGATING FACTORS, INCLUDING MR, JACKSON'S STRUGGLES WITH MENTAL HEALTH, AND THE FACT THAT HE WAS ARRESTED WHILE REPORTING TO THE PAROLE OFFICE,/X:PAROLE REINSTATED TO: 03-10-15, GOOD CAUSEFOUND WITHOUT ANY TIME LOSS,/X:PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-03-19T16:00:00.000Z",
+      "docketEntryComment": "28    PPTR HEARING-(PAROLE)/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANTTO PC3000,08/PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS AND WAIVES TIME AS TO PROBABLE CAUSE,/NB/25    CPC 4011,6 REPORT/TEXT:CRTORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:3-26-15/CONTD: RECEIPTOF 4011,6PC REPORT AND PROBABLE CAUSE DETERMINATION/DOPC/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-03-26 9:00 AM",
+      "hearingType": "PC 4011.6 Report",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 0,
+      "court_date": "2015-03-26",
+      "hearing_time": "9:00 AM",
+      "matters": "PC 4011.6 Report",
+      "hearing_type": "PC 4011.6 Report",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-03-19 4:00 PM",
+      "hearingType": "PC 3056 Petition to Revoke Parole",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 1,
+      "court_date": "2015-03-19",
+      "hearing_time": "4:00 PM",
+      "matters": "PC 3056 Petition to Revoke Parole",
+      "hearing_type": "PC 3056 Petition to Revoke Parole",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ARMANDO MIRANDA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "3000.08 PC/F XX/X",
+    "filed_date": "2015-03-18",
+    "defendant": "JOE JACKSON",
+    "searched_key": "JACKSON/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/15005867.json",
     "searched_last_name": "JACKSON",
     "searched_first_prefix": "JO",
-    "charges": "3000.08 PC/F XX/X",
     "row": {
       "DEFENDANTNAME": "JOE JACKSON",
       "CASENUMBER": "CRI-15005867",
@@ -45,11 +97,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3805365",
+  "docket_entries": [
+    {
+      "filedDate": "2015-03-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/X:PETITION  DISMISSED FOR THE FOLLOWING REASONS PURSUANT TO PAROLEE'S REQUESTTO COURT FOR DISMISSAL,/X:1)  INSUFFICIENT EVIDENCE OF THE CONSIDERATION OR UTILIZATION OF REMEDIAL SANCTIONS, AS REQUIRED PURSUANT TO PENAL CODE SECTION 3000,08(F); 2) THE INACCURACIES IN AGENT PINEDO'S WARRANT REQUEST (FORM CR-301); AND3) THE SUBSTANTIAL MITIGATING FACTORS, INCLUDING MR, JACKSON'S STRUGGLES WITH MENTAL HEALTH, AND THE FACT THAT HE WAS ARRESTED WHILE REPORTING TO THE PAROLE OFFICE,/X:PAROLE REINSTATED TO: 03-10-15, GOOD CAUSEFOUND WITHOUT ANY TIME LOSS,/X:PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-03-26T09:00:00.000Z",
+      "description": "/CAL: PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/X:PETITION DISMISSED FOR THE FOLLOWING REASONS PURSUANT TO PAROLEE'S REQUESTTO COURT FOR DISMISSAL,/X:1) INSUFFICIENT EVIDENCE OF THE CONSIDERATION OR UTILIZATION OF REMEDIAL SANCTIONS, AS REQUIRED PURSUANT TO PENAL CODE SECTION 3000,08(F); 2) THE INACCURACIES IN AGENT PINEDO'S WARRANT REQUEST (FORM CR-301); AND3) THE SUBSTANTIAL MITIGATING FACTORS, INCLUDING MR, JACKSON'S STRUGGLES WITH MENTAL HEALTH, AND THE FACT THAT HE WAS ARRESTED WHILE REPORTING TO THE PAROLE OFFICE,/X:PAROLE REINSTATED TO: 03-10-15, GOOD CAUSEFOUND WITHOUT ANY TIME LOSS,/X:PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-03-19T16:00:00.000Z",
+      "docketEntryComment": "28    PPTR HEARING-(PAROLE)/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANTTO PC3000,08/PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS AND WAIVES TIME AS TO PROBABLE CAUSE,/NB/25    CPC 4011,6 REPORT/TEXT:CRTORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:3-26-15/CONTD: RECEIPTOF 4011,6PC REPORT AND PROBABLE CAUSE DETERMINATION/DOPC/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-03-19T16:00:00.000Z",
+      "description": "28 PPTR HEARING-(PAROLE)/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANTTO PC3000,08/PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS AND WAIVES TIME AS TO PROBABLE CAUSE,/NB/25 CPC 4011,6 REPORT/TEXT:CRTORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:3-26-15/CONTD: RECEIPTOF 4011,6PC REPORT AND PROBABLE CAUSE DETERMINATION/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15005867",
-    "portal_case_id": "",
+    "portal_case_id": "3805365",
     "display_case_number": "CRI-15005867",
     "defendant": "JOE JACKSON",
     "filed_date": "2015-03-18",
@@ -59,12 +132,84 @@
       "defendant": "JOE JACKSON",
       "filed_date": "2015-03-18"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 3000",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC 4011",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC3000",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3000.08 PC/F XX/X",
+    "charge_rows": [
+      {
+        "raw": "3000.08 PC/F XX/X",
+        "title": "XX/X",
+        "title_source": "criminal_index_text",
+        "code": "PC 3000.08",
+        "code_system": "PC",
+        "section": "3000.08",
+        "citation": "Penal Code § 3000.08",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOE JACKSON, and date of filing 2015-03-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOE JACKSON, date of filing, 2015-03-18, and charges in the case: 3000.08 PC/F XX/X.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3000.08 PC/F XX/X",
+      "title": "XX/X",
+      "title_source": "criminal_index_text",
+      "code": "PC 3000.08",
+      "code_system": "PC",
+      "section": "3000.08",
+      "citation": "Penal Code § 3000.08",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:13:44.803Z",
+  "portal_case_id": "3805365",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15005867",
+      "defendant": "JOE JACKSON",
+      "filed_date": "2015-03-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3805365"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.121569+00:00"
 }

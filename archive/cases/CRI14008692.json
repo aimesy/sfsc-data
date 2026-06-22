@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:49:44.751Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:19:24.659Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14008692",
   "criminal_case_number": "14008692",
@@ -24,11 +24,41 @@
       "name": "JAMES DAVIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAMES DAVIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-04-01T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOT/3455ADV/3455ADM/3455REIN/CH1:CJ160D/CTW:0/CTS:7/4019HALF/CTORD: POST RELEASE COMMUNITY SUPERVISION TERMINATE: 10-20-16/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-04-01 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2014-04-01",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DOUG WELCH",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +72,29 @@
       "CASENUMBER": "CRI-14008692",
       "FILEDDATE": "2014-04-01 09:00:00",
       "CHARGES": "3455(a) PC/F"
-    }
+    },
+    "filed_date": "2014-04-01",
+    "defendant": "JAMES DAVIS",
+    "searched_key": "DAVIS/JA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/14008692.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3775480",
+  "docket_entries": [
+    {
+      "filedDate": "2014-04-01T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOT/3455ADV/3455ADM/3455REIN/CH1:CJ160D/CTW:0/CTS:7/4019HALF/CTORD: POST RELEASE COMMUNITY SUPERVISION TERMINATE: 10-20-16/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-04-01T11:30:00.000Z",
+      "description": "/CAL:APD 3455PC MOT/3455ADV/3455ADM/3455REIN/CH1:CJ160D/CTW:0/CTS:7/4019HALF/CTORD: POST RELEASE COMMUNITY SUPERVISION TERMINATE: 10-20-16/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14008692",
-    "portal_case_id": "",
+    "portal_case_id": "3775480",
     "display_case_number": "CRI-14008692",
     "defendant": "JAMES DAVIS",
     "filed_date": "2014-04-01",
@@ -60,11 +105,58 @@
       "filed_date": "2014-04-01"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAMES DAVIS, and date of filing 2014-04-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAMES DAVIS, date of filing, 2014-04-01, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:19:25.373Z",
+  "portal_case_id": "3775480",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14008692",
+      "defendant": "JAMES DAVIS",
+      "filed_date": "2014-04-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3775480"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:22.712041+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:58:43.390Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:17:13.847Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14002858",
   "criminal_case_number": "14002858",
@@ -24,19 +24,136 @@
       "name": "ELIAS CHAVEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ELIAS CHAVEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-02-13T09:02:00.000Z",
+      "docketEntryComment": "Held to Answer",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-02-24T15:00:00.000Z",
+      "docketEntryComment": "PRELIM TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-02-21T10:04:00.000Z",
+      "docketEntryComment": "DA INFO FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-02-11T14:55:00.000Z",
+      "docketEntryComment": "DA'S OPPOSITION TO DEFT'S MOTION TO SUPPRESS EVIDENCE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-02-06T11:16:00.000Z",
+      "docketEntryComment": "PD'S NOT OF & MOT TO SUPPRESS EVIDENCE FILED AT INSISTENCE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-02-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIMINARY HEARING & MOTION TO SUPPRESS/WIT SWORN D:SFPD SGT NICHOLAS CHORLEY/WIT SWORN D:SFPD SGT SCOTT LAU/EXHMA: PEOPLE'S #1)  4-PAGE DOCUMENT (PRIOR CONVICTION PACKET)/ARG&SUB/X: DEFENSE MOTION TO SUPPRESS IS DENIED,/HTA1: 1 AND 2/CTORD: ALL EXHIBITS RETURNED TO THE OFFERING PARTY//BAIL: 75,000/DEFTCUST3/SHERCOM1/CONTD: ARRAIGNMENT ON THE INFORMATION/DOP/S22/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-01-30T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 02-14-14/987,2/BAIL:200,000/X: COURTSETS BAIL WITHOUT PREJUDICE,/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-04-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTC/X:ADA MARY PLOMIN DIMISSED PUR TO 1387(C)/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-02-27T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAW/DEFTARR/NTW/LD: FOR TRIALIS 04-28-14/987,2/CONTD: PRETRIAL CONFERENCE AND TRIAL/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-04-01 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 0,
+      "court_date": "2014-04-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-02-27 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2014-02-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-02-13 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2014-02-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-01-30 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2014-01-30",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CARMEN AGUIRRE",
+      "type": "Public Defender"
+    },
+    {
+      "name": "MARY PLOMIN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "8888888 29805 PC/F",
+    "filed_date": "2014-01-30",
+    "defendant": "ELIAS CHAVEZ",
+    "searched_key": "CHAVEZ/EL",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/14002858.json",
     "searched_last_name": "CHAVEZ",
     "searched_first_prefix": "EL",
-    "charges": "8888888 29805 PC/F",
     "row": {
       "DEFENDANTNAME": "ELIAS CHAVEZ",
       "CASENUMBER": "CRI-14002858",
@@ -45,11 +162,102 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3769740",
+  "docket_entries": [
+    {
+      "filedDate": "2014-02-13T09:02:00.000Z",
+      "docketEntryComment": "Held to Answer",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-02-13T09:02:00.000Z",
+      "description": "Held to Answer",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-02-24T15:00:00.000Z",
+      "docketEntryComment": "PRELIM TX FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-02-24T15:00:00.000Z",
+      "description": "PRELIM TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-02-21T10:04:00.000Z",
+      "docketEntryComment": "DA INFO FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2014-02-21T10:04:00.000Z",
+      "description": "DA INFO FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-02-11T14:55:00.000Z",
+      "docketEntryComment": "DA'S OPPOSITION TO DEFT'S MOTION TO SUPPRESS EVIDENCE FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2014-02-11T14:55:00.000Z",
+      "description": "DA'S OPPOSITION TO DEFT'S MOTION TO SUPPRESS EVIDENCE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-02-06T11:16:00.000Z",
+      "docketEntryComment": "PD'S NOT OF & MOT TO SUPPRESS EVIDENCE FILED AT INSISTENCE",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2014-02-06T11:16:00.000Z",
+      "description": "PD'S NOT OF & MOT TO SUPPRESS EVIDENCE FILED AT INSISTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-02-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIMINARY HEARING & MOTION TO SUPPRESS/WIT SWORN D:SFPD SGT NICHOLAS CHORLEY/WIT SWORN D:SFPD SGT SCOTT LAU/EXHMA: PEOPLE'S #1)  4-PAGE DOCUMENT (PRIOR CONVICTION PACKET)/ARG&SUB/X: DEFENSE MOTION TO SUPPRESS IS DENIED,/HTA1: 1 AND 2/CTORD: ALL EXHIBITS RETURNED TO THE OFFERING PARTY//BAIL: 75,000/DEFTCUST3/SHERCOM1/CONTD: ARRAIGNMENT ON THE INFORMATION/DOP/S22/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2014-02-13T09:00:00.000Z",
+      "description": "/CAL: PRELIMINARY HEARING & MOTION TO SUPPRESS/WIT SWORN D:SFPD SGT NICHOLAS CHORLEY/WIT SWORN D:SFPD SGT SCOTT LAU/EXHMA: PEOPLE'S #1) 4-PAGE DOCUMENT (PRIOR CONVICTION PACKET)/ARG&SUB/X: DEFENSE MOTION TO SUPPRESS IS DENIED,/HTA1: 1 AND 2/CTORD: ALL EXHIBITS RETURNED TO THE OFFERING PARTY//BAIL: 75,000/DEFTCUST3/SHERCOM1/CONTD: ARRAIGNMENT ON THE INFORMATION/DOP/S22/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-01-30T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 02-14-14/987,2/BAIL:200,000/X: COURTSETS BAIL WITHOUT PREJUDICE,/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2014-01-30T13:30:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 02-14-14/987,2/BAIL:200,000/X: COURTSETS BAIL WITHOUT PREJUDICE,/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-04-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTC/X:ADA MARY PLOMIN DIMISSED PUR TO 1387(C)/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2014-04-01T09:00:00.000Z",
+      "description": "/CAL:PTC/X:ADA MARY PLOMIN DIMISSED PUR TO 1387(C)/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-02-27T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAW/DEFTARR/NTW/LD: FOR TRIALIS 04-28-14/987,2/CONTD: PRETRIAL CONFERENCE AND TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "2014-02-27T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAW/DEFTARR/NTW/LD: FOR TRIALIS 04-28-14/987,2/CONTD: PRETRIAL CONFERENCE AND TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14002858",
-    "portal_case_id": "",
+    "portal_case_id": "3769740",
     "display_case_number": "CRI-14002858",
     "defendant": "ELIAS CHAVEZ",
     "filed_date": "2014-01-30",
@@ -60,11 +268,58 @@
       "filed_date": "2014-01-30"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "8888888 29805 PC/F",
+    "charge_rows": [
+      {
+        "raw": "8888888 29805 PC/F",
+        "title": "8888888",
+        "title_source": "criminal_index_text",
+        "code": "PC 29805",
+        "code_system": "PC",
+        "section": "29805",
+        "citation": "Penal Code § 29805",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=29805.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=29805.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ELIAS CHAVEZ, and date of filing 2014-01-30. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ELIAS CHAVEZ, date of filing, 2014-01-30, and charges in the case: 8888888 29805 PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888 29805 PC/F",
+      "title": "8888888",
+      "title_source": "criminal_index_text",
+      "code": "PC 29805",
+      "code_system": "PC",
+      "section": "29805",
+      "citation": "Penal Code § 29805",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=29805.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=29805.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:17:14.546Z",
+  "portal_case_id": "3769740",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14002858",
+      "defendant": "ELIAS CHAVEZ",
+      "filed_date": "2014-01-30"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3769740"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.643105+00:00"
 }

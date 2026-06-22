@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:35:50.955Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:17:14.917Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15016422",
   "criminal_case_number": "15016422",
@@ -24,19 +24,111 @@
       "name": "BARRY LEE BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BARRY LEE BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-08-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS/X:08-06-15 PRELIM HRG IS CONFIRMED/X:BENCH WARRANT STAYED ANDCONT'D/NP/X:NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO 08-06-15/X: BAIL SET AT 150000/CONTD:PRELIM HEARING & BENCH WARRANT STAY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-07-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A, P&C/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DEF:RESERVES THE RIGHT TO DEMURRER/NTW/LDPX:08-07-15/OR/DEF:ORDERED TO REPORT TO SPR 1 TIME PER WEEK IN PERSON/TE:3 HOURS/CONTD: STATUS CONFERENCE/DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-08-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PROC RE BW STAY/BWSTAY: 08-03-15/MO PC 1385:UNABLE TO SUSTAIN BURDEN",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-07-23T13:30:00.000Z",
+      "docketEntryComment": "/PD/987,2/BAIL:150000/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-08-06 9:00 AM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 0,
+      "court_date": "2015-08-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-08-03 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 1,
+      "court_date": "2015-08-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-07-24 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2015-07-24",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-07-23 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2015-07-23",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CHRISTOPHER HITE",
+      "type": "Public Defender"
+    },
+    {
+      "name": "KULVINDAR SINGH",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "288(a) PC/F",
+    "filed_date": "2015-07-23",
+    "defendant": "BARRY LEE BROWN",
+    "searched_key": "BROWN/BA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/15016422.json",
     "searched_last_name": "BROWN",
     "searched_first_prefix": "BA",
-    "charges": "288(a) PC/F",
     "row": {
       "DEFENDANTNAME": "BARRY LEE BROWN",
       "CASENUMBER": "CRI-15016422",
@@ -45,11 +137,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3815722",
+  "docket_entries": [
+    {
+      "filedDate": "2015-08-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:STATUS/X:08-06-15 PRELIM HRG IS CONFIRMED/X:BENCH WARRANT STAYED ANDCONT'D/NP/X:NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO 08-06-15/X: BAIL SET AT 150000/CONTD:PRELIM HEARING & BENCH WARRANT STAY/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-08-03T09:00:00.000Z",
+      "description": "/CAL:STATUS/X:08-06-15 PRELIM HRG IS CONFIRMED/X:BENCH WARRANT STAYED ANDCONT'D/NP/X:NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO 08-06-15/X: BAIL SET AT 150000/CONTD:PRELIM HEARING & BENCH WARRANT STAY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-07-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A, P&C/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DEF:RESERVES THE RIGHT TO DEMURRER/NTW/LDPX:08-07-15/OR/DEF:ORDERED TO REPORT TO SPR 1 TIME PER WEEK IN PERSON/TE:3 HOURS/CONTD: STATUS CONFERENCE/DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-07-24T09:00:00.000Z",
+      "description": "/CAL:I&A, P&C/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DEF:RESERVES THE RIGHT TO DEMURRER/NTW/LDPX:08-07-15/OR/DEF:ORDERED TO REPORT TO SPR 1 TIME PER WEEK IN PERSON/TE:3 HOURS/CONTD: STATUS CONFERENCE/DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-08-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PROC RE BW STAY/BWSTAY: 08-03-15/MO PC 1385:UNABLE TO SUSTAIN BURDEN",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-08-06T09:00:00.000Z",
+      "description": "/CAL:PROC RE BW STAY/BWSTAY: 08-03-15/MO PC 1385:UNABLE TO SUSTAIN BURDEN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-07-23T13:30:00.000Z",
+      "docketEntryComment": "/PD/987,2/BAIL:150000/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-07-23T13:30:00.000Z",
+      "description": "/PD/987,2/BAIL:150000/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15016422",
-    "portal_case_id": "",
+    "portal_case_id": "3815722",
     "display_case_number": "CRI-15016422",
     "defendant": "BARRY LEE BROWN",
     "filed_date": "2015-07-23",
@@ -59,12 +192,68 @@
       "defendant": "BARRY LEE BROWN",
       "filed_date": "2015-07-23"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "288(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "288(a) PC/F",
+        "title": "Penal Code § 288(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 288(a)",
+        "code_system": "PC",
+        "section": "288(a)",
+        "citation": "Penal Code § 288(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=288.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=288.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BARRY LEE BROWN, and date of filing 2015-07-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BARRY LEE BROWN, date of filing, 2015-07-23, and charges in the case: 288(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "288(a) PC/F",
+      "title": "Penal Code § 288(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 288(a)",
+      "code_system": "PC",
+      "section": "288(a)",
+      "citation": "Penal Code § 288(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=288.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=288.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:17:15.582Z",
+  "portal_case_id": "3815722",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15016422",
+      "defendant": "BARRY LEE BROWN",
+      "filed_date": "2015-07-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3815722"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.530402+00:00"
 }

@@ -2,7 +2,7 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:59:03.236Z",
+  "captured_at": "2026-06-22T03:25:20.412Z",
   "status": "unavailable",
   "case_type": "criminal",
   "case_number": "CRI13028771",
@@ -24,6 +24,11 @@
       "name": "JOSHUA M FELIX",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSHUA M FELIX",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
   "roa": [],
@@ -34,9 +39,13 @@
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "653.23(a)(1) PC/M",
+    "filed_date": "2013-10-10",
+    "defendant": "JOSHUA M FELIX",
+    "searched_key": "FELIX/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/13028771.json",
     "searched_last_name": "FELIX",
     "searched_first_prefix": "JO",
-    "charges": "653.23(a)(1) PC/M",
     "row": {
       "DEFENDANTNAME": "JOSHUA M FELIX",
       "CASENUMBER": "CRI-13028771",
@@ -45,11 +54,11 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3759105",
   "docket_entries": [],
   "criminal": {
     "raw_case_number": "13028771",
-    "portal_case_id": "",
+    "portal_case_id": "3759105",
     "display_case_number": "CRI-13028771",
     "defendant": "JOSHUA M FELIX",
     "filed_date": "2013-10-10",
@@ -60,11 +69,58 @@
       "filed_date": "2013-10-10"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "653.23(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "653.23(a)(1) PC/M",
+        "title": "Penal Code § 653.23(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 653.23(a)(1)",
+        "code_system": "PC",
+        "section": "653.23(a)(1)",
+        "citation": "Penal Code § 653.23(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.23.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.23.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSHUA M FELIX, and date of filing 2013-10-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSHUA M FELIX, date of filing, 2013-10-10, and charges in the case: 653.23(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "653.23(a)(1) PC/M",
+      "title": "Penal Code § 653.23(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 653.23(a)(1)",
+      "code_system": "PC",
+      "section": "653.23(a)(1)",
+      "citation": "Penal Code § 653.23(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.23.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653.23.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:25:21.043Z",
+  "portal_case_id": "3759105",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13028771",
+      "defendant": "JOSHUA M FELIX",
+      "filed_date": "2013-10-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3759105"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.848324+00:00"
 }

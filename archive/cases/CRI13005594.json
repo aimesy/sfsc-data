@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:31:55.512Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:22:08.052Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13005594",
   "criminal_case_number": "13005594",
@@ -24,19 +24,140 @@
       "name": "MARLON H BLACK",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARLON H BLACK",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-03-13T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-07-17T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-07-30T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2 ISS CPROB PROB 3 Y PJ 22D/CTS 22/WS/VF2 140/WEAP/PROBREVFN/COA 4/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-07-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/AMEND 2/IRRC/TEXT DEFT ADV & PERS WVS CONST & CIZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:2/NOLO/CO:NEGOTIATED DISPOSITION/REMA",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-07-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/BFSA:03-13-13/BE/BAIL:50,000/CONTD:PRELIMINARY HEARING/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-03-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/FTA/BF/BWI/SURETY/BFORF PRELIMINARY HEARING/BFORF2:25,000/BAIL:50,000/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-02-28T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/BAIL:25000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/NTW/LD 03-14-13/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-07-30 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2013-07-30",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-07-30 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2013-07-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-07-17 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2013-07-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-03-13 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2013-03-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-02-28 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 4,
+      "court_date": "2013-02-28",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ERIC QUANDT",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "211 PC/F 8888888",
+    "filed_date": "2013-02-28",
+    "defendant": "MARLON H BLACK",
+    "searched_key": "BLACK/MA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/13005594.json",
     "searched_last_name": "BLACK",
     "searched_first_prefix": "MA",
-    "charges": "211 PC/F 8888888",
     "row": {
       "DEFENDANTNAME": "MARLON H BLACK",
       "CASENUMBER": "CRI-13005594",
@@ -45,11 +166,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3736298",
+  "docket_entries": [
+    {
+      "filedDate": "2013-03-13T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-03-13T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-07-17T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-07-17T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-07-30T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2 ISS CPROB PROB 3 Y PJ 22D/CTS 22/WS/VF2 140/WEAP/PROBREVFN/COA 4/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-07-30T09:15:00.000Z",
+      "description": "/TWS/CH2 ISS CPROB PROB 3 Y PJ 22D/CTS 22/WS/VF2 140/WEAP/PROBREVFN/COA 4/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-07-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/AMEND 2/IRRC/TEXT DEFT ADV & PERS WVS CONST & CIZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:2/NOLO/CO:NEGOTIATED DISPOSITION/REMA",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2013-07-30T09:00:00.000Z",
+      "description": "/CAL PRELIMINARY HEARING/AMEND 2/IRRC/TEXT DEFT ADV & PERS WVS CONST & CIZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:2/NOLO/CO:NEGOTIATED DISPOSITION/REMA",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-07-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/BFSA:03-13-13/BE/BAIL:50,000/CONTD:PRELIMINARY HEARING/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2013-07-17T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/BWDNC/BFSA:03-13-13/BE/BAIL:50,000/CONTD:PRELIMINARY HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-03-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/FTA/BF/BWI/SURETY/BFORF PRELIMINARY HEARING/BFORF2:25,000/BAIL:50,000/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2013-03-13T09:00:00.000Z",
+      "description": "/CAL PRELIMINARY HEARING/FTA/BF/BWI/SURETY/BFORF PRELIMINARY HEARING/BFORF2:25,000/BAIL:50,000/BWNUM:1ST/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-02-28T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/BAIL:25000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/NTW/LD 03-14-13/DOP/",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2013-02-28T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/BAIL:25000/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/NTW/LD 03-14-13/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13005594",
-    "portal_case_id": "",
+    "portal_case_id": "3736298",
     "display_case_number": "CRI-13005594",
     "defendant": "MARLON H BLACK",
     "filed_date": "2013-02-28",
@@ -59,12 +261,68 @@
       "defendant": "MARLON H BLACK",
       "filed_date": "2013-02-28"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "211 PC/F 8888888",
+    "charge_rows": [
+      {
+        "raw": "211 PC/F 8888888",
+        "title": "8888888",
+        "title_source": "criminal_index_text",
+        "code": "PC 211",
+        "code_system": "PC",
+        "section": "211",
+        "citation": "Penal Code § 211",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARLON H BLACK, and date of filing 2013-02-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARLON H BLACK, date of filing, 2013-02-28, and charges in the case: 211 PC/F 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "211 PC/F 8888888",
+      "title": "8888888",
+      "title_source": "criminal_index_text",
+      "code": "PC 211",
+      "code_system": "PC",
+      "section": "211",
+      "citation": "Penal Code § 211",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:22:08.721Z",
+  "portal_case_id": "3736298",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13005594",
+      "defendant": "MARLON H BLACK",
+      "filed_date": "2013-02-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3736298"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.399126+00:00"
 }

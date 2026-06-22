@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:06:18.545Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:17:24.315Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14003672",
   "criminal_case_number": "14003672",
@@ -24,19 +24,125 @@
       "name": "LEEVERETT HALL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LEEVERETT HALL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-02-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL: I&A, PLEA/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 02-25-14/987,2/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-02-06T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:JAMES SENAL SPECIALLY APPEARING FOR BETSY WOLKIN FOR DEFT/BAIL:300000/X:BAIL IS SET WITHOUT PREJUDICE/CONTD:ARRAIGNMENT, PLEA/TWA/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-03-25T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:IN LIGHT OF FEDERAL INDICTMENT/VD:04-08-14/X:PRELIM DATE IS VACATED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-03-19T09:00:00.000Z",
+      "docketEntryComment": "/CONTD:PREHEARING CONFERENCE/DOP/LD 04-08-14/X:60TH DAY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-02-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:TODAY'S PRELIMINARY HEARING IS VACATED,/NTW60/LD:FOR PRELIMINARY HEARING IS 04-08-14/CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-03-25 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2014-03-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-03-19 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2014-03-19",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-02-24 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2014-02-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-02-07 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2014-02-07",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-02-06 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 4,
+      "court_date": "2014-02-06",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BETSY WOLKIN",
+      "type": "Appointed Counsel"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "8888888 29900(a)(1) PC/F 25850(a) PC/F 25400(a)(2) PC/F 11350(a) HS/F 11370.1(a) HS/F",
+    "filed_date": "2014-02-06",
+    "defendant": "LEEVERETT HALL",
+    "searched_key": "HALL/LE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/14003672.json",
     "searched_last_name": "HALL",
     "searched_first_prefix": "LE",
-    "charges": "8888888 29900(a)(1) PC/F 25850(a) PC/F 25400(a)(2) PC/F 11350(a) HS/F 11370.1(a) HS/F",
     "row": {
       "DEFENDANTNAME": "LEEVERETT HALL",
       "CASENUMBER": "CRI-14003672",
@@ -45,11 +151,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3770536",
+  "docket_entries": [
+    {
+      "filedDate": "2014-02-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL: I&A, PLEA/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 02-25-14/987,2/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-02-07T09:00:00.000Z",
+      "description": "/CAL: I&A, PLEA/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 02-25-14/987,2/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-02-06T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:JAMES SENAL SPECIALLY APPEARING FOR BETSY WOLKIN FOR DEFT/BAIL:300000/X:BAIL IS SET WITHOUT PREJUDICE/CONTD:ARRAIGNMENT, PLEA/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-02-06T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:JAMES SENAL SPECIALLY APPEARING FOR BETSY WOLKIN FOR DEFT/BAIL:300000/X:BAIL IS SET WITHOUT PREJUDICE/CONTD:ARRAIGNMENT, PLEA/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-03-25T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385:IN LIGHT OF FEDERAL INDICTMENT/VD:04-08-14/X:PRELIM DATE IS VACATED/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2014-03-25T09:00:00.000Z",
+      "description": "/MO PC 1385:IN LIGHT OF FEDERAL INDICTMENT/VD:04-08-14/X:PRELIM DATE IS VACATED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-03-19T09:00:00.000Z",
+      "docketEntryComment": "/CONTD:PREHEARING CONFERENCE/DOP/LD 04-08-14/X:60TH DAY/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2014-03-19T09:00:00.000Z",
+      "description": "/CONTD:PREHEARING CONFERENCE/DOP/LD 04-08-14/X:60TH DAY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-02-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:TODAY'S PRELIMINARY HEARING IS VACATED,/NTW60/LD:FOR PRELIMINARY HEARING IS 04-08-14/CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2014-02-24T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/X:TODAY'S PRELIMINARY HEARING IS VACATED,/NTW60/LD:FOR PRELIMINARY HEARING IS 04-08-14/CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14003672",
-    "portal_case_id": "",
+    "portal_case_id": "3770536",
     "display_case_number": "CRI-14003672",
     "defendant": "LEEVERETT HALL",
     "filed_date": "2014-02-06",
@@ -59,12 +216,182 @@
       "defendant": "LEEVERETT HALL",
       "filed_date": "2014-02-06"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888 29900(a)(1) PC/F 25850(a) PC/F 25400(a)(2) PC/F 11350(a) HS/F 11370.1(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "29900(a)(1) PC/F",
+        "title": "Penal Code § 29900(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 29900(a)(1)",
+        "code_system": "PC",
+        "section": "29900(a)(1)",
+        "citation": "Penal Code § 29900(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=29900.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=29900.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "25850(a) PC/F",
+        "title": "Penal Code § 25850(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 25850(a)",
+        "code_system": "PC",
+        "section": "25850(a)",
+        "citation": "Penal Code § 25850(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25850.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25850.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "25400(a)(2) PC/F",
+        "title": "Penal Code § 25400(a)(2)",
+        "title_source": "programmatic_citation",
+        "code": "PC 25400(a)(2)",
+        "code_system": "PC",
+        "section": "25400(a)(2)",
+        "citation": "Penal Code § 25400(a)(2)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25400.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25400.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11370.1(a) HS/F",
+        "title": "Health and Safety Code § 11370.1(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11370.1(a)",
+        "code_system": "HS",
+        "section": "11370.1(a)",
+        "citation": "Health and Safety Code § 11370.1(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11370.1.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11370.1.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LEEVERETT HALL, and date of filing 2014-02-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LEEVERETT HALL, date of filing, 2014-02-06, and charges in the case: 8888888 29900(a)(1) PC/F 25850(a) PC/F 25400(a)(2) PC/F 11350(a) HS/F 11370.1(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "29900(a)(1) PC/F",
+      "title": "Penal Code § 29900(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 29900(a)(1)",
+      "code_system": "PC",
+      "section": "29900(a)(1)",
+      "citation": "Penal Code § 29900(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=29900.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=29900.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "25850(a) PC/F",
+      "title": "Penal Code § 25850(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 25850(a)",
+      "code_system": "PC",
+      "section": "25850(a)",
+      "citation": "Penal Code § 25850(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25850.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25850.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "25400(a)(2) PC/F",
+      "title": "Penal Code § 25400(a)(2)",
+      "title_source": "programmatic_citation",
+      "code": "PC 25400(a)(2)",
+      "code_system": "PC",
+      "section": "25400(a)(2)",
+      "citation": "Penal Code § 25400(a)(2)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25400.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25400.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11370.1(a) HS/F",
+      "title": "Health and Safety Code § 11370.1(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11370.1(a)",
+      "code_system": "HS",
+      "section": "11370.1(a)",
+      "citation": "Health and Safety Code § 11370.1(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11370.1.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11370.1.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:17:24.968Z",
+  "portal_case_id": "3770536",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14003672",
+      "defendant": "LEEVERETT HALL",
+      "filed_date": "2014-02-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3770536"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.245846+00:00"
 }

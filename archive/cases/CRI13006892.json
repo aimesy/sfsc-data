@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:33:49.894Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:21:55.018Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13006892",
   "criminal_case_number": "13006892",
@@ -24,11 +24,82 @@
       "name": "ARTHUR MARTINEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ARTHUR MARTINEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-03-28T15:23:00.000Z",
+      "docketEntryComment": "FELONY CHANGE OF PLEA TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-04-17T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1 SP 16 M L/DEF TO RECEIVE CREDIT FOR TIME SERVED 38 DAYS COUNTY JIL, 38 SAGE FOR A TOTAL OF 76 DAYS,/STATES/ DNACOMP/CCC:#13006892 AND MARIN COUNTY SENTENCE/4019HALF/COA:40/ICNA/VF5:280/PAR/CDC/DEF:IS NOT ELIGIBLE FOR SENTENCING PURSUANT TO PC 1170(H)/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-03-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS: 1/FNDG/CO:NEGOTIATED DISPOSITION/PRES: 04-17-13/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-03-13T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW /LD: FOR PRELIMINARY HEARING IS 03-27-13/BAIL:100,000/CONTD:  PRELIMINARY HEARING/DOP",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-04-17 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2013-04-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-03-26 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2013-03-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-03-13 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2013-03-13",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARK IVERSON",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +113,59 @@
       "CASENUMBER": "CRI-13006892",
       "FILEDDATE": "2013-03-12 09:00:00",
       "CHARGES": "459 PC/F"
-    }
+    },
+    "filed_date": "2013-03-12",
+    "defendant": "ARTHUR MARTINEZ",
+    "searched_key": "MARTINEZ/AR",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/13006892.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3737564",
+  "docket_entries": [
+    {
+      "filedDate": "2013-03-28T15:23:00.000Z",
+      "docketEntryComment": "FELONY CHANGE OF PLEA TX FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-03-28T15:23:00.000Z",
+      "description": "FELONY CHANGE OF PLEA TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-04-17T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1 SP 16 M L/DEF TO RECEIVE CREDIT FOR TIME SERVED 38 DAYS COUNTY JIL, 38 SAGE FOR A TOTAL OF 76 DAYS,/STATES/ DNACOMP/CCC:#13006892 AND MARIN COUNTY SENTENCE/4019HALF/COA:40/ICNA/VF5:280/PAR/CDC/DEF:IS NOT ELIGIBLE FOR SENTENCING PURSUANT TO PC 1170(H)/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-04-17T09:00:00.000Z",
+      "description": "/AJW/CH1 SP 16 M L/DEF TO RECEIVE CREDIT FOR TIME SERVED 38 DAYS COUNTY JIL, 38 SAGE FOR A TOTAL OF 76 DAYS,/STATES/ DNACOMP/CCC:#13006892 AND MARIN COUNTY SENTENCE/4019HALF/COA:40/ICNA/VF5:280/PAR/CDC/DEF:IS NOT ELIGIBLE FOR SENTENCING PURSUANT TO PC 1170(H)/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-03-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS: 1/FNDG/CO:NEGOTIATED DISPOSITION/PRES: 04-17-13/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-03-26T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS: 1/FNDG/CO:NEGOTIATED DISPOSITION/PRES: 04-17-13/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-03-13T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW /LD: FOR PRELIMINARY HEARING IS 03-27-13/BAIL:100,000/CONTD:  PRELIMINARY HEARING/DOP",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-03-13T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW /LD: FOR PRELIMINARY HEARING IS 03-27-13/BAIL:100,000/CONTD: PRELIMINARY HEARING/DOP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13006892",
-    "portal_case_id": "",
+    "portal_case_id": "3737564",
     "display_case_number": "CRI-13006892",
     "defendant": "ARTHUR MARTINEZ",
     "filed_date": "2013-03-12",
@@ -59,12 +175,68 @@
       "defendant": "ARTHUR MARTINEZ",
       "filed_date": "2013-03-12"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1170(H)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "459 PC/F",
+    "charge_rows": [
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ARTHUR MARTINEZ, and date of filing 2013-03-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ARTHUR MARTINEZ, date of filing, 2013-03-12, and charges in the case: 459 PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:21:55.639Z",
+  "portal_case_id": "3737564",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13006892",
+      "defendant": "ARTHUR MARTINEZ",
+      "filed_date": "2013-03-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3737564"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:37.602762+00:00"
 }

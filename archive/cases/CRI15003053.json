@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:13:12.900Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:13:23.485Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15003053",
   "criminal_case_number": "15003053",
@@ -24,19 +24,107 @@
       "name": "LASHON ANDREWS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LASHON ANDREWS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-02-27T09:00:00.000Z",
+      "docketEntryComment": "CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCEBY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO02-27-15,/X: BAIL SET AT $500000/X:BOND NOT FORFIETED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-02-10T11:30:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC 3455/PD/CTORD:PRCS IS ADMINISTRATIVELY REVOKED/SHER/BAIL:20000/SAORD/SA1:SHANNON NICOLE BARNES/CONTD:TO SET APD PRCS HRG/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-03-16T13:30:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:TO PROCEED WITH PRCS FILING/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-02-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD PRCS HEARING/CONTD:APD PRCS HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-03-16 1:30 PM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 0,
+      "court_date": "2015-03-16",
+      "hearing_time": "1:30 PM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-02-27 9:00 AM",
+      "hearingType": "To Set MTR PRCS Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 1,
+      "court_date": "2015-02-27",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set MTR PRCS Hearing",
+      "hearing_type": "To Set MTR PRCS Hearing",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-02-13 9:00 AM",
+      "hearingType": "To Set MTR PRCS Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 2,
+      "court_date": "2015-02-13",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set MTR PRCS Hearing",
+      "hearing_type": "To Set MTR PRCS Hearing",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-02-10 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "2015-02-10",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PAUL MYSLIN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "3455(a) PC/F",
+    "filed_date": "2015-02-10",
+    "defendant": "LASHON ANDREWS",
+    "searched_key": "ANDREWS/LA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/15003053.json",
     "searched_last_name": "ANDREWS",
     "searched_first_prefix": "LA",
-    "charges": "3455(a) PC/F",
     "row": {
       "DEFENDANTNAME": "LASHON ANDREWS",
       "CASENUMBER": "CRI-15003053",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3802597",
+  "docket_entries": [
+    {
+      "filedDate": "2015-02-27T09:00:00.000Z",
+      "docketEntryComment": "CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCEBY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO02-27-15,/X: BAIL SET AT $500000/X:BOND NOT FORFIETED/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-02-27T09:00:00.000Z",
+      "description": "CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCEBY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO02-27-15,/X: BAIL SET AT $500000/X:BOND NOT FORFIETED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-02-10T11:30:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC 3455/PD/CTORD:PRCS IS ADMINISTRATIVELY REVOKED/SHER/BAIL:20000/SAORD/SA1:SHANNON NICOLE BARNES/CONTD:TO SET APD PRCS HRG/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-02-10T11:30:00.000Z",
+      "description": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC 3455/PD/CTORD:PRCS IS ADMINISTRATIVELY REVOKED/SHER/BAIL:20000/SAORD/SA1:SHANNON NICOLE BARNES/CONTD:TO SET APD PRCS HRG/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-03-16T13:30:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:TO PROCEED WITH PRCS FILING/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-03-16T13:30:00.000Z",
+      "description": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:TO PROCEED WITH PRCS FILING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-02-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD PRCS HEARING/CONTD:APD PRCS HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-02-13T09:00:00.000Z",
+      "description": "/CAL:TO SET APD PRCS HEARING/CONTD:APD PRCS HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15003053",
-    "portal_case_id": "",
+    "portal_case_id": "3802597",
     "display_case_number": "CRI-15003053",
     "defendant": "LASHON ANDREWS",
     "filed_date": "2015-02-10",
@@ -59,12 +188,68 @@
       "defendant": "LASHON ANDREWS",
       "filed_date": "2015-02-10"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LASHON ANDREWS, and date of filing 2015-02-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LASHON ANDREWS, date of filing, 2015-02-10, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:13:24.222Z",
+  "portal_case_id": "3802597",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15003053",
+      "defendant": "LASHON ANDREWS",
+      "filed_date": "2015-02-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3802597"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.656039+00:00"
 }

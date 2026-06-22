@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:05:15.565Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:14:28.029Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15010154",
   "criminal_case_number": "15010154",
@@ -24,19 +24,107 @@
       "name": "SAM JORDAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "SAM JORDAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-05-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL & STATUS OF 12022914/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:SAMUEL LASSER/CONTD:TO JOIN 12022914/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-05-04T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:RESERVE THE RIGHT TO DEMUR,/OR/GTWM/SA1:TIFFANI PAYNE-GREEN 32 FEMALE (10 YARDS AWAY)/SAORD/CONTD:PRETRIAL CONFERENCE & STATUS 12022914/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-05-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN 12022914/MO PC 1385:IN LIGHT OF MTR IN 12022914/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-05-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN 12022914/CONT/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-05-26 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2015-05-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-05-13 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2015-05-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-05-08 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2015-05-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-05-04 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2015-05-04",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SAMUEL LASSER",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "166(a)(4) PC/M",
+    "filed_date": "2015-05-04",
+    "defendant": "SAM JORDAN",
+    "searched_key": "JORDAN/SA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/15010154.json",
     "searched_last_name": "JORDAN",
     "searched_first_prefix": "SA",
-    "charges": "166(a)(4) PC/M",
     "row": {
       "DEFENDANTNAME": "SAM JORDAN",
       "CASENUMBER": "CRI-15010154",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3809566",
+  "docket_entries": [
+    {
+      "filedDate": "2015-05-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL & STATUS OF 12022914/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:SAMUEL LASSER/CONTD:TO JOIN 12022914/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-05-08T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL & STATUS OF 12022914/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:SAMUEL LASSER/CONTD:TO JOIN 12022914/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-05-04T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:RESERVE THE RIGHT TO DEMUR,/OR/GTWM/SA1:TIFFANI PAYNE-GREEN 32 FEMALE (10 YARDS AWAY)/SAORD/CONTD:PRETRIAL CONFERENCE & STATUS 12022914/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-05-04T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:RESERVE THE RIGHT TO DEMUR,/OR/GTWM/SA1:TIFFANI PAYNE-GREEN 32 FEMALE (10 YARDS AWAY)/SAORD/CONTD:PRETRIAL CONFERENCE & STATUS 12022914/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-05-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN 12022914/MO PC 1385:IN LIGHT OF MTR IN 12022914/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-05-26T09:00:00.000Z",
+      "description": "/CAL:TO JOIN 12022914/MO PC 1385:IN LIGHT OF MTR IN 12022914/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-05-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN 12022914/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-05-13T09:00:00.000Z",
+      "description": "/CAL:TO JOIN 12022914/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15010154",
-    "portal_case_id": "",
+    "portal_case_id": "3809566",
     "display_case_number": "CRI-15010154",
     "defendant": "SAM JORDAN",
     "filed_date": "2015-05-04",
@@ -59,12 +188,68 @@
       "defendant": "SAM JORDAN",
       "filed_date": "2015-05-04"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "166(a)(4) PC/M",
+    "charge_rows": [
+      {
+        "raw": "166(a)(4) PC/M",
+        "title": "Penal Code § 166(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 166(a)(4)",
+        "code_system": "PC",
+        "section": "166(a)(4)",
+        "citation": "Penal Code § 166(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, SAM JORDAN, and date of filing 2015-05-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, SAM JORDAN, date of filing, 2015-05-04, and charges in the case: 166(a)(4) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "166(a)(4) PC/M",
+      "title": "Penal Code § 166(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 166(a)(4)",
+      "code_system": "PC",
+      "section": "166(a)(4)",
+      "citation": "Penal Code § 166(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:14:28.703Z",
+  "portal_case_id": "3809566",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15010154",
+      "defendant": "SAM JORDAN",
+      "filed_date": "2015-05-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3809566"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:20.958455+00:00"
 }

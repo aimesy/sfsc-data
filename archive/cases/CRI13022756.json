@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:43:42.749Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:26:08.181Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13022756",
   "criminal_case_number": "13022756",
@@ -24,19 +24,117 @@
       "name": "JOSE ALONSO HERRERA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSE ALONSO HERRERA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-10-03T15:00:00.000Z",
+      "docketEntryComment": "OPP TO MTS FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-09-30T14:05:00.000Z",
+      "docketEntryComment": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED (AT INSISTENCE OF LITI)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-08-19T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TN: JOSE ALONSO HERRERA/TEXT:DEFT ENT NG PLEA(S) & DENOF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 10-18-13/987,2/SAORD/SA2: 2300 16TH STREET, SAN FRANCISCO/SAORD3/CONTD: PREHEARINGCONFERENCE AND TO SET PRELIMINARY HEARING ON 09-18-13/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-11-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PX & MTS/MO PC 1385:INTEREST OF JUSTICE/BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-10-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG & DEFT MTS/X:PEOPLE'S ORAL MOTION TO CONTINUE IS GRANTED/STWPX/CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-09-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE & SET/LD:10-18-13/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-11-08 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2013-11-08",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-10-04 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2013-10-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-09-18 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2013-09-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-08-19 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2013-08-19",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KLEIGH HATHAWAY",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11378 HS/F 11379(a) HS/F 11350(a) HS/F",
+    "filed_date": "2013-08-14",
+    "defendant": "JOSE ALONSO HERRERA",
+    "searched_key": "HERRERA/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/13022756.json",
     "searched_last_name": "HERRERA",
     "searched_first_prefix": "JO",
-    "charges": "11378 HS/F 11379(a) HS/F 11350(a) HS/F",
     "row": {
       "DEFENDANTNAME": "JOSE ALONSO HERRERA",
       "CASENUMBER": "CRI-13022756",
@@ -45,11 +143,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3753178",
+  "docket_entries": [
+    {
+      "filedDate": "2013-10-03T15:00:00.000Z",
+      "docketEntryComment": "OPP TO MTS FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-10-03T15:00:00.000Z",
+      "description": "OPP TO MTS FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-09-30T14:05:00.000Z",
+      "docketEntryComment": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED (AT INSISTENCE OF LITI)",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-09-30T14:05:00.000Z",
+      "description": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED (AT INSISTENCE OF LITI)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-08-19T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TN: JOSE ALONSO HERRERA/TEXT:DEFT ENT NG PLEA(S) & DENOF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 10-18-13/987,2/SAORD/SA2: 2300 16TH STREET, SAN FRANCISCO/SAORD3/CONTD: PREHEARINGCONFERENCE AND TO SET PRELIMINARY HEARING ON 09-18-13/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-08-19T13:30:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/TN: JOSE ALONSO HERRERA/TEXT:DEFT ENT NG PLEA(S) & DENOF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 10-18-13/987,2/SAORD/SA2: 2300 16TH STREET, SAN FRANCISCO/SAORD3/CONTD: PREHEARINGCONFERENCE AND TO SET PRELIMINARY HEARING ON 09-18-13/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-11-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PX & MTS/MO PC 1385:INTEREST OF JUSTICE/BE/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-11-08T09:00:00.000Z",
+      "description": "/CAL:TO SET PX & MTS/MO PC 1385:INTEREST OF JUSTICE/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-10-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG & DEFT MTS/X:PEOPLE'S ORAL MOTION TO CONTINUE IS GRANTED/STWPX/CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2013-10-04T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG & DEFT MTS/X:PEOPLE'S ORAL MOTION TO CONTINUE IS GRANTED/STWPX/CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-09-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE & SET/LD:10-18-13/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2013-09-18T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE & SET/LD:10-18-13/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13022756",
-    "portal_case_id": "",
+    "portal_case_id": "3753178",
     "display_case_number": "CRI-13022756",
     "defendant": "JOSE ALONSO HERRERA",
     "filed_date": "2013-08-14",
@@ -59,12 +218,128 @@
       "defendant": "JOSE ALONSO HERRERA",
       "filed_date": "2013-08-14"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11378 HS/F 11379(a) HS/F 11350(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11378 HS/F",
+        "title": "Health and Safety Code § 11378",
+        "title_source": "programmatic_citation",
+        "code": "HS 11378",
+        "code_system": "HS",
+        "section": "11378",
+        "citation": "Health and Safety Code § 11378",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11379(a) HS/F",
+        "title": "Health and Safety Code § 11379(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11379(a)",
+        "code_system": "HS",
+        "section": "11379(a)",
+        "citation": "Health and Safety Code § 11379(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSE ALONSO HERRERA, and date of filing 2013-08-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSE ALONSO HERRERA, date of filing, 2013-08-14, and charges in the case: 11378 HS/F 11379(a) HS/F 11350(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11378 HS/F",
+      "title": "Health and Safety Code § 11378",
+      "title_source": "programmatic_citation",
+      "code": "HS 11378",
+      "code_system": "HS",
+      "section": "11378",
+      "citation": "Health and Safety Code § 11378",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11379(a) HS/F",
+      "title": "Health and Safety Code § 11379(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11379(a)",
+      "code_system": "HS",
+      "section": "11379(a)",
+      "citation": "Health and Safety Code § 11379(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:26:08.908Z",
+  "portal_case_id": "3753178",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13022756",
+      "defendant": "JOSE ALONSO HERRERA",
+      "filed_date": "2013-08-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3753178"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.769196+00:00"
 }

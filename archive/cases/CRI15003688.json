@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:46:46.147Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:12:20.388Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15003688",
   "criminal_case_number": "15003688",
@@ -24,11 +24,95 @@
       "name": "CARLOS OMAR MENDOZA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CARLOS OMAR MENDOZA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-02-18T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:10,000/NTW/LDTR:03-20-15/CONTD:TO BE HEARD WITH FELONY CASE 15002999 IN DEPARTMENT 12 AND JURY TRIAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-03-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN 15002999/MO138572:15002999/VD:TRIAL DATE OF 03-13-15/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-03-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/INTC/LDTR:03-20-15/CONTD:TO JOIN #15002999 ON 03-09-15, D12/DOP/CONTD:JURY TRIAL ON 03-13-15, D17/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-02-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, TRAILING #15002999/X:TRIAL DATE OF 03-06-15 IS CONFIRMED/DOP/LD:03-20-15/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-03-09 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2015-03-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-03-06 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2015-03-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-02-24 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2015-02-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-02-18 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2015-02-18",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ANDREA LINDSAY",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +129,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3803217",
+  "docket_entries": [
+    {
+      "filedDate": "2015-02-18T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:10,000/NTW/LDTR:03-20-15/CONTD:TO BE HEARD WITH FELONY CASE 15002999 IN DEPARTMENT 12 AND JURY TRIAL/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-02-18T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:10,000/NTW/LDTR:03-20-15/CONTD:TO BE HEARD WITH FELONY CASE 15002999 IN DEPARTMENT 12 AND JURY TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-03-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN 15002999/MO138572:15002999/VD:TRIAL DATE OF 03-13-15/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-03-09T09:00:00.000Z",
+      "description": "/CAL:TO JOIN 15002999/MO138572:15002999/VD:TRIAL DATE OF 03-13-15/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-03-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/INTC/LDTR:03-20-15/CONTD:TO JOIN #15002999 ON 03-09-15, D12/DOP/CONTD:JURY TRIAL ON 03-13-15, D17/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-03-06T09:00:00.000Z",
+      "description": "/CAL:TRIAL/INTC/LDTR:03-20-15/CONTD:TO JOIN #15002999 ON 03-09-15, D12/DOP/CONTD:JURY TRIAL ON 03-13-15, D17/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-02-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, TRAILING #15002999/X:TRIAL DATE OF 03-06-15 IS CONFIRMED/DOP/LD:03-20-15/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-02-24T09:00:00.000Z",
+      "description": "/CAL:TO SET, TRAILING #15002999/X:TRIAL DATE OF 03-06-15 IS CONFIRMED/DOP/LD:03-20-15/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15003688",
-    "portal_case_id": "",
+    "portal_case_id": "3803217",
     "display_case_number": "CRI-15003688",
     "defendant": "CARLOS OMAR MENDOZA",
     "filed_date": "2015-02-18",
@@ -60,11 +185,84 @@
       "filed_date": "2015-02-18"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "166(a)(4) PC/M 148.9(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "166(a)(4) PC/M",
+        "title": "Penal Code § 166(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 166(a)(4)",
+        "code_system": "PC",
+        "section": "166(a)(4)",
+        "citation": "Penal Code § 166(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "148.9(a) PC/M",
+        "title": "Penal Code § 148.9(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148.9(a)",
+        "code_system": "PC",
+        "section": "148.9(a)",
+        "citation": "Penal Code § 148.9(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CARLOS OMAR MENDOZA, and date of filing 2015-02-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CARLOS OMAR MENDOZA, date of filing, 2015-02-18, and charges in the case: 166(a)(4) PC/M 148.9(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "166(a)(4) PC/M",
+      "title": "Penal Code § 166(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 166(a)(4)",
+      "code_system": "PC",
+      "section": "166(a)(4)",
+      "citation": "Penal Code § 166(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "148.9(a) PC/M",
+      "title": "Penal Code § 148.9(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148.9(a)",
+      "code_system": "PC",
+      "section": "148.9(a)",
+      "citation": "Penal Code § 148.9(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:12:21.090Z",
+  "portal_case_id": "3803217",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15003688",
+      "defendant": "CARLOS OMAR MENDOZA",
+      "filed_date": "2015-02-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3803217"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T13:29:39.757Z"
 }

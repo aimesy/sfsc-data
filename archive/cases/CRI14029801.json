@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:19:29.567Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:21:06.006Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14029801",
   "criminal_case_number": "14029801",
@@ -24,19 +24,112 @@
       "name": "RICHARD NELSON BRYANT",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RICHARD NELSON BRYANT",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-12-08T13:21:00.000Z",
+      "docketEntryComment": "ATC MOT TO ADV FROM 122914 FOR DISP; MOT TO VACATE 122914 DATE ETC FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-12-29T13:30:00.000Z",
+      "docketEntryComment": "/CAL: PC 4011,6 REPORT/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:THIS DATE SHOULD HAVE BEEN VACATED ON 12-11-14 WHEN DEFENDANT ADMITTED PAROLE VIOLATIONS AND WAS SENTENCED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-12-11T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/3000ADV/3000ADM/X:THE PAROLEE'S ADMISSION IS AS TO ALL VIOLATIONS EXCEPT #1,/3000REIN/PAJ:78 DAYS /X:PAROLEE SHALL RECEIVE CREDIT FOR  27  DAYS,/4019HALF/X:THE COURT DISMISSES VIOLATIONS #1 - ABSCONDING, FOR LACK OF EVIDENCE,/X:PAROLE REINSTATED TO:10-29-14, FOR GOOD LEGAL CAUSE, /X:PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-12-01T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PROBABLE CAUSE HRG/DAWT/DEF:STIPULATE TO PROBABLE CAUSE/CONTD PC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP: 12-29-14 IN M31/CONTD: RECEIPT OF 4011,6PC REPORT AND PROBABLE CAUSE HRG/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-11-24T13:30:00.000Z",
+      "docketEntryComment": "28    PPTR HEARING-(PAROLE)/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANTTO PC3000,08/DAWT/PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS,/NB/25    CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6//JAIL PSY/4011,6/REP:12-01-14 IN DEPT 31 AT 1,30PM/CONTD: RECEIPT OF 4011,6PC REPORT AND PROBABLE CAUSE HEARING/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-12-29 1:30 PM",
+      "hearingType": "PC 4011.6 Report",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 0,
+      "court_date": "2014-12-29",
+      "hearing_time": "1:30 PM",
+      "matters": "PC 4011.6 Report",
+      "hearing_type": "PC 4011.6 Report",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-12-11 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 1,
+      "court_date": "2014-12-11",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-12-01 1:30 PM",
+      "hearingType": "Parole Revocation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 2,
+      "court_date": "2014-12-01",
+      "hearing_time": "1:30 PM",
+      "matters": "Parole Revocation Hearing",
+      "hearing_type": "Parole Revocation Hearing",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-11-24 1:30 PM",
+      "hearingType": "PC 3056 Petition to Revoke Parole",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 3,
+      "court_date": "2014-11-24",
+      "hearing_time": "1:30 PM",
+      "matters": "PC 3056 Petition to Revoke Parole",
+      "hearing_type": "PC 3056 Petition to Revoke Parole",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ARMANDO MIRANDA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "3000.08 PC/F XX/X",
+    "filed_date": "2014-11-20",
+    "defendant": "RICHARD NELSON BRYANT",
+    "searched_key": "BRYANT/RI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/14029801.json",
     "searched_last_name": "BRYANT",
     "searched_first_prefix": "RI",
-    "charges": "3000.08 PC/F XX/X",
     "row": {
       "DEFENDANTNAME": "RICHARD NELSON BRYANT",
       "CASENUMBER": "CRI-14029801",
@@ -45,11 +138,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3796241",
+  "docket_entries": [
+    {
+      "filedDate": "2014-12-08T13:21:00.000Z",
+      "docketEntryComment": "ATC MOT TO ADV FROM 122914 FOR DISP; MOT TO VACATE 122914 DATE ETC FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-12-08T13:21:00.000Z",
+      "description": "ATC MOT TO ADV FROM 122914 FOR DISP; MOT TO VACATE 122914 DATE ETC FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-12-29T13:30:00.000Z",
+      "docketEntryComment": "/CAL: PC 4011,6 REPORT/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:THIS DATE SHOULD HAVE BEEN VACATED ON 12-11-14 WHEN DEFENDANT ADMITTED PAROLE VIOLATIONS AND WAS SENTENCED/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-12-29T13:30:00.000Z",
+      "description": "/CAL: PC 4011,6 REPORT/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:THIS DATE SHOULD HAVE BEEN VACATED ON 12-11-14 WHEN DEFENDANT ADMITTED PAROLE VIOLATIONS AND WAS SENTENCED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-12-11T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/3000ADV/3000ADM/X:THE PAROLEE'S ADMISSION IS AS TO ALL VIOLATIONS EXCEPT #1,/3000REIN/PAJ:78 DAYS /X:PAROLEE SHALL RECEIVE CREDIT FOR  27  DAYS,/4019HALF/X:THE COURT DISMISSES VIOLATIONS #1 - ABSCONDING, FOR LACK OF EVIDENCE,/X:PAROLE REINSTATED TO:10-29-14, FOR GOOD LEGAL CAUSE, /X:PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2014-12-11T13:30:00.000Z",
+      "description": "/CAL:PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/3000ADV/3000ADM/X:THE PAROLEE'S ADMISSION IS AS TO ALL VIOLATIONS EXCEPT #1,/3000REIN/PAJ:78 DAYS /X:PAROLEE SHALL RECEIVE CREDIT FOR 27 DAYS,/4019HALF/X:THE COURT DISMISSES VIOLATIONS #1 - ABSCONDING, FOR LACK OF EVIDENCE,/X:PAROLE REINSTATED TO:10-29-14, FOR GOOD LEGAL CAUSE, /X:PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-12-01T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PROBABLE CAUSE HRG/DAWT/DEF:STIPULATE TO PROBABLE CAUSE/CONTD PC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP: 12-29-14 IN M31/CONTD: RECEIPT OF 4011,6PC REPORT AND PROBABLE CAUSE HRG/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2014-12-01T13:30:00.000Z",
+      "description": "/CAL:PROBABLE CAUSE HRG/DAWT/DEF:STIPULATE TO PROBABLE CAUSE/CONTD PC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP: 12-29-14 IN M31/CONTD: RECEIPT OF 4011,6PC REPORT AND PROBABLE CAUSE HRG/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-11-24T13:30:00.000Z",
+      "docketEntryComment": "28    PPTR HEARING-(PAROLE)/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANTTO PC3000,08/DAWT/PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS,/NB/25    CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6//JAIL PSY/4011,6/REP:12-01-14 IN DEPT 31 AT 1,30PM/CONTD: RECEIPT OF 4011,6PC REPORT AND PROBABLE CAUSE HEARING/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2014-11-24T13:30:00.000Z",
+      "description": "28 PPTR HEARING-(PAROLE)/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANTTO PC3000,08/DAWT/PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS,/NB/25 CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6//JAIL PSY/4011,6/REP:12-01-14 IN DEPT 31 AT 1,30PM/CONTD: RECEIPT OF 4011,6PC REPORT AND PROBABLE CAUSE HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14029801",
-    "portal_case_id": "",
+    "portal_case_id": "3796241",
     "display_case_number": "CRI-14029801",
     "defendant": "RICHARD NELSON BRYANT",
     "filed_date": "2014-11-20",
@@ -59,12 +203,76 @@
       "defendant": "RICHARD NELSON BRYANT",
       "filed_date": "2014-11-20"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 4011",
+        "count": 4,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC3000",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3000.08 PC/F XX/X",
+    "charge_rows": [
+      {
+        "raw": "3000.08 PC/F XX/X",
+        "title": "XX/X",
+        "title_source": "criminal_index_text",
+        "code": "PC 3000.08",
+        "code_system": "PC",
+        "section": "3000.08",
+        "citation": "Penal Code § 3000.08",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RICHARD NELSON BRYANT, and date of filing 2014-11-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RICHARD NELSON BRYANT, date of filing, 2014-11-20, and charges in the case: 3000.08 PC/F XX/X.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3000.08 PC/F XX/X",
+      "title": "XX/X",
+      "title_source": "criminal_index_text",
+      "code": "PC 3000.08",
+      "code_system": "PC",
+      "section": "3000.08",
+      "citation": "Penal Code § 3000.08",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:21:06.655Z",
+  "portal_case_id": "3796241",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14029801",
+      "defendant": "RICHARD NELSON BRYANT",
+      "filed_date": "2014-11-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3796241"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.101041+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:17:04.386Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:24:42.769Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12031507",
   "criminal_case_number": "12031507",
@@ -24,19 +24,58 @@
       "name": "ANDREW JOSEPH DELEON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANDREW JOSEPH DELEON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2013-03-19T12:58:00.000Z",
+      "docketEntryComment": "SFPD ATTY R WAGNER DECLAR IN OPPO TO DEFTS MOT TO RTRN PROP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-03-14T13:39:00.000Z",
+      "docketEntryComment": "DEFT'S MOT FOR RETURN OF PROPERTY FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-03-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENDANT'S MOTION FOR RETURN OF PROPERTY & SFPD OPPOSITION/X:APPEARANCE BY ATTORNEY RONNIE WAGNER ON BEHALF OF SFPD LEGAL DEPARTMENT,/NP/X:THECOURT DENIES THE MOTION FOR RETURN OF PROPERTY WITH PREJUDICE,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-03-29 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2013-03-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "3056 PC HOLD XX/X",
+    "filed_date": "2013-03-29",
+    "defendant": "ANDREW JOSEPH DELEON",
+    "searched_key": "DELEON/AN",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/12031507.json",
     "searched_last_name": "DELEON",
     "searched_first_prefix": "AN",
-    "charges": "3056 PC HOLD XX/X",
     "row": {
       "DEFENDANTNAME": "ANDREW JOSEPH DELEON",
       "CASENUMBER": "CRI-12031507",
@@ -45,11 +84,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3728646",
+  "docket_entries": [
+    {
+      "filedDate": "2013-03-19T12:58:00.000Z",
+      "docketEntryComment": "SFPD ATTY R WAGNER DECLAR IN OPPO TO DEFTS MOT TO RTRN PROP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-03-19T12:58:00.000Z",
+      "description": "SFPD ATTY R WAGNER DECLAR IN OPPO TO DEFTS MOT TO RTRN PROP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-03-14T13:39:00.000Z",
+      "docketEntryComment": "DEFT'S MOT FOR RETURN OF PROPERTY FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-03-14T13:39:00.000Z",
+      "description": "DEFT'S MOT FOR RETURN OF PROPERTY FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-03-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENDANT'S MOTION FOR RETURN OF PROPERTY & SFPD OPPOSITION/X:APPEARANCE BY ATTORNEY RONNIE WAGNER ON BEHALF OF SFPD LEGAL DEPARTMENT,/NP/X:THECOURT DENIES THE MOTION FOR RETURN OF PROPERTY WITH PREJUDICE,/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-03-29T09:00:00.000Z",
+      "description": "/CAL:DEFENDANT'S MOTION FOR RETURN OF PROPERTY & SFPD OPPOSITION/X:APPEARANCE BY ATTORNEY RONNIE WAGNER ON BEHALF OF SFPD LEGAL DEPARTMENT,/NP/X:THECOURT DENIES THE MOTION FOR RETURN OF PROPERTY WITH PREJUDICE,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12031507",
-    "portal_case_id": "",
+    "portal_case_id": "3728646",
     "display_case_number": "CRI-12031507",
     "defendant": "ANDREW JOSEPH DELEON",
     "filed_date": "2013-03-29",
@@ -60,11 +130,56 @@
       "filed_date": "2013-03-29"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "3056 PC HOLD XX/X",
+    "charge_rows": [
+      {
+        "raw": "3056 PC HOLD XX/X",
+        "title": "HOLD XX/X",
+        "title_source": "criminal_index_text",
+        "code": "PC 3056",
+        "code_system": "PC",
+        "section": "3056",
+        "citation": "Penal Code § 3056",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3056.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3056.&lawCode=PEN",
+        "url_version_status": "current_version_unverified"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANDREW JOSEPH DELEON, and date of filing 2013-03-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANDREW JOSEPH DELEON, date of filing, 2013-03-29, and charges in the case: 3056 PC HOLD XX/X.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3056 PC HOLD XX/X",
+      "title": "HOLD XX/X",
+      "title_source": "criminal_index_text",
+      "code": "PC 3056",
+      "code_system": "PC",
+      "section": "3056",
+      "citation": "Penal Code § 3056",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3056.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3056.&lawCode=PEN",
+      "url_version_status": "current_version_unverified"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:24:43.508Z",
+  "portal_case_id": "3728646",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12031507",
+      "defendant": "ANDREW JOSEPH DELEON",
+      "filed_date": "2013-03-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3728646"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.570342+00:00"
 }

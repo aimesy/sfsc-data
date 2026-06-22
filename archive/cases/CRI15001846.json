@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:14:43.112Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:14:15.790Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15001846",
   "criminal_case_number": "15001846",
@@ -24,11 +24,82 @@
       "name": "GERARDO A RODRIGUEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "GERARDO A RODRIGUEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-02-04T09:06:00.000Z",
+      "docketEntryComment": "DEFT'S MOTION TO CONTINUE PRELIMINARY HEARING FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-01-27T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:03-30-15/987,2/BAIL:250000/X:BAIL IS SET WITHOUT PREJUDICE/CONTD:PREHEARING CONFERENCE/DOP/CONTD:PRELIM HRG/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-02-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING & DEFENSE MOTION TO CONTINUE/X:DEFENSE MOTION TOCONTINUE IS OFF CALENDAR,/MO PC 1385: PURSUANT TO PC 1387(C)/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-01-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/LD:03-30-15 (60TH)/TE:1 DAY/CONTD:PRELIMINARYHEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-02-06 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 0,
+      "court_date": "2015-02-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-01-28 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 1,
+      "court_date": "2015-01-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-01-27 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2015-01-27",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "GEORGE LAZARUS",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3801420",
+  "docket_entries": [
+    {
+      "filedDate": "2015-02-04T09:06:00.000Z",
+      "docketEntryComment": "DEFT'S MOTION TO CONTINUE PRELIMINARY HEARING FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-02-04T09:06:00.000Z",
+      "description": "DEFT'S MOTION TO CONTINUE PRELIMINARY HEARING FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-01-27T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:03-30-15/987,2/BAIL:250000/X:BAIL IS SET WITHOUT PREJUDICE/CONTD:PREHEARING CONFERENCE/DOP/CONTD:PRELIM HRG/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-01-27T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:03-30-15/987,2/BAIL:250000/X:BAIL IS SET WITHOUT PREJUDICE/CONTD:PREHEARING CONFERENCE/DOP/CONTD:PRELIM HRG/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-02-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING & DEFENSE MOTION TO CONTINUE/X:DEFENSE MOTION TOCONTINUE IS OFF CALENDAR,/MO PC 1385: PURSUANT TO PC 1387(C)/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-02-06T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING & DEFENSE MOTION TO CONTINUE/X:DEFENSE MOTION TOCONTINUE IS OFF CALENDAR,/MO PC 1385: PURSUANT TO PC 1387(C)/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-01-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/LD:03-30-15 (60TH)/TE:1 DAY/CONTD:PRELIMINARYHEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-01-28T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/LD:03-30-15 (60TH)/TE:1 DAY/CONTD:PRELIMINARYHEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15001846",
-    "portal_case_id": "",
+    "portal_case_id": "3801420",
     "display_case_number": "CRI-15001846",
     "defendant": "GERARDO A RODRIGUEZ",
     "filed_date": "2015-01-27",
@@ -59,12 +171,206 @@
       "defendant": "GERARDO A RODRIGUEZ",
       "filed_date": "2015-01-27"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 1387(C)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "30605(a) PC/F 30605(a) PC/F 11370.1(a) HS/F 11378 HS/F 11351 HS/F 11359 HS/F 11366 HS/F",
+    "charge_rows": [
+      {
+        "raw": "30605(a) PC/F",
+        "title": "Penal Code § 30605(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 30605(a)",
+        "code_system": "PC",
+        "section": "30605(a)",
+        "citation": "Penal Code § 30605(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=30605.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=30605.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11370.1(a) HS/F",
+        "title": "Health and Safety Code § 11370.1(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11370.1(a)",
+        "code_system": "HS",
+        "section": "11370.1(a)",
+        "citation": "Health and Safety Code § 11370.1(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11370.1.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11370.1.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11378 HS/F",
+        "title": "Health and Safety Code § 11378",
+        "title_source": "programmatic_citation",
+        "code": "HS 11378",
+        "code_system": "HS",
+        "section": "11378",
+        "citation": "Health and Safety Code § 11378",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11351 HS/F",
+        "title": "Health and Safety Code § 11351",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351",
+        "code_system": "HS",
+        "section": "11351",
+        "citation": "Health and Safety Code § 11351",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11359 HS/F",
+        "title": "Health and Safety Code § 11359",
+        "title_source": "programmatic_citation",
+        "code": "HS 11359",
+        "code_system": "HS",
+        "section": "11359",
+        "citation": "Health and Safety Code § 11359",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11366 HS/F",
+        "title": "Health and Safety Code § 11366",
+        "title_source": "programmatic_citation",
+        "code": "HS 11366",
+        "code_system": "HS",
+        "section": "11366",
+        "citation": "Health and Safety Code § 11366",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11366.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11366.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, GERARDO A RODRIGUEZ, and date of filing 2015-01-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, GERARDO A RODRIGUEZ, date of filing, 2015-01-27, and charges in the case: 30605(a) PC/F 30605(a) PC/F 11370.1(a) HS/F 11378 HS/F 11351 HS/F 11359 HS/F 11366 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "30605(a) PC/F",
+      "title": "Penal Code § 30605(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 30605(a)",
+      "code_system": "PC",
+      "section": "30605(a)",
+      "citation": "Penal Code § 30605(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=30605.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=30605.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11370.1(a) HS/F",
+      "title": "Health and Safety Code § 11370.1(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11370.1(a)",
+      "code_system": "HS",
+      "section": "11370.1(a)",
+      "citation": "Health and Safety Code § 11370.1(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11370.1.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11370.1.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11378 HS/F",
+      "title": "Health and Safety Code § 11378",
+      "title_source": "programmatic_citation",
+      "code": "HS 11378",
+      "code_system": "HS",
+      "section": "11378",
+      "citation": "Health and Safety Code § 11378",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11351 HS/F",
+      "title": "Health and Safety Code § 11351",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351",
+      "code_system": "HS",
+      "section": "11351",
+      "citation": "Health and Safety Code § 11351",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11359 HS/F",
+      "title": "Health and Safety Code § 11359",
+      "title_source": "programmatic_citation",
+      "code": "HS 11359",
+      "code_system": "HS",
+      "section": "11359",
+      "citation": "Health and Safety Code § 11359",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11359.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11366 HS/F",
+      "title": "Health and Safety Code § 11366",
+      "title_source": "programmatic_citation",
+      "code": "HS 11366",
+      "code_system": "HS",
+      "section": "11366",
+      "citation": "Health and Safety Code § 11366",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11366.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11366.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:14:16.472Z",
+  "portal_case_id": "3801420",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15001846",
+      "defendant": "GERARDO A RODRIGUEZ",
+      "filed_date": "2015-01-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3801420"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T13:44:39.453Z"
 }

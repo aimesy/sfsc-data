@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:51:50.049Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:23:28.202Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13018949",
   "criminal_case_number": "13018949",
@@ -24,11 +24,77 @@
       "name": "EDWIN A LEE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "EDWIN A LEE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-07-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/AMEND:TO REDUCE COUNT 1 TO 11350(B) HS, A MISDEMEANOR/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL//DEFT ADV NL:1/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-07-23T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCE/TWS/CH1:CJ 16D/CTS:16/VF2:140/COA:40/ICNA/COLLECT/CTORD:FINES & FEES TRANSFERRED TO CASE #11029573/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-07-10T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 07-24-13/987,2/BAIL:25000/CONTD:PRELIMINARY HEARING/DO",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-07-23 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2013-07-23",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-07-23 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2013-07-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-07-10 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2013-07-10",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ANNE IRWIN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +108,49 @@
       "CASENUMBER": "CRI-13018949",
       "FILEDDATE": "2013-07-10 09:00:00",
       "CHARGES": "11350(b) HS/M"
-    }
+    },
+    "filed_date": "2013-07-10",
+    "defendant": "EDWIN A LEE",
+    "searched_key": "LEE/ED",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/13018949.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3749447",
+  "docket_entries": [
+    {
+      "filedDate": "2013-07-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/AMEND:TO REDUCE COUNT 1 TO 11350(B) HS, A MISDEMEANOR/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL//DEFT ADV NL:1/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-07-23T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/AMEND:TO REDUCE COUNT 1 TO 11350(B) HS, A MISDEMEANOR/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL//DEFT ADV NL:1/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-07-23T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCE/TWS/CH1:CJ 16D/CTS:16/VF2:140/COA:40/ICNA/COLLECT/CTORD:FINES & FEES TRANSFERRED TO CASE #11029573/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-07-23T09:15:00.000Z",
+      "description": "/CAL:SENTENCE/TWS/CH1:CJ 16D/CTS:16/VF2:140/COA:40/ICNA/COLLECT/CTORD:FINES & FEES TRANSFERRED TO CASE #11029573/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-07-10T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 07-24-13/987,2/BAIL:25000/CONTD:PRELIMINARY HEARING/DO",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-07-10T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 07-24-13/987,2/BAIL:25000/CONTD:PRELIMINARY HEARING/DO",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13018949",
-    "portal_case_id": "",
+    "portal_case_id": "3749447",
     "display_case_number": "CRI-13018949",
     "defendant": "EDWIN A LEE",
     "filed_date": "2013-07-10",
@@ -60,11 +161,58 @@
       "filed_date": "2013-07-10"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11350(b) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11350(b) HS/M",
+        "title": "Health and Safety Code § 11350(b)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(b)",
+        "code_system": "HS",
+        "section": "11350(b)",
+        "citation": "Health and Safety Code § 11350(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, EDWIN A LEE, and date of filing 2013-07-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, EDWIN A LEE, date of filing, 2013-07-10, and charges in the case: 11350(b) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(b) HS/M",
+      "title": "Health and Safety Code § 11350(b)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(b)",
+      "code_system": "HS",
+      "section": "11350(b)",
+      "citation": "Health and Safety Code § 11350(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:23:28.835Z",
+  "portal_case_id": "3749447",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13018949",
+      "defendant": "EDWIN A LEE",
+      "filed_date": "2013-07-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3749447"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:37.717803+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:23:23.456Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:32:27.233Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12033281",
   "criminal_case_number": "12033281",
@@ -24,11 +24,127 @@
       "name": "SAMUEL PEREZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "SAMUEL PEREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-01-03T15:13:00.000Z",
+      "docketEntryComment": "DEFT'S PC1381 MOTION TO DISMISS FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-12-28T15:00:00.000Z",
+      "docketEntryComment": "DA'S 1381 DEMAND, ORDER TO TRANSPORT FILED 122012",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-01-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET PRELIM HEARING/X: MATTER RETURNED FROM DEPARTMENT 22/LD: 03-18-13 90TH DAY PER 1381PC DEMAND/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING 01-14-13 IN DEPT 12/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-01-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFT'S 1381PC MOTION AND TO SET PRELIM/MO PC 1385:THE PEOPLE TAKE A FIRST DISMISSAL (THE PEOPLE TO REFILE)/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-01-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIM HEARING; DEF PC 1381 MOTION/LD:03-18-13 90TH DAY PER 1381PC DEMAND FOR TRIAL/X: DEFENDANT'S 1381PC MOTION ARGUED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-12-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DA'S 1381 DEMAND/CONTD:SETTING PRELIMINARY HEARING/X:90TH DAY FOR 1381PC DEMAND IS 03-18-13/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-12-28T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 01-14-13/987,2/BAIL:150,000/CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-01-16 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2013-01-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-01-14 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2013-01-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-01-02 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2013-01-02",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-12-31 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "2012-12-31",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-12-28 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 4,
+      "court_date": "2012-12-28",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ADAM LIPSON",
+      "type": "Public Defender"
+    },
+    {
+      "name": "OBRYAN KENNEY",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +161,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3730394",
+  "docket_entries": [
+    {
+      "filedDate": "2013-01-03T15:13:00.000Z",
+      "docketEntryComment": "DEFT'S PC1381 MOTION TO DISMISS FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-01-03T15:13:00.000Z",
+      "description": "DEFT'S PC1381 MOTION TO DISMISS FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-12-28T15:00:00.000Z",
+      "docketEntryComment": "DA'S 1381 DEMAND, ORDER TO TRANSPORT FILED 122012",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-12-28T15:00:00.000Z",
+      "description": "DA'S 1381 DEMAND, ORDER TO TRANSPORT FILED 122012",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-01-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET PRELIM HEARING/X: MATTER RETURNED FROM DEPARTMENT 22/LD: 03-18-13 90TH DAY PER 1381PC DEMAND/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING 01-14-13 IN DEPT 12/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-01-02T09:00:00.000Z",
+      "description": "/CAL: TO SET PRELIM HEARING/X: MATTER RETURNED FROM DEPARTMENT 22/LD: 03-18-13 90TH DAY PER 1381PC DEMAND/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING 01-14-13 IN DEPT 12/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-01-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFT'S 1381PC MOTION AND TO SET PRELIM/MO PC 1385:THE PEOPLE TAKE A FIRST DISMISSAL (THE PEOPLE TO REFILE)/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-01-16T09:00:00.000Z",
+      "description": "/CAL:DEFT'S 1381PC MOTION AND TO SET PRELIM/MO PC 1385:THE PEOPLE TAKE A FIRST DISMISSAL (THE PEOPLE TO REFILE)/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-01-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIM HEARING; DEF PC 1381 MOTION/LD:03-18-13 90TH DAY PER 1381PC DEMAND FOR TRIAL/X: DEFENDANT'S 1381PC MOTION ARGUED/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2013-01-14T09:00:00.000Z",
+      "description": "/CAL: PRELIM HEARING; DEF PC 1381 MOTION/LD:03-18-13 90TH DAY PER 1381PC DEMAND FOR TRIAL/X: DEFENDANT'S 1381PC MOTION ARGUED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-12-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DA'S 1381 DEMAND/CONTD:SETTING PRELIMINARY HEARING/X:90TH DAY FOR 1381PC DEMAND IS 03-18-13/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2012-12-31T09:00:00.000Z",
+      "description": "/CAL:DA'S 1381 DEMAND/CONTD:SETTING PRELIMINARY HEARING/X:90TH DAY FOR 1381PC DEMAND IS 03-18-13/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-12-28T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 01-14-13/987,2/BAIL:150,000/CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2012-12-28T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:FOR PRELIMINARY HEARING IS 01-14-13/987,2/BAIL:150,000/CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12033281",
-    "portal_case_id": "",
+    "portal_case_id": "3730394",
     "display_case_number": "CRI-12033281",
     "defendant": "SAMUEL PEREZ",
     "filed_date": "2012-12-28",
@@ -59,12 +246,84 @@
       "defendant": "SAMUEL PEREZ",
       "filed_date": "2012-12-28"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1381",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC1381",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "459 PC/F",
+    "charge_rows": [
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, SAMUEL PEREZ, and date of filing 2012-12-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, SAMUEL PEREZ, date of filing, 2012-12-28, and charges in the case: 459 PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:32:27.891Z",
+  "portal_case_id": "3730394",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12033281",
+      "defendant": "SAMUEL PEREZ",
+      "filed_date": "2012-12-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3730394"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T13:58:59.886Z"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:33:30.564Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:24:15.823Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13027636",
   "criminal_case_number": "13027636",
@@ -24,11 +24,110 @@
       "name": "CHRISTOPHER T GRANT",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHRISTOPHER T GRANT",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-20T00:00:00.000Z",
+      "docketEntryComment": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-10-22T15:00:00.000Z",
+      "docketEntryComment": "FELONY PLEA TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-11-05T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ 16D/CTS:16/WS/DNACOMP/OR25/RESTV/WEAP/SA1:KASTIROASHOUR, KAMEL ASFOUR, AND KHALID SULEIMAN/SA2:1216 POLK ST,, SF/VF4:280/PC/PSR/BKFEE/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-10-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:2/FNDG/CO:NEGOTIATED DISPOSITION/PRES:11-05-13/REMA/ARBUCKLE/OR/DOP/SA2:1216 POLK ST,, SF/SA1:KASTIRO ASHOUR, KAMEL ASFOUR, AND KHALID SULEIMAN/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-10-01T13:30:00.000Z",
+      "docketEntryComment": "/X:STONE LEE DA INTERN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 10-16-13/987,2/BAIL:75,000 /CONTD: PRELIMINARY HEARING ON 10-15-13/DOP/SA1:SULEIMAN, KHALID ASFOUR, KAMELASFOUR, AND KASTORO/SA2:1216 POLK ST INSF/SAORD3/SAORD/TEXT:CRT ORDS DEFTEXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:10-04-13/CONTD: RECEIPT OF 4011,6PC REPORT AND TO SET/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-10-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PC 4011,6 REPORT/X:CONFIRM PRELIM HEARING DATE OF 10-15-13/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-11-05 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2013-11-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-10-15 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2013-10-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-10-04 9:00 AM",
+      "hearingType": "PC 4011.6 Report",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2013-10-04",
+      "hearing_time": "9:00 AM",
+      "matters": "PC 4011.6 Report",
+      "hearing_type": "PC 4011.6 Report",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-10-01 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2013-10-01",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "LATEEF GRAY",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +144,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3757983",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-20T00:00:00.000Z",
+      "docketEntryComment": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-07-20T00:00:00.000Z",
+      "description": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-10-22T15:00:00.000Z",
+      "docketEntryComment": "FELONY PLEA TX FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-10-22T15:00:00.000Z",
+      "description": "FELONY PLEA TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-11-05T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ 16D/CTS:16/WS/DNACOMP/OR25/RESTV/WEAP/SA1:KASTIROASHOUR, KAMEL ASFOUR, AND KHALID SULEIMAN/SA2:1216 POLK ST,, SF/VF4:280/PC/PSR/BKFEE/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-11-05T09:00:00.000Z",
+      "description": "/AJW/CH1:ISS:PROB 3 Y:PJ 16D/CTS:16/WS/DNACOMP/OR25/RESTV/WEAP/SA1:KASTIROASHOUR, KAMEL ASFOUR, AND KHALID SULEIMAN/SA2:1216 POLK ST,, SF/VF4:280/PC/PSR/BKFEE/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-10-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:2/FNDG/CO:NEGOTIATED DISPOSITION/PRES:11-05-13/REMA/ARBUCKLE/OR/DOP/SA2:1216 POLK ST,, SF/SA1:KASTIRO ASHOUR, KAMEL ASFOUR, AND KHALID SULEIMAN/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2013-10-15T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:2/FNDG/CO:NEGOTIATED DISPOSITION/PRES:11-05-13/REMA/ARBUCKLE/OR/DOP/SA2:1216 POLK ST,, SF/SA1:KASTIRO ASHOUR, KAMEL ASFOUR, AND KHALID SULEIMAN/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-10-01T13:30:00.000Z",
+      "docketEntryComment": "/X:STONE LEE DA INTERN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 10-16-13/987,2/BAIL:75,000 /CONTD: PRELIMINARY HEARING ON 10-15-13/DOP/SA1:SULEIMAN, KHALID ASFOUR, KAMELASFOUR, AND KASTORO/SA2:1216 POLK ST INSF/SAORD3/SAORD/TEXT:CRT ORDS DEFTEXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:10-04-13/CONTD: RECEIPT OF 4011,6PC REPORT AND TO SET/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2013-10-01T13:30:00.000Z",
+      "description": "/X:STONE LEE DA INTERN/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 10-16-13/987,2/BAIL:75,000 /CONTD: PRELIMINARY HEARING ON 10-15-13/DOP/SA1:SULEIMAN, KHALID ASFOUR, KAMELASFOUR, AND KASTORO/SA2:1216 POLK ST INSF/SAORD3/SAORD/TEXT:CRT ORDS DEFTEXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:10-04-13/CONTD: RECEIPT OF 4011,6PC REPORT AND TO SET/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-10-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PC 4011,6 REPORT/X:CONFIRM PRELIM HEARING DATE OF 10-15-13/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2013-10-04T09:00:00.000Z",
+      "description": "/CAL:PC 4011,6 REPORT/X:CONFIRM PRELIM HEARING DATE OF 10-15-13/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13027636",
-    "portal_case_id": "",
+    "portal_case_id": "3757983",
     "display_case_number": "CRI-13027636",
     "defendant": "CHRISTOPHER T GRANT",
     "filed_date": "2013-10-01",
@@ -59,12 +229,101 @@
       "defendant": "CHRISTOPHER T GRANT",
       "filed_date": "2013-10-01"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC 4011",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "422 PC/F 594(b)(1) PC/F",
+    "charge_rows": [
+      {
+        "raw": "422 PC/F",
+        "title": "Penal Code § 422",
+        "title_source": "programmatic_citation",
+        "code": "PC 422",
+        "code_system": "PC",
+        "section": "422",
+        "citation": "Penal Code § 422",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "594(b)(1) PC/F",
+        "title": "Penal Code § 594(b)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(1)",
+        "code_system": "PC",
+        "section": "594(b)(1)",
+        "citation": "Penal Code § 594(b)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHRISTOPHER T GRANT, and date of filing 2013-10-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHRISTOPHER T GRANT, date of filing, 2013-10-01, and charges in the case: 422 PC/F 594(b)(1) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "422 PC/F",
+      "title": "Penal Code § 422",
+      "title_source": "programmatic_citation",
+      "code": "PC 422",
+      "code_system": "PC",
+      "section": "422",
+      "citation": "Penal Code § 422",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "594(b)(1) PC/F",
+      "title": "Penal Code § 594(b)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(1)",
+      "code_system": "PC",
+      "section": "594(b)(1)",
+      "citation": "Penal Code § 594(b)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:24:16.418Z",
+  "portal_case_id": "3757983",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13027636",
+      "defendant": "CHRISTOPHER T GRANT",
+      "filed_date": "2013-10-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3757983"
+  }
 }

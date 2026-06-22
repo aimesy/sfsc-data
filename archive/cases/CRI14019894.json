@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:58:43.917Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:18:19.525Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14019894",
   "criminal_case_number": "14019894",
@@ -24,19 +24,63 @@
       "name": "TAYLOR J EVANS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TAYLOR J EVANS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2021-03-29T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-07-31T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-03-29T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 03/29/21, CASE DISMISSED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-07-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/OREVKD/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-07-31 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2014-07-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "484(a)/490.5 PC/M 459 PC/M 11364.1(a) HS/M",
+    "filed_date": "2014-07-28",
+    "defendant": "TAYLOR J EVANS",
+    "searched_key": "EVANS/TA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/14019894.json",
     "searched_last_name": "EVANS",
     "searched_first_prefix": "TA",
-    "charges": "484(a)/490.5 PC/M 459 PC/M 11364.1(a) HS/M",
     "row": {
       "DEFENDANTNAME": "TAYLOR J EVANS",
       "CASENUMBER": "CRI-14019894",
@@ -45,11 +89,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3786499",
+  "docket_entries": [
+    {
+      "filedDate": "2021-03-29T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2021-03-29T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-07-31T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-07-31T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-03-29T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 03/29/21, CASE DISMISSED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2021-03-29T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 03/29/21, CASE DISMISSED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-07-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/OREVKD/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2014-07-31T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/OREVKD/BWI/BAIL:5,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14019894",
-    "portal_case_id": "",
+    "portal_case_id": "3786499",
     "display_case_number": "CRI-14019894",
     "defendant": "TAYLOR J EVANS",
     "filed_date": "2014-07-28",
@@ -60,11 +145,110 @@
       "filed_date": "2014-07-28"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "484(a)/490.5 PC/M 459 PC/M 11364.1(a) HS/M",
+    "charge_rows": [
+      {
+        "raw": "490.5 PC/M",
+        "title": "Penal Code § 490.5",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.5",
+        "code_system": "PC",
+        "section": "490.5",
+        "citation": "Penal Code § 490.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "459 PC/M",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "11364.1(a) HS/M",
+        "title": "Health and Safety Code § 11364.1(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11364.1(a)",
+        "code_system": "HS",
+        "section": "11364.1(a)",
+        "citation": "Health and Safety Code § 11364.1(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.1.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.1.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TAYLOR J EVANS, and date of filing 2014-07-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TAYLOR J EVANS, date of filing, 2014-07-28, and charges in the case: 484(a)/490.5 PC/M 459 PC/M 11364.1(a) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.5 PC/M",
+      "title": "Penal Code § 490.5",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.5",
+      "code_system": "PC",
+      "section": "490.5",
+      "citation": "Penal Code § 490.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "459 PC/M",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "11364.1(a) HS/M",
+      "title": "Health and Safety Code § 11364.1(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11364.1(a)",
+      "code_system": "HS",
+      "section": "11364.1(a)",
+      "citation": "Health and Safety Code § 11364.1(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.1.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.1.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:18:20.121Z",
+  "portal_case_id": "3786499",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14019894",
+      "defendant": "TAYLOR J EVANS",
+      "filed_date": "2014-07-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3786499"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.817341+00:00"
 }

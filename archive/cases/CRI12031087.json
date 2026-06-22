@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:38:11.168Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:32:17.837Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI12031087",
   "criminal_case_number": "12031087",
@@ -24,19 +24,107 @@
       "name": "EDGARDO CASTILLO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "EDGARDO CASTILLO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2012-12-14T09:15:00.000Z",
+      "docketEntryComment": "/3455REIN/CJ:30 D/CTS:16/4019HALF/CTORD: DEFENDANT TO REPORT TO APD ONCERELEASED FROM COUNTY JAIL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-12-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PCRS VIOL HRG/3455ADV/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-12-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRCS VIOL HRG/DAWT/CONTD:TO SET PRCS HRG & DETERMINATION OF COUNSEL/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-12-04T11:30:00.000Z",
+      "docketEntryComment": "/CAL:PRCS VIOLATION/PD/X:PRCS IS ADMINISTRATIVELY REVOKED,/SHER/NB/CONTD:SETTING PRCS HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2012-12-14 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 0,
+      "court_date": "2012-12-14",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-12-14 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 1,
+      "court_date": "2012-12-14",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-12-07 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 2,
+      "court_date": "2012-12-07",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2012-12-04 11:30 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "2012-12-04",
+      "hearing_time": "11:30 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEVE GAYLE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "3455(a) PC/F",
+    "filed_date": "2012-12-04",
+    "defendant": "EDGARDO CASTILLO",
+    "searched_key": "CASTILLO/ED",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/12031087.json",
     "searched_last_name": "CASTILLO",
     "searched_first_prefix": "ED",
-    "charges": "3455(a) PC/F",
     "row": {
       "DEFENDANTNAME": "EDGARDO CASTILLO",
       "CASENUMBER": "CRI-12031087",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3728236",
+  "docket_entries": [
+    {
+      "filedDate": "2012-12-14T09:15:00.000Z",
+      "docketEntryComment": "/3455REIN/CJ:30 D/CTS:16/4019HALF/CTORD: DEFENDANT TO REPORT TO APD ONCERELEASED FROM COUNTY JAIL/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2012-12-14T09:15:00.000Z",
+      "description": "/3455REIN/CJ:30 D/CTS:16/4019HALF/CTORD: DEFENDANT TO REPORT TO APD ONCERELEASED FROM COUNTY JAIL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-12-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PCRS VIOL HRG/3455ADV/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2012-12-14T09:00:00.000Z",
+      "description": "/CAL:TO SET PCRS VIOL HRG/3455ADV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-12-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET PRCS VIOL HRG/DAWT/CONTD:TO SET PRCS HRG & DETERMINATION OF COUNSEL/DOPC/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-12-07T09:00:00.000Z",
+      "description": "/CAL:TO SET PRCS VIOL HRG/DAWT/CONTD:TO SET PRCS HRG & DETERMINATION OF COUNSEL/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-12-04T11:30:00.000Z",
+      "docketEntryComment": "/CAL:PRCS VIOLATION/PD/X:PRCS IS ADMINISTRATIVELY REVOKED,/SHER/NB/CONTD:SETTING PRCS HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2012-12-04T11:30:00.000Z",
+      "description": "/CAL:PRCS VIOLATION/PD/X:PRCS IS ADMINISTRATIVELY REVOKED,/SHER/NB/CONTD:SETTING PRCS HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "12031087",
-    "portal_case_id": "",
+    "portal_case_id": "3728236",
     "display_case_number": "CRI-12031087",
     "defendant": "EDGARDO CASTILLO",
     "filed_date": "2012-12-04",
@@ -60,11 +189,58 @@
       "filed_date": "2012-12-04"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, EDGARDO CASTILLO, and date of filing 2012-12-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, EDGARDO CASTILLO, date of filing, 2012-12-04, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:32:18.516Z",
+  "portal_case_id": "3728236",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-12031087",
+      "defendant": "EDGARDO CASTILLO",
+      "filed_date": "2012-12-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3728236"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.824054+00:00"
 }

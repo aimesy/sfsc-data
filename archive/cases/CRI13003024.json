@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:56:18.857Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:22:08.440Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13003024",
   "criminal_case_number": "13003024",
@@ -24,11 +24,82 @@
       "name": "DEMONE L MORALES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DEMONE L MORALES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-02-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:PD DECLARES CONFLICT/TEXT:DEFT ENT NG PLEA(S) & DEN OFALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 02-20-13/BAIL:75000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-02-14T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:CJ 15D/CTS:15/VF2:120/COA:40/ICNA/COLLECT/4019HALF/CCC:CASE #2283541, #12030141, AND #13003024/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-02-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/AMEND:1/IRRC/TEXT:DEFT ADV & PER WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS:1/CO:NEGOTIATED DISPOSITION/REMA/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-02-14 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2013-02-14",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-02-14 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2013-02-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-02-04 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2013-02-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DAVID WILTON",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3733761",
+  "docket_entries": [
+    {
+      "filedDate": "2018-12-28T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-12-28T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-02-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:PD DECLARES CONFLICT/TEXT:DEFT ENT NG PLEA(S) & DEN OFALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 02-20-13/BAIL:75000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-02-04T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:PD DECLARES CONFLICT/TEXT:DEFT ENT NG PLEA(S) & DEN OFALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 02-20-13/BAIL:75000/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-02-14T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:CJ 15D/CTS:15/VF2:120/COA:40/ICNA/COLLECT/4019HALF/CCC:CASE #2283541, #12030141, AND #13003024/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-02-14T09:15:00.000Z",
+      "description": "/TWS/CH1:CJ 15D/CTS:15/VF2:120/COA:40/ICNA/COLLECT/4019HALF/CCC:CASE #2283541, #12030141, AND #13003024/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-02-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/AMEND:1/IRRC/TEXT:DEFT ADV & PER WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS:1/CO:NEGOTIATED DISPOSITION/REMA/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-02-14T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/AMEND:1/IRRC/TEXT:DEFT ADV & PER WVS CONST & CITZRTS ENT PLEA OF G/DEFT ADV RTS:1/CO:NEGOTIATED DISPOSITION/REMA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13003024",
-    "portal_case_id": "",
+    "portal_case_id": "3733761",
     "display_case_number": "CRI-13003024",
     "defendant": "DEMONE L MORALES",
     "filed_date": "2013-02-04",
@@ -59,12 +171,93 @@
       "defendant": "DEMONE L MORALES",
       "filed_date": "2013-02-04"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "459 PC/M 166(a)(4) PC/M",
+    "charge_rows": [
+      {
+        "raw": "459 PC/M",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "166(a)(4) PC/M",
+        "title": "Penal Code § 166(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 166(a)(4)",
+        "code_system": "PC",
+        "section": "166(a)(4)",
+        "citation": "Penal Code § 166(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DEMONE L MORALES, and date of filing 2013-02-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DEMONE L MORALES, date of filing, 2013-02-04, and charges in the case: 459 PC/M 166(a)(4) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/M",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "166(a)(4) PC/M",
+      "title": "Penal Code § 166(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 166(a)(4)",
+      "code_system": "PC",
+      "section": "166(a)(4)",
+      "citation": "Penal Code § 166(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:22:09.223Z",
+  "portal_case_id": "3733761",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13003024",
+      "defendant": "DEMONE L MORALES",
+      "filed_date": "2013-02-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3733761"
+  }
 }

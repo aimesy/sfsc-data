@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:17:32.059Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:20:15.378Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14025996",
   "criminal_case_number": "14025996",
@@ -24,19 +24,94 @@
       "name": "DENNIS PAUL JONES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DENNIS PAUL JONES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-10-16T15:00:00.000Z",
+      "docketEntryComment": "CAD TAPE IS RELEASED TO DPD H NGUYEN",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-10-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN 14025995 & APPT OF CONFLICT COUNSEL/CON:RANDALL MARTIN/MO138583/VD:10-17-14 TRIAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-10-03T13:45:00.000Z",
+      "docketEntryComment": "/CAL:ADD TO CALENDAR TO JOIN 14025995/VD:10-07-14 IN D17/CONTD:TO JOIN 14025995 & APPT CONFLICT COUNSEL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-10-01T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/987,2/BAIL:5000/NTW/LDTR:10-31-14/CONTD:STATUS OF PRCS HOLD AND TRIAL/DO",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-10-07 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2014-10-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-10-03 1:45 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2014-10-03",
+      "hearing_time": "1:45 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-10-01 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2014-10-01",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "RANDALL MARTIN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "290.011(a) PC/M",
+    "filed_date": "2014-10-01",
+    "defendant": "DENNIS PAUL JONES",
+    "searched_key": "JONES/DE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/14025996.json",
     "searched_last_name": "JONES",
     "searched_first_prefix": "DE",
-    "charges": "290.011(a) PC/M",
     "row": {
       "DEFENDANTNAME": "DENNIS PAUL JONES",
       "CASENUMBER": "CRI-14025996",
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3792518",
+  "docket_entries": [
+    {
+      "filedDate": "2014-10-16T15:00:00.000Z",
+      "docketEntryComment": "CAD TAPE IS RELEASED TO DPD H NGUYEN",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-10-16T15:00:00.000Z",
+      "description": "CAD TAPE IS RELEASED TO DPD H NGUYEN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-10-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN 14025995 & APPT OF CONFLICT COUNSEL/CON:RANDALL MARTIN/MO138583/VD:10-17-14 TRIAL/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-10-07T09:00:00.000Z",
+      "description": "/CAL:TO JOIN 14025995 & APPT OF CONFLICT COUNSEL/CON:RANDALL MARTIN/MO138583/VD:10-17-14 TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-10-03T13:45:00.000Z",
+      "docketEntryComment": "/CAL:ADD TO CALENDAR TO JOIN 14025995/VD:10-07-14 IN D17/CONTD:TO JOIN 14025995 & APPT CONFLICT COUNSEL/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2014-10-03T13:45:00.000Z",
+      "description": "/CAL:ADD TO CALENDAR TO JOIN 14025995/VD:10-07-14 IN D17/CONTD:TO JOIN 14025995 & APPT CONFLICT COUNSEL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-10-01T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/987,2/BAIL:5000/NTW/LDTR:10-31-14/CONTD:STATUS OF PRCS HOLD AND TRIAL/DO",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2014-10-01T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/987,2/BAIL:5000/NTW/LDTR:10-31-14/CONTD:STATUS OF PRCS HOLD AND TRIAL/DO",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14025996",
-    "portal_case_id": "",
+    "portal_case_id": "3792518",
     "display_case_number": "CRI-14025996",
     "defendant": "DENNIS PAUL JONES",
     "filed_date": "2014-10-01",
@@ -60,11 +176,58 @@
       "filed_date": "2014-10-01"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "290.011(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "290.011(a) PC/M",
+        "title": "Penal Code § 290.011(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 290.011(a)",
+        "code_system": "PC",
+        "section": "290.011(a)",
+        "citation": "Penal Code § 290.011(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.011.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.011.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DENNIS PAUL JONES, and date of filing 2014-10-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DENNIS PAUL JONES, date of filing, 2014-10-01, and charges in the case: 290.011(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "290.011(a) PC/M",
+      "title": "Penal Code § 290.011(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 290.011(a)",
+      "code_system": "PC",
+      "section": "290.011(a)",
+      "citation": "Penal Code § 290.011(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.011.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.011.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:20:16.094Z",
+  "portal_case_id": "3792518",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14025996",
+      "defendant": "DENNIS PAUL JONES",
+      "filed_date": "2014-10-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3792518"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.982930+00:00"
 }

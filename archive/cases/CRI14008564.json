@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:36:14.837Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:17:20.718Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14008564",
   "criminal_case_number": "14008564",
@@ -24,11 +24,100 @@
       "name": "RONALD DANIELS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RONALD DANIELS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2019-12-27T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-04-03T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 11D/CTS:11/WS/VF2:150/SA2:3251 20TH AVE,, SF ( MACY'S )/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/REMA/VD:PRELIMINARY HEARING DATE OF 04-10-14/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-04-03T09:00:00.000Z",
+      "docketEntryComment": "/TN:RONALD DANIELS/CAL:PREHEARING CONFERENCE/AMEND:1/IRRC/TEXT:DEFT ADV &PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:1/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-03-27T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 04-11-14/BAIL:15,000/SAORD/SA2:STAYOUT OF MACYS, 3251 20TH AVENUE, SAN FRANCISCO/CONTD:FOR SPR ELIGIBILITY REPORT ON 04-03-14/CONTD: PRELIMINARY HEARING ON 04-10-14/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-04-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL: SPR  ELIGIBILITY REPORT/DAWT/CONTD:PREHEARING CONFERENCE/DOPC/NTW/LD:04-11-14/4011,5/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-04-03 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2014-04-03",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-04-03 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2014-04-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-04-02 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2014-04-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-03-27 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2014-03-27",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "TAL KLEMENT",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +131,69 @@
       "CASENUMBER": "CRI-14008564",
       "FILEDDATE": "2014-03-27 09:00:00",
       "CHARGES": "459 PC/M 484(a) PC/M 466 PC/M"
-    }
+    },
+    "filed_date": "2014-03-27",
+    "defendant": "RONALD DANIELS",
+    "searched_key": "DANIELS/RO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/14008564.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3775352",
+  "docket_entries": [
+    {
+      "filedDate": "2019-12-27T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-12-27T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-04-03T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 11D/CTS:11/WS/VF2:150/SA2:3251 20TH AVE,, SF ( MACY'S )/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/REMA/VD:PRELIMINARY HEARING DATE OF 04-10-14/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-04-03T09:15:00.000Z",
+      "description": "/TWS/CH1:ISS:CPROB:PROB 3 Y:PJ 11D/CTS:11/WS/VF2:150/SA2:3251 20TH AVE,, SF ( MACY'S )/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/REMA/VD:PRELIMINARY HEARING DATE OF 04-10-14/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-04-03T09:00:00.000Z",
+      "docketEntryComment": "/TN:RONALD DANIELS/CAL:PREHEARING CONFERENCE/AMEND:1/IRRC/TEXT:DEFT ADV &PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:1/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2014-04-03T09:00:00.000Z",
+      "description": "/TN:RONALD DANIELS/CAL:PREHEARING CONFERENCE/AMEND:1/IRRC/TEXT:DEFT ADV &PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:1/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-03-27T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 04-11-14/BAIL:15,000/SAORD/SA2:STAYOUT OF MACYS, 3251 20TH AVENUE, SAN FRANCISCO/CONTD:FOR SPR ELIGIBILITY REPORT ON 04-03-14/CONTD: PRELIMINARY HEARING ON 04-10-14/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2014-03-27T13:30:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 04-11-14/BAIL:15,000/SAORD/SA2:STAYOUT OF MACYS, 3251 20TH AVENUE, SAN FRANCISCO/CONTD:FOR SPR ELIGIBILITY REPORT ON 04-03-14/CONTD: PRELIMINARY HEARING ON 04-10-14/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-04-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL: SPR  ELIGIBILITY REPORT/DAWT/CONTD:PREHEARING CONFERENCE/DOPC/NTW/LD:04-11-14/4011,5/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2014-04-02T09:00:00.000Z",
+      "description": "/CAL: SPR ELIGIBILITY REPORT/DAWT/CONTD:PREHEARING CONFERENCE/DOPC/NTW/LD:04-11-14/4011,5/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14008564",
-    "portal_case_id": "",
+    "portal_case_id": "3775352",
     "display_case_number": "CRI-14008564",
     "defendant": "RONALD DANIELS",
     "filed_date": "2014-03-27",
@@ -59,12 +203,120 @@
       "defendant": "RONALD DANIELS",
       "filed_date": "2014-03-27"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "459 PC/M 484(a) PC/M 466 PC/M",
+    "charge_rows": [
+      {
+        "raw": "459 PC/M",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "484(a) PC/M",
+        "title": "Penal Code § 484(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 484(a)",
+        "code_system": "PC",
+        "section": "484(a)",
+        "citation": "Penal Code § 484(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "466 PC/M",
+        "title": "Penal Code § 466",
+        "title_source": "programmatic_citation",
+        "code": "PC 466",
+        "code_system": "PC",
+        "section": "466",
+        "citation": "Penal Code § 466",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RONALD DANIELS, and date of filing 2014-03-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RONALD DANIELS, date of filing, 2014-03-27, and charges in the case: 459 PC/M 484(a) PC/M 466 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/M",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "484(a) PC/M",
+      "title": "Penal Code § 484(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 484(a)",
+      "code_system": "PC",
+      "section": "484(a)",
+      "citation": "Penal Code § 484(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=484.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "466 PC/M",
+      "title": "Penal Code § 466",
+      "title_source": "programmatic_citation",
+      "code": "PC 466",
+      "code_system": "PC",
+      "section": "466",
+      "citation": "Penal Code § 466",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:17:21.414Z",
+  "portal_case_id": "3775352",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14008564",
+      "defendant": "RONALD DANIELS",
+      "filed_date": "2014-03-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3775352"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:23.005164+00:00"
 }

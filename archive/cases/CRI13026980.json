@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:42:52.973Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:25:37.071Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13026980",
   "criminal_case_number": "13026980",
@@ -24,11 +24,82 @@
       "name": "ALFRED WALLACE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALFRED WALLACE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-10-09T15:29:00.000Z",
+      "docketEntryComment": "ORDER TO RETURN PROPERTY FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-09-27T09:15:00.000Z",
+      "docketEntryComment": "/CAL PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC55/3455ADV/3455ADM/3455REIN /CH1 CJ 60D /CTS  4  /4019HALF/X PRCS PC 3455 TO EXPIRE 12-23-15/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-09-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL TO SET PRCS HEARING/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-09-26T11:30:00.000Z",
+      "docketEntryComment": "/CAL  APD 3455PC MOTION/X  PRCS ADMINISTRATIVELY REVOKED,/PD/SHER/NB/CONTD  SETTING PRCS HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-09-27 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 28",
+      "__index": 0,
+      "court_date": "2013-09-27",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 28",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-09-27 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 28",
+      "__index": 1,
+      "court_date": "2013-09-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 28",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-09-26 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2013-09-26",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MICHAEL FOX",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3757330",
+  "docket_entries": [
+    {
+      "filedDate": "2013-10-09T15:29:00.000Z",
+      "docketEntryComment": "ORDER TO RETURN PROPERTY FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-10-09T15:29:00.000Z",
+      "description": "ORDER TO RETURN PROPERTY FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-09-27T09:15:00.000Z",
+      "docketEntryComment": "/CAL PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC55/3455ADV/3455ADM/3455REIN /CH1 CJ 60D /CTS  4  /4019HALF/X PRCS PC 3455 TO EXPIRE 12-23-15/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-09-27T09:15:00.000Z",
+      "description": "/CAL PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC55/3455ADV/3455ADM/3455REIN /CH1 CJ 60D /CTS 4 /4019HALF/X PRCS PC 3455 TO EXPIRE 12-23-15/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-09-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL TO SET PRCS HEARING/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-09-27T09:00:00.000Z",
+      "description": "/CAL TO SET PRCS HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-09-26T11:30:00.000Z",
+      "docketEntryComment": "/CAL  APD 3455PC MOTION/X  PRCS ADMINISTRATIVELY REVOKED,/PD/SHER/NB/CONTD  SETTING PRCS HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-09-26T11:30:00.000Z",
+      "description": "/CAL APD 3455PC MOTION/X PRCS ADMINISTRATIVELY REVOKED,/PD/SHER/NB/CONTD SETTING PRCS HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13026980",
-    "portal_case_id": "",
+    "portal_case_id": "3757330",
     "display_case_number": "CRI-13026980",
     "defendant": "ALFRED WALLACE",
     "filed_date": "2013-09-26",
@@ -59,12 +171,76 @@
       "defendant": "ALFRED WALLACE",
       "filed_date": "2013-09-26"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC55",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALFRED WALLACE, and date of filing 2013-09-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALFRED WALLACE, date of filing, 2013-09-26, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:25:37.735Z",
+  "portal_case_id": "3757330",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13026980",
+      "defendant": "ALFRED WALLACE",
+      "filed_date": "2013-09-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3757330"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:34:19.308Z"
 }

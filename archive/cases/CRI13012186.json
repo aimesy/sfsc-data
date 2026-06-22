@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:45:04.213Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:21:28.819Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13012186",
   "criminal_case_number": "13012186",
@@ -24,11 +24,64 @@
       "name": "EDDI PEREZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "EDDI PEREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-05-17T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-05-06T13:30:00.000Z",
+      "docketEntryComment": "/TN: EDDI PEREZ/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 07-05-13/OR/SA2: GOLDEN DATE AND HYDESTREET SF, CA/SAORD3/SAORD/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-05-17T09:00:00.000Z",
+      "docketEntryComment": "I/CAL:PREHEARING CONFERENCE/FTA/OREVKD/BWI/BAIL:25000/BWNUM:1ST/NIGHTSER",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-05-17 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2013-05-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-05-06 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2013-05-06",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SETH MEISELS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +98,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3742771",
+  "docket_entries": [
+    {
+      "filedDate": "2013-05-17T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-05-17T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-05-06T13:30:00.000Z",
+      "docketEntryComment": "/TN: EDDI PEREZ/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 07-05-13/OR/SA2: GOLDEN DATE AND HYDESTREET SF, CA/SAORD3/SAORD/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-05-06T13:30:00.000Z",
+      "description": "/TN: EDDI PEREZ/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LD: FOR PRELIMINARY HEARING IS 07-05-13/OR/SA2: GOLDEN DATE AND HYDESTREET SF, CA/SAORD3/SAORD/CONTD: PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-05-17T09:00:00.000Z",
+      "docketEntryComment": "I/CAL:PREHEARING CONFERENCE/FTA/OREVKD/BWI/BAIL:25000/BWNUM:1ST/NIGHTSER",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-05-17T09:00:00.000Z",
+      "description": "I/CAL:PREHEARING CONFERENCE/FTA/OREVKD/BWI/BAIL:25000/BWNUM:1ST/NIGHTSER",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13012186",
-    "portal_case_id": "",
+    "portal_case_id": "3742771",
     "display_case_number": "CRI-13012186",
     "defendant": "EDDI PEREZ",
     "filed_date": "2013-05-03",
@@ -60,11 +144,58 @@
       "filed_date": "2013-05-03"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11352(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11352(a) HS/F",
+        "title": "Health and Safety Code § 11352(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11352(a)",
+        "code_system": "HS",
+        "section": "11352(a)",
+        "citation": "Health and Safety Code § 11352(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, EDDI PEREZ, and date of filing 2013-05-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, EDDI PEREZ, date of filing, 2013-05-03, and charges in the case: 11352(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11352(a) HS/F",
+      "title": "Health and Safety Code § 11352(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11352(a)",
+      "code_system": "HS",
+      "section": "11352(a)",
+      "citation": "Health and Safety Code § 11352(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:21:29.547Z",
+  "portal_case_id": "3742771",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13012186",
+      "defendant": "EDDI PEREZ",
+      "filed_date": "2013-05-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3742771"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T16:33:13.155Z"
 }

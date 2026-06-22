@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:10:57.826Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:11:59.358Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15008282",
   "criminal_case_number": "15008282",
@@ -24,19 +24,134 @@
       "name": "DELON HOANG",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DELON HOANG",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-08-31T10:31:00.000Z",
+      "docketEntryComment": "DEFT'S MOT DISM (SERNA) DENIAL DUE PROCESS & RIGHT TO SPEEDY TRIAL FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-09-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE AND JONES-SERNA MOTION/TEXT: DEFENDANT'S MOTIONTO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-04-09T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX: 06-08-15/987,2/OR/X: AS A CONDITION OF RELEASE, DEFENDANT IS TO REPORT TO SPR ONCE A WEEK INPERSON AND ONCE A WEEK BY TELEPHONE/CONTD: PREHEARING CONFERENCE /DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-07-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/CONTD:PREHEARING CONFERENCE AND JONES-SERNA MOTION/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-05-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/STWPX/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-05-08T09:00:00.000Z",
+      "docketEntryComment": "/TN: DELON HOANG/CAL: PRE-HEARING CONFERENCE/LD: 06-08-15/CONTD TO BE SET, DOP /CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-09-08 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2015-09-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-07-17 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2015-07-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-05-27 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2015-05-27",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-05-08 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2015-05-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-04-09 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 4,
+      "court_date": "2015-04-09",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KLEIGH HATHAWAY",
+      "type": "Public Defender"
+    },
+    {
+      "name": "JUSTINE CEPHUS",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "459 PC/F",
+    "filed_date": "2015-04-09",
+    "defendant": "DELON HOANG",
+    "searched_key": "HOANG/DE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/15008282.json",
     "searched_last_name": "HOANG",
     "searched_first_prefix": "DE",
-    "charges": "459 PC/F",
     "row": {
       "DEFENDANTNAME": "DELON HOANG",
       "CASENUMBER": "CRI-15008282",
@@ -45,11 +160,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3807729",
+  "docket_entries": [
+    {
+      "filedDate": "2015-08-31T10:31:00.000Z",
+      "docketEntryComment": "DEFT'S MOT DISM (SERNA) DENIAL DUE PROCESS & RIGHT TO SPEEDY TRIAL FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-08-31T10:31:00.000Z",
+      "description": "DEFT'S MOT DISM (SERNA) DENIAL DUE PROCESS & RIGHT TO SPEEDY TRIAL FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-09-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE AND JONES-SERNA MOTION/TEXT: DEFENDANT'S MOTIONTO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-09-08T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE AND JONES-SERNA MOTION/TEXT: DEFENDANT'S MOTIONTO DISMISS FOR DELAY IN PROSECUTION PURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-04-09T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX: 06-08-15/987,2/OR/X: AS A CONDITION OF RELEASE, DEFENDANT IS TO REPORT TO SPR ONCE A WEEK INPERSON AND ONCE A WEEK BY TELEPHONE/CONTD: PREHEARING CONFERENCE /DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-04-09T13:30:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX: 06-08-15/987,2/OR/X: AS A CONDITION OF RELEASE, DEFENDANT IS TO REPORT TO SPR ONCE A WEEK INPERSON AND ONCE A WEEK BY TELEPHONE/CONTD: PREHEARING CONFERENCE /DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-07-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/CONTD:PREHEARING CONFERENCE AND JONES-SERNA MOTION/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-07-17T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/CONTD:PREHEARING CONFERENCE AND JONES-SERNA MOTION/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-05-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/STWPX/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2015-05-27T09:00:00.000Z",
+      "description": "/CAL:TO SET/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING/STWPX/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-05-08T09:00:00.000Z",
+      "docketEntryComment": "/TN: DELON HOANG/CAL: PRE-HEARING CONFERENCE/LD: 06-08-15/CONTD TO BE SET, DOP /CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2015-05-08T09:00:00.000Z",
+      "description": "/TN: DELON HOANG/CAL: PRE-HEARING CONFERENCE/LD: 06-08-15/CONTD TO BE SET, DOP /CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15008282",
-    "portal_case_id": "",
+    "portal_case_id": "3807729",
     "display_case_number": "CRI-15008282",
     "defendant": "DELON HOANG",
     "filed_date": "2015-04-09",
@@ -60,11 +236,58 @@
       "filed_date": "2015-04-09"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "459 PC/F",
+    "charge_rows": [
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DELON HOANG, and date of filing 2015-04-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DELON HOANG, date of filing, 2015-04-09, and charges in the case: 459 PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:12:00.031Z",
+  "portal_case_id": "3807729",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15008282",
+      "defendant": "DELON HOANG",
+      "filed_date": "2015-04-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3807729"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.200170+00:00"
 }

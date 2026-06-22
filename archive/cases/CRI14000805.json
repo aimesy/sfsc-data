@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:50:14.881Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:18:39.358Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14000805",
   "criminal_case_number": "14000805",
@@ -24,19 +24,134 @@
       "name": "MARCUS HARRISON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARCUS HARRISON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-01-17T09:20:00.000Z",
+      "docketEntryComment": "DA'S MOTION TO AMEND COMPLAINT FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-01-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/LD:01-28-14/TE:1 DAY/TEXT:TRANS TO DEPT 26/TRANS26:FORTHWITH FOR PRELIMINARY HEARING/CTORD:SUBPOENAED MEDICAL RECORDS FROM EMS RELEASED TO THE PEOPLE BY STIPULATION OF PARTIES/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-01-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/CTORD:THAT ATTY, FUETSCH REQUEST TO BE RELIEVED AS COUNSEL OFRECORD IS GRANTED; ATTY, WM, MICHAEL WHELAN IS APPOINTED NEW COUNSEL OF RECORD/LD:01-28-14/CONTD:PRELIM HRG ON 01-27-14/DOP/TE:1 DAY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-01-13T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 01-28-14/987,2/BAIL:500,000/CONTD:SETTING OF PRELIMINARY HEARING/DOP/SA1:HENRY ABARCA/SA2:1550 REVERE ST,, SF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-01-27T09:15:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:DA 1ST DISMISSAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-01-10T14:30:00.000Z",
+      "docketEntryComment": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/BAIL:500,000/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-01-27 9:15 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 0,
+      "court_date": "2014-01-27",
+      "hearing_time": "9:15 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-01-27 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 1,
+      "court_date": "2014-01-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-01-15 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 2,
+      "court_date": "2014-01-15",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-01-13 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2014-01-13",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-01-10 1:30 PM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 4,
+      "court_date": "2014-01-10",
+      "hearing_time": "1:30 PM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "WMMICHAEL WHELAN",
+      "type": "Appointed Counsel"
+    },
+    {
+      "name": "LAURA CLASTER",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "205 PC/F 245(a)(1) PC/F 211 PC/F 459 PC/F 496(a) PC/F",
+    "filed_date": "2014-01-10",
+    "defendant": "MARCUS HARRISON",
+    "searched_key": "HARRISON/MA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/14000805.json",
     "searched_last_name": "HARRISON",
     "searched_first_prefix": "MA",
-    "charges": "205 PC/F 245(a)(1) PC/F 211 PC/F 459 PC/F 496(a) PC/F",
     "row": {
       "DEFENDANTNAME": "MARCUS HARRISON",
       "CASENUMBER": "CRI-14000805",
@@ -45,11 +160,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3767719",
+  "docket_entries": [
+    {
+      "filedDate": "2014-01-17T09:20:00.000Z",
+      "docketEntryComment": "DA'S MOTION TO AMEND COMPLAINT FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-01-17T09:20:00.000Z",
+      "description": "DA'S MOTION TO AMEND COMPLAINT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-01-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/LD:01-28-14/TE:1 DAY/TEXT:TRANS TO DEPT 26/TRANS26:FORTHWITH FOR PRELIMINARY HEARING/CTORD:SUBPOENAED MEDICAL RECORDS FROM EMS RELEASED TO THE PEOPLE BY STIPULATION OF PARTIES/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-01-27T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/LD:01-28-14/TE:1 DAY/TEXT:TRANS TO DEPT 26/TRANS26:FORTHWITH FOR PRELIMINARY HEARING/CTORD:SUBPOENAED MEDICAL RECORDS FROM EMS RELEASED TO THE PEOPLE BY STIPULATION OF PARTIES/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-01-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/CTORD:THAT ATTY, FUETSCH REQUEST TO BE RELIEVED AS COUNSEL OFRECORD IS GRANTED; ATTY, WM, MICHAEL WHELAN IS APPOINTED NEW COUNSEL OF RECORD/LD:01-28-14/CONTD:PRELIM HRG ON 01-27-14/DOP/TE:1 DAY/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2014-01-15T09:00:00.000Z",
+      "description": "/CAL:TO SET/CTORD:THAT ATTY, FUETSCH REQUEST TO BE RELIEVED AS COUNSEL OFRECORD IS GRANTED; ATTY, WM, MICHAEL WHELAN IS APPOINTED NEW COUNSEL OF RECORD/LD:01-28-14/CONTD:PRELIM HRG ON 01-27-14/DOP/TE:1 DAY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-01-13T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 01-28-14/987,2/BAIL:500,000/CONTD:SETTING OF PRELIMINARY HEARING/DOP/SA1:HENRY ABARCA/SA2:1550 REVERE ST,, SF/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2014-01-13T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD: FOR PRELIMINARY HEARING IS 01-28-14/987,2/BAIL:500,000/CONTD:SETTING OF PRELIMINARY HEARING/DOP/SA1:HENRY ABARCA/SA2:1550 REVERE ST,, SF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-01-27T09:15:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:DA 1ST DISMISSAL/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2014-01-27T09:15:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO PC 1385:DA 1ST DISMISSAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-01-10T14:30:00.000Z",
+      "docketEntryComment": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/BAIL:500,000/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2014-01-10T14:30:00.000Z",
+      "description": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/BAIL:500,000/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14000805",
-    "portal_case_id": "",
+    "portal_case_id": "3767719",
     "display_case_number": "CRI-14000805",
     "defendant": "MARCUS HARRISON",
     "filed_date": "2014-01-10",
@@ -59,12 +235,172 @@
       "defendant": "MARCUS HARRISON",
       "filed_date": "2014-01-10"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "205 PC/F 245(a)(1) PC/F 211 PC/F 459 PC/F 496(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "205 PC/F",
+        "title": "Penal Code § 205",
+        "title_source": "programmatic_citation",
+        "code": "PC 205",
+        "code_system": "PC",
+        "section": "205",
+        "citation": "Penal Code § 205",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=205.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=205.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "245(a)(1) PC/F",
+        "title": "Penal Code § 245(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 245(a)(1)",
+        "code_system": "PC",
+        "section": "245(a)(1)",
+        "citation": "Penal Code § 245(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "211 PC/F",
+        "title": "Penal Code § 211",
+        "title_source": "programmatic_citation",
+        "code": "PC 211",
+        "code_system": "PC",
+        "section": "211",
+        "citation": "Penal Code § 211",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "496(a) PC/F",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARCUS HARRISON, and date of filing 2014-01-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARCUS HARRISON, date of filing, 2014-01-10, and charges in the case: 205 PC/F 245(a)(1) PC/F 211 PC/F 459 PC/F 496(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "205 PC/F",
+      "title": "Penal Code § 205",
+      "title_source": "programmatic_citation",
+      "code": "PC 205",
+      "code_system": "PC",
+      "section": "205",
+      "citation": "Penal Code § 205",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=205.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=205.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "245(a)(1) PC/F",
+      "title": "Penal Code § 245(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 245(a)(1)",
+      "code_system": "PC",
+      "section": "245(a)(1)",
+      "citation": "Penal Code § 245(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "211 PC/F",
+      "title": "Penal Code § 211",
+      "title_source": "programmatic_citation",
+      "code": "PC 211",
+      "code_system": "PC",
+      "section": "211",
+      "citation": "Penal Code § 211",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "496(a) PC/F",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:18:39.951Z",
+  "portal_case_id": "3767719",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14000805",
+      "defendant": "MARCUS HARRISON",
+      "filed_date": "2014-01-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3767719"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:26.073624+00:00"
 }

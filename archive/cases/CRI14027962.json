@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:11:38.626Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:20:36.327Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14027962",
   "criminal_case_number": "14027962",
@@ -24,11 +24,127 @@
       "name": "JUAN C MARTINEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JUAN C MARTINEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-11-25T15:00:00.000Z",
+      "docketEntryComment": "DA INFO FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-11-07T13:53:00.000Z",
+      "docketEntryComment": "PEOPLE'S MOT TO CONSOLIDATE W/14025342 FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-11-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, TRAILING #14025342 AND DA MOTION TO CONSOLIDATE W #14025342/X:CERTIFIED LAW CLERK PHILIP DODGEN APPEARS FOR THE PEOPLE UNDER THE SUPERVISION OF ASSISTANT DISTRICT ATTORNEY CHRISTOPHER NEMETZ/MO GRTD/X:CONSOLIDATED COMPLAINT FILED IN OPEN COURT/WIT SWORN:OFC DANIEL ROSIAH, SFPD/EXHMA:PEOPLES 1:(1PG)STAY AWAY ORDER/X:COUNT 2 IS CERTIFIED BY THE COURT/BAIL:35,000/DEFTCUST3/SHERCOM1/CONTD: ARRAIGNMENT IN DEPT 22/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-12-31T09:00:00.000Z",
+      "docketEntryComment": "/MO138572:14025342/VD: 01-09-15, TRIAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-12-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAW/DEFTARR/GTW/987,2/CONTD: PRETRIAL CONFERENCE AND TRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-10-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, TRAILING #14025342/CONT/GTWM/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-10-24T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDTR:11-24-14/987,2/BAIL:20,000/CONTD: TO JOIN # 14025342/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-12-31 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 0,
+      "court_date": "2014-12-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-12-01 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2014-12-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-11-13 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2014-11-13",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-10-27 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2014-10-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-10-24 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2014-10-24",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ALEXANDRA PRAY",
+      "type": "Public Defender"
+    },
+    {
+      "name": "KULVINDAR SINGH",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +161,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3794447",
+  "docket_entries": [
+    {
+      "filedDate": "2014-11-25T15:00:00.000Z",
+      "docketEntryComment": "DA INFO FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-11-25T15:00:00.000Z",
+      "description": "DA INFO FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-11-07T13:53:00.000Z",
+      "docketEntryComment": "PEOPLE'S MOT TO CONSOLIDATE W/14025342 FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-11-07T13:53:00.000Z",
+      "description": "PEOPLE'S MOT TO CONSOLIDATE W/14025342 FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-11-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, TRAILING #14025342 AND DA MOTION TO CONSOLIDATE W #14025342/X:CERTIFIED LAW CLERK PHILIP DODGEN APPEARS FOR THE PEOPLE UNDER THE SUPERVISION OF ASSISTANT DISTRICT ATTORNEY CHRISTOPHER NEMETZ/MO GRTD/X:CONSOLIDATED COMPLAINT FILED IN OPEN COURT/WIT SWORN:OFC DANIEL ROSIAH, SFPD/EXHMA:PEOPLES 1:(1PG)STAY AWAY ORDER/X:COUNT 2 IS CERTIFIED BY THE COURT/BAIL:35,000/DEFTCUST3/SHERCOM1/CONTD: ARRAIGNMENT IN DEPT 22/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2014-11-13T09:00:00.000Z",
+      "description": "/CAL:TO SET, TRAILING #14025342 AND DA MOTION TO CONSOLIDATE W #14025342/X:CERTIFIED LAW CLERK PHILIP DODGEN APPEARS FOR THE PEOPLE UNDER THE SUPERVISION OF ASSISTANT DISTRICT ATTORNEY CHRISTOPHER NEMETZ/MO GRTD/X:CONSOLIDATED COMPLAINT FILED IN OPEN COURT/WIT SWORN:OFC DANIEL ROSIAH, SFPD/EXHMA:PEOPLES 1:(1PG)STAY AWAY ORDER/X:COUNT 2 IS CERTIFIED BY THE COURT/BAIL:35,000/DEFTCUST3/SHERCOM1/CONTD: ARRAIGNMENT IN DEPT 22/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-12-31T09:00:00.000Z",
+      "docketEntryComment": "/MO138572:14025342/VD: 01-09-15, TRIAL/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2014-12-31T09:00:00.000Z",
+      "description": "/MO138572:14025342/VD: 01-09-15, TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-12-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAW/DEFTARR/GTW/987,2/CONTD: PRETRIAL CONFERENCE AND TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2014-12-01T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAW/DEFTARR/GTW/987,2/CONTD: PRETRIAL CONFERENCE AND TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-10-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, TRAILING #14025342/CONT/GTWM/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2014-10-27T09:00:00.000Z",
+      "description": "/CAL:TO SET, TRAILING #14025342/CONT/GTWM/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-10-24T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDTR:11-24-14/987,2/BAIL:20,000/CONTD: TO JOIN # 14025342/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2014-10-24T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDTR:11-24-14/987,2/BAIL:20,000/CONTD: TO JOIN # 14025342/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14027962",
-    "portal_case_id": "",
+    "portal_case_id": "3794447",
     "display_case_number": "CRI-14027962",
     "defendant": "JUAN C MARTINEZ",
     "filed_date": "2014-10-24",
@@ -60,11 +247,58 @@
       "filed_date": "2014-10-24"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "166(a)(4) PC/M",
+    "charge_rows": [
+      {
+        "raw": "166(a)(4) PC/M",
+        "title": "Penal Code § 166(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 166(a)(4)",
+        "code_system": "PC",
+        "section": "166(a)(4)",
+        "citation": "Penal Code § 166(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JUAN C MARTINEZ, and date of filing 2014-10-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JUAN C MARTINEZ, date of filing, 2014-10-24, and charges in the case: 166(a)(4) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "166(a)(4) PC/M",
+      "title": "Penal Code § 166(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 166(a)(4)",
+      "code_system": "PC",
+      "section": "166(a)(4)",
+      "citation": "Penal Code § 166(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:20:36.993Z",
+  "portal_case_id": "3794447",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14027962",
+      "defendant": "JUAN C MARTINEZ",
+      "filed_date": "2014-10-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3794447"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:44:02.024Z"
 }

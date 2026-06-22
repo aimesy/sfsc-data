@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:25:32.241Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:13:52.614Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15007168",
   "criminal_case_number": "15007168",
@@ -24,10 +24,35 @@
       "name": "DEMPSEY LEE WILLIAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DEMPSEY LEE WILLIAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2015-04-02T16:00:00.000Z",
+      "docketEntryComment": "/CAL: PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/3000ADV/3000ADM/X:PARTIES STIPULATE TO PROBABLE CAUSE,/3000REIN/PAJ:9 DAYS /X:PAROLEE SHALL RECEIVE CREDIT FOR 9 DAYS,/4019HALF/X:PAROLEE MUST MAINTAIN NOVA PROGRAM, HOUSING AS HIS RESIDENCE OF RECORD, MUST COMPLETE 60 HOURS OF PROGRAMMING FOR SUBSTANCE ABUSE OR COGINITIVE BEHAVIORAL THERAPY - NO LESS THATN 3HRS A WEEK, MAY BE DONE THRU AA, NA, THINKING FOR ACHANGE, HEALTHRIGHT360, OR ANY OTHER APPROVED BY PAROLE AGENT, PROVIDE URINALYSIS UPON DEMAND FROM HIS AGENT, IF VIOLATED, 120 DAYS SENTENCEWILL BE IMPOSED,/X:PAROLEE TO PAY RESTITUTION RELATED TO THE THEFT AS DEEMED APPROPRIATE BYPAROLE - ESTIMATED AMOUNT IS $500,/X: VIOLATION #4 - ABSCONDING ISDISMISSED,/X:PAROLE REINSTATED TO:03-18-2015, GOOD CAUSE FOUND WITHOUT ANY TIME LOSS,/X:PAROLEE ORDERED TO REPORT TO PAROLE UPONRELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-04-02 4:00 PM",
+      "hearingType": "PC 3056 Petition to Revoke Parole",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 0,
+      "court_date": "2015-04-02",
+      "hearing_time": "4:00 PM",
+      "matters": "PC 3056 Petition to Revoke Parole",
+      "hearing_type": "PC 3056 Petition to Revoke Parole",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +70,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3806645",
+  "docket_entries": [
+    {
+      "filedDate": "2015-04-02T16:00:00.000Z",
+      "docketEntryComment": "/CAL: PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/3000ADV/3000ADM/X:PARTIES STIPULATE TO PROBABLE CAUSE,/3000REIN/PAJ:9 DAYS /X:PAROLEE SHALL RECEIVE CREDIT FOR 9 DAYS,/4019HALF/X:PAROLEE MUST MAINTAIN NOVA PROGRAM, HOUSING AS HIS RESIDENCE OF RECORD, MUST COMPLETE 60 HOURS OF PROGRAMMING FOR SUBSTANCE ABUSE OR COGINITIVE BEHAVIORAL THERAPY - NO LESS THATN 3HRS A WEEK, MAY BE DONE THRU AA, NA, THINKING FOR ACHANGE, HEALTHRIGHT360, OR ANY OTHER APPROVED BY PAROLE AGENT, PROVIDE URINALYSIS UPON DEMAND FROM HIS AGENT, IF VIOLATED, 120 DAYS SENTENCEWILL BE IMPOSED,/X:PAROLEE TO PAY RESTITUTION RELATED TO THE THEFT AS DEEMED APPROPRIATE BYPAROLE - ESTIMATED AMOUNT IS $500,/X: VIOLATION #4 - ABSCONDING ISDISMISSED,/X:PAROLE REINSTATED TO:03-18-2015, GOOD CAUSE FOUND WITHOUT ANY TIME LOSS,/X:PAROLEE ORDERED TO REPORT TO PAROLE UPONRELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-04-02T16:00:00.000Z",
+      "description": "/CAL: PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/3000ADV/3000ADM/X:PARTIES STIPULATE TO PROBABLE CAUSE,/3000REIN/PAJ:9 DAYS /X:PAROLEE SHALL RECEIVE CREDIT FOR 9 DAYS,/4019HALF/X:PAROLEE MUST MAINTAIN NOVA PROGRAM, HOUSING AS HIS RESIDENCE OF RECORD, MUST COMPLETE 60 HOURS OF PROGRAMMING FOR SUBSTANCE ABUSE OR COGINITIVE BEHAVIORAL THERAPY - NO LESS THATN 3HRS A WEEK, MAY BE DONE THRU AA, NA, THINKING FOR ACHANGE, HEALTHRIGHT360, OR ANY OTHER APPROVED BY PAROLE AGENT, PROVIDE URINALYSIS UPON DEMAND FROM HIS AGENT, IF VIOLATED, 120 DAYS SENTENCEWILL BE IMPOSED,/X:PAROLEE TO PAY RESTITUTION RELATED TO THE THEFT AS DEEMED APPROPRIATE BYPAROLE - ESTIMATED AMOUNT IS $500,/X: VIOLATION #4 - ABSCONDING ISDISMISSED,/X:PAROLE REINSTATED TO:03-18-2015, GOOD CAUSE FOUND WITHOUT ANY TIME LOSS,/X:PAROLEE ORDERED TO REPORT TO PAROLE UPONRELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15007168",
-    "portal_case_id": "",
+    "portal_case_id": "3806645",
     "display_case_number": "CRI-15007168",
     "defendant": "DEMPSEY LEE WILLIAMS",
     "filed_date": "2015-04-01",
@@ -59,12 +95,68 @@
       "defendant": "DEMPSEY LEE WILLIAMS",
       "filed_date": "2015-04-01"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC3000",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3000.08 PC/F XX/X",
+    "charge_rows": [
+      {
+        "raw": "3000.08 PC/F XX/X",
+        "title": "XX/X",
+        "title_source": "criminal_index_text",
+        "code": "PC 3000.08",
+        "code_system": "PC",
+        "section": "3000.08",
+        "citation": "Penal Code § 3000.08",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DEMPSEY LEE WILLIAMS, and date of filing 2015-04-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DEMPSEY LEE WILLIAMS, date of filing, 2015-04-01, and charges in the case: 3000.08 PC/F XX/X.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3000.08 PC/F XX/X",
+      "title": "XX/X",
+      "title_source": "criminal_index_text",
+      "code": "PC 3000.08",
+      "code_system": "PC",
+      "section": "3000.08",
+      "citation": "Penal Code § 3000.08",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:13:53.301Z",
+  "portal_case_id": "3806645",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15007168",
+      "defendant": "DEMPSEY LEE WILLIAMS",
+      "filed_date": "2015-04-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3806645"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:52:26.405Z"
 }

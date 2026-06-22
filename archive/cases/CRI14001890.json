@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:00:09.456Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:16:12.828Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14001890",
   "criminal_case_number": "14001890",
@@ -24,11 +24,63 @@
       "name": "KEITH L KELLY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KEITH L KELLY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-01-21T14:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/CO:PD RESERVED RIGHT TO DEMURRER/CO:ORCT GRANTED/SA1:SHERRIE TAYLOR/SA2:909 GEARY ST, SF; & AREA BOUND BY POST, HYDE, O'FARRELL & POLK ST, S",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-01-21T14:45:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/MO PC 1385: ADMISSION OF PROBATION VIOLATION IN #13034954/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-01-21 2:45 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "2014-01-21",
+      "hearing_time": "2:45 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-01-21 2:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 1,
+      "court_date": "2014-01-21",
+      "hearing_time": "2:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ANDREA LINDSAY",
+      "type": "Public Defender"
+    },
+    {
+      "name": "BLAIR MCGREGOR",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +94,39 @@
       "CASENUMBER": "CRI-14001890",
       "FILEDDATE": "2014-01-21 09:00:00",
       "CHARGES": "273.6(a) PC/M 166(c)(1) PC/M"
-    }
+    },
+    "filed_date": "2014-01-21",
+    "defendant": "KEITH L KELLY",
+    "searched_key": "KELLY/KE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/14001890.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3768792",
+  "docket_entries": [
+    {
+      "filedDate": "2014-01-21T14:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/CO:PD RESERVED RIGHT TO DEMURRER/CO:ORCT GRANTED/SA1:SHERRIE TAYLOR/SA2:909 GEARY ST, SF; & AREA BOUND BY POST, HYDE, O'FARRELL & POLK ST, S",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-01-21T14:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/CO:PD RESERVED RIGHT TO DEMURRER/CO:ORCT GRANTED/SA1:SHERRIE TAYLOR/SA2:909 GEARY ST, SF; & AREA BOUND BY POST, HYDE, O'FARRELL & POLK ST, S",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-01-21T14:45:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/MO PC 1385: ADMISSION OF PROBATION VIOLATION IN #13034954/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-01-21T14:45:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/MO PC 1385: ADMISSION OF PROBATION VIOLATION IN #13034954/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14001890",
-    "portal_case_id": "",
+    "portal_case_id": "3768792",
     "display_case_number": "CRI-14001890",
     "defendant": "KEITH L KELLY",
     "filed_date": "2014-01-21",
@@ -59,12 +136,94 @@
       "defendant": "KEITH L KELLY",
       "filed_date": "2014-01-21"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "273.6(a) PC/M 166(c)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "273.6(a) PC/M",
+        "title": "Penal Code § 273.6(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 273.6(a)",
+        "code_system": "PC",
+        "section": "273.6(a)",
+        "citation": "Penal Code § 273.6(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.6.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.6.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "166(c)(1) PC/M",
+        "title": "Penal Code § 166(c)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 166(c)(1)",
+        "code_system": "PC",
+        "section": "166(c)(1)",
+        "citation": "Penal Code § 166(c)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KEITH L KELLY, and date of filing 2014-01-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KEITH L KELLY, date of filing, 2014-01-21, and charges in the case: 273.6(a) PC/M 166(c)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "273.6(a) PC/M",
+      "title": "Penal Code § 273.6(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 273.6(a)",
+      "code_system": "PC",
+      "section": "273.6(a)",
+      "citation": "Penal Code § 273.6(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.6.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.6.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "166(c)(1) PC/M",
+      "title": "Penal Code § 166(c)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 166(c)(1)",
+      "code_system": "PC",
+      "section": "166(c)(1)",
+      "citation": "Penal Code § 166(c)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:16:13.551Z",
+  "portal_case_id": "3768792",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14001890",
+      "defendant": "KEITH L KELLY",
+      "filed_date": "2014-01-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3768792"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:39.977991+00:00"
 }

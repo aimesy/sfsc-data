@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:33:48.266Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:18:57.358Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14021535",
   "criminal_case_number": "14021535",
@@ -24,11 +24,59 @@
       "name": "DARYL RAY MORRIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DARYL RAY MORRIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-08-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FUGITIVE ARRAIGNMENT/X:SFPD FUGITIVE OFFICER ROBERT HART APPEARING,//X:DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS ID AND WAIVES  EXTRADITION,/CONTD:STATUS OF DELIVERY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-09-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL STATUS OF DELIVERY/X SFPD FUGITIVE OFFICER ROBERT HART APPEARING/MOPC 1385:DEFENDANT HAS BEEN DELIVERED /",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-09-12 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "2014-09-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-08-15 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 1,
+      "court_date": "2014-08-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MARK JACOBS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3788118",
+  "docket_entries": [
+    {
+      "filedDate": "2014-08-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FUGITIVE ARRAIGNMENT/X:SFPD FUGITIVE OFFICER ROBERT HART APPEARING,//X:DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS ID AND WAIVES  EXTRADITION,/CONTD:STATUS OF DELIVERY/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-08-15T09:00:00.000Z",
+      "description": "/CAL:FUGITIVE ARRAIGNMENT/X:SFPD FUGITIVE OFFICER ROBERT HART APPEARING,//X:DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS ID AND WAIVES EXTRADITION,/CONTD:STATUS OF DELIVERY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-09-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL STATUS OF DELIVERY/X SFPD FUGITIVE OFFICER ROBERT HART APPEARING/MOPC 1385:DEFENDANT HAS BEEN DELIVERED /",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-09-12T09:00:00.000Z",
+      "description": "/CAL STATUS OF DELIVERY/X SFPD FUGITIVE OFFICER ROBERT HART APPEARING/MOPC 1385:DEFENDANT HAS BEEN DELIVERED /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14021535",
-    "portal_case_id": "",
+    "portal_case_id": "3788118",
     "display_case_number": "CRI-14021535",
     "defendant": "DARYL RAY MORRIS",
     "filed_date": "2014-08-15",
@@ -60,11 +129,41 @@
       "filed_date": "2014-08-15"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DARYL RAY MORRIS, and date of filing 2014-08-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DARYL RAY MORRIS, date of filing, 2014-08-15, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:18:58.072Z",
+  "portal_case_id": "3788118",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14021535",
+      "defendant": "DARYL RAY MORRIS",
+      "filed_date": "2014-08-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3788118"
+  }
 }

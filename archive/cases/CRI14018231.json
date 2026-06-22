@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:52:34.458Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:20:45.801Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14018231",
   "criminal_case_number": "14018231",
@@ -24,19 +24,76 @@
       "name": "JERMAINE T COLLINS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JERMAINE T COLLINS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-07-29T15:01:00.000Z",
+      "docketEntryComment": "DEF ATC FOR MOT TO VACATE SENT & W/D ADMISSN OF 7-24-14; DISM PETN FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-08-03T16:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENSE MOTION TO VACATE SENTENCE/DAWT/X:PAROLE AGENT RODERICK REYESPRESENT,/X:MOTION TO VACATE THE SENTENCE WHICH WAS ISSUED ON 07-24-2014 IS GRANTED/X:MOTION TO WITHDRAW ADMISSION OF 07-24-2014 IS GRANTED/X:MOTION TO DISMISS PETITION IS GRANTED/X:COURT FINDS GOOD CAUSE TO REINSTATE PAROLE AS OF 06-27-2014 WITHOUT ANY TIME LOSS/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-07-24T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/3000ADV/3000ADM/3000REIN/PAJ:100 DAYS /X:PAROLEE SHALL RECEIVE CREDIT FOR  16  DAYS,/4019HALF/X:PAROLE REINSTATED TO:07-09-14 /X:PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND COMPLY WITH TREATMENT PER PAROLE AGENT,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-08-03 4:00 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 0,
+      "court_date": "2015-08-03",
+      "hearing_time": "4:00 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-07-24 1:30 PM",
+      "hearingType": "PC 3056 Petition to Revoke Parole",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 1,
+      "court_date": "2014-07-24",
+      "hearing_time": "1:30 PM",
+      "matters": "PC 3056 Petition to Revoke Parole",
+      "hearing_type": "PC 3056 Petition to Revoke Parole",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ARMANDO MIRANDA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "3000.08 PC/F XX/X",
+    "filed_date": "2014-07-18",
+    "defendant": "JERMAINE T COLLINS",
+    "searched_key": "COLLINS/JE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/14018231.json",
     "searched_last_name": "COLLINS",
     "searched_first_prefix": "JE",
-    "charges": "3000.08 PC/F XX/X",
     "row": {
       "DEFENDANTNAME": "JERMAINE T COLLINS",
       "CASENUMBER": "CRI-14018231",
@@ -45,11 +102,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3784861",
+  "docket_entries": [
+    {
+      "filedDate": "2015-07-29T15:01:00.000Z",
+      "docketEntryComment": "DEF ATC FOR MOT TO VACATE SENT & W/D ADMISSN OF 7-24-14; DISM PETN FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-07-29T15:01:00.000Z",
+      "description": "DEF ATC FOR MOT TO VACATE SENT & W/D ADMISSN OF 7-24-14; DISM PETN FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-08-03T16:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENSE MOTION TO VACATE SENTENCE/DAWT/X:PAROLE AGENT RODERICK REYESPRESENT,/X:MOTION TO VACATE THE SENTENCE WHICH WAS ISSUED ON 07-24-2014 IS GRANTED/X:MOTION TO WITHDRAW ADMISSION OF 07-24-2014 IS GRANTED/X:MOTION TO DISMISS PETITION IS GRANTED/X:COURT FINDS GOOD CAUSE TO REINSTATE PAROLE AS OF 06-27-2014 WITHOUT ANY TIME LOSS/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-08-03T16:00:00.000Z",
+      "description": "/CAL:DEFENSE MOTION TO VACATE SENTENCE/DAWT/X:PAROLE AGENT RODERICK REYESPRESENT,/X:MOTION TO VACATE THE SENTENCE WHICH WAS ISSUED ON 07-24-2014 IS GRANTED/X:MOTION TO WITHDRAW ADMISSION OF 07-24-2014 IS GRANTED/X:MOTION TO DISMISS PETITION IS GRANTED/X:COURT FINDS GOOD CAUSE TO REINSTATE PAROLE AS OF 06-27-2014 WITHOUT ANY TIME LOSS/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-07-24T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/3000ADV/3000ADM/3000REIN/PAJ:100 DAYS /X:PAROLEE SHALL RECEIVE CREDIT FOR  16  DAYS,/4019HALF/X:PAROLE REINSTATED TO:07-09-14 /X:PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND COMPLY WITH TREATMENT PER PAROLE AGENT,/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2014-07-24T13:30:00.000Z",
+      "description": "/CAL:PAROLE'S PETITION TO REVOKE OR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/WIAPTR/3000ADV/3000ADM/3000REIN/PAJ:100 DAYS /X:PAROLEE SHALL RECEIVE CREDIT FOR 16 DAYS,/4019HALF/X:PAROLE REINSTATED TO:07-09-14 /X:PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND COMPLY WITH TREATMENT PER PAROLE AGENT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14018231",
-    "portal_case_id": "",
+    "portal_case_id": "3784861",
     "display_case_number": "CRI-14018231",
     "defendant": "JERMAINE T COLLINS",
     "filed_date": "2014-07-18",
@@ -59,12 +147,68 @@
       "defendant": "JERMAINE T COLLINS",
       "filed_date": "2014-07-18"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC3000",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3000.08 PC/F XX/X",
+    "charge_rows": [
+      {
+        "raw": "3000.08 PC/F XX/X",
+        "title": "XX/X",
+        "title_source": "criminal_index_text",
+        "code": "PC 3000.08",
+        "code_system": "PC",
+        "section": "3000.08",
+        "citation": "Penal Code § 3000.08",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JERMAINE T COLLINS, and date of filing 2014-07-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JERMAINE T COLLINS, date of filing, 2014-07-18, and charges in the case: 3000.08 PC/F XX/X.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3000.08 PC/F XX/X",
+      "title": "XX/X",
+      "title_source": "criminal_index_text",
+      "code": "PC 3000.08",
+      "code_system": "PC",
+      "section": "3000.08",
+      "citation": "Penal Code § 3000.08",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:20:46.453Z",
+  "portal_case_id": "3784861",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14018231",
+      "defendant": "JERMAINE T COLLINS",
+      "filed_date": "2014-07-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3784861"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.804637+00:00"
 }

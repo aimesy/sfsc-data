@@ -2,7 +2,7 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:12:31.035Z",
+  "captured_at": "2026-06-22T03:23:01.974Z",
   "status": "unavailable",
   "case_type": "criminal",
   "case_number": "CRI14024836",
@@ -24,6 +24,11 @@
       "name": "LEILANI KING",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LEILANI KING",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
   "roa": [],
@@ -42,14 +47,18 @@
       "CASENUMBER": "CRI-14024836",
       "FILEDDATE": "2014-09-18 09:00:00",
       "CHARGES": "3455(a) PC/F"
-    }
+    },
+    "filed_date": "2014-09-18",
+    "defendant": "LEILANI KING",
+    "searched_key": "KING/LE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/14024836.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3791385",
   "docket_entries": [],
   "criminal": {
     "raw_case_number": "14024836",
-    "portal_case_id": "",
+    "portal_case_id": "3791385",
     "display_case_number": "CRI-14024836",
     "defendant": "LEILANI KING",
     "filed_date": "2014-09-18",
@@ -60,11 +69,58 @@
       "filed_date": "2014-09-18"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LEILANI KING, and date of filing 2014-09-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LEILANI KING, date of filing, 2014-09-18, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:23:02.629Z",
+  "portal_case_id": "3791385",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14024836",
+      "defendant": "LEILANI KING",
+      "filed_date": "2014-09-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3791385"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:24.158605+00:00"
 }

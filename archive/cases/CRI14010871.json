@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:17:32.060Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:17:13.108Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14010871",
   "criminal_case_number": "14010871",
@@ -24,19 +24,122 @@
       "name": "DEJUANE JONES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DEJUANE JONES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2019-12-27T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-05-09T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3 ISS CPROB PROB 3 Y PJ 21D/CTS 21/WS/VF2 150/PROBREVFN/COA 40/ICN/COLLECT/OBEY/ACCEP/4019HALF/SAORD/SA2:HYDE AND SUTTER/X:STAY AWAY FROM 11004059 - 150 YARDS FROM INTERSECTION OF HYDE & EDDY STREET SF CA - IS HARVEY WAIVERED TO THIS PROBATION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-05-09T09:00:00.000Z",
+      "docketEntryComment": "/AMEND 3/X COUNT 3 IS ADDED A 11350(B)HS MISDEMEANOR/FAWC/IRRC/TEXT DEFTDV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-04-22T13:30:00.000Z",
+      "docketEntryComment": "CONTD CJC ASSESSMENT/CAL:ARRAIGNMENT/X:SPECIAL APPEARANCE BY PUBLIC DEFENDER MICHAEL FOX FOR ATTORNEY CHRISTOPHER DOVE,/CON:CHRISTOPHER DOVE/FAWC/X:NO PLEA WAS ENTERED TODAY,/BAIL:60,000/SA2:INTERSECTION OF HYDE AND SUTTER STREETS, S,F,, CA/SAORD/CTORD:THIS CASE IS REFERRED TO CJC FOR ASSESSMENT/CONTD:ENTRY OF PLEA & CJC ASSESSMENT ON 04-24-14 AT 8:30 A,M, M08/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-04-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-04-28T08:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC REFERRAL/NTW/LD:05-12-14/X:DEFENDANT FOUND UNSUITABLE FOR CJC,/CONTD:TO SET/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-04-24T08:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT/CONT/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-05-09 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2014-05-09",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-05-09 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2014-05-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-04-29 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2014-04-29",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-04-22 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2014-04-22",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CHRISTOPHER DOVE",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11350(a) HS/F 11364.1(a) HS/M 11350(b) HS/M",
+    "filed_date": "2014-04-22",
+    "defendant": "DEJUANE JONES",
+    "searched_key": "JONES/DE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/14010871.json",
     "searched_last_name": "JONES",
     "searched_first_prefix": "DE",
-    "charges": "11350(a) HS/F 11364.1(a) HS/M 11350(b) HS/M",
     "row": {
       "DEFENDANTNAME": "DEJUANE JONES",
       "CASENUMBER": "CRI-14010871",
@@ -45,11 +148,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3777628",
+  "docket_entries": [
+    {
+      "filedDate": "2019-12-27T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-12-27T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-05-09T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3 ISS CPROB PROB 3 Y PJ 21D/CTS 21/WS/VF2 150/PROBREVFN/COA 40/ICN/COLLECT/OBEY/ACCEP/4019HALF/SAORD/SA2:HYDE AND SUTTER/X:STAY AWAY FROM 11004059 - 150 YARDS FROM INTERSECTION OF HYDE & EDDY STREET SF CA - IS HARVEY WAIVERED TO THIS PROBATION/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-05-09T09:15:00.000Z",
+      "description": "/TWS/CH3 ISS CPROB PROB 3 Y PJ 21D/CTS 21/WS/VF2 150/PROBREVFN/COA 40/ICN/COLLECT/OBEY/ACCEP/4019HALF/SAORD/SA2:HYDE AND SUTTER/X:STAY AWAY FROM 11004059 - 150 YARDS FROM INTERSECTION OF HYDE & EDDY STREET SF CA - IS HARVEY WAIVERED TO THIS PROBATION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-05-09T09:00:00.000Z",
+      "docketEntryComment": "/AMEND 3/X COUNT 3 IS ADDED A 11350(B)HS MISDEMEANOR/FAWC/IRRC/TEXT DEFTDV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2014-05-09T09:00:00.000Z",
+      "description": "/AMEND 3/X COUNT 3 IS ADDED A 11350(B)HS MISDEMEANOR/FAWC/IRRC/TEXT DEFTDV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-04-22T13:30:00.000Z",
+      "docketEntryComment": "CONTD CJC ASSESSMENT/CAL:ARRAIGNMENT/X:SPECIAL APPEARANCE BY PUBLIC DEFENDER MICHAEL FOX FOR ATTORNEY CHRISTOPHER DOVE,/CON:CHRISTOPHER DOVE/FAWC/X:NO PLEA WAS ENTERED TODAY,/BAIL:60,000/SA2:INTERSECTION OF HYDE AND SUTTER STREETS, S,F,, CA/SAORD/CTORD:THIS CASE IS REFERRED TO CJC FOR ASSESSMENT/CONTD:ENTRY OF PLEA & CJC ASSESSMENT ON 04-24-14 AT 8:30 A,M, M08/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2014-04-22T13:30:00.000Z",
+      "description": "CONTD CJC ASSESSMENT/CAL:ARRAIGNMENT/X:SPECIAL APPEARANCE BY PUBLIC DEFENDER MICHAEL FOX FOR ATTORNEY CHRISTOPHER DOVE,/CON:CHRISTOPHER DOVE/FAWC/X:NO PLEA WAS ENTERED TODAY,/BAIL:60,000/SA2:INTERSECTION OF HYDE AND SUTTER STREETS, S,F,, CA/SAORD/CTORD:THIS CASE IS REFERRED TO CJC FOR ASSESSMENT/CONTD:ENTRY OF PLEA & CJC ASSESSMENT ON 04-24-14 AT 8:30 A,M, M08/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-04-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2014-04-29T09:00:00.000Z",
+      "description": "/CAL:TO SET/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-04-28T08:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC REFERRAL/NTW/LD:05-12-14/X:DEFENDANT FOUND UNSUITABLE FOR CJC,/CONTD:TO SET/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2014-04-28T08:30:00.000Z",
+      "description": "/CAL:CJC REFERRAL/NTW/LD:05-12-14/X:DEFENDANT FOUND UNSUITABLE FOR CJC,/CONTD:TO SET/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-04-24T08:30:00.000Z",
+      "docketEntryComment": "/CAL:CJC ASSESSMENT/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2014-04-24T08:30:00.000Z",
+      "description": "/CAL:CJC ASSESSMENT/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14010871",
-    "portal_case_id": "",
+    "portal_case_id": "3777628",
     "display_case_number": "CRI-14010871",
     "defendant": "DEJUANE JONES",
     "filed_date": "2014-04-22",
@@ -59,12 +233,120 @@
       "defendant": "DEJUANE JONES",
       "filed_date": "2014-04-22"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11350(a) HS/F 11364.1(a) HS/M 11350(b) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11350(a) HS/F",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11364.1(a) HS/M",
+        "title": "Health and Safety Code § 11364.1(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11364.1(a)",
+        "code_system": "HS",
+        "section": "11364.1(a)",
+        "citation": "Health and Safety Code § 11364.1(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.1.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.1.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "11350(b) HS/M",
+        "title": "Health and Safety Code § 11350(b)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(b)",
+        "code_system": "HS",
+        "section": "11350(b)",
+        "citation": "Health and Safety Code § 11350(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DEJUANE JONES, and date of filing 2014-04-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DEJUANE JONES, date of filing, 2014-04-22, and charges in the case: 11350(a) HS/F 11364.1(a) HS/M 11350(b) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11350(a) HS/F",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11364.1(a) HS/M",
+      "title": "Health and Safety Code § 11364.1(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11364.1(a)",
+      "code_system": "HS",
+      "section": "11364.1(a)",
+      "citation": "Health and Safety Code § 11364.1(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.1.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.1.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "11350(b) HS/M",
+      "title": "Health and Safety Code § 11350(b)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(b)",
+      "code_system": "HS",
+      "section": "11350(b)",
+      "citation": "Health and Safety Code § 11350(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:17:13.764Z",
+  "portal_case_id": "3777628",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14010871",
+      "defendant": "DEJUANE JONES",
+      "filed_date": "2014-04-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3777628"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.806793+00:00"
 }

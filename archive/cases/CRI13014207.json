@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:44:40.416Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:23:24.642Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13014207",
   "criminal_case_number": "13014207",
@@ -24,19 +24,58 @@
       "name": "JOSEPH A BARNETT",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSEPH A BARNETT",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-05-24T12:00:00.000Z",
+      "docketEntryComment": "PETITION FILED IN ERROR; CORRECT CASE IS 13014243; OFF CAL",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-05-23T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOTION/PD/X;PRCS IS ADMINSITRATIVLEY REVOKED,/SHER/NB/CONTD:SETTING PRCS REVOCATION HEARING AND TO JOIN 13013903/DOPC/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-05-23 11:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2013-05-23",
+      "hearing_time": "11:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "LEAH MCLEAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "8888888",
+    "filed_date": "2013-05-23",
+    "defendant": "JOSEPH A BARNETT",
+    "searched_key": "BARNETT/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/13014207.json",
     "searched_last_name": "BARNETT",
     "searched_first_prefix": "JO",
-    "charges": "8888888",
     "row": {
       "DEFENDANTNAME": "JOSEPH A BARNETT",
       "CASENUMBER": "CRI-13014207",
@@ -45,11 +84,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3744763",
+  "docket_entries": [
+    {
+      "filedDate": "2013-05-24T12:00:00.000Z",
+      "docketEntryComment": "PETITION FILED IN ERROR; CORRECT CASE IS 13014243; OFF CAL",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-05-24T12:00:00.000Z",
+      "description": "PETITION FILED IN ERROR; CORRECT CASE IS 13014243; OFF CAL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-05-23T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOTION/PD/X;PRCS IS ADMINSITRATIVLEY REVOKED,/SHER/NB/CONTD:SETTING PRCS REVOCATION HEARING AND TO JOIN 13013903/DOPC/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-05-23T11:30:00.000Z",
+      "description": "/CAL:APD 3455PC MOTION/PD/X;PRCS IS ADMINSITRATIVLEY REVOKED,/SHER/NB/CONTD:SETTING PRCS REVOCATION HEARING AND TO JOIN 13013903/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13014207",
-    "portal_case_id": "",
+    "portal_case_id": "3744763",
     "display_case_number": "CRI-13014207",
     "defendant": "JOSEPH A BARNETT",
     "filed_date": "2013-05-23",
@@ -60,11 +120,42 @@
       "filed_date": "2013-05-23"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSEPH A BARNETT, and date of filing 2013-05-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSEPH A BARNETT, date of filing, 2013-05-23, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:23:25.262Z",
+  "portal_case_id": "3744763",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13014207",
+      "defendant": "JOSEPH A BARNETT",
+      "filed_date": "2013-05-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3744763"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.325437+00:00"
 }

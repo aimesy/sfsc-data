@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:01:50.320Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:25:47.539Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI13028088",
   "criminal_case_number": "13028088",
@@ -24,11 +24,135 @@
       "name": "ANTONIO U RODRIGUEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANTONIO U RODRIGUEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2013-10-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/MO138583/X:PER ADA DEFENDANT ADMITTED VIOLATION IN CASE NUMBER13013022/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-10-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/DAWT/LD:11-04-13/X:4-5 DAY TIME ESTIMATE,/CONT/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-10-09T14:00:00.000Z",
+      "docketEntryComment": "/CAL:PTC/LD:11-04-13/CONTD:   JURY TRIAL/DOP    /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-10-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/DAWT/LD:11-04-13/X:4-5 DAY TIME ESTIMATE,/X:FUTURE TRIAL DATE IS CONFIRMED,/CONTD:TRIAL/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-10-04T13:45:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/AMENDCOM/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/BAIL:20000/LD:FOR TRIAL IS 11-04-13/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-10-04T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:CAUSE IS TRANSFERRED TO DEPARTMENT 50, FORTHWITH; TO BEHEARD BEFORE JUDGE KELLY, FOR ARRAIGNMENT,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-10-30 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2013-10-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-10-25 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2013-10-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-10-09 2:00 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 2,
+      "court_date": "2013-10-09",
+      "hearing_time": "2:00 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-10-08 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2013-10-08",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-10-04 1:45 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 4,
+      "court_date": "2013-10-04",
+      "hearing_time": "1:45 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-10-04 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 5,
+      "court_date": "2013-10-04",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "HERMAN HOLLAND",
+      "type": "Public Defender"
+    },
+    {
+      "name": "SHARON BACON",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +169,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3758429",
+  "docket_entries": [
+    {
+      "filedDate": "2013-10-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/MO138583/X:PER ADA DEFENDANT ADMITTED VIOLATION IN CASE NUMBER13013022/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2013-10-30T09:00:00.000Z",
+      "description": "/CAL:TRIAL/MO138583/X:PER ADA DEFENDANT ADMITTED VIOLATION IN CASE NUMBER13013022/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-10-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/DAWT/LD:11-04-13/X:4-5 DAY TIME ESTIMATE,/CONT/DOPC/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-10-25T09:00:00.000Z",
+      "description": "/CAL:TRIAL/DAWT/LD:11-04-13/X:4-5 DAY TIME ESTIMATE,/CONT/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-10-09T14:00:00.000Z",
+      "docketEntryComment": "/CAL:PTC/LD:11-04-13/CONTD:   JURY TRIAL/DOP    /",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2013-10-09T14:00:00.000Z",
+      "description": "/CAL:PTC/LD:11-04-13/CONTD: JURY TRIAL/DOP /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-10-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET/DAWT/LD:11-04-13/X:4-5 DAY TIME ESTIMATE,/X:FUTURE TRIAL DATE IS CONFIRMED,/CONTD:TRIAL/DOPC/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-10-08T09:00:00.000Z",
+      "description": "/CAL:TO SET/DAWT/LD:11-04-13/X:4-5 DAY TIME ESTIMATE,/X:FUTURE TRIAL DATE IS CONFIRMED,/CONTD:TRIAL/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-10-04T13:45:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/AMENDCOM/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/BAIL:20000/LD:FOR TRIAL IS 11-04-13/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2013-10-04T13:45:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/AMENDCOM/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/BAIL:20000/LD:FOR TRIAL IS 11-04-13/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-10-04T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:CAUSE IS TRANSFERRED TO DEPARTMENT 50, FORTHWITH; TO BEHEARD BEFORE JUDGE KELLY, FOR ARRAIGNMENT,/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2013-10-04T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:CAUSE IS TRANSFERRED TO DEPARTMENT 50, FORTHWITH; TO BEHEARD BEFORE JUDGE KELLY, FOR ARRAIGNMENT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "13028088",
-    "portal_case_id": "",
+    "portal_case_id": "3758429",
     "display_case_number": "CRI-13028088",
     "defendant": "ANTONIO U RODRIGUEZ",
     "filed_date": "2013-10-04",
@@ -60,11 +245,110 @@
       "filed_date": "2013-10-04"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "166(c)(1) PC/M 23152(b) VC/M 11375(b)(2) HS/M",
+    "charge_rows": [
+      {
+        "raw": "166(c)(1) PC/M",
+        "title": "Penal Code § 166(c)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 166(c)(1)",
+        "code_system": "PC",
+        "section": "166(c)(1)",
+        "citation": "Penal Code § 166(c)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23152(b) VC/M",
+        "title": "Vehicle Code § 23152(b)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(b)",
+        "code_system": "VC",
+        "section": "23152(b)",
+        "citation": "Vehicle Code § 23152(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "11375(b)(2) HS/M",
+        "title": "Health and Safety Code § 11375(b)(2)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11375(b)(2)",
+        "code_system": "HS",
+        "section": "11375(b)(2)",
+        "citation": "Health and Safety Code § 11375(b)(2)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11375.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11375.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANTONIO U RODRIGUEZ, and date of filing 2013-10-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANTONIO U RODRIGUEZ, date of filing, 2013-10-04, and charges in the case: 166(c)(1) PC/M 23152(b) VC/M 11375(b)(2) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "166(c)(1) PC/M",
+      "title": "Penal Code § 166(c)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 166(c)(1)",
+      "code_system": "PC",
+      "section": "166(c)(1)",
+      "citation": "Penal Code § 166(c)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23152(b) VC/M",
+      "title": "Vehicle Code § 23152(b)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(b)",
+      "code_system": "VC",
+      "section": "23152(b)",
+      "citation": "Vehicle Code § 23152(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "11375(b)(2) HS/M",
+      "title": "Health and Safety Code § 11375(b)(2)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11375(b)(2)",
+      "code_system": "HS",
+      "section": "11375(b)(2)",
+      "citation": "Health and Safety Code § 11375(b)(2)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11375.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11375.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:25:48.200Z",
+  "portal_case_id": "3758429",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-13028088",
+      "defendant": "ANTONIO U RODRIGUEZ",
+      "filed_date": "2013-10-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3758429"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T15:44:36.386Z"
 }

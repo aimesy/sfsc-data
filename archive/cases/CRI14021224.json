@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:45:16.909Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:20:02.702Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14021224",
   "criminal_case_number": "14021224",
@@ -24,11 +24,69 @@
       "name": "JAMES NORRIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAMES NORRIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2019-12-27T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-20T00:00:00.000Z",
+      "docketEntryComment": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-08-12T13:45:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCE/TWS/CH3:ISS:CPROB:PROB 1 Y:PJ 3D/CTS:3/VF2:150/PROBREVFN/COA:40/ICNA/BKFEE/SA2:1400 GEARY BLVD/SAORD/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-08-12T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:CASE IS SUBJECTED TO FEE HEARING,/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/PD/FAWC/DEFT ADV ANNL:003/DISM3/NOLO/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-08-12 1:45 PM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2014-08-12",
+      "hearing_time": "1:45 PM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-08-12 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2014-08-12",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "HADI RAZZAQ",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +103,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3787817",
+  "docket_entries": [
+    {
+      "filedDate": "2019-12-27T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-12-27T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-20T00:00:00.000Z",
+      "docketEntryComment": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-07-20T00:00:00.000Z",
+      "description": "PET & ORDER TO SUSP FEE PER SFBOS 180132 SIGNED AND FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-08-12T13:45:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCE/TWS/CH3:ISS:CPROB:PROB 1 Y:PJ 3D/CTS:3/VF2:150/PROBREVFN/COA:40/ICNA/BKFEE/SA2:1400 GEARY BLVD/SAORD/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2014-08-12T13:45:00.000Z",
+      "description": "/CAL:SENTENCE/TWS/CH3:ISS:CPROB:PROB 1 Y:PJ 3D/CTS:3/VF2:150/PROBREVFN/COA:40/ICNA/BKFEE/SA2:1400 GEARY BLVD/SAORD/COLLECT/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-08-12T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:CASE IS SUBJECTED TO FEE HEARING,/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/PD/FAWC/DEFT ADV ANNL:003/DISM3/NOLO/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2014-08-12T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:CASE IS SUBJECTED TO FEE HEARING,/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/PD/FAWC/DEFT ADV ANNL:003/DISM3/NOLO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14021224",
-    "portal_case_id": "",
+    "portal_case_id": "3787817",
     "display_case_number": "CRI-14021224",
     "defendant": "JAMES NORRIS",
     "filed_date": "2014-08-12",
@@ -59,12 +158,119 @@
       "defendant": "JAMES NORRIS",
       "filed_date": "2014-08-12"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "451(d) PC/F 453(a) PC/F 602(i) PC/M",
+    "charge_rows": [
+      {
+        "raw": "451(d) PC/F",
+        "title": "Penal Code § 451(d)",
+        "title_source": "programmatic_citation",
+        "code": "PC 451(d)",
+        "code_system": "PC",
+        "section": "451(d)",
+        "citation": "Penal Code § 451(d)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=451.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=451.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "453(a) PC/F",
+        "title": "Penal Code § 453(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 453(a)",
+        "code_system": "PC",
+        "section": "453(a)",
+        "citation": "Penal Code § 453(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=453.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=453.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "602(i) PC/M",
+        "title": "Penal Code § 602(i)",
+        "title_source": "programmatic_citation",
+        "code": "PC 602(i)",
+        "code_system": "PC",
+        "section": "602(i)",
+        "citation": "Penal Code § 602(i)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAMES NORRIS, and date of filing 2014-08-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAMES NORRIS, date of filing, 2014-08-12, and charges in the case: 451(d) PC/F 453(a) PC/F 602(i) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "451(d) PC/F",
+      "title": "Penal Code § 451(d)",
+      "title_source": "programmatic_citation",
+      "code": "PC 451(d)",
+      "code_system": "PC",
+      "section": "451(d)",
+      "citation": "Penal Code § 451(d)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=451.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=451.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "453(a) PC/F",
+      "title": "Penal Code § 453(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 453(a)",
+      "code_system": "PC",
+      "section": "453(a)",
+      "citation": "Penal Code § 453(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=453.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=453.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "602(i) PC/M",
+      "title": "Penal Code § 602(i)",
+      "title_source": "programmatic_citation",
+      "code": "PC 602(i)",
+      "code_system": "PC",
+      "section": "602(i)",
+      "citation": "Penal Code § 602(i)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:20:03.395Z",
+  "portal_case_id": "3787817",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14021224",
+      "defendant": "JAMES NORRIS",
+      "filed_date": "2014-08-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3787817"
+  }
 }

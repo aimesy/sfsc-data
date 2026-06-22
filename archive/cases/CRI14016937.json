@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:25:36.262Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:20:39.245Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI14016937",
   "criminal_case_number": "14016937",
@@ -24,19 +24,111 @@
       "name": "MUNHEE KIM",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MUNHEE KIM",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2014-07-09T14:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/MO PC 1385: INSUFFICIENT EVIDENCE/CTORD:DEFENDANT'S PASSPORT TO BE RETURNED,  AS SUCH, PASSPORT IS RETURNED TO THE DEFENDANT IN OPEN COURT,/SATERM/VD:07-18-14 JURY TRIAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-06-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENSE CUSTODY STATUS MOTION/X:PUBLIC DEFENDER'S ORAL MOTION TO RELEASE DEFENDANT ON OWN RECOGNIZANCE IS GRANTED,/OR/CTORD:AS A FURTHER CONDITION OF RELEASE DEFENDANT MUST SURRENDER HER PASSPORT AND ABIDE BY THE CRIMINAL PROTECTIVE ORDER,/SA1:TAIZO ISHIDA/SA2:4 EMBARCADERO CENTER, STE, 550,S,F,, CA/SA2:41 WILLIAMS DR,, MORAGA, CA/SAORD/CONTD:PASSPORT SURRENDER/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-06-26T14:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:THE DEFENDANT REQUIRES THE ASSISTANCE OF A JAPANESE INTERPRETER WHO IS WAIVED FOR TODAY'S PROCEDING ONLY,/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/X:THE PUBLIC DEFENDER'S ORAL MOTION FOR DISMISSAL PURSUANT TO PC 991 IS DENIED WITHOUT PREJUDICE,/FAWC/DEFTARR1/BAIL:30,000/NTW/LD:FOR TRIAL IS 07-28-14/CONTD:CUSTODY STATUS ON 06-27-14, D50/DOP/CONTD:JURY TRIAL ON 07-18-14, D17/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2014-06-30T14:00:00.000Z",
+      "docketEntryComment": "/CAL:PASSPORT SURRENDER/X:DEFENDANT SURRENDERS HER PASSPORT TO THE COURT FOR SAFEKEEPING IN THE RECORD'S DEPARTMENT,/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2014-07-09 2:00 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 0,
+      "court_date": "2014-07-09",
+      "hearing_time": "2:00 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-06-30 2:00 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 1,
+      "court_date": "2014-06-30",
+      "hearing_time": "2:00 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-06-27 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 2,
+      "court_date": "2014-06-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2014-06-26 2:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 3,
+      "court_date": "2014-06-26",
+      "hearing_time": "2:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ANDREA LINDSAY",
+      "type": "Public Defender"
+    },
+    {
+      "name": "AMY SHEARER",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "273.6(a) PC/M",
+    "filed_date": "2014-06-26",
+    "defendant": "MUNHEE KIM",
+    "searched_key": "KIM/MU",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/14016937.json",
     "searched_last_name": "KIM",
     "searched_first_prefix": "MU",
-    "charges": "273.6(a) PC/M",
     "row": {
       "DEFENDANTNAME": "MUNHEE KIM",
       "CASENUMBER": "CRI-14016937",
@@ -45,11 +137,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3783586",
+  "docket_entries": [
+    {
+      "filedDate": "2014-07-09T14:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/MO PC 1385: INSUFFICIENT EVIDENCE/CTORD:DEFENDANT'S PASSPORT TO BE RETURNED,  AS SUCH, PASSPORT IS RETURNED TO THE DEFENDANT IN OPEN COURT,/SATERM/VD:07-18-14 JURY TRIAL/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2014-07-09T14:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/MO PC 1385: INSUFFICIENT EVIDENCE/CTORD:DEFENDANT'S PASSPORT TO BE RETURNED, AS SUCH, PASSPORT IS RETURNED TO THE DEFENDANT IN OPEN COURT,/SATERM/VD:07-18-14 JURY TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-06-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENSE CUSTODY STATUS MOTION/X:PUBLIC DEFENDER'S ORAL MOTION TO RELEASE DEFENDANT ON OWN RECOGNIZANCE IS GRANTED,/OR/CTORD:AS A FURTHER CONDITION OF RELEASE DEFENDANT MUST SURRENDER HER PASSPORT AND ABIDE BY THE CRIMINAL PROTECTIVE ORDER,/SA1:TAIZO ISHIDA/SA2:4 EMBARCADERO CENTER, STE, 550,S,F,, CA/SA2:41 WILLIAMS DR,, MORAGA, CA/SAORD/CONTD:PASSPORT SURRENDER/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2014-06-27T09:00:00.000Z",
+      "description": "/CAL:DEFENSE CUSTODY STATUS MOTION/X:PUBLIC DEFENDER'S ORAL MOTION TO RELEASE DEFENDANT ON OWN RECOGNIZANCE IS GRANTED,/OR/CTORD:AS A FURTHER CONDITION OF RELEASE DEFENDANT MUST SURRENDER HER PASSPORT AND ABIDE BY THE CRIMINAL PROTECTIVE ORDER,/SA1:TAIZO ISHIDA/SA2:4 EMBARCADERO CENTER, STE, 550,S,F,, CA/SA2:41 WILLIAMS DR,, MORAGA, CA/SAORD/CONTD:PASSPORT SURRENDER/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-06-26T14:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:THE DEFENDANT REQUIRES THE ASSISTANCE OF A JAPANESE INTERPRETER WHO IS WAIVED FOR TODAY'S PROCEDING ONLY,/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/X:THE PUBLIC DEFENDER'S ORAL MOTION FOR DISMISSAL PURSUANT TO PC 991 IS DENIED WITHOUT PREJUDICE,/FAWC/DEFTARR1/BAIL:30,000/NTW/LD:FOR TRIAL IS 07-28-14/CONTD:CUSTODY STATUS ON 06-27-14, D50/DOP/CONTD:JURY TRIAL ON 07-18-14, D17/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2014-06-26T14:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:THE DEFENDANT REQUIRES THE ASSISTANCE OF A JAPANESE INTERPRETER WHO IS WAIVED FOR TODAY'S PROCEDING ONLY,/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/X:THE PUBLIC DEFENDER'S ORAL MOTION FOR DISMISSAL PURSUANT TO PC 991 IS DENIED WITHOUT PREJUDICE,/FAWC/DEFTARR1/BAIL:30,000/NTW/LD:FOR TRIAL IS 07-28-14/CONTD:CUSTODY STATUS ON 06-27-14, D50/DOP/CONTD:JURY TRIAL ON 07-18-14, D17/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2014-06-30T14:00:00.000Z",
+      "docketEntryComment": "/CAL:PASSPORT SURRENDER/X:DEFENDANT SURRENDERS HER PASSPORT TO THE COURT FOR SAFEKEEPING IN THE RECORD'S DEPARTMENT,/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2014-06-30T14:00:00.000Z",
+      "description": "/CAL:PASSPORT SURRENDER/X:DEFENDANT SURRENDERS HER PASSPORT TO THE COURT FOR SAFEKEEPING IN THE RECORD'S DEPARTMENT,/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "14016937",
-    "portal_case_id": "",
+    "portal_case_id": "3783586",
     "display_case_number": "CRI-14016937",
     "defendant": "MUNHEE KIM",
     "filed_date": "2014-06-26",
@@ -59,12 +192,86 @@
       "defendant": "MUNHEE KIM",
       "filed_date": "2014-06-26"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 991",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 991",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "273.6(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "273.6(a) PC/M",
+        "title": "Penal Code § 273.6(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 273.6(a)",
+        "code_system": "PC",
+        "section": "273.6(a)",
+        "citation": "Penal Code § 273.6(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.6.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.6.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MUNHEE KIM, and date of filing 2014-06-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MUNHEE KIM, date of filing, 2014-06-26, and charges in the case: 273.6(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "273.6(a) PC/M",
+      "title": "Penal Code § 273.6(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 273.6(a)",
+      "code_system": "PC",
+      "section": "273.6(a)",
+      "citation": "Penal Code § 273.6(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.6.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.6.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:20:39.928Z",
+  "portal_case_id": "3783586",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-14016937",
+      "defendant": "MUNHEE KIM",
+      "filed_date": "2014-06-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3783586"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.893787+00:00"
 }

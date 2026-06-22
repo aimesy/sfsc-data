@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T22:00:27.654Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:16:13.458Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15019650",
   "criminal_case_number": "15019650",
@@ -24,11 +24,59 @@
       "name": "LEROY K VO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LEROY K VO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-09-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:3056 PTR, 4011,6 RPT/X:PAROLEE'S MOTION TO DISMISS GRANTED/X:PETITION WITHDRAWN AND DISMISSED,/X:PAROLE REINSTATED TO: 8-31-15, GOOD CAUSE FOUN, WITHOUT ANY TIME LOSS, /X:PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-09-08T16:00:00.000Z",
+      "docketEntryComment": "28    PPTR HEARING-(PAROLE)/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANTTO PC3000,08/PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS AND PARTIES STIPULATE TO PROBABLE CAUSE,/NB/CONTD:4011,6 REPORT & DISMISSAL/DOP/  /TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP: 9-22-15/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-09-22 9:00 AM",
+      "hearingType": "PC 4011.6 Report",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 0,
+      "court_date": "2015-09-22",
+      "hearing_time": "9:00 AM",
+      "matters": "PC 4011.6 Report",
+      "hearing_type": "PC 4011.6 Report",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-09-08 4:00 PM",
+      "hearingType": "PC 3056 Petition to Revoke Parole",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 1,
+      "court_date": "2015-09-08",
+      "hearing_time": "4:00 PM",
+      "matters": "PC 3056 Petition to Revoke Parole",
+      "hearing_type": "PC 3056 Petition to Revoke Parole",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KATHY BULL",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3818892",
+  "docket_entries": [
+    {
+      "filedDate": "2015-09-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:3056 PTR, 4011,6 RPT/X:PAROLEE'S MOTION TO DISMISS GRANTED/X:PETITION WITHDRAWN AND DISMISSED,/X:PAROLE REINSTATED TO: 8-31-15, GOOD CAUSE FOUN, WITHOUT ANY TIME LOSS, /X:PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-09-22T09:00:00.000Z",
+      "description": "/CAL:3056 PTR, 4011,6 RPT/X:PAROLEE'S MOTION TO DISMISS GRANTED/X:PETITION WITHDRAWN AND DISMISSED,/X:PAROLE REINSTATED TO: 8-31-15, GOOD CAUSE FOUN, WITHOUT ANY TIME LOSS, /X:PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONS GIVEN BY THE PAROLE AGENT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-09-08T16:00:00.000Z",
+      "docketEntryComment": "28    PPTR HEARING-(PAROLE)/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANTTO PC3000,08/PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS AND PARTIES STIPULATE TO PROBABLE CAUSE,/NB/CONTD:4011,6 REPORT & DISMISSAL/DOP/  /TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP: 9-22-15/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-09-08T16:00:00.000Z",
+      "description": "28 PPTR HEARING-(PAROLE)/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANTTO PC3000,08/PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONS AND PARTIES STIPULATE TO PROBABLE CAUSE,/NB/CONTD:4011,6 REPORT & DISMISSAL/DOP/ /TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP: 9-22-15/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15019650",
-    "portal_case_id": "",
+    "portal_case_id": "3818892",
     "display_case_number": "CRI-15019650",
     "defendant": "LEROY K VO",
     "filed_date": "2015-09-04",
@@ -59,12 +128,76 @@
       "defendant": "LEROY K VO",
       "filed_date": "2015-09-04"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 4011",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC3000",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3000.08 PC/F XX/X",
+    "charge_rows": [
+      {
+        "raw": "3000.08 PC/F XX/X",
+        "title": "XX/X",
+        "title_source": "criminal_index_text",
+        "code": "PC 3000.08",
+        "code_system": "PC",
+        "section": "3000.08",
+        "citation": "Penal Code § 3000.08",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LEROY K VO, and date of filing 2015-09-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LEROY K VO, date of filing, 2015-09-04, and charges in the case: 3000.08 PC/F XX/X.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3000.08 PC/F XX/X",
+      "title": "XX/X",
+      "title_source": "criminal_index_text",
+      "code": "PC 3000.08",
+      "code_system": "PC",
+      "section": "3000.08",
+      "citation": "Penal Code § 3000.08",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:16:14.135Z",
+  "portal_case_id": "3818892",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15019650",
+      "defendant": "LEROY K VO",
+      "filed_date": "2015-09-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3818892"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T17:12:27.974Z"
 }
