@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:28:27.277Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:18:37.146Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01580664",
   "criminal_case_number": "01580664",
@@ -24,11 +24,135 @@
       "name": "MACK BLAKE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MACK BLAKE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1995-06-16T09:00:00.000Z",
+      "docketEntryComment": "MO W/D NG PLEA-GRTD;ADV PERS WVS CONST/CITZ RTS;CRT MKS F/F;ACCEPT PLEAMO TO AMEND COMPL FRM 11352(A)HS/F TO 11351HS/F;PLD G CT1-11351HS/FREF APD PSR;CONT 7/17/95 SENT AT 9AM IN D24;VAC TRL VACATEDDEFT WVS ANY/ALL IRREGS INSTR OF INFO AS AMENDED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-07-21T09:00:00.000Z",
+      "docketEntryComment": "A/JWV;CT1-SP2Y(L);CTS75D;$200RF",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-07-17T09:00:00.000Z",
+      "docketEntryComment": "CONT 7/21/95 FOR SENT AT 9AM IN D24;T/WVD FOR SENT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-06-05T14:00:00.000Z",
+      "docketEntryComment": "PD APPTD;FAW;BAIL SET $5000;PLEA NG ENT & ALLEG DENTRANS D24 & CONT 6/16/95 AT 9AM FOR PRELIM HG",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-06-02T09:00:00.000Z",
+      "docketEntryComment": "CRT FND GOOD CAUSE(DEFT ILL);CONT TO 6/5/95 9AM D22 FOR ARR & CNSL",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-06-01T14:01:00.000Z",
+      "docketEntryComment": "PD APPTD;BAIL SET AT $5000;CONT TO 6/2/95 AT 9AM D22 FOR ARRAIGNMENT&CNSL/AN:950602/0900/S22",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1995-07-21 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 24",
+      "__index": 0,
+      "court_date": "1995-07-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 24",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1995-07-17 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 24",
+      "__index": 1,
+      "court_date": "1995-07-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 24",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1995-06-16 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 24",
+      "__index": 2,
+      "court_date": "1995-06-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 24",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1995-06-05 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1995-06-05",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1995-06-02 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 4,
+      "court_date": "1995-06-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1995-06-01 2:01 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 5,
+      "court_date": "1995-06-01",
+      "hearing_time": "2:01 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "J AMABILE",
+      "type": "Public Defender"
+    },
+    {
+      "name": "C MARTINEZ",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +169,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2756487",
+  "docket_entries": [
+    {
+      "filedDate": "1995-06-16T09:00:00.000Z",
+      "docketEntryComment": "MO W/D NG PLEA-GRTD;ADV PERS WVS CONST/CITZ RTS;CRT MKS F/F;ACCEPT PLEAMO TO AMEND COMPL FRM 11352(A)HS/F TO 11351HS/F;PLD G CT1-11351HS/FREF APD PSR;CONT 7/17/95 SENT AT 9AM IN D24;VAC TRL VACATEDDEFT WVS ANY/ALL IRREGS INSTR OF INFO AS AMENDED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1995-06-16T09:00:00.000Z",
+      "description": "MO W/D NG PLEA-GRTD;ADV PERS WVS CONST/CITZ RTS;CRT MKS F/F;ACCEPT PLEAMO TO AMEND COMPL FRM 11352(A)HS/F TO 11351HS/F;PLD G CT1-11351HS/FREF APD PSR;CONT 7/17/95 SENT AT 9AM IN D24;VAC TRL VACATEDDEFT WVS ANY/ALL IRREGS INSTR OF INFO AS AMENDED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-07-21T09:00:00.000Z",
+      "docketEntryComment": "A/JWV;CT1-SP2Y(L);CTS75D;$200RF",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1995-07-21T09:00:00.000Z",
+      "description": "A/JWV;CT1-SP2Y(L);CTS75D;$200RF",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-07-17T09:00:00.000Z",
+      "docketEntryComment": "CONT 7/21/95 FOR SENT AT 9AM IN D24;T/WVD FOR SENT",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1995-07-17T09:00:00.000Z",
+      "description": "CONT 7/21/95 FOR SENT AT 9AM IN D24;T/WVD FOR SENT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-06-05T14:00:00.000Z",
+      "docketEntryComment": "PD APPTD;FAW;BAIL SET $5000;PLEA NG ENT & ALLEG DENTRANS D24 & CONT 6/16/95 AT 9AM FOR PRELIM HG",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1995-06-05T14:00:00.000Z",
+      "description": "PD APPTD;FAW;BAIL SET $5000;PLEA NG ENT & ALLEG DENTRANS D24 & CONT 6/16/95 AT 9AM FOR PRELIM HG",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-06-02T09:00:00.000Z",
+      "docketEntryComment": "CRT FND GOOD CAUSE(DEFT ILL);CONT TO 6/5/95 9AM D22 FOR ARR & CNSL",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1995-06-02T09:00:00.000Z",
+      "description": "CRT FND GOOD CAUSE(DEFT ILL);CONT TO 6/5/95 9AM D22 FOR ARR & CNSL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-06-01T14:01:00.000Z",
+      "docketEntryComment": "PD APPTD;BAIL SET AT $5000;CONT TO 6/2/95 AT 9AM D22 FOR ARRAIGNMENT&CNSL/AN:950602/0900/S22",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1995-06-01T14:01:00.000Z",
+      "description": "PD APPTD;BAIL SET AT $5000;CONT TO 6/2/95 AT 9AM D22 FOR ARRAIGNMENT&CNSL/AN:950602/0900/S22",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01580664",
-    "portal_case_id": "",
+    "portal_case_id": "2756487",
     "display_case_number": "CRI-01580664",
     "defendant": "MACK BLAKE",
     "filed_date": "1995-06-01",
@@ -63,8 +248,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MACK BLAKE, and date of filing 1995-06-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MACK BLAKE, and date of filing 1995-06-01. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:18:37.694Z",
+  "portal_case_id": "2756487",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01580664",
+      "defendant": "MACK BLAKE",
+      "filed_date": "1995-06-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2756487"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:40:35.598Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:27:33.495Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01643510",
   "criminal_case_number": "01643510",
@@ -24,11 +24,47 @@
       "name": "STEVEN BAKER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "STEVEN BAKER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1996-04-22T00:00:00.000Z",
+      "docketEntryComment": "DRUG DIV PROG RPT (DOP)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-03-21T00:00:00.000Z",
+      "docketEntryComment": "1000,3PC ORALL RPT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-08-21T00:00:00.000Z",
+      "docketEntryComment": "DIV GRNTD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-05-31T00:00:00.000Z",
+      "docketEntryComment": "VACATED 062296",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-04-23T00:00:00.000Z",
+      "docketEntryComment": "B/S $50",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "L DAVIS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +81,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2814644",
+  "docket_entries": [
+    {
+      "filedDate": "1996-04-22T00:00:00.000Z",
+      "docketEntryComment": "DRUG DIV PROG RPT (DOP)",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1996-04-22T00:00:00.000Z",
+      "description": "DRUG DIV PROG RPT (DOP)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-03-21T00:00:00.000Z",
+      "docketEntryComment": "1000,3PC ORALL RPT",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1997-03-21T00:00:00.000Z",
+      "description": "1000,3PC ORALL RPT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-08-21T00:00:00.000Z",
+      "docketEntryComment": "DIV GRNTD",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1996-08-21T00:00:00.000Z",
+      "description": "DIV GRNTD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-05-31T00:00:00.000Z",
+      "docketEntryComment": "VACATED 062296",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1996-05-31T00:00:00.000Z",
+      "description": "VACATED 062296",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-04-23T00:00:00.000Z",
+      "docketEntryComment": "B/S $50",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1996-04-23T00:00:00.000Z",
+      "description": "B/S $50",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01643510",
-    "portal_case_id": "",
+    "portal_case_id": "2814644",
     "display_case_number": "CRI-01643510",
     "defendant": "STEVEN BAKER",
     "filed_date": "1996-04-22",
@@ -63,8 +150,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, STEVEN BAKER, and date of filing 1996-04-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, STEVEN BAKER, and date of filing 1996-04-22. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:27:34.255Z",
+  "portal_case_id": "2814644",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01643510",
+      "defendant": "STEVEN BAKER",
+      "filed_date": "1996-04-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2814644"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:36:44.472Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:26:08.653Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01615955",
   "criminal_case_number": "01615955",
@@ -24,11 +24,57 @@
       "name": "ANDREI ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANDREI ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1996-07-15T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-04-18T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-12-05T00:00:00.000Z",
+      "docketEntryComment": "SET OR DISPO, DOP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-07-15T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C, DISM PER MOWRY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-04-26T00:00:00.000Z",
+      "docketEntryComment": "BW OF 041896 RELEASED; BAIL RAISED TO $5000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-04-18T00:00:00.000Z",
+      "docketEntryComment": "FTA SET/DISPO; BW OF 041896 (RELEASED 042696)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-04-11T00:00:00.000Z",
+      "docketEntryComment": "DAW TODAY",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "R AMPARAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +91,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2789048",
+  "docket_entries": [
+    {
+      "filedDate": "1996-07-15T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1996-07-15T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-04-18T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-04-18T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-12-05T00:00:00.000Z",
+      "docketEntryComment": "SET OR DISPO, DOP",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1995-12-05T00:00:00.000Z",
+      "description": "SET OR DISPO, DOP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-07-15T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C, DISM PER MOWRY",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1996-07-15T00:00:00.000Z",
+      "description": "BWD, N/C, DISM PER MOWRY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-04-26T00:00:00.000Z",
+      "docketEntryComment": "BW OF 041896 RELEASED; BAIL RAISED TO $5000",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1996-04-26T00:00:00.000Z",
+      "description": "BW OF 041896 RELEASED; BAIL RAISED TO $5000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-04-18T00:00:00.000Z",
+      "docketEntryComment": "FTA SET/DISPO; BW OF 041896 (RELEASED 042696)",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1996-04-18T00:00:00.000Z",
+      "description": "FTA SET/DISPO; BW OF 041896 (RELEASED 042696)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-04-11T00:00:00.000Z",
+      "docketEntryComment": "DAW TODAY",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1996-04-11T00:00:00.000Z",
+      "description": "DAW TODAY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01615955",
-    "portal_case_id": "",
+    "portal_case_id": "2789048",
     "display_case_number": "CRI-01615955",
     "defendant": "ANDREI ALLEN",
     "filed_date": "1995-12-05",
@@ -63,8 +180,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANDREI ALLEN, and date of filing 1995-12-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANDREI ALLEN, and date of filing 1995-12-05. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:26:09.282Z",
+  "portal_case_id": "2789048",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01615955",
+      "defendant": "ANDREI ALLEN",
+      "filed_date": "1995-12-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2789048"
+  }
 }

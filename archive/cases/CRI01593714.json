@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:30:29.414Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:21:47.225Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01593714",
   "criminal_case_number": "01593714",
@@ -24,11 +24,37 @@
       "name": "FREDERICK BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "FREDERICK BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1995-08-09T00:00:00.000Z",
+      "docketEntryComment": "PTD PROG RPT W/REST",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-06-21T00:00:00.000Z",
+      "docketEntryComment": "1385PC DISM PTD COMPLETED 1001,9PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-08-17T00:00:00.000Z",
+      "docketEntryComment": "VACATED JT DATE OF 090195",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "F FUETSCH",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +71,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2768460",
+  "docket_entries": [
+    {
+      "filedDate": "1995-08-09T00:00:00.000Z",
+      "docketEntryComment": "PTD PROG RPT W/REST",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1995-08-09T00:00:00.000Z",
+      "description": "PTD PROG RPT W/REST",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-06-21T00:00:00.000Z",
+      "docketEntryComment": "1385PC DISM PTD COMPLETED 1001,9PC",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-06-21T00:00:00.000Z",
+      "description": "1385PC DISM PTD COMPLETED 1001,9PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-08-17T00:00:00.000Z",
+      "docketEntryComment": "VACATED JT DATE OF 090195",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1995-08-17T00:00:00.000Z",
+      "description": "VACATED JT DATE OF 090195",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01593714",
-    "portal_case_id": "",
+    "portal_case_id": "2768460",
     "display_case_number": "CRI-01593714",
     "defendant": "FREDERICK BROWN",
     "filed_date": "1995-08-09",
@@ -63,8 +120,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, FREDERICK BROWN, and date of filing 1995-08-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, FREDERICK BROWN, and date of filing 1995-08-09. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:21:47.997Z",
+  "portal_case_id": "2768460",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01593714",
+      "defendant": "FREDERICK BROWN",
+      "filed_date": "1995-08-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2768460"
+  }
 }

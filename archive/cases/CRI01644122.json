@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:52:22.154Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:29:43.065Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01644122",
   "criminal_case_number": "01644122",
@@ -24,11 +24,57 @@
       "name": "HARRY D HALL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "HARRY D HALL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1996-05-16T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-05-02T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-04-23T00:00:00.000Z",
+      "docketEntryComment": "DEFT MOT TO RBW OF 050296",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-05-16T00:00:00.000Z",
+      "docketEntryComment": "1035 SEARCH COND S/A FR VIRGIN RECORDS AT STOCKTON & MARKET",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-05-16T00:00:00.000Z",
+      "docketEntryComment": "BWD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-05-07T00:00:00.000Z",
+      "docketEntryComment": "DFT MOT RBW OFF CAL",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-05-02T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $10,000, OR REVKD",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "P DEMEESTER",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +91,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2815215",
+  "docket_entries": [
+    {
+      "filedDate": "1996-05-16T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1996-05-16T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-05-02T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-05-02T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-04-23T00:00:00.000Z",
+      "docketEntryComment": "DEFT MOT TO RBW OF 050296",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1996-04-23T00:00:00.000Z",
+      "description": "DEFT MOT TO RBW OF 050296",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-05-16T00:00:00.000Z",
+      "docketEntryComment": "1035 SEARCH COND S/A FR VIRGIN RECORDS AT STOCKTON & MARKET",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1996-05-16T00:00:00.000Z",
+      "description": "1035 SEARCH COND S/A FR VIRGIN RECORDS AT STOCKTON & MARKET",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-05-16T00:00:00.000Z",
+      "docketEntryComment": "BWD",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1996-05-16T00:00:00.000Z",
+      "description": "BWD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-05-07T00:00:00.000Z",
+      "docketEntryComment": "DFT MOT RBW OFF CAL",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1996-05-07T00:00:00.000Z",
+      "description": "DFT MOT RBW OFF CAL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-05-02T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $10,000, OR REVKD",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1996-05-02T00:00:00.000Z",
+      "description": "BWI, FTA, B/S $10,000, OR REVKD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01644122",
-    "portal_case_id": "",
+    "portal_case_id": "2815215",
     "display_case_number": "CRI-01644122",
     "defendant": "HARRY D HALL",
     "filed_date": "1996-04-23",
@@ -63,8 +180,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, HARRY D HALL, and date of filing 1996-04-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, HARRY D HALL, and date of filing 1996-04-23. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:29:43.711Z",
+  "portal_case_id": "2815215",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01644122",
+      "defendant": "HARRY D HALL",
+      "filed_date": "1996-04-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2815215"
+  }
 }

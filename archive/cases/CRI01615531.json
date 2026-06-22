@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:32:23.400Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:26:04.431Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01615531",
   "criminal_case_number": "01615531",
@@ -24,11 +24,51 @@
       "name": "JEFFREY BOND",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JEFFREY BOND",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1995-12-07T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-01-18T09:00:00.000Z",
+      "docketEntryComment": "/TEXT/INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-01-03T00:00:00.000Z",
+      "docketEntryComment": "HTA, BAIL SET AT ORPJ",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1996-01-18 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1996-01-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "HARRIETT ROSS",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +85,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2788653",
+  "docket_entries": [
+    {
+      "filedDate": "1995-12-07T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1995-12-07T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-01-18T09:00:00.000Z",
+      "docketEntryComment": "/TEXT/INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-01-18T09:00:00.000Z",
+      "description": "/TEXT/INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-01-03T00:00:00.000Z",
+      "docketEntryComment": "HTA, BAIL SET AT ORPJ",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1996-01-03T00:00:00.000Z",
+      "description": "HTA, BAIL SET AT ORPJ",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01615531",
-    "portal_case_id": "",
+    "portal_case_id": "2788653",
     "display_case_number": "CRI-01615531",
     "defendant": "JEFFREY BOND",
     "filed_date": "1995-12-07",
@@ -63,8 +134,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JEFFREY BOND, and date of filing 1995-12-07. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JEFFREY BOND, and date of filing 1995-12-07. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:26:05.116Z",
+  "portal_case_id": "2788653",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01615531",
+      "defendant": "JEFFREY BOND",
+      "filed_date": "1995-12-07"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2788653"
+  }
 }

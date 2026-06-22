@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:57.254Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:17:47.726Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01565534",
   "criminal_case_number": "01565534",
@@ -24,11 +24,61 @@
       "name": "DERRICK BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DERRICK BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1995-03-16T00:00:00.000Z",
+      "docketEntryComment": "PTD PROG RPT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-04-02T00:00:00.000Z",
+      "docketEntryComment": "DISM DAW PTD SUCCF COMPLETED 1001,9PC - 597,5(B)PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-07-10T00:00:00.000Z",
+      "docketEntryComment": "NG PLEA W/DRAWN 597,5BPC, NPC ON 337A,6PC,",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-05-18T00:00:00.000Z",
+      "docketEntryComment": "AMND COMPLT FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-04-24T00:00:00.000Z",
+      "docketEntryComment": "WIA,NG,STW ON 2ND AMEND COMPLT; BRIAN HOPPER FOR THOMPSON",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-04-11T00:00:00.000Z",
+      "docketEntryComment": "AMENDED COMPLT FILED, WIA, NG",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-03-21T00:00:00.000Z",
+      "docketEntryComment": "PX OF 4-3-95 VACATED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "BYRON THOMPSON",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "J FARRELL",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +95,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2742631",
+  "docket_entries": [
+    {
+      "filedDate": "1995-03-16T00:00:00.000Z",
+      "docketEntryComment": "PTD PROG RPT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1995-03-16T00:00:00.000Z",
+      "description": "PTD PROG RPT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-04-02T00:00:00.000Z",
+      "docketEntryComment": "DISM DAW PTD SUCCF COMPLETED 1001,9PC - 597,5(B)PC",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-04-02T00:00:00.000Z",
+      "description": "DISM DAW PTD SUCCF COMPLETED 1001,9PC - 597,5(B)PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-07-10T00:00:00.000Z",
+      "docketEntryComment": "NG PLEA W/DRAWN 597,5BPC, NPC ON 337A,6PC,",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1995-07-10T00:00:00.000Z",
+      "description": "NG PLEA W/DRAWN 597,5BPC, NPC ON 337A,6PC,",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-05-18T00:00:00.000Z",
+      "docketEntryComment": "AMND COMPLT FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1995-05-18T00:00:00.000Z",
+      "description": "AMND COMPLT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-04-24T00:00:00.000Z",
+      "docketEntryComment": "WIA,NG,STW ON 2ND AMEND COMPLT; BRIAN HOPPER FOR THOMPSON",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1995-04-24T00:00:00.000Z",
+      "description": "WIA,NG,STW ON 2ND AMEND COMPLT; BRIAN HOPPER FOR THOMPSON",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-04-11T00:00:00.000Z",
+      "docketEntryComment": "AMENDED COMPLT FILED, WIA, NG",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1995-04-11T00:00:00.000Z",
+      "description": "AMENDED COMPLT FILED, WIA, NG",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-03-21T00:00:00.000Z",
+      "docketEntryComment": "PX OF 4-3-95 VACATED",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1995-03-21T00:00:00.000Z",
+      "description": "PX OF 4-3-95 VACATED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01565534",
-    "portal_case_id": "",
+    "portal_case_id": "2742631",
     "display_case_number": "CRI-01565534",
     "defendant": "DERRICK BROWN",
     "filed_date": "1995-03-16",
@@ -63,8 +184,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DERRICK BROWN, and date of filing 1995-03-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DERRICK BROWN, and date of filing 1995-03-16. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:17:48.431Z",
+  "portal_case_id": "2742631",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01565534",
+      "defendant": "DERRICK BROWN",
+      "filed_date": "1995-03-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2742631"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:12:12.476Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:23:22.836Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01602851",
   "criminal_case_number": "01602851",
@@ -24,10 +24,63 @@
       "name": "PAUL BUDDY ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "PAUL BUDDY ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "1996-06-27T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-11-02T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-06-27T00:00:00.000Z",
+      "docketEntryComment": "BWR, DA MOT DISM 1381PC GRANTED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-11-02T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI,BS $20000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1996-06-27 9:00 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "1996-06-27",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1995-11-02 9:00 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 1,
+      "court_date": "1995-11-02",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +98,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2776909",
+  "docket_entries": [
+    {
+      "filedDate": "1996-06-27T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1996-06-27T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-11-02T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1995-11-02T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-06-27T00:00:00.000Z",
+      "docketEntryComment": "BWR, DA MOT DISM 1381PC GRANTED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1996-06-27T00:00:00.000Z",
+      "description": "BWR, DA MOT DISM 1381PC GRANTED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-11-02T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI,BS $20000",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1995-11-02T00:00:00.000Z",
+      "description": "FTA,BWI,BS $20000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01602851",
-    "portal_case_id": "",
+    "portal_case_id": "2776909",
     "display_case_number": "CRI-01602851",
     "defendant": "PAUL BUDDY ANDERSON",
     "filed_date": "1995-10-27",
@@ -63,8 +157,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, PAUL BUDDY ANDERSON, and date of filing 1995-10-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, PAUL BUDDY ANDERSON, and date of filing 1995-10-27. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:23:23.473Z",
+  "portal_case_id": "2776909",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01602851",
+      "defendant": "PAUL BUDDY ANDERSON",
+      "filed_date": "1995-10-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2776909"
+  }
 }

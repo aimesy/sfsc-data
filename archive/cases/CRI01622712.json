@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:08:42.635Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:26:42.981Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01622712",
   "criminal_case_number": "01622712",
@@ -24,11 +24,37 @@
       "name": "TAMARA MARIE ALI",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TAMARA MARIE ALI",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1996-01-16T00:00:00.000Z",
+      "docketEntryComment": "PTD ELIG RPT PLUS RESTIT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-01-21T00:00:00.000Z",
+      "docketEntryComment": "DISM 1001,55PC DIVN COMPLTD CT#3",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-10-18T00:00:00.000Z",
+      "docketEntryComment": "DIV GRANTED, DAWTODAY",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "S OGARA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +71,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2795322",
+  "docket_entries": [
+    {
+      "filedDate": "1996-01-16T00:00:00.000Z",
+      "docketEntryComment": "PTD ELIG RPT PLUS RESTIT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1996-01-16T00:00:00.000Z",
+      "description": "PTD ELIG RPT PLUS RESTIT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-01-21T00:00:00.000Z",
+      "docketEntryComment": "DISM 1001,55PC DIVN COMPLTD CT#3",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1997-01-21T00:00:00.000Z",
+      "description": "DISM 1001,55PC DIVN COMPLTD CT#3",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-10-18T00:00:00.000Z",
+      "docketEntryComment": "DIV GRANTED, DAWTODAY",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1996-10-18T00:00:00.000Z",
+      "description": "DIV GRANTED, DAWTODAY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01622712",
-    "portal_case_id": "",
+    "portal_case_id": "2795322",
     "display_case_number": "CRI-01622712",
     "defendant": "TAMARA MARIE ALI",
     "filed_date": "1996-01-16",
@@ -63,8 +120,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TAMARA MARIE ALI, and date of filing 1996-01-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TAMARA MARIE ALI, and date of filing 1996-01-16. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:26:43.548Z",
+  "portal_case_id": "2795322",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01622712",
+      "defendant": "TAMARA MARIE ALI",
+      "filed_date": "1996-01-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2795322"
+  }
 }

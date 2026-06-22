@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:28:02.794Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:23:55.304Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01618494",
   "criminal_case_number": "01618494",
@@ -24,11 +24,93 @@
       "name": "LORRAINE ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LORRAINE ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1995-12-19T00:00:00.000Z",
+      "docketEntryComment": "TS PROB REV HRG DA",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-12-02T08:30:00.000Z",
+      "docketEntryComment": "/CAL:MOTION TO RELEASE ON OWN RECOGNIZANCE; SET BAIL/MO DENIED/SSL:03-13-96/S P:16 MONTHS, LOWER TERM//X:DEFENDANT TO RECEIVE CREDIT FOR TIME SERVED 301 DAYS/X:COUNTY JAIL, 150SAGE FOR A TOTAL OF 451 DAYS,/STATES/PAR/CDC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-11-18T08:30:00.000Z",
+      "docketEntryComment": "CONTD TS PROB REV HRG DA/CON:BRIAN BERSON, ESQ,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-11-12T08:30:00.000Z",
+      "docketEntryComment": "CONTD TS PROB REV HRG DA/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-10-14T14:01:00.000Z",
+      "docketEntryComment": "CONTD TS PROB REV HRG DA/SUPP:11-12-98/S21/PROB ADM REV/SHER/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-03-13T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1 SP 16 M L ESS PROB 3 Y PJ 1Y /CTS 86 /STATES//WS/VF1 $200/PC/PSR/BOOKING FEE//ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-02-13T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, B/S $5,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-12-19T00:00:00.000Z",
+      "docketEntryComment": "B/S $5000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1998-10-14 2:01 PM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1998-10-14",
+      "hearing_time": "2:01 PM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1996-03-13 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1996-03-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "B BERSON",
+      "type": "Conflict Attorney"
+    },
+    {
+      "name": "S TOTAH",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +127,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2791389",
+  "docket_entries": [
+    {
+      "filedDate": "1995-12-19T00:00:00.000Z",
+      "docketEntryComment": "TS PROB REV HRG DA",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1995-12-19T00:00:00.000Z",
+      "description": "TS PROB REV HRG DA",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-12-02T08:30:00.000Z",
+      "docketEntryComment": "/CAL:MOTION TO RELEASE ON OWN RECOGNIZANCE; SET BAIL/MO DENIED/SSL:03-13-96/S P:16 MONTHS, LOWER TERM//X:DEFENDANT TO RECEIVE CREDIT FOR TIME SERVED 301 DAYS/X:COUNTY JAIL, 150SAGE FOR A TOTAL OF 451 DAYS,/STATES/PAR/CDC/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1998-12-02T08:30:00.000Z",
+      "description": "/CAL:MOTION TO RELEASE ON OWN RECOGNIZANCE; SET BAIL/MO DENIED/SSL:03-13-96/S P:16 MONTHS, LOWER TERM//X:DEFENDANT TO RECEIVE CREDIT FOR TIME SERVED 301 DAYS/X:COUNTY JAIL, 150SAGE FOR A TOTAL OF 451 DAYS,/STATES/PAR/CDC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-11-18T08:30:00.000Z",
+      "docketEntryComment": "CONTD TS PROB REV HRG DA/CON:BRIAN BERSON, ESQ,/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1998-11-18T08:30:00.000Z",
+      "description": "CONTD TS PROB REV HRG DA/CON:BRIAN BERSON, ESQ,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-11-12T08:30:00.000Z",
+      "docketEntryComment": "CONTD TS PROB REV HRG DA/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1998-11-12T08:30:00.000Z",
+      "description": "CONTD TS PROB REV HRG DA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-10-14T14:01:00.000Z",
+      "docketEntryComment": "CONTD TS PROB REV HRG DA/SUPP:11-12-98/S21/PROB ADM REV/SHER/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1998-10-14T14:01:00.000Z",
+      "description": "CONTD TS PROB REV HRG DA/SUPP:11-12-98/S21/PROB ADM REV/SHER/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-03-13T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1 SP 16 M L ESS PROB 3 Y PJ 1Y /CTS 86 /STATES//WS/VF1 $200/PC/PSR/BOOKING FEE//ACCEP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1996-03-13T09:00:00.000Z",
+      "description": "/AJW/CH1 SP 16 M L ESS PROB 3 Y PJ 1Y /CTS 86 /STATES//WS/VF1 $200/PC/PSR/BOOKING FEE//ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-02-13T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1996-02-13T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT, B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-12-19T00:00:00.000Z",
+      "docketEntryComment": "B/S $5000",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1995-12-19T00:00:00.000Z",
+      "description": "B/S $5000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01618494",
-    "portal_case_id": "",
+    "portal_case_id": "2791389",
     "display_case_number": "CRI-01618494",
     "defendant": "LORRAINE ANDERSON",
     "filed_date": "1995-12-19",
@@ -63,8 +226,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LORRAINE ANDERSON, and date of filing 1995-12-19. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LORRAINE ANDERSON, and date of filing 1995-12-19. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:23:55.864Z",
+  "portal_case_id": "2791389",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01618494",
+      "defendant": "LORRAINE ANDERSON",
+      "filed_date": "1995-12-19"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2791389"
+  }
 }

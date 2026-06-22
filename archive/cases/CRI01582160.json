@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:54:47.064Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:20:16.360Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01582160",
   "criminal_case_number": "01582160",
@@ -24,11 +24,70 @@
       "name": "DARIN T DAWSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DARIN T DAWSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1995-06-13T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-11-26T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1 SP1Y M/CTSP 143/3RD 1/STATES//VF5 $200/PAR/DEL 2-1-97//CS1:SC#158636 AND SC#165628/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-11-01T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT, SEE DOCKET FOR PROPOSED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-10-17T00:00:00.000Z",
+      "docketEntryComment": "DEFT REMANDED B/S $20,000-; 11-1-96 PX DATE VACATED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-07-29T00:00:00.000Z",
+      "docketEntryComment": "N/A BY DEFT - PER ATNY, DEFT IN CUST ON OTHER CASE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-07-21T00:00:00.000Z",
+      "docketEntryComment": "ATNY WITHDRAWN",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1996-11-26 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 0,
+      "court_date": "1996-11-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MICHAEL GAINES",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "G NORMAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +104,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2757861",
+  "docket_entries": [
+    {
+      "filedDate": "1995-06-13T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1995-06-13T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-11-26T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1 SP1Y M/CTSP 143/3RD 1/STATES//VF5 $200/PAR/DEL 2-1-97//CS1:SC#158636 AND SC#165628/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-11-26T09:00:00.000Z",
+      "description": "/AJW/CH1 SP1Y M/CTSP 143/3RD 1/STATES//VF5 $200/PAR/DEL 2-1-97//CS1:SC#158636 AND SC#165628/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-11-01T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT, SEE DOCKET FOR PROPOSED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1996-11-01T00:00:00.000Z",
+      "description": "CERT TO SUP CT, SEE DOCKET FOR PROPOSED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-10-17T00:00:00.000Z",
+      "docketEntryComment": "DEFT REMANDED B/S $20,000-; 11-1-96 PX DATE VACATED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1996-10-17T00:00:00.000Z",
+      "description": "DEFT REMANDED B/S $20,000-; 11-1-96 PX DATE VACATED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-07-29T00:00:00.000Z",
+      "docketEntryComment": "N/A BY DEFT - PER ATNY, DEFT IN CUST ON OTHER CASE",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1996-07-29T00:00:00.000Z",
+      "description": "N/A BY DEFT - PER ATNY, DEFT IN CUST ON OTHER CASE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-07-21T00:00:00.000Z",
+      "docketEntryComment": "ATNY WITHDRAWN",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1995-07-21T00:00:00.000Z",
+      "description": "ATNY WITHDRAWN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01582160",
-    "portal_case_id": "",
+    "portal_case_id": "2757861",
     "display_case_number": "CRI-01582160",
     "defendant": "DARIN T DAWSON",
     "filed_date": "1995-06-13",
@@ -63,8 +183,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DARIN T DAWSON, and date of filing 1995-06-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DARIN T DAWSON, and date of filing 1995-06-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:20:16.989Z",
+  "portal_case_id": "2757861",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01582160",
+      "defendant": "DARIN T DAWSON",
+      "filed_date": "1995-06-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2757861"
+  }
 }

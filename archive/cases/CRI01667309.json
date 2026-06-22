@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:15.654Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:31:18.378Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01667309",
   "criminal_case_number": "01667309",
@@ -24,11 +24,60 @@
       "name": "MACK C ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MACK C ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1996-08-28T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-12-26T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1 SP  2Y L ESS PROB 5 Y PJ1Y/CTS 024/STATES/PGM DELANCEY ST,//WS//RESTV/VF4:$200/PC/PSR/BOOKING FEE//ACCEP//ENH:CH1:TYPC 1192,7:TI 5Y:CS///ENH:CH1:TYPC 667,5(B):TI 1Y :CS//TEXT:TOTAL 8 YEARS/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-11-25T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, B/S $10,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-08-28T00:00:00.000Z",
+      "docketEntryComment": "B/S $10,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1996-12-26 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1996-12-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "RICHARD SCHOOLER",
+      "type": "Conflict Attorney"
+    },
+    {
+      "name": "L RAUSHENBUSH",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +94,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2836835",
+  "docket_entries": [
+    {
+      "filedDate": "1996-08-28T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1996-08-28T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-12-26T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1 SP  2Y L ESS PROB 5 Y PJ1Y/CTS 024/STATES/PGM DELANCEY ST,//WS//RESTV/VF4:$200/PC/PSR/BOOKING FEE//ACCEP//ENH:CH1:TYPC 1192,7:TI 5Y:CS///ENH:CH1:TYPC 667,5(B):TI 1Y :CS//TEXT:TOTAL 8 YEARS/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-12-26T09:00:00.000Z",
+      "description": "/AJW/CH1 SP 2Y L ESS PROB 5 Y PJ1Y/CTS 024/STATES/PGM DELANCEY ST,//WS//RESTV/VF4:$200/PC/PSR/BOOKING FEE//ACCEP//ENH:CH1:TYPC 1192,7:TI 5Y:CS///ENH:CH1:TYPC 667,5(B):TI 1Y :CS//TEXT:TOTAL 8 YEARS/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-11-25T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, B/S $10,000",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1996-11-25T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT, B/S $10,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-08-28T00:00:00.000Z",
+      "docketEntryComment": "B/S $10,000",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1996-08-28T00:00:00.000Z",
+      "description": "B/S $10,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01667309",
-    "portal_case_id": "",
+    "portal_case_id": "2836835",
     "display_case_number": "CRI-01667309",
     "defendant": "MACK C ANDERSON",
     "filed_date": "1996-08-28",
@@ -63,8 +153,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MACK C ANDERSON, and date of filing 1996-08-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MACK C ANDERSON, and date of filing 1996-08-28. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:31:19.003Z",
+  "portal_case_id": "2836835",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01667309",
+      "defendant": "MACK C ANDERSON",
+      "filed_date": "1996-08-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2836835"
+  }
 }

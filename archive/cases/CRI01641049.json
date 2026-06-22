@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:38:12.926Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:29:24.910Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01641049",
   "criminal_case_number": "01641049",
@@ -24,11 +24,70 @@
       "name": "MANUEL JR ALFARO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MANUEL JR ALFARO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1996-04-10T00:00:00.000Z",
+      "docketEntryComment": "BW STAY & PX HRG",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-10-03T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ5D/CTS:5/MISD2:18//WS/VF4:$200/PC/PSR/BOOKING FEE///FORF/TRANS:TULARE COUNTY//ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-09-05T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT, SEE DOCKET FOR PROPOSED SENT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-07-18T00:00:00.000Z",
+      "docketEntryComment": "BWI B/S $100,000 STAYED TILL 7-25-96",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-06-05T00:00:00.000Z",
+      "docketEntryComment": "DAW TODAY, ATNY APP 977, CRI MOT GRNTD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-04-10T00:00:00.000Z",
+      "docketEntryComment": "BAIL REMAINS $50,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1996-10-03 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1996-10-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "J RUNFOLA",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "F PASSAGLIA",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +104,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2812364",
+  "docket_entries": [
+    {
+      "filedDate": "1996-04-10T00:00:00.000Z",
+      "docketEntryComment": "BW STAY & PX HRG",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1996-04-10T00:00:00.000Z",
+      "description": "BW STAY & PX HRG",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-10-03T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ5D/CTS:5/MISD2:18//WS/VF4:$200/PC/PSR/BOOKING FEE///FORF/TRANS:TULARE COUNTY//ACCEP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-10-03T09:00:00.000Z",
+      "description": "/AJW/CH1:ISS:PROB 3 Y:PJ5D/CTS:5/MISD2:18//WS/VF4:$200/PC/PSR/BOOKING FEE///FORF/TRANS:TULARE COUNTY//ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-09-05T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT, SEE DOCKET FOR PROPOSED SENT",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1996-09-05T00:00:00.000Z",
+      "description": "CERT TO SUP CT, SEE DOCKET FOR PROPOSED SENT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-07-18T00:00:00.000Z",
+      "docketEntryComment": "BWI B/S $100,000 STAYED TILL 7-25-96",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1996-07-18T00:00:00.000Z",
+      "description": "BWI B/S $100,000 STAYED TILL 7-25-96",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-06-05T00:00:00.000Z",
+      "docketEntryComment": "DAW TODAY, ATNY APP 977, CRI MOT GRNTD",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1996-06-05T00:00:00.000Z",
+      "description": "DAW TODAY, ATNY APP 977, CRI MOT GRNTD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-04-10T00:00:00.000Z",
+      "docketEntryComment": "BAIL REMAINS $50,000",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1996-04-10T00:00:00.000Z",
+      "description": "BAIL REMAINS $50,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01641049",
-    "portal_case_id": "",
+    "portal_case_id": "2812364",
     "display_case_number": "CRI-01641049",
     "defendant": "MANUEL JR ALFARO",
     "filed_date": "1996-04-10",
@@ -63,8 +183,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MANUEL JR ALFARO, and date of filing 1996-04-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MANUEL JR ALFARO, and date of filing 1996-04-10. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:29:25.639Z",
+  "portal_case_id": "2812364",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01641049",
+      "defendant": "MANUEL JR ALFARO",
+      "filed_date": "1996-04-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2812364"
+  }
 }

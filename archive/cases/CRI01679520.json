@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:00:12.472Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:35:15.691Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01679520",
   "criminal_case_number": "01679520",
@@ -24,11 +24,52 @@
       "name": "LATICIA DAVIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LATICIA DAVIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1996-12-20T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-12-10T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-11-22T00:00:00.000Z",
+      "docketEntryComment": "DEFT MOT TO RBW OF 121096",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-01-17T00:00:00.000Z",
+      "docketEntryComment": "DISM UNABLE TO SUSTAIN BURDEN OF PROOF",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-12-20T00:00:00.000Z",
+      "docketEntryComment": "BWR, N/C",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-12-10T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA PT, B/S $10,000, 1ST BW",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "D MILLER",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +86,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2848151",
+  "docket_entries": [
+    {
+      "filedDate": "1996-12-20T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1996-12-20T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-12-10T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-12-10T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-11-22T00:00:00.000Z",
+      "docketEntryComment": "DEFT MOT TO RBW OF 121096",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1996-11-22T00:00:00.000Z",
+      "description": "DEFT MOT TO RBW OF 121096",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-01-17T00:00:00.000Z",
+      "docketEntryComment": "DISM UNABLE TO SUSTAIN BURDEN OF PROOF",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1997-01-17T00:00:00.000Z",
+      "description": "DISM UNABLE TO SUSTAIN BURDEN OF PROOF",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-12-20T00:00:00.000Z",
+      "docketEntryComment": "BWR, N/C",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1996-12-20T00:00:00.000Z",
+      "description": "BWR, N/C",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-12-10T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA PT, B/S $10,000, 1ST BW",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1996-12-10T00:00:00.000Z",
+      "description": "BWI, FTA PT, B/S $10,000, 1ST BW",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01679520",
-    "portal_case_id": "",
+    "portal_case_id": "2848151",
     "display_case_number": "CRI-01679520",
     "defendant": "LATICIA DAVIS",
     "filed_date": "1996-11-22",
@@ -63,8 +165,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LATICIA DAVIS, and date of filing 1996-11-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LATICIA DAVIS, and date of filing 1996-11-22. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:35:16.266Z",
+  "portal_case_id": "2848151",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01679520",
+      "defendant": "LATICIA DAVIS",
+      "filed_date": "1996-11-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2848151"
+  }
 }

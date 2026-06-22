@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:30:39.559Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:35:51.814Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01682139",
   "criminal_case_number": "01682139",
@@ -24,11 +24,96 @@
       "name": "ALLEN BOYD",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALLEN BOYD",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1996-11-12T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-09-12T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:TRANS FROM DEPT 22 TO DEPT 23//TRANS 23 FW:SENTENCING//AJW//CH1:SP  5 Y:U:ESS:PROB 3 Y:PJ 1 Y/CTS:42 /STATES/PGM11//WS/VF4:$200/11590//DTC/RX/LF/PAY FINE OF $500/PC/PSR/BOOKING FEE///SA2:217 EDDY STREET & 455 EDDY STREET /ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-09-11T09:00:00.000Z",
+      "docketEntryComment": "/TIME IS WAIVED,//SN:970912/0900/S22",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-08-13T09:00:00.000Z",
+      "docketEntryComment": "CONT'D  SENTENCING/PRES:09-11-97/SHER//SN:970911/0900/S22",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-04-16T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-03-18T00:00:00.000Z",
+      "docketEntryComment": "DEPT 10 AS X-ASSIGNED TO SUP CT-ALLEG STRIKEN",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1997-09-12 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 0,
+      "court_date": "1997-09-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1997-09-11 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1997-09-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1997-08-13 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1997-08-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "E LLORENTE",
+      "type": "Public Defender"
+    },
+    {
+      "name": "M LEGGON",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +130,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2850580",
+  "docket_entries": [
+    {
+      "filedDate": "1996-11-12T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1996-11-12T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-09-12T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:TRANS FROM DEPT 22 TO DEPT 23//TRANS 23 FW:SENTENCING//AJW//CH1:SP  5 Y:U:ESS:PROB 3 Y:PJ 1 Y/CTS:42 /STATES/PGM11//WS/VF4:$200/11590//DTC/RX/LF/PAY FINE OF $500/PC/PSR/BOOKING FEE///SA2:217 EDDY STREET & 455 EDDY STREET /ACCEP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1997-09-12T09:00:00.000Z",
+      "description": "/TEXT:TRANS FROM DEPT 22 TO DEPT 23//TRANS 23 FW:SENTENCING//AJW//CH1:SP 5 Y:U:ESS:PROB 3 Y:PJ 1 Y/CTS:42 /STATES/PGM11//WS/VF4:$200/11590//DTC/RX/LF/PAY FINE OF $500/PC/PSR/BOOKING FEE///SA2:217 EDDY STREET & 455 EDDY STREET /ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-09-11T09:00:00.000Z",
+      "docketEntryComment": "/TIME IS WAIVED,//SN:970912/0900/S22",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1997-09-11T09:00:00.000Z",
+      "description": "/TIME IS WAIVED,//SN:970912/0900/S22",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-08-13T09:00:00.000Z",
+      "docketEntryComment": "CONT'D  SENTENCING/PRES:09-11-97/SHER//SN:970911/0900/S22",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1997-08-13T09:00:00.000Z",
+      "description": "CONT'D SENTENCING/PRES:09-11-97/SHER//SN:970911/0900/S22",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-04-16T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1997-04-16T00:00:00.000Z",
+      "description": "FTA,BWI",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-03-18T00:00:00.000Z",
+      "docketEntryComment": "DEPT 10 AS X-ASSIGNED TO SUP CT-ALLEG STRIKEN",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1997-03-18T00:00:00.000Z",
+      "description": "DEPT 10 AS X-ASSIGNED TO SUP CT-ALLEG STRIKEN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01682139",
-    "portal_case_id": "",
+    "portal_case_id": "2850580",
     "display_case_number": "CRI-01682139",
     "defendant": "ALLEN BOYD",
     "filed_date": "1996-11-12",
@@ -63,8 +209,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALLEN BOYD, and date of filing 1996-11-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALLEN BOYD, and date of filing 1996-11-12. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:35:52.437Z",
+  "portal_case_id": "2850580",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01682139",
+      "defendant": "ALLEN BOYD",
+      "filed_date": "1996-11-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2850580"
+  }
 }

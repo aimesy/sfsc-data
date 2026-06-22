@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:40:33.506Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:27:01.691Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01639151",
   "criminal_case_number": "01639151",
@@ -24,11 +24,132 @@
       "name": "WILBURT WRIGHT",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "WILBURT WRIGHT",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1996-04-02T00:00:00.000Z",
+      "docketEntryComment": "TS DA MTR AND/OR DISPO",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-09-25T09:00:00.000Z",
+      "docketEntryComment": "/MTR-DA/DEFT ADV/DEFT STIP/REIN ORIG TC/PROB MOD/CTW :69/PJ:9 MONTHS/ADDL CTS:63/CPD/PGM:V, A,/PGM6:1 YEAR DOMESTIC VIOLENCE COUNSELLING/PROB EXT:06-04-2000/SA1:MICHELE CATAPANO/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-09-22T09:00:00.000Z",
+      "docketEntryComment": "/CONTD:TO SET DA MOTION TO REVOKE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-08-25T09:00:00.000Z",
+      "docketEntryComment": "TN-WILBERT WRIGHT;CONT 9/22/98 9AM D26 TS MTR/DA",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-07-28T14:01:00.000Z",
+      "docketEntryComment": "CONT'D TS PROB REV HRG DA/SUPP:08-25-98/S26/PROB ADM REV/SHER/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-06-05T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ69D/CTS:69//WS/VF4:$200/PC/PSR/BOOKING FEE//ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-05-14T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, DA ORALLY AMD TO ADD CT 4",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-04-02T00:00:00.000Z",
+      "docketEntryComment": "B/S $10,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1998-09-25 9:00 AM",
+      "hearingType": "Probation Revocation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 0,
+      "court_date": "1998-09-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Probation Revocation Hearing",
+      "hearing_type": "Probation Revocation Hearing",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1998-09-22 9:00 AM",
+      "hearingType": "Probation Revocation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 1,
+      "court_date": "1998-09-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Probation Revocation Hearing",
+      "hearing_type": "Probation Revocation Hearing",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1998-08-25 9:00 AM",
+      "hearingType": "Probation Revocation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 2,
+      "court_date": "1998-08-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Probation Revocation Hearing",
+      "hearing_type": "Probation Revocation Hearing",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1998-07-28 2:01 PM",
+      "hearingType": "Probation Revocation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1998-07-28",
+      "hearing_time": "2:01 PM",
+      "matters": "Probation Revocation Hearing",
+      "hearing_type": "Probation Revocation Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1996-06-05 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 4,
+      "court_date": "1996-06-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "P DEMEESTER",
+      "type": "Public Defender"
+    },
+    {
+      "name": "M JOVEL",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +166,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2810582",
+  "docket_entries": [
+    {
+      "filedDate": "1996-04-02T00:00:00.000Z",
+      "docketEntryComment": "TS DA MTR AND/OR DISPO",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1996-04-02T00:00:00.000Z",
+      "description": "TS DA MTR AND/OR DISPO",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-09-25T09:00:00.000Z",
+      "docketEntryComment": "/MTR-DA/DEFT ADV/DEFT STIP/REIN ORIG TC/PROB MOD/CTW :69/PJ:9 MONTHS/ADDL CTS:63/CPD/PGM:V, A,/PGM6:1 YEAR DOMESTIC VIOLENCE COUNSELLING/PROB EXT:06-04-2000/SA1:MICHELE CATAPANO/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1998-09-25T09:00:00.000Z",
+      "description": "/MTR-DA/DEFT ADV/DEFT STIP/REIN ORIG TC/PROB MOD/CTW :69/PJ:9 MONTHS/ADDL CTS:63/CPD/PGM:V, A,/PGM6:1 YEAR DOMESTIC VIOLENCE COUNSELLING/PROB EXT:06-04-2000/SA1:MICHELE CATAPANO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-09-22T09:00:00.000Z",
+      "docketEntryComment": "/CONTD:TO SET DA MOTION TO REVOKE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1998-09-22T09:00:00.000Z",
+      "description": "/CONTD:TO SET DA MOTION TO REVOKE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-08-25T09:00:00.000Z",
+      "docketEntryComment": "TN-WILBERT WRIGHT;CONT 9/22/98 9AM D26 TS MTR/DA",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1998-08-25T09:00:00.000Z",
+      "description": "TN-WILBERT WRIGHT;CONT 9/22/98 9AM D26 TS MTR/DA",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-07-28T14:01:00.000Z",
+      "docketEntryComment": "CONT'D TS PROB REV HRG DA/SUPP:08-25-98/S26/PROB ADM REV/SHER/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1998-07-28T14:01:00.000Z",
+      "description": "CONT'D TS PROB REV HRG DA/SUPP:08-25-98/S26/PROB ADM REV/SHER/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-06-05T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ69D/CTS:69//WS/VF4:$200/PC/PSR/BOOKING FEE//ACCEP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1996-06-05T09:00:00.000Z",
+      "description": "/AJW/CH1:ISS:PROB 3 Y:PJ69D/CTS:69//WS/VF4:$200/PC/PSR/BOOKING FEE//ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-05-14T00:00:00.000Z",
+      "docketEntryComment": "CERTIFIED TO SUP CT, DA ORALLY AMD TO ADD CT 4",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1996-05-14T00:00:00.000Z",
+      "description": "CERTIFIED TO SUP CT, DA ORALLY AMD TO ADD CT 4",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-04-02T00:00:00.000Z",
+      "docketEntryComment": "B/S $10,000",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1996-04-02T00:00:00.000Z",
+      "description": "B/S $10,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01639151",
-    "portal_case_id": "",
+    "portal_case_id": "2810582",
     "display_case_number": "CRI-01639151",
     "defendant": "WILBURT WRIGHT",
     "filed_date": "1996-04-02",
@@ -63,8 +265,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, WILBURT WRIGHT, and date of filing 1996-04-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, WILBURT WRIGHT, and date of filing 1996-04-02. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:27:02.311Z",
+  "portal_case_id": "2810582",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01639151",
+      "defendant": "WILBURT WRIGHT",
+      "filed_date": "1996-04-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2810582"
+  }
 }

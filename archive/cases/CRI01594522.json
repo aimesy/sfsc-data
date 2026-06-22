@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:39:40.724Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:20:26.628Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01594522",
   "criminal_case_number": "01594522",
@@ -24,11 +24,37 @@
       "name": "LISA MARIE ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LISA MARIE ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1995-08-17T00:00:00.000Z",
+      "docketEntryComment": "DRUG DIV PROG RPT (DOP)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-04-09T00:00:00.000Z",
+      "docketEntryComment": "DISM 1000,3PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-12-06T00:00:00.000Z",
+      "docketEntryComment": "DIV GRNTD",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "C DIAMOND",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +71,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2769231",
+  "docket_entries": [
+    {
+      "filedDate": "1995-08-17T00:00:00.000Z",
+      "docketEntryComment": "DRUG DIV PROG RPT (DOP)",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1995-08-17T00:00:00.000Z",
+      "description": "DRUG DIV PROG RPT (DOP)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-04-09T00:00:00.000Z",
+      "docketEntryComment": "DISM 1000,3PC",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1997-04-09T00:00:00.000Z",
+      "description": "DISM 1000,3PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-12-06T00:00:00.000Z",
+      "docketEntryComment": "DIV GRNTD",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1995-12-06T00:00:00.000Z",
+      "description": "DIV GRNTD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01594522",
-    "portal_case_id": "",
+    "portal_case_id": "2769231",
     "display_case_number": "CRI-01594522",
     "defendant": "LISA MARIE ANDERSON",
     "filed_date": "1995-08-17",
@@ -63,8 +120,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LISA MARIE ANDERSON, and date of filing 1995-08-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LISA MARIE ANDERSON, and date of filing 1995-08-17. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:20:27.187Z",
+  "portal_case_id": "2769231",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01594522",
+      "defendant": "LISA MARIE ANDERSON",
+      "filed_date": "1995-08-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2769231"
+  }
 }

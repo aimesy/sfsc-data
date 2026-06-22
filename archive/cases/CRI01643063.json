@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:57:39.787Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:29:29.410Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01643063",
   "criminal_case_number": "01643063",
@@ -24,9 +24,25 @@
       "name": "LONNIE E ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LONNIE E ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1996-05-15T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-05-16T00:00:00.000Z",
+      "docketEntryComment": "DISM NO CITATION",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -45,11 +61,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2814228",
+  "docket_entries": [
+    {
+      "filedDate": "1996-05-15T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1996-05-15T00:00:00.000Z",
+      "description": "COMP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-05-16T00:00:00.000Z",
+      "docketEntryComment": "DISM NO CITATION",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-05-16T00:00:00.000Z",
+      "description": "DISM NO CITATION",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01643063",
-    "portal_case_id": "",
+    "portal_case_id": "2814228",
     "display_case_number": "CRI-01643063",
     "defendant": "LONNIE E ADAMS",
     "filed_date": "1996-05-15",
@@ -63,8 +100,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LONNIE E ADAMS, and date of filing 1996-05-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LONNIE E ADAMS, and date of filing 1996-05-15. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:29:30.035Z",
+  "portal_case_id": "2814228",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01643063",
+      "defendant": "LONNIE E ADAMS",
+      "filed_date": "1996-05-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2814228"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:45:42.213Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:24:08.133Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01622240",
   "criminal_case_number": "01622240",
@@ -24,11 +24,47 @@
       "name": "JAMES FRAZIER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAMES FRAZIER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1996-01-11T00:00:00.000Z",
+      "docketEntryComment": "DISPO (DOP)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-03-18T00:00:00.000Z",
+      "docketEntryComment": "DISM VICTIM UNAVAILABLE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-03-06T00:00:00.000Z",
+      "docketEntryComment": "TIMW WAIVER W/DRAWN, L/D 031896",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-01-29T00:00:00.000Z",
+      "docketEntryComment": "ORCT GRNTD, BAIL EXON (C#252671)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-01-11T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER FILED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "N ROESER",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +81,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2794883",
+  "docket_entries": [
+    {
+      "filedDate": "1996-01-11T00:00:00.000Z",
+      "docketEntryComment": "DISPO (DOP)",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1996-01-11T00:00:00.000Z",
+      "description": "DISPO (DOP)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-03-18T00:00:00.000Z",
+      "docketEntryComment": "DISM VICTIM UNAVAILABLE",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-03-18T00:00:00.000Z",
+      "description": "DISM VICTIM UNAVAILABLE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-03-06T00:00:00.000Z",
+      "docketEntryComment": "TIMW WAIVER W/DRAWN, L/D 031896",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1996-03-06T00:00:00.000Z",
+      "description": "TIMW WAIVER W/DRAWN, L/D 031896",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-01-29T00:00:00.000Z",
+      "docketEntryComment": "ORCT GRNTD, BAIL EXON (C#252671)",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1996-01-29T00:00:00.000Z",
+      "description": "ORCT GRNTD, BAIL EXON (C#252671)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-01-11T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER FILED",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1996-01-11T00:00:00.000Z",
+      "description": "S/A ORDER FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01622240",
-    "portal_case_id": "",
+    "portal_case_id": "2794883",
     "display_case_number": "CRI-01622240",
     "defendant": "JAMES FRAZIER",
     "filed_date": "1996-01-11",
@@ -63,8 +150,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAMES FRAZIER, and date of filing 1996-01-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAMES FRAZIER, and date of filing 1996-01-11. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:24:08.672Z",
+  "portal_case_id": "2794883",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01622240",
+      "defendant": "JAMES FRAZIER",
+      "filed_date": "1996-01-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2794883"
+  }
 }

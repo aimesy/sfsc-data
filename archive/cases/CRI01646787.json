@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:38:10.671Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:28:03.950Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01646787",
   "criminal_case_number": "01646787",
@@ -24,11 +24,47 @@
       "name": "JACK ALVARADO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JACK ALVARADO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2002-06-14T00:00:00.000Z",
+      "docketEntryComment": "1203,4PC GRANTED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-07-26T00:00:00.000Z",
+      "docketEntryComment": "CNSLG UNDER APD SUPR, $100VIF, PROB COSTS, BX C253002 $1500",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-07-24T00:00:00.000Z",
+      "docketEntryComment": "072696 DATE CONFIRMED, AMENDED COMPL FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-06-20T00:00:00.000Z",
+      "docketEntryComment": "1378PC OFF CALENDAR",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-05-06T00:00:00.000Z",
+      "docketEntryComment": "B/S $1,500",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "F BRASS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +81,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2817733",
+  "docket_entries": [
+    {
+      "filedDate": "2002-06-14T00:00:00.000Z",
+      "docketEntryComment": "1203,4PC GRANTED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2002-06-14T00:00:00.000Z",
+      "description": "1203,4PC GRANTED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-07-26T00:00:00.000Z",
+      "docketEntryComment": "CNSLG UNDER APD SUPR, $100VIF, PROB COSTS, BX C253002 $1500",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-07-26T00:00:00.000Z",
+      "description": "CNSLG UNDER APD SUPR, $100VIF, PROB COSTS, BX C253002 $1500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-07-24T00:00:00.000Z",
+      "docketEntryComment": "072696 DATE CONFIRMED, AMENDED COMPL FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1996-07-24T00:00:00.000Z",
+      "description": "072696 DATE CONFIRMED, AMENDED COMPL FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-06-20T00:00:00.000Z",
+      "docketEntryComment": "1378PC OFF CALENDAR",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1996-06-20T00:00:00.000Z",
+      "description": "1378PC OFF CALENDAR",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-05-06T00:00:00.000Z",
+      "docketEntryComment": "B/S $1,500",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1996-05-06T00:00:00.000Z",
+      "description": "B/S $1,500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01646787",
-    "portal_case_id": "",
+    "portal_case_id": "2817733",
     "display_case_number": "CRI-01646787",
     "defendant": "JACK ALVARADO",
     "filed_date": "1996-05-06",
@@ -63,8 +150,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JACK ALVARADO, and date of filing 1996-05-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JACK ALVARADO, and date of filing 1996-05-06. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:28:04.556Z",
+  "portal_case_id": "2817733",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01646787",
+      "defendant": "JACK ALVARADO",
+      "filed_date": "1996-05-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2817733"
+  }
 }

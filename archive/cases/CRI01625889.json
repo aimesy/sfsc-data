@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:35:28.622Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:25:18.194Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01625889",
   "criminal_case_number": "01625889",
@@ -24,11 +24,47 @@
       "name": "KENNETH WAYNE BYRD",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KENNETH WAYNE BYRD",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1996-01-26T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-04-08T00:00:00.000Z",
+      "docketEntryComment": "MOT REV PROB GRANTED AFTER HRG 1YCJ-28DCTS CI,FORTH",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-03-26T00:00:00.000Z",
+      "docketEntryComment": "B/S $50",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-02-07T00:00:00.000Z",
+      "docketEntryComment": "S/A FR WANDA BYRD & CHARLES HOLMES",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-01-26T00:00:00.000Z",
+      "docketEntryComment": "B/S $100,000, S/A ORDER",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "A CRESPO",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +81,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2798279",
+  "docket_entries": [
+    {
+      "filedDate": "1996-01-26T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1996-01-26T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-04-08T00:00:00.000Z",
+      "docketEntryComment": "MOT REV PROB GRANTED AFTER HRG 1YCJ-28DCTS CI,FORTH",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-04-08T00:00:00.000Z",
+      "description": "MOT REV PROB GRANTED AFTER HRG 1YCJ-28DCTS CI,FORTH",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-03-26T00:00:00.000Z",
+      "docketEntryComment": "B/S $50",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1996-03-26T00:00:00.000Z",
+      "description": "B/S $50",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-02-07T00:00:00.000Z",
+      "docketEntryComment": "S/A FR WANDA BYRD & CHARLES HOLMES",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1996-02-07T00:00:00.000Z",
+      "description": "S/A FR WANDA BYRD & CHARLES HOLMES",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-01-26T00:00:00.000Z",
+      "docketEntryComment": "B/S $100,000, S/A ORDER",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1996-01-26T00:00:00.000Z",
+      "description": "B/S $100,000, S/A ORDER",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01625889",
-    "portal_case_id": "",
+    "portal_case_id": "2798279",
     "display_case_number": "CRI-01625889",
     "defendant": "KENNETH WAYNE BYRD",
     "filed_date": "1996-01-26",
@@ -63,8 +150,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KENNETH WAYNE BYRD, and date of filing 1996-01-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KENNETH WAYNE BYRD, and date of filing 1996-01-26. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:25:18.769Z",
+  "portal_case_id": "2798279",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01625889",
+      "defendant": "KENNETH WAYNE BYRD",
+      "filed_date": "1996-01-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2798279"
+  }
 }

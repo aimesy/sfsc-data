@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:27.747Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:25:31.896Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01612320",
   "criminal_case_number": "01612320",
@@ -24,11 +24,42 @@
       "name": "KARIN A BROOKS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KARIN A BROOKS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1995-11-22T00:00:00.000Z",
+      "docketEntryComment": "PLEA,SET,CONFLICT WAIVER",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-03-15T00:00:00.000Z",
+      "docketEntryComment": "DISM PEOPLE UNABLE TO SUSTAIN BURDEN OF PROOF",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-01-19T00:00:00.000Z",
+      "docketEntryComment": "BW PERM STAYED-CONFLICT WAIVER & 977PC FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-01-05T00:00:00.000Z",
+      "docketEntryComment": "$2500 BW STAY TO 011996",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "LAWRENCE WEISS",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +76,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2785654",
+  "docket_entries": [
+    {
+      "filedDate": "1995-11-22T00:00:00.000Z",
+      "docketEntryComment": "PLEA,SET,CONFLICT WAIVER",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1995-11-22T00:00:00.000Z",
+      "description": "PLEA,SET,CONFLICT WAIVER",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-03-15T00:00:00.000Z",
+      "docketEntryComment": "DISM PEOPLE UNABLE TO SUSTAIN BURDEN OF PROOF",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-03-15T00:00:00.000Z",
+      "description": "DISM PEOPLE UNABLE TO SUSTAIN BURDEN OF PROOF",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-01-19T00:00:00.000Z",
+      "docketEntryComment": "BW PERM STAYED-CONFLICT WAIVER & 977PC FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1996-01-19T00:00:00.000Z",
+      "description": "BW PERM STAYED-CONFLICT WAIVER & 977PC FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-01-05T00:00:00.000Z",
+      "docketEntryComment": "$2500 BW STAY TO 011996",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1996-01-05T00:00:00.000Z",
+      "description": "$2500 BW STAY TO 011996",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01612320",
-    "portal_case_id": "",
+    "portal_case_id": "2785654",
     "display_case_number": "CRI-01612320",
     "defendant": "KARIN A BROOKS",
     "filed_date": "1995-11-22",
@@ -63,8 +135,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KARIN A BROOKS, and date of filing 1995-11-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KARIN A BROOKS, and date of filing 1995-11-22. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:25:32.534Z",
+  "portal_case_id": "2785654",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01612320",
+      "defendant": "KARIN A BROOKS",
+      "filed_date": "1995-11-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2785654"
+  }
 }

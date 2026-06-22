@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:16:16.994Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:35:19.948Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01680076",
   "criminal_case_number": "01680076",
@@ -24,11 +24,57 @@
       "name": "VICENT HARRIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "VICENT HARRIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1996-12-04T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-11-21T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-11-01T00:00:00.000Z",
+      "docketEntryComment": "BW DISPO & N/W STATUS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-12-04T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-11-21T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-11-05T00:00:00.000Z",
+      "docketEntryComment": "SPR GRNTD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-11-01T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "P DEMEESTER",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +91,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2848667",
+  "docket_entries": [
+    {
+      "filedDate": "1996-12-04T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1996-12-04T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-11-21T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1996-11-21T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-11-01T00:00:00.000Z",
+      "docketEntryComment": "BW DISPO & N/W STATUS",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1996-11-01T00:00:00.000Z",
+      "description": "BW DISPO & N/W STATUS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-12-04T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1996-12-04T00:00:00.000Z",
+      "description": "BWD, N/C",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-11-21T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1996-11-21T00:00:00.000Z",
+      "description": "FTA,BWI",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-11-05T00:00:00.000Z",
+      "docketEntryComment": "SPR GRNTD",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1996-11-05T00:00:00.000Z",
+      "description": "SPR GRNTD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-11-01T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1996-11-01T00:00:00.000Z",
+      "description": "B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01680076",
-    "portal_case_id": "",
+    "portal_case_id": "2848667",
     "display_case_number": "CRI-01680076",
     "defendant": "VICENT HARRIS",
     "filed_date": "1996-11-01",
@@ -63,8 +180,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, VICENT HARRIS, and date of filing 1996-11-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, VICENT HARRIS, and date of filing 1996-11-01. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:35:20.580Z",
+  "portal_case_id": "2848667",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01680076",
+      "defendant": "VICENT HARRIS",
+      "filed_date": "1996-11-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2848667"
+  }
 }

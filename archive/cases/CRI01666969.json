@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:25:02.443Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:31:13.188Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01666969",
   "criminal_case_number": "01666969",
@@ -24,11 +24,42 @@
       "name": "CHRISTINA ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHRISTINA ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1996-09-23T00:00:00.000Z",
+      "docketEntryComment": "PTD ELIG RPT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-06-02T00:00:00.000Z",
+      "docketEntryComment": "DISM DIVN COMPLTD 1001,9PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-10-28T00:00:00.000Z",
+      "docketEntryComment": "DIV GRNTD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1996-10-07T00:00:00.000Z",
+      "docketEntryComment": "NG PLEAS W/DRAWN",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "D MILLER",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +76,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2836529",
+  "docket_entries": [
+    {
+      "filedDate": "1996-09-23T00:00:00.000Z",
+      "docketEntryComment": "PTD ELIG RPT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1996-09-23T00:00:00.000Z",
+      "description": "PTD ELIG RPT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-06-02T00:00:00.000Z",
+      "docketEntryComment": "DISM DIVN COMPLTD 1001,9PC",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1997-06-02T00:00:00.000Z",
+      "description": "DISM DIVN COMPLTD 1001,9PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-10-28T00:00:00.000Z",
+      "docketEntryComment": "DIV GRNTD",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1996-10-28T00:00:00.000Z",
+      "description": "DIV GRNTD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1996-10-07T00:00:00.000Z",
+      "docketEntryComment": "NG PLEAS W/DRAWN",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1996-10-07T00:00:00.000Z",
+      "description": "NG PLEAS W/DRAWN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01666969",
-    "portal_case_id": "",
+    "portal_case_id": "2836529",
     "display_case_number": "CRI-01666969",
     "defendant": "CHRISTINA ALLEN",
     "filed_date": "1996-09-23",
@@ -63,8 +135,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHRISTINA ALLEN, and date of filing 1996-09-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHRISTINA ALLEN, and date of filing 1996-09-23. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:31:13.843Z",
+  "portal_case_id": "2836529",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01666969",
+      "defendant": "CHRISTINA ALLEN",
+      "filed_date": "1996-09-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2836529"
+  }
 }

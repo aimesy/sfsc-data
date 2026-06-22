@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:40:33.506Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:22:54.154Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01614005",
   "criminal_case_number": "01614005",
@@ -24,11 +24,42 @@
       "name": "JONAH E ANDREWS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JONAH E ANDREWS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1995-11-28T00:00:00.000Z",
+      "docketEntryComment": "TO BE SET",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-12-14T00:00:00.000Z",
+      "docketEntryComment": "DISM PURS 1385PC I/V OF PLEA ON CT1; COMP AMED CT2 TO MISD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-12-14T00:00:00.000Z",
+      "docketEntryComment": "1035 SEARCH; PAY RESTITUTION AS DETERMINED $40/M PROB COSTS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1995-11-28T00:00:00.000Z",
+      "docketEntryComment": "BAIL SET $5000;",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "D KESSLER",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +76,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2787226",
+  "docket_entries": [
+    {
+      "filedDate": "1995-11-28T00:00:00.000Z",
+      "docketEntryComment": "TO BE SET",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1995-11-28T00:00:00.000Z",
+      "description": "TO BE SET",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-12-14T00:00:00.000Z",
+      "docketEntryComment": "DISM PURS 1385PC I/V OF PLEA ON CT1; COMP AMED CT2 TO MISD",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1995-12-14T00:00:00.000Z",
+      "description": "DISM PURS 1385PC I/V OF PLEA ON CT1; COMP AMED CT2 TO MISD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-12-14T00:00:00.000Z",
+      "docketEntryComment": "1035 SEARCH; PAY RESTITUTION AS DETERMINED $40/M PROB COSTS",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1995-12-14T00:00:00.000Z",
+      "description": "1035 SEARCH; PAY RESTITUTION AS DETERMINED $40/M PROB COSTS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1995-11-28T00:00:00.000Z",
+      "docketEntryComment": "BAIL SET $5000;",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1995-11-28T00:00:00.000Z",
+      "description": "BAIL SET $5000;",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01614005",
-    "portal_case_id": "",
+    "portal_case_id": "2787226",
     "display_case_number": "CRI-01614005",
     "defendant": "JONAH E ANDREWS",
     "filed_date": "1995-11-28",
@@ -63,8 +135,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JONAH E ANDREWS, and date of filing 1995-11-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JONAH E ANDREWS, and date of filing 1995-11-28. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:22:54.741Z",
+  "portal_case_id": "2787226",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01614005",
+      "defendant": "JONAH E ANDREWS",
+      "filed_date": "1995-11-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2787226"
+  }
 }
