@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:30:29.398Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:15:42.698Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02400100",
   "criminal_case_number": "02400100",
@@ -24,11 +24,87 @@
       "name": "FRANCILL BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "FRANCILL BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-03-19T15:00:00.000Z",
+      "docketEntryComment": "OPP TO MTS PURS PC 1538,5 FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-03-16T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S 1538,5PC MOTION TO SUPPRESS EVIDENCE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-12-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/ORPJ/CTORD:DEFENDANT TO CONTACT ORPJ TWO TIMES A WEEK/SAORD/SA2:INTERSECTION OF LARKIN AND O'FARRELL STREETS IN SF/SAORD3/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING /DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MO PC 1385:UNABLE TO SUBSTAIN BURDEN OF PROOF /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-03-23T09:00:00.000Z",
+      "docketEntryComment": "/X:OFFICERS ORDERED BACK AT 10:30AM,/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING AND 1538,5PC MOTION/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-04-02 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 0,
+      "court_date": "2009-04-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-03-23 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 1,
+      "court_date": "2009-03-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2008-12-31 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2008-12-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MEL SANTOS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +121,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3508007",
+  "docket_entries": [
+    {
+      "filedDate": "2009-03-19T15:00:00.000Z",
+      "docketEntryComment": "OPP TO MTS PURS PC 1538,5 FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-03-19T15:00:00.000Z",
+      "description": "OPP TO MTS PURS PC 1538,5 FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-03-16T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S 1538,5PC MOTION TO SUPPRESS EVIDENCE FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-03-16T15:00:00.000Z",
+      "description": "DEFT'S 1538,5PC MOTION TO SUPPRESS EVIDENCE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-12-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/ORPJ/CTORD:DEFENDANT TO CONTACT ORPJ TWO TIMES A WEEK/SAORD/SA2:INTERSECTION OF LARKIN AND O'FARRELL STREETS IN SF/SAORD3/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING /DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2008-12-31T09:00:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/987,2/ORPJ/CTORD:DEFENDANT TO CONTACT ORPJ TWO TIMES A WEEK/SAORD/SA2:INTERSECTION OF LARKIN AND O'FARRELL STREETS IN SF/SAORD3/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING /DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG/MO PC 1385:UNABLE TO SUBSTAIN BURDEN OF PROOF /",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-04-02T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG/MO PC 1385:UNABLE TO SUBSTAIN BURDEN OF PROOF /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-03-23T09:00:00.000Z",
+      "docketEntryComment": "/X:OFFICERS ORDERED BACK AT 10:30AM,/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING AND 1538,5PC MOTION/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2009-03-23T09:00:00.000Z",
+      "description": "/X:OFFICERS ORDERED BACK AT 10:30AM,/CONTD PRELIM HRG, DOP/CONTD:FOR PRELIMINARY HEARING AND 1538,5PC MOTION/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02400100",
-    "portal_case_id": "",
+    "portal_case_id": "3508007",
     "display_case_number": "CRI-02400100",
     "defendant": "FRANCILL BROWN",
     "filed_date": "2008-12-31",
@@ -59,12 +186,44 @@
       "defendant": "FRANCILL BROWN",
       "filed_date": "2008-12-31"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, FRANCILL BROWN, and date of filing 2008-12-31. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, FRANCILL BROWN, and date of filing 2008-12-31. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:15:43.268Z",
+  "portal_case_id": "3508007",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02400100",
+      "defendant": "FRANCILL BROWN",
+      "filed_date": "2008-12-31"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3508007"
+  }
 }

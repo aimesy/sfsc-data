@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:38.630Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:16:55.618Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02405337",
   "criminal_case_number": "02405337",
@@ -24,10 +24,40 @@
       "name": "RONALD M ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RONALD M ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2009-02-04T11:48:00.000Z",
+      "docketEntryComment": "PD'S PC 17(B) MOTION FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-03-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL D PC 17B MOTION/MO PC 17B/MO GRTD/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-03-04 9:00 AM",
+      "hearingType": "Motion to Set Aside Guilty/Nolo Pleas or Verdict and Dismiss Pursuant to PC 1203.4(a)(1)",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2009-03-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Set Aside Guilty/Nolo Pleas or Verdict and Dismiss Pursuant to PC 1203.4(a)(1)",
+      "hearing_type": "Motion to Set Aside Guilty/Nolo Pleas or Verdict and Dismiss Pursuant to PC 1203.4(a)(1)",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +75,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3512819",
+  "docket_entries": [
+    {
+      "filedDate": "2009-02-04T11:48:00.000Z",
+      "docketEntryComment": "PD'S PC 17(B) MOTION FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-02-04T11:48:00.000Z",
+      "description": "PD'S PC 17(B) MOTION FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-03-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL D PC 17B MOTION/MO PC 17B/MO GRTD/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-03-04T09:00:00.000Z",
+      "description": "/CAL D PC 17B MOTION/MO PC 17B/MO GRTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02405337",
-    "portal_case_id": "",
+    "portal_case_id": "3512819",
     "display_case_number": "CRI-02405337",
     "defendant": "RONALD M ANDERSON",
     "filed_date": "2009-03-04",
@@ -59,12 +110,44 @@
       "defendant": "RONALD M ANDERSON",
       "filed_date": "2009-03-04"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 17(B)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC 17B",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RONALD M ANDERSON, and date of filing 2009-03-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RONALD M ANDERSON, and date of filing 2009-03-04. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:16:56.213Z",
+  "portal_case_id": "3512819",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02405337",
+      "defendant": "RONALD M ANDERSON",
+      "filed_date": "2009-03-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3512819"
+  }
 }

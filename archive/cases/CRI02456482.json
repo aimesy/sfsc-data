@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:41:38.180Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:21:42.521Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02456482",
   "criminal_case_number": "02456482",
@@ -24,11 +24,113 @@
       "name": "KAREN LICET ALVARADO, A",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KAREN LICET ALVARADO, A",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-04-06T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385 DISMISS COUNT 4 ONLY - DEFENDANT HAS A DRIVER'S LICENSE/X DEFNDANT REFERRED TO PRETRIAL DIVERIONS WITH GOOD CAUSE PER STIPULATION/X:REFERRED TO PRETRIAL DIV -TO DO 10 HOURS OF COMMUNITY SERVICE TO BE COMPLETEDBY 05-06-11 AND RESTITUTION,/X:NG PLEA WITHDRAWN ON COUNTS 1,2,3/CONTD PTDELIG RPT/X:COUNT(S) 1,2,3 CHARGING 20002(A)VC,MISD ARE REFERRED TO PRETRIALDIVERSION FOR AN ELIGIBILITY REPORT,/PTDIV:04-18-11/CONTD:PTD ELIGIBILITY REPORT & 10 HOURS OF COMMUNITY SERVICE & RESTITUTION/DOPU:PTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2010-12-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/X:COUNSEL RESERVES THE RIGHT TO DEMUR,/CONTD:1ST PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-05-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD PROG RPT/DAWT/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 ASTO COUNT 1, 2, AND 3/1001,7:1, 2, AND 3/X:CASE ALSO DISM PURS PC 1001,9/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-04-18T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PTD ELIG RPT/CONTD PTD PROG RPT/PTD:1, 2, 3/PROGPTD:05-16-11/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/DOPU:PTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-02-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:1ST PRETRIAL/DOP/CONTD:2ND PRETRIAL/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-05-16 9:00 AM",
+      "hearingType": "Pretrial Diversion Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2011-05-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Progress Report",
+      "hearing_type": "Pretrial Diversion Progress Report",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-04-18 1:30 PM",
+      "hearingType": "Pretrial Diversion Eligibility Report",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2011-04-18",
+      "hearing_time": "1:30 PM",
+      "matters": "Pretrial Diversion Eligibility Report",
+      "hearing_type": "Pretrial Diversion Eligibility Report",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-04-06 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2011-04-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-02-24 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 3,
+      "court_date": "2011-02-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2010-12-13 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 4,
+      "court_date": "2010-12-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JAMES CONGER",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +147,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3559671",
+  "docket_entries": [
+    {
+      "filedDate": "2011-04-06T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385 DISMISS COUNT 4 ONLY - DEFENDANT HAS A DRIVER'S LICENSE/X DEFNDANT REFERRED TO PRETRIAL DIVERIONS WITH GOOD CAUSE PER STIPULATION/X:REFERRED TO PRETRIAL DIV -TO DO 10 HOURS OF COMMUNITY SERVICE TO BE COMPLETEDBY 05-06-11 AND RESTITUTION,/X:NG PLEA WITHDRAWN ON COUNTS 1,2,3/CONTD PTDELIG RPT/X:COUNT(S) 1,2,3 CHARGING 20002(A)VC,MISD ARE REFERRED TO PRETRIALDIVERSION FOR AN ELIGIBILITY REPORT,/PTDIV:04-18-11/CONTD:PTD ELIGIBILITY REPORT & 10 HOURS OF COMMUNITY SERVICE & RESTITUTION/DOPU:PTD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-04-06T09:00:00.000Z",
+      "description": "/MO PC 1385 DISMISS COUNT 4 ONLY - DEFENDANT HAS A DRIVER'S LICENSE/X DEFNDANT REFERRED TO PRETRIAL DIVERIONS WITH GOOD CAUSE PER STIPULATION/X:REFERRED TO PRETRIAL DIV -TO DO 10 HOURS OF COMMUNITY SERVICE TO BE COMPLETEDBY 05-06-11 AND RESTITUTION,/X:NG PLEA WITHDRAWN ON COUNTS 1,2,3/CONTD PTDELIG RPT/X:COUNT(S) 1,2,3 CHARGING 20002(A)VC,MISD ARE REFERRED TO PRETRIALDIVERSION FOR AN ELIGIBILITY REPORT,/PTDIV:04-18-11/CONTD:PTD ELIGIBILITY REPORT & 10 HOURS OF COMMUNITY SERVICE & RESTITUTION/DOPU:PTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2010-12-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/X:COUNSEL RESERVES THE RIGHT TO DEMUR,/CONTD:1ST PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2010-12-13T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/X:COUNSEL RESERVES THE RIGHT TO DEMUR,/CONTD:1ST PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-05-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD PROG RPT/DAWT/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 ASTO COUNT 1, 2, AND 3/1001,7:1, 2, AND 3/X:CASE ALSO DISM PURS PC 1001,9/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-05-16T09:00:00.000Z",
+      "description": "/CAL:PTD PROG RPT/DAWT/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 ASTO COUNT 1, 2, AND 3/1001,7:1, 2, AND 3/X:CASE ALSO DISM PURS PC 1001,9/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-04-18T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PTD ELIG RPT/CONTD PTD PROG RPT/PTD:1, 2, 3/PROGPTD:05-16-11/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/DOPU:PTD/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-04-18T13:30:00.000Z",
+      "description": "/CAL:PTD ELIG RPT/CONTD PTD PROG RPT/PTD:1, 2, 3/PROGPTD:05-16-11/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/DOPU:PTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-02-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:1ST PRETRIAL/DOP/CONTD:2ND PRETRIAL/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-02-24T09:00:00.000Z",
+      "description": "/CAL:1ST PRETRIAL/DOP/CONTD:2ND PRETRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02456482",
-    "portal_case_id": "",
+    "portal_case_id": "3559671",
     "display_case_number": "CRI-02456482",
     "defendant": "KAREN LICET ALVARADO, A",
     "filed_date": "2010-12-13",
@@ -59,12 +212,44 @@
       "defendant": "KAREN LICET ALVARADO, A",
       "filed_date": "2010-12-13"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KAREN LICET ALVARADO, A, and date of filing 2010-12-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KAREN LICET ALVARADO, A, and date of filing 2010-12-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:21:43.120Z",
+  "portal_case_id": "3559671",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02456482",
+      "defendant": "KAREN LICET ALVARADO, A",
+      "filed_date": "2010-12-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3559671"
+  }
 }

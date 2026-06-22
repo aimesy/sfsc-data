@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:23:22.082Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:17:20.471Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02412679",
   "criminal_case_number": "02412679",
@@ -24,11 +24,59 @@
       "name": "CHERYLE ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHERYLE ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-04-15T09:00:00.000Z",
+      "docketEntryComment": "/DA 170,6JUD:MEEKS/MO GRTD/AMEND:1/TEXT:CRT ORDS DRUG DIV TERM AS SUCCESSFUL/X:THE DEFENDANT HAS SUCCESSFULLY COMPLETED ALL TERMS AND CONDITIONS OFTHE DRUG DIVERSION PROGRAM,  THE COURT ORDERS THE CASE DISMISSED PURSUANTTO PENAL CODE SECTION 1000,3,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-02T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:04-16-09/987,2/OR/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-04-15 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2009-04-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-04-02 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2009-04-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ALEX LILIEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3519655",
+  "docket_entries": [
+    {
+      "filedDate": "2009-04-15T09:00:00.000Z",
+      "docketEntryComment": "/DA 170,6JUD:MEEKS/MO GRTD/AMEND:1/TEXT:CRT ORDS DRUG DIV TERM AS SUCCESSFUL/X:THE DEFENDANT HAS SUCCESSFULLY COMPLETED ALL TERMS AND CONDITIONS OFTHE DRUG DIVERSION PROGRAM,  THE COURT ORDERS THE CASE DISMISSED PURSUANTTO PENAL CODE SECTION 1000,3,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-04-15T09:00:00.000Z",
+      "description": "/DA 170,6JUD:MEEKS/MO GRTD/AMEND:1/TEXT:CRT ORDS DRUG DIV TERM AS SUCCESSFUL/X:THE DEFENDANT HAS SUCCESSFULLY COMPLETED ALL TERMS AND CONDITIONS OFTHE DRUG DIVERSION PROGRAM, THE COURT ORDERS THE CASE DISMISSED PURSUANTTO PENAL CODE SECTION 1000,3,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-02T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:04-16-09/987,2/OR/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-04-02T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:04-16-09/987,2/OR/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02412679",
-    "portal_case_id": "",
+    "portal_case_id": "3519655",
     "display_case_number": "CRI-02412679",
     "defendant": "CHERYLE ANDERSON",
     "filed_date": "2009-04-02",
@@ -59,12 +128,36 @@
       "defendant": "CHERYLE ANDERSON",
       "filed_date": "2009-04-02"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1000",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHERYLE ANDERSON, and date of filing 2009-04-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHERYLE ANDERSON, and date of filing 2009-04-02. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:17:21.048Z",
+  "portal_case_id": "3519655",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02412679",
+      "defendant": "CHERYLE ANDERSON",
+      "filed_date": "2009-04-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3519655"
+  }
 }

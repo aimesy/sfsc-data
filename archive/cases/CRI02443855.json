@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:36:00.091Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:20:57.845Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02443855",
   "criminal_case_number": "02443855",
@@ -24,11 +24,69 @@
       "name": "MARK CAMACHO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARK CAMACHO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-11-19T15:00:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPPOS TO DEFT'S MOT TO SUPP EVID FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-11-13T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S MOT TO SUPP EVID PER PC1538,5 FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-11-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:JENNY ESPINOSA CERTIFIED LEGAL INTERN APPEARED SPECIALLY UNDER THE SUPERVISION OF PHOENIX STREETS PUBLIC DEFENDER/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:11-25-09/987,2/BAIL:35,000/X:DEFENSE REQUEST FOR DEFENDANTS RELEASE ON OWN RECOGNIZANCE DENIED/CONTD:PRELIMINARY HEARING/DOP/SAORD/SA2:EDDY ST & TAYLOR ST/SAORD3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-11-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:INABILITY TO SUSTAIN BURDEN OF PROOF AT TRIAL/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-11-24 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2009-11-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-11-09 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2009-11-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PHOENIX STREETS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +103,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3548585",
+  "docket_entries": [
+    {
+      "filedDate": "2009-11-19T15:00:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPPOS TO DEFT'S MOT TO SUPP EVID FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-11-19T15:00:00.000Z",
+      "description": "PEOPLE'S OPPOS TO DEFT'S MOT TO SUPP EVID FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-11-13T15:00:00.000Z",
+      "docketEntryComment": "DEFT'S MOT TO SUPP EVID PER PC1538,5 FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-11-13T15:00:00.000Z",
+      "description": "DEFT'S MOT TO SUPP EVID PER PC1538,5 FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-11-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:JENNY ESPINOSA CERTIFIED LEGAL INTERN APPEARED SPECIALLY UNDER THE SUPERVISION OF PHOENIX STREETS PUBLIC DEFENDER/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:11-25-09/987,2/BAIL:35,000/X:DEFENSE REQUEST FOR DEFENDANTS RELEASE ON OWN RECOGNIZANCE DENIED/CONTD:PRELIMINARY HEARING/DOP/SAORD/SA2:EDDY ST & TAYLOR ST/SAORD3/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-11-09T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:JENNY ESPINOSA CERTIFIED LEGAL INTERN APPEARED SPECIALLY UNDER THE SUPERVISION OF PHOENIX STREETS PUBLIC DEFENDER/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LD:11-25-09/987,2/BAIL:35,000/X:DEFENSE REQUEST FOR DEFENDANTS RELEASE ON OWN RECOGNIZANCE DENIED/CONTD:PRELIMINARY HEARING/DOP/SAORD/SA2:EDDY ST & TAYLOR ST/SAORD3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-11-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:INABILITY TO SUSTAIN BURDEN OF PROOF AT TRIAL/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-11-24T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO PC 1385:INABILITY TO SUSTAIN BURDEN OF PROOF AT TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02443855",
-    "portal_case_id": "",
+    "portal_case_id": "3548585",
     "display_case_number": "CRI-02443855",
     "defendant": "MARK CAMACHO",
     "filed_date": "2009-11-09",
@@ -59,12 +158,44 @@
       "defendant": "MARK CAMACHO",
       "filed_date": "2009-11-09"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARK CAMACHO, and date of filing 2009-11-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARK CAMACHO, and date of filing 2009-11-09. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:20:58.460Z",
+  "portal_case_id": "3548585",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02443855",
+      "defendant": "MARK CAMACHO",
+      "filed_date": "2009-11-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3548585"
+  }
 }

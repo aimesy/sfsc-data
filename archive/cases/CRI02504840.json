@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:00:12.466Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:27:47.207Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02504840",
   "criminal_case_number": "02504840",
@@ -24,11 +24,105 @@
       "name": "LAPORCHE DAVIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LAPORCHE DAVIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-10-03T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-08-31T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-10-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL TRAILING FELONY CASE #17009543/X  PURSUANT TO HARVEY WAIVER ENTERED,ANY RESTITUTION, STAY AWAY ORDERS, AND ALL TERMS AND CONDITIONS OF PROBATION SHALL BE TRANSFERRED INTO PROBATIONON CASE #17009543/VD:TRIAL DATE OF 10-20-17 IN DEPT 17/MO138572:17009543/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-10-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDTR:11-02-17/987,2/TEXT:TRANS TO DEPT 9/TRANS 9:FORTHWITH TO JOIN 17009543 FOR GLOBAL DISPOSITION/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-10-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPO/SHER2:10-01-17/LDTR:11-02-17/CONTD:TRAILING 17009543/DOP/CONTD:TRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-08-31T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-10-12 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2017-10-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-10-04 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2017-10-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-10-03 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2017-10-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-08-31 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 3,
+      "court_date": "2017-08-31",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JAIME LONGORIA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +139,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3603069",
+  "docket_entries": [
+    {
+      "filedDate": "2017-10-03T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-10-03T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-08-31T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-08-31T14:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-10-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL TRAILING FELONY CASE #17009543/X  PURSUANT TO HARVEY WAIVER ENTERED,ANY RESTITUTION, STAY AWAY ORDERS, AND ALL TERMS AND CONDITIONS OF PROBATION SHALL BE TRANSFERRED INTO PROBATIONON CASE #17009543/VD:TRIAL DATE OF 10-20-17 IN DEPT 17/MO138572:17009543/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-10-12T09:00:00.000Z",
+      "description": "/CAL TRAILING FELONY CASE #17009543/X PURSUANT TO HARVEY WAIVER ENTERED,ANY RESTITUTION, STAY AWAY ORDERS, AND ALL TERMS AND CONDITIONS OF PROBATION SHALL BE TRANSFERRED INTO PROBATIONON CASE #17009543/VD:TRIAL DATE OF 10-20-17 IN DEPT 17/MO138572:17009543/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-10-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDTR:11-02-17/987,2/TEXT:TRANS TO DEPT 9/TRANS 9:FORTHWITH TO JOIN 17009543 FOR GLOBAL DISPOSITION/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-10-03T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDTR:11-02-17/987,2/TEXT:TRANS TO DEPT 9/TRANS 9:FORTHWITH TO JOIN 17009543 FOR GLOBAL DISPOSITION/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-10-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET OR DISPO/SHER2:10-01-17/LDTR:11-02-17/CONTD:TRAILING 17009543/DOP/CONTD:TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2017-10-04T09:00:00.000Z",
+      "description": "/CAL:TO SET OR DISPO/SHER2:10-01-17/LDTR:11-02-17/CONTD:TRAILING 17009543/DOP/CONTD:TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-08-31T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2017-08-31T14:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02504840",
-    "portal_case_id": "",
+    "portal_case_id": "3603069",
     "display_case_number": "CRI-02504840",
     "defendant": "LAPORCHE DAVIS",
     "filed_date": "2017-08-31",
@@ -63,8 +218,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LAPORCHE DAVIS, and date of filing 2017-08-31. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LAPORCHE DAVIS, and date of filing 2017-08-31. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:27:47.765Z",
+  "portal_case_id": "3603069",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02504840",
+      "defendant": "LAPORCHE DAVIS",
+      "filed_date": "2017-08-31"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3603069"
+  }
 }

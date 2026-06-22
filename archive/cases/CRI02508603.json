@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:58:43.797Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:28:34.014Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02508603",
   "criminal_case_number": "02508603",
@@ -24,10 +24,35 @@
       "name": "DONEISMA BRUCE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DONEISMA BRUCE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2018-04-16T09:00:00.000Z",
+      "docketEntryComment": "/DEF:WAS CITED TO APPEAR FOR WEDNESDAY APRIL 16 2018,/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-04-16 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2018-04-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +70,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3606521",
+  "docket_entries": [
+    {
+      "filedDate": "2018-04-16T09:00:00.000Z",
+      "docketEntryComment": "/DEF:WAS CITED TO APPEAR FOR WEDNESDAY APRIL 16 2018,/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-04-16T09:00:00.000Z",
+      "description": "/DEF:WAS CITED TO APPEAR FOR WEDNESDAY APRIL 16 2018,/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02508603",
-    "portal_case_id": "",
+    "portal_case_id": "3606521",
     "display_case_number": "CRI-02508603",
     "defendant": "DONEISMA BRUCE",
     "filed_date": "2018-04-11",
@@ -63,8 +99,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DONEISMA BRUCE, and date of filing 2018-04-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DONEISMA BRUCE, and date of filing 2018-04-11. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:28:34.634Z",
+  "portal_case_id": "3606521",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02508603",
+      "defendant": "DONEISMA BRUCE",
+      "filed_date": "2018-04-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3606521"
+  }
 }

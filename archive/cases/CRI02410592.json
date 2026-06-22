@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:38:41.496Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:17:26.180Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02410592",
   "criminal_case_number": "02410592",
@@ -24,11 +24,97 @@
       "name": "PAUL DOMINGO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "PAUL DOMINGO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2009-04-16T15:00:00.000Z",
+      "docketEntryComment": "REAL PARTY IN INTEREST OPO TO DEF PITCHESS MOTION FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-10T13:44:00.000Z",
+      "docketEntryComment": "PD'S MOT TO DISMISS (DENIAL OF DUE PROCESS) FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-03-25T15:00:00.000Z",
+      "docketEntryComment": "1043EC NOT AND MOT; PROT ORD SEAL POLICE DEPT RESPONSE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-03-20T15:00:00.000Z",
+      "docketEntryComment": "DEFT 1538,5PC MOT TO SUPPRESS EVIDENCE  - FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE AND DEFENSE MOTION TO DISMISS/X:THE COURT FINDS THAT THERE HAS BEEN A DENIAL OF THE DEFENDANT'S DUE PROCESS RIGHTS UNDER THE6TH AMENDMENT AND THAT THE DEFENDANT HAS SUFFERED PREJUDICE DUE TO THE DELAY IN THIS CASE AND DISMISSES THE CASE IN ITS ENTIRETY FOR THAT REASON/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-20T10:30:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:NO SHOW BY DEFENSE    /",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-03-18T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/DOP/GTWM/CONTD:PRETRIAL CONFERENCE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2009-04-23 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2009-04-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-04-20 10:30 AM",
+      "hearingType": "EC 1043 Pitchess Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 1,
+      "court_date": "2009-04-20",
+      "hearing_time": "10:30 AM",
+      "matters": "EC 1043 Pitchess Hearing",
+      "hearing_type": "EC 1043 Pitchess Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2009-03-18 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 2,
+      "court_date": "2009-03-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "LATEEF GRAY",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +131,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3517749",
+  "docket_entries": [
+    {
+      "filedDate": "2009-04-16T15:00:00.000Z",
+      "docketEntryComment": "REAL PARTY IN INTEREST OPO TO DEF PITCHESS MOTION FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-04-16T15:00:00.000Z",
+      "description": "REAL PARTY IN INTEREST OPO TO DEF PITCHESS MOTION FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-10T13:44:00.000Z",
+      "docketEntryComment": "PD'S MOT TO DISMISS (DENIAL OF DUE PROCESS) FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-04-10T13:44:00.000Z",
+      "description": "PD'S MOT TO DISMISS (DENIAL OF DUE PROCESS) FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-03-25T15:00:00.000Z",
+      "docketEntryComment": "1043EC NOT AND MOT; PROT ORD SEAL POLICE DEPT RESPONSE FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-03-25T15:00:00.000Z",
+      "description": "1043EC NOT AND MOT; PROT ORD SEAL POLICE DEPT RESPONSE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-03-20T15:00:00.000Z",
+      "docketEntryComment": "DEFT 1538,5PC MOT TO SUPPRESS EVIDENCE  - FILED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2009-03-20T15:00:00.000Z",
+      "description": "DEFT 1538,5PC MOT TO SUPPRESS EVIDENCE - FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE AND DEFENSE MOTION TO DISMISS/X:THE COURT FINDS THAT THERE HAS BEEN A DENIAL OF THE DEFENDANT'S DUE PROCESS RIGHTS UNDER THE6TH AMENDMENT AND THAT THE DEFENDANT HAS SUFFERED PREJUDICE DUE TO THE DELAY IN THIS CASE AND DISMISSES THE CASE IN ITS ENTIRETY FOR THAT REASON/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2009-04-23T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE AND DEFENSE MOTION TO DISMISS/X:THE COURT FINDS THAT THERE HAS BEEN A DENIAL OF THE DEFENDANT'S DUE PROCESS RIGHTS UNDER THE6TH AMENDMENT AND THAT THE DEFENDANT HAS SUFFERED PREJUDICE DUE TO THE DELAY IN THIS CASE AND DISMISSES THE CASE IN ITS ENTIRETY FOR THAT REASON/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-20T10:30:00.000Z",
+      "docketEntryComment": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:NO SHOW BY DEFENSE    /",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2009-04-20T10:30:00.000Z",
+      "description": "/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:NO SHOW BY DEFENSE /",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-03-18T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/DOP/GTWM/CONTD:PRETRIAL CONFERENCE/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2009-03-18T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/DOP/GTWM/CONTD:PRETRIAL CONFERENCE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02410592",
-    "portal_case_id": "",
+    "portal_case_id": "3517749",
     "display_case_number": "CRI-02410592",
     "defendant": "PAUL DOMINGO",
     "filed_date": "2009-03-18",
@@ -63,8 +220,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, PAUL DOMINGO, and date of filing 2009-03-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, PAUL DOMINGO, and date of filing 2009-03-18. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:17:26.880Z",
+  "portal_case_id": "3517749",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02410592",
+      "defendant": "PAUL DOMINGO",
+      "filed_date": "2009-03-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3517749"
+  }
 }

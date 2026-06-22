@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:09:20.546Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:23:15.917Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02472983",
   "criminal_case_number": "02472983",
@@ -24,10 +24,50 @@
       "name": "JAHFANIE L ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAHFANIE L ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2018-07-31T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-04-22T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-31T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 07/31/18, CASE DISMISSED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-04-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:15,000/BWNUM:1ST/CTORD:NO CITE/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2013-04-22 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2013-04-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +85,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3574060",
+  "docket_entries": [
+    {
+      "filedDate": "2018-07-31T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-07-31T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-04-22T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2013-04-22T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-31T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 07/31/18, CASE DISMISSED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-07-31T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 07/31/18, CASE DISMISSED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-04-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:15,000/BWNUM:1ST/CTORD:NO CITE/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-04-22T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:15,000/BWNUM:1ST/CTORD:NO CITE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02472983",
-    "portal_case_id": "",
+    "portal_case_id": "3574060",
     "display_case_number": "CRI-02472983",
     "defendant": "JAHFANIE L ALLEN",
     "filed_date": "2013-04-17",
@@ -63,8 +144,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAHFANIE L ALLEN, and date of filing 2013-04-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAHFANIE L ALLEN, and date of filing 2013-04-17. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:23:16.539Z",
+  "portal_case_id": "3574060",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02472983",
+      "defendant": "JAHFANIE L ALLEN",
+      "filed_date": "2013-04-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3574060"
+  }
 }

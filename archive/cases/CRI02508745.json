@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:42:13.781Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:28:33.896Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02508745",
   "criminal_case_number": "02508745",
@@ -24,10 +24,81 @@
       "name": "BRYAN PHILLIP BREEDEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BRYAN PHILLIP BREEDEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2018-10-23T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-04-24T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-10-23T09:00:00.000Z",
+      "docketEntryComment": "/JAVS/CAL:BENCH WARRANT RETURN/BWDNC/X:COURT GRANTS DEFENSE COUNSEL'S MOTION TO DISMISS THIS CASE PURSUANT TO PC 1385- NO COMPLAINT OR DISCOVERY PROVIDED TO DEFENSE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-10-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/FTA/BWDIRIC1: 04-24-18/BWI/BAIL:5,000/BWNUM:2ND/BWRET:17/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-04-24T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-10-23 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2018-10-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-10-19 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2018-10-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-04-24 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 2,
+      "court_date": "2018-04-24",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +116,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3606655",
+  "docket_entries": [
+    {
+      "filedDate": "2018-10-23T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-10-23T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-04-24T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-04-24T14:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-10-23T09:00:00.000Z",
+      "docketEntryComment": "/JAVS/CAL:BENCH WARRANT RETURN/BWDNC/X:COURT GRANTS DEFENSE COUNSEL'S MOTION TO DISMISS THIS CASE PURSUANT TO PC 1385- NO COMPLAINT OR DISCOVERY PROVIDED TO DEFENSE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-10-23T09:00:00.000Z",
+      "description": "/JAVS/CAL:BENCH WARRANT RETURN/BWDNC/X:COURT GRANTS DEFENSE COUNSEL'S MOTION TO DISMISS THIS CASE PURSUANT TO PC 1385- NO COMPLAINT OR DISCOVERY PROVIDED TO DEFENSE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-10-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW RETURN/FTA/BWDIRIC1: 04-24-18/BWI/BAIL:5,000/BWNUM:2ND/BWRET:17/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-10-19T09:00:00.000Z",
+      "description": "/CAL:BW RETURN/FTA/BWDIRIC1: 04-24-18/BWI/BAIL:5,000/BWNUM:2ND/BWRET:17/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-04-24T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-04-24T14:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02508745",
-    "portal_case_id": "",
+    "portal_case_id": "3606655",
     "display_case_number": "CRI-02508745",
     "defendant": "BRYAN PHILLIP BREEDEN",
     "filed_date": "2018-04-24",
@@ -59,12 +181,36 @@
       "defendant": "BRYAN PHILLIP BREEDEN",
       "filed_date": "2018-04-24"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BRYAN PHILLIP BREEDEN, and date of filing 2018-04-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BRYAN PHILLIP BREEDEN, and date of filing 2018-04-24. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:28:34.564Z",
+  "portal_case_id": "3606655",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02508745",
+      "defendant": "BRYAN PHILLIP BREEDEN",
+      "filed_date": "2018-04-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3606655"
+  }
 }

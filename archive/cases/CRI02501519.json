@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:52:48.933Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:27:18.900Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02501519",
   "criminal_case_number": "02501519",
@@ -24,10 +24,78 @@
       "name": "JOSE CRUZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSE CRUZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2017-11-27T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-03-17T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-11-27T09:00:00.000Z",
+      "docketEntryComment": "/INTC/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/SA2:THE NORDSTROM STORE AT 865 MARKET ST,SAN FRANCISCO/CONTD:STATUS M97 17017492/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-12-12T08:30:00.000Z",
+      "docketEntryComment": "/CAL:TO SET AND TO JOIN 17017492 - CJC UNSUITABLE/MO138572:17017492/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-11-30T08:30:00.000Z",
+      "docketEntryComment": "801/INTC/CAL:SUITABILITY/X:CJC UNSUITABLE,/CONTD:TO SET & TO JOIN 17017492/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-11-29T08:30:00.000Z",
+      "docketEntryComment": "/INTC/CAL:STATUS M97 17017492/CONT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-03-17T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/  /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-11-27 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 0,
+      "court_date": "2017-11-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-03-17 2:00 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 8",
+      "__index": 1,
+      "court_date": "2017-03-17",
+      "hearing_time": "2:00 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 8",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +113,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3599996",
+  "docket_entries": [
+    {
+      "filedDate": "2017-11-27T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-11-27T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-03-17T14:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-03-17T14:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-11-27T09:00:00.000Z",
+      "docketEntryComment": "/INTC/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/SA2:THE NORDSTROM STORE AT 865 MARKET ST,SAN FRANCISCO/CONTD:STATUS M97 17017492/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-11-27T09:00:00.000Z",
+      "description": "/INTC/CAL:BENCH WARRANT RETURN/BWDNC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/SA2:THE NORDSTROM STORE AT 865 MARKET ST,SAN FRANCISCO/CONTD:STATUS M97 17017492/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-12-12T08:30:00.000Z",
+      "docketEntryComment": "/CAL:TO SET AND TO JOIN 17017492 - CJC UNSUITABLE/MO138572:17017492/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-12-12T08:30:00.000Z",
+      "description": "/CAL:TO SET AND TO JOIN 17017492 - CJC UNSUITABLE/MO138572:17017492/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-11-30T08:30:00.000Z",
+      "docketEntryComment": "801/INTC/CAL:SUITABILITY/X:CJC UNSUITABLE,/CONTD:TO SET & TO JOIN 17017492/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2017-11-30T08:30:00.000Z",
+      "description": "801/INTC/CAL:SUITABILITY/X:CJC UNSUITABLE,/CONTD:TO SET & TO JOIN 17017492/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-11-29T08:30:00.000Z",
+      "docketEntryComment": "/INTC/CAL:STATUS M97 17017492/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2017-11-29T08:30:00.000Z",
+      "description": "/INTC/CAL:STATUS M97 17017492/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-03-17T14:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/  /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2017-03-17T14:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/ /FTA/BWI/BAIL:5,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02501519",
-    "portal_case_id": "",
+    "portal_case_id": "3599996",
     "display_case_number": "CRI-02501519",
     "defendant": "JOSE CRUZ",
     "filed_date": "2017-03-17",
@@ -63,8 +202,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSE CRUZ, and date of filing 2017-03-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSE CRUZ, and date of filing 2017-03-17. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:27:19.496Z",
+  "portal_case_id": "3599996",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02501519",
+      "defendant": "JOSE CRUZ",
+      "filed_date": "2017-03-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3599996"
+  }
 }

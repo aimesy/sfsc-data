@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:38.629Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:29:08.725Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02515954",
   "criminal_case_number": "02515954",
@@ -24,10 +24,86 @@
       "name": "ROY ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROY ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2019-05-03T14:02:47.000Z",
+      "docketEntryComment": "Complaint and Citation",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-12-28T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-05-06T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued 05-06-19 Served 12-28-21",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-12-29T09:00:00.000Z",
+      "docketEntryComment": "/FTRRECORDED/CAL:I&A P&C/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-12-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTRRECORDED/BWDNC/CONTD:INSTRUCTION, ARRAIGNMENT, PLEA AND COUNSEL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-05-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2021-12-29 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2021-12-29",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2021-12-28 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2021-12-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2019-05-06 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2019-05-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +121,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3613108",
+  "docket_entries": [
+    {
+      "filedDate": "2019-05-03T14:02:47.000Z",
+      "docketEntryComment": "Complaint and Citation",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-05-03T14:02:47.000Z",
+      "description": "Complaint and Citation",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-12-28T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2021-12-28T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-05-06T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued 05-06-19 Served 12-28-21",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2019-05-06T09:00:00.000Z",
+      "description": "Bench Warrant Issued 05-06-19 Served 12-28-21",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-12-29T09:00:00.000Z",
+      "docketEntryComment": "/FTRRECORDED/CAL:I&A P&C/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2021-12-29T09:00:00.000Z",
+      "description": "/FTRRECORDED/CAL:I&A P&C/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-12-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/FTRRECORDED/BWDNC/CONTD:INSTRUCTION, ARRAIGNMENT, PLEA AND COUNSEL/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2021-12-28T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/FTRRECORDED/BWDNC/CONTD:INSTRUCTION, ARRAIGNMENT, PLEA AND COUNSEL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-05-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2019-05-06T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BWI/BAIL:5000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02515954",
-    "portal_case_id": "",
+    "portal_case_id": "3613108",
     "display_case_number": "CRI-02515954",
     "defendant": "ROY ANDERSON",
     "filed_date": "2019-05-03",
@@ -63,8 +200,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROY ANDERSON, and date of filing 2019-05-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROY ANDERSON, and date of filing 2019-05-03. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:29:09.367Z",
+  "portal_case_id": "3613108",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02515954",
+      "defendant": "ROY ANDERSON",
+      "filed_date": "2019-05-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3613108"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:39:15.635Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:21:59.993Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02458574",
   "criminal_case_number": "02458574",
@@ -24,10 +24,68 @@
       "name": "MAURICE BARROW",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MAURICE BARROW",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
   "roa": [],
-  "calendar": [],
+  "calendar": [
+    {
+      "startTime": "2011-09-29 9:30 AM",
+      "hearingType": "Parole Re-Entry Court",
+      "location": "850 Bryant",
+      "dept": "Department 40",
+      "__index": 0,
+      "court_date": "2011-09-29",
+      "hearing_time": "9:30 AM",
+      "matters": "Parole Re-Entry Court",
+      "hearing_type": "Parole Re-Entry Court",
+      "department": "Department 40",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-06-28 9:30 AM",
+      "hearingType": "Parole Re-Entry Court",
+      "location": "850 Bryant",
+      "dept": "Department 40",
+      "__index": 1,
+      "court_date": "2011-06-28",
+      "hearing_time": "9:30 AM",
+      "matters": "Parole Re-Entry Court",
+      "hearing_type": "Parole Re-Entry Court",
+      "department": "Department 40",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-05-03 9:00 AM",
+      "hearingType": "Parole Re-Entry Court",
+      "location": "850 Bryant",
+      "dept": "Department 40",
+      "__index": 2,
+      "court_date": "2011-05-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Parole Re-Entry Court",
+      "hearing_type": "Parole Re-Entry Court",
+      "department": "Department 40",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-04-19 9:30 AM",
+      "hearingType": "Parole Re-Entry Court",
+      "location": "850 Bryant",
+      "dept": "Department 40",
+      "__index": 3,
+      "court_date": "2011-04-19",
+      "hearing_time": "9:30 AM",
+      "matters": "Parole Re-Entry Court",
+      "hearing_type": "Parole Re-Entry Court",
+      "department": "Department 40",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +103,11 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3561338",
   "docket_entries": [],
   "criminal": {
     "raw_case_number": "02458574",
-    "portal_case_id": "",
+    "portal_case_id": "3561338",
     "display_case_number": "CRI-02458574",
     "defendant": "MAURICE BARROW",
     "filed_date": "2011-03-15",
@@ -63,8 +121,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MAURICE BARROW, and date of filing 2011-03-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MAURICE BARROW, and date of filing 2011-03-15. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:22:00.578Z",
+  "portal_case_id": "3561338",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02458574",
+      "defendant": "MAURICE BARROW",
+      "filed_date": "2011-03-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3561338"
+  }
 }

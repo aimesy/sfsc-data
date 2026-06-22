@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:28:36.370Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:22:07.875Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02457274",
   "criminal_case_number": "02457274",
@@ -24,11 +24,87 @@
       "name": "MELTHON J BRANCH",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MELTHON J BRANCH",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2011-08-16T16:00:00.000Z",
+      "docketEntryComment": "CERTIFICATE OF REHAB(CERTIFICATE OF SERVICE BY MAIL)FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-01-26T08:26:00.000Z",
+      "docketEntryComment": "PD'S PETITION FOR CERTIFICATE OF REHAB & PARDON FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-07-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:HRG ON PETITION FOR CERT OF REHABILITATION/X:COURT MAKES A FINDING OFREHABILITATION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-05-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PETITION FOR CERTIFICATE OF REHABILITATION/CONTD:HEARING ON PETITIONFOR CERTIFICATE OF REHABILITATION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2011-03-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PETITION FOR CERTIFICATE OF REHABILITATION/CONT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2011-07-27 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 0,
+      "court_date": "2011-07-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-05-18 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 1,
+      "court_date": "2011-05-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2011-03-16 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 18",
+      "__index": 2,
+      "court_date": "2011-03-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 18",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "AZITA GHAFOURPOUR",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +121,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3560324",
+  "docket_entries": [
+    {
+      "filedDate": "2011-08-16T16:00:00.000Z",
+      "docketEntryComment": "CERTIFICATE OF REHAB(CERTIFICATE OF SERVICE BY MAIL)FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2011-08-16T16:00:00.000Z",
+      "description": "CERTIFICATE OF REHAB(CERTIFICATE OF SERVICE BY MAIL)FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-01-26T08:26:00.000Z",
+      "docketEntryComment": "PD'S PETITION FOR CERTIFICATE OF REHAB & PARDON FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2011-01-26T08:26:00.000Z",
+      "description": "PD'S PETITION FOR CERTIFICATE OF REHAB & PARDON FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-07-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:HRG ON PETITION FOR CERT OF REHABILITATION/X:COURT MAKES A FINDING OFREHABILITATION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2011-07-27T09:00:00.000Z",
+      "description": "/CAL:HRG ON PETITION FOR CERT OF REHABILITATION/X:COURT MAKES A FINDING OFREHABILITATION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-05-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PETITION FOR CERTIFICATE OF REHABILITATION/CONTD:HEARING ON PETITIONFOR CERTIFICATE OF REHABILITATION/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2011-05-18T09:00:00.000Z",
+      "description": "/CAL:PETITION FOR CERTIFICATE OF REHABILITATION/CONTD:HEARING ON PETITIONFOR CERTIFICATE OF REHABILITATION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2011-03-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PETITION FOR CERTIFICATE OF REHABILITATION/CONT/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2011-03-16T09:00:00.000Z",
+      "description": "/CAL:PETITION FOR CERTIFICATE OF REHABILITATION/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02457274",
-    "portal_case_id": "",
+    "portal_case_id": "3560324",
     "display_case_number": "CRI-02457274",
     "defendant": "MELTHON J BRANCH",
     "filed_date": "2011-03-16",
@@ -63,8 +190,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MELTHON J BRANCH, and date of filing 2011-03-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MELTHON J BRANCH, and date of filing 2011-03-16. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:22:08.510Z",
+  "portal_case_id": "3560324",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02457274",
+      "defendant": "MELTHON J BRANCH",
+      "filed_date": "2011-03-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3560324"
+  }
 }

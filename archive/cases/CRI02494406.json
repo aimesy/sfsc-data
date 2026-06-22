@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:54:47.061Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:26:01.746Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02494406",
   "criminal_case_number": "02494406",
@@ -24,10 +24,40 @@
       "name": "DARIN TIMOTHY DAWSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DARIN TIMOTHY DAWSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2016-05-17T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-05-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:FIRST AMENDED MISDEMEANOR COMPLAINT FILED,/FTA/BWI/BAIL:3,000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-05-17 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2016-05-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +75,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3593213",
+  "docket_entries": [
+    {
+      "filedDate": "2016-05-17T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-05-17T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-05-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:FIRST AMENDED MISDEMEANOR COMPLAINT FILED,/FTA/BWI/BAIL:3,000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-05-17T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:FIRST AMENDED MISDEMEANOR COMPLAINT FILED,/FTA/BWI/BAIL:3,000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02494406",
-    "portal_case_id": "",
+    "portal_case_id": "3593213",
     "display_case_number": "CRI-02494406",
     "defendant": "DARIN TIMOTHY DAWSON",
     "filed_date": "2016-05-05",
@@ -63,8 +114,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DARIN TIMOTHY DAWSON, and date of filing 2016-05-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DARIN TIMOTHY DAWSON, and date of filing 2016-05-05. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:26:02.365Z",
+  "portal_case_id": "3593213",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02494406",
+      "defendant": "DARIN TIMOTHY DAWSON",
+      "filed_date": "2016-05-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3593213"
+  }
 }

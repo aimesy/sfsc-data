@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:31:43.808Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T19:22:51.123Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI02468721",
   "criminal_case_number": "02468721",
@@ -24,10 +24,63 @@
       "name": "DAVID PAUL CAPWELL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID PAUL CAPWELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2016-05-25T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-05-23T12:28:00.000Z",
+      "docketEntryComment": "DEFT'S ADD TO CAL FOR MOT TO RECALL BW -FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-05-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENSE MOTION TO RECALL BW - FTA TRANSFER PROBATION FROM SAN MATEO/BWR:04-15-16/BWR1/PD/MO GRTD/CTORD: PROBATION IS TRANSFERRED FROM SAN MATEOCOUNTY TO SAN FRANCISCO COUNTY/X:COURT ORDER IS SIGNED AND FILED,/ /CTORD:PROBATION IN #2468721 IS HEREBY TERMINATED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2013-04-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD 1203,9PC TRANSFER FROM SAN MATEO COUNTY/MO GRTD/CTORD:PROBATIONBE TRANSFERRED FROM SAN MATEO COUNTY TO SAN FRANCISCO COUNTY/X:ORDER SIGNED AND FILED,/X:MOTION TO REVOKE PROBATION-APD - GRANTED/FTA/BWI/PROB ADM REV/ /NB/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-05-25 9:00 AM",
+      "hearingType": "Motion to Recall Bench Warrant",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2016-05-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Recall Bench Warrant",
+      "hearing_type": "Motion to Recall Bench Warrant",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2013-04-09 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2013-04-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +98,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3570359",
+  "docket_entries": [
+    {
+      "filedDate": "2016-05-25T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-05-25T09:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-05-23T12:28:00.000Z",
+      "docketEntryComment": "DEFT'S ADD TO CAL FOR MOT TO RECALL BW -FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-05-23T12:28:00.000Z",
+      "description": "DEFT'S ADD TO CAL FOR MOT TO RECALL BW -FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-05-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENSE MOTION TO RECALL BW - FTA TRANSFER PROBATION FROM SAN MATEO/BWR:04-15-16/BWR1/PD/MO GRTD/CTORD: PROBATION IS TRANSFERRED FROM SAN MATEOCOUNTY TO SAN FRANCISCO COUNTY/X:COURT ORDER IS SIGNED AND FILED,/ /CTORD:PROBATION IN #2468721 IS HEREBY TERMINATED/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-05-25T09:00:00.000Z",
+      "description": "/CAL:DEFENSE MOTION TO RECALL BW - FTA TRANSFER PROBATION FROM SAN MATEO/BWR:04-15-16/BWR1/PD/MO GRTD/CTORD: PROBATION IS TRANSFERRED FROM SAN MATEOCOUNTY TO SAN FRANCISCO COUNTY/X:COURT ORDER IS SIGNED AND FILED,/ /CTORD:PROBATION IN #2468721 IS HEREBY TERMINATED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2013-04-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD 1203,9PC TRANSFER FROM SAN MATEO COUNTY/MO GRTD/CTORD:PROBATIONBE TRANSFERRED FROM SAN MATEO COUNTY TO SAN FRANCISCO COUNTY/X:ORDER SIGNED AND FILED,/X:MOTION TO REVOKE PROBATION-APD - GRANTED/FTA/BWI/PROB ADM REV/ /NB/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2013-04-09T09:00:00.000Z",
+      "description": "/CAL:APD 1203,9PC TRANSFER FROM SAN MATEO COUNTY/MO GRTD/CTORD:PROBATIONBE TRANSFERRED FROM SAN MATEO COUNTY TO SAN FRANCISCO COUNTY/X:ORDER SIGNED AND FILED,/X:MOTION TO REVOKE PROBATION-APD - GRANTED/FTA/BWI/PROB ADM REV/ /NB/BWNUM:1ST/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "02468721",
-    "portal_case_id": "",
+    "portal_case_id": "3570359",
     "display_case_number": "CRI-02468721",
     "defendant": "DAVID PAUL CAPWELL",
     "filed_date": "2012-08-08",
@@ -63,8 +157,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID PAUL CAPWELL, and date of filing 2012-08-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID PAUL CAPWELL, and date of filing 2012-08-08. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T19:22:51.732Z",
+  "portal_case_id": "3570359",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-02468721",
+      "defendant": "DAVID PAUL CAPWELL",
+      "filed_date": "2012-08-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3570359"
+  }
 }
