@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:13.058Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:52:46.534Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01811766",
   "criminal_case_number": "01811766",
@@ -24,11 +24,80 @@
       "name": "BETTY JEWEL BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BETTY JEWEL BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1998-12-01T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-03-11T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-10-14T00:00:00.000Z",
+      "docketEntryComment": "FUTHER BW STAY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-04-08T11:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ90D/CTS:38/WS/SA1:JEALIE MCCULLOUGH/SA2:GLENDALE FEDERAL BANK 1801 VAN NESS AVENUE, GJ AND H REBAR COMPANY ANDTEMPCO BUILDERSINC,/VF4:$200/PC/PSR/BKFEE/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-03-11T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C, SABF, BX (SB#129205)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-12-01T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-11-19T00:00:00.000Z",
+      "docketEntryComment": "BWI, B/S $20,000 STAYED TO 111998",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-11-12T00:00:00.000Z",
+      "docketEntryComment": "BWI, B/S $20,000, STAYED TO 111998",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1999-04-08 11:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "1999-04-08",
+      "hearing_time": "11:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KATHLEEN MCCASSY",
+      "type": "Conflict Attorney"
+    },
+    {
+      "name": "A KENNEDY",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +114,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2968915",
+  "docket_entries": [
+    {
+      "filedDate": "1998-12-01T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1998-12-01T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-03-11T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1999-03-11T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-10-14T00:00:00.000Z",
+      "docketEntryComment": "FUTHER BW STAY",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1998-10-14T00:00:00.000Z",
+      "description": "FUTHER BW STAY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-04-08T11:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ90D/CTS:38/WS/SA1:JEALIE MCCULLOUGH/SA2:GLENDALE FEDERAL BANK 1801 VAN NESS AVENUE, GJ AND H REBAR COMPANY ANDTEMPCO BUILDERSINC,/VF4:$200/PC/PSR/BKFEE/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1999-04-08T11:00:00.000Z",
+      "description": "/AJW/CH1:ISS:PROB 3 Y:PJ90D/CTS:38/WS/SA1:JEALIE MCCULLOUGH/SA2:GLENDALE FEDERAL BANK 1801 VAN NESS AVENUE, GJ AND H REBAR COMPANY ANDTEMPCO BUILDERSINC,/VF4:$200/PC/PSR/BKFEE/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-03-11T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C, SABF, BX (SB#129205)",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1999-03-11T00:00:00.000Z",
+      "description": "BWD, N/C, SABF, BX (SB#129205)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-12-01T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1998-12-01T00:00:00.000Z",
+      "description": "FTA,BWI",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-11-19T00:00:00.000Z",
+      "docketEntryComment": "BWI, B/S $20,000 STAYED TO 111998",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1998-11-19T00:00:00.000Z",
+      "description": "BWI, B/S $20,000 STAYED TO 111998",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-11-12T00:00:00.000Z",
+      "docketEntryComment": "BWI, B/S $20,000, STAYED TO 111998",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1998-11-12T00:00:00.000Z",
+      "description": "BWI, B/S $20,000, STAYED TO 111998",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01811766",
-    "portal_case_id": "",
+    "portal_case_id": "2968915",
     "display_case_number": "CRI-01811766",
     "defendant": "BETTY JEWEL BROWN",
     "filed_date": "1998-10-14",
@@ -63,8 +213,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BETTY JEWEL BROWN, and date of filing 1998-10-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BETTY JEWEL BROWN, and date of filing 1998-10-14. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:52:47.125Z",
+  "portal_case_id": "2968915",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01811766",
+      "defendant": "BETTY JEWEL BROWN",
+      "filed_date": "1998-10-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2968915"
+  }
 }

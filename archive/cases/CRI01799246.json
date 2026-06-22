@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:27.746Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:53:33.855Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01799246",
   "criminal_case_number": "01799246",
@@ -24,11 +24,32 @@
       "name": "KATINA BROOKS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KATINA BROOKS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1998-08-10T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-08-20T00:00:00.000Z",
+      "docketEntryComment": "DISMISS; DA UINABLE TO PROCEED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "M IVERSON",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +66,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2957493",
+  "docket_entries": [
+    {
+      "filedDate": "1998-08-10T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1998-08-10T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY HEARING",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-08-20T00:00:00.000Z",
+      "docketEntryComment": "DISMISS; DA UINABLE TO PROCEED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1998-08-20T00:00:00.000Z",
+      "description": "DISMISS; DA UINABLE TO PROCEED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01799246",
-    "portal_case_id": "",
+    "portal_case_id": "2957493",
     "display_case_number": "CRI-01799246",
     "defendant": "KATINA BROOKS",
     "filed_date": "1998-08-10",
@@ -63,8 +105,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KATINA BROOKS, and date of filing 1998-08-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KATINA BROOKS, and date of filing 1998-08-10. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:53:34.429Z",
+  "portal_case_id": "2957493",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01799246",
+      "defendant": "KATINA BROOKS",
+      "filed_date": "1998-08-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2957493"
+  }
 }

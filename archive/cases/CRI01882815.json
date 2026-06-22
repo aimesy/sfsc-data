@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:45.193Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:06:39.694Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01882815",
   "criminal_case_number": "01882815",
@@ -24,9 +24,25 @@
       "name": "JOHN RAYMOND ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN RAYMOND ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1999-10-20T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-10-20T00:00:00.000Z",
+      "docketEntryComment": "DISM DIV DEEMED GRNTD AND COMPLTDDISM DIV DEEMED GRNTD AND COMPLTD",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -45,11 +61,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3033985",
+  "docket_entries": [
+    {
+      "filedDate": "1999-10-20T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1999-10-20T00:00:00.000Z",
+      "description": "COMP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-10-20T00:00:00.000Z",
+      "docketEntryComment": "DISM DIV DEEMED GRNTD AND COMPLTDDISM DIV DEEMED GRNTD AND COMPLTD",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1999-10-20T00:00:00.000Z",
+      "description": "DISM DIV DEEMED GRNTD AND COMPLTDDISM DIV DEEMED GRNTD AND COMPLTD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01882815",
-    "portal_case_id": "",
+    "portal_case_id": "3033985",
     "display_case_number": "CRI-01882815",
     "defendant": "JOHN RAYMOND ADAMS",
     "filed_date": "1999-10-20",
@@ -63,8 +100,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN RAYMOND ADAMS, and date of filing 1999-10-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN RAYMOND ADAMS, and date of filing 1999-10-20. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:06:40.315Z",
+  "portal_case_id": "3033985",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01882815",
+      "defendant": "JOHN RAYMOND ADAMS",
+      "filed_date": "1999-10-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3033985"
+  }
 }

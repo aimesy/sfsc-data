@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:50:07.218Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:36:28.857Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01699332",
   "criminal_case_number": "01699332",
@@ -24,11 +24,37 @@
       "name": "DAVID GONZALES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID GONZALES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1997-02-13T00:00:00.000Z",
+      "docketEntryComment": "PTD PROG RPT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-10-05T00:00:00.000Z",
+      "docketEntryComment": "DISMISS PER CIVIL COMPROMISE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-02-13T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "A MIRANDA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +71,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2866477",
+  "docket_entries": [
+    {
+      "filedDate": "1997-02-13T00:00:00.000Z",
+      "docketEntryComment": "PTD PROG RPT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1997-02-13T00:00:00.000Z",
+      "description": "PTD PROG RPT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-10-05T00:00:00.000Z",
+      "docketEntryComment": "DISMISS PER CIVIL COMPROMISE",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1998-10-05T00:00:00.000Z",
+      "description": "DISMISS PER CIVIL COMPROMISE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-02-13T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1997-02-13T00:00:00.000Z",
+      "description": "S/A ORDER",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01699332",
-    "portal_case_id": "",
+    "portal_case_id": "2866477",
     "display_case_number": "CRI-01699332",
     "defendant": "DAVID GONZALES",
     "filed_date": "1997-02-13",
@@ -63,8 +120,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID GONZALES, and date of filing 1997-02-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID GONZALES, and date of filing 1997-02-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:36:29.445Z",
+  "portal_case_id": "2866477",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01699332",
+      "defendant": "DAVID GONZALES",
+      "filed_date": "1997-02-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2866477"
+  }
 }

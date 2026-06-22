@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:09:52.601Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:38:52.691Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01715030",
   "criminal_case_number": "01715030",
@@ -24,11 +24,37 @@
       "name": "OSCAR GARCIA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "OSCAR GARCIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1997-05-09T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-07-22T00:00:00.000Z",
+      "docketEntryComment": "$100 VIF OFF CALENDAR",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-05-22T00:00:00.000Z",
+      "docketEntryComment": "$100VIF,S/A FR 2265 MISSION,54 MINT ST,1654 HAIGHT & 3345-18ST,M SANDOVAL",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "J DROUS",
+      "type": "Appointed Counsel"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +71,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2880757",
+  "docket_entries": [
+    {
+      "filedDate": "1997-05-09T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1997-05-09T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-07-22T00:00:00.000Z",
+      "docketEntryComment": "$100 VIF OFF CALENDAR",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1997-07-22T00:00:00.000Z",
+      "description": "$100 VIF OFF CALENDAR",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-05-22T00:00:00.000Z",
+      "docketEntryComment": "$100VIF,S/A FR 2265 MISSION,54 MINT ST,1654 HAIGHT & 3345-18ST,M SANDOVAL",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1997-05-22T00:00:00.000Z",
+      "description": "$100VIF,S/A FR 2265 MISSION,54 MINT ST,1654 HAIGHT & 3345-18ST,M SANDOVAL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01715030",
-    "portal_case_id": "",
+    "portal_case_id": "2880757",
     "display_case_number": "CRI-01715030",
     "defendant": "OSCAR GARCIA",
     "filed_date": "1997-05-09",
@@ -63,8 +120,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, OSCAR GARCIA, and date of filing 1997-05-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, OSCAR GARCIA, and date of filing 1997-05-09. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:38:53.270Z",
+  "portal_case_id": "2880757",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01715030",
+      "defendant": "OSCAR GARCIA",
+      "filed_date": "1997-05-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2880757"
+  }
 }

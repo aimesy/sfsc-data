@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:20:34.770Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:01:28.517Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01864242",
   "criminal_case_number": "01864242",
@@ -24,11 +24,52 @@
       "name": "ROBERT AGUILAR VARGAS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROBERT AGUILAR VARGAS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1999-09-17T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-07-22T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-07-22T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-10-04T00:00:00.000Z",
+      "docketEntryComment": "PLEA #1876340",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-09-17T00:00:00.000Z",
+      "docketEntryComment": "BWD, 1DCJ/1DCTS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-07-22T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "SHANA KEATING",
+      "type": "Appointed Counsel"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +86,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3016842",
+  "docket_entries": [
+    {
+      "filedDate": "1999-09-17T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1999-09-17T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-07-22T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1999-07-22T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-07-22T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1999-07-22T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY HEARING",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-10-04T00:00:00.000Z",
+      "docketEntryComment": "PLEA #1876340",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1999-10-04T00:00:00.000Z",
+      "description": "PLEA #1876340",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-09-17T00:00:00.000Z",
+      "docketEntryComment": "BWD, 1DCJ/1DCTS",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1999-09-17T00:00:00.000Z",
+      "description": "BWD, 1DCJ/1DCTS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-07-22T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1999-07-22T00:00:00.000Z",
+      "description": "FTA,BWI",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01864242",
-    "portal_case_id": "",
+    "portal_case_id": "3016842",
     "display_case_number": "CRI-01864242",
     "defendant": "ROBERT AGUILAR VARGAS",
     "filed_date": "1999-07-22",
@@ -63,8 +165,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROBERT AGUILAR VARGAS, and date of filing 1999-07-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROBERT AGUILAR VARGAS, and date of filing 1999-07-22. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:01:29.127Z",
+  "portal_case_id": "3016842",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01864242",
+      "defendant": "ROBERT AGUILAR VARGAS",
+      "filed_date": "1999-07-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3016842"
+  }
 }

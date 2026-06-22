@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:29:39.484Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:35:51.517Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01696126",
   "criminal_case_number": "01696126",
@@ -24,11 +24,88 @@
       "name": "MARY BARTOSAVAGE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARY BARTOSAVAGE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1997-08-21T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-01-30T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-12-08T18:00:00.000Z",
+      "docketEntryComment": "EXPIRE PROBATION AND TERMINATE WARRANTLESS SEARCH",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-07-01T14:01:00.000Z",
+      "docketEntryComment": "/X:INDIVIDUAL PICKED UP IS NOT THE DEFENDANT SOUGHT,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-08-21T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1 ISS PROB 3 Y PJ 43D/CTS  43//WS/11590/DTC/LF/RX/VF4 $200/11350/P/PSR/BOOKING FEE//ACCEP/BWR:01-30-97/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-07-31T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-01-30T00:00:00.000Z",
+      "docketEntryComment": "FTA, BWI, B/S $5,000, OR REV",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1998-07-01 2:01 PM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1998-07-01",
+      "hearing_time": "2:01 PM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1997-08-21 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1997-08-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S RISCHMAN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "J EISENBERG",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +122,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2863560",
+  "docket_entries": [
+    {
+      "filedDate": "1997-08-21T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1997-08-21T09:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-01-30T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1997-01-30T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-12-08T18:00:00.000Z",
+      "docketEntryComment": "EXPIRE PROBATION AND TERMINATE WARRANTLESS SEARCH",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2004-12-08T18:00:00.000Z",
+      "description": "EXPIRE PROBATION AND TERMINATE WARRANTLESS SEARCH",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-07-01T14:01:00.000Z",
+      "docketEntryComment": "/X:INDIVIDUAL PICKED UP IS NOT THE DEFENDANT SOUGHT,/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1998-07-01T14:01:00.000Z",
+      "description": "/X:INDIVIDUAL PICKED UP IS NOT THE DEFENDANT SOUGHT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-08-21T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1 ISS PROB 3 Y PJ 43D/CTS  43//WS/11590/DTC/LF/RX/VF4 $200/11350/P/PSR/BOOKING FEE//ACCEP/BWR:01-30-97/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1997-08-21T09:00:00.000Z",
+      "description": "/AJW/CH1 ISS PROB 3 Y PJ 43D/CTS 43//WS/11590/DTC/LF/RX/VF4 $200/11350/P/PSR/BOOKING FEE//ACCEP/BWR:01-30-97/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-07-31T00:00:00.000Z",
+      "docketEntryComment": "CERT TO SUP CT",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1997-07-31T00:00:00.000Z",
+      "description": "CERT TO SUP CT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-01-30T00:00:00.000Z",
+      "docketEntryComment": "FTA, BWI, B/S $5,000, OR REV",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1997-01-30T00:00:00.000Z",
+      "description": "FTA, BWI, B/S $5,000, OR REV",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01696126",
-    "portal_case_id": "",
+    "portal_case_id": "2863560",
     "display_case_number": "CRI-01696126",
     "defendant": "MARY BARTOSAVAGE",
     "filed_date": "1997-01-30",
@@ -63,8 +211,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARY BARTOSAVAGE, and date of filing 1997-01-30. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARY BARTOSAVAGE, and date of filing 1997-01-30. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:35:52.111Z",
+  "portal_case_id": "2863560",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01696126",
+      "defendant": "MARY BARTOSAVAGE",
+      "filed_date": "1997-01-30"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2863560"
+  }
 }

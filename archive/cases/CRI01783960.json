@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:42:19.222Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:48:39.575Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01783960",
   "criminal_case_number": "01783960",
@@ -24,11 +24,52 @@
       "name": "JUSTIN BELTON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JUSTIN BELTON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1998-05-18T00:00:00.000Z",
+      "docketEntryComment": "TO BE SET",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-01-15T00:00:00.000Z",
+      "docketEntryComment": "CT 2 ADDED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-10-30T00:00:00.000Z",
+      "docketEntryComment": "DEFT REMANDED INTO CUST",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-10-01T00:00:00.000Z",
+      "docketEntryComment": "BW PERM S/E",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-09-17T00:00:00.000Z",
+      "docketEntryComment": "BWI, B/S $3,500 STAYED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-06-09T00:00:00.000Z",
+      "docketEntryComment": "NG PLEA W/D",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "R MARCUS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +86,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2943422",
+  "docket_entries": [
+    {
+      "filedDate": "1998-05-18T00:00:00.000Z",
+      "docketEntryComment": "TO BE SET",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1998-05-18T00:00:00.000Z",
+      "description": "TO BE SET",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-01-15T00:00:00.000Z",
+      "docketEntryComment": "CT 2 ADDED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1999-01-15T00:00:00.000Z",
+      "description": "CT 2 ADDED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-10-30T00:00:00.000Z",
+      "docketEntryComment": "DEFT REMANDED INTO CUST",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1998-10-30T00:00:00.000Z",
+      "description": "DEFT REMANDED INTO CUST",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-10-01T00:00:00.000Z",
+      "docketEntryComment": "BW PERM S/E",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1998-10-01T00:00:00.000Z",
+      "description": "BW PERM S/E",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-09-17T00:00:00.000Z",
+      "docketEntryComment": "BWI, B/S $3,500 STAYED",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1998-09-17T00:00:00.000Z",
+      "description": "BWI, B/S $3,500 STAYED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-06-09T00:00:00.000Z",
+      "docketEntryComment": "NG PLEA W/D",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1998-06-09T00:00:00.000Z",
+      "description": "NG PLEA W/D",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01783960",
-    "portal_case_id": "",
+    "portal_case_id": "2943422",
     "display_case_number": "CRI-01783960",
     "defendant": "JUSTIN BELTON",
     "filed_date": "1998-05-18",
@@ -63,8 +165,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JUSTIN BELTON, and date of filing 1998-05-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JUSTIN BELTON, and date of filing 1998-05-18. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:48:40.639Z",
+  "portal_case_id": "2943422",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01783960",
+      "defendant": "JUSTIN BELTON",
+      "filed_date": "1998-05-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2943422"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:33:46.416Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:46:22.143Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01771269",
   "criminal_case_number": "01771269",
@@ -24,9 +24,40 @@
       "name": "JENNY A BRADLEY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JENNY A BRADLEY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1998-04-28T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-04-15T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-04-08T00:00:00.000Z",
+      "docketEntryComment": "DEFT MOTION RECALL BW",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-04-28T00:00:00.000Z",
+      "docketEntryComment": "DISMISS; UNABLE TO SUSTAIN",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-04-15T00:00:00.000Z",
+      "docketEntryComment": "FTA ARRAIGNMENT, BW ISS B/S $10,000",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -45,11 +76,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2931829",
+  "docket_entries": [
+    {
+      "filedDate": "1998-04-28T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1998-04-28T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-04-15T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1998-04-15T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-04-08T00:00:00.000Z",
+      "docketEntryComment": "DEFT MOTION RECALL BW",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1998-04-08T00:00:00.000Z",
+      "description": "DEFT MOTION RECALL BW",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-04-28T00:00:00.000Z",
+      "docketEntryComment": "DISMISS; UNABLE TO SUSTAIN",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1998-04-28T00:00:00.000Z",
+      "description": "DISMISS; UNABLE TO SUSTAIN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-04-15T00:00:00.000Z",
+      "docketEntryComment": "FTA ARRAIGNMENT, BW ISS B/S $10,000",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1998-04-15T00:00:00.000Z",
+      "description": "FTA ARRAIGNMENT, BW ISS B/S $10,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01771269",
-    "portal_case_id": "",
+    "portal_case_id": "2931829",
     "display_case_number": "CRI-01771269",
     "defendant": "JENNY A BRADLEY",
     "filed_date": "1998-04-08",
@@ -63,8 +145,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JENNY A BRADLEY, and date of filing 1998-04-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JENNY A BRADLEY, and date of filing 1998-04-08. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:46:22.790Z",
+  "portal_case_id": "2931829",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01771269",
+      "defendant": "JENNY A BRADLEY",
+      "filed_date": "1998-04-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2931829"
+  }
 }

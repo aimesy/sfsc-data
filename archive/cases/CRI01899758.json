@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:40:15.319Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:05:27.089Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01899758",
   "criminal_case_number": "01899758",
@@ -24,11 +24,51 @@
       "name": "JONATHAN ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JONATHAN ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2000-02-07T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-27T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-27T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 04/17/09",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-02-07T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-01-24T00:00:00.000Z",
+      "docketEntryComment": "SIGNED S/A ORD FILED & SERV,S/A FR D VIVIAN,SUBM TO DV PROG",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "L ROMERO",
+      "type": "Public Defender"
+    },
+    {
+      "name": "JD TROW",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +85,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3049428",
+  "docket_entries": [
+    {
+      "filedDate": "2000-02-07T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2000-02-07T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-27T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2009-04-27T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-27T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 04/17/09",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-04-27T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 04/17/09",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-02-07T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2000-02-07T00:00:00.000Z",
+      "description": "FTA,BWI",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-01-24T00:00:00.000Z",
+      "docketEntryComment": "SIGNED S/A ORD FILED & SERV,S/A FR D VIVIAN,SUBM TO DV PROG",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2000-01-24T00:00:00.000Z",
+      "description": "SIGNED S/A ORD FILED & SERV,S/A FR D VIVIAN,SUBM TO DV PROG",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01899758",
-    "portal_case_id": "",
+    "portal_case_id": "3049428",
     "display_case_number": "CRI-01899758",
     "defendant": "JONATHAN ALLEN",
     "filed_date": "2000-01-24",
@@ -63,8 +154,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JONATHAN ALLEN, and date of filing 2000-01-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JONATHAN ALLEN, and date of filing 2000-01-24. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:05:27.650Z",
+  "portal_case_id": "3049428",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01899758",
+      "defendant": "JONATHAN ALLEN",
+      "filed_date": "2000-01-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3049428"
+  }
 }

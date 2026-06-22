@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:45.194Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:45:47.070Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01763783",
   "criminal_case_number": "01763783",
@@ -24,9 +24,35 @@
       "name": "JOHN ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1998-02-19T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-04-06T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-04-06T00:00:00.000Z",
+      "docketEntryComment": "DISCHARGED; CWD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-02-19T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $10000, 2 OF 2, DO NOT CITE",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -45,11 +71,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2925032",
+  "docket_entries": [
+    {
+      "filedDate": "1998-02-19T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1998-02-19T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-04-06T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1998-04-06T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-04-06T00:00:00.000Z",
+      "docketEntryComment": "DISCHARGED; CWD",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1998-04-06T00:00:00.000Z",
+      "description": "DISCHARGED; CWD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-02-19T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA, B/S $10000, 2 OF 2, DO NOT CITE",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1998-02-19T00:00:00.000Z",
+      "description": "BWI, FTA, B/S $10000, 2 OF 2, DO NOT CITE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01763783",
-    "portal_case_id": "",
+    "portal_case_id": "2925032",
     "display_case_number": "CRI-01763783",
     "defendant": "JOHN ADAMS",
     "filed_date": "1998-02-06",
@@ -63,8 +130,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN ADAMS, and date of filing 1998-02-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN ADAMS, and date of filing 1998-02-06. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:45:47.735Z",
+  "portal_case_id": "2925032",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01763783",
+      "defendant": "JOHN ADAMS",
+      "filed_date": "1998-02-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2925032"
+  }
 }

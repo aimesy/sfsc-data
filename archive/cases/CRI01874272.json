@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:09:00.044Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:02:46.165Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01874272",
   "criminal_case_number": "01874272",
@@ -24,11 +24,56 @@
       "name": "CAR LEE ALLEN, JR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CAR LEE ALLEN, JR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2002-06-13T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-12-17T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-09-08T00:00:00.000Z",
+      "docketEntryComment": "SPEEDY TRIAL MOT (DOP)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-06-13T00:00:00.000Z",
+      "docketEntryComment": "BWR, N/C, DEFT DECEASED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-12-17T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-10-19T00:00:00.000Z",
+      "docketEntryComment": "JONES MOT TO BE HEARD C/C W/ PX",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "R TRUJILLO",
+      "type": "Public Defender"
+    },
+    {
+      "name": "R HECHLER",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +90,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3026070",
+  "docket_entries": [
+    {
+      "filedDate": "2002-06-13T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2002-06-13T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-12-17T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1999-12-17T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-09-08T00:00:00.000Z",
+      "docketEntryComment": "SPEEDY TRIAL MOT (DOP)",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1999-09-08T00:00:00.000Z",
+      "description": "SPEEDY TRIAL MOT (DOP)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-06-13T00:00:00.000Z",
+      "docketEntryComment": "BWR, N/C, DEFT DECEASED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2002-06-13T00:00:00.000Z",
+      "description": "BWR, N/C, DEFT DECEASED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-12-17T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1999-12-17T00:00:00.000Z",
+      "description": "FTA,BWI",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-10-19T00:00:00.000Z",
+      "docketEntryComment": "JONES MOT TO BE HEARD C/C W/ PX",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1999-10-19T00:00:00.000Z",
+      "description": "JONES MOT TO BE HEARD C/C W/ PX",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01874272",
-    "portal_case_id": "",
+    "portal_case_id": "3026070",
     "display_case_number": "CRI-01874272",
     "defendant": "CAR LEE ALLEN, JR",
     "filed_date": "1999-09-08",
@@ -63,8 +169,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CAR LEE ALLEN, JR, and date of filing 1999-09-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CAR LEE ALLEN, JR, and date of filing 1999-09-08. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:02:46.885Z",
+  "portal_case_id": "3026070",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01874272",
+      "defendant": "CAR LEE ALLEN, JR",
+      "filed_date": "1999-09-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3026070"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:21:55.142Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:09:52.790Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01907863",
   "criminal_case_number": "01907863",
@@ -24,11 +24,57 @@
       "name": "PAUL ALEXANDER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "PAUL ALEXANDER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2001-03-01T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-02-22T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2012-10-25T18:00:00.000Z",
+      "docketEntryComment": "EXPIRE PROBATION AND TERMINATE WARRANTLESS SEARCH",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-03-01T00:00:00.000Z",
+      "docketEntryComment": "BWR,N/C,PROB RI,DFT TO PAY $500 FINE ($100 REMITTED FOR 1DCJ),BAL $400",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-02-22T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA AT BW STAY, B/S $10,000, 1 OF 2",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-03-16T00:00:00.000Z",
+      "docketEntryComment": "ALL COUNTS REDUCED TO MISD, AS TO CT#1 & CT#3 SENTENCE STAYED PURS 654PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-03-16T00:00:00.000Z",
+      "docketEntryComment": "1035 SEARCH CONDITION, STAY AWAY FR 2318 MISSION ST $300VIF TOTAL",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "DONALD BERGERSON",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +91,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3056864",
+  "docket_entries": [
+    {
+      "filedDate": "2001-03-01T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-03-01T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-02-22T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-02-22T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2012-10-25T18:00:00.000Z",
+      "docketEntryComment": "EXPIRE PROBATION AND TERMINATE WARRANTLESS SEARCH",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2012-10-25T18:00:00.000Z",
+      "description": "EXPIRE PROBATION AND TERMINATE WARRANTLESS SEARCH",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-03-01T00:00:00.000Z",
+      "docketEntryComment": "BWR,N/C,PROB RI,DFT TO PAY $500 FINE ($100 REMITTED FOR 1DCJ),BAL $400",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2001-03-01T00:00:00.000Z",
+      "description": "BWR,N/C,PROB RI,DFT TO PAY $500 FINE ($100 REMITTED FOR 1DCJ),BAL $400",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-02-22T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA AT BW STAY, B/S $10,000, 1 OF 2",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2001-02-22T00:00:00.000Z",
+      "description": "BWI, FTA AT BW STAY, B/S $10,000, 1 OF 2",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-03-16T00:00:00.000Z",
+      "docketEntryComment": "ALL COUNTS REDUCED TO MISD, AS TO CT#1 & CT#3 SENTENCE STAYED PURS 654PC",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2000-03-16T00:00:00.000Z",
+      "description": "ALL COUNTS REDUCED TO MISD, AS TO CT#1 & CT#3 SENTENCE STAYED PURS 654PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-03-16T00:00:00.000Z",
+      "docketEntryComment": "1035 SEARCH CONDITION, STAY AWAY FR 2318 MISSION ST $300VIF TOTAL",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2000-03-16T00:00:00.000Z",
+      "description": "1035 SEARCH CONDITION, STAY AWAY FR 2318 MISSION ST $300VIF TOTAL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01907863",
-    "portal_case_id": "",
+    "portal_case_id": "3056864",
     "display_case_number": "CRI-01907863",
     "defendant": "PAUL ALEXANDER",
     "filed_date": "2000-03-02",
@@ -63,8 +180,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, PAUL ALEXANDER, and date of filing 2000-03-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, PAUL ALEXANDER, and date of filing 2000-03-02. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:09:53.554Z",
+  "portal_case_id": "3056864",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01907863",
+      "defendant": "PAUL ALEXANDER",
+      "filed_date": "2000-03-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3056864"
+  }
 }

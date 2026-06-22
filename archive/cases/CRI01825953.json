@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:23:20.788Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:58:40.271Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01825953",
   "criminal_case_number": "01825953",
@@ -24,11 +24,32 @@
       "name": "ANNIE ARMSTRONG",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANNIE ARMSTRONG",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1998-12-24T00:00:00.000Z",
+      "docketEntryComment": "PTD PROGRESS REPORT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-07-08T00:00:00.000Z",
+      "docketEntryComment": "BX 129955 $10000; DISM PTD SUCC COMP",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "REBECCA YOUNG",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +66,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2981966",
+  "docket_entries": [
+    {
+      "filedDate": "1998-12-24T00:00:00.000Z",
+      "docketEntryComment": "PTD PROGRESS REPORT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1998-12-24T00:00:00.000Z",
+      "description": "PTD PROGRESS REPORT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-07-08T00:00:00.000Z",
+      "docketEntryComment": "BX 129955 $10000; DISM PTD SUCC COMP",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1999-07-08T00:00:00.000Z",
+      "description": "BX 129955 $10000; DISM PTD SUCC COMP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01825953",
-    "portal_case_id": "",
+    "portal_case_id": "2981966",
     "display_case_number": "CRI-01825953",
     "defendant": "ANNIE ARMSTRONG",
     "filed_date": "1998-12-24",
@@ -63,8 +105,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANNIE ARMSTRONG, and date of filing 1998-12-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANNIE ARMSTRONG, and date of filing 1998-12-24. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:58:40.916Z",
+  "portal_case_id": "2981966",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01825953",
+      "defendant": "ANNIE ARMSTRONG",
+      "filed_date": "1998-12-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2981966"
+  }
 }

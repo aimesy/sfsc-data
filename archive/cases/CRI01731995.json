@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:33:13.348Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:41:36.998Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01731995",
   "criminal_case_number": "01731995",
@@ -24,11 +24,86 @@
       "name": "CARL WATSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CARL WATSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1998-11-09T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-12-21T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-08-14T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-05-19T00:00:00.000Z",
+      "docketEntryComment": "PROB TERM UNSUCC (SEE DISPO #1825514) (#174235)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-04-28T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-12-21T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-11-09T09:00:00.000Z",
+      "docketEntryComment": "FTA TO SET DA MTR, BWI, B/S $5000  (1 OF 2",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-08-26T00:00:00.000Z",
+      "docketEntryComment": "$100 RF; S/A WALGREEN 1344 STOCKTON; 1035 SEARCHCOMP AMEND TO REDUCE MISD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-08-26T00:00:00.000Z",
+      "docketEntryComment": "COMP AMEND TO REDUCE MISD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-08-14T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER FILED",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1998-11-09 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "1998-11-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "R MARCUS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +120,112 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2896209",
+  "docket_entries": [
+    {
+      "filedDate": "1998-11-09T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1998-11-09T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-12-21T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1998-12-21T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-08-14T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1997-08-14T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-05-19T00:00:00.000Z",
+      "docketEntryComment": "PROB TERM UNSUCC (SEE DISPO #1825514) (#174235)",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1999-05-19T00:00:00.000Z",
+      "description": "PROB TERM UNSUCC (SEE DISPO #1825514) (#174235)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-04-28T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1999-04-28T00:00:00.000Z",
+      "description": "B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-12-21T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1998-12-21T00:00:00.000Z",
+      "description": "BWD, N/C",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-11-09T09:00:00.000Z",
+      "docketEntryComment": "FTA TO SET DA MTR, BWI, B/S $5000  (1 OF 2",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1998-11-09T09:00:00.000Z",
+      "description": "FTA TO SET DA MTR, BWI, B/S $5000 (1 OF 2",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-08-26T00:00:00.000Z",
+      "docketEntryComment": "$100 RF; S/A WALGREEN 1344 STOCKTON; 1035 SEARCHCOMP AMEND TO REDUCE MISD",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "1997-08-26T00:00:00.000Z",
+      "description": "$100 RF; S/A WALGREEN 1344 STOCKTON; 1035 SEARCHCOMP AMEND TO REDUCE MISD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-08-26T00:00:00.000Z",
+      "docketEntryComment": "COMP AMEND TO REDUCE MISD",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "1997-08-26T00:00:00.000Z",
+      "description": "COMP AMEND TO REDUCE MISD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-08-14T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER FILED",
+      "otherSubmitter": "",
+      "__index": 9,
+      "date_filed": "1997-08-14T00:00:00.000Z",
+      "description": "S/A ORDER FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01731995",
-    "portal_case_id": "",
+    "portal_case_id": "2896209",
     "display_case_number": "CRI-01731995",
     "defendant": "CARL WATSON",
     "filed_date": "1997-08-14",
@@ -63,8 +239,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CARL WATSON, and date of filing 1997-08-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CARL WATSON, and date of filing 1997-08-14. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:41:37.605Z",
+  "portal_case_id": "2896209",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01731995",
+      "defendant": "CARL WATSON",
+      "filed_date": "1997-08-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2896209"
+  }
 }

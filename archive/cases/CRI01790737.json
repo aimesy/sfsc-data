@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:29:25.394Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:49:32.379Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01790737",
   "criminal_case_number": "01790737",
@@ -24,9 +24,25 @@
       "name": "LAWRENCE JOHN ALEXANDER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LAWRENCE JOHN ALEXANDER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1998-10-05T00:00:00.000Z",
+      "docketEntryComment": "DISCHARGED; CWD BY THE DA",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-08-11T00:00:00.000Z",
+      "docketEntryComment": "DEFT NOT ELIGIBLE FOR THE P,D,",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -45,11 +61,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2949614",
+  "docket_entries": [
+    {
+      "filedDate": "1998-10-05T00:00:00.000Z",
+      "docketEntryComment": "DISCHARGED; CWD BY THE DA",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1998-10-05T00:00:00.000Z",
+      "description": "DISCHARGED; CWD BY THE DA",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-08-11T00:00:00.000Z",
+      "docketEntryComment": "DEFT NOT ELIGIBLE FOR THE P,D,",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1998-08-11T00:00:00.000Z",
+      "description": "DEFT NOT ELIGIBLE FOR THE P,D,",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01790737",
-    "portal_case_id": "",
+    "portal_case_id": "2949614",
     "display_case_number": "CRI-01790737",
     "defendant": "LAWRENCE JOHN ALEXANDER",
     "filed_date": "1998-06-22",
@@ -63,8 +100,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LAWRENCE JOHN ALEXANDER, and date of filing 1998-06-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LAWRENCE JOHN ALEXANDER, and date of filing 1998-06-22. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:49:32.917Z",
+  "portal_case_id": "2949614",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01790737",
+      "defendant": "LAWRENCE JOHN ALEXANDER",
+      "filed_date": "1998-06-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2949614"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:33:13.344Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:03:42.969Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01883754",
   "criminal_case_number": "01883754",
@@ -24,11 +24,78 @@
       "name": "ALBERT LEE BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALBERT LEE BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1999-10-25T00:00:00.000Z",
+      "docketEntryComment": "PTC & FELONY STATUS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-12-08T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-12-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FOR DISPOSITION OR TO SET MISDEMEANOR TRIAL/TBH:SC#174384/CONT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-10-25T00:00:00.000Z",
+      "docketEntryComment": "S/A ORD MOD TO ALLOW PHONE CALLS ONLY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-10-25T00:00:00.000Z",
+      "docketEntryComment": "STAY AWAY FR R CUADRA, MREREN & ALBERT & JESSIE,BAIL SET $5000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1999-12-08 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 0,
+      "court_date": "1999-12-08",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1999-12-06 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 26",
+      "__index": 1,
+      "court_date": "1999-12-06",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 26",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "M ROSENBUSH",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "J TROW",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +112,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3034831",
+  "docket_entries": [
+    {
+      "filedDate": "1999-10-25T00:00:00.000Z",
+      "docketEntryComment": "PTC & FELONY STATUS",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1999-10-25T00:00:00.000Z",
+      "description": "PTC & FELONY STATUS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-12-08T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1999-12-08T09:00:00.000Z",
+      "description": "/MO PC 1385/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-12-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FOR DISPOSITION OR TO SET MISDEMEANOR TRIAL/TBH:SC#174384/CONT/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1999-12-06T09:00:00.000Z",
+      "description": "/CAL:FOR DISPOSITION OR TO SET MISDEMEANOR TRIAL/TBH:SC#174384/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-10-25T00:00:00.000Z",
+      "docketEntryComment": "S/A ORD MOD TO ALLOW PHONE CALLS ONLY",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1999-10-25T00:00:00.000Z",
+      "description": "S/A ORD MOD TO ALLOW PHONE CALLS ONLY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-10-25T00:00:00.000Z",
+      "docketEntryComment": "STAY AWAY FR R CUADRA, MREREN & ALBERT & JESSIE,BAIL SET $5000",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1999-10-25T00:00:00.000Z",
+      "description": "STAY AWAY FR R CUADRA, MREREN & ALBERT & JESSIE,BAIL SET $5000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01883754",
-    "portal_case_id": "",
+    "portal_case_id": "3034831",
     "display_case_number": "CRI-01883754",
     "defendant": "ALBERT LEE BROWN",
     "filed_date": "1999-10-25",
@@ -59,12 +177,36 @@
       "defendant": "ALBERT LEE BROWN",
       "filed_date": "1999-10-25"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALBERT LEE BROWN, and date of filing 1999-10-25. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALBERT LEE BROWN, and date of filing 1999-10-25. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:03:43.622Z",
+  "portal_case_id": "3034831",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01883754",
+      "defendant": "ALBERT LEE BROWN",
+      "filed_date": "1999-10-25"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3034831"
+  }
 }

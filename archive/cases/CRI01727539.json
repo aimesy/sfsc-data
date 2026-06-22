@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:14:26.523Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:43:35.272Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01727539",
   "criminal_case_number": "01727539",
@@ -24,11 +24,70 @@
       "name": "ALEX AVILA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALEX AVILA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1998-04-10T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-07-21T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-10-06T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP6Y:U:ESS:PROB 3 Y/CTS:ZERO/DEF:WAIVES 250 DAYS CREDIT PURSUANT TO PC 2900,5/PGM5:18-MONTH DELANCEY STREET LIVE-IN PROGRAM/WS/RESTV/RX/VF4:$200/PC/PSR/BKFEE/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-05-19T00:00:00.000Z",
+      "docketEntryComment": "MOT SABF & EXON BAIL GRNTD, SABF, BAIL EXON (SB126162)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-04-10T00:00:00.000Z",
+      "docketEntryComment": "DEFT FTA, BWI, B/S $30,000, SABF BAIL FORFTD SB#126162 $15,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-01-12T00:00:00.000Z",
+      "docketEntryComment": "RELIEVED AS COUNSEL",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1998-10-06 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "1998-10-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "V ROY LEFCOURT",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "D PFEIFER",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +104,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2892145",
+  "docket_entries": [
+    {
+      "filedDate": "1998-04-10T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1998-04-10T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-07-21T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1997-07-21T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY HEARING",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-10-06T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP6Y:U:ESS:PROB 3 Y/CTS:ZERO/DEF:WAIVES 250 DAYS CREDIT PURSUANT TO PC 2900,5/PGM5:18-MONTH DELANCEY STREET LIVE-IN PROGRAM/WS/RESTV/RX/VF4:$200/PC/PSR/BKFEE/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1998-10-06T09:00:00.000Z",
+      "description": "/AJW/CH1:SP6Y:U:ESS:PROB 3 Y/CTS:ZERO/DEF:WAIVES 250 DAYS CREDIT PURSUANT TO PC 2900,5/PGM5:18-MONTH DELANCEY STREET LIVE-IN PROGRAM/WS/RESTV/RX/VF4:$200/PC/PSR/BKFEE/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-05-19T00:00:00.000Z",
+      "docketEntryComment": "MOT SABF & EXON BAIL GRNTD, SABF, BAIL EXON (SB126162)",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1998-05-19T00:00:00.000Z",
+      "description": "MOT SABF & EXON BAIL GRNTD, SABF, BAIL EXON (SB126162)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-04-10T00:00:00.000Z",
+      "docketEntryComment": "DEFT FTA, BWI, B/S $30,000, SABF BAIL FORFTD SB#126162 $15,000",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1998-04-10T00:00:00.000Z",
+      "description": "DEFT FTA, BWI, B/S $30,000, SABF BAIL FORFTD SB#126162 $15,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-01-12T00:00:00.000Z",
+      "docketEntryComment": "RELIEVED AS COUNSEL",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1998-01-12T00:00:00.000Z",
+      "description": "RELIEVED AS COUNSEL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01727539",
-    "portal_case_id": "",
+    "portal_case_id": "2892145",
     "display_case_number": "CRI-01727539",
     "defendant": "ALEX AVILA",
     "filed_date": "1997-07-21",
@@ -59,12 +179,36 @@
       "defendant": "ALEX AVILA",
       "filed_date": "1997-07-21"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 2900",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALEX AVILA, and date of filing 1997-07-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALEX AVILA, and date of filing 1997-07-21. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:43:35.894Z",
+  "portal_case_id": "2892145",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01727539",
+      "defendant": "ALEX AVILA",
+      "filed_date": "1997-07-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2892145"
+  }
 }

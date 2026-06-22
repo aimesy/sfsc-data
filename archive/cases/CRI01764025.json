@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:04:37.134Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:48:15.579Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01764025",
   "criminal_case_number": "01764025",
@@ -24,11 +24,42 @@
       "name": "ERIC D ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ERIC D ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1998-02-10T00:00:00.000Z",
+      "docketEntryComment": "TS DA MTR",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-07-01T00:00:00.000Z",
+      "docketEntryComment": "DA MTR IS ORDERED OFF CAL",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-02-27T00:00:00.000Z",
+      "docketEntryComment": "1035 SEARCH COND, $100RF REMITTED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-02-27T00:00:00.000Z",
+      "docketEntryComment": "LESSER INCL",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "A MIRANDA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +76,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2925244",
+  "docket_entries": [
+    {
+      "filedDate": "1998-02-10T00:00:00.000Z",
+      "docketEntryComment": "TS DA MTR",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1998-02-10T00:00:00.000Z",
+      "description": "TS DA MTR",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-07-01T00:00:00.000Z",
+      "docketEntryComment": "DA MTR IS ORDERED OFF CAL",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1999-07-01T00:00:00.000Z",
+      "description": "DA MTR IS ORDERED OFF CAL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-02-27T00:00:00.000Z",
+      "docketEntryComment": "1035 SEARCH COND, $100RF REMITTED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1998-02-27T00:00:00.000Z",
+      "description": "1035 SEARCH COND, $100RF REMITTED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-02-27T00:00:00.000Z",
+      "docketEntryComment": "LESSER INCL",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1998-02-27T00:00:00.000Z",
+      "description": "LESSER INCL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01764025",
-    "portal_case_id": "",
+    "portal_case_id": "2925244",
     "display_case_number": "CRI-01764025",
     "defendant": "ERIC D ADAMS",
     "filed_date": "1998-02-10",
@@ -63,8 +135,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ERIC D ADAMS, and date of filing 1998-02-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ERIC D ADAMS, and date of filing 1998-02-10. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:48:16.200Z",
+  "portal_case_id": "2925244",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01764025",
+      "defendant": "ERIC D ADAMS",
+      "filed_date": "1998-02-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2925244"
+  }
 }

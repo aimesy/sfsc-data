@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:33:53.834Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:41:41.893Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01716119",
   "criminal_case_number": "01716119",
@@ -24,11 +24,37 @@
       "name": "DAVID MONTORY BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID MONTORY BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1997-05-20T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-05-29T00:00:00.000Z",
+      "docketEntryComment": "DISM PUR 849BPC SINCE WROGN PERSON WAS ARRESTED & 06/17 VACATED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-05-20T00:00:00.000Z",
+      "docketEntryComment": "DEFT INFORMED OF CHRGS & ARRAIGNED,FORM EXTRAD PROC NOT WAIVED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "DEFENDER PUBLIC",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +71,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2881766",
+  "docket_entries": [
+    {
+      "filedDate": "1997-05-20T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1997-05-20T00:00:00.000Z",
+      "description": "COMP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-05-29T00:00:00.000Z",
+      "docketEntryComment": "DISM PUR 849BPC SINCE WROGN PERSON WAS ARRESTED & 06/17 VACATED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1997-05-29T00:00:00.000Z",
+      "description": "DISM PUR 849BPC SINCE WROGN PERSON WAS ARRESTED & 06/17 VACATED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-05-20T00:00:00.000Z",
+      "docketEntryComment": "DEFT INFORMED OF CHRGS & ARRAIGNED,FORM EXTRAD PROC NOT WAIVED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1997-05-20T00:00:00.000Z",
+      "description": "DEFT INFORMED OF CHRGS & ARRAIGNED,FORM EXTRAD PROC NOT WAIVED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01716119",
-    "portal_case_id": "",
+    "portal_case_id": "2881766",
     "display_case_number": "CRI-01716119",
     "defendant": "DAVID MONTORY BROWN",
     "filed_date": "1997-05-20",
@@ -63,8 +120,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID MONTORY BROWN, and date of filing 1997-05-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID MONTORY BROWN, and date of filing 1997-05-20. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:41:42.534Z",
+  "portal_case_id": "2881766",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01716119",
+      "defendant": "DAVID MONTORY BROWN",
+      "filed_date": "1997-05-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2881766"
+  }
 }

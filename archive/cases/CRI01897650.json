@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:49:48.948Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:05:10.206Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01897650",
   "criminal_case_number": "01897650",
@@ -24,11 +24,32 @@
       "name": "JUAN PABLO GOMEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JUAN PABLO GOMEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2000-01-26T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-03-30T00:00:00.000Z",
+      "docketEntryComment": "DISM, DEF HAS VALID CDL",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "PUBLIC DEFENDER",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +66,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3047465",
+  "docket_entries": [
+    {
+      "filedDate": "2000-01-26T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2000-01-26T00:00:00.000Z",
+      "description": "COMP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-03-30T00:00:00.000Z",
+      "docketEntryComment": "DISM, DEF HAS VALID CDL",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2000-03-30T00:00:00.000Z",
+      "description": "DISM, DEF HAS VALID CDL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01897650",
-    "portal_case_id": "",
+    "portal_case_id": "3047465",
     "display_case_number": "CRI-01897650",
     "defendant": "JUAN PABLO GOMEZ",
     "filed_date": "2000-01-26",
@@ -63,8 +105,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JUAN PABLO GOMEZ, and date of filing 2000-01-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JUAN PABLO GOMEZ, and date of filing 2000-01-26. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:05:10.917Z",
+  "portal_case_id": "3047465",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01897650",
+      "defendant": "JUAN PABLO GOMEZ",
+      "filed_date": "2000-01-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3047465"
+  }
 }

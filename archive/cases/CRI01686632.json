@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:04:03.985Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:37:31.266Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01686632",
   "criminal_case_number": "01686632",
@@ -24,11 +24,57 @@
       "name": "CHAVEZ ALVAREZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHAVEZ ALVAREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1997-06-10T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-10-05T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-10-05T00:00:00.000Z",
+      "docketEntryComment": "5 YRS BW PURGED PER CT ORDER",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-11-21T00:00:00.000Z",
+      "docketEntryComment": "5 YEAR PURGED PER COURT ORDER",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-06-10T00:00:00.000Z",
+      "docketEntryComment": "FTA PTD P/R, BWI, B/S $5000, OR REVOKED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-03-11T00:00:00.000Z",
+      "docketEntryComment": "DIV GRNTD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-02-18T00:00:00.000Z",
+      "docketEntryComment": "NG PLEA W/DRAWN",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "J FELLNER",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +91,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2854769",
+  "docket_entries": [
+    {
+      "filedDate": "1997-06-10T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1997-06-10T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-10-05T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2004-10-05T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-10-05T00:00:00.000Z",
+      "docketEntryComment": "5 YRS BW PURGED PER CT ORDER",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2004-10-05T00:00:00.000Z",
+      "description": "5 YRS BW PURGED PER CT ORDER",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-11-21T00:00:00.000Z",
+      "docketEntryComment": "5 YEAR PURGED PER COURT ORDER",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2002-11-21T00:00:00.000Z",
+      "description": "5 YEAR PURGED PER COURT ORDER",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-06-10T00:00:00.000Z",
+      "docketEntryComment": "FTA PTD P/R, BWI, B/S $5000, OR REVOKED",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1997-06-10T00:00:00.000Z",
+      "description": "FTA PTD P/R, BWI, B/S $5000, OR REVOKED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-03-11T00:00:00.000Z",
+      "docketEntryComment": "DIV GRNTD",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1997-03-11T00:00:00.000Z",
+      "description": "DIV GRNTD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-02-18T00:00:00.000Z",
+      "docketEntryComment": "NG PLEA W/DRAWN",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1997-02-18T00:00:00.000Z",
+      "description": "NG PLEA W/DRAWN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01686632",
-    "portal_case_id": "",
+    "portal_case_id": "2854769",
     "display_case_number": "CRI-01686632",
     "defendant": "CHAVEZ ALVAREZ",
     "filed_date": "1996-12-11",
@@ -63,8 +180,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHAVEZ ALVAREZ, and date of filing 1996-12-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHAVEZ ALVAREZ, and date of filing 1996-12-11. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:37:31.874Z",
+  "portal_case_id": "2854769",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01686632",
+      "defendant": "CHAVEZ ALVAREZ",
+      "filed_date": "1996-12-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2854769"
+  }
 }

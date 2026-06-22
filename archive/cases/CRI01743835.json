@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:45:57.871Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:45:19.822Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01743835",
   "criminal_case_number": "01743835",
@@ -24,11 +24,32 @@
       "name": "MARVIN CARTER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARVIN CARTER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1997-10-23T00:00:00.000Z",
+      "docketEntryComment": "ANTY MOT SUPPRESS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-11-24T00:00:00.000Z",
+      "docketEntryComment": "BX SB123071 $3000",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "R BERG",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +66,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2906968",
+  "docket_entries": [
+    {
+      "filedDate": "1997-10-23T00:00:00.000Z",
+      "docketEntryComment": "ANTY MOT SUPPRESS",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1997-10-23T00:00:00.000Z",
+      "description": "ANTY MOT SUPPRESS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-11-24T00:00:00.000Z",
+      "docketEntryComment": "BX SB123071 $3000",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1997-11-24T00:00:00.000Z",
+      "description": "BX SB123071 $3000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01743835",
-    "portal_case_id": "",
+    "portal_case_id": "2906968",
     "display_case_number": "CRI-01743835",
     "defendant": "MARVIN CARTER",
     "filed_date": "1997-10-23",
@@ -63,8 +105,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARVIN CARTER, and date of filing 1997-10-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARVIN CARTER, and date of filing 1997-10-23. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:45:20.538Z",
+  "portal_case_id": "2906968",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01743835",
+      "defendant": "MARVIN CARTER",
+      "filed_date": "1997-10-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2906968"
+  }
 }

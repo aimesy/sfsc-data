@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:10:25.659Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:58:23.572Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01822403",
   "criminal_case_number": "01822403",
@@ -24,11 +24,37 @@
       "name": "PATRICK ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "PATRICK ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1998-12-04T00:00:00.000Z",
+      "docketEntryComment": "DRUG DIVERSION ELIG REPT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-08-03T00:00:00.000Z",
+      "docketEntryComment": "1000,3PC, SUCC DIVN & BX SB129737 $1900(DUMMY DKT)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-02-03T00:00:00.000Z",
+      "docketEntryComment": "DRUG DIV GRANTED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "G BASSAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +71,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2978715",
+  "docket_entries": [
+    {
+      "filedDate": "1998-12-04T00:00:00.000Z",
+      "docketEntryComment": "DRUG DIVERSION ELIG REPT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1998-12-04T00:00:00.000Z",
+      "description": "DRUG DIVERSION ELIG REPT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-08-03T00:00:00.000Z",
+      "docketEntryComment": "1000,3PC, SUCC DIVN & BX SB129737 $1900(DUMMY DKT)",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1999-08-03T00:00:00.000Z",
+      "description": "1000,3PC, SUCC DIVN & BX SB129737 $1900(DUMMY DKT)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-02-03T00:00:00.000Z",
+      "docketEntryComment": "DRUG DIV GRANTED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1999-02-03T00:00:00.000Z",
+      "description": "DRUG DIV GRANTED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01822403",
-    "portal_case_id": "",
+    "portal_case_id": "2978715",
     "display_case_number": "CRI-01822403",
     "defendant": "PATRICK ALLEN",
     "filed_date": "1998-12-04",
@@ -63,8 +120,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, PATRICK ALLEN, and date of filing 1998-12-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, PATRICK ALLEN, and date of filing 1998-12-04. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:58:24.232Z",
+  "portal_case_id": "2978715",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01822403",
+      "defendant": "PATRICK ALLEN",
+      "filed_date": "1998-12-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2978715"
+  }
 }

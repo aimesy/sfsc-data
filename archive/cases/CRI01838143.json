@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:31:28.775Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:57:14.287Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01838143",
   "criminal_case_number": "01838143",
@@ -24,9 +24,35 @@
       "name": "DAVID TODD BAKER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID TODD BAKER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1999-02-25T00:00:00.000Z",
+      "docketEntryComment": "PD MOT ADV FR 3-30-99",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-04-13T00:00:00.000Z",
+      "docketEntryComment": "DELIVERED TO NEW MEXICO ON 3-22-99",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-03-16T00:00:00.000Z",
+      "docketEntryComment": "NO BAIL, DEF WAIVES EXTRADITION",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-02-25T00:00:00.000Z",
+      "docketEntryComment": "BS $75,000 JDG BENSON; EXTRADITION NOT WAIVED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -45,11 +71,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2993047",
+  "docket_entries": [
+    {
+      "filedDate": "1999-02-25T00:00:00.000Z",
+      "docketEntryComment": "PD MOT ADV FR 3-30-99",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1999-02-25T00:00:00.000Z",
+      "description": "PD MOT ADV FR 3-30-99",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-04-13T00:00:00.000Z",
+      "docketEntryComment": "DELIVERED TO NEW MEXICO ON 3-22-99",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1999-04-13T00:00:00.000Z",
+      "description": "DELIVERED TO NEW MEXICO ON 3-22-99",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-03-16T00:00:00.000Z",
+      "docketEntryComment": "NO BAIL, DEF WAIVES EXTRADITION",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1999-03-16T00:00:00.000Z",
+      "description": "NO BAIL, DEF WAIVES EXTRADITION",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-02-25T00:00:00.000Z",
+      "docketEntryComment": "BS $75,000 JDG BENSON; EXTRADITION NOT WAIVED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1999-02-25T00:00:00.000Z",
+      "description": "BS $75,000 JDG BENSON; EXTRADITION NOT WAIVED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01838143",
-    "portal_case_id": "",
+    "portal_case_id": "2993047",
     "display_case_number": "CRI-01838143",
     "defendant": "DAVID TODD BAKER",
     "filed_date": "1999-02-25",
@@ -63,8 +130,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID TODD BAKER, and date of filing 1999-02-25. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID TODD BAKER, and date of filing 1999-02-25. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:57:14.930Z",
+  "portal_case_id": "2993047",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01838143",
+      "defendant": "DAVID TODD BAKER",
+      "filed_date": "1999-02-25"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2993047"
+  }
 }

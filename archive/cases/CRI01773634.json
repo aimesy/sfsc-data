@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:31:30.467Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:49:16.176Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01773634",
   "criminal_case_number": "01773634",
@@ -24,11 +24,56 @@
       "name": "NICHOLOS ALBERT ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "NICHOLOS ALBERT ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2000-02-08T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-04-23T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-02-08T00:00:00.000Z",
+      "docketEntryComment": "COMPLNT W/D, DEFT HAS VALID CDL",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-04-23T09:00:00.000Z",
+      "docketEntryComment": "FTA ARRAIGNMENT, BWI, B/S $5000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1998-04-23 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "1998-04-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "T BROOKS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +90,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2933973",
+  "docket_entries": [
+    {
+      "filedDate": "2000-02-08T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2000-02-08T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-04-23T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1998-04-23T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-02-08T00:00:00.000Z",
+      "docketEntryComment": "COMPLNT W/D, DEFT HAS VALID CDL",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2000-02-08T00:00:00.000Z",
+      "description": "COMPLNT W/D, DEFT HAS VALID CDL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-04-23T09:00:00.000Z",
+      "docketEntryComment": "FTA ARRAIGNMENT, BWI, B/S $5000",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1998-04-23T09:00:00.000Z",
+      "description": "FTA ARRAIGNMENT, BWI, B/S $5000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01773634",
-    "portal_case_id": "",
+    "portal_case_id": "2933973",
     "display_case_number": "CRI-01773634",
     "defendant": "NICHOLOS ALBERT ALLEN",
     "filed_date": "2000-02-08",
@@ -63,8 +149,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, NICHOLOS ALBERT ALLEN, and date of filing 2000-02-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, NICHOLOS ALBERT ALLEN, and date of filing 2000-02-08. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:49:16.796Z",
+  "portal_case_id": "2933973",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01773634",
+      "defendant": "NICHOLOS ALBERT ALLEN",
+      "filed_date": "2000-02-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2933973"
+  }
 }

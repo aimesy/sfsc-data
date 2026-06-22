@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:45.193Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:06:43.939Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01885021",
   "criminal_case_number": "01885021",
@@ -24,11 +24,32 @@
       "name": "JOHN ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1999-11-02T00:00:00.000Z",
+      "docketEntryComment": "TOS ET DOP FR #10",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-02-22T00:00:00.000Z",
+      "docketEntryComment": "DA PLEA #1874358 & #1889906",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "M JACOBS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +66,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3036011",
+  "docket_entries": [
+    {
+      "filedDate": "1999-11-02T00:00:00.000Z",
+      "docketEntryComment": "TOS ET DOP FR #10",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1999-11-02T00:00:00.000Z",
+      "description": "TOS ET DOP FR #10",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-02-22T00:00:00.000Z",
+      "docketEntryComment": "DA PLEA #1874358 & #1889906",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2000-02-22T00:00:00.000Z",
+      "description": "DA PLEA #1874358 & #1889906",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01885021",
-    "portal_case_id": "",
+    "portal_case_id": "3036011",
     "display_case_number": "CRI-01885021",
     "defendant": "JOHN ADAMS",
     "filed_date": "1999-11-02",
@@ -63,8 +105,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN ADAMS, and date of filing 1999-11-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN ADAMS, and date of filing 1999-11-02. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:06:44.514Z",
+  "portal_case_id": "3036011",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01885021",
+      "defendant": "JOHN ADAMS",
+      "filed_date": "1999-11-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3036011"
+  }
 }

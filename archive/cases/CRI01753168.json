@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:36:12.334Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:44:08.173Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01753168",
   "criminal_case_number": "01753168",
@@ -24,11 +24,47 @@
       "name": "KALLICIA BRADLEY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KALLICIA BRADLEY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1999-10-12T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-01-27T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-12-12T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-10-12T00:00:00.000Z",
+      "docketEntryComment": "BWD, B/S $5000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-01-27T00:00:00.000Z",
+      "docketEntryComment": "DEF FTA, BWI, B/S $5,000, OR REVKD",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "S RISCHMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +81,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2915384",
+  "docket_entries": [
+    {
+      "filedDate": "1999-10-12T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1999-10-12T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-01-27T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1998-01-27T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-12-12T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1997-12-12T00:00:00.000Z",
+      "description": "COMP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-10-12T00:00:00.000Z",
+      "docketEntryComment": "BWD, B/S $5000",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1999-10-12T00:00:00.000Z",
+      "description": "BWD, B/S $5000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-01-27T00:00:00.000Z",
+      "docketEntryComment": "DEF FTA, BWI, B/S $5,000, OR REVKD",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1998-01-27T00:00:00.000Z",
+      "description": "DEF FTA, BWI, B/S $5,000, OR REVKD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01753168",
-    "portal_case_id": "",
+    "portal_case_id": "2915384",
     "display_case_number": "CRI-01753168",
     "defendant": "KALLICIA BRADLEY",
     "filed_date": "1997-12-12",
@@ -63,8 +150,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KALLICIA BRADLEY, and date of filing 1997-12-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KALLICIA BRADLEY, and date of filing 1997-12-12. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:44:08.838Z",
+  "portal_case_id": "2915384",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01753168",
+      "defendant": "KALLICIA BRADLEY",
+      "filed_date": "1997-12-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2915384"
+  }
 }

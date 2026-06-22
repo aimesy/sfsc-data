@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:23:22.084Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:01:13.645Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01862380",
   "criminal_case_number": "01862380",
@@ -24,11 +24,32 @@
       "name": "CHRISTOPHER LEE ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHRISTOPHER LEE ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1999-07-13T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-08-12T00:00:00.000Z",
+      "docketEntryComment": "IV DISPO #1866367",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "M SANTOS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +66,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3015152",
+  "docket_entries": [
+    {
+      "filedDate": "1999-07-13T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1999-07-13T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY HEARING",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-08-12T00:00:00.000Z",
+      "docketEntryComment": "IV DISPO #1866367",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1999-08-12T00:00:00.000Z",
+      "description": "IV DISPO #1866367",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01862380",
-    "portal_case_id": "",
+    "portal_case_id": "3015152",
     "display_case_number": "CRI-01862380",
     "defendant": "CHRISTOPHER LEE ANDERSON",
     "filed_date": "1999-07-13",
@@ -63,8 +105,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHRISTOPHER LEE ANDERSON, and date of filing 1999-07-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHRISTOPHER LEE ANDERSON, and date of filing 1999-07-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:01:14.238Z",
+  "portal_case_id": "3015152",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01862380",
+      "defendant": "CHRISTOPHER LEE ANDERSON",
+      "filed_date": "1999-07-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3015152"
+  }
 }

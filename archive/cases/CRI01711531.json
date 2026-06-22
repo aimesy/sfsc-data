@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:41:07.978Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:38:08.852Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01711531",
   "criminal_case_number": "01711531",
@@ -24,11 +24,46 @@
       "name": "MICHAEL S CAMPOS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL S CAMPOS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1997-04-22T00:00:00.000Z",
+      "docketEntryComment": "SET/DISPO (DOP)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-11-18T00:00:00.000Z",
+      "docketEntryComment": "LIABLE UP TO $40/M PRB COSTS,$150 PRE-SENT RPT,$125 BKG FEEDEFT ACCPTS COND POF PROB & RECVD COPY PROB ORD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-11-18T00:00:00.000Z",
+      "docketEntryComment": "ISS,APD3Y,6MCJ/19DCTS,WS,$200RF,MAY SERV CJ THRU SHERIFF DRUG TRTMNT PRG",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-09-19T00:00:00.000Z",
+      "docketEntryComment": "ALLEGA STKN,M10 AS X-SESS TO SUP CT,COMPL AMD TO STRIKE DEADLY WEAPON",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "C WALLACE",
+      "type": "Public Defender"
+    },
+    {
+      "name": "K LAUTH",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +80,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2877704",
+  "docket_entries": [
+    {
+      "filedDate": "1997-04-22T00:00:00.000Z",
+      "docketEntryComment": "SET/DISPO (DOP)",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1997-04-22T00:00:00.000Z",
+      "description": "SET/DISPO (DOP)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-11-18T00:00:00.000Z",
+      "docketEntryComment": "LIABLE UP TO $40/M PRB COSTS,$150 PRE-SENT RPT,$125 BKG FEEDEFT ACCPTS COND POF PROB & RECVD COPY PROB ORD",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1997-11-18T00:00:00.000Z",
+      "description": "LIABLE UP TO $40/M PRB COSTS,$150 PRE-SENT RPT,$125 BKG FEEDEFT ACCPTS COND POF PROB & RECVD COPY PROB ORD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-11-18T00:00:00.000Z",
+      "docketEntryComment": "ISS,APD3Y,6MCJ/19DCTS,WS,$200RF,MAY SERV CJ THRU SHERIFF DRUG TRTMNT PRG",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1997-11-18T00:00:00.000Z",
+      "description": "ISS,APD3Y,6MCJ/19DCTS,WS,$200RF,MAY SERV CJ THRU SHERIFF DRUG TRTMNT PRG",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-09-19T00:00:00.000Z",
+      "docketEntryComment": "ALLEGA STKN,M10 AS X-SESS TO SUP CT,COMPL AMD TO STRIKE DEADLY WEAPON",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1997-09-19T00:00:00.000Z",
+      "description": "ALLEGA STKN,M10 AS X-SESS TO SUP CT,COMPL AMD TO STRIKE DEADLY WEAPON",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01711531",
-    "portal_case_id": "",
+    "portal_case_id": "2877704",
     "display_case_number": "CRI-01711531",
     "defendant": "MICHAEL S CAMPOS",
     "filed_date": "1997-04-22",
@@ -63,8 +139,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL S CAMPOS, and date of filing 1997-04-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL S CAMPOS, and date of filing 1997-04-22. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:38:09.597Z",
+  "portal_case_id": "2877704",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01711531",
+      "defendant": "MICHAEL S CAMPOS",
+      "filed_date": "1997-04-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2877704"
+  }
 }

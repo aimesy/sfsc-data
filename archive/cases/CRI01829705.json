@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:40:22.985Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:55:22.622Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01829705",
   "criminal_case_number": "01829705",
@@ -24,11 +24,60 @@
       "name": "CHRISTINA CARPENTER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHRISTINA CARPENTER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1999-03-25T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2004-12-08T18:00:00.000Z",
+      "docketEntryComment": "EXPIRE PROBATION AND TERMINATE WARRANTLESS SEARCH",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-04-12T09:10:00.000Z",
+      "docketEntryComment": "/AJW/CH1 ISS PROB 3 Y PJ30D/CTS 6/PF 500/WS/VF4 $200/LSUS1/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/SA2:238 LEAVENWORTH ST, #2/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-03-25T00:00:00.000Z",
+      "docketEntryComment": "DEF FTA, BWI, NO BAIL",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1999-04-12 9:10 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "1999-04-12",
+      "hearing_time": "9:10 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DONALD BLOOM",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "S BACON",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +94,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2985431",
+  "docket_entries": [
+    {
+      "filedDate": "1999-03-25T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1999-03-25T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2004-12-08T18:00:00.000Z",
+      "docketEntryComment": "EXPIRE PROBATION AND TERMINATE WARRANTLESS SEARCH",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2004-12-08T18:00:00.000Z",
+      "description": "EXPIRE PROBATION AND TERMINATE WARRANTLESS SEARCH",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-04-12T09:10:00.000Z",
+      "docketEntryComment": "/AJW/CH1 ISS PROB 3 Y PJ30D/CTS 6/PF 500/WS/VF4 $200/LSUS1/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/SA2:238 LEAVENWORTH ST, #2/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1999-04-12T09:10:00.000Z",
+      "description": "/AJW/CH1 ISS PROB 3 Y PJ30D/CTS 6/PF 500/WS/VF4 $200/LSUS1/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/SA2:238 LEAVENWORTH ST, #2/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-03-25T00:00:00.000Z",
+      "docketEntryComment": "DEF FTA, BWI, NO BAIL",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1999-03-25T00:00:00.000Z",
+      "description": "DEF FTA, BWI, NO BAIL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01829705",
-    "portal_case_id": "",
+    "portal_case_id": "2985431",
     "display_case_number": "CRI-01829705",
     "defendant": "CHRISTINA CARPENTER",
     "filed_date": "1999-01-12",
@@ -63,8 +153,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHRISTINA CARPENTER, and date of filing 1999-01-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHRISTINA CARPENTER, and date of filing 1999-01-12. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:55:23.291Z",
+  "portal_case_id": "2985431",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01829705",
+      "defendant": "CHRISTINA CARPENTER",
+      "filed_date": "1999-01-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2985431"
+  }
 }

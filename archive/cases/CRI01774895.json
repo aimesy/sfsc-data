@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T13:58:59.289Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:49:25.359Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01774895",
   "criminal_case_number": "01774895",
@@ -24,11 +24,32 @@
       "name": "JEFF ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JEFF ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1998-04-07T00:00:00.000Z",
+      "docketEntryComment": "DRUG COURT - TRACK II",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-06-28T00:00:00.000Z",
+      "docketEntryComment": "DISM 1000,3PC - SUCC DIVN",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "L DAVIS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +66,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2935115",
+  "docket_entries": [
+    {
+      "filedDate": "1998-04-07T00:00:00.000Z",
+      "docketEntryComment": "DRUG COURT - TRACK II",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1998-04-07T00:00:00.000Z",
+      "description": "DRUG COURT - TRACK II",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-06-28T00:00:00.000Z",
+      "docketEntryComment": "DISM 1000,3PC - SUCC DIVN",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1999-06-28T00:00:00.000Z",
+      "description": "DISM 1000,3PC - SUCC DIVN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01774895",
-    "portal_case_id": "",
+    "portal_case_id": "2935115",
     "display_case_number": "CRI-01774895",
     "defendant": "JEFF ADAMS",
     "filed_date": "1998-04-07",
@@ -63,8 +105,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JEFF ADAMS, and date of filing 1998-04-07. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JEFF ADAMS, and date of filing 1998-04-07. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:49:25.910Z",
+  "portal_case_id": "2935115",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01774895",
+      "defendant": "JEFF ADAMS",
+      "filed_date": "1998-04-07"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2935115"
+  }
 }

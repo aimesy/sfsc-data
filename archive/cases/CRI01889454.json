@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:25:02.443Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:04:09.861Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01889454",
   "criminal_case_number": "01889454",
@@ -24,11 +24,46 @@
       "name": "CHET ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHET ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1999-11-24T00:00:00.000Z",
+      "docketEntryComment": "PTC,DOP,L/D 122999,S/A-Y",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-12-17T00:00:00.000Z",
+      "docketEntryComment": "DISM--MODIFY OF PROBATION IN 1879381",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-12-08T00:00:00.000Z",
+      "docketEntryComment": "JT DATE CINFIRMED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1999-11-29T00:00:00.000Z",
+      "docketEntryComment": "SIGNED S/A ORD FILED & SERV,S/A FR PRINCESS HENRY,BS $7500",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "A MIRANDA",
+      "type": "Public Defender"
+    },
+    {
+      "name": "M HOCTOR",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +80,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3039998",
+  "docket_entries": [
+    {
+      "filedDate": "1999-11-24T00:00:00.000Z",
+      "docketEntryComment": "PTC,DOP,L/D 122999,S/A-Y",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1999-11-24T00:00:00.000Z",
+      "description": "PTC,DOP,L/D 122999,S/A-Y",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-12-17T00:00:00.000Z",
+      "docketEntryComment": "DISM--MODIFY OF PROBATION IN 1879381",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1999-12-17T00:00:00.000Z",
+      "description": "DISM--MODIFY OF PROBATION IN 1879381",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-12-08T00:00:00.000Z",
+      "docketEntryComment": "JT DATE CINFIRMED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1999-12-08T00:00:00.000Z",
+      "description": "JT DATE CINFIRMED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1999-11-29T00:00:00.000Z",
+      "docketEntryComment": "SIGNED S/A ORD FILED & SERV,S/A FR PRINCESS HENRY,BS $7500",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1999-11-29T00:00:00.000Z",
+      "description": "SIGNED S/A ORD FILED & SERV,S/A FR PRINCESS HENRY,BS $7500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01889454",
-    "portal_case_id": "",
+    "portal_case_id": "3039998",
     "display_case_number": "CRI-01889454",
     "defendant": "CHET ALLEN",
     "filed_date": "1999-11-24",
@@ -63,8 +139,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHET ALLEN, and date of filing 1999-11-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHET ALLEN, and date of filing 1999-11-24. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:04:10.544Z",
+  "portal_case_id": "3039998",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01889454",
+      "defendant": "CHET ALLEN",
+      "filed_date": "1999-11-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3039998"
+  }
 }

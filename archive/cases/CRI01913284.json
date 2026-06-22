@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:27:16.345Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:07:25.830Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01913284",
   "criminal_case_number": "01913284",
@@ -24,11 +24,51 @@
       "name": "ROBERT ARMSTRONG",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROBERT ARMSTRONG",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2000-03-28T00:00:00.000Z",
+      "docketEntryComment": "TO BE SET",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-05-12T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ19D/CTS:19/WS//X:THE $1087,00 CURRENCY SEIZED IN CASE #1913282 IS FORFEITED/ /VF4:200/PC/PSR/BKFEE/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-06-23T00:00:00.000Z",
+      "docketEntryComment": "MOT GRNTD",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2000-05-12 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2000-05-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ROBERT BERG",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +85,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3061833",
+  "docket_entries": [
+    {
+      "filedDate": "2000-03-28T00:00:00.000Z",
+      "docketEntryComment": "TO BE SET",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2000-03-28T00:00:00.000Z",
+      "description": "TO BE SET",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-05-12T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ19D/CTS:19/WS//X:THE $1087,00 CURRENCY SEIZED IN CASE #1913282 IS FORFEITED/ /VF4:200/PC/PSR/BKFEE/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2000-05-12T09:00:00.000Z",
+      "description": "/AJW/CH1:ISS:PROB 3 Y:PJ19D/CTS:19/WS//X:THE $1087,00 CURRENCY SEIZED IN CASE #1913282 IS FORFEITED/ /VF4:200/PC/PSR/BKFEE/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-06-23T00:00:00.000Z",
+      "docketEntryComment": "MOT GRNTD",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2000-06-23T00:00:00.000Z",
+      "description": "MOT GRNTD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01913284",
-    "portal_case_id": "",
+    "portal_case_id": "3061833",
     "display_case_number": "CRI-01913284",
     "defendant": "ROBERT ARMSTRONG",
     "filed_date": "2000-03-28",
@@ -63,8 +134,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROBERT ARMSTRONG, and date of filing 2000-03-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROBERT ARMSTRONG, and date of filing 2000-03-28. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:07:26.545Z",
+  "portal_case_id": "3061833",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01913284",
+      "defendant": "ROBERT ARMSTRONG",
+      "filed_date": "2000-03-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3061833"
+  }
 }

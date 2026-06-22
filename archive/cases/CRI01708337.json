@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:35.569Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:37:55.535Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01708337",
   "criminal_case_number": "01708337",
@@ -24,11 +24,57 @@
       "name": "CARL MICHAEL BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CARL MICHAEL BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1997-06-20T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-08-29T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-04-03T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-09-22T00:00:00.000Z",
+      "docketEntryComment": "PROB REVOKE & PROB TERM UNSUF PLEA TO #17116521 & #1720693",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-08-29T00:00:00.000Z",
+      "docketEntryComment": "BWD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-06-20T00:00:00.000Z",
+      "docketEntryComment": "DEF FTA, BWI, B/S $10,000",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-04-17T00:00:00.000Z",
+      "docketEntryComment": "$100VIF",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "L DAVIS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +91,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2874767",
+  "docket_entries": [
+    {
+      "filedDate": "1997-06-20T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1997-06-20T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-08-29T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1997-08-29T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-04-03T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1997-04-03T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-09-22T00:00:00.000Z",
+      "docketEntryComment": "PROB REVOKE & PROB TERM UNSUF PLEA TO #17116521 & #1720693",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1997-09-22T00:00:00.000Z",
+      "description": "PROB REVOKE & PROB TERM UNSUF PLEA TO #17116521 & #1720693",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-08-29T00:00:00.000Z",
+      "docketEntryComment": "BWD",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1997-08-29T00:00:00.000Z",
+      "description": "BWD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-06-20T00:00:00.000Z",
+      "docketEntryComment": "DEF FTA, BWI, B/S $10,000",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1997-06-20T00:00:00.000Z",
+      "description": "DEF FTA, BWI, B/S $10,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-04-17T00:00:00.000Z",
+      "docketEntryComment": "$100VIF",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "1997-04-17T00:00:00.000Z",
+      "description": "$100VIF",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01708337",
-    "portal_case_id": "",
+    "portal_case_id": "2874767",
     "display_case_number": "CRI-01708337",
     "defendant": "CARL MICHAEL BROWN",
     "filed_date": "1997-04-03",
@@ -63,8 +180,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CARL MICHAEL BROWN, and date of filing 1997-04-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CARL MICHAEL BROWN, and date of filing 1997-04-03. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:37:56.157Z",
+  "portal_case_id": "2874767",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01708337",
+      "defendant": "CARL MICHAEL BROWN",
+      "filed_date": "1997-04-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2874767"
+  }
 }

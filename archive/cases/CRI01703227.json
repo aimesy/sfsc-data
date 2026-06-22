@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:32:41.985Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:36:57.214Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01703227",
   "criminal_case_number": "01703227",
@@ -24,11 +24,32 @@
       "name": "JOHN R BARKER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN R BARKER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1997-04-01T00:00:00.000Z",
+      "docketEntryComment": "PTD ELIG RPT (DOPU)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-09-19T00:00:00.000Z",
+      "docketEntryComment": "DISM PTD SUCCF",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "A MOORE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +66,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2870063",
+  "docket_entries": [
+    {
+      "filedDate": "1997-04-01T00:00:00.000Z",
+      "docketEntryComment": "PTD ELIG RPT (DOPU)",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1997-04-01T00:00:00.000Z",
+      "description": "PTD ELIG RPT (DOPU)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-09-19T00:00:00.000Z",
+      "docketEntryComment": "DISM PTD SUCCF",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1997-09-19T00:00:00.000Z",
+      "description": "DISM PTD SUCCF",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01703227",
-    "portal_case_id": "",
+    "portal_case_id": "2870063",
     "display_case_number": "CRI-01703227",
     "defendant": "JOHN R BARKER",
     "filed_date": "1997-04-01",
@@ -63,8 +105,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN R BARKER, and date of filing 1997-04-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN R BARKER, and date of filing 1997-04-01. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:36:57.779Z",
+  "portal_case_id": "2870063",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01703227",
+      "defendant": "JOHN R BARKER",
+      "filed_date": "1997-04-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2870063"
+  }
 }

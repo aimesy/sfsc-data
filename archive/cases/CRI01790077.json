@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:29:25.988Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:49:13.014Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01790077",
   "criminal_case_number": "01790077",
@@ -24,11 +24,66 @@
       "name": "CORNELIUS BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CORNELIUS BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1998-09-04T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-09-09T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-07-01T00:00:00.000Z",
+      "docketEntryComment": "CIVIL COMPROMISE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-10-02T00:00:00.000Z",
+      "docketEntryComment": "DISMISS PURSUANT TO CIVIL COMPROMISE CMPLTN",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-09-09T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-09-04T09:00:00.000Z",
+      "docketEntryComment": "FTA JURY TRIAL & 1378 HRG, BWI, B/S $10,000 DO NOT CITE",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1998-09-04 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "1998-09-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "D BISCHOFF",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +100,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2949008",
+  "docket_entries": [
+    {
+      "filedDate": "1998-09-04T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1998-09-04T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-09-09T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1998-09-09T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-07-01T00:00:00.000Z",
+      "docketEntryComment": "CIVIL COMPROMISE",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1998-07-01T00:00:00.000Z",
+      "description": "CIVIL COMPROMISE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-10-02T00:00:00.000Z",
+      "docketEntryComment": "DISMISS PURSUANT TO CIVIL COMPROMISE CMPLTN",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1998-10-02T00:00:00.000Z",
+      "description": "DISMISS PURSUANT TO CIVIL COMPROMISE CMPLTN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-09-09T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1998-09-09T00:00:00.000Z",
+      "description": "BWD, N/C",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-09-04T09:00:00.000Z",
+      "docketEntryComment": "FTA JURY TRIAL & 1378 HRG, BWI, B/S $10,000 DO NOT CITE",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1998-09-04T09:00:00.000Z",
+      "description": "FTA JURY TRIAL & 1378 HRG, BWI, B/S $10,000 DO NOT CITE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01790077",
-    "portal_case_id": "",
+    "portal_case_id": "2949008",
     "display_case_number": "CRI-01790077",
     "defendant": "CORNELIUS BROWN",
     "filed_date": "1998-07-01",
@@ -63,8 +179,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CORNELIUS BROWN, and date of filing 1998-07-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CORNELIUS BROWN, and date of filing 1998-07-01. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:49:13.594Z",
+  "portal_case_id": "2949008",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01790077",
+      "defendant": "CORNELIUS BROWN",
+      "filed_date": "1998-07-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2949008"
+  }
 }

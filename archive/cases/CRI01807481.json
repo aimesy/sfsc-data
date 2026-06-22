@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:30:50.312Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:52:21.262Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01807481",
   "criminal_case_number": "01807481",
@@ -24,11 +24,52 @@
       "name": "BRAD ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BRAD ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1998-10-13T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-11-30T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-09-21T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-11-30T00:00:00.000Z",
+      "docketEntryComment": "DISMISS IN THE INTEREST OF JUSTICE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-10-13T00:00:00.000Z",
+      "docketEntryComment": "(HELD FROM 10/9 INADVERTENTLY BY CLK)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-10-09T00:00:00.000Z",
+      "docketEntryComment": "BW $2500 DO NOT CITE, INADVERTENTLY HELD TO 10/13/98",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "A MOORE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +86,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2964986",
+  "docket_entries": [
+    {
+      "filedDate": "1998-10-13T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1998-10-13T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-11-30T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1998-11-30T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-09-21T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1998-09-21T00:00:00.000Z",
+      "description": "COMP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-11-30T00:00:00.000Z",
+      "docketEntryComment": "DISMISS IN THE INTEREST OF JUSTICE",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1998-11-30T00:00:00.000Z",
+      "description": "DISMISS IN THE INTEREST OF JUSTICE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-10-13T00:00:00.000Z",
+      "docketEntryComment": "(HELD FROM 10/9 INADVERTENTLY BY CLK)",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1998-10-13T00:00:00.000Z",
+      "description": "(HELD FROM 10/9 INADVERTENTLY BY CLK)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-10-09T00:00:00.000Z",
+      "docketEntryComment": "BW $2500 DO NOT CITE, INADVERTENTLY HELD TO 10/13/98",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1998-10-09T00:00:00.000Z",
+      "description": "BW $2500 DO NOT CITE, INADVERTENTLY HELD TO 10/13/98",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01807481",
-    "portal_case_id": "",
+    "portal_case_id": "2964986",
     "display_case_number": "CRI-01807481",
     "defendant": "BRAD ALLEN",
     "filed_date": "1998-09-21",
@@ -63,8 +165,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BRAD ALLEN, and date of filing 1998-09-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BRAD ALLEN, and date of filing 1998-09-21. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:52:21.888Z",
+  "portal_case_id": "2964986",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01807481",
+      "defendant": "BRAD ALLEN",
+      "filed_date": "1998-09-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2964986"
+  }
 }

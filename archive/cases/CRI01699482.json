@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:40:21.384Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:39:29.072Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01699482",
   "criminal_case_number": "01699482",
@@ -24,11 +24,32 @@
       "name": "ARCENIO AGUILAR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ARCENIO AGUILAR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1997-02-13T00:00:00.000Z",
+      "docketEntryComment": "PTD E/R,DOP UNLESS WVD BY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-07-07T00:00:00.000Z",
+      "docketEntryComment": "DISM PTD SUCC 1001,7 & 9PC",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "PUBLIC DEFENDER",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +66,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2866617",
+  "docket_entries": [
+    {
+      "filedDate": "1997-02-13T00:00:00.000Z",
+      "docketEntryComment": "PTD E/R,DOP UNLESS WVD BY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1997-02-13T00:00:00.000Z",
+      "description": "PTD E/R,DOP UNLESS WVD BY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-07-07T00:00:00.000Z",
+      "docketEntryComment": "DISM PTD SUCC 1001,7 & 9PC",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1997-07-07T00:00:00.000Z",
+      "description": "DISM PTD SUCC 1001,7 & 9PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01699482",
-    "portal_case_id": "",
+    "portal_case_id": "2866617",
     "display_case_number": "CRI-01699482",
     "defendant": "ARCENIO AGUILAR",
     "filed_date": "1997-02-13",
@@ -63,8 +105,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ARCENIO AGUILAR, and date of filing 1997-02-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ARCENIO AGUILAR, and date of filing 1997-02-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:39:29.732Z",
+  "portal_case_id": "2866617",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01699482",
+      "defendant": "ARCENIO AGUILAR",
+      "filed_date": "1997-02-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2866617"
+  }
 }

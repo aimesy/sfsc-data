@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:40:22.985Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T20:41:55.077Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01717764",
   "criminal_case_number": "01717764",
@@ -24,11 +24,52 @@
       "name": "CHARLES CARPENTER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHARLES CARPENTER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "1998-01-20T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-01-22T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1997-05-30T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-03-31T00:00:00.000Z",
+      "docketEntryComment": "DISMISS IN VIEW OF PLEA TO CT #3",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-01-22T00:00:00.000Z",
+      "docketEntryComment": "BWR",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1998-01-20T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "M JACOBS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +86,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2883285",
+  "docket_entries": [
+    {
+      "filedDate": "1998-01-20T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1998-01-20T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-01-22T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1998-01-22T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1997-05-30T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1997-05-30T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY HEARING",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-03-31T00:00:00.000Z",
+      "docketEntryComment": "DISMISS IN VIEW OF PLEA TO CT #3",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1998-03-31T00:00:00.000Z",
+      "description": "DISMISS IN VIEW OF PLEA TO CT #3",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-01-22T00:00:00.000Z",
+      "docketEntryComment": "BWR",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "1998-01-22T00:00:00.000Z",
+      "description": "BWR",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1998-01-20T00:00:00.000Z",
+      "docketEntryComment": "FTA,BWI",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "1998-01-20T00:00:00.000Z",
+      "description": "FTA,BWI",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01717764",
-    "portal_case_id": "",
+    "portal_case_id": "2883285",
     "display_case_number": "CRI-01717764",
     "defendant": "CHARLES CARPENTER",
     "filed_date": "1997-05-30",
@@ -63,8 +165,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHARLES CARPENTER, and date of filing 1997-05-30. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHARLES CARPENTER, and date of filing 1997-05-30. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T20:41:55.710Z",
+  "portal_case_id": "2883285",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01717764",
+      "defendant": "CHARLES CARPENTER",
+      "filed_date": "1997-05-30"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2883285"
+  }
 }
