@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:30:29.416Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:34:02.959Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00334066",
   "criminal_case_number": "00334066",
@@ -24,11 +24,58 @@
       "name": "WILLIAM H ELLIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "WILLIAM H ELLIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1980-06-09T00:00:00.000Z",
+      "docketEntryComment": "DEFT MOT TO RBW OF 7/22/80",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1980-12-10 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1980-12-10",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1980-11-12 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1980-11-12",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "F HORNE",
+      "type": "Public Defender"
+    },
+    {
+      "name": "C KASUN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +92,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1691028",
+  "docket_entries": [
+    {
+      "filedDate": "1980-06-09T00:00:00.000Z",
+      "docketEntryComment": "DEFT MOT TO RBW OF 7/22/80",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1980-06-09T00:00:00.000Z",
+      "description": "DEFT MOT TO RBW OF 7/22/80",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00334066",
-    "portal_case_id": "",
+    "portal_case_id": "1691028",
     "display_case_number": "CRI-00334066",
     "defendant": "WILLIAM H ELLIS",
     "filed_date": "1980-06-09",
@@ -63,8 +121,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, WILLIAM H ELLIS, and date of filing 1980-06-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, WILLIAM H ELLIS, and date of filing 1980-06-09. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:34:03.577Z",
+  "portal_case_id": "1691028",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00334066",
+      "defendant": "WILLIAM H ELLIS",
+      "filed_date": "1980-06-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1691028"
+  }
 }

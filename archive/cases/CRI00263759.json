@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:58:25.073Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:33:05.396Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00263759",
   "criminal_case_number": "00263759",
@@ -24,11 +24,45 @@
       "name": "FRANK FREEMAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "FRANK FREEMAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1977-10-26T00:00:00.000Z",
+      "docketEntryComment": "INFO",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1979-07-26 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1979-07-26",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "T BRUYNEEL",
+      "type": "Public Defender"
+    },
+    {
+      "name": "M SIEGFRIED",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +79,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1643508",
+  "docket_entries": [
+    {
+      "filedDate": "1977-10-26T00:00:00.000Z",
+      "docketEntryComment": "INFO",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1977-10-26T00:00:00.000Z",
+      "description": "INFO",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00263759",
-    "portal_case_id": "",
+    "portal_case_id": "1643508",
     "display_case_number": "CRI-00263759",
     "defendant": "FRANK FREEMAN",
     "filed_date": "1977-10-26",
@@ -63,8 +108,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, FRANK FREEMAN, and date of filing 1977-10-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, FRANK FREEMAN, and date of filing 1977-10-26. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:33:06.118Z",
+  "portal_case_id": "1643508",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00263759",
+      "defendant": "FRANK FREEMAN",
+      "filed_date": "1977-10-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1643508"
+  }
 }

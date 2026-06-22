@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:45.195Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:26:21.804Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00145160",
   "criminal_case_number": "00145160",
@@ -24,11 +24,115 @@
       "name": "JOHN QUINCY ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN QUINCY ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1978-01-03T00:00:00.000Z",
+      "docketEntryComment": "REMITTITUR",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1977-12-01T00:00:00.000Z",
+      "docketEntryComment": "REMITTITUR",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1979-11-27 9:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1979-11-27",
+      "hearing_time": "9:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1978-04-28 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 7",
+      "__index": 1,
+      "court_date": "1978-04-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 7",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1978-03-14 9:30 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 7",
+      "__index": 2,
+      "court_date": "1978-03-14",
+      "hearing_time": "9:30 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 7",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1978-02-15 9:00 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 3,
+      "court_date": "1978-02-15",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1978-01-09 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 4,
+      "court_date": "1978-01-09",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1977-12-05 9:30 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 5,
+      "court_date": "1977-12-05",
+      "hearing_time": "9:30 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "T BRUYNEEL",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "W FAZIO",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +149,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1567229",
+  "docket_entries": [
+    {
+      "filedDate": "1978-01-03T00:00:00.000Z",
+      "docketEntryComment": "REMITTITUR",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1978-01-03T00:00:00.000Z",
+      "description": "REMITTITUR",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1977-12-01T00:00:00.000Z",
+      "docketEntryComment": "REMITTITUR",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1977-12-01T00:00:00.000Z",
+      "description": "REMITTITUR",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00145160",
-    "portal_case_id": "",
+    "portal_case_id": "1567229",
     "display_case_number": "CRI-00145160",
     "defendant": "JOHN QUINCY ADAMS",
     "filed_date": "1977-12-01",
@@ -63,8 +188,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN QUINCY ADAMS, and date of filing 1977-12-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN QUINCY ADAMS, and date of filing 1977-12-01. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:26:22.436Z",
+  "portal_case_id": "1567229",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00145160",
+      "defendant": "JOHN QUINCY ADAMS",
+      "filed_date": "1977-12-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1567229"
+  }
 }

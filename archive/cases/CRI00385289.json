@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:40:42.036Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:36:28.929Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00385289",
   "criminal_case_number": "00385289",
@@ -24,11 +24,115 @@
       "name": "JAVIER ANTHONY AGUILAR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAVIER ANTHONY AGUILAR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1981-05-06T00:00:00.000Z",
+      "docketEntryComment": "HG MO TO CONTINUE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1981-01-29T00:00:00.000Z",
+      "docketEntryComment": "HG MO TO CONTINUE",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1981-10-21 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 28",
+      "__index": 0,
+      "court_date": "1981-10-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 28",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1981-08-25 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 28",
+      "__index": 1,
+      "court_date": "1981-08-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 28",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1981-07-13 9:30 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 28",
+      "__index": 2,
+      "court_date": "1981-07-13",
+      "hearing_time": "9:30 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 28",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1981-07-01 9:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1981-07-01",
+      "hearing_time": "9:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1981-06-29 9:30 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 4,
+      "court_date": "1981-06-29",
+      "hearing_time": "9:30 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1981-05-13 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 5,
+      "court_date": "1981-05-13",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "F WINSTON",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "J ROWLAND",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +149,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1729122",
+  "docket_entries": [
+    {
+      "filedDate": "1981-05-06T00:00:00.000Z",
+      "docketEntryComment": "HG MO TO CONTINUE",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1981-05-06T00:00:00.000Z",
+      "description": "HG MO TO CONTINUE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1981-01-29T00:00:00.000Z",
+      "docketEntryComment": "HG MO TO CONTINUE",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1981-01-29T00:00:00.000Z",
+      "description": "HG MO TO CONTINUE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00385289",
-    "portal_case_id": "",
+    "portal_case_id": "1729122",
     "display_case_number": "CRI-00385289",
     "defendant": "JAVIER ANTHONY AGUILAR",
     "filed_date": "1981-01-29",
@@ -63,8 +188,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAVIER ANTHONY AGUILAR, and date of filing 1981-01-29. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAVIER ANTHONY AGUILAR, and date of filing 1981-01-29. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:36:29.539Z",
+  "portal_case_id": "1729122",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00385289",
+      "defendant": "JAVIER ANTHONY AGUILAR",
+      "filed_date": "1981-01-29"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1729122"
+  }
 }

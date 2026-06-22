@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:32:25.883Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:29:32.234Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00236241",
   "criminal_case_number": "00236241",
@@ -24,10 +24,105 @@
       "name": "JAMAR BOYD",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAMAR BOYD",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "1979-10-16T00:00:00.000Z",
+      "docketEntryComment": "PROG REPT RE PROB",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1979-02-13T00:00:00.000Z",
+      "docketEntryComment": "PROG REPT RE PROB",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1983-02-23 9:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1983-02-23",
+      "hearing_time": "9:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1981-05-14 9:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1981-05-14",
+      "hearing_time": "9:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1980-10-02 9:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1980-10-02",
+      "hearing_time": "9:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-11-27 9:30 AM",
+      "hearingType": "Court Trial",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 3,
+      "court_date": "1979-11-27",
+      "hearing_time": "9:30 AM",
+      "matters": "Court Trial",
+      "hearing_type": "Court Trial",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-11-23 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 21",
+      "__index": 4,
+      "court_date": "1979-11-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 21",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-10-22 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 5,
+      "court_date": "1979-10-22",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -46,11 +141,32 @@
   },
   "updated_from_criminal_index_at": "2026-06-21T15:32:45.935Z",
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1624948",
+  "docket_entries": [
+    {
+      "filedDate": "1979-10-16T00:00:00.000Z",
+      "docketEntryComment": "PROG REPT RE PROB",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1979-10-16T00:00:00.000Z",
+      "description": "PROG REPT RE PROB",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1979-02-13T00:00:00.000Z",
+      "docketEntryComment": "PROG REPT RE PROB",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1979-02-13T00:00:00.000Z",
+      "description": "PROG REPT RE PROB",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00236241",
-    "portal_case_id": "",
+    "portal_case_id": "1624948",
     "display_case_number": "CRI-00236241",
     "defendant": "JAMAR BOYD",
     "filed_date": "1979-02-13",
@@ -64,8 +180,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAMAR BOYD, and date of filing 1979-02-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAMAR BOYD, and date of filing 1979-02-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:29:32.799Z",
+  "portal_case_id": "1624948",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00236241",
+      "defendant": "JAMAR BOYD",
+      "filed_date": "1979-02-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1624948"
+  }
 }

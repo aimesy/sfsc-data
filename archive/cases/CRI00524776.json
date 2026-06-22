@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:31:53.042Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:40:41.499Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00524776",
   "criminal_case_number": "00524776",
@@ -24,11 +24,89 @@
       "name": "KENNETH BROOKS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KENNETH BROOKS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1982-08-05T00:00:00.000Z",
+      "docketEntryComment": "HG 707,2WI REPT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1982-07-06T00:00:00.000Z",
+      "docketEntryComment": "HG 707,2WI REPT",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1982-11-16 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 21",
+      "__index": 0,
+      "court_date": "1982-11-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 21",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1982-10-12 9:30 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 21",
+      "__index": 1,
+      "court_date": "1982-10-12",
+      "hearing_time": "9:30 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 21",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1982-09-22 2:00 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1982-09-22",
+      "hearing_time": "2:00 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1982-08-06 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1982-08-06",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "P MCELROY",
+      "type": "Public Defender"
+    },
+    {
+      "name": "A GIANNINI",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +123,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1839715",
+  "docket_entries": [
+    {
+      "filedDate": "1982-08-05T00:00:00.000Z",
+      "docketEntryComment": "HG 707,2WI REPT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1982-08-05T00:00:00.000Z",
+      "description": "HG 707,2WI REPT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1982-07-06T00:00:00.000Z",
+      "docketEntryComment": "HG 707,2WI REPT",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1982-07-06T00:00:00.000Z",
+      "description": "HG 707,2WI REPT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00524776",
-    "portal_case_id": "",
+    "portal_case_id": "1839715",
     "display_case_number": "CRI-00524776",
     "defendant": "KENNETH BROOKS",
     "filed_date": "1982-07-06",
@@ -63,8 +162,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KENNETH BROOKS, and date of filing 1982-07-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KENNETH BROOKS, and date of filing 1982-07-06. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:40:42.103Z",
+  "portal_case_id": "1839715",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00524776",
+      "defendant": "KENNETH BROOKS",
+      "filed_date": "1982-07-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1839715"
+  }
 }

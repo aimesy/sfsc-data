@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:37:30.180Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:38:19.517Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00369961",
   "criminal_case_number": "00369961",
@@ -24,11 +24,76 @@
       "name": "WILBERT EARL BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "WILBERT EARL BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1980-12-23T00:00:00.000Z",
+      "docketEntryComment": "OSC RE RET OF PROPERTY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1980-11-24T00:00:00.000Z",
+      "docketEntryComment": "OSC RE RET OF PROPERTY",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1981-02-03 9:30 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1981-02-03",
+      "hearing_time": "9:30 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1981-01-20 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 24",
+      "__index": 1,
+      "court_date": "1981-01-20",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 24",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1981-01-06 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1981-01-06",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "W HERRICK",
+      "type": "Public Defender"
+    },
+    {
+      "name": "C KASUN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +110,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1717345",
+  "docket_entries": [
+    {
+      "filedDate": "1980-12-23T00:00:00.000Z",
+      "docketEntryComment": "OSC RE RET OF PROPERTY",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1980-12-23T00:00:00.000Z",
+      "description": "OSC RE RET OF PROPERTY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1980-11-24T00:00:00.000Z",
+      "docketEntryComment": "OSC RE RET OF PROPERTY",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1980-11-24T00:00:00.000Z",
+      "description": "OSC RE RET OF PROPERTY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00369961",
-    "portal_case_id": "",
+    "portal_case_id": "1717345",
     "display_case_number": "CRI-00369961",
     "defendant": "WILBERT EARL BROWN",
     "filed_date": "1980-11-24",
@@ -63,8 +149,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, WILBERT EARL BROWN, and date of filing 1980-11-24. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, WILBERT EARL BROWN, and date of filing 1980-11-24. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:38:20.146Z",
+  "portal_case_id": "1717345",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00369961",
+      "defendant": "WILBERT EARL BROWN",
+      "filed_date": "1980-11-24"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1717345"
+  }
 }

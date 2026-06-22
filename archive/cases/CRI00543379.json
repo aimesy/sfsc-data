@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:58:25.073Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:41:18.322Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00543379",
   "criminal_case_number": "00543379",
@@ -24,11 +24,45 @@
       "name": "MARY S ROWAN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARY S ROWAN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1982-09-16T00:00:00.000Z",
+      "docketEntryComment": "HOLDING OR DISPO",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1982-10-27 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1982-10-27",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S SANDEMAN",
+      "type": "Appointed Counsel"
+    },
+    {
+      "name": "P CUMMINS",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +79,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1854832",
+  "docket_entries": [
+    {
+      "filedDate": "1982-09-16T00:00:00.000Z",
+      "docketEntryComment": "HOLDING OR DISPO",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1982-09-16T00:00:00.000Z",
+      "description": "HOLDING OR DISPO",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00543379",
-    "portal_case_id": "",
+    "portal_case_id": "1854832",
     "display_case_number": "CRI-00543379",
     "defendant": "MARY S ROWAN",
     "filed_date": "1982-09-16",
@@ -63,8 +108,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARY S ROWAN, and date of filing 1982-09-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARY S ROWAN, and date of filing 1982-09-16. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:41:18.945Z",
+  "portal_case_id": "1854832",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00543379",
+      "defendant": "MARY S ROWAN",
+      "filed_date": "1982-09-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1854832"
+  }
 }

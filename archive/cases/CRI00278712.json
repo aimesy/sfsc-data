@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:36:44.473Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:33:57.233Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00278712",
   "criminal_case_number": "00278712",
@@ -24,11 +24,86 @@
       "name": "ANDRE ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANDRE ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1982-11-09T16:18:10.000Z",
+      "docketEntryComment": "Hearing Result",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1983-01-04T16:15:38.000Z",
+      "docketEntryComment": "Hearing Result",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1979-11-19T16:13:29.000Z",
+      "docketEntryComment": "San Francisco County Jail Commitment",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1979-09-05T00:00:00.000Z",
+      "docketEntryComment": "STAY EXEC;SURR OPEN CT",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1982-11-22 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 27",
+      "__index": 0,
+      "court_date": "1982-11-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 27",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1981-12-28 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1981-12-28",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-11-16 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1979-11-16",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "W HARRIS",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "N DEITA",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +120,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1653479",
+  "docket_entries": [
+    {
+      "filedDate": "1982-11-09T16:18:10.000Z",
+      "docketEntryComment": "Hearing Result",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1982-11-09T16:18:10.000Z",
+      "description": "Hearing Result",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1983-01-04T16:15:38.000Z",
+      "docketEntryComment": "Hearing Result",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1983-01-04T16:15:38.000Z",
+      "description": "Hearing Result",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1979-11-19T16:13:29.000Z",
+      "docketEntryComment": "San Francisco County Jail Commitment",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1979-11-19T16:13:29.000Z",
+      "description": "San Francisco County Jail Commitment",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1979-09-05T00:00:00.000Z",
+      "docketEntryComment": "STAY EXEC;SURR OPEN CT",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "1979-09-05T00:00:00.000Z",
+      "description": "STAY EXEC;SURR OPEN CT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00278712",
-    "portal_case_id": "",
+    "portal_case_id": "1653479",
     "display_case_number": "CRI-00278712",
     "defendant": "ANDRE ALLEN",
     "filed_date": "1979-09-05",
@@ -63,8 +179,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANDRE ALLEN, and date of filing 1979-09-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANDRE ALLEN, and date of filing 1979-09-05. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:33:57.784Z",
+  "portal_case_id": "1653479",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00278712",
+      "defendant": "ANDRE ALLEN",
+      "filed_date": "1979-09-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1653479"
+  }
 }

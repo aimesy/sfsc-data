@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:25:02.445Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:31:05.103Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00273656",
   "criminal_case_number": "00273656",
@@ -24,11 +24,102 @@
       "name": "CHARLES EDWARD ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHARLES EDWARD ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1979-09-28T00:00:00.000Z",
+      "docketEntryComment": "MO FOR APTMT OF EXPERT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1979-08-09T00:00:00.000Z",
+      "docketEntryComment": "MO FOR APTMT OF EXPERT",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1980-01-03 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 19",
+      "__index": 0,
+      "court_date": "1980-01-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 19",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-11-26 9:30 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 21",
+      "__index": 1,
+      "court_date": "1979-11-26",
+      "hearing_time": "9:30 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 21",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-11-13 2:00 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1979-11-13",
+      "hearing_time": "2:00 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-10-25 9:30 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1979-10-25",
+      "hearing_time": "9:30 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-10-09 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 4,
+      "court_date": "1979-10-09",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "W BALIN",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "J ROWLAND",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +136,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1650036",
+  "docket_entries": [
+    {
+      "filedDate": "1979-09-28T00:00:00.000Z",
+      "docketEntryComment": "MO FOR APTMT OF EXPERT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1979-09-28T00:00:00.000Z",
+      "description": "MO FOR APTMT OF EXPERT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1979-08-09T00:00:00.000Z",
+      "docketEntryComment": "MO FOR APTMT OF EXPERT",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1979-08-09T00:00:00.000Z",
+      "description": "MO FOR APTMT OF EXPERT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00273656",
-    "portal_case_id": "",
+    "portal_case_id": "1650036",
     "display_case_number": "CRI-00273656",
     "defendant": "CHARLES EDWARD ALLEN",
     "filed_date": "1979-08-09",
@@ -63,8 +175,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHARLES EDWARD ALLEN, and date of filing 1979-08-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHARLES EDWARD ALLEN, and date of filing 1979-08-09. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:31:05.770Z",
+  "portal_case_id": "1650036",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00273656",
+      "defendant": "CHARLES EDWARD ALLEN",
+      "filed_date": "1979-08-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1650036"
+  }
 }

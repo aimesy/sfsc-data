@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:44:12.288Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:42:23.050Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00581515",
   "criminal_case_number": "00581515",
@@ -24,11 +24,55 @@
       "name": "TYRONE BUTLER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TYRONE BUTLER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1983-02-28T10:02:40.000Z",
+      "docketEntryComment": "Amended Complaint",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1983-03-29T10:01:18.000Z",
+      "docketEntryComment": "Felony Abstract of Judgment - Determinate (CR-290)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1983-02-04T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1983-03-28 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1983-03-28",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "A GURROLA",
+      "type": "Public Defender"
+    },
+    {
+      "name": "J WHITMER",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +89,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1886789",
+  "docket_entries": [
+    {
+      "filedDate": "1983-02-28T10:02:40.000Z",
+      "docketEntryComment": "Amended Complaint",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1983-02-28T10:02:40.000Z",
+      "description": "Amended Complaint",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1983-03-29T10:01:18.000Z",
+      "docketEntryComment": "Felony Abstract of Judgment - Determinate (CR-290)",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1983-03-29T10:01:18.000Z",
+      "description": "Felony Abstract of Judgment - Determinate (CR-290)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1983-02-04T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1983-02-04T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00581515",
-    "portal_case_id": "",
+    "portal_case_id": "1886789",
     "display_case_number": "CRI-00581515",
     "defendant": "TYRONE BUTLER",
     "filed_date": "1983-02-04",
@@ -63,8 +138,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TYRONE BUTLER, and date of filing 1983-02-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TYRONE BUTLER, and date of filing 1983-02-04. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:42:23.627Z",
+  "portal_case_id": "1886789",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00581515",
+      "defendant": "TYRONE BUTLER",
+      "filed_date": "1983-02-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1886789"
+  }
 }

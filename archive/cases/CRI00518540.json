@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:32:31.665Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:43:17.696Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00518540",
   "criminal_case_number": "00518540",
@@ -24,10 +24,61 @@
       "name": "MANUEL R ALONZO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MANUEL R ALONZO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "1982-06-14T00:00:00.000Z",
+      "docketEntryComment": "STAY EXEC;SURR OPEN CT",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1982-10-29 9:00 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 27",
+      "__index": 0,
+      "court_date": "1982-10-29",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 27",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1982-09-15 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 27",
+      "__index": 1,
+      "court_date": "1982-09-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 27",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1982-08-19 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 27",
+      "__index": 2,
+      "court_date": "1982-08-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 27",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +96,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1834852",
+  "docket_entries": [
+    {
+      "filedDate": "1982-06-14T00:00:00.000Z",
+      "docketEntryComment": "STAY EXEC;SURR OPEN CT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1982-06-14T00:00:00.000Z",
+      "description": "STAY EXEC;SURR OPEN CT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00518540",
-    "portal_case_id": "",
+    "portal_case_id": "1834852",
     "display_case_number": "CRI-00518540",
     "defendant": "MANUEL R ALONZO",
     "filed_date": "1982-06-14",
@@ -63,8 +125,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MANUEL R ALONZO, and date of filing 1982-06-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MANUEL R ALONZO, and date of filing 1982-06-14. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:43:18.307Z",
+  "portal_case_id": "1834852",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00518540",
+      "defendant": "MANUEL R ALONZO",
+      "filed_date": "1982-06-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1834852"
+  }
 }

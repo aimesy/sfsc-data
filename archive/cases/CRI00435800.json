@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:29:43.128Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:38:05.021Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00435800",
   "criminal_case_number": "00435800",
@@ -24,11 +24,50 @@
       "name": "REGGINALD L BROWNE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "REGGINALD L BROWNE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1981-09-10T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED PUR C/O",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1981-08-14T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED PUR C/O",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1981-09-15 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1981-09-15",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S ELLIS",
+      "type": "Public Defender"
+    },
+    {
+      "name": "P PRINCIPE",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +84,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1768361",
+  "docket_entries": [
+    {
+      "filedDate": "1981-09-10T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED PUR C/O",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1981-09-10T00:00:00.000Z",
+      "description": "BW RECALLED PUR C/O",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1981-08-14T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED PUR C/O",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1981-08-14T00:00:00.000Z",
+      "description": "BW RECALLED PUR C/O",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00435800",
-    "portal_case_id": "",
+    "portal_case_id": "1768361",
     "display_case_number": "CRI-00435800",
     "defendant": "REGGINALD L BROWNE",
     "filed_date": "1981-08-14",
@@ -63,8 +123,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, REGGINALD L BROWNE, and date of filing 1981-08-14. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, REGGINALD L BROWNE, and date of filing 1981-08-14. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:38:05.577Z",
+  "portal_case_id": "1768361",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00435800",
+      "defendant": "REGGINALD L BROWNE",
+      "filed_date": "1981-08-14"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1768361"
+  }
 }

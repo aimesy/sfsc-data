@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:39:54.310Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:29:58.466Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00176746",
   "criminal_case_number": "00176746",
@@ -24,11 +24,65 @@
       "name": "GEORGE D ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "GEORGE D ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
   "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "calendar": [
+    {
+      "startTime": "1978-07-12 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 98",
+      "__index": 0,
+      "court_date": "1978-07-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 98",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1978-06-14 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 1,
+      "court_date": "1978-06-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1978-05-09 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1978-05-09",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "R WONG",
+      "type": "Public Defender"
+    },
+    {
+      "name": "R PODESTA",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +99,11 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1587162",
   "docket_entries": [],
   "criminal": {
     "raw_case_number": "00176746",
-    "portal_case_id": "",
+    "portal_case_id": "1587162",
     "display_case_number": "CRI-00176746",
     "defendant": "GEORGE D ALLEN",
     "filed_date": "1978-04-27",
@@ -63,8 +117,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, GEORGE D ALLEN, and date of filing 1978-04-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, GEORGE D ALLEN, and date of filing 1978-04-27. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:29:59.135Z",
+  "portal_case_id": "1587162",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00176746",
+      "defendant": "GEORGE D ALLEN",
+      "filed_date": "1978-04-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1587162"
+  }
 }

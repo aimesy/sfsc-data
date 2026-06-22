@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:37:52.082Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:23:52.078Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00069596",
   "criminal_case_number": "00069596",
@@ -24,11 +24,154 @@
       "name": "JOHNNY ALEXANDER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHNNY ALEXANDER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1976-12-14T00:00:00.000Z",
+      "docketEntryComment": "MO REVK PROB BY DA",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1976-10-21T00:00:00.000Z",
+      "docketEntryComment": "MO REVK PROB BY DA",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1978-10-04 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1978-10-04",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1977-08-18 9:30 AM",
+      "hearingType": "Motion to Modify Court Probation",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1977-08-18",
+      "hearing_time": "9:30 AM",
+      "matters": "Motion to Modify Court Probation",
+      "hearing_type": "Motion to Modify Court Probation",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1977-03-16 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1977-03-16",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1977-02-16 9:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1977-02-16",
+      "hearing_time": "9:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1977-01-24 10:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 4,
+      "court_date": "1977-01-24",
+      "hearing_time": "10:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1977-01-17 2:00 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 5,
+      "court_date": "1977-01-17",
+      "hearing_time": "2:00 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1976-12-21 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 6,
+      "court_date": "1976-12-21",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1976-10-28 9:30 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 7,
+      "court_date": "1976-10-28",
+      "hearing_time": "9:30 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1976-10-28 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 21",
+      "__index": 8,
+      "court_date": "1976-10-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 21",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "T BRUYNEEL",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "J PINELLI",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +188,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3950369",
+  "docket_entries": [
+    {
+      "filedDate": "1976-12-14T00:00:00.000Z",
+      "docketEntryComment": "MO REVK PROB BY DA",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1976-12-14T00:00:00.000Z",
+      "description": "MO REVK PROB BY DA",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1976-10-21T00:00:00.000Z",
+      "docketEntryComment": "MO REVK PROB BY DA",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1976-10-21T00:00:00.000Z",
+      "description": "MO REVK PROB BY DA",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00069596",
-    "portal_case_id": "",
+    "portal_case_id": "3950369",
     "display_case_number": "CRI-00069596",
     "defendant": "JOHNNY ALEXANDER",
     "filed_date": "1976-10-21",
@@ -63,8 +227,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHNNY ALEXANDER, and date of filing 1976-10-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHNNY ALEXANDER, and date of filing 1976-10-21. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:23:52.743Z",
+  "portal_case_id": "3950369",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00069596",
+      "defendant": "JOHNNY ALEXANDER",
+      "filed_date": "1976-10-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3950369"
+  }
 }

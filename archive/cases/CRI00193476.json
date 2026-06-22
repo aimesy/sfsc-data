@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:40:36.375Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:30:45.143Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00193476",
   "criminal_case_number": "00193476",
@@ -24,11 +24,115 @@
       "name": "KEN R ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KEN R ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1978-11-29T00:00:00.000Z",
+      "docketEntryComment": "MODIFY PROBATION",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1978-08-03T00:00:00.000Z",
+      "docketEntryComment": "MODIFY PROBATION",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1979-04-16 9:30 AM",
+      "hearingType": "Motion to Modify Court Probation",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1979-04-16",
+      "hearing_time": "9:30 AM",
+      "matters": "Motion to Modify Court Probation",
+      "hearing_type": "Motion to Modify Court Probation",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-02-02 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1979-02-02",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-01-29 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1979-01-29",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-01-02 9:30 AM",
+      "hearingType": "Court Trial",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1979-01-02",
+      "hearing_time": "9:30 AM",
+      "matters": "Court Trial",
+      "hearing_type": "Court Trial",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1978-12-28 2:00 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 4,
+      "court_date": "1978-12-28",
+      "hearing_time": "2:00 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1978-12-05 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 5,
+      "court_date": "1978-12-05",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "C WINSLOW",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "G VANKESSEL",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +149,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1597704",
+  "docket_entries": [
+    {
+      "filedDate": "1978-11-29T00:00:00.000Z",
+      "docketEntryComment": "MODIFY PROBATION",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1978-11-29T00:00:00.000Z",
+      "description": "MODIFY PROBATION",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1978-08-03T00:00:00.000Z",
+      "docketEntryComment": "MODIFY PROBATION",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1978-08-03T00:00:00.000Z",
+      "description": "MODIFY PROBATION",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00193476",
-    "portal_case_id": "",
+    "portal_case_id": "1597704",
     "display_case_number": "CRI-00193476",
     "defendant": "KEN R ALLEN",
     "filed_date": "1978-08-03",
@@ -63,8 +188,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KEN R ALLEN, and date of filing 1978-08-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KEN R ALLEN, and date of filing 1978-08-03. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:30:45.744Z",
+  "portal_case_id": "1597704",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00193476",
+      "defendant": "KEN R ALLEN",
+      "filed_date": "1978-08-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1597704"
+  }
 }

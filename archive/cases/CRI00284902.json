@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:31:53.083Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:34:13.653Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00284902",
   "criminal_case_number": "00284902",
@@ -24,11 +24,89 @@
       "name": "STEVE BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "STEVE BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1979-11-07T00:00:00.000Z",
+      "docketEntryComment": "FOR PLEA AND COUNSEL",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1979-10-09T00:00:00.000Z",
+      "docketEntryComment": "FOR PLEA AND COUNSEL",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1979-12-26 9:30 AM",
+      "hearingType": "Court Trial",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1979-12-26",
+      "hearing_time": "9:30 AM",
+      "matters": "Court Trial",
+      "hearing_type": "Court Trial",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-12-17 9:30 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1979-12-17",
+      "hearing_time": "9:30 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-11-15 9:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "1979-11-15",
+      "hearing_time": "9:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-11-13 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1979-11-13",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "G PAGAN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "A CHIANTELLI",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +123,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1657656",
+  "docket_entries": [
+    {
+      "filedDate": "1979-11-07T00:00:00.000Z",
+      "docketEntryComment": "FOR PLEA AND COUNSEL",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1979-11-07T00:00:00.000Z",
+      "description": "FOR PLEA AND COUNSEL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1979-10-09T00:00:00.000Z",
+      "docketEntryComment": "FOR PLEA AND COUNSEL",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1979-10-09T00:00:00.000Z",
+      "description": "FOR PLEA AND COUNSEL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00284902",
-    "portal_case_id": "",
+    "portal_case_id": "1657656",
     "display_case_number": "CRI-00284902",
     "defendant": "STEVE BROWN",
     "filed_date": "1979-10-09",
@@ -63,8 +162,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, STEVE BROWN, and date of filing 1979-10-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, STEVE BROWN, and date of filing 1979-10-09. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:34:14.267Z",
+  "portal_case_id": "1657656",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00284902",
+      "defendant": "STEVE BROWN",
+      "filed_date": "1979-10-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1657656"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:33:53.841Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:33:40.645Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI00269855",
   "criminal_case_number": "00269855",
@@ -24,11 +24,102 @@
       "name": "DANIEL W BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DANIEL W BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "1979-09-19T00:00:00.000Z",
+      "docketEntryComment": "MED REPT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1979-07-20T00:00:00.000Z",
+      "docketEntryComment": "MED REPT",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "1979-11-20 9:30 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "1979-11-20",
+      "hearing_time": "9:30 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-11-05 9:30 AM",
+      "hearingType": "Court Trial",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "1979-11-05",
+      "hearing_time": "9:30 AM",
+      "matters": "Court Trial",
+      "hearing_type": "Court Trial",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-10-24 2:00 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 2,
+      "court_date": "1979-10-24",
+      "hearing_time": "2:00 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-10-23 9:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "1979-10-23",
+      "hearing_time": "9:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "1979-09-27 9:30 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 4,
+      "court_date": "1979-09-27",
+      "hearing_time": "9:30 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "P KEANE",
+      "type": "Public Defender"
+    },
+    {
+      "name": "L KLEE",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +136,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1647459",
+  "docket_entries": [
+    {
+      "filedDate": "1979-09-19T00:00:00.000Z",
+      "docketEntryComment": "MED REPT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "1979-09-19T00:00:00.000Z",
+      "description": "MED REPT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1979-07-20T00:00:00.000Z",
+      "docketEntryComment": "MED REPT",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "1979-07-20T00:00:00.000Z",
+      "description": "MED REPT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "00269855",
-    "portal_case_id": "",
+    "portal_case_id": "1647459",
     "display_case_number": "CRI-00269855",
     "defendant": "DANIEL W BROWN",
     "filed_date": "1979-07-20",
@@ -63,8 +175,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DANIEL W BROWN, and date of filing 1979-07-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DANIEL W BROWN, and date of filing 1979-07-20. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:33:41.213Z",
+  "portal_case_id": "1647459",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-00269855",
+      "defendant": "DANIEL W BROWN",
+      "filed_date": "1979-07-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=1647459"
+  }
 }
