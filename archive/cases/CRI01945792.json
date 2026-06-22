@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:41:18.298Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:16:33.801Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01945792",
   "criminal_case_number": "01945792",
@@ -24,11 +24,47 @@
       "name": "RODNEY ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RODNEY ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2001-02-15T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-02-23T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-02-23T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-02-23T00:00:00.000Z",
+      "docketEntryComment": "$100 VIF, 1035 W/S COND, S/A GOLDEN GATE & TAYLOR, MARKET & 6TH ST",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-02-15T00:00:00.000Z",
+      "docketEntryComment": "FTA DDER, BWI, B/S $10,000, OR REVOKED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "S GAYLE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +81,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3091547",
+  "docket_entries": [
+    {
+      "filedDate": "2001-02-15T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-02-15T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-02-23T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-02-23T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-02-23T00:00:00.000Z",
+      "docketEntryComment": "BWD, N/C",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2001-02-23T00:00:00.000Z",
+      "description": "BWD, N/C",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-02-23T00:00:00.000Z",
+      "docketEntryComment": "$100 VIF, 1035 W/S COND, S/A GOLDEN GATE & TAYLOR, MARKET & 6TH ST",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2001-02-23T00:00:00.000Z",
+      "description": "$100 VIF, 1035 W/S COND, S/A GOLDEN GATE & TAYLOR, MARKET & 6TH ST",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-02-15T00:00:00.000Z",
+      "docketEntryComment": "FTA DDER, BWI, B/S $10,000, OR REVOKED",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2001-02-15T00:00:00.000Z",
+      "description": "FTA DDER, BWI, B/S $10,000, OR REVOKED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01945792",
-    "portal_case_id": "",
+    "portal_case_id": "3091547",
     "display_case_number": "CRI-01945792",
     "defendant": "RODNEY ALLEN",
     "filed_date": "2000-09-26",
@@ -63,8 +150,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RODNEY ALLEN, and date of filing 2000-09-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RODNEY ALLEN, and date of filing 2000-09-26. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:16:34.457Z",
+  "portal_case_id": "3091547",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01945792",
+      "defendant": "RODNEY ALLEN",
+      "filed_date": "2000-09-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3091547"
+  }
 }

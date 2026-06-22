@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:31:25.832Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:21:23.215Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01974613",
   "criminal_case_number": "01974613",
@@ -24,11 +24,59 @@
       "name": "JAVIER CAMPOS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAVIER CAMPOS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2001-04-23T13:01:00.000Z",
+      "docketEntryComment": "PLEA TRANS -FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-04-26T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ 1Y/CTS: 21/HD1/ISU/PF:500/SA2:700 BLK OF O'FARRELLST,/WS/VF4:200/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/ACCEP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2003-12-12 3:00 PM",
+      "hearingType": "Probation Revocation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2003-12-12",
+      "hearing_time": "3:00 PM",
+      "matters": "Probation Revocation Hearing",
+      "hearing_type": "Probation Revocation Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2001-04-26 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2001-04-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "C PETERS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3117760",
+  "docket_entries": [
+    {
+      "filedDate": "2001-04-23T13:01:00.000Z",
+      "docketEntryComment": "PLEA TRANS -FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-04-23T13:01:00.000Z",
+      "description": "PLEA TRANS -FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-04-26T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:ISS:PROB 3 Y:PJ 1Y/CTS: 21/HD1/ISU/PF:500/SA2:700 BLK OF O'FARRELLST,/WS/VF4:200/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-04-26T09:00:00.000Z",
+      "description": "/AJW/CH1:ISS:PROB 3 Y:PJ 1Y/CTS: 21/HD1/ISU/PF:500/SA2:700 BLK OF O'FARRELLST,/WS/VF4:200/PAD/11590/DTC/RX/LF/PC/PSR/BKFEE/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01974613",
-    "portal_case_id": "",
+    "portal_case_id": "3117760",
     "display_case_number": "CRI-01974613",
     "defendant": "JAVIER CAMPOS",
     "filed_date": "2001-03-15",
@@ -63,8 +132,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAVIER CAMPOS, and date of filing 2001-03-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAVIER CAMPOS, and date of filing 2001-03-15. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:21:23.780Z",
+  "portal_case_id": "3117760",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01974613",
+      "defendant": "JAVIER CAMPOS",
+      "filed_date": "2001-03-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3117760"
+  }
 }

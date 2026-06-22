@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:38.947Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:14:06.011Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01951199",
   "criminal_case_number": "01951199",
@@ -24,11 +24,52 @@
       "name": "JOSE CABRERA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSE CABRERA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2000-10-26T00:00:00.000Z",
+      "docketEntryComment": "TS DA MTR",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-03-02T00:00:00.000Z",
+      "docketEntryComment": "PROB TO REMAIN IN EFFECT, OFF CAL",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-02-15T00:00:00.000Z",
+      "docketEntryComment": "030201 STANDS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-02-13T00:00:00.000Z",
+      "docketEntryComment": "SPR DENIED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-11-09T00:00:00.000Z",
+      "docketEntryComment": "$100 VIF (DEEMED)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-10-30T00:00:00.000Z",
+      "docketEntryComment": "SPR DENIED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "A GHAFOURPOUR",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +86,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3096481",
+  "docket_entries": [
+    {
+      "filedDate": "2000-10-26T00:00:00.000Z",
+      "docketEntryComment": "TS DA MTR",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2000-10-26T00:00:00.000Z",
+      "description": "TS DA MTR",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-03-02T00:00:00.000Z",
+      "docketEntryComment": "PROB TO REMAIN IN EFFECT, OFF CAL",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-03-02T00:00:00.000Z",
+      "description": "PROB TO REMAIN IN EFFECT, OFF CAL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-02-15T00:00:00.000Z",
+      "docketEntryComment": "030201 STANDS",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2001-02-15T00:00:00.000Z",
+      "description": "030201 STANDS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-02-13T00:00:00.000Z",
+      "docketEntryComment": "SPR DENIED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2001-02-13T00:00:00.000Z",
+      "description": "SPR DENIED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-11-09T00:00:00.000Z",
+      "docketEntryComment": "$100 VIF (DEEMED)",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2000-11-09T00:00:00.000Z",
+      "description": "$100 VIF (DEEMED)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-10-30T00:00:00.000Z",
+      "docketEntryComment": "SPR DENIED",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2000-10-30T00:00:00.000Z",
+      "description": "SPR DENIED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01951199",
-    "portal_case_id": "",
+    "portal_case_id": "3096481",
     "display_case_number": "CRI-01951199",
     "defendant": "JOSE CABRERA",
     "filed_date": "2000-10-26",
@@ -63,8 +165,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSE CABRERA, and date of filing 2000-10-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSE CABRERA, and date of filing 2000-10-26. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:14:06.602Z",
+  "portal_case_id": "3096481",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01951199",
+      "defendant": "JOSE CABRERA",
+      "filed_date": "2000-10-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3096481"
+  }
 }

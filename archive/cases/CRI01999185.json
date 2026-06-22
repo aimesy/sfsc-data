@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:46:33.431Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:22:56.260Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01999185",
   "criminal_case_number": "01999185",
@@ -24,11 +24,66 @@
       "name": "RONALD CADY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RONALD CADY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2001-08-09T00:00:00.000Z",
+      "docketEntryComment": "$30K BW STAY,DOP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-11-06T13:01:00.000Z",
+      "docketEntryComment": "DA INFO NOT FILED PER ADA AGUILAR",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-11-05T13:01:00.000Z",
+      "docketEntryComment": "PRELIM TRANS -FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-11-07T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-10-01T00:00:00.000Z",
+      "docketEntryComment": "NO PITCHESS TO DISCOVER",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-08-27T00:00:00.000Z",
+      "docketEntryComment": "BW PERM STAYED",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2001-11-07 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2001-11-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "L KATZ",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +100,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3140274",
+  "docket_entries": [
+    {
+      "filedDate": "2001-08-09T00:00:00.000Z",
+      "docketEntryComment": "$30K BW STAY,DOP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-08-09T00:00:00.000Z",
+      "description": "$30K BW STAY,DOP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-11-06T13:01:00.000Z",
+      "docketEntryComment": "DA INFO NOT FILED PER ADA AGUILAR",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-11-06T13:01:00.000Z",
+      "description": "DA INFO NOT FILED PER ADA AGUILAR",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-11-05T13:01:00.000Z",
+      "docketEntryComment": "PRELIM TRANS -FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2001-11-05T13:01:00.000Z",
+      "description": "PRELIM TRANS -FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-11-07T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2001-11-07T09:00:00.000Z",
+      "description": "/TEXT:INFO WILL NOT BE FILED PER DISTRICT ATTY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-10-01T00:00:00.000Z",
+      "docketEntryComment": "NO PITCHESS TO DISCOVER",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2001-10-01T00:00:00.000Z",
+      "description": "NO PITCHESS TO DISCOVER",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-08-27T00:00:00.000Z",
+      "docketEntryComment": "BW PERM STAYED",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2001-08-27T00:00:00.000Z",
+      "description": "BW PERM STAYED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01999185",
-    "portal_case_id": "",
+    "portal_case_id": "3140274",
     "display_case_number": "CRI-01999185",
     "defendant": "RONALD CADY",
     "filed_date": "2001-08-09",
@@ -63,8 +179,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RONALD CADY, and date of filing 2001-08-09. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RONALD CADY, and date of filing 2001-08-09. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:22:56.875Z",
+  "portal_case_id": "3140274",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01999185",
+      "defendant": "RONALD CADY",
+      "filed_date": "2001-08-09"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3140274"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:15:27.084Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:20:57.254Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01986062",
   "criminal_case_number": "01986062",
@@ -24,11 +24,90 @@
       "name": "JUAN ALLEN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JUAN ALLEN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2001-10-17T00:00:00.000Z",
+      "docketEntryComment": "DISM 1385PC - UNABLE TO SUSTAIN",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-07-09T00:00:00.000Z",
+      "docketEntryComment": "PT STANDSPT STANDS",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-05-18T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER FROM 1675 EDDY ST",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2001-10-17 9:00 AM",
+      "hearingType": "PC 1538.5 Motion to Suppress",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2001-10-17",
+      "hearing_time": "9:00 AM",
+      "matters": "PC 1538.5 Motion to Suppress",
+      "hearing_type": "PC 1538.5 Motion to Suppress",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2001-09-19 9:00 AM",
+      "hearingType": "EC 1043 Compliance Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 1,
+      "court_date": "2001-09-19",
+      "hearing_time": "9:00 AM",
+      "matters": "EC 1043 Compliance Hearing",
+      "hearing_type": "EC 1043 Compliance Hearing",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2001-08-22 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 2,
+      "court_date": "2001-08-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2001-05-18 9:00 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 3,
+      "court_date": "2001-05-18",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ANDREW YEE",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +124,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3128232",
+  "docket_entries": [
+    {
+      "filedDate": "2001-10-17T00:00:00.000Z",
+      "docketEntryComment": "DISM 1385PC - UNABLE TO SUSTAIN",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-10-17T00:00:00.000Z",
+      "description": "DISM 1385PC - UNABLE TO SUSTAIN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-07-09T00:00:00.000Z",
+      "docketEntryComment": "PT STANDSPT STANDS",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-07-09T00:00:00.000Z",
+      "description": "PT STANDSPT STANDS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-05-18T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER FROM 1675 EDDY ST",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2001-05-18T00:00:00.000Z",
+      "description": "S/A ORDER FROM 1675 EDDY ST",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01986062",
-    "portal_case_id": "",
+    "portal_case_id": "3128232",
     "display_case_number": "CRI-01986062",
     "defendant": "JUAN ALLEN",
     "filed_date": "2001-05-18",
@@ -63,8 +173,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JUAN ALLEN, and date of filing 2001-05-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JUAN ALLEN, and date of filing 2001-05-18. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:20:57.894Z",
+  "portal_case_id": "3128232",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01986062",
+      "defendant": "JUAN ALLEN",
+      "filed_date": "2001-05-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3128232"
+  }
 }

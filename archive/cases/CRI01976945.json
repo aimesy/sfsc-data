@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:26:56.088Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:19:18.708Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01976945",
   "criminal_case_number": "01976945",
@@ -24,10 +24,50 @@
       "name": "MICHAEL ARMSTRONG",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL ARMSTRONG",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2001-04-19T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-09-02T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-09-02T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 08/28/08",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-04-19T09:00:00.000Z",
+      "docketEntryComment": "FTA ARRAIGNMENT, BWI, B/S $2500",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2001-04-19 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2001-04-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +85,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3119889",
+  "docket_entries": [
+    {
+      "filedDate": "2001-04-19T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-04-19T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-09-02T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2008-09-02T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-09-02T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 08/28/08",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2008-09-02T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 08/28/08",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-04-19T09:00:00.000Z",
+      "docketEntryComment": "FTA ARRAIGNMENT, BWI, B/S $2500",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2001-04-19T09:00:00.000Z",
+      "description": "FTA ARRAIGNMENT, BWI, B/S $2500",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01976945",
-    "portal_case_id": "",
+    "portal_case_id": "3119889",
     "display_case_number": "CRI-01976945",
     "defendant": "MICHAEL ARMSTRONG",
     "filed_date": "2001-04-19",
@@ -63,8 +144,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL ARMSTRONG, and date of filing 2001-04-19. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL ARMSTRONG, and date of filing 2001-04-19. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:19:19.358Z",
+  "portal_case_id": "3119889",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01976945",
+      "defendant": "MICHAEL ARMSTRONG",
+      "filed_date": "2001-04-19"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3119889"
+  }
 }

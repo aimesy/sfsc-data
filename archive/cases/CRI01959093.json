@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:26:41.268Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:19:20.462Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01959093",
   "criminal_case_number": "01959093",
@@ -24,11 +24,47 @@
       "name": "CHARLES BENTON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHARLES BENTON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2000-12-13T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-02-27T00:00:00.000Z",
+      "docketEntryComment": "DISM 1385PC - UNABLE TO SUSTAIN THE BURDEN OF PROOF",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-02-26T00:00:00.000Z",
+      "docketEntryComment": "BAIL EXON ON 2/23/01",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-02-23T00:00:00.000Z",
+      "docketEntryComment": "DEFT REMANDED INTO CUST, BX",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-12-29T00:00:00.000Z",
+      "docketEntryComment": "O/C, PX STANDS",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "T CAFFESE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +81,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3103686",
+  "docket_entries": [
+    {
+      "filedDate": "2000-12-13T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2000-12-13T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY HEARING",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-02-27T00:00:00.000Z",
+      "docketEntryComment": "DISM 1385PC - UNABLE TO SUSTAIN THE BURDEN OF PROOF",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-02-27T00:00:00.000Z",
+      "description": "DISM 1385PC - UNABLE TO SUSTAIN THE BURDEN OF PROOF",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-02-26T00:00:00.000Z",
+      "docketEntryComment": "BAIL EXON ON 2/23/01",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2001-02-26T00:00:00.000Z",
+      "description": "BAIL EXON ON 2/23/01",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-02-23T00:00:00.000Z",
+      "docketEntryComment": "DEFT REMANDED INTO CUST, BX",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2001-02-23T00:00:00.000Z",
+      "description": "DEFT REMANDED INTO CUST, BX",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-12-29T00:00:00.000Z",
+      "docketEntryComment": "O/C, PX STANDS",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2000-12-29T00:00:00.000Z",
+      "description": "O/C, PX STANDS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01959093",
-    "portal_case_id": "",
+    "portal_case_id": "3103686",
     "display_case_number": "CRI-01959093",
     "defendant": "CHARLES BENTON",
     "filed_date": "2000-12-13",
@@ -63,8 +150,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHARLES BENTON, and date of filing 2000-12-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHARLES BENTON, and date of filing 2000-12-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:19:21.054Z",
+  "portal_case_id": "3103686",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01959093",
+      "defendant": "CHARLES BENTON",
+      "filed_date": "2000-12-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3103686"
+  }
 }

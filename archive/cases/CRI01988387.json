@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:34:57.251Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:21:14.659Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01988387",
   "criminal_case_number": "01988387",
@@ -24,10 +24,50 @@
       "name": "DEANDRE BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DEANDRE BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2008-09-02T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-06-01T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2008-09-02T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 08/28/08",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-06-01T09:00:00.000Z",
+      "docketEntryComment": "FTA AN BWI BS $2500 1ST BW",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2001-06-01 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2001-06-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +85,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3130369",
+  "docket_entries": [
+    {
+      "filedDate": "2008-09-02T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2008-09-02T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-06-01T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-06-01T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2008-09-02T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 08/28/08",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2008-09-02T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 08/28/08",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-06-01T09:00:00.000Z",
+      "docketEntryComment": "FTA AN BWI BS $2500 1ST BW",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2001-06-01T09:00:00.000Z",
+      "description": "FTA AN BWI BS $2500 1ST BW",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01988387",
-    "portal_case_id": "",
+    "portal_case_id": "3130369",
     "display_case_number": "CRI-01988387",
     "defendant": "DEANDRE BROWN",
     "filed_date": "2001-06-01",
@@ -63,8 +144,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DEANDRE BROWN, and date of filing 2001-06-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DEANDRE BROWN, and date of filing 2001-06-01. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:21:15.298Z",
+  "portal_case_id": "3130369",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01988387",
+      "defendant": "DEANDRE BROWN",
+      "filed_date": "2001-06-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3130369"
+  }
 }

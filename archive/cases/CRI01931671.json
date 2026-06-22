@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:27:57.293Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:16:32.713Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01931671",
   "criminal_case_number": "01931671",
@@ -24,11 +24,71 @@
       "name": "BRIEN L BARNES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BRIEN L BARNES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2001-04-19T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-04-09T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-07-05T00:00:00.000Z",
+      "docketEntryComment": "PTD PROGRESS REPORT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-05-03T00:00:00.000Z",
+      "docketEntryComment": "DIV COMPLETED 1001,9PC",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-04-19T00:00:00.000Z",
+      "docketEntryComment": "BWR, N/C",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-04-09T09:00:00.000Z",
+      "docketEntryComment": "FTA PTD PROG RPT, BWI, B/S $10,000 O/R RVKD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-07-05T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER FILED AND SERVED",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2001-04-09 9:00 AM",
+      "hearingType": "Pretrial Diversion Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2001-04-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Progress Report",
+      "hearing_type": "Pretrial Diversion Progress Report",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "R EVANGELISTA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +105,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3078599",
+  "docket_entries": [
+    {
+      "filedDate": "2001-04-19T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-04-19T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-04-09T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-04-09T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-07-05T00:00:00.000Z",
+      "docketEntryComment": "PTD PROGRESS REPORT",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2000-07-05T00:00:00.000Z",
+      "description": "PTD PROGRESS REPORT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-05-03T00:00:00.000Z",
+      "docketEntryComment": "DIV COMPLETED 1001,9PC",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2001-05-03T00:00:00.000Z",
+      "description": "DIV COMPLETED 1001,9PC",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-04-19T00:00:00.000Z",
+      "docketEntryComment": "BWR, N/C",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2001-04-19T00:00:00.000Z",
+      "description": "BWR, N/C",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-04-09T09:00:00.000Z",
+      "docketEntryComment": "FTA PTD PROG RPT, BWI, B/S $10,000 O/R RVKD",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2001-04-09T09:00:00.000Z",
+      "description": "FTA PTD PROG RPT, BWI, B/S $10,000 O/R RVKD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-07-05T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER FILED AND SERVED",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2000-07-05T00:00:00.000Z",
+      "description": "S/A ORDER FILED AND SERVED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01931671",
-    "portal_case_id": "",
+    "portal_case_id": "3078599",
     "display_case_number": "CRI-01931671",
     "defendant": "BRIEN L BARNES",
     "filed_date": "2000-07-05",
@@ -63,8 +194,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BRIEN L BARNES, and date of filing 2000-07-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BRIEN L BARNES, and date of filing 2000-07-05. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:16:33.301Z",
+  "portal_case_id": "3078599",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01931671",
+      "defendant": "BRIEN L BARNES",
+      "filed_date": "2000-07-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3078599"
+  }
 }

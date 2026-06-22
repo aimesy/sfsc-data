@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:08:35.556Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:22:52.124Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01998571",
   "criminal_case_number": "01998571",
@@ -24,11 +24,51 @@
       "name": "VIROLET ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "VIROLET ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2001-08-03T00:00:00.000Z",
+      "docketEntryComment": "PTD ELIGIBILITY REPORT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-12-04T00:00:00.000Z",
+      "docketEntryComment": "DISM PER 1001,9PC - SUCCESSFUL COMPLETION OF DIVERSION",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-09-05T09:00:00.000Z",
+      "docketEntryComment": "DIVERSION GRANTED",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2001-09-05 9:00 AM",
+      "hearingType": "Pretrial Diversion Eligibility Report",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2001-09-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Eligibility Report",
+      "hearing_type": "Pretrial Diversion Eligibility Report",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "V LEFCOURT",
+      "type": "Private Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +85,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3139723",
+  "docket_entries": [
+    {
+      "filedDate": "2001-08-03T00:00:00.000Z",
+      "docketEntryComment": "PTD ELIGIBILITY REPORT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-08-03T00:00:00.000Z",
+      "description": "PTD ELIGIBILITY REPORT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-12-04T00:00:00.000Z",
+      "docketEntryComment": "DISM PER 1001,9PC - SUCCESSFUL COMPLETION OF DIVERSION",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-12-04T00:00:00.000Z",
+      "description": "DISM PER 1001,9PC - SUCCESSFUL COMPLETION OF DIVERSION",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-09-05T09:00:00.000Z",
+      "docketEntryComment": "DIVERSION GRANTED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2001-09-05T09:00:00.000Z",
+      "description": "DIVERSION GRANTED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01998571",
-    "portal_case_id": "",
+    "portal_case_id": "3139723",
     "display_case_number": "CRI-01998571",
     "defendant": "VIROLET ADAMS",
     "filed_date": "2001-08-03",
@@ -63,8 +134,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, VIROLET ADAMS, and date of filing 2001-08-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, VIROLET ADAMS, and date of filing 2001-08-03. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:22:52.714Z",
+  "portal_case_id": "3139723",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01998571",
+      "defendant": "VIROLET ADAMS",
+      "filed_date": "2001-08-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3139723"
+  }
 }

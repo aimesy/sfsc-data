@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:39:05.720Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:16:37.089Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01932162",
   "criminal_case_number": "01932162",
@@ -24,11 +24,51 @@
       "name": "GARY B ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "GARY B ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2000-07-06T00:00:00.000Z",
+      "docketEntryComment": "1043 MOTION",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-01-19T00:00:00.000Z",
+      "docketEntryComment": "CT4 DISM PURS 1001,7/1001,9PC DIV CMPLTD,REM CTS DISM PURS TO NEG DISPO",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-12-06T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA AN, BAIL SET $5000DEFT 1538,5 MOT FILED OF 1/19/1 CONFIRMED",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2000-11-06 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2000-11-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "R ZIMMERMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +85,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3079056",
+  "docket_entries": [
+    {
+      "filedDate": "2000-07-06T00:00:00.000Z",
+      "docketEntryComment": "1043 MOTION",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2000-07-06T00:00:00.000Z",
+      "description": "1043 MOTION",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-01-19T00:00:00.000Z",
+      "docketEntryComment": "CT4 DISM PURS 1001,7/1001,9PC DIV CMPLTD,REM CTS DISM PURS TO NEG DISPO",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-01-19T00:00:00.000Z",
+      "description": "CT4 DISM PURS 1001,7/1001,9PC DIV CMPLTD,REM CTS DISM PURS TO NEG DISPO",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-12-06T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA AN, BAIL SET $5000DEFT 1538,5 MOT FILED OF 1/19/1 CONFIRMED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2000-12-06T00:00:00.000Z",
+      "description": "BWI, FTA AN, BAIL SET $5000DEFT 1538,5 MOT FILED OF 1/19/1 CONFIRMED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01932162",
-    "portal_case_id": "",
+    "portal_case_id": "3079056",
     "display_case_number": "CRI-01932162",
     "defendant": "GARY B ANDERSON",
     "filed_date": "2000-07-06",
@@ -63,8 +134,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, GARY B ANDERSON, and date of filing 2000-07-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, GARY B ANDERSON, and date of filing 2000-07-06. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:16:37.719Z",
+  "portal_case_id": "3079056",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01932162",
+      "defendant": "GARY B ANDERSON",
+      "filed_date": "2000-07-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3079056"
+  }
 }

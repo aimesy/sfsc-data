@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:38:27.907Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:13:59.528Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01924021",
   "criminal_case_number": "01924021",
@@ -24,11 +24,51 @@
       "name": "PABLO CESAR RUPAYCALLES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "PABLO CESAR RUPAYCALLES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2000-05-23T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-06-15T13:01:00.000Z",
+      "docketEntryComment": "PLEA TRANS -FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-06-26T09:00:00.000Z",
+      "docketEntryComment": "/MIT/TN:PABLO CESAR RUPAYCALLES/AJW/CH1:ISS:PROB 3 Y:PJ39D/CTS:39/WS//DEF:IS ORDERED TO STAY AWAY FROM THE 45 MUNI LINE, COMMONLY KNOWN AS THE 45UNION BUS LINE/VF4:200/PC/PSR/BKFEE/ACCEP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2000-06-26 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2000-06-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "C SCHENONE",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +85,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3071717",
+  "docket_entries": [
+    {
+      "filedDate": "2000-05-23T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2000-05-23T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY HEARING",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-06-15T13:01:00.000Z",
+      "docketEntryComment": "PLEA TRANS -FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2000-06-15T13:01:00.000Z",
+      "description": "PLEA TRANS -FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-06-26T09:00:00.000Z",
+      "docketEntryComment": "/MIT/TN:PABLO CESAR RUPAYCALLES/AJW/CH1:ISS:PROB 3 Y:PJ39D/CTS:39/WS//DEF:IS ORDERED TO STAY AWAY FROM THE 45 MUNI LINE, COMMONLY KNOWN AS THE 45UNION BUS LINE/VF4:200/PC/PSR/BKFEE/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2000-06-26T09:00:00.000Z",
+      "description": "/MIT/TN:PABLO CESAR RUPAYCALLES/AJW/CH1:ISS:PROB 3 Y:PJ39D/CTS:39/WS//DEF:IS ORDERED TO STAY AWAY FROM THE 45 MUNI LINE, COMMONLY KNOWN AS THE 45UNION BUS LINE/VF4:200/PC/PSR/BKFEE/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01924021",
-    "portal_case_id": "",
+    "portal_case_id": "3071717",
     "display_case_number": "CRI-01924021",
     "defendant": "PABLO CESAR RUPAYCALLES",
     "filed_date": "2000-05-23",
@@ -63,8 +134,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, PABLO CESAR RUPAYCALLES, and date of filing 2000-05-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, PABLO CESAR RUPAYCALLES, and date of filing 2000-05-23. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:14:00.125Z",
+  "portal_case_id": "3071717",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01924021",
+      "defendant": "PABLO CESAR RUPAYCALLES",
+      "filed_date": "2000-05-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3071717"
+  }
 }

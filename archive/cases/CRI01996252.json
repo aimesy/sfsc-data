@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:30:24.748Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:22:31.018Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01996252",
   "criminal_case_number": "01996252",
@@ -24,11 +24,80 @@
       "name": "LAWRENCE A BELL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LAWRENCE A BELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2001-08-23T13:01:00.000Z",
+      "docketEntryComment": "PRELIM TRANS -FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-08-22T13:01:00.000Z",
+      "docketEntryComment": "DA INFO-FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-08-16T13:01:00.000Z",
+      "docketEntryComment": "PRELIM TRANS -FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-09-17T08:45:00.000Z",
+      "docketEntryComment": "/TEXT/DEFERD ENTRY OF JDGMNT; DEF ENTS GLTY PLEA & REFRD TO DIVERSN//DISPO/X:ISS; PROB 3 Y; PJ  MONTHS; WS;VF $200; 11590; DTC; RX; LF;//X:PC; PSR; FINE /X:DEFERRED SENTENCE,/OR/CONTD REFD TO DRUG COURT;TRACK I/GTW/CPSS/S18: 09-18-2001/DEFTOUT/PROB MOD/CO:PROBATION IS ADMINISTRATIVELY REVOKED/DEF:SHALL ENTER AND COMPLETE DRUGCOURT/TEXT:DRUG COURT 2:00 PM IN DEPT 18/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2003-06-23T00:00:00.000Z",
+      "docketEntryComment": "DISM'D 1385PC - PLEA W/D",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-10-18T00:00:00.000Z",
+      "docketEntryComment": "977 PC FILED977 PC FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-08-23T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAW/DEFTARR/NTW/LD:10-22-2001/987,2/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-07-19T00:00:00.000Z",
+      "docketEntryComment": "SPR DENIED",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2001-08-23 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2001-08-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "K ALLEN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "M DAWSON",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +114,92 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3137590",
+  "docket_entries": [
+    {
+      "filedDate": "2001-08-23T13:01:00.000Z",
+      "docketEntryComment": "PRELIM TRANS -FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-08-23T13:01:00.000Z",
+      "description": "PRELIM TRANS -FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-08-22T13:01:00.000Z",
+      "docketEntryComment": "DA INFO-FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-08-22T13:01:00.000Z",
+      "description": "DA INFO-FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-08-16T13:01:00.000Z",
+      "docketEntryComment": "PRELIM TRANS -FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2001-08-16T13:01:00.000Z",
+      "description": "PRELIM TRANS -FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-09-17T08:45:00.000Z",
+      "docketEntryComment": "/TEXT/DEFERD ENTRY OF JDGMNT; DEF ENTS GLTY PLEA & REFRD TO DIVERSN//DISPO/X:ISS; PROB 3 Y; PJ  MONTHS; WS;VF $200; 11590; DTC; RX; LF;//X:PC; PSR; FINE /X:DEFERRED SENTENCE,/OR/CONTD REFD TO DRUG COURT;TRACK I/GTW/CPSS/S18: 09-18-2001/DEFTOUT/PROB MOD/CO:PROBATION IS ADMINISTRATIVELY REVOKED/DEF:SHALL ENTER AND COMPLETE DRUGCOURT/TEXT:DRUG COURT 2:00 PM IN DEPT 18/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2001-09-17T08:45:00.000Z",
+      "description": "/TEXT/DEFERD ENTRY OF JDGMNT; DEF ENTS GLTY PLEA & REFRD TO DIVERSN//DISPO/X:ISS; PROB 3 Y; PJ MONTHS; WS;VF $200; 11590; DTC; RX; LF;//X:PC; PSR; FINE /X:DEFERRED SENTENCE,/OR/CONTD REFD TO DRUG COURT;TRACK I/GTW/CPSS/S18: 09-18-2001/DEFTOUT/PROB MOD/CO:PROBATION IS ADMINISTRATIVELY REVOKED/DEF:SHALL ENTER AND COMPLETE DRUGCOURT/TEXT:DRUG COURT 2:00 PM IN DEPT 18/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2003-06-23T00:00:00.000Z",
+      "docketEntryComment": "DISM'D 1385PC - PLEA W/D",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2003-06-23T00:00:00.000Z",
+      "description": "DISM'D 1385PC - PLEA W/D",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-10-18T00:00:00.000Z",
+      "docketEntryComment": "977 PC FILED977 PC FILED",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2001-10-18T00:00:00.000Z",
+      "description": "977 PC FILED977 PC FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-08-23T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAW/DEFTARR/NTW/LD:10-22-2001/987,2/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2001-08-23T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAW/DEFTARR/NTW/LD:10-22-2001/987,2/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-07-19T00:00:00.000Z",
+      "docketEntryComment": "SPR DENIED",
+      "otherSubmitter": "",
+      "__index": 7,
+      "date_filed": "2001-07-19T00:00:00.000Z",
+      "description": "SPR DENIED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01996252",
-    "portal_case_id": "",
+    "portal_case_id": "3137590",
     "display_case_number": "CRI-01996252",
     "defendant": "LAWRENCE A BELL",
     "filed_date": "2001-07-17",
@@ -63,8 +213,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LAWRENCE A BELL, and date of filing 2001-07-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LAWRENCE A BELL, and date of filing 2001-07-17. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:22:31.633Z",
+  "portal_case_id": "3137590",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01996252",
+      "defendant": "LAWRENCE A BELL",
+      "filed_date": "2001-07-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3137590"
+  }
 }

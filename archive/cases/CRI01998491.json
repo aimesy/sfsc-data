@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:02:56.178Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:25:23.266Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01998491",
   "criminal_case_number": "01998491",
@@ -24,11 +24,69 @@
       "name": "DAVID GARCIA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID GARCIA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2001-08-28T00:00:00.000Z",
+      "docketEntryComment": "SET-DISPO",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-02-28T09:00:00.000Z",
+      "docketEntryComment": "COURT GRTS MOTION TO DISM PURS PC 1001,7/1001,7/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-11-28T09:00:00.000Z",
+      "docketEntryComment": "DIV GRANTED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-10-15T00:00:00.000Z",
+      "docketEntryComment": "JT STANDS",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2002-02-28 9:00 AM",
+      "hearingType": "Pretrial Diversion Eligibility Report",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "2002-02-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Eligibility Report",
+      "hearing_type": "Pretrial Diversion Eligibility Report",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2001-11-28 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 1,
+      "court_date": "2001-11-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "M MORGA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +103,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3139646",
+  "docket_entries": [
+    {
+      "filedDate": "2001-08-28T00:00:00.000Z",
+      "docketEntryComment": "SET-DISPO",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-08-28T00:00:00.000Z",
+      "description": "SET-DISPO",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-02-28T09:00:00.000Z",
+      "docketEntryComment": "COURT GRTS MOTION TO DISM PURS PC 1001,7/1001,7/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2002-02-28T09:00:00.000Z",
+      "description": "COURT GRTS MOTION TO DISM PURS PC 1001,7/1001,7/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-11-28T09:00:00.000Z",
+      "docketEntryComment": "DIV GRANTED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2001-11-28T09:00:00.000Z",
+      "description": "DIV GRANTED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-10-15T00:00:00.000Z",
+      "docketEntryComment": "JT STANDS",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2001-10-15T00:00:00.000Z",
+      "description": "JT STANDS",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01998491",
-    "portal_case_id": "",
+    "portal_case_id": "3139646",
     "display_case_number": "CRI-01998491",
     "defendant": "DAVID GARCIA",
     "filed_date": "2001-08-28",
@@ -59,12 +158,36 @@
       "defendant": "DAVID GARCIA",
       "filed_date": "2001-08-28"
     },
-    "statutes": [],
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID GARCIA, and date of filing 2001-08-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID GARCIA, and date of filing 2001-08-28. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:25:23.888Z",
+  "portal_case_id": "3139646",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01998491",
+      "defendant": "DAVID GARCIA",
+      "filed_date": "2001-08-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3139646"
+  }
 }

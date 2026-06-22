@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:14.425Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:18:18.031Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01951336",
   "criminal_case_number": "01951336",
@@ -24,11 +24,51 @@
       "name": "MATTHEW ADAMS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MATTHEW ADAMS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2000-10-27T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-11-20T13:01:00.000Z",
+      "docketEntryComment": "PLEA TRANS-FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-12-06T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP 2 Y:L/CTSP:44/STATES/VF5:200/PAR/CDC/TEXT/5A/5B/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2000-12-06 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2000-12-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S BURRELL",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +85,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3096611",
+  "docket_entries": [
+    {
+      "filedDate": "2000-10-27T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2000-10-27T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY HEARING",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-11-20T13:01:00.000Z",
+      "docketEntryComment": "PLEA TRANS-FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2000-11-20T13:01:00.000Z",
+      "description": "PLEA TRANS-FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-12-06T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP 2 Y:L/CTSP:44/STATES/VF5:200/PAR/CDC/TEXT/5A/5B/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2000-12-06T09:00:00.000Z",
+      "description": "/AJW/CH1:SP 2 Y:L/CTSP:44/STATES/VF5:200/PAR/CDC/TEXT/5A/5B/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01951336",
-    "portal_case_id": "",
+    "portal_case_id": "3096611",
     "display_case_number": "CRI-01951336",
     "defendant": "MATTHEW ADAMS",
     "filed_date": "2000-10-27",
@@ -63,8 +134,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MATTHEW ADAMS, and date of filing 2000-10-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MATTHEW ADAMS, and date of filing 2000-10-27. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:18:18.653Z",
+  "portal_case_id": "3096611",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01951336",
+      "defendant": "MATTHEW ADAMS",
+      "filed_date": "2000-10-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3096611"
+  }
 }

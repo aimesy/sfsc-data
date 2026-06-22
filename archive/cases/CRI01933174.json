@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:35:09.512Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:16:45.971Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01933174",
   "criminal_case_number": "01933174",
@@ -24,11 +24,51 @@
       "name": "JAMAL BURTON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAMAL BURTON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2000-07-13T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-08-17T00:00:00.000Z",
+      "docketEntryComment": "DISM I/V/O PLEA AND DISPO ON 1925914 AND 1908439",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-07-13T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER FILED & SERVED",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2000-08-15 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2000-08-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "S KAPLAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +85,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3079982",
+  "docket_entries": [
+    {
+      "filedDate": "2000-07-13T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2000-07-13T00:00:00.000Z",
+      "description": "COMP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-08-17T00:00:00.000Z",
+      "docketEntryComment": "DISM I/V/O PLEA AND DISPO ON 1925914 AND 1908439",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2000-08-17T00:00:00.000Z",
+      "description": "DISM I/V/O PLEA AND DISPO ON 1925914 AND 1908439",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-07-13T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER FILED & SERVED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2000-07-13T00:00:00.000Z",
+      "description": "S/A ORDER FILED & SERVED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01933174",
-    "portal_case_id": "",
+    "portal_case_id": "3079982",
     "display_case_number": "CRI-01933174",
     "defendant": "JAMAL BURTON",
     "filed_date": "2000-07-13",
@@ -63,8 +134,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAMAL BURTON, and date of filing 2000-07-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAMAL BURTON, and date of filing 2000-07-13. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:16:46.543Z",
+  "portal_case_id": "3079982",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01933174",
+      "defendant": "JAMAL BURTON",
+      "filed_date": "2000-07-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3079982"
+  }
 }

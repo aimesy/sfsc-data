@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:30:50.055Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:25:13.460Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01997306",
   "criminal_case_number": "01997306",
@@ -24,11 +24,32 @@
       "name": "GLEN BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "GLEN BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2001-07-27T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-09-17T00:00:00.000Z",
+      "docketEntryComment": "DISM 1385PC - IN VIEW OF PLEA IN CT #1999447",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "K MALOOF",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +66,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3138551",
+  "docket_entries": [
+    {
+      "filedDate": "2001-07-27T00:00:00.000Z",
+      "docketEntryComment": "COMP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-07-27T00:00:00.000Z",
+      "description": "COMP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-09-17T00:00:00.000Z",
+      "docketEntryComment": "DISM 1385PC - IN VIEW OF PLEA IN CT #1999447",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-09-17T00:00:00.000Z",
+      "description": "DISM 1385PC - IN VIEW OF PLEA IN CT #1999447",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01997306",
-    "portal_case_id": "",
+    "portal_case_id": "3138551",
     "display_case_number": "CRI-01997306",
     "defendant": "GLEN BROWN",
     "filed_date": "2001-07-27",
@@ -63,8 +105,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, GLEN BROWN, and date of filing 2001-07-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, GLEN BROWN, and date of filing 2001-07-27. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:25:14.096Z",
+  "portal_case_id": "3138551",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01997306",
+      "defendant": "GLEN BROWN",
+      "filed_date": "2001-07-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3138551"
+  }
 }

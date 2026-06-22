@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:33:53.832Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:21:37.462Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01990645",
   "criminal_case_number": "01990645",
@@ -24,11 +24,37 @@
       "name": "DAVID BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAVID BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2001-06-15T00:00:00.000Z",
+      "docketEntryComment": "TO BE SET",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-10-16T00:00:00.000Z",
+      "docketEntryComment": "DISM 1385PC - UNABLE TO SUSTAIN BURDEN OF PROOF",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-06-15T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER FILED & SERVED, ERVIN LIPSCOMB",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "A BERNSTEIN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +71,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3132442",
+  "docket_entries": [
+    {
+      "filedDate": "2001-06-15T00:00:00.000Z",
+      "docketEntryComment": "TO BE SET",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-06-15T00:00:00.000Z",
+      "description": "TO BE SET",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-10-16T00:00:00.000Z",
+      "docketEntryComment": "DISM 1385PC - UNABLE TO SUSTAIN BURDEN OF PROOF",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-10-16T00:00:00.000Z",
+      "description": "DISM 1385PC - UNABLE TO SUSTAIN BURDEN OF PROOF",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-06-15T00:00:00.000Z",
+      "docketEntryComment": "S/A ORDER FILED & SERVED, ERVIN LIPSCOMB",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2001-06-15T00:00:00.000Z",
+      "description": "S/A ORDER FILED & SERVED, ERVIN LIPSCOMB",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01990645",
-    "portal_case_id": "",
+    "portal_case_id": "3132442",
     "display_case_number": "CRI-01990645",
     "defendant": "DAVID BROWN",
     "filed_date": "2001-06-15",
@@ -63,8 +120,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAVID BROWN, and date of filing 2001-06-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAVID BROWN, and date of filing 2001-06-15. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:21:38.140Z",
+  "portal_case_id": "3132442",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01990645",
+      "defendant": "DAVID BROWN",
+      "filed_date": "2001-06-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3132442"
+  }
 }

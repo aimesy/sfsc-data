@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:48:37.122Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:09:40.730Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01926205",
   "criminal_case_number": "01926205",
@@ -24,11 +24,57 @@
       "name": "EDWARD GATES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "EDWARD GATES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2000-06-27T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-10-31T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-06-06T00:00:00.000Z",
+      "docketEntryComment": "STATUS RE EXTRAD TO WA",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-11-28T00:00:00.000Z",
+      "docketEntryComment": "FUGITIVE - DELIVERED TO WASHINGTON 11/8/00",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-10-31T00:00:00.000Z",
+      "docketEntryComment": "BWD,N/C,BS NO BAIL",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-06-27T00:00:00.000Z",
+      "docketEntryComment": "DEFT FTA, BWI, NO BAIL",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-06-06T00:00:00.000Z",
+      "docketEntryComment": "EXTRADITION WAIVED,WAIVER HELD PENDING SELF-SURR",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "DEFENDER PUBLIC",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +91,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3073575",
+  "docket_entries": [
+    {
+      "filedDate": "2000-06-27T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2000-06-27T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-10-31T00:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2000-10-31T00:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-06-06T00:00:00.000Z",
+      "docketEntryComment": "STATUS RE EXTRAD TO WA",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2000-06-06T00:00:00.000Z",
+      "description": "STATUS RE EXTRAD TO WA",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-11-28T00:00:00.000Z",
+      "docketEntryComment": "FUGITIVE - DELIVERED TO WASHINGTON 11/8/00",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2000-11-28T00:00:00.000Z",
+      "description": "FUGITIVE - DELIVERED TO WASHINGTON 11/8/00",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-10-31T00:00:00.000Z",
+      "docketEntryComment": "BWD,N/C,BS NO BAIL",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2000-10-31T00:00:00.000Z",
+      "description": "BWD,N/C,BS NO BAIL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-06-27T00:00:00.000Z",
+      "docketEntryComment": "DEFT FTA, BWI, NO BAIL",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2000-06-27T00:00:00.000Z",
+      "description": "DEFT FTA, BWI, NO BAIL",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-06-06T00:00:00.000Z",
+      "docketEntryComment": "EXTRADITION WAIVED,WAIVER HELD PENDING SELF-SURR",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2000-06-06T00:00:00.000Z",
+      "description": "EXTRADITION WAIVED,WAIVER HELD PENDING SELF-SURR",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01926205",
-    "portal_case_id": "",
+    "portal_case_id": "3073575",
     "display_case_number": "CRI-01926205",
     "defendant": "EDWARD GATES",
     "filed_date": "2000-06-06",
@@ -63,8 +180,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, EDWARD GATES, and date of filing 2000-06-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, EDWARD GATES, and date of filing 2000-06-06. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:09:41.329Z",
+  "portal_case_id": "3073575",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01926205",
+      "defendant": "EDWARD GATES",
+      "filed_date": "2000-06-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3073575"
+  }
 }

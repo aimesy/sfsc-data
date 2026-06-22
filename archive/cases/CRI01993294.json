@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:36:12.334Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:24:30.574Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01993294",
   "criminal_case_number": "01993294",
@@ -24,9 +24,35 @@
       "name": "NIKESHA BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "NIKESHA BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2009-04-27T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-07-03T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2009-04-27T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 04/17/09",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-07-03T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA AT AN, B/S $10,000",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
   "attorneys": [],
   "documents": [],
@@ -45,11 +71,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3134863",
+  "docket_entries": [
+    {
+      "filedDate": "2009-04-27T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2009-04-27T00:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-07-03T00:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-07-03T00:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2009-04-27T00:00:00.000Z",
+      "docketEntryComment": "BW RECALLED, PURGED PUR COURT ORDER 04/17/09",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2009-04-27T00:00:00.000Z",
+      "description": "BW RECALLED, PURGED PUR COURT ORDER 04/17/09",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-07-03T00:00:00.000Z",
+      "docketEntryComment": "BWI, FTA AT AN, B/S $10,000",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2001-07-03T00:00:00.000Z",
+      "description": "BWI, FTA AT AN, B/S $10,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01993294",
-    "portal_case_id": "",
+    "portal_case_id": "3134863",
     "display_case_number": "CRI-01993294",
     "defendant": "NIKESHA BROWN",
     "filed_date": "2001-07-03",
@@ -63,8 +130,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, NIKESHA BROWN, and date of filing 2001-07-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, NIKESHA BROWN, and date of filing 2001-07-03. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:24:31.224Z",
+  "portal_case_id": "3134863",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01993294",
+      "defendant": "NIKESHA BROWN",
+      "filed_date": "2001-07-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3134863"
+  }
 }

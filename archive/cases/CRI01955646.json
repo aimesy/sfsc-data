@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:44:48.534Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:18:49.958Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01955646",
   "criminal_case_number": "01955646",
@@ -24,11 +24,47 @@
       "name": "DENNIS FLOWERS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DENNIS FLOWERS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2000-11-21T00:00:00.000Z",
+      "docketEntryComment": "SET-DISPO",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-01-19T00:00:00.000Z",
+      "docketEntryComment": "DISM I/V/O MTR 1857924",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-01-16T00:00:00.000Z",
+      "docketEntryComment": "DAW ON 011601",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-11-27T00:00:00.000Z",
+      "docketEntryComment": "BAIL REMAINS $5000 AS SET ON 11/21/00",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2000-11-21T00:00:00.000Z",
+      "docketEntryComment": "S/A--ERIC CLARKSON, EDUARDO BARRERA, TRANSBAY TERM",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "P STREETS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +81,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3100525",
+  "docket_entries": [
+    {
+      "filedDate": "2000-11-21T00:00:00.000Z",
+      "docketEntryComment": "SET-DISPO",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2000-11-21T00:00:00.000Z",
+      "description": "SET-DISPO",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-01-19T00:00:00.000Z",
+      "docketEntryComment": "DISM I/V/O MTR 1857924",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-01-19T00:00:00.000Z",
+      "description": "DISM I/V/O MTR 1857924",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-01-16T00:00:00.000Z",
+      "docketEntryComment": "DAW ON 011601",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2001-01-16T00:00:00.000Z",
+      "description": "DAW ON 011601",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-11-27T00:00:00.000Z",
+      "docketEntryComment": "BAIL REMAINS $5000 AS SET ON 11/21/00",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2000-11-27T00:00:00.000Z",
+      "description": "BAIL REMAINS $5000 AS SET ON 11/21/00",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2000-11-21T00:00:00.000Z",
+      "docketEntryComment": "S/A--ERIC CLARKSON, EDUARDO BARRERA, TRANSBAY TERM",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2000-11-21T00:00:00.000Z",
+      "description": "S/A--ERIC CLARKSON, EDUARDO BARRERA, TRANSBAY TERM",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01955646",
-    "portal_case_id": "",
+    "portal_case_id": "3100525",
     "display_case_number": "CRI-01955646",
     "defendant": "DENNIS FLOWERS",
     "filed_date": "2000-11-21",
@@ -63,8 +150,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DENNIS FLOWERS, and date of filing 2000-11-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DENNIS FLOWERS, and date of filing 2000-11-21. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:18:50.578Z",
+  "portal_case_id": "3100525",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01955646",
+      "defendant": "DENNIS FLOWERS",
+      "filed_date": "2000-11-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3100525"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:44:12.475Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:20:01.234Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01980612",
   "criminal_case_number": "01980612",
@@ -24,11 +24,42 @@
       "name": "MICHAEL DWAYNE FITZWATER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL DWAYNE FITZWATER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2001-04-19T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-05-03T00:00:00.000Z",
+      "docketEntryComment": "DISM 1385PC INT OF JUSTICE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-05-02T00:00:00.000Z",
+      "docketEntryComment": "DEFT HAS CDC HOLD",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-04-23T00:00:00.000Z",
+      "docketEntryComment": "SPR DENIED, 042601 PX DATE CONFIRMED",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "C PETERS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +76,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3123217",
+  "docket_entries": [
+    {
+      "filedDate": "2001-04-19T00:00:00.000Z",
+      "docketEntryComment": "FELONY PRELIMINARY HEARING",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-04-19T00:00:00.000Z",
+      "description": "FELONY PRELIMINARY HEARING",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-05-03T00:00:00.000Z",
+      "docketEntryComment": "DISM 1385PC INT OF JUSTICE",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-05-03T00:00:00.000Z",
+      "description": "DISM 1385PC INT OF JUSTICE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-05-02T00:00:00.000Z",
+      "docketEntryComment": "DEFT HAS CDC HOLD",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2001-05-02T00:00:00.000Z",
+      "description": "DEFT HAS CDC HOLD",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-04-23T00:00:00.000Z",
+      "docketEntryComment": "SPR DENIED, 042601 PX DATE CONFIRMED",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2001-04-23T00:00:00.000Z",
+      "description": "SPR DENIED, 042601 PX DATE CONFIRMED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01980612",
-    "portal_case_id": "",
+    "portal_case_id": "3123217",
     "display_case_number": "CRI-01980612",
     "defendant": "MICHAEL DWAYNE FITZWATER",
     "filed_date": "2001-04-19",
@@ -63,8 +135,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL DWAYNE FITZWATER, and date of filing 2001-04-19. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL DWAYNE FITZWATER, and date of filing 2001-04-19. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:20:01.860Z",
+  "portal_case_id": "3123217",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01980612",
+      "defendant": "MICHAEL DWAYNE FITZWATER",
+      "filed_date": "2001-04-19"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3123217"
+  }
 }

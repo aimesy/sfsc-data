@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:35:38.637Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:23:21.991Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01987992",
   "criminal_case_number": "01987992",
@@ -24,11 +24,37 @@
       "name": "RONALD ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "RONALD ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
+  "roa": [
+    {
+      "filedDate": "2001-05-31T00:00:00.000Z",
+      "docketEntryComment": "HRG ON DEMURRER (DOP)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-09-19T00:00:00.000Z",
+      "docketEntryComment": "DISM 1385PC - IN VIEW OF DISPO ON 1982083",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-07-11T00:00:00.000Z",
+      "docketEntryComment": "O/C NO APP",
+      "otherSubmitter": ""
+    }
+  ],
   "calendar": [],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "JOSE UMALI",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +71,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3129998",
+  "docket_entries": [
+    {
+      "filedDate": "2001-05-31T00:00:00.000Z",
+      "docketEntryComment": "HRG ON DEMURRER (DOP)",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-05-31T00:00:00.000Z",
+      "description": "HRG ON DEMURRER (DOP)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-09-19T00:00:00.000Z",
+      "docketEntryComment": "DISM 1385PC - IN VIEW OF DISPO ON 1982083",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2001-09-19T00:00:00.000Z",
+      "description": "DISM 1385PC - IN VIEW OF DISPO ON 1982083",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-07-11T00:00:00.000Z",
+      "docketEntryComment": "O/C NO APP",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2001-07-11T00:00:00.000Z",
+      "description": "O/C NO APP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01987992",
-    "portal_case_id": "",
+    "portal_case_id": "3129998",
     "display_case_number": "CRI-01987992",
     "defendant": "RONALD ANDERSON",
     "filed_date": "2001-05-31",
@@ -63,8 +120,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, RONALD ANDERSON, and date of filing 2001-05-31. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, RONALD ANDERSON, and date of filing 2001-05-31. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:23:22.710Z",
+  "portal_case_id": "3129998",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01987992",
+      "defendant": "RONALD ANDERSON",
+      "filed_date": "2001-05-31"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3129998"
+  }
 }

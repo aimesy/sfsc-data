@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T14:33:53.832Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-21T21:24:39.308Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI01994960",
   "criminal_case_number": "01994960",
@@ -24,11 +24,92 @@
       "name": "DAWN BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAWN BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2001-07-11T00:00:00.000Z",
+      "docketEntryComment": "TS DA MTR,DOP",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-09-10T13:01:00.000Z",
+      "docketEntryComment": "PLEA TRANS -FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-08-09T13:01:00.000Z",
+      "docketEntryComment": "PLEA TRANS -FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2001-08-31T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP3Y:L:ESS:PROB3Y:PJ1Y/CTS:54/STATES/PF:500/SA2:2126 MISSION ST/ /WS/11590/DTC/LF/VF4:200/PC/PSR/BKFEE/ENH:CH1:TYPE11370,2HS:TI3Y:CS//TEXT:TOTAL 6 YEARS STATE PRISON/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-08-28T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:PROBATION IN #1994960 IS HEREBY TERMINATED AS UNSUCCESSFUL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-06-27T14:01:00.000Z",
+      "docketEntryComment": "CONTD DA MTR/DA-MTR/CONTD:IN DEPARTMENT 11, ON 07-17-2002/TBH:#2054622//PROB ADM REV/SUPP:07-17-02/SHER/NB/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2002-08-28 9:00 AM",
+      "hearingType": "To Set Motion to Revoke Probation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2002-08-28",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set Motion to Revoke Probation Hearing",
+      "hearing_type": "To Set Motion to Revoke Probation Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2002-06-27 2:01 PM",
+      "hearingType": "Motion to Revoke Probation Filing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2002-06-27",
+      "hearing_time": "2:01 PM",
+      "matters": "Motion to Revoke Probation Filing",
+      "hearing_type": "Motion to Revoke Probation Filing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2001-08-31 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2001-08-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "D WISE",
+      "type": "Appointed Counsel"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +126,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3136382",
+  "docket_entries": [
+    {
+      "filedDate": "2001-07-11T00:00:00.000Z",
+      "docketEntryComment": "TS DA MTR,DOP",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-07-11T00:00:00.000Z",
+      "description": "TS DA MTR,DOP",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-09-10T13:01:00.000Z",
+      "docketEntryComment": "PLEA TRANS -FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2002-09-10T13:01:00.000Z",
+      "description": "PLEA TRANS -FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-08-09T13:01:00.000Z",
+      "docketEntryComment": "PLEA TRANS -FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2001-08-09T13:01:00.000Z",
+      "description": "PLEA TRANS -FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2001-08-31T09:00:00.000Z",
+      "docketEntryComment": "/AJW/CH1:SP3Y:L:ESS:PROB3Y:PJ1Y/CTS:54/STATES/PF:500/SA2:2126 MISSION ST/ /WS/11590/DTC/LF/VF4:200/PC/PSR/BKFEE/ENH:CH1:TYPE11370,2HS:TI3Y:CS//TEXT:TOTAL 6 YEARS STATE PRISON/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2001-08-31T09:00:00.000Z",
+      "description": "/AJW/CH1:SP3Y:L:ESS:PROB3Y:PJ1Y/CTS:54/STATES/PF:500/SA2:2126 MISSION ST/ /WS/11590/DTC/LF/VF4:200/PC/PSR/BKFEE/ENH:CH1:TYPE11370,2HS:TI3Y:CS//TEXT:TOTAL 6 YEARS STATE PRISON/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-08-28T09:00:00.000Z",
+      "docketEntryComment": "/CTORD:PROBATION IN #1994960 IS HEREBY TERMINATED AS UNSUCCESSFUL/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2002-08-28T09:00:00.000Z",
+      "description": "/CTORD:PROBATION IN #1994960 IS HEREBY TERMINATED AS UNSUCCESSFUL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-06-27T14:01:00.000Z",
+      "docketEntryComment": "CONTD DA MTR/DA-MTR/CONTD:IN DEPARTMENT 11, ON 07-17-2002/TBH:#2054622//PROB ADM REV/SUPP:07-17-02/SHER/NB/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2002-06-27T14:01:00.000Z",
+      "description": "CONTD DA MTR/DA-MTR/CONTD:IN DEPARTMENT 11, ON 07-17-2002/TBH:#2054622//PROB ADM REV/SUPP:07-17-02/SHER/NB/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "01994960",
-    "portal_case_id": "",
+    "portal_case_id": "3136382",
     "display_case_number": "CRI-01994960",
     "defendant": "DAWN BROWN",
     "filed_date": "2001-07-11",
@@ -63,8 +205,23 @@
     "inferred_charges": []
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAWN BROWN, and date of filing 2001-07-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAWN BROWN, and date of filing 2001-07-11. criminal_portal_no_public_entries criminal_portal_no_public_entries",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-06-21T21:24:39.993Z",
+  "portal_case_id": "3136382",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-01994960",
+      "defendant": "DAWN BROWN",
+      "filed_date": "2001-07-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3136382"
+  }
 }
