@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:57:18.412Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:17:19.599Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15027529",
   "criminal_case_number": "15027529",
@@ -24,19 +24,112 @@
       "name": "ARNELL CLARK",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ARNELL CLARK",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-02-10T15:00:00.000Z",
+      "docketEntryComment": "MOT TO VACATE SENTENCE & DEEM JAIL CREDITS FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-12-30T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3 ISS CPROB PROB 3 Y PJ 66D/CTS 18/SWAPD 01-13-16/WS/VF2 150/SA2 40 DAVIS COURT, SF/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/REMA/OR/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-02-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:MOTION TO VACATE SENTENCE & DEEM JAIL CREDITS/MO GRTD/OR/CTORD:THESWAP SENTENCE IS VACATED/CTORD: THE SENTENCE IS DEEMED SERVED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-12-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/AMEND 3/IRRC/TEXT DEFT ADV & PERS WVS CONST & CIZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-12-16T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:12-31-15/987,2/BAIL:355,000/CONTD:PRELIMINARY HEARING/DOP/SA1:AUDIE PHIPPS/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-02-11 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2016-02-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-12-30 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2015-12-30",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-12-30 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2015-12-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-12-16 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2015-12-16",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "VILASKA NGUYEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "211 PC/F 148.9(a) PC/M 245(a)(4) PC/M",
+    "filed_date": "2015-12-16",
+    "defendant": "ARNELL CLARK",
+    "searched_key": "CLARK/AR",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/15027529.json",
     "searched_last_name": "CLARK",
     "searched_first_prefix": "AR",
-    "charges": "211 PC/F 148.9(a) PC/M 245(a)(4) PC/M",
     "row": {
       "DEFENDANTNAME": "ARNELL CLARK",
       "CASENUMBER": "CRI-15027529",
@@ -45,11 +138,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3826618",
+  "docket_entries": [
+    {
+      "filedDate": "2016-02-10T15:00:00.000Z",
+      "docketEntryComment": "MOT TO VACATE SENTENCE & DEEM JAIL CREDITS FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-02-10T15:00:00.000Z",
+      "description": "MOT TO VACATE SENTENCE & DEEM JAIL CREDITS FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-12-30T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3 ISS CPROB PROB 3 Y PJ 66D/CTS 18/SWAPD 01-13-16/WS/VF2 150/SA2 40 DAVIS COURT, SF/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/REMA/OR/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-12-30T09:15:00.000Z",
+      "description": "/TWS/CH3 ISS CPROB PROB 3 Y PJ 66D/CTS 18/SWAPD 01-13-16/WS/VF2 150/SA2 40 DAVIS COURT, SF/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/REMA/OR/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-02-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:MOTION TO VACATE SENTENCE & DEEM JAIL CREDITS/MO GRTD/OR/CTORD:THESWAP SENTENCE IS VACATED/CTORD: THE SENTENCE IS DEEMED SERVED/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-02-11T09:00:00.000Z",
+      "description": "/CAL:MOTION TO VACATE SENTENCE & DEEM JAIL CREDITS/MO GRTD/OR/CTORD:THESWAP SENTENCE IS VACATED/CTORD: THE SENTENCE IS DEEMED SERVED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-12-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/AMEND 3/IRRC/TEXT DEFT ADV & PERS WVS CONST & CIZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-12-30T09:00:00.000Z",
+      "description": "/CAL PRELIMINARY HEARING/AMEND 3/IRRC/TEXT DEFT ADV & PERS WVS CONST & CIZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-12-16T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:12-31-15/987,2/BAIL:355,000/CONTD:PRELIMINARY HEARING/DOP/SA1:AUDIE PHIPPS/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2015-12-16T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:12-31-15/987,2/BAIL:355,000/CONTD:PRELIMINARY HEARING/DOP/SA1:AUDIE PHIPPS/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15027529",
-    "portal_case_id": "",
+    "portal_case_id": "3826618",
     "display_case_number": "CRI-15027529",
     "defendant": "ARNELL CLARK",
     "filed_date": "2015-12-16",
@@ -60,11 +204,110 @@
       "filed_date": "2015-12-16"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "211 PC/F 148.9(a) PC/M 245(a)(4) PC/M",
+    "charge_rows": [
+      {
+        "raw": "211 PC/F",
+        "title": "Penal Code § 211",
+        "title_source": "programmatic_citation",
+        "code": "PC 211",
+        "code_system": "PC",
+        "section": "211",
+        "citation": "Penal Code § 211",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "148.9(a) PC/M",
+        "title": "Penal Code § 148.9(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148.9(a)",
+        "code_system": "PC",
+        "section": "148.9(a)",
+        "citation": "Penal Code § 148.9(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "245(a)(4) PC/M",
+        "title": "Penal Code § 245(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 245(a)(4)",
+        "code_system": "PC",
+        "section": "245(a)(4)",
+        "citation": "Penal Code § 245(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ARNELL CLARK, and date of filing 2015-12-16. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ARNELL CLARK, date of filing, 2015-12-16, and charges in the case: 211 PC/F 148.9(a) PC/M 245(a)(4) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "211 PC/F",
+      "title": "Penal Code § 211",
+      "title_source": "programmatic_citation",
+      "code": "PC 211",
+      "code_system": "PC",
+      "section": "211",
+      "citation": "Penal Code § 211",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "148.9(a) PC/M",
+      "title": "Penal Code § 148.9(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148.9(a)",
+      "code_system": "PC",
+      "section": "148.9(a)",
+      "citation": "Penal Code § 148.9(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "245(a)(4) PC/M",
+      "title": "Penal Code § 245(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 245(a)(4)",
+      "code_system": "PC",
+      "section": "245(a)(4)",
+      "citation": "Penal Code § 245(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:17:20.288Z",
+  "portal_case_id": "3826618",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15027529",
+      "defendant": "ARNELL CLARK",
+      "filed_date": "2015-12-16"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3826618"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.839319+00:00"
 }

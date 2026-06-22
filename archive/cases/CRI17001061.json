@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:46:28.726Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:01:55.030Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17001061",
   "criminal_case_number": "17001061",
@@ -24,19 +24,121 @@
       "name": "JOHN H BELL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN H BELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-02-07T15:37:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPP TO DEFT'S MTS EVID -FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-02-02T15:14:00.000Z",
+      "docketEntryComment": "DEFENSE PC1538,5 MOTION TO SUPPRESS EVIDENCE, FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-02-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIMINARY HEARING/CTORD: SUBPOENAED RECORDS ARE RELEASED TO THE DEFENSE FOR COPYING AND DISTRIBUTION/CAL: PRELIMINARY HEARING/MO PC 17B/MOGRTD/CTORD: COUNT TWO IS REDUCED TO A MISDEMEANOR/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL: 2/NOLO/CO:NEGOTIATED DISPOSITION/IBARRA/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-01-27T09:00:00.000Z",
+      "docketEntryComment": "/PD/FAWC/DEFTARR1/NTW/LDPX: 02-10-17/987,2/BAIL: 50000/SA2: STRIDE RIGHT,568 BRANNAN STREET, SF, 150 YARDS/CONTD: PRELIMINARY HEARING/DOP/TE: UPTO TWO HOURS/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-01-25T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/PD/987,2/TWA/BAIL:50,000/X:PEOPLE'S MOTION TO REVOKE PROBATION IN CASE 15003534 IS FILED IN COURT TODAY,/CONTD I&A P&C DOP/CONTD:INSTRUCTION, ARRAIGNMENT, PLEA ON 01-27-17/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-02-09T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2:CJ 20 D/CTS: 20/VF2:150/COA:40/ICNA/COLLECT/DISM3/CCC: THIS CASEAND 16003442/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-02-09 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2017-02-09",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-02-09 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2017-02-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-01-27 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2017-01-27",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-01-25 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2017-01-25",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ROBERTO EVANGELISTA",
+      "type": "Public Defender"
+    },
+    {
+      "name": "LAURA CARWILE",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "459 PC/F 496(a) PC/M 466 PC/M",
+    "filed_date": "2017-01-25",
+    "defendant": "JOHN H BELL",
+    "searched_key": "BELL/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/17001061.json",
     "searched_last_name": "BELL",
     "searched_first_prefix": "JO",
-    "charges": "459 PC/F 496(a) PC/M 466 PC/M",
     "row": {
       "DEFENDANTNAME": "JOHN H BELL",
       "CASENUMBER": "CRI-17001061",
@@ -45,11 +147,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3851024",
+  "docket_entries": [
+    {
+      "filedDate": "2017-02-07T15:37:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPP TO DEFT'S MTS EVID -FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-02-07T15:37:00.000Z",
+      "description": "PEOPLE'S OPP TO DEFT'S MTS EVID -FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-02-02T15:14:00.000Z",
+      "docketEntryComment": "DEFENSE PC1538,5 MOTION TO SUPPRESS EVIDENCE, FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-02-02T15:14:00.000Z",
+      "description": "DEFENSE PC1538,5 MOTION TO SUPPRESS EVIDENCE, FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-02-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIMINARY HEARING/CTORD: SUBPOENAED RECORDS ARE RELEASED TO THE DEFENSE FOR COPYING AND DISTRIBUTION/CAL: PRELIMINARY HEARING/MO PC 17B/MOGRTD/CTORD: COUNT TWO IS REDUCED TO A MISDEMEANOR/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL: 2/NOLO/CO:NEGOTIATED DISPOSITION/IBARRA/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-02-09T09:00:00.000Z",
+      "description": "/CAL: PRELIMINARY HEARING/CTORD: SUBPOENAED RECORDS ARE RELEASED TO THE DEFENSE FOR COPYING AND DISTRIBUTION/CAL: PRELIMINARY HEARING/MO PC 17B/MOGRTD/CTORD: COUNT TWO IS REDUCED TO A MISDEMEANOR/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL: 2/NOLO/CO:NEGOTIATED DISPOSITION/IBARRA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-01-27T09:00:00.000Z",
+      "docketEntryComment": "/PD/FAWC/DEFTARR1/NTW/LDPX: 02-10-17/987,2/BAIL: 50000/SA2: STRIDE RIGHT,568 BRANNAN STREET, SF, 150 YARDS/CONTD: PRELIMINARY HEARING/DOP/TE: UPTO TWO HOURS/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-01-27T09:00:00.000Z",
+      "description": "/PD/FAWC/DEFTARR1/NTW/LDPX: 02-10-17/987,2/BAIL: 50000/SA2: STRIDE RIGHT,568 BRANNAN STREET, SF, 150 YARDS/CONTD: PRELIMINARY HEARING/DOP/TE: UPTO TWO HOURS/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-01-25T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/PD/987,2/TWA/BAIL:50,000/X:PEOPLE'S MOTION TO REVOKE PROBATION IN CASE 15003534 IS FILED IN COURT TODAY,/CONTD I&A P&C DOP/CONTD:INSTRUCTION, ARRAIGNMENT, PLEA ON 01-27-17/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2017-01-25T13:30:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/PD/987,2/TWA/BAIL:50,000/X:PEOPLE'S MOTION TO REVOKE PROBATION IN CASE 15003534 IS FILED IN COURT TODAY,/CONTD I&A P&C DOP/CONTD:INSTRUCTION, ARRAIGNMENT, PLEA ON 01-27-17/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-02-09T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2:CJ 20 D/CTS: 20/VF2:150/COA:40/ICNA/COLLECT/DISM3/CCC: THIS CASEAND 16003442/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2017-02-09T09:15:00.000Z",
+      "description": "/TWS/CH2:CJ 20 D/CTS: 20/VF2:150/COA:40/ICNA/COLLECT/DISM3/CCC: THIS CASEAND 16003442/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17001061",
-    "portal_case_id": "",
+    "portal_case_id": "3851024",
     "display_case_number": "CRI-17001061",
     "defendant": "JOHN H BELL",
     "filed_date": "2017-01-25",
@@ -59,12 +222,138 @@
       "defendant": "JOHN H BELL",
       "filed_date": "2017-01-25"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 17B",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      },
+      {
+        "code": "PC1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 17B",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "459 PC/F 496(a) PC/M 466 PC/M",
+    "charge_rows": [
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "496(a) PC/M",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "466 PC/M",
+        "title": "Penal Code § 466",
+        "title_source": "programmatic_citation",
+        "code": "PC 466",
+        "code_system": "PC",
+        "section": "466",
+        "citation": "Penal Code § 466",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN H BELL, and date of filing 2017-01-25. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN H BELL, date of filing, 2017-01-25, and charges in the case: 459 PC/F 496(a) PC/M 466 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "496(a) PC/M",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "466 PC/M",
+      "title": "Penal Code § 466",
+      "title_source": "programmatic_citation",
+      "code": "PC 466",
+      "code_system": "PC",
+      "section": "466",
+      "citation": "Penal Code § 466",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:01:55.683Z",
+  "portal_case_id": "3851024",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17001061",
+      "defendant": "JOHN H BELL",
+      "filed_date": "2017-01-25"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3851024"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.179173+00:00"
 }

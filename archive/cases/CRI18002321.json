@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:01:18.933Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:56:18.573Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18002321",
   "criminal_case_number": "18002321",
@@ -24,11 +24,92 @@
       "name": "SHEA M MORRIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "SHEA M MORRIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-03-12T13:46:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-03-12T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-02-16T13:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-03-12T13:46:00.000Z",
+      "docketEntryComment": "OLLECT/OBEY/ACCEP/4019HALF/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-03-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT: DEFT WAIVES INST AND ARRAIGNMENT GUILTY PLEA/PD/FAWC/DEFT ADV ANG:4/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-02-16T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BW/BWI/OREVKD/BAIL:20,000/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-03-12 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2018-03-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-03-12 1:46 PM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2018-03-12",
+      "hearing_time": "1:46 PM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-02-16 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2018-02-16",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "GREG GOLDMAN",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +126,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3871096",
+  "docket_entries": [
+    {
+      "filedDate": "2018-03-12T13:46:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-03-12T13:46:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-03-12T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-03-12T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-02-16T13:30:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-02-16T13:30:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-03-12T13:46:00.000Z",
+      "docketEntryComment": "OLLECT/OBEY/ACCEP/4019HALF/DISM3/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-03-12T13:46:00.000Z",
+      "description": "OLLECT/OBEY/ACCEP/4019HALF/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-03-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT: DEFT WAIVES INST AND ARRAIGNMENT GUILTY PLEA/PD/FAWC/DEFT ADV ANG:4/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-03-12T09:00:00.000Z",
+      "description": "/CAL:BENCH WARRANT RETURN/BWDNC/TEXT: DEFT WAIVES INST AND ARRAIGNMENT GUILTY PLEA/PD/FAWC/DEFT ADV ANG:4/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-02-16T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/BW/BWI/OREVKD/BAIL:20,000/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2018-02-16T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/BW/BWI/OREVKD/BAIL:20,000/BWNUM:1ST/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18002321",
-    "portal_case_id": "",
+    "portal_case_id": "3871096",
     "display_case_number": "CRI-18002321",
     "defendant": "SHEA M MORRIS",
     "filed_date": "2018-02-13",
@@ -60,11 +202,83 @@
       "filed_date": "2018-02-13"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11378 HS/F 11350(a) HS/M",
+    "charge_rows": [
+      {
+        "raw": "11378 HS/F",
+        "title": "Health and Safety Code § 11378",
+        "title_source": "programmatic_citation",
+        "code": "HS 11378",
+        "code_system": "HS",
+        "section": "11378",
+        "citation": "Health and Safety Code § 11378",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11350(a) HS/M",
+        "title": "Health and Safety Code § 11350(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11350(a)",
+        "code_system": "HS",
+        "section": "11350(a)",
+        "citation": "Health and Safety Code § 11350(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, SHEA M MORRIS, and date of filing 2018-02-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, SHEA M MORRIS, date of filing, 2018-02-13, and charges in the case: 11378 HS/F 11350(a) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11378 HS/F",
+      "title": "Health and Safety Code § 11378",
+      "title_source": "programmatic_citation",
+      "code": "HS 11378",
+      "code_system": "HS",
+      "section": "11378",
+      "citation": "Health and Safety Code § 11378",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11350(a) HS/M",
+      "title": "Health and Safety Code § 11350(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11350(a)",
+      "code_system": "HS",
+      "section": "11350(a)",
+      "citation": "Health and Safety Code § 11350(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11350.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:56:19.203Z",
+  "portal_case_id": "3871096",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18002321",
+      "defendant": "SHEA M MORRIS",
+      "filed_date": "2018-02-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3871096"
+  }
 }

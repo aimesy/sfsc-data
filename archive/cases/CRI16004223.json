@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:55:10.266Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:08:03.194Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI16004223",
   "criminal_case_number": "16004223",
@@ -24,19 +24,125 @@
       "name": "ELREY D DAVIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ELREY D DAVIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-03-04T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:05-03-16/987,2/OR/X:AS A CONDITION OF OR, DEFT MUST PROVIDE PROOF OF REGISTRATION TO DEFENSECOUNSEL,/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-05-02T09:15:00.000Z",
+      "docketEntryComment": "/CAL: SENTENCE/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ   1D /CTS: 1  /VF2:150/PROBREVFN/COA:40/ICNA/COLLECT/WS/REMA/OBEY/ACCEP/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-05-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 2/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-04-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/CONT/CAUSE/LD:05-03-16/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD:PRELIMINARY HEARING/DOP/LD:05-03-16/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-05-02 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2016-05-02",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-05-02 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2016-05-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-04-29 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2016-04-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-04-05 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2016-04-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-03-04 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 4,
+      "court_date": "2016-03-04",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "HIEN NGUYEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "290.012(a) PC/F 290.011(a) PC/M",
+    "filed_date": "2016-03-04",
+    "defendant": "ELREY D DAVIS",
+    "searched_key": "DAVIS/EL",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/16004223.json",
     "searched_last_name": "DAVIS",
     "searched_first_prefix": "EL",
-    "charges": "290.012(a) PC/F 290.011(a) PC/M",
     "row": {
       "DEFENDANTNAME": "ELREY D DAVIS",
       "CASENUMBER": "CRI-16004223",
@@ -45,11 +151,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3831774",
+  "docket_entries": [
+    {
+      "filedDate": "2016-03-04T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:05-03-16/987,2/OR/X:AS A CONDITION OF OR, DEFT MUST PROVIDE PROOF OF REGISTRATION TO DEFENSECOUNSEL,/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-03-04T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:05-03-16/987,2/OR/X:AS A CONDITION OF OR, DEFT MUST PROVIDE PROOF OF REGISTRATION TO DEFENSECOUNSEL,/CONTD: PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-05-02T09:15:00.000Z",
+      "docketEntryComment": "/CAL: SENTENCE/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ   1D /CTS: 1  /VF2:150/PROBREVFN/COA:40/ICNA/COLLECT/WS/REMA/OBEY/ACCEP/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-05-02T09:15:00.000Z",
+      "description": "/CAL: SENTENCE/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ 1D /CTS: 1 /VF2:150/PROBREVFN/COA:40/ICNA/COLLECT/WS/REMA/OBEY/ACCEP/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-05-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 2/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-05-02T09:00:00.000Z",
+      "description": "/CAL: PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 2/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-04-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/CONT/CAUSE/LD:05-03-16/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2016-04-29T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/CONT/CAUSE/LD:05-03-16/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD:PRELIMINARY HEARING/DOP/LD:05-03-16/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2016-04-05T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/CONTD:PRELIMINARY HEARING/DOP/LD:05-03-16/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "16004223",
-    "portal_case_id": "",
+    "portal_case_id": "3831774",
     "display_case_number": "CRI-16004223",
     "defendant": "ELREY D DAVIS",
     "filed_date": "2016-03-04",
@@ -60,11 +217,84 @@
       "filed_date": "2016-03-04"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "290.012(a) PC/F 290.011(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "290.012(a) PC/F",
+        "title": "Penal Code § 290.012(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 290.012(a)",
+        "code_system": "PC",
+        "section": "290.012(a)",
+        "citation": "Penal Code § 290.012(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.012.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.012.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "290.011(a) PC/M",
+        "title": "Penal Code § 290.011(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 290.011(a)",
+        "code_system": "PC",
+        "section": "290.011(a)",
+        "citation": "Penal Code § 290.011(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.011.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.011.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ELREY D DAVIS, and date of filing 2016-03-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ELREY D DAVIS, date of filing, 2016-03-04, and charges in the case: 290.012(a) PC/F 290.011(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "290.012(a) PC/F",
+      "title": "Penal Code § 290.012(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 290.012(a)",
+      "code_system": "PC",
+      "section": "290.012(a)",
+      "citation": "Penal Code § 290.012(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.012.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.012.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "290.011(a) PC/M",
+      "title": "Penal Code § 290.011(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 290.011(a)",
+      "code_system": "PC",
+      "section": "290.011(a)",
+      "citation": "Penal Code § 290.011(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.011.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.011.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:08:03.857Z",
+  "portal_case_id": "3831774",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-16004223",
+      "defendant": "ELREY D DAVIS",
+      "filed_date": "2016-03-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3831774"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.324218+00:00"
 }

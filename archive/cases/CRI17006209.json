@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:50:55.399Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:04:47.950Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17006209",
   "criminal_case_number": "17006209",
@@ -24,11 +24,82 @@
       "name": "SAMUEL MORRIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "SAMUEL MORRIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-05-08T14:37:00.000Z",
+      "docketEntryComment": "PEOPLES MOTION TO CONTINUE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-05-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING; DISTRICT ATTORNEY MOTION TO CONTINUE/NP/X:THE PUBLIC DEFENDER INDICATES DEFENDANT IS IN THE HOSPITAL,/X:THE COURT FINDS GOOD CAUSE TO GRANT THE DISTRICT ATTORNEY'S MOTION FOR CONTINUANCE,/OR/CONTD:PREHEARING CONFERENCE ON 05-12-17/DOPC/CONTD:PRELIMINARY HEARING ON 05-18-17/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-04-27T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 05-11-17/987,2/BAIL:25,000/SA2:93 6TH ST,SF/SAORD/CONTD: PRELIMANARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-05-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/MO PC 1385: THE PEOPLE PROCEED ON MANDATORY SUPERVISION VIOLATION/VD:PRELIMINARY HEARING ON 05-18-17/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-05-12 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2017-05-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-05-10 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2017-05-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-04-27 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2017-04-27",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MAX BREECKER",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +116,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3856033",
+  "docket_entries": [
+    {
+      "filedDate": "2017-05-08T14:37:00.000Z",
+      "docketEntryComment": "PEOPLES MOTION TO CONTINUE FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-05-08T14:37:00.000Z",
+      "description": "PEOPLES MOTION TO CONTINUE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-05-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING; DISTRICT ATTORNEY MOTION TO CONTINUE/NP/X:THE PUBLIC DEFENDER INDICATES DEFENDANT IS IN THE HOSPITAL,/X:THE COURT FINDS GOOD CAUSE TO GRANT THE DISTRICT ATTORNEY'S MOTION FOR CONTINUANCE,/OR/CONTD:PREHEARING CONFERENCE ON 05-12-17/DOPC/CONTD:PRELIMINARY HEARING ON 05-18-17/DOPC/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-05-10T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING; DISTRICT ATTORNEY MOTION TO CONTINUE/NP/X:THE PUBLIC DEFENDER INDICATES DEFENDANT IS IN THE HOSPITAL,/X:THE COURT FINDS GOOD CAUSE TO GRANT THE DISTRICT ATTORNEY'S MOTION FOR CONTINUANCE,/OR/CONTD:PREHEARING CONFERENCE ON 05-12-17/DOPC/CONTD:PRELIMINARY HEARING ON 05-18-17/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-04-27T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 05-11-17/987,2/BAIL:25,000/SA2:93 6TH ST,SF/SAORD/CONTD: PRELIMANARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-04-27T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 05-11-17/987,2/BAIL:25,000/SA2:93 6TH ST,SF/SAORD/CONTD: PRELIMANARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-05-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/MO PC 1385: THE PEOPLE PROCEED ON MANDATORY SUPERVISION VIOLATION/VD:PRELIMINARY HEARING ON 05-18-17/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-05-12T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/MO PC 1385: THE PEOPLE PROCEED ON MANDATORY SUPERVISION VIOLATION/VD:PRELIMINARY HEARING ON 05-18-17/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17006209",
-    "portal_case_id": "",
+    "portal_case_id": "3856033",
     "display_case_number": "CRI-17006209",
     "defendant": "SAMUEL MORRIS",
     "filed_date": "2017-04-26",
@@ -59,12 +171,68 @@
       "defendant": "SAMUEL MORRIS",
       "filed_date": "2017-04-26"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11379(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11379(a) HS/F",
+        "title": "Health and Safety Code § 11379(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11379(a)",
+        "code_system": "HS",
+        "section": "11379(a)",
+        "citation": "Health and Safety Code § 11379(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, SAMUEL MORRIS, and date of filing 2017-04-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, SAMUEL MORRIS, date of filing, 2017-04-26, and charges in the case: 11379(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11379(a) HS/F",
+      "title": "Health and Safety Code § 11379(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11379(a)",
+      "code_system": "HS",
+      "section": "11379(a)",
+      "citation": "Health and Safety Code § 11379(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:04:48.636Z",
+  "portal_case_id": "3856033",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17006209",
+      "defendant": "SAMUEL MORRIS",
+      "filed_date": "2017-04-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3856033"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:35:03.804Z"
 }

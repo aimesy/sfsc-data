@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:46:28.725Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:56:12.522Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18002399",
   "criminal_case_number": "18002399",
@@ -24,19 +24,98 @@
       "name": "JOHN H BELL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOHN H BELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-02-22T15:30:00.000Z",
+      "docketEntryComment": "DEFT'S MOTION BAIL HEARING RELEASE OR OR BAIL REDUCTION FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-02-14T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 03-01-81/987,2/BAIL: 20000/SA2: 526 2ND STREET, SF/SAORD4: 150 YARDS/SAORD/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-03-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HEARING/X:NO APPEARANCE BY ADA BLAIR MCGREGOR/TEXT:COURT ORDERS CAUSE DISM PURS PC 1385/MO PC 1385C/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-02-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/CONT/DOP/LD:03-01-18/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-03-01 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2018-03-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-02-28 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2018-02-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-02-14 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2018-02-14",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KLEIGH HATHAWAY",
+      "type": "Public Defender"
+    },
+    {
+      "name": "BLAIR MCGREGOR",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "459 PC/F 496(a) PC/F",
+    "filed_date": "2018-02-13",
+    "defendant": "JOHN H BELL",
+    "searched_key": "BELL/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/18002399.json",
     "searched_last_name": "BELL",
     "searched_first_prefix": "JO",
-    "charges": "459 PC/F 496(a) PC/F",
     "row": {
       "DEFENDANTNAME": "JOHN H BELL",
       "CASENUMBER": "CRI-18002399",
@@ -45,11 +124,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3871168",
+  "docket_entries": [
+    {
+      "filedDate": "2018-02-22T15:30:00.000Z",
+      "docketEntryComment": "DEFT'S MOTION BAIL HEARING RELEASE OR OR BAIL REDUCTION FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-02-22T15:30:00.000Z",
+      "description": "DEFT'S MOTION BAIL HEARING RELEASE OR OR BAIL REDUCTION FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-02-14T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 03-01-81/987,2/BAIL: 20000/SA2: 526 2ND STREET, SF/SAORD4: 150 YARDS/SAORD/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-02-14T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 03-01-81/987,2/BAIL: 20000/SA2: 526 2ND STREET, SF/SAORD4: 150 YARDS/SAORD/CONTD: PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-03-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HEARING/X:NO APPEARANCE BY ADA BLAIR MCGREGOR/TEXT:COURT ORDERS CAUSE DISM PURS PC 1385/MO PC 1385C/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-03-01T09:00:00.000Z",
+      "description": "/CAL:PRELIM HEARING/X:NO APPEARANCE BY ADA BLAIR MCGREGOR/TEXT:COURT ORDERS CAUSE DISM PURS PC 1385/MO PC 1385C/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-02-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/CONT/DOP/LD:03-01-18/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-02-28T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/CONT/DOP/LD:03-01-18/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18002399",
-    "portal_case_id": "",
+    "portal_case_id": "3871168",
     "display_case_number": "CRI-18002399",
     "defendant": "JOHN H BELL",
     "filed_date": "2018-02-13",
@@ -59,12 +179,102 @@
       "defendant": "JOHN H BELL",
       "filed_date": "2018-02-13"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 1385C",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "459 PC/F 496(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "496(a) PC/F",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOHN H BELL, and date of filing 2018-02-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOHN H BELL, date of filing, 2018-02-13, and charges in the case: 459 PC/F 496(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "496(a) PC/F",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:56:13.171Z",
+  "portal_case_id": "3871168",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18002399",
+      "defendant": "JOHN H BELL",
+      "filed_date": "2018-02-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3871168"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.425627+00:00"
 }

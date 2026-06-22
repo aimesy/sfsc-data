@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:42:47.792Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:03:05.960Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17006311",
   "criminal_case_number": "17006311",
@@ -24,11 +24,69 @@
       "name": "NELSON MARTINEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "NELSON MARTINEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-05-15T14:10:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPP TO DEFT MOT TO SUPPRESS FILED AT INSISTENCE OF LITIGANT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-05-09T14:53:00.000Z",
+      "docketEntryComment": "DEF MOT TO SUPP FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-05-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING AND DEFENSE MOTION TO SUPPRESS EVIDENCE/INTC/X:PRELIMINARY HEARING IS VACATED,/X:RESPECTIVE COUNSEL MAKE ARGUMENTS AND SUBMIT AS TO THE MOTION,/X:DEFENSE MOTION TO SUPPRESS EVIDENCE IS GRANTED BY THE COURT AS TO COUNT 1 AND 2,/MO PC 1385:THE PEOPLE ARE UNABLE TO SUSTAINBURDEN/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-05-03T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 05-17-17/987,2/OR/CONTD: PRELIM HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-05-16 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2017-05-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-05-03 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2017-05-03",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BRIAN PEARLMAN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +103,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3856131",
+  "docket_entries": [
+    {
+      "filedDate": "2017-05-15T14:10:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPP TO DEFT MOT TO SUPPRESS FILED AT INSISTENCE OF LITIGANT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-05-15T14:10:00.000Z",
+      "description": "PEOPLE'S OPP TO DEFT MOT TO SUPPRESS FILED AT INSISTENCE OF LITIGANT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-05-09T14:53:00.000Z",
+      "docketEntryComment": "DEF MOT TO SUPP FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-05-09T14:53:00.000Z",
+      "description": "DEF MOT TO SUPP FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-05-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING AND DEFENSE MOTION TO SUPPRESS EVIDENCE/INTC/X:PRELIMINARY HEARING IS VACATED,/X:RESPECTIVE COUNSEL MAKE ARGUMENTS AND SUBMIT AS TO THE MOTION,/X:DEFENSE MOTION TO SUPPRESS EVIDENCE IS GRANTED BY THE COURT AS TO COUNT 1 AND 2,/MO PC 1385:THE PEOPLE ARE UNABLE TO SUSTAINBURDEN/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-05-16T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING AND DEFENSE MOTION TO SUPPRESS EVIDENCE/INTC/X:PRELIMINARY HEARING IS VACATED,/X:RESPECTIVE COUNSEL MAKE ARGUMENTS AND SUBMIT AS TO THE MOTION,/X:DEFENSE MOTION TO SUPPRESS EVIDENCE IS GRANTED BY THE COURT AS TO COUNT 1 AND 2,/MO PC 1385:THE PEOPLE ARE UNABLE TO SUSTAINBURDEN/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-05-03T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 05-17-17/987,2/OR/CONTD: PRELIM HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-05-03T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 05-17-17/987,2/OR/CONTD: PRELIM HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17006311",
-    "portal_case_id": "",
+    "portal_case_id": "3856131",
     "display_case_number": "CRI-17006311",
     "defendant": "NELSON MARTINEZ",
     "filed_date": "2017-04-28",
@@ -59,12 +158,94 @@
       "defendant": "NELSON MARTINEZ",
       "filed_date": "2017-04-28"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11351.5 HS/F 11351 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11351.5 HS/F",
+        "title": "Health and Safety Code § 11351.5",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351.5",
+        "code_system": "HS",
+        "section": "11351.5",
+        "citation": "Health and Safety Code § 11351.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11351 HS/F",
+        "title": "Health and Safety Code § 11351",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351",
+        "code_system": "HS",
+        "section": "11351",
+        "citation": "Health and Safety Code § 11351",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, NELSON MARTINEZ, and date of filing 2017-04-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, NELSON MARTINEZ, date of filing, 2017-04-28, and charges in the case: 11351.5 HS/F 11351 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11351.5 HS/F",
+      "title": "Health and Safety Code § 11351.5",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351.5",
+      "code_system": "HS",
+      "section": "11351.5",
+      "citation": "Health and Safety Code § 11351.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11351 HS/F",
+      "title": "Health and Safety Code § 11351",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351",
+      "code_system": "HS",
+      "section": "11351",
+      "citation": "Health and Safety Code § 11351",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:03:06.644Z",
+  "portal_case_id": "3856131",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17006311",
+      "defendant": "NELSON MARTINEZ",
+      "filed_date": "2017-04-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3856131"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T13:15:52.071Z"
 }

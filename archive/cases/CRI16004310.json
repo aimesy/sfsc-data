@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:59:06.544Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:08:51.819Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI16004310",
   "criminal_case_number": "16004310",
@@ -24,19 +24,107 @@
       "name": "CRISTIAN GONZALES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CRISTIAN GONZALES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-03-08T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/INTC/CON:JOHN ZAHAR/FAW/DEFTARR/CO:COUNSEL RESERVED RIGHT TO DEMURRER/ /CONTD:OR MOTION & TO SET/NTW/LD 05-09-16/DOP/TE:1 WEEK/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-03-21T09:15:00.000Z",
+      "docketEntryComment": "/CAL:DISPOSITION/INTC/VD:04-15-16 TRIAL/MO138572: 14017679/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-03-21T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:TRANS TO DEPT 12/TRANS 12:FORTHWITH FOR GLOBAL DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-03-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:OR MOTION/MO DENIED/CONTD:PTC/LD 05-09-16/DOP/TE:1 WEEK/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-03-21 9:15 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2016-03-21",
+      "hearing_time": "9:15 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-03-21 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 23",
+      "__index": 1,
+      "court_date": "2016-03-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 23",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-03-10 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2016-03-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-03-08 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "2016-03-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JOHN ZAHAR",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11352(a) HS/F",
+    "filed_date": "2016-03-08",
+    "defendant": "CRISTIAN GONZALES",
+    "searched_key": "GONZALES/CR",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/16004310.json",
     "searched_last_name": "GONZALES",
     "searched_first_prefix": "CR",
-    "charges": "11352(a) HS/F",
     "row": {
       "DEFENDANTNAME": "CRISTIAN GONZALES",
       "CASENUMBER": "CRI-16004310",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3831859",
+  "docket_entries": [
+    {
+      "filedDate": "2016-03-08T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/INTC/CON:JOHN ZAHAR/FAW/DEFTARR/CO:COUNSEL RESERVED RIGHT TO DEMURRER/ /CONTD:OR MOTION & TO SET/NTW/LD 05-09-16/DOP/TE:1 WEEK/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-03-08T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/INTC/CON:JOHN ZAHAR/FAW/DEFTARR/CO:COUNSEL RESERVED RIGHT TO DEMURRER/ /CONTD:OR MOTION & TO SET/NTW/LD 05-09-16/DOP/TE:1 WEEK/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-03-21T09:15:00.000Z",
+      "docketEntryComment": "/CAL:DISPOSITION/INTC/VD:04-15-16 TRIAL/MO138572: 14017679/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-03-21T09:15:00.000Z",
+      "description": "/CAL:DISPOSITION/INTC/VD:04-15-16 TRIAL/MO138572: 14017679/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-03-21T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:TRANS TO DEPT 12/TRANS 12:FORTHWITH FOR GLOBAL DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-03-21T09:00:00.000Z",
+      "description": "/TEXT:TRANS TO DEPT 12/TRANS 12:FORTHWITH FOR GLOBAL DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-03-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:OR MOTION/MO DENIED/CONTD:PTC/LD 05-09-16/DOP/TE:1 WEEK/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2016-03-10T09:00:00.000Z",
+      "description": "/CAL:OR MOTION/MO DENIED/CONTD:PTC/LD 05-09-16/DOP/TE:1 WEEK/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "16004310",
-    "portal_case_id": "",
+    "portal_case_id": "3831859",
     "display_case_number": "CRI-16004310",
     "defendant": "CRISTIAN GONZALES",
     "filed_date": "2016-03-08",
@@ -60,11 +189,58 @@
       "filed_date": "2016-03-08"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11352(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11352(a) HS/F",
+        "title": "Health and Safety Code § 11352(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11352(a)",
+        "code_system": "HS",
+        "section": "11352(a)",
+        "citation": "Health and Safety Code § 11352(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CRISTIAN GONZALES, and date of filing 2016-03-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CRISTIAN GONZALES, date of filing, 2016-03-08, and charges in the case: 11352(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11352(a) HS/F",
+      "title": "Health and Safety Code § 11352(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11352(a)",
+      "code_system": "HS",
+      "section": "11352(a)",
+      "citation": "Health and Safety Code § 11352(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11352.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:08:52.522Z",
+  "portal_case_id": "3831859",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-16004310",
+      "defendant": "CRISTIAN GONZALES",
+      "filed_date": "2016-03-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3831859"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:20.962833+00:00"
 }

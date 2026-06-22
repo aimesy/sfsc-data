@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:33:59.252Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:56:32.145Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18008685",
   "criminal_case_number": "18008685",
@@ -24,19 +24,129 @@
       "name": "BERNARD MARCUS DAVIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BERNARD MARCUS DAVIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-06-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL READINESS CONFERENCE/X: THIS PROCEEDING IS NOT REPORTED,/NP/CTORD: MATTER OFF CALENDAR FOR THE FOLLOWING REASON: THIS IS A BLUE GROUP CASE; THE BLUE GROUP WAS TO REMAIN IN DEPARTMENT 17 TODAY,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-06-06T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/ACM/DEF:IS ORDERED RELEASED ON PRE-TRIAL ELECTRONIC MONITORING BY THE SHERIFF'S DEPARTMENT/DEF:SHALL BE FITTED WITH A GPS DEVICE AND IS ORDERED TO COMPLY WITH ALL TERMS OF RELEASE AS SET FORTH ON THE RECORD AND BY THE SFSD/CTORD:DEFENDANTSHALL BE RELEASED WITH COORDINATED PICK-UP/X:SEE SIGNED ORDER IN FILE,/NTW/LDTR:07-06-18/CONTD:MSC/DOP/CONTD:TRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-06-15T09:45:00.000Z",
+      "docketEntryComment": "/TWS/CH1:CJ 8D/CTS:8/VF2:150/COA:40/ICNA/COLLECT/4019HALF/VD:06-25-18 TRIAL/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-06-15T09:30:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:1/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-06-05T13:30:00.000Z",
+      "docketEntryComment": "/DEF:UNABLE TO COME TO COURT- 4011,5/BAIL:10,000/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-06-15 9:45 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2018-06-15",
+      "hearing_time": "9:45 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-06-15 9:30 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2018-06-15",
+      "hearing_time": "9:30 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-06-15 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 2,
+      "court_date": "2018-06-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-06-06 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2018-06-06",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-06-05 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2018-06-05",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "OLIVER KROLL",
+      "type": "Public Defender"
+    },
+    {
+      "name": "SHEILA JOHNSON",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "290.011(a) PC/M",
+    "filed_date": "2018-06-05",
+    "defendant": "BERNARD MARCUS DAVIS",
+    "searched_key": "DAVIS/BE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/18008685.json",
     "searched_last_name": "DAVIS",
     "searched_first_prefix": "BE",
-    "charges": "290.011(a) PC/M",
     "row": {
       "DEFENDANTNAME": "BERNARD MARCUS DAVIS",
       "CASENUMBER": "CRI-18008685",
@@ -45,11 +155,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3877273",
+  "docket_entries": [
+    {
+      "filedDate": "2018-06-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL READINESS CONFERENCE/X: THIS PROCEEDING IS NOT REPORTED,/NP/CTORD: MATTER OFF CALENDAR FOR THE FOLLOWING REASON: THIS IS A BLUE GROUP CASE; THE BLUE GROUP WAS TO REMAIN IN DEPARTMENT 17 TODAY,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-06-15T09:00:00.000Z",
+      "description": "/CAL: TRIAL READINESS CONFERENCE/X: THIS PROCEEDING IS NOT REPORTED,/NP/CTORD: MATTER OFF CALENDAR FOR THE FOLLOWING REASON: THIS IS A BLUE GROUP CASE; THE BLUE GROUP WAS TO REMAIN IN DEPARTMENT 17 TODAY,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-06-06T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/ACM/DEF:IS ORDERED RELEASED ON PRE-TRIAL ELECTRONIC MONITORING BY THE SHERIFF'S DEPARTMENT/DEF:SHALL BE FITTED WITH A GPS DEVICE AND IS ORDERED TO COMPLY WITH ALL TERMS OF RELEASE AS SET FORTH ON THE RECORD AND BY THE SFSD/CTORD:DEFENDANTSHALL BE RELEASED WITH COORDINATED PICK-UP/X:SEE SIGNED ORDER IN FILE,/NTW/LDTR:07-06-18/CONTD:MSC/DOP/CONTD:TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-06-06T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/ACM/DEF:IS ORDERED RELEASED ON PRE-TRIAL ELECTRONIC MONITORING BY THE SHERIFF'S DEPARTMENT/DEF:SHALL BE FITTED WITH A GPS DEVICE AND IS ORDERED TO COMPLY WITH ALL TERMS OF RELEASE AS SET FORTH ON THE RECORD AND BY THE SFSD/CTORD:DEFENDANTSHALL BE RELEASED WITH COORDINATED PICK-UP/X:SEE SIGNED ORDER IN FILE,/NTW/LDTR:07-06-18/CONTD:MSC/DOP/CONTD:TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-06-15T09:45:00.000Z",
+      "docketEntryComment": "/TWS/CH1:CJ 8D/CTS:8/VF2:150/COA:40/ICNA/COLLECT/4019HALF/VD:06-25-18 TRIAL/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-06-15T09:45:00.000Z",
+      "description": "/TWS/CH1:CJ 8D/CTS:8/VF2:150/COA:40/ICNA/COLLECT/4019HALF/VD:06-25-18 TRIAL/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-06-15T09:30:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:1/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-06-15T09:30:00.000Z",
+      "description": "/CAL:PRETRIAL/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:1/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-06-05T13:30:00.000Z",
+      "docketEntryComment": "/DEF:UNABLE TO COME TO COURT- 4011,5/BAIL:10,000/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-06-05T13:30:00.000Z",
+      "description": "/DEF:UNABLE TO COME TO COURT- 4011,5/BAIL:10,000/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18008685",
-    "portal_case_id": "",
+    "portal_case_id": "3877273",
     "display_case_number": "CRI-18008685",
     "defendant": "BERNARD MARCUS DAVIS",
     "filed_date": "2018-06-05",
@@ -60,11 +221,58 @@
       "filed_date": "2018-06-05"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "290.011(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "290.011(a) PC/M",
+        "title": "Penal Code § 290.011(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 290.011(a)",
+        "code_system": "PC",
+        "section": "290.011(a)",
+        "citation": "Penal Code § 290.011(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.011.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.011.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BERNARD MARCUS DAVIS, and date of filing 2018-06-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BERNARD MARCUS DAVIS, date of filing, 2018-06-05, and charges in the case: 290.011(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "290.011(a) PC/M",
+      "title": "Penal Code § 290.011(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 290.011(a)",
+      "code_system": "PC",
+      "section": "290.011(a)",
+      "citation": "Penal Code § 290.011(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.011.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=290.011.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:56:32.790Z",
+  "portal_case_id": "3877273",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18008685",
+      "defendant": "BERNARD MARCUS DAVIS",
+      "filed_date": "2018-06-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3877273"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.190812+00:00"
 }

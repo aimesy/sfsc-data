@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:17:18.994Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:04:02.129Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17010847",
   "criminal_case_number": "17010847",
@@ -24,19 +24,111 @@
       "name": "ARTHUR L BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ARTHUR L BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-09-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/NTW/LDTR:10-19-17/X:THE DEFENSE FILED 977 WAIVER AND ACCEPTED BY THE COURT/CONTD:TRIAL/X:THE DEFENDANT'S APPEARANCE IS WAIVED, 977 ON FILE)",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-08-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:KELLY SCHMAN, CERTIFIED LAW STUDENT, APPEARED UNDER SUPERVISION OF DPD, LAUREN SCHWEIZER,/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:COUNSEL RESERVES THE RIGHT TO DEMUR,/GTWM/987,2/CTORD:DEFENDANT NOT TO HAVE ANY WEAPON AND BOMB MAKING MATERIAL/CONTD:PRETRIAL/DAWF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-10-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/DAWT/MO PC 1385:INTEREST OF JUSTICE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-10-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/DAWT/LDTR:10-19-17/CONT/DAWF/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-10-12 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2017-10-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-10-06 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2017-10-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-09-19 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2017-09-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-08-03 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2017-08-03",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "TENETTE SMITH",
+      "type": "Public Defender"
+    },
+    {
+      "name": "SARAH SPIELBERGER",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "148.1(c) PC/M",
+    "filed_date": "2017-07-28",
+    "defendant": "ARTHUR L BROWN",
+    "searched_key": "BROWN/AR",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/17010847.json",
     "searched_last_name": "BROWN",
     "searched_first_prefix": "AR",
-    "charges": "148.1(c) PC/M",
     "row": {
       "DEFENDANTNAME": "ARTHUR L BROWN",
       "CASENUMBER": "CRI-17010847",
@@ -45,11 +137,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3860562",
+  "docket_entries": [
+    {
+      "filedDate": "2017-09-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/NTW/LDTR:10-19-17/X:THE DEFENSE FILED 977 WAIVER AND ACCEPTED BY THE COURT/CONTD:TRIAL/X:THE DEFENDANT'S APPEARANCE IS WAIVED, 977 ON FILE)",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-09-19T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/NTW/LDTR:10-19-17/X:THE DEFENSE FILED 977 WAIVER AND ACCEPTED BY THE COURT/CONTD:TRIAL/X:THE DEFENDANT'S APPEARANCE IS WAIVED, 977 ON FILE)",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-08-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:KELLY SCHMAN, CERTIFIED LAW STUDENT, APPEARED UNDER SUPERVISION OF DPD, LAUREN SCHWEIZER,/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:COUNSEL RESERVES THE RIGHT TO DEMUR,/GTWM/987,2/CTORD:DEFENDANT NOT TO HAVE ANY WEAPON AND BOMB MAKING MATERIAL/CONTD:PRETRIAL/DAWF/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-08-03T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:KELLY SCHMAN, CERTIFIED LAW STUDENT, APPEARED UNDER SUPERVISION OF DPD, LAUREN SCHWEIZER,/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:COUNSEL RESERVES THE RIGHT TO DEMUR,/GTWM/987,2/CTORD:DEFENDANT NOT TO HAVE ANY WEAPON AND BOMB MAKING MATERIAL/CONTD:PRETRIAL/DAWF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-10-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/DAWT/MO PC 1385:INTEREST OF JUSTICE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-10-12T09:00:00.000Z",
+      "description": "/CAL:TRIAL/DAWT/MO PC 1385:INTEREST OF JUSTICE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-10-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/DAWT/LDTR:10-19-17/CONT/DAWF/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-10-06T09:00:00.000Z",
+      "description": "/CAL:TRIAL/DAWT/LDTR:10-19-17/CONT/DAWF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17010847",
-    "portal_case_id": "",
+    "portal_case_id": "3860562",
     "display_case_number": "CRI-17010847",
     "defendant": "ARTHUR L BROWN",
     "filed_date": "2017-07-28",
@@ -59,12 +192,68 @@
       "defendant": "ARTHUR L BROWN",
       "filed_date": "2017-07-28"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "148.1(c) PC/M",
+    "charge_rows": [
+      {
+        "raw": "148.1(c) PC/M",
+        "title": "Penal Code § 148.1(c)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148.1(c)",
+        "code_system": "PC",
+        "section": "148.1(c)",
+        "citation": "Penal Code § 148.1(c)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.1.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.1.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ARTHUR L BROWN, and date of filing 2017-07-28. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ARTHUR L BROWN, date of filing, 2017-07-28, and charges in the case: 148.1(c) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "148.1(c) PC/M",
+      "title": "Penal Code § 148.1(c)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148.1(c)",
+      "code_system": "PC",
+      "section": "148.1(c)",
+      "citation": "Penal Code § 148.1(c)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.1.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.1.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:04:02.849Z",
+  "portal_case_id": "3860562",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17010847",
+      "defendant": "ARTHUR L BROWN",
+      "filed_date": "2017-07-28"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3860562"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.042964+00:00"
 }

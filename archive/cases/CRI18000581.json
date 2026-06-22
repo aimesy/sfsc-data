@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:20:02.673Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:55:14.950Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18000581",
   "criminal_case_number": "18000581",
@@ -24,19 +24,93 @@
       "name": "KEVIN COLLINS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KEVIN COLLINS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-01-11T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/GTWM/987,2/SAORD/SA1:MARLENE MCDONALD (BF DOB 1-14-53)/SAORD2/SA2:725 HOLLY PARK CIR,SF, CA /SAORD3/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-02-27T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/MO PC 1385:UNABLE TO SUSTAIN THE BURDEN OF PROOF//SATERM:01-11-18/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-02-07T13:30:00.000Z",
+      "docketEntryComment": "/CONT/DAWF/X:UNLESS THERE IS A RESOLUTION/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-02-27 1:30 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 0,
+      "court_date": "2018-02-27",
+      "hearing_time": "1:30 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-02-07 1:30 PM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 1,
+      "court_date": "2018-02-07",
+      "hearing_time": "1:30 PM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-01-11 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 2,
+      "court_date": "2018-01-11",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SIERRA VILLARAN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "JULIA GONZALES",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "273.5(a) PC/M",
+    "filed_date": "2018-01-11",
+    "defendant": "KEVIN COLLINS",
+    "searched_key": "COLLINS/KE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/18000581.json",
     "searched_last_name": "COLLINS",
     "searched_first_prefix": "KE",
-    "charges": "273.5(a) PC/M",
     "row": {
       "DEFENDANTNAME": "KEVIN COLLINS",
       "CASENUMBER": "CRI-18000581",
@@ -45,11 +119,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3869400",
+  "docket_entries": [
+    {
+      "filedDate": "2018-01-11T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/GTWM/987,2/SAORD/SA1:MARLENE MCDONALD (BF DOB 1-14-53)/SAORD2/SA2:725 HOLLY PARK CIR,SF, CA /SAORD3/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-01-11T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/GTWM/987,2/SAORD/SA1:MARLENE MCDONALD (BF DOB 1-14-53)/SAORD2/SA2:725 HOLLY PARK CIR,SF, CA /SAORD3/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-02-27T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/MO PC 1385:UNABLE TO SUSTAIN THE BURDEN OF PROOF//SATERM:01-11-18/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-02-27T13:30:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/MO PC 1385:UNABLE TO SUSTAIN THE BURDEN OF PROOF//SATERM:01-11-18/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-02-07T13:30:00.000Z",
+      "docketEntryComment": "/CONT/DAWF/X:UNLESS THERE IS A RESOLUTION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-02-07T13:30:00.000Z",
+      "description": "/CONT/DAWF/X:UNLESS THERE IS A RESOLUTION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18000581",
-    "portal_case_id": "",
+    "portal_case_id": "3869400",
     "display_case_number": "CRI-18000581",
     "defendant": "KEVIN COLLINS",
     "filed_date": "2018-01-11",
@@ -59,12 +164,68 @@
       "defendant": "KEVIN COLLINS",
       "filed_date": "2018-01-11"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "273.5(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "273.5(a) PC/M",
+        "title": "Penal Code § 273.5(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 273.5(a)",
+        "code_system": "PC",
+        "section": "273.5(a)",
+        "citation": "Penal Code § 273.5(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.5.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.5.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KEVIN COLLINS, and date of filing 2018-01-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KEVIN COLLINS, date of filing, 2018-01-11, and charges in the case: 273.5(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "273.5(a) PC/M",
+      "title": "Penal Code § 273.5(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 273.5(a)",
+      "code_system": "PC",
+      "section": "273.5(a)",
+      "citation": "Penal Code § 273.5(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.5.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=273.5.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:55:15.598Z",
+  "portal_case_id": "3869400",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18000581",
+      "defendant": "KEVIN COLLINS",
+      "filed_date": "2018-01-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3869400"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.290338+00:00"
 }

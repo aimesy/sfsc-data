@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:22:53.656Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:10:49.252Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI16014008",
   "criminal_case_number": "16014008",
@@ -24,11 +24,122 @@
       "name": "SABRINA MILLER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "SABRINA MILLER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-08-17T15:28:00.000Z",
+      "docketEntryComment": "DEFT'S MTS EVID -FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-08-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/GTW/VD:TRIAL DATE OF 09-09-16/X:COUNT(S) 1 CHARGING PC 242IS REFERRED TO PRETRIAL DIVERSION FOR AN ELIGIBILITY REPORT,/PTDIV:10-06-16/CONTD:PTD ELIGIBILITY REPORT/DOPU:PTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-08-04T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDTR:09-19-16/SA1:JOSE RIOS/SA2:1050 S VAN NESS AVE SF CA/SAORD4:100 YARDS/SAORD/CONTD:PRETRIAL CONFERENCE/DOP/CONTD:TRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-02-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD PROGRESS REPORT/DAWT/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT 001/1001,7:001/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-12-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD PROGRESS REPORT/DAWT/CONTD PTD PROG RPT/CGTW/PROGPTD:02-17-17/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/DOPU:PTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-10-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD ELIG RPT/DAWT/CAUSE/CONTD PTD PROG RPT/NGWD1:1/PTD:1/CPSS/PROGPTD:12-07-16/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/DOPU:PTD/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-02-17 9:00 AM",
+      "hearingType": "Pretrial Diversion Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2017-02-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Progress Report",
+      "hearing_type": "Pretrial Diversion Progress Report",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-12-07 9:00 AM",
+      "hearingType": "Pretrial Diversion Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2016-12-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Progress Report",
+      "hearing_type": "Pretrial Diversion Progress Report",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-10-06 9:00 AM",
+      "hearingType": "Pretrial Diversion Eligibility Report",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2016-10-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Pretrial Diversion Eligibility Report",
+      "hearing_type": "Pretrial Diversion Eligibility Report",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-08-22 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2016-08-22",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-08-04 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2016-08-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SIERRA VILLARAN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "MAIA MASZARA",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +156,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3841409",
+  "docket_entries": [
+    {
+      "filedDate": "2016-08-17T15:28:00.000Z",
+      "docketEntryComment": "DEFT'S MTS EVID -FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-08-17T15:28:00.000Z",
+      "description": "DEFT'S MTS EVID -FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-08-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/GTW/VD:TRIAL DATE OF 09-09-16/X:COUNT(S) 1 CHARGING PC 242IS REFERRED TO PRETRIAL DIVERSION FOR AN ELIGIBILITY REPORT,/PTDIV:10-06-16/CONTD:PTD ELIGIBILITY REPORT/DOPU:PTD/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-08-22T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/GTW/VD:TRIAL DATE OF 09-09-16/X:COUNT(S) 1 CHARGING PC 242IS REFERRED TO PRETRIAL DIVERSION FOR AN ELIGIBILITY REPORT,/PTDIV:10-06-16/CONTD:PTD ELIGIBILITY REPORT/DOPU:PTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-08-04T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDTR:09-19-16/SA1:JOSE RIOS/SA2:1050 S VAN NESS AVE SF CA/SAORD4:100 YARDS/SAORD/CONTD:PRETRIAL CONFERENCE/DOP/CONTD:TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-08-04T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDTR:09-19-16/SA1:JOSE RIOS/SA2:1050 S VAN NESS AVE SF CA/SAORD4:100 YARDS/SAORD/CONTD:PRETRIAL CONFERENCE/DOP/CONTD:TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-02-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD PROGRESS REPORT/DAWT/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT 001/1001,7:001/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-02-17T09:00:00.000Z",
+      "description": "/CAL:PTD PROGRESS REPORT/DAWT/TEXT: COURT GRTS MOTION TO DISM PURS PC 1001,7 AS TO COUNT 001/1001,7:001/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-12-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD PROGRESS REPORT/DAWT/CONTD PTD PROG RPT/CGTW/PROGPTD:02-17-17/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/DOPU:PTD/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2016-12-07T09:00:00.000Z",
+      "description": "/CAL:PTD PROGRESS REPORT/DAWT/CONTD PTD PROG RPT/CGTW/PROGPTD:02-17-17/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/DOPU:PTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-10-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PTD ELIG RPT/DAWT/CAUSE/CONTD PTD PROG RPT/NGWD1:1/PTD:1/CPSS/PROGPTD:12-07-16/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/DOPU:PTD/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2016-10-06T09:00:00.000Z",
+      "description": "/CAL:PTD ELIG RPT/DAWT/CAUSE/CONTD PTD PROG RPT/NGWD1:1/PTD:1/CPSS/PROGPTD:12-07-16/CONTD:PRETRIAL DIVERSION PROGRESS REPORT/DOPU:PTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "16014008",
-    "portal_case_id": "",
+    "portal_case_id": "3841409",
     "display_case_number": "CRI-16014008",
     "defendant": "SABRINA MILLER",
     "filed_date": "2016-08-01",
@@ -59,12 +231,75 @@
       "defendant": "SABRINA MILLER",
       "filed_date": "2016-08-01"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      },
+      {
+        "code": "PC 242I",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "242 PC/M",
+    "charge_rows": [
+      {
+        "raw": "242 PC/M",
+        "title": "Penal Code § 242",
+        "title_source": "programmatic_citation",
+        "code": "PC 242",
+        "code_system": "PC",
+        "section": "242",
+        "citation": "Penal Code § 242",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, SABRINA MILLER, and date of filing 2016-08-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, SABRINA MILLER, date of filing, 2016-08-01, and charges in the case: 242 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "242 PC/M",
+      "title": "Penal Code § 242",
+      "title_source": "programmatic_citation",
+      "code": "PC 242",
+      "code_system": "PC",
+      "section": "242",
+      "citation": "Penal Code § 242",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:10:49.937Z",
+  "portal_case_id": "3841409",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-16014008",
+      "defendant": "SABRINA MILLER",
+      "filed_date": "2016-08-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3841409"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:44:48.514Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:59:40.106Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18012077",
   "criminal_case_number": "18012077",
@@ -24,19 +24,112 @@
       "name": "TOMI DAVIS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TOMI DAVIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-08-22T12:09:00.000Z",
+      "docketEntryComment": "DEFT ATC MOT TO DISMISS BY DISTRICT ATTORNEY FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-08-08T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CON:PAM HERZIG/FAWC/DEFTARR1/NTW60/X:MOTION TO DETAIN FILED IN OPEN COURT/SAORD/LDPX:10-09-18/987,2/BAIL:250000/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-08-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFT ADD TO CALENDAR DISMISS BY THE DA/MO PC 1385:INTEREST OF JUSTICE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-08-17T09:00:00.000Z",
+      "docketEntryComment": "/DAWT/CAL:PREHEARING CONFERENCE/CONT/DOPC/LD:10-09-18/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-08-14T09:00:00.000Z",
+      "docketEntryComment": "/DAWT/CAL:PREHEARING CONFERENCE/CONT/DOPC/LD:10-09-18/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-08-23 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2018-08-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-08-17 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2018-08-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-08-14 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2018-08-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-08-08 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2018-08-08",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PAM HERZIG",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "211 PC/F 368(b)(1) PC/F",
+    "filed_date": "2018-08-07",
+    "defendant": "TOMI DAVIS",
+    "searched_key": "DAVIS/TO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/18012077.json",
     "searched_last_name": "DAVIS",
     "searched_first_prefix": "TO",
-    "charges": "211 PC/F 368(b)(1) PC/F",
     "row": {
       "DEFENDANTNAME": "TOMI DAVIS",
       "CASENUMBER": "CRI-18012077",
@@ -45,11 +138,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3880593",
+  "docket_entries": [
+    {
+      "filedDate": "2018-08-22T12:09:00.000Z",
+      "docketEntryComment": "DEFT ATC MOT TO DISMISS BY DISTRICT ATTORNEY FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-08-22T12:09:00.000Z",
+      "description": "DEFT ATC MOT TO DISMISS BY DISTRICT ATTORNEY FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-08-08T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CON:PAM HERZIG/FAWC/DEFTARR1/NTW60/X:MOTION TO DETAIN FILED IN OPEN COURT/SAORD/LDPX:10-09-18/987,2/BAIL:250000/CONTD:PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-08-08T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/CON:PAM HERZIG/FAWC/DEFTARR1/NTW60/X:MOTION TO DETAIN FILED IN OPEN COURT/SAORD/LDPX:10-09-18/987,2/BAIL:250000/CONTD:PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-08-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFT ADD TO CALENDAR DISMISS BY THE DA/MO PC 1385:INTEREST OF JUSTICE",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-08-23T09:00:00.000Z",
+      "description": "/CAL:DEFT ADD TO CALENDAR DISMISS BY THE DA/MO PC 1385:INTEREST OF JUSTICE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-08-17T09:00:00.000Z",
+      "docketEntryComment": "/DAWT/CAL:PREHEARING CONFERENCE/CONT/DOPC/LD:10-09-18/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-08-17T09:00:00.000Z",
+      "description": "/DAWT/CAL:PREHEARING CONFERENCE/CONT/DOPC/LD:10-09-18/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-08-14T09:00:00.000Z",
+      "docketEntryComment": "/DAWT/CAL:PREHEARING CONFERENCE/CONT/DOPC/LD:10-09-18/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-08-14T09:00:00.000Z",
+      "description": "/DAWT/CAL:PREHEARING CONFERENCE/CONT/DOPC/LD:10-09-18/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18012077",
-    "portal_case_id": "",
+    "portal_case_id": "3880593",
     "display_case_number": "CRI-18012077",
     "defendant": "TOMI DAVIS",
     "filed_date": "2018-08-07",
@@ -59,12 +203,94 @@
       "defendant": "TOMI DAVIS",
       "filed_date": "2018-08-07"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "211 PC/F 368(b)(1) PC/F",
+    "charge_rows": [
+      {
+        "raw": "211 PC/F",
+        "title": "Penal Code § 211",
+        "title_source": "programmatic_citation",
+        "code": "PC 211",
+        "code_system": "PC",
+        "section": "211",
+        "citation": "Penal Code § 211",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "368(b)(1) PC/F",
+        "title": "Penal Code § 368(b)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 368(b)(1)",
+        "code_system": "PC",
+        "section": "368(b)(1)",
+        "citation": "Penal Code § 368(b)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=368.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=368.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TOMI DAVIS, and date of filing 2018-08-07. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TOMI DAVIS, date of filing, 2018-08-07, and charges in the case: 211 PC/F 368(b)(1) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "211 PC/F",
+      "title": "Penal Code § 211",
+      "title_source": "programmatic_citation",
+      "code": "PC 211",
+      "code_system": "PC",
+      "section": "211",
+      "citation": "Penal Code § 211",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "368(b)(1) PC/F",
+      "title": "Penal Code § 368(b)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 368(b)(1)",
+      "code_system": "PC",
+      "section": "368(b)(1)",
+      "citation": "Penal Code § 368(b)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=368.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=368.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:59:40.707Z",
+  "portal_case_id": "3880593",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18012077",
+      "defendant": "TOMI DAVIS",
+      "filed_date": "2018-08-07"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3880593"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:26.040436+00:00"
 }

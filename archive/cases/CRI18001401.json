@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:42:55.694Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:55:12.639Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18001401",
   "criminal_case_number": "18001401",
@@ -24,19 +24,112 @@
       "name": "JOSE A JIMENEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JOSE A JIMENEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-03-20T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-02-28T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-03-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW DISPOSITION/BWDNC/X:COURT LIFTED THE SENTENCE STAYED FROM 01-30-18,/CTORD:DEFENDANT TO SERVE THE SENTENCE OF 60 DAYS IN COUNTY JAIL WITH 8 DAYS CREDITS/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-01-30T11:45:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOT/PD/OR/X:WIA ON PRCS/3455ADV/3455ADM/3455REIN/CH1:CJ60D/CTS: 6/4019HALF/CTORD:BALANCE OF 60 DAYS CJ STAYED PENDING SUCCESFULLSUBSTANCE ABUSE COUNSELING & COMPLIANCE WITH APD/TEXT/HRFDPRCS1/CONTD PROGRESS REPORT/PROG:02-28-18/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-02-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD MOTION TO REVOKE POST RELEASE COMMUNITY SUPERVISION/FTA/BWI/NB/X:POST RELEASE COMMUNITY SUPERVISION IS REVOKED,/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-03-20 9:00 AM",
+      "hearingType": "Bench Warrant Return",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2018-03-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Return",
+      "hearing_type": "Bench Warrant Return",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-02-28 9:00 AM",
+      "hearingType": "Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2018-02-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Progress Report",
+      "hearing_type": "Progress Report",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-01-30 11:45 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2018-01-30",
+      "hearing_time": "11:45 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-01-30 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "2018-01-30",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JACQUE WILSON",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "3455(a) PC/F",
+    "filed_date": "2018-01-30",
+    "defendant": "JOSE A JIMENEZ",
+    "searched_key": "JIMENEZ/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/18001401.json",
     "searched_last_name": "JIMENEZ",
     "searched_first_prefix": "JO",
-    "charges": "3455(a) PC/F",
     "row": {
       "DEFENDANTNAME": "JOSE A JIMENEZ",
       "CASENUMBER": "CRI-18001401",
@@ -45,11 +138,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3870189",
+  "docket_entries": [
+    {
+      "filedDate": "2018-03-20T09:00:00.000Z",
+      "docketEntryComment": "Warrant Discharged",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-03-20T09:00:00.000Z",
+      "description": "Warrant Discharged",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-02-28T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-02-28T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-03-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW DISPOSITION/BWDNC/X:COURT LIFTED THE SENTENCE STAYED FROM 01-30-18,/CTORD:DEFENDANT TO SERVE THE SENTENCE OF 60 DAYS IN COUNTY JAIL WITH 8 DAYS CREDITS/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-03-20T09:00:00.000Z",
+      "description": "/CAL:BW DISPOSITION/BWDNC/X:COURT LIFTED THE SENTENCE STAYED FROM 01-30-18,/CTORD:DEFENDANT TO SERVE THE SENTENCE OF 60 DAYS IN COUNTY JAIL WITH 8 DAYS CREDITS/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-01-30T11:45:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOT/PD/OR/X:WIA ON PRCS/3455ADV/3455ADM/3455REIN/CH1:CJ60D/CTS: 6/4019HALF/CTORD:BALANCE OF 60 DAYS CJ STAYED PENDING SUCCESFULLSUBSTANCE ABUSE COUNSELING & COMPLIANCE WITH APD/TEXT/HRFDPRCS1/CONTD PROGRESS REPORT/PROG:02-28-18/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-01-30T11:45:00.000Z",
+      "description": "/CAL:APD 3455PC MOT/PD/OR/X:WIA ON PRCS/3455ADV/3455ADM/3455REIN/CH1:CJ60D/CTS: 6/4019HALF/CTORD:BALANCE OF 60 DAYS CJ STAYED PENDING SUCCESFULLSUBSTANCE ABUSE COUNSELING & COMPLIANCE WITH APD/TEXT/HRFDPRCS1/CONTD PROGRESS REPORT/PROG:02-28-18/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-02-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:APD MOTION TO REVOKE POST RELEASE COMMUNITY SUPERVISION/FTA/BWI/NB/X:POST RELEASE COMMUNITY SUPERVISION IS REVOKED,/BWNUM:1ST/NIGHTSERV/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-02-28T09:00:00.000Z",
+      "description": "/CAL:APD MOTION TO REVOKE POST RELEASE COMMUNITY SUPERVISION/FTA/BWI/NB/X:POST RELEASE COMMUNITY SUPERVISION IS REVOKED,/BWNUM:1ST/NIGHTSERV/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18001401",
-    "portal_case_id": "",
+    "portal_case_id": "3870189",
     "display_case_number": "CRI-18001401",
     "defendant": "JOSE A JIMENEZ",
     "filed_date": "2018-01-30",
@@ -60,11 +204,58 @@
       "filed_date": "2018-01-30"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JOSE A JIMENEZ, and date of filing 2018-01-30. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JOSE A JIMENEZ, date of filing, 2018-01-30, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:55:13.287Z",
+  "portal_case_id": "3870189",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18001401",
+      "defendant": "JOSE A JIMENEZ",
+      "filed_date": "2018-01-30"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3870189"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.425179+00:00"
 }

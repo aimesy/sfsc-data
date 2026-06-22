@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:56:32.978Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:57:13.680Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18006124",
   "criminal_case_number": "18006124",
@@ -24,11 +24,118 @@
       "name": "CHARLES KING",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHARLES KING",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-05-01T14:54:00.000Z",
+      "docketEntryComment": "PD ATC MOT TO RELEASE DEFT ON OR FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-05-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL READINESS CONFERENCE/X: THIS PROCEEDING IS NOT REPORTED,/NP/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: DISPOSITON WAS REACHEDON05-03-18 IN DEPT, 10/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-04-20T13:30:00.000Z",
+      "docketEntryComment": "/X:MATTER HEARD IN S27 BY JUDGE GIORGI/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDTR: 05-21-18/ACM/SA2:STAY OUT OF WESTFIELDMALL AT 845 MARKET STREET IN SAN FRANCISCO/SAORD/CONTD:TRIAL READINESS ON05-04-18 IN M13/DEF:PLACED ON 2 HOUR STANDBY FOR 05-04-18 COURT DATE/CONTD:JURY TRIAL ON 05-07-18 IN M17/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-05-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/NP/OC/X:CASE WAS RESOLVED ON 05-03-18 IN D10,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-05-03T09:15:00.000Z",
+      "docketEntryComment": "/CAL:DEFT MTN FOR RELEASE OR BAIL MOTION/MO PC 1385:GUILTY PLEA TO OTHER CHARGES/VD:05-04-18 HEARING IN DEPT, 13/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-05-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFT MOTION FOR RELEASE OR BAIL REDUCTION/LD:05-17-18/TEXT:TRANS TODEPT 10/TRANS 10:FORTHWITH FOR PLEA/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-05-07 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2018-05-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-05-04 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 1,
+      "court_date": "2018-05-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-05-03 9:15 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 10",
+      "__index": 2,
+      "court_date": "2018-05-03",
+      "hearing_time": "9:15 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 10",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-05-03 9:00 AM",
+      "hearingType": "INACTIVE Mtn for OR Release / Bail Reduction",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2018-05-03",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Mtn for OR Release / Bail Reduction",
+      "hearing_type": "INACTIVE Mtn for OR Release / Bail Reduction",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-04-20 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2018-04-20",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CHRISTOPHER GARCIA",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +149,79 @@
       "CASENUMBER": "CRI-18006124",
       "FILEDDATE": "2018-04-20 09:00:00",
       "CHARGES": "490.2(a) PC/M 11377(a) HS/M 11364(a) HS/M"
-    }
+    },
+    "filed_date": "2018-04-20",
+    "defendant": "CHARLES KING",
+    "searched_key": "KING/CH",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/18006124.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3874780",
+  "docket_entries": [
+    {
+      "filedDate": "2018-05-01T14:54:00.000Z",
+      "docketEntryComment": "PD ATC MOT TO RELEASE DEFT ON OR FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-05-01T14:54:00.000Z",
+      "description": "PD ATC MOT TO RELEASE DEFT ON OR FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-05-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL READINESS CONFERENCE/X: THIS PROCEEDING IS NOT REPORTED,/NP/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: DISPOSITON WAS REACHEDON05-03-18 IN DEPT, 10/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-05-04T09:00:00.000Z",
+      "description": "/CAL: TRIAL READINESS CONFERENCE/X: THIS PROCEEDING IS NOT REPORTED,/NP/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: DISPOSITON WAS REACHEDON05-03-18 IN DEPT, 10/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-04-20T13:30:00.000Z",
+      "docketEntryComment": "/X:MATTER HEARD IN S27 BY JUDGE GIORGI/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDTR: 05-21-18/ACM/SA2:STAY OUT OF WESTFIELDMALL AT 845 MARKET STREET IN SAN FRANCISCO/SAORD/CONTD:TRIAL READINESS ON05-04-18 IN M13/DEF:PLACED ON 2 HOUR STANDBY FOR 05-04-18 COURT DATE/CONTD:JURY TRIAL ON 05-07-18 IN M17/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-04-20T13:30:00.000Z",
+      "description": "/X:MATTER HEARD IN S27 BY JUDGE GIORGI/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDTR: 05-21-18/ACM/SA2:STAY OUT OF WESTFIELDMALL AT 845 MARKET STREET IN SAN FRANCISCO/SAORD/CONTD:TRIAL READINESS ON05-04-18 IN M13/DEF:PLACED ON 2 HOUR STANDBY FOR 05-04-18 COURT DATE/CONTD:JURY TRIAL ON 05-07-18 IN M17/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-05-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/NP/OC/X:CASE WAS RESOLVED ON 05-03-18 IN D10,/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-05-07T09:00:00.000Z",
+      "description": "/CAL:TRIAL/NP/OC/X:CASE WAS RESOLVED ON 05-03-18 IN D10,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-05-03T09:15:00.000Z",
+      "docketEntryComment": "/CAL:DEFT MTN FOR RELEASE OR BAIL MOTION/MO PC 1385:GUILTY PLEA TO OTHER CHARGES/VD:05-04-18 HEARING IN DEPT, 13/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-05-03T09:15:00.000Z",
+      "description": "/CAL:DEFT MTN FOR RELEASE OR BAIL MOTION/MO PC 1385:GUILTY PLEA TO OTHER CHARGES/VD:05-04-18 HEARING IN DEPT, 13/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-05-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFT MOTION FOR RELEASE OR BAIL REDUCTION/LD:05-17-18/TEXT:TRANS TODEPT 10/TRANS 10:FORTHWITH FOR PLEA/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2018-05-03T09:00:00.000Z",
+      "description": "/CAL:DEFT MOTION FOR RELEASE OR BAIL REDUCTION/LD:05-17-18/TEXT:TRANS TODEPT 10/TRANS 10:FORTHWITH FOR PLEA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18006124",
-    "portal_case_id": "",
+    "portal_case_id": "3874780",
     "display_case_number": "CRI-18006124",
     "defendant": "CHARLES KING",
     "filed_date": "2018-04-20",
@@ -59,12 +231,120 @@
       "defendant": "CHARLES KING",
       "filed_date": "2018-04-20"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "490.2(a) PC/M 11377(a) HS/M 11364(a) HS/M",
+    "charge_rows": [
+      {
+        "raw": "490.2(a) PC/M",
+        "title": "Penal Code § 490.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.2(a)",
+        "code_system": "PC",
+        "section": "490.2(a)",
+        "citation": "Penal Code § 490.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "11377(a) HS/M",
+        "title": "Health and Safety Code § 11377(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11377(a)",
+        "code_system": "HS",
+        "section": "11377(a)",
+        "citation": "Health and Safety Code § 11377(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "11364(a) HS/M",
+        "title": "Health and Safety Code § 11364(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11364(a)",
+        "code_system": "HS",
+        "section": "11364(a)",
+        "citation": "Health and Safety Code § 11364(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHARLES KING, and date of filing 2018-04-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHARLES KING, date of filing, 2018-04-20, and charges in the case: 490.2(a) PC/M 11377(a) HS/M 11364(a) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.2(a) PC/M",
+      "title": "Penal Code § 490.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.2(a)",
+      "code_system": "PC",
+      "section": "490.2(a)",
+      "citation": "Penal Code § 490.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "11377(a) HS/M",
+      "title": "Health and Safety Code § 11377(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11377(a)",
+      "code_system": "HS",
+      "section": "11377(a)",
+      "citation": "Health and Safety Code § 11377(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "11364(a) HS/M",
+      "title": "Health and Safety Code § 11364(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11364(a)",
+      "code_system": "HS",
+      "section": "11364(a)",
+      "citation": "Health and Safety Code § 11364(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:57:14.356Z",
+  "portal_case_id": "3874780",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18006124",
+      "defendant": "CHARLES KING",
+      "filed_date": "2018-04-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3874780"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:25.752438+00:00"
 }

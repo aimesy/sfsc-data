@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:19:14.005Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:12:29.442Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI16004001",
   "criminal_case_number": "16004001",
@@ -24,19 +24,103 @@
       "name": "JESREL ANDREW ANDERSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JESREL ANDREW ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-03-01T16:43:00.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-03-24T15:00:00.000Z",
+      "docketEntryComment": "FELONY PLEA TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-03-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:1/FNDG/X:THIS IS A PLEA OPEN TO THE COURT BEFORE JUDGE TORPOCO TO BE SENTENCED BY JUDGE CHAN/ARBUCKLE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-03-29T14:30:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/MISD4:1/TWS/CH1:CJ 90 D/CTS:27/X:RESTITUTION IS HARVEY WAIVERED INTO CASE NUMBER 15004939/CTORD:NO FINES IMPOSED/ /4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-03-02T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:03-16-16/987,2/BAIL:15,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-03-29 2:30 PM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 5",
+      "__index": 0,
+      "court_date": "2016-03-29",
+      "hearing_time": "2:30 PM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 5",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-03-15 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2016-03-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-03-02 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2016-03-02",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PHOENIX STREETS",
+      "type": "Public Defender"
+    },
+    {
+      "name": "STEPHANIE ZUDEKOFF",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "487(a) PC/M",
+    "filed_date": "2016-03-02",
+    "defendant": "JESREL ANDREW ANDERSON",
+    "searched_key": "ANDERSON/JE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/16004001.json",
     "searched_last_name": "ANDERSON",
     "searched_first_prefix": "JE",
-    "charges": "487(a) PC/M",
     "row": {
       "DEFENDANTNAME": "JESREL ANDREW ANDERSON",
       "CASENUMBER": "CRI-16004001",
@@ -45,11 +129,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3831554",
+  "docket_entries": [
+    {
+      "filedDate": "2016-03-01T16:43:00.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-03-01T16:43:00.000Z",
+      "description": "Complaint",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-03-24T15:00:00.000Z",
+      "docketEntryComment": "FELONY PLEA TX FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-03-24T15:00:00.000Z",
+      "description": "FELONY PLEA TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-03-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:1/FNDG/X:THIS IS A PLEA OPEN TO THE COURT BEFORE JUDGE TORPOCO TO BE SENTENCED BY JUDGE CHAN/ARBUCKLE/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-03-15T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:1/FNDG/X:THIS IS A PLEA OPEN TO THE COURT BEFORE JUDGE TORPOCO TO BE SENTENCED BY JUDGE CHAN/ARBUCKLE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-03-29T14:30:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/MISD4:1/TWS/CH1:CJ 90 D/CTS:27/X:RESTITUTION IS HARVEY WAIVERED INTO CASE NUMBER 15004939/CTORD:NO FINES IMPOSED/ /4019HALF/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2016-03-29T14:30:00.000Z",
+      "description": "/CAL:SENTENCING/MISD4:1/TWS/CH1:CJ 90 D/CTS:27/X:RESTITUTION IS HARVEY WAIVERED INTO CASE NUMBER 15004939/CTORD:NO FINES IMPOSED/ /4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-03-02T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:03-16-16/987,2/BAIL:15,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2016-03-02T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:03-16-16/987,2/BAIL:15,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "16004001",
-    "portal_case_id": "",
+    "portal_case_id": "3831554",
     "display_case_number": "CRI-16004001",
     "defendant": "JESREL ANDREW ANDERSON",
     "filed_date": "2016-03-02",
@@ -60,11 +195,58 @@
       "filed_date": "2016-03-02"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "487(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "487(a) PC/M",
+        "title": "Penal Code § 487(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 487(a)",
+        "code_system": "PC",
+        "section": "487(a)",
+        "citation": "Penal Code § 487(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JESREL ANDREW ANDERSON, and date of filing 2016-03-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JESREL ANDREW ANDERSON, date of filing, 2016-03-02, and charges in the case: 487(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "487(a) PC/M",
+      "title": "Penal Code § 487(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 487(a)",
+      "code_system": "PC",
+      "section": "487(a)",
+      "citation": "Penal Code § 487(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:12:30.127Z",
+  "portal_case_id": "3831554",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-16004001",
+      "defendant": "JESREL ANDREW ANDERSON",
+      "filed_date": "2016-03-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3831554"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.823035+00:00"
 }

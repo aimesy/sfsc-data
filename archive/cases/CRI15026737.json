@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:35:12.492Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:17:34.857Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15026737",
   "criminal_case_number": "15026737",
@@ -24,11 +24,96 @@
       "name": "BRANDON SIMPSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BRANDON SIMPSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-12-31T11:35:00.000Z",
+      "docketEntryComment": "DFT'S MOT RELEASE ON OR/BAIL FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-12-24T11:14:00.000Z",
+      "docketEntryComment": "DEFT'S BRADY DISCOV MOT/REQ IN CAM REVW; NOTICE FILEDDEFT'S PITCHESS DISCOVERY MOT FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-12-10T11:27:00.000Z",
+      "docketEntryComment": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-01-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG & MTS/X:COURT GRANTS DISTRICT ATTORNEY'S MOTION TO DISMISSTHIS CASE PURSUANT TOPENAL CODE 1387(C) FOR THE FOLLOWING REASON(S), DEFENDANT FEDERALLY INDICTED/VD:PITCHESS, BRADY MOTION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-12-04T13:30:00.000Z",
+      "docketEntryComment": "/X:FIRST AMENDED FELONY COMPLAINT IS FILED/TEXT:DEFT ENT NG PLEA(S) & DENOF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 12-18-15/987,2/BAIL:175000/X:BAIL ISSET WITHOUT PREJUDICE/     /CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-12-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG & DEFT MTS/X:ORAL MOTION TO CONTINUE IS GRANTED/NTW60/LDPX:02-02-16/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-01-06 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2016-01-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-12-17 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2015-12-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-12-04 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2015-12-04",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "MATTHEW SOTOROSEN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "JACK SHANNON",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +130,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3825837",
+  "docket_entries": [
+    {
+      "filedDate": "2015-12-31T11:35:00.000Z",
+      "docketEntryComment": "DFT'S MOT RELEASE ON OR/BAIL FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-12-31T11:35:00.000Z",
+      "description": "DFT'S MOT RELEASE ON OR/BAIL FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-12-24T11:14:00.000Z",
+      "docketEntryComment": "DEFT'S BRADY DISCOV MOT/REQ IN CAM REVW; NOTICE FILEDDEFT'S PITCHESS DISCOVERY MOT FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-12-24T11:14:00.000Z",
+      "description": "DEFT'S BRADY DISCOV MOT/REQ IN CAM REVW; NOTICE FILEDDEFT'S PITCHESS DISCOVERY MOT FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-12-10T11:27:00.000Z",
+      "docketEntryComment": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-12-10T11:27:00.000Z",
+      "description": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-01-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG & MTS/X:COURT GRANTS DISTRICT ATTORNEY'S MOTION TO DISMISSTHIS CASE PURSUANT TOPENAL CODE 1387(C) FOR THE FOLLOWING REASON(S), DEFENDANT FEDERALLY INDICTED/VD:PITCHESS, BRADY MOTION/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2016-01-06T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG & MTS/X:COURT GRANTS DISTRICT ATTORNEY'S MOTION TO DISMISSTHIS CASE PURSUANT TOPENAL CODE 1387(C) FOR THE FOLLOWING REASON(S), DEFENDANT FEDERALLY INDICTED/VD:PITCHESS, BRADY MOTION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-12-04T13:30:00.000Z",
+      "docketEntryComment": "/X:FIRST AMENDED FELONY COMPLAINT IS FILED/TEXT:DEFT ENT NG PLEA(S) & DENOF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 12-18-15/987,2/BAIL:175000/X:BAIL ISSET WITHOUT PREJUDICE/     /CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2015-12-04T13:30:00.000Z",
+      "description": "/X:FIRST AMENDED FELONY COMPLAINT IS FILED/TEXT:DEFT ENT NG PLEA(S) & DENOF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 12-18-15/987,2/BAIL:175000/X:BAIL ISSET WITHOUT PREJUDICE/ /CONTD:FOR PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-12-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG & DEFT MTS/X:ORAL MOTION TO CONTINUE IS GRANTED/NTW60/LDPX:02-02-16/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2015-12-17T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG & DEFT MTS/X:ORAL MOTION TO CONTINUE IS GRANTED/NTW60/LDPX:02-02-16/CONTD PRELIM HRG, DOP/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15026737",
-    "portal_case_id": "",
+    "portal_case_id": "3825837",
     "display_case_number": "CRI-15026737",
     "defendant": "BRANDON SIMPSON",
     "filed_date": "2015-12-04",
@@ -59,12 +205,129 @@
       "defendant": "BRANDON SIMPSON",
       "filed_date": "2015-12-04"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888 25850(a) PC/F 25400(a)(2) PC/F 69 PC/F",
+    "charge_rows": [
+      {
+        "raw": "25850(a) PC/F",
+        "title": "Penal Code § 25850(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 25850(a)",
+        "code_system": "PC",
+        "section": "25850(a)",
+        "citation": "Penal Code § 25850(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25850.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25850.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "25400(a)(2) PC/F",
+        "title": "Penal Code § 25400(a)(2)",
+        "title_source": "programmatic_citation",
+        "code": "PC 25400(a)(2)",
+        "code_system": "PC",
+        "section": "25400(a)(2)",
+        "citation": "Penal Code § 25400(a)(2)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25400.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25400.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "69 PC/F",
+        "title": "Penal Code § 69",
+        "title_source": "programmatic_citation",
+        "code": "PC 69",
+        "code_system": "PC",
+        "section": "69",
+        "citation": "Penal Code § 69",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=69.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=69.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BRANDON SIMPSON, and date of filing 2015-12-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BRANDON SIMPSON, date of filing, 2015-12-04, and charges in the case: 8888888 25850(a) PC/F 25400(a)(2) PC/F 69 PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "25850(a) PC/F",
+      "title": "Penal Code § 25850(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 25850(a)",
+      "code_system": "PC",
+      "section": "25850(a)",
+      "citation": "Penal Code § 25850(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25850.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25850.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "25400(a)(2) PC/F",
+      "title": "Penal Code § 25400(a)(2)",
+      "title_source": "programmatic_citation",
+      "code": "PC 25400(a)(2)",
+      "code_system": "PC",
+      "section": "25400(a)(2)",
+      "citation": "Penal Code § 25400(a)(2)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25400.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25400.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "69 PC/F",
+      "title": "Penal Code § 69",
+      "title_source": "programmatic_citation",
+      "code": "PC 69",
+      "code_system": "PC",
+      "section": "69",
+      "citation": "Penal Code § 69",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=69.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=69.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:17:35.552Z",
+  "portal_case_id": "3825837",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15026737",
+      "defendant": "BRANDON SIMPSON",
+      "filed_date": "2015-12-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3825837"
+  }
 }

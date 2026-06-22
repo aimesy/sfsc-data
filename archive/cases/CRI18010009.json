@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:44:57.559Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:00:37.883Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18010009",
   "criminal_case_number": "18010009",
@@ -24,11 +24,81 @@
       "name": "DARRIEN LEE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DARRIEN LEE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-07-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL READINESS CONFERENCE/X: THIS PROCEEDING IS RECORDED THROUGH JAVS,/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:2/DISM3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-03T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/ACM/X:COURT RECOMMENDS THE DEFENDANT PARTICIPATE IN SUBSTANCE ABUSE COUNSELING/NTW)/LDTR:08-02-18/CONTD:TRIAL READINESS IN D13/DOP/CONTD:TRIAL IN D17/X:THE DEFENDANT IS ON A 2 HR STANDBY FOR TRIAL IN D17/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-13T09:15:00.000Z",
+      "docketEntryComment": "/CAL: SENTENCING/X: THIS PROCEEDING IS RECORDED THROUGH JAVS,/TWS/CH2:CJ6D/CTS: 6/4019HALF/VF2:150/COA:40/ICNA/COLLECT/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-07-13 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2018-07-13",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-07-13 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 1,
+      "court_date": "2018-07-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-07-03 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2018-07-03",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "REBECCA FEIGELSON",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "MEGAN HAMILTON",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +112,49 @@
       "CASENUMBER": "CRI-18010009",
       "FILEDDATE": "2018-07-03 09:00:00",
       "CHARGES": "8888888 148(a)(1) PC/M 243(b) PC/M"
-    }
+    },
+    "filed_date": "2018-07-03",
+    "defendant": "DARRIEN LEE",
+    "searched_key": "LEE/DA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/18010009.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3878568",
+  "docket_entries": [
+    {
+      "filedDate": "2018-07-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL READINESS CONFERENCE/X: THIS PROCEEDING IS RECORDED THROUGH JAVS,/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:2/DISM3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-07-13T09:00:00.000Z",
+      "description": "/CAL:TRIAL READINESS CONFERENCE/X: THIS PROCEEDING IS RECORDED THROUGH JAVS,/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:2/DISM3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-03T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/ACM/X:COURT RECOMMENDS THE DEFENDANT PARTICIPATE IN SUBSTANCE ABUSE COUNSELING/NTW)/LDTR:08-02-18/CONTD:TRIAL READINESS IN D13/DOP/CONTD:TRIAL IN D17/X:THE DEFENDANT IS ON A 2 HR STANDBY FOR TRIAL IN D17/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-07-03T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/ACM/X:COURT RECOMMENDS THE DEFENDANT PARTICIPATE IN SUBSTANCE ABUSE COUNSELING/NTW)/LDTR:08-02-18/CONTD:TRIAL READINESS IN D13/DOP/CONTD:TRIAL IN D17/X:THE DEFENDANT IS ON A 2 HR STANDBY FOR TRIAL IN D17/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-13T09:15:00.000Z",
+      "docketEntryComment": "/CAL: SENTENCING/X: THIS PROCEEDING IS RECORDED THROUGH JAVS,/TWS/CH2:CJ6D/CTS: 6/4019HALF/VF2:150/COA:40/ICNA/COLLECT/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-07-13T09:15:00.000Z",
+      "description": "/CAL: SENTENCING/X: THIS PROCEEDING IS RECORDED THROUGH JAVS,/TWS/CH2:CJ6D/CTS: 6/4019HALF/VF2:150/COA:40/ICNA/COLLECT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18010009",
-    "portal_case_id": "",
+    "portal_case_id": "3878568",
     "display_case_number": "CRI-18010009",
     "defendant": "DARRIEN LEE",
     "filed_date": "2018-07-03",
@@ -60,11 +165,94 @@
       "filed_date": "2018-07-03"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "8888888 148(a)(1) PC/M 243(b) PC/M",
+    "charge_rows": [
+      {
+        "raw": "148(a)(1) PC/M",
+        "title": "Penal Code § 148(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148(a)(1)",
+        "code_system": "PC",
+        "section": "148(a)(1)",
+        "citation": "Penal Code § 148(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "243(b) PC/M",
+        "title": "Penal Code § 243(b)",
+        "title_source": "programmatic_citation",
+        "code": "PC 243(b)",
+        "code_system": "PC",
+        "section": "243(b)",
+        "citation": "Penal Code § 243(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DARRIEN LEE, and date of filing 2018-07-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DARRIEN LEE, date of filing, 2018-07-03, and charges in the case: 8888888 148(a)(1) PC/M 243(b) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "148(a)(1) PC/M",
+      "title": "Penal Code § 148(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148(a)(1)",
+      "code_system": "PC",
+      "section": "148(a)(1)",
+      "citation": "Penal Code § 148(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "243(b) PC/M",
+      "title": "Penal Code § 243(b)",
+      "title_source": "programmatic_citation",
+      "code": "PC 243(b)",
+      "code_system": "PC",
+      "section": "243(b)",
+      "citation": "Penal Code § 243(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:00:38.515Z",
+  "portal_case_id": "3878568",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18010009",
+      "defendant": "DARRIEN LEE",
+      "filed_date": "2018-07-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3878568"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:23.994444+00:00"
 }

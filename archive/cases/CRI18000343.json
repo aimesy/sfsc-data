@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T22:01:49.862Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:55:54.345Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18000343",
   "criminal_case_number": "18000343",
@@ -24,11 +24,122 @@
       "name": "KENNETH R PERRY",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KENNETH R PERRY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-01-29T12:21:00.000Z",
+      "docketEntryComment": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED AT INSISTENCE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-01-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A, P&C/NP/DEF:IS 4011,5/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:COUNSEL RESERVES THE RIGHT TO DEMUR,/NTW/LDTR:02-13-18/987,2/CONTD:TRIAL/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-01-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A, P&C/NP/X:THE DEFENDANT HAS A PENDING 3455 PRCS HOLD/X:THE DEFENDANT WAS NOT ABLE TO COME TO COURT TODAY 4011,5/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL AND STATUS OF PRCS HOLD/TWA/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-02-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL AND MTS/NP/MO PC 1385:THE PEOPLE TO PROCEED BY CASE #18000342//VD:TRIAL AND LAST DAY OF 02-13-18/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-01-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A P&C/4011,5/CAUSE/CONT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-01-08T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/DEF:IS SICK TODAY/X:COURT FOUND GOOD CAUSE TO CONTINUE,/BAIL:5000/X:BAIL IS SET WITHOUT PREJUDICE,/CONTD:I&A, P&C/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-02-02 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2018-02-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-01-11 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2018-01-11",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-01-10 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2018-01-10",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-01-09 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2018-01-09",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-01-08 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2018-01-08",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SIERRA VILLARAN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "LUCIA LI",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +156,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3869170",
+  "docket_entries": [
+    {
+      "filedDate": "2018-01-29T12:21:00.000Z",
+      "docketEntryComment": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED AT INSISTENCE",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-01-29T12:21:00.000Z",
+      "description": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED AT INSISTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-01-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A, P&C/NP/DEF:IS 4011,5/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:COUNSEL RESERVES THE RIGHT TO DEMUR,/NTW/LDTR:02-13-18/987,2/CONTD:TRIAL/DOPC/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-01-11T09:00:00.000Z",
+      "description": "/CAL:I&A, P&C/NP/DEF:IS 4011,5/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:COUNSEL RESERVES THE RIGHT TO DEMUR,/NTW/LDTR:02-13-18/987,2/CONTD:TRIAL/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-01-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A, P&C/NP/X:THE DEFENDANT HAS A PENDING 3455 PRCS HOLD/X:THE DEFENDANT WAS NOT ABLE TO COME TO COURT TODAY 4011,5/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL AND STATUS OF PRCS HOLD/TWA/DOPC/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-01-10T09:00:00.000Z",
+      "description": "/CAL:I&A, P&C/NP/X:THE DEFENDANT HAS A PENDING 3455 PRCS HOLD/X:THE DEFENDANT WAS NOT ABLE TO COME TO COURT TODAY 4011,5/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL AND STATUS OF PRCS HOLD/TWA/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-02-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL AND MTS/NP/MO PC 1385:THE PEOPLE TO PROCEED BY CASE #18000342//VD:TRIAL AND LAST DAY OF 02-13-18/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-02-02T09:00:00.000Z",
+      "description": "/CAL:TRIAL AND MTS/NP/MO PC 1385:THE PEOPLE TO PROCEED BY CASE #18000342//VD:TRIAL AND LAST DAY OF 02-13-18/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-01-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A P&C/4011,5/CAUSE/CONT/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-01-09T09:00:00.000Z",
+      "description": "/CAL:I&A P&C/4011,5/CAUSE/CONT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-01-08T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/DEF:IS SICK TODAY/X:COURT FOUND GOOD CAUSE TO CONTINUE,/BAIL:5000/X:BAIL IS SET WITHOUT PREJUDICE,/CONTD:I&A, P&C/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2018-01-08T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/NP/DEF:IS SICK TODAY/X:COURT FOUND GOOD CAUSE TO CONTINUE,/BAIL:5000/X:BAIL IS SET WITHOUT PREJUDICE,/CONTD:I&A, P&C/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18000343",
-    "portal_case_id": "",
+    "portal_case_id": "3869170",
     "display_case_number": "CRI-18000343",
     "defendant": "KENNETH R PERRY",
     "filed_date": "2018-01-08",
@@ -59,12 +231,128 @@
       "defendant": "KENNETH R PERRY",
       "filed_date": "2018-01-08"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11377(a) HS/M 11364(a) HS/M 148(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "11377(a) HS/M",
+        "title": "Health and Safety Code § 11377(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11377(a)",
+        "code_system": "HS",
+        "section": "11377(a)",
+        "citation": "Health and Safety Code § 11377(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "11364(a) HS/M",
+        "title": "Health and Safety Code § 11364(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11364(a)",
+        "code_system": "HS",
+        "section": "11364(a)",
+        "citation": "Health and Safety Code § 11364(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "148(a)(1) PC/M",
+        "title": "Penal Code § 148(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148(a)(1)",
+        "code_system": "PC",
+        "section": "148(a)(1)",
+        "citation": "Penal Code § 148(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KENNETH R PERRY, and date of filing 2018-01-08. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KENNETH R PERRY, date of filing, 2018-01-08, and charges in the case: 11377(a) HS/M 11364(a) HS/M 148(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11377(a) HS/M",
+      "title": "Health and Safety Code § 11377(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11377(a)",
+      "code_system": "HS",
+      "section": "11377(a)",
+      "citation": "Health and Safety Code § 11377(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "11364(a) HS/M",
+      "title": "Health and Safety Code § 11364(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11364(a)",
+      "code_system": "HS",
+      "section": "11364(a)",
+      "citation": "Health and Safety Code § 11364(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "148(a)(1) PC/M",
+      "title": "Penal Code § 148(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148(a)(1)",
+      "code_system": "PC",
+      "section": "148(a)(1)",
+      "citation": "Penal Code § 148(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:55:55.026Z",
+  "portal_case_id": "3869170",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18000343",
+      "defendant": "KENNETH R PERRY",
+      "filed_date": "2018-01-08"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3869170"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T14:35:55.785Z"
 }

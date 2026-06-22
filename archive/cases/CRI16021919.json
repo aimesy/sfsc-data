@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:42:18.833Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:11:32.580Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI16021919",
   "criminal_case_number": "16021919",
@@ -24,11 +24,77 @@
       "name": "JAVON I NEAL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAVON I NEAL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-02-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO138572:17001012/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-01-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD:PRELIM HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-12-22T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LDPX:02-21-17/987,2/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-02-14 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2017-02-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-01-25 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2017-01-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-12-22 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2016-12-22",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "THANH NGO",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3849183",
+  "docket_entries": [
+    {
+      "filedDate": "2017-02-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO138572:17001012/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-02-14T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO138572:17001012/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-01-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD:PRELIM HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-01-25T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/CONTD:PRELIM HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-12-22T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LDPX:02-21-17/987,2/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-12-22T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LDPX:02-21-17/987,2/CONTD: PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "16021919",
-    "portal_case_id": "",
+    "portal_case_id": "3849183",
     "display_case_number": "CRI-16021919",
     "defendant": "JAVON I NEAL",
     "filed_date": "2016-12-20",
@@ -60,11 +157,83 @@
       "filed_date": "2016-12-20"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "487(a) PC/F 148(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "487(a) PC/F",
+        "title": "Penal Code § 487(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 487(a)",
+        "code_system": "PC",
+        "section": "487(a)",
+        "citation": "Penal Code § 487(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "148(a)(1) PC/M",
+        "title": "Penal Code § 148(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148(a)(1)",
+        "code_system": "PC",
+        "section": "148(a)(1)",
+        "citation": "Penal Code § 148(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAVON I NEAL, and date of filing 2016-12-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAVON I NEAL, date of filing, 2016-12-20, and charges in the case: 487(a) PC/F 148(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "487(a) PC/F",
+      "title": "Penal Code § 487(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 487(a)",
+      "code_system": "PC",
+      "section": "487(a)",
+      "citation": "Penal Code § 487(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "148(a)(1) PC/M",
+      "title": "Penal Code § 148(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148(a)(1)",
+      "code_system": "PC",
+      "section": "148(a)(1)",
+      "citation": "Penal Code § 148(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:11:33.190Z",
+  "portal_case_id": "3849183",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-16021919",
+      "defendant": "JAVON I NEAL",
+      "filed_date": "2016-12-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3849183"
+  }
 }

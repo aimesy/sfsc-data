@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:53:28.043Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:54:56.239Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18002625",
   "criminal_case_number": "18002625",
@@ -24,19 +24,116 @@
       "name": "KEVIN J CLARK",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KEVIN J CLARK",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-03-21T15:43:00.000Z",
+      "docketEntryComment": "DEF MOT FOR BAIL HRG & ORDER TO OR DEF FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-03-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:RELEASE OF DEFENDANT/BE/ACM/CTORD:BAIL POSTED IN SB 23429 EXONERATEDAND DEFENDANT PLACED ON ACM/X:PRELIMINARY HEARING DATE OF 04-11-18 CONFIRMED/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-03-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONF/LD:04-23-18/X:SDT RECS RELEASED TO DEFENSE/SAORD/SA1:IKESHA BENJAMIN & DEBORAH ALLEN-BORJA/SA4:CHECK CASH ON 5129 MISSION ST/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-04-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/SATERM/MO138572:17016740/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-02-22T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:04-23-18/987,2/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-04-11 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2018-04-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-03-27 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2018-03-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-03-23 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2018-03-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-02-22 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2018-02-22",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JOHNPAUL PASSAGLIA",
+      "type": "Public Defender"
+    },
+    {
+      "name": "LAURA CARWILE",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "422 PC/F 422 PC/F",
+    "filed_date": "2018-02-20",
+    "defendant": "KEVIN J CLARK",
+    "searched_key": "CLARK/KE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/18002625.json",
     "searched_last_name": "CLARK",
     "searched_first_prefix": "KE",
-    "charges": "422 PC/F 422 PC/F",
     "row": {
       "DEFENDANTNAME": "KEVIN J CLARK",
       "CASENUMBER": "CRI-18002625",
@@ -45,11 +142,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3871389",
+  "docket_entries": [
+    {
+      "filedDate": "2018-03-21T15:43:00.000Z",
+      "docketEntryComment": "DEF MOT FOR BAIL HRG & ORDER TO OR DEF FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-03-21T15:43:00.000Z",
+      "description": "DEF MOT FOR BAIL HRG & ORDER TO OR DEF FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-03-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:RELEASE OF DEFENDANT/BE/ACM/CTORD:BAIL POSTED IN SB 23429 EXONERATEDAND DEFENDANT PLACED ON ACM/X:PRELIMINARY HEARING DATE OF 04-11-18 CONFIRMED/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-03-27T09:00:00.000Z",
+      "description": "/CAL:RELEASE OF DEFENDANT/BE/ACM/CTORD:BAIL POSTED IN SB 23429 EXONERATEDAND DEFENDANT PLACED ON ACM/X:PRELIMINARY HEARING DATE OF 04-11-18 CONFIRMED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-03-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONF/LD:04-23-18/X:SDT RECS RELEASED TO DEFENSE/SAORD/SA1:IKESHA BENJAMIN & DEBORAH ALLEN-BORJA/SA4:CHECK CASH ON 5129 MISSION ST/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-03-23T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONF/LD:04-23-18/X:SDT RECS RELEASED TO DEFENSE/SAORD/SA1:IKESHA BENJAMIN & DEBORAH ALLEN-BORJA/SA4:CHECK CASH ON 5129 MISSION ST/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-04-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/SATERM/MO138572:17016740/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-04-11T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/SATERM/MO138572:17016740/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-02-22T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:04-23-18/987,2/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-02-22T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:04-23-18/987,2/CONTD: PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18002625",
-    "portal_case_id": "",
+    "portal_case_id": "3871389",
     "display_case_number": "CRI-18002625",
     "defendant": "KEVIN J CLARK",
     "filed_date": "2018-02-20",
@@ -60,11 +208,58 @@
       "filed_date": "2018-02-20"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "422 PC/F 422 PC/F",
+    "charge_rows": [
+      {
+        "raw": "422 PC/F",
+        "title": "Penal Code § 422",
+        "title_source": "programmatic_citation",
+        "code": "PC 422",
+        "code_system": "PC",
+        "section": "422",
+        "citation": "Penal Code § 422",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KEVIN J CLARK, and date of filing 2018-02-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KEVIN J CLARK, date of filing, 2018-02-20, and charges in the case: 422 PC/F 422 PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "422 PC/F",
+      "title": "Penal Code § 422",
+      "title_source": "programmatic_citation",
+      "code": "PC 422",
+      "code_system": "PC",
+      "section": "422",
+      "citation": "Penal Code § 422",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:54:56.819Z",
+  "portal_case_id": "3871389",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18002625",
+      "defendant": "KEVIN J CLARK",
+      "filed_date": "2018-02-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3871389"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:26.236527+00:00"
 }

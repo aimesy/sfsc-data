@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:35:00.430Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:09:39.115Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI16005220",
   "criminal_case_number": "16005220",
@@ -24,11 +24,81 @@
       "name": "DONTAE R TAYLOR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DONTAE R TAYLOR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-03-23T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:10,000/NTW/LDTR:04-22-16/SA1:EULOGIO RESENDEZ/SA1:ROSAURA RESENDEZ/SA2:43 BRIGHTONSTREET SF/SAORD4:100/SAORD/CONTD:PRETRIAL CONFERENCE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-04-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/DAWT/MO138572:16006419/BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-03-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/GTWM/VD:TRIAL ON 04-08-16 AND LAST DAY OF 04-22-16/CONTD:PRETRIAL/DOPC/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-04-21 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2016-04-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-03-29 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2016-03-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-03-23 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2016-03-23",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "EVERETT HEWLETT",
+      "type": "Public Defender"
+    },
+    {
+      "name": "TANISHA GOOCH",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3832756",
+  "docket_entries": [
+    {
+      "filedDate": "2016-03-23T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:10,000/NTW/LDTR:04-22-16/SA1:EULOGIO RESENDEZ/SA1:ROSAURA RESENDEZ/SA2:43 BRIGHTONSTREET SF/SAORD4:100/SAORD/CONTD:PRETRIAL CONFERENCE/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-03-23T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:10,000/NTW/LDTR:04-22-16/SA1:EULOGIO RESENDEZ/SA1:ROSAURA RESENDEZ/SA2:43 BRIGHTONSTREET SF/SAORD4:100/SAORD/CONTD:PRETRIAL CONFERENCE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-04-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/DAWT/MO138572:16006419/BE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-04-21T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/DAWT/MO138572:16006419/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-03-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/GTWM/VD:TRIAL ON 04-08-16 AND LAST DAY OF 04-22-16/CONTD:PRETRIAL/DOPC/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-03-29T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/GTWM/VD:TRIAL ON 04-08-16 AND LAST DAY OF 04-22-16/CONTD:PRETRIAL/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "16005220",
-    "portal_case_id": "",
+    "portal_case_id": "3832756",
     "display_case_number": "CRI-16005220",
     "defendant": "DONTAE R TAYLOR",
     "filed_date": "2016-03-23",
@@ -60,11 +161,83 @@
       "filed_date": "2016-03-23"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "594(b)(1) PC/M 422 PC/M",
+    "charge_rows": [
+      {
+        "raw": "594(b)(1) PC/M",
+        "title": "Penal Code § 594(b)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(1)",
+        "code_system": "PC",
+        "section": "594(b)(1)",
+        "citation": "Penal Code § 594(b)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "422 PC/M",
+        "title": "Penal Code § 422",
+        "title_source": "programmatic_citation",
+        "code": "PC 422",
+        "code_system": "PC",
+        "section": "422",
+        "citation": "Penal Code § 422",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DONTAE R TAYLOR, and date of filing 2016-03-23. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DONTAE R TAYLOR, date of filing, 2016-03-23, and charges in the case: 594(b)(1) PC/M 422 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "594(b)(1) PC/M",
+      "title": "Penal Code § 594(b)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(1)",
+      "code_system": "PC",
+      "section": "594(b)(1)",
+      "citation": "Penal Code § 594(b)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "422 PC/M",
+      "title": "Penal Code § 422",
+      "title_source": "programmatic_citation",
+      "code": "PC 422",
+      "code_system": "PC",
+      "section": "422",
+      "citation": "Penal Code § 422",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=422.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:09:39.780Z",
+  "portal_case_id": "3832756",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-16005220",
+      "defendant": "DONTAE R TAYLOR",
+      "filed_date": "2016-03-23"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3832756"
+  }
 }

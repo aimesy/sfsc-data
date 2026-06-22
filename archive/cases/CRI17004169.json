@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:38:11.167Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:01:50.997Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17004169",
   "criminal_case_number": "17004169",
@@ -24,19 +24,111 @@
       "name": "EDGARDO PINEDA CASTILLO",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "EDGARDO PINEDA CASTILLO",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-04-05T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2:CJ 2 D/CTS: 2/SA2: 3818 18TH ST, SF, 50 YARDS/SAORD/VF2:150/COA:40/ICNA/COLLECT/CTORD: RESTITUTION AND STAY AWAY ORDER FROM THIS CASE TRANSFERS TO PROBATION IN 16016246 VIA HARVEY WAIVER/CCC: THIS CASE AND 16016246/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-03-23T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/SAORD/SA2:THE 3800 BLOCK OF 18TH STREET SAN FRANCISCO CALIF/NTW/LDPX:04-07-17/987,2/ACM//CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL: 2/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-03-22T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:DEFENDANT IS PC 4011,5/CAUSE/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/DOPC/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-04-05 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2017-04-05",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-04-05 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2017-04-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-03-23 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2017-03-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-03-22 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2017-03-22",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BRANDON BANKS",
+      "type": "Public Defender"
+    },
+    {
+      "name": "LAURA CARWILE",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "459 PC/F 466 PC/M 496(a) PC/M 148.9(a) PC/M",
+    "filed_date": "2017-03-22",
+    "defendant": "EDGARDO PINEDA CASTILLO",
+    "searched_key": "CASTILLO/ED",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/17004169.json",
     "searched_last_name": "CASTILLO",
     "searched_first_prefix": "ED",
-    "charges": "459 PC/F 466 PC/M 496(a) PC/M 148.9(a) PC/M",
     "row": {
       "DEFENDANTNAME": "EDGARDO PINEDA CASTILLO",
       "CASENUMBER": "CRI-17004169",
@@ -45,11 +137,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3854031",
+  "docket_entries": [
+    {
+      "filedDate": "2017-04-05T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2:CJ 2 D/CTS: 2/SA2: 3818 18TH ST, SF, 50 YARDS/SAORD/VF2:150/COA:40/ICNA/COLLECT/CTORD: RESTITUTION AND STAY AWAY ORDER FROM THIS CASE TRANSFERS TO PROBATION IN 16016246 VIA HARVEY WAIVER/CCC: THIS CASE AND 16016246/DISM3/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-04-05T09:15:00.000Z",
+      "description": "/TWS/CH2:CJ 2 D/CTS: 2/SA2: 3818 18TH ST, SF, 50 YARDS/SAORD/VF2:150/COA:40/ICNA/COLLECT/CTORD: RESTITUTION AND STAY AWAY ORDER FROM THIS CASE TRANSFERS TO PROBATION IN 16016246 VIA HARVEY WAIVER/CCC: THIS CASE AND 16016246/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-03-23T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/SAORD/SA2:THE 3800 BLOCK OF 18TH STREET SAN FRANCISCO CALIF/NTW/LDPX:04-07-17/987,2/ACM//CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-03-23T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/SAORD/SA2:THE 3800 BLOCK OF 18TH STREET SAN FRANCISCO CALIF/NTW/LDPX:04-07-17/987,2/ACM//CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL: 2/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-04-05T09:00:00.000Z",
+      "description": "/CAL: PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL: 2/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-03-22T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:DEFENDANT IS PC 4011,5/CAUSE/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/DOPC/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-03-22T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:DEFENDANT IS PC 4011,5/CAUSE/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17004169",
-    "portal_case_id": "",
+    "portal_case_id": "3854031",
     "display_case_number": "CRI-17004169",
     "defendant": "EDGARDO PINEDA CASTILLO",
     "filed_date": "2017-03-22",
@@ -59,12 +192,146 @@
       "defendant": "EDGARDO PINEDA CASTILLO",
       "filed_date": "2017-03-22"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 4011",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "459 PC/F 466 PC/M 496(a) PC/M 148.9(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "466 PC/M",
+        "title": "Penal Code § 466",
+        "title_source": "programmatic_citation",
+        "code": "PC 466",
+        "code_system": "PC",
+        "section": "466",
+        "citation": "Penal Code § 466",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "496(a) PC/M",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "148.9(a) PC/M",
+        "title": "Penal Code § 148.9(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148.9(a)",
+        "code_system": "PC",
+        "section": "148.9(a)",
+        "citation": "Penal Code § 148.9(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, EDGARDO PINEDA CASTILLO, and date of filing 2017-03-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, EDGARDO PINEDA CASTILLO, date of filing, 2017-03-22, and charges in the case: 459 PC/F 466 PC/M 496(a) PC/M 148.9(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "466 PC/M",
+      "title": "Penal Code § 466",
+      "title_source": "programmatic_citation",
+      "code": "PC 466",
+      "code_system": "PC",
+      "section": "466",
+      "citation": "Penal Code § 466",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "496(a) PC/M",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "148.9(a) PC/M",
+      "title": "Penal Code § 148.9(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148.9(a)",
+      "code_system": "PC",
+      "section": "148.9(a)",
+      "citation": "Penal Code § 148.9(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:01:51.665Z",
+  "portal_case_id": "3854031",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17004169",
+      "defendant": "EDGARDO PINEDA CASTILLO",
+      "filed_date": "2017-03-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3854031"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.594721+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:16:03.590Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:56:43.216Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18005197",
   "criminal_case_number": "18005197",
@@ -24,19 +24,93 @@
       "name": "MICHAEL CHRISTOPHER GONZALES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL CHRISTOPHER GONZALES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-04-10T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CON:PETER FITZPATRICK/TEXT:DEFT ENT NG PLEA(S) & DEN OFALLEG/FAWC/DEFTARR1/NTW/987,2/LDPX:04-24-18/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-05-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DISPOSITION/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/BE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-04-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/NTW60/LD:06-11-18/CONTD:DISPO/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-05-15 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2018-05-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-04-23 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2018-04-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-04-10 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2018-04-10",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PETER FITZPATRICK",
+      "type": "Conflict Attorney"
+    },
+    {
+      "name": "ANDREW CLARK",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "594(b)(1) PC/F",
+    "filed_date": "2018-04-06",
+    "defendant": "MICHAEL CHRISTOPHER GONZALES",
+    "searched_key": "GONZALES/MI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/18005197.json",
     "searched_last_name": "GONZALES",
     "searched_first_prefix": "MI",
-    "charges": "594(b)(1) PC/F",
     "row": {
       "DEFENDANTNAME": "MICHAEL CHRISTOPHER GONZALES",
       "CASENUMBER": "CRI-18005197",
@@ -45,11 +119,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3873891",
+  "docket_entries": [
+    {
+      "filedDate": "2018-04-10T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/CON:PETER FITZPATRICK/TEXT:DEFT ENT NG PLEA(S) & DEN OFALLEG/FAWC/DEFTARR1/NTW/987,2/LDPX:04-24-18/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-04-10T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/CON:PETER FITZPATRICK/TEXT:DEFT ENT NG PLEA(S) & DEN OFALLEG/FAWC/DEFTARR1/NTW/987,2/LDPX:04-24-18/CONTD: PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-05-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DISPOSITION/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/BE/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-05-15T09:00:00.000Z",
+      "description": "/CAL:DISPOSITION/MO PC 1385:UNABLE TO SUSTAIN BURDEN OF PROOF/BE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-04-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/NTW60/LD:06-11-18/CONTD:DISPO/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-04-23T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/NTW60/LD:06-11-18/CONTD:DISPO/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18005197",
-    "portal_case_id": "",
+    "portal_case_id": "3873891",
     "display_case_number": "CRI-18005197",
     "defendant": "MICHAEL CHRISTOPHER GONZALES",
     "filed_date": "2018-04-06",
@@ -59,12 +164,68 @@
       "defendant": "MICHAEL CHRISTOPHER GONZALES",
       "filed_date": "2018-04-06"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "594(b)(1) PC/F",
+    "charge_rows": [
+      {
+        "raw": "594(b)(1) PC/F",
+        "title": "Penal Code § 594(b)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(1)",
+        "code_system": "PC",
+        "section": "594(b)(1)",
+        "citation": "Penal Code § 594(b)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL CHRISTOPHER GONZALES, and date of filing 2018-04-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL CHRISTOPHER GONZALES, date of filing, 2018-04-06, and charges in the case: 594(b)(1) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "594(b)(1) PC/F",
+      "title": "Penal Code § 594(b)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(1)",
+      "code_system": "PC",
+      "section": "594(b)(1)",
+      "citation": "Penal Code § 594(b)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:56:43.872Z",
+  "portal_case_id": "3873891",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18005197",
+      "defendant": "MICHAEL CHRISTOPHER GONZALES",
+      "filed_date": "2018-04-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3873891"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.747814+00:00"
 }

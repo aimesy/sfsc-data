@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:11:05.301Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:07:11.450Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17017050",
   "criminal_case_number": "17017050",
@@ -24,11 +24,81 @@
       "name": "ROBERT MARTIN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROBERT MARTIN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-12-07T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3:ISS:CPROB:PROB 2 Y:PJ 19D/CTS:19/WS/VF2:150/SA2:THE INTERSECTIONOF 20TH AND MISSION STS,, SF/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-12-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:THE PEOPLE'S ORAL MOTION TO ADD COUNT 3, A MISDEMEANOR CHARGE OF 594(B)1PC, IS GRANTED/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-11-22T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 12-8-17/987,2/BAIL: 250000/SAORD/SA2: 20TH AND MISSION SAN FRANCISCO/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:12-7-17/CONTD: RECEIPT OF 4011,6PC REPORT AND PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-12-07 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2017-12-07",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-12-07 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2017-12-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-11-22 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2017-11-22",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JENNIFER JOHNSON",
+      "type": "Public Defender"
+    },
+    {
+      "name": "ANDREW CLARK",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3866608",
+  "docket_entries": [
+    {
+      "filedDate": "2017-12-07T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3:ISS:CPROB:PROB 2 Y:PJ 19D/CTS:19/WS/VF2:150/SA2:THE INTERSECTIONOF 20TH AND MISSION STS,, SF/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/DISM3/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-12-07T09:15:00.000Z",
+      "description": "/TWS/CH3:ISS:CPROB:PROB 2 Y:PJ 19D/CTS:19/WS/VF2:150/SA2:THE INTERSECTIONOF 20TH AND MISSION STS,, SF/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-12-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:THE PEOPLE'S ORAL MOTION TO ADD COUNT 3, A MISDEMEANOR CHARGE OF 594(B)1PC, IS GRANTED/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-12-07T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/X:THE PEOPLE'S ORAL MOTION TO ADD COUNT 3, A MISDEMEANOR CHARGE OF 594(B)1PC, IS GRANTED/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:3/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-11-22T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 12-8-17/987,2/BAIL: 250000/SAORD/SA2: 20TH AND MISSION SAN FRANCISCO/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:12-7-17/CONTD: RECEIPT OF 4011,6PC REPORT AND PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-11-22T13:30:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 12-8-17/987,2/BAIL: 250000/SAORD/SA2: 20TH AND MISSION SAN FRANCISCO/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:12-7-17/CONTD: RECEIPT OF 4011,6PC REPORT AND PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17017050",
-    "portal_case_id": "",
+    "portal_case_id": "3866608",
     "display_case_number": "CRI-17017050",
     "defendant": "ROBERT MARTIN",
     "filed_date": "2017-11-21",
@@ -59,12 +160,120 @@
       "defendant": "ROBERT MARTIN",
       "filed_date": "2017-11-21"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 4011",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "455 PC/F 453(a) PC/F 594(b)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "455 PC/F",
+        "title": "Penal Code § 455",
+        "title_source": "programmatic_citation",
+        "code": "PC 455",
+        "code_system": "PC",
+        "section": "455",
+        "citation": "Penal Code § 455",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "453(a) PC/F",
+        "title": "Penal Code § 453(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 453(a)",
+        "code_system": "PC",
+        "section": "453(a)",
+        "citation": "Penal Code § 453(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=453.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=453.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "594(b)(1) PC/M",
+        "title": "Penal Code § 594(b)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(1)",
+        "code_system": "PC",
+        "section": "594(b)(1)",
+        "citation": "Penal Code § 594(b)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROBERT MARTIN, and date of filing 2017-11-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROBERT MARTIN, date of filing, 2017-11-21, and charges in the case: 455 PC/F 453(a) PC/F 594(b)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "455 PC/F",
+      "title": "Penal Code § 455",
+      "title_source": "programmatic_citation",
+      "code": "PC 455",
+      "code_system": "PC",
+      "section": "455",
+      "citation": "Penal Code § 455",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "453(a) PC/F",
+      "title": "Penal Code § 453(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 453(a)",
+      "code_system": "PC",
+      "section": "453(a)",
+      "citation": "Penal Code § 453(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=453.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=453.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "594(b)(1) PC/M",
+      "title": "Penal Code § 594(b)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(1)",
+      "code_system": "PC",
+      "section": "594(b)(1)",
+      "citation": "Penal Code § 594(b)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:07:12.134Z",
+  "portal_case_id": "3866608",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17017050",
+      "defendant": "ROBERT MARTIN",
+      "filed_date": "2017-11-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3866608"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T14:56:59.516Z"
 }

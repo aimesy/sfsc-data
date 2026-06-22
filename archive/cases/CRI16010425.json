@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:35:51.293Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:10:06.282Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI16010425",
   "criminal_case_number": "16010425",
@@ -24,19 +24,89 @@
       "name": "BENJAMIN GUTIERREZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "BENJAMIN GUTIERREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-07-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:HARVEY WAIVER TAKEN/X:RESTITUTION & STAY AWAYCONDITION FROM THIS CASE NO, 16010425 IS TRANSFERRED TO  CASE 16008656/MOPC 1385:DEFENDANT ENTERED GUILTY PLEA AND WILL BE SENTENCE IN CASE NO 16008656/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-06-06T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:CERTIFED LAW STUDENT MEGAN GROW FOR THE PEOPLE UNDER THE SUPERVISION OF SUPRIYA PERRY,/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:DAVID HARRISON /TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LDPX: 08-05-16/987,2/ACM/CONTD:TO SET AND TBH WITH 16008656/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-06-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET AND TBH 16008656/LD:08-05-16/CONTD:PRELIMINARY HEARING/DOP/TE:HALF DAY/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-07-06 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 0,
+      "court_date": "2016-07-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-06-08 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 1,
+      "court_date": "2016-06-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-06-06 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2016-06-06",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "DAVID HARRISON",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "496(a) PC/F 148(a)(1) PC/M",
+    "filed_date": "2016-06-03",
+    "defendant": "BENJAMIN GUTIERREZ",
+    "searched_key": "GUTIERREZ/BE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/16010425.json",
     "searched_last_name": "GUTIERREZ",
     "searched_first_prefix": "BE",
-    "charges": "496(a) PC/F 148(a)(1) PC/M",
     "row": {
       "DEFENDANTNAME": "BENJAMIN GUTIERREZ",
       "CASENUMBER": "CRI-16010425",
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3837879",
+  "docket_entries": [
+    {
+      "filedDate": "2016-07-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/X:HARVEY WAIVER TAKEN/X:RESTITUTION & STAY AWAYCONDITION FROM THIS CASE NO, 16010425 IS TRANSFERRED TO  CASE 16008656/MOPC 1385:DEFENDANT ENTERED GUILTY PLEA AND WILL BE SENTENCE IN CASE NO 16008656/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-07-06T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/X:HARVEY WAIVER TAKEN/X:RESTITUTION & STAY AWAYCONDITION FROM THIS CASE NO, 16010425 IS TRANSFERRED TO CASE 16008656/MOPC 1385:DEFENDANT ENTERED GUILTY PLEA AND WILL BE SENTENCE IN CASE NO 16008656/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-06-06T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:CERTIFED LAW STUDENT MEGAN GROW FOR THE PEOPLE UNDER THE SUPERVISION OF SUPRIYA PERRY,/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:DAVID HARRISON /TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LDPX: 08-05-16/987,2/ACM/CONTD:TO SET AND TBH WITH 16008656/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-06-06T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:CERTIFED LAW STUDENT MEGAN GROW FOR THE PEOPLE UNDER THE SUPERVISION OF SUPRIYA PERRY,/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:DAVID HARRISON /TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LDPX: 08-05-16/987,2/ACM/CONTD:TO SET AND TBH WITH 16008656/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-06-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET AND TBH 16008656/LD:08-05-16/CONTD:PRELIMINARY HEARING/DOP/TE:HALF DAY/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-06-08T09:00:00.000Z",
+      "description": "/CAL:TO SET AND TBH 16008656/LD:08-05-16/CONTD:PRELIMINARY HEARING/DOP/TE:HALF DAY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "16010425",
-    "portal_case_id": "",
+    "portal_case_id": "3837879",
     "display_case_number": "CRI-16010425",
     "defendant": "BENJAMIN GUTIERREZ",
     "filed_date": "2016-06-03",
@@ -60,11 +161,84 @@
       "filed_date": "2016-06-03"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "496(a) PC/F 148(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "496(a) PC/F",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "148(a)(1) PC/M",
+        "title": "Penal Code § 148(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148(a)(1)",
+        "code_system": "PC",
+        "section": "148(a)(1)",
+        "citation": "Penal Code § 148(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, BENJAMIN GUTIERREZ, and date of filing 2016-06-03. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, BENJAMIN GUTIERREZ, date of filing, 2016-06-03, and charges in the case: 496(a) PC/F 148(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "496(a) PC/F",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "148(a)(1) PC/M",
+      "title": "Penal Code § 148(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148(a)(1)",
+      "code_system": "PC",
+      "section": "148(a)(1)",
+      "citation": "Penal Code § 148(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:10:06.959Z",
+  "portal_case_id": "3837879",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-16010425",
+      "defendant": "BENJAMIN GUTIERREZ",
+      "filed_date": "2016-06-03"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3837879"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.494623+00:00"
 }

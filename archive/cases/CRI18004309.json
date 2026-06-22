@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:14:44.908Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:55:48.451Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18004309",
   "criminal_case_number": "18004309",
@@ -24,11 +24,77 @@
       "name": "ANNER VARGAS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ANNER VARGAS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-04-05T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH4 ISS CPROB PROB 2 Y PJ 1 D/CTS 1/VF2 150/PROBREVFN/COA 40/ICNA/COLECT/WS/SAORD/SA2:8TH STREET AND STEVENSON ALLEY IN THE CITY AND COUNTY OF SF/SAORD3/OBEY/ACCEP/4019HALF/DISM3/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/INTC/X  THE PEOPLE'S ORAL MOTION TO AMEND THE COPLAINT TO ADD COUNT 4, PC 653F(D), A MISDEMEANOR, IS GRANTED,/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 4/NOLO/CO:NEGOTIATED DISPOSITION/IBARRA/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-03-22T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/X: DEFENSE RESERVES THE RIGHT TO DEMUR/SA4: 8TH ST, & STEVENSON ST,, SF/SAORD3/SAORD/LDPX: 04-06-18/987,2/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-04-05 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2018-04-05",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-04-05 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2018-04-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-03-22 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2018-03-22",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CRYSTAL LAMB",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3873034",
+  "docket_entries": [
+    {
+      "filedDate": "2018-04-05T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH4 ISS CPROB PROB 2 Y PJ 1 D/CTS 1/VF2 150/PROBREVFN/COA 40/ICNA/COLECT/WS/SAORD/SA2:8TH STREET AND STEVENSON ALLEY IN THE CITY AND COUNTY OF SF/SAORD3/OBEY/ACCEP/4019HALF/DISM3/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-04-05T09:15:00.000Z",
+      "description": "/TWS/CH4 ISS CPROB PROB 2 Y PJ 1 D/CTS 1/VF2 150/PROBREVFN/COA 40/ICNA/COLECT/WS/SAORD/SA2:8TH STREET AND STEVENSON ALLEY IN THE CITY AND COUNTY OF SF/SAORD3/OBEY/ACCEP/4019HALF/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-04-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL PRELIMINARY HEARING/INTC/X  THE PEOPLE'S ORAL MOTION TO AMEND THE COPLAINT TO ADD COUNT 4, PC 653F(D), A MISDEMEANOR, IS GRANTED,/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 4/NOLO/CO:NEGOTIATED DISPOSITION/IBARRA/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-04-05T09:00:00.000Z",
+      "description": "/CAL PRELIMINARY HEARING/INTC/X THE PEOPLE'S ORAL MOTION TO AMEND THE COPLAINT TO ADD COUNT 4, PC 653F(D), A MISDEMEANOR, IS GRANTED,/FAWC/IRRC/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 4/NOLO/CO:NEGOTIATED DISPOSITION/IBARRA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-03-22T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/X: DEFENSE RESERVES THE RIGHT TO DEMUR/SA4: 8TH ST, & STEVENSON ST,, SF/SAORD3/SAORD/LDPX: 04-06-18/987,2/CONTD: PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-03-22T13:30:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/X: DEFENSE RESERVES THE RIGHT TO DEMUR/SA4: 8TH ST, & STEVENSON ST,, SF/SAORD3/SAORD/LDPX: 04-06-18/987,2/CONTD: PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18004309",
-    "portal_case_id": "",
+    "portal_case_id": "3873034",
     "display_case_number": "CRI-18004309",
     "defendant": "ANNER VARGAS",
     "filed_date": "2018-03-19",
@@ -59,12 +156,156 @@
       "defendant": "ANNER VARGAS",
       "filed_date": "2018-03-19"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 653F(D)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 653F(D)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "11378 HS/F 11351.5 HS/F 11351 HS/F 653f(d) PC/M",
+    "charge_rows": [
+      {
+        "raw": "11378 HS/F",
+        "title": "Health and Safety Code § 11378",
+        "title_source": "programmatic_citation",
+        "code": "HS 11378",
+        "code_system": "HS",
+        "section": "11378",
+        "citation": "Health and Safety Code § 11378",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11351.5 HS/F",
+        "title": "Health and Safety Code § 11351.5",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351.5",
+        "code_system": "HS",
+        "section": "11351.5",
+        "citation": "Health and Safety Code § 11351.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11351 HS/F",
+        "title": "Health and Safety Code § 11351",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351",
+        "code_system": "HS",
+        "section": "11351",
+        "citation": "Health and Safety Code § 11351",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "653f(d) PC/M",
+        "title": "Penal Code § 653f(d)",
+        "title_source": "programmatic_citation",
+        "code": "PC 653f(d)",
+        "code_system": "PC",
+        "section": "653f(d)",
+        "citation": "Penal Code § 653f(d)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ANNER VARGAS, and date of filing 2018-03-19. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ANNER VARGAS, date of filing, 2018-03-19, and charges in the case: 11378 HS/F 11351.5 HS/F 11351 HS/F 653f(d) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11378 HS/F",
+      "title": "Health and Safety Code § 11378",
+      "title_source": "programmatic_citation",
+      "code": "HS 11378",
+      "code_system": "HS",
+      "section": "11378",
+      "citation": "Health and Safety Code § 11378",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11351.5 HS/F",
+      "title": "Health and Safety Code § 11351.5",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351.5",
+      "code_system": "HS",
+      "section": "11351.5",
+      "citation": "Health and Safety Code § 11351.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11351 HS/F",
+      "title": "Health and Safety Code § 11351",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351",
+      "code_system": "HS",
+      "section": "11351",
+      "citation": "Health and Safety Code § 11351",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "653f(d) PC/M",
+      "title": "Penal Code § 653f(d)",
+      "title_source": "programmatic_citation",
+      "code": "PC 653f(d)",
+      "code_system": "PC",
+      "section": "653f(d)",
+      "citation": "Penal Code § 653f(d)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=653f.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:55:49.630Z",
+  "portal_case_id": "3873034",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18004309",
+      "defendant": "ANNER VARGAS",
+      "filed_date": "2018-03-19"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3873034"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T16:37:55.967Z"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:17:55.736Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:58:10.867Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18011662",
   "criminal_case_number": "18011662",
@@ -24,19 +24,109 @@
       "name": "LOUIS C BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LOUIS C BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-08-01T11:00:37.000Z",
+      "docketEntryComment": "CONFIDENTIAL Petition for Revocation of PRCS PC 3455, PC 1203.2",
+      "otherSubmitter": "APD"
+    },
+    {
+      "filedDate": "2018-08-01T15:49:54.000Z",
+      "docketEntryComment": "Promise to Appear on Court Own Recognizance",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-08-01T15:49:13.000Z",
+      "docketEntryComment": "San Francisco County Jail Commitment",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-08-17T15:48:37.000Z",
+      "docketEntryComment": "San Francisco County Jail Commitment",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-08-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD 3455PC HEARING/X:90 DAYS COUNTY JAIL SENTENCE STAYED FROM08-01-18 IS LIFTED AND MODIFED AS FOLLOWS,/CTORD:DEFENDANT TO SERVE 60 DAYS IN COUNTY JAIL WITH 7 DAYS CREDTIS/4019HALF/X:PRCS EXPIRES ON 04-12-21,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-08-01T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC FILING/PD/WIAPRCS/3455ADV/3455ADM/3455REIN/CH1:CJ 90D/CTS:6/4019HALF/X:PRCS EXPIRES ON 04-06-21/X:SENTENCE IS STAYED BY THE COURT/OR/X:REPORT TO APD EDUCATION TRAINING/CONTD PROGRESS REPORT/PROG:08-15-18//CONTD:PROGRESS REPORT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-08-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PROGRESS REPORT/SHER/NB/PROB ADM REV/CONTD:TO SET APD 3455PC/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-08-17 9:00 AM",
+      "hearingType": "To Set MTR PRCS Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2018-08-17",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set MTR PRCS Hearing",
+      "hearing_type": "To Set MTR PRCS Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-08-15 9:00 AM",
+      "hearingType": "Progress Report",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2018-08-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Progress Report",
+      "hearing_type": "Progress Report",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-08-01 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2018-08-01",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KIMBERLY LUTESKOTHS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "3455(a) PC/F",
+    "filed_date": "2018-08-01",
+    "defendant": "LOUIS C BROWN",
+    "searched_key": "BROWN/LO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/18011662.json",
     "searched_last_name": "BROWN",
     "searched_first_prefix": "LO",
-    "charges": "3455(a) PC/F",
     "row": {
       "DEFENDANTNAME": "LOUIS C BROWN",
       "CASENUMBER": "CRI-18011662",
@@ -45,11 +135,82 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3880188",
+  "docket_entries": [
+    {
+      "filedDate": "2018-08-01T11:00:37.000Z",
+      "docketEntryComment": "CONFIDENTIAL Petition for Revocation of PRCS PC 3455, PC 1203.2",
+      "otherSubmitter": "APD",
+      "__index": 0,
+      "date_filed": "2018-08-01T11:00:37.000Z",
+      "description": "CONFIDENTIAL Petition for Revocation of PRCS PC 3455, PC 1203.2",
+      "submitter": "APD",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-08-01T15:49:54.000Z",
+      "docketEntryComment": "Promise to Appear on Court Own Recognizance",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-08-01T15:49:54.000Z",
+      "description": "Promise to Appear on Court Own Recognizance",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-08-01T15:49:13.000Z",
+      "docketEntryComment": "San Francisco County Jail Commitment",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-08-01T15:49:13.000Z",
+      "description": "San Francisco County Jail Commitment",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-08-17T15:48:37.000Z",
+      "docketEntryComment": "San Francisco County Jail Commitment",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-08-17T15:48:37.000Z",
+      "description": "San Francisco County Jail Commitment",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-08-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD 3455PC HEARING/X:90 DAYS COUNTY JAIL SENTENCE STAYED FROM08-01-18 IS LIFTED AND MODIFED AS FOLLOWS,/CTORD:DEFENDANT TO SERVE 60 DAYS IN COUNTY JAIL WITH 7 DAYS CREDTIS/4019HALF/X:PRCS EXPIRES ON 04-12-21,/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-08-17T09:00:00.000Z",
+      "description": "/CAL:TO SET APD 3455PC HEARING/X:90 DAYS COUNTY JAIL SENTENCE STAYED FROM08-01-18 IS LIFTED AND MODIFED AS FOLLOWS,/CTORD:DEFENDANT TO SERVE 60 DAYS IN COUNTY JAIL WITH 7 DAYS CREDTIS/4019HALF/X:PRCS EXPIRES ON 04-12-21,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-08-01T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC FILING/PD/WIAPRCS/3455ADV/3455ADM/3455REIN/CH1:CJ 90D/CTS:6/4019HALF/X:PRCS EXPIRES ON 04-06-21/X:SENTENCE IS STAYED BY THE COURT/OR/X:REPORT TO APD EDUCATION TRAINING/CONTD PROGRESS REPORT/PROG:08-15-18//CONTD:PROGRESS REPORT/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2018-08-01T11:30:00.000Z",
+      "description": "/CAL:APD 3455PC FILING/PD/WIAPRCS/3455ADV/3455ADM/3455REIN/CH1:CJ 90D/CTS:6/4019HALF/X:PRCS EXPIRES ON 04-06-21/X:SENTENCE IS STAYED BY THE COURT/OR/X:REPORT TO APD EDUCATION TRAINING/CONTD PROGRESS REPORT/PROG:08-15-18//CONTD:PROGRESS REPORT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-08-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PROGRESS REPORT/SHER/NB/PROB ADM REV/CONTD:TO SET APD 3455PC/DOP/",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2018-08-15T09:00:00.000Z",
+      "description": "/CAL:PROGRESS REPORT/SHER/NB/PROB ADM REV/CONTD:TO SET APD 3455PC/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18011662",
-    "portal_case_id": "",
+    "portal_case_id": "3880188",
     "display_case_number": "CRI-18011662",
     "defendant": "LOUIS C BROWN",
     "filed_date": "2018-08-01",
@@ -59,12 +220,76 @@
       "defendant": "LOUIS C BROWN",
       "filed_date": "2018-08-01"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1203.2",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LOUIS C BROWN, and date of filing 2018-08-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LOUIS C BROWN, date of filing, 2018-08-01, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:58:11.522Z",
+  "portal_case_id": "3880188",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18011662",
+      "defendant": "LOUIS C BROWN",
+      "filed_date": "2018-08-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3880188"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.085704+00:00"
 }

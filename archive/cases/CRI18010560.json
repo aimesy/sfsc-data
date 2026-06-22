@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:44:23.314Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:58:43.444Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18010560",
   "criminal_case_number": "18010560",
@@ -24,19 +24,137 @@
       "name": "TRAVIS ANDALE FIELDS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "TRAVIS ANDALE FIELDS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2024-09-17T12:00:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-07-16T12:00:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-07-16T09:00:00.000Z",
+      "docketEntryComment": "Order After Hearing for Return of Property",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-06-21T11:33:46.000Z",
+      "docketEntryComment": "Petitioner's Notice of Motion and Motion to Amend Property Request; Motion in Reply to SFPD's Partial Opposition to the Return of Property",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-06-18T11:28:51.227Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-06-14T09:28:11.000Z",
+      "docketEntryComment": "SFPD Partial Opposition to Motion to Return Property",
+      "otherSubmitter": "ATTORNEY FOR SFPD"
+    },
+    {
+      "filedDate": "2024-05-20T16:18:47.016Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-05-16T11:13:40.000Z",
+      "docketEntryComment": "SFPD's Motion to Continue Petitioner's Return of Property Motion",
+      "otherSubmitter": "San Francisco Police Dept."
+    },
+    {
+      "filedDate": "2024-04-30T16:07:48.000Z",
+      "docketEntryComment": "DEF Proof of Service by Mail",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-04-22T09:47:41.000Z",
+      "docketEntryComment": "Defendant's Notice of Motion and Motion to Return Property",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-12T16:00:00.000Z",
+      "docketEntryComment": "ORDER FIXING BAIL; BAIL SET $600K JUDGE NEWTON LAM FILED",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2024-09-17 9:00 AM",
+      "hearingType": "Motion Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 0,
+      "court_date": "2024-09-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion Hearing",
+      "hearing_type": "Motion Hearing",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2024-07-16 9:00 AM",
+      "hearingType": "Motion Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 1,
+      "court_date": "2024-07-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion Hearing",
+      "hearing_type": "Motion Hearing",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2024-06-18 9:00 AM",
+      "hearingType": "Motion Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 2,
+      "court_date": "2024-06-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion Hearing",
+      "hearing_type": "Motion Hearing",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2024-05-20 9:00 AM",
+      "hearingType": "Motion Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 16",
+      "__index": 3,
+      "court_date": "2024-05-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion Hearing",
+      "hearing_type": "Motion Hearing",
+      "department": "Department 16",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "459 PC/F/1 459 PC/F/1 182(a)(1) PC/F",
+    "filed_date": "2018-07-11",
+    "defendant": "TRAVIS ANDALE FIELDS",
+    "searched_key": "FIELDS/TR",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/18010560.json",
     "searched_last_name": "FIELDS",
     "searched_first_prefix": "TR",
-    "charges": "459 PC/F/1 459 PC/F/1 182(a)(1) PC/F",
     "row": {
       "DEFENDANTNAME": "TRAVIS ANDALE FIELDS",
       "CASENUMBER": "CRI-18010560",
@@ -45,11 +163,122 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3879101",
+  "docket_entries": [
+    {
+      "filedDate": "2024-09-17T12:00:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2024-09-17T12:00:00.000Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-07-16T12:00:00.000Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2024-07-16T12:00:00.000Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-07-16T09:00:00.000Z",
+      "docketEntryComment": "Order After Hearing for Return of Property",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2024-07-16T09:00:00.000Z",
+      "description": "Order After Hearing for Return of Property",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-06-21T11:33:46.000Z",
+      "docketEntryComment": "Petitioner's Notice of Motion and Motion to Amend Property Request; Motion in Reply to SFPD's Partial Opposition to the Return of Property",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2024-06-21T11:33:46.000Z",
+      "description": "Petitioner's Notice of Motion and Motion to Amend Property Request; Motion in Reply to SFPD's Partial Opposition to the Return of Property",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-06-18T11:28:51.227Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2024-06-18T11:28:51.227Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-06-14T09:28:11.000Z",
+      "docketEntryComment": "SFPD Partial Opposition to Motion to Return Property",
+      "otherSubmitter": "ATTORNEY FOR SFPD",
+      "__index": 5,
+      "date_filed": "2024-06-14T09:28:11.000Z",
+      "description": "SFPD Partial Opposition to Motion to Return Property",
+      "submitter": "ATTORNEY FOR SFPD",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-05-20T16:18:47.016Z",
+      "docketEntryComment": "Minute Order",
+      "otherSubmitter": "",
+      "__index": 6,
+      "date_filed": "2024-05-20T16:18:47.016Z",
+      "description": "Minute Order",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-05-16T11:13:40.000Z",
+      "docketEntryComment": "SFPD's Motion to Continue Petitioner's Return of Property Motion",
+      "otherSubmitter": "San Francisco Police Dept.",
+      "__index": 7,
+      "date_filed": "2024-05-16T11:13:40.000Z",
+      "description": "SFPD's Motion to Continue Petitioner's Return of Property Motion",
+      "submitter": "San Francisco Police Dept.",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-04-30T16:07:48.000Z",
+      "docketEntryComment": "DEF Proof of Service by Mail",
+      "otherSubmitter": "",
+      "__index": 8,
+      "date_filed": "2024-04-30T16:07:48.000Z",
+      "description": "DEF Proof of Service by Mail",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-04-22T09:47:41.000Z",
+      "docketEntryComment": "Defendant's Notice of Motion and Motion to Return Property",
+      "otherSubmitter": "",
+      "__index": 9,
+      "date_filed": "2024-04-22T09:47:41.000Z",
+      "description": "Defendant's Notice of Motion and Motion to Return Property",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-12T16:00:00.000Z",
+      "docketEntryComment": "ORDER FIXING BAIL; BAIL SET $600K JUDGE NEWTON LAM FILED",
+      "otherSubmitter": "",
+      "__index": 10,
+      "date_filed": "2018-07-12T16:00:00.000Z",
+      "description": "ORDER FIXING BAIL; BAIL SET $600K JUDGE NEWTON LAM FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18010560",
-    "portal_case_id": "",
+    "portal_case_id": "3879101",
     "display_case_number": "CRI-18010560",
     "defendant": "TRAVIS ANDALE FIELDS",
     "filed_date": "2018-07-11",
@@ -60,11 +289,84 @@
       "filed_date": "2018-07-11"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "459 PC/F/1 459 PC/F/1 182(a)(1) PC/F",
+    "charge_rows": [
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "182(a)(1) PC/F",
+        "title": "Penal Code § 182(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 182(a)(1)",
+        "code_system": "PC",
+        "section": "182(a)(1)",
+        "citation": "Penal Code § 182(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=182.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=182.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, TRAVIS ANDALE FIELDS, and date of filing 2018-07-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, TRAVIS ANDALE FIELDS, date of filing, 2018-07-11, and charges in the case: 459 PC/F/1 459 PC/F/1 182(a)(1) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "182(a)(1) PC/F",
+      "title": "Penal Code § 182(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 182(a)(1)",
+      "code_system": "PC",
+      "section": "182(a)(1)",
+      "citation": "Penal Code § 182(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=182.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=182.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:58:44.123Z",
+  "portal_case_id": "3879101",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18010560",
+      "defendant": "TRAVIS ANDALE FIELDS",
+      "filed_date": "2018-07-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3879101"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.155415+00:00"
 }

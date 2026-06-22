@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:49:31.124Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:05:04.265Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17012074",
   "criminal_case_number": "17012074",
@@ -24,11 +24,81 @@
       "name": "THOMAS MITCHELL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "THOMAS MITCHELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-08-25T11:00:00.000Z",
+      "docketEntryComment": "/X: AS PART OF A NEGOTIATED DISPOSITION, THE PEOPLE MOVE TO DISMISS THIS CASE PURSUANT TO PC 1385,/MO GRTD/X:THE DEFENDANT ENTERS A HARVEY WAIVER,/X:ANY RESTITUTION RESULTING FROM THIS DISMISSED CASE MAY BE ADDED AS A CONDITION OF THE PROBATION IN #16004773,/VD:09-08-17 TRIAL DATE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-08-21T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/BAIL:5,000/NTW/LDTR:09-20-17/CONTD:PRETRIAL CONFERENCE ON 08-25-17/DOP/CONTD:JURY TRIAL ON 09-08-17/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-08-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/NP/LD:09-20-17/TEXT:TRANS TO DEPT 25/TRANS 25:FORTHWITH FOR PLEA/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-08-25 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2017-08-25",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-08-25 11:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 25",
+      "__index": 1,
+      "court_date": "2017-08-25",
+      "hearing_time": "11:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 25",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-08-21 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2017-08-21",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "WILL HELVESTINE",
+      "type": "Public Defender"
+    },
+    {
+      "name": "SAMUEL BECKERMAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3861753",
+  "docket_entries": [
+    {
+      "filedDate": "2017-08-25T11:00:00.000Z",
+      "docketEntryComment": "/X: AS PART OF A NEGOTIATED DISPOSITION, THE PEOPLE MOVE TO DISMISS THIS CASE PURSUANT TO PC 1385,/MO GRTD/X:THE DEFENDANT ENTERS A HARVEY WAIVER,/X:ANY RESTITUTION RESULTING FROM THIS DISMISSED CASE MAY BE ADDED AS A CONDITION OF THE PROBATION IN #16004773,/VD:09-08-17 TRIAL DATE/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-08-25T11:00:00.000Z",
+      "description": "/X: AS PART OF A NEGOTIATED DISPOSITION, THE PEOPLE MOVE TO DISMISS THIS CASE PURSUANT TO PC 1385,/MO GRTD/X:THE DEFENDANT ENTERS A HARVEY WAIVER,/X:ANY RESTITUTION RESULTING FROM THIS DISMISSED CASE MAY BE ADDED AS A CONDITION OF THE PROBATION IN #16004773,/VD:09-08-17 TRIAL DATE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-08-21T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/BAIL:5,000/NTW/LDTR:09-20-17/CONTD:PRETRIAL CONFERENCE ON 08-25-17/DOP/CONTD:JURY TRIAL ON 09-08-17/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-08-21T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/987,2/FAWC/DEFTARR1/BAIL:5,000/NTW/LDTR:09-20-17/CONTD:PRETRIAL CONFERENCE ON 08-25-17/DOP/CONTD:JURY TRIAL ON 09-08-17/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-08-25T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/NP/LD:09-20-17/TEXT:TRANS TO DEPT 25/TRANS 25:FORTHWITH FOR PLEA/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-08-25T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/NP/LD:09-20-17/TEXT:TRANS TO DEPT 25/TRANS 25:FORTHWITH FOR PLEA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17012074",
-    "portal_case_id": "",
+    "portal_case_id": "3861753",
     "display_case_number": "CRI-17012074",
     "defendant": "THOMAS MITCHELL",
     "filed_date": "2017-08-21",
@@ -59,12 +160,67 @@
       "defendant": "THOMAS MITCHELL",
       "filed_date": "2017-08-21"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "594(b)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "594(b)(1) PC/M",
+        "title": "Penal Code § 594(b)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(1)",
+        "code_system": "PC",
+        "section": "594(b)(1)",
+        "citation": "Penal Code § 594(b)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, THOMAS MITCHELL, and date of filing 2017-08-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, THOMAS MITCHELL, date of filing, 2017-08-21, and charges in the case: 594(b)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "594(b)(1) PC/M",
+      "title": "Penal Code § 594(b)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(1)",
+      "code_system": "PC",
+      "section": "594(b)(1)",
+      "citation": "Penal Code § 594(b)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:05:04.978Z",
+  "portal_case_id": "3861753",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17012074",
+      "defendant": "THOMAS MITCHELL",
+      "filed_date": "2017-08-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3861753"
+  }
 }

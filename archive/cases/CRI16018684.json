@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:18:11.009Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:11:24.631Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI16018684",
   "criminal_case_number": "16018684",
@@ -24,11 +24,91 @@
       "name": "VINCENT RODERICK JONES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "VINCENT RODERICK JONES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-12-29T09:56:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPP TO DEFT'S MOT TO DISM (JONES) -FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-12-12T11:59:00.000Z",
+      "docketEntryComment": "DEFT'S MOT TO DISM PER JONES-SERNA -FILED AT INSISTENCE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-01-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL DECISION ON MOTION TO DISMISS/X SUPPLEMENT TO DEFENDANT'S MOTION TOISMISS FILED,/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTIONPURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-10-17T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/WEAP/GTWM/SA1:OWEN C, SMITH/SA2:966 KEY AVE SF CA 94124/SAORD4:150 YARDS/SAORD/CONTD:PRETRIAL CONFERENCE/DAWF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-12-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/CONTD:DECISION ON MOTION TO DISMISS/DAWF/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-01-04 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2017-01-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-12-15 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2016-12-15",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-10-17 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2016-10-17",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CRYSTAL CARPINO",
+      "type": "Public Defender"
+    },
+    {
+      "name": "XOCHITL CARRION",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +122,69 @@
       "CASENUMBER": "CRI-16018684",
       "FILEDDATE": "2016-10-17 09:00:00",
       "CHARGES": "417(a)(2) PC/M 25400(a)(1) PC/M"
-    }
+    },
+    "filed_date": "2016-10-17",
+    "defendant": "VINCENT RODERICK JONES",
+    "searched_key": "JONES/VI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/16018684.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3846009",
+  "docket_entries": [
+    {
+      "filedDate": "2016-12-29T09:56:00.000Z",
+      "docketEntryComment": "PEOPLE'S OPP TO DEFT'S MOT TO DISM (JONES) -FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-12-29T09:56:00.000Z",
+      "description": "PEOPLE'S OPP TO DEFT'S MOT TO DISM (JONES) -FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-12-12T11:59:00.000Z",
+      "docketEntryComment": "DEFT'S MOT TO DISM PER JONES-SERNA -FILED AT INSISTENCE",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-12-12T11:59:00.000Z",
+      "description": "DEFT'S MOT TO DISM PER JONES-SERNA -FILED AT INSISTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-01-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL DECISION ON MOTION TO DISMISS/X SUPPLEMENT TO DEFENDANT'S MOTION TOISMISS FILED,/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTIONPURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-01-04T09:00:00.000Z",
+      "description": "/CAL DECISION ON MOTION TO DISMISS/X SUPPLEMENT TO DEFENDANT'S MOTION TOISMISS FILED,/TEXT: DEFENDANT'S MOTION TO DISMISS FOR DELAY IN PROSECUTIONPURSUANT TO JONES-SERNA,/MO JONES/MO GRTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-10-17T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/WEAP/GTWM/SA1:OWEN C, SMITH/SA2:966 KEY AVE SF CA 94124/SAORD4:150 YARDS/SAORD/CONTD:PRETRIAL CONFERENCE/DAWF/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2016-10-17T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/WEAP/GTWM/SA1:OWEN C, SMITH/SA2:966 KEY AVE SF CA 94124/SAORD4:150 YARDS/SAORD/CONTD:PRETRIAL CONFERENCE/DAWF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-12-15T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/CONTD:DECISION ON MOTION TO DISMISS/DAWF/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2016-12-15T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/CONTD:DECISION ON MOTION TO DISMISS/DAWF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "16018684",
-    "portal_case_id": "",
+    "portal_case_id": "3846009",
     "display_case_number": "CRI-16018684",
     "defendant": "VINCENT RODERICK JONES",
     "filed_date": "2016-10-17",
@@ -60,11 +195,84 @@
       "filed_date": "2016-10-17"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "417(a)(2) PC/M 25400(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "417(a)(2) PC/M",
+        "title": "Penal Code § 417(a)(2)",
+        "title_source": "programmatic_citation",
+        "code": "PC 417(a)(2)",
+        "code_system": "PC",
+        "section": "417(a)(2)",
+        "citation": "Penal Code § 417(a)(2)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "25400(a)(1) PC/M",
+        "title": "Penal Code § 25400(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 25400(a)(1)",
+        "code_system": "PC",
+        "section": "25400(a)(1)",
+        "citation": "Penal Code § 25400(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25400.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25400.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, VINCENT RODERICK JONES, and date of filing 2016-10-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, VINCENT RODERICK JONES, date of filing, 2016-10-17, and charges in the case: 417(a)(2) PC/M 25400(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "417(a)(2) PC/M",
+      "title": "Penal Code § 417(a)(2)",
+      "title_source": "programmatic_citation",
+      "code": "PC 417(a)(2)",
+      "code_system": "PC",
+      "section": "417(a)(2)",
+      "citation": "Penal Code § 417(a)(2)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=417.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "25400(a)(1) PC/M",
+      "title": "Penal Code § 25400(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 25400(a)(1)",
+      "code_system": "PC",
+      "section": "25400(a)(1)",
+      "citation": "Penal Code § 25400(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25400.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25400.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:11:25.286Z",
+  "portal_case_id": "3846009",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-16018684",
+      "defendant": "VINCENT RODERICK JONES",
+      "filed_date": "2016-10-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3846009"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:30.510394+00:00"
 }

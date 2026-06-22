@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:58:30.714Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:55:39.372Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18010244",
   "criminal_case_number": "18010244",
@@ -24,19 +24,111 @@
       "name": "ROBERT BENJAMIN FOSTER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROBERT BENJAMIN FOSTER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-11-14T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCE/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ  10D/CTS:2/SWAPD:11-15-18/PF390 18/VF2:150/PROBREVFN/COA:40/ICNA/CITE/EMAT/FOP1:3 MONTHS/LVAL/LCHEM/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 100 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SET FORTH HEREIN/X:23593(A) VC ADMONITION GIVEN,/DISM3/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-11-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PERTRIAL/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:002/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-09-11T09:00:00.000Z",
+      "docketEntryComment": "/JAVS/CAL:PRETRIAL/DAWT/CONT/X:DOP IF DISPO/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-20T09:00:00.000Z",
+      "docketEntryComment": "/X:FIRST AMENDED MISDEMEANOR COMPLAINT FILED,/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/MVARS/GTWM/CONTD:PRETRIAL CONFERENCE/DAWF/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-11-14 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2018-11-14",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-11-14 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2018-11-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-09-11 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2018-09-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-07-20 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2018-07-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ELOY TRUJILLO",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "MELODY BAHAI",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "23152(a) VC/M 23152(b) VC/M",
+    "filed_date": "2018-07-18",
+    "defendant": "ROBERT BENJAMIN FOSTER",
+    "searched_key": "FOSTER/RO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/18010244.json",
     "searched_last_name": "FOSTER",
     "searched_first_prefix": "RO",
-    "charges": "23152(a) VC/M 23152(b) VC/M",
     "row": {
       "DEFENDANTNAME": "ROBERT BENJAMIN FOSTER",
       "CASENUMBER": "CRI-18010244",
@@ -45,11 +137,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3878795",
+  "docket_entries": [
+    {
+      "filedDate": "2018-11-14T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCE/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ  10D/CTS:2/SWAPD:11-15-18/PF390 18/VF2:150/PROBREVFN/COA:40/ICNA/CITE/EMAT/FOP1:3 MONTHS/LVAL/LCHEM/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 100 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SET FORTH HEREIN/X:23593(A) VC ADMONITION GIVEN,/DISM3/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-11-14T09:15:00.000Z",
+      "description": "/CAL:SENTENCE/TWS/CH2:ISS:CPROB:PROB 3 Y:PJ 10D/CTS:2/SWAPD:11-15-18/PF390 18/VF2:150/PROBREVFN/COA:40/ICNA/CITE/EMAT/FOP1:3 MONTHS/LVAL/LCHEM/COLLECT/OBEY/ACCEP/X:PLEA FORM NUMBER PRU 100 IS INCORPORATED BY REFERENCE AS THOUGH FULLY SET FORTH HEREIN/X:23593(A) VC ADMONITION GIVEN,/DISM3/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-11-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PERTRIAL/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:002/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-11-14T09:00:00.000Z",
+      "description": "/CAL:PERTRIAL/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF NL/DEFT ADV NL:002/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-09-11T09:00:00.000Z",
+      "docketEntryComment": "/JAVS/CAL:PRETRIAL/DAWT/CONT/X:DOP IF DISPO/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-09-11T09:00:00.000Z",
+      "description": "/JAVS/CAL:PRETRIAL/DAWT/CONT/X:DOP IF DISPO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-20T09:00:00.000Z",
+      "docketEntryComment": "/X:FIRST AMENDED MISDEMEANOR COMPLAINT FILED,/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/MVARS/GTWM/CONTD:PRETRIAL CONFERENCE/DAWF/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-07-20T09:00:00.000Z",
+      "description": "/X:FIRST AMENDED MISDEMEANOR COMPLAINT FILED,/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/MVARS/GTWM/CONTD:PRETRIAL CONFERENCE/DAWF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18010244",
-    "portal_case_id": "",
+    "portal_case_id": "3878795",
     "display_case_number": "CRI-18010244",
     "defendant": "ROBERT BENJAMIN FOSTER",
     "filed_date": "2018-07-18",
@@ -60,11 +193,84 @@
       "filed_date": "2018-07-18"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "23152(a) VC/M 23152(b) VC/M",
+    "charge_rows": [
+      {
+        "raw": "23152(a) VC/M",
+        "title": "Vehicle Code § 23152(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(a)",
+        "code_system": "VC",
+        "section": "23152(a)",
+        "citation": "Vehicle Code § 23152(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23152(b) VC/M",
+        "title": "Vehicle Code § 23152(b)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(b)",
+        "code_system": "VC",
+        "section": "23152(b)",
+        "citation": "Vehicle Code § 23152(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROBERT BENJAMIN FOSTER, and date of filing 2018-07-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROBERT BENJAMIN FOSTER, date of filing, 2018-07-18, and charges in the case: 23152(a) VC/M 23152(b) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(a) VC/M",
+      "title": "Vehicle Code § 23152(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(a)",
+      "code_system": "VC",
+      "section": "23152(a)",
+      "citation": "Vehicle Code § 23152(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23152(b) VC/M",
+      "title": "Vehicle Code § 23152(b)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(b)",
+      "code_system": "VC",
+      "section": "23152(b)",
+      "citation": "Vehicle Code § 23152(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:55:40.028Z",
+  "portal_case_id": "3878795",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18010244",
+      "defendant": "ROBERT BENJAMIN FOSTER",
+      "filed_date": "2018-07-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3878795"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.393468+00:00"
 }

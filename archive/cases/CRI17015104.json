@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:05:43.681Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:07:29.822Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17015104",
   "criminal_case_number": "17015104",
@@ -24,11 +24,122 @@
       "name": "JAMES LAWSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JAMES LAWSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-12-18T15:00:00.000Z",
+      "docketEntryComment": "FELONY PLEA TX FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-12-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:1/FNDG/CO:NEGOTIATED DISPOSITION/PRES:01-16-18/SA2:395 SUTTER ST,, SF/ARBUCKLE/TWS/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-10-19T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:CERTIFIED LAW CLERK GABY LIONS SPECIALLY APPEARED UNDERTHE SUPERVISION OF ADA DAVID KUCHINSKY,/TEXT:DEFT ENT NG PLEA(S) & DEN OFALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:12-18-17/987,2/SAORD/SA4:COUTURE DESIGNER EUROPEAN CLOTHING AT 395 SUTTER STREET, SAN FRANCISCO/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-01-16T09:00:00.000Z",
+      "docketEntryComment": "/17B/TWS/CH1:ISS:CPROB:PROB 2 Y:PJ 96D/CTS:96/WS/WEAP/OR25/VF2:150/SA2:395 SUTTER ST,, SF/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-11-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/CONT/DOP/LD:12-18-17/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-11-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD:PRELIMINARY HEARING/DOP/LD:12-18-17/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-01-16 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2018-01-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-12-14 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2017-12-14",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-11-30 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2017-11-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-11-01 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2017-11-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-10-19 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 4,
+      "court_date": "2017-10-19",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ELIZABETH CAMACHO",
+      "type": "Public Defender"
+    },
+    {
+      "name": "STEPHANIE ZUDEKOFF",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +156,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3864710",
+  "docket_entries": [
+    {
+      "filedDate": "2017-12-18T15:00:00.000Z",
+      "docketEntryComment": "FELONY PLEA TX FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-12-18T15:00:00.000Z",
+      "description": "FELONY PLEA TX FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-12-14T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:1/FNDG/CO:NEGOTIATED DISPOSITION/PRES:01-16-18/SA2:395 SUTTER ST,, SF/ARBUCKLE/TWS/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-12-14T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:1/FNDG/CO:NEGOTIATED DISPOSITION/PRES:01-16-18/SA2:395 SUTTER ST,, SF/ARBUCKLE/TWS/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-10-19T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:CERTIFIED LAW CLERK GABY LIONS SPECIALLY APPEARED UNDERTHE SUPERVISION OF ADA DAVID KUCHINSKY,/TEXT:DEFT ENT NG PLEA(S) & DEN OFALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:12-18-17/987,2/SAORD/SA4:COUTURE DESIGNER EUROPEAN CLOTHING AT 395 SUTTER STREET, SAN FRANCISCO/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-10-19T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:CERTIFIED LAW CLERK GABY LIONS SPECIALLY APPEARED UNDERTHE SUPERVISION OF ADA DAVID KUCHINSKY,/TEXT:DEFT ENT NG PLEA(S) & DEN OFALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:12-18-17/987,2/SAORD/SA4:COUTURE DESIGNER EUROPEAN CLOTHING AT 395 SUTTER STREET, SAN FRANCISCO/CONTD: PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-01-16T09:00:00.000Z",
+      "docketEntryComment": "/17B/TWS/CH1:ISS:CPROB:PROB 2 Y:PJ 96D/CTS:96/WS/WEAP/OR25/VF2:150/SA2:395 SUTTER ST,, SF/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-01-16T09:00:00.000Z",
+      "description": "/17B/TWS/CH1:ISS:CPROB:PROB 2 Y:PJ 96D/CTS:96/WS/WEAP/OR25/VF2:150/SA2:395 SUTTER ST,, SF/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-11-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/CONT/DOP/LD:12-18-17/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2017-11-30T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/CONT/DOP/LD:12-18-17/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-11-01T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD:PRELIMINARY HEARING/DOP/LD:12-18-17/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2017-11-01T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/CONTD:PRELIMINARY HEARING/DOP/LD:12-18-17/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17015104",
-    "portal_case_id": "",
+    "portal_case_id": "3864710",
     "display_case_number": "CRI-17015104",
     "defendant": "JAMES LAWSON",
     "filed_date": "2017-10-17",
@@ -60,11 +232,57 @@
       "filed_date": "2017-10-17"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "487(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "487(a) PC/M",
+        "title": "Penal Code § 487(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 487(a)",
+        "code_system": "PC",
+        "section": "487(a)",
+        "citation": "Penal Code § 487(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JAMES LAWSON, and date of filing 2017-10-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JAMES LAWSON, date of filing, 2017-10-17, and charges in the case: 487(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "487(a) PC/M",
+      "title": "Penal Code § 487(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 487(a)",
+      "code_system": "PC",
+      "section": "487(a)",
+      "citation": "Penal Code § 487(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:07:30.486Z",
+  "portal_case_id": "3864710",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17015104",
+      "defendant": "JAMES LAWSON",
+      "filed_date": "2017-10-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3864710"
+  }
 }

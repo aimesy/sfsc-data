@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:44:41.139Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:02:17.210Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17000936",
   "criminal_case_number": "17000936",
@@ -24,19 +24,134 @@
       "name": "EDDIE COLLINS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "EDDIE COLLINS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-01-27T14:53:00.000Z",
+      "docketEntryComment": "DEF MOT FORMAL BAIL HR & ORDER RELEASING DFT ON OWN RECOGNIZANCE, FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-01-20T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:DEFENSE RESERVES THE RIGHT TO DEMUR/NTW/LDTR: 02-21-17/987,2/BAIL:3,000/SAORD/SA1:CURTIS COOPER, EMMANUEL CAMPOS, BENNIE MCCOY, EVALIZA CRAVENS/SA2:ST, FRANCIS HOTEL 335 POWELL STREET SF 94102/SAORD3/CONTD:PRETRIAL CONFERENCE & JURY TRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-03-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/MO PC 1385:INEREST OF JUSTICE/SATERM/VD:TRIAL AND LAST DAY OF04-10-17/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-03-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/NTW/LDTR:04-10-17/CONTD:TRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-01-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENSE BAIL MOTION/OR/VD:TRIAL DATE ON 02-08-17/GTWM/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-01-26T09:00:00.000Z",
+      "docketEntryComment": "/DAWT/LDTR:02-21-17/X:02-08-17 TRIAL DATE CONFIRMED,/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-03-30 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2017-03-30",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-03-09 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2017-03-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-01-31 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2017-01-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-01-26 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2017-01-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-01-20 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2017-01-20",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SYLVIA NGUYEN",
+      "type": "Public Defender"
+    },
+    {
+      "name": "MELODY BAHAI",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "242 PC/M 602(m) PC/M 11364(a) HS/M 148.9(a) PC/M",
+    "filed_date": "2017-01-20",
+    "defendant": "EDDIE COLLINS",
+    "searched_key": "COLLINS/ED",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box12-cases/17000936.json",
     "searched_last_name": "COLLINS",
     "searched_first_prefix": "ED",
-    "charges": "242 PC/M 602(m) PC/M 11364(a) HS/M 148.9(a) PC/M",
     "row": {
       "DEFENDANTNAME": "EDDIE COLLINS",
       "CASENUMBER": "CRI-17000936",
@@ -45,11 +160,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3850902",
+  "docket_entries": [
+    {
+      "filedDate": "2017-01-27T14:53:00.000Z",
+      "docketEntryComment": "DEF MOT FORMAL BAIL HR & ORDER RELEASING DFT ON OWN RECOGNIZANCE, FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-01-27T14:53:00.000Z",
+      "description": "DEF MOT FORMAL BAIL HR & ORDER RELEASING DFT ON OWN RECOGNIZANCE, FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-01-20T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:DEFENSE RESERVES THE RIGHT TO DEMUR/NTW/LDTR: 02-21-17/987,2/BAIL:3,000/SAORD/SA1:CURTIS COOPER, EMMANUEL CAMPOS, BENNIE MCCOY, EVALIZA CRAVENS/SA2:ST, FRANCIS HOTEL 335 POWELL STREET SF 94102/SAORD3/CONTD:PRETRIAL CONFERENCE & JURY TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-01-20T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:DEFENSE RESERVES THE RIGHT TO DEMUR/NTW/LDTR: 02-21-17/987,2/BAIL:3,000/SAORD/SA1:CURTIS COOPER, EMMANUEL CAMPOS, BENNIE MCCOY, EVALIZA CRAVENS/SA2:ST, FRANCIS HOTEL 335 POWELL STREET SF 94102/SAORD3/CONTD:PRETRIAL CONFERENCE & JURY TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-03-30T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/MO PC 1385:INEREST OF JUSTICE/SATERM/VD:TRIAL AND LAST DAY OF04-10-17/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-03-30T09:00:00.000Z",
+      "description": "/CAL:TRIAL/MO PC 1385:INEREST OF JUSTICE/SATERM/VD:TRIAL AND LAST DAY OF04-10-17/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-03-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/NTW/LDTR:04-10-17/CONTD:TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-03-09T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/NTW/LDTR:04-10-17/CONTD:TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-01-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DEFENSE BAIL MOTION/OR/VD:TRIAL DATE ON 02-08-17/GTWM/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2017-01-31T09:00:00.000Z",
+      "description": "/CAL:DEFENSE BAIL MOTION/OR/VD:TRIAL DATE ON 02-08-17/GTWM/CONTD:PRETRIAL CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-01-26T09:00:00.000Z",
+      "docketEntryComment": "/DAWT/LDTR:02-21-17/X:02-08-17 TRIAL DATE CONFIRMED,/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2017-01-26T09:00:00.000Z",
+      "description": "/DAWT/LDTR:02-21-17/X:02-08-17 TRIAL DATE CONFIRMED,/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17000936",
-    "portal_case_id": "",
+    "portal_case_id": "3850902",
     "display_case_number": "CRI-17000936",
     "defendant": "EDDIE COLLINS",
     "filed_date": "2017-01-20",
@@ -59,12 +235,146 @@
       "defendant": "EDDIE COLLINS",
       "filed_date": "2017-01-20"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "242 PC/M 602(m) PC/M 11364(a) HS/M 148.9(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "242 PC/M",
+        "title": "Penal Code § 242",
+        "title_source": "programmatic_citation",
+        "code": "PC 242",
+        "code_system": "PC",
+        "section": "242",
+        "citation": "Penal Code § 242",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "602(m) PC/M",
+        "title": "Penal Code § 602(m)",
+        "title_source": "programmatic_citation",
+        "code": "PC 602(m)",
+        "code_system": "PC",
+        "section": "602(m)",
+        "citation": "Penal Code § 602(m)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "11364(a) HS/M",
+        "title": "Health and Safety Code § 11364(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11364(a)",
+        "code_system": "HS",
+        "section": "11364(a)",
+        "citation": "Health and Safety Code § 11364(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "148.9(a) PC/M",
+        "title": "Penal Code § 148.9(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148.9(a)",
+        "code_system": "PC",
+        "section": "148.9(a)",
+        "citation": "Penal Code § 148.9(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, EDDIE COLLINS, and date of filing 2017-01-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, EDDIE COLLINS, date of filing, 2017-01-20, and charges in the case: 242 PC/M 602(m) PC/M 11364(a) HS/M 148.9(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "242 PC/M",
+      "title": "Penal Code § 242",
+      "title_source": "programmatic_citation",
+      "code": "PC 242",
+      "code_system": "PC",
+      "section": "242",
+      "citation": "Penal Code § 242",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=242.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "602(m) PC/M",
+      "title": "Penal Code § 602(m)",
+      "title_source": "programmatic_citation",
+      "code": "PC 602(m)",
+      "code_system": "PC",
+      "section": "602(m)",
+      "citation": "Penal Code § 602(m)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=602.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "11364(a) HS/M",
+      "title": "Health and Safety Code § 11364(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11364(a)",
+      "code_system": "HS",
+      "section": "11364(a)",
+      "citation": "Health and Safety Code § 11364(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11364.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "148.9(a) PC/M",
+      "title": "Penal Code § 148.9(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148.9(a)",
+      "code_system": "PC",
+      "section": "148.9(a)",
+      "citation": "Penal Code § 148.9(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:02:17.845Z",
+  "portal_case_id": "3850902",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17000936",
+      "defendant": "EDDIE COLLINS",
+      "filed_date": "2017-01-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3850902"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.598347+00:00"
 }

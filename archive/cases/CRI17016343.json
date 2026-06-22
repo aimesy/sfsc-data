@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:00:07.585Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:05:35.162Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17016343",
   "criminal_case_number": "17016343",
@@ -24,19 +24,89 @@
       "name": "LISA MARIE JOHNSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LISA MARIE JOHNSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-11-07T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/TWS/CH2:ISS:CPROB:PROB 1 Y:PJ 5D/CTS:5/VF2:150/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/X:ALL ITEMS WERE RECOVERED/X:THECOURT DISMISSES COUNT 001 PURSUANT TO PENAL CODE 1385 FOR REASONS STATED ON THE RECORD/X:THE COURT RESERVES THE JURISDICTION OF RESTITUTION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-11-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I & A PLEA AND COUNSEL/X:THE PEOPLE FILED NOTICE OF MOTION AND MOTIONTO AMEND COMPLAINT/X:THE PEOPLE'S MOTION TO AMEND COMPLAINT TO ADD COUNT002 487(A) PC A MISDEMEANOR IS GRANTED/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/FAWC/DEFT ADV ANNL:002/X:OPEN PLEA/NOLO/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-11-06T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE (SIERRA VILLARAN) DECLARES A CONFLICT,/CON:GEORGE BORGES/CONTD:I&A, PLEA/DOP/X:COURT FOUND GOOD CAUSE TO CONTINUE,/BAIL:10,000/X:BAIL IS SET WITHOUTPREJUDICE,/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-11-07 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2017-11-07",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-11-07 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2017-11-07",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-11-06 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2017-11-06",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "GEORGE BORGES",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "490.2(a) PC/M 487(a) PC/M",
+    "filed_date": "2017-11-06",
+    "defendant": "LISA MARIE JOHNSON",
+    "searched_key": "JOHNSON/LI",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/17016343.json",
     "searched_last_name": "JOHNSON",
     "searched_first_prefix": "LI",
-    "charges": "490.2(a) PC/M 487(a) PC/M",
     "row": {
       "DEFENDANTNAME": "LISA MARIE JOHNSON",
       "CASENUMBER": "CRI-17016343",
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3865921",
+  "docket_entries": [
+    {
+      "filedDate": "2017-11-07T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/TWS/CH2:ISS:CPROB:PROB 1 Y:PJ 5D/CTS:5/VF2:150/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/X:ALL ITEMS WERE RECOVERED/X:THECOURT DISMISSES COUNT 001 PURSUANT TO PENAL CODE 1385 FOR REASONS STATED ON THE RECORD/X:THE COURT RESERVES THE JURISDICTION OF RESTITUTION/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-11-07T09:15:00.000Z",
+      "description": "/CAL:SENTENCING/TWS/CH2:ISS:CPROB:PROB 1 Y:PJ 5D/CTS:5/VF2:150/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/X:ALL ITEMS WERE RECOVERED/X:THECOURT DISMISSES COUNT 001 PURSUANT TO PENAL CODE 1385 FOR REASONS STATED ON THE RECORD/X:THE COURT RESERVES THE JURISDICTION OF RESTITUTION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-11-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I & A PLEA AND COUNSEL/X:THE PEOPLE FILED NOTICE OF MOTION AND MOTIONTO AMEND COMPLAINT/X:THE PEOPLE'S MOTION TO AMEND COMPLAINT TO ADD COUNT002 487(A) PC A MISDEMEANOR IS GRANTED/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/FAWC/DEFT ADV ANNL:002/X:OPEN PLEA/NOLO/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-11-07T09:00:00.000Z",
+      "description": "/CAL:I & A PLEA AND COUNSEL/X:THE PEOPLE FILED NOTICE OF MOTION AND MOTIONTO AMEND COMPLAINT/X:THE PEOPLE'S MOTION TO AMEND COMPLAINT TO ADD COUNT002 487(A) PC A MISDEMEANOR IS GRANTED/TEXT: DEFT WAIVES INST AND ARRAIGNMENT NL PLEA/FAWC/DEFT ADV ANNL:002/X:OPEN PLEA/NOLO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-11-06T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE (SIERRA VILLARAN) DECLARES A CONFLICT,/CON:GEORGE BORGES/CONTD:I&A, PLEA/DOP/X:COURT FOUND GOOD CAUSE TO CONTINUE,/BAIL:10,000/X:BAIL IS SET WITHOUTPREJUDICE,/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-11-06T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE (SIERRA VILLARAN) DECLARES A CONFLICT,/CON:GEORGE BORGES/CONTD:I&A, PLEA/DOP/X:COURT FOUND GOOD CAUSE TO CONTINUE,/BAIL:10,000/X:BAIL IS SET WITHOUTPREJUDICE,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17016343",
-    "portal_case_id": "",
+    "portal_case_id": "3865921",
     "display_case_number": "CRI-17016343",
     "defendant": "LISA MARIE JOHNSON",
     "filed_date": "2017-11-06",
@@ -59,12 +160,94 @@
       "defendant": "LISA MARIE JOHNSON",
       "filed_date": "2017-11-06"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "490.2(a) PC/M 487(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "490.2(a) PC/M",
+        "title": "Penal Code § 490.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.2(a)",
+        "code_system": "PC",
+        "section": "490.2(a)",
+        "citation": "Penal Code § 490.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "487(a) PC/M",
+        "title": "Penal Code § 487(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 487(a)",
+        "code_system": "PC",
+        "section": "487(a)",
+        "citation": "Penal Code § 487(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LISA MARIE JOHNSON, and date of filing 2017-11-06. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LISA MARIE JOHNSON, date of filing, 2017-11-06, and charges in the case: 490.2(a) PC/M 487(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.2(a) PC/M",
+      "title": "Penal Code § 490.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.2(a)",
+      "code_system": "PC",
+      "section": "490.2(a)",
+      "citation": "Penal Code § 490.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "487(a) PC/M",
+      "title": "Penal Code § 487(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 487(a)",
+      "code_system": "PC",
+      "section": "487(a)",
+      "citation": "Penal Code § 487(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=487.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:05:35.802Z",
+  "portal_case_id": "3865921",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17016343",
+      "defendant": "LISA MARIE JOHNSON",
+      "filed_date": "2017-11-06"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3865921"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.613520+00:00"
 }

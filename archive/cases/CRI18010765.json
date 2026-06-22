@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:25:38.462Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:56:56.250Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18010765",
   "criminal_case_number": "18010765",
@@ -24,11 +24,68 @@
       "name": "MARZEL ISIA PARKER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MARZEL ISIA PARKER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-07-24T14:59:00.000Z",
+      "docketEntryComment": "DEFENDANT'S MOTION TO SUPPRESS EVIDENCE PC1538,5 - FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-18T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 08-01-18/987,2/ACM/DEF:IS ORDERED RELEASED ON PRE-TRIAL ELECTRONIC MONITORING BY THE SHERIFF'S DEPARTMENT/DEF:SHALL BE FITTED WITH A GPSDEVICE AND IS ORDERED TO COMPLY WITH ALL TERMS OF RELEASE AS SET FORTH ONTHE RECORD AND BY THE SFSD/CTORD:DEFENDANT SHALL BE RELEASED WITH COORDINATED PICK-UP/X:SEE SIGNED ORDER IN FILE,/WS/WEAP/X:DEFENDANT HAS A CURFEW FROM 6PM TO 6AM,/CONTD:PRELIM HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:PROCEEDING BY WAY OF FEDERAL INDICTMEN",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-07-31 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2018-07-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-07-18 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2018-07-18",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ERIC MCBURNEY",
+      "type": "Public Defender"
+    },
+    {
+      "name": "CHRISTOPHER ULRICH",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +102,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3879302",
+  "docket_entries": [
+    {
+      "filedDate": "2018-07-24T14:59:00.000Z",
+      "docketEntryComment": "DEFENDANT'S MOTION TO SUPPRESS EVIDENCE PC1538,5 - FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-07-24T14:59:00.000Z",
+      "description": "DEFENDANT'S MOTION TO SUPPRESS EVIDENCE PC1538,5 - FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-18T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 08-01-18/987,2/ACM/DEF:IS ORDERED RELEASED ON PRE-TRIAL ELECTRONIC MONITORING BY THE SHERIFF'S DEPARTMENT/DEF:SHALL BE FITTED WITH A GPSDEVICE AND IS ORDERED TO COMPLY WITH ALL TERMS OF RELEASE AS SET FORTH ONTHE RECORD AND BY THE SFSD/CTORD:DEFENDANT SHALL BE RELEASED WITH COORDINATED PICK-UP/X:SEE SIGNED ORDER IN FILE,/WS/WEAP/X:DEFENDANT HAS A CURFEW FROM 6PM TO 6AM,/CONTD:PRELIM HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-07-18T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX: 08-01-18/987,2/ACM/DEF:IS ORDERED RELEASED ON PRE-TRIAL ELECTRONIC MONITORING BY THE SHERIFF'S DEPARTMENT/DEF:SHALL BE FITTED WITH A GPSDEVICE AND IS ORDERED TO COMPLY WITH ALL TERMS OF RELEASE AS SET FORTH ONTHE RECORD AND BY THE SFSD/CTORD:DEFENDANT SHALL BE RELEASED WITH COORDINATED PICK-UP/X:SEE SIGNED ORDER IN FILE,/WS/WEAP/X:DEFENDANT HAS A CURFEW FROM 6PM TO 6AM,/CONTD:PRELIM HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-31T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MO PC 1385:PROCEEDING BY WAY OF FEDERAL INDICTMEN",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-07-31T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MO PC 1385:PROCEEDING BY WAY OF FEDERAL INDICTMEN",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18010765",
-    "portal_case_id": "",
+    "portal_case_id": "3879302",
     "display_case_number": "CRI-18010765",
     "defendant": "MARZEL ISIA PARKER",
     "filed_date": "2018-07-18",
@@ -59,12 +147,111 @@
       "defendant": "MARZEL ISIA PARKER",
       "filed_date": "2018-07-18"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC1538",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888 25850(a) PC/F 30305(a)(1) PC/F",
+    "charge_rows": [
+      {
+        "raw": "25850(a) PC/F",
+        "title": "Penal Code § 25850(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 25850(a)",
+        "code_system": "PC",
+        "section": "25850(a)",
+        "citation": "Penal Code § 25850(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25850.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25850.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "30305(a)(1) PC/F",
+        "title": "Penal Code § 30305(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 30305(a)(1)",
+        "code_system": "PC",
+        "section": "30305(a)(1)",
+        "citation": "Penal Code § 30305(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=30305.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=30305.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MARZEL ISIA PARKER, and date of filing 2018-07-18. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MARZEL ISIA PARKER, date of filing, 2018-07-18, and charges in the case: 8888888 25850(a) PC/F 30305(a)(1) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "25850(a) PC/F",
+      "title": "Penal Code § 25850(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 25850(a)",
+      "code_system": "PC",
+      "section": "25850(a)",
+      "citation": "Penal Code § 25850(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25850.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25850.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "30305(a)(1) PC/F",
+      "title": "Penal Code § 30305(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 30305(a)(1)",
+      "code_system": "PC",
+      "section": "30305(a)(1)",
+      "citation": "Penal Code § 30305(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=30305.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=30305.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:56:56.880Z",
+  "portal_case_id": "3879302",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18010765",
+      "defendant": "MARZEL ISIA PARKER",
+      "filed_date": "2018-07-18"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3879302"
+  }
 }

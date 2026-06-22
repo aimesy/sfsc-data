@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:52:24.638Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:05:22.920Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17009858",
   "criminal_case_number": "17009858",
@@ -24,11 +24,100 @@
       "name": "CASSANDRA LEE SMITH",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CASSANDRA LEE SMITH",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-07-11T10:05:35.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-07-24T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/TWS/CH1:ISS:CPROB:PROB 2 Y:PJ 19 D/CTS:19/WS/VF2:150/SAORD/SA2:1161 CAYUGA AVE, SF/SAORD3/X:COURT RESERVES JURISDICTION ON RESTITUTION/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-07-19T09:00:00.000Z",
+      "docketEntryComment": "CONTD PC 4011,6 REPORT/CAL:PREHEARING CONFERENCE/DAWT/X:PC 4011,6 REPORT WAS NOT RECEIVED TODAY,/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:07-24-17/CONTD:PRELIMINARY HEARING AND RECEIPT OF PC 4011,6 RPT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-07-11T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:07-25-17/987,2/BAIL:15,000/CONTD PC 4011,6 REPORT/TEXT:CRT ORDSDEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:07-19-17/CONTD: RECEIPT OF4011,6PC REPORT AND TO SET/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-07-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MISDRED1:1/TEXT:DEFT ADV & PERS WVS CONST & CITZRTS ENT PLEA OF NL/DEFT ADV NL: 1/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-07-24 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2017-07-24",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-07-24 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2017-07-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-07-19 9:00 AM",
+      "hearingType": "PC 4011.6 Report",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2017-07-19",
+      "hearing_time": "9:00 AM",
+      "matters": "PC 4011.6 Report",
+      "hearing_type": "PC 4011.6 Report",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-07-11 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 3,
+      "court_date": "2017-07-11",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JACK SHANNON",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +134,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3859602",
+  "docket_entries": [
+    {
+      "filedDate": "2017-07-11T10:05:35.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-07-11T10:05:35.000Z",
+      "description": "Complaint",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-07-24T09:15:00.000Z",
+      "docketEntryComment": "/CAL:SENTENCING/TWS/CH1:ISS:CPROB:PROB 2 Y:PJ 19 D/CTS:19/WS/VF2:150/SAORD/SA2:1161 CAYUGA AVE, SF/SAORD3/X:COURT RESERVES JURISDICTION ON RESTITUTION/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-07-24T09:15:00.000Z",
+      "description": "/CAL:SENTENCING/TWS/CH1:ISS:CPROB:PROB 2 Y:PJ 19 D/CTS:19/WS/VF2:150/SAORD/SA2:1161 CAYUGA AVE, SF/SAORD3/X:COURT RESERVES JURISDICTION ON RESTITUTION/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-07-19T09:00:00.000Z",
+      "docketEntryComment": "CONTD PC 4011,6 REPORT/CAL:PREHEARING CONFERENCE/DAWT/X:PC 4011,6 REPORT WAS NOT RECEIVED TODAY,/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:07-24-17/CONTD:PRELIMINARY HEARING AND RECEIPT OF PC 4011,6 RPT/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-07-19T09:00:00.000Z",
+      "description": "CONTD PC 4011,6 REPORT/CAL:PREHEARING CONFERENCE/DAWT/X:PC 4011,6 REPORT WAS NOT RECEIVED TODAY,/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:07-24-17/CONTD:PRELIMINARY HEARING AND RECEIPT OF PC 4011,6 RPT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-07-11T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:07-25-17/987,2/BAIL:15,000/CONTD PC 4011,6 REPORT/TEXT:CRT ORDSDEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:07-19-17/CONTD: RECEIPT OF4011,6PC REPORT AND TO SET/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-07-11T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:07-25-17/987,2/BAIL:15,000/CONTD PC 4011,6 REPORT/TEXT:CRT ORDSDEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP:07-19-17/CONTD: RECEIPT OF4011,6PC REPORT AND TO SET/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-07-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/MISDRED1:1/TEXT:DEFT ADV & PERS WVS CONST & CITZRTS ENT PLEA OF NL/DEFT ADV NL: 1/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2017-07-24T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/MISDRED1:1/TEXT:DEFT ADV & PERS WVS CONST & CITZRTS ENT PLEA OF NL/DEFT ADV NL: 1/NOLO/CO:NEGOTIATED DISPOSITION/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17009858",
-    "portal_case_id": "",
+    "portal_case_id": "3859602",
     "display_case_number": "CRI-17009858",
     "defendant": "CASSANDRA LEE SMITH",
     "filed_date": "2017-07-11",
@@ -59,12 +199,129 @@
       "defendant": "CASSANDRA LEE SMITH",
       "filed_date": "2017-07-11"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 4011",
+        "count": 6,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888 459 PC/F 594(b)(2)(A) PC/M 148.9(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "594(b)(2)(A) PC/M",
+        "title": "Penal Code § 594(b)(2)(A)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(2)(A)",
+        "code_system": "PC",
+        "section": "594(b)(2)(A)",
+        "citation": "Penal Code § 594(b)(2)(A)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "148.9(a) PC/M",
+        "title": "Penal Code § 148.9(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148.9(a)",
+        "code_system": "PC",
+        "section": "148.9(a)",
+        "citation": "Penal Code § 148.9(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CASSANDRA LEE SMITH, and date of filing 2017-07-11. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CASSANDRA LEE SMITH, date of filing, 2017-07-11, and charges in the case: 8888888 459 PC/F 594(b)(2)(A) PC/M 148.9(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "594(b)(2)(A) PC/M",
+      "title": "Penal Code § 594(b)(2)(A)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(2)(A)",
+      "code_system": "PC",
+      "section": "594(b)(2)(A)",
+      "citation": "Penal Code § 594(b)(2)(A)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "148.9(a) PC/M",
+      "title": "Penal Code § 148.9(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148.9(a)",
+      "code_system": "PC",
+      "section": "148.9(a)",
+      "citation": "Penal Code § 148.9(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:05:23.681Z",
+  "portal_case_id": "3859602",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17009858",
+      "defendant": "CASSANDRA LEE SMITH",
+      "filed_date": "2017-07-11"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3859602"
+  }
 }

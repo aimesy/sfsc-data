@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:23:15.692Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:57:49.974Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18005587",
   "criminal_case_number": "18005587",
@@ -24,11 +24,81 @@
       "name": "YANG LIU",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "YANG LIU",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-05-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL READINESS CONFERENCE/X: THIS PROCEEDING IS RECORDED THROUGH JAVS,/NP/MO PC 1385:   IN THE INTEREST OF JUSTICE/VD:  05-07-18 DATE IN DEPT 17/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-04-12T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/NTW/LDTR:05-14-18/SA1:TIANLE CHEN/SA2:2512 MCALLISTER ST, SFCA/SAORD2/SAORD3/SAORD/CTORD:DEFENDANT TO REMAIN 150 YARDS FROM THE PROTECTED PERSON & RESIDENCE EXCEPT WHEN ON CAMPUS ATTENDING MUTUAL CLASSES, THEN THE DISTANCE BECOMES 10 YARDS FROM THE PROTECTED PERSON/CONTD:MSC/DOP/CONTD:JURY TRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-05-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:JURY TRIAL/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: MATTERWAS DISMISSED ON 05-04-18 IN M13/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-05-07 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2018-05-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-05-04 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 1,
+      "court_date": "2018-05-04",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-04-12 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 2,
+      "court_date": "2018-04-12",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JARED RUDOLPH",
+      "type": "Public Defender"
+    },
+    {
+      "name": "SARAH SPIELBERGER",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3874260",
+  "docket_entries": [
+    {
+      "filedDate": "2018-05-04T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL READINESS CONFERENCE/X: THIS PROCEEDING IS RECORDED THROUGH JAVS,/NP/MO PC 1385:   IN THE INTEREST OF JUSTICE/VD:  05-07-18 DATE IN DEPT 17/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-05-04T09:00:00.000Z",
+      "description": "/CAL: TRIAL READINESS CONFERENCE/X: THIS PROCEEDING IS RECORDED THROUGH JAVS,/NP/MO PC 1385: IN THE INTEREST OF JUSTICE/VD: 05-07-18 DATE IN DEPT 17/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-04-12T13:30:00.000Z",
+      "docketEntryComment": "/CAL: ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/NTW/LDTR:05-14-18/SA1:TIANLE CHEN/SA2:2512 MCALLISTER ST, SFCA/SAORD2/SAORD3/SAORD/CTORD:DEFENDANT TO REMAIN 150 YARDS FROM THE PROTECTED PERSON & RESIDENCE EXCEPT WHEN ON CAMPUS ATTENDING MUTUAL CLASSES, THEN THE DISTANCE BECOMES 10 YARDS FROM THE PROTECTED PERSON/CONTD:MSC/DOP/CONTD:JURY TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-04-12T13:30:00.000Z",
+      "description": "/CAL: ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/NTW/LDTR:05-14-18/SA1:TIANLE CHEN/SA2:2512 MCALLISTER ST, SFCA/SAORD2/SAORD3/SAORD/CTORD:DEFENDANT TO REMAIN 150 YARDS FROM THE PROTECTED PERSON & RESIDENCE EXCEPT WHEN ON CAMPUS ATTENDING MUTUAL CLASSES, THEN THE DISTANCE BECOMES 10 YARDS FROM THE PROTECTED PERSON/CONTD:MSC/DOP/CONTD:JURY TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-05-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:JURY TRIAL/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: MATTERWAS DISMISSED ON 05-04-18 IN M13/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-05-07T09:00:00.000Z",
+      "description": "/CAL:JURY TRIAL/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: MATTERWAS DISMISSED ON 05-04-18 IN M13/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18005587",
-    "portal_case_id": "",
+    "portal_case_id": "3874260",
     "display_case_number": "CRI-18005587",
     "defendant": "YANG LIU",
     "filed_date": "2018-04-12",
@@ -59,12 +160,93 @@
       "defendant": "YANG LIU",
       "filed_date": "2018-04-12"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "243(e)(1) PC/M 236 PC/M",
+    "charge_rows": [
+      {
+        "raw": "243(e)(1) PC/M",
+        "title": "Penal Code § 243(e)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 243(e)(1)",
+        "code_system": "PC",
+        "section": "243(e)(1)",
+        "citation": "Penal Code § 243(e)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "236 PC/M",
+        "title": "Penal Code § 236",
+        "title_source": "programmatic_citation",
+        "code": "PC 236",
+        "code_system": "PC",
+        "section": "236",
+        "citation": "Penal Code § 236",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, YANG LIU, and date of filing 2018-04-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, YANG LIU, date of filing, 2018-04-12, and charges in the case: 243(e)(1) PC/M 236 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "243(e)(1) PC/M",
+      "title": "Penal Code § 243(e)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 243(e)(1)",
+      "code_system": "PC",
+      "section": "243(e)(1)",
+      "citation": "Penal Code § 243(e)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "236 PC/M",
+      "title": "Penal Code § 236",
+      "title_source": "programmatic_citation",
+      "code": "PC 236",
+      "code_system": "PC",
+      "section": "236",
+      "citation": "Penal Code § 236",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=236.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:57:50.716Z",
+  "portal_case_id": "3874260",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18005587",
+      "defendant": "YANG LIU",
+      "filed_date": "2018-04-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3874260"
+  }
 }

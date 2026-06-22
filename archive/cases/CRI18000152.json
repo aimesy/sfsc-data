@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:03:02.122Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:57:45.023Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18000152",
   "criminal_case_number": "18000152",
@@ -24,19 +24,53 @@
       "name": "ROGER DAVID HERNANDEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ROGER DAVID HERNANDEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2018-01-04T15:38:01.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-01-05T13:30:00.000Z",
+      "docketEntryComment": "/INTC/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/X:DIVERSION GRANTED BY STIPULATION OF THE COURT AND THE ATTORNEYS DEEMED COMPLETED AND DISMISSED PURSUANT TO 1001,7PC,/X:DEFENDANT HAS SUCCESSFULLY COMPLETED PRETRIAL DIVERSION, THE COURT GRANTS THE MOTION TO DISMISS COUNTS 1-4  PURSUANT TO PENAL CODE 1001,7/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-01-05 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2018-01-05",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "11351.5 HS/F 11351 HS/F 11378 HS/F 148(a)(1) PC/M",
+    "filed_date": "2018-01-04",
+    "defendant": "ROGER DAVID HERNANDEZ",
+    "searched_key": "HERNANDEZ/RO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/18000152.json",
     "searched_last_name": "HERNANDEZ",
     "searched_first_prefix": "RO",
-    "charges": "11351.5 HS/F 11351 HS/F 11378 HS/F 148(a)(1) PC/M",
     "row": {
       "DEFENDANTNAME": "ROGER DAVID HERNANDEZ",
       "CASENUMBER": "CRI-18000152",
@@ -45,11 +79,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3868980",
+  "docket_entries": [
+    {
+      "filedDate": "2018-01-04T15:38:01.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-01-04T15:38:01.000Z",
+      "description": "Complaint",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-01-05T13:30:00.000Z",
+      "docketEntryComment": "/INTC/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/X:DIVERSION GRANTED BY STIPULATION OF THE COURT AND THE ATTORNEYS DEEMED COMPLETED AND DISMISSED PURSUANT TO 1001,7PC,/X:DEFENDANT HAS SUCCESSFULLY COMPLETED PRETRIAL DIVERSION, THE COURT GRANTS THE MOTION TO DISMISS COUNTS 1-4  PURSUANT TO PENAL CODE 1001,7/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-01-05T13:30:00.000Z",
+      "description": "/INTC/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/STWPX/X:DIVERSION GRANTED BY STIPULATION OF THE COURT AND THE ATTORNEYS DEEMED COMPLETED AND DISMISSED PURSUANT TO 1001,7PC,/X:DEFENDANT HAS SUCCESSFULLY COMPLETED PRETRIAL DIVERSION, THE COURT GRANTS THE MOTION TO DISMISS COUNTS 1-4 PURSUANT TO PENAL CODE 1001,7/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18000152",
-    "portal_case_id": "",
+    "portal_case_id": "3868980",
     "display_case_number": "CRI-18000152",
     "defendant": "ROGER DAVID HERNANDEZ",
     "filed_date": "2018-01-04",
@@ -59,12 +114,156 @@
       "defendant": "ROGER DAVID HERNANDEZ",
       "filed_date": "2018-01-04"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "11351.5 HS/F 11351 HS/F 11378 HS/F 148(a)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "11351.5 HS/F",
+        "title": "Health and Safety Code § 11351.5",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351.5",
+        "code_system": "HS",
+        "section": "11351.5",
+        "citation": "Health and Safety Code § 11351.5",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11351 HS/F",
+        "title": "Health and Safety Code § 11351",
+        "title_source": "programmatic_citation",
+        "code": "HS 11351",
+        "code_system": "HS",
+        "section": "11351",
+        "citation": "Health and Safety Code § 11351",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "11378 HS/F",
+        "title": "Health and Safety Code § 11378",
+        "title_source": "programmatic_citation",
+        "code": "HS 11378",
+        "code_system": "HS",
+        "section": "11378",
+        "citation": "Health and Safety Code § 11378",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "148(a)(1) PC/M",
+        "title": "Penal Code § 148(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148(a)(1)",
+        "code_system": "PC",
+        "section": "148(a)(1)",
+        "citation": "Penal Code § 148(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ROGER DAVID HERNANDEZ, and date of filing 2018-01-04. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ROGER DAVID HERNANDEZ, date of filing, 2018-01-04, and charges in the case: 11351.5 HS/F 11351 HS/F 11378 HS/F 148(a)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11351.5 HS/F",
+      "title": "Health and Safety Code § 11351.5",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351.5",
+      "code_system": "HS",
+      "section": "11351.5",
+      "citation": "Health and Safety Code § 11351.5",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.5.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11351 HS/F",
+      "title": "Health and Safety Code § 11351",
+      "title_source": "programmatic_citation",
+      "code": "HS 11351",
+      "code_system": "HS",
+      "section": "11351",
+      "citation": "Health and Safety Code § 11351",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11351.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "11378 HS/F",
+      "title": "Health and Safety Code § 11378",
+      "title_source": "programmatic_citation",
+      "code": "HS 11378",
+      "code_system": "HS",
+      "section": "11378",
+      "citation": "Health and Safety Code § 11378",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "148(a)(1) PC/M",
+      "title": "Penal Code § 148(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148(a)(1)",
+      "code_system": "PC",
+      "section": "148(a)(1)",
+      "citation": "Penal Code § 148(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:57:45.664Z",
+  "portal_case_id": "3868980",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18000152",
+      "defendant": "ROGER DAVID HERNANDEZ",
+      "filed_date": "2018-01-04"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3868980"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.041942+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:38:16.642Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:59:50.894Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17004822",
   "criminal_case_number": "17004822",
@@ -24,11 +24,99 @@
       "name": "MONICA CHENG",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MONICA CHENG",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-04-05T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:PUBLIC DEFENDER DECLARES A CONFLICT/CON:CHERYL RICH/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LDPX:06-05-17/987,2/ACM/SAORD/SA1:SACHA SIMARD, JON MARCUS & CHRISTOPHER BROWN/SAORD2/SAORD3/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-06-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/MO138572:17002777/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-05-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET PRELIMINARY HEARING/CGTW/TE: ONE HALF DAY/CONTD: FURTHER PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-04-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/STWPX/TE:HALF DAY/CONTD:TO SET/DAWF/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-06-08 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2017-06-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-05-22 9:00 AM",
+      "hearingType": "To Be Set",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2017-05-22",
+      "hearing_time": "9:00 AM",
+      "matters": "To Be Set",
+      "hearing_type": "To Be Set",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-04-21 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2017-04-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-04-05 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 3,
+      "court_date": "2017-04-05",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CHERYL RICH",
+      "type": "Conflict Attorney"
+    },
+    {
+      "name": "THOMAS CULLINAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3854669",
+  "docket_entries": [
+    {
+      "filedDate": "2017-04-05T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:PUBLIC DEFENDER DECLARES A CONFLICT/CON:CHERYL RICH/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LDPX:06-05-17/987,2/ACM/SAORD/SA1:SACHA SIMARD, JON MARCUS & CHRISTOPHER BROWN/SAORD2/SAORD3/CONTD: PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-04-05T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:PUBLIC DEFENDER DECLARES A CONFLICT/CON:CHERYL RICH/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW60/LDPX:06-05-17/987,2/ACM/SAORD/SA1:SACHA SIMARD, JON MARCUS & CHRISTOPHER BROWN/SAORD2/SAORD3/CONTD: PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-06-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/MO138572:17002777/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-06-08T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/MO138572:17002777/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-05-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET PRELIMINARY HEARING/CGTW/TE: ONE HALF DAY/CONTD: FURTHER PREHEARING CONFERENCE/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-05-22T09:00:00.000Z",
+      "description": "/CAL: TO SET PRELIMINARY HEARING/CGTW/TE: ONE HALF DAY/CONTD: FURTHER PREHEARING CONFERENCE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-04-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/STWPX/TE:HALF DAY/CONTD:TO SET/DAWF/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-04-21T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/STWPX/TE:HALF DAY/CONTD:TO SET/DAWF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17004822",
-    "portal_case_id": "",
+    "portal_case_id": "3854669",
     "display_case_number": "CRI-17004822",
     "defendant": "MONICA CHENG",
     "filed_date": "2017-04-05",
@@ -60,11 +189,109 @@
       "filed_date": "2017-04-05"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "211 PC/F 211 PC/F 245(a)(4) PC/F 496(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "211 PC/F",
+        "title": "Penal Code § 211",
+        "title_source": "programmatic_citation",
+        "code": "PC 211",
+        "code_system": "PC",
+        "section": "211",
+        "citation": "Penal Code § 211",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "245(a)(4) PC/F",
+        "title": "Penal Code § 245(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 245(a)(4)",
+        "code_system": "PC",
+        "section": "245(a)(4)",
+        "citation": "Penal Code § 245(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "496(a) PC/M",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MONICA CHENG, and date of filing 2017-04-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MONICA CHENG, date of filing, 2017-04-05, and charges in the case: 211 PC/F 211 PC/F 245(a)(4) PC/F 496(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "211 PC/F",
+      "title": "Penal Code § 211",
+      "title_source": "programmatic_citation",
+      "code": "PC 211",
+      "code_system": "PC",
+      "section": "211",
+      "citation": "Penal Code § 211",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=211.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "245(a)(4) PC/F",
+      "title": "Penal Code § 245(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 245(a)(4)",
+      "code_system": "PC",
+      "section": "245(a)(4)",
+      "citation": "Penal Code § 245(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "496(a) PC/M",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:59:51.510Z",
+  "portal_case_id": "3854669",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17004822",
+      "defendant": "MONICA CHENG",
+      "filed_date": "2017-04-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3854669"
+  }
 }

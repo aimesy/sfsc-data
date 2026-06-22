@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:09:06.225Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:57:40.418Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18008797",
   "criminal_case_number": "18008797",
@@ -24,19 +24,94 @@
       "name": "CHARLES HOLMES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CHARLES HOLMES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2019-01-22T13:42:00.000Z",
+      "docketEntryComment": "DA MOT TO DISM PER 1381 FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-06-18T11:47:00.000Z",
+      "docketEntryComment": "PD MOTION TO ADD TO CALENDAR TO TRAIL #18008470",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2019-01-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DA MOT TO DISM PER 1381/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:ON IN ERROR, THIS IS NOT A CHARGED CASE/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO TRAIL/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: NO APPEARANCE BY DEFENDANT/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-06-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN FELONY DOCKET # 18008470/BAIL:50,000/CONTD:TO TRAIL #18008470/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2019-01-24 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2019-01-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-07-02 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2018-07-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-06-19 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2018-06-19",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "8888888",
+    "filed_date": "2018-06-19",
+    "defendant": "CHARLES HOLMES",
+    "searched_key": "HOLMES/CH",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/18008797.json",
     "searched_last_name": "HOLMES",
     "searched_first_prefix": "CH",
-    "charges": "8888888",
     "row": {
       "DEFENDANTNAME": "CHARLES HOLMES",
       "CASENUMBER": "CRI-18008797",
@@ -45,11 +120,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3877382",
+  "docket_entries": [
+    {
+      "filedDate": "2019-01-22T13:42:00.000Z",
+      "docketEntryComment": "DA MOT TO DISM PER 1381 FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-01-22T13:42:00.000Z",
+      "description": "DA MOT TO DISM PER 1381 FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-06-18T11:47:00.000Z",
+      "docketEntryComment": "PD MOTION TO ADD TO CALENDAR TO TRAIL #18008470",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-06-18T11:47:00.000Z",
+      "description": "PD MOTION TO ADD TO CALENDAR TO TRAIL #18008470",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2019-01-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL:DA MOT TO DISM PER 1381/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:ON IN ERROR, THIS IS NOT A CHARGED CASE/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2019-01-24T09:00:00.000Z",
+      "description": "/CAL:DA MOT TO DISM PER 1381/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:ON IN ERROR, THIS IS NOT A CHARGED CASE/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO TRAIL/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: NO APPEARANCE BY DEFENDANT/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-07-02T09:00:00.000Z",
+      "description": "/CAL:TO TRAIL/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON: NO APPEARANCE BY DEFENDANT/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-06-19T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO JOIN FELONY DOCKET # 18008470/BAIL:50,000/CONTD:TO TRAIL #18008470/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-06-19T09:00:00.000Z",
+      "description": "/CAL:TO JOIN FELONY DOCKET # 18008470/BAIL:50,000/CONTD:TO TRAIL #18008470/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18008797",
-    "portal_case_id": "",
+    "portal_case_id": "3877382",
     "display_case_number": "CRI-18008797",
     "defendant": "CHARLES HOLMES",
     "filed_date": "2018-06-19",
@@ -60,11 +186,42 @@
       "filed_date": "2018-06-19"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CHARLES HOLMES, and date of filing 2018-06-19. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CHARLES HOLMES, date of filing, 2018-06-19, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:57:41.117Z",
+  "portal_case_id": "3877382",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18008797",
+      "defendant": "CHARLES HOLMES",
+      "filed_date": "2018-06-19"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3877382"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.241543+00:00"
 }

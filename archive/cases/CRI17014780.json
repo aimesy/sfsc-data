@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:00:25.886Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:05:05.964Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17014780",
   "criminal_case_number": "17014780",
@@ -24,19 +24,134 @@
       "name": "LORI JOHNSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "LORI JOHNSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-12-28T12:10:00.000Z",
+      "docketEntryComment": "DEFT'S MOTION TO DISMISS (SERNA) FILED AT INSISTENCE",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-10-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:NIKITA SAINI DPD APPEARED FOR PD OFFICE ON BEHALF OF THE DEFENDANT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:PRETRIAL CONFERENCE/DOPU:NO DISPO/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-01-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRETRIAL CONFERENCE/MO PC 1385:INTEREST OF JUSTICE/VD:TRIAL DATE ON01-11-18/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-12-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FINAL TO SET OR DISPOSITION/DAWT/NTW/LD:01-25-18/CONTD:PRETRIAL 01-05-18 AND TRIAL 01-11-18/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-12-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FURTHER PRETRIAL/DAWT/CONTD:FINAL SET OR DISPO/X:DOP IF DISPO/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-11-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/DAWT/CONTD:FURTHER PRETRIAL/X:DOP IF DISPO/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-01-05 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2018-01-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-12-26 9:00 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2017-12-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-12-13 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2017-12-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-11-27 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2017-11-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-10-13 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2017-10-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "NIKITA SAINI",
+      "type": "Public Defender"
+    },
+    {
+      "name": "CHLOE MCLEAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "490.2(a) PC/M",
+    "filed_date": "2017-10-10",
+    "defendant": "LORI JOHNSON",
+    "searched_key": "JOHNSON/LO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/17014780.json",
     "searched_last_name": "JOHNSON",
     "searched_first_prefix": "LO",
-    "charges": "490.2(a) PC/M",
     "row": {
       "DEFENDANTNAME": "LORI JOHNSON",
       "CASENUMBER": "CRI-17014780",
@@ -45,11 +160,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3864397",
+  "docket_entries": [
+    {
+      "filedDate": "2017-12-28T12:10:00.000Z",
+      "docketEntryComment": "DEFT'S MOTION TO DISMISS (SERNA) FILED AT INSISTENCE",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-12-28T12:10:00.000Z",
+      "description": "DEFT'S MOTION TO DISMISS (SERNA) FILED AT INSISTENCE",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-10-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:NIKITA SAINI DPD APPEARED FOR PD OFFICE ON BEHALF OF THE DEFENDANT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:PRETRIAL CONFERENCE/DOPU:NO DISPO/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-10-13T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:NIKITA SAINI DPD APPEARED FOR PD OFFICE ON BEHALF OF THE DEFENDANT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/GTWM/987,2/CONTD:PRETRIAL CONFERENCE/DOPU:NO DISPO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-01-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL: PRETRIAL CONFERENCE/MO PC 1385:INTEREST OF JUSTICE/VD:TRIAL DATE ON01-11-18/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-01-05T09:00:00.000Z",
+      "description": "/CAL: PRETRIAL CONFERENCE/MO PC 1385:INTEREST OF JUSTICE/VD:TRIAL DATE ON01-11-18/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-12-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FINAL TO SET OR DISPOSITION/DAWT/NTW/LD:01-25-18/CONTD:PRETRIAL 01-05-18 AND TRIAL 01-11-18/DOPC/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-12-26T09:00:00.000Z",
+      "description": "/CAL:FINAL TO SET OR DISPOSITION/DAWT/NTW/LD:01-25-18/CONTD:PRETRIAL 01-05-18 AND TRIAL 01-11-18/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-12-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:FURTHER PRETRIAL/DAWT/CONTD:FINAL SET OR DISPO/X:DOP IF DISPO/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2017-12-13T09:00:00.000Z",
+      "description": "/CAL:FURTHER PRETRIAL/DAWT/CONTD:FINAL SET OR DISPO/X:DOP IF DISPO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-11-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/DAWT/CONTD:FURTHER PRETRIAL/X:DOP IF DISPO/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2017-11-27T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/DAWT/CONTD:FURTHER PRETRIAL/X:DOP IF DISPO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17014780",
-    "portal_case_id": "",
+    "portal_case_id": "3864397",
     "display_case_number": "CRI-17014780",
     "defendant": "LORI JOHNSON",
     "filed_date": "2017-10-10",
@@ -59,12 +235,68 @@
       "defendant": "LORI JOHNSON",
       "filed_date": "2017-10-10"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "490.2(a) PC/M",
+    "charge_rows": [
+      {
+        "raw": "490.2(a) PC/M",
+        "title": "Penal Code § 490.2(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 490.2(a)",
+        "code_system": "PC",
+        "section": "490.2(a)",
+        "citation": "Penal Code § 490.2(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, LORI JOHNSON, and date of filing 2017-10-10. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, LORI JOHNSON, date of filing, 2017-10-10, and charges in the case: 490.2(a) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "490.2(a) PC/M",
+      "title": "Penal Code § 490.2(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 490.2(a)",
+      "code_system": "PC",
+      "section": "490.2(a)",
+      "citation": "Penal Code § 490.2(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=490.2.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:05:06.635Z",
+  "portal_case_id": "3864397",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17014780",
+      "defendant": "LORI JOHNSON",
+      "filed_date": "2017-10-10"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3864397"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.601343+00:00"
 }

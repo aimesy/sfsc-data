@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:48:25.976Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:07:56.818Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17015669",
   "criminal_case_number": "17015669",
@@ -24,11 +24,81 @@
       "name": "VICTORIANO MENDOZA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "VICTORIANO MENDOZA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-11-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, TRAILING #17015088 & #17009382/TEXT:DEFT ADV & PERS WVS CONST& CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:1/NOLO/CO:NEGOTIATED DISPOSITION/ARBUCKLE/DOP/INTC/VD:TRIAL DATE OF 11-17-17 IN DEPT, 17/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-10-25T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:COUNSEL RESERVES THE RIGHT TO DEMUR,/NTW/LDTR:11-27-17/987,2/BAIL:20,000/CONTD:TO JOIN 17015088 & 17009382/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-11-29T09:00:00.000Z",
+      "docketEntryComment": "/TWS/CH1:CJ 41D/CTS:41/VF2:150/COA:40/ICNA/COLLECT/4019HALF/CCC:CASES #17009382, #17015088, & #17015669/INTC/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-11-29 9:00 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2017-11-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-11-08 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2017-11-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-10-25 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2017-10-25",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SCOTT GRANT",
+      "type": "Public Defender"
+    },
+    {
+      "name": "FREDERICK WASHINGTON",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3865261",
+  "docket_entries": [
+    {
+      "filedDate": "2017-11-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET, TRAILING #17015088 & #17009382/TEXT:DEFT ADV & PERS WVS CONST& CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:1/NOLO/CO:NEGOTIATED DISPOSITION/ARBUCKLE/DOP/INTC/VD:TRIAL DATE OF 11-17-17 IN DEPT, 17/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-11-08T09:00:00.000Z",
+      "description": "/CAL:TO SET, TRAILING #17015088 & #17009382/TEXT:DEFT ADV & PERS WVS CONST& CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL:1/NOLO/CO:NEGOTIATED DISPOSITION/ARBUCKLE/DOP/INTC/VD:TRIAL DATE OF 11-17-17 IN DEPT, 17/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-10-25T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:COUNSEL RESERVES THE RIGHT TO DEMUR,/NTW/LDTR:11-27-17/987,2/BAIL:20,000/CONTD:TO JOIN 17015088 & 17009382/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-10-25T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/X:COUNSEL RESERVES THE RIGHT TO DEMUR,/NTW/LDTR:11-27-17/987,2/BAIL:20,000/CONTD:TO JOIN 17015088 & 17009382/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-11-29T09:00:00.000Z",
+      "docketEntryComment": "/TWS/CH1:CJ 41D/CTS:41/VF2:150/COA:40/ICNA/COLLECT/4019HALF/CCC:CASES #17009382, #17015088, & #17015669/INTC/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-11-29T09:00:00.000Z",
+      "description": "/TWS/CH1:CJ 41D/CTS:41/VF2:150/COA:40/ICNA/COLLECT/4019HALF/CCC:CASES #17009382, #17015088, & #17015669/INTC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17015669",
-    "portal_case_id": "",
+    "portal_case_id": "3865261",
     "display_case_number": "CRI-17015669",
     "defendant": "VICTORIANO MENDOZA",
     "filed_date": "2017-10-25",
@@ -60,11 +161,58 @@
       "filed_date": "2017-10-25"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "166(a)(4) PC/M",
+    "charge_rows": [
+      {
+        "raw": "166(a)(4) PC/M",
+        "title": "Penal Code § 166(a)(4)",
+        "title_source": "programmatic_citation",
+        "code": "PC 166(a)(4)",
+        "code_system": "PC",
+        "section": "166(a)(4)",
+        "citation": "Penal Code § 166(a)(4)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, VICTORIANO MENDOZA, and date of filing 2017-10-25. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, VICTORIANO MENDOZA, date of filing, 2017-10-25, and charges in the case: 166(a)(4) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "166(a)(4) PC/M",
+      "title": "Penal Code § 166(a)(4)",
+      "title_source": "programmatic_citation",
+      "code": "PC 166(a)(4)",
+      "code_system": "PC",
+      "section": "166(a)(4)",
+      "citation": "Penal Code § 166(a)(4)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:07:57.438Z",
+  "portal_case_id": "3865261",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17015669",
+      "defendant": "VICTORIANO MENDOZA",
+      "filed_date": "2017-10-25"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3865261"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T13:21:37.800Z"
 }

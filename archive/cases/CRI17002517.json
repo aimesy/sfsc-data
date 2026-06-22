@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:27:55.054Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:01:44.330Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17002517",
   "criminal_case_number": "17002517",
@@ -24,11 +24,59 @@
       "name": "AMEEN JAMEL THOMAS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "AMEEN JAMEL THOMAS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-02-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL: FUGITIVE ARRAIGNMENT/X: SFPD FUGITIVE OFFICER ROBERT HART APPEARING//X: DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS ID AND WAIVES        EXTRADITION/ /EXHMA: THE PEOPLE'S 1 - STATE OF GEORGIA BOARD OF PAROLE LETTERLIFTING PROLE HOLD/MO PC 1385:STATE OF GEORGIA PAROLE HOLD LIFTED, PROOF SHOWN TO COURT /X: DA MAKES ORAL MOTION TO DISMISS IN INTEREST OF JUSTICE/MO GRTD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-02-23T09:01:00.000Z",
+      "docketEntryComment": "MOSSISSEY VS, BREWER 408 US 471 AND WILLIAMS 230 CAL APP 636/MO GRTD/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-02-24 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2017-02-24",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-02-23 9:00 AM",
+      "hearingType": "PC 3056 Petition to Revoke Parole",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 1,
+      "court_date": "2017-02-23",
+      "hearing_time": "9:00 AM",
+      "matters": "PC 3056 Petition to Revoke Parole",
+      "hearing_type": "PC 3056 Petition to Revoke Parole",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ADAM LIPSON",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3852421",
+  "docket_entries": [
+    {
+      "filedDate": "2017-02-24T09:00:00.000Z",
+      "docketEntryComment": "/CAL: FUGITIVE ARRAIGNMENT/X: SFPD FUGITIVE OFFICER ROBERT HART APPEARING//X: DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS ID AND WAIVES        EXTRADITION/ /EXHMA: THE PEOPLE'S 1 - STATE OF GEORGIA BOARD OF PAROLE LETTERLIFTING PROLE HOLD/MO PC 1385:STATE OF GEORGIA PAROLE HOLD LIFTED, PROOF SHOWN TO COURT /X: DA MAKES ORAL MOTION TO DISMISS IN INTEREST OF JUSTICE/MO GRTD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-02-24T09:00:00.000Z",
+      "description": "/CAL: FUGITIVE ARRAIGNMENT/X: SFPD FUGITIVE OFFICER ROBERT HART APPEARING//X: DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS ID AND WAIVES EXTRADITION/ /EXHMA: THE PEOPLE'S 1 - STATE OF GEORGIA BOARD OF PAROLE LETTERLIFTING PROLE HOLD/MO PC 1385:STATE OF GEORGIA PAROLE HOLD LIFTED, PROOF SHOWN TO COURT /X: DA MAKES ORAL MOTION TO DISMISS IN INTEREST OF JUSTICE/MO GRTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-02-23T09:01:00.000Z",
+      "docketEntryComment": "MOSSISSEY VS, BREWER 408 US 471 AND WILLIAMS 230 CAL APP 636/MO GRTD/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-02-23T09:01:00.000Z",
+      "description": "MOSSISSEY VS, BREWER 408 US 471 AND WILLIAMS 230 CAL APP 636/MO GRTD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17002517",
-    "portal_case_id": "",
+    "portal_case_id": "3852421",
     "display_case_number": "CRI-17002517",
     "defendant": "AMEEN JAMEL THOMAS",
     "filed_date": "2017-02-22",
@@ -59,12 +128,51 @@
       "defendant": "AMEEN JAMEL THOMAS",
       "filed_date": "2017-02-22"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, AMEEN JAMEL THOMAS, and date of filing 2017-02-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, AMEEN JAMEL THOMAS, date of filing, 2017-02-22, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:01:44.969Z",
+  "portal_case_id": "3852421",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17002517",
+      "defendant": "AMEEN JAMEL THOMAS",
+      "filed_date": "2017-02-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3852421"
+  }
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:04:14.368Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:10:04.816Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI16018331",
   "criminal_case_number": "16018331",
@@ -24,10 +24,84 @@
       "name": "ALFREDO RUIZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALFREDO RUIZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2016-10-26T09:15:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/3455REIN/CH1:CJ 16D/CTS:16/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-10-13T11:45:00.000Z",
+      "docketEntryComment": "/CAL:DA MTR FILING/CONTD TS DA MTR/WIAMTR/S09/TBH:16018256/PROB ADM REV/SHER/NB/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-10-13T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOTION/CTORD:PRCS BE ADMIN RVKD/SHER/NB/TEXT:TRANS TO DEPT 9/TRANS 9:FORTHWITH TO JOIN 16018256/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-10-26 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2016-10-26",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-10-26 9:00 AM",
+      "hearingType": "To Set Motion to Revoke Probation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2016-10-26",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set Motion to Revoke Probation Hearing",
+      "hearing_type": "To Set Motion to Revoke Probation Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-10-13 11:45 AM",
+      "hearingType": "Motion to Revoke Probation Filing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 2,
+      "court_date": "2016-10-13",
+      "hearing_time": "11:45 AM",
+      "matters": "Motion to Revoke Probation Filing",
+      "hearing_type": "Motion to Revoke Probation Filing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-10-13 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 3,
+      "court_date": "2016-10-13",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +119,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3845660",
+  "docket_entries": [
+    {
+      "filedDate": "2016-10-26T09:15:00.000Z",
+      "docketEntryComment": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/3455REIN/CH1:CJ 16D/CTS:16/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-10-26T09:15:00.000Z",
+      "description": "/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/3455REIN/CH1:CJ 16D/CTS:16/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-10-13T11:45:00.000Z",
+      "docketEntryComment": "/CAL:DA MTR FILING/CONTD TS DA MTR/WIAMTR/S09/TBH:16018256/PROB ADM REV/SHER/NB/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-10-13T11:45:00.000Z",
+      "description": "/CAL:DA MTR FILING/CONTD TS DA MTR/WIAMTR/S09/TBH:16018256/PROB ADM REV/SHER/NB/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-10-13T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOTION/CTORD:PRCS BE ADMIN RVKD/SHER/NB/TEXT:TRANS TO DEPT 9/TRANS 9:FORTHWITH TO JOIN 16018256/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-10-13T11:30:00.000Z",
+      "description": "/CAL:APD 3455PC MOTION/CTORD:PRCS BE ADMIN RVKD/SHER/NB/TEXT:TRANS TO DEPT 9/TRANS 9:FORTHWITH TO JOIN 16018256/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "16018331",
-    "portal_case_id": "",
+    "portal_case_id": "3845660",
     "display_case_number": "CRI-16018331",
     "defendant": "ALFREDO RUIZ",
     "filed_date": "2016-10-13",
@@ -59,12 +164,68 @@
       "defendant": "ALFREDO RUIZ",
       "filed_date": "2016-10-13"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALFREDO RUIZ, and date of filing 2016-10-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALFREDO RUIZ, date of filing, 2016-10-13, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:10:05.478Z",
+  "portal_case_id": "3845660",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-16018331",
+      "defendant": "ALFREDO RUIZ",
+      "filed_date": "2016-10-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3845660"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T13:47:43.598Z"
 }

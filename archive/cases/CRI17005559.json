@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:28:15.413Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:03:26.038Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17005559",
   "criminal_case_number": "17005559",
@@ -24,19 +24,107 @@
       "name": "MELVIN JACKSON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MELVIN JACKSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-05-10T13:30:00.000Z",
+      "docketEntryComment": "/TN:MELVIN JACKSON/CAL:DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKEOR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/3000ADM/3000REIN/PAJ:22D/X:PAROLEE SHALL RECEIVE CREDIT FOR 22 DAYS,/4019HALF/X:UP TO 136 DAYS COUNTY JAIL SUSPENDED/X:DEFENANT ADMITS ALLEGATION 3 WITH TIME LOST/X:PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONSGIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-04-20T13:30:00.000Z",
+      "docketEntryComment": "CONTD PTR HEARING-(PAROLE)/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANTTO PC3000,08/PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONSAND THE COURT FINDS PROBABLE CAUSE,/NB/CONTD:PREHEARING CONFERENCE/DOP/X:DEFENDANT ENTERS A 15TH DAY NTW/LD:04-28-17/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-05-03T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE PROGRESS REPORT/SHER/NB/CONTD:PHC ON PAROLE VIOLATION/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-04-26T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE PROGRESS REPORT /CONT/DOP/OR/X:DEFENDANT WAIVES 45TH DAY/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-05-10 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 0,
+      "court_date": "2017-05-10",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-05-03 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 1,
+      "court_date": "2017-05-03",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-04-26 1:30 PM",
+      "hearingType": "Parole Revocation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 2,
+      "court_date": "2017-04-26",
+      "hearing_time": "1:30 PM",
+      "matters": "Parole Revocation Hearing",
+      "hearing_type": "Parole Revocation Hearing",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-04-20 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 31",
+      "__index": 3,
+      "court_date": "2017-04-20",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 31",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "REBECCA WAGNER",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "3000.08 PC/F XX/X",
+    "filed_date": "2017-04-20",
+    "defendant": "MELVIN JACKSON",
+    "searched_key": "JACKSON/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/17005559.json",
     "searched_last_name": "JACKSON",
     "searched_first_prefix": "JO",
-    "charges": "3000.08 PC/F XX/X",
     "row": {
       "DEFENDANTNAME": "MELVIN JACKSON",
       "CASENUMBER": "CRI-17005559",
@@ -45,11 +133,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3855397",
+  "docket_entries": [
+    {
+      "filedDate": "2017-05-10T13:30:00.000Z",
+      "docketEntryComment": "/TN:MELVIN JACKSON/CAL:DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKEOR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/3000ADM/3000REIN/PAJ:22D/X:PAROLEE SHALL RECEIVE CREDIT FOR 22 DAYS,/4019HALF/X:UP TO 136 DAYS COUNTY JAIL SUSPENDED/X:DEFENANT ADMITS ALLEGATION 3 WITH TIME LOST/X:PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONSGIVEN BY THE PAROLE AGENT,/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-05-10T13:30:00.000Z",
+      "description": "/TN:MELVIN JACKSON/CAL:DISTRICT ATTORNEY'S OR PAROLE'S PETITION TO REVOKEOR MODIFY PAROLE PURSUANT TO PC3000,08/PDP/3000ADM/3000REIN/PAJ:22D/X:PAROLEE SHALL RECEIVE CREDIT FOR 22 DAYS,/4019HALF/X:UP TO 136 DAYS COUNTY JAIL SUSPENDED/X:DEFENANT ADMITS ALLEGATION 3 WITH TIME LOST/X:PAROLEE ORDERED TO REPORT TO PAROLE UPON RELEASE AND FOLLOW INSTRUCTIONSGIVEN BY THE PAROLE AGENT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-04-20T13:30:00.000Z",
+      "docketEntryComment": "CONTD PTR HEARING-(PAROLE)/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANTTO PC3000,08/PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONSAND THE COURT FINDS PROBABLE CAUSE,/NB/CONTD:PREHEARING CONFERENCE/DOP/X:DEFENDANT ENTERS A 15TH DAY NTW/LD:04-28-17/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-04-20T13:30:00.000Z",
+      "description": "CONTD PTR HEARING-(PAROLE)/CAL:PAROLE'S PETITION TO REVOKE PAROLE PURSUANTTO PC3000,08/PDP/WIAPTR/X: PAROLEE ENTERS A NOT TRUE AS TO THE ALLEGATIONSAND THE COURT FINDS PROBABLE CAUSE,/NB/CONTD:PREHEARING CONFERENCE/DOP/X:DEFENDANT ENTERS A 15TH DAY NTW/LD:04-28-17/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-05-03T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE PROGRESS REPORT/SHER/NB/CONTD:PHC ON PAROLE VIOLATION/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-05-03T13:30:00.000Z",
+      "description": "/CAL:PAROLE PROGRESS REPORT/SHER/NB/CONTD:PHC ON PAROLE VIOLATION/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-04-26T13:30:00.000Z",
+      "docketEntryComment": "/CAL:PAROLE PROGRESS REPORT /CONT/DOP/OR/X:DEFENDANT WAIVES 45TH DAY/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-04-26T13:30:00.000Z",
+      "description": "/CAL:PAROLE PROGRESS REPORT /CONT/DOP/OR/X:DEFENDANT WAIVES 45TH DAY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17005559",
-    "portal_case_id": "",
+    "portal_case_id": "3855397",
     "display_case_number": "CRI-17005559",
     "defendant": "MELVIN JACKSON",
     "filed_date": "2017-04-20",
@@ -59,12 +188,68 @@
       "defendant": "MELVIN JACKSON",
       "filed_date": "2017-04-20"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC3000",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3000.08 PC/F XX/X",
+    "charge_rows": [
+      {
+        "raw": "3000.08 PC/F XX/X",
+        "title": "XX/X",
+        "title_source": "criminal_index_text",
+        "code": "PC 3000.08",
+        "code_system": "PC",
+        "section": "3000.08",
+        "citation": "Penal Code § 3000.08",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MELVIN JACKSON, and date of filing 2017-04-20. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MELVIN JACKSON, date of filing, 2017-04-20, and charges in the case: 3000.08 PC/F XX/X.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3000.08 PC/F XX/X",
+      "title": "XX/X",
+      "title_source": "criminal_index_text",
+      "code": "PC 3000.08",
+      "code_system": "PC",
+      "section": "3000.08",
+      "citation": "Penal Code § 3000.08",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3000.08.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:03:26.723Z",
+  "portal_case_id": "3855397",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17005559",
+      "defendant": "MELVIN JACKSON",
+      "filed_date": "2017-04-20"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3855397"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.231986+00:00"
 }

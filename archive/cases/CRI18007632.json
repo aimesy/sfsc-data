@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:24:12.077Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:57:01.467Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18007632",
   "criminal_case_number": "18007632",
@@ -24,11 +24,41 @@
       "name": "JIUNNMING JIM LEE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JIUNNMING JIM LEE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-05-17T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COW",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-05-17 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 0,
+      "court_date": "2018-05-17",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "XOCHITL CARRION",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +75,22 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3876238",
+  "docket_entries": [
+    {
+      "filedDate": "2018-05-17T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COW",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-05-17T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COW",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18007632",
-    "portal_case_id": "",
+    "portal_case_id": "3876238",
     "display_case_number": "CRI-18007632",
     "defendant": "JIUNNMING JIM LEE",
     "filed_date": "2018-05-17",
@@ -60,11 +101,83 @@
       "filed_date": "2018-05-17"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "368(c) PC/M 243(e)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "368(c) PC/M",
+        "title": "Penal Code § 368(c)",
+        "title_source": "programmatic_citation",
+        "code": "PC 368(c)",
+        "code_system": "PC",
+        "section": "368(c)",
+        "citation": "Penal Code § 368(c)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=368.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=368.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "243(e)(1) PC/M",
+        "title": "Penal Code § 243(e)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 243(e)(1)",
+        "code_system": "PC",
+        "section": "243(e)(1)",
+        "citation": "Penal Code § 243(e)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JIUNNMING JIM LEE, and date of filing 2018-05-17. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JIUNNMING JIM LEE, date of filing, 2018-05-17, and charges in the case: 368(c) PC/M 243(e)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "368(c) PC/M",
+      "title": "Penal Code § 368(c)",
+      "title_source": "programmatic_citation",
+      "code": "PC 368(c)",
+      "code_system": "PC",
+      "section": "368(c)",
+      "citation": "Penal Code § 368(c)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=368.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=368.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "243(e)(1) PC/M",
+      "title": "Penal Code § 243(e)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 243(e)(1)",
+      "code_system": "PC",
+      "section": "243(e)(1)",
+      "citation": "Penal Code § 243(e)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=243.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:57:02.098Z",
+  "portal_case_id": "3876238",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18007632",
+      "defendant": "JIUNNMING JIM LEE",
+      "filed_date": "2018-05-17"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3876238"
+  }
 }

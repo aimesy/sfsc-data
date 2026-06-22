@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:20:06.434Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:20:38.714Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15024663",
   "criminal_case_number": "15024663",
@@ -24,11 +24,73 @@
       "name": "DERIC F RUSSELL",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DERIC F RUSSELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-11-17T11:54:00.000Z",
+      "docketEntryComment": "DA'S OPPOSITION DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-11-12T14:09:00.000Z",
+      "docketEntryComment": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-11-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG & MTS/MO138583/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-11-06T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:11-23-15/987,2/BAIL:35,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-11-20 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 0,
+      "court_date": "2015-11-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-11-06 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 9",
+      "__index": 1,
+      "court_date": "2015-11-06",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 9",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "KWIXUAN MALOOF",
+      "type": "Public Defender"
+    },
+    {
+      "name": "ANDREW GANZ",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +107,52 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3823807",
+  "docket_entries": [
+    {
+      "filedDate": "2015-11-17T11:54:00.000Z",
+      "docketEntryComment": "DA'S OPPOSITION DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-11-17T11:54:00.000Z",
+      "description": "DA'S OPPOSITION DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-11-12T14:09:00.000Z",
+      "docketEntryComment": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-11-12T14:09:00.000Z",
+      "description": "DEFT'S PC1538,5 MOTION TO SUPPRESS EVIDENCE FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-11-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIM HRG & MTS/MO138583/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-11-20T09:00:00.000Z",
+      "description": "/CAL:PRELIM HRG & MTS/MO138583/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-11-06T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:11-23-15/987,2/BAIL:35,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-11-06T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:11-23-15/987,2/BAIL:35,000/CONTD:PRELIMINARY HEARING/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15024663",
-    "portal_case_id": "",
+    "portal_case_id": "3823807",
     "display_case_number": "CRI-15024663",
     "defendant": "DERIC F RUSSELL",
     "filed_date": "2015-11-05",
@@ -59,12 +162,67 @@
       "defendant": "DERIC F RUSSELL",
       "filed_date": "2015-11-05"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC1538",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "11379(a) HS/F",
+    "charge_rows": [
+      {
+        "raw": "11379(a) HS/F",
+        "title": "Health and Safety Code § 11379(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11379(a)",
+        "code_system": "HS",
+        "section": "11379(a)",
+        "citation": "Health and Safety Code § 11379(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DERIC F RUSSELL, and date of filing 2015-11-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DERIC F RUSSELL, date of filing, 2015-11-05, and charges in the case: 11379(a) HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11379(a) HS/F",
+      "title": "Health and Safety Code § 11379(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11379(a)",
+      "code_system": "HS",
+      "section": "11379(a)",
+      "citation": "Health and Safety Code § 11379(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11379.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:20:39.447Z",
+  "portal_case_id": "3823807",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15024663",
+      "defendant": "DERIC F RUSSELL",
+      "filed_date": "2015-11-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3823807"
+  }
 }

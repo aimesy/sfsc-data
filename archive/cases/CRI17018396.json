@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T20:55:38.196Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:07:12.108Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17018396",
   "criminal_case_number": "17018396",
@@ -24,11 +24,59 @@
       "name": "MICHAEL A LUNA",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MICHAEL A LUNA",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-12-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET APD 3455PC HEARING/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/3455REIN /CH1:CJ 150D/CTS: 10  /4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-12-15T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOTION/X:JUDGE BRUCE CHAN APPEARING,/WIAPRCS/SHER/NB/X:PRCS IS ADM REVOKED/CONTD:TO SET APD 3455PC HRG/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-12-22 9:00 AM",
+      "hearingType": "To Set MTR PRCS Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2017-12-22",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set MTR PRCS Hearing",
+      "hearing_type": "To Set MTR PRCS Hearing",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-12-15 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 1,
+      "court_date": "2017-12-15",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "PHOENIX STREETS",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +93,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3867927",
+  "docket_entries": [
+    {
+      "filedDate": "2017-12-22T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TO SET APD 3455PC HEARING/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/3455REIN /CH1:CJ 150D/CTS: 10  /4019HALF/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-12-22T09:00:00.000Z",
+      "description": "/CAL: TO SET APD 3455PC HEARING/CAL:PETITION TO REVOKE POST RELEASE COMMUNITY SUPERVISION PURSUANT TO PC3455/3455ADV/3455ADM/3455REIN /CH1:CJ 150D/CTS: 10 /4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-12-15T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOTION/X:JUDGE BRUCE CHAN APPEARING,/WIAPRCS/SHER/NB/X:PRCS IS ADM REVOKED/CONTD:TO SET APD 3455PC HRG/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-12-15T11:30:00.000Z",
+      "description": "/CAL:APD 3455PC MOTION/X:JUDGE BRUCE CHAN APPEARING,/WIAPRCS/SHER/NB/X:PRCS IS ADM REVOKED/CONTD:TO SET APD 3455PC HRG/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17018396",
-    "portal_case_id": "",
+    "portal_case_id": "3867927",
     "display_case_number": "CRI-17018396",
     "defendant": "MICHAEL A LUNA",
     "filed_date": "2017-12-15",
@@ -59,12 +128,68 @@
       "defendant": "MICHAEL A LUNA",
       "filed_date": "2017-12-15"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC3455",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MICHAEL A LUNA, and date of filing 2017-12-15. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MICHAEL A LUNA, date of filing, 2017-12-15, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:07:12.760Z",
+  "portal_case_id": "3867927",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17018396",
+      "defendant": "MICHAEL A LUNA",
+      "filed_date": "2017-12-15"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3867927"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T14:38:27.988Z"
 }

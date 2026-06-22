@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:57:40.686Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:03:31.747Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17010988",
   "criminal_case_number": "17010988",
@@ -24,19 +24,129 @@
       "name": "YAQUELINNE T HERNANDEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "YAQUELINNE T HERNANDEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-08-18T09:15:00.000Z",
+      "docketEntryComment": "/CAL: DISPO/X: THE DA ORALLY AMENDS THE COMPLAINT TO ADD COUNT FOR AS:/X:594B2A PENAL CODE - MISDEMEANOR/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTSENT PLEA OF NL/DEFT ADV NL: 4/NOLO/CO:NEGOTIATED DISPOSITION/REMA/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-08-01T13:30:00.000Z",
+      "docketEntryComment": "/INTORD:SPANISH/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:10,000/NTW/LDTR:08-31-17/CONTD:PRETRIAL CONFERENCE/DOP/CONTD:TRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-08-18T09:30:00.000Z",
+      "docketEntryComment": "/CAL: SENTENCING/TWS/CH4:ISS:PROB 2 Y:PJ 22D /CTS:22 /VF2:150/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-08-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/TEXT:TRANS TO DEPT 14/TRANS 14:FORTHWITH FOR DISPO/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-08-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/X:TRIAL DATE ON 08-18-17 IS CONFIRMED/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-08-18 9:30 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2017-08-18",
+      "hearing_time": "9:30 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-08-18 9:15 AM",
+      "hearingType": "Set/Dispo",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 1,
+      "court_date": "2017-08-18",
+      "hearing_time": "9:15 AM",
+      "matters": "Set/Dispo",
+      "hearing_type": "Set/Dispo",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-08-18 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2017-08-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-08-07 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2017-08-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-08-01 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2017-08-01",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ERIC FLEISCHAKER",
+      "type": "Public Defender"
+    },
+    {
+      "name": "SHEILA JOHNSON",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "459 PC/M 594(b)(2)(A) PC/M 466 PC/M 594(b)(2)(A) PC/M",
+    "filed_date": "2017-08-01",
+    "defendant": "YAQUELINNE T HERNANDEZ",
+    "searched_key": "HERNANDEZ/YA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box08-cases/17010988.json",
     "searched_last_name": "HERNANDEZ",
     "searched_first_prefix": "YA",
-    "charges": "459 PC/M 594(b)(2)(A) PC/M 466 PC/M 594(b)(2)(A) PC/M",
     "row": {
       "DEFENDANTNAME": "YAQUELINNE T HERNANDEZ",
       "CASENUMBER": "CRI-17010988",
@@ -45,11 +155,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3860699",
+  "docket_entries": [
+    {
+      "filedDate": "2017-08-18T09:15:00.000Z",
+      "docketEntryComment": "/CAL: DISPO/X: THE DA ORALLY AMENDS THE COMPLAINT TO ADD COUNT FOR AS:/X:594B2A PENAL CODE - MISDEMEANOR/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTSENT PLEA OF NL/DEFT ADV NL: 4/NOLO/CO:NEGOTIATED DISPOSITION/REMA/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-08-18T09:15:00.000Z",
+      "description": "/CAL: DISPO/X: THE DA ORALLY AMENDS THE COMPLAINT TO ADD COUNT FOR AS:/X:594B2A PENAL CODE - MISDEMEANOR/TEXT:DEFT ADV & PERS WVS CONST & CITZ RTSENT PLEA OF NL/DEFT ADV NL: 4/NOLO/CO:NEGOTIATED DISPOSITION/REMA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-08-01T13:30:00.000Z",
+      "docketEntryComment": "/INTORD:SPANISH/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:10,000/NTW/LDTR:08-31-17/CONTD:PRETRIAL CONFERENCE/DOP/CONTD:TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-08-01T13:30:00.000Z",
+      "description": "/INTORD:SPANISH/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/BAIL:10,000/NTW/LDTR:08-31-17/CONTD:PRETRIAL CONFERENCE/DOP/CONTD:TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-08-18T09:30:00.000Z",
+      "docketEntryComment": "/CAL: SENTENCING/TWS/CH4:ISS:PROB 2 Y:PJ 22D /CTS:22 /VF2:150/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-08-18T09:30:00.000Z",
+      "description": "/CAL: SENTENCING/TWS/CH4:ISS:PROB 2 Y:PJ 22D /CTS:22 /VF2:150/PROBREVFN/COA:40/ICNA/COLLECT/OBEY/ACCEP/4019HALF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-08-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/TEXT:TRANS TO DEPT 14/TRANS 14:FORTHWITH FOR DISPO/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-08-18T09:00:00.000Z",
+      "description": "/CAL:TRIAL/TEXT:TRANS TO DEPT 14/TRANS 14:FORTHWITH FOR DISPO/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-08-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE/X:TRIAL DATE ON 08-18-17 IS CONFIRMED/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2017-08-07T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE/X:TRIAL DATE ON 08-18-17 IS CONFIRMED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17010988",
-    "portal_case_id": "",
+    "portal_case_id": "3860699",
     "display_case_number": "CRI-17010988",
     "defendant": "YAQUELINNE T HERNANDEZ",
     "filed_date": "2017-08-01",
@@ -60,11 +221,110 @@
       "filed_date": "2017-08-01"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "459 PC/M 594(b)(2)(A) PC/M 466 PC/M 594(b)(2)(A) PC/M",
+    "charge_rows": [
+      {
+        "raw": "459 PC/M",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "594(b)(2)(A) PC/M",
+        "title": "Penal Code § 594(b)(2)(A)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(2)(A)",
+        "code_system": "PC",
+        "section": "594(b)(2)(A)",
+        "citation": "Penal Code § 594(b)(2)(A)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "466 PC/M",
+        "title": "Penal Code § 466",
+        "title_source": "programmatic_citation",
+        "code": "PC 466",
+        "code_system": "PC",
+        "section": "466",
+        "citation": "Penal Code § 466",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, YAQUELINNE T HERNANDEZ, and date of filing 2017-08-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, YAQUELINNE T HERNANDEZ, date of filing, 2017-08-01, and charges in the case: 459 PC/M 594(b)(2)(A) PC/M 466 PC/M 594(b)(2)(A) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/M",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "594(b)(2)(A) PC/M",
+      "title": "Penal Code § 594(b)(2)(A)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(2)(A)",
+      "code_system": "PC",
+      "section": "594(b)(2)(A)",
+      "citation": "Penal Code § 594(b)(2)(A)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "466 PC/M",
+      "title": "Penal Code § 466",
+      "title_source": "programmatic_citation",
+      "code": "PC 466",
+      "code_system": "PC",
+      "section": "466",
+      "citation": "Penal Code § 466",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:03:32.326Z",
+  "portal_case_id": "3860699",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17010988",
+      "defendant": "YAQUELINNE T HERNANDEZ",
+      "filed_date": "2017-08-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3860699"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.638858+00:00"
 }

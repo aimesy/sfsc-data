@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:19:04.752Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:16:23.740Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15027834",
   "criminal_case_number": "15027834",
@@ -24,19 +24,117 @@
       "name": "ALEX L GORDON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALEX L GORDON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2015-12-21T13:28:38.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2021-10-27T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-12-31T10:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3:ISS:CPROB:PROB 3 Y:PJ 4D/CTS:4/4019HALF/DEF:SHALL OBEY STAY AWAYORDER/VF2:150/PROBREVFN/COA:40/ICNA/VD:01-04-16 PRELIMINARY HEARING/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-12-22T13:30:00.000Z",
+      "docketEntryComment": "/CON: CLIFFORD GOULD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LDPX: 01-07-16/987,2/OR/CONTD: STATUS CONFERENCE RE PRELIMINARY HEARING/DOP/TE: THREE HOURS/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-12-31T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ADV & PER WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:3/REMA/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-12-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/LD:01-07-16/TE:3 HOURS/CONTD:FURTHER PREHEARING CONFERENCE ON 12-31-15 AND PRELIMINARY  HEARING ON 01-04-16/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2015-12-31 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 0,
+      "court_date": "2015-12-31",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-12-31 10:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 1,
+      "court_date": "2015-12-31",
+      "hearing_time": "10:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-12-29 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 2,
+      "court_date": "2015-12-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-12-22 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2015-12-22",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "CLIFFORD GOULD",
+      "type": "Conflict Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "459 PC/F 496(a) PC/M 466 PC/M",
+    "filed_date": "2015-12-22",
+    "defendant": "ALEX L GORDON",
+    "searched_key": "GORDON/AL",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/15027834.json",
     "searched_last_name": "GORDON",
     "searched_first_prefix": "AL",
-    "charges": "459 PC/F 496(a) PC/M 466 PC/M",
     "row": {
       "DEFENDANTNAME": "ALEX L GORDON",
       "CASENUMBER": "CRI-15027834",
@@ -45,11 +143,72 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3826918",
+  "docket_entries": [
+    {
+      "filedDate": "2015-12-21T13:28:38.000Z",
+      "docketEntryComment": "Complaint",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-12-21T13:28:38.000Z",
+      "description": "Complaint",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2021-10-27T00:00:00.000Z",
+      "docketEntryComment": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2021-10-27T00:00:00.000Z",
+      "description": "ORDER SUSPENDING ACTIVE COLLECTIONS, GC 25259,7-25259,95",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-12-31T10:15:00.000Z",
+      "docketEntryComment": "/TWS/CH3:ISS:CPROB:PROB 3 Y:PJ 4D/CTS:4/4019HALF/DEF:SHALL OBEY STAY AWAYORDER/VF2:150/PROBREVFN/COA:40/ICNA/VD:01-04-16 PRELIMINARY HEARING/COLLECT/OBEY/ACCEP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-12-31T10:15:00.000Z",
+      "description": "/TWS/CH3:ISS:CPROB:PROB 3 Y:PJ 4D/CTS:4/4019HALF/DEF:SHALL OBEY STAY AWAYORDER/VF2:150/PROBREVFN/COA:40/ICNA/VD:01-04-16 PRELIMINARY HEARING/COLLECT/OBEY/ACCEP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-12-22T13:30:00.000Z",
+      "docketEntryComment": "/CON: CLIFFORD GOULD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LDPX: 01-07-16/987,2/OR/CONTD: STATUS CONFERENCE RE PRELIMINARY HEARING/DOP/TE: THREE HOURS/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-12-22T13:30:00.000Z",
+      "description": "/CON: CLIFFORD GOULD/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LDPX: 01-07-16/987,2/OR/CONTD: STATUS CONFERENCE RE PRELIMINARY HEARING/DOP/TE: THREE HOURS/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-12-31T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ADV & PER WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:3/REMA/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2015-12-31T09:00:00.000Z",
+      "description": "/TEXT:DEFT ADV & PER WVS CONST & CITZ RTS ENT PLEA OF G/DEFT ADV RTS:3/REMA/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-12-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/LD:01-07-16/TE:3 HOURS/CONTD:FURTHER PREHEARING CONFERENCE ON 12-31-15 AND PRELIMINARY  HEARING ON 01-04-16/DOP/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2015-12-29T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/LD:01-07-16/TE:3 HOURS/CONTD:FURTHER PREHEARING CONFERENCE ON 12-31-15 AND PRELIMINARY HEARING ON 01-04-16/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15027834",
-    "portal_case_id": "",
+    "portal_case_id": "3826918",
     "display_case_number": "CRI-15027834",
     "defendant": "ALEX L GORDON",
     "filed_date": "2015-12-22",
@@ -59,12 +218,120 @@
       "defendant": "ALEX L GORDON",
       "filed_date": "2015-12-22"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "GC 25259",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "459 PC/F 496(a) PC/M 466 PC/M",
+    "charge_rows": [
+      {
+        "raw": "459 PC/F",
+        "title": "Penal Code § 459",
+        "title_source": "programmatic_citation",
+        "code": "PC 459",
+        "code_system": "PC",
+        "section": "459",
+        "citation": "Penal Code § 459",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "496(a) PC/M",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "466 PC/M",
+        "title": "Penal Code § 466",
+        "title_source": "programmatic_citation",
+        "code": "PC 466",
+        "code_system": "PC",
+        "section": "466",
+        "citation": "Penal Code § 466",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALEX L GORDON, and date of filing 2015-12-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALEX L GORDON, date of filing, 2015-12-22, and charges in the case: 459 PC/F 496(a) PC/M 466 PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "459 PC/F",
+      "title": "Penal Code § 459",
+      "title_source": "programmatic_citation",
+      "code": "PC 459",
+      "code_system": "PC",
+      "section": "459",
+      "citation": "Penal Code § 459",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=459.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "496(a) PC/M",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "466 PC/M",
+      "title": "Penal Code § 466",
+      "title_source": "programmatic_citation",
+      "code": "PC 466",
+      "code_system": "PC",
+      "section": "466",
+      "citation": "Penal Code § 466",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:16:24.413Z",
+  "portal_case_id": "3826918",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15027834",
+      "defendant": "ALEX L GORDON",
+      "filed_date": "2015-12-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3826918"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.784161+00:00"
 }

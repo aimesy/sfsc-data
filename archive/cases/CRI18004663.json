@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:21:45.502Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:54:59.018Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18004663",
   "criminal_case_number": "18004663",
@@ -24,19 +24,129 @@
       "name": "ALEJANDRO JOSE CARDENAS",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ALEJANDRO JOSE CARDENAS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-03-28T13:30:00.000Z",
+      "docketEntryComment": "/CAL:STATUS OF M99 CASE/X:CASE NUMBER 18004590 HAS BEEN DISPO'D ON 03-27-18/LDTR:04-25-18/ACM/BE/SA1:LYNN DOUGLAS ODOVOY/SA2:378 SWEENY ST, SF CA/SAORD2/SAORD3/SAORD/CONTD:JURY READINESS/DAWF/CONTD:JURY TRIAL/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-04-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:CASE WAS DISMISSED ON 04-13-18 IN D13/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-04-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL READINESS/MO PC 1385:THE PEOPLE ARE UNABLE TO SUSTAIN BURDEN/VD JURY TRIAL ON 04-16-18 IN D17/SATERM/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-03-27T13:30:00.000Z",
+      "docketEntryComment": "/CAL:STATUS OF M99 CASE 18004590/CONT/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-03-26T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/BAIL:5,000/LDTR: 04-25-18/CONTD:STATUS OF M99 CASE/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-04-16 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2018-04-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-04-13 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 1,
+      "court_date": "2018-04-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-03-28 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 2,
+      "court_date": "2018-03-28",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-03-27 1:30 PM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 3,
+      "court_date": "2018-03-27",
+      "hearing_time": "1:30 PM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-03-26 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 50",
+      "__index": 4,
+      "court_date": "2018-03-26",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 50",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "LAUREN SCHWEIZER",
+      "type": "Public Defender"
+    },
+    {
+      "name": "JULIA GONZALES",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "166(c)(1) PC/M",
+    "filed_date": "2018-03-26",
+    "defendant": "ALEJANDRO JOSE CARDENAS",
+    "searched_key": "CARDENAS/AL",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/18004663.json",
     "searched_last_name": "CARDENAS",
     "searched_first_prefix": "AL",
-    "charges": "166(c)(1) PC/M",
     "row": {
       "DEFENDANTNAME": "ALEJANDRO JOSE CARDENAS",
       "CASENUMBER": "CRI-18004663",
@@ -45,11 +155,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3873375",
+  "docket_entries": [
+    {
+      "filedDate": "2018-03-28T13:30:00.000Z",
+      "docketEntryComment": "/CAL:STATUS OF M99 CASE/X:CASE NUMBER 18004590 HAS BEEN DISPO'D ON 03-27-18/LDTR:04-25-18/ACM/BE/SA1:LYNN DOUGLAS ODOVOY/SA2:378 SWEENY ST, SF CA/SAORD2/SAORD3/SAORD/CONTD:JURY READINESS/DAWF/CONTD:JURY TRIAL/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-03-28T13:30:00.000Z",
+      "description": "/CAL:STATUS OF M99 CASE/X:CASE NUMBER 18004590 HAS BEEN DISPO'D ON 03-27-18/LDTR:04-25-18/ACM/BE/SA1:LYNN DOUGLAS ODOVOY/SA2:378 SWEENY ST, SF CA/SAORD2/SAORD3/SAORD/CONTD:JURY READINESS/DAWF/CONTD:JURY TRIAL/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-04-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:CASE WAS DISMISSED ON 04-13-18 IN D13/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-04-16T09:00:00.000Z",
+      "description": "/CAL:TRIAL/CTORD:MATTER OFF CALENDAR FOR THE FOLLOWING REASON:CASE WAS DISMISSED ON 04-13-18 IN D13/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-04-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL READINESS/MO PC 1385:THE PEOPLE ARE UNABLE TO SUSTAIN BURDEN/VD JURY TRIAL ON 04-16-18 IN D17/SATERM/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-04-13T09:00:00.000Z",
+      "description": "/CAL:TRIAL READINESS/MO PC 1385:THE PEOPLE ARE UNABLE TO SUSTAIN BURDEN/VD JURY TRIAL ON 04-16-18 IN D17/SATERM/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-03-27T13:30:00.000Z",
+      "docketEntryComment": "/CAL:STATUS OF M99 CASE 18004590/CONT/DOP/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-03-27T13:30:00.000Z",
+      "description": "/CAL:STATUS OF M99 CASE 18004590/CONT/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-03-26T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/BAIL:5,000/LDTR: 04-25-18/CONTD:STATUS OF M99 CASE/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-03-26T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/BAIL:5,000/LDTR: 04-25-18/CONTD:STATUS OF M99 CASE/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18004663",
-    "portal_case_id": "",
+    "portal_case_id": "3873375",
     "display_case_number": "CRI-18004663",
     "defendant": "ALEJANDRO JOSE CARDENAS",
     "filed_date": "2018-03-26",
@@ -59,12 +220,68 @@
       "defendant": "ALEJANDRO JOSE CARDENAS",
       "filed_date": "2018-03-26"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "166(c)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "166(c)(1) PC/M",
+        "title": "Penal Code § 166(c)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 166(c)(1)",
+        "code_system": "PC",
+        "section": "166(c)(1)",
+        "citation": "Penal Code § 166(c)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ALEJANDRO JOSE CARDENAS, and date of filing 2018-03-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ALEJANDRO JOSE CARDENAS, date of filing, 2018-03-26, and charges in the case: 166(c)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "166(c)(1) PC/M",
+      "title": "Penal Code § 166(c)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 166(c)(1)",
+      "code_system": "PC",
+      "section": "166(c)(1)",
+      "citation": "Penal Code § 166(c)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=166.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:54:59.638Z",
+  "portal_case_id": "3873375",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18004663",
+      "defendant": "ALEJANDRO JOSE CARDENAS",
+      "filed_date": "2018-03-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3873375"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:23.954242+00:00"
 }

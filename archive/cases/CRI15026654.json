@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:31:48.816Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:16:51.675Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI15026654",
   "criminal_case_number": "15026654",
@@ -24,19 +24,129 @@
       "name": "CARLOS R GORDON",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "CARLOS R GORDON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-01-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/LD:02-05-16/MO PC 1385:VICTIM UNAVAILABLE/X:FIRST DISMISSAL/X:SUBPOENAED RECORDS RETURNED TO COURT BY STEPHANIE ZUDEKOFF ADA/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-01-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/LD:02-05-16/X:SUBPOENAED RECORDS RELEASED TO STEPHANIE ZUDEKOFF ADA WITH STIPULATION/X:ENGSTROM WHEELER DISCOVERY TO DEFENSE BY E-MAIL BY THE END OF TODAY/X:CONFIRMED HEARING DATE OF 01-20-16/DOP/TE:HALF DAY PLUS/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-12-07T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:02-05-16/987,2/BAIL:1,000,000/CONTD: PREHEARING CONFERENCE/DOP/SA1:RICHARD HASKINS/SA2:78 WALLER ST,, SF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-12-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD:PREHEARING CONFERENCE AND PRELIMINARY HEARING/DOP/LD:02-05-16/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-12-02T13:30:00.000Z",
+      "docketEntryComment": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/BAIL:1,000,00",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-01-20 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 0,
+      "court_date": "2016-01-20",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-01-11 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 1,
+      "court_date": "2016-01-11",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-12-23 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2015-12-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-12-07 9:00 AM",
+      "hearingType": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 3,
+      "court_date": "2015-12-07",
+      "hearing_time": "9:00 AM",
+      "matters": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "hearing_type": "INACTIVE Instruction and Arraignment/Plea and Counsel",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2015-12-02 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 4,
+      "court_date": "2015-12-02",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "STEVE OLMO",
+      "type": "Public Defender"
+    },
+    {
+      "name": "STEPHANIE ZUDEKOFF",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "187(a) PC/F 245(a)(1) PC/F",
+    "filed_date": "2015-12-02",
+    "defendant": "CARLOS R GORDON",
+    "searched_key": "GORDON/CA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/15026654.json",
     "searched_last_name": "GORDON",
     "searched_first_prefix": "CA",
-    "charges": "187(a) PC/F 245(a)(1) PC/F",
     "row": {
       "DEFENDANTNAME": "CARLOS R GORDON",
       "CASENUMBER": "CRI-15026654",
@@ -45,11 +155,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3825757",
+  "docket_entries": [
+    {
+      "filedDate": "2016-01-20T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/LD:02-05-16/MO PC 1385:VICTIM UNAVAILABLE/X:FIRST DISMISSAL/X:SUBPOENAED RECORDS RETURNED TO COURT BY STEPHANIE ZUDEKOFF ADA/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-01-20T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/LD:02-05-16/MO PC 1385:VICTIM UNAVAILABLE/X:FIRST DISMISSAL/X:SUBPOENAED RECORDS RETURNED TO COURT BY STEPHANIE ZUDEKOFF ADA/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-01-11T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/LD:02-05-16/X:SUBPOENAED RECORDS RELEASED TO STEPHANIE ZUDEKOFF ADA WITH STIPULATION/X:ENGSTROM WHEELER DISCOVERY TO DEFENSE BY E-MAIL BY THE END OF TODAY/X:CONFIRMED HEARING DATE OF 01-20-16/DOP/TE:HALF DAY PLUS/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-01-11T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/LD:02-05-16/X:SUBPOENAED RECORDS RELEASED TO STEPHANIE ZUDEKOFF ADA WITH STIPULATION/X:ENGSTROM WHEELER DISCOVERY TO DEFENSE BY E-MAIL BY THE END OF TODAY/X:CONFIRMED HEARING DATE OF 01-20-16/DOP/TE:HALF DAY PLUS/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-12-07T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:02-05-16/987,2/BAIL:1,000,000/CONTD: PREHEARING CONFERENCE/DOP/SA1:RICHARD HASKINS/SA2:78 WALLER ST,, SF/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2015-12-07T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW60/LDPX:02-05-16/987,2/BAIL:1,000,000/CONTD: PREHEARING CONFERENCE/DOP/SA1:RICHARD HASKINS/SA2:78 WALLER ST,, SF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-12-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/CONTD:PREHEARING CONFERENCE AND PRELIMINARY HEARING/DOP/LD:02-05-16/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2015-12-23T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/CONTD:PREHEARING CONFERENCE AND PRELIMINARY HEARING/DOP/LD:02-05-16/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-12-02T13:30:00.000Z",
+      "docketEntryComment": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/BAIL:1,000,00",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2015-12-02T13:30:00.000Z",
+      "description": "CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/BAIL:1,000,00",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "15026654",
-    "portal_case_id": "",
+    "portal_case_id": "3825757",
     "display_case_number": "CRI-15026654",
     "defendant": "CARLOS R GORDON",
     "filed_date": "2015-12-02",
@@ -59,12 +220,94 @@
       "defendant": "CARLOS R GORDON",
       "filed_date": "2015-12-02"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "187(a) PC/F 245(a)(1) PC/F",
+    "charge_rows": [
+      {
+        "raw": "187(a) PC/F",
+        "title": "Penal Code § 187(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 187(a)",
+        "code_system": "PC",
+        "section": "187(a)",
+        "citation": "Penal Code § 187(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=187.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=187.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "245(a)(1) PC/F",
+        "title": "Penal Code § 245(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 245(a)(1)",
+        "code_system": "PC",
+        "section": "245(a)(1)",
+        "citation": "Penal Code § 245(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, CARLOS R GORDON, and date of filing 2015-12-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, CARLOS R GORDON, date of filing, 2015-12-02, and charges in the case: 187(a) PC/F 245(a)(1) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "187(a) PC/F",
+      "title": "Penal Code § 187(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 187(a)",
+      "code_system": "PC",
+      "section": "187(a)",
+      "citation": "Penal Code § 187(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=187.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=187.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "245(a)(1) PC/F",
+      "title": "Penal Code § 245(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 245(a)(1)",
+      "code_system": "PC",
+      "section": "245(a)(1)",
+      "citation": "Penal Code § 245(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=245.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:16:52.330Z",
+  "portal_case_id": "3825757",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-15026654",
+      "defendant": "CARLOS R GORDON",
+      "filed_date": "2015-12-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3825757"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.072020+00:00"
 }

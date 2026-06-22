@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T17:32:40.377Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:09:09.537Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI16005160",
   "criminal_case_number": "16005160",
@@ -24,19 +24,76 @@
       "name": "MAGI FORD",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "MAGI FORD",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-03-24T15:19:00.000Z",
+      "docketEntryComment": "DEFT'S MTS EVID -FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-03-22T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:04-06-16/987,2/BAIL:131,000/CONTD:SPR ELIG REPORT ON 03-28-16 AND PRELIMINARY HEARING ON 04-05-16/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-03-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SPR ELIGIBILITY REPORT/MO PC 1385:IN THE INTEREST OF JUSTICE/VD:PRELIMINARY HEARING DATE OF 04-05-16/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-03-28 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 0,
+      "court_date": "2016-03-28",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-03-22 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2016-03-22",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "HIEN NGUYEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "10851(a) VC/F 496d(a) PC/F 148.9(a) PC/M 14610(a)(1) VC/M",
+    "filed_date": "2016-03-22",
+    "defendant": "MAGI FORD",
+    "searched_key": "FORD/MA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/16005160.json",
     "searched_last_name": "FORD",
     "searched_first_prefix": "MA",
-    "charges": "10851(a) VC/F 496d(a) PC/F 148.9(a) PC/M 14610(a)(1) VC/M",
     "row": {
       "DEFENDANTNAME": "MAGI FORD",
       "CASENUMBER": "CRI-16005160",
@@ -45,11 +102,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3832696",
+  "docket_entries": [
+    {
+      "filedDate": "2016-03-24T15:19:00.000Z",
+      "docketEntryComment": "DEFT'S MTS EVID -FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-03-24T15:19:00.000Z",
+      "description": "DEFT'S MTS EVID -FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-03-22T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:04-06-16/987,2/BAIL:131,000/CONTD:SPR ELIG REPORT ON 03-28-16 AND PRELIMINARY HEARING ON 04-05-16/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-03-22T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDPX:04-06-16/987,2/BAIL:131,000/CONTD:SPR ELIG REPORT ON 03-28-16 AND PRELIMINARY HEARING ON 04-05-16/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-03-28T09:00:00.000Z",
+      "docketEntryComment": "/CAL:SPR ELIGIBILITY REPORT/MO PC 1385:IN THE INTEREST OF JUSTICE/VD:PRELIMINARY HEARING DATE OF 04-05-16/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-03-28T09:00:00.000Z",
+      "description": "/CAL:SPR ELIGIBILITY REPORT/MO PC 1385:IN THE INTEREST OF JUSTICE/VD:PRELIMINARY HEARING DATE OF 04-05-16/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "16005160",
-    "portal_case_id": "",
+    "portal_case_id": "3832696",
     "display_case_number": "CRI-16005160",
     "defendant": "MAGI FORD",
     "filed_date": "2016-03-22",
@@ -59,12 +147,146 @@
       "defendant": "MAGI FORD",
       "filed_date": "2016-03-22"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "10851(a) VC/F 496d(a) PC/F 148.9(a) PC/M 14610(a)(1) VC/M",
+    "charge_rows": [
+      {
+        "raw": "10851(a) VC/F",
+        "title": "Vehicle Code § 10851(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 10851(a)",
+        "code_system": "VC",
+        "section": "10851(a)",
+        "citation": "Vehicle Code § 10851(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "496d(a) PC/F",
+        "title": "Penal Code § 496d(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496d(a)",
+        "code_system": "PC",
+        "section": "496d(a)",
+        "citation": "Penal Code § 496d(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      },
+      {
+        "raw": "148.9(a) PC/M",
+        "title": "Penal Code § 148.9(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 148.9(a)",
+        "code_system": "PC",
+        "section": "148.9(a)",
+        "citation": "Penal Code § 148.9(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "14610(a)(1) VC/M",
+        "title": "Vehicle Code § 14610(a)(1)",
+        "title_source": "programmatic_citation",
+        "code": "VC 14610(a)(1)",
+        "code_system": "VC",
+        "section": "14610(a)(1)",
+        "citation": "Vehicle Code § 14610(a)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14610.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14610.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, MAGI FORD, and date of filing 2016-03-22. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, MAGI FORD, date of filing, 2016-03-22, and charges in the case: 10851(a) VC/F 496d(a) PC/F 148.9(a) PC/M 14610(a)(1) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "10851(a) VC/F",
+      "title": "Vehicle Code § 10851(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 10851(a)",
+      "code_system": "VC",
+      "section": "10851(a)",
+      "citation": "Vehicle Code § 10851(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "496d(a) PC/F",
+      "title": "Penal Code § 496d(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496d(a)",
+      "code_system": "PC",
+      "section": "496d(a)",
+      "citation": "Penal Code § 496d(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    },
+    {
+      "raw": "148.9(a) PC/M",
+      "title": "Penal Code § 148.9(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 148.9(a)",
+      "code_system": "PC",
+      "section": "148.9(a)",
+      "citation": "Penal Code § 148.9(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=148.9.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "14610(a)(1) VC/M",
+      "title": "Vehicle Code § 14610(a)(1)",
+      "title_source": "programmatic_citation",
+      "code": "VC 14610(a)(1)",
+      "code_system": "VC",
+      "section": "14610(a)(1)",
+      "citation": "Vehicle Code § 14610(a)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14610.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14610.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:09:10.233Z",
+  "portal_case_id": "3832696",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-16005160",
+      "defendant": "MAGI FORD",
+      "filed_date": "2016-03-22"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3832696"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:22.536393+00:00"
 }

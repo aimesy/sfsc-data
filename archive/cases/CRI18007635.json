@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T21:22:22.167Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:55:39.679Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18007635",
   "criminal_case_number": "18007635",
@@ -24,10 +24,53 @@
       "name": "ISSACC ANTHONY SANCHEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ISSACC ANTHONY SANCHEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2018-06-01T09:00:00.000Z",
+      "docketEntryComment": "CAL: FUGITIVE ARRAIGNMENT/X: SFPD FUGITIVE OFFICER ROBERT HART APPEARING//X: DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS ID AND WAIVES        EXTRADITION/ /CONTD: STATUS OF DELIVERY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-06-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL: STATUS OF DELIVERY/X: SFPD FUGITIVE OFFICER ROBERT HART APPEARING/MO PC 1385:DEFENDANT DELIVERED TO STATE OF ARIZONA ON 06-14-18/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-06-29 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2018-06-29",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-06-01 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 1,
+      "court_date": "2018-06-01",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -45,11 +88,32 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3876241",
+  "docket_entries": [
+    {
+      "filedDate": "2018-06-01T09:00:00.000Z",
+      "docketEntryComment": "CAL: FUGITIVE ARRAIGNMENT/X: SFPD FUGITIVE OFFICER ROBERT HART APPEARING//X: DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS ID AND WAIVES        EXTRADITION/ /CONTD: STATUS OF DELIVERY/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-06-01T09:00:00.000Z",
+      "description": "CAL: FUGITIVE ARRAIGNMENT/X: SFPD FUGITIVE OFFICER ROBERT HART APPEARING//X: DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, ADMITS ID AND WAIVES EXTRADITION/ /CONTD: STATUS OF DELIVERY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-06-29T09:00:00.000Z",
+      "docketEntryComment": "/CAL: STATUS OF DELIVERY/X: SFPD FUGITIVE OFFICER ROBERT HART APPEARING/MO PC 1385:DEFENDANT DELIVERED TO STATE OF ARIZONA ON 06-14-18/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-06-29T09:00:00.000Z",
+      "description": "/CAL: STATUS OF DELIVERY/X: SFPD FUGITIVE OFFICER ROBERT HART APPEARING/MO PC 1385:DEFENDANT DELIVERED TO STATE OF ARIZONA ON 06-14-18/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18007635",
-    "portal_case_id": "",
+    "portal_case_id": "3876241",
     "display_case_number": "CRI-18007635",
     "defendant": "ISSACC ANTHONY SANCHEZ",
     "filed_date": "2018-06-01",
@@ -59,12 +123,52 @@
       "defendant": "ISSACC ANTHONY SANCHEZ",
       "filed_date": "2018-06-01"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ISSACC ANTHONY SANCHEZ, and date of filing 2018-06-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ISSACC ANTHONY SANCHEZ, date of filing, 2018-06-01, and charges in the case: 8888888.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:55:40.343Z",
+  "portal_case_id": "3876241",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18007635",
+      "defendant": "ISSACC ANTHONY SANCHEZ",
+      "filed_date": "2018-06-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3876241"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T14:17:52.369Z"
 }

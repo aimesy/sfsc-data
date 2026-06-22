@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:05:49.455Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:09:48.091Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI16007697",
   "criminal_case_number": "16007697",
@@ -24,11 +24,77 @@
       "name": "SCOTT SMITH",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "SCOTT SMITH",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-05-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD 3455PC (PRCS) MOTION/3455ADV/3455ADM/3455REIN/CH1:CJ 6M//CTS:19/X:SENTENCE SERVICEABLE IN RE-ENTRY POD/4019HALF/X:PRCS EXPIRATION DATE IS 03-12-19/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-05-09T13:30:00.000Z",
+      "docketEntryComment": "/CAL: TS APD 3455PC MOTION/TN: SCOTT SMITH/CONTD: TO SET APD 3455PC MOTION/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-04-27T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOTION/NP/CTORD:PRCS IS ADMINISTRATIVELY REVOKED,/SHER/NB/CONTD:TS APD 3455PC MOTION AND TO JOIN #16007698 IN DEPT 11/DOPC/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-05-10 9:00 AM",
+      "hearingType": "To Set Motion to Revoke Probation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 0,
+      "court_date": "2016-05-10",
+      "hearing_time": "9:00 AM",
+      "matters": "To Set Motion to Revoke Probation Hearing",
+      "hearing_type": "To Set Motion to Revoke Probation Hearing",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-05-09 1:30 PM",
+      "hearingType": "To Set Motion to Revoke Probation Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 1,
+      "court_date": "2016-05-09",
+      "hearing_time": "1:30 PM",
+      "matters": "To Set Motion to Revoke Probation Hearing",
+      "hearing_type": "To Set Motion to Revoke Probation Hearing",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-04-27 11:30 AM",
+      "hearingType": "PC 3455 Petition to Revoke PRCS",
+      "location": "850 Bryant",
+      "dept": "Department 22",
+      "__index": 2,
+      "court_date": "2016-04-27",
+      "hearing_time": "11:30 AM",
+      "matters": "PC 3455 Petition to Revoke PRCS",
+      "hearing_type": "PC 3455 Petition to Revoke PRCS",
+      "department": "Department 22",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "HIEN NGUYEN",
+      "type": "Public Defender"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +111,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3835188",
+  "docket_entries": [
+    {
+      "filedDate": "2016-05-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TO SET APD 3455PC (PRCS) MOTION/3455ADV/3455ADM/3455REIN/CH1:CJ 6M//CTS:19/X:SENTENCE SERVICEABLE IN RE-ENTRY POD/4019HALF/X:PRCS EXPIRATION DATE IS 03-12-19/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-05-10T09:00:00.000Z",
+      "description": "/CAL:TO SET APD 3455PC (PRCS) MOTION/3455ADV/3455ADM/3455REIN/CH1:CJ 6M//CTS:19/X:SENTENCE SERVICEABLE IN RE-ENTRY POD/4019HALF/X:PRCS EXPIRATION DATE IS 03-12-19/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-05-09T13:30:00.000Z",
+      "docketEntryComment": "/CAL: TS APD 3455PC MOTION/TN: SCOTT SMITH/CONTD: TO SET APD 3455PC MOTION/DOP/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-05-09T13:30:00.000Z",
+      "description": "/CAL: TS APD 3455PC MOTION/TN: SCOTT SMITH/CONTD: TO SET APD 3455PC MOTION/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-04-27T11:30:00.000Z",
+      "docketEntryComment": "/CAL:APD 3455PC MOTION/NP/CTORD:PRCS IS ADMINISTRATIVELY REVOKED,/SHER/NB/CONTD:TS APD 3455PC MOTION AND TO JOIN #16007698 IN DEPT 11/DOPC/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-04-27T11:30:00.000Z",
+      "description": "/CAL:APD 3455PC MOTION/NP/CTORD:PRCS IS ADMINISTRATIVELY REVOKED,/SHER/NB/CONTD:TS APD 3455PC MOTION AND TO JOIN #16007698 IN DEPT 11/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "16007697",
-    "portal_case_id": "",
+    "portal_case_id": "3835188",
     "display_case_number": "CRI-16007697",
     "defendant": "SCOTT SMITH",
     "filed_date": "2016-04-27",
@@ -60,11 +157,58 @@
       "filed_date": "2016-04-27"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "3455(a) PC/F",
+    "charge_rows": [
+      {
+        "raw": "3455(a) PC/F",
+        "title": "Penal Code § 3455(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 3455(a)",
+        "code_system": "PC",
+        "section": "3455(a)",
+        "citation": "Penal Code § 3455(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, SCOTT SMITH, and date of filing 2016-04-27. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, SCOTT SMITH, date of filing, 2016-04-27, and charges in the case: 3455(a) PC/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "3455(a) PC/F",
+      "title": "Penal Code § 3455(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 3455(a)",
+      "code_system": "PC",
+      "section": "3455(a)",
+      "citation": "Penal Code § 3455(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3455.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:09:48.759Z",
+  "portal_case_id": "3835188",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-16007697",
+      "defendant": "SCOTT SMITH",
+      "filed_date": "2016-04-27"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3835188"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T13:02:45.750Z"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:47:23.123Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:01:42.448Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17003372",
   "criminal_case_number": "17003372",
@@ -24,19 +24,103 @@
       "name": "EDWIN HERNANDEZ",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "EDWIN HERNANDEZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-06-08T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-06-01T11:45:00.000Z",
+      "docketEntryComment": "DEFT'S MTS EVID -FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-03-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/GTWM/CTORD: AS A CONDITION OF OWN RECOGNIZANCE THE DEFENDANT TOCOMPLETE  TWO AA MEETINGS A WEEK/CONTD:PRETRIAL CONFERENCE/DOPU:PROOF OFAA MEETINGS/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-06-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL & PROOF OF TWO AA MEETINGS/FTA/OREVKD/BWI/BAIL:8000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-05-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE & PROOF OF AA MEETINGS/CONTD:PRETRIAL CONFERENCE& PROOF OF TWO AA MEETINGS PER WEEK/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-06-08 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2017-06-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-05-17 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2017-05-17",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-03-21 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2017-03-21",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SEIYA JOHNSON",
+      "type": "Public Defender"
+    },
+    {
+      "name": "CHLOE MCLEAN",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "23152(a) VC/M 23152(b) VC/M 12500(a) VC/M 16028(c) VC/I",
+    "filed_date": "2017-03-13",
+    "defendant": "EDWIN HERNANDEZ",
+    "searched_key": "HERNANDEZ/ED",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/17003372.json",
     "searched_last_name": "HERNANDEZ",
     "searched_first_prefix": "ED",
-    "charges": "23152(a) VC/M 23152(b) VC/M 12500(a) VC/M 16028(c) VC/I",
     "row": {
       "DEFENDANTNAME": "EDWIN HERNANDEZ",
       "CASENUMBER": "CRI-17003372",
@@ -45,11 +129,62 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3853249",
+  "docket_entries": [
+    {
+      "filedDate": "2017-06-08T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-06-08T09:00:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-06-01T11:45:00.000Z",
+      "docketEntryComment": "DEFT'S MTS EVID -FILED",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-06-01T11:45:00.000Z",
+      "description": "DEFT'S MTS EVID -FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-03-21T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/GTWM/CTORD: AS A CONDITION OF OWN RECOGNIZANCE THE DEFENDANT TOCOMPLETE  TWO AA MEETINGS A WEEK/CONTD:PRETRIAL CONFERENCE/DOPU:PROOF OFAA MEETINGS/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-03-21T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/INTC/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/OR/GTWM/CTORD: AS A CONDITION OF OWN RECOGNIZANCE THE DEFENDANT TOCOMPLETE TWO AA MEETINGS A WEEK/CONTD:PRETRIAL CONFERENCE/DOPU:PROOF OFAA MEETINGS/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-06-08T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL & PROOF OF TWO AA MEETINGS/FTA/OREVKD/BWI/BAIL:8000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2017-06-08T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL & PROOF OF TWO AA MEETINGS/FTA/OREVKD/BWI/BAIL:8000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-05-17T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL CONFERENCE & PROOF OF AA MEETINGS/CONTD:PRETRIAL CONFERENCE& PROOF OF TWO AA MEETINGS PER WEEK/DOP/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2017-05-17T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL CONFERENCE & PROOF OF AA MEETINGS/CONTD:PRETRIAL CONFERENCE& PROOF OF TWO AA MEETINGS PER WEEK/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17003372",
-    "portal_case_id": "",
+    "portal_case_id": "3853249",
     "display_case_number": "CRI-17003372",
     "defendant": "EDWIN HERNANDEZ",
     "filed_date": "2017-03-13",
@@ -60,11 +195,136 @@
       "filed_date": "2017-03-13"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "23152(a) VC/M 23152(b) VC/M 12500(a) VC/M 16028(c) VC/I",
+    "charge_rows": [
+      {
+        "raw": "23152(a) VC/M",
+        "title": "Vehicle Code § 23152(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(a)",
+        "code_system": "VC",
+        "section": "23152(a)",
+        "citation": "Vehicle Code § 23152(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23152(b) VC/M",
+        "title": "Vehicle Code § 23152(b)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(b)",
+        "code_system": "VC",
+        "section": "23152(b)",
+        "citation": "Vehicle Code § 23152(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "12500(a) VC/M",
+        "title": "Vehicle Code § 12500(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 12500(a)",
+        "code_system": "VC",
+        "section": "12500(a)",
+        "citation": "Vehicle Code § 12500(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "16028(c) VC/I",
+        "title": "Vehicle Code § 16028(c)",
+        "title_source": "programmatic_citation",
+        "code": "VC 16028(c)",
+        "code_system": "VC",
+        "section": "16028(c)",
+        "citation": "Vehicle Code § 16028(c)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=16028.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=16028.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "infraction"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, EDWIN HERNANDEZ, and date of filing 2017-03-13. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, EDWIN HERNANDEZ, date of filing, 2017-03-13, and charges in the case: 23152(a) VC/M 23152(b) VC/M 12500(a) VC/M 16028(c) VC/I.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(a) VC/M",
+      "title": "Vehicle Code § 23152(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(a)",
+      "code_system": "VC",
+      "section": "23152(a)",
+      "citation": "Vehicle Code § 23152(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23152(b) VC/M",
+      "title": "Vehicle Code § 23152(b)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(b)",
+      "code_system": "VC",
+      "section": "23152(b)",
+      "citation": "Vehicle Code § 23152(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "12500(a) VC/M",
+      "title": "Vehicle Code § 12500(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 12500(a)",
+      "code_system": "VC",
+      "section": "12500(a)",
+      "citation": "Vehicle Code § 12500(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=12500.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "16028(c) VC/I",
+      "title": "Vehicle Code § 16028(c)",
+      "title_source": "programmatic_citation",
+      "code": "VC 16028(c)",
+      "code_system": "VC",
+      "section": "16028(c)",
+      "citation": "Vehicle Code § 16028(c)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=16028.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=16028.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "infraction"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:01:43.092Z",
+  "portal_case_id": "3853249",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17003372",
+      "defendant": "EDWIN HERNANDEZ",
+      "filed_date": "2017-03-13"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3853249"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:21.309089+00:00"
 }

@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T16:17:18.994Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:56:38.046Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18010515",
   "criminal_case_number": "18010515",
@@ -24,19 +24,93 @@
       "name": "ARES BROWN",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "ARES BROWN",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-07-23T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2:CJ 3 D/CTS:3 /VF2:150/COA:40/ICNA/COLLECT/4019HALF/DISM3/X:RESTITUTION OR OTHER CONDITIONS TRANSFERRED TO CASE 18009287 PURSUANT TOA HARVERY WAIVER/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:THE PUBLIC DEFENDERS OFFICE STATES THEY REPRESENT THE DEFENDANT FOR CASE18009287/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND  STAYED TO 07-23-18/X: BAIL SET AT $10,000/CONTD:BENCH WARRANT STAY & ARRAIGNMENT/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW STAY OF 07-16-18/BWSTAY:07-16-18/TEXT:DEFT ADV & PERS WVS CONST &CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 2/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-07-23 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2018-07-23",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-07-23 9:00 AM",
+      "hearingType": "Bench Warrant Stay",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2018-07-23",
+      "hearing_time": "9:00 AM",
+      "matters": "Bench Warrant Stay",
+      "hearing_type": "Bench Warrant Stay",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-07-16 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2018-07-16",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "WILLIE MINCEY",
+      "type": "Public Defender"
+    },
+    {
+      "name": "JESSICA TRIEU",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "496d(a) PC/M 11377(a) HS/M",
+    "filed_date": "2018-07-12",
+    "defendant": "ARES BROWN",
+    "searched_key": "BROWN/AR",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/18010515.json",
     "searched_last_name": "BROWN",
     "searched_first_prefix": "AR",
-    "charges": "496d(a) PC/M 11377(a) HS/M",
     "row": {
       "DEFENDANTNAME": "ARES BROWN",
       "CASENUMBER": "CRI-18010515",
@@ -45,11 +119,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3879058",
+  "docket_entries": [
+    {
+      "filedDate": "2018-07-23T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH2:CJ 3 D/CTS:3 /VF2:150/COA:40/ICNA/COLLECT/4019HALF/DISM3/X:RESTITUTION OR OTHER CONDITIONS TRANSFERRED TO CASE 18009287 PURSUANT TOA HARVERY WAIVER/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-07-23T09:15:00.000Z",
+      "description": "/TWS/CH2:CJ 3 D/CTS:3 /VF2:150/COA:40/ICNA/COLLECT/4019HALF/DISM3/X:RESTITUTION OR OTHER CONDITIONS TRANSFERRED TO CASE 18009287 PURSUANT TOA HARVERY WAIVER/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-16T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/X:THE PUBLIC DEFENDERS OFFICE STATES THEY REPRESENT THE DEFENDANT FOR CASE18009287/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND  STAYED TO 07-23-18/X: BAIL SET AT $10,000/CONTD:BENCH WARRANT STAY & ARRAIGNMENT/DOPC/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-07-16T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/X:THE PUBLIC DEFENDERS OFFICE STATES THEY REPRESENT THE DEFENDANT FOR CASE18009287/CONTD PROC RE BW;/TEXT:BENCH WARRANT STAYED AND CONT'D/NP/X: NO APPEARANCE BY DEFENDANT; A BENCH WARRANT IS ORDERED AND STAYED TO 07-23-18/X: BAIL SET AT $10,000/CONTD:BENCH WARRANT STAY & ARRAIGNMENT/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-23T09:00:00.000Z",
+      "docketEntryComment": "/CAL:BW STAY OF 07-16-18/BWSTAY:07-16-18/TEXT:DEFT ADV & PERS WVS CONST &CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 2/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-07-23T09:00:00.000Z",
+      "description": "/CAL:BW STAY OF 07-16-18/BWSTAY:07-16-18/TEXT:DEFT ADV & PERS WVS CONST &CITZ RTS ENT PLEA OF NL/DEFT ADV NL: 2/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18010515",
-    "portal_case_id": "",
+    "portal_case_id": "3879058",
     "display_case_number": "CRI-18010515",
     "defendant": "ARES BROWN",
     "filed_date": "2018-07-12",
@@ -60,11 +165,84 @@
       "filed_date": "2018-07-12"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "496d(a) PC/M 11377(a) HS/M",
+    "charge_rows": [
+      {
+        "raw": "496d(a) PC/M",
+        "title": "Penal Code § 496d(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496d(a)",
+        "code_system": "PC",
+        "section": "496d(a)",
+        "citation": "Penal Code § 496d(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "11377(a) HS/M",
+        "title": "Health and Safety Code § 11377(a)",
+        "title_source": "programmatic_citation",
+        "code": "HS 11377(a)",
+        "code_system": "HS",
+        "section": "11377(a)",
+        "citation": "Health and Safety Code § 11377(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, ARES BROWN, and date of filing 2018-07-12. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, ARES BROWN, date of filing, 2018-07-12, and charges in the case: 496d(a) PC/M 11377(a) HS/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "496d(a) PC/M",
+      "title": "Penal Code § 496d(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496d(a)",
+      "code_system": "PC",
+      "section": "496d(a)",
+      "citation": "Penal Code § 496d(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "11377(a) HS/M",
+      "title": "Health and Safety Code § 11377(a)",
+      "title_source": "programmatic_citation",
+      "code": "HS 11377(a)",
+      "code_system": "HS",
+      "section": "11377(a)",
+      "citation": "Health and Safety Code § 11377(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11377.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:56:38.666Z",
+  "portal_case_id": "3879058",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18010515",
+      "defendant": "ARES BROWN",
+      "filed_date": "2018-07-12"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3879058"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:24.657730+00:00"
 }

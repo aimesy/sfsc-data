@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T18:53:09.389Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:08:39.728Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17019018",
   "criminal_case_number": "17019018",
@@ -24,10 +24,53 @@
       "name": "JORGE ALBERTO ESCOBAR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "JORGE ALBERTO ESCOBAR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
+  "roa": [
+    {
+      "filedDate": "2017-12-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PROOF OF CITATION/NP/X:THE PEOPLE COULD NOT PROVIDE ANY PROOF OF CITATION/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-12-26T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/DEF:IS CITED OUT BUT THERE IS NOT A COPY ON FILE,/CONTD:PROOF OF CITATION/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-12-27 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2017-12-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-12-26 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2017-12-26",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
   "attorneys": [],
   "documents": [],
   "payments": [],
@@ -42,14 +85,39 @@
       "CASENUMBER": "CRI-17019018",
       "FILEDDATE": "2017-12-26 09:00:00",
       "CHARGES": "23152(a) VC/M 23152(b) VC/M 20002(a) VC/M 20002(a) VC/M 20002(a) VC/M"
-    }
+    },
+    "filed_date": "2017-12-26",
+    "defendant": "JORGE ALBERTO ESCOBAR",
+    "searched_key": "ESCOBAR/JO",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box18-cases/17019018.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3868534",
+  "docket_entries": [
+    {
+      "filedDate": "2017-12-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PROOF OF CITATION/NP/X:THE PEOPLE COULD NOT PROVIDE ANY PROOF OF CITATION/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-12-27T09:00:00.000Z",
+      "description": "/CAL:PROOF OF CITATION/NP/X:THE PEOPLE COULD NOT PROVIDE ANY PROOF OF CITATION/TEXT:DA WITHDRAWS COMPLAINT AND DISCHARGES DEFENDANT/COWD/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-12-26T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/NP/DEF:IS CITED OUT BUT THERE IS NOT A COPY ON FILE,/CONTD:PROOF OF CITATION/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-12-26T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/NP/DEF:IS CITED OUT BUT THERE IS NOT A COPY ON FILE,/CONTD:PROOF OF CITATION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17019018",
-    "portal_case_id": "",
+    "portal_case_id": "3868534",
     "display_case_number": "CRI-17019018",
     "defendant": "JORGE ALBERTO ESCOBAR",
     "filed_date": "2017-12-26",
@@ -60,11 +128,110 @@
       "filed_date": "2017-12-26"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "23152(a) VC/M 23152(b) VC/M 20002(a) VC/M 20002(a) VC/M 20002(a) VC/M",
+    "charge_rows": [
+      {
+        "raw": "23152(a) VC/M",
+        "title": "Vehicle Code § 23152(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(a)",
+        "code_system": "VC",
+        "section": "23152(a)",
+        "citation": "Vehicle Code § 23152(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23152(b) VC/M",
+        "title": "Vehicle Code § 23152(b)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(b)",
+        "code_system": "VC",
+        "section": "23152(b)",
+        "citation": "Vehicle Code § 23152(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "20002(a) VC/M",
+        "title": "Vehicle Code § 20002(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 20002(a)",
+        "code_system": "VC",
+        "section": "20002(a)",
+        "citation": "Vehicle Code § 20002(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=20002.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=20002.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, JORGE ALBERTO ESCOBAR, and date of filing 2017-12-26. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, JORGE ALBERTO ESCOBAR, date of filing, 2017-12-26, and charges in the case: 23152(a) VC/M 23152(b) VC/M 20002(a) VC/M 20002(a) VC/M 20002(a) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(a) VC/M",
+      "title": "Vehicle Code § 23152(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(a)",
+      "code_system": "VC",
+      "section": "23152(a)",
+      "citation": "Vehicle Code § 23152(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23152(b) VC/M",
+      "title": "Vehicle Code § 23152(b)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(b)",
+      "code_system": "VC",
+      "section": "23152(b)",
+      "citation": "Vehicle Code § 23152(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "20002(a) VC/M",
+      "title": "Vehicle Code § 20002(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 20002(a)",
+      "code_system": "VC",
+      "section": "20002(a)",
+      "citation": "Vehicle Code § 20002(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=20002.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=20002.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:08:40.437Z",
+  "portal_case_id": "3868534",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17019018",
+      "defendant": "JORGE ALBERTO ESCOBAR",
+      "filed_date": "2017-12-26"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3868534"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:24.662788+00:00"
 }

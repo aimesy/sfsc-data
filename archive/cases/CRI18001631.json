@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:03:29.752Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T02:56:20.461Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI18001631",
   "criminal_case_number": "18001631",
@@ -24,11 +24,96 @@
       "name": "KENEISHA R JONES",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "KENEISHA R JONES",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2018-06-12T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-02-01T09:15:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-05-31T11:36:00.000Z",
+      "docketEntryComment": "DEF MOT TO RBW FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-07-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL READINESS CONFERENCE/X: THIS PROCEEDING IS RECORDED THROUGH JAVS,/NP/MO PC 1385:  IN THE INTEREST OF JUSTICE/VD:  07-16-18 DATE IN DEPT17/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-06-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:MOTION TO RECALL BW/BWR:02-01-18/BWR1/OR/TEXT:DEFT ENT NG PLEA(S) &DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDTR:07-27-18/CONTD:MSC IN DEPT 13/DOP/CONTD:TRIAL/DEF:IS ON TWO HOUR STANDBY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2018-02-01T09:15:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/OREVKD/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2018-07-06 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2018-07-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-06-12 9:00 AM",
+      "hearingType": "Motion to Recall Bench Warrant",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2018-06-12",
+      "hearing_time": "9:00 AM",
+      "matters": "Motion to Recall Bench Warrant",
+      "hearing_type": "Motion to Recall Bench Warrant",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2018-02-01 9:30 AM",
+      "hearingType": "INACTIVE Migrated Hearing not Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2018-02-01",
+      "hearing_time": "9:30 AM",
+      "matters": "INACTIVE Migrated Hearing not Arraignment",
+      "hearing_type": "INACTIVE Migrated Hearing not Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "ANISA SIRUR",
+      "type": "Public Defender"
+    },
+    {
+      "name": "EMMALINE CAMPBELL",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +127,79 @@
       "CASENUMBER": "CRI-18001631",
       "FILEDDATE": "2018-02-01 09:00:00",
       "CHARGES": "10851(a) VC/M 496d(a) PC/M 466 PC/M 14601.1(a) VC/M 496(a) PC/M 10851(a) VC/M 496d(a) PC/M 14601.1(a) VC/M"
-    }
+    },
+    "filed_date": "2018-02-01",
+    "defendant": "KENEISHA R JONES",
+    "searched_key": "JONES/KE",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box29-cases/18001631.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3870417",
+  "docket_entries": [
+    {
+      "filedDate": "2018-06-12T09:00:00.000Z",
+      "docketEntryComment": "Bench Warrant Recalled",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2018-06-12T09:00:00.000Z",
+      "description": "Bench Warrant Recalled",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-02-01T09:15:00.000Z",
+      "docketEntryComment": "Bench Warrant Issued",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2018-02-01T09:15:00.000Z",
+      "description": "Bench Warrant Issued",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-05-31T11:36:00.000Z",
+      "docketEntryComment": "DEF MOT TO RBW FILED",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2018-05-31T11:36:00.000Z",
+      "description": "DEF MOT TO RBW FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-07-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL: TRIAL READINESS CONFERENCE/X: THIS PROCEEDING IS RECORDED THROUGH JAVS,/NP/MO PC 1385:  IN THE INTEREST OF JUSTICE/VD:  07-16-18 DATE IN DEPT17/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2018-07-06T09:00:00.000Z",
+      "description": "/CAL: TRIAL READINESS CONFERENCE/X: THIS PROCEEDING IS RECORDED THROUGH JAVS,/NP/MO PC 1385: IN THE INTEREST OF JUSTICE/VD: 07-16-18 DATE IN DEPT17/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-06-12T09:00:00.000Z",
+      "docketEntryComment": "/CAL:MOTION TO RECALL BW/BWR:02-01-18/BWR1/OR/TEXT:DEFT ENT NG PLEA(S) &DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDTR:07-27-18/CONTD:MSC IN DEPT 13/DOP/CONTD:TRIAL/DEF:IS ON TWO HOUR STANDBY/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2018-06-12T09:00:00.000Z",
+      "description": "/CAL:MOTION TO RECALL BW/BWR:02-01-18/BWR1/OR/TEXT:DEFT ENT NG PLEA(S) &DEN OF ALLEG/PD/FAWC/DEFTARR1/NTW/LDTR:07-27-18/CONTD:MSC IN DEPT 13/DOP/CONTD:TRIAL/DEF:IS ON TWO HOUR STANDBY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2018-02-01T09:15:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/FTA/OREVKD/BWI/BAIL:5000/BWNUM:1ST/",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2018-02-01T09:15:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/FTA/OREVKD/BWI/BAIL:5000/BWNUM:1ST/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "18001631",
-    "portal_case_id": "",
+    "portal_case_id": "3870417",
     "display_case_number": "CRI-18001631",
     "defendant": "KENEISHA R JONES",
     "filed_date": "2018-02-01",
@@ -59,12 +209,172 @@
       "defendant": "KENEISHA R JONES",
       "filed_date": "2018-02-01"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "10851(a) VC/M 496d(a) PC/M 466 PC/M 14601.1(a) VC/M 496(a) PC/M 10851(a) VC/M 496d(a) PC/M 14601.1(a) VC/M",
+    "charge_rows": [
+      {
+        "raw": "10851(a) VC/M",
+        "title": "Vehicle Code § 10851(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 10851(a)",
+        "code_system": "VC",
+        "section": "10851(a)",
+        "citation": "Vehicle Code § 10851(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "496d(a) PC/M",
+        "title": "Penal Code § 496d(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496d(a)",
+        "code_system": "PC",
+        "section": "496d(a)",
+        "citation": "Penal Code § 496d(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "466 PC/M",
+        "title": "Penal Code § 466",
+        "title_source": "programmatic_citation",
+        "code": "PC 466",
+        "code_system": "PC",
+        "section": "466",
+        "citation": "Penal Code § 466",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "14601.1(a) VC/M",
+        "title": "Vehicle Code § 14601.1(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 14601.1(a)",
+        "code_system": "VC",
+        "section": "14601.1(a)",
+        "citation": "Vehicle Code § 14601.1(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "496(a) PC/M",
+        "title": "Penal Code § 496(a)",
+        "title_source": "programmatic_citation",
+        "code": "PC 496(a)",
+        "code_system": "PC",
+        "section": "496(a)",
+        "citation": "Penal Code § 496(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, KENEISHA R JONES, and date of filing 2018-02-01. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, KENEISHA R JONES, date of filing, 2018-02-01, and charges in the case: 10851(a) VC/M 496d(a) PC/M 466 PC/M 14601.1(a) VC/M 496(a) PC/M 10851(a) VC/M 496d(a) PC/M 14601.1(a) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "10851(a) VC/M",
+      "title": "Vehicle Code § 10851(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 10851(a)",
+      "code_system": "VC",
+      "section": "10851(a)",
+      "citation": "Vehicle Code § 10851(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10851.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "496d(a) PC/M",
+      "title": "Penal Code § 496d(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496d(a)",
+      "code_system": "PC",
+      "section": "496d(a)",
+      "citation": "Penal Code § 496d(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496d.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "466 PC/M",
+      "title": "Penal Code § 466",
+      "title_source": "programmatic_citation",
+      "code": "PC 466",
+      "code_system": "PC",
+      "section": "466",
+      "citation": "Penal Code § 466",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=466.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "14601.1(a) VC/M",
+      "title": "Vehicle Code § 14601.1(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 14601.1(a)",
+      "code_system": "VC",
+      "section": "14601.1(a)",
+      "citation": "Vehicle Code § 14601.1(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=14601.1.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "496(a) PC/M",
+      "title": "Penal Code § 496(a)",
+      "title_source": "programmatic_citation",
+      "code": "PC 496(a)",
+      "code_system": "PC",
+      "section": "496(a)",
+      "citation": "Penal Code § 496(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=496.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T02:56:21.093Z",
+  "portal_case_id": "3870417",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-18001631",
+      "defendant": "KENEISHA R JONES",
+      "filed_date": "2018-02-01"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3870417"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:39.553345+00:00"
 }

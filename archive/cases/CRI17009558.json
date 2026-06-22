@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T15:58:53.733Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:02:24.417Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI17009558",
   "criminal_case_number": "17009558",
@@ -24,19 +24,93 @@
       "name": "THOMAS BAKER",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "THOMAS BAKER",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-07-18T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1 CJ 20 D/CTS  20/VF2 150/COA 40/ICNA/COLLECT/4019HALF/CTORD  OUTSTANDING RESTITUTION AND THE CRIMINAL PROTECTIVE ORDER FROM THISCASE ARE TNSFERRED TO PROBATION IN #16021359 VIA HARVEY WAIVER/CCC  THIS CASE AND #6021359/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-07-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL  PRELIMINARY HEARING/MO PC 17B/MO GRTD/FAWC/IRRC/TEXT DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL: 1/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-07-05T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/MO PC 17B/MO DENIED/PD/FAWC/DEFTARR1/NTW/LDPX: 07-19-17/987,2/BAIL: 50000/25    CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP: 07-18-17/X: THE REPORT SHALL BE AN ASSESSMENT FOR BHC,/CONTD: RECEIPT OF 4011,6PC REPORT AND PRELIMINARY HEARING/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-07-18 9:15 AM",
+      "hearingType": "Sentencing Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 0,
+      "court_date": "2017-07-18",
+      "hearing_time": "9:15 AM",
+      "matters": "Sentencing Hearing",
+      "hearing_type": "Sentencing Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-07-18 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 1,
+      "court_date": "2017-07-18",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-07-05 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 12",
+      "__index": 2,
+      "court_date": "2017-07-05",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 12",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "JENNIFER JOHNSON",
+      "type": "Public Defender"
+    },
+    {
+      "name": "LAURA CARWILE",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
   "document_byte_capture_scope": "criminal-portal-no-documents",
   "criminal_index": {
+    "charges": "594(b)(1) PC/M",
+    "filed_date": "2017-07-05",
+    "defendant": "THOMAS BAKER",
+    "searched_key": "BAKER/TH",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/17009558.json",
     "searched_last_name": "BAKER",
     "searched_first_prefix": "TH",
-    "charges": "594(b)(1) PC/M",
     "row": {
       "DEFENDANTNAME": "THOMAS BAKER",
       "CASENUMBER": "CRI-17009558",
@@ -45,11 +119,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3859310",
+  "docket_entries": [
+    {
+      "filedDate": "2017-07-18T09:15:00.000Z",
+      "docketEntryComment": "/TWS/CH1 CJ 20 D/CTS  20/VF2 150/COA 40/ICNA/COLLECT/4019HALF/CTORD  OUTSTANDING RESTITUTION AND THE CRIMINAL PROTECTIVE ORDER FROM THISCASE ARE TNSFERRED TO PROBATION IN #16021359 VIA HARVEY WAIVER/CCC  THIS CASE AND #6021359/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-07-18T09:15:00.000Z",
+      "description": "/TWS/CH1 CJ 20 D/CTS 20/VF2 150/COA 40/ICNA/COLLECT/4019HALF/CTORD OUTSTANDING RESTITUTION AND THE CRIMINAL PROTECTIVE ORDER FROM THISCASE ARE TNSFERRED TO PROBATION IN #16021359 VIA HARVEY WAIVER/CCC THIS CASE AND #6021359/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-07-18T09:00:00.000Z",
+      "docketEntryComment": "/CAL  PRELIMINARY HEARING/MO PC 17B/MO GRTD/FAWC/IRRC/TEXT DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL: 1/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-07-18T09:00:00.000Z",
+      "description": "/CAL PRELIMINARY HEARING/MO PC 17B/MO GRTD/FAWC/IRRC/TEXT DEFT ADV & PERS WVS CONST & CITZ RTS ENT PLEA(S) OF NL/DEFT ADV NL: 1/NOLO/CO:NEGOTIATED DISPOSITION/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-07-05T13:30:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/MO PC 17B/MO DENIED/PD/FAWC/DEFTARR1/NTW/LDPX: 07-19-17/987,2/BAIL: 50000/25    CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP: 07-18-17/X: THE REPORT SHALL BE AN ASSESSMENT FOR BHC,/CONTD: RECEIPT OF 4011,6PC REPORT AND PRELIMINARY HEARING/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-07-05T13:30:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/MO PC 17B/MO DENIED/PD/FAWC/DEFTARR1/NTW/LDPX: 07-19-17/987,2/BAIL: 50000/25 CPC 4011,6 REPORT/TEXT:CRT ORDS DEFT EXAM PURS PC 4011,6/JAIL PSY/4011,6/REP: 07-18-17/X: THE REPORT SHALL BE AN ASSESSMENT FOR BHC,/CONTD: RECEIPT OF 4011,6PC REPORT AND PRELIMINARY HEARING/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "17009558",
-    "portal_case_id": "",
+    "portal_case_id": "3859310",
     "display_case_number": "CRI-17009558",
     "defendant": "THOMAS BAKER",
     "filed_date": "2017-07-05",
@@ -59,12 +164,86 @@
       "defendant": "THOMAS BAKER",
       "filed_date": "2017-07-05"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 17B",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      },
+      {
+        "code": "PC 4011",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 17B",
+        "count": 2,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "594(b)(1) PC/M",
+    "charge_rows": [
+      {
+        "raw": "594(b)(1) PC/M",
+        "title": "Penal Code § 594(b)(1)",
+        "title_source": "programmatic_citation",
+        "code": "PC 594(b)(1)",
+        "code_system": "PC",
+        "section": "594(b)(1)",
+        "citation": "Penal Code § 594(b)(1)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, THOMAS BAKER, and date of filing 2017-07-05. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, THOMAS BAKER, date of filing, 2017-07-05, and charges in the case: 594(b)(1) PC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "594(b)(1) PC/M",
+      "title": "Penal Code § 594(b)(1)",
+      "title_source": "programmatic_citation",
+      "code": "PC 594(b)(1)",
+      "code_system": "PC",
+      "section": "594(b)(1)",
+      "citation": "Penal Code § 594(b)(1)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=594.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:02:25.020Z",
+  "portal_case_id": "3859310",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-17009558",
+      "defendant": "THOMAS BAKER",
+      "filed_date": "2017-07-05"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3859310"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T11:05:25.292486+00:00"
 }

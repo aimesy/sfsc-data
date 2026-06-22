@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T19:44:57.559Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:09:01.897Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI16009991",
   "criminal_case_number": "16009991",
@@ -24,11 +24,135 @@
       "name": "DAN ZHANG LEE",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "DAN ZHANG LEE",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2017-01-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/NP/DEF:IS ON A STANDBY/MO PC 1385:PEOPLE IS UNABLE TO SUSTAINTHE BURDEN OF PROOF/VD:TRIAL & LAST DAY OF 01-17-17 (STW)/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-01-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/DAWT/LDTR:01-17-17 (STW)/CONT/DEF:REMAINS ON 2-HOUR TELEPHONE STANDBY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-01-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/DAWT/LD:01-17-17 (STW)/CONT/DEF:IS PLACED ON A 2 HOURS STANDBY",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-10-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/DAWT/NTW/STW:01-17-17/CONTD:TRIAL/DOPC/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-09-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/DAWT/CONT/DAWF/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-06-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/DAWT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/X:PROTECTIVE ORDER (MVARS) FILED,/CONTD:PRETRIAL CONFERENCE/DAWF",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2017-01-10 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2017-01-10",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-01-09 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 1,
+      "court_date": "2017-01-09",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2017-01-06 9:00 AM",
+      "hearingType": "Jury Trial",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 2,
+      "court_date": "2017-01-06",
+      "hearing_time": "9:00 AM",
+      "matters": "Jury Trial",
+      "hearing_type": "Jury Trial",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-10-05 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 3,
+      "court_date": "2016-10-05",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-09-07 9:00 AM",
+      "hearingType": "Pre-Trial Conference",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 4,
+      "court_date": "2016-09-07",
+      "hearing_time": "9:00 AM",
+      "matters": "Pre-Trial Conference",
+      "hearing_type": "Pre-Trial Conference",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-06-13 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 5,
+      "court_date": "2016-06-13",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "SAMUEL GELLER",
+      "type": "Private Attorney"
+    },
+    {
+      "name": "ERIKA MASKAL",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -42,14 +166,79 @@
       "CASENUMBER": "CRI-16009991",
       "FILEDDATE": "2016-06-02 09:00:00",
       "CHARGES": "23152(a) VC/M 23152(b) VC/M"
-    }
+    },
+    "filed_date": "2016-06-02",
+    "defendant": "DAN ZHANG LEE",
+    "searched_key": "LEE/DA",
+    "source_file": "/opt/sfsc-tentatives/.scanner/jobs/criminal-index-fi-last-topoff-20260622T0405Z/box17-cases/16009991.json"
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3837449",
+  "docket_entries": [
+    {
+      "filedDate": "2017-01-10T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/NP/DEF:IS ON A STANDBY/MO PC 1385:PEOPLE IS UNABLE TO SUSTAINTHE BURDEN OF PROOF/VD:TRIAL & LAST DAY OF 01-17-17 (STW)/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-01-10T09:00:00.000Z",
+      "description": "/CAL:TRIAL/NP/DEF:IS ON A STANDBY/MO PC 1385:PEOPLE IS UNABLE TO SUSTAINTHE BURDEN OF PROOF/VD:TRIAL & LAST DAY OF 01-17-17 (STW)/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-01-09T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/DAWT/LDTR:01-17-17 (STW)/CONT/DEF:REMAINS ON 2-HOUR TELEPHONE STANDBY/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-01-09T09:00:00.000Z",
+      "description": "/CAL:TRIAL/DAWT/LDTR:01-17-17 (STW)/CONT/DEF:REMAINS ON 2-HOUR TELEPHONE STANDBY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-01-06T09:00:00.000Z",
+      "docketEntryComment": "/CAL:TRIAL/DAWT/LD:01-17-17 (STW)/CONT/DEF:IS PLACED ON A 2 HOURS STANDBY",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2017-01-06T09:00:00.000Z",
+      "description": "/CAL:TRIAL/DAWT/LD:01-17-17 (STW)/CONT/DEF:IS PLACED ON A 2 HOURS STANDBY",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-10-05T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/DAWT/NTW/STW:01-17-17/CONTD:TRIAL/DOPC/",
+      "otherSubmitter": "",
+      "__index": 3,
+      "date_filed": "2016-10-05T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/DAWT/NTW/STW:01-17-17/CONTD:TRIAL/DOPC/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-09-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRETRIAL/DAWT/CONT/DAWF/",
+      "otherSubmitter": "",
+      "__index": 4,
+      "date_filed": "2016-09-07T09:00:00.000Z",
+      "description": "/CAL:PRETRIAL/DAWT/CONT/DAWF/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-06-13T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/DAWT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/X:PROTECTIVE ORDER (MVARS) FILED,/CONTD:PRETRIAL CONFERENCE/DAWF",
+      "otherSubmitter": "",
+      "__index": 5,
+      "date_filed": "2016-06-13T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/DAWT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/GTWM/X:PROTECTIVE ORDER (MVARS) FILED,/CONTD:PRETRIAL CONFERENCE/DAWF",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "16009991",
-    "portal_case_id": "",
+    "portal_case_id": "3837449",
     "display_case_number": "CRI-16009991",
     "defendant": "DAN ZHANG LEE",
     "filed_date": "2016-06-02",
@@ -59,12 +248,94 @@
       "defendant": "DAN ZHANG LEE",
       "filed_date": "2016-06-02"
     },
-    "statutes": [],
-    "inferred_charges": []
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      }
+    ],
+    "inferred_charges": [],
+    "charges": "23152(a) VC/M 23152(b) VC/M",
+    "charge_rows": [
+      {
+        "raw": "23152(a) VC/M",
+        "title": "Vehicle Code § 23152(a)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(a)",
+        "code_system": "VC",
+        "section": "23152(a)",
+        "citation": "Vehicle Code § 23152(a)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      },
+      {
+        "raw": "23152(b) VC/M",
+        "title": "Vehicle Code § 23152(b)",
+        "title_source": "programmatic_citation",
+        "code": "VC 23152(b)",
+        "code_system": "VC",
+        "section": "23152(b)",
+        "citation": "Vehicle Code § 23152(b)",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, DAN ZHANG LEE, and date of filing 2016-06-02. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, DAN ZHANG LEE, date of filing, 2016-06-02, and charges in the case: 23152(a) VC/M 23152(b) VC/M.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "23152(a) VC/M",
+      "title": "Vehicle Code § 23152(a)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(a)",
+      "code_system": "VC",
+      "section": "23152(a)",
+      "citation": "Vehicle Code § 23152(a)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    },
+    {
+      "raw": "23152(b) VC/M",
+      "title": "Vehicle Code § 23152(b)",
+      "title_source": "programmatic_citation",
+      "code": "VC 23152(b)",
+      "code_system": "VC",
+      "section": "23152(b)",
+      "citation": "Vehicle Code § 23152(b)",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=23152.&lawCode=VEH",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:09:02.555Z",
+  "portal_case_id": "3837449",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-16009991",
+      "defendant": "DAN ZHANG LEE",
+      "filed_date": "2016-06-02"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3837449"
+  },
+  "updated_from_criminal_index_at": "2026-06-22T12:18:29.090875+00:00"
 }

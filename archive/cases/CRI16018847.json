@@ -2,8 +2,8 @@
   "schema": "sfsc-criminal-portal-case-v1",
   "source": "sftc-criminal-portal",
   "source_detail": "criminal_case_index",
-  "captured_at": "2026-06-21T22:00:50.696Z",
-  "status": "unavailable",
+  "captured_at": "2026-06-22T03:10:48.864Z",
+  "status": "found",
   "case_type": "criminal",
   "case_number": "CRI16018847",
   "criminal_case_number": "16018847",
@@ -24,11 +24,81 @@
       "name": "PATRICK TAYLOR",
       "party_type": "Defendant",
       "source": "criminal_case_index"
+    },
+    {
+      "name": "PATRICK TAYLOR",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
     }
   ],
-  "roa": [],
-  "calendar": [],
-  "attorneys": [],
+  "roa": [
+    {
+      "filedDate": "2016-10-21T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:LISA DEWBERRY/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LDPX:11-04-16/987,2/BAIL:65,000/SAORD/SA2:706 KEARNY STREET, SF CA/SAORD3/TE:3-4 HOURS/CONTD: PREHEARING CONFERENCE ON 10-27-16/CONTD: PRELIMINARY HEARING ON 11-02-16/DOP/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-11-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/LD:11-04-16/MO138583/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2016-10-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/LD:11-04-16/X:CONFIRMED PRELIMINARY HEARING DATE OF 11-02-16/TE:2,5 HOURS/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2016-11-02 9:00 AM",
+      "hearingType": "Preliminary Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 0,
+      "court_date": "2016-11-02",
+      "hearing_time": "9:00 AM",
+      "matters": "Preliminary Hearing",
+      "hearing_type": "Preliminary Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-10-27 9:00 AM",
+      "hearingType": "Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 20",
+      "__index": 1,
+      "court_date": "2016-10-27",
+      "hearing_time": "9:00 AM",
+      "matters": "Hearing",
+      "hearing_type": "Hearing",
+      "department": "Department 20",
+      "source": "criminal_portal_calendar"
+    },
+    {
+      "startTime": "2016-10-21 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 11",
+      "__index": 2,
+      "court_date": "2016-10-21",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 11",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "LISA DEWBERRY",
+      "type": "Conflict Attorney"
+    },
+    {
+      "name": "STEPHANIE ZUDEKOFF",
+      "type": "District Attorney"
+    }
+  ],
   "documents": [],
   "payments": [],
   "document_bytes_captured": true,
@@ -45,11 +115,42 @@
     }
   },
   "criminal_case_type": "",
-  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll",
-  "docket_entries": [],
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3846168",
+  "docket_entries": [
+    {
+      "filedDate": "2016-10-21T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:LISA DEWBERRY/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LDPX:11-04-16/987,2/BAIL:65,000/SAORD/SA2:706 KEARNY STREET, SF CA/SAORD3/TE:3-4 HOURS/CONTD: PREHEARING CONFERENCE ON 10-27-16/CONTD: PRELIMINARY HEARING ON 11-02-16/DOP/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2016-10-21T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:CONFL CNSL APPTD/X:THE PUBLIC DEFENDER'S OFFICE DECLARES A CONFLICT,/CON:LISA DEWBERRY/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/NTW/LDPX:11-04-16/987,2/BAIL:65,000/SAORD/SA2:706 KEARNY STREET, SF CA/SAORD3/TE:3-4 HOURS/CONTD: PREHEARING CONFERENCE ON 10-27-16/CONTD: PRELIMINARY HEARING ON 11-02-16/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-11-02T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PRELIMINARY HEARING/LD:11-04-16/MO138583/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2016-11-02T09:00:00.000Z",
+      "description": "/CAL:PRELIMINARY HEARING/LD:11-04-16/MO138583/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2016-10-27T09:00:00.000Z",
+      "docketEntryComment": "/CAL:PREHEARING CONFERENCE/LD:11-04-16/X:CONFIRMED PRELIMINARY HEARING DATE OF 11-02-16/TE:2,5 HOURS/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2016-10-27T09:00:00.000Z",
+      "description": "/CAL:PREHEARING CONFERENCE/LD:11-04-16/X:CONFIRMED PRELIMINARY HEARING DATE OF 11-02-16/TE:2,5 HOURS/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
   "criminal": {
     "raw_case_number": "16018847",
-    "portal_case_id": "",
+    "portal_case_id": "3846168",
     "display_case_number": "CRI-16018847",
     "defendant": "PATRICK TAYLOR",
     "filed_date": "2016-10-21",
@@ -60,11 +161,57 @@
       "filed_date": "2016-10-21"
     },
     "statutes": [],
-    "inferred_charges": []
+    "inferred_charges": [],
+    "charges": "11378 HS/F",
+    "charge_rows": [
+      {
+        "raw": "11378 HS/F",
+        "title": "Health and Safety Code § 11378",
+        "title_source": "programmatic_citation",
+        "code": "HS 11378",
+        "code_system": "HS",
+        "section": "11378",
+        "citation": "Health and Safety Code § 11378",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+        "url_version_status": "current_version_unverified",
+        "classification": "felony"
+      }
+    ]
   },
   "unavailable_reason": "criminal_portal_no_public_entries",
-  "unavailable_text": "No information available besides the name of the defendant, PATRICK TAYLOR, and date of filing 2016-10-21. criminal_portal_no_public_entries",
+  "unavailable_text": "No information available besides the name of the defendant, PATRICK TAYLOR, date of filing, 2016-10-21, and charges in the case: 11378 HS/F.",
   "documents_bytes_count": 0,
   "documents_unavailable_count": 0,
-  "documents_deferred_count": 0
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "11378 HS/F",
+      "title": "Health and Safety Code § 11378",
+      "title_source": "programmatic_citation",
+      "code": "HS 11378",
+      "code_system": "HS",
+      "section": "11378",
+      "citation": "Health and Safety Code § 11378",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11378.&lawCode=HSC",
+      "url_version_status": "current_version_unverified",
+      "classification": "felony"
+    }
+  ],
+  "case_header_checked_at": "2026-06-22T03:10:49.463Z",
+  "portal_case_id": "3846168",
+  "criminal_portal": {
+    "case_header": {
+      "case_number": "CRI-16018847",
+      "defendant": "PATRICK TAYLOR",
+      "filed_date": "2016-10-21"
+    }
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3846168"
+  }
 }
