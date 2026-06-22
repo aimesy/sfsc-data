@@ -12,6 +12,7 @@ on:
       - 'archive/cases-index.ndjson'
       - 'archive/discovered-cases.ndjson'
       - 'archive/new-filings-cases/**'
+      - 'assets/data/criminal-statute-current-versions.json'
       - 'judges.json'
       - 'scripts/build_case_directory.py'
       - 'scripts/build_case_tables.py'
@@ -59,6 +60,7 @@ jobs:
             archive/discovered-cases.ndjson
             archive/document-index.ndjson
             archive/new-filings-cases/**
+            assets/data/criminal-statute-current-versions.json
             data/**
             judges.json
             scripts/build_case_directory.py

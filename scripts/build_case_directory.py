@@ -22,6 +22,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
 
+from import_scanner_cases import parse_charge_rows
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CASE_DIR = ROOT / "archive" / "cases"
@@ -215,11 +217,18 @@ def charge_text_from_case(case: dict[str, Any]) -> str:
 def charge_rows_from_case(case: dict[str, Any]) -> list[dict[str, Any]]:
     rows = case.get("charges_parsed")
     if isinstance(rows, list):
-        return [row for row in rows if isinstance(row, dict)]
+        parsed_rows = [row for row in rows if isinstance(row, dict)]
+        if parsed_rows:
+            return parsed_rows
     criminal = case.get("criminal") if isinstance(case.get("criminal"), dict) else {}
     rows = criminal.get("charge_rows")
     if isinstance(rows, list):
-        return [row for row in rows if isinstance(row, dict)]
+        parsed_rows = [row for row in rows if isinstance(row, dict)]
+        if parsed_rows:
+            return parsed_rows
+    charges = charge_text_from_case(case)
+    if charges:
+        return parse_charge_rows(charges, filing_date_for_case(case))
     return []
 
 
@@ -234,17 +243,29 @@ def charge_text_from_row(row: dict[str, Any]) -> str:
 def charge_rows_from_row(row: dict[str, Any]) -> list[dict[str, Any]]:
     direct = row.get("charges_parsed")
     if isinstance(direct, list):
-        return [item for item in direct if isinstance(item, dict)]
+        parsed_rows = [item for item in direct if isinstance(item, dict)]
+        if parsed_rows:
+            return parsed_rows
     raw = row.get("charges_json")
-    if raw is None:
-        return []
-    try:
-        parsed = json.loads(clean(raw))
-    except Exception:
-        return []
-    if not isinstance(parsed, list):
-        return []
-    return [item for item in parsed if isinstance(item, dict)]
+    if raw is not None:
+        try:
+            parsed = json.loads(clean(raw))
+        except Exception:
+            parsed = None
+        if isinstance(parsed, list):
+            parsed_rows = [item for item in parsed if isinstance(item, dict)]
+            if parsed_rows:
+                return parsed_rows
+    charges = charge_text_from_row(row)
+    if charges:
+        filing_date = parse_date(
+            row.get("filing_date")
+            or row.get("filed")
+            or row.get("date_filed")
+            or row.get("date")
+        )
+        return parse_charge_rows(charges, filing_date)
+    return []
 
 
 def prefix_for_case(case_number: str) -> str:
@@ -521,6 +542,7 @@ def discovery_rows(paths: Iterable[Path]) -> dict[str, dict[str, Any]]:
                 or raw.get("date_filed")
                 or raw.get("date")
             )
+            row["charges_parsed"] = charge_rows_from_row(row)
             rows[case_number] = row
     return rows
 

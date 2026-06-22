@@ -422,6 +422,10 @@ def test_criminal_importer_guards() -> None:
     check("vehicle suspended-license citation parsed", titled_vehicle[0].get("citation") == f"Vehicle Code {chr(167)} 14601.1(a)", str(titled_vehicle))
     check("vehicle suspended-license link targets base section", "sectionNum=14601.1." in titled_vehicle[0].get("url", ""), str(titled_vehicle))
     check("comma subdivision charge parses", titled_vehicle[1].get("code") == "VC 14601.2(a,b)", str(titled_vehicle))
+    historical_hs = importer.parse_charge_rows("11351 HS/F", "1974-01-01")[0]
+    check("historical HSC charge uses filing-date original", historical_hs.get("url_version_status") == "historical_version_at_filing", str(historical_hs))
+    check("historical HSC charge links release original", "releases/download/criminal-statute-originals-2026-06-22/73Vol1_Chapters.pdf#page=2174" in historical_hs.get("url", ""), str(historical_hs))
+    check("historical HSC charge preserves official source", "clerk.assembly.ca.gov" in historical_hs.get("statute_historical_official_source_url", ""), str(historical_hs))
     stale = importer.normalize_case_data({
         **headered,
         "unavailable_text": "No information available besides the name of the defendant, DOE, JANE, and date of filing 06/20/2024. criminal_portal_no_public_entries",

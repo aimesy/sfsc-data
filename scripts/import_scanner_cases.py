@@ -23,6 +23,7 @@ import document_storage as storage
 
 ROOT = Path(__file__).resolve().parents[1]
 CHARGE_TITLE_LOOKUP_PATH = ROOT / "assets" / "data" / "criminal-charge-titles.json"
+STATUTE_VERSION_LOOKUP_PATH = ROOT / "assets" / "data" / "criminal-statute-current-versions.json"
 CRIMINAL_PORTAL_SCHEMA = "sfsc-criminal-portal-case-v1"
 CRIMINAL_PORTAL_SOURCE = "sftc-criminal-portal"
 CRIMINAL_PORTAL_URL = "https://webapps.sftc.org/crimportal/crimportal.dll"
@@ -66,6 +67,7 @@ CHARGE_STATUTE_RE = re.compile(
 )
 CHARGE_SENTINEL_RE = re.compile(r"\b(?:8{5,}|9{5,}|0{5,})\b")
 DATE_TOKEN_RE = re.compile(r"\b(\d{4}-\d{2}-\d{2}|\d{1,2}/\d{1,2}/\d{4})\b")
+BAD_SCHEDULE_TITLE_RE = re.compile(r"^(?:a|an|and|for|nor|of|or|the|to|with)$", re.I)
 
 CODE_NAMES = {
     "PC": ("Penal Code", "PEN"),
@@ -92,6 +94,7 @@ CODE_NAMES = {
     "CCP": ("Code of Civil Procedure", "CCP"),
 }
 _CHARGE_TITLE_LOOKUP: dict | None = None
+_STATUTE_VERSION_LOOKUP: dict | None = None
 
 
 def norm_case(value: object) -> str:
@@ -163,6 +166,111 @@ def leginfo_url(code: str, section: str) -> str:
         "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?"
         + urllib.parse.urlencode({"sectionNum": f"{base_section}.", "lawCode": code_name[1]})
     )
+
+
+def statute_version_lookup_paths() -> list[Path]:
+    paths: list[Path] = []
+    env_path = os.environ.get("SFSC_STATUTE_VERSION_LOOKUP")
+    if env_path:
+        paths.append(Path(env_path).expanduser())
+    paths.append(STATUTE_VERSION_LOOKUP_PATH)
+    nested_product_path = ROOT.parent.parent / "assets" / "data" / "criminal-statute-current-versions.json"
+    if nested_product_path not in paths:
+        paths.append(nested_product_path)
+    return paths
+
+
+def statute_version_lookup() -> dict:
+    global _STATUTE_VERSION_LOOKUP
+    if _STATUTE_VERSION_LOOKUP is not None:
+        return _STATUTE_VERSION_LOOKUP
+    payload = {}
+    for path in statute_version_lookup_paths():
+        try:
+            with path.open("r", encoding="utf-8") as fh:
+                payload = json.load(fh)
+            break
+        except FileNotFoundError:
+            continue
+    sections = payload.get("sections") if isinstance(payload, dict) else {}
+    _STATUTE_VERSION_LOOKUP = sections if isinstance(sections, dict) else {}
+    return _STATUTE_VERSION_LOOKUP
+
+
+def statute_version_record(code: str, section: str) -> dict:
+    lookup = statute_version_lookup()
+    exact = clean(section)
+    base = re.sub(r"\(.*$", "", exact)
+    for key in (f"{code} {exact}", f"{code} {base}"):
+        record = lookup.get(key)
+        if isinstance(record, dict):
+            return record
+    return {}
+
+
+def statute_url_fields(code: str, section: str, filing_date: object = "") -> dict:
+    current_url = leginfo_url(code, section)
+    if not current_url:
+        return {}
+    record = statute_version_record(code, section)
+    filed = iso_date(filing_date)
+    current_from = clean(
+        record.get("current_version_start_date")
+        or record.get("operative_date")
+        or record.get("effective_date")
+    )
+    out: dict[str, object] = {"current_url": current_url}
+    if record:
+        for key in ("source_url", "history", "effective_date", "operative_date", "current_version_start_date"):
+            value = record.get(key)
+            if value:
+                out[f"statute_{key}"] = value
+        historical_versions = record.get("historical_versions")
+        if isinstance(historical_versions, list) and filed:
+            for version in historical_versions:
+                if not isinstance(version, dict):
+                    continue
+                start = clean(version.get("effective_from"))
+                end = clean(version.get("effective_to"))
+                url = clean(version.get("url"))
+                if not start or not url or filed < start or (end and filed > end):
+                    continue
+                out.update(
+                    {
+                        "url": url,
+                        "url_version_status": "historical_version_at_filing",
+                        "historical_url": url,
+                    }
+                )
+                for key in (
+                    "source_label",
+                    "official_source_url",
+                    "release_repo",
+                    "release_tag",
+                    "release_asset",
+                    "release_url",
+                    "sha256",
+                    "page",
+                    "printed_page",
+                    "history",
+                    "effective_from",
+                    "effective_to",
+                ):
+                    value = version.get(key)
+                    if value:
+                        out[f"statute_historical_{key}"] = value
+                return out
+    if filed and current_from and filed < current_from:
+        out["url_version_status"] = "current_version_postdates_filing"
+        return out
+    out["url"] = current_url
+    if filed and current_from:
+        out["url_version_status"] = "current_version_at_or_before_filing"
+    elif record:
+        out["url_version_status"] = "current_version_date_unknown"
+    else:
+        out["url_version_status"] = "current_version_unverified"
+    return out
 
 
 def charge_title_lookup_paths() -> list[Path]:
@@ -248,7 +356,13 @@ def effective_date_rank(record: dict) -> int:
 
 
 def choose_schedule_record(records: list[dict], filing_date: object = "") -> tuple[dict, str]:
-    clean_records = [record for record in records if isinstance(record, dict) and clean(record.get("title"))]
+    clean_records = [
+        record
+        for record in records
+        if isinstance(record, dict)
+        and clean(record.get("title"))
+        and not BAD_SCHEDULE_TITLE_RE.fullmatch(clean(record.get("title")))
+    ]
     if not clean_records:
         return {}, ""
     filed = iso_date(filing_date)
@@ -392,7 +506,7 @@ def charge_row_from_match(raw: str, match: re.Match, title: str = "", filing_dat
         row["code_system"] = code
         row["section"] = section
         row["citation"] = f"{CODE_NAMES[code][0]} {chr(167)} {section}"
-        row["url"] = leginfo_url(code, section)
+        row.update(statute_url_fields(code, section, filing_date))
     if classification:
         row["classification"] = classification
     return row
