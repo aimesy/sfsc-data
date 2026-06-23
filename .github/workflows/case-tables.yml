@@ -129,7 +129,6 @@ jobs:
               README.md \
               archive/case-directory \
               data/cases.parquet \
-              data/case-table-stats.json \
               data/parties.parquet \
               data/attorneys.parquet \
               data/representation.parquet \
@@ -188,24 +187,35 @@ jobs:
           PY
           }
 
-          build_outputs
-          if git diff --staged --quiet; then
+          build_commit() {
+            build_outputs
+            if git diff --staged --quiet; then
+              return 1
+            fi
+            git commit -m "Build normalized case tables"
+            return 0
+          }
+
+          if ! build_commit; then
             echo "No normalized case-table changes."
             dispatch_product
             exit 0
           fi
-          git commit -m "Build normalized case tables"
           for attempt in 1 2 3 4 5; do
             if git push origin HEAD:master; then
               dispatch_product
               exit 0
             fi
-            echo "Push rejected ($attempt/5); rebasing on origin/master ..."
+            if [ "$attempt" -eq 5 ]; then
+              break
+            fi
+            echo "Push rejected ($attempt/5); rebuilding from fresh origin/master ..."
             git fetch origin master
-            git rebase origin/master || { git rebase --abort; exit 1; }
-            build_outputs
-            if ! git diff --staged --quiet; then
-              git commit --amend --no-edit
+            git checkout --detach origin/master
+            if ! build_commit; then
+              echo "No normalized case-table changes after refresh."
+              dispatch_product
+              exit 0
             fi
             sleep $((attempt * 3))
           done
