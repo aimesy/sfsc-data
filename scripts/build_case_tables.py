@@ -702,6 +702,7 @@ def rows_from_cases(
     case_dir: Path,
     limit: int | None = None,
     progress_every: int = 0,
+    include_docket_entries: bool = True,
 ) -> dict[str, list[dict[str, Any]]]:
     tables: dict[str, list[dict[str, Any]]] = {
         "cases": [],
@@ -795,19 +796,20 @@ def rows_from_cases(
             description = first_text(entry, "description", "RTEXT", "text", "title")
             doc_id = first_text(entry, "doc_id", "DocID")
             entry_hash = docket_hash(case_number, entry, entry_seq)
-            tables["docket_entries"].append({
-                "case_number": case_number,
-                "entry_seq": entry_seq,
-                "date_filed": date_filed,
-                "description": description,
-                "doc_id": doc_id,
-                "has_document": bool(entry.get("has_document") or doc_id or first_text(entry, "url", "URL")),
-                "fee": first_text(entry, "fee", "FEE"),
-                "url": first_text(entry, "url", "URL", "href", "source_url"),
-                "entry_hash": entry_hash,
-                "captured_at": captured_at,
-                "source_url": source_url,
-            })
+            if include_docket_entries:
+                tables["docket_entries"].append({
+                    "case_number": case_number,
+                    "entry_seq": entry_seq,
+                    "date_filed": date_filed,
+                    "description": description,
+                    "doc_id": doc_id,
+                    "has_document": bool(entry.get("has_document") or doc_id or first_text(entry, "url", "URL")),
+                    "fee": first_text(entry, "fee", "FEE"),
+                    "url": first_text(entry, "url", "URL", "href", "source_url"),
+                    "entry_hash": entry_hash,
+                    "captured_at": captured_at,
+                    "source_url": source_url,
+                })
             for event in (estate_dossier.detect_estate_events(description) if is_probate else ()):
                 tables["estate_events"].append({
                     "case_number": case_number,
@@ -1768,13 +1770,16 @@ def write_tables(tables: dict[str, list[dict[str, Any]]], out_dir: Path) -> None
 
 def case_table_stats(tables: dict[str, list[dict[str, Any]]]) -> dict[str, Any]:
     cases = tables.get("cases", [])
+    docket_entries = len(tables.get("docket_entries", []))
+    if not docket_entries:
+        docket_entries = sum(int(row.get("docket_entry_count") or 0) for row in cases)
     return {
         "schema_version": 1,
         "source": "archive/cases/*.json via scripts/build_case_tables.py",
         "built_at": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
         "cases": len(cases),
         "case_documents": sum(int(row.get("documents_total") or 0) for row in cases),
-        "docket_entries": len(tables.get("docket_entries", [])),
+        "docket_entries": docket_entries,
         "parties": len(tables.get("parties", [])),
         "attorneys": len(tables.get("attorneys", [])),
         "calendar": len(tables.get("calendar", [])),
@@ -1800,6 +1805,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--judges-json", type=Path, default=DEFAULT_JUDGES_JSON)
     parser.add_argument("--profiles-only", action="store_true", help="Write only the sharded entity profile JSON.")
     parser.add_argument("--skip-entity-profiles", action="store_true", help="Skip sharded entity profile generation.")
+    parser.add_argument("--skip-docket-entries", action="store_true", help="Skip the oversized docket_entries table.")
     parser.add_argument("--limit", type=int, default=None, help="Limit case files for smoke tests.")
     parser.add_argument("--no-write", action="store_true", help="Validate and print counts without writing derived files.")
     parser.add_argument("--progress-every", type=int, default=0, help="Print progress after this many case JSON files.")
@@ -1811,7 +1817,12 @@ def main(argv: list[str] | None = None) -> int:
     if not case_dir.exists():
         raise SystemExit(f"case directory not found: {case_dir}")
 
-    tables = rows_from_cases(case_dir, args.limit, max(0, args.progress_every))
+    tables = rows_from_cases(
+        case_dir,
+        args.limit,
+        max(0, args.progress_every),
+        include_docket_entries=not args.skip_docket_entries,
+    )
     entity_profiles: dict[str, Any] | None = None
     if not args.skip_entity_profiles:
         print("building entity_profiles", flush=True)
