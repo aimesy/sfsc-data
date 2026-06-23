@@ -68,7 +68,9 @@ jobs:
           git add \
             data/case_outcomes.parquet \
             data/tentative_dispositions.parquet \
-            data/profile-metrics.json
+            data/profile-metrics.json \
+            data/profile-metrics-manifest.json \
+            data/profile-metrics-*.json
           python scripts/check_repo_bloat.py --staged
           if git diff --staged --quiet; then
             echo "No metrics changes."

@@ -68,6 +68,8 @@ DEFAULT_TENTATIVES_GLOB = os.path.join(REPO, "data", "tentatives-*.parquet")
 DEFAULT_LITIGANTS_JSON = os.path.join(REPO, "data", "litigants.json")
 DEFAULT_OUT_DIR = os.path.join(REPO, "data")
 DEFAULT_JUDGES_JSON = os.path.join(REPO, "judges.json")
+PROFILE_METRICS_SHARD_BYTES = 40 * 1024 * 1024
+PROFILE_METRICS_KINDS = ("judicial_officers", "attorneys", "litigants")
 
 
 # ===========================================================================
@@ -707,6 +709,77 @@ def litigant_metrics(outcomes: list[dict], litigants_json: str) -> dict[str, dic
     return out
 
 
+def profile_metrics_shard_path(out_dir: str, kind: str, shard_index: int):
+    from pathlib import Path
+    return Path(out_dir) / f"profile-metrics-{kind}-{shard_index:03d}.json"
+
+
+def cleanup_profile_metrics_outputs(out_dir: str) -> None:
+    from pathlib import Path
+    out = Path(out_dir)
+    (out / "profile-metrics.json").unlink(missing_ok=True)
+    (out / "profile-metrics-manifest.json").unlink(missing_ok=True)
+    for path in out.glob("profile-metrics-*.json"):
+        path.unlink(missing_ok=True)
+
+
+def shard_metric_records(records: dict[str, Any], max_bytes: int) -> list[dict[str, Any]]:
+    shards: list[dict[str, Any]] = []
+    current: dict[str, Any] = {}
+    current_size = 2
+    for key in sorted(records):
+        item_size = len(json.dumps({key: records[key]}, ensure_ascii=False, separators=(",", ":")).encode("utf-8")) - 2
+        separator_size = 1 if current else 0
+        if current and current_size + separator_size + item_size > max_bytes:
+            shards.append(current)
+            current = {}
+            current_size = 2
+            separator_size = 0
+        current[key] = records[key]
+        current_size += separator_size + item_size
+    if current:
+        shards.append(current)
+    return shards
+
+
+def write_profile_metrics_atomic(out_dir: str, payload: dict[str, Any]) -> None:
+    from pathlib import Path
+    out = Path(out_dir)
+    out.mkdir(parents=True, exist_ok=True)
+    cleanup_profile_metrics_outputs(out_dir)
+    manifest = {
+        "schema_version": 2,
+        "source_schema_version": payload.get("schema_version", 1),
+        "generated_at": payload.get("generated_at", ""),
+        "note": payload.get("note", ""),
+        "kinds": {},
+    }
+    for kind in PROFILE_METRICS_KINDS:
+        records = payload.get(kind) if isinstance(payload.get(kind), dict) else {}
+        shards = []
+        for shard_index, shard_records in enumerate(shard_metric_records(records, PROFILE_METRICS_SHARD_BYTES)):
+            shard_path = profile_metrics_shard_path(out_dir, kind, shard_index)
+            bct.write_json_atomic(shard_path, {
+                "schema_version": 2,
+                "kind": kind,
+                "generated_at": payload.get("generated_at", ""),
+                "records": shard_records,
+            })
+            shards.append({
+                "path": shard_path.name,
+                "count": len(shard_records),
+                "bytes": shard_path.stat().st_size,
+            })
+        manifest["kinds"][kind] = {"count": len(records), "shards": shards}
+    bct.write_json_atomic(out / "profile-metrics-manifest.json", manifest)
+    bct.write_json_atomic(out / "profile-metrics.json", {
+        "schema_version": 2,
+        "manifest": "profile-metrics-manifest.json",
+        "generated_at": payload.get("generated_at", ""),
+        "note": payload.get("note", ""),
+    })
+
+
 def write_outputs(out_dir: str, case_outcomes: list[dict], dispositions: list[dict],
                   profile_metrics: dict) -> None:
     import pandas as pd
@@ -728,7 +801,7 @@ def write_outputs(out_dir: str, case_outcomes: list[dict], dispositions: list[di
                  "are heuristic roll-ups of docket-derived case outcomes."),
         **profile_metrics,
     }
-    bct.write_json_atomic(Path(out_dir) / "profile-metrics.json", payload)
+    write_profile_metrics_atomic(out_dir, payload)
 
 
 def main(argv: list[str] | None = None) -> int:
