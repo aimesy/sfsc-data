@@ -74,12 +74,57 @@ jobs:
         run: pip install -c .github/workflows/python-constraints.txt pandas pyarrow openpyxl holidays
 
       - name: Ingest and commit updated parquet
+        env:
+          SFSC_PRODUCT_DISPATCH_TOKEN: ${{ secrets.SFSC_PRODUCT_DISPATCH_TOKEN }}
         run: |
           set -e
           MODE="${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'incremental' }}"
 
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          dispatch_product() {
+            if [ -z "${SFSC_PRODUCT_DISPATCH_TOKEN:-}" ]; then
+              echo "No SFSC_PRODUCT_DISPATCH_TOKEN secret; skipping product deploy dispatch."
+              return 0
+            fi
+            data_sha="$(git rev-parse HEAD)"
+            python3 - "$data_sha" <<'PY'
+          import json
+          import os
+          import sys
+          import urllib.request
+
+          data_sha = sys.argv[1]
+          token = os.environ.get("SFSC_PRODUCT_DISPATCH_TOKEN", "")
+          payload = {
+              "event_type": "sfsc-data-updated",
+              "client_payload": {
+                  "data_repository": "aimesy/sfsc-data",
+                  "data_ref": data_sha,
+                  "data_sha": data_sha,
+                  "pages_ready": True,
+                  "payload_kind": "tentatives",
+                  "source": "sfsc-data ingest workflow",
+              },
+          }
+          req = urllib.request.Request(
+              "https://api.github.com/repos/aimesy/sfsc/dispatches",
+              data=json.dumps(payload).encode("utf-8"),
+              method="POST",
+              headers={
+                  "Authorization": f"Bearer {token}",
+                  "Accept": "application/vnd.github+json",
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "User-Agent": "sfsc-data-ingest",
+                  "Content-Type": "application/json",
+              },
+          )
+          with urllib.request.urlopen(req, timeout=60) as res:
+              res.read()
+          print(f"Dispatched sfsc-data-updated for {data_sha[:12]}")
+          PY
+          }
 
           # Always work against the freshest origin/master so a parallel
           # human commit doesn't disappear when we push.
@@ -170,6 +215,7 @@ jobs:
 
           if git diff --staged --quiet; then
             echo "No changes to commit."
+            dispatch_product
             exit 0
           fi
 
@@ -190,6 +236,7 @@ jobs:
           # attempts so we stay a clean fast-forward.
           for attempt in 1 2 3 4 5; do
             if git push origin HEAD:master; then
+              dispatch_product
               exit 0
             fi
             echo "Push rejected (attempt $attempt/5); rebasing on origin/master …"
