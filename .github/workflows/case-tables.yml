@@ -107,14 +107,32 @@ jobs:
             exit 1
           fi
 
+          run_with_heartbeat() {
+            local label="$1"
+            shift
+            "$@" &
+            local pid="$!"
+            local start
+            start="$(date +%s)"
+            while kill -0 "$pid" 2>/dev/null; do
+              sleep 60
+              if kill -0 "$pid" 2>/dev/null; then
+                local now
+                now="$(date +%s)"
+                echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) still running: $label elapsed=$((now - start))s"
+              fi
+            done
+            wait "$pid"
+          }
+
           build_outputs() {
             python scripts/check_case_index_integrity.py
             python scripts/check_estate_dossier.py
             python scripts/check_criminal_statute_versions.py --allow-missing-js
             python scripts/check_case_pipeline_synthetic.py
-            python scripts/build_case_tables.py
+            run_with_heartbeat "scripts/build_case_tables.py" python scripts/build_case_tables.py
             python scripts/check_case_representation.py
-            python scripts/build_case_directory.py --case-json-mode none --case-table data/cases.parquet
+            run_with_heartbeat "scripts/build_case_directory.py" python scripts/build_case_directory.py --case-json-mode none --case-table data/cases.parquet
             python scripts/check_case_directory.py
             python update-readme.py --live-counts-only
 
