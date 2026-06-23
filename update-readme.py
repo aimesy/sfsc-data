@@ -268,7 +268,8 @@ def render_live_table(stats: dict) -> str:
 |---|---:|
 | Tentative rulings | {stats['rulings']:,} |
 | Dockets | {stats['dockets']:,} |
-| Documents archived | {stats['documents']:,} |
+| Documents indexed | {stats['filings']:,} |
+| Documents archived | {stats['documents_archived']:,} |
 | Docket entries | {stats['docket_entries']:,} |
 | Archive size | {stats['archive_mb']:,} MB |
 | Latest tentative ruling | {stats['latest_ruling_date']} |
