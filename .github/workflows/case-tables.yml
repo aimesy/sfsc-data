@@ -130,7 +130,7 @@ jobs:
             python scripts/check_estate_dossier.py
             python scripts/check_criminal_statute_versions.py --allow-missing-js
             python scripts/check_case_pipeline_synthetic.py
-            run_with_heartbeat "scripts/build_case_tables.py" python scripts/build_case_tables.py
+            run_with_heartbeat "scripts/build_case_tables.py" python -u scripts/build_case_tables.py --progress-every 2500 --skip-entity-profiles
             python scripts/check_case_representation.py
             run_with_heartbeat "scripts/build_case_directory.py" python scripts/build_case_directory.py --case-json-mode none --case-table data/cases.parquet
             python scripts/check_case_directory.py

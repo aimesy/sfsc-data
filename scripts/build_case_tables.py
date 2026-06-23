@@ -698,7 +698,11 @@ def docket_hash(case_number: str, entry: dict[str, Any], entry_seq: int) -> str:
     )
 
 
-def rows_from_cases(case_dir: Path, limit: int | None = None) -> dict[str, list[dict[str, Any]]]:
+def rows_from_cases(
+    case_dir: Path,
+    limit: int | None = None,
+    progress_every: int = 0,
+) -> dict[str, list[dict[str, Any]]]:
     tables: dict[str, list[dict[str, Any]]] = {
         "cases": [],
         "docket_entries": [],
@@ -713,7 +717,9 @@ def rows_from_cases(case_dir: Path, limit: int | None = None) -> dict[str, list[
     seen_attorneys: dict[str, dict[str, Any]] = {}
     seen_representation: set[tuple[str, str, str, str]] = set()
 
-    for path in iter_case_files(case_dir, limit):
+    case_files = list(iter_case_files(case_dir, limit))
+    total = len(case_files)
+    for processed, path in enumerate(case_files, 1):
         case = load_case(path)
         case_number = norm_case(case.get("case_number") or path.stem)
         if not case_number:
@@ -966,6 +972,16 @@ def rows_from_cases(case_dir: Path, limit: int | None = None) -> dict[str, list[
                 "captured_at": captured_at,
                 "source_url": source_url,
             })
+
+        if progress_every > 0 and (processed % progress_every == 0 or processed == total):
+            print(
+                "rows_from_cases: "
+                f"{processed}/{total} cases, "
+                f"{len(tables['docket_entries'])} docket entries, "
+                f"{len(tables['parties'])} parties, "
+                f"{len(tables['representation'])} representation edges",
+                flush=True,
+            )
 
     tables["attorneys"] = list(seen_attorneys.values())
     tables["cases"].sort(key=lambda r: r["case_number"])
@@ -1783,23 +1799,33 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--case-table-stats", type=Path, default=DEFAULT_CASE_TABLE_STATS)
     parser.add_argument("--judges-json", type=Path, default=DEFAULT_JUDGES_JSON)
     parser.add_argument("--profiles-only", action="store_true", help="Write only the sharded entity profile JSON.")
+    parser.add_argument("--skip-entity-profiles", action="store_true", help="Skip sharded entity profile generation.")
     parser.add_argument("--limit", type=int, default=None, help="Limit case files for smoke tests.")
     parser.add_argument("--no-write", action="store_true", help="Validate and print counts without writing derived files.")
+    parser.add_argument("--progress-every", type=int, default=0, help="Print progress after this many case JSON files.")
     args = parser.parse_args(argv)
+    if args.profiles_only and args.skip_entity_profiles:
+        raise SystemExit("--profiles-only cannot be combined with --skip-entity-profiles")
 
     case_dir = args.case_dir.resolve()
     if not case_dir.exists():
         raise SystemExit(f"case directory not found: {case_dir}")
 
-    tables = rows_from_cases(case_dir, args.limit)
-    entity_profiles = build_entity_profiles(tables, args.judges_json.resolve())
+    tables = rows_from_cases(case_dir, args.limit, max(0, args.progress_every))
+    entity_profiles: dict[str, Any] | None = None
+    if not args.skip_entity_profiles:
+        print("building entity_profiles", flush=True)
+        entity_profiles = build_entity_profiles(tables, args.judges_json.resolve())
     for name, rows in tables.items():
         print(f"{name}: {len(rows)}")
-    print(
-        "entity_profiles: "
-        f"{len(entity_profiles['attorneys'])} attorneys, "
-        f"{len(entity_profiles['judges'])} judges"
-    )
+    if entity_profiles is None:
+        print("entity_profiles: skipped")
+    else:
+        print(
+            "entity_profiles: "
+            f"{len(entity_profiles['attorneys'])} attorneys, "
+            f"{len(entity_profiles['judges'])} judges"
+        )
     if not args.no_write:
         if not args.profiles_only:
             write_tables(tables, args.out_dir.resolve())
@@ -1816,9 +1842,10 @@ def main(argv: list[str] | None = None) -> int:
                 f"wrote {args.representation_manifest.resolve().relative_to(ROOT)} "
                 f"and {representation_manifest['sidecar_count']} representation sidecar(s)"
             )
-        profiles_out = args.profiles_out.resolve()
-        write_entity_profiles_atomic(profiles_out, entity_profiles)
-        print(f"wrote {entity_profile_manifest_path(profiles_out).relative_to(ROOT)}")
+        if entity_profiles is not None:
+            profiles_out = args.profiles_out.resolve()
+            write_entity_profiles_atomic(profiles_out, entity_profiles)
+            print(f"wrote {entity_profile_manifest_path(profiles_out).relative_to(ROOT)}")
     return 0
 
 
