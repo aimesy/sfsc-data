@@ -109,10 +109,9 @@ def parse_date(value: Any) -> str:
     text = clean(value)
     if not text:
         return ""
-    m = re.search(r"\b(19|20)\d{2}-\d{1,2}-\d{1,2}\b", text)
+    m = re.search(r"\b((?:19|20)\d{2})-(\d{1,2})-(\d{1,2})(?=\D|$)", text)
     if m:
-        y, mo, d = re.split(r"-", m.group(0))
-        return f"{int(y):04d}-{int(mo):02d}-{int(d):02d}"
+        return f"{int(m.group(1)):04d}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
     m = re.search(r"\b(\d{1,2})/(\d{1,2})/(\d{2,4})\b", text)
     if m:
         year = int(m.group(3))
