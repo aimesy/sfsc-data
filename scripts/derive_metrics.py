@@ -322,9 +322,9 @@ def _clean_judge(value: Any) -> str:
     return "" if text.lower() in ("", "nan", "none", "n/a") else text
 
 
-def build_case_outcomes(case_dir: str, limit: int | None = None):
+def build_case_outcomes(case_dir: str, limit: int | None = None, progress_every: int = 0):
     """(tables, case_outcomes rows). Reuses build_case_tables for representation."""
-    tables = bct.rows_from_cases(__import__("pathlib").Path(case_dir), limit)
+    tables = bct.rows_from_cases(__import__("pathlib").Path(case_dir), limit, progress_every=progress_every)
     docket_by_case: dict[str, list[dict]] = defaultdict(list)
     for row in tables["docket_entries"]:
         docket_by_case[row["case_number"]].append(
@@ -813,11 +813,13 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--out-dir", default=DEFAULT_OUT_DIR)
     ap.add_argument("--judges-json", default=DEFAULT_JUDGES_JSON)
     ap.add_argument("--limit", type=int, default=None)
+    ap.add_argument("--progress-every", type=int, default=0,
+                    help="Print case parsing progress after this many case JSON files.")
     ap.add_argument("--no-write", action="store_true")
     args = ap.parse_args(argv)
 
     print("Building case outcomes from docket text …")
-    tables, case_outcomes = build_case_outcomes(args.case_dir, args.limit)
+    tables, case_outcomes = build_case_outcomes(args.case_dir, args.limit, max(0, args.progress_every))
     print(f"  {len(case_outcomes)} case-outcome signals across {len(tables['cases'])} cases")
 
     print("Classifying tentative motion dispositions …")
