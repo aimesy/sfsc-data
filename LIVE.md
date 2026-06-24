@@ -3,10 +3,10 @@
 | Metric | Count |
 |---|---:|
 | Tentative rulings | 379,368 |
-| Dockets | 455,841 |
-| Documents indexed | 4,366,536 |
+| Dockets | 468,042 |
+| Documents indexed | 4,411,289 |
 | Documents archived | 66,332 |
-| Docket entries | 9,974,666 |
+| Docket entries | 10,163,966 |
 | Archive size | 68,462 MB |
 | Latest tentative ruling | 2026-06-23 |
 
