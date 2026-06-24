@@ -322,13 +322,20 @@ def _clean_judge(value: Any) -> str:
     return "" if text.lower() in ("", "nan", "none", "n/a") else text
 
 
+def log_phase(message: str) -> None:
+    stamp = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
+    print(f"{stamp} {message}", flush=True)
+
+
 def build_case_outcomes(case_dir: str, limit: int | None = None, progress_every: int = 0):
     """(tables, case_outcomes rows). Reuses build_case_tables for representation."""
     tables = bct.rows_from_cases(__import__("pathlib").Path(case_dir), limit, progress_every=progress_every)
+    log_phase("grouping docket entries for outcome signals")
     docket_by_case: dict[str, list[dict]] = defaultdict(list)
     for row in tables["docket_entries"]:
         docket_by_case[row["case_number"]].append(
             {"description": row["description"], "date_filed": row["date_filed"]})
+    log_phase(f"classifying outcome signals across {len(docket_by_case)} cases")
     outcomes: list[dict[str, Any]] = []
     for case_number, entries in docket_by_case.items():
         for sig in case_outcome_signals(entries):
@@ -341,9 +348,10 @@ def build_tentative_dispositions(tentatives_glob: str):
     """One row per tentative motion disposition (motion_type x disposition x judge)."""
     import pandas as pd
     rows: list[dict[str, Any]] = []
-    for path in sorted(glob.glob(tentatives_glob)):
-        if "extras" in os.path.basename(path):
-            continue
+    paths = [path for path in sorted(glob.glob(tentatives_glob))
+             if "extras" not in os.path.basename(path)]
+    log_phase(f"loading {len(paths)} tentative parquet files")
+    for path in paths:
         cols = pd.read_parquet(path).columns
         want = [c for c in ("case_number", "case_title", "calendar_matter", "ruling",
                             "ruling_substantive", "judge", "court_date", "department") if c in cols]
@@ -784,7 +792,9 @@ def write_outputs(out_dir: str, case_outcomes: list[dict], dispositions: list[di
                   profile_metrics: dict) -> None:
     import pandas as pd
     from pathlib import Path
+    log_phase("writing case_outcomes.parquet")
     bct.write_parquet_atomic(Path(out_dir) / "case_outcomes.parquet", pd.DataFrame(case_outcomes))
+    log_phase("writing tentative_dispositions.parquet")
     bct.write_parquet_atomic(Path(out_dir) / "tentative_dispositions.parquet", pd.DataFrame(dispositions))
     payload = {
         "schema_version": 1,
@@ -801,6 +811,7 @@ def write_outputs(out_dir: str, case_outcomes: list[dict], dispositions: list[di
                  "are heuristic roll-ups of docket-derived case outcomes."),
         **profile_metrics,
     }
+    log_phase("writing profile metrics shards")
     write_profile_metrics_atomic(out_dir, payload)
 
 
@@ -818,25 +829,32 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--no-write", action="store_true")
     args = ap.parse_args(argv)
 
-    print("Building case outcomes from docket text …")
+    log_phase("building case outcomes from docket text")
     tables, case_outcomes = build_case_outcomes(args.case_dir, args.limit, max(0, args.progress_every))
-    print(f"  {len(case_outcomes)} case-outcome signals across {len(tables['cases'])} cases")
+    log_phase(f"case outcome scan complete: {len(case_outcomes)} signals across {len(tables['cases'])} cases")
 
-    print("Classifying tentative motion dispositions …")
+    log_phase("classifying tentative motion dispositions")
     dispositions = build_tentative_dispositions(args.tentatives_glob)
-    print(f"  {len(dispositions)} tentative dispositions")
+    log_phase(f"tentative disposition scan complete: {len(dispositions)} dispositions")
 
+    log_phase("loading judicial roster")
     roster_judge_keys = load_roster_judge_keys(args.judges_json)
+    log_phase("building judicial officer metrics")
     om = officer_metrics(dispositions, roster_judge_keys)
+    log_phase("building attorney metrics")
     am = attorney_metrics(tables, case_outcomes)
+    log_phase("building litigant metrics")
     lm = litigant_metrics(case_outcomes, args.litigants_json)
     n_exam = sum(1 for v in om.values() if v["officer_type"] == "probate_examiner")
-    print(f"  judicial_officers={len(om)} (probate examiners={n_exam}) attorneys={len(am)} litigants={len(lm)}")
+    log_phase(
+        f"profile metric rollups complete: judicial_officers={len(om)} "
+        f"(probate examiners={n_exam}) attorneys={len(am)} litigants={len(lm)}"
+    )
 
     profile_metrics = {"judicial_officers": om, "attorneys": am, "litigants": lm}
     if not args.no_write:
         write_outputs(args.out_dir, case_outcomes, dispositions, profile_metrics)
-        print(f"wrote case_outcomes.parquet, tentative_dispositions.parquet, profile-metrics.json")
+        log_phase("wrote case_outcomes.parquet, tentative_dispositions.parquet, profile-metrics.json")
     return 0
 
 

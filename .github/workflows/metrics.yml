@@ -23,13 +23,14 @@ permissions:
   contents: write
 
 concurrency:
-  group: data-index-writes
+  group: metrics-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
   derive:
     if: ${{ github.repository == 'aimesy/sfsc-data' }}
     runs-on: ubuntu-latest
+    timeout-minutes: 180
     permissions:
       contents: write
     steps:

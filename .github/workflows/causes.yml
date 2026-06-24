@@ -19,7 +19,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: data-index-writes
+  group: causes-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:

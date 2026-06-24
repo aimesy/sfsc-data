@@ -18,7 +18,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: data-index-writes
+  group: case-status-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:

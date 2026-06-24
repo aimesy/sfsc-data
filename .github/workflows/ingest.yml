@@ -28,7 +28,7 @@ on:
 # landed inside the window we exit immediately, so a 50-file burst that
 # spawned 50 queued runs collapses to ~1 ingest + ~49 fast no-ops.
 concurrency:
-  group: data-index-writes
+  group: ingest-${{ github.ref }}
   cancel-in-progress: false
 
 env:
