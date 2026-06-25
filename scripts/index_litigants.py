@@ -38,14 +38,13 @@ construction. The factors, with TUNABLE weights declared at the top:
     volume never penalized. Individuals mostly appear in 1-2 cases ever, so a
     personal name across many cases is more likely many different people sharing
     a common name -> low prior, and each extra case adds a volume penalty.
-  * Name rarity. distinct_people ~= occurrences / AVG_CASES_PER_INDIVIDUAL;
-    prior_same ~= 1/distinct_people. Common surnames seen many times -> strong
-    penalty; a distinctive name seen twice -> boost.
   * Corroborating signals (raise confidence above the name prior):
       - shared attorney across occurrences  (MODERATE)
       - shared contact (address/phone tail) across occurrences (STRONG)
       - shared case-type / court prefix across occurrences (WEAK)
-      - exact (vs merely fuzzy/normalized) surface-form match (small boost)
+      - exact (vs merely fuzzy/normalized) surface-form match, but only across
+        non-defendant-side roles that plausibly control their own captioned name
+        (small boost)
   * Vexatious-lift. A JC-listed vexatious INDIVIDUAL genuinely does have many
     cases (DESIGN §5.10 step 1 exception), so for them we REMOVE the individual
     volume penalty. This consumes the AUTHORITATIVE vexatious flag only; it does
@@ -117,20 +116,12 @@ PRIOR_UNKNOWN = 0.0          # unclassifiable -> coin flip before other signals
 INDIV_VOLUME_PENALTY_PER_CASE = -0.9
 INDIV_VOLUME_PENALTY_CAP = -4.0
 
-# Name-rarity (step 2). distinct_people ~= occurrences / AVG_CASES_PER_INDIVIDUAL.
-# A name shared by many DISTINCT corpus occurrences is common -> penalty; a name
-# essentially unique in the corpus -> small boost. Organizations are exempt
-# (their name volume is expected, not evidence against identity).
-AVG_CASES_PER_INDIVIDUAL = 1.2
-NAME_RARITY_COMMON_PENALTY = -1.6   # full penalty for the commonest names
-NAME_RARITY_RARE_BOOST = 0.6        # boost for a corpus-unique distinctive name
-
 # Corroborating signals (step 3).
 SIG_SHARED_ATTORNEY = 1.1     # same attorney name across occurrences (MODERATE)
 SIG_SHARED_CONTACT = 2.0      # same address/contact tail across occ. (STRONG)
 SIG_SHARED_CASETYPE = 0.5     # same case-type prefix across occurrences (WEAK)
-SIG_EXACT_SURFACE = 0.4       # all surface forms identical (vs fuzzy) — boost
-SIG_FUZZY_PENALTY = -0.6      # surface forms differ only after normalization
+SIG_EXACT_SELF_DESCRIBED_SURFACE = 0.4       # matching controlled surface form
+SIG_FUZZY_SELF_DESCRIBED_SURFACE_PENALTY = -0.6
 # Two cases that literally cite each other's case number are the SAME dispute
 # ("intertwined with case number PES-10-293352"), so a litigant appearing in
 # both is almost certainly the same party. STRONG positive identity signal.
@@ -205,6 +196,16 @@ AKA_RE = (
 # Attorney decoration the captured Parties tab leaves on attorney strings.
 ATTY_CLEAN_RE = re.compile(r"<br>|\(Deactive[^)]*\)", re.IGNORECASE)
 PRO_PER_RE = re.compile(r"^\s*(?:PRO\s*PER|IN\s+PRO\s+PER|PRO\s*SE)\s*$", re.IGNORECASE)
+DEFENDANT_SIDE_ROLE_RE = re.compile(
+    r"\b(?:DEFENDANT|RESPONDENT|DEBTOR|CONSERVATEE|CROSS[-\s]*DEFENDANT|"
+    r"REAL\s+PARTY)\b",
+    re.IGNORECASE,
+)
+CONTROLLED_NAME_ROLE_RE = re.compile(
+    r"\b(?:PLAINTIFF|PETITIONER|CLAIMANT|CREDITOR|CROSS[-\s]*COMPLAINANT|"
+    r"OBJECTOR|APPLICANT)\b",
+    re.IGNORECASE,
+)
 
 
 def clean_text(s) -> str:
@@ -414,6 +415,14 @@ def clean_attorneys(raw_list) -> list[str]:
 def is_placeholder(name: str) -> bool:
     n = clean_text(name)
     return not n or bool(PLACEHOLDER_RE.search(n))
+
+
+def role_controls_captioned_name(role: str | None) -> bool:
+    """Whether surface-form sameness is meaningful for this party role."""
+    r = clean_text(role or "")
+    if not r or DEFENDANT_SIDE_ROLE_RE.search(r):
+        return False
+    return bool(CONTROLLED_NAME_ROLE_RE.search(r))
 
 
 def case_type_prefix(case_number: str) -> str:
@@ -692,8 +701,9 @@ def score_cluster(occs: list[Occurrence], entity_type: str,
                   case_xrefs: dict[str, set[str]] | None = None):
     """Return (confidence_0_1, factors[]). factors are {factor, detail, points}.
 
-    name_distinct_occ_count = how many DISTINCT corpus occurrences share this
-    norm_key (the corpus-wide commonness of the name).
+    name_distinct_occ_count is accepted for compatibility only. Corpus
+    occurrence count is the candidate cluster itself, not independent evidence of
+    how many distinct real people share the name, so it is not scored.
     """
     factors: list[dict] = []
     case_numbers = sorted({o.case_number for o in occs})
@@ -734,23 +744,12 @@ def score_cluster(occs: list[Occurrence], entity_type: str,
         factors.append({"factor": "unknown_type_prior", "points": PRIOR_UNKNOWN,
                         "detail": "entity type unclassified — neutral prior"})
 
-    # --- Step 2: name rarity (individuals/unknown only; orgs exempt) -----
-    if entity_type != "entity":
-        distinct_people = max(1.0, name_distinct_occ_count / AVG_CASES_PER_INDIVIDUAL)
-        if distinct_people <= 1.0:
-            pts += NAME_RARITY_RARE_BOOST
-            factors.append({"factor": "name_rarity", "points": NAME_RARITY_RARE_BOOST,
-                            "detail": "distinctive name — essentially unique in the corpus"})
-        else:
-            # scale penalty by log of estimated distinct people (commonness)
-            frac = min(1.0, math.log(distinct_people) / math.log(50))
-            pen = NAME_RARITY_COMMON_PENALTY * frac
-            pts += pen
-            factors.append({"factor": "name_rarity", "points": round(pen, 3),
-                            "detail": f"name shared by ~{distinct_people:.0f} estimated distinct "
-                                      f"people in the corpus ({name_distinct_occ_count} occurrences)"})
+    # Corpus-frequency "name rarity" is deliberately not scored. Counting
+    # occurrences in this corpus is circular for the same cluster we are trying
+    # to judge, and it duplicates the individual-volume prior above.
+    _ = name_distinct_occ_count
 
-    # --- Step 3: corroborating signals ----------------------------------
+    # --- Step 2: corroborating signals ----------------------------------
     # Shared attorney across occurrences.
     atty_sets = [set(o.attorneys) for o in occs if o.attorneys]
     shared_atty = set.intersection(*atty_sets) if len(atty_sets) >= 2 else set()
@@ -773,17 +772,25 @@ def score_cluster(occs: list[Occurrence], entity_type: str,
         factors.append({"factor": "shared_case_type", "points": SIG_SHARED_CASETYPE,
                         "detail": f"all cases same type/court prefix ({next(iter(casetypes))})"})
 
-    # Exact vs fuzzy surface form.
-    surfaces = {o.clean_name.upper() for o in occs}
-    if len(surfaces) == 1:
-        pts += SIG_EXACT_SURFACE
-        factors.append({"factor": "exact_name", "points": SIG_EXACT_SURFACE,
-                        "detail": "identical surface name across all occurrences"})
-    else:
-        pts += SIG_FUZZY_PENALTY
-        factors.append({"factor": "fuzzy_name", "points": SIG_FUZZY_PENALTY,
-                        "detail": f"surface forms differ, matched only after normalization: "
-                                  f"{', '.join(sorted(surfaces))}"})
+    # Exact vs fuzzy surface form. Defendant-side parties usually do not control
+    # their own caption description, so superficial sameness/difference there is
+    # not identity evidence. Only compare surfaces from roles that plausibly
+    # control their own captioned name, and require at least two such rows.
+    controlled_occ_count = sum(1 for o in occs if role_controls_captioned_name(o.party_type))
+    controlled_surfaces = {
+        o.clean_name.upper()
+        for o in occs
+        if role_controls_captioned_name(o.party_type)
+    }
+    if len(controlled_surfaces) == 1 and controlled_occ_count >= 2:
+        pts += SIG_EXACT_SELF_DESCRIBED_SURFACE
+        factors.append({"factor": "self_described_exact_name", "points": SIG_EXACT_SELF_DESCRIBED_SURFACE,
+                        "detail": "identical self-described surface name across controlled-role occurrences"})
+    elif len(controlled_surfaces) > 1:
+        pts += SIG_FUZZY_SELF_DESCRIBED_SURFACE_PENALTY
+        factors.append({"factor": "self_described_fuzzy_name", "points": SIG_FUZZY_SELF_DESCRIBED_SURFACE_PENALTY,
+                        "detail": f"self-described surface forms differ, matched only after normalization: "
+                                  f"{', '.join(sorted(controlled_surfaces))}"})
 
     # Same-matter cross-reference: any two of this cluster's cases literally cite
     # each other's case number (harvested from docket/calendar text). That makes
