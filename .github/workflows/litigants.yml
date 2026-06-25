@@ -3,8 +3,11 @@ name: Index litigants (cross-case aggregate + identity confidence)
 # Aggregates party/litigant names across captured cases (archive/cases/**) and
 # the enriched tentative captions, clusters them with the shared normalizer, and
 # scores each cluster's same-entity confidence (DESIGN §5.10) with an explicit
-# per-factor breakdown. Writes data/litigants.parquet (canonical) + a curated
-# data/litigants.json manifest with data/litigants/*.json shards for the viewer.
+# per-factor breakdown. Writes a canonical sharded Parquet store
+# (data/litigants-parquet.json + data/litigants-parquet/*.parquet) plus a
+# curated data/litigants.json manifest with data/litigants/*.json shards for the
+# viewer. Do not restore the old monolithic data/litigants.parquet; it exceeds
+# GitHub's hard blob limit as the case corpus grows.
 # Runs on new captures + when the indexer or
 # its inputs change, including data/financials.parquet updates from enrich.yml.
 # Commits back like the other enrichment workflows.
@@ -64,7 +67,8 @@ jobs:
 
           python scripts/index_litigants.py
 
-          git add -A data/litigants.parquet data/litigants.json data/litigants
+          git rm -f --ignore-unmatch data/litigants.parquet
+          git add -A data/litigants-parquet.json data/litigants-parquet data/litigants.json data/litigants
           python scripts/check_repo_bloat.py --staged
           if git diff --staged --quiet; then
             echo "No litigant-index changes."

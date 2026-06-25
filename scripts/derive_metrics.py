@@ -56,6 +56,7 @@ import re
 import sys
 import tempfile
 from collections import Counter, defaultdict
+from pathlib import Path
 from typing import Any, Iterable
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -327,20 +328,41 @@ def log_phase(message: str) -> None:
     print(f"{stamp} {message}", flush=True)
 
 
+def stream_case_outcomes(case_dir: Path, limit: int | None = None, progress_every: int = 0) -> list[dict[str, Any]]:
+    outcomes: list[dict[str, Any]] = []
+    case_files = list(bct.iter_case_files(case_dir, limit))
+    total = len(case_files)
+    for processed, path in enumerate(case_files, 1):
+        case = bct.load_case(path)
+        case_number = bct.norm_case(case.get("case_number") or path.stem)
+        if not case_number:
+            continue
+        docket_entries = case.get("docket_entries") if isinstance(case.get("docket_entries"), list) else []
+        for sig in case_outcome_signals(docket_entries):
+            outcomes.append({"case_number": case_number, **sig})
+        if progress_every > 0 and (processed % progress_every == 0 or processed == total):
+            print(
+                "case_outcomes: "
+                f"{processed}/{total} cases, "
+                f"{len(outcomes)} outcome signals",
+                flush=True,
+            )
+    outcomes.sort(key=lambda r: (r["case_number"], r["entry_seq"], r["signal"]))
+    return outcomes
+
+
 def build_case_outcomes(case_dir: str, limit: int | None = None, progress_every: int = 0):
     """(tables, case_outcomes rows). Reuses build_case_tables for representation."""
-    tables = bct.rows_from_cases(__import__("pathlib").Path(case_dir), limit, progress_every=progress_every)
-    log_phase("grouping docket entries for outcome signals")
-    docket_by_case: dict[str, list[dict]] = defaultdict(list)
-    for row in tables["docket_entries"]:
-        docket_by_case[row["case_number"]].append(
-            {"description": row["description"], "date_filed": row["date_filed"]})
-    log_phase(f"classifying outcome signals across {len(docket_by_case)} cases")
-    outcomes: list[dict[str, Any]] = []
-    for case_number, entries in docket_by_case.items():
-        for sig in case_outcome_signals(entries):
-            outcomes.append({"case_number": case_number, **sig})
-    outcomes.sort(key=lambda r: (r["case_number"], r["entry_seq"], r["signal"]))
+    case_path = Path(case_dir)
+    tables = bct.rows_from_cases(
+        case_path,
+        limit,
+        progress_every=progress_every,
+        include_docket_entries=False,
+    )
+    log_phase("streaming docket entries for outcome signals")
+    outcomes = stream_case_outcomes(case_path, limit, progress_every=progress_every)
+    log_phase(f"classified {len(outcomes)} outcome signals")
     return tables, outcomes
 
 

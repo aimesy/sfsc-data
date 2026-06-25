@@ -56,9 +56,10 @@ bodies (CITY AND COUNTY OF SAN FRANCISCO, THE PEOPLE) are treated as singleton
 entities (kept, but never used to claim a same-person merge).
 
 Outputs:
-  * data/litigants.parquet — one row per cluster (the canonical store).
-  * data/litigants.json    — small browser manifest for curated JSON shards.
-  * data/litigants/*.json  — curated browser rows, sharded under GitHub limits.
+  * data/litigants-parquet.json       — manifest for the canonical Parquet store.
+  * data/litigants-parquet/*.parquet  — one row per cluster, sharded under GitHub limits.
+  * data/litigants.json               — small browser manifest for curated JSON shards.
+  * data/litigants/*.json             — curated browser rows, sharded under GitHub limits.
 
 Per-litigant columns: litigant_id, display_name, norm_key, entity_type,
 entity_subtype, case_numbers[], case_count, party_types[], attorneys[], aliases[],
@@ -90,10 +91,23 @@ ARCHIVE_GLOB = os.path.join(REPO_ROOT, "archive", "cases", "*.json")
 TENTATIVES_GLOB = os.path.join(REPO_ROOT, "data", "tentatives-*.parquet")
 FINANCIALS_PARQUET = os.path.join(REPO_ROOT, "data", "financials.parquet")
 VEXATIOUS_PARQUET = os.path.join(REPO_ROOT, "data", "vexatious.parquet")
-OUT_PARQUET = os.path.join(REPO_ROOT, "data", "litigants.parquet")
+LEGACY_OUT_PARQUET = os.path.join(REPO_ROOT, "data", "litigants.parquet")
+OUT_PARQUET_MANIFEST = os.path.join(REPO_ROOT, "data", "litigants-parquet.json")
+OUT_PARQUET_DIR = os.path.join(REPO_ROOT, "data", "litigants-parquet")
 OUT_JSON = os.path.join(REPO_ROOT, "data", "litigants.json")
 OUT_JSON_SHARD_DIR = os.path.join(REPO_ROOT, "data", "litigants")
+PARQUET_SHARD_ROWS = 100_000
+PARQUET_SHARD_HARD_MAX_BYTES = 90 * 1024 * 1024
 JSON_SHARD_TARGET_BYTES = 25 * 1024 * 1024
+PARQUET_JSON_COLUMNS = (
+    "case_numbers",
+    "party_types",
+    "attorneys",
+    "aliases",
+    "contacts",
+    "confidence_factors",
+    "pull_history",
+)
 
 # ---------------------------------------------------------------------------
 # TUNABLE SCORING WEIGHTS — all confidence math lives here (DESIGN §5.10).
@@ -1019,17 +1033,53 @@ def write_litigant_json_shards(records: list[dict]) -> tuple[list[dict], int]:
     return shards, sum(shard["bytes"] for shard in shards)
 
 
-def write_outputs(rows: list[dict]):
-    df = pd.DataFrame(rows)
-    # JSON-encode the nested/list columns for a stable parquet schema.
-    df_pq = df.copy()
-    for col in ("case_numbers", "party_types", "attorneys", "aliases", "contacts",
-                "confidence_factors", "pull_history"):
-        df_pq[col] = df_pq[col].apply(json.dumps)
-    df_pq.to_parquet(OUT_PARQUET, index=False)
+def write_litigant_parquet_shards(records: list[dict]) -> tuple[list[dict], int]:
+    if os.path.isfile(LEGACY_OUT_PARQUET):
+        os.remove(LEGACY_OUT_PARQUET)
+    if os.path.isdir(OUT_PARQUET_DIR):
+        shutil.rmtree(OUT_PARQUET_DIR)
+    os.makedirs(OUT_PARQUET_DIR, exist_ok=True)
 
-    # Compact JSON for the browser. The full per-litigant store is the parquet
-    # (loaded via DuckDB-WASM like the other data/*.parquet). The JSON is a
+    df_pq = pd.DataFrame(records)
+    for col in PARQUET_JSON_COLUMNS:
+        if col in df_pq.columns:
+            df_pq[col] = df_pq[col].apply(json.dumps)
+
+    shards: list[dict] = []
+    total_rows = len(df_pq)
+    for shard_index, start in enumerate(range(0, total_rows, PARQUET_SHARD_ROWS)):
+        stop = min(start + PARQUET_SHARD_ROWS, total_rows)
+        name = f"{shard_index:04d}.parquet"
+        path = os.path.join(OUT_PARQUET_DIR, name)
+        df_pq.iloc[start:stop].to_parquet(path, index=False)
+        size = os.path.getsize(path)
+        if size > PARQUET_SHARD_HARD_MAX_BYTES:
+            raise RuntimeError(
+                f"{path} is {size} bytes, above the {PARQUET_SHARD_HARD_MAX_BYTES} byte shard guard"
+            )
+        shards.append({
+            "path": f"data/litigants-parquet/{name}",
+            "count": stop - start,
+            "bytes": size,
+        })
+
+    with open(OUT_PARQUET_MANIFEST, "w", encoding="utf-8") as fh:
+        json.dump({
+            "schema_version": 1,
+            "generated_clusters": len(records),
+            "shard_rows": PARQUET_SHARD_ROWS,
+            "note": "Canonical full litigant store, sharded so no Git blob approaches GitHub's 100 MiB hard limit.",
+            "shards": shards,
+        }, fh, ensure_ascii=False, separators=(",", ":"))
+
+    return shards, sum(shard["bytes"] for shard in shards)
+
+
+def write_outputs(rows: list[dict]):
+    parquet_shards, parquet_bytes = write_litigant_parquet_shards(rows)
+
+    # Compact JSON for the browser. The full per-litigant store is the sharded
+    # Parquet dataset. The JSON is a
     # CURATED, small subset for quick load: every litigant that touches a
     # captured case (docket / both source — these carry real party data, fees,
     # pull history) PLUS every multi-case cluster (the cross-case candidates that
@@ -1055,13 +1105,15 @@ def write_outputs(rows: list[dict]):
                    "generated_clusters": len(rows),
                    "included": len(compact),
                    "note": "Curated subset: captured-case litigants + all multi-case "
-                           "clusters. Full set is data/litigants.parquet. Records "
-                           "are split across the listed JSON shards.",
+                           "clusters. Full set is data/litigants-parquet.json and "
+                           "data/litigants-parquet/*.parquet. Records are split "
+                           "across the listed JSON shards.",
                    "shards": shards},
                   fh, ensure_ascii=False, separators=(",", ":"))
 
     print(f"\nWrote {len(rows)} litigant clusters:")
-    print(f"  {OUT_PARQUET}  ({os.path.getsize(OUT_PARQUET)} bytes)")
+    print(f"  {OUT_PARQUET_MANIFEST}  ({os.path.getsize(OUT_PARQUET_MANIFEST)} bytes manifest, "
+          f"{len(parquet_shards)} parquet shards, {parquet_bytes} shard bytes)")
     print(f"  {OUT_JSON}  ({os.path.getsize(OUT_JSON)} bytes manifest, "
           f"{len(compact)} curated litigants in {len(shards)} shards, "
           f"{shard_bytes} shard bytes)")
