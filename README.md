@@ -5,7 +5,7 @@
 
 | Metric | Count |
 |---|---:|
-| Tentative rulings | 379,476 |
+| Tentative rulings | 379,502 |
 | Dockets | 630,703 |
 | Documents indexed | 4,082,942 |
 | Documents archived | 66,332 |
@@ -298,9 +298,9 @@ python scripts/build_document_index.py
 ## Departments
 
 <details>
-<summary><strong>Department 204 - Probate</strong> | 208,731 rulings | 2000-04-05 to 2026-06-25 | 4,712 hearing days | 21 gaps</summary>
+<summary><strong>Department 204 - Probate</strong> | 208,726 rulings | 2000-04-05 to 2026-06-25 | 4,712 hearing days | 21 gaps</summary>
 
-208,731 tentative rulings across 4,712 hearing days (2000-04-05 to 2026-06-25).
+208,726 tentative rulings across 4,712 hearing days (2000-04-05 to 2026-06-25).
 
 > _Department 204 Probate tentatives are not available online before 2000-04-05; earlier dates are excluded from gap-finding and bulk scraping._
 
@@ -337,9 +337,9 @@ python scripts/build_document_index.py
 
 </details>
 <details>
-<summary><strong>Department 301 - Discovery</strong> | 4,376 rulings | 2024-03-19 to 2026-06-25 | 399 hearing days | 5 gaps</summary>
+<summary><strong>Department 301 - Discovery</strong> | 4,372 rulings | 2024-03-19 to 2026-06-25 | 399 hearing days | 5 gaps</summary>
 
-4,376 tentative rulings across 399 hearing days (2024-03-19 to 2026-06-25).
+4,372 tentative rulings across 399 hearing days (2024-03-19 to 2026-06-25).
 
 > _Department 301 Discovery tentatives are not available online before 2024-03-19; earlier dates are excluded from gap-finding and bulk scraping._
 
@@ -360,9 +360,9 @@ python scripts/build_document_index.py
 
 </details>
 <details>
-<summary><strong>Department 302 - Civil Law and Motion</strong> | 123,658 rulings | 2001-10-22 to 2026-06-25 | 6,024 hearing days | 15 gaps</summary>
+<summary><strong>Department 302 - Civil Law and Motion</strong> | 123,657 rulings | 2001-10-22 to 2026-06-25 | 6,024 hearing days | 15 gaps</summary>
 
-123,658 tentative rulings across 6,024 hearing days (2001-10-22 to 2026-06-25).
+123,657 tentative rulings across 6,024 hearing days (2001-10-22 to 2026-06-25).
 
 > _Department 302 Civil Law and Motion tentatives are not available online before 2001-10-22; earlier dates are excluded from gap-finding and bulk scraping._
 
@@ -709,18 +709,18 @@ python scripts/build_document_index.py
 
 </details>
 <details>
-<summary><strong>Department 501 - Real Property Court</strong> | 35,069 rulings | 2011-10-18 to 2026-06-23 | 3,561 hearing days | 21 gaps</summary>
+<summary><strong>Department 501 - Real Property Court</strong> | 35,105 rulings | 2011-10-18 to 2026-06-25 | 3,563 hearing days | 21 gaps</summary>
 
-35,069 tentative rulings across 3,561 hearing days (2011-10-18 to 2026-06-23).
+35,105 tentative rulings across 3,563 hearing days (2011-10-18 to 2026-06-25).
 
 > _Department 501 Real Property tentatives are not available online before 2011-10-18; earlier dates are excluded from gap-finding and bulk scraping._
 
 ### Coverage
 
-- **Hearing days with data:** 3,561 of 3,643 weekdays in range (97.7%)
-- **Days scanned:** 3,649 (including days the court posted no rulings)
+- **Hearing days with data:** 3,563 of 3,645 weekdays in range (97.8%)
+- **Days scanned:** 3,651 (including days the court posted no rulings)
 - **Earliest harvested:** 2011-10-18 (same as first hearing day)
-- **Latest harvested:** 2026-06-23 (same as last hearing day)
+- **Latest harvested:** 2026-06-25 (same as last hearing day)
 
 ### Gaps (21)
 
