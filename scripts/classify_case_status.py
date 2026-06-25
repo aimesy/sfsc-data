@@ -141,7 +141,7 @@ def main(argv=None):
 
     rows = []
     skipped_bad = 0
-    for f in sorted(glob.glob(os.path.join(args.cases_dir, "*.json"))):
+    for f in glob.iglob(os.path.join(args.cases_dir, "*.json")):
         try:
             with open(f, encoding="utf-8") as fh:
                 d = json.load(fh)
@@ -161,6 +161,7 @@ def main(argv=None):
             "classified_at": dt.datetime.now(dt.timezone.utc).isoformat(),
         })
 
+    rows.sort(key=lambda r: r["case_number"])
     status_df = pd.DataFrame(rows, columns=[
         "case_number", "case_status", "case_status_label", "satisfied",
         "settled", "dismissed", "judgment_entered", "n_entries", "signals",

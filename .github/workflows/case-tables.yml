@@ -21,6 +21,7 @@ on:
       - 'scripts/check_case_index_integrity.py'
       - 'scripts/check_case_directory.py'
       - 'scripts/check_case_pipeline_synthetic.py'
+      - 'scripts/check_ci_materialization.py'
       - 'scripts/check_criminal_statute_versions.py'
       - 'scripts/check_case_representation.py'
       - 'scripts/document_storage.py'
@@ -74,6 +75,7 @@ jobs:
             scripts/check_case_index_integrity.py
             scripts/check_case_directory.py
             scripts/check_case_pipeline_synthetic.py
+            scripts/check_ci_materialization.py
             scripts/check_criminal_statute_versions.py
             scripts/check_case_representation.py
             scripts/document_storage.py
@@ -126,6 +128,7 @@ jobs:
           }
 
           build_outputs() {
+            python scripts/check_ci_materialization.py
             python scripts/check_case_index_integrity.py
             python scripts/check_estate_dossier.py
             python scripts/check_criminal_statute_versions.py --allow-missing-js

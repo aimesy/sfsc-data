@@ -22,6 +22,18 @@ const OUT = arg('out', 'data/judge-facet.json');
 const OUT_CASES = arg('out-cases', 'data/judge-cases.json');
 const MIN_COUNT = Math.max(1, Number(arg('min-count', '2')) || 2);
 
+function* caseFiles(dir) {
+  const handle = fs.opendirSync(dir);
+  try {
+    let entry;
+    while ((entry = handle.readSync()) !== null) {
+      if (entry.isFile() && entry.name.endsWith('.json')) yield entry.name;
+    }
+  } finally {
+    handle.closeSync();
+  }
+}
+
 // Keep in lockstep with normalizeJudge() in index.html.
 export function normalizeJudge(s) {
   return String(s == null ? '' : s)
@@ -33,11 +45,10 @@ export function normalizeJudge(s) {
 }
 
 function build() {
-  const files = fs.readdirSync(CASES_DIR).filter((f) => f.endsWith('.json'));
   const groups = new Map(); // norm -> { count, variants: Map(rawLabel -> count), cases: [] }
   let scanned = 0;
   let withJudge = 0;
-  for (const f of files) {
+  for (const f of caseFiles(CASES_DIR)) {
     let o;
     try { o = JSON.parse(fs.readFileSync(path.join(CASES_DIR, f), 'utf8')); } catch { continue; }
     scanned++;

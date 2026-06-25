@@ -13,6 +13,7 @@ on:
       - 'data/tentatives-*.parquet'
       - 'scripts/cause_extract.py'
       - 'scripts/check_cause_extract.py'
+      - 'scripts/check_ci_materialization.py'
       - '.github/workflows/causes.yml'
 
 permissions:
@@ -39,6 +40,7 @@ jobs:
             data/**
             scripts/build_case_tables.py
             scripts/cause_extract.py
+            scripts/check_ci_materialization.py
             scripts/check_cause_extract.py
             scripts/check_repo_bloat.py
             scripts/estate_dossier.py
@@ -56,6 +58,7 @@ jobs:
           git fetch origin master
           git checkout FETCH_HEAD
 
+          python scripts/check_ci_materialization.py
           python scripts/check_cause_extract.py
           python scripts/cause_extract.py
 

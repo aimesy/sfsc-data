@@ -680,11 +680,20 @@ def load_case(path: Path) -> dict[str, Any]:
 
 def iter_case_files(case_dir: Path, limit: int | None = None) -> Iterable[Path]:
     count = 0
-    for path in sorted(case_dir.glob("*.json")):
+    for path in case_dir.glob("*.json"):
         yield path
         count += 1
         if limit is not None and count >= limit:
             return
+
+
+def count_case_files(case_dir: Path, limit: int | None = None) -> int:
+    count = 0
+    for _ in case_dir.glob("*.json"):
+        count += 1
+        if limit is not None and count >= limit:
+            return count
+    return count
 
 
 def docket_hash(case_number: str, entry: dict[str, Any], entry_seq: int) -> str:
@@ -718,9 +727,8 @@ def rows_from_cases(
     seen_attorneys: dict[str, dict[str, Any]] = {}
     seen_representation: set[tuple[str, str, str, str]] = set()
 
-    case_files = list(iter_case_files(case_dir, limit))
-    total = len(case_files)
-    for processed, path in enumerate(case_files, 1):
+    total = count_case_files(case_dir, limit)
+    for processed, path in enumerate(iter_case_files(case_dir, limit), 1):
         case = load_case(path)
         case_number = norm_case(case.get("case_number") or path.stem)
         if not case_number:

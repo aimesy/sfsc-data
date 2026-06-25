@@ -18,6 +18,7 @@ on:
     paths:
       - 'archive/cases/**'
       - 'scripts/index_litigants.py'
+      - 'scripts/check_ci_materialization.py'
       - 'scripts/enrich_cases.py'        # shared normalizer / classifier
       - 'data/financials.parquet'        # fee aggregates
       - 'data/vexatious.parquet'         # authoritative volume-lift input
@@ -45,6 +46,7 @@ jobs:
             archive/cases/**
             data/**
             scripts/check_repo_bloat.py
+            scripts/check_ci_materialization.py
             scripts/enrich_cases.py
             scripts/index_litigants.py
             tag_registry.json
@@ -65,6 +67,7 @@ jobs:
           git fetch origin master
           git checkout FETCH_HEAD
 
+          python scripts/check_ci_materialization.py
           python scripts/index_litigants.py
 
           git rm -f --ignore-unmatch data/litigants.parquet

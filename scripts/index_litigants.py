@@ -573,7 +573,7 @@ def collect_captured() -> tuple[list[Occurrence], dict[str, set[str]]]:
     """
     occ: list[Occurrence] = []
     case_xrefs: dict[str, set[str]] = {}
-    for f in sorted(glob.glob(ARCHIVE_GLOB)):
+    for f in glob.iglob(ARCHIVE_GLOB):
         try:
             d = json.load(open(f, encoding="utf-8"))
         except Exception as e:  # noqa: BLE001
@@ -607,7 +607,7 @@ def collect_tentatives() -> list[Occurrence]:
     """
     occ: list[Occurrence] = []
     seen_case_name: set[tuple[str, str]] = set()
-    for f in glob.glob(TENTATIVES_GLOB):
+    for f in glob.iglob(TENTATIVES_GLOB):
         if "extras" in f:
             continue
         df = pd.read_parquet(f, columns=["case_number", "case_title"])

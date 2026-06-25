@@ -15,6 +15,7 @@ on:
       - 'judges.json'
       - 'scripts/derive_metrics.py'
       - 'scripts/check_derive_metrics.py'
+      - 'scripts/check_ci_materialization.py'
       - 'scripts/index_appeals.py'      # reused outcome / motion classifiers
       - 'scripts/build_case_tables.py'  # reused representation / docket extraction
       - '.github/workflows/metrics.yml'
@@ -44,6 +45,7 @@ jobs:
             archive/cases/**
             data/**
             scripts/build_case_tables.py
+            scripts/check_ci_materialization.py
             scripts/check_derive_metrics.py
             scripts/check_repo_bloat.py
             scripts/derive_metrics.py
@@ -81,6 +83,7 @@ jobs:
             wait "$pid"
           }
 
+          python scripts/check_ci_materialization.py
           python scripts/check_derive_metrics.py
           run_with_heartbeat "scripts/derive_metrics.py" python -u scripts/derive_metrics.py --progress-every 2500
 

@@ -36,6 +36,7 @@ import os
 import re
 import sys
 from collections import Counter, defaultdict
+from pathlib import Path
 from typing import Any, Iterable
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -223,15 +224,13 @@ def harvest(case_dir: str, tentatives_glob: str, limit: int | None = None) -> li
         seen.add(key)
         rows.append({"case_number": case_number, "source": source, **hit})
 
-    files = sorted(glob.glob(os.path.join(case_dir, "*.json")))
-    if limit:
-        files = files[:limit]
-    for f in files:
+    for path in bct.iter_case_files(Path(case_dir), limit):
         try:
-            d = json.load(open(f, encoding="utf-8"))
+            with path.open(encoding="utf-8") as fh:
+                d = json.load(fh)
         except Exception:
             continue
-        cn = _norm(d.get("case_number") or os.path.splitext(os.path.basename(f))[0])
+        cn = _norm(d.get("case_number") or path.stem)
         if not cn:
             continue
         for e in d.get("docket_entries") or []:
@@ -243,7 +242,7 @@ def harvest(case_dir: str, tentatives_glob: str, limit: int | None = None) -> li
 
     if tentatives_glob:
         import pandas as pd
-        for path in glob.glob(tentatives_glob):
+        for path in glob.iglob(tentatives_glob):
             if "extras" in os.path.basename(path):
                 continue
             cols = pd.read_parquet(path).columns

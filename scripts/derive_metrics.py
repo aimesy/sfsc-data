@@ -330,9 +330,8 @@ def log_phase(message: str) -> None:
 
 def stream_case_outcomes(case_dir: Path, limit: int | None = None, progress_every: int = 0) -> list[dict[str, Any]]:
     outcomes: list[dict[str, Any]] = []
-    case_files = list(bct.iter_case_files(case_dir, limit))
-    total = len(case_files)
-    for processed, path in enumerate(case_files, 1):
+    total = bct.count_case_files(case_dir, limit)
+    for processed, path in enumerate(bct.iter_case_files(case_dir, limit), 1):
         case = bct.load_case(path)
         case_number = bct.norm_case(case.get("case_number") or path.stem)
         if not case_number:
@@ -370,10 +369,12 @@ def build_tentative_dispositions(tentatives_glob: str):
     """One row per tentative motion disposition (motion_type x disposition x judge)."""
     import pandas as pd
     rows: list[dict[str, Any]] = []
-    paths = [path for path in sorted(glob.glob(tentatives_glob))
-             if "extras" not in os.path.basename(path)]
-    log_phase(f"loading {len(paths)} tentative parquet files")
-    for path in paths:
+    loaded = 0
+    log_phase("loading tentative parquet files")
+    for path in glob.iglob(tentatives_glob):
+        if "extras" in os.path.basename(path):
+            continue
+        loaded += 1
         cols = pd.read_parquet(path).columns
         want = [c for c in ("case_number", "case_title", "calendar_matter", "ruling",
                             "ruling_substantive", "judge", "court_date", "department") if c in cols]
@@ -394,6 +395,7 @@ def build_tentative_dispositions(tentatives_glob: str):
                 "family": disposition_family(disposition),
                 "court_date": bct.clean(rec.get("court_date")),
             })
+    log_phase(f"loaded {loaded} tentative parquet files")
     rows.sort(key=lambda r: (r["officer"], r["motion_type"], r["disposition"]))
     return rows
 
@@ -626,11 +628,44 @@ def _favorability(valence: str, side: str) -> str | None:
     return None
 
 
+APPELLATE_SIGNALS = {
+    "affirmed",
+    "reversed",
+    "reversed_in_part",
+    "remanded",
+    "remittitur",
+    "notice_of_appeal",
+    "appeal_dismissed",
+    "affirmed_in_part_reversed_in_part",
+    "writ_petition_filed",
+    "writ_denied",
+    "writ_granted",
+    "peremptory_writ_issued",
+    "alternative_writ_issued",
+    "writ_osc_issued",
+}
+
+
+def rollup_outcomes_by_case(
+    outcomes: Iterable[dict],
+) -> tuple[dict[str, Counter], dict[str, Counter], dict[str, Counter]]:
+    signal_by_case: dict[str, Counter] = defaultdict(Counter)
+    valence_by_case: dict[str, Counter] = defaultdict(Counter)
+    appellate_by_case: dict[str, Counter] = defaultdict(Counter)
+    for o in outcomes:
+        case_number = o["case_number"]
+        signal = o["signal"]
+        valence = o["abstract_valence"]
+        signal_by_case[case_number][signal] += 1
+        valence_by_case[case_number][valence] += 1
+        if valence.endswith("below") or signal in APPELLATE_SIGNALS:
+            appellate_by_case[case_number][signal] += 1
+    return signal_by_case, valence_by_case, appellate_by_case
+
+
 def attorney_metrics(tables: dict, outcomes: list[dict]) -> dict[str, dict]:
     """Per-attorney outcome distribution + side split + coarse favorable_rate."""
-    outcomes_by_case: dict[str, list[dict]] = defaultdict(list)
-    for o in outcomes:
-        outcomes_by_case[o["case_number"]].append(o)
+    signal_by_case, valence_by_case, appellate_by_case = rollup_outcomes_by_case(outcomes)
     # attorney_id -> {name, sides per case, outcome tallies}
     acc: dict[str, dict] = {}
     # representation rows carry case_number, attorney_id, attorney_name, party_type
@@ -649,18 +684,14 @@ def attorney_metrics(tables: dict, outcomes: list[dict]) -> dict[str, dict]:
         if ck not in seen_case_atty:
             seen_case_atty.add(ck)
             a["side"][side] += 1
-            for o in outcomes_by_case.get(rep["case_number"], []):
-                a["outcomes"][o["signal"]] += 1
-                if o["abstract_valence"].endswith("below") or o["signal"] in (
-                        "affirmed", "reversed", "reversed_in_part", "remanded",
-                        "remittitur", "notice_of_appeal", "appeal_dismissed",
-                        "affirmed_in_part_reversed_in_part", "writ_petition_filed",
-                        "writ_denied", "writ_granted", "peremptory_writ_issued",
-                        "alternative_writ_issued", "writ_osc_issued"):
-                    a["appellate"][o["signal"]] += 1
-                fav = _favorability(o["abstract_valence"], side)
+            for signal, count in signal_by_case.get(rep["case_number"], Counter()).items():
+                a["outcomes"][signal] += count
+            for signal, count in appellate_by_case.get(rep["case_number"], Counter()).items():
+                a["appellate"][signal] += count
+            for valence, count in valence_by_case.get(rep["case_number"], Counter()).items():
+                fav = _favorability(valence, side)
                 if fav:
-                    a["fav"][fav] += 1
+                    a["fav"][fav] += count
     out: dict[str, dict] = {}
     for aid, a in acc.items():
         fav, unfav = a["fav"]["favorable"], a["fav"]["unfavorable"]
@@ -720,9 +751,7 @@ def litigant_metrics(outcomes: list[dict], litigants_json: str) -> dict[str, dic
     litigants = load_litigant_json_records(litigants_json)
     if not litigants:
         return {}
-    outcomes_by_case: dict[str, list[dict]] = defaultdict(list)
-    for o in outcomes:
-        outcomes_by_case[o["case_number"]].append(o)
+    signal_by_case, _, _ = rollup_outcomes_by_case(outcomes)
     out: dict[str, dict] = {}
     for lit in litigants:
         lid = lit.get("litigant_id")
@@ -731,8 +760,7 @@ def litigant_metrics(outcomes: list[dict], litigants_json: str) -> dict[str, dic
             continue
         tally: Counter = Counter()
         for cn in cases:
-            for o in outcomes_by_case.get(cn, []):
-                tally[o["signal"]] += 1
+            tally.update(signal_by_case.get(cn, Counter()))
         if tally:
             out[lid] = {"case_count": len(cases), "outcomes": dict(tally),
                         "confidence": "inferred-fuzzy"}
