@@ -5,7 +5,7 @@
 
 | Metric | Count |
 |---|---:|
-| Tentative rulings | 379,647 |
+| Tentative rulings | 379,644 |
 | Dockets | 864,193 |
 | Documents indexed | 4,082,942 |
 | Documents archived | 66,332 |
@@ -337,9 +337,9 @@ python scripts/build_document_index.py
 
 </details>
 <details>
-<summary><strong>Department 301 - Discovery</strong> | 4,400 rulings | 2024-03-19 to 2026-06-29 | 401 hearing days | 5 gaps</summary>
+<summary><strong>Department 301 - Discovery</strong> | 4,397 rulings | 2024-03-19 to 2026-06-29 | 401 hearing days | 5 gaps</summary>
 
-4,400 tentative rulings across 401 hearing days (2024-03-19 to 2026-06-29).
+4,397 tentative rulings across 401 hearing days (2024-03-19 to 2026-06-29).
 
 > _Department 301 Discovery tentatives are not available online before 2024-03-19; earlier dates are excluded from gap-finding and bulk scraping._
 
