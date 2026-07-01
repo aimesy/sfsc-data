@@ -5,7 +5,7 @@
 
 | Metric | Count |
 |---|---:|
-| Tentative rulings | 379,821 |
+| Tentative rulings | 379,826 |
 | Dockets | 994,793 |
 | Documents indexed | 4,082,942 |
 | Documents archived | 66,332 |
@@ -360,9 +360,9 @@ python scripts/build_document_index.py
 
 </details>
 <details>
-<summary><strong>Department 302 - Civil Law and Motion</strong> | 123,718 rulings | 2001-10-22 to 2026-07-01 | 6,028 hearing days | 15 gaps</summary>
+<summary><strong>Department 302 - Civil Law and Motion</strong> | 123,713 rulings | 2001-10-22 to 2026-07-01 | 6,028 hearing days | 15 gaps</summary>
 
-123,718 tentative rulings across 6,028 hearing days (2001-10-22 to 2026-07-01).
+123,713 tentative rulings across 6,028 hearing days (2001-10-22 to 2026-07-01).
 
 > _Department 302 Civil Law and Motion tentatives are not available online before 2001-10-22; earlier dates are excluded from gap-finding and bulk scraping._
 
@@ -393,15 +393,15 @@ python scripts/build_document_index.py
 
 </details>
 <details>
-<summary><strong>Department 304 - Asbestos Law and Motion</strong> | 6,166 rulings | 2010-01-11 to 2026-06-23 | 1,281 hearing days | 16 gaps</summary>
+<summary><strong>Department 304 - Asbestos Law and Motion</strong> | 6,176 rulings | 2010-01-11 to 2026-06-30 | 1,282 hearing days | 16 gaps</summary>
 
-6,166 tentative rulings across 1,281 hearing days (2010-01-11 to 2026-06-23).
+6,176 tentative rulings across 1,282 hearing days (2010-01-11 to 2026-06-30).
 
 > _Department 304 Asbestos Law and Motion tentatives are not available online before 2010-01-11; earlier dates are excluded from gap-finding and bulk scraping._
 
 ### Coverage
 
-- **Hearing days with data:** 1,281 of 4,085 weekdays in range (31.4%)
+- **Hearing days with data:** 1,282 of 4,090 weekdays in range (31.3%)
 - **Days scanned:** 4,159 (including days the court posted no rulings)
 - **Earliest harvested:** 2010-01-11 (same as first hearing day)
 - **Latest harvested:** 2026-07-01

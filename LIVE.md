@@ -2,7 +2,7 @@
 
 | Metric | Count |
 |---|---:|
-| Tentative rulings | 379,821 |
+| Tentative rulings | 379,826 |
 | Dockets | 994,793 |
 | Documents indexed | 4,082,942 |
 | Documents archived | 66,332 |
