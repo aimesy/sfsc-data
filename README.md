@@ -5,7 +5,7 @@
 
 | Metric | Count |
 |---|---:|
-| Tentative rulings | 379,777 |
+| Tentative rulings | 379,821 |
 | Dockets | 994,793 |
 | Documents indexed | 4,082,942 |
 | Documents archived | 66,332 |
@@ -402,9 +402,9 @@ python scripts/build_document_index.py
 ### Coverage
 
 - **Hearing days with data:** 1,281 of 4,085 weekdays in range (31.4%)
-- **Days scanned:** 4,157 (including days the court posted no rulings)
+- **Days scanned:** 4,159 (including days the court posted no rulings)
 - **Earliest harvested:** 2010-01-11 (same as first hearing day)
-- **Latest harvested:** 2026-06-29
+- **Latest harvested:** 2026-07-01
 
 ### Gaps (16)
 
@@ -436,9 +436,9 @@ python scripts/build_document_index.py
 ### Coverage
 
 - **Hearing days with data:** 493 of 4,002 weekdays in range (12.3%)
-- **Days scanned:** 1,746 (including days the court posted no rulings)
+- **Days scanned:** 1,748 (including days the court posted no rulings)
 - **Earliest harvested:** 2010-01-12 (same as first hearing day)
-- **Latest harvested:** 2026-06-29
+- **Latest harvested:** 2026-07-01
 
 ### Gaps (264)
 
@@ -709,18 +709,18 @@ python scripts/build_document_index.py
 
 </details>
 <details>
-<summary><strong>Department 501 - Real Property Court</strong> | 35,145 rulings | 2011-10-18 to 2026-06-29 | 3,565 hearing days | 21 gaps</summary>
+<summary><strong>Department 501 - Real Property Court</strong> | 35,189 rulings | 2011-10-18 to 2026-07-01 | 3,567 hearing days | 21 gaps</summary>
 
-35,145 tentative rulings across 3,565 hearing days (2011-10-18 to 2026-06-29).
+35,189 tentative rulings across 3,567 hearing days (2011-10-18 to 2026-07-01).
 
 > _Department 501 Real Property tentatives are not available online before 2011-10-18; earlier dates are excluded from gap-finding and bulk scraping._
 
 ### Coverage
 
-- **Hearing days with data:** 3,565 of 3,647 weekdays in range (97.8%)
-- **Days scanned:** 3,653 (including days the court posted no rulings)
+- **Hearing days with data:** 3,567 of 3,649 weekdays in range (97.8%)
+- **Days scanned:** 3,655 (including days the court posted no rulings)
 - **Earliest harvested:** 2011-10-18 (same as first hearing day)
-- **Latest harvested:** 2026-06-29 (same as last hearing day)
+- **Latest harvested:** 2026-07-01 (same as last hearing day)
 
 ### Gaps (21)
 
