@@ -1,0 +1,117 @@
+{
+  "schema": "sfsc-criminal-portal-case-v1",
+  "source": "sftc-criminal-portal",
+  "captured_at": "2026-06-26T02:05:10.398Z",
+  "criminal_case_number": "19008561",
+  "status": "found",
+  "portal_case_id": "3897046",
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3897046"
+  },
+  "roa": [
+    {
+      "filedDate": "2019-06-03T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/MO PC 991/MO GRTD/GRTD:AS TO COUNT(S):001/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2019-06-03 1:30 PM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 17",
+      "__index": 0,
+      "court_date": "2019-06-03",
+      "hearing_time": "1:30 PM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 17",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [],
+  "parties": [
+    {
+      "name": "SCOTT CHRISTOPHER GOODRICH",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-19008561",
+    "defendant": "SCOTT CHRISTOPHER GOODRICH",
+    "filed_date": "2019-06-03"
+  },
+  "case_header_checked_at": "2026-06-26T02:05:10.489Z",
+  "display_case_number": "CRI-19008561",
+  "defendant": "SCOTT CHRISTOPHER GOODRICH",
+  "case_title": "People v. SCOTT CHRISTOPHER GOODRICH",
+  "filed_date": "2019-06-03",
+  "case_type": "criminal",
+  "case_number": "CRI19008561",
+  "charges": "",
+  "charges_parsed": [],
+  "criminal_case_type": "",
+  "court": "San Francisco Superior Court - Criminal",
+  "cause_of_action": "Criminal",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3897046",
+  "docket_entries": [
+    {
+      "filedDate": "2019-06-03T13:30:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/MO PC 991/MO GRTD/GRTD:AS TO COUNT(S):001/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2019-06-03T13:30:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/MO PC 991/MO GRTD/GRTD:AS TO COUNT(S):001/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
+  "documents": [],
+  "payments": [],
+  "document_bytes_captured": true,
+  "document_byte_capture_scope": "criminal-portal-no-documents",
+  "criminal": {
+    "raw_case_number": "19008561",
+    "portal_case_id": "3897046",
+    "display_case_number": "CRI-19008561",
+    "defendant": "SCOTT CHRISTOPHER GOODRICH",
+    "filed_date": "2019-06-03",
+    "charges": "",
+    "charge_rows": [],
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-19008561",
+      "defendant": "SCOTT CHRISTOPHER GOODRICH",
+      "filed_date": "2019-06-03"
+    },
+    "statutes": [
+      {
+        "code": "PC 991",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 991",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ]
+  },
+  "documents_bytes_count": 0,
+  "documents_unavailable_count": 0,
+  "documents_deferred_count": 0
+}
