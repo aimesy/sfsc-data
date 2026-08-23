@@ -1,0 +1,167 @@
+{
+  "schema": "sfsc-criminal-portal-case-v1",
+  "source": "sftc-criminal-portal",
+  "source_detail": "criminal_case_index",
+  "captured_at": "2026-06-30T12:45:35.814Z",
+  "status": "found",
+  "case_type": "criminal",
+  "case_number": "CRI01538542",
+  "criminal_case_number": "01538542",
+  "display_case_number": "CRI-01538542",
+  "defendant": "MARTIN PEREZ",
+  "filed_date": "1994-10-11",
+  "charges": "8888888",
+  "case_title": "People v. MARTIN PEREZ",
+  "court": "San Francisco Superior Court - Criminal",
+  "cause_of_action": "Criminal",
+  "case_header": {
+    "case_number": "CRI-01538542",
+    "defendant": "MARTIN PEREZ",
+    "filed_date": "1994-10-11"
+  },
+  "parties": [
+    {
+      "name": "MARTIN PEREZ",
+      "party_type": "Defendant",
+      "source": "criminal_case_index"
+    }
+  ],
+  "roa": [
+    {
+      "filedDate": "2017-02-10T09:30:00.000Z",
+      "docketEntryComment": "DEF PC1203,4A PETITION TO DISMISS, FILED",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2017-03-06T09:30:00.000Z",
+      "docketEntryComment": "/CAL:DEFENDANT'S PC 1203,4A MOTION/NP/MO GRTD/X:THE COURT GRANTS MOTION PURSUANT TO PC 1203,4A,/X:THE COURT MAKES A FINDING AND GRANTS MOTION PURSUANT TO PC  1203,4A  IN THE INTEREST OF JUSTICE,/X:PURSUANT TO SIGNED AND FILED ORDER GUILTY PLEA IS SET ASIDE AND A NOT GUILTY PLEA IS ENTERED,/X:ORDER FOR DISMISSAL SIGNED AND FILED IN COURT,/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "1994-10-11T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [],
+  "attorneys": [],
+  "documents": [],
+  "payments": [],
+  "document_bytes_captured": true,
+  "document_byte_capture_scope": "criminal-portal-no-documents",
+  "criminal_index": {
+    "searched_last_name": "PEREZ",
+    "searched_first_prefix": "MA",
+    "charges": "8888888",
+    "row": {
+      "DEFENDANTNAME": "MARTIN PEREZ",
+      "CASENUMBER": "CRI-01538542",
+      "FILEDDATE": "1994-10-11 09:00:00",
+      "CHARGES": "8888888"
+    }
+  },
+  "criminal_case_type": "",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2717610",
+  "docket_entries": [
+    {
+      "filedDate": "2017-02-10T09:30:00.000Z",
+      "docketEntryComment": "DEF PC1203,4A PETITION TO DISMISS, FILED",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2017-02-10T09:30:00.000Z",
+      "description": "DEF PC1203,4A PETITION TO DISMISS, FILED",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2017-03-06T09:30:00.000Z",
+      "docketEntryComment": "/CAL:DEFENDANT'S PC 1203,4A MOTION/NP/MO GRTD/X:THE COURT GRANTS MOTION PURSUANT TO PC 1203,4A,/X:THE COURT MAKES A FINDING AND GRANTS MOTION PURSUANT TO PC  1203,4A  IN THE INTEREST OF JUSTICE,/X:PURSUANT TO SIGNED AND FILED ORDER GUILTY PLEA IS SET ASIDE AND A NOT GUILTY PLEA IS ENTERED,/X:ORDER FOR DISMISSAL SIGNED AND FILED IN COURT,/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2017-03-06T09:30:00.000Z",
+      "description": "/CAL:DEFENDANT'S PC 1203,4A MOTION/NP/MO GRTD/X:THE COURT GRANTS MOTION PURSUANT TO PC 1203,4A,/X:THE COURT MAKES A FINDING AND GRANTS MOTION PURSUANT TO PC 1203,4A IN THE INTEREST OF JUSTICE,/X:PURSUANT TO SIGNED AND FILED ORDER GUILTY PLEA IS SET ASIDE AND A NOT GUILTY PLEA IS ENTERED,/X:ORDER FOR DISMISSAL SIGNED AND FILED IN COURT,/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "1994-10-11T00:00:00.000Z",
+      "docketEntryComment": "B/S $5,000",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "1994-10-11T00:00:00.000Z",
+      "description": "B/S $5,000",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
+  "criminal": {
+    "raw_case_number": "01538542",
+    "portal_case_id": "2717610",
+    "display_case_number": "CRI-01538542",
+    "defendant": "MARTIN PEREZ",
+    "filed_date": "1994-10-11",
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-01538542",
+      "defendant": "MARTIN PEREZ",
+      "filed_date": "1994-10-11"
+    },
+    "statutes": [
+      {
+        "code": "PC 1203",
+        "count": 3,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      },
+      {
+        "code": "PC1203",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 1203",
+        "count": 3,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ]
+  },
+  "documents_bytes_count": 0,
+  "documents_unavailable_count": 0,
+  "documents_deferred_count": 0,
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "portal_case_id": "2717610",
+  "criminal_portal": {
+    "case_title": "San Francisco criminal case 01538542"
+  },
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=2717610"
+  }
+}
