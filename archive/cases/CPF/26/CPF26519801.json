@@ -1,9 +1,9 @@
 {
   "case_number": "CPF26519801",
-  "case_title": null,
+  "case_title": "CITY AND COUNTY OF VS. EYESOURCE SF INC., A CORPORATION DOING BUSINESS",
   "court": "SF Superior",
   "cause_of_action": null,
-  "captured_at": "2026-07-17T00:11:53.577Z",
+  "captured_at": "2026-07-22T12:27:31.620Z",
   "source_url": "https://webapps.sftc.org/ci/CaseInfo.dll?CaseNum=CPF26519801",
   "docket_entries": [
     {
@@ -30,7 +30,8 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10322252%26Timestamp%3D20260722052730%26Digest%3Dfe593ac43834573925b9ed2996f306ec972097c9"
     },
     {
       "doc_id": "10322245",
@@ -40,20 +41,36 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10322245%26Timestamp%3D20260722052730%26Digest%3Dba62841a70ed3793ed3719220a7abeb935c47d3b"
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "name": "CITY AND COUNTY OF SAN FRANCISCO, A MUNICIPAL, CORPORATION",
+      "party_type": "PLAINTIFF",
+      "attorneys": [
+        "TIRRELL, CHRISTOPHER"
+      ],
+      "self_represented": false
+    },
+    {
+      "name": "EYESOURCE SF INC., A CORPORATION DOING BUSINESS, AS SITE FOR SORE EYES",
+      "party_type": "DEFENDANT",
+      "attorneys": [],
+      "self_represented": false
+    }
+  ],
   "attorneys": [],
   "calendar": [],
   "payments": [],
   "payments_total": 0,
   "method_status": {
     "GetROA": "ok",
-    "GetParties": "skipped:direct-docket-roa-only",
-    "GetAttorneys": "skipped:direct-docket-roa-only",
-    "GetCalendar": "skipped:direct-docket-roa-only",
-    "GetPayments": "skipped:direct-docket-roa-only",
+    "GetParties": "ok",
+    "GetAttorneys": "skipped:direct-docket-optional-method-omitted",
+    "GetCalendar": "skipped:direct-docket-optional-method-omitted",
+    "GetPayments": "skipped:direct-docket-optional-method-omitted",
     "GetDocuments": "skipped:docket-only-direct"
   },
   "documents_source": "GetROA",
@@ -67,5 +84,6 @@
   "core_documents_count": 0,
   "core_documents_captured_count": 0,
   "essential_documents_captured": false,
-  "filing_date": "2026-07-16"
+  "filing_date": "2026-07-16",
+  "direct_docket_wave_capture": true
 }

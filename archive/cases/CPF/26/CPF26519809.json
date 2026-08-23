@@ -1,9 +1,9 @@
 {
   "case_number": "CPF26519809",
-  "case_title": "Case CPF26519809",
+  "case_title": "JUAN PABLO PAT MOO VS. 1233 VAN NESS LEE, INC., A CALIFORNIA CORPORATION",
   "court": "SF Superior",
   "cause_of_action": null,
-  "captured_at": "2026-07-25T00:10:46.692Z",
+  "captured_at": "2026-07-28T05:43:26.230Z",
   "source_url": "https://webapps.sftc.org/ci/CaseInfo.dll?CaseNum=CPF26519809",
   "docket_entries": [
     {
@@ -30,20 +30,37 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10337672%26Timestamp%3D20260727224325%26Digest%3D200bad8cb5bfa0cbe86b7fc8a9af80d2ad4a40f6"
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "name": "1233 VAN NESS LEE, INC., A CALIFORNIA CORPORATION",
+      "party_type": "DEFENDANT",
+      "attorneys": [],
+      "self_represented": false
+    },
+    {
+      "name": "PAT MOO, JUAN PABLO, ,AN INDIVIDUAL C/O DEPT OF INDUSTRIAL RELATIONS SAN FRANCISCO, CA 94102",
+      "party_type": "PLAINTIFF",
+      "attorneys": [],
+      "self_represented": true,
+      "raw_attorney_texts": [
+        "Pro Per"
+      ]
+    }
+  ],
   "attorneys": [],
   "calendar": [],
   "payments": [],
   "payments_total": 0,
   "method_status": {
     "GetROA": "ok",
-    "GetParties": "skipped:direct-docket-roa-only",
-    "GetAttorneys": "skipped:direct-docket-roa-only",
-    "GetCalendar": "skipped:direct-docket-roa-only",
-    "GetPayments": "skipped:direct-docket-roa-only",
+    "GetParties": "ok",
+    "GetAttorneys": "skipped:direct-docket-optional-method-omitted",
+    "GetCalendar": "skipped:direct-docket-optional-method-omitted",
+    "GetPayments": "skipped:direct-docket-optional-method-omitted",
     "GetDocuments": "skipped:docket-only-direct"
   },
   "documents_source": "GetROA",
@@ -58,5 +75,6 @@
   "core_documents_count": 0,
   "core_documents_captured_count": 0,
   "essential_documents_captured": false,
-  "filing_date": "2026-07-24"
+  "filing_date": "2026-07-24",
+  "direct_docket_wave_capture": true
 }

@@ -3,7 +3,7 @@
   "case_title": null,
   "court": "SF Superior",
   "cause_of_action": null,
-  "captured_at": "2026-07-17T00:11:02.282Z",
+  "captured_at": "2026-07-22T12:27:31.258Z",
   "source_url": "https://webapps.sftc.org/ci/CaseInfo.dll?CaseNum=CPF26519791",
   "docket_entries": [
     {
@@ -37,7 +37,8 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10316242%26Timestamp%3D20260722052730%26Digest%3D0d9a21c25cacdb8cce8e13923653fc5abbe18651"
     },
     {
       "doc_id": "10317124",
@@ -47,7 +48,8 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10317124%26Timestamp%3D20260722052730%26Digest%3D7b8e61804f261fda909602e450ee48576fb2636c"
     },
     {
       "doc_id": "10317125",
@@ -57,20 +59,49 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10317125%26Timestamp%3D20260722052730%26Digest%3Dc07d9653f8a960c30d7697a40541b8b6a3c83ab9"
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "name": "CALHOUN, DR. SHAWN P., , PRESIDENT OF THE LIBRARY COMMISSION",
+      "party_type": "RESPONDENT",
+      "attorneys": [],
+      "self_represented": false
+    },
+    {
+      "name": "CHAFFEE, JAMES 462 DUBOCE AVENUE SAN FRANCISCO, CA 94107",
+      "party_type": "PETITIONER",
+      "attorneys": [],
+      "self_represented": true,
+      "raw_attorney_texts": [
+        "Pro Per"
+      ]
+    },
+    {
+      "name": "DOES 1 THROUGH 20, INCLUSIVE",
+      "party_type": "RESPONDENT",
+      "attorneys": [],
+      "self_represented": false
+    },
+    {
+      "name": "SAN FRANCISCO LIBRARY COMMISSION",
+      "party_type": "RESPONDENT",
+      "attorneys": [],
+      "self_represented": false
+    }
+  ],
   "attorneys": [],
   "calendar": [],
   "payments": [],
   "payments_total": 0,
   "method_status": {
     "GetROA": "ok",
-    "GetParties": "skipped:direct-docket-roa-only",
-    "GetAttorneys": "skipped:direct-docket-roa-only",
-    "GetCalendar": "skipped:direct-docket-roa-only",
-    "GetPayments": "skipped:direct-docket-roa-only",
+    "GetParties": "ok",
+    "GetAttorneys": "skipped:direct-docket-optional-method-omitted",
+    "GetCalendar": "skipped:direct-docket-optional-method-omitted",
+    "GetPayments": "skipped:direct-docket-optional-method-omitted",
     "GetDocuments": "skipped:docket-only-direct"
   },
   "documents_source": "GetROA",
@@ -85,5 +116,6 @@
   "core_documents_captured_count": 0,
   "essential_documents_captured": false,
   "document_coverage": "partial",
-  "filing_date": "2026-07-14"
+  "filing_date": "2026-07-14",
+  "direct_docket_wave_capture": true
 }

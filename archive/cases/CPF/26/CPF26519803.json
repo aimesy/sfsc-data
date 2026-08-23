@@ -1,9 +1,9 @@
 {
   "case_number": "CPF26519803",
-  "case_title": "Case CPF26519803",
+  "case_title": "CITY AND COUNTY OF VS. OSO PEQUENO LLC, A LIMITED LIABILITY COMPANY",
   "court": "SF Superior",
   "cause_of_action": null,
-  "captured_at": "2026-07-21T00:11:41.475Z",
+  "captured_at": "2026-07-22T12:30:39.678Z",
   "source_url": "https://webapps.sftc.org/ci/CaseInfo.dll?CaseNum=CPF26519803",
   "docket_entries": [
     {
@@ -30,7 +30,8 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10328452%26Timestamp%3D20260722053039%26Digest%3Dbb2f669f5066f5d176af584d031486dc3a1aca4d"
     },
     {
       "doc_id": "10328458",
@@ -40,20 +41,36 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10328458%26Timestamp%3D20260722053039%26Digest%3Dd5e0d5bbf2c344785a96356a7296fd57e32fa91c"
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "name": "CITY AND COUNTY OF SAN FRANCISCO, A MUNICIPAL, CORPORATION",
+      "party_type": "PLAINTIFF",
+      "attorneys": [
+        "TIRRELL, CHRISTOPHER"
+      ],
+      "self_represented": false
+    },
+    {
+      "name": "OSO PEQUENO LLC, A LIMITED LIABILITY COMPANY",
+      "party_type": "DEFENDANT",
+      "attorneys": [],
+      "self_represented": false
+    }
+  ],
   "attorneys": [],
   "calendar": [],
   "payments": [],
   "payments_total": 0,
   "method_status": {
     "GetROA": "ok",
-    "GetParties": "skipped:direct-docket-roa-only",
-    "GetAttorneys": "skipped:direct-docket-roa-only",
-    "GetCalendar": "skipped:direct-docket-roa-only",
-    "GetPayments": "skipped:direct-docket-roa-only",
+    "GetParties": "ok",
+    "GetAttorneys": "skipped:direct-docket-optional-method-omitted",
+    "GetCalendar": "skipped:direct-docket-optional-method-omitted",
+    "GetPayments": "skipped:direct-docket-optional-method-omitted",
     "GetDocuments": "skipped:docket-only-direct"
   },
   "documents_source": "GetROA",
@@ -68,5 +85,6 @@
   "core_documents_count": 0,
   "core_documents_captured_count": 0,
   "essential_documents_captured": false,
-  "filing_date": "2026-07-20"
+  "filing_date": "2026-07-20",
+  "direct_docket_wave_capture": true
 }

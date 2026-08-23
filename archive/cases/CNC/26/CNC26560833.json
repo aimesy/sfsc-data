@@ -3,7 +3,7 @@
   "case_title": "Case CNC26560833",
   "court": "SF Superior",
   "cause_of_action": null,
-  "captured_at": "2026-07-25T00:10:46.800Z",
+  "captured_at": "2026-07-28T05:43:26.169Z",
   "source_url": "https://webapps.sftc.org/ci/CaseInfo.dll?CaseNum=CNC26560833",
   "docket_entries": [
     {
@@ -36,17 +36,27 @@
     }
   ],
   "documents": [],
-  "parties": [],
+  "parties": [
+    {
+      "name": "MCNAIR, MICHAEL BABATUNDI 216 EDDY SAN FRANCISCO, CA 94102",
+      "party_type": "PETITIONER",
+      "attorneys": [],
+      "self_represented": true,
+      "raw_attorney_texts": [
+        "Pro Per"
+      ]
+    }
+  ],
   "attorneys": [],
   "calendar": [],
   "payments": [],
   "payments_total": 0,
   "method_status": {
     "GetROA": "ok",
-    "GetParties": "skipped:direct-docket-roa-only",
-    "GetAttorneys": "skipped:direct-docket-roa-only",
-    "GetCalendar": "skipped:direct-docket-roa-only",
-    "GetPayments": "skipped:direct-docket-roa-only",
+    "GetParties": "ok",
+    "GetAttorneys": "skipped:direct-docket-optional-method-omitted",
+    "GetCalendar": "skipped:direct-docket-optional-method-omitted",
+    "GetPayments": "skipped:direct-docket-optional-method-omitted",
     "GetDocuments": "skipped:docket-only-direct"
   },
   "documents_source": "GetROA",
@@ -61,5 +71,6 @@
   "filing_date": "2026-07-24",
   "core_documents_count": 0,
   "core_documents_captured_count": 0,
-  "essential_documents_captured": false
+  "essential_documents_captured": false,
+  "direct_docket_wave_capture": true
 }

@@ -3,7 +3,7 @@
   "case_title": null,
   "court": "SF Superior",
   "cause_of_action": null,
-  "captured_at": "2026-07-17T00:11:18.576Z",
+  "captured_at": "2026-07-22T12:27:31.242Z",
   "source_url": "https://webapps.sftc.org/ci/CaseInfo.dll?CaseNum=CPF26519800",
   "docket_entries": [
     {
@@ -33,6 +33,13 @@
       "doc_id": "10320007",
       "has_document": true,
       "fee": ""
+    },
+    {
+      "date_filed": "2026-07-15 12:25:29",
+      "description": "PETITION PETITION TO QUASH SUBPOENA TO CLOUDFLARE, INC. ISSUED FOR ACTION PENDING IN FOREIGN JURISDICTION PURSUANT TO CCP SEC 2029.600 (TRANSACTION ID # 80043109) FILED BY PETITIONER DOE 1, JOHN , AN INDIVIDUAL AS TO RESPONDENT CLOUDFLARE, INC.",
+      "doc_id": "10320006",
+      "has_document": true,
+      "fee": "$435.00"
     }
   ],
   "documents": [
@@ -44,7 +51,8 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10320008%26Timestamp%3D20260722052730%26Digest%3Dc7ac2ca7c8e3fb2903e2882a25c5139bfe9952bc"
     },
     {
       "doc_id": "10320009",
@@ -54,7 +62,8 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10320009%26Timestamp%3D20260722052730%26Digest%3D265b9c3b2eaf1feab9db9c60182c5519f87d1864"
     },
     {
       "doc_id": "10320006",
@@ -64,7 +73,8 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10320006%26Timestamp%3D20260722052730%26Digest%3D4b8d435cbbe55353f4b2840ba4b981321344171f"
     },
     {
       "doc_id": "10320007",
@@ -74,20 +84,36 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10320007%26Timestamp%3D20260722052730%26Digest%3Dfd41fab2aa6d046813e0fab16673892c58231c16"
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "name": "CLOUDFLARE, INC.",
+      "party_type": "RESPONDENT",
+      "attorneys": [],
+      "self_represented": false
+    },
+    {
+      "name": "DOE 1, JOHN, , AN INDIVIDUAL",
+      "party_type": "PETITIONER",
+      "attorneys": [
+        "VRADI, LYDIA"
+      ],
+      "self_represented": false
+    }
+  ],
   "attorneys": [],
   "calendar": [],
   "payments": [],
   "payments_total": 0,
   "method_status": {
     "GetROA": "ok",
-    "GetParties": "skipped:direct-docket-roa-only",
-    "GetAttorneys": "skipped:direct-docket-roa-only",
-    "GetCalendar": "skipped:direct-docket-roa-only",
-    "GetPayments": "skipped:direct-docket-roa-only",
+    "GetParties": "ok",
+    "GetAttorneys": "skipped:direct-docket-optional-method-omitted",
+    "GetCalendar": "skipped:direct-docket-optional-method-omitted",
+    "GetPayments": "skipped:direct-docket-optional-method-omitted",
     "GetDocuments": "skipped:docket-only-direct"
   },
   "documents_source": "GetROA",
@@ -102,5 +128,6 @@
   "core_documents_captured_count": 0,
   "essential_documents_captured": false,
   "document_coverage": "partial",
-  "filing_date": "2026-07-15"
+  "filing_date": "2026-07-15",
+  "direct_docket_wave_capture": true
 }

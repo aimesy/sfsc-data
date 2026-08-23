@@ -1,9 +1,9 @@
 {
   "case_number": "CPF26519808",
-  "case_title": "Case CPF26519808",
+  "case_title": "CITY AND COUNTY OF VS. SHREE JALARAM MOTEL LP, A LIMITED PARTNERSHIP",
   "court": "SF Superior",
   "cause_of_action": null,
-  "captured_at": "2026-07-24T00:10:53.206Z",
+  "captured_at": "2026-07-28T05:43:26.269Z",
   "source_url": "https://webapps.sftc.org/ci/CaseInfo.dll?CaseNum=CPF26519808",
   "docket_entries": [
     {
@@ -30,7 +30,8 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10335365%26Timestamp%3D20260727224325%26Digest%3D2a9c4200d4ed4bc932a72f680bc65b556db87f0b"
     },
     {
       "doc_id": "10335354",
@@ -40,20 +41,36 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10335354%26Timestamp%3D20260727224325%26Digest%3D3e0b35751b0d9ce776d8429df484959b03add7f5"
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "name": "CITY AND COUNTY OF SAN FRANCISCO, A MUNICIPAL, CORPORATION",
+      "party_type": "PLAINTIFF",
+      "attorneys": [
+        "TIRRELL, CHRISTOPHER"
+      ],
+      "self_represented": false
+    },
+    {
+      "name": "SHREE JALARAM MOTEL LP, A LIMITED PARTNERSHIP",
+      "party_type": "DEFENDANT",
+      "attorneys": [],
+      "self_represented": false
+    }
+  ],
   "attorneys": [],
   "calendar": [],
   "payments": [],
   "payments_total": 0,
   "method_status": {
     "GetROA": "ok",
-    "GetParties": "skipped:direct-docket-roa-only",
-    "GetAttorneys": "skipped:direct-docket-roa-only",
-    "GetCalendar": "skipped:direct-docket-roa-only",
-    "GetPayments": "skipped:direct-docket-roa-only",
+    "GetParties": "ok",
+    "GetAttorneys": "skipped:direct-docket-optional-method-omitted",
+    "GetCalendar": "skipped:direct-docket-optional-method-omitted",
+    "GetPayments": "skipped:direct-docket-optional-method-omitted",
     "GetDocuments": "skipped:docket-only-direct"
   },
   "documents_source": "GetROA",
@@ -68,5 +85,6 @@
   "core_documents_count": 0,
   "core_documents_captured_count": 0,
   "essential_documents_captured": false,
-  "filing_date": "2026-07-23"
+  "filing_date": "2026-07-23",
+  "direct_docket_wave_capture": true
 }
