@@ -1,0 +1,150 @@
+{
+  "schema": "sfsc-criminal-portal-case-v1",
+  "source": "sftc-criminal-portal",
+  "captured_at": "2026-06-30T12:37:57.078Z",
+  "criminal_case_number": "15007395",
+  "status": "found",
+  "portal_case_id": "3806866",
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3806866"
+  },
+  "roa": [
+    {
+      "filedDate": "2015-04-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL: FUGITIVE ARRAIGNMENT/X: SFPD FUGITIVE INSPECTOR ROBERT HART APPEARING/X: DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, DEFENDANT ADMITS ID &   WAIVESEXTRADITION/CONTD: STATUS OF DELIVERY/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2015-05-01T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:COURT ORDERS CAUSE DISM PURS PC 1385/MO PC 1385C/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [],
+  "attorneys": [],
+  "parties": [
+    {
+      "name": "PATRICK L REDMOND",
+      "party_type": "Defendant",
+      "source": "criminal_case_index"
+    }
+  ],
+  "case_type": "criminal",
+  "case_number": "CRI15007395",
+  "display_case_number": "CRI-15007395",
+  "defendant": "PATRICK L REDMOND",
+  "filed_date": "2015-03-27",
+  "charges": "8888888",
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "criminal_case_type": "",
+  "case_header": {
+    "case_number": "CRI-15007395",
+    "defendant": "PATRICK L REDMOND",
+    "filed_date": "2015-03-27"
+  },
+  "case_title": "People v. PATRICK L REDMOND",
+  "court": "San Francisco Superior Court - Criminal",
+  "cause_of_action": "Criminal",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3806866",
+  "docket_entries": [
+    {
+      "filedDate": "2015-04-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL: FUGITIVE ARRAIGNMENT/X: SFPD FUGITIVE INSPECTOR ROBERT HART APPEARING/X: DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, DEFENDANT ADMITS ID &   WAIVESEXTRADITION/CONTD: STATUS OF DELIVERY/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2015-04-03T09:00:00.000Z",
+      "description": "/CAL: FUGITIVE ARRAIGNMENT/X: SFPD FUGITIVE INSPECTOR ROBERT HART APPEARING/X: DEFENDANT ARRAIGNED ON FUGITIVE WARRANT, DEFENDANT ADMITS ID & WAIVESEXTRADITION/CONTD: STATUS OF DELIVERY/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2015-05-01T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:COURT ORDERS CAUSE DISM PURS PC 1385/MO PC 1385C/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2015-05-01T09:00:00.000Z",
+      "description": "/TEXT:COURT ORDERS CAUSE DISM PURS PC 1385/MO PC 1385C/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
+  "documents": [],
+  "payments": [],
+  "document_bytes_captured": true,
+  "document_byte_capture_scope": "criminal-portal-no-documents",
+  "criminal": {
+    "raw_case_number": "15007395",
+    "portal_case_id": "3806866",
+    "display_case_number": "CRI-15007395",
+    "defendant": "PATRICK L REDMOND",
+    "filed_date": "2015-03-27",
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ],
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-15007395",
+      "defendant": "PATRICK L REDMOND",
+      "filed_date": "2015-03-27"
+    },
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 1385C",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "identity_unavailable": false,
+    "identity_unavailable_reason": "",
+    "identity_incomplete": false,
+    "identity_incomplete_reason": ""
+  },
+  "documents_bytes_count": 0,
+  "documents_unavailable_count": 0,
+  "documents_deferred_count": 0,
+  "criminal_portal": {
+    "case_title": "San Francisco criminal case 15007395"
+  },
+  "source_detail": "criminal_case_index",
+  "criminal_index": {
+    "searched_last_name": "REDMOND",
+    "searched_first_prefix": "PA",
+    "charges": "8888888",
+    "row": {
+      "DEFENDANTNAME": "PATRICK L REDMOND",
+      "CASENUMBER": "CRI-15007395",
+      "FILEDDATE": "2015-03-27 17:11:00",
+      "CHARGES": "8888888"
+    }
+  },
+  "updated_from_criminal_index_at": "2026-07-01T06:22:56.094Z",
+  "core_documents_count": 0,
+  "core_documents_captured_count": 0,
+  "essential_documents_captured": false
+}
