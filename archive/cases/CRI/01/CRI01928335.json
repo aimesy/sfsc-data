@@ -1,0 +1,121 @@
+{
+  "schema": "sfsc-criminal-portal-case-v1",
+  "source": "sftc-criminal-portal",
+  "captured_at": "2026-07-08T00:13:32.714Z",
+  "criminal_case_number": "01928335",
+  "status": "found",
+  "portal_case_id": "3075502",
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3075502"
+  },
+  "roa": [
+    {
+      "filedDate": "2000-07-13T09:00:00.000Z",
+      "docketEntryComment": "/DAW/MO PC 1203,4/MO GRTD//CTORD:GUILTY PLEA SET ASIDE AND NOT GUILTY PLEA REINSTATED/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [],
+  "attorneys": [],
+  "parties": [
+    {
+      "name": "WILLIAM ROSS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_type": "criminal",
+  "case_number": "CRI01928335",
+  "display_case_number": "CRI-01928335",
+  "defendant": "WILLIAM ROSS",
+  "filed_date": "2000-06-13",
+  "charges": "",
+  "charges_parsed": [],
+  "criminal_case_type": "",
+  "case_header": {
+    "case_number": "CRI-01928335",
+    "defendant": "WILLIAM ROSS",
+    "filed_date": "2000-06-13"
+  },
+  "case_title": "People v. WILLIAM ROSS",
+  "court": "San Francisco Superior Court - Criminal",
+  "cause_of_action": "Criminal",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3075502",
+  "docket_entries": [
+    {
+      "filedDate": "2000-07-13T09:00:00.000Z",
+      "docketEntryComment": "/DAW/MO PC 1203,4/MO GRTD//CTORD:GUILTY PLEA SET ASIDE AND NOT GUILTY PLEA REINSTATED/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2000-07-13T09:00:00.000Z",
+      "description": "/DAW/MO PC 1203,4/MO GRTD//CTORD:GUILTY PLEA SET ASIDE AND NOT GUILTY PLEA REINSTATED/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
+  "documents": [],
+  "payments": [],
+  "document_bytes_captured": true,
+  "document_byte_capture_scope": "criminal-portal-no-documents",
+  "criminal": {
+    "raw_case_number": "01928335",
+    "portal_case_id": "3075502",
+    "display_case_number": "CRI-01928335",
+    "defendant": "WILLIAM ROSS",
+    "filed_date": "2000-06-13",
+    "charges": "",
+    "charge_rows": [],
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-01928335",
+      "defendant": "WILLIAM ROSS",
+      "filed_date": "2000-06-13"
+    },
+    "statutes": [
+      {
+        "code": "PC 1203",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 1203",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "identity_unavailable": false,
+    "identity_unavailable_reason": "",
+    "identity_incomplete": false,
+    "identity_incomplete_reason": ""
+  },
+  "documents_bytes_count": 0,
+  "documents_unavailable_count": 0,
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-07-08T00:13:32.714Z",
+  "criminal_portal": {
+    "defendant": "WILLIAM ROSS",
+    "filed_date": "2000-06-13",
+    "case_title": "People v. WILLIAM ROSS",
+    "case_header": {
+      "case_number": "CRI-01928335",
+      "defendant": "WILLIAM ROSS",
+      "filed_date": "2000-06-13"
+    }
+  },
+  "core_documents_count": 0,
+  "core_documents_captured_count": 0,
+  "essential_documents_captured": false,
+  "criminal_index": {}
+}
