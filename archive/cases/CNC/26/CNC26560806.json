@@ -3,7 +3,7 @@
   "case_title": null,
   "court": "SF Superior",
   "cause_of_action": null,
-  "captured_at": "2026-07-11T20:45:45.255Z",
+  "captured_at": "2026-07-21T06:13:42.880Z",
   "source_url": "https://webapps.sftc.org/ci/CaseInfo.dll?CaseNum=CNC26560806",
   "docket_entries": [
     {
@@ -36,17 +36,27 @@
     }
   ],
   "documents": [],
-  "parties": [],
+  "parties": [
+    {
+      "name": "FORTE, TODD 150 GOLDEN GATE AVE SAN FRANCISCO, CA 94102",
+      "party_type": "PETITIONER",
+      "attorneys": [],
+      "self_represented": true,
+      "raw_attorney_texts": [
+        "Pro Per"
+      ]
+    }
+  ],
   "attorneys": [],
   "calendar": [],
   "payments": [],
   "payments_total": 0,
   "method_status": {
     "GetROA": "ok",
-    "GetParties": "skipped:direct-docket-roa-only",
-    "GetAttorneys": "skipped:direct-docket-roa-only",
-    "GetCalendar": "skipped:direct-docket-roa-only",
-    "GetPayments": "skipped:direct-docket-roa-only",
+    "GetParties": "ok",
+    "GetAttorneys": "skipped:direct-docket-optional-method-omitted",
+    "GetCalendar": "skipped:direct-docket-optional-method-omitted",
+    "GetPayments": "skipped:direct-docket-optional-method-omitted",
     "GetDocuments": "skipped:docket-only-direct"
   },
   "documents_source": "GetROA",
@@ -60,5 +70,6 @@
   "documents_unavailable_count": 0,
   "core_documents_count": 0,
   "core_documents_captured_count": 0,
-  "essential_documents_captured": false
+  "essential_documents_captured": false,
+  "direct_docket_wave_capture": true
 }

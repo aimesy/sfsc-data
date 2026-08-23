@@ -1,9 +1,9 @@
 {
   "case_number": "CGC26638526",
-  "case_title": "JANE FENG VS. WARREN BAY AREA PROPERTY GROUP LEE",
+  "case_title": "JANE FENG VS. BAY AREA PROPERTY GROUP ET AL",
   "court": "SF Superior",
   "cause_of_action": "Wrongful Eviction",
-  "captured_at": "2026-07-24T00:10:49.650Z",
+  "captured_at": "2026-07-28T05:43:26.222Z",
   "source_url": "https://webapps.sftc.org/ci/CaseInfo.dll?CaseNum=CGC26638526",
   "docket_entries": [
     {
@@ -30,7 +30,8 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10334981%26Timestamp%3D20260727224325%26Digest%3Daccce12a3f168e858127624e02190bafe62a1283"
     },
     {
       "doc_id": "10334982",
@@ -40,20 +41,43 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10334982%26Timestamp%3D20260727224325%26Digest%3D1a336e51f77e63a9b27a2e4ef26a1f6b141b4dd2"
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "name": "BAY AREA PROPERTY GROUP",
+      "party_type": "DEFENDANT",
+      "attorneys": [],
+      "self_represented": false
+    },
+    {
+      "name": "FENG, JANE 180 IRENE COURT #10 BELMONT, CA 94002",
+      "party_type": "PLAINTIFF",
+      "attorneys": [],
+      "self_represented": true,
+      "raw_attorney_texts": [
+        "Pro Per"
+      ]
+    },
+    {
+      "name": "LEE, WARREN",
+      "party_type": "DEFENDANT",
+      "attorneys": [],
+      "self_represented": false
+    }
+  ],
   "attorneys": [],
   "calendar": [],
   "payments": [],
   "payments_total": 0,
   "method_status": {
     "GetROA": "ok",
-    "GetParties": "skipped:direct-docket-roa-only",
-    "GetAttorneys": "skipped:direct-docket-roa-only",
-    "GetCalendar": "skipped:direct-docket-roa-only",
-    "GetPayments": "skipped:direct-docket-roa-only",
+    "GetParties": "ok",
+    "GetAttorneys": "skipped:direct-docket-optional-method-omitted",
+    "GetCalendar": "skipped:direct-docket-optional-method-omitted",
+    "GetPayments": "skipped:direct-docket-optional-method-omitted",
     "GetDocuments": "skipped:docket-only-direct"
   },
   "documents_source": "GetROA",
@@ -69,5 +93,6 @@
   "core_documents_captured_count": 0,
   "essential_documents_captured": false,
   "document_coverage": "partial",
-  "filing_date": "2026-07-23"
+  "filing_date": "2026-07-23",
+  "direct_docket_wave_capture": true
 }

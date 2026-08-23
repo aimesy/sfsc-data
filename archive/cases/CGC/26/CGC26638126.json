@@ -3,7 +3,7 @@
   "case_title": "GIOVANNI CINCOTTA VS. LAURA AGORIO",
   "court": "SF Superior",
   "cause_of_action": "Personal Injury",
-  "captured_at": "2026-07-19T00:11:24.079Z",
+  "captured_at": "2026-07-22T12:27:31.188Z",
   "source_url": "https://webapps.sftc.org/ci/CaseInfo.dll?CaseNum=CGC26638126",
   "docket_entries": [
     {
@@ -44,7 +44,8 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10325748%26Timestamp%3D20260722052730%26Digest%3Db70b9f9bb4d5faad843c33eab8fe07176c6edb26"
     },
     {
       "doc_id": "10325747",
@@ -54,7 +55,8 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10325747%26Timestamp%3D20260722052730%26Digest%3D9a1723af419fdbd2e303c49aa03a73130d483c7e"
     },
     {
       "doc_id": "10325746",
@@ -64,20 +66,37 @@
       "sha256": null,
       "byte_capture_deferred": true,
       "byte_capture_deferred_reason": "docket_only_mass_scan_requested",
-      "byte_capture_scope": "docket-only"
+      "byte_capture_scope": "docket-only",
+      "view_url": "https://webapps.sftc.org/ci/CaseInfo.dll?URL=https%3A%2F%2Fimgquery.sftc.org%2FSha1_newApp%2Fmainpage.aspx%3FWeb_Server%3Dimgquery.sftc.org%26MINDS_Server%3Dhoj-imx-01%26Category%3DC%26DocID%3D10325746%26Timestamp%3D20260722052730%26Digest%3D829972d39525bd9a399ced2fdb325476e6db787d"
     }
   ],
-  "parties": [],
+  "parties": [
+    {
+      "name": "AGORIO, LAURA",
+      "party_type": "DEFENDANT",
+      "attorneys": [],
+      "self_represented": false
+    },
+    {
+      "name": "CINCOTTA, GIOVANNI 1007 W. COLLEGE AVE #423 SANTA ROSA, CA 59401",
+      "party_type": "PLAINTIFF",
+      "attorneys": [],
+      "self_represented": true,
+      "raw_attorney_texts": [
+        "Pro Per"
+      ]
+    }
+  ],
   "attorneys": [],
   "calendar": [],
   "payments": [],
   "payments_total": 0,
   "method_status": {
     "GetROA": "ok",
-    "GetParties": "skipped:direct-docket-roa-only",
-    "GetAttorneys": "skipped:direct-docket-roa-only",
-    "GetCalendar": "skipped:direct-docket-roa-only",
-    "GetPayments": "skipped:direct-docket-roa-only",
+    "GetParties": "ok",
+    "GetAttorneys": "skipped:direct-docket-optional-method-omitted",
+    "GetCalendar": "skipped:direct-docket-optional-method-omitted",
+    "GetPayments": "skipped:direct-docket-optional-method-omitted",
     "GetDocuments": "skipped:docket-only-direct"
   },
   "documents_source": "GetROA",
@@ -92,5 +111,6 @@
   "core_documents_captured_count": 0,
   "essential_documents_captured": false,
   "document_coverage": "partial",
-  "filing_date": "2026-07-17"
+  "filing_date": "2026-07-17",
+  "direct_docket_wave_capture": true
 }
