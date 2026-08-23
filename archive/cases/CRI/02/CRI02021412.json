@@ -1,0 +1,158 @@
+{
+  "schema": "sfsc-criminal-portal-case-v1",
+  "source": "sftc-criminal-portal",
+  "captured_at": "2026-06-30T13:06:00.319Z",
+  "criminal_case_number": "02021412",
+  "status": "found",
+  "portal_case_id": "3160250",
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3160250"
+  },
+  "roa": [
+    {
+      "filedDate": "2001-12-17T00:00:00.000Z",
+      "docketEntryComment": "PTD PROGRESS REPORT",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2002-05-24T09:00:00.000Z",
+      "docketEntryComment": "COURT GRTS MOTION TO DISM PURS PC 1001,7 /1001,7: 002/DISM3/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [],
+  "attorneys": [],
+  "parties": [
+    {
+      "name": "CIPRIANO RODRIGUEZ",
+      "party_type": "Defendant",
+      "source": "criminal_case_index"
+    }
+  ],
+  "case_type": "criminal",
+  "case_number": "CRI02021412",
+  "display_case_number": "CRI-02021412",
+  "defendant": "CIPRIANO RODRIGUEZ",
+  "filed_date": "2001-12-17",
+  "charges": "8888888 372 PC/M",
+  "charges_parsed": [
+    {
+      "raw": "8888888 372 PC/M",
+      "title": "8888888",
+      "title_source": "criminal_index_text",
+      "code": "PC 372",
+      "code_system": "PC",
+      "section": "372",
+      "citation": "Penal Code § 372",
+      "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=372.&lawCode=PEN",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=372.&lawCode=PEN",
+      "url_version_status": "current_version_unverified",
+      "classification": "misdemeanor"
+    }
+  ],
+  "criminal_case_type": "",
+  "case_header": {
+    "case_number": "CRI-02021412",
+    "defendant": "CIPRIANO RODRIGUEZ",
+    "filed_date": "2001-12-17"
+  },
+  "case_title": "People v. CIPRIANO RODRIGUEZ",
+  "court": "San Francisco Superior Court - Criminal",
+  "cause_of_action": "Criminal",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3160250",
+  "docket_entries": [
+    {
+      "filedDate": "2001-12-17T00:00:00.000Z",
+      "docketEntryComment": "PTD PROGRESS REPORT",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2001-12-17T00:00:00.000Z",
+      "description": "PTD PROGRESS REPORT",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2002-05-24T09:00:00.000Z",
+      "docketEntryComment": "COURT GRTS MOTION TO DISM PURS PC 1001,7 /1001,7: 002/DISM3/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2002-05-24T09:00:00.000Z",
+      "description": "COURT GRTS MOTION TO DISM PURS PC 1001,7 /1001,7: 002/DISM3/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
+  "documents": [],
+  "payments": [],
+  "document_bytes_captured": true,
+  "document_byte_capture_scope": "criminal-portal-no-documents",
+  "criminal": {
+    "raw_case_number": "02021412",
+    "portal_case_id": "3160250",
+    "display_case_number": "CRI-02021412",
+    "defendant": "CIPRIANO RODRIGUEZ",
+    "filed_date": "2001-12-17",
+    "charges": "8888888 372 PC/M",
+    "charge_rows": [
+      {
+        "raw": "8888888 372 PC/M",
+        "title": "8888888",
+        "title_source": "criminal_index_text",
+        "code": "PC 372",
+        "code_system": "PC",
+        "section": "372",
+        "citation": "Penal Code § 372",
+        "current_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=372.&lawCode=PEN",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=372.&lawCode=PEN",
+        "url_version_status": "current_version_unverified",
+        "classification": "misdemeanor"
+      }
+    ],
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-02021412",
+      "defendant": "CIPRIANO RODRIGUEZ",
+      "filed_date": "2001-12-17"
+    },
+    "statutes": [
+      {
+        "code": "PC 1001",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [],
+    "identity_unavailable": false,
+    "identity_unavailable_reason": "",
+    "identity_incomplete": false,
+    "identity_incomplete_reason": ""
+  },
+  "documents_bytes_count": 0,
+  "documents_unavailable_count": 0,
+  "documents_deferred_count": 0,
+  "criminal_portal": {
+    "case_title": "San Francisco criminal case 02021412"
+  },
+  "source_detail": "criminal_case_index",
+  "criminal_index": {
+    "searched_last_name": "RODRIGUEZ",
+    "searched_first_prefix": "CI",
+    "charges": "8888888 372 PC/M",
+    "row": {
+      "DEFENDANTNAME": "CIPRIANO RODRIGUEZ",
+      "CASENUMBER": "CRI-02021412",
+      "FILEDDATE": "2001-12-17 09:00:00",
+      "CHARGES": "8888888 372 PC/M"
+    }
+  },
+  "updated_from_criminal_index_at": "2026-07-01T03:41:42.706Z",
+  "core_documents_count": 0,
+  "core_documents_captured_count": 0,
+  "essential_documents_captured": false
+}
