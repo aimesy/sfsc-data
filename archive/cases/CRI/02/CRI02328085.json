@@ -1,0 +1,117 @@
+{
+  "schema": "sfsc-criminal-portal-case-v1",
+  "source": "sftc-criminal-portal",
+  "captured_at": "2026-06-27T02:18:38.693Z",
+  "criminal_case_number": "02328085",
+  "status": "found",
+  "portal_case_id": "3441658",
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3441658"
+  },
+  "roa": [
+    {
+      "filedDate": "2007-08-08T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/MO PC 991/MO GRTD/GRTD:AS TO COUNT(S):1 AND 2/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2007-08-08 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 14",
+      "__index": 0,
+      "court_date": "2007-08-08",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 14",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [],
+  "parties": [
+    {
+      "name": "DOMINIC MURRAY",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-02328085",
+    "defendant": "DOMINIC MURRAY",
+    "filed_date": "2007-08-08"
+  },
+  "case_header_checked_at": "2026-06-27T02:18:38.775Z",
+  "display_case_number": "CRI-02328085",
+  "defendant": "DOMINIC MURRAY",
+  "case_title": "People v. DOMINIC MURRAY",
+  "filed_date": "2007-08-08",
+  "case_type": "criminal",
+  "case_number": "CRI02328085",
+  "charges": "",
+  "charges_parsed": [],
+  "criminal_case_type": "",
+  "court": "San Francisco Superior Court - Criminal",
+  "cause_of_action": "Criminal",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3441658",
+  "docket_entries": [
+    {
+      "filedDate": "2007-08-08T09:00:00.000Z",
+      "docketEntryComment": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/MO PC 991/MO GRTD/GRTD:AS TO COUNT(S):1 AND 2/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2007-08-08T09:00:00.000Z",
+      "description": "/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/MO PC 991/MO GRTD/GRTD:AS TO COUNT(S):1 AND 2/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
+  "documents": [],
+  "payments": [],
+  "document_bytes_captured": true,
+  "document_byte_capture_scope": "criminal-portal-no-documents",
+  "criminal": {
+    "raw_case_number": "02328085",
+    "portal_case_id": "3441658",
+    "display_case_number": "CRI-02328085",
+    "defendant": "DOMINIC MURRAY",
+    "filed_date": "2007-08-08",
+    "charges": "",
+    "charge_rows": [],
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-02328085",
+      "defendant": "DOMINIC MURRAY",
+      "filed_date": "2007-08-08"
+    },
+    "statutes": [
+      {
+        "code": "PC 991",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 991",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ]
+  },
+  "documents_bytes_count": 0,
+  "documents_unavailable_count": 0,
+  "documents_deferred_count": 0
+}
