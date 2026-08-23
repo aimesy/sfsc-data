@@ -1,6 +1,6 @@
 {
   "case_number": "CNC26560813",
-  "case_title": null,
+  "case_title": "IN RE: GABRIEL MAKSYMILIAN ROONEY",
   "court": "SF Superior",
   "cause_of_action": null,
   "captured_at": "2026-07-22T12:30:39.783Z",
@@ -53,10 +53,10 @@
   "payments_total": 0,
   "method_status": {
     "GetROA": "ok",
-    "GetParties": "ok",
-    "GetAttorneys": "skipped:direct-docket-optional-method-omitted",
-    "GetCalendar": "skipped:direct-docket-optional-method-omitted",
-    "GetPayments": "skipped:direct-docket-optional-method-omitted",
+    "GetParties": "skipped:direct-docket-roa-only",
+    "GetAttorneys": "skipped:direct-docket-roa-only",
+    "GetCalendar": "skipped:direct-docket-roa-only",
+    "GetPayments": "skipped:direct-docket-roa-only",
     "GetDocuments": "skipped:docket-only-direct"
   },
   "documents_source": "GetROA",
@@ -71,5 +71,6 @@
   "core_documents_count": 0,
   "core_documents_captured_count": 0,
   "essential_documents_captured": false,
-  "direct_docket_wave_capture": true
+  "direct_docket_wave_capture": true,
+  "case_title_source": "new_filings"
 }
