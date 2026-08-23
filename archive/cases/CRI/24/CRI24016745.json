@@ -1,0 +1,132 @@
+{
+  "schema": "sfsc-criminal-portal-case-v1",
+  "source": "sftc-criminal-portal",
+  "captured_at": "2026-07-09T01:54:07.073Z",
+  "criminal_case_number": "24016745",
+  "status": "found",
+  "portal_case_id": "4140991",
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4140991"
+  },
+  "roa": [
+    {
+      "filedDate": "2024-10-28T13:58:31.000Z",
+      "docketEntryComment": "Notice of Bail Posting Is Administratively Exonerated (PC1303) - No Complaint Filed",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2024-09-11T09:16:20.000Z",
+      "docketEntryComment": "Bail Receipt-SAN FRANCISCO SHERIFF'S OFFICE",
+      "otherSubmitter": "-SAN FRANCISCO SHERIFF'S OFFICE"
+    }
+  ],
+  "calendar": [],
+  "attorneys": [],
+  "parties": [
+    {
+      "name": "GIOVANNY ALVAREZ",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_type": "criminal",
+  "case_number": "CRI24016745",
+  "display_case_number": "CRI-24016745",
+  "defendant": "GIOVANNY ALVAREZ",
+  "filed_date": "",
+  "charges": "",
+  "charges_parsed": [],
+  "criminal_case_type": "",
+  "case_header": {
+    "case_number": "CRI-24016745",
+    "defendant": "GIOVANNY ALVAREZ"
+  },
+  "case_title": "People v. GIOVANNY ALVAREZ",
+  "court": "San Francisco Superior Court - Criminal",
+  "cause_of_action": "Criminal",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4140991",
+  "docket_entries": [
+    {
+      "filedDate": "2024-10-28T13:58:31.000Z",
+      "docketEntryComment": "Notice of Bail Posting Is Administratively Exonerated (PC1303) - No Complaint Filed",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2024-10-28T13:58:31.000Z",
+      "description": "Notice of Bail Posting Is Administratively Exonerated (PC1303) - No Complaint Filed",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2024-09-11T09:16:20.000Z",
+      "docketEntryComment": "Bail Receipt-SAN FRANCISCO SHERIFF'S OFFICE",
+      "otherSubmitter": "-SAN FRANCISCO SHERIFF'S OFFICE",
+      "__index": 1,
+      "date_filed": "2024-09-11T09:16:20.000Z",
+      "description": "Bail Receipt-SAN FRANCISCO SHERIFF'S OFFICE",
+      "submitter": "-SAN FRANCISCO SHERIFF'S OFFICE",
+      "source": "criminal_portal_roa"
+    }
+  ],
+  "documents": [],
+  "payments": [],
+  "document_bytes_captured": true,
+  "document_byte_capture_scope": "criminal-portal-no-documents",
+  "criminal": {
+    "raw_case_number": "24016745",
+    "portal_case_id": "4140991",
+    "display_case_number": "CRI-24016745",
+    "defendant": "GIOVANNY ALVAREZ",
+    "filed_date": "",
+    "charges": "",
+    "charge_rows": [],
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-24016745",
+      "defendant": "GIOVANNY ALVAREZ"
+    },
+    "statutes": [
+      {
+        "code": "PC1303",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC1303",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "identity_unavailable": false,
+    "identity_unavailable_reason": "",
+    "identity_incomplete": false,
+    "identity_incomplete_reason": ""
+  },
+  "documents_bytes_count": 0,
+  "documents_unavailable_count": 0,
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-07-09T01:54:07.073Z",
+  "criminal_portal": {
+    "defendant": "GIOVANNY ALVAREZ",
+    "case_title": "People v. GIOVANNY ALVAREZ",
+    "case_header": {
+      "case_number": "CRI-24016745",
+      "defendant": "GIOVANNY ALVAREZ"
+    }
+  },
+  "core_documents_count": 0,
+  "core_documents_captured_count": 0,
+  "essential_documents_captured": false,
+  "criminal_index": {}
+}
