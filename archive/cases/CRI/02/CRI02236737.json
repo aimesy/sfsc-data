@@ -1,0 +1,170 @@
+{
+  "schema": "sfsc-criminal-portal-case-v1",
+  "source": "sftc-criminal-portal",
+  "captured_at": "2026-07-08T09:19:28.736Z",
+  "criminal_case_number": "02236737",
+  "status": "found",
+  "portal_case_id": "3357989",
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3357989"
+  },
+  "roa": [
+    {
+      "filedDate": "2005-11-02T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/ON DA'S MOTION UNABLE TO SUSTAIN/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-10-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A/X:PD DECLARES CONFLICT/CON:BRENDAN CONROY//TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DOP/GTWM/987,2/",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2005-10-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/MO PC 991/MO DENIED/OR/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [],
+  "attorneys": [],
+  "parties": [
+    {
+      "name": "DEON ANDERSON",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_type": "criminal",
+  "case_number": "CRI02236737",
+  "display_case_number": "CRI-02236737",
+  "defendant": "DEON ANDERSON",
+  "filed_date": "2005-10-03",
+  "charges": "8888888",
+  "charges_parsed": [
+    {
+      "raw": "8888888",
+      "title": "Unrecognized criminal index charge code 8888888",
+      "unparsed": true
+    }
+  ],
+  "criminal_case_type": "",
+  "case_header": {
+    "case_number": "CRI-02236737",
+    "defendant": "DEON ANDERSON",
+    "filed_date": "2005-10-03"
+  },
+  "case_title": "People v. DEON ANDERSON",
+  "court": "San Francisco Superior Court - Criminal",
+  "cause_of_action": "Criminal",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3357989",
+  "docket_entries": [
+    {
+      "filedDate": "2005-11-02T09:00:00.000Z",
+      "docketEntryComment": "/MO PC 1385/ON DA'S MOTION UNABLE TO SUSTAIN/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2005-11-02T09:00:00.000Z",
+      "description": "/MO PC 1385/ON DA'S MOTION UNABLE TO SUSTAIN/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-10-07T09:00:00.000Z",
+      "docketEntryComment": "/CAL:I&A/X:PD DECLARES CONFLICT/CON:BRENDAN CONROY//TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DOP/GTWM/987,2/",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2005-10-07T09:00:00.000Z",
+      "description": "/CAL:I&A/X:PD DECLARES CONFLICT/CON:BRENDAN CONROY//TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/FAWC/DEFTARR1/DOP/GTWM/987,2/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2005-10-03T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/MO PC 991/MO DENIED/OR/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "otherSubmitter": "",
+      "__index": 2,
+      "date_filed": "2005-10-03T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/MO PC 991/MO DENIED/OR/CONTD I&A P&C DOP/CONTD:ARRAIGNMENT, PLEA AND COUNSEL/TWA/DOP/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
+  "documents": [],
+  "payments": [],
+  "document_bytes_captured": true,
+  "document_byte_capture_scope": "criminal-portal-no-documents",
+  "criminal": {
+    "raw_case_number": "02236737",
+    "portal_case_id": "3357989",
+    "display_case_number": "CRI-02236737",
+    "defendant": "DEON ANDERSON",
+    "filed_date": "2005-10-03",
+    "charges": "8888888",
+    "charge_rows": [
+      {
+        "raw": "8888888",
+        "title": "Unrecognized criminal index charge code 8888888",
+        "unparsed": true
+      }
+    ],
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-02236737",
+      "defendant": "DEON ANDERSON",
+      "filed_date": "2005-10-03"
+    },
+    "statutes": [
+      {
+        "code": "PC 1385",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "procedural"
+      },
+      {
+        "code": "PC 991",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 991",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ],
+    "identity_unavailable": false,
+    "identity_unavailable_reason": "",
+    "identity_incomplete": false,
+    "identity_incomplete_reason": ""
+  },
+  "documents_bytes_count": 0,
+  "documents_unavailable_count": 0,
+  "documents_deferred_count": 0,
+  "case_header_checked_at": "2026-07-08T09:19:28.736Z",
+  "criminal_portal": {
+    "case_title": "San Francisco criminal case 02236737"
+  },
+  "criminal_index": {
+    "charges": "8888888",
+    "filed_date": "2005-10-03",
+    "defendant": "DEON ANDERSON",
+    "metadata_cache": true
+  },
+  "updated_from_criminal_index_at": "2026-07-08T09:19:28.736Z",
+  "core_documents_count": 0,
+  "core_documents_captured_count": 0,
+  "essential_documents_captured": false
+}

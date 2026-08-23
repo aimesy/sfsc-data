@@ -1,0 +1,122 @@
+{
+  "schema": "sfsc-criminal-portal-case-v1",
+  "source": "sftc-criminal-portal",
+  "captured_at": "2026-06-27T02:13:01.859Z",
+  "criminal_case_number": "02231808",
+  "status": "found",
+  "portal_case_id": "3353454",
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3353454"
+  },
+  "roa": [
+    {
+      "filedDate": "2005-08-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/987,2/MO PC 991/MO GRTD/GRTD:AS TO COUNT(S):1/",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2005-08-26 9:00 AM",
+      "hearingType": "Arraignment",
+      "location": "850 Bryant",
+      "dept": "Department 15",
+      "__index": 0,
+      "court_date": "2005-08-26",
+      "hearing_time": "9:00 AM",
+      "matters": "Arraignment",
+      "hearing_type": "Arraignment",
+      "department": "Department 15",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [
+    {
+      "name": "BRIAN PEARLMAN",
+      "type": "Public Defender"
+    }
+  ],
+  "parties": [
+    {
+      "name": "JOSEPH DAVIS",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-02231808",
+    "defendant": "JOSEPH DAVIS",
+    "filed_date": "2005-08-26"
+  },
+  "case_header_checked_at": "2026-06-27T02:13:01.942Z",
+  "display_case_number": "CRI-02231808",
+  "defendant": "JOSEPH DAVIS",
+  "case_title": "People v. JOSEPH DAVIS",
+  "filed_date": "2005-08-26",
+  "case_type": "criminal",
+  "case_number": "CRI02231808",
+  "charges": "",
+  "charges_parsed": [],
+  "criminal_case_type": "",
+  "court": "San Francisco Superior Court - Criminal",
+  "cause_of_action": "Criminal",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=3353454",
+  "docket_entries": [
+    {
+      "filedDate": "2005-08-26T09:00:00.000Z",
+      "docketEntryComment": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/987,2/MO PC 991/MO GRTD/GRTD:AS TO COUNT(S):1/",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2005-08-26T09:00:00.000Z",
+      "description": "/CAL:ARRAIGNMENT/TEXT:DEFT ENT NG PLEA(S) & DEN OF ALLEG/PD/FAWC/DEFTARR1/987,2/MO PC 991/MO GRTD/GRTD:AS TO COUNT(S):1/",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
+  "documents": [],
+  "payments": [],
+  "document_bytes_captured": true,
+  "document_byte_capture_scope": "criminal-portal-no-documents",
+  "criminal": {
+    "raw_case_number": "02231808",
+    "portal_case_id": "3353454",
+    "display_case_number": "CRI-02231808",
+    "defendant": "JOSEPH DAVIS",
+    "filed_date": "2005-08-26",
+    "charges": "",
+    "charge_rows": [],
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-02231808",
+      "defendant": "JOSEPH DAVIS",
+      "filed_date": "2005-08-26"
+    },
+    "statutes": [
+      {
+        "code": "PC 991",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 991",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ]
+  },
+  "documents_bytes_count": 0,
+  "documents_unavailable_count": 0,
+  "documents_deferred_count": 0
+}

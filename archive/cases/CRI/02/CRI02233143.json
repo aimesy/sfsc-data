@@ -1,0 +1,140 @@
+{
+  "schema": "sfsc-criminal-portal-case-v1",
+  "source": "sftc-criminal-portal",
+  "captured_at": "2026-06-26T03:59:03.408Z",
+  "criminal_case_number": "02233143",
+  "status": "found",
+  "portal_case_id": "4278055",
+  "search": {
+    "code": 1,
+    "message": null,
+    "rows": [],
+    "redirect": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4278055"
+  },
+  "roa": [
+    {
+      "filedDate": "2026-06-03T13:38:46.000Z",
+      "docketEntryComment": "DEF Exhibits in Support of Motions TO REDUCE THE CHARGE TO A MISDEMEANOR PURSUANT TO PENAL CODE SECTION 17(b) AND DISMISSAL PURSUANT TO PENAL CODE SECTIONS 1203.4 AND 1203.4a",
+      "otherSubmitter": ""
+    },
+    {
+      "filedDate": "2026-06-03T13:29:28.000Z",
+      "docketEntryComment": "DEF PETITION FOR DISMISSAL (PROBATION NOT GRANTED) PC1203.4a CONV DATE: 05/25/2006",
+      "otherSubmitter": ""
+    }
+  ],
+  "calendar": [
+    {
+      "startTime": "2026-06-24 1:30 PM",
+      "hearingType": "Motion Hearing",
+      "location": "850 Bryant",
+      "dept": "Department 13",
+      "__index": 0,
+      "court_date": "2026-06-24",
+      "hearing_time": "1:30 PM",
+      "matters": "Motion Hearing",
+      "hearing_type": "Motion Hearing",
+      "department": "Department 13",
+      "source": "criminal_portal_calendar"
+    }
+  ],
+  "attorneys": [],
+  "parties": [
+    {
+      "name": "TARYN LEA MITCHELL",
+      "party_type": "Defendant",
+      "source": "criminal_portal_case_header"
+    }
+  ],
+  "case_header": {
+    "case_number": "CRI-02233143",
+    "defendant": "TARYN LEA MITCHELL",
+    "filed_date": "2005-09-07"
+  },
+  "case_header_checked_at": "2026-06-26T03:59:03.519Z",
+  "display_case_number": "CRI-02233143",
+  "defendant": "TARYN LEA MITCHELL",
+  "case_title": "People v. TARYN LEA MITCHELL",
+  "filed_date": "2005-09-07",
+  "case_type": "criminal",
+  "case_number": "CRI02233143",
+  "charges": "",
+  "charges_parsed": [],
+  "criminal_case_type": "",
+  "court": "San Francisco Superior Court - Criminal",
+  "cause_of_action": "Criminal",
+  "source_url": "https://webapps.sftc.org/crimportal/crimportal.dll?CaseId=4278055",
+  "docket_entries": [
+    {
+      "filedDate": "2026-06-03T13:38:46.000Z",
+      "docketEntryComment": "DEF Exhibits in Support of Motions TO REDUCE THE CHARGE TO A MISDEMEANOR PURSUANT TO PENAL CODE SECTION 17(b) AND DISMISSAL PURSUANT TO PENAL CODE SECTIONS 1203.4 AND 1203.4a",
+      "otherSubmitter": "",
+      "__index": 0,
+      "date_filed": "2026-06-03T13:38:46.000Z",
+      "description": "DEF Exhibits in Support of Motions TO REDUCE THE CHARGE TO A MISDEMEANOR PURSUANT TO PENAL CODE SECTION 17(b) AND DISMISSAL PURSUANT TO PENAL CODE SECTIONS 1203.4 AND 1203.4a",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    },
+    {
+      "filedDate": "2026-06-03T13:29:28.000Z",
+      "docketEntryComment": "DEF PETITION FOR DISMISSAL (PROBATION NOT GRANTED) PC1203.4a CONV DATE: 05/25/2006",
+      "otherSubmitter": "",
+      "__index": 1,
+      "date_filed": "2026-06-03T13:29:28.000Z",
+      "description": "DEF PETITION FOR DISMISSAL (PROBATION NOT GRANTED) PC1203.4a CONV DATE: 05/25/2006",
+      "submitter": "",
+      "source": "criminal_portal_roa"
+    }
+  ],
+  "documents": [],
+  "payments": [],
+  "document_bytes_captured": true,
+  "document_byte_capture_scope": "criminal-portal-no-documents",
+  "criminal": {
+    "raw_case_number": "02233143",
+    "portal_case_id": "4278055",
+    "display_case_number": "CRI-02233143",
+    "defendant": "TARYN LEA MITCHELL",
+    "filed_date": "2005-09-07",
+    "charges": "",
+    "charge_rows": [],
+    "case_type": "",
+    "case_header": {
+      "case_number": "CRI-02233143",
+      "defendant": "TARYN LEA MITCHELL",
+      "filed_date": "2005-09-07"
+    },
+    "statutes": [
+      {
+        "code": "PC 17(B)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate"
+      },
+      {
+        "code": "PC1203.4",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "unknown"
+      }
+    ],
+    "inferred_charges": [
+      {
+        "code": "PC 17(B)",
+        "count": 1,
+        "sources": [
+          "roa"
+        ],
+        "classification": "charge_candidate",
+        "inference": "tentative_from_criminal_docket_text"
+      }
+    ]
+  },
+  "documents_bytes_count": 0,
+  "documents_unavailable_count": 0,
+  "documents_deferred_count": 0
+}
