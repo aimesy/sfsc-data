@@ -43,6 +43,10 @@ SELECT
   e.rule_id,
   s.original_judgment_total_amount AS summary_total_amount,
   e.total_amount AS event_total_amount,
+  s.recorded_judgment_amount,
+  s.recorded_judgment_amount_event_hash,
+  try_cast(substr(re.entry_date, 1, 4) AS INTEGER) AS recorded_event_year,
+  re.event_kind AS recorded_event_kind,
   coalesce(len(e.money_mentions), 0) AS money_mention_count,
   coalesce(e.source_text, '') AS source_text,
   regexp_matches(coalesce(e.source_text, ''), '\\$\\s*[0-9]') AS has_dollar_marker,
@@ -55,6 +59,9 @@ FROM summaries s
 JOIN events e
   ON e.case_number = s.case_number
  AND e.entry_hash = s.original_judgment_event_hash
+LEFT JOIN events re
+  ON re.case_number = s.case_number
+ AND re.entry_hash = s.recorded_judgment_amount_event_hash
 WHERE s.original_judgment_event_hash IS NOT NULL;
 
 CREATE OR REPLACE TEMP VIEW original_coverage AS
@@ -285,6 +292,36 @@ write_query_csv(
     """,
 )
 
+write_query_csv(
+    "original-vs-recorded-selection-gap.csv",
+    f"""
+    SELECT
+      event_year AS original_event_year,
+      case_model,
+      coalesce(recorded_event_kind, 'none') AS recorded_event_kind,
+      count(*) AS selected_original_events,
+      count(*) FILTER (WHERE summary_total_amount IS NOT NULL)
+        AS original_total_count,
+      count(*) FILTER (
+        WHERE summary_total_amount IS NULL AND recorded_judgment_amount IS NOT NULL
+      ) AS recorded_amount_but_original_missing_count,
+      count(*) FILTER (
+        WHERE summary_total_amount IS NULL AND recorded_judgment_amount IS NULL
+      ) AS no_original_or_recorded_amount_count,
+      median(try_cast(recorded_judgment_amount AS DECIMAL(38,2))) FILTER (
+        WHERE summary_total_amount IS NULL AND recorded_judgment_amount IS NOT NULL
+      ) AS recorded_only_median,
+      median(recorded_event_year) FILTER (
+        WHERE summary_total_amount IS NULL AND recorded_judgment_amount IS NOT NULL
+      ) AS recorded_only_median_event_year
+    FROM original_coverage
+    WHERE event_year BETWEEN {MIN_YEAR} AND {MAX_YEAR}
+    GROUP BY event_year, case_model, coalesce(recorded_event_kind, 'none')
+    ORDER BY event_year, recorded_amount_but_original_missing_count DESC,
+      case_model, recorded_event_kind
+    """,
+)
+
 crosscheck_cur = db.execute(
     f"""
     SELECT
@@ -345,6 +382,7 @@ readme = [
     "- missing-amount-format-cohorts.csv: exclusive aggregate failure cohorts.",
     "- operative-judgment-event-funnel.csv: all operative judgment-like events, not only the event selected as original.",
     "- original-event-year-by-filing-year.csv: focal event years split by filing cohort and case model.",
+    "- original-vs-recorded-selection-gap.csv: later recorded amounts omitted by the earliest-event original measure.",
     "- diagnostics.json: source definitions, cross-checks, and focal annual rows.",
     "",
     "No case numbers, party names, or source text are written to these outputs.",
