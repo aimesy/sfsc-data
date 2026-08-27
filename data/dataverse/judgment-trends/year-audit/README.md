@@ -15,6 +15,7 @@ A likely-monetary event is a diagnostic candidate, not a confirmed monetary judg
 - operative-judgment-event-funnel.csv: all operative judgment-like events, not only the event selected as original.
 - original-event-year-by-filing-year.csv: focal event years split by filing cohort and case model.
 - original-vs-recorded-selection-gap.csv: later recorded amounts omitted by the earliest-event original measure.
+- original-vs-recorded-sensitivity.csv: median sensitivity when later recorded amounts supplement missing original totals; this is a coverage diagnostic, not an alternative original-judgment definition.
 - diagnostics.json: source definitions, cross-checks, and focal annual rows.
 
 No case numbers, party names, or source text are written to these outputs.
