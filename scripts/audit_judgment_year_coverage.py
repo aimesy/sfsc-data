@@ -45,11 +45,11 @@ SELECT
   e.total_amount AS event_total_amount,
   coalesce(len(e.money_mentions), 0) AS money_mention_count,
   coalesce(e.source_text, '') AS source_text,
-  regexp_matches(coalesce(e.source_text, ''), '\\\\$\\\\s*[0-9]') AS has_dollar_marker,
-  regexp_matches(lower(coalesce(e.source_text, '')), '[0-9][0-9,. ]*\\\\s*(dollars?|usd)\\\\b') AS has_word_currency,
+  regexp_matches(coalesce(e.source_text, ''), '\\$\\s*[0-9]') AS has_dollar_marker,
+  regexp_matches(lower(coalesce(e.source_text, '')), '[0-9][0-9,. ]*\\s*(dollars?|usd)\\b') AS has_word_currency,
   regexp_matches(
     lower(coalesce(e.source_text, '')),
-    '(judg|adjudg|award|recover|principal|amount|total)[^0-9]{0,40}[0-9][0-9,]*(\\\\.[0-9]{1,2})?'
+    '(judg|adjudg|award|recover|principal|amount|total)[^0-9]{0,40}[0-9][0-9,]*(\\.[0-9]{1,2})?'
   ) AS has_unmarked_numeric_context
 FROM summaries s
 JOIN events e
@@ -89,11 +89,11 @@ SELECT
   entry_hash,
   total_amount,
   coalesce(len(money_mentions), 0) AS money_mention_count,
-  regexp_matches(coalesce(source_text, ''), '\\\\$\\\\s*[0-9]') AS has_dollar_marker,
-  regexp_matches(lower(coalesce(source_text, '')), '[0-9][0-9,. ]*\\\\s*(dollars?|usd)\\\\b') AS has_word_currency,
+  regexp_matches(coalesce(source_text, ''), '\\$\\s*[0-9]') AS has_dollar_marker,
+  regexp_matches(lower(coalesce(source_text, '')), '[0-9][0-9,. ]*\\s*(dollars?|usd)\\b') AS has_word_currency,
   regexp_matches(
     lower(coalesce(source_text, '')),
-    '(judg|adjudg|award|recover|principal|amount|total)[^0-9]{0,40}[0-9][0-9,]*(\\\\.[0-9]{1,2})?'
+    '(judg|adjudg|award|recover|principal|amount|total)[^0-9]{0,40}[0-9][0-9,]*(\\.[0-9]{1,2})?'
   ) AS has_unmarked_numeric_context
 FROM events
 WHERE status IN ('operative', 'superseding')
