@@ -63,7 +63,7 @@ WHERE s.recorded_judgment_amount IS NOT NULL
 annual_sql = """
 WITH valid AS (
   SELECT judgment_year, cast(recorded_judgment_amount AS DECIMAL(38,2)) amount,
-         used_filing_year_fallback, review_required
+         used_filing_year_fallback AS year_fallback, review_required
   FROM judgment_amounts
   WHERE judgment_year BETWEEN 1900 AND 2100 AND recorded_judgment_amount >= 0
 ), ranked AS (
@@ -76,7 +76,7 @@ WITH valid AS (
     quantile_cont(amount, .75) p75_amount, quantile_cont(amount, .90) p90_amount,
     quantile_cont(amount, .95) p95_amount, quantile_cont(amount, .99) p99_amount,
     max(amount) max_amount,
-    sum(CASE WHEN used_filing_year_fallback THEN 1 ELSE 0 END) fallback_year_count,
+    sum(CASE WHEN year_fallback THEN 1 ELSE 0 END) fallback_year_count,
     sum(CASE WHEN review_required THEN 1 ELSE 0 END) review_required_count
   FROM valid GROUP BY judgment_year
 ), concentration AS (
