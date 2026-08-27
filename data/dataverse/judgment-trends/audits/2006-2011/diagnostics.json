@@ -1,0 +1,19 @@
+{
+  "source": {
+    "summaries": "data/judgments/summaries/*.parquet",
+    "events": "data/judgments/parquet/*.parquet",
+    "population": "complete authoritative judgment Parquet shards",
+    "grain": "events for event coverage; one selected original event per case for original coverage",
+    "comparison_window": "2004-2013; focal event years 2006 and 2011"
+  },
+  "outputs": {
+    "annual_event_rows": 10,
+    "annual_selected_rows": 10,
+    "annual_summary_rows": 10,
+    "by_model_rows": 84,
+    "focal_structure_rows": 2114,
+    "format_cohort_rows": 45,
+    "lag_rows": 184,
+    "selected_reason_rows": 177
+  }
+}
