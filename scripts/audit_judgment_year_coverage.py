@@ -322,6 +322,60 @@ write_query_csv(
     """,
 )
 
+write_query_csv(
+    "original-vs-recorded-sensitivity.csv",
+    f"""
+    WITH base AS (
+      SELECT
+        event_year,
+        case_model,
+        try_cast(summary_total_amount AS DECIMAL(38,2)) AS original_amount,
+        try_cast(recorded_judgment_amount AS DECIMAL(38,2)) AS recorded_amount
+      FROM original_coverage
+      WHERE event_year BETWEEN {MIN_YEAR} AND {MAX_YEAR}
+    ), expanded AS (
+      SELECT event_year, 'all' AS case_model, original_amount, recorded_amount
+      FROM base
+      UNION ALL
+      SELECT event_year, case_model, original_amount, recorded_amount
+      FROM base
+    )
+    SELECT
+      event_year AS original_event_year,
+      case_model,
+      count(*) FILTER (WHERE original_amount IS NOT NULL) AS original_amount_count,
+      median(original_amount) FILTER (WHERE original_amount IS NOT NULL)
+        AS original_amount_median,
+      count(*) FILTER (
+        WHERE original_amount IS NULL AND recorded_amount IS NOT NULL
+      ) AS recorded_only_supplement_count,
+      median(recorded_amount) FILTER (
+        WHERE original_amount IS NULL AND recorded_amount IS NOT NULL
+      ) AS recorded_only_supplement_median,
+      count(*) FILTER (
+        WHERE coalesce(original_amount, recorded_amount) IS NOT NULL
+      ) AS supplemented_count,
+      median(coalesce(original_amount, recorded_amount)) FILTER (
+        WHERE coalesce(original_amount, recorded_amount) IS NOT NULL
+      ) AS supplemented_median,
+      round(
+        100.0 * (
+          median(coalesce(original_amount, recorded_amount)) FILTER (
+            WHERE coalesce(original_amount, recorded_amount) IS NOT NULL
+          )
+          / nullif(
+            median(original_amount) FILTER (WHERE original_amount IS NOT NULL),
+            0
+          ) - 1
+        ),
+        2
+      ) AS supplemented_median_change_pct
+    FROM expanded
+    GROUP BY event_year, case_model
+    ORDER BY event_year, CASE WHEN case_model = 'all' THEN 0 ELSE 1 END, case_model
+    """,
+)
+
 crosscheck_cur = db.execute(
     f"""
     SELECT
@@ -383,6 +437,7 @@ readme = [
     "- operative-judgment-event-funnel.csv: all operative judgment-like events, not only the event selected as original.",
     "- original-event-year-by-filing-year.csv: focal event years split by filing cohort and case model.",
     "- original-vs-recorded-selection-gap.csv: later recorded amounts omitted by the earliest-event original measure.",
+    "- original-vs-recorded-sensitivity.csv: median sensitivity when later recorded amounts supplement missing original totals; this is a coverage diagnostic, not an alternative original-judgment definition.",
     "- diagnostics.json: source definitions, cross-checks, and focal annual rows.",
     "",
     "No case numbers, party names, or source text are written to these outputs.",
