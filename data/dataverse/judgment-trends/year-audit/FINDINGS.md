@@ -62,7 +62,7 @@ Original amount composition changed:
 | 2006 | 22.71% | 57.81% | $8,538.98 | $1,770.22 |
 | 2007 | 18.30% | 60.26% | $9,692.42 | $1,732.79 |
 
-When later recorded amounts supplement missing original totals, the annual median is $4,330.42, between the local trend implied by 2005 ($3,740.00) and 2007 ($4,192.28). The original-only definition amplifies the bump, but there is no evidence of a 2006 parser collapse.
+When later recorded amounts supplement missing original totals, the annual median is $4,330.42, about 9% above the average of 2005 ($3,740.00) and 2007 ($4,192.28), versus about 19% for the original-only median. The original-only definition amplifies the bump, but there is no evidence of a 2006 parser collapse.
 
 ## 2011
 
