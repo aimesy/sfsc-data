@@ -130,10 +130,14 @@ def write_query_csv(name: str, sql: str):
 annual_columns, annual_rows = write_query_csv("annual-recorded-amount-trends.csv", annual_sql)
 original_annual_sql = annual_sql.replace(
     "recorded_judgment_amount", "original_judgment_total_amount"
-).replace("judgment_year", "original_judgment_year")
+).replace("judgment_year", "original_judgment_year").replace(
+    "used_filing_year_fallback", "(original_event_date IS NULL)"
+)
 renewal_annual_sql = annual_sql.replace(
     "recorded_judgment_amount", "latest_renewal_total_amount"
-).replace("judgment_year", "renewal_year")
+).replace("judgment_year", "renewal_year").replace(
+    "used_filing_year_fallback", "(renewal_event_date IS NULL)"
+)
 write_query_csv("annual-original-judgment-trends.csv", original_annual_sql)
 write_query_csv("annual-renewal-trends.csv", renewal_annual_sql)
 write_query_csv("annual-by-case-model.csv", model_sql)
