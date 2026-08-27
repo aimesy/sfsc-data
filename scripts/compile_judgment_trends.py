@@ -41,10 +41,6 @@ SELECT
   oe.entry_date AS original_event_date,
   try_cast(substr(oe.entry_date, 1, 4) AS INTEGER) AS original_judgment_year,
   try_cast(substr(oe.entry_date, 1, 4) AS INTEGER) AS initial_judgment_year,
-  ce.entry_date AS final_operative_event_date,
-  ce.event_kind AS final_operative_event_kind,
-  ce.status AS final_operative_event_status,
-  ce.total_amount AS final_operative_event_total_amount,
   le.entry_date AS renewal_event_date,
   try_cast(substr(le.entry_date, 1, 4) AS INTEGER) AS renewal_year,
   s.recorded_judgment_amount_event_hash,
@@ -54,9 +50,6 @@ SELECT
   coalesce(s.judgment_is_vacated, false) AS judgment_is_vacated,
   s.review_required
 FROM summaries s
-LEFT JOIN events ce
-  ON ce.case_number = s.case_number
- AND ce.entry_hash = s.current_judgment_event_hash
 LEFT JOIN events e
   ON e.case_number = s.case_number
  AND e.entry_hash = s.recorded_judgment_amount_event_hash
@@ -187,18 +180,11 @@ SELECT
      AND NOT judgment_is_vacated) distinct_final_operative_amount_cases,
   (SELECT count(*) FROM judgment_amounts
    WHERE final_operative_judgment_total_amount IS NOT NULL
-     AND final_operative_event_date IS NULL) missing_final_operative_event_date,
+     AND final_operative_judgment_event_hash IS NULL) missing_final_operative_event_hash,
   (SELECT count(*) FROM judgment_amounts
    WHERE final_operative_judgment_total_amount IS NOT NULL
-     AND final_operative_event_total_amount IS DISTINCT FROM final_operative_judgment_total_amount)
-     final_operative_event_amount_mismatches,
-  (SELECT count(*) FROM judgment_amounts
-   WHERE final_operative_judgment_total_amount IS NOT NULL
-     AND final_operative_event_status NOT IN ('operative', 'superseding'))
-     nonoperative_final_event_count,
-  (SELECT count(*) FROM judgment_amounts
-   WHERE final_operative_judgment_total_amount IS NOT NULL
-     AND final_operative_event_kind = 'renewal') renewal_selected_as_final_count,
+     AND final_operative_judgment_event_hash = latest_renewal_event_hash)
+     renewal_hash_selected_as_final_count,
   (SELECT count(*) FROM judgment_amounts
    WHERE final_operative_judgment_total_amount IS NOT NULL
      AND judgment_is_vacated) vacated_final_amounts_excluded,
@@ -239,7 +225,7 @@ diagnostics["largest_100_anonymized"] = [
 final_largest = db.execute("""
 SELECT initial_judgment_year, case_prefix, case_model,
        cast(final_operative_judgment_total_amount AS DECIMAL(38,2)) amount,
-       final_operative_event_date, final_operative_event_kind, review_required
+       review_required
 FROM judgment_amounts
 WHERE final_operative_judgment_total_amount IS NOT NULL
   AND NOT judgment_is_vacated
@@ -280,8 +266,8 @@ readme = [
     f"- Summary rows: {diagnostics['summary_rows']:,}",
     f"- Distinct summary cases: {diagnostics['distinct_summary_cases']:,}",
     f"- Final-operative amount cases: {diagnostics['distinct_final_operative_amount_cases']:,}",
-    f"- Final-operative event/amount mismatches: {diagnostics['final_operative_event_amount_mismatches']:,}",
-    f"- Renewals selected as final operative: {diagnostics['renewal_selected_as_final_count']:,}",
+    f"- Missing final-operative event hash: {diagnostics['missing_final_operative_event_hash']:,}",
+    f"- Renewal hashes selected as final operative: {diagnostics['renewal_hash_selected_as_final_count']:,}",
     f"- Vacated judgment amounts excluded: {diagnostics['vacated_final_amounts_excluded']:,}",
     f"- Recorded amount-bearing cases: {diagnostics['distinct_amount_cases']:,}",
     f"- Missing recorded selected-event date: {diagnostics['missing_event_date']:,}",
