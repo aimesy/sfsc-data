@@ -5,6 +5,7 @@ on:
     paths:
       - ".github/workflows/compile-judgment-trends.yml"
       - "scripts/compile_judgment_trends.py"
+      - "scripts/audit_judgment_years_2006_2011.py"
   workflow_dispatch:
 
 permissions:
@@ -37,6 +38,9 @@ jobs:
 
       - name: Compile aggregate trends
         run: python scripts/compile_judgment_trends.py
+
+      - name: Audit 2006 and 2011 coverage
+        run: python scripts/audit_judgment_years_2006_2011.py
 
       - name: Commit aggregate outputs
         run: |
