@@ -37,6 +37,10 @@ SELECT
     try_cast(s.filing_year AS INTEGER)
   ) AS judgment_year,
   (try_cast(substr(e.entry_date, 1, 4) AS INTEGER) IS NULL) AS used_filing_year_fallback,
+  oe.entry_date AS original_event_date,
+  try_cast(substr(oe.entry_date, 1, 4) AS INTEGER) AS original_judgment_year,
+  le.entry_date AS renewal_event_date,
+  try_cast(substr(le.entry_date, 1, 4) AS INTEGER) AS renewal_year,
   s.recorded_judgment_amount_event_hash,
   s.original_judgment_event_hash,
   s.latest_renewal_event_hash,
@@ -45,12 +49,20 @@ FROM summaries s
 LEFT JOIN events e
   ON e.case_number = s.case_number
  AND e.entry_hash = s.recorded_judgment_amount_event_hash
-WHERE s.recorded_judgment_amount IS NOT NULL;
+LEFT JOIN events oe
+  ON oe.case_number = s.case_number
+ AND oe.entry_hash = s.original_judgment_event_hash
+LEFT JOIN events le
+  ON le.case_number = s.case_number
+ AND le.entry_hash = s.latest_renewal_event_hash
+WHERE s.recorded_judgment_amount IS NOT NULL
+   OR s.original_judgment_total_amount IS NOT NULL
+   OR s.latest_renewal_total_amount IS NOT NULL;
 """)
 
 annual_sql = """
 WITH valid AS (
-  SELECT judgment_year, cast(recorded_judgment_amount AS DOUBLE) amount,
+  SELECT judgment_year, cast(recorded_judgment_amount AS DECIMAL(38,2)) amount,
          used_filing_year_fallback, review_required
   FROM judgment_amounts
   WHERE judgment_year BETWEEN 1900 AND 2100 AND recorded_judgment_amount >= 0
@@ -94,12 +106,12 @@ ORDER BY judgment_year
 
 model_sql = """
 SELECT judgment_year, case_model, count(*) judgment_count,
-  sum(cast(recorded_judgment_amount AS DOUBLE)) total_amount,
-  avg(cast(recorded_judgment_amount AS DOUBLE)) mean_amount,
-  median(cast(recorded_judgment_amount AS DOUBLE)) median_amount,
-  quantile_cont(cast(recorded_judgment_amount AS DOUBLE), .90) p90_amount,
-  quantile_cont(cast(recorded_judgment_amount AS DOUBLE), .99) p99_amount,
-  max(cast(recorded_judgment_amount AS DOUBLE)) max_amount
+  sum(cast(recorded_judgment_amount AS DECIMAL(38,2))) total_amount,
+  avg(cast(recorded_judgment_amount AS DECIMAL(38,2))) mean_amount,
+  median(cast(recorded_judgment_amount AS DECIMAL(38,2))) median_amount,
+  quantile_cont(cast(recorded_judgment_amount AS DECIMAL(38,2)), .90) p90_amount,
+  quantile_cont(cast(recorded_judgment_amount AS DECIMAL(38,2)), .99) p99_amount,
+  max(cast(recorded_judgment_amount AS DECIMAL(38,2))) max_amount
 FROM judgment_amounts
 WHERE judgment_year BETWEEN 1900 AND 2100 AND recorded_judgment_amount >= 0
 GROUP BY judgment_year, case_model ORDER BY judgment_year, case_model
@@ -115,7 +127,15 @@ def write_query_csv(name: str, sql: str):
         writer.writerows(rows)
     return columns, rows
 
-annual_columns, annual_rows = write_query_csv("annual-judgment-trends.csv", annual_sql)
+annual_columns, annual_rows = write_query_csv("annual-recorded-amount-trends.csv", annual_sql)
+original_annual_sql = annual_sql.replace(
+    "recorded_judgment_amount", "original_judgment_total_amount"
+).replace("judgment_year", "original_judgment_year")
+renewal_annual_sql = annual_sql.replace(
+    "recorded_judgment_amount", "latest_renewal_total_amount"
+).replace("judgment_year", "renewal_year")
+write_query_csv("annual-original-judgment-trends.csv", original_annual_sql)
+write_query_csv("annual-renewal-trends.csv", renewal_annual_sql)
 write_query_csv("annual-by-case-model.csv", model_sql)
 
 quality = db.execute("""
@@ -123,9 +143,13 @@ SELECT
   (SELECT count(*) FROM summaries) summary_rows,
   (SELECT count(distinct case_number) FROM summaries) distinct_summary_cases,
   (SELECT count(*) FROM events) event_rows,
-  (SELECT count(*) FROM judgment_amounts) amount_rows,
-  (SELECT count(distinct case_number) FROM judgment_amounts) distinct_amount_cases,
-  (SELECT count(*) FROM judgment_amounts WHERE recorded_event_date IS NULL) missing_event_date,
+  (SELECT count(*) FROM judgment_amounts WHERE recorded_judgment_amount IS NOT NULL) amount_rows,
+  (SELECT count(distinct case_number) FROM judgment_amounts WHERE recorded_judgment_amount IS NOT NULL) distinct_amount_cases,
+  (SELECT count(*) FROM judgment_amounts WHERE recorded_judgment_amount IS NOT NULL AND recorded_event_date IS NULL) missing_event_date,
+  (SELECT count(*) FROM judgment_amounts WHERE original_judgment_total_amount IS NOT NULL) original_amount_rows,
+  (SELECT count(*) FROM judgment_amounts WHERE original_judgment_total_amount IS NOT NULL AND original_event_date IS NULL) missing_original_event_date,
+  (SELECT count(*) FROM judgment_amounts WHERE latest_renewal_total_amount IS NOT NULL) renewal_amount_rows,
+  (SELECT count(*) FROM judgment_amounts WHERE latest_renewal_total_amount IS NOT NULL AND renewal_event_date IS NULL) missing_renewal_event_date,
   (SELECT count(*) FROM judgment_amounts WHERE judgment_year IS NULL) missing_year,
   (SELECT count(*) FROM judgment_amounts WHERE recorded_judgment_amount < 0) negative_amounts,
   (SELECT count(*) FROM judgment_amounts WHERE recorded_judgment_amount = 0) zero_amounts,
@@ -143,10 +167,10 @@ diagnostics = dict(zip(quality_columns, quality.fetchone()))
 
 largest = db.execute("""
 SELECT judgment_year, case_prefix, case_model,
-       cast(recorded_judgment_amount AS DOUBLE) amount,
+       cast(recorded_judgment_amount AS DECIMAL(38,2)) amount,
        recorded_event_date, review_required
 FROM judgment_amounts
-WHERE judgment_year BETWEEN 1900 AND 2100
+WHERE recorded_judgment_amount IS NOT NULL AND judgment_year BETWEEN 1900 AND 2100
 ORDER BY recorded_judgment_amount DESC NULLS LAST LIMIT 100
 """)
 largest_columns = [item[0] for item in largest.description]
@@ -156,8 +180,8 @@ diagnostics["largest_100_anonymized"] = [
 diagnostics["source"] = {
     "summary_glob": "data/judgments/summaries/*.parquet",
     "event_glob": "data/judgments/parquet/*.parquet",
-    "amount_definition": "one recorded_judgment_amount per case summary",
-    "year_definition": "selected recorded amount event year; filing year only when event date is absent",
+    "amount_definition": "separate one-per-case series for original judgment, latest recorded judgment-or-renewal, and latest renewal",
+    "year_definition": "each series uses its own selected event year; only the recorded series falls back to filing year when its event date is absent",
 }
 (OUT / "diagnostics.json").write_text(
     json.dumps(diagnostics, indent=2, default=str) + "\n", encoding="utf-8"
@@ -170,9 +194,9 @@ readme = [
     "",
     "## Metric definitions",
     "",
-    "- One observation per case with a non-null `recorded_judgment_amount`.",
-    "- Year is the selected amount-bearing event year; filing year is used only when the event date is unavailable.",
-    "- Renewals are not added to original judgments; the recorded amount is the latest expressly recorded judgment or renewal amount and is not a payoff balance.",
+    "- Each file has at most one observation per case for its named measure.",
+    "- Original judgments use the original amount-bearing event year; renewals use the latest renewal event year.",
+    "- The recorded series uses the latest expressly recorded judgment or renewal amount and is not a payoff balance; filing year is used only if its selected event date is unavailable.",
     "- Raw totals are paired with medians, percentiles, and upper-tail-excluded totals because awards are strongly right-skewed.",
     "",
     "## Data-quality summary",
@@ -187,8 +211,10 @@ readme = [
     "",
     "## Files",
     "",
-    "- `annual-judgment-trends.csv`: annual totals, quantiles, concentration, and sensitivity totals.",
-    "- `annual-by-case-model.csv`: annual statistics segmented by case model.",
+    "- `annual-original-judgment-trends.csv`: original judgment amounts by original event year.",
+    "- `annual-recorded-amount-trends.csv`: latest recorded judgment-or-renewal amounts by selected event year.",
+    "- `annual-renewal-trends.csv`: latest renewal amounts by renewal event year.",
+    "- `annual-by-case-model.csv`: recorded-amount statistics segmented by case model.",
     "- `diagnostics.json`: integrity counts and the 100 largest anonymized records for extraction review.",
     "",
     "Generated by `scripts/compile_judgment_trends.py`.",
