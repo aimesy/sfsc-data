@@ -29,6 +29,7 @@ SELECT
   try_cast(s.filing_year AS INTEGER) AS filing_year,
   s.recorded_judgment_amount,
   s.original_judgment_total_amount,
+  s.current_judgment_total_amount AS final_operative_judgment_total_amount,
   s.latest_renewal_total_amount,
   e.entry_date AS recorded_event_date,
   try_cast(substr(e.entry_date, 1, 4) AS INTEGER) AS event_year,
@@ -39,11 +40,14 @@ SELECT
   (try_cast(substr(e.entry_date, 1, 4) AS INTEGER) IS NULL) AS used_filing_year_fallback,
   oe.entry_date AS original_event_date,
   try_cast(substr(oe.entry_date, 1, 4) AS INTEGER) AS original_judgment_year,
+  try_cast(substr(oe.entry_date, 1, 4) AS INTEGER) AS initial_judgment_year,
   le.entry_date AS renewal_event_date,
   try_cast(substr(le.entry_date, 1, 4) AS INTEGER) AS renewal_year,
   s.recorded_judgment_amount_event_hash,
   s.original_judgment_event_hash,
+  s.current_judgment_event_hash AS final_operative_judgment_event_hash,
   s.latest_renewal_event_hash,
+  coalesce(s.judgment_is_vacated, false) AS judgment_is_vacated,
   s.review_required
 FROM summaries s
 LEFT JOIN events e
@@ -57,6 +61,7 @@ LEFT JOIN events le
  AND le.entry_hash = s.latest_renewal_event_hash
 WHERE s.recorded_judgment_amount IS NOT NULL
    OR s.original_judgment_total_amount IS NOT NULL
+   OR s.current_judgment_total_amount IS NOT NULL
    OR s.latest_renewal_total_amount IS NOT NULL;
 """)
 
@@ -127,6 +132,26 @@ def write_query_csv(name: str, sql: str):
         writer.writerows(rows)
     return columns, rows
 
+final_annual_sql = annual_sql.replace(
+    "recorded_judgment_amount", "final_operative_judgment_total_amount"
+).replace("judgment_year", "initial_judgment_year").replace(
+    "used_filing_year_fallback", "(original_event_date IS NULL)"
+).replace(
+    "WHERE initial_judgment_year BETWEEN 1900 AND 2100 AND final_operative_judgment_total_amount >= 0",
+    "WHERE initial_judgment_year BETWEEN 1900 AND 2100 AND final_operative_judgment_total_amount >= 0\n"
+    "    AND NOT judgment_is_vacated",
+)
+final_model_sql = model_sql.replace(
+    "recorded_judgment_amount", "final_operative_judgment_total_amount"
+).replace("judgment_year", "initial_judgment_year").replace(
+    "WHERE initial_judgment_year BETWEEN 1900 AND 2100 AND final_operative_judgment_total_amount >= 0",
+    "WHERE initial_judgment_year BETWEEN 1900 AND 2100 AND final_operative_judgment_total_amount >= 0\n"
+    "  AND NOT judgment_is_vacated",
+)
+final_annual_columns, final_annual_rows = write_query_csv(
+    "annual-final-operative-judgment-trends.csv", final_annual_sql
+)
+write_query_csv("annual-final-operative-by-case-model.csv", final_model_sql)
 annual_columns, annual_rows = write_query_csv("annual-recorded-amount-trends.csv", annual_sql)
 original_annual_sql = annual_sql.replace(
     "recorded_judgment_amount", "original_judgment_total_amount"
@@ -147,6 +172,22 @@ SELECT
   (SELECT count(*) FROM summaries) summary_rows,
   (SELECT count(distinct case_number) FROM summaries) distinct_summary_cases,
   (SELECT count(*) FROM events) event_rows,
+  (SELECT count(*) FROM judgment_amounts
+   WHERE final_operative_judgment_total_amount IS NOT NULL
+     AND NOT judgment_is_vacated) final_operative_amount_rows,
+  (SELECT count(distinct case_number) FROM judgment_amounts
+   WHERE final_operative_judgment_total_amount IS NOT NULL
+     AND NOT judgment_is_vacated) distinct_final_operative_amount_cases,
+  (SELECT count(*) FROM judgment_amounts
+   WHERE final_operative_judgment_total_amount IS NOT NULL
+     AND final_operative_judgment_event_hash IS NULL) missing_final_operative_event_hash,
+  (SELECT count(*) FROM judgment_amounts
+   WHERE final_operative_judgment_total_amount IS NOT NULL
+     AND final_operative_judgment_event_hash = latest_renewal_event_hash)
+     renewal_hash_selected_as_final_count,
+  (SELECT count(*) FROM judgment_amounts
+   WHERE final_operative_judgment_total_amount IS NOT NULL
+     AND judgment_is_vacated) vacated_final_amounts_excluded,
   (SELECT count(*) FROM judgment_amounts WHERE recorded_judgment_amount IS NOT NULL) amount_rows,
   (SELECT count(distinct case_number) FROM judgment_amounts WHERE recorded_judgment_amount IS NOT NULL) distinct_amount_cases,
   (SELECT count(*) FROM judgment_amounts WHERE recorded_judgment_amount IS NOT NULL AND recorded_event_date IS NULL) missing_event_date,
@@ -181,11 +222,26 @@ largest_columns = [item[0] for item in largest.description]
 diagnostics["largest_100_anonymized"] = [
     dict(zip(largest_columns, row)) for row in largest.fetchall()
 ]
+final_largest = db.execute("""
+SELECT initial_judgment_year, case_prefix, case_model,
+       cast(final_operative_judgment_total_amount AS DECIMAL(38,2)) amount,
+       review_required
+FROM judgment_amounts
+WHERE final_operative_judgment_total_amount IS NOT NULL
+  AND NOT judgment_is_vacated
+  AND initial_judgment_year BETWEEN 1900 AND 2100
+ORDER BY final_operative_judgment_total_amount DESC NULLS LAST LIMIT 100
+""")
+final_largest_columns = [item[0] for item in final_largest.description]
+diagnostics["largest_100_final_operative_anonymized"] = [
+    dict(zip(final_largest_columns, row)) for row in final_largest.fetchall()
+]
 diagnostics["source"] = {
     "summary_glob": "data/judgments/summaries/*.parquet",
     "event_glob": "data/judgments/parquet/*.parquet",
-    "amount_definition": "separate one-per-case series for original judgment, latest recorded judgment-or-renewal, and latest renewal",
-    "year_definition": "each series uses its own selected event year; only the recorded series falls back to filing year when its event date is absent",
+    "primary_amount_definition": "latest operative or superseding merits-judgment total in the judgment lineage; renewals are excluded and whole-judgment vacaturs are omitted",
+    "primary_year_definition": "initial judgment event year, so later amended or remitted amounts remain attributed to the original judgment cohort",
+    "comparison_series": "original judgment, latest recorded judgment-or-renewal, and latest renewal remain separate",
 }
 (OUT / "diagnostics.json").write_text(
     json.dumps(diagnostics, indent=2, default=str) + "\n", encoding="utf-8"
@@ -199,29 +255,42 @@ readme = [
     "## Metric definitions",
     "",
     "- Each file has at most one observation per case for its named measure.",
-    "- Original judgments use the original amount-bearing event year; renewals use the latest renewal event year.",
-    "- The recorded series uses the latest expressly recorded judgment or renewal amount and is not a payoff balance; filing year is used only if its selected event date is unavailable.",
+    "- The primary series uses the latest operative or superseding merits-judgment amount in each lineage and attributes it to the initial judgment year.",
+    "- A later amended judgment after remittitur supersedes the earlier amount when the amended event states a total; a bare remittitur does not invent an amount.",
+    "- Renewals and whole-judgment vacaturs are excluded from the primary final-operative series.",
+    "- Original, latest recorded judgment-or-renewal, and renewal series remain separate comparison measures.",
     "- Raw totals are paired with medians, percentiles, and upper-tail-excluded totals because awards are strongly right-skewed.",
     "",
     "## Data-quality summary",
     "",
     f"- Summary rows: {diagnostics['summary_rows']:,}",
     f"- Distinct summary cases: {diagnostics['distinct_summary_cases']:,}",
-    f"- Amount-bearing cases: {diagnostics['distinct_amount_cases']:,}",
-    f"- Missing selected-event date: {diagnostics['missing_event_date']:,}",
+    f"- Final-operative amount cases: {diagnostics['distinct_final_operative_amount_cases']:,}",
+    f"- Missing final-operative event hash: {diagnostics['missing_final_operative_event_hash']:,}",
+    f"- Renewal hashes selected as final operative: {diagnostics['renewal_hash_selected_as_final_count']:,}",
+    f"- Vacated judgment amounts excluded: {diagnostics['vacated_final_amounts_excluded']:,}",
+    f"- Recorded amount-bearing cases: {diagnostics['distinct_amount_cases']:,}",
+    f"- Missing recorded selected-event date: {diagnostics['missing_event_date']:,}",
     f"- Duplicate case numbers after summary selection: {diagnostics['duplicate_case_numbers']:,}",
     f"- Negative amounts: {diagnostics['negative_amounts']:,}",
     f"- Amounts over $1 billion: {diagnostics['over_one_billion']:,}",
     "",
     "## Files",
     "",
-    "- `annual-original-judgment-trends.csv`: original judgment amounts by original event year.",
+    "- `annual-final-operative-judgment-trends.csv`: primary final operative merits amounts by initial judgment cohort year.",
+    "- `annual-final-operative-by-case-model.csv`: primary series segmented by case model.",
+    "- `annual-original-judgment-trends.csv`: initially entered judgment amounts by original event year.",
     "- `annual-recorded-amount-trends.csv`: latest recorded judgment-or-renewal amounts by selected event year.",
     "- `annual-renewal-trends.csv`: latest renewal amounts by renewal event year.",
-    "- `annual-by-case-model.csv`: recorded-amount statistics segmented by case model.",
+    "- `annual-by-case-model.csv`: recorded-amount comparison statistics segmented by case model.",
     "- `diagnostics.json`: integrity counts and the 100 largest anonymized records for extraction review.",
     "",
     "Generated by `scripts/compile_judgment_trends.py`.",
 ]
 (OUT / "README.md").write_text("\n".join(readme) + "\n", encoding="utf-8")
-print(json.dumps({"output": str(OUT), "annual_rows": len(annual_rows), **diagnostics}, default=str))
+print(json.dumps({
+    "output": str(OUT),
+    "primary_final_operative_annual_rows": len(final_annual_rows),
+    "recorded_comparison_annual_rows": len(annual_rows),
+    **diagnostics,
+}, default=str))

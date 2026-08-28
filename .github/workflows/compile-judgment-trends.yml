@@ -5,13 +5,14 @@ on:
     paths:
       - ".github/workflows/compile-judgment-trends.yml"
       - "scripts/compile_judgment_trends.py"
+      - "scripts/audit_judgment_year_coverage.py"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: compile-annual-judgment-trends
+  group: compile-annual-judgment-trends-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -37,6 +38,9 @@ jobs:
 
       - name: Compile aggregate trends
         run: python scripts/compile_judgment_trends.py
+
+      - name: Audit focal-year parsing coverage
+        run: python scripts/audit_judgment_year_coverage.py
 
       - name: Commit aggregate outputs
         run: |

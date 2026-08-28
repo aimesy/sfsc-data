@@ -1,0 +1,87 @@
+{
+  "source": {
+    "summary_glob": "data/judgments/summaries/*.parquet",
+    "event_glob": "data/judgments/parquet/*.parquet",
+    "grain": "one row per selected original judgment event unless a breakdown says otherwise",
+    "privacy": "aggregate counts only; source text, party names, and case numbers are excluded"
+  },
+  "audit_window": {
+    "min_event_year": 1988,
+    "max_event_year": 2014
+  },
+  "focal_years": [
+    1991,
+    1992,
+    2006,
+    2011
+  ],
+  "crosscheck": {
+    "joined_original_events": 705856,
+    "summary_event_total_mismatches": 0,
+    "missing_event_year": 0,
+    "focal_selected_original_events": 74423,
+    "focal_parsed_total_count": 18350
+  },
+  "focal_annual_rows": [
+    {
+      "event_year": 1991,
+      "selected_original_events": 16266,
+      "likely_monetary_events": 5999,
+      "parsed_total_count": 5957,
+      "recognized_money_event_count": 5977,
+      "recognized_money_without_total_count": 20,
+      "explicit_currency_not_recognized_count": 0,
+      "unmarked_numeric_context_count": 0,
+      "parsed_total_pct_of_likely_monetary": 99.3,
+      "median_parsed_total": "928.00",
+      "represented_case_models": 10,
+      "represented_extraction_periods": 3,
+      "represented_source_fields": 1
+    },
+    {
+      "event_year": 1992,
+      "selected_original_events": 19027,
+      "likely_monetary_events": 6463,
+      "parsed_total_count": 6381,
+      "recognized_money_event_count": 6412,
+      "recognized_money_without_total_count": 31,
+      "explicit_currency_not_recognized_count": 0,
+      "unmarked_numeric_context_count": 0,
+      "parsed_total_pct_of_likely_monetary": 98.73,
+      "median_parsed_total": "1092.61",
+      "represented_case_models": 10,
+      "represented_extraction_periods": 2,
+      "represented_source_fields": 1
+    },
+    {
+      "event_year": 2006,
+      "selected_original_events": 19894,
+      "likely_monetary_events": 3377,
+      "parsed_total_count": 3245,
+      "recognized_money_event_count": 3371,
+      "recognized_money_without_total_count": 126,
+      "explicit_currency_not_recognized_count": 0,
+      "unmarked_numeric_context_count": 0,
+      "parsed_total_pct_of_likely_monetary": 96.09,
+      "median_parsed_total": "2969.53",
+      "represented_case_models": 9,
+      "represented_extraction_periods": 3,
+      "represented_source_fields": 2
+    },
+    {
+      "event_year": 2011,
+      "selected_original_events": 19236,
+      "likely_monetary_events": 2917,
+      "parsed_total_count": 2767,
+      "recognized_money_event_count": 2911,
+      "recognized_money_without_total_count": 144,
+      "explicit_currency_not_recognized_count": 0,
+      "unmarked_numeric_context_count": 0,
+      "parsed_total_pct_of_likely_monetary": 94.86,
+      "median_parsed_total": "4424.72",
+      "represented_case_models": 8,
+      "represented_extraction_periods": 3,
+      "represented_source_fields": 2
+    }
+  ]
+}
