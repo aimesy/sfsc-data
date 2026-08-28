@@ -68,11 +68,13 @@ WHERE s.recorded_judgment_amount IS NOT NULL
 annual_sql = """
 WITH valid AS (
   SELECT judgment_year, cast(recorded_judgment_amount AS DECIMAL(38,2)) amount,
-         used_filing_year_fallback AS year_fallback, review_required
+         used_filing_year_fallback AS year_fallback, review_required, case_number
   FROM judgment_amounts
   WHERE judgment_year BETWEEN 1900 AND 2100 AND recorded_judgment_amount >= 0
 ), ranked AS (
-  SELECT *, row_number() OVER (PARTITION BY judgment_year ORDER BY amount DESC) AS rn,
+  SELECT *, row_number() OVER (
+           PARTITION BY judgment_year ORDER BY amount DESC, case_number
+         ) AS rn,
          count(*) OVER (PARTITION BY judgment_year) AS n
   FROM valid
 ), stats AS (
@@ -216,7 +218,7 @@ SELECT judgment_year, case_prefix, case_model,
        recorded_event_date, review_required
 FROM judgment_amounts
 WHERE recorded_judgment_amount IS NOT NULL AND judgment_year BETWEEN 1900 AND 2100
-ORDER BY recorded_judgment_amount DESC NULLS LAST LIMIT 100
+ORDER BY recorded_judgment_amount DESC NULLS LAST, case_number LIMIT 100
 """)
 largest_columns = [item[0] for item in largest.description]
 diagnostics["largest_100_anonymized"] = [
@@ -230,7 +232,7 @@ FROM judgment_amounts
 WHERE final_operative_judgment_total_amount IS NOT NULL
   AND NOT judgment_is_vacated
   AND initial_judgment_year BETWEEN 1900 AND 2100
-ORDER BY final_operative_judgment_total_amount DESC NULLS LAST LIMIT 100
+ORDER BY final_operative_judgment_total_amount DESC NULLS LAST, case_number LIMIT 100
 """)
 final_largest_columns = [item[0] for item in final_largest.description]
 diagnostics["largest_100_final_operative_anonymized"] = [

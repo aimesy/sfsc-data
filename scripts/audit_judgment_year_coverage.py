@@ -240,7 +240,8 @@ write_query_csv(
     WHERE event_year BETWEEN {MIN_YEAR} AND {MAX_YEAR}
       AND NOT parsed_total
     GROUP BY event_year, case_model, extraction_period, source_field, amount_format_cohort
-    ORDER BY event_year, event_count DESC, case_model, extraction_period, source_field
+    ORDER BY event_year, event_count DESC, case_model, extraction_period, source_field,
+      amount_format_cohort
     """,
 )
 
@@ -270,7 +271,8 @@ write_query_csv(
     FROM operative_judgment_events
     WHERE event_year BETWEEN {MIN_YEAR} AND {MAX_YEAR}
     GROUP BY event_year, case_model, event_kind, extraction_period, source_field
-    ORDER BY event_year, operative_event_count DESC, case_model, event_kind
+    ORDER BY event_year, operative_event_count DESC, case_model, event_kind,
+      extraction_period, source_field
     """,
 )
 
